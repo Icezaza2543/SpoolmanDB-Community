@@ -301,6 +301,52 @@
             ]
         },
         {
+            "name": "Tough+ {color_name}",
+            "material": "PLA",
+            "density": 1.21,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 250
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 245,
+            "bed_temp": 55,
+            "colors": [
+                {
+                    "name": "Yellow",
+                    "hex": "F4D53F"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Orange",
+                    "hex": "DC3A27"
+                },
+                {
+                    "name": "Gray",
+                    "hex": "AFB1AE"
+                },
+                {
+                    "name": "Silver",
+                    "hex": "959698"
+                },
+                {
+                    "name": "Cyan",
+                    "hex": "009BD8"
+                },
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                }
+            ]
+        },
+        {
             "name": "Silk {color_name}",
             "material": "PLA",
             "density": 1.32,
