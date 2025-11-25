@@ -259,5 +259,63 @@
                 }
             ]
         }
+		{
+            "name": "{color_name}",
+            "material": "ASA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 800.0,
+                    "spool_weight": 200.0,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 250,
+            "bed_temp_range": [
+                100,
+                120
+            ],
+            "colors": [
+			    {
+                    "name": "Olive Green",
+                    "hex": "636B2F"
+                },
+                {
+                    "name": "Galaxy Black",
+                    "hex": "3D3E3D"
+                },
+                {
+                    "name": "Jet Black",
+                    "hex": "24292A"
+                },
+                {
+                    "name": "Natural",
+                    "hex": "DFDFD3"
+                },
+                {
+                    "name": "Prusa Orange",
+                    "hex": "EA5E1A"
+                },
+				                {
+                    "name": "Signal White",
+                    "hex": "E3DFD9"
+                },
+				{
+                    "name": "Sapphire Blue",
+                    "hex": "0082AD"
+                },
+                {
+                    "name": "Lipstick Red",
+                    "hex": "D02F37"
+                },
+				{
+                    "name": "Prusa Pro Green",
+                    "hex": "065B4A"
+                }
+            ]
+        }
     ]
 }
