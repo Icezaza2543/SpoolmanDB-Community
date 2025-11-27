@@ -15,12 +15,431 @@
 			"diameters": [ 1.75 ],
 			"extruder_temp_range": [ 250, 270 ],
 			"bed_temp_range": [60, 100],
+            "colors": [
+                { "name": "Traffic Black", "hex": "000000" },
+                { "name": "Arctic White", "hex": "ffffff" },
+                { "name": "Sulfur Yellow", "hex": "ffff00" },
+                { "name": "Transparent Green", "hex": "00ff00" }
+            ]
+		},
+        {
+			"name": "PLA Premium {color_name}",
+			"material": "PLA",
+			"density": 1.24,
+			"weights": [
+               [
+                    {
+                        "weight": 250,
+                        "spool_weight": 120,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 250,
+                        "spool_weight": 80,
+                        "spool_type": "Cardboard"
+                    },
+                    {
+                        "weight": 500,
+                        "spool_weight": 240,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 750,
+                        "spool_weight": 240,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 1000,
+                        "spool_weight": 260,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 1000,
+                        "spool_weight": 180,
+                        "spool_type": "Cardboard"
+                    },
+                    {
+                        "weight": 2000,
+                        "spool_weight": 600,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 2000,
+                        "spool_weight": 420,
+                        "spool_type": "Cardboard"
+                    },
+                    {
+                        "weight": 4500,
+                        "spool_weight": 780,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 8000,
+                        "spool_weight": 1020,
+                        "spool_type": "Plastic"
+                    }
+                ]
+			],
+			"diameters": [ 1.75 ],
+			"extruder_temp_range": [ 185, 215 ],
+			"bed_temp_range": [0, 45],
+            "colors": [
+                    {
+                        "Name": "Translucent"
+                    },
+                    {
+                        "Name": "Natural"
+                    },
+                    {
+                        "Name": "Polar White",
+                        "HEX": "F4F4F4"
+                    },
+                    {
+                        "Name": "Arctic White",
+                        "HEX": "F6F6F6"
+                    },
+                    {
+                        "Name": "Light Grey",
+                        "HEX": "D7D7D7"
+                    },
+                    {
+                        "Name": "Ivory Beige",
+                        "HEX": "E6D2B5"
+                    },
+                    {
+                        "Name": "Bahama Yellow",
+                        "HEX": "F6D32D"
+                    },
+                    {
+                        "Name": "Dahlia Yellow",
+                        "HEX": "F39C12"
+                    },
+                    {
+                        "Name": "Lion Orange",
+                        "HEX": "FFF610"
+                    },
+                    {
+                        "Name": "Carrot Orange",
+                        "HEX": "E35B0E"
+                    },
+                    {
+                        "Name": "Fluorescent Orange"
+                    },
+                    {
+                        "Name": "Fox Orange",
+                        "HEX": "E66100"
+                    },
+                    {
+                        "Name": "True Red"
+                    },
+                    {
+                        "Name": "Bloody Red",
+                        "HEX": "CC0000"
+                    },
+                    {
+                        "Name": "Dragon Red",
+                        "HEX": "B50000"
+                    },
+                    {
+                        "Name": "Cherry Red",
+                        "HEX": "A00020"
+                    },
+                    {
+                        "Name": "Magenta",
+                        "HEX": "C71585"
+                    },
+                    {
+                        "Name": "Pink Panther",
+                        "HEX": "FA3E90"
+                    },
+                    {
+                        "Name": "Signal Violet",
+                        "HEX": "A349A4"
+                    },
+                    {
+                        "Name": "Lavender Violet"
+                    },
+                    {
+                        "Name": "Royal Blue",
+                        "HEX": "8B008B"
+                    },
+                    {
+                        "Name": "Navy Blue",
+                        "HEX": "4B0082"
+                    },
+                    {
+                        "Name": "Pigeon Blue",
+                        "HEX": "003366"
+                    },
+                    {
+                        "Name": "Pacific Blue",
+                        "HEX": "6A7BA2"
+                    },
+                    {
+                        "Name": "Baby Blue",
+                        "HEX": "3C89DD"
+                    },
+                    {
+                        "Name": "Blue Lagoon",
+                        "HEX": "008080"
+                    },
+                    {
+                        "Name": "Pastel Turquoise",
+                        "HEX": "40E0D0"
+                    },
+                    {
+                        "Name": "Caribbean Blue"
+                    },
+                    {
+                        "Name": "Chrysocolla Green",
+                        "HEX": "008B8B"
+                    },
+                    {
+                        "Name": "Flipflop Green",
+                        "HEX": "228B22"
+                    },
+                    {
+                        "Name": "Forest Green"
+                    },
+                    {
+                        "Name": "Oregano Green",
+                        "HEX": "006400"
+                    },
+                    {
+                        "Name": "Fluorescent Green",
+                        "HEX": "1BF53E"
+                    },
+                    {
+                        "Name": "Lime Green",
+                        "HEX": "94DE13"
+                    },
+                    {
+                        "Name": "Fluorescent Yellow",
+                        "HEX": "DEF64C"
+                    },
+                    {
+                        "Name": "Military Khaki",
+                        "HEX": "6B4F3F"
+                    },
+                    {
+                        "Name": "Pearl Gold"
+                    },
+                    {
+                        "Name": "Golden Line",
+                        "HEX": "C49E4B"
+                    },
+                    {
+                        "Name": "Rust Copper",
+                        "HEX": "8B4513"
+                    },
+                    {
+                        "Name": "Pearl Bronze"
+                    },
+                    {
+                        "Name": "Old Gold",
+                        "HEX": "988856"
+                    },
+                    {
+                        "Name": "Chocolate Brown",
+                        "HEX": "4B2E2E"
+                    },
+                    {
+                        "Name": "Wizard Charcoal"
+                    },
+                    {
+                        "Name": "Wizard Green"
+                    },
+                    {
+                        "Name": "Wizard Indigo"
+                    },
+                    {
+                        "Name": "Silver Star",
+                        "HEX": "8D8F91"
+                    },
+                    {
+                        "Name": "Dark Grey",
+                        "HEX": "555D61"
+                    },
+                    {
+                        "Name": "Anthracite Grey"
+                    },
+                    {
+                        "Name": "Pearl Grey",
+                        "HEX": "7D7F7D"
+                    },
+                    {
+                        "Name": "Deep Black",
+                        "HEX": "1C1C1C"
+                    }
+                ]
+		},
+        {
+			"name": "PLA Pro {color_name}",
+			"material": "PLA",
+			"density": 1.22,
+			"weights": [
+               [
+                    {
+                        "weight": 250,
+                        "spool_weight": 120,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 250,
+                        "spool_weight": 80,
+                        "spool_type": "Cardboard"
+                    },
+                    {
+                        "weight": 500,
+                        "spool_weight": 240,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 750,
+                        "spool_weight": 240,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 1000,
+                        "spool_weight": 260,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 1000,
+                        "spool_weight": 180,
+                        "spool_type": "Cardboard"
+                    },
+                    {
+                        "weight": 2000,
+                        "spool_weight": 600,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 2000,
+                        "spool_weight": 420,
+                        "spool_type": "Cardboard"
+                    },
+                    {
+                        "weight": 4500,
+                        "spool_weight": 780,
+                        "spool_type": "Plastic"
+                    },
+                    {
+                        "weight": 8000,
+                        "spool_weight": 1020,
+                        "spool_type": "Plastic"
+                    }
+                ]
+			],
+			"diameters": [ 1.75 ],
+			"extruder_temp_range": [ 185, 230 ],
+			"bed_temp_range": [0, 45],
 			"colors": [
-        { "name": "Traffic Black", "hex": "000000" },
-        { "name": "Arctic White", "hex": "ffffff" },
-        { "name": "Sulfur Yellow", "hex": "ffff00" },
-        { "name": "Transparent Green", "hex": "00ff00" }
-      ]
+                    {
+                        "name": "arctic white",
+                        "hex": "f6f6f6"
+                    },
+                    {
+                        "name": "polar white",
+                        "hex": "f4f4f4"
+                    },
+                    {
+                        "name": "light grey",
+                        "hex": "d7d7d7"
+                    },
+                    {
+                        "name": "ivory beige",
+                        "hex": "e6d2b5"
+                    },
+                    {
+                        "name": "coral"
+                    },
+                    {
+                        "name": "bahama yellow",
+                        "hex": "f6d32d"
+                    },
+                    {
+                        "name": "lion orange",
+                        "hex": "fff610"
+                    },
+                    {
+                        "name": "carrot orange",
+                        "hex": "e35b0e"
+                    },
+                    {
+                        "name": "bloody red",
+                        "hex": "cc0000"
+                    },
+                    {
+                        "name": "dragon red",
+                        "hex": "b50000"
+                    },
+                    {
+                        "name": "magenta",
+                        "hex": "c71585"
+                    },
+                    {
+                        "name": "pink panther",
+                        "hex": "fa3e90"
+                    },
+                    {
+                        "name": "lavender violet"
+                    },
+                    {
+                        "name": "navy blue",
+                        "hex": "8b008b"
+                    },
+                    {
+                        "name": "pacific blue",
+                        "hex": "003366"
+                    },
+                    {
+                        "name": "blue lagoon",
+                        "hex": "0072b2"
+                    },
+                    {
+                        "name": "pastel turquoise",
+                        "hex": "40e0d0"
+                    },
+                    {
+                        "name": "forest green",
+                        "hex": "228b22"
+                    },
+                    {
+                        "name": "lime green",
+                        "hex": "94de33"
+                    },
+                    {
+                        "name": "military khaki",
+                        "hex": "6b4f3f"
+                    },
+                    {
+                        "name": "pearl bronze"
+                    },
+                    {
+                        "name": "chocolate brown",
+                        "hex": "4b2e2e"
+                    },
+                    {
+                        "name": "rust copper",
+                        "hex": "8b4513"
+                    },
+                    {
+                        "name": "pearl gold"
+                    },
+                    {
+                        "name": "silver star",
+                        "hex": "656968"
+                    },
+                    {
+                        "name": "dark grey",
+                        "hex": "555d61"
+                    },
+                    {
+                        "name": "deep black",
+                        "hex": "1c1c1c"
+                    }
+                ]
 		},
       		{
 			"name": "The Filament {color_name}",
