@@ -128,10 +128,10 @@
                 {
                     "name": "Uranium Yellow",
                     "hex": "DBDA45"
-          }
-        ]
-      },
-      {
+				}
+			]
+		},
+		{
             "name": "ABS Gloss {color_name}",
             "material": "ABS",
             "density": 1.05,
@@ -245,10 +245,10 @@
                 {
                     "name": "Uranium Yellow",
                     "hex": "A9C82F"
-          }
-        ]
-      },
-      {
+				}
+			]
+		},
+		{
             "name": "HTPLA+ {color_name}",
             "material": "PLA",
             "density": 1.22,
@@ -712,7 +712,10 @@
                 1.75
             ],
             "extruder_temp": 220,
-			"bed_temp": 50,
+			"bed_temp_range": [
+			50,
+			60
+			],
             "colors": [
                 {
                     "name": "Black",
