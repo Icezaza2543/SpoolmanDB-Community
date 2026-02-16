@@ -2099,7 +2099,7 @@
           }
         ]
       },
-    {
+      {
         "name": "Panchroma™ (Formerly PolyLite™) Starlight {color_name}",
         "material": "PLA",
         "pattern": "starlight",
@@ -2166,6 +2166,60 @@
           {
             "name": "Pulsar",
             "hex": "5C7BC1"
+          }
+        ]
+      },
+      {
+        "name": "Panchroma™ Celestial {color_name}",
+        "material": "PLA",
+        "pattern": "celestial",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "6ADCF7"
+          },
+          {
+            "name": "Green",
+            "hex": "6FE2D2"
+          },
+          {
+            "name": "Purple",
+            "hex": "9678C8"
+          },
+          {
+            "name": "White",
+            "hex": "DCDAD0"
+          },
+          {
+            "name": "Light Yellow",
+            "hex": "D7CE89"
+          },
+          {
+            "name": "Light Pink",
+            "hex": "C3ADB8"
+          },
+          {
+            "name": "Yellow",
+            "hex": "F4C76A"
           }
         ]
       }
