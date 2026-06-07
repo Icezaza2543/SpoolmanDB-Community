@@ -1,4 +1,5 @@
 {
+    "manufacturer": "GratKit",
     "filaments": [
         {
             "name": "GratKit PLA {color_name}",
@@ -17,12 +18,30 @@
             "extruder_temp": 205,
             "bed_temp": 55,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "White", "hex": "FFFFFF" },
-                { "name": "Grey", "hex": "808080" },
-                { "name": "Red", "hex": "FF0000" },
-                { "name": "Blue", "hex": "0000FF" },
-                { "name": "Green", "hex": "008000" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080"
+                },
+                {
+                    "name": "Red",
+                    "hex": "FF0000"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "0000FF"
+                },
+                {
+                    "name": "Green",
+                    "hex": "008000"
+                }
             ]
         },
         {
@@ -42,9 +61,18 @@
             "extruder_temp": 240,
             "bed_temp": 70,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "White", "hex": "FFFFFF" },
-                { "name": "Grey", "hex": "808080" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080"
+                }
             ]
         }
     ]

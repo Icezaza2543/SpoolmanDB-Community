@@ -1,4 +1,5 @@
 {
+    "manufacturer": "Noulei",
     "filaments": [
         {
             "name": "Noulei Silk PLA {color_name}",
@@ -17,10 +18,22 @@
             "bed_temp": 50,
             "finish": "glossy",
             "colors": [
-                { "name": "Antique Gold", "hex": "D4AF37" },
-                { "name": "Silver", "hex": "C0C0C0" },
-                { "name": "Copper", "hex": "B87333" },
-                { "name": "Bronze", "hex": "CD7F32" }
+                {
+                    "name": "Antique Gold",
+                    "hex": "D4AF37"
+                },
+                {
+                    "name": "Silver",
+                    "hex": "C0C0C0"
+                },
+                {
+                    "name": "Copper",
+                    "hex": "B87333"
+                },
+                {
+                    "name": "Bronze",
+                    "hex": "CD7F32"
+                }
             ]
         }
     ]

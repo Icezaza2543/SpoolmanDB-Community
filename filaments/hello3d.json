@@ -1,4 +1,5 @@
 {
+    "manufacturer": "Hello3D",
     "filaments": [
         {
             "name": "Hello3D PLA {color_name}",
@@ -16,9 +17,18 @@
             "extruder_temp": 205,
             "bed_temp": 55,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "White", "hex": "FFFFFF" },
-                { "name": "Grey", "hex": "808080" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080"
+                }
             ]
         },
         {
@@ -38,10 +48,22 @@
             "bed_temp": 55,
             "finish": "glossy",
             "colors": [
-                { "name": "Gold", "hex": "FFD700" },
-                { "name": "Silver", "hex": "C0C0C0" },
-                { "name": "Copper", "hex": "B87333" },
-                { "name": "Bronze", "hex": "CD7F32" }
+                {
+                    "name": "Gold",
+                    "hex": "FFD700"
+                },
+                {
+                    "name": "Silver",
+                    "hex": "C0C0C0"
+                },
+                {
+                    "name": "Copper",
+                    "hex": "B87333"
+                },
+                {
+                    "name": "Bronze",
+                    "hex": "CD7F32"
+                }
             ]
         }
     ]

@@ -1,4 +1,5 @@
 {
+    "manufacturer": "IEMAI",
     "filaments": [
         {
             "name": "IEMAI PLA {color_name}",
@@ -16,9 +17,18 @@
             "extruder_temp": 205,
             "bed_temp": 55,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "White", "hex": "FFFFFF" },
-                { "name": "Grey", "hex": "808080" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080"
+                }
             ]
         },
         {
@@ -37,8 +47,14 @@
             "extruder_temp": 260,
             "bed_temp": 100,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "Transparent", "hex": "00000000" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "00000000"
+                }
             ]
         }
     ]

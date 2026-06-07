@@ -1,4 +1,5 @@
 {
+    "manufacturer": "Stronghero3D",
     "filaments": [
         {
             "name": "Stronghero3D Silk PLA {color_name}",
@@ -17,9 +18,18 @@
             "bed_temp": 50,
             "finish": "glossy",
             "colors": [
-                { "name": "Gold", "hex": "FFD700" },
-                { "name": "Silver", "hex": "C0C0C0" },
-                { "name": "Copper", "hex": "B87333" }
+                {
+                    "name": "Gold",
+                    "hex": "FFD700"
+                },
+                {
+                    "name": "Silver",
+                    "hex": "C0C0C0"
+                },
+                {
+                    "name": "Copper",
+                    "hex": "B87333"
+                }
             ]
         }
     ]

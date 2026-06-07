@@ -1,4 +1,5 @@
 {
+    "manufacturer": "Kexcelled",
     "filaments": [
         {
             "name": "Kexcelled PLA K5 {color_name}",
@@ -16,11 +17,26 @@
             "extruder_temp": 210,
             "bed_temp": 50,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "White", "hex": "FFFFFF" },
-                { "name": "Grey", "hex": "808080" },
-                { "name": "Red", "hex": "FF0000" },
-                { "name": "Blue", "hex": "0000FF" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080"
+                },
+                {
+                    "name": "Red",
+                    "hex": "FF0000"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "0000FF"
+                }
             ]
         },
         {
@@ -39,9 +55,18 @@
             "extruder_temp": 240,
             "bed_temp": 70,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "White", "hex": "FFFFFF" },
-                { "name": "Transparent", "hex": "00000000" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "00000000"
+                }
             ]
         },
         {
@@ -60,8 +85,14 @@
             "extruder_temp": 240,
             "bed_temp": 90,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "White", "hex": "FFFFFF" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                }
             ]
         },
         {
@@ -81,8 +112,14 @@
             "bed_temp": 50,
             "finish": "matte",
             "colors": [
-                { "name": "Matte Black", "hex": "1C1C1C" },
-                { "name": "Matte White", "hex": "F5F5F5" }
+                {
+                    "name": "Matte Black",
+                    "hex": "1C1C1C"
+                },
+                {
+                    "name": "Matte White",
+                    "hex": "F5F5F5"
+                }
             ]
         }
     ]

@@ -1,4 +1,5 @@
 {
+    "manufacturer": "Ziro",
     "filaments": [
         {
             "name": "Ziro PLA {color_name}",
@@ -16,9 +17,18 @@
             "extruder_temp": 200,
             "bed_temp": 55,
             "colors": [
-                { "name": "Black", "hex": "000000" },
-                { "name": "White", "hex": "FFFFFF" },
-                { "name": "Grey", "hex": "808080" }
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080"
+                }
             ]
         },
         {
@@ -38,8 +48,14 @@
             "bed_temp": 55,
             "finish": "matte",
             "colors": [
-                { "name": "Matte Black", "hex": "1C1C1C" },
-                { "name": "Matte White", "hex": "F5F5F5" }
+                {
+                    "name": "Matte Black",
+                    "hex": "1C1C1C"
+                },
+                {
+                    "name": "Matte White",
+                    "hex": "F5F5F5"
+                }
             ]
         }
     ]
