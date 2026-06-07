@@ -1,0 +1,45 @@
+{
+    "filaments": [
+        {
+            "name": "IEMAI PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 205,
+            "bed_temp": 55,
+            "colors": [
+                { "name": "Black", "hex": "000000" },
+                { "name": "White", "hex": "FFFFFF" },
+                { "name": "Grey", "hex": "808080" }
+            ]
+        },
+        {
+            "name": "IEMAI PC {color_name}",
+            "material": "PC",
+            "density": 1.2,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 260,
+            "bed_temp": 100,
+            "colors": [
+                { "name": "Black", "hex": "000000" },
+                { "name": "Transparent", "hex": "00000000" }
+            ]
+        }
+    ]
+}
