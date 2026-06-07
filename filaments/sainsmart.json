@@ -1,0 +1,26 @@
+{
+    "filaments": [
+        {
+            "name": "SainSmart TPU {color_name}",
+            "material": "TPU",
+            "density": 1.21,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 220,
+            "bed_temp": 50,
+            "colors": [
+                { "name": "Black", "hex": "000000" },
+                { "name": "White", "hex": "FFFFFF" },
+                { "name": "Red", "hex": "FF0000" },
+                { "name": "Blue", "hex": "0000FF" }
+            ]
+        }
+    ]
+}

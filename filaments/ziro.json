@@ -1,0 +1,46 @@
+{
+    "filaments": [
+        {
+            "name": "Ziro PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 250
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 200,
+            "bed_temp": 55,
+            "colors": [
+                { "name": "Black", "hex": "000000" },
+                { "name": "White", "hex": "FFFFFF" },
+                { "name": "Grey", "hex": "808080" }
+            ]
+        },
+        {
+            "name": "Ziro Matte PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 250
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 205,
+            "bed_temp": 55,
+            "finish": "matte",
+            "colors": [
+                { "name": "Matte Black", "hex": "1C1C1C" },
+                { "name": "Matte White", "hex": "F5F5F5" }
+            ]
+        }
+    ]
+}

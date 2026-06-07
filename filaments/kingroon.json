@@ -1,0 +1,48 @@
+{
+    "filaments": [
+        {
+            "name": "Kingroon PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 150
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 205,
+            "bed_temp": 55,
+            "colors": [
+                { "name": "Black", "hex": "000000" },
+                { "name": "White", "hex": "FFFFFF" },
+                { "name": "Grey", "hex": "808080" },
+                { "name": "Red", "hex": "FF0000" },
+                { "name": "Blue", "hex": "0000FF" }
+            ]
+        },
+        {
+            "name": "Kingroon PETG {color_name}",
+            "material": "PETG",
+            "density": 1.25,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 150
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp": 240,
+            "bed_temp": 70,
+            "colors": [
+                { "name": "Black", "hex": "000000" },
+                { "name": "White", "hex": "FFFFFF" },
+                { "name": "Grey", "hex": "808080" }
+            ]
+        }
+    ]
+}
