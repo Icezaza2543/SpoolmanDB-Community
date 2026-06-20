@@ -55,6 +55,13 @@ Counts are generated from the current repository state. The compiled variant cou
 
 Source files stay small enough to review by hand. The compiler validates and expands them into the flat JSON contract consumed by Spoolman.
 
+### JSON file structures
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/json-structure-dark.svg">
+  <img alt="SpoolmanDB Community JSON file structure visualization" src="docs/assets/json-structure-light.svg">
+</picture>
+
 ## Repository layout
 
 ```text
