@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1440" viewBox="0 0 1200 1440" role="img" aria-labelledby="title desc">
-  <title id="title">SpoolmanDB Community JSON structure</title>
-  <desc id="desc">A dark white, black, and orange visual map of every JSON object structure used by SpoolmanDB Community.</desc>
+  <title id="title">SpoolmanDB Community JSON schema map</title>
+  <desc id="desc">A dark white, black, and orange visual map of the JSON Schema rules used by SpoolmanDB Community.</desc>
   <defs>
     <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.42"/>
@@ -45,15 +45,15 @@
     <path d="M30 31H58L68 41V70H30Z" fill="#111111"/>
     <path d="M58 31V42H69" fill="none" stroke="#f97316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="44" y="60" class="mono-light">{ }</text>
-    <text x="124" y="38" class="title">JSON Structure</text>
-    <text x="126" y="70" class="subtitle">Every source and generated JSON object used by SpoolmanDB Community.</text>
+    <text x="124" y="38" class="title">JSON Schema Map</text>
+    <text x="126" y="70" class="subtitle">Required fields, types, array rules, enums, oneOf branches, and patterns.</text>
   </g>
 
   <g transform="translate(904 58)">
     <rect class="badge" x="0" y="0" width="92" height="30" rx="15"/>
-    <text class="badge-text" x="46" y="20" text-anchor="middle">REQUIRED</text>
+    <text class="badge-text" x="46" y="20" text-anchor="middle">SCHEMA</text>
     <rect class="badge" x="108" y="0" width="94" height="30" rx="15"/>
-    <text class="badge-text" x="155" y="20" text-anchor="middle">OPTIONAL</text>
+    <text class="badge-text" x="155" y="20" text-anchor="middle">RULES</text>
   </g>
 
   <g filter="url(#softShadow)">
@@ -61,15 +61,15 @@
       <rect class="card" width="1084" height="128" rx="22"/>
       <rect x="0" y="0" width="8" height="128" rx="4" fill="#f97316"/>
       <rect class="badge" x="28" y="24" width="132" height="28" rx="14"/>
-      <text x="94" y="43" class="badge-text" text-anchor="middle">filaments/*.json</text>
-      <text x="184" y="44" class="section">Manufacturer Source File</text>
-      <text x="184" y="69" class="note">Root object for one manufacturer file.</text>
+      <text x="94" y="43" class="badge-text" text-anchor="middle">filaments.schema</text>
+      <text x="184" y="44" class="section">Manufacturer Source Schema</text>
+      <text x="184" y="69" class="note">type=object; required: manufacturer, filaments.</text>
       <circle class="dot" cx="44" cy="96" r="5"/>
       <text x="58" y="101" class="mono">manufacturer</text>
       <text x="182" y="101" class="mono-small">string</text>
       <circle class="dot" cx="330" cy="96" r="5"/>
       <text x="344" y="101" class="mono">filaments[]</text>
-      <text x="462" y="101" class="mono-small">array&lt;Filament Product&gt;</text>
+      <text x="462" y="101" class="mono-small">array; minItems=1; uniqueItems=true; items=Filament Product</text>
     </g>
 
     <g transform="translate(58 338)">
@@ -77,19 +77,19 @@
       <rect x="0" y="0" width="8" height="248" rx="4" fill="#f97316"/>
       <rect class="badge" x="28" y="24" width="136" height="28" rx="14"/>
       <text x="96" y="43" class="badge-text" text-anchor="middle">source object</text>
-      <text x="188" y="44" class="section-light">Filament Product</text>
-      <text x="188" y="69" class="note-light">Compact product definition. Compiler expands weight x diameter x color.</text>
+      <text x="188" y="44" class="section-light">Filament Product Schema</text>
+      <text x="188" y="69" class="note-light">type=object; required: name, density, material, weights, diameters, colors.</text>
 
       <g transform="translate(28 96)">
         <rect x="0" y="0" width="150" height="36" rx="10" fill="#f2f2f2"/>
         <circle class="dot" cx="18" cy="18" r="5"/>
-        <text x="32" y="23" class="mono-light">name</text>
+        <text x="32" y="23" class="mono-light">name:string</text>
         <rect x="164" y="0" width="150" height="36" rx="10" fill="#f2f2f2"/>
         <circle class="dot" cx="182" cy="18" r="5"/>
-        <text x="196" y="23" class="mono-light">material</text>
+        <text x="196" y="23" class="mono-light">material:regex</text>
         <rect x="328" y="0" width="150" height="36" rx="10" fill="#f2f2f2"/>
         <circle class="dot" cx="346" cy="18" r="5"/>
-        <text x="360" y="23" class="mono-light">density</text>
+        <text x="360" y="23" class="mono-light">density:&gt;0</text>
         <rect x="492" y="0" width="150" height="36" rx="10" fill="#f2f2f2"/>
         <circle class="dot" cx="510" cy="18" r="5"/>
         <text x="524" y="23" class="mono-light">weights[]</text>
@@ -103,52 +103,51 @@
 
       <g transform="translate(28 154)">
         <rect x="0" y="0" width="1028" height="64" rx="14" fill="#f2f2f2"/>
-        <text x="22" y="27" class="mono-small-light">? extruder_temp / extruder_temp_range / bed_temp / bed_temp_range / fill / finish / multi_color_direction</text>
-        <text x="22" y="50" class="mono-small-light">? pattern / translucent / glow / country_of_origin / sds_url / tds_url</text>
+        <text x="22" y="27" class="mono-small-light">rules: weights/colors minItems=1 uniqueItems=true; diameters items number &gt; 0</text>
+        <text x="22" y="50" class="mono-small-light">optional: integer temps; temp_range=[int,int]; fill/finish/direction/pattern enums; booleans; urls format=uri</text>
       </g>
     </g>
 
     <g transform="translate(58 626)">
       <rect class="card" width="340" height="160" rx="22"/>
       <rect x="0" y="0" width="8" height="160" rx="4" fill="#f97316"/>
-      <text x="28" y="40" class="section">Weight Option</text>
-      <text x="28" y="65" class="note">Objects inside product weights[].</text>
+      <text x="28" y="40" class="section">Weight Schema</text>
+      <text x="28" y="65" class="note">type=object; required: weight.</text>
       <circle class="dot" cx="34" cy="100" r="5"/>
       <text x="48" y="105" class="mono">weight</text>
-      <text x="138" y="105" class="mono-small">number</text>
-      <text x="48" y="132" class="mono-small">? spool_weight</text>
-      <text x="194" y="132" class="mono-small">? spool_type</text>
+      <text x="138" y="105" class="mono-small">number &gt;= 0</text>
+      <text x="48" y="130" class="mono-small">? spool_weight number &gt;=0</text>
+      <text x="48" y="152" class="mono-small">? spool_type enum</text>
     </g>
 
     <g transform="translate(430 626)">
       <rect class="card" width="340" height="160" rx="22"/>
       <rect x="0" y="0" width="8" height="160" rx="4" fill="#f97316"/>
-      <text x="28" y="40" class="section">Diameter Option</text>
-      <text x="28" y="65" class="note">Numbers inside product diameters[].</text>
+      <text x="28" y="40" class="section">Diameter Schema</text>
+      <text x="28" y="65" class="note">array items: number; exclusiveMinimum=0.</text>
       <rect x="28" y="92" width="220" height="42" rx="12" class="row-orange"/>
       <circle class="dot" cx="48" cy="113" r="5"/>
       <text x="64" y="118" class="mono">number[]</text>
-      <text x="160" y="118" class="mono-small">1.75 / 2.85</text>
+      <text x="160" y="118" class="mono-small">&gt; 0; uniqueItems</text>
     </g>
 
     <g transform="translate(802 626)">
       <rect class="card" width="340" height="160" rx="22"/>
       <rect x="0" y="0" width="8" height="160" rx="4" fill="#f97316"/>
-      <text x="28" y="40" class="section">Material Defaults</text>
-      <text x="28" y="65" class="note">Rows in materials.json.</text>
+      <text x="28" y="40" class="section">Materials Schema</text>
+      <text x="28" y="65" class="note">materials.schema.json array items.</text>
       <circle class="dot" cx="34" cy="100" r="5"/>
-      <text x="48" y="105" class="mono">material</text>
-      <circle class="dot" cx="166" cy="100" r="5"/>
-      <text x="180" y="105" class="mono">density</text>
-      <text x="48" y="132" class="mono-small">? extruder_temp</text>
-      <text x="206" y="132" class="mono-small">? bed_temp</text>
+      <text x="48" y="105" class="mono">material:string</text>
+      <circle class="dot" cx="34" cy="126" r="5"/>
+      <text x="48" y="131" class="mono">density:&gt;0</text>
+      <text x="48" y="153" class="mono-small">? extruder_temp / bed_temp integer</text>
     </g>
 
     <g transform="translate(58 826)">
       <rect class="card" width="1084" height="222" rx="22"/>
       <rect x="0" y="0" width="8" height="222" rx="4" fill="#f97316"/>
-      <text x="28" y="42" class="section">Color Variant</text>
-      <text x="28" y="67" class="note">Objects inside product colors[]. Use either single-color hex or multi-color hexes.</text>
+      <text x="28" y="42" class="section">Color Variant Schema</text>
+      <text x="28" y="67" class="note">type=object; oneOf requires name+hex OR name+hexes.</text>
 
       <g transform="translate(28 96)">
         <rect x="0" y="0" width="158" height="36" rx="10" class="row-orange"/>
@@ -160,15 +159,15 @@
         <text x="260" y="23" class="mono-small">OR</text>
         <text x="296" y="23" class="mono">hexes[]</text>
         <rect x="454" y="0" width="574" height="36" rx="10" class="row"/>
-        <text x="474" y="23" class="mono-small">? finish / multi_color_direction / pattern / translucent / glow</text>
+        <text x="474" y="23" class="mono-small">hex pattern=6/8 hex; hexes minItems=2 uniqueItems=true</text>
       </g>
       <g transform="translate(28 150)">
         <rect x="0" y="0" width="318" height="36" rx="10" class="row"/>
-        <text x="20" y="23" class="mono-small">? codes[] manufacturer SKUs</text>
+        <text x="20" y="23" class="mono-small">? codes[] strings minLength=1</text>
         <rect x="338" y="0" width="318" height="36" rx="10" class="row"/>
-        <text x="358" y="23" class="mono-small">? eans[] spooled barcodes</text>
+        <text x="358" y="23" class="mono-small">? eans[] pattern ^[0-9]{8,14}$</text>
         <rect x="676" y="0" width="352" height="36" rx="10" class="row"/>
-        <text x="696" y="23" class="mono-small">? eans_refill[] refill barcodes</text>
+        <text x="696" y="23" class="mono-small">? eans_refill[] same pattern</text>
       </g>
     </g>
 
@@ -177,13 +176,13 @@
       <rect x="0" y="0" width="8" height="246" rx="4" fill="#f97316"/>
       <rect class="badge" x="28" y="24" width="122" height="28" rx="14"/>
       <text x="89" y="43" class="badge-text" text-anchor="middle">filaments.json</text>
-      <text x="174" y="44" class="section-light">Compiled Public Row</text>
-      <text x="174" y="69" class="note-light">Flat output consumed by Spoolman. Extra metadata stays backward-compatible.</text>
+      <text x="174" y="44" class="section-light">Generated Public Contract</text>
+      <text x="174" y="69" class="note-light">Compiler output, not the source schema. Parsed by Spoolman's external DB model.</text>
       <g transform="translate(28 98)">
         <rect x="0" y="0" width="1028" height="116" rx="14" fill="#f2f2f2"/>
-        <text x="22" y="28" class="mono-small-light">id, manufacturer, name, material, density, weight, spool_weight, spool_type, diameter</text>
-        <text x="22" y="54" class="mono-small-light">color_hex, color_hexes, extruder_temp, extruder_temp_range, bed_temp, bed_temp_range</text>
-        <text x="22" y="80" class="mono-small-light">finish, multi_color_direction, pattern, translucent, glow, codes, eans, eans_refill</text>
+        <text x="22" y="28" class="mono-small-light">required-ish contract: id, manufacturer, name, material, density, weight, diameter</text>
+        <text x="22" y="54" class="mono-small-light">expanded fields: spool_weight, spool_type, color_hex/color_hexes, temps, finish, pattern, booleans</text>
+        <text x="22" y="80" class="mono-small-light">community metadata: codes, eans, eans_refill; ignored by current Spoolman if unknown</text>
       </g>
     </g>
   </g>
@@ -197,9 +196,9 @@
     <rect x="0" y="-24" width="92" height="34" rx="17" fill="#ffffff"/>
     <text x="46" y="-2" class="badge-text-light" text-anchor="middle">legend</text>
     <circle class="dot" cx="126" cy="-7" r="5"/>
-    <text x="140" y="-2" class="mono-small">required field</text>
-    <text x="288" y="-2" class="mono-small">? optional field</text>
-    <text x="434" y="-2" class="mono-small">[] array</text>
-    <text x="540" y="-2" class="mono-small">orange arrows show compile flow</text>
+    <text x="140" y="-2" class="mono-small">required</text>
+    <text x="252" y="-2" class="mono-small">? optional</text>
+    <text x="374" y="-2" class="mono-small">[] array</text>
+    <text x="478" y="-2" class="mono-small">rules come from filaments.schema.json and materials.schema.json</text>
   </g>
 </svg>
