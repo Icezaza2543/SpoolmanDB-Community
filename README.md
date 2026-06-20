@@ -46,6 +46,15 @@ The goal is boring in the best way: current filament data, predictable JSON, rep
 
 Counts are generated from the current repository state. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
 
+## Data model at a glance
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/data-model-dark.svg">
+  <img alt="SpoolmanDB Community data model visualization" src="docs/assets/data-model-light.svg">
+</picture>
+
+Source files stay small enough to review by hand. The compiler validates and expands them into the flat JSON contract consumed by Spoolman.
+
 ## Repository layout
 
 ```text
