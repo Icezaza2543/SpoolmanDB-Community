@@ -1,9 +1,22 @@
-# SpoolmanDB
-A centralized place to store information about 3D printing filaments and their manufacturers.
+# SpoolmanDB Community
+A community-maintained continuation of SpoolmanDB, a centralized place to store information about 3D printing filaments and their manufacturers.
 
-The database is hosted using GitHub Pages, you can browse it at: [https://donkie.github.io/SpoolmanDB/](https://donkie.github.io/SpoolmanDB/)
+This repository continues the work from [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) while the upstream project is inactive. It preserves the upstream project history and MIT license, and keeps the data available for users who need current filament and material definitions.
 
-You can contribute to this database by adding/editing files and submitting pull requests in this repository.
+The community database is hosted using GitHub Pages, you can browse it at: [https://icezaza2543.github.io/SpoolmanDB-Community/](https://icezaza2543.github.io/SpoolmanDB-Community/)
+
+You can contribute to this database by adding/editing files and submitting pull requests in this repository: [https://github.com/Icezaza2543/SpoolmanDB-Community](https://github.com/Icezaza2543/SpoolmanDB-Community)
+
+## Community maintenance
+This fork focuses on keeping the dataset reviewed, validated, and usable. If upstream maintainership resumes, changes from this repository can be proposed back upstream.
+
+Before opening a pull request, please run:
+
+```powershell
+python scripts/compile_filaments.py
+check-jsonschema --schemafile materials.schema.json materials.json
+check-jsonschema --schemafile filaments.schema.json filaments/*
+```
 
 ## Filaments
 The source files are in the `filaments` folder. When this database is deployed, they will be expanded/compiled into a single JSON file called `filaments.json`.
