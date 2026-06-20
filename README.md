@@ -55,11 +55,6 @@ Counts are generated from the current repository state. The compiled variant cou
 
 Source files stay small enough to review by hand. The compiler validates and expands them into the flat JSON contract consumed by Spoolman.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/repository-layout-dark.svg">
-  <img alt="SpoolmanDB Community repository layout visualization" src="docs/assets/repository-layout-light.svg">
-</picture>
-
 ## Repository layout
 
 ```text
@@ -70,6 +65,11 @@ materials.schema.json      Schema for material defaults
 scripts/compile_filaments.py
 public/                    GitHub Pages shell and deployed data target
 ```
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/repository-layout-dark.svg">
+  <img alt="SpoolmanDB Community repository layout visualization" src="docs/assets/repository-layout-light.svg">
+</picture>
 
 ## Contributor workflow
 
