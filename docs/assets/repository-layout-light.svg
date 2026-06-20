@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">SpoolmanDB Community repository layout</title>
+  <desc id="desc">A white, black, and orange repository map showing source data, validation contracts, build tools, public output, and contributor files.</desc>
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#111111" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#f97316"/>
+    </marker>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#111111" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <style>
+      .bg { fill: #ffffff; }
+      .grid { fill: url(#grid); }
+      .title { font: 800 42px "Segoe UI", Inter, Arial, sans-serif; fill: #111111; letter-spacing: 0; }
+      .subtitle { font: 500 17px "Segoe UI", Inter, Arial, sans-serif; fill: #595959; letter-spacing: 0; }
+      .card { fill: #ffffff; stroke: #111111; stroke-opacity: 0.12; stroke-width: 1.2; }
+      .dark-card { fill: #111111; stroke: #111111; stroke-width: 1.2; }
+      .label { font: 800 20px "Segoe UI", Inter, Arial, sans-serif; fill: #111111; letter-spacing: 0; }
+      .label-on-dark { font: 800 20px "Segoe UI", Inter, Arial, sans-serif; fill: #ffffff; letter-spacing: 0; }
+      .small { font: 500 14px "Segoe UI", Inter, Arial, sans-serif; fill: #666666; letter-spacing: 0; }
+      .small-on-dark { font: 500 14px "Segoe UI", Inter, Arial, sans-serif; fill: #d8d8d8; letter-spacing: 0; }
+      .mono { font: 650 15px "Cascadia Mono", "SFMono-Regular", Consolas, monospace; fill: #111111; letter-spacing: 0; }
+      .mono-muted { font: 600 13px "Cascadia Mono", "SFMono-Regular", Consolas, monospace; fill: #666666; letter-spacing: 0; }
+      .mono-on-dark { font: 650 15px "Cascadia Mono", "SFMono-Regular", Consolas, monospace; fill: #ffffff; letter-spacing: 0; }
+      .pill { fill: #fff4ea; stroke: #f97316; stroke-opacity: 0.32; }
+      .pill-dark { fill: #111111; }
+      .pill-text { font: 800 12px "Segoe UI", Inter, Arial, sans-serif; fill: #bb4500; letter-spacing: 0; }
+      .pill-text-dark { font: 800 12px "Segoe UI", Inter, Arial, sans-serif; fill: #ffffff; letter-spacing: 0; }
+      .arrow-line { stroke: #f97316; stroke-width: 4; stroke-linecap: round; marker-end: url(#arrow); }
+      .tree-line { stroke: #111111; stroke-opacity: 0.16; stroke-width: 2; fill: none; }
+      .orange { fill: #f97316; }
+      .soft-orange { fill: #fff4ea; }
+      .soft-gray { fill: #f7f7f7; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="760" rx="28"/>
+  <rect class="grid" width="1200" height="760" rx="28"/>
+
+  <g transform="translate(58 48)">
+    <rect x="0" y="0" width="96" height="96" rx="24" fill="#111111"/>
+    <path d="M29 34H52L62 44V67H29Z" fill="#ffffff"/>
+    <path d="M52 34V45H63" fill="none" stroke="#f97316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="76" cy="74" r="14" fill="#f97316"/>
+    <path d="M70 74H82M76 68V80" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <text x="124" y="38" class="title">Repository Layout</text>
+    <text x="126" y="70" class="subtitle">A contributor map for source data, validation, build tools, and published JSON.</text>
+  </g>
+
+  <g transform="translate(880 58)">
+    <rect class="pill" x="0" y="0" width="84" height="30" rx="15"/>
+    <text class="pill-text" x="42" y="20" text-anchor="middle">EDIT</text>
+    <rect class="pill" x="96" y="0" width="98" height="30" rx="15"/>
+    <text class="pill-text" x="145" y="20" text-anchor="middle">CHECK</text>
+    <rect class="pill" x="206" y="0" width="106" height="30" rx="15"/>
+    <text class="pill-text" x="259" y="20" text-anchor="middle">PUBLISH</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <g transform="translate(58 178)">
+      <rect class="card" width="314" height="286" rx="24"/>
+      <rect x="24" y="24" width="54" height="54" rx="16" fill="#111111"/>
+      <path d="M37 41H65M37 53H65M37 65H55" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+      <text x="94" y="47" class="label">Source data</text>
+      <text x="94" y="72" class="small">Human-edited catalog files</text>
+
+      <rect x="24" y="106" width="266" height="42" rx="12" class="soft-orange"/>
+      <text x="42" y="132" class="mono">filaments/</text>
+      <text x="184" y="132" class="mono-muted">75 files</text>
+      <path d="M47 148V188M47 188H68" class="tree-line"/>
+      <rect x="68" y="166" width="222" height="34" rx="10" class="soft-gray"/>
+      <text x="84" y="188" class="mono">bambulab.json</text>
+      <text x="214" y="188" class="mono-muted">...</text>
+      <rect x="68" y="208" width="222" height="34" rx="10" class="soft-gray"/>
+      <text x="84" y="230" class="mono">sunlu.json</text>
+      <text x="198" y="230" class="mono-muted">etc.</text>
+      <rect x="24" y="254" width="266" height="24" rx="12" fill="#111111"/>
+      <text x="157" y="271" class="pill-text-dark" text-anchor="middle">edit these in pull requests</text>
+    </g>
+
+    <g transform="translate(443 178)">
+      <rect class="dark-card" width="314" height="286" rx="24"/>
+      <rect x="24" y="24" width="54" height="54" rx="16" fill="#f97316"/>
+      <path d="M38 51L47 60L66 39" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="94" y="47" class="label-on-dark">Contracts</text>
+      <text x="94" y="72" class="small-on-dark">Schemas plus compiler</text>
+
+      <rect x="24" y="106" width="266" height="38" rx="12" fill="#242424"/>
+      <text x="42" y="130" class="mono-on-dark">filaments.schema.json</text>
+      <rect x="24" y="154" width="266" height="38" rx="12" fill="#242424"/>
+      <text x="42" y="178" class="mono-on-dark">materials.schema.json</text>
+      <rect x="24" y="202" width="266" height="38" rx="12" fill="#fff4ea"/>
+      <text x="42" y="226" class="mono">scripts/compile_filaments.py</text>
+      <rect x="24" y="254" width="266" height="24" rx="12" fill="#f97316"/>
+      <text x="157" y="271" class="pill-text-dark" text-anchor="middle">validate before merge</text>
+    </g>
+
+    <g transform="translate(828 178)">
+      <rect class="card" width="314" height="286" rx="24"/>
+      <rect x="24" y="24" width="54" height="54" rx="16" fill="#111111"/>
+      <ellipse cx="51" cy="40" rx="17" ry="8" fill="none" stroke="#f97316" stroke-width="4"/>
+      <path d="M34 40V65C34 69 42 73 51 73C60 73 68 69 68 65V40" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <text x="94" y="47" class="label">Public output</text>
+      <text x="94" y="72" class="small">GitHub Pages surface</text>
+
+      <rect x="24" y="106" width="266" height="42" rx="12" class="soft-orange"/>
+      <text x="42" y="132" class="mono">public/</text>
+      <text x="174" y="132" class="mono-muted">site shell</text>
+      <path d="M47 148V188M47 188H68" class="tree-line"/>
+      <rect x="68" y="166" width="222" height="34" rx="10" class="soft-gray"/>
+      <text x="84" y="188" class="mono">index.html</text>
+      <text x="190" y="188" class="mono-muted">styles.css</text>
+      <rect x="24" y="208" width="266" height="34" rx="10" fill="#111111"/>
+      <text x="42" y="230" class="mono-on-dark">filaments.json</text>
+      <text x="184" y="230" class="mono-muted" fill="#d8d8d8">compiled</text>
+      <rect x="24" y="254" width="266" height="24" rx="12" fill="#f97316"/>
+      <text x="157" y="271" class="pill-text-dark" text-anchor="middle">served to Spoolman users</text>
+    </g>
+  </g>
+
+  <path class="arrow-line" d="M386 321H428"/>
+  <path class="arrow-line" d="M771 321H813"/>
+
+  <g transform="translate(58 518)" filter="url(#softShadow)">
+    <rect class="card" width="1084" height="154" rx="24"/>
+    <text x="28" y="44" class="label">Contributor surface</text>
+    <text x="28" y="70" class="small">Docs and automation keep contributions reviewable.</text>
+
+    <g transform="translate(356 34)">
+      <rect x="0" y="0" width="158" height="74" rx="18" class="soft-orange" stroke="#f97316" stroke-opacity="0.35"/>
+      <text x="79" y="31" class="mono" text-anchor="middle">README.md</text>
+      <text x="79" y="53" class="small" text-anchor="middle">project front door</text>
+    </g>
+    <g transform="translate(534 34)">
+      <rect x="0" y="0" width="172" height="74" rx="18" fill="#ffffff" stroke="#111111" stroke-opacity="0.14"/>
+      <text x="86" y="31" class="mono" text-anchor="middle">CONTRIBUTING.md</text>
+      <text x="86" y="53" class="small" text-anchor="middle">review workflow</text>
+    </g>
+    <g transform="translate(726 34)">
+      <rect x="0" y="0" width="158" height="74" rx="18" class="soft-orange" stroke="#f97316" stroke-opacity="0.35"/>
+      <text x="79" y="31" class="mono" text-anchor="middle">.github/</text>
+      <text x="79" y="53" class="small" text-anchor="middle">PRs + Actions</text>
+    </g>
+    <path d="M902 70H978" class="arrow-line"/>
+    <g transform="translate(994 34)">
+      <rect x="0" y="0" width="58" height="74" rx="18" fill="#111111"/>
+      <text x="29" y="43" class="pill-text-dark" text-anchor="middle">green</text>
+    </g>
+
+    <rect x="28" y="104" width="294" height="26" rx="13" fill="#111111"/>
+    <text x="175" y="122" class="pill-text-dark" text-anchor="middle">source-first repository, generated public output</text>
+  </g>
+
+  <g transform="translate(58 704)">
+    <rect class="pill-dark" x="0" y="-23" width="96" height="34" rx="17"/>
+    <text x="48" y="-1" class="pill-text-dark" text-anchor="middle">rule</text>
+    <text x="116" y="0" class="mono-muted">Edit source files, validate schemas, let the compiler produce public JSON.</text>
+  </g>
+</svg>
