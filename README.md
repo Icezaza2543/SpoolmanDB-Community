@@ -1,16 +1,68 @@
-# SpoolmanDB Community
-A community-maintained continuation of SpoolmanDB, a centralized place to store information about 3D printing filaments and their manufacturers.
+<h1 align="center">SpoolmanDB Community</h1>
 
-This repository continues the work from [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) while the upstream project is inactive. It preserves the upstream project history and MIT license, and keeps the data available for users who need current filament and material definitions.
+<p align="center">
+  Community-maintained filament and materials data for 3D printing.
+</p>
 
-The community database is hosted using GitHub Pages, you can browse it at: [https://icezaza2543.github.io/SpoolmanDB-Community/](https://icezaza2543.github.io/SpoolmanDB-Community/)
+<p align="center">
+  <a href="https://github.com/Icezaza2543/SpoolmanDB-Community/actions/workflows/build.yml"><img alt="Build" src="https://github.com/Icezaza2543/SpoolmanDB-Community/actions/workflows/build.yml/badge.svg"></a>
+  <a href="https://icezaza2543.github.io/SpoolmanDB-Community/"><img alt="GitHub Pages" src="https://img.shields.io/badge/data-live_on_GitHub_Pages-2ea44f"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-ff69b4.svg"></a>
+  <a href="https://github.com/Donkie/SpoolmanDB"><img alt="Upstream" src="https://img.shields.io/badge/upstream-Donkie%2FSpoolmanDB-lightgrey"></a>
+</p>
 
-You can contribute to this database by adding/editing files and submitting pull requests in this repository: [https://github.com/Icezaza2543/SpoolmanDB-Community](https://github.com/Icezaza2543/SpoolmanDB-Community)
+<p align="center">
+  <code>filaments.json</code> | <code>materials.json</code> | schema-validated source data
+</p>
 
-## Community maintenance
-This fork focuses on keeping the dataset reviewed, validated, and usable. If upstream maintainership resumes, changes from this repository can be proposed back upstream.
+---
 
-Before opening a pull request, please run:
+## What this is
+
+SpoolmanDB Community is a community-maintained continuation of [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB). It keeps the original project history, attribution, and MIT license while keeping the filament database reviewed, validated, and available while upstream maintenance is quiet.
+
+The goal is boring in the best way: current filament data, predictable JSON, repeatable validation, and small pull requests that are easy to review.
+
+## Live data
+
+| Resource | Link |
+| --- | --- |
+| Browse the database | <https://icezaza2543.github.io/SpoolmanDB-Community/> |
+| Compiled filament data | <https://icezaza2543.github.io/SpoolmanDB-Community/filaments.json> |
+| Material defaults | <https://icezaza2543.github.io/SpoolmanDB-Community/materials.json> |
+| Contributing guide | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Upstream project | [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) |
+
+## Current snapshot
+
+| Source | Count |
+| --- | ---: |
+| Manufacturer source files | 75 |
+| Material definitions | 34 |
+| Source filament objects | 540 |
+| Color entries | 4,608 |
+| Compiled filament variants | 8,900 |
+
+Counts are generated from the current repository state. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
+
+## Repository layout
+
+```text
+filaments/                 Manufacturer source JSON files
+materials.json             Shared material defaults
+filaments.schema.json      Schema for manufacturer source files
+materials.schema.json      Schema for material defaults
+scripts/compile_filaments.py
+public/                    GitHub Pages shell and deployed data target
+```
+
+## Contributor workflow
+
+1. Add or edit manufacturer source files in `filaments/`.
+2. Keep the pull request focused: one manufacturer, one correction set, or one schema change.
+3. Link manufacturer product pages, datasheets, SDS/TDS files, or other evidence.
+4. Run validation locally before opening a pull request.
 
 ```powershell
 python scripts/compile_filaments.py
@@ -18,32 +70,62 @@ check-jsonschema --schemafile materials.schema.json materials.json
 check-jsonschema --schemafile filaments.schema.json filaments/*
 ```
 
-## Filaments
-The source files are in the `filaments` folder. When this database is deployed, they will be expanded/compiled into a single JSON file called `filaments.json`.
+If `check-jsonschema` is not installed:
 
-To limit the amount of duplication needed in the source files, each combination of weight, color and diameter will be represented in the compiled JSON. For example, if you specify two diameters, two weights, and two colors, you will get eight combinations in the JSON. There isn't currently any way to exclude specific combinations; either you will have to live with the database having invalid
-entries or you can split up the filament object into multiple ones.
+```powershell
+python -m pip install check-jsonschema
+```
 
-#### Source file fields
- * **name** - The product name. Should probably contain the format code `{color_name}` to automatically insert the color name.
- * **material** - The material name, e.g. PLA.
- * **density** - The density of the material in g/cm3.
- * **weights** - An array of objects with `weight`, `spool_weight` and `spool_type` fields. Specify multiple here if the manufacturer sells the filament in e.g. 1 kg and 5 kg spools. `spool_weight` is optional but recommended. `spool_type` is optional and can be any of "plastic", "cardboard" or "metal".
- * **diameters** - An array of diameters in mm. Specify multiple here if the manufacturer sells the filament in both e.g. 1.75 and 2.85 mm diameters.
- * **extruder_temp** *(optional)* - Manufacturer recommended extruder temperature in °C.
- * **bed_temp** *(optional)* - Manufacturer recommended bed temperature in °C.
- * **finish** *(optional)* - The finish of the filament, e.g. "matte" or "glossy". Only set this if the filament is designed with this in mind.
- * **multi_color_direction** *(optional)* - The direction of the multi-color filament, e.g. "coaxial" for a split/dual color filament, or "longitudinal" for a filament that changes color along its length.
- * **pattern** *(optional)* - Textured pattern, either "marble" or "sparkle" is currently supported. Feel free to add additional ones in the schema if necessary.
- * **translucent** *(optional)* - Boolean true/false if this filament is at least partially see-through.
- * **glow** *(optional)* - Boolean true/false if this filament has a glow-in-the-dark effect.
- * **colors** - An array of objects with `name` and `hex` fields. Name should be what the manufacturer calls it. Hex should be the hex code of the color, can include an alpha channel if it's a transparent color. If it's a multi-color filament, specify `hexes` instead of `hex` and provide a list of hex codes. You can also set the `finish`, `multi_color_direction`, `pattern`, `translucent` and `glow` fields here if the specific color is different from the others. Color entries can also include `codes`, `eans`, and `eans_refill` arrays for manufacturer SKUs and spooled/refill EAN or GTIN barcodes.
+## Data model
 
-## Materials
-All materials are found in the `materials.json` file.
+The source files in `filaments/` are intentionally compact. Deployment expands them into one generated `filaments.json` file. If a source entry has two diameters, two spool weights, and five colors, it becomes twenty compiled filament variants.
 
-#### Source file fields
- * **material** - The material name, e.g. PLA.
- * **density** - The density of the material in g/cm3.
- * **extruder_temp** - General extruder temperature for this material.
- * **bed_temp** - General bed temperature for this material.
+<details>
+<summary>Filament source fields</summary>
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| `name` | yes | Product name. Usually contains `{color_name}` so each color expands into a readable compiled name. |
+| `material` | yes | Material name, such as `PLA`, `PETG`, `ABS`, `TPU-95A`, or schema-supported composites. |
+| `density` | yes | Material density in g/cm3. |
+| `weights` | yes | Array of `weight`, optional `spool_weight`, and optional `spool_type`. |
+| `diameters` | yes | Filament diameters in mm, commonly `1.75` or `2.85`. |
+| `colors` | yes | Color objects with `name` plus either `hex` or `hexes`. |
+| `extruder_temp` | optional | Recommended extruder temperature in degrees Celsius. |
+| `extruder_temp_range` | optional | Two-value temperature range, such as `[190, 230]`. |
+| `bed_temp` | optional | Recommended bed temperature in degrees Celsius. |
+| `bed_temp_range` | optional | Two-value bed temperature range. |
+| `finish` | optional | `matte` or `glossy`; only set when the product is designed that way. |
+| `multi_color_direction` | optional | `coaxial` for split/side-by-side colors or `longitudinal` for color changes along the filament length. |
+| `pattern` | optional | Currently `marble` or `sparkle`. |
+| `translucent` | optional | Boolean for partially see-through filament. |
+| `glow` | optional | Boolean for glow-in-the-dark filament. |
+| `country_of_origin` | optional | Manufacturing country. |
+| `sds_url` | optional | Safety Data Sheet URL. |
+| `tds_url` | optional | Technical Data Sheet URL. |
+
+Color entries can override `finish`, `multi_color_direction`, `pattern`, `translucent`, and `glow` when a specific color differs from the product default. They can also include `codes`, `eans`, and `eans_refill` arrays for manufacturer SKUs and spooled/refill EAN or GTIN barcodes.
+
+</details>
+
+<details>
+<summary>Material source fields</summary>
+
+All shared material defaults live in `materials.json`.
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| `material` | yes | Material name, such as `PLA`. |
+| `density` | yes | Density in g/cm3. |
+| `extruder_temp` | optional | General extruder temperature. |
+| `bed_temp` | optional | General bed temperature. |
+
+</details>
+
+## Maintenance stance
+
+This fork exists to keep the data usable while upstream is inactive. If upstream maintainership resumes, changes here can be proposed back to the original project. Until then, this repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
+
+## License
+
+This project preserves the upstream MIT license. See [LICENSE](LICENSE).
