@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     background:
@@ -27,6 +31,7 @@ body {
     background-size: 32px 32px;
     color: var(--ink);
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 a {
@@ -125,6 +130,7 @@ main {
     max-width: 1180px;
     margin: 0 auto;
     padding: 36px 24px 56px;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -286,6 +292,7 @@ pre {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    min-width: 0;
 }
 
 .filters {
@@ -338,6 +345,7 @@ select:focus {
     border: 1px solid var(--line);
     border-radius: var(--radius);
     overflow: auto;
+    max-width: 100%;
 }
 
 table {
@@ -407,19 +415,154 @@ tbody tr:hover {
     color: var(--orange-dark);
 }
 
-.helper-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
-    gap: 16px;
+.contributor-section {
     margin-top: 24px;
+    scroll-margin-top: 96px;
+}
+
+.contributor-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.6fr);
+    gap: 16px;
+    align-items: start;
+    min-width: 0;
 }
 
 .helper-panel {
     padding: 24px;
+    min-width: 0;
 }
 
 .helper-panel p {
     margin-bottom: 14px;
+}
+
+.contributor-panel h3 {
+    margin: 0 0 10px;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.contributor-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    min-width: 0;
+}
+
+.step-card {
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 14px;
+    min-width: 0;
+}
+
+.step-label {
+    display: inline-block;
+    color: var(--orange-dark);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.step-card strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.step-card p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.contributor-block {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    min-width: 0;
+}
+
+.command-list {
+    display: grid;
+    gap: 10px;
+    min-width: 0;
+}
+
+.command-note {
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.command-note code {
+    overflow-wrap: anywhere;
+}
+
+.command-list .copy-row code,
+.copy-row code {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.checklist-pre {
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.contributor-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.source-finder-note {
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.source-results {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.source-hit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px;
+    background: var(--soft-orange);
+}
+
+.source-hit-meta {
+    display: grid;
+    gap: 2px;
+}
+
+.source-hit .button {
+    flex: 0 0 auto;
+}
+
+.source-empty {
+    border: 1px dashed var(--line);
+    border-radius: var(--radius);
+    padding: 12px;
+    color: var(--muted);
+    font-size: 13px;
+    background: var(--soft);
 }
 
 pre {
@@ -445,7 +588,8 @@ pre {
 
 @media (max-width: 1050px) {
     .hero,
-    .helper-grid {
+    .contributor-layout,
+    .contributor-steps {
         grid-template-columns: 1fr;
     }
 
@@ -492,6 +636,11 @@ pre {
     .file-actions,
     .copy-row {
         flex-direction: column;
+    }
+
+    .source-hit {
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .button {

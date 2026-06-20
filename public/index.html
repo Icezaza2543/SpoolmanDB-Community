@@ -146,24 +146,100 @@
             </div>
         </section>
 
-        <section class="helper-grid" aria-label="Contributor and data help">
-            <article class="helper-panel">
-                <h2>Use with Spoolman</h2>
-                <p>Set Spoolman's external database URL to this community Pages endpoint.</p>
-                <div class="copy-row">
-                    <code id="spoolman-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
-                    <button class="button button-dark" type="button" data-copy="#spoolman-url">Copy URL</button>
+        <section class="contributor-section" aria-label="Contributor and data help">
+            <div class="contributor-layout">
+                <article class="helper-panel spoolman-panel">
+                    <h2>Use with Spoolman</h2>
+                    <p>Set Spoolman's external database URL to this community Pages endpoint.</p>
+                    <div class="copy-row">
+                        <code id="spoolman-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
+                        <button class="button button-dark" type="button" data-copy="#spoolman-url">Copy URL</button>
+                    </div>
+                </article>
+
+                <article class="helper-panel contributor-panel" aria-labelledby="contributor-title">
+                    <h2 id="contributor-title">Contributor helper</h2>
+                    <p>Edit source files in <code>filaments/*.json</code>. Do not hand-edit generated
+                        <code>filaments.json</code>.</p>
+
+                <ol class="contributor-steps">
+                    <li class="step-card">
+                        <span class="step-label">Step 1</span>
+                        <strong>Pick the source file</strong>
+                        <p>Work in <code>filaments/</code> and keep one manufacturer or focused fix per PR.</p>
+                    </li>
+                    <li class="step-card">
+                        <span class="step-label">Step 2</span>
+                        <strong>Edit source JSON</strong>
+                        <p>Add variants, correct fields, and keep generated files out of manual edits.</p>
+                    </li>
+                    <li class="step-card">
+                        <span class="step-label">Step 3</span>
+                        <strong>Validate locally</strong>
+                        <p>Run the compiler and schema checks before opening the pull request.</p>
+                    </li>
+                    <li class="step-card">
+                        <span class="step-label">Step 4</span>
+                        <strong>Open a PR</strong>
+                        <p>Include product pages, datasheets, or other evidence for the data change.</p>
+                    </li>
+                </ol>
+
+                <div class="contributor-block">
+                    <h3>Local commands</h3>
+                    <div class="command-list">
+                        <div class="copy-row">
+                            <code id="cmd-compile">python scripts/compile_filaments.py</code>
+                            <button class="button" type="button" data-copy="#cmd-compile">Copy</button>
+                        </div>
+                        <div class="copy-row">
+                            <code id="cmd-materials">check-jsonschema --schemafile materials.schema.json materials.json</code>
+                            <button class="button" type="button" data-copy="#cmd-materials">Copy</button>
+                        </div>
+                        <div class="copy-row">
+                            <code id="cmd-filaments">check-jsonschema --schemafile filaments.schema.json filaments/*</code>
+                            <button class="button" type="button" data-copy="#cmd-filaments">Copy</button>
+                        </div>
+                    </div>
+                    <p class="command-note">If the validator is missing, install it with
+                        <code>python -m pip install check-jsonschema</code>.</p>
                 </div>
-            </article>
-            <article class="helper-panel">
-                <h2>Contributor workflow</h2>
-                <p>Edit source files in <code>filaments/*.json</code>. Do not hand-edit generated
-                    <code>filaments.json</code>.
-                </p>
-                <pre><code>python scripts/compile_filaments.py
-check-jsonschema --schemafile materials.schema.json materials.json
-check-jsonschema --schemafile filaments.schema.json filaments/*</code></pre>
-            </article>
+
+                <div class="contributor-block">
+                    <h3>PR checklist</h3>
+                    <pre class="checklist-pre"><code id="pr-checklist">- [ ] Edited source files in filaments/ only, not generated filaments.json
+- [ ] Kept the PR focused to one manufacturer or correction set
+- [ ] Linked product pages, datasheets, or other evidence
+- [ ] Ran python scripts/compile_filaments.py
+- [ ] Ran check-jsonschema for materials.json and filaments/*</code></pre>
+                    <button class="button button-dark" type="button" data-copy="#pr-checklist">Copy checklist</button>
+                </div>
+
+                <div class="contributor-block">
+                    <h3>Quick links</h3>
+                    <div class="contributor-links">
+                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/tree/main/filaments" target="_blank" rel="noopener noreferrer">filaments/</a>
+                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/filaments.schema.json" target="_blank" rel="noopener noreferrer">Filament schema</a>
+                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/materials.schema.json" target="_blank" rel="noopener noreferrer">Material schema</a>
+                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/issues/new" target="_blank" rel="noopener noreferrer">Open issue</a>
+                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/compare" target="_blank" rel="noopener noreferrer">New PR</a>
+                    </div>
+                </div>
+
+                <div class="contributor-block source-finder">
+                    <h3>Source finder</h3>
+                    <p class="source-finder-note">Search loaded catalog data by manufacturer, then jump to GitHub code search. Source filenames are not guaranteed to match brand spelling.</p>
+                    <label>
+                        <span>Manufacturer</span>
+                        <input id="contributor-source-input" type="search"
+                            placeholder="Bambu, Polymaker, eSUN..." autocomplete="off">
+                    </label>
+                    <ul id="contributor-source-results" class="source-results" aria-live="polite">
+                        <li class="source-empty">Type a manufacturer name to see matches.</li>
+                    </ul>
+                </div>
+                </article>
+            </div>
         </section>
     </main>
 

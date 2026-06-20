@@ -3,11 +3,14 @@
 
     const EXTERNAL_DB_URL = "https://icezaza2543.github.io/SpoolmanDB-Community/";
     const MAX_RENDERED_ROWS = 150;
+    const GITHUB_REPO = "https://github.com/Icezaza2543/SpoolmanDB-Community";
+    const SOURCE_FINDER_LIMIT = 8;
 
     const state = {
         filaments: [],
         materials: [],
         matches: [],
+        manufacturerCounts: new Map(),
     };
 
     const elements = {
@@ -26,12 +29,15 @@
         resultsSummary: document.querySelector("#results-summary"),
         activeFilters: document.querySelector("#active-filters"),
         resultsBody: document.querySelector("#results-body"),
+        contributorSourceInput: document.querySelector("#contributor-source-input"),
+        contributorSourceResults: document.querySelector("#contributor-source-results"),
     };
 
     document.addEventListener("DOMContentLoaded", init);
 
     async function init() {
         bindCopyButtons();
+        bindContributorHelper();
         elements.filters.addEventListener("input", renderFilteredResults);
         elements.filters.addEventListener("reset", function () {
             window.setTimeout(renderFilteredResults, 0);
@@ -49,10 +55,13 @@
             populateFilters();
             renderStats();
             renderFilteredResults();
+            buildManufacturerIndex();
+            renderContributorSourceFinder();
             setStatus("Loaded " + formatNumber(state.filaments.length) + " filament variants.");
         } catch (error) {
             setStatus("Could not load JSON data. Serve this page through GitHub Pages or a local web server.", true);
             elements.resultsBody.replaceChildren(emptyRow("Data failed to load: " + error.message));
+            renderContributorSourceFinder("Data not loaded. Serve this page through GitHub Pages or a local web server.");
         }
     }
 
@@ -361,6 +370,119 @@
         return new Intl.NumberFormat("en-US").format(value);
     }
 
+    function bindContributorHelper() {
+        if (!elements.contributorSourceInput) {
+            return;
+        }
+
+        elements.contributorSourceInput.addEventListener("input", function () {
+            renderContributorSourceFinder();
+        });
+    }
+
+    function buildManufacturerIndex() {
+        state.manufacturerCounts = new Map();
+        state.filaments.forEach(function (item) {
+            if (!item.manufacturer) {
+                return;
+            }
+
+            const name = String(item.manufacturer);
+            state.manufacturerCounts.set(name, (state.manufacturerCounts.get(name) || 0) + 1);
+        });
+    }
+
+    function renderContributorSourceFinder(forcedMessage) {
+        if (!elements.contributorSourceResults) {
+            return;
+        }
+
+        if (forcedMessage) {
+            elements.contributorSourceResults.replaceChildren(sourceFinderMessage(forcedMessage));
+            return;
+        }
+
+        if (state.manufacturerCounts.size === 0) {
+            elements.contributorSourceResults.replaceChildren(sourceFinderMessage("No manufacturer data loaded yet."));
+            return;
+        }
+
+        const query = elements.contributorSourceInput ? elements.contributorSourceInput.value.trim().toLowerCase() : "";
+
+        if (!query) {
+            elements.contributorSourceResults.replaceChildren(
+                sourceFinderMessage("Type a manufacturer name to see matches.")
+            );
+            return;
+        }
+
+        const allMatches = Array.from(state.manufacturerCounts.entries())
+            .filter(function (entry) {
+                return entry[0].toLowerCase().includes(query);
+            })
+            .sort(function (a, b) {
+                return a[0].localeCompare(b[0], undefined, { numeric: true, sensitivity: "base" });
+            });
+        const matches = allMatches.slice(0, SOURCE_FINDER_LIMIT);
+
+        if (matches.length === 0) {
+            elements.contributorSourceResults.replaceChildren(
+                sourceFinderMessage('No manufacturers match "' + query + '".')
+            );
+            return;
+        }
+
+        const fragment = document.createDocumentFragment();
+        matches.forEach(function (entry) {
+            fragment.appendChild(renderSourceFinderHit(entry[0], entry[1]));
+        });
+        if (allMatches.length > SOURCE_FINDER_LIMIT) {
+            fragment.appendChild(
+                sourceFinderMessage("Showing first " + SOURCE_FINDER_LIMIT + " matches. Refine the search to narrow it down.")
+            );
+        }
+        elements.contributorSourceResults.replaceChildren(fragment);
+    }
+
+    function sourceFinderMessage(message) {
+        const item = document.createElement("li");
+        item.className = "source-empty";
+        item.textContent = message;
+        return item;
+    }
+
+    function renderSourceFinderHit(name, count) {
+        const item = document.createElement("li");
+        item.className = "source-hit";
+
+        const meta = document.createElement("div");
+        meta.className = "source-hit-meta";
+
+        const title = document.createElement("strong");
+        title.textContent = name;
+
+        const variants = document.createElement("span");
+        variants.className = "muted";
+        variants.textContent = formatNumber(count) + " variants in catalog";
+
+        meta.append(title, variants);
+
+        const link = document.createElement("a");
+        link.className = "button";
+        link.href = githubSearchUrl(name);
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Search on GitHub";
+
+        item.append(meta, link);
+        return item;
+    }
+
+    function githubSearchUrl(manufacturer) {
+        const query = manufacturer + " path:filaments";
+        return GITHUB_REPO + "/search?q=" + encodeURIComponent(query) + "&type=code";
+    }
+
     function setStatus(message, isError) {
         elements.loadStatus.textContent = message;
         elements.loadStatus.parentElement.classList.toggle("status-error", Boolean(isError));
@@ -390,8 +512,12 @@
 
     async function copyText(text) {
         if (navigator.clipboard && window.isSecureContext) {
-            await navigator.clipboard.writeText(text);
-            return;
+            try {
+                await navigator.clipboard.writeText(text);
+                return;
+            } catch (error) {
+                // Fall back for automated browsers and strict clipboard prompts.
+            }
         }
 
         const textarea = document.createElement("textarea");
@@ -401,7 +527,11 @@
         textarea.style.opacity = "0";
         document.body.appendChild(textarea);
         textarea.select();
-        document.execCommand("copy");
+        const copied = document.execCommand("copy");
         textarea.remove();
+
+        if (!copied) {
+            throw new Error("Copy command failed");
+        }
     }
 })();
