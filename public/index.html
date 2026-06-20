@@ -4,44 +4,171 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find the latest filament and materials data for 3D printing.">
-    <title>SpoolmanDB</title>
+    <meta name="description" content="Search SpoolmanDB Community filament and material data for 3D printing.">
+    <title>SpoolmanDB Community Explorer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <picture>
-                <img alt="Spoolman Logo"
-                    src="https://github.com/Donkie/Spoolman/assets/2332094/4e6e80ac-c7be-4ad2-9a33-dedc1b5ba30e"
-                    class="logo">
-            </picture>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="./" aria-label="SpoolmanDB Community home">
+                <img alt="SpoolmanDB Community Logo" src="favicon.svg" class="logo">
+                <span>
+                    <strong>SpoolmanDB Community</strong>
+                    <small>Static filament database explorer</small>
+                </span>
+            </a>
+            <nav class="top-links" aria-label="Primary">
+                <a href="filaments.json">Filaments JSON</a>
+                <a href="materials.json">Materials JSON</a>
+                <a href="https://github.com/Icezaza2543/SpoolmanDB-Community">GitHub</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <h2>A community-maintained repository of the latest filament and materials data for 3D printing.</h2>
-        <p>This project is open-source, feel free to create a pull request <a
-                href="https://github.com/Icezaza2543/SpoolmanDB-Community"> on Github</a> if you want to add or modify any
-            data.</p>
-        <h2>Data files</h2>
-        <div class="data-files">
-            <div class="column">
-                <ul>
-                    <li><a href="materials.json">MATERIALS</a></li>
-                </ul>
+        <section class="hero" aria-labelledby="page-title">
+            <div class="hero-copy">
+                <h1 id="page-title">Find filament data before it reaches your spool shelf.</h1>
+                <p>
+                    Search the compiled Spoolman-compatible catalog, filter by material and manufacturer,
+                    then copy the external database URL straight into Spoolman.
+                </p>
             </div>
-            <div class="column">
-                <ul>
-                    <li><a href="filaments.json">FILAMENTS</a></li>
-                </ul>
+            <div class="external-url" aria-label="Spoolman external database URL">
+                <span>External DB URL</span>
+                <code id="external-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
+                <button class="button button-dark" type="button" data-copy="#external-url">Copy</button>
             </div>
-        </div>
+        </section>
+
+        <section class="status-panel" aria-live="polite">
+            <p id="load-status">Loading filament and material data...</p>
+        </section>
+
+        <section class="stats-grid" aria-label="Database snapshot">
+            <article class="stat-card">
+                <span>Total variants</span>
+                <strong id="stat-filaments">-</strong>
+            </article>
+            <article class="stat-card">
+                <span>Manufacturers</span>
+                <strong id="stat-manufacturers">-</strong>
+            </article>
+            <article class="stat-card">
+                <span>Catalog / defaults</span>
+                <strong id="stat-materials">-</strong>
+            </article>
+            <article class="stat-card">
+                <span>Multi-color rows</span>
+                <strong id="stat-multicolor">-</strong>
+            </article>
+            <article class="stat-card">
+                <span>Rows with SKU/EAN</span>
+                <strong id="stat-barcodes">-</strong>
+            </article>
+        </section>
+
+        <section class="explorer" aria-labelledby="explorer-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="explorer-title">Database explorer</h2>
+                    <p>Client-side search over the published JSON. Rendering is capped for speed.</p>
+                </div>
+                <div class="file-actions" aria-label="Data file actions">
+                    <a class="button" href="filaments.json" download>Download filaments</a>
+                    <a class="button" href="materials.json" download>Download materials</a>
+                </div>
+            </div>
+
+            <form class="filters" id="filters">
+                <label class="search-field">
+                    <span>Search</span>
+                    <input id="search" type="search"
+                        placeholder="Name, maker, material, hex, SKU, EAN..." autocomplete="off">
+                </label>
+                <label>
+                    <span>Material</span>
+                    <select id="material-filter">
+                        <option value="">All materials</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Manufacturer</span>
+                    <select id="manufacturer-filter">
+                        <option value="">All manufacturers</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Diameter</span>
+                    <select id="diameter-filter">
+                        <option value="">All diameters</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Spool type</span>
+                    <select id="spool-filter">
+                        <option value="">All spool types</option>
+                    </select>
+                </label>
+                <button class="button button-dark" type="reset">Reset</button>
+            </form>
+
+            <div class="results-meta">
+                <p id="results-summary">Waiting for data...</p>
+                <p id="active-filters">No filters applied.</p>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Color</th>
+                            <th scope="col">Manufacturer</th>
+                            <th scope="col">Filament</th>
+                            <th scope="col">Material</th>
+                            <th scope="col">Diameter</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Spool</th>
+                            <th scope="col">Temps</th>
+                            <th scope="col">IDs</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-body">
+                        <tr>
+                            <td colspan="9">Loading...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="helper-grid" aria-label="Contributor and data help">
+            <article class="helper-panel">
+                <h2>Use with Spoolman</h2>
+                <p>Set Spoolman's external database URL to this community Pages endpoint.</p>
+                <div class="copy-row">
+                    <code id="spoolman-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
+                    <button class="button button-dark" type="button" data-copy="#spoolman-url">Copy URL</button>
+                </div>
+            </article>
+            <article class="helper-panel">
+                <h2>Contributor workflow</h2>
+                <p>Edit source files in <code>filaments/*.json</code>. Do not hand-edit generated
+                    <code>filaments.json</code>.
+                </p>
+                <pre><code>python scripts/compile_filaments.py
+check-jsonschema --schemafile materials.schema.json materials.json
+check-jsonschema --schemafile filaments.schema.json filaments/*</code></pre>
+            </article>
+        </section>
     </main>
 
-    <footer>
-        <p>SpoolmanDB Community - 2026</p>
+    <footer class="site-footer">
+        <p>SpoolmanDB Community keeps the public JSON contract stable for Spoolman users.</p>
     </footer>
 </body>
 
