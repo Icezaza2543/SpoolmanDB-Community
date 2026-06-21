@@ -1,0 +1,58 @@
+{
+  "manufacturer": "BASF Forward AM",
+  "filaments": [
+    {
+      "name": "Ultrafuse PLA {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 215,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 750,
+          "spool_weight": 215,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [210, 230],
+      "bed_temp_range": [50, 70],
+      "colors": [
+        {"name": "Black", "hex": "101010"},
+        {"name": "White", "hex": "F2F2F2"},
+        {"name": "Grey", "hex": "808080"},
+        {"name": "Red", "hex": "C01010"},
+        {"name": "Blue", "hex": "1010C0"}
+      ]
+    },
+    {
+      "name": "Ultrafuse PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 215,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 750,
+          "spool_weight": 215,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [220, 260],
+      "bed_temp_range": [60, 80],
+      "colors": [
+        {"name": "Black", "hex": "101010"},
+        {"name": "White", "hex": "F2F2F2"},
+        {"name": "Grey", "hex": "808080"},
+        {"name": "Blue", "hex": "1010C0"}
+      ]
+    }
+  ]
+}
