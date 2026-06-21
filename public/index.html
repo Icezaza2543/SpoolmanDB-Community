@@ -146,6 +146,115 @@
             </div>
         </section>
 
+        <section class="insight-section quality-dashboard" aria-labelledby="quality-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="quality-title">Data quality dashboard</h2>
+                    <p>Client-side checks over the published catalog. Signals help contributors decide what to review.</p>
+                </div>
+            </div>
+
+            <div class="quality-summary" id="quality-summary" aria-live="polite">
+                <article class="stat-card">
+                    <span>Quality status</span>
+                    <strong>-</strong>
+                </article>
+            </div>
+
+            <div class="quality-toolbar">
+                <label>
+                    <span>Issue type</span>
+                    <select id="quality-filter">
+                        <option value="actionable">Actionable issues</option>
+                        <option value="all">All tracked signals</option>
+                        <option value="duplicate-id">Duplicate IDs</option>
+                        <option value="unknown-material">No material defaults</option>
+                        <option value="invalid-color">Invalid colors</option>
+                        <option value="missing-size">Missing size data</option>
+                        <option value="missing-temp">Missing temperatures</option>
+                        <option value="missing-product-id">Missing SKU/EAN</option>
+                        <option value="multicolor">Multi-color rows</option>
+                    </select>
+                </label>
+                <div class="results-meta quality-meta">
+                    <p id="quality-meta">Waiting for data...</p>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table class="quality-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Severity</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Filament</th>
+                            <th scope="col">Detail</th>
+                        </tr>
+                    </thead>
+                    <tbody id="quality-issues-body">
+                        <tr>
+                            <td colspan="4">Waiting for data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="insight-section schema-viewer" aria-labelledby="schema-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="schema-title">Source contribution schemas</h2>
+                    <p>Readable field map for PR validation inputs before the compiler creates public JSON.</p>
+                </div>
+                <div class="file-actions" aria-label="Schema actions">
+                    <a class="button" id="schema-open-link" href="filaments.schema.json" target="_blank"
+                        rel="noopener noreferrer">Open schema JSON</a>
+                    <button class="button button-dark" type="button" data-copy="#schema-copy-url">Copy URL</button>
+                    <code id="schema-copy-url" class="copy-source">filaments.schema.json</code>
+                </div>
+            </div>
+
+            <p class="schema-note">These schemas describe contributor source files:
+                <code>filaments/*.json</code> and <code>materials.json</code>. They are not the compiled
+                <code>filaments.json</code> output consumed by Spoolman.</p>
+
+            <div class="schema-toolbar">
+                <label>
+                    <span>Schema</span>
+                    <select id="schema-choice">
+                        <option value="filament">Filament source schema</option>
+                        <option value="material">Material defaults schema</option>
+                    </select>
+                </label>
+                <p id="schema-status" class="muted">Loading schemas...</p>
+            </div>
+
+            <div class="schema-summary" id="schema-summary" aria-live="polite">
+                <article class="stat-card">
+                    <span>Root type</span>
+                    <strong>-</strong>
+                </article>
+            </div>
+
+            <div class="table-wrap">
+                <table class="schema-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Field path</th>
+                            <th scope="col">Required</th>
+                            <th scope="col">Type / constraints</th>
+                            <th scope="col">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schema-fields-body">
+                        <tr>
+                            <td colspan="4">Loading schema fields...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <section class="contributor-section" aria-label="Contributor and data help">
             <div class="contributor-layout">
                 <article class="helper-panel spoolman-panel">
@@ -162,82 +271,82 @@
                     <p>Edit source files in <code>filaments/*.json</code>. Do not hand-edit generated
                         <code>filaments.json</code>.</p>
 
-                <ol class="contributor-steps">
-                    <li class="step-card">
-                        <span class="step-label">Step 1</span>
-                        <strong>Pick the source file</strong>
-                        <p>Work in <code>filaments/</code> and keep one manufacturer or focused fix per PR.</p>
-                    </li>
-                    <li class="step-card">
-                        <span class="step-label">Step 2</span>
-                        <strong>Edit source JSON</strong>
-                        <p>Add variants, correct fields, and keep generated files out of manual edits.</p>
-                    </li>
-                    <li class="step-card">
-                        <span class="step-label">Step 3</span>
-                        <strong>Validate locally</strong>
-                        <p>Run the compiler and schema checks before opening the pull request.</p>
-                    </li>
-                    <li class="step-card">
-                        <span class="step-label">Step 4</span>
-                        <strong>Open a PR</strong>
-                        <p>Include product pages, datasheets, or other evidence for the data change.</p>
-                    </li>
-                </ol>
+                    <ol class="contributor-steps">
+                        <li class="step-card">
+                            <span class="step-label">Step 1</span>
+                            <strong>Pick the source file</strong>
+                            <p>Work in <code>filaments/</code> and keep one manufacturer or focused fix per PR.</p>
+                        </li>
+                        <li class="step-card">
+                            <span class="step-label">Step 2</span>
+                            <strong>Edit source JSON</strong>
+                            <p>Add variants, correct fields, and keep generated files out of manual edits.</p>
+                        </li>
+                        <li class="step-card">
+                            <span class="step-label">Step 3</span>
+                            <strong>Validate locally</strong>
+                            <p>Run the compiler and schema checks before opening the pull request.</p>
+                        </li>
+                        <li class="step-card">
+                            <span class="step-label">Step 4</span>
+                            <strong>Open a PR</strong>
+                            <p>Include product pages, datasheets, or other evidence for the data change.</p>
+                        </li>
+                    </ol>
 
-                <div class="contributor-block">
-                    <h3>Local commands</h3>
-                    <div class="command-list">
-                        <div class="copy-row">
-                            <code id="cmd-compile">python scripts/compile_filaments.py</code>
-                            <button class="button" type="button" data-copy="#cmd-compile">Copy</button>
+                    <div class="contributor-block">
+                        <h3>Local commands</h3>
+                        <div class="command-list">
+                            <div class="copy-row">
+                                <code id="cmd-compile">python scripts/compile_filaments.py</code>
+                                <button class="button" type="button" data-copy="#cmd-compile">Copy</button>
+                            </div>
+                            <div class="copy-row">
+                                <code id="cmd-materials">check-jsonschema --schemafile materials.schema.json materials.json</code>
+                                <button class="button" type="button" data-copy="#cmd-materials">Copy</button>
+                            </div>
+                            <div class="copy-row">
+                                <code id="cmd-filaments">check-jsonschema --schemafile filaments.schema.json filaments/*</code>
+                                <button class="button" type="button" data-copy="#cmd-filaments">Copy</button>
+                            </div>
                         </div>
-                        <div class="copy-row">
-                            <code id="cmd-materials">check-jsonschema --schemafile materials.schema.json materials.json</code>
-                            <button class="button" type="button" data-copy="#cmd-materials">Copy</button>
-                        </div>
-                        <div class="copy-row">
-                            <code id="cmd-filaments">check-jsonschema --schemafile filaments.schema.json filaments/*</code>
-                            <button class="button" type="button" data-copy="#cmd-filaments">Copy</button>
-                        </div>
+                        <p class="command-note">If the validator is missing, install it with
+                            <code>python -m pip install check-jsonschema</code>.</p>
                     </div>
-                    <p class="command-note">If the validator is missing, install it with
-                        <code>python -m pip install check-jsonschema</code>.</p>
-                </div>
 
-                <div class="contributor-block">
-                    <h3>PR checklist</h3>
-                    <pre class="checklist-pre"><code id="pr-checklist">- [ ] Edited source files in filaments/ only, not generated filaments.json
+                    <div class="contributor-block">
+                        <h3>PR checklist</h3>
+                        <pre class="checklist-pre"><code id="pr-checklist">- [ ] Edited source files in filaments/ only, not generated filaments.json
 - [ ] Kept the PR focused to one manufacturer or correction set
 - [ ] Linked product pages, datasheets, or other evidence
 - [ ] Ran python scripts/compile_filaments.py
 - [ ] Ran check-jsonschema for materials.json and filaments/*</code></pre>
-                    <button class="button button-dark" type="button" data-copy="#pr-checklist">Copy checklist</button>
-                </div>
-
-                <div class="contributor-block">
-                    <h3>Quick links</h3>
-                    <div class="contributor-links">
-                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/tree/main/filaments" target="_blank" rel="noopener noreferrer">filaments/</a>
-                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/filaments.schema.json" target="_blank" rel="noopener noreferrer">Filament schema</a>
-                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/materials.schema.json" target="_blank" rel="noopener noreferrer">Material schema</a>
-                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/issues/new" target="_blank" rel="noopener noreferrer">Open issue</a>
-                        <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/compare" target="_blank" rel="noopener noreferrer">New PR</a>
+                        <button class="button button-dark" type="button" data-copy="#pr-checklist">Copy checklist</button>
                     </div>
-                </div>
 
-                <div class="contributor-block source-finder">
-                    <h3>Source finder</h3>
-                    <p class="source-finder-note">Search loaded catalog data by manufacturer, then jump to GitHub code search. Source filenames are not guaranteed to match brand spelling.</p>
-                    <label>
-                        <span>Manufacturer</span>
-                        <input id="contributor-source-input" type="search"
-                            placeholder="Bambu, Polymaker, eSUN..." autocomplete="off">
-                    </label>
-                    <ul id="contributor-source-results" class="source-results" aria-live="polite">
-                        <li class="source-empty">Type a manufacturer name to see matches.</li>
-                    </ul>
-                </div>
+                    <div class="contributor-block">
+                        <h3>Quick links</h3>
+                        <div class="contributor-links">
+                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/tree/main/filaments" target="_blank" rel="noopener noreferrer">filaments/</a>
+                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/filaments.schema.json" target="_blank" rel="noopener noreferrer">Filament schema</a>
+                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/materials.schema.json" target="_blank" rel="noopener noreferrer">Material schema</a>
+                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/issues/new" target="_blank" rel="noopener noreferrer">Open issue</a>
+                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/compare" target="_blank" rel="noopener noreferrer">New PR</a>
+                        </div>
+                    </div>
+
+                    <div class="contributor-block source-finder">
+                        <h3>Source finder</h3>
+                        <p class="source-finder-note">Search loaded catalog data by manufacturer, then jump to GitHub code search. Source filenames are not guaranteed to match brand spelling.</p>
+                        <label>
+                            <span>Manufacturer</span>
+                            <input id="contributor-source-input" type="search"
+                                placeholder="Bambu, Polymaker, eSUN..." autocomplete="off">
+                        </label>
+                        <ul id="contributor-source-results" class="source-results" aria-live="polite">
+                            <li class="source-empty">Type a manufacturer name to see matches.</li>
+                        </ul>
+                    </div>
                 </article>
             </div>
         </section>

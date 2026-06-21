@@ -187,6 +187,7 @@ h2 {
 .external-url,
 .status-panel,
 .explorer,
+.insight-section,
 .helper-panel {
     background: var(--bg);
     border: 1px solid var(--line);
@@ -271,8 +272,23 @@ pre {
     margin-top: 10px;
 }
 
+.stat-card small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
 .explorer {
     padding: 24px;
+}
+
+.insight-section {
+    margin-top: 24px;
+    padding: 24px;
+    min-width: 0;
+    scroll-margin-top: 96px;
 }
 
 .section-heading {
@@ -339,6 +355,114 @@ select:focus {
 
 .results-meta p {
     margin-bottom: 0;
+}
+
+.quality-summary,
+.schema-summary {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.quality-toolbar,
+.schema-toolbar {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.quality-toolbar label,
+.schema-toolbar label {
+    min-width: 240px;
+}
+
+.quality-meta {
+    margin-bottom: 0;
+}
+
+.quality-table,
+.schema-table {
+    min-width: 920px;
+}
+
+.schema-table {
+    min-width: 1080px;
+    table-layout: fixed;
+}
+
+.schema-table th:nth-child(1),
+.schema-table td:nth-child(1) {
+    width: 260px;
+}
+
+.schema-table th:nth-child(2),
+.schema-table td:nth-child(2) {
+    width: 120px;
+}
+
+.schema-table th:nth-child(3),
+.schema-table td:nth-child(3) {
+    width: 300px;
+}
+
+.quality-table th,
+.quality-table td,
+.schema-table th,
+.schema-table td {
+    font-size: 13px;
+}
+
+.severity-critical {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.severity-warning {
+    background: #fff3e8;
+    color: var(--orange-dark);
+}
+
+.severity-info {
+    background: var(--soft);
+    color: var(--ink);
+}
+
+.schema-note {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.schema-path,
+.schema-type,
+.schema-note-cell {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.schema-path {
+    font-family: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+    font-weight: 800;
+}
+
+.schema-type {
+    font-family: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+    font-size: 12px;
+}
+
+.copy-source {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.status-text-error {
+    color: #7f1d1d;
+    font-weight: 800;
 }
 
 .table-wrap {
@@ -593,7 +717,9 @@ pre {
         grid-template-columns: 1fr;
     }
 
-    .stats-grid {
+    .stats-grid,
+    .quality-summary,
+    .schema-summary {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -609,7 +735,9 @@ pre {
 @media (max-width: 720px) {
     .header-inner,
     .section-heading,
-    .results-meta {
+    .results-meta,
+    .quality-toolbar,
+    .schema-toolbar {
         flex-direction: column;
         align-items: stretch;
     }
@@ -624,11 +752,14 @@ pre {
 
     .hero-copy,
     .explorer,
+    .insight-section,
     .helper-panel {
         padding: 20px;
     }
 
     .stats-grid,
+    .quality-summary,
+    .schema-summary,
     .filters {
         grid-template-columns: 1fr;
     }
