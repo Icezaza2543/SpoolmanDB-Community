@@ -110,11 +110,18 @@ select {
     font-weight: 700;
     text-decoration: none;
     color: var(--muted);
-    transition: color 0.15s ease-in-out;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     color: var(--orange);
+}
+
+.nav-link.active {
+    border-color: var(--orange);
 }
 
 .nav-actions {

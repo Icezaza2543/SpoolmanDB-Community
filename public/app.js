@@ -58,11 +58,58 @@
         schemaCopyUrl: document.querySelector("#schema-copy-url"),
         contributorSourceInput: document.querySelector("#contributor-source-input"),
         contributorSourceResults: document.querySelector("#contributor-source-results"),
+        navLinks: document.querySelectorAll(".nav-link"),
+        heroSection: document.querySelector(".hero"),
+        statsGrid: document.querySelector(".stats-grid"),
+        explorerSection: document.querySelector("#explorer"),
+        qualitySection: document.querySelector("#quality"),
+        schemaSection: document.querySelector("#schema"),
+        contributeSection: document.querySelector("#contribute"),
     };
 
     document.addEventListener("DOMContentLoaded", init);
 
+    function handleRouting() {
+        const hash = window.location.hash || "#explorer";
+        const validHashes = ["#explorer", "#quality", "#schema", "#contribute"];
+        const activeHash = validHashes.includes(hash) ? hash : "#explorer";
+
+        if (elements.heroSection) {
+            elements.heroSection.style.display = activeHash === "#explorer" ? "" : "none";
+        }
+        if (elements.statsGrid) {
+            elements.statsGrid.style.display = activeHash === "#explorer" ? "" : "none";
+        }
+
+        const sections = {
+            "#explorer": elements.explorerSection,
+            "#quality": elements.qualitySection,
+            "#schema": elements.schemaSection,
+            "#contribute": elements.contributeSection
+        };
+
+        Object.entries(sections).forEach(([id, sectionEl]) => {
+            if (sectionEl) {
+                sectionEl.style.display = activeHash === id ? "" : "none";
+            }
+        });
+
+        elements.navLinks.forEach((link) => {
+            const linkHash = link.getAttribute("href");
+            if (linkHash === activeHash) {
+                link.classList.add("active");
+            } else {
+                link.classList.remove("active");
+            }
+        });
+
+        window.scrollTo(0, 0);
+    }
+
     async function init() {
+        window.addEventListener("hashchange", handleRouting);
+        handleRouting();
+
         bindCopyButtons();
         bindQualityDashboard();
         bindSchemaViewer();
