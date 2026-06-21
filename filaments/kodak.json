@@ -1,0 +1,46 @@
+{
+  "manufacturer": "Kodak",
+  "filaments": [
+    {
+      "name": "Kodak PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 220,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [190, 220],
+      "bed_temp_range": [50, 70],
+      "colors": [
+        {"name": "Black", "hex": "101010"},
+        {"name": "White", "hex": "F2F2F2"},
+        {"name": "Red", "hex": "C01010"},
+        {"name": "Blue", "hex": "1010C0"}
+      ]
+    },
+    {
+      "name": "Kodak PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 220,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [225, 250],
+      "bed_temp_range": [70, 90],
+      "colors": [
+        {"name": "Black", "hex": "101010"},
+        {"name": "White", "hex": "F2F2F2"},
+        {"name": "Red", "hex": "C01010"}
+      ]
+    }
+  ]
+}
