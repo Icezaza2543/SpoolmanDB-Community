@@ -20,6 +20,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -93,12 +94,37 @@ select {
 .top-links {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 24px;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
-.top-links a,
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--muted);
+    transition: color 0.15s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--orange);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nav-actions a,
 .button {
     border: 1px solid var(--line);
     border-radius: 999px;
@@ -111,9 +137,10 @@ select {
     line-height: 1;
     cursor: pointer;
     white-space: nowrap;
+    transition: border-color 0.15s ease-in-out, background 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-.top-links a:hover,
+.nav-actions a:hover,
 .button:hover,
 .button:focus-visible {
     border-color: var(--orange);
@@ -744,6 +771,25 @@ pre {
 
     .top-links {
         justify-content: flex-start;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .nav-group {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-actions {
+        width: 100%;
+        justify-content: stretch;
+        gap: 6px;
+    }
+
+    .nav-actions a {
+        flex: 1;
+        text-align: center;
     }
 
     main {

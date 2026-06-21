@@ -22,9 +22,17 @@
                 </span>
             </a>
             <nav class="top-links" aria-label="Primary">
-                <a href="filaments.json">Filaments JSON</a>
-                <a href="materials.json">Materials JSON</a>
-                <a href="https://github.com/Icezaza2543/SpoolmanDB-Community">GitHub</a>
+                <div class="nav-group">
+                    <a href="#explorer" class="nav-link">Explorer</a>
+                    <a href="#quality" class="nav-link">Quality</a>
+                    <a href="#schema" class="nav-link">Schemas</a>
+                    <a href="#contribute" class="nav-link">Contribute</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="filaments.json" class="button">Filaments JSON</a>
+                    <a href="materials.json" class="button">Materials JSON</a>
+                    <a href="https://github.com/Icezaza2543/SpoolmanDB-Community" class="button button-dark">GitHub</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -72,7 +80,7 @@
             </article>
         </section>
 
-        <section class="explorer" aria-labelledby="explorer-title">
+        <section class="explorer" id="explorer" aria-labelledby="explorer-title">
             <div class="section-heading">
                 <div>
                     <h2 id="explorer-title">Database explorer</h2>
@@ -146,7 +154,7 @@
             </div>
         </section>
 
-        <section class="insight-section quality-dashboard" aria-labelledby="quality-title">
+        <section class="insight-section quality-dashboard" id="quality" aria-labelledby="quality-title">
             <div class="section-heading">
                 <div>
                     <h2 id="quality-title">Data quality dashboard</h2>
@@ -200,7 +208,7 @@
             </div>
         </section>
 
-        <section class="insight-section schema-viewer" aria-labelledby="schema-title">
+        <section class="insight-section schema-viewer" id="schema" aria-labelledby="schema-title">
             <div class="section-heading">
                 <div>
                     <h2 id="schema-title">Source contribution schemas</h2>
@@ -255,7 +263,7 @@
             </div>
         </section>
 
-        <section class="contributor-section" aria-label="Contributor and data help">
+        <section class="contributor-section" id="contribute" aria-label="Contributor and data help">
             <div class="contributor-layout">
                 <article class="helper-panel spoolman-panel">
                     <h2>Use with Spoolman</h2>
