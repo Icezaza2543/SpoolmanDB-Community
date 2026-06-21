@@ -1141,6 +1141,11 @@
     function setStatus(message, isError) {
         elements.loadStatus.textContent = message;
         elements.loadStatus.parentElement.classList.toggle("status-error", Boolean(isError));
+        if (!isError && message.startsWith("Loaded")) {
+            elements.loadStatus.parentElement.style.display = "none";
+        } else {
+            elements.loadStatus.parentElement.style.display = "";
+        }
     }
 
     function bindCopyButtons() {
