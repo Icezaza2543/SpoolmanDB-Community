@@ -38,6 +38,10 @@ jobs:
           python-version: "3.11"
       - name: Compile filaments
         run: python3 scripts/compile_filaments.py
+      - name: Install validation dependencies
+        run: python -m pip install jsonschema
+      - name: Validate compiled output
+        run: python scripts/validate.py
       - uses: actions/upload-artifact@v4
         with:
           name: filaments

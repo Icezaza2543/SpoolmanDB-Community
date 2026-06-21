@@ -61,6 +61,15 @@ def main():
     else:
         success = False
         
+    compiled_data = root / "filaments.json"
+    compiled_schema = root / "filaments.compiled.schema.json"
+    if compiled_data.exists():
+        print("\nValidating compiled filaments.json...")
+        if validate_json(compiled_schema, compiled_data):
+            print("✓ Compiled filaments.json is valid.")
+        else:
+            success = False
+        
     if not success:
         sys.exit(1)
 
