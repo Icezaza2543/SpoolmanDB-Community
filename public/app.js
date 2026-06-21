@@ -28,6 +28,9 @@
         qualityMetrics: null,
         schemas: {},
         schemaPaths: {},
+        homeCharts: [],
+        dashboardMetrics: null,
+        homeInitialized: false,
     };
 
     const elements = {
@@ -61,27 +64,27 @@
         navLinks: document.querySelectorAll(".nav-link"),
         heroSection: document.querySelector(".hero"),
         statsGrid: document.querySelector(".stats-grid"),
+        homeSection: document.querySelector("#home"),
         explorerSection: document.querySelector("#explorer"),
         qualitySection: document.querySelector("#quality"),
         schemaSection: document.querySelector("#schema"),
         contributeSection: document.querySelector("#contribute"),
+        chartKnowledge: document.querySelector("#knowledge-graph-chart"),
+        chartMaterial: document.querySelector("#material-composition-chart"),
+        chartManufacturer: document.querySelector("#top-manufacturers-chart"),
+        chartSpool: document.querySelector("#spool-type-chart"),
+        chartColor: document.querySelector("#color-spectrum-chart"),
     };
 
     document.addEventListener("DOMContentLoaded", init);
 
     function handleRouting() {
-        const hash = window.location.hash || "#explorer";
-        const validHashes = ["#explorer", "#quality", "#schema", "#contribute"];
-        const activeHash = validHashes.includes(hash) ? hash : "#explorer";
-
-        if (elements.heroSection) {
-            elements.heroSection.style.display = activeHash === "#explorer" ? "" : "none";
-        }
-        if (elements.statsGrid) {
-            elements.statsGrid.style.display = activeHash === "#explorer" ? "" : "none";
-        }
+        const hash = window.location.hash || "#home";
+        const validHashes = ["#home", "#explorer", "#quality", "#schema", "#contribute"];
+        const activeHash = validHashes.includes(hash) ? hash : "#home";
 
         const sections = {
+            "#home": elements.homeSection,
             "#explorer": elements.explorerSection,
             "#quality": elements.qualitySection,
             "#schema": elements.schemaSection,
@@ -103,12 +106,31 @@
             }
         });
 
+        if (activeHash === "#home") {
+            if (!state.homeInitialized) {
+                if (state.filaments.length > 0) {
+                    initHomeDashboard();
+                }
+            } else {
+                resizeHomeCharts();
+            }
+        }
+
         window.scrollTo(0, 0);
     }
 
     async function init() {
         window.addEventListener("hashchange", handleRouting);
-        handleRouting();
+        
+        let resizeTimeout;
+        window.addEventListener("resize", function () {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(function () {
+                if (window.location.hash === "#home" || !window.location.hash) {
+                    resizeHomeCharts();
+                }
+            }, 100);
+        });
 
         bindCopyButtons();
         bindQualityDashboard();
@@ -118,6 +140,9 @@
         elements.filters.addEventListener("reset", function () {
             window.setTimeout(renderFilteredResults, 0);
         });
+
+        // Initial route handling
+        handleRouting();
 
         try {
             const [filaments, materials] = await Promise.all([
@@ -135,6 +160,10 @@
             renderContributorSourceFinder();
             computeAndRenderQuality();
             loadSchemas();
+
+            buildDashboardMetrics();
+            handleRouting();
+
             setStatus("Loaded " + formatNumber(state.filaments.length) + " filament variants.");
         } catch (error) {
             setStatus("Could not load JSON data. Serve this page through GitHub Pages or a local web server.", true);
@@ -143,6 +172,506 @@
             renderContributorSourceFinder("Data not loaded. Serve this page through GitHub Pages or a local web server.");
             loadSchemas();
         }
+    }
+
+    function hexToHsl(hex) {
+        if (!hex || hex.length < 6) return { h: 0, s: 0, l: 0 };
+        const r = parseInt(hex.substring(0, 2), 16) / 255;
+        const g = parseInt(hex.substring(2, 4), 16) / 255;
+        const b = parseInt(hex.substring(4, 6), 16) / 255;
+        const max = Math.max(r, g, b), min = Math.min(r, g, b);
+        let h, s, l = (max + min) / 2;
+        if (max === min) {
+            h = s = 0;
+        } else {
+            const d = max - min;
+            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+            switch (max) {
+                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                case g: h = (b - r) / d + 2; break;
+                case b: h = (r - g) / d + 4; break;
+            }
+            h /= 6;
+        }
+        return {
+            h: Math.round(h * 360),
+            s: Math.round(s * 100),
+            l: Math.round(l * 100)
+        };
+    }
+
+    function getColorFamily(h, s, l) {
+        if (l < 15) return "Black";
+        if (l > 85) return "White";
+        if (s < 10) return "Grey";
+        if (h >= 345 || h < 15) return "Red";
+        if (h >= 15 && h < 45) {
+            return l < 45 ? "Brown" : "Orange";
+        }
+        if (h >= 45 && h < 75) return "Yellow";
+        if (h >= 75 && h < 165) return "Green";
+        if (h >= 165 && h < 255) return "Blue";
+        if (h >= 255 && h < 315) return "Purple";
+        return "Pink";
+    }
+
+    function normalizeSpoolType(type) {
+        if (!type || type === "null" || type === "none") return "Unknown";
+        return type.charAt(0).toUpperCase() + type.slice(1);
+    }
+
+    function buildDashboardMetrics() {
+        if (state.dashboardMetrics) return;
+
+        const materialMap = new Map();
+        const mfgMap = new Map();
+        const spoolMap = new Map();
+        const uniqueColorSet = new Set();
+        const colorPoints = [];
+
+        state.filaments.forEach((item) => {
+            const mat = item.material || "Unknown";
+            materialMap.set(mat, (materialMap.get(mat) || 0) + 1);
+
+            const mfg = item.manufacturer || "Unknown";
+            mfgMap.set(mfg, (mfgMap.get(mfg) || 0) + 1);
+
+            const spool = normalizeSpoolType(item.spool_type);
+            spoolMap.set(spool, (spoolMap.get(spool) || 0) + 1);
+
+            const hexes = item.color_hex ? [item.color_hex] : (item.color_hexes || []);
+            hexes.forEach((hex) => {
+                const hexClean = String(hex).toUpperCase();
+                if (!isHex(hexClean)) return;
+                const key = hexClean + "::" + mfg + "::" + mat;
+                if (!uniqueColorSet.has(key)) {
+                    uniqueColorSet.add(key);
+                    const hsl = hexToHsl(hexClean);
+                    colorPoints.push({
+                        hex: hexClean,
+                        h: hsl.h,
+                        s: hsl.s,
+                        l: hsl.l,
+                        name: item.name,
+                        manufacturer: mfg,
+                        material: mat
+                    });
+                }
+            });
+        });
+
+        const sortedMfg = Array.from(mfgMap.entries()).sort((a, b) => b[1] - a[1]);
+
+        const nodes = [];
+        const edges = new Set();
+        const nodeMap = new Map();
+
+        const addNode = (id, name, val, category) => {
+            if (!nodeMap.has(id)) {
+                nodeMap.set(id, nodes.length);
+                nodes.push({
+                    id,
+                    name,
+                    value: val,
+                    symbolSize: val,
+                    category
+                });
+            } else {
+                nodes[nodeMap.get(id)].value += val;
+            }
+        };
+
+        const top25Mfg = sortedMfg.slice(0, 25);
+        if (top25Mfg.length > 0) {
+            const maxVal = top25Mfg[0][1];
+            top25Mfg.forEach(([name, count]) => {
+                const size = Math.round(15 + (count / maxVal) * 35);
+                addNode("mfg_" + name, name, size, 0);
+            });
+        }
+
+        const sortedMat = Array.from(materialMap.entries()).sort((a, b) => b[1] - a[1]);
+        const topMaterials = sortedMat.slice(0, 10);
+        if (topMaterials.length > 0) {
+            const maxVal = topMaterials[0][1];
+            topMaterials.forEach(([name, count]) => {
+                const size = Math.round(12 + (count / maxVal) * 28);
+                addNode("mat_" + name, name, size, 1);
+            });
+        }
+
+        const colorFamilies = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Brown", "Black", "White", "Grey", "Clear"];
+        colorFamilies.forEach((name) => {
+            addNode("col_" + name, name, 18, 2);
+        });
+
+        const spoolTypes = ["Plastic", "Cardboard", "Metal", "Refill", "Unknown"];
+        spoolTypes.forEach((name) => {
+            addNode("spl_" + name, name, 15, 3);
+        });
+
+        state.filaments.forEach((item) => {
+            const mfg = item.manufacturer || "Unknown";
+            const mat = item.material || "Unknown";
+            const spool = normalizeSpoolType(item.spool_type);
+
+            if (top25Mfg.some(e => e[0] === mfg) && topMaterials.some(e => e[0] === mat)) {
+                edges.add("mfg_" + mfg + "->mat_" + mat);
+                edges.add("mat_" + mat + "->spl_" + spool);
+
+                const hexes = item.color_hex ? [item.color_hex] : (item.color_hexes || []);
+                hexes.forEach((hex) => {
+                    const hexClean = String(hex).toUpperCase();
+                    if (!isHex(hexClean)) return;
+                    const hsl = hexToHsl(hexClean);
+                    const family = getColorFamily(hsl.h, hsl.s, hsl.l);
+                    edges.add("mat_" + mat + "->col_" + family);
+                });
+            }
+        });
+
+        const graphLinks = Array.from(edges).map((linkStr) => {
+            const [source, target] = linkStr.split("->");
+            return { source, target };
+        });
+
+        state.dashboardMetrics = {
+            materials: sortedMat,
+            manufacturers: sortedMfg,
+            spools: Array.from(spoolMap.entries()).sort((a, b) => b[1] - a[1]),
+            colorPoints,
+            graph: {
+                nodes,
+                links: graphLinks
+            }
+        };
+    }
+
+    function renderKnowledgeGraphChart(chart, metrics) {
+        const option = {
+            backgroundColor: "transparent",
+            tooltip: {
+                trigger: "item",
+                formatter: function (params) {
+                    if (params.dataType === "node") {
+                        const catLabels = ["Manufacturer", "Material", "Color Family", "Spool Type"];
+                        return `<strong>${params.name}</strong><br/>Type: ${catLabels[params.data.category]}`;
+                    }
+                    return `Connection: ${params.data.source.replace(/^\w+_/, "")} → ${params.data.target.replace(/^\w+_/, "")}`;
+                },
+                backgroundColor: "rgba(24, 24, 30, 0.95)",
+                borderColor: "rgba(160, 132, 232, 0.3)",
+                textStyle: { color: "#f4f4f5" }
+            },
+            legend: [{
+                data: ["Manufacturers", "Materials", "Color Families", "Spool Types"],
+                textStyle: { color: "#9f9fbf" },
+                bottom: 10
+            }],
+            series: [{
+                type: "graph",
+                layout: "force",
+                data: metrics.graph.nodes,
+                links: metrics.graph.links,
+                categories: [
+                    { name: "Manufacturers", itemStyle: { color: "#a084e8" } },
+                    { name: "Materials", itemStyle: { color: "#4ec5a5" } },
+                    { name: "Color Families", itemStyle: { color: "#f38ba8" } },
+                    { name: "Spool Types", itemStyle: { color: "#f9e2af" } }
+                ],
+                roam: true,
+                label: {
+                    show: true,
+                    position: "right",
+                    formatter: function(params) {
+                        return params.name.replace(/^\w+_/, "");
+                    },
+                    color: "#d9d9e3",
+                    fontSize: 10,
+                    minMargin: 5
+                },
+                force: {
+                    repulsion: 150,
+                    gravity: 0.1,
+                    edgeLength: 70,
+                    layoutAnimation: true
+                },
+                lineStyle: {
+                    color: "rgba(160, 132, 232, 0.15)",
+                    width: 1,
+                    curveness: 0.1
+                },
+                emphasis: {
+                    focus: "adjacency",
+                    lineStyle: {
+                        width: 3,
+                        color: "rgba(160, 132, 232, 0.6)"
+                    }
+                }
+            }]
+        };
+        chart.setOption(option);
+    }
+
+    function renderMaterialCompositionChart(chart, metrics) {
+        const sortedData = metrics.materials;
+        const mainData = [];
+        let otherSum = 0;
+        sortedData.forEach(([name, count], index) => {
+            if (index < 7) {
+                mainData.push({ name, value: count });
+            } else {
+                otherSum += count;
+            }
+        });
+        if (otherSum > 0) {
+            mainData.push({ name: "Other", value: otherSum });
+        }
+
+        const option = {
+            backgroundColor: "transparent",
+            tooltip: {
+                trigger: "item",
+                formatter: "{b}: {c} ({d}%)",
+                backgroundColor: "rgba(24, 24, 30, 0.95)",
+                borderColor: "rgba(160, 132, 232, 0.3)",
+                textStyle: { color: "#f4f4f5" }
+            },
+            series: [{
+                name: "Materials",
+                type: "pie",
+                radius: ["40%", "70%"],
+                avoidLabelOverlap: true,
+                itemStyle: {
+                    borderRadius: 8,
+                    borderColor: "#101014",
+                    borderWidth: 2
+                },
+                label: {
+                    show: true,
+                    color: "#d9d9e3",
+                    fontSize: 11
+                },
+                labelLine: {
+                    lineStyle: { color: "rgba(160, 132, 232, 0.3)" }
+                },
+                data: mainData
+            }]
+        };
+        chart.setOption(option);
+    }
+
+    function renderTopManufacturersChart(chart, metrics) {
+        const topData = metrics.manufacturers.slice(0, 12).reverse();
+        const yAxisData = topData.map(e => e[0]);
+        const seriesData = topData.map(e => e[1]);
+
+        const option = {
+            backgroundColor: "transparent",
+            tooltip: {
+                trigger: "axis",
+                axisPointer: { type: "shadow" },
+                backgroundColor: "rgba(24, 24, 30, 0.95)",
+                borderColor: "rgba(160, 132, 232, 0.3)",
+                textStyle: { color: "#f4f4f5" }
+            },
+            grid: {
+                left: "3%",
+                right: "4%",
+                bottom: "3%",
+                top: "3%",
+                containLabel: true
+            },
+            xAxis: {
+                type: "value",
+                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } },
+                axisLabel: { color: "#9f9fbf" }
+            },
+            yAxis: {
+                type: "category",
+                data: yAxisData,
+                axisLabel: { color: "#d9d9e3", fontSize: 11 }
+            },
+            series: [{
+                name: "Variants",
+                type: "bar",
+                data: seriesData,
+                itemStyle: {
+                    color: {
+                        type: "linear",
+                        x: 0, y: 0, x2: 1, y2: 0,
+                        colorStops: [
+                            { offset: 0, color: "rgba(160, 132, 232, 0.2)" },
+                            { offset: 1, color: "#a084e8" }
+                        ]
+                    },
+                    borderRadius: [0, 4, 4, 0]
+                }
+            }]
+        };
+        chart.setOption(option);
+    }
+
+    function renderSpoolTypeChart(chart, metrics) {
+        const data = metrics.spools.map(([name, count]) => ({ name, value: count }));
+
+        const option = {
+            backgroundColor: "transparent",
+            tooltip: {
+                trigger: "item",
+                formatter: "{b}: {c} ({d}%)",
+                backgroundColor: "rgba(24, 24, 30, 0.95)",
+                borderColor: "rgba(160, 132, 232, 0.3)",
+                textStyle: { color: "#f4f4f5" }
+            },
+            series: [{
+                name: "Spool Material",
+                type: "pie",
+                radius: ["0%", "65%"],
+                avoidLabelOverlap: true,
+                itemStyle: {
+                    borderRadius: 6,
+                    borderColor: "#101014",
+                    borderWidth: 2
+                },
+                label: {
+                    show: true,
+                    color: "#d9d9e3",
+                    fontSize: 11
+                },
+                labelLine: {
+                    lineStyle: { color: "rgba(160, 132, 232, 0.3)" }
+                },
+                data: data
+            }]
+        };
+        chart.setOption(option);
+    }
+
+    function renderColorSpectrumChart(chart, metrics) {
+        const data = metrics.colorPoints.map(p => [
+            p.h, 
+            p.l, 
+            "#" + p.hex, 
+            p.name || "Unnamed", 
+            p.manufacturer, 
+            p.material
+        ]);
+
+        const option = {
+            backgroundColor: "transparent",
+            tooltip: {
+                trigger: "item",
+                formatter: function (params) {
+                    const val = params.value;
+                    return `<strong>${val[3]}</strong><br/>` +
+                           `Hex: <span style="display:inline-block;width:12px;height:12px;background-color:${val[2]};border:1px solid #fff;border-radius:50%;margin-right:4px;vertical-align:middle;"></span>${val[2]}<br/>` +
+                           `Maker: ${val[4]}<br/>` +
+                           `Material: ${val[5]}`;
+                },
+                backgroundColor: "rgba(24, 24, 30, 0.95)",
+                borderColor: "rgba(160, 132, 232, 0.3)",
+                textStyle: { color: "#f4f4f5" }
+            },
+            xAxis: {
+                type: "value",
+                min: 0,
+                max: 360,
+                splitLine: { show: false },
+                axisLabel: {
+                    formatter: function (value) {
+                        if (value === 0 || value === 360) return "Red";
+                        if (value === 60) return "Yellow";
+                        if (value === 120) return "Green";
+                        if (value === 180) return "Cyan";
+                        if (value === 240) return "Blue";
+                        if (value === 300) return "Magenta";
+                        return "";
+                    },
+                    color: "#9f9fbf"
+                }
+            },
+            yAxis: {
+                type: "value",
+                min: 0,
+                max: 100,
+                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } },
+                name: "Lightness",
+                nameTextStyle: { color: "#9f9fbf" },
+                axisLabel: { color: "#9f9fbf" }
+            },
+            series: [{
+                type: "scatter",
+                data: data,
+                symbolSize: 8,
+                large: true,
+                progressive: 500,
+                progressiveThreshold: 2000,
+                itemStyle: {
+                    color: function (params) {
+                        return params.value[2];
+                    },
+                    borderColor: "rgba(255, 255, 255, 0.2)",
+                    borderWidth: 1
+                }
+            }]
+        };
+        chart.setOption(option);
+    }
+
+    function initHomeDashboard() {
+        if (state.homeInitialized) return;
+        if (typeof echarts === "undefined") {
+            console.error("Apache ECharts library is not loaded.");
+            return;
+        }
+        if (!state.dashboardMetrics) buildDashboardMetrics();
+
+        if (elements.chartKnowledge) {
+            const chart = echarts.init(elements.chartKnowledge);
+            renderKnowledgeGraphChart(chart, state.dashboardMetrics);
+            state.homeCharts.push(chart);
+        }
+        if (elements.chartMaterial) {
+            const chart = echarts.init(elements.chartMaterial);
+            renderMaterialCompositionChart(chart, state.dashboardMetrics);
+            state.homeCharts.push(chart);
+        }
+        if (elements.chartManufacturer) {
+            const chart = echarts.init(elements.chartManufacturer);
+            renderTopManufacturersChart(chart, state.dashboardMetrics);
+            state.homeCharts.push(chart);
+        }
+        if (elements.chartSpool) {
+            const chart = echarts.init(elements.chartSpool);
+            renderSpoolTypeChart(chart, state.dashboardMetrics);
+            state.homeCharts.push(chart);
+        }
+        if (elements.chartColor) {
+            const chart = echarts.init(elements.chartColor);
+            renderColorSpectrumChart(chart, state.dashboardMetrics);
+            state.homeCharts.push(chart);
+        }
+
+        state.homeInitialized = true;
+    }
+
+    function resizeHomeCharts() {
+        state.homeCharts.forEach((chart) => {
+            if (chart) {
+                chart.resize();
+            }
+        });
+    }
+
+    function disposeHomeCharts() {
+        state.homeCharts.forEach((chart) => {
+            if (chart) {
+                chart.dispose();
+            }
+        });
+        state.homeCharts = [];
+        state.homeInitialized = false;
     }
 
     async function fetchJson(paths) {

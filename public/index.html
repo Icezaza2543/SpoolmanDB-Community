@@ -8,6 +8,7 @@
     <title>SpoolmanDB Community Explorer</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
     <script src="app.js" defer></script>
 </head>
 
@@ -23,6 +24,7 @@
             </a>
             <nav class="top-links" aria-label="Primary">
                 <div class="nav-group">
+                    <a href="#home" class="nav-link">Home</a>
                     <a href="#explorer" class="nav-link">Explorer</a>
                     <a href="#quality" class="nav-link">Quality</a>
                     <a href="#schema" class="nav-link">Schemas</a>
@@ -38,46 +40,91 @@
     </header>
 
     <main>
-        <section class="hero" aria-labelledby="page-title">
-            <div class="hero-copy">
-                <h1 id="page-title">Find filament data before it reaches your spool shelf.</h1>
-                <p>
-                    Search the compiled Spoolman-compatible catalog, filter by material and manufacturer,
-                    then copy the external database URL straight into Spoolman.
-                </p>
-            </div>
-            <div class="external-url" aria-label="Spoolman external database URL">
-                <span>External DB URL</span>
-                <code id="external-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
-                <button class="button button-dark" type="button" data-copy="#external-url">Copy</button>
-            </div>
-        </section>
-
         <section class="status-panel" aria-live="polite">
             <p id="load-status">Loading filament and material data...</p>
         </section>
 
-        <section class="stats-grid" aria-label="Database snapshot">
-            <article class="stat-card">
-                <span>Total variants</span>
-                <strong id="stat-filaments">-</strong>
-            </article>
-            <article class="stat-card">
-                <span>Manufacturers</span>
-                <strong id="stat-manufacturers">-</strong>
-            </article>
-            <article class="stat-card">
-                <span>Catalog / defaults</span>
-                <strong id="stat-materials">-</strong>
-            </article>
-            <article class="stat-card">
-                <span>Multi-color rows</span>
-                <strong id="stat-multicolor">-</strong>
-            </article>
-            <article class="stat-card">
-                <span>Rows with SKU/EAN</span>
-                <strong id="stat-barcodes">-</strong>
-            </article>
+        <section class="insight-section home-dashboard" id="home">
+            <section class="hero" aria-labelledby="page-title">
+                <div class="hero-copy">
+                    <h1 id="page-title">Find filament data before it reaches your spool shelf.</h1>
+                    <p>
+                        Search the compiled Spoolman-compatible catalog, filter by material and manufacturer,
+                        then copy the external database URL straight into Spoolman.
+                    </p>
+                </div>
+                <div class="external-url" aria-label="Spoolman external database URL">
+                    <span>External DB URL</span>
+                    <code id="external-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
+                    <button class="button button-dark" type="button" data-copy="#external-url">Copy</button>
+                </div>
+            </section>
+
+            <section class="stats-grid" aria-label="Database snapshot">
+                <article class="stat-card">
+                    <span>Total variants</span>
+                    <strong id="stat-filaments">-</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Manufacturers</span>
+                    <strong id="stat-manufacturers">-</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Catalog / defaults</span>
+                    <strong id="stat-materials">-</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Multi-color rows</span>
+                    <strong id="stat-multicolor">-</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Rows with SKU/EAN</span>
+                    <strong id="stat-barcodes">-</strong>
+                </article>
+            </section>
+
+            <div class="dashboard-grid">
+                <div class="chart-card card-full">
+                    <h3>Database Knowledge Vault</h3>
+                    <p class="chart-subtitle">Obsidian-inspired graph mapping Manufacturers to their Materials and Color Families.</p>
+                    <div id="knowledge-graph-chart" class="echart-panel"></div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Material Composition</h3>
+                    <p class="chart-subtitle">Distribution of filament variants by material type.</p>
+                    <div id="material-composition-chart" class="echart-panel"></div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Top Manufacturers</h3>
+                    <p class="chart-subtitle">Producers with the highest number of active variants.</p>
+                    <div id="top-manufacturers-chart" class="echart-panel"></div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Spool Type Distribution</h3>
+                    <p class="chart-subtitle">Breakdown of filaments by packaging spool material.</p>
+                    <div id="spool-type-chart" class="echart-panel"></div>
+                </div>
+                
+                <div class="chart-card card-full">
+                    <h3>Color Spectrum Map</h3>
+                    <p class="chart-subtitle">HSL cluster distribution of unique hex values in the database.</p>
+                    <div id="color-spectrum-chart" class="echart-panel"></div>
+                </div>
+            </div>
+
+            <div class="quick-actions-panel">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <a href="#explorer" class="button button-dark">Open Database Explorer</a>
+                    <button class="button" type="button" data-copy="#external-url">Copy External DB URL</button>
+                    <a href="filaments.json" class="button" download>Download filaments.json</a>
+                    <a href="materials.json" class="button" download>Download materials.json</a>
+                    <a href="https://github.com/Icezaza2543/SpoolmanDB-Community" class="button" target="_blank" rel="noopener noreferrer">Contribute Data</a>
+                </div>
+            </div>
         </section>
 
         <section class="explorer" id="explorer" aria-labelledby="explorer-title">
