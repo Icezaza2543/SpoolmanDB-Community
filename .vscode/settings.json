@@ -1,0 +1,16 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "filaments/*.json"
+      ],
+      "url": "./filaments.schema.json"
+    },
+    {
+      "fileMatch": [
+        "materials.json"
+      ],
+      "url": "./materials.schema.json"
+    }
+  ]
+}
