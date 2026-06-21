@@ -1,0 +1,24 @@
+# Configuration for actions/labeler
+
+data-change:
+  - changed-files:
+      - any-glob-to-any-file: 'filaments/**'
+      - any-glob-to-any-file: 'materials.json'
+
+filament:
+  - changed-files:
+      - any-glob-to-any-file: 'filaments/**'
+
+materials:
+  - changed-files:
+      - any-glob-to-any-file: 'materials.json'
+      - any-glob-to-any-file: 'materials.schema.json'
+
+schema-change:
+  - changed-files:
+      - any-glob-to-any-file: '*.schema.json'
+
+code-change:
+  - changed-files:
+      - any-glob-to-any-file: 'scripts/**/*.py'
+      - any-glob-to-any-file: '.github/workflows/**/*.yml'

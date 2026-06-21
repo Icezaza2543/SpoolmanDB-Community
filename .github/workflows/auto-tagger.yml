@@ -1,0 +1,60 @@
+name: Keyword Auto-Tagger
+
+on:
+  issues:
+    types: [opened, edited]
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  tagger:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Analyze Keywords and Add Labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const isPR = !!context.payload.pull_request;
+            const item = isPR ? context.payload.pull_request : context.payload.issue;
+            
+            const title = (item.title || '').toLowerCase();
+            const body = (item.body || '').toLowerCase();
+            const textToAnalyze = `${title}\n${body}`;
+            
+            const labelMap = {
+              'filament': ['filament', 'filaments', 'ฟิลาเมนต์', 'เส้น'],
+              'color': ['color', 'colors', 'hex', 'สี', 'เฉดสี'],
+              'temp': ['temp', 'temperature', 'temperatures', 'อุณหภูมิ', 'องศา', 'c°'],
+              'materials': ['material', 'materials', 'วัสดุ', 'pla', 'petg', 'abs', 'tpu'],
+              'new-data': ['new', 'add', 'suggest', 'เพิ่ม', 'ขอเพิ่ม', 'ใหม่'],
+              'data-error': ['error', 'typo', 'wrong', 'fix', 'correct', 'ผิด', 'แก้ไข', 'แก้']
+            };
+            
+            const labelsToAdd = [];
+            for (const [label, keywords] of Object.entries(labelMap)) {
+              if (keywords.some(keyword => textToAnalyze.includes(keyword))) {
+                labelsToAdd.push(label);
+              }
+            }
+            
+            if (labelsToAdd.length === 0) return;
+            
+            if (isPR) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: item.number,
+                labels: labelsToAdd
+              });
+            } else {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: item.number,
+                labels: labelsToAdd
+              });
+            }
+            console.log(`Successfully added labels: ${labelsToAdd.join(', ')} to #${item.number}`);

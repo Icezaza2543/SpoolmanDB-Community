@@ -1,0 +1,53 @@
+name: Slash Command Labeler
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  slash-label:
+    # Only allow owners, collaborators, or members to run slash commands
+    if: |
+      github.event.comment.author_association == 'OWNER' ||
+      github.event.comment.author_association == 'COLLABORATOR' ||
+      github.event.comment.author_association == 'MEMBER'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Parse and Apply Label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commentBody = context.payload.comment.body.trim();
+            const isLabelCmd = commentBody.startsWith('/label ');
+            const isUnlabelCmd = commentBody.startsWith('/unlabel ');
+            
+            if (!isLabelCmd && !isUnlabelCmd) return;
+            
+            const issueNumber = context.payload.issue.number;
+            const action = isLabelCmd ? 'label' : 'unlabel';
+            const labelName = commentBody.split(' ').slice(1).join(' ').trim();
+            
+            if (!labelName) return;
+            
+            if (action === 'label') {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: [labelName]
+              });
+            } else {
+              try {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  name: labelName
+                });
+              } catch (e) {
+                console.log(`Label "${labelName}" was not found or could not be removed.`);
+              }
+            }

@@ -1,6 +1,12 @@
 # Contributing to SpoolmanDB Community
 
-Thanks for helping keep the filament database current.
+Thanks for helping keep the filament database current!
+
+## How to Contribute
+
+We welcome contributions of all types. Depending on your experience with Git and JSON, you can:
+- **Report an Error or Suggest a New Filament:** If you are not comfortable writing JSON or using Git, please [open an issue](https://github.com/Donkie/SpoolmanDB-Community/issues/new/choose) using one of our structured templates.
+- **Submit a Pull Request (PR):** If you can edit JSON directly, feel free to submit a PR with your changes.
 
 ## Data changes
 
