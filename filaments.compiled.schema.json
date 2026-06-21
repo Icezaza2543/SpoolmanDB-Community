@@ -17,7 +17,7 @@
     "properties": {
       "id": {
         "type": "string",
-        "pattern": "^[a-z0-9_-]+$"
+        "pattern": "^\\S+$"
       },
       "manufacturer": {
         "type": "string"
@@ -50,13 +50,13 @@
       },
       "color_hex": {
         "type": ["string", "null"],
-        "pattern": "^[0-9a-fA-F]{6}$"
+        "pattern": "^[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"
       },
       "color_hexes": {
         "type": ["array", "null"],
         "items": {
           "type": "string",
-          "pattern": "^[0-9a-fA-F]{6}$"
+          "pattern": "^[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"
         }
       },
       "extruder_temp": {
