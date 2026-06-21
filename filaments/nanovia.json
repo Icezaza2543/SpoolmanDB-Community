@@ -1,0 +1,43 @@
+{
+  "manufacturer": "Nanovia",
+  "filaments": [
+    {
+      "name": "PETG CF {color_name}",
+      "material": "PETG-CF",
+      "density": 1.35,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [220, 240],
+      "bed_temp_range": [80, 90],
+      "fill": "carbon fiber",
+      "colors": [
+        {"name": "Black", "hex": "101010"}
+      ]
+    },
+    {
+      "name": "ABS CF {color_name}",
+      "material": "ABS-CF",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [240, 260],
+      "bed_temp_range": [100, 110],
+      "fill": "carbon fiber",
+      "colors": [
+        {"name": "Black", "hex": "101010"}
+      ]
+    }
+  ]
+}
