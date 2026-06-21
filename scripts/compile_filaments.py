@@ -43,6 +43,9 @@ class Color(TypedDict):
     pattern: NotRequired[Pattern | None]
     translucent: NotRequired[bool]
     glow: NotRequired[bool]
+    country_of_origin: NotRequired[str]
+    sds_url: NotRequired[str]
+    tds_url: NotRequired[str]
     codes: NotRequired[list[str]]
     eans: NotRequired[list[str]]
     eans_refill: NotRequired[list[str]]
@@ -64,6 +67,9 @@ class Filament(TypedDict):
     pattern: NotRequired[Pattern | None]
     translucent: NotRequired[bool]
     glow: NotRequired[bool]
+    country_of_origin: NotRequired[str]
+    sds_url: NotRequired[str]
+    tds_url: NotRequired[str]
 
 
 SPOOL_TYPE_MAP = {
@@ -111,6 +117,9 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
     pattern = data.get("pattern", None)
     translucent = data.get("translucent", False)
     glow = data.get("glow", False)
+    country_of_origin = data.get("country_of_origin", None)
+    sds_url = data.get("sds_url", None)
+    tds_url = data.get("tds_url", None)
 
     for weight_obj in weights:
         weight = weight_obj["weight"]
@@ -201,6 +210,9 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                     "codes": color_codes,
                     "eans": color_eans,
                     "eans_refill": color_eans_refill,
+                    "country_of_origin": country_of_origin,
+                    "sds_url": sds_url,
+                    "tds_url": tds_url,
                 }
 
 
