@@ -1,0 +1,73 @@
+{
+  "manufacturer": "LANDU",
+  "filaments": [
+    {
+      "name": "LANDU PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 140,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [190, 220],
+      "bed_temp_range": [30, 60],
+      "colors": [
+        {"name": "Black", "hex": "0B0B0B"},
+        {"name": "White", "hex": "F5F5F5"},
+        {"name": "Grey", "hex": "8C8C8C"},
+        {"name": "Red", "hex": "D62222"},
+        {"name": "Blue", "hex": "1C52D6"},
+        {"name": "Green", "hex": "259E3F"},
+        {"name": "Yellow", "hex": "ECCB1C"},
+        {"name": "Orange", "hex": "E66E19"}
+      ]
+    },
+    {
+      "name": "LANDU PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 140,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [200, 230],
+      "bed_temp_range": [40, 60],
+      "colors": [
+        {"name": "Black", "hex": "0D0D0D"},
+        {"name": "White", "hex": "FAFAFA"},
+        {"name": "Grey", "hex": "7E7E7E"},
+        {"name": "Red", "hex": "C91A1A"},
+        {"name": "Blue", "hex": "1A4FC9"}
+      ]
+    },
+    {
+      "name": "LANDU PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 140,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [220, 250],
+      "bed_temp_range": [70, 90],
+      "colors": [
+        {"name": "Black", "hex": "111111"},
+        {"name": "White", "hex": "FDFDFD"},
+        {"name": "Grey", "hex": "858585"},
+        {"name": "Clear", "hex": "FFFFFF80"}
+      ]
+    }
+  ]
+}
