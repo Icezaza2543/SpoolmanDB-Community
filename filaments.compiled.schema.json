@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Spoolman Compiled Filaments Database Schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "manufacturer",
+      "name",
+      "material",
+      "density",
+      "weight",
+      "diameter"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9_-]+$"
+      },
+      "manufacturer": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "material": {
+        "type": "string"
+      },
+      "density": {
+        "type": "number",
+        "minimum": 0
+      },
+      "weight": {
+        "type": "number",
+        "minimum": 0
+      },
+      "spool_weight": {
+        "type": ["number", "null"],
+        "minimum": 0
+      },
+      "spool_type": {
+        "type": ["string", "null"],
+        "enum": ["plastic", "cardboard", "metal", null]
+      },
+      "diameter": {
+        "type": "number",
+        "minimum": 0
+      },
+      "color_hex": {
+        "type": ["string", "null"],
+        "pattern": "^[0-9a-fA-F]{6}$"
+      },
+      "color_hexes": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{6}$"
+        }
+      },
+      "extruder_temp": {
+        "type": ["integer", "null"]
+      },
+      "extruder_temp_range": {
+        "type": ["array", "null"],
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "integer"
+        }
+      },
+      "bed_temp": {
+        "type": ["integer", "null"]
+      },
+      "bed_temp_range": {
+        "type": ["array", "null"],
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "integer"
+        }
+      },
+      "finish": {
+        "type": ["string", "null"],
+        "enum": ["matte", "glossy", null]
+      },
+      "multi_color_direction": {
+        "type": ["string", "null"],
+        "enum": ["coaxial", "longitudinal", null]
+      },
+      "pattern": {
+        "type": ["string", "null"],
+        "enum": ["marble", "sparkle", null]
+      },
+      "translucent": {
+        "type": "boolean"
+      },
+      "glow": {
+        "type": "boolean"
+      },
+      "codes": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "string"
+        }
+      },
+      "eans": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "string"
+        }
+      },
+      "eans_refill": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "string"
+        }
+      },
+      "country_of_origin": {
+        "type": ["string", "null"]
+      },
+      "sds_url": {
+        "type": ["string", "null"]
+      },
+      "tds_url": {
+        "type": ["string", "null"]
+      }
+    }
+  }
+}
