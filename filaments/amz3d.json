@@ -1,0 +1,103 @@
+{
+  "manufacturer": "AMZ3D",
+  "filaments": [
+    {
+      "name": "AMZ3D PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "1b4e9b"
+        },
+        {
+          "name": "Green",
+          "hex": "2e7d32"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fdd835"
+        },
+        {
+          "name": "Orange",
+          "hex": "f57c00"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "AMZ3D ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        95,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "1b4e9b"
+        }
+      ]
+    }
+  ]
+}
