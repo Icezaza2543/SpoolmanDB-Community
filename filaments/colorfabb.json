@@ -1,0 +1,317 @@
+{
+  "manufacturer": "colorFabb",
+  "filaments": [
+    {
+      "name": "PLA/PHA {color_name}",
+      "material": "PLA+PHA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 170,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 350,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Standard Black",
+          "hex": "0a0a0a"
+        },
+        {
+          "name": "Standard White",
+          "hex": "f0ebed"
+        },
+        {
+          "name": "Dutch Orange",
+          "hex": "f55905"
+        },
+        {
+          "name": "Blue Lilac",
+          "hex": "7f689e"
+        },
+        {
+          "name": "Mint Turquoise",
+          "hex": "85c3b8"
+        },
+        {
+          "name": "Intense Green",
+          "hex": "9cdb3c"
+        },
+        {
+          "name": "Blue Grey",
+          "hex": "6a7a8a"
+        },
+        {
+          "name": "Shining Silver",
+          "hex": "9b9b9b"
+        },
+        {
+          "name": "Signal Red",
+          "hex": "a51f16"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "2a7ebe"
+        }
+      ]
+    },
+    {
+      "name": "PLA Economy {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 2200,
+          "spool_weight": 350,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Economy Black",
+          "hex": "111111"
+        },
+        {
+          "name": "Economy White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Economy Red",
+          "hex": "c91c1c"
+        },
+        {
+          "name": "Economy Silver",
+          "hex": "a3a3a3"
+        }
+      ]
+    },
+    {
+      "name": "PETG Economy {color_name}",
+      "material": "PETG",
+      "density": 1.28,
+      "weights": [
+        {
+          "weight": 2200,
+          "spool_weight": 350,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        235,
+        255
+      ],
+      "bed_temp_range": [
+        70,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Economy Black",
+          "hex": "111111"
+        },
+        {
+          "name": "Economy White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Economy Red",
+          "hex": "c91c1c"
+        },
+        {
+          "name": "Economy Silver",
+          "hex": "a3a3a3"
+        },
+        {
+          "name": "Economy Blue",
+          "hex": "1b4e9b"
+        },
+        {
+          "name": "Economy Grey",
+          "hex": "72777a"
+        }
+      ]
+    },
+    {
+      "name": "nGen {color_name}",
+      "material": "COPE",
+      "density": 1.20,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 170,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        75,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "111111"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "c91c1c"
+        },
+        {
+          "name": "Blue",
+          "hex": "1b4e9b"
+        },
+        {
+          "name": "Clear",
+          "hex": "eaeaea",
+          "translucent": true
+        },
+        {
+          "name": "Dark Green",
+          "hex": "1c4a24"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6f00"
+        },
+        {
+          "name": "Light Green",
+          "hex": "a0e050"
+        }
+      ]
+    },
+    {
+      "name": "copperFill",
+      "material": "PLA+PHA",
+      "density": 3.90,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 170,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Copper",
+          "hex": "a87850"
+        }
+      ]
+    },
+    {
+      "name": "bronzeFill",
+      "material": "PLA+PHA",
+      "density": 3.90,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 170,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Bronze",
+          "hex": "bfa58a"
+        }
+      ]
+    },
+    {
+      "name": "brassFill",
+      "material": "PLA+PHA",
+      "density": 3.10,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 170,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Brass",
+          "hex": "caa558"
+        }
+      ]
+    }
+  ]
+}
