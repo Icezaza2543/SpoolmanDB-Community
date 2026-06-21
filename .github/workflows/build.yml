@@ -75,6 +75,8 @@ jobs:
       - name: Copy remaining data
         run: |
           cp materials.json public/
+          cp filaments.schema.json public/
+          cp materials.schema.json public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
