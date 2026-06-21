@@ -1,0 +1,416 @@
+{
+  "manufacturer": "MatterHackers",
+  "filaments": [
+    {
+      "name": "MH Build Series PLA {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "044786"
+        },
+        {
+          "name": "Green",
+          "hex": "2e7d32"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fdd835"
+        },
+        {
+          "name": "Orange",
+          "hex": "f57c00"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Purple",
+          "hex": "6a1b9a"
+        },
+        {
+          "name": "Pink",
+          "hex": "f48fb1"
+        },
+        {
+          "name": "Natural",
+          "hex": "e8e0d0"
+        }
+      ]
+    },
+    {
+      "name": "MH Build Series PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "044786"
+        },
+        {
+          "name": "Green",
+          "hex": "2e7d32"
+        },
+        {
+          "name": "Natural",
+          "hex": "e8e0d0",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "MH Build Series ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        95,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "044786"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fdd835"
+        },
+        {
+          "name": "Natural",
+          "hex": "e8e0d0"
+        }
+      ]
+    },
+    {
+      "name": "MH Build Series TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        }
+      ]
+    },
+    {
+      "name": "MH Pro Series PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "044786"
+        },
+        {
+          "name": "Green",
+          "hex": "2e7d32"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fdd835"
+        },
+        {
+          "name": "Orange",
+          "hex": "f57c00"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Purple",
+          "hex": "6a1b9a"
+        }
+      ]
+    },
+    {
+      "name": "MH Pro Series PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "044786"
+        },
+        {
+          "name": "Natural",
+          "hex": "e8e0d0",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "MH Pro Series Tough PLA {color_name}",
+      "material": "PLA",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        }
+      ]
+    },
+    {
+      "name": "MH NylonX {color_name}",
+      "material": "PA-CF",
+      "density": 1.16,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ]
+    },
+    {
+      "name": "MH NylonG {color_name}",
+      "material": "PA-GF",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 213,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        255,
+        275
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "d8d0c0"
+        }
+      ]
+    }
+  ]
+}
