@@ -73,6 +73,7 @@
         chartMaterial: document.querySelector("#material-composition-chart"),
         chartManufacturer: document.querySelector("#top-manufacturers-chart"),
         chartSpool: document.querySelector("#spool-type-chart"),
+        chartCoverage: document.querySelector("#database-coverage-chart"),
         chartColor: document.querySelector("#color-spectrum-chart"),
     };
 
@@ -228,8 +229,35 @@
         const spoolMap = new Map();
         const uniqueColorSet = new Set();
         const colorPoints = [];
+        const coverage = {
+            color: 0,
+            spoolType: 0,
+            temp: 0,
+            skuEan: 0,
+            density: 0,
+            multicolor: 0
+        };
 
         state.filaments.forEach((item) => {
+            if (item.color_hex || (Array.isArray(item.color_hexes) && item.color_hexes.length > 0)) {
+                coverage.color++;
+            }
+            if (item.spool_type && item.spool_type !== "null" && item.spool_type !== "none") {
+                coverage.spoolType++;
+            }
+            if (item.extruder_temp || (Array.isArray(item.extruder_temp_range) && item.extruder_temp_range.length > 0) ||
+                item.bed_temp || (Array.isArray(item.bed_temp_range) && item.bed_temp_range.length > 0)) {
+                coverage.temp++;
+            }
+            if (hasProductIds(item)) {
+                coverage.skuEan++;
+            }
+            if (typeof item.density === "number" && item.density > 0) {
+                coverage.density++;
+            }
+            if (Array.isArray(item.color_hexes) && item.color_hexes.length > 0) {
+                coverage.multicolor++;
+            }
             const mat = item.material || "Unknown";
             materialMap.set(mat, (materialMap.get(mat) || 0) + 1);
 
@@ -336,6 +364,8 @@
         });
 
         state.dashboardMetrics = {
+            totalFilaments: state.filaments.length,
+            coverage: coverage,
             materials: sortedMat,
             manufacturers: sortedMfg,
             spools: Array.from(spoolMap.entries()).sort((a, b) => b[1] - a[1]),
@@ -619,6 +649,98 @@
         chart.setOption(option);
     }
 
+    function renderDatabaseCoverageChart(chart, metrics) {
+        const total = metrics.totalFilaments;
+        const categories = [
+            "Color Data",
+            "Spool Type",
+            "Temperature Data",
+            "SKU / EAN",
+            "Density",
+            "Multi-Color"
+        ];
+        const seriesData = [
+            metrics.coverage.color,
+            metrics.coverage.spoolType,
+            metrics.coverage.temp,
+            metrics.coverage.skuEan,
+            metrics.coverage.density,
+            metrics.coverage.multicolor
+        ].map(count => total ? Math.round((count / total) * 100) : 0);
+
+        const option = {
+            backgroundColor: "transparent",
+            tooltip: {
+                trigger: "axis",
+                axisPointer: { type: "shadow" },
+                formatter: function (params) {
+                    const idx = params[0].dataIndex;
+                    const val = params[0].value;
+                    const counts = [
+                        metrics.coverage.color,
+                        metrics.coverage.spoolType,
+                        metrics.coverage.temp,
+                        metrics.coverage.skuEan,
+                        metrics.coverage.density,
+                        metrics.coverage.multicolor
+                    ];
+                    const reversedCounts = counts.slice().reverse();
+                    return `<strong>${params[0].name}</strong><br/>` +
+                           `Coverage: ${val}% (${reversedCounts[idx]} / ${total} variants)`;
+                },
+                backgroundColor: "rgba(24, 24, 30, 0.95)",
+                borderColor: "rgba(160, 132, 232, 0.3)",
+                textStyle: { color: "#f4f4f5" }
+            },
+            grid: {
+                left: "3%",
+                right: "10%",
+                bottom: "3%",
+                top: "3%",
+                containLabel: true
+            },
+            xAxis: {
+                type: "value",
+                min: 0,
+                max: 100,
+                axisLabel: { 
+                    formatter: "{value}%",
+                    color: "#9f9fbf"
+                },
+                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } }
+            },
+            yAxis: {
+                type: "category",
+                data: categories.slice().reverse(),
+                axisLabel: { color: "#d9d9e3", fontSize: 11 }
+            },
+            series: [{
+                name: "Coverage",
+                type: "bar",
+                data: seriesData.slice().reverse(),
+                itemStyle: {
+                    color: {
+                        type: "linear",
+                        x: 0, y: 0, x2: 1, y2: 0,
+                        colorStops: [
+                            { offset: 0, color: "rgba(249, 115, 22, 0.2)" },
+                            { offset: 1, color: "#f97316" }
+                        ]
+                    },
+                    borderRadius: [0, 4, 4, 0]
+                },
+                label: {
+                    show: true,
+                    position: "right",
+                    formatter: "{c}%",
+                    color: "#d9d9e3",
+                    fontSize: 10
+                }
+            }]
+        };
+        chart.setOption(option);
+    }
+
     function initHomeDashboard() {
         if (state.homeInitialized) return;
         if (typeof echarts === "undefined") {
@@ -645,6 +767,11 @@
         if (elements.chartSpool) {
             const chart = echarts.init(elements.chartSpool);
             renderSpoolTypeChart(chart, state.dashboardMetrics);
+            state.homeCharts.push(chart);
+        }
+        if (elements.chartCoverage) {
+            const chart = echarts.init(elements.chartCoverage);
+            renderDatabaseCoverageChart(chart, state.dashboardMetrics);
             state.homeCharts.push(chart);
         }
         if (elements.chartColor) {
