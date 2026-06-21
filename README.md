@@ -24,6 +24,21 @@ SpoolmanDB Community is a community-maintained continuation of [Donkie/SpoolmanD
 
 The goal is boring in the best way: current filament data, predictable JSON, repeatable validation, and small pull requests that are easy to review.
 
+## Key Enhancements & Differences from Upstream
+
+SpoolmanDB Community introduces several structural, validation, and metadata improvements over the original `Donkie/SpoolmanDB` project:
+
+*   **Native & Strict Quality Controls**:
+    *   **Unified Validation**: Uses a native Python validation script ([validate.py](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/scripts/validate.py)) powered by `jsonschema` instead of relying on external CLI tools.
+    *   **Rigid Compiler Checks**: A compiled schema ([filaments.compiled.schema.json](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/filaments.compiled.schema.json)) strictly validates the final compiled database to prevent broken data structures, bad IDs, or invalid formats from shipping.
+    *   **Unit Test Suite**: Includes automated compiler unit testing using `pytest` ([test_compile.py](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/tests/test_compile.py)) to safeguard ID normalization, multi-color constraints, and manufacturer duplicate checks.
+*   **Editor Experience**:
+    *   Workspace configurations ([settings.json](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/.vscode/settings.json)) bind schemas to JSON files in the IDE, offering real-time diagnostics, autocomplete, and inline linting.
+*   **Expanded Data & Metadata**:
+    *   **Additional Metadata**: Full compiler passthrough for new fields including `country_of_origin`, `sds_url`, and `tds_url` from source profiles to the final database.
+    *   **Modern Materials**: Added missing material definitions in [materials.json](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/materials.json) (`BVOH`, `CoPE`, `PP`, `PAHT`, `PPA`, `PPS`, `PET`).
+    *   **Massive Brand Updates**: Added 25 new popular global and consumer brands (such as NinjaTek, colorFabb, MatterHackers, Recreus, COEX, Atomic Filament, Cookiecad, Tecbears, AnkerMake, IC3D, MakerBot, etc.).
+
 ## Live data
 
 | Resource | Link |
@@ -38,11 +53,11 @@ The goal is boring in the best way: current filament data, predictable JSON, rep
 
 | Source | Count |
 | --- | ---: |
-| Manufacturer source files | 75 |
-| Material definitions | 34 |
-| Source filament objects | 540 |
-| Color entries | 4,608 |
-| Compiled filament variants | 8,900 |
+| Manufacturer source files | 100 |
+| Material definitions | 49 |
+| Source filament objects | 609 |
+| Color entries | 5,004 |
+| Compiled filament variants | 9,689 |
 
 Counts are generated from the current repository state. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
 
@@ -83,18 +98,20 @@ public/                    GitHub Pages shell and deployed data target
 1. Add or edit manufacturer source files in `filaments/`.
 2. Keep the pull request focused: one manufacturer, one correction set, or one schema change.
 3. Link manufacturer product pages, datasheets, SDS/TDS files, or other evidence.
-4. Run validation locally before opening a pull request.
+4. Run validation and tests locally before opening a pull request.
+
+First install developer dependencies:
+
+```powershell
+pip install -r requirements-dev.txt
+```
+
+Then compile, validate, and test:
 
 ```powershell
 python scripts/compile_filaments.py
-check-jsonschema --schemafile materials.schema.json materials.json
-check-jsonschema --schemafile filaments.schema.json filaments/*
-```
-
-If `check-jsonschema` is not installed:
-
-```powershell
-python -m pip install check-jsonschema
+python scripts/validate.py
+python -m pytest
 ```
 
 ## Data model
