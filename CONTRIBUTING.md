@@ -19,19 +19,24 @@ We welcome contributions of all types. Depending on your experience with Git and
 
 Run these checks before opening a pull request:
 
-```powershell
+```bash
+# Compile the individual filament files into filaments.json
 python scripts/compile_filaments.py
-check-jsonschema --schemafile materials.schema.json materials.json
-check-jsonschema --schemafile filaments.schema.json filaments/*
+
+# Validate all files and compiled outputs against schemas
+python scripts/validate.py
+
+# Run unit tests to verify compile functionality
+python -m pytest
 ```
 
-If `check-jsonschema` is missing, install it in your Python environment:
+If requirements are missing, install the development dependencies:
 
-```powershell
-python -m pip install check-jsonschema
+```bash
+pip install -r requirements-dev.txt
 ```
 
-The generated `filaments.json` should compile cleanly, and schema validation should pass for both materials and filament source files.
+The generated `filaments.json` should compile cleanly, and all validations and unit tests must pass.
 
 ## Review expectations
 
