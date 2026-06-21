@@ -1,0 +1,29 @@
+{
+  "manufacturer": "Polyalchemy",
+  "filaments": [
+    {
+      "name": "Elixir PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_weight": 220,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [200, 220],
+      "bed_temp_range": [0, 60],
+      "colors": [
+        {"name": "Abyss", "hex": "1D2731"},
+        {"name": "Emerald", "hex": "097969"},
+        {"name": "Copper", "hex": "B87333"},
+        {"name": "Gold", "hex": "FFD700"},
+        {"name": "Silver", "hex": "C0C0C0"},
+        {"name": "Ruby", "hex": "E0115F"},
+        {"name": "Cobalt", "hex": "0047AB"}
+      ]
+    }
+  ]
+}
