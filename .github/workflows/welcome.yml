@@ -22,29 +22,33 @@ jobs:
             
             let message = '';
             if (isPullRequest) {
-              message = `### 🎉 Thank you for opening this Pull Request, @${creator}! 
-
-We really appreciate you taking the time to contribute to the **SpoolmanDB Community** database! 
-
-Here is what happens next:
-1. **Automated Validation:** Our validation workflow will run shortly to check your JSON files against the schemas.
-2. **Maintainer Review:** A maintainer will review your data changes and verify the sources you provided.
-3. **Auto-Labeling:** Our system will automatically tag your PR based on the files changed.
-
-Please ensure you've filled out the PR template with official manufacturer links so we can verify the data easily. 
-
-Thank you for helping the 3D printing community! 🚀`;
+              message = [
+                `### 🎉 Thank you for opening this Pull Request, @${creator}!`,
+                '',
+                'We really appreciate you taking the time to contribute to the **SpoolmanDB Community** database!',
+                '',
+                'Here is what happens next:',
+                '1. **Automated Validation:** Our validation workflow will run shortly to check your JSON files against the schemas.',
+                '2. **Maintainer Review:** A maintainer will review your data changes and verify the sources you provided.',
+                '3. **Auto-Labeling:** Our system will automatically tag your PR based on the files changed.',
+                '',
+                "Please ensure you've filled out the PR template with official manufacturer links so we can verify the data easily.",
+                '',
+                'Thank you for helping the 3D printing community! 🚀'
+              ].join('\n');
             } else {
-              message = `### 👋 Hello @${creator}! Thank you for opening an issue.
-
-Thanks for helping us keep the **SpoolmanDB Community** database up-to-date! 
-
-If you are suggesting a **new filament/brand** or reporting an **incorrect data point**, please make sure you have provided:
-- [ ] Manufacturer name & official website.
-- [ ] Specific material types (PLA, PETG, etc.) and specs.
-- [ ] Official datasheets or product page links for verification.
-
-A maintainer will look into this shortly. If you'd like to submit the fix or data yourself, feel free to open a Pull Request! Refer to our [Contributing Guide](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/CONTRIBUTING.md) for instructions.`;
+              message = [
+                `### 👋 Hello @${creator}! Thank you for opening an issue.`,
+                '',
+                'Thanks for helping us keep the **SpoolmanDB Community** database up-to-date!',
+                '',
+                'If you are suggesting a **new filament/brand** or reporting an **incorrect data point**, please make sure you have provided:',
+                '- [ ] Manufacturer name & official website.',
+                '- [ ] Specific material types (PLA, PETG, etc.) and specs.',
+                '- [ ] Official datasheets or product page links for verification.',
+                '',
+                `A maintainer will look into this shortly. If you'd like to submit the fix or data yourself, feel free to open a Pull Request! Refer to our [Contributing Guide](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/CONTRIBUTING.md) for instructions.`
+              ].join('\n');
             }
             
             if (isPullRequest) {
