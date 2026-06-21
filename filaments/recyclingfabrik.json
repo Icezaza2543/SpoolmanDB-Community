@@ -1,0 +1,49 @@
+{
+  "manufacturer": "Recycling Fabrik",
+  "filaments": [
+    {
+      "name": "Recycling Fabrik rPLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 180,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [195, 220],
+      "bed_temp_range": [50, 60],
+      "colors": [
+        {"name": "Schwarz (Black)", "hex": "101010"},
+        {"name": "Weiß (White)", "hex": "F2F2F2"},
+        {"name": "Graublau (Gray-Blue)", "hex": "4A6572"},
+        {"name": "Flaschengrün (Bottle Green)", "hex": "1B4D3E"},
+        {"name": "Ziegelrot (Brick Red)", "hex": "B22222"}
+      ]
+    },
+    {
+      "name": "Recycling Fabrik rPETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 180,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [220, 235],
+      "bed_temp_range": [70, 80],
+      "colors": [
+        {"name": "Schwarz (Black)", "hex": "101010"},
+        {"name": "Weiß (White)", "hex": "F2F2F2"},
+        {"name": "Grau (Gray)", "hex": "808080"},
+        {"name": "Rot (Red)", "hex": "C01010"},
+        {"name": "Blau (Blue)", "hex": "1010C0"}
+      ]
+    }
+  ]
+}
