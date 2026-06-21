@@ -1,0 +1,62 @@
+{
+  "manufacturer": "Duramic 3D",
+  "filaments": [
+    {
+      "name": "Duramic 3D PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 140,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [200, 230],
+      "bed_temp_range": [25, 60],
+      "colors": [
+        {"name": "Black", "hex": "101010"},
+        {"name": "White", "hex": "F2F2F2"},
+        {"name": "Gray", "hex": "808080"},
+        {"name": "Red", "hex": "C01010"},
+        {"name": "Blue", "hex": "1010C0"},
+        {"name": "Green", "hex": "10C010"},
+        {"name": "Yellow", "hex": "F0F010"}
+      ]
+    },
+    {
+      "name": "Duramic 3D PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 140,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [230, 250],
+      "bed_temp_range": [70, 80],
+      "colors": [
+        {"name": "Black", "hex": "101010"},
+        {"name": "White", "hex": "F2F2F2"},
+        {"name": "Gray", "hex": "808080"},
+        {"name": "Red", "hex": "C01010"},
+        {"name": "Blue", "hex": "1010C0"},
+        {"name": "Green", "hex": "10C010"}
+      ]
+    }
+  ]
+}
