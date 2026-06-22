@@ -1,0 +1,759 @@
+{
+  "manufacturer": "KiwiFil",
+  "filaments": [
+    {
+      "name": "rPLA pro {color_name}",
+      "material": "PLA",
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "Blossom",
+          "hex": "FFB7C5"
+        },
+        {
+          "name": "Bone White",
+          "hex": "E8E0D0"
+        },
+        {
+          "name": "Bubblegum Pink",
+          "hex": "FF85C0"
+        },
+        {
+          "name": "Clear",
+          "hex": "E8F4F8",
+          "translucent": true
+        },
+        {
+          "name": "Cranberry",
+          "hex": "9B1B30"
+        },
+        {
+          "name": "Dark Brown",
+          "hex": "5C3317"
+        },
+        {
+          "name": "Dark Forest Green",
+          "hex": "1B4D3E"
+        },
+        {
+          "name": "Fluorescent Pink",
+          "hex": "FF1493"
+        },
+        {
+          "name": "Fluorescent Yellow",
+          "hex": "CCFF00"
+        },
+        {
+          "name": "Frosted",
+          "hex": "D8DEE6",
+          "translucent": true
+        },
+        {
+          "name": "Gold",
+          "hex": "D4AF37"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Hot Pink",
+          "hex": "FF69B4"
+        },
+        {
+          "name": "Light Brown",
+          "hex": "C4A484"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "B0B0B0"
+        },
+        {
+          "name": "Light Marble",
+          "hex": "D8D0C8",
+          "pattern": "marble"
+        },
+        {
+          "name": "Lilac",
+          "hex": "C8A2C8"
+        },
+        {
+          "name": "Lime Green",
+          "hex": "32CD32"
+        },
+        {
+          "name": "Machinery Grey",
+          "hex": "6E6E6E"
+        },
+        {
+          "name": "Mauve",
+          "hex": "B784A7"
+        },
+        {
+          "name": "Olive Green",
+          "hex": "556B2F"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF8C00"
+        },
+        {
+          "name": "Peachy Beige",
+          "hex": "E8C4A0"
+        },
+        {
+          "name": "Powertool Green",
+          "hex": "3D7C3F"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Race Car Red",
+          "hex": "CC0000"
+        },
+        {
+          "name": "Royal Blue",
+          "hex": "1E3A8A"
+        },
+        {
+          "name": "Silver Grey",
+          "hex": "A8A8A8"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "4DA6FF"
+        },
+        {
+          "name": "Sparkly Black",
+          "hex": "1A1A1A",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Sparkly Green",
+          "hex": "2E8B57",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Sparkly Pink",
+          "hex": "FF69B4",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Sparkly Purple",
+          "hex": "800080",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Sparkly Red",
+          "hex": "C01010",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Teal",
+          "hex": "008080"
+        },
+        {
+          "name": "Terracotta",
+          "hex": "C06040"
+        },
+        {
+          "name": "Translucent Blue",
+          "hex": "4A90C8",
+          "translucent": true
+        },
+        {
+          "name": "Translucent White",
+          "hex": "F5F5F0",
+          "translucent": true
+        },
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFD700"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "density": 1.24,
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "rPLA pro (Recycled 3D Prints) {color_name}",
+      "material": "PLA",
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Recycled Black",
+          "hex": "101010"
+        },
+        {
+          "name": "Recycled Blue",
+          "hex": "2060C0"
+        },
+        {
+          "name": "Recycled Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Recycled Orange",
+          "hex": "FF8C00"
+        },
+        {
+          "name": "Recycled Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Recycled Red",
+          "hex": "C01010"
+        },
+        {
+          "name": "White-ish",
+          "hex": "E8E4DC"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "density": 1.24,
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "UFO Filament {color_name}",
+      "material": "PLA",
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Matte Black",
+          "hex": "1A1A1A",
+          "finish": "matte"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "density": 1.24,
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "Silk rPLA {color_name}",
+      "material": "PLA",
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "2060C0",
+          "finish": "glossy"
+        },
+        {
+          "name": "Bronze",
+          "hex": "CD7F32",
+          "finish": "glossy"
+        },
+        {
+          "name": "Gold",
+          "hex": "D4AF37",
+          "finish": "glossy"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22",
+          "finish": "glossy"
+        },
+        {
+          "name": "Pink",
+          "hex": "FF69B4",
+          "finish": "glossy"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080",
+          "finish": "glossy"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0",
+          "finish": "glossy"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "density": 1.24,
+      "finish": "glossy",
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "Sparkly rPLA pro {color_name}",
+      "material": "PLA",
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Sparkly Green Ocean",
+          "hex": "1E6B5C",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Sparkly Purple Galaxy",
+          "hex": "4A2C6A",
+          "pattern": "sparkle"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "density": 1.24,
+      "pattern": "sparkle",
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "Rainbow rPLA pro {color_name}",
+      "material": "PLA",
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Bubblegum Clouds",
+          "hexes": [
+            "FFB6C1",
+            "FF85C0",
+            "E8F4FF"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rustic Rainbow",
+          "hexes": [
+            "C06040",
+            "8B4513",
+            "D4AF37",
+            "556B2F",
+            "4A2C2A"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Sparkly Green Ocean",
+          "hexes": [
+            "1E6B5C",
+            "2E8B57",
+            "4DA6FF"
+          ],
+          "pattern": "sparkle",
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Sparkly Jungle",
+          "hexes": [
+            "2D5A27",
+            "3D7C3F",
+            "556B2F"
+          ],
+          "pattern": "sparkle",
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Sparkly Purple Galaxy",
+          "hexes": [
+            "4A2C6A",
+            "800080",
+            "1A1A2E"
+          ],
+          "pattern": "sparkle",
+          "multi_color_direction": "longitudinal"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "density": 1.24,
+      "multi_color_direction": "longitudinal",
+      "pattern": "sparkle",
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "WoolyFil rPLA {color_name}",
+      "material": "PLA",
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Green Marble",
+          "hex": "3D6B4F",
+          "pattern": "marble"
+        },
+        {
+          "name": "Riverstone",
+          "hex": "8B8680"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "density": 1.24,
+      "pattern": "marble",
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "rPETG {color_name}",
+      "material": "PETG",
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "Blossom",
+          "hex": "FFB7C5"
+        },
+        {
+          "name": "Bone White",
+          "hex": "E8E0D0"
+        },
+        {
+          "name": "Bottle Green",
+          "hex": "1B5E20"
+        },
+        {
+          "name": "Bubblegum Pink",
+          "hex": "FF85C0"
+        },
+        {
+          "name": "Burnt Amber",
+          "hex": "B5651D"
+        },
+        {
+          "name": "Clear",
+          "hex": "E8F4F8",
+          "translucent": true
+        },
+        {
+          "name": "Cola Brown",
+          "hex": "4A2C2A"
+        },
+        {
+          "name": "Cranberry",
+          "hex": "9B1B30"
+        },
+        {
+          "name": "Dark Brown",
+          "hex": "5C3317"
+        },
+        {
+          "name": "Dark Purple",
+          "hex": "4B0082"
+        },
+        {
+          "name": "Emerald Green",
+          "hex": "2E8B57"
+        },
+        {
+          "name": "Gold",
+          "hex": "D4AF37"
+        },
+        {
+          "name": "Hot Pink",
+          "hex": "FF69B4"
+        },
+        {
+          "name": "Light Brown",
+          "hex": "C4A484"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "B0B0B0"
+        },
+        {
+          "name": "Lime Green",
+          "hex": "32CD32"
+        },
+        {
+          "name": "Machinery Grey",
+          "hex": "6E6E6E"
+        },
+        {
+          "name": "Midnight Blue",
+          "hex": "0B1F3A"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF8C00"
+        },
+        {
+          "name": "Peachy Beige",
+          "hex": "E8C4A0"
+        },
+        {
+          "name": "Powertool Green",
+          "hex": "3D7C3F"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Race Car Red",
+          "hex": "CC0000"
+        },
+        {
+          "name": "Silver Grey",
+          "hex": "A8A8A8"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "4DA6FF"
+        },
+        {
+          "name": "Tail Light Red",
+          "hex": "B80000"
+        },
+        {
+          "name": "Terracotta",
+          "hex": "C06040"
+        },
+        {
+          "name": "Turn Signal Orange",
+          "hex": "FF6600"
+        },
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFD700"
+        }
+      ],
+      "extruder_temp_range": [
+        240,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "density": 1.27,
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "Rainbow rPETG {color_name}",
+      "material": "PETG",
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Dark Green Ocean",
+          "hexes": [
+            "0F4C3A",
+            "1E6B5C",
+            "2060C0"
+          ],
+          "multi_color_direction": "longitudinal",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Dark Purple Galaxy",
+          "hexes": [
+            "2E1A47",
+            "4A2C6A",
+            "101010"
+          ],
+          "multi_color_direction": "longitudinal",
+          "pattern": "sparkle"
+        }
+      ],
+      "extruder_temp_range": [
+        240,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "density": 1.27,
+      "multi_color_direction": "longitudinal",
+      "pattern": "sparkle",
+      "country_of_origin": "New Zealand"
+    },
+    {
+      "name": "rPCTG-rPETG {color_name}",
+      "material": "PCTG+PETG",
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        }
+      ],
+      "extruder_temp_range": [
+        280,
+        300
+      ],
+      "bed_temp_range": [
+        75,
+        95
+      ],
+      "density": 1.27,
+      "country_of_origin": "New Zealand"
+    }
+  ]
+}
