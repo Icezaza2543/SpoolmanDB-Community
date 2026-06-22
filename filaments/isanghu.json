@@ -1,0 +1,358 @@
+{
+    "manufacturer": "iSANGHU",
+    "filaments": [
+        {
+            "name": "{color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 4000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                220
+            ],
+            "bed_temp_range": [
+                40,
+                60
+            ],
+            "country_of_origin": "China",
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "1A1A1A"
+                },
+                {
+                    "name": "White",
+                    "hex": "F5F5F5"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "0888B8"
+                },
+                {
+                    "name": "Green",
+                    "hex": "49B864"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "9A9A98"
+                },
+                {
+                    "name": "Light Purple",
+                    "hex": "CEB0D1"
+                },
+                {
+                    "name": "Orange",
+                    "hex": "E86848"
+                },
+                {
+                    "name": "Red",
+                    "hex": "C82848"
+                },
+                {
+                    "name": "Silver",
+                    "hex": "918E90"
+                },
+                {
+                    "name": "Skin",
+                    "hex": "F8D8B8"
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "F8D858"
+                },
+                {
+                    "name": "Brown",
+                    "hex": "965733"
+                },
+                {
+                    "name": "Gold",
+                    "hex": "E8AE24"
+                }
+            ]
+        },
+        {
+            "name": "{color_name}",
+            "material": "PETG",
+            "density": 1.27,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                210,
+                240
+            ],
+            "bed_temp_range": [
+                50,
+                80
+            ],
+            "country_of_origin": "China",
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "1A1A1A"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "1B7AB8"
+                },
+                {
+                    "name": "Green",
+                    "hex": "0DA533"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "8A8889"
+                },
+                {
+                    "name": "Red",
+                    "hex": "D42E3A"
+                },
+                {
+                    "name": "Orange",
+                    "hex": "E85A20"
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "E8C820"
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "E8E8E8",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Red",
+                    "hex": "D83830",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Green",
+                    "hex": "2EAB58",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Blue",
+                    "hex": "3A7FD4",
+                    "translucent": true
+                }
+            ]
+        },
+        {
+            "name": "Translucent {color_name}",
+            "material": "PETG",
+            "density": 1.27,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                230,
+                250
+            ],
+            "bed_temp_range": [
+                60,
+                80
+            ],
+            "country_of_origin": "China",
+            "colors": [
+                {
+                    "name": "Transparent Clear",
+                    "hex": "DEEAEA",
+                    "translucent": true
+                },
+                {
+                    "name": "Teal Lily",
+                    "hex": "657DC5",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Fluorescent Green",
+                    "hex": "5FD456",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Light Purple",
+                    "hex": "C8A8E8",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Passionate Red",
+                    "hex": "E84858",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Sunset Orange",
+                    "hex": "F08848",
+                    "translucent": true
+                },
+                {
+                    "name": "Blue Purple Gradient",
+                    "hexes": [
+                        "4A7FD4",
+                        "9B7FD4"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "translucent": true
+                },
+                {
+                    "name": "Ocean Sunset Gradient",
+                    "hexes": [
+                        "F08040",
+                        "E85080",
+                        "8060C0"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "translucent": true
+                }
+            ]
+        },
+        {
+            "name": "{color_name}",
+            "material": "PETG-CF",
+            "density": 1.27,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                220,
+                250
+            ],
+            "bed_temp_range": [
+                60,
+                75
+            ],
+            "fill": "carbon fiber",
+            "finish": "matte",
+            "country_of_origin": "China",
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "4A4947",
+                    "finish": "matte"
+                }
+            ]
+        },
+        {
+            "name": "{color_name}",
+            "material": "TPU-95A",
+            "density": 1.21,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                220,
+                240
+            ],
+            "bed_temp_range": [
+                35,
+                60
+            ],
+            "country_of_origin": "China",
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "1A1A1A"
+                },
+                {
+                    "name": "White",
+                    "hex": "F5F5F5"
+                },
+                {
+                    "name": "Transparent Blue",
+                    "hex": "1D54A4",
+                    "translucent": true
+                }
+            ]
+        },
+        {
+            "name": "{color_name}",
+            "material": "TPU-85A",
+            "density": 1.21,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000.0,
+                    "spool_weight": 180,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                200,
+                250
+            ],
+            "bed_temp_range": [
+                35,
+                50
+            ],
+            "country_of_origin": "China",
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "1A1A1A"
+                },
+                {
+                    "name": "White",
+                    "hex": "F5F5F5"
+                }
+            ]
+        }
+    ]
+}
