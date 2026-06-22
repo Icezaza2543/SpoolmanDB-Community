@@ -1,0 +1,269 @@
+{
+    "manufacturer": "iSANMATE",
+    "filaments": [
+        {
+            "name": "PLA i5+ {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 350,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                200,
+                220
+            ],
+            "bed_temp_range": [
+                35,
+                60
+            ],
+            "country_of_origin": "China",
+            "colors": [
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Black",
+                    "hex": "262A2D"
+                },
+                {
+                    "name": "Red",
+                    "hex": "FC2304"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "048FFC"
+                },
+                {
+                    "name": "Green",
+                    "hex": "07D65B"
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "E5B808"
+                },
+                {
+                    "name": "Orange",
+                    "hex": "F8A102"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "8A8A8A"
+                },
+                {
+                    "name": "Pink",
+                    "hex": "FFACB0"
+                },
+                {
+                    "name": "Silver",
+                    "hex": "808A9B"
+                },
+                {
+                    "name": "Gold",
+                    "hex": "E7B30E"
+                },
+                {
+                    "name": "Brown",
+                    "hex": "EC7F2B"
+                }
+            ]
+        },
+        {
+            "name": "{color_name}",
+            "material": "PETG",
+            "density": 1.27,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 350,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                240,
+                260
+            ],
+            "bed_temp_range": [
+                60,
+                80
+            ],
+            "country_of_origin": "China",
+            "tds_url": "https://www.isanmate.com/wp-content/uploads/2025/08/PETG_TDS.pdf",
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "1A1A1A"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Red",
+                    "hex": "E31B0C"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "0253F9"
+                },
+                {
+                    "name": "Green",
+                    "hex": "009E5F"
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "E7C100"
+                },
+                {
+                    "name": "Orange",
+                    "hex": "FC3605"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "A8A8A8"
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "E8E8E8",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Red",
+                    "hex": "D21702",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Green",
+                    "hex": "09A743",
+                    "translucent": true
+                },
+                {
+                    "name": "Transparent Blue",
+                    "hex": "1437E7",
+                    "translucent": true
+                }
+            ]
+        },
+        {
+            "name": "{color_name}",
+            "material": "ABS",
+            "density": 1.04,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 350,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                200,
+                240
+            ],
+            "bed_temp": 50,
+            "country_of_origin": "China",
+            "tds_url": "https://www.isanmate.com/wp-content/uploads/2022/09/ABS_TDS.pdf",
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "3C4249"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Red",
+                    "hex": "FA1C0A"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "145DD6"
+                },
+                {
+                    "name": "Green",
+                    "hex": "00A17D"
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "E0C400"
+                }
+            ]
+        },
+        {
+            "name": "{color_name}",
+            "material": "TPU-95A",
+            "density": 1.21,
+            "weights": [
+                {
+                    "weight": 1000.0,
+                    "spool_weight": 350,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                200,
+                250
+            ],
+            "bed_temp": 50,
+            "country_of_origin": "China",
+            "colors": [
+                {
+                    "name": "Orange",
+                    "hex": "DA4203"
+                },
+                {
+                    "name": "Pink",
+                    "hex": "FF69B4"
+                },
+                {
+                    "name": "Red",
+                    "hex": "DB4004"
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "D3110C"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "9E9E9E"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "1976D2"
+                },
+                {
+                    "name": "Green",
+                    "hex": "43A047"
+                },
+                {
+                    "name": "Brown",
+                    "hex": "795548"
+                },
+                {
+                    "name": "White",
+                    "hex": "FFFFFF"
+                },
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                }
+            ]
+        }
+    ]
+}
