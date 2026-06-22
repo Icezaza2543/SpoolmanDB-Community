@@ -1,0 +1,175 @@
+{
+  "manufacturer": "Verbatim",
+  "filaments": [
+    {
+      "name": "Verbatim PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 500,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [200, 220],
+      "bed_temp": 60,
+      "tds_url": "https://3d-druckershop.com/mediafiles/Sonstiges/Datenblaetter/Filament/Verbatim/PLA_Datasheet_2018_EN.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "050505",
+          "codes": ["55318", "55327"]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": ["55315", "55328"]
+        },
+        {
+          "name": "Natural Transparent",
+          "hex": "dbfbff",
+          "translucent": true,
+          "codes": ["55317"]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": ["55320", "55330"]
+        },
+        {
+          "name": "Green",
+          "hex": "005900",
+          "codes": ["55324", "55334"]
+        },
+        {
+          "name": "Aluminium Grey",
+          "hex": "666666",
+          "codes": ["55319", "55329"]
+        },
+        {
+          "name": "Blue",
+          "hex": "1900ff",
+          "codes": ["55322", "55332"]
+        }
+      ]
+    },
+    {
+      "name": "Verbatim PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 500,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [230, 250],
+      "bed_temp_range": [60, 90],
+      "tds_url": "https://3d-druckershop.com/mediafiles/Sonstiges/Datenblaetter/Filament/Verbatim/PET_G_Datasheet_2018_EN.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "050505",
+          "codes": ["55052", "55060"]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": ["55050", "55058"]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": ["55053", "55061"]
+        },
+        {
+          "name": "Blue",
+          "hex": "1900ff",
+          "codes": ["55055", "55063"]
+        },
+        {
+          "name": "Clear",
+          "hex": "d9fff8",
+          "translucent": true,
+          "codes": ["55051", "55059"]
+        },
+        {
+          "name": "Red Transparent",
+          "hex": "a80000",
+          "translucent": true,
+          "codes": ["55054", "55062"]
+        },
+        {
+          "name": "Blue Transparent",
+          "hex": "1e16e0",
+          "translucent": true,
+          "codes": ["55056"]
+        },
+        {
+          "name": "Green Transparent",
+          "hex": "094709",
+          "translucent": true,
+          "codes": ["55057", "55065"]
+        }
+      ]
+    },
+    {
+      "name": "Verbatim ABS {color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 500,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [220, 260],
+      "bed_temp_range": [0, 100],
+      "tds_url": "https://3d-druckershop.com/mediafiles/Sonstiges/Datenblaetter/Filament/Verbatim/ABS_Datasheet_2018_EN.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "050505",
+          "codes": ["55026", "55033"]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": ["55027", "55034"]
+        },
+        {
+          "name": "Natural Milky",
+          "hex": "fff0ba",
+          "translucent": true,
+          "codes": ["55028", "55035"]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": ["55030"]
+        },
+        {
+          "name": "Green",
+          "hex": "005900",
+          "codes": ["55031"]
+        },
+        {
+          "name": "Aluminium Grey",
+          "hex": "666666",
+          "codes": ["55032", "55036"]
+        },
+        {
+          "name": "Blue",
+          "hex": "1900ff",
+          "codes": ["55029"]
+        }
+      ]
+    }
+  ]
+}
