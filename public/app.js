@@ -75,17 +75,19 @@
         chartSpool: document.querySelector("#spool-type-chart"),
         chartCoverage: document.querySelector("#database-coverage-chart"),
         chartColor: document.querySelector("#color-spectrum-chart"),
+        dbSchemaSection: document.querySelector("#db-schema"),
     };
 
     document.addEventListener("DOMContentLoaded", init);
 
     function handleRouting() {
         const hash = window.location.hash || "#home";
-        const validHashes = ["#home", "#explorer", "#quality", "#schema", "#contribute"];
+        const validHashes = ["#home", "#db-schema", "#explorer", "#quality", "#schema", "#contribute"];
         const activeHash = validHashes.includes(hash) ? hash : "#home";
 
         const sections = {
             "#home": elements.homeSection,
+            "#db-schema": elements.dbSchemaSection,
             "#explorer": elements.explorerSection,
             "#quality": elements.qualitySection,
             "#schema": elements.schemaSection,
@@ -115,6 +117,8 @@
             } else {
                 resizeHomeCharts();
             }
+        } else if (activeHash === "#db-schema") {
+            window.setTimeout(updateSchemaLines, 50);
         }
 
         window.scrollTo(0, 0);
@@ -129,6 +133,8 @@
             resizeTimeout = setTimeout(function () {
                 if (window.location.hash === "#home" || !window.location.hash) {
                     resizeHomeCharts();
+                } else if (window.location.hash === "#db-schema") {
+                    updateSchemaLines();
                 }
             }, 100);
         });
@@ -137,6 +143,7 @@
         bindQualityDashboard();
         bindSchemaViewer();
         bindContributorHelper();
+        bindSchemaInteractions();
         elements.filters.addEventListener("input", renderFilteredResults);
         elements.filters.addEventListener("reset", function () {
             window.setTimeout(renderFilteredResults, 0);
@@ -1849,5 +1856,151 @@
         if (!copied) {
             throw new Error("Copy command failed");
         }
+    }
+
+    function updateSchemaLines() {
+        const canvas = document.querySelector("#schema-canvas");
+        const svg = document.querySelector("#schema-svg");
+        if (!canvas || !svg) return;
+
+        const rectCanvas = canvas.getBoundingClientRect();
+        if (rectCanvas.width === 0 || rectCanvas.height === 0) return;
+
+        // Clear existing paths (except defs/markers)
+        const paths = svg.querySelectorAll("path:not([id])");
+        paths.forEach(p => p.remove());
+
+        const connections = [
+            { fromId: "row-mfg-pk", toId: "row-fil-mfg-fk", fromDir: "right", toDir: "left" },
+            { fromId: "row-mat-pk", toId: "row-fil-mat-fk", fromDir: "right", toDir: "left" },
+            { fromId: "row-dia-pk", toId: "row-fil-dia-fk", fromDir: "left", toDir: "right" },
+            { fromId: "row-col-pk", toId: "row-fil-col-fk", fromDir: "left", toDir: "right" },
+            { fromId: "row-weight-pk", toId: "row-fil-weight-fk", fromDir: "left", toDir: "right" },
+            { fromId: "row-spool-pk", toId: "row-weight-spool-fk", fromDir: "right", toDir: "left" }
+        ];
+
+        connections.forEach((conn) => {
+            const fromEl = document.getElementById(conn.fromId);
+            const toEl = document.getElementById(conn.toId);
+            if (!fromEl || !toEl) return;
+
+            const rectFrom = fromEl.getBoundingClientRect();
+            const rectTo = toEl.getBoundingClientRect();
+
+            let x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+
+            if (conn.fromDir === "right") {
+                x1 = rectFrom.right - rectCanvas.left;
+            } else {
+                x1 = rectFrom.left - rectCanvas.left;
+            }
+            y1 = (rectFrom.top + rectFrom.bottom) / 2 - rectCanvas.top;
+
+            if (conn.toDir === "right") {
+                x2 = rectTo.right - rectCanvas.left;
+            } else {
+                x2 = rectTo.left - rectCanvas.left;
+            }
+            y2 = (rectTo.top + rectTo.bottom) / 2 - rectCanvas.top;
+
+            const dx = Math.abs(x2 - x1) * 0.4;
+            const cpx1 = conn.fromDir === "right" ? x1 + dx : x1 - dx;
+            const cpx2 = conn.toDir === "right" ? x2 + dx : x2 - dx;
+
+            const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path.setAttribute("d", `M ${x1} ${y1} C ${cpx1} ${y1}, ${cpx2} ${y2}, ${x2} ${y2}`);
+            path.setAttribute("fill", "none");
+            path.setAttribute("stroke", "var(--orange-dark)");
+            path.setAttribute("stroke-width", "2");
+            path.setAttribute("marker-end", "url(#arrow)");
+            path.setAttribute("data-from", conn.fromId);
+            path.setAttribute("data-to", conn.toId);
+
+            svg.appendChild(path);
+        });
+    }
+
+    function bindSchemaInteractions() {
+        const rows = document.querySelectorAll(".db-table-row");
+        const cards = document.querySelectorAll(".db-table-card");
+
+        cards.forEach((card) => {
+            card.addEventListener("mouseenter", () => {
+                const tableId = card.id;
+                const svg = document.querySelector("#schema-svg");
+                if (!svg) return;
+                const paths = svg.querySelectorAll("path");
+                paths.forEach((path) => {
+                    const fromId = path.getAttribute("data-from");
+                    const toId = path.getAttribute("data-to");
+                    if (!fromId || !toId) return;
+
+                    const fromRow = document.getElementById(fromId);
+                    const toRow = document.getElementById(toId);
+                    if ((fromRow && fromRow.closest(".db-table-card").id === tableId) || 
+                        (toRow && toRow.closest(".db-table-card").id === tableId)) {
+                        path.setAttribute("stroke", "var(--orange)");
+                        path.setAttribute("stroke-width", "3.5");
+                        path.style.filter = "drop-shadow(0 0 3px rgba(249, 115, 22, 0.6))";
+                    } else {
+                        path.setAttribute("stroke", "rgba(160, 132, 232, 0.15)");
+                    }
+                });
+            });
+
+            card.addEventListener("mouseleave", () => {
+                const svg = document.querySelector("#schema-svg");
+                if (!svg) return;
+                const paths = svg.querySelectorAll("path");
+                paths.forEach((path) => {
+                    path.setAttribute("stroke", "var(--orange-dark)");
+                    path.setAttribute("stroke-width", "2");
+                    path.style.filter = "none";
+                });
+            });
+        });
+
+        rows.forEach((row) => {
+            row.addEventListener("mouseenter", () => {
+                const rowId = row.id;
+                const svg = document.querySelector("#schema-svg");
+                if (!svg) return;
+                const paths = svg.querySelectorAll("path");
+                paths.forEach((path) => {
+                    const fromId = path.getAttribute("data-from");
+                    const toId = path.getAttribute("data-to");
+                    if (fromId === rowId || toId === rowId) {
+                        path.setAttribute("stroke", "var(--orange)");
+                        path.setAttribute("stroke-width", "4");
+                        path.style.filter = "drop-shadow(0 0 5px rgba(249, 115, 22, 0.8))";
+                        
+                        const fromEl = document.getElementById(fromId);
+                        const toEl = document.getElementById(toId);
+                        if (fromEl) fromEl.classList.add("row-highlight");
+                        if (toEl) toEl.classList.add("row-highlight");
+                    } else {
+                        path.setAttribute("stroke", "rgba(160, 132, 232, 0.1)");
+                    }
+                });
+            });
+
+            row.addEventListener("mouseleave", () => {
+                const svg = document.querySelector("#schema-svg");
+                if (!svg) return;
+                const paths = svg.querySelectorAll("path");
+                paths.forEach((path) => {
+                    path.setAttribute("stroke", "var(--orange-dark)");
+                    path.setAttribute("stroke-width", "2");
+                    path.style.filter = "none";
+                    
+                    const fromId = path.getAttribute("data-from");
+                    const toId = path.getAttribute("data-to");
+                    const fromEl = document.getElementById(fromId);
+                    const toEl = document.getElementById(toId);
+                    if (fromEl) fromEl.classList.remove("row-highlight");
+                    if (toEl) toEl.classList.remove("row-highlight");
+                });
+            });
+        });
     }
 })();

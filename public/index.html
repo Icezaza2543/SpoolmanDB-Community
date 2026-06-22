@@ -28,9 +28,10 @@
             <nav class="top-links" aria-label="Primary">
                 <div class="nav-group">
                     <a href="#home" class="nav-link">Home</a>
+                    <a href="#db-schema" class="nav-link">Schema</a>
                     <a href="#explorer" class="nav-link">Explorer</a>
                     <a href="#quality" class="nav-link">Quality</a>
-                    <a href="#schema" class="nav-link">Schemas</a>
+                    <a href="#schema" class="nav-link">Validation Schemas</a>
                     <a href="#contribute" class="nav-link">Contribute</a>
                 </div>
                 <div class="nav-actions">
@@ -132,6 +133,205 @@
                     <a href="filaments.json" class="button" download>Download filaments.json</a>
                     <a href="materials.json" class="button" download>Download materials.json</a>
                     <a href="https://github.com/Icezaza2543/SpoolmanDB-Community" class="button" target="_blank" rel="noopener noreferrer">Contribute Data</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="insight-section db-schema-section" id="db-schema" style="display: none;">
+            <h2>Database Schema</h2>
+
+            <div class="schema-container-wrapper">
+                <div class="schema-canvas" id="schema-canvas">
+                    <svg class="schema-svg" id="schema-svg">
+                        <defs>
+                            <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--orange-dark)" />
+                            </marker>
+                        </defs>
+                    </svg>
+
+                    <!-- Table Cards -->
+                    <!-- LEFT COLUMN -->
+                    <div class="schema-column left-column">
+                        <!-- MANUFACTURERS -->
+                        <div class="db-table-card" id="tbl-manufacturers" data-table="manufacturers">
+                            <div class="db-table-header">MANUFACTURERS</div>
+                            <div class="db-table-rows">
+                                <div class="db-table-row pk-row" id="row-mfg-pk">
+                                    <span class="field-name"><span class="pk-icon">🔑</span> manufacturer_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">name</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MATERIALS -->
+                        <div class="db-table-card" id="tbl-materials" data-table="materials">
+                            <div class="db-table-header">MATERIALS</div>
+                            <div class="db-table-rows">
+                                <div class="db-table-row pk-row" id="row-mat-pk">
+                                    <span class="field-name"><span class="pk-icon">🔑</span> material_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">material</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">density</span>
+                                    <span class="field-type">float</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">extruder_temp</span>
+                                    <span class="field-type">integer</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">bed_temp</span>
+                                    <span class="field-type">integer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CENTER COLUMN (FACT) -->
+                    <div class="schema-column center-column">
+                        <!-- FILAMENTS -->
+                        <div class="db-table-card fact-table-card" id="tbl-filaments" data-table="filaments">
+                            <div class="db-table-header">FILAMENTS</div>
+                            <div class="db-table-rows">
+                                <div class="db-table-row pk-row">
+                                    <span class="field-name"><span class="pk-icon">🔑</span> filament_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">name</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row fk-row" id="row-fil-mfg-fk" data-target="row-mfg-pk">
+                                    <span class="field-name"><span class="fk-icon">🔗</span> manufacturer_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row fk-row" id="row-fil-mat-fk" data-target="row-mat-pk">
+                                    <span class="field-name"><span class="fk-icon">🔗</span> material_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">density</span>
+                                    <span class="field-type">float</span>
+                                </div>
+                                <div class="db-table-row fk-row" id="row-fil-dia-fk" data-target="row-dia-pk">
+                                    <span class="field-name"><span class="fk-icon">🔗</span> diameter_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row fk-row" id="row-fil-weight-fk" data-target="row-weight-pk">
+                                    <span class="field-name"><span class="fk-icon">🔗</span> weight_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row fk-row" id="row-fil-col-fk" data-target="row-col-pk">
+                                    <span class="field-name"><span class="fk-icon">🔗</span> color_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">extruder_temp</span>
+                                    <span class="field-type">integer</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">bed_temp</span>
+                                    <span class="field-type">integer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SPOOL_TYPES -->
+                        <div class="db-table-card" id="tbl-spools" data-table="spools">
+                            <div class="db-table-header">SPOOL_TYPES</div>
+                            <div class="db-table-rows">
+                                <div class="db-table-row pk-row" id="row-spool-pk">
+                                    <span class="field-name"><span class="pk-icon">🔑</span> spool_type_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">type_name</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="schema-column right-column">
+                        <!-- DIAMETERS -->
+                        <div class="db-table-card" id="tbl-diameters" data-table="diameters">
+                            <div class="db-table-header">DIAMETERS</div>
+                            <div class="db-table-rows">
+                                <div class="db-table-row pk-row" id="row-dia-pk">
+                                    <span class="field-name"><span class="pk-icon">🔑</span> diameter_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">diameter</span>
+                                    <span class="field-type">float</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COLORS -->
+                        <div class="db-table-card" id="tbl-colors" data-table="colors">
+                            <div class="db-table-header">COLORS</div>
+                            <div class="db-table-rows">
+                                <div class="db-table-row pk-row" id="row-col-pk">
+                                    <span class="field-name"><span class="pk-icon">🔑</span> color_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">name</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">hex</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">finish</span>
+                                    <span class="field-type">enum</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">translucent</span>
+                                    <span class="field-type">boolean</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">glow</span>
+                                    <span class="field-type">boolean</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- WEIGHTS_SPOOLS -->
+                        <div class="db-table-card" id="tbl-weights" data-table="weights">
+                            <div class="db-table-header">WEIGHTS_SPOOLS</div>
+                            <div class="db-table-rows">
+                                <div class="db-table-row pk-row" id="row-weight-pk">
+                                    <span class="field-name"><span class="pk-icon">🔑</span> weight_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">weight</span>
+                                    <span class="field-type">float</span>
+                                </div>
+                                <div class="db-table-row">
+                                    <span class="field-name">spool_weight</span>
+                                    <span class="field-type">float</span>
+                                </div>
+                                <div class="db-table-row fk-row" id="row-weight-spool-fk" data-target="row-spool-pk">
+                                    <span class="field-name"><span class="fk-icon">🔗</span> spool_type_id</span>
+                                    <span class="field-type">string</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
