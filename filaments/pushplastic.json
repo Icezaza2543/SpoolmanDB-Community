@@ -1,0 +1,135 @@
+{
+  "manufacturer": "Push Plastic",
+  "filaments": [
+    {
+      "name": "Push Plastic PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 3000,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 10000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [210, 230],
+      "bed_temp_range": [30, 70],
+      "country_of_origin": "USA",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0260/7421/files/Push_Plastic_PLA_Technical_Data_sheet.pdf",
+      "colors": [
+        {"name": "Black", "hex": "1a1a1a", "codes": ["PLA175-1KG-BLK"]},
+        {"name": "White", "hex": "f5f5f5", "codes": ["PLA175-1KG-WHT"]},
+        {"name": "Red", "hex": "c41e2a", "codes": ["PLA175-1KG-RED"]},
+        {"name": "Green", "hex": "2e7d32", "codes": ["PLA175-1KG-GRN"]},
+        {"name": "Yellow", "hex": "fdd835", "codes": ["PLA175-1KG-YLW"]},
+        {"name": "Orange", "hex": "f57c00", "codes": ["PLA175-1KG-ORG"]},
+        {"name": "Purple", "hex": "6a1b9a", "codes": ["PLA175-1KG-PRP"]},
+        {"name": "Pink", "hex": "e873a5", "codes": ["PLA175-1KG-PNK"]},
+        {"name": "Natural", "hex": "e8e0d0", "codes": ["PLA175-1KG-NAT"]},
+        {"name": "Beige", "hex": "d4c4a8", "codes": ["PLA175-1KG-BGE"]},
+        {"name": "Light Grey", "hex": "a0a0a0", "codes": ["PLA175-1KG-LGY"]},
+        {"name": "Dark Grey", "hex": "4a4a4a", "codes": ["PLA175-1KG-DGY"]},
+        {"name": "Navy Blue", "hex": "1a2a5e", "codes": ["PLA175-1KG-NVY"]},
+        {"name": "Ultra Blue", "hex": "005fe8", "codes": ["PLA175-1KG-UBL"]},
+        {"name": "Ocean Blue", "hex": "1b6b8a", "codes": ["PLA175-1KG-OBL"]}
+      ]
+    },
+    {
+      "name": "Push Plastic PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 3000,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 10000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [235, 250],
+      "bed_temp_range": [80, 100],
+      "country_of_origin": "USA",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0260/7421/files/Push_Plastic_PETG_Technical_Data_sheet_6b420a6b-aea1-47d5-b931-464a8804abb4.pdf",
+      "colors": [
+        {"name": "Black", "hex": "1a1a1a"},
+        {"name": "White", "hex": "f5f5f5"},
+        {"name": "Red", "hex": "c41e2a"},
+        {"name": "Green", "hex": "2e7d32"},
+        {"name": "Orange", "hex": "f57c00"},
+        {"name": "Purple", "hex": "6a1b9a"},
+        {"name": "Light Grey", "hex": "a0a0a0"},
+        {"name": "Dark Grey", "hex": "4a4a4a"},
+        {"name": "Navy Blue", "hex": "1a2a5e"},
+        {"name": "Ultra Blue", "hex": "005fe8"},
+        {"name": "Electric Blue", "hex": "00a8e8"},
+        {"name": "Light Teal", "hex": "3d9e8a"},
+        {"name": "Rust", "hex": "b5523a"},
+        {"name": "Silver Metallic", "hex": "b0b0b0"},
+        {"name": "Translucent Blue", "hex": "4da6d9", "translucent": true},
+        {"name": "Translucent Green", "hex": "5cb85c", "translucent": true},
+        {"name": "Translucent Amber", "hex": "e6a23c", "translucent": true}
+      ]
+    },
+    {
+      "name": "Push Plastic ABS {color_name}",
+      "material": "ABS",
+      "density": 1.03,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 3000,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 10000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [1.75],
+      "extruder_temp_range": [220, 250],
+      "bed_temp_range": [100, 120],
+      "country_of_origin": "USA",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0260/7421/files/Push_Plastic_ABS_Technical_Data_sheet_8f0e2174-914e-4312-8018-fb4d1a5d2e9b.pdf",
+      "colors": [
+        {"name": "Black", "hex": "1a1a1a"},
+        {"name": "White", "hex": "f5f5f5"},
+        {"name": "Green", "hex": "2e7d32"},
+        {"name": "Yellow", "hex": "fdd835"},
+        {"name": "Orange", "hex": "f57c00"},
+        {"name": "Pink", "hex": "e873a5"},
+        {"name": "Purple", "hex": "6a1b9a"},
+        {"name": "Natural", "hex": "e8e0d0"},
+        {"name": "Beige", "hex": "d4c4a8"},
+        {"name": "Brown", "hex": "6b3e2e"},
+        {"name": "Light Grey", "hex": "a0a0a0"},
+        {"name": "Dark Grey", "hex": "4a4a4a"},
+        {"name": "Magenta", "hex": "c2185b"},
+        {"name": "Ultra Blue", "hex": "005fe8"},
+        {"name": "Ocean Blue", "hex": "1b6b8a"},
+        {"name": "Desert Tan", "hex": "c4a882"},
+        {"name": "Flat Dark Earth", "hex": "8b7355"},
+        {"name": "Silver Metallic", "hex": "b0b0b0"},
+        {"name": "Gold Metallic", "hex": "c9a227"},
+        {"name": "Bronze Metallic", "hex": "8c6239"}
+      ]
+    }
+  ]
+}
