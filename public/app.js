@@ -234,8 +234,7 @@
         const materialMap = new Map();
         const mfgMap = new Map();
         const spoolMap = new Map();
-        const uniqueColorSet = new Set();
-        const colorPoints = [];
+        const colorMap = new Map();
         const coverage = {
             color: 0,
             spoolType: 0,
@@ -278,22 +277,37 @@
             hexes.forEach((hex) => {
                 const hexClean = String(hex).toUpperCase();
                 if (!isHex(hexClean)) return;
-                const key = hexClean + "::" + mfg + "::" + mat;
-                if (!uniqueColorSet.has(key)) {
-                    uniqueColorSet.add(key);
+                
+                let p = colorMap.get(hexClean);
+                if (!p) {
                     const hsl = hexToHsl(hexClean);
-                    colorPoints.push({
+                    p = {
                         hex: hexClean,
                         h: hsl.h,
                         s: hsl.s,
                         l: hsl.l,
-                        name: item.name,
-                        manufacturer: mfg,
-                        material: mat
-                    });
+                        count: 0,
+                        brands: new Set(),
+                        materials: new Set()
+                    };
+                    colorMap.set(hexClean, p);
                 }
+                p.count++;
+                if (mfg) p.brands.add(mfg);
+                if (mat) p.materials.add(mat);
             });
         });
+
+        const colorPoints = Array.from(colorMap.values()).map(p => ({
+            hex: p.hex,
+            h: p.h,
+            s: p.s,
+            l: p.l,
+            count: p.count,
+            brandsCount: p.brands.size,
+            brands: Array.from(p.brands),
+            materials: Array.from(p.materials)
+        }));
 
         const sortedMfg = Array.from(mfgMap.entries()).sort((a, b) => b[1] - a[1]);
 
@@ -340,19 +354,22 @@
             addNode("col_" + name, name, 18, 2);
         });
 
-        const spoolTypes = ["Plastic", "Cardboard", "Metal", "Refill", "Unknown"];
+        const spoolTypes = ["Plastic", "Cardboard", "Metal", "Refill", "Unknown", "Other"];
         spoolTypes.forEach((name) => {
             addNode("spl_" + name, name, 15, 3);
         });
+
+        const knownSpools = new Set(["Plastic", "Cardboard", "Metal", "Refill", "Unknown"]);
 
         state.filaments.forEach((item) => {
             const mfg = item.manufacturer || "Unknown";
             const mat = item.material || "Unknown";
             const spool = normalizeSpoolType(item.spool_type);
+            const safeSpool = knownSpools.has(spool) ? spool : "Other";
 
             if (top25Mfg.some(e => e[0] === mfg) && topMaterials.some(e => e[0] === mat)) {
                 edges.add("mfg_" + mfg + "->mat_" + mat);
-                edges.add("mat_" + mat + "->spl_" + spool);
+                edges.add("mat_" + mat + "->spl_" + safeSpool);
 
                 const hexes = item.color_hex ? [item.color_hex] : (item.color_hexes || []);
                 hexes.forEach((hex) => {
@@ -590,9 +607,10 @@
             p.h, 
             p.l, 
             "#" + p.hex, 
-            p.name || "Unnamed", 
-            p.manufacturer, 
-            p.material
+            p.count, 
+            p.brandsCount,
+            p.brands.join(", "),
+            p.materials.join(", ")
         ]);
 
         const option = {
@@ -601,10 +619,12 @@
                 trigger: "item",
                 formatter: function (params) {
                     const val = params.value;
-                    return `<strong>${val[3]}</strong><br/>` +
-                           `Hex: <span style="display:inline-block;width:12px;height:12px;background-color:${val[2]};border:1px solid #fff;border-radius:50%;margin-right:4px;vertical-align:middle;"></span>${val[2]}<br/>` +
-                           `Maker: ${val[4]}<br/>` +
-                           `Material: ${val[5]}`;
+                    const brandsText = val[5] || "Unknown";
+                    const materialsText = val[6] || "Unknown";
+                    return `Hex: <span style="display:inline-block;width:12px;height:12px;background-color:${val[2]};border:1px solid #fff;border-radius:50%;margin-right:4px;vertical-align:middle;"></span>${val[2]}<br/>` +
+                           `Occurrences: ${val[3]}<br/>` +
+                           `Brands (${val[4]}): ${brandsText}<br/>` +
+                           `Materials: ${materialsText}`;
                 },
                 backgroundColor: "rgba(24, 24, 30, 0.95)",
                 borderColor: "rgba(160, 132, 232, 0.3)",
@@ -752,6 +772,15 @@
         if (state.homeInitialized) return;
         if (typeof echarts === "undefined") {
             console.error("Apache ECharts library is not loaded.");
+            document.querySelectorAll(".echart-panel").forEach((panel) => {
+                panel.style.display = "flex";
+                panel.style.alignItems = "center";
+                panel.style.justifyContent = "center";
+                panel.style.color = "var(--muted)";
+                panel.style.fontSize = "14px";
+                panel.style.fontStyle = "italic";
+                panel.textContent = "Visualization could not be loaded.";
+            });
             return;
         }
         if (!state.dashboardMetrics) buildDashboardMetrics();

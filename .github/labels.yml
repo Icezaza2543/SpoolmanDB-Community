@@ -1,0 +1,47 @@
+- name: "data-change"
+  color: "3b82f6"
+  description: "Pull requests that update filament or material data files"
+
+- name: "filament"
+  color: "10b981"
+  description: "Issues or pull requests related to filaments"
+
+- name: "materials"
+  color: "f59e0b"
+  description: "Issues or pull requests related to materials"
+
+- name: "schema-change"
+  color: "ef4444"
+  description: "Pull requests that change JSON schemas"
+
+- name: "code-change"
+  color: "8b5cf6"
+  description: "Pull requests that modify python scripts or github workflows"
+
+- name: "color"
+  color: "ec4899"
+  description: "Issues or pull requests discussing filament colors"
+
+- name: "temp"
+  color: "f97316"
+  description: "Issues or pull requests discussing print temperatures"
+
+- name: "new-data"
+  color: "06b6d4"
+  description: "Requesting or suggesting new filament/brand data"
+
+- name: "data-error"
+  color: "b91c1c"
+  description: "Reporting wrong database values or typos"
+
+- name: "stale"
+  color: "6b7280"
+  description: "Issues or PRs closed or marked due to inactivity"
+
+- name: "answered"
+  color: "14b8a6"
+  description: "Issues that have been resolved or answered"
+
+- name: "waiting"
+  color: "6b21a8"
+  description: "Waiting for user response or more information"
