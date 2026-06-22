@@ -1,0 +1,87 @@
+{
+  "manufacturer": "Francofil",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {"weight": 500, "spool_weight": 227},
+        {"weight": 750, "spool_weight": 246},
+        {"weight": 1000, "spool_weight": 246},
+        {"weight": 5000, "spool_weight": 1050},
+        {"weight": 10000, "spool_weight": 1050}
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [200, 230],
+      "bed_temp_range": [30, 70],
+      "country_of_origin": "France",
+      "tds_url": "https://francofil.fr/wp-content/uploads/2023/12/Fiche-technique-PLA.pdf",
+      "sds_url": "https://francofil.fr/wp-content/uploads/2023/12/Fiche-de-Securite-PLA.pdf",
+      "colors": [
+        {"name": "Black", "hex": "101010", "codes": ["PLA-NOI"]},
+        {"name": "White", "hex": "F6F6F6", "codes": ["PLA-BLA"]},
+        {"name": "Virgin", "hex": "E8E0C8", "codes": ["PLA-VIE"], "translucent": true},
+        {"name": "Blue RAL 5002", "hex": "20214F", "codes": ["PLA-5002"]},
+        {"name": "Blue RAL 5015", "hex": "007CB0", "codes": ["PLA-5015"]},
+        {"name": "Turquoise Blue", "hex": "00A9A5", "codes": ["PLA-BLT"]},
+        {"name": "Red RAL 3020", "hex": "CC0605", "codes": ["PLA-3020"]},
+        {"name": "Pink RAL 4003", "hex": "C63678", "codes": ["PLA-6019-1"]},
+        {"name": "Orange RAL 2003", "hex": "F67828", "codes": ["PLA-2003"]},
+        {"name": "Yellow RAL 1018", "hex": "F9A800", "codes": ["PLA-1018"]},
+        {"name": "Fluorescent Yellow RAL 1026", "hex": "FFFF00", "codes": ["PLA-JAU-1026"]},
+        {"name": "Green RAL 6000", "hex": "316650", "codes": ["PLA-6000"]},
+        {"name": "Green RAL 6018", "hex": "57A639", "codes": ["PLA-6018"]},
+        {"name": "Grey RAL 7001", "hex": "8A9597", "codes": ["PLA-7001"]},
+        {"name": "Grey RAL 7040", "hex": "9DA3A6", "codes": ["PLA-7040"]},
+        {"name": "Anthracite RAL 7016", "hex": "293133", "codes": ["PLA-7016"]},
+        {"name": "Phosphorescent Green", "hex": "8FD400", "codes": ["PLA-4003-2"], "glow": true},
+        {"name": "Violet Halloween", "hex": "5B2C8D", "eans": ["0117540050050"]}
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {"weight": 500, "spool_weight": 227},
+        {"weight": 1000, "spool_weight": 246}
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [220, 260],
+      "bed_temp_range": [70, 90],
+      "country_of_origin": "France",
+      "tds_url": "https://francofil.fr/wp-content/uploads/2023/12/Fiche-technique-PETG.pdf",
+      "sds_url": "https://francofil.fr/wp-content/uploads/2023/12/Fiche-de-Securite-PETG.pdf",
+      "colors": [
+        {"name": "Black", "hex": "101010", "codes": ["PETG-Noir"]},
+        {"name": "White", "hex": "F6F6F6", "codes": ["PETG-Blanc"]},
+        {"name": "Virgin", "hex": "E8E0C8", "codes": ["PETG-Vierge"], "translucent": true},
+        {"name": "Blue", "hex": "0066B3", "codes": ["PETG-Bleu"]},
+        {"name": "Gray", "hex": "808080", "codes": ["PETG-Gris"]},
+        {"name": "Red", "hex": "CC0605", "codes": ["PETG-Rouge"]}
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {"weight": 500, "spool_weight": 227},
+        {"weight": 750, "spool_weight": 246},
+        {"weight": 1000, "spool_weight": 246},
+        {"weight": 5000, "spool_weight": 1050},
+        {"weight": 10000, "spool_weight": 1050}
+      ],
+      "diameters": [1.75, 2.85],
+      "extruder_temp_range": [250, 270],
+      "bed_temp_range": [90, 110],
+      "country_of_origin": "France",
+      "colors": [
+        {"name": "Black", "hex": "101010", "codes": ["ABS-BLA-2"]},
+        {"name": "White", "hex": "F6F6F6", "codes": ["ABS-BLA"]},
+        {"name": "Virgin", "hex": "E8E0C8", "codes": ["ABS-VIE"], "translucent": true}
+      ]
+    }
+  ]
+}
