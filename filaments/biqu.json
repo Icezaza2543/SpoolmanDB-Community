@@ -1,0 +1,225 @@
+{
+    "manufacturer": "BIQU",
+    "filaments": [
+        {
+            "name": "PLA GO {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 384
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                195,
+                215
+            ],
+            "bed_temp_range": [
+                55,
+                65
+            ],
+            "finish": "matte",
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "1D1D1D"
+                },
+                {
+                    "name": "Gray",
+                    "hex": "7C7C7C"
+                },
+                {
+                    "name": "White",
+                    "hex": "E7E7DF"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "1649B3"
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "D3C446"
+                },
+                {
+                    "name": "Green",
+                    "hex": "6FB33F"
+                },
+                {
+                    "name": "Red",
+                    "hex": "AD1E1A"
+                },
+                {
+                    "name": "Apricot",
+                    "hex": "DCBBAA"
+                }
+            ]
+        },
+        {
+            "name": "PLA Aura Silk {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                210,
+                240
+            ],
+            "bed_temp_range": [
+                55,
+                65
+            ],
+            "finish": "glossy",
+            "colors": [
+                {
+                    "name": "White",
+                    "hex": "EFEAE3"
+                },
+                {
+                    "name": "Green",
+                    "hex": "B9E9CD"
+                },
+                {
+                    "name": "Cheese Yellow",
+                    "hex": "F2E66D"
+                },
+                {
+                    "name": "Ice Blue",
+                    "hex": "B5D5E4"
+                },
+                {
+                    "name": "Silver",
+                    "hex": "8E949A"
+                },
+                {
+                    "name": "Lavender Purple",
+                    "hex": "8B87C9"
+                },
+                {
+                    "name": "Pink",
+                    "hex": "F7D0D6"
+                }
+            ]
+        },
+        {
+            "name": "PLA HS {color_name}",
+            "material": "PLA+HS",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_type": "cardboard"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                200,
+                240
+            ],
+            "bed_temp_range": [
+                0,
+                80
+            ],
+            "colors": [
+                {
+                    "name": "White",
+                    "hex": "E8F0F0"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "C0C0C8"
+                },
+                {
+                    "name": "Black",
+                    "hex": "303030"
+                }
+            ]
+        },
+        {
+            "name": "PLA-HR {color_name}",
+            "material": "PLA+HR",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 600
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                220,
+                240
+            ],
+            "bed_temp_range": [
+                65,
+                75
+            ],
+            "colors": [
+                {
+                    "name": "White",
+                    "hex": "F0F0F0"
+                },
+                {
+                    "name": "Orange",
+                    "hex": "F43613"
+                },
+                {
+                    "name": "Blue",
+                    "hex": "1399F3"
+                },
+                {
+                    "name": "Black",
+                    "hex": "303030"
+                },
+                {
+                    "name": "Brown",
+                    "hex": "A07452"
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "F5B613"
+                },
+                {
+                    "name": "Blue+Orange+White",
+                    "hexes": [
+                        "1399F3",
+                        "F43613",
+                        "F0F0F0"
+                    ],
+                    "multi_color_direction": "coaxial"
+                },
+                {
+                    "name": "Yellow+Orange+White",
+                    "hexes": [
+                        "F5B613",
+                        "F43613",
+                        "F0F0F0"
+                    ],
+                    "multi_color_direction": "coaxial"
+                },
+                {
+                    "name": "Red+Purple+White",
+                    "hexes": [
+                        "E05050",
+                        "B060B0",
+                        "F0F0F0"
+                    ],
+                    "multi_color_direction": "coaxial"
+                }
+            ]
+        }
+    ]
+}
