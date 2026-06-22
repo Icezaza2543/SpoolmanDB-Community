@@ -1,0 +1,443 @@
+{
+  "manufacturer": "Gizmo Dorks",
+  "filaments": [
+    {
+      "name": "Gizmo Dorks PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        225
+      ],
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "f5f5dc"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc"
+        },
+        {
+          "name": "Blue (Translucent)",
+          "hex": "3399ff",
+          "translucent": true
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "00008b"
+        },
+        {
+          "name": "Brown",
+          "hex": "8b4513"
+        },
+        {
+          "name": "Dark Brown",
+          "hex": "654321"
+        },
+        {
+          "name": "Color Change Blue to White (Heat Activated)",
+          "hexes": [
+            "0066cc",
+            "ffffff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Color Change Green to Yellow (Heat Activated)",
+          "hexes": [
+            "228b22",
+            "ffd700"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Color Change Grey to White (Heat Activated)",
+          "hexes": [
+            "808080",
+            "ffffff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Color Change Purple to Pink (Heat Activated)",
+          "hexes": [
+            "800080",
+            "ffc0cb"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Fluorescent Blue (Black Light Reactive)",
+          "hex": "00bfff"
+        },
+        {
+          "name": "Fluorescent Green (Black Light Reactive)",
+          "hex": "39ff14"
+        },
+        {
+          "name": "Fluorescent Orange (Black Light Reactive)",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Fluorescent Red (Black Light Reactive)",
+          "hex": "ff0040"
+        },
+        {
+          "name": "Fluorescent Yellow (Black Light Reactive)",
+          "hex": "ccff00"
+        },
+        {
+          "name": "Glow in the Dark",
+          "hex": "c8e6c9",
+          "glow": true
+        },
+        {
+          "name": "Gold",
+          "hex": "d4af37"
+        },
+        {
+          "name": "Gradient Rainbow",
+          "hexes": [
+            "ff0000",
+            "ff7f00",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "8b00ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Grass Green",
+          "hex": "7cba3c"
+        },
+        {
+          "name": "Green",
+          "hex": "228b22"
+        },
+        {
+          "name": "Green (Translucent)",
+          "hex": "66cc66",
+          "translucent": true
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00"
+        },
+        {
+          "name": "Orange (Translucent)",
+          "hex": "ffaa55",
+          "translucent": true
+        },
+        {
+          "name": "Pink",
+          "hex": "ff69b4"
+        },
+        {
+          "name": "Pink (Translucent)",
+          "hex": "ff99cc",
+          "translucent": true
+        },
+        {
+          "name": "Pink Rose",
+          "hex": "e75480"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Purple (Translucent)",
+          "hex": "bb66bb",
+          "translucent": true
+        },
+        {
+          "name": "Dark Purple",
+          "hex": "4b0082"
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000"
+        },
+        {
+          "name": "Red (Translucent)",
+          "hex": "ff4444",
+          "translucent": true
+        },
+        {
+          "name": "Red Lava",
+          "hex": "b22222"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Transparent",
+          "hex": "f0f8ff",
+          "translucent": true
+        },
+        {
+          "name": "Violet",
+          "hex": "8f00ff"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Light Yellow",
+          "hex": "fffacd"
+        },
+        {
+          "name": "Light Yellow (Translucent)",
+          "hex": "ffffaa",
+          "translucent": true
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700"
+        }
+      ]
+    },
+    {
+      "name": "Gizmo Dorks PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp": 80,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Translucent Blue",
+          "hex": "3399ff",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Green",
+          "hex": "66cc66",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Red",
+          "hex": "ff4444",
+          "translucent": true
+        },
+        {
+          "name": "Transparent",
+          "hex": "f0f8ff",
+          "translucent": true
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Gizmo Dorks ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp": 110,
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "f5f5dc"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc"
+        },
+        {
+          "name": "Brown",
+          "hex": "8b4513"
+        },
+        {
+          "name": "Color Change Blue to White (Heat Activated)",
+          "hexes": [
+            "0066cc",
+            "ffffff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Color Change Green to Yellow (Heat Activated)",
+          "hexes": [
+            "228b22",
+            "ffd700"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Color Change Grey to White (Heat Activated)",
+          "hexes": [
+            "808080",
+            "ffffff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Color Change Purple to Pink (Heat Activated)",
+          "hexes": [
+            "800080",
+            "ffc0cb"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Conductive Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "00008b"
+        },
+        {
+          "name": "Dark Purple",
+          "hex": "4b0082"
+        },
+        {
+          "name": "Fluorescent Blue (Black Light Reactive)",
+          "hex": "00bfff"
+        },
+        {
+          "name": "Fluorescent Green (Black Light Reactive)",
+          "hex": "39ff14"
+        },
+        {
+          "name": "Fluorescent Hot Pink (Black Light Reactive)",
+          "hex": "ff69b4"
+        },
+        {
+          "name": "Fluorescent Orange (Black Light Reactive)",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Fluorescent Yellow (Black Light Reactive)",
+          "hex": "ccff00"
+        },
+        {
+          "name": "Glow in the Dark",
+          "hex": "c8e6c9",
+          "glow": true
+        },
+        {
+          "name": "Gold",
+          "hex": "d4af37"
+        },
+        {
+          "name": "Green",
+          "hex": "228b22"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Grass Green",
+          "hex": "7cba3c"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00"
+        },
+        {
+          "name": "Pink",
+          "hex": "ff69b4"
+        },
+        {
+          "name": "Pink Rose",
+          "hex": "e75480"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000"
+        },
+        {
+          "name": "Red Lava",
+          "hex": "b22222"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Transparent",
+          "hex": "f0f8ff",
+          "translucent": true
+        },
+        {
+          "name": "Violet",
+          "hex": "8f00ff"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700"
+        },
+        {
+          "name": "Light Yellow",
+          "hex": "fffacd"
+        }
+      ]
+    }
+  ]
+}
