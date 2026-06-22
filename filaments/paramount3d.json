@@ -1,0 +1,993 @@
+{
+  "manufacturer": "Paramount 3D",
+  "filaments": [
+    {
+      "name": "Paramount 3D PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        210
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Autobot Blue",
+          "codes": [
+            "BRL50022118C"
+          ],
+          "hex": "005eb8"
+        },
+        {
+          "name": "Aztec Gold",
+          "codes": [
+            "GOCOP2SC"
+          ],
+          "hexes": [
+            "b87333",
+            "c5a028"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy"
+        },
+        {
+          "name": "Battleship Gray",
+          "codes": [
+            "BGRL7031431C"
+          ],
+          "hex": "7f868c"
+        },
+        {
+          "name": "Black",
+          "hex": "101820"
+        },
+        {
+          "name": "Black Cherry",
+          "codes": [
+            "WMRL3005490C"
+          ],
+          "hex": "7a263a"
+        },
+        {
+          "name": "British Racing Green",
+          "codes": [
+            "GRL60053435C"
+          ],
+          "hex": "004225"
+        },
+        {
+          "name": "Cadet Blue",
+          "codes": [
+            "CBRL50235405C"
+          ],
+          "hex": "003b5c"
+        },
+        {
+          "name": "Caribbean Coral",
+          "codes": [
+            "CPRL30227416C"
+          ],
+          "hex": "e9897e"
+        },
+        {
+          "name": "Castle Limestone Gray",
+          "codes": [
+            "CGRL7023416C"
+          ],
+          "hex": "8e9089"
+        },
+        {
+          "name": "Chameleon",
+          "codes": [
+            "BLUGREN2SC"
+          ],
+          "hexes": [
+            "005eb8",
+            "2e8b57"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Colossus Copper",
+          "codes": [
+            "810031560561CC"
+          ],
+          "hex": "b87333",
+          "finish": "glossy"
+        },
+        {
+          "name": "Decepticon Purple",
+          "codes": [
+            "PRL40077449C"
+          ],
+          "hex": "6a6599"
+        },
+        {
+          "name": "Egg Yolk Yellow",
+          "codes": [
+            "SYRL1003137C"
+          ],
+          "hex": "f6a950"
+        },
+        {
+          "name": "Enzo Red",
+          "codes": [
+            "TRRL3020485C"
+          ],
+          "hex": "cc0605"
+        },
+        {
+          "name": "Fighter Jet Blue",
+          "codes": [
+            "FBRL50087546C"
+          ],
+          "hex": "003b49"
+        },
+        {
+          "name": "Game Cartridge Gray",
+          "codes": [
+            "DGRL7042423C"
+          ],
+          "hex": "a7a8aa"
+        },
+        {
+          "name": "Geode Black",
+          "codes": [
+            "GEOBLACK"
+          ],
+          "hexes": [
+            "1a1a2e",
+            "4a4a6a"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Gold Krugerrand",
+          "hex": "c5a028",
+          "finish": "glossy"
+        },
+        {
+          "name": "Graphite Gray",
+          "codes": [
+            "BGRL7043425C"
+          ],
+          "hex": "494e53"
+        },
+        {
+          "name": "Great Depression Jadeite",
+          "codes": [
+            "JGRL60217494C"
+          ],
+          "hex": "6b7c3c"
+        },
+        {
+          "name": "Hannibal Red",
+          "codes": [
+            "BHRL3009181C"
+          ],
+          "hex": "7b292c"
+        },
+        {
+          "name": "Harajuku Pink",
+          "codes": [
+            "TMRL4010675C"
+          ],
+          "hex": "e45dbf"
+        },
+        {
+          "name": "Iron Red",
+          "codes": [
+            "IRRL30111815C"
+          ],
+          "hex": "8b2332"
+        },
+        {
+          "name": "Ivory",
+          "codes": [
+            "IRL10147501C"
+          ],
+          "hex": "e1cc4f"
+        },
+        {
+          "name": "Karnak Sandstone",
+          "codes": [
+            "GBRL10197530S"
+          ],
+          "hex": "a0957d"
+        },
+        {
+          "name": "Leviathan Blue Green",
+          "codes": [
+            "TBRL5020316C"
+          ],
+          "hex": "00594c"
+        },
+        {
+          "name": "Matte Black",
+          "hex": "0e0e10",
+          "finish": "matte"
+        },
+        {
+          "name": "McLaren Orange",
+          "codes": [
+            "ORL20112019C"
+          ],
+          "hex": "ff8000"
+        },
+        {
+          "name": "Medusa Stone Gray",
+          "codes": [
+            "CGRL7023416S"
+          ],
+          "hex": "8e9089"
+        },
+        {
+          "name": "Mid Century Teal",
+          "codes": [
+            "ATRL50217718C"
+          ],
+          "hex": "007377"
+        },
+        {
+          "name": "Military Green",
+          "codes": [
+            "OGRL60037764C"
+          ],
+          "hex": "4b5335"
+        },
+        {
+          "name": "Military Khaki",
+          "codes": [
+            "GBRL10197530C"
+          ],
+          "hex": "b59a6a"
+        },
+        {
+          "name": "Military MBT Brown",
+          "codes": [
+            "MGRL80007560C"
+          ],
+          "hex": "6b3e2e"
+        },
+        {
+          "name": "Primordial Earth",
+          "codes": [
+            "DERL7006G09C"
+          ],
+          "hex": "5c4033"
+        },
+        {
+          "name": "Prototype Gray",
+          "codes": [
+            "LGRL7035421C"
+          ],
+          "hex": "a7a8aa"
+        },
+        {
+          "name": "Silver Dollar",
+          "hex": "8d9093",
+          "finish": "glossy"
+        },
+        {
+          "name": "Simpson Yellow",
+          "codes": [
+            "YRL1018129C"
+          ],
+          "hex": "faca30"
+        },
+        {
+          "name": "Skin - Dark Complexion",
+          "codes": [
+            "BBRL1011729C"
+          ],
+          "hex": "a67c52"
+        },
+        {
+          "name": "Skin - Deep Complexion",
+          "codes": [
+            "EBRL80282322C"
+          ],
+          "hex": "7a4f3b"
+        },
+        {
+          "name": "Skin - Fair Complexion",
+          "codes": [
+            "LIRL1015468C"
+          ],
+          "hex": "d4b59a"
+        },
+        {
+          "name": "Skin - Universal Beige",
+          "codes": [
+            "UBRL10017502C"
+          ],
+          "hex": "d5b59a"
+        },
+        {
+          "name": "St Andrews Green",
+          "codes": [
+            "PGRL60107742C"
+          ],
+          "hex": "4a7729"
+        },
+        {
+          "name": "Stealth Gray",
+          "codes": [
+            "IGRL7021419C"
+          ],
+          "hex": "5c5f63"
+        },
+        {
+          "name": "Steel Gray",
+          "codes": [
+            "SGRL7000430C"
+          ],
+          "hex": "a8a9ad"
+        },
+        {
+          "name": "Terra Copper",
+          "codes": [
+            "CBRL8004484C"
+          ],
+          "hex": "b87333",
+          "finish": "glossy"
+        },
+        {
+          "name": "Terra Cotta",
+          "codes": [
+            "BRRL30127591C"
+          ],
+          "hex": "9f4d36"
+        },
+        {
+          "name": "Tuxedo Midnight Blue",
+          "codes": [
+            "NBRL5011296C"
+          ],
+          "hex": "003b5c"
+        },
+        {
+          "name": "Ultraviolet",
+          "codes": [
+            "BLURED2SC"
+          ],
+          "hexes": [
+            "6a0dad",
+            "005eb8"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Volcano Orange",
+          "codes": [
+            "VORL20027626C"
+          ],
+          "hex": "c74700"
+        },
+        {
+          "name": "White",
+          "hex": "f4f4f4"
+        }
+      ]
+    },
+    {
+      "name": "Paramount 3D PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Autobot Blue",
+          "codes": [
+            "BRL50022118G"
+          ],
+          "hex": "005eb8"
+        },
+        {
+          "name": "Black",
+          "hex": "282828"
+        },
+        {
+          "name": "Black Cherry",
+          "codes": [
+            "WMRL3005490G"
+          ],
+          "hex": "7a263a"
+        },
+        {
+          "name": "British Racing Green",
+          "codes": [
+            "GRL6005343G"
+          ],
+          "hex": "004225"
+        },
+        {
+          "name": "Castle Limestone Gray",
+          "codes": [
+            "CGRL7023416G"
+          ],
+          "hex": "8e9089"
+        },
+        {
+          "name": "Decepticon Purple",
+          "codes": [
+            "PRL40077449G"
+          ],
+          "hex": "6a6599"
+        },
+        {
+          "name": "Egg Yolk Yellow",
+          "codes": [
+            "SYRL1003137G"
+          ],
+          "hex": "f6a950"
+        },
+        {
+          "name": "Enzo Red",
+          "codes": [
+            "TRRL3020485G"
+          ],
+          "hex": "cc0605"
+        },
+        {
+          "name": "Fighter Jet Blue",
+          "codes": [
+            "FBRL50087546G"
+          ],
+          "hex": "003b49"
+        },
+        {
+          "name": "Graphite Gray",
+          "codes": [
+            "BGRL7043425G"
+          ],
+          "hex": "494e53"
+        },
+        {
+          "name": "Hannibal Red",
+          "codes": [
+            "BHRL3009181G"
+          ],
+          "hex": "7b292c"
+        },
+        {
+          "name": "Harajuku Pink",
+          "codes": [
+            "TMRL4010675G"
+          ],
+          "hex": "cf3476"
+        },
+        {
+          "name": "Iron Red",
+          "codes": [
+            "IRRL30111815G"
+          ],
+          "hex": "8b2332"
+        },
+        {
+          "name": "McLaren Orange",
+          "codes": [
+            "ORL20112019G"
+          ],
+          "hex": "ff8000"
+        },
+        {
+          "name": "Mid Century Modern Teal",
+          "codes": [
+            "ATRL50217718G"
+          ],
+          "hex": "007377"
+        },
+        {
+          "name": "Military Green",
+          "codes": [
+            "OGRL60037764G"
+          ],
+          "hex": "4b5335"
+        },
+        {
+          "name": "Military Khaki",
+          "codes": [
+            "GBRL10197530G"
+          ],
+          "hex": "b59a6a"
+        },
+        {
+          "name": "Military MBT Brown",
+          "codes": [
+            "MGRL80007560G"
+          ],
+          "hex": "6b3e2e"
+        },
+        {
+          "name": "Primordial Earth",
+          "codes": [
+            "DERL7006G09G"
+          ],
+          "hex": "5c4033"
+        },
+        {
+          "name": "Prototype Gray",
+          "codes": [
+            "LGRL7035421G"
+          ],
+          "hex": "a7a8aa"
+        },
+        {
+          "name": "Simpson Yellow",
+          "codes": [
+            "YRL1018129G"
+          ],
+          "hex": "faca30"
+        },
+        {
+          "name": "Skin - Ivory",
+          "codes": [
+            "IRL10147501G"
+          ],
+          "hex": "e1cc4f"
+        },
+        {
+          "name": "Skin - Universal Beige",
+          "codes": [
+            "UBRL10017502G"
+          ],
+          "hex": "d5b59a"
+        },
+        {
+          "name": "Stealth Gray",
+          "codes": [
+            "IGRL7021419G"
+          ],
+          "hex": "5c5f63"
+        },
+        {
+          "name": "Terra Copper",
+          "codes": [
+            "CBRL8004484G"
+          ],
+          "hex": "b87333",
+          "finish": "glossy"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ]
+    },
+    {
+      "name": "Paramount 3D ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Autobot Blue",
+          "codes": [
+            "BRL50022118A"
+          ],
+          "hex": "20214d"
+        },
+        {
+          "name": "Battleship Gray",
+          "codes": [
+            "BGRL7031431A"
+          ],
+          "hex": "7f868c"
+        },
+        {
+          "name": "Black",
+          "hex": "0e0e10"
+        },
+        {
+          "name": "Black Cherry",
+          "codes": [
+            "WMRL3005490A"
+          ],
+          "hex": "6b1c23"
+        },
+        {
+          "name": "British Racing Green",
+          "codes": [
+            "GRL60053435A"
+          ],
+          "hex": "0f4336"
+        },
+        {
+          "name": "Castle Limestone Gray",
+          "codes": [
+            "CGRL7023416A"
+          ],
+          "hex": "8e9089"
+        },
+        {
+          "name": "Clear",
+          "hex": "eaeaea"
+        },
+        {
+          "name": "Decepticon Purple",
+          "codes": [
+            "PRL40077449A"
+          ],
+          "hex": "7d55c7"
+        },
+        {
+          "name": "Enzo Red",
+          "codes": [
+            "TRRL3020485A"
+          ],
+          "hex": "cc0605"
+        },
+        {
+          "name": "Fighter Jet Blue",
+          "codes": [
+            "FBRL50087546C"
+          ],
+          "hex": "003b49"
+        },
+        {
+          "name": "Game Cartridge Gray",
+          "codes": [
+            "LGRL7042423A"
+          ],
+          "hex": "a7a8aa"
+        },
+        {
+          "name": "Gold Krugerrand",
+          "hex": "c5a028",
+          "finish": "glossy"
+        },
+        {
+          "name": "Graphite Gray",
+          "codes": [
+            "BGRL7043425A"
+          ],
+          "hex": "494e53"
+        },
+        {
+          "name": "Harajuku Pink",
+          "codes": [
+            "TMRL4010675A"
+          ],
+          "hex": "cf3476"
+        },
+        {
+          "name": "Iron Red",
+          "codes": [
+            "IRRL30111815A"
+          ],
+          "hex": "8b2332"
+        },
+        {
+          "name": "McLaren Orange",
+          "codes": [
+            "ORL20112019A"
+          ],
+          "hex": "ff8000"
+        },
+        {
+          "name": "Mid Century Modern Teal",
+          "codes": [
+            "ATRL50217718A"
+          ],
+          "hex": "007377"
+        },
+        {
+          "name": "Military Green",
+          "codes": [
+            "OGRL60037764A"
+          ],
+          "hex": "4b5335"
+        },
+        {
+          "name": "Military Khaki",
+          "codes": [
+            "GBRL10197530A"
+          ],
+          "hex": "b59a6a"
+        },
+        {
+          "name": "Military MBT Brown",
+          "codes": [
+            "MGRL80007560A"
+          ],
+          "hex": "6b3e2e"
+        },
+        {
+          "name": "Primordial Earth",
+          "codes": [
+            "DERL7006G09A"
+          ],
+          "hex": "5c4033"
+        },
+        {
+          "name": "Prototype Gray",
+          "codes": [
+            "LGRL7035421A"
+          ],
+          "hex": "c5c7c4"
+        },
+        {
+          "name": "Silver Dollar",
+          "hex": "8d9093",
+          "finish": "glossy"
+        },
+        {
+          "name": "Simpson Yellow",
+          "codes": [
+            "YRL1018129A"
+          ],
+          "hex": "f6d600"
+        },
+        {
+          "name": "Skin - Dark Complexion",
+          "codes": [
+            "BBRL1011729A"
+          ],
+          "hex": "a67c52"
+        },
+        {
+          "name": "Skin - Fair Complexion",
+          "codes": [
+            "LIRL1015468A"
+          ],
+          "hex": "d4b59a"
+        },
+        {
+          "name": "Skin - Ivory",
+          "codes": [
+            "UBRL10147501A"
+          ],
+          "hex": "e1cc4f"
+        },
+        {
+          "name": "Skin - Universal Beige",
+          "codes": [
+            "UBRL10017502A"
+          ],
+          "hex": "d5b59a"
+        },
+        {
+          "name": "Steel Gray",
+          "codes": [
+            "SGRL7000430A"
+          ],
+          "hex": "a8a9ad"
+        },
+        {
+          "name": "Terra Cotta",
+          "codes": [
+            "BRRL30127591A"
+          ],
+          "hex": "9f4d36"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ]
+    },
+    {
+      "name": "Paramount 3D ASA {color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Black",
+          "codes": [
+            "BLACK"
+          ],
+          "hex": "101820"
+        },
+        {
+          "name": "Decepticon Purple",
+          "codes": [
+            "PRL40077449SA"
+          ],
+          "hex": "7d55c7"
+        },
+        {
+          "name": "Enzo Red",
+          "codes": [
+            "TRRL3020485SA"
+          ],
+          "hex": "da291c"
+        },
+        {
+          "name": "Graphite Gray",
+          "codes": [
+            "BGRL7043_425SA"
+          ],
+          "hex": "494e53"
+        },
+        {
+          "name": "Iron Red",
+          "codes": [
+            "IRRL30111815SA"
+          ],
+          "hex": "8b2332"
+        },
+        {
+          "name": "McLaren Orange",
+          "codes": [
+            "ORL20112019SA"
+          ],
+          "hex": "ff8000"
+        },
+        {
+          "name": "Military Green",
+          "codes": [
+            "OGRL60037764SA"
+          ],
+          "hex": "4b5335"
+        },
+        {
+          "name": "Military Khaki",
+          "codes": [
+            "GBRL10197530SA"
+          ],
+          "hex": "b59a6a"
+        },
+        {
+          "name": "Primordial Earth",
+          "codes": [
+            "DERL7006G09SA"
+          ],
+          "hex": "5c4033"
+        },
+        {
+          "name": "Stealth Gray",
+          "codes": [
+            "IGRL7021_419SA"
+          ],
+          "hex": "5c5f63"
+        },
+        {
+          "name": "Vapor Gray",
+          "codes": [
+            "LGRL7035421SA"
+          ],
+          "hex": "a7a8aa"
+        },
+        {
+          "name": "White",
+          "codes": [
+            "WHITE"
+          ],
+          "hex": "f4f4f4"
+        }
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ]
+    },
+    {
+      "name": "Paramount 3D PETG-CF {color_name}",
+      "material": "PETG-CF",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Black",
+          "codes": [
+            "CF810031560202"
+          ],
+          "hex": "101820"
+        },
+        {
+          "name": "Steampunk",
+          "codes": [
+            "BCF810031560561"
+          ],
+          "hex": "808080"
+        }
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "Paramount 3D ABS-CF {color_name}",
+      "material": "ABS-CF",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101820"
+        }
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "fill": "carbon fiber"
+    }
+  ]
+}
