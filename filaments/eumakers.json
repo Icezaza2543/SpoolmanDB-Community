@@ -1,0 +1,1668 @@
+{
+  "manufacturer": "EUMAKERS",
+  "filaments": [
+    {
+      "name": "PA Carbon Fiber {color_name}",
+      "material": "PA-CF",
+      "density": 1.0,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PA_NYLON_CARBON_FIBER_Polymer_DataSheet.pdf",
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        70
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "PA Glass Fiber {color_name}",
+      "material": "PA-GF",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Translucent White",
+          "translucent": true,
+          "hex": "F2F2F2"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PA_NYLON_GLASS_FIBER_Polymer_DataSheet.pdf",
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        70
+      ],
+      "fill": "glass fiber"
+    },
+    {
+      "name": "PLA Anti Hydrolysis {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    },
+    {
+      "name": "PLA Eco {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Recycled Spool Pair",
+          "hex": "751C1B"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ]
+    },
+    {
+      "name": "PLA Fast Prints {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_FAST_PRINTS_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        145,
+        160
+      ],
+      "bed_temp": 60,
+      "bed_temp_range": [
+        60,
+        60
+      ]
+    },
+    {
+      "name": "PLA Fluorescent {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "435AA5"
+        },
+        {
+          "name": "Green",
+          "hex": "6EB52C"
+        },
+        {
+          "name": "Orange",
+          "hex": "FDC600"
+        },
+        {
+          "name": "Pink",
+          "hex": "E71280"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FAE900"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    },
+    {
+      "name": "PLA Glitter {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Anthracite",
+          "pattern": "sparkle",
+          "hex": "3D3935"
+        },
+        {
+          "name": "Black",
+          "pattern": "sparkle",
+          "hex": "000000"
+        },
+        {
+          "name": "Fog Grey",
+          "pattern": "sparkle",
+          "hex": "A8A9AD"
+        },
+        {
+          "name": "Taupe Grey",
+          "pattern": "sparkle",
+          "hex": "8B8371"
+        },
+        {
+          "name": "Transparent",
+          "translucent": true,
+          "hex": "C8C9C7"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "pattern": "sparkle"
+    },
+    {
+      "name": "PLA Glossy {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "finish": "glossy",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "finish": "glossy",
+          "hex": "174551"
+        },
+        {
+          "name": "Brick Brown",
+          "finish": "glossy",
+          "hex": "BC3617"
+        },
+        {
+          "name": "Green",
+          "finish": "glossy",
+          "hex": "88BD36"
+        },
+        {
+          "name": "Red",
+          "finish": "glossy",
+          "hex": "E63330"
+        },
+        {
+          "name": "Violet",
+          "finish": "glossy",
+          "hex": "A61676"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "glossy"
+    },
+    {
+      "name": "PLA High Impact {color_name}",
+      "material": "PLA",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_HIGH_IMPACT_PLA_Polymer_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    },
+    {
+      "name": "PLA Iridescent {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Amber",
+          "hex": "B06D49"
+        },
+        {
+          "name": "Green",
+          "hex": "32824B"
+        },
+        {
+          "name": "Marsala",
+          "hex": "891811"
+        },
+        {
+          "name": "Starry Sky",
+          "hex": "5259A3"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Beige",
+          "finish": "matte",
+          "hex": "D3BC8D"
+        },
+        {
+          "name": "Black",
+          "finish": "matte",
+          "hex": "000000"
+        },
+        {
+          "name": "Dark Grey",
+          "finish": "matte",
+          "hex": "3D3935"
+        },
+        {
+          "name": "Grey",
+          "finish": "matte",
+          "hex": "888B8D"
+        },
+        {
+          "name": "Light Grey",
+          "finish": "matte",
+          "hex": "C8C9C7"
+        },
+        {
+          "name": "Smoked Grey",
+          "finish": "matte",
+          "hex": "8C857B"
+        },
+        {
+          "name": "Tin Grey",
+          "finish": "matte",
+          "hex": "717C7D"
+        },
+        {
+          "name": "White",
+          "finish": "matte",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "PLA Metallic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Aluminium",
+          "hex": "E3E3E2"
+        },
+        {
+          "name": "Antique Gold",
+          "hex": "D6B084"
+        },
+        {
+          "name": "Brass",
+          "hex": "B8860B"
+        },
+        {
+          "name": "Bronze",
+          "hex": "C88050"
+        },
+        {
+          "name": "Cor-Ten",
+          "hex": "AA4225"
+        },
+        {
+          "name": "Gold",
+          "hex": "DEC78A"
+        },
+        {
+          "name": "Blue",
+          "hex": "5E829A"
+        },
+        {
+          "name": "Dark Antique Pink",
+          "hex": "A5717E"
+        },
+        {
+          "name": "Green",
+          "hex": "809479"
+        },
+        {
+          "name": "Sand Yellow",
+          "hex": "CCCC99"
+        },
+        {
+          "name": "Silver Gray",
+          "hex": "B1B1B1"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    },
+    {
+      "name": "PLA Multicolor {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Multicolor Basic",
+          "hexes": [
+            "F6EB61",
+            "EF3340",
+            "0085CA",
+            "00B51A"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Multicolor Fluorescent",
+          "hexes": [
+            "E71280",
+            "FAE900",
+            "FDC600",
+            "6EB52C"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Multicolor Modern",
+          "hexes": [
+            "00BFB3",
+            "FFBF3F",
+            "CE0058",
+            "80276C"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Multicolor Neutral",
+          "hexes": [
+            "FFFFFF",
+            "000000",
+            "888B8D",
+            "D3BC8D"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Multicolor Pastel",
+          "hexes": [
+            "F1EB9C",
+            "FCAFC0",
+            "BBDDE6",
+            "C2E189"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "multi_color_direction": "coaxial"
+    },
+    {
+      "name": "PLA Pearl {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Green",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    },
+    {
+      "name": "PLA Stone {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Ceramic",
+          "hex": "F2EBE0"
+        },
+        {
+          "name": "Concrete",
+          "hex": "DEDAD8"
+        },
+        {
+          "name": "Marble",
+          "pattern": "marble",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Quartz",
+          "hex": "F3D4AD"
+        },
+        {
+          "name": "Travertine",
+          "hex": "F5E0BD"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        225
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    },
+    {
+      "name": "PLA Transparent {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Transparent",
+          "translucent": true,
+          "hex": "C8C9C7"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    },
+    {
+      "name": "PLA UV Reactive {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Transparent",
+          "translucent": true,
+          "glow": true,
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "glow": true
+    },
+    {
+      "name": "PLA Wood {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "colors": [
+        {
+          "name": "Fir Wood",
+          "hex": "CFB27E"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_MSDS_WOOD.pdf",
+      "extruder_temp_range": [
+        130,
+        155
+      ],
+      "extruder_temp": 200,
+      "bed_temp_range": [
+        30,
+        50
+      ],
+      "fill": "wood"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 600,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1100,
+          "spool_weight": 200,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1800,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 400,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Acid Green",
+          "hex": "D0DF00"
+        },
+        {
+          "name": "Antique Pink",
+          "hex": "FCAFC0"
+        },
+        {
+          "name": "Aquamarine",
+          "hex": "B9DCD2"
+        },
+        {
+          "name": "Beige",
+          "hex": "D3BC8D"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0085CA"
+        },
+        {
+          "name": "Blue Sugared Almond",
+          "hex": "9BCBEB"
+        },
+        {
+          "name": "Blueberry",
+          "hex": "485CC7"
+        },
+        {
+          "name": "Bordeaux",
+          "hex": "76232F"
+        },
+        {
+          "name": "Brown",
+          "hex": "9E652E"
+        },
+        {
+          "name": "Bubblegum Pink",
+          "hex": "FB637E"
+        },
+        {
+          "name": "Cerulean Blue",
+          "hex": "006272"
+        },
+        {
+          "name": "Champagne",
+          "hex": "FFAE62"
+        },
+        {
+          "name": "Cosmic Violet",
+          "hex": "5F4B8B"
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "002A3A"
+        },
+        {
+          "name": "Dark Brown",
+          "hex": "623412"
+        },
+        {
+          "name": "Dark Cerulean Blue",
+          "hex": "004F59"
+        },
+        {
+          "name": "Dark Green",
+          "hex": "2C5234"
+        },
+        {
+          "name": "Dark Grey",
+          "hex": "3D3935"
+        },
+        {
+          "name": "Dark Orange",
+          "hex": "CF4520"
+        },
+        {
+          "name": "Dark Violet",
+          "hex": "3C1053"
+        },
+        {
+          "name": "Doll Pink",
+          "hex": "E7B78A"
+        },
+        {
+          "name": "Evergreen",
+          "hex": "006F62"
+        },
+        {
+          "name": "Fuchsia",
+          "hex": "CE0058"
+        },
+        {
+          "name": "Green",
+          "hex": "00B51A"
+        },
+        {
+          "name": "Green Fern",
+          "hex": "00AF66"
+        },
+        {
+          "name": "Green Leaf",
+          "hex": "78BE20"
+        },
+        {
+          "name": "Grey",
+          "hex": "888B8D"
+        },
+        {
+          "name": "Indigo",
+          "hex": "1E22AA"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "C8C9C7"
+        },
+        {
+          "name": "Magenta EUMAKERS",
+          "hex": "CE0F69"
+        },
+        {
+          "name": "Milk & Mint",
+          "hex": "80E0A7"
+        },
+        {
+          "name": "Mustard Yellow",
+          "hex": "C5A900"
+        },
+        {
+          "name": "Olive Yellow",
+          "hex": "897A27"
+        },
+        {
+          "name": "Orange",
+          "hex": "FE5000"
+        },
+        {
+          "name": "Orange Brick",
+          "hex": "963821"
+        },
+        {
+          "name": "Pastel Blue",
+          "hex": "BBDDE6"
+        },
+        {
+          "name": "Pastel Green",
+          "hex": "78D64B"
+        },
+        {
+          "name": "Pastel Orange",
+          "hex": "FDD26E"
+        },
+        {
+          "name": "Petroleum Green",
+          "hex": "829778"
+        },
+        {
+          "name": "Red",
+          "hex": "EF3340"
+        },
+        {
+          "name": "Sage Green",
+          "hex": "719949"
+        },
+        {
+          "name": "Skin Pink",
+          "hex": "D3BBA8"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "69B3E7"
+        },
+        {
+          "name": "Smoked Grey",
+          "hex": "8C857B"
+        },
+        {
+          "name": "Straw Yellow",
+          "hex": "F6EB9C"
+        },
+        {
+          "name": "Tangerine Orange",
+          "hex": "FFBF3F"
+        },
+        {
+          "name": "Teal",
+          "hex": "00BFB3"
+        },
+        {
+          "name": "Tin Grey EUMAKERS",
+          "hex": "717C7D"
+        },
+        {
+          "name": "Violet",
+          "hex": "80276C"
+        },
+        {
+          "name": "Vivid Yellow",
+          "hex": "F6EB61"
+        },
+        {
+          "name": "Water Green",
+          "hex": "C2E189"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Wisteria Purple",
+          "hex": "C1A7E2"
+        },
+        {
+          "name": "Yellow Ochre",
+          "hex": "E4D77E"
+        }
+      ],
+      "country_of_origin": "Italy",
+      "tds_url": "https://www.eumakers.com/pub/media/technical_sheets/EUMAKERS_TDS_PLA_Filament_DataSheet.pdf",
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
+    }
+  ]
+}
