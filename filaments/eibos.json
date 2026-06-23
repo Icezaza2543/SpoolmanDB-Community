@@ -1,0 +1,198 @@
+{
+  "manufacturer": "EIBOS",
+  "filaments": [
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "finish": "matte",
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Cypress",
+          "hex": "0e4e27"
+        },
+        {
+          "name": "Oceana",
+          "hex": "3d5976"
+        },
+        {
+          "name": "Terracotta",
+          "hex": "e1897f"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Matte {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "finish": "matte",
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Gray",
+          "hex": "4c4d4d"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Milk White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black/Red",
+          "hexes": [
+            "000000",
+            "ff0000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Blue & Fuchsia",
+          "hex": "808080"
+        },
+        {
+          "name": "Di-chromatic gold & red",
+          "hex": "d4af37"
+        }
+      ]
+    },
+    {
+      "name": "Silk Triple {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "longitudinal",
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black / Blue / Purple",
+          "hexes": [
+            "000000",
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red+Green+Dark Blue",
+          "hexes": [
+            "ff0000",
+            "008000",
+            "000080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red+Yellow+Blue",
+          "hexes": [
+            "ff0000",
+            "ffff00",
+            "0000ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    }
+  ]
+}
