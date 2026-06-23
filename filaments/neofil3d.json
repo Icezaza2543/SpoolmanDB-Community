@@ -1,0 +1,101 @@
+{
+  "manufacturer": "Neofil3D",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "30a8fd"
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Green",
+          "hex": "00ff00"
+        },
+        {
+          "name": "Magenta",
+          "hex": "d400ff"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8000"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "Spain"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        180,
+        220
+      ],
+      "bed_temp_range": [
+        20,
+        20
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Cobalt Blue",
+          "hex": "0a7df0"
+        },
+        {
+          "name": "Deep Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Zöld RE-PLA",
+          "hex": "0ce425"
+        }
+      ],
+      "country_of_origin": "Spain"
+    }
+  ]
+}
