@@ -1,0 +1,198 @@
+{
+  "manufacturer": "Geek Fil/lament",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        225
+      ],
+      "bed_temp_range": [
+        90,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Ash",
+          "hex": "778899"
+        },
+        {
+          "name": "Beige",
+          "hex": "b19886"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue Moon",
+          "hex": "007fef"
+        },
+        {
+          "name": "Ivory",
+          "hex": "f6e8ca"
+        },
+        {
+          "name": "Just Green",
+          "hex": "5f963a"
+        },
+        {
+          "name": "Lilac",
+          "hex": "9370db"
+        },
+        {
+          "name": "Orange",
+          "hex": "ffa500"
+        },
+        {
+          "name": "Ruby Red",
+          "hex": "9b111e"
+        },
+        {
+          "name": "Sunflower",
+          "hex": "ffdb02"
+        },
+        {
+          "name": "Ultramarine",
+          "hex": "120a8f"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Cf {color_name}",
+      "material": "PLA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        200
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Sunflower (Yellow)",
+          "hex": "fff700"
+        }
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "PLA-GF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        200
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "glass fiber"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        250
+      ],
+      "bed_temp_range": [
+        65,
+        65
+      ],
+      "colors": [
+        {
+          "name": "Lilac",
+          "hex": "6326c0"
+        },
+        {
+          "name": "Orange",
+          "hex": "ec7c25"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Sunflower",
+          "hex": "ffc512"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Arabica",
+          "hex": "3c2020"
+        }
+      ]
+    }
+  ]
+}
