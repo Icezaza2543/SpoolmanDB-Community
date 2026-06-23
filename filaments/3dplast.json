@@ -1,0 +1,159 @@
+{
+  "manufacturer": "3D Plast",
+  "filaments": [
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 850
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Burgundy",
+          "hex": "58002e"
+        },
+        {
+          "name": "Grass green",
+          "hex": "00f201"
+        },
+        {
+          "name": "Pink",
+          "hex": "ff56cc"
+        },
+        {
+          "name": "Purple",
+          "hex": "5e30eb"
+        },
+        {
+          "name": "Sky blue",
+          "hex": "00a9e7"
+        },
+        {
+          "name": "Turquoise",
+          "hex": "0098bb"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffcc02"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 850
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Asphalt",
+          "hex": "333333"
+        },
+        {
+          "name": "white",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Translucent {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "5bb8fb"
+        },
+        {
+          "name": "Red",
+          "hex": "c60101"
+        },
+        {
+          "name": "Warm tangerine",
+          "hex": "f36435"
+        }
+      ]
+    },
+    {
+      "name": "Translucent {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Clear",
+          "hex": "808080"
+        }
+      ]
+    }
+  ]
+}
