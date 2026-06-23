@@ -1,0 +1,198 @@
+{
+  "manufacturer": "DUDV2",
+  "filaments": [
+    {
+      "name": "TPU AMS STTPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Brown",
+          "hex": "302025"
+        },
+        {
+          "name": "Pink",
+          "hex": "f01950"
+        },
+        {
+          "name": "Purple",
+          "hex": "740067"
+        }
+      ]
+    },
+    {
+      "name": "TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "PETG Dual {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        245
+      ],
+      "bed_temp_range": [
+        70,
+        80
+      ],
+      "multi_color_direction": "longitudinal",
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Black+Green",
+          "hexes": [
+            "000000",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        35,
+        70
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Orange",
+          "hex": "ee7e4f"
+        }
+      ]
+    },
+    {
+      "name": "PLA Pro {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        35,
+        70
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Desert Bone",
+          "hex": "d1d283"
+        },
+        {
+          "name": "Fast Rainbow",
+          "hex": "027df7"
+        },
+        {
+          "name": "Military Camouflage",
+          "hex": "efe7ae"
+        },
+        {
+          "name": "Swamp Rainbow",
+          "hex": "d5ee59"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Pro {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        35,
+        70
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "008000"
+        }
+      ]
+    }
+  ]
+}
