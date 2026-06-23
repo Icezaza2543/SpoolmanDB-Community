@@ -1,0 +1,352 @@
+{
+  "manufacturer": "Print-Me",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black Volcano",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "fffaf4"
+        }
+      ]
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Natural Ivory",
+          "hex": "e6e0d9"
+        }
+      ]
+    },
+    {
+      "name": "Eco {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Polar White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Ecofil {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Dark blue",
+          "hex": "165daa"
+        },
+        {
+          "name": "Pastel blue",
+          "hex": "c3d8ea"
+        }
+      ]
+    },
+    {
+      "name": "Glow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Gleaming yellow",
+          "hex": "c8d1cb"
+        }
+      ]
+    },
+    {
+      "name": "Ht {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Antique gold",
+          "hex": "ac9b78"
+        }
+      ]
+    },
+    {
+      "name": "Marble {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Marble carrara",
+          "hex": "e9e5d0",
+          "pattern": "marble"
+        }
+      ],
+      "pattern": "marble"
+    },
+    {
+      "name": "PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "21a1de"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Antique Gold",
+          "hex": "ac9b78"
+        },
+        {
+          "name": "Green bottle",
+          "hex": "0c3b2c"
+        }
+      ]
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Bone",
+          "hex": "cdcac2"
+        }
+      ]
+    },
+    {
+      "name": "TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        310
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black (20ShD)",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "Wood {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Bamboo",
+          "hex": "897367"
+        },
+        {
+          "name": "Cork",
+          "hex": "45362b"
+        },
+        {
+          "name": "Wood",
+          "hex": "bfa47d"
+        }
+      ],
+      "fill": "wood"
+    }
+  ]
+}
