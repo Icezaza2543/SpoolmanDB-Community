@@ -1,0 +1,705 @@
+{
+  "manufacturer": "Filamentworld",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        90,
+        100
+      ],
+      "country_of_origin": "Germany",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "ABS175XBLK"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "ABS175XSBL"
+          ]
+        },
+        {
+          "name": "Dark Brown",
+          "hex": "5c4033",
+          "codes": [
+            "ABS175XBRN"
+          ]
+        },
+        {
+          "name": "Fire Red",
+          "hex": "cc0000",
+          "codes": [
+            "ABS175XRED"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700",
+          "codes": [
+            "ABS175XGLD"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "ABS175XGRY"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "ABS175XFGN",
+            "ABS175XGGN"
+          ]
+        },
+        {
+          "name": "Magenta",
+          "hex": "ff00ff",
+          "codes": [
+            "ABS175XMGA"
+          ]
+        },
+        {
+          "name": "Neon Orange",
+          "hex": "ff6600",
+          "codes": [
+            "ABS175XFOR"
+          ]
+        },
+        {
+          "name": "Neon Yellow",
+          "hex": "ccff00",
+          "codes": [
+            "ABS175XFYL"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "ABS175XORG"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "ABS175XSLV"
+          ]
+        },
+        {
+          "name": "Transparent",
+          "hex": "ffffff80",
+          "translucent": true,
+          "codes": [
+            "ABS175XCLR"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "ABS175XWHT"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "ABS175XNYL"
+          ]
+        }
+      ],
+      "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_ABS_Datenblatt.pdf"
+    },
+    {
+      "name": "Matte PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "Germany",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLAMTT175XBLK"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "PLAMTT175XBLU"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PLAMTT175XGRY"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": [
+            "PLAMTT175XRED"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLAMTT175XWHT"
+          ]
+        }
+      ],
+      "finish": "matte",
+      "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        260
+      ],
+      "bed_temp_range": [
+        65,
+        75
+      ],
+      "country_of_origin": "Germany",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PETG175XBLK"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "PETG175XBLU",
+            "PETG175XMBL"
+          ]
+        },
+        {
+          "name": "Bronze",
+          "hex": "cd7f32",
+          "codes": [
+            "PETG175XMBR"
+          ]
+        },
+        {
+          "name": "Fire Red",
+          "hex": "cc0000",
+          "codes": [
+            "PETG175XRED"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PETG175XGRY"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "PETG175XGRN",
+            "PETG175XMGR"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "PETG175XORG"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PETG175XMSL"
+          ]
+        },
+        {
+          "name": "Transparent Clear",
+          "hex": "ffffff66",
+          "translucent": true,
+          "codes": [
+            "PETG175XCLR"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PETG175XWHT"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PETG175XYLW"
+          ]
+        }
+      ],
+      "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PETG_Datenblatt.pdf"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        180,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "Germany",
+      "colors": [
+        {
+          "name": "Anthracite",
+          "hex": "383838",
+          "codes": [
+            "PLA175XLANT"
+          ]
+        },
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA175XBLK"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "MPLA175XBLGR",
+            "MPLA175XBLYE",
+            "PLA175XLNAV",
+            "PLA175XSBL"
+          ]
+        },
+        {
+          "name": "Dark Brown",
+          "hex": "5c4033",
+          "codes": [
+            "PLA175XBRN"
+          ]
+        },
+        {
+          "name": "Fire Red",
+          "hex": "cc0000",
+          "codes": [
+            "PLA175XRED"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700",
+          "codes": [
+            "MPLA175XREGO",
+            "PLA175XGLD",
+            "PLAXBASX175XGLD"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PLA175XGRY",
+            "PLA175XLGRY"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "MPLA175XREGR",
+            "PLA175XFGN",
+            "PLA175XGGN"
+          ]
+        },
+        {
+          "name": "Magenta",
+          "hex": "ff00ff",
+          "codes": [
+            "PLA175XMGA"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "d8d0c0",
+          "codes": [
+            "PELXPLAXNAT"
+          ]
+        },
+        {
+          "name": "Neon Orange",
+          "hex": "ff6600",
+          "codes": [
+            "PLA175XFOR"
+          ]
+        },
+        {
+          "name": "Neon Yellow",
+          "hex": "ccff00",
+          "codes": [
+            "PLA175XFYL"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "PLA175XORG",
+            "PLAXBASX175XORG"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PLA175XSLV",
+            "PLAXBASX175XSLV"
+          ]
+        },
+        {
+          "name": "Transparent",
+          "hex": "ffffff80",
+          "translucent": true,
+          "codes": [
+            "PLA175XCLR"
+          ]
+        },
+        {
+          "name": "Violet",
+          "hex": "8b00ff",
+          "codes": [
+            "MPLA175XGOVI"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLA175XWHT"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PLA175XNYL"
+          ]
+        }
+      ],
+      "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "Germany",
+      "colors": [
+        {
+          "name": "Dark Blue",
+          "hex": "003366",
+          "codes": [
+            "PLAXBASX175XDBLU"
+          ]
+        },
+        {
+          "name": "Dark Green",
+          "hex": "006400",
+          "codes": [
+            "PLAXBASX175XDGR"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700",
+          "codes": [
+            "PLAXBASX175XGLD"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "PLAXBASX175XORG"
+          ]
+        },
+        {
+          "name": "Pink",
+          "hex": "ff69b4",
+          "codes": [
+            "PLAXBASX175XPNK"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PLAXBASX175XSLV"
+          ]
+        },
+        {
+          "name": "Wintershine White",
+          "hex": "f5f5f5",
+          "codes": [
+            "PLAXBASX175WIN"
+          ]
+        },
+        {
+          "name": "Wondrous White",
+          "hex": "fafafa",
+          "codes": [
+            "PLAXBASX175WON"
+          ]
+        }
+      ],
+      "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf"
+    },
+    {
+      "name": "PLA Plus {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        1,
+        75
+      ],
+      "country_of_origin": "Germany",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLAPLU175XBLK"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "PLAPLU175XBLU"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PLAPLU175XGRY"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "PLAPLU175XGRN"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "d8d0c0",
+          "codes": [
+            "PLAPLU175XTRA"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": [
+            "PLAPLU175XRED"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLAPLU175XWHT"
+          ]
+        }
+      ],
+      "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "Germany",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLASLK175XBLK"
+          ]
+        },
+        {
+          "name": "Copper",
+          "hex": "b87333",
+          "codes": [
+            "PLASLK175XCOP"
+          ]
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "003366",
+          "codes": [
+            "PLASLK175XDBLU"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700",
+          "codes": [
+            "PLASLK175XGLD"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": [
+            "PLASLK175XRED"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PLASLK175XGRY"
+          ]
+        },
+        {
+          "name": "Violet",
+          "hex": "8b00ff",
+          "codes": [
+            "PLASLK175XVIO"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLASLK175XWHT"
+          ]
+        }
+      ],
+      "finish": "glossy",
+      "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf"
+    }
+  ]
+}
