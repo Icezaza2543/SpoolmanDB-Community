@@ -1,0 +1,127 @@
+{
+  "manufacturer": "Grauts",
+  "filaments": [
+    {
+      "name": "Gf {color_name}",
+      "material": "PP-GF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        280
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "glass fiber"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        270
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "white",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "d1bc8a"
+        },
+        {
+          "name": "Chocolate brown",
+          "hex": "411900"
+        },
+        {
+          "name": "Green",
+          "hex": "086608"
+        },
+        {
+          "name": "Metallic Gold",
+          "hex": "d3af37"
+        },
+        {
+          "name": "Pastell Mintgrün",
+          "hex": "93cba4"
+        },
+        {
+          "name": "Pastell Pfirsich",
+          "hex": "ddb398"
+        },
+        {
+          "name": "Pastell Rosa",
+          "hex": "dea7ae"
+        },
+        {
+          "name": "pearl white",
+          "hex": "f6f4f5"
+        },
+        {
+          "name": "sky blue",
+          "hex": "87ceeb"
+        },
+        {
+          "name": "Sonderfarbe (Pink leicht Transparent)",
+          "hex": "fdd2fe"
+        },
+        {
+          "name": "yellow",
+          "hex": "f4c430"
+        }
+      ]
+    }
+  ]
+}
