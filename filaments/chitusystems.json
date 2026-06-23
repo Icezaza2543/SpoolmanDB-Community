@@ -1,0 +1,187 @@
+{
+  "manufacturer": "Chitu Systems",
+  "filaments": [
+    {
+      "name": "Glitter {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Blue-Putplr",
+          "hex": "6d778e",
+          "pattern": "sparkle"
+        }
+      ],
+      "pattern": "sparkle"
+    },
+    {
+      "name": "Gradient Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Conjure Matte Rainbow",
+          "hex": "80b3e5"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        260
+      ],
+      "bed_temp_range": [
+        75,
+        75
+      ],
+      "colors": [
+        {
+          "name": "Yellow",
+          "hex": "ffff00"
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black Dark Green",
+          "hex": "07310f"
+        },
+        {
+          "name": "Black Gold",
+          "hex": "36370b"
+        },
+        {
+          "name": "Black Purple",
+          "hex": "2a0a33"
+        },
+        {
+          "name": "Black Red",
+          "hex": "3f0d0d"
+        },
+        {
+          "name": "Blue Green",
+          "hex": "43b3ae"
+        }
+      ]
+    },
+    {
+      "name": "Silk Triple {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black Blue Purple",
+          "hex": "000000"
+        },
+        {
+          "name": "Green/Gold/Orange",
+          "hexes": [
+            "008000",
+            "ffd700",
+            "32feb5"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Purple Orange Blue",
+          "hex": "d60a23"
+        },
+        {
+          "name": "Red Blue Green",
+          "hex": "ff2b2b"
+        },
+        {
+          "name": "Red Gold Blue",
+          "hex": "d60a23"
+        },
+        {
+          "name": "Red Gold Purple",
+          "hex": "d60a23"
+        },
+        {
+          "name": "Red Yellow Blue",
+          "hex": "d60a23"
+        }
+      ]
+    }
+  ]
+}
