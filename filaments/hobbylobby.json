@@ -1,0 +1,238 @@
+{
+  "manufacturer": "Hobby Lobby",
+  "filaments": [
+    {
+      "name": "Marble {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "colors": [
+        {
+          "name": "White Marble",
+          "hex": "d6d6d6",
+          "pattern": "marble"
+        }
+      ],
+      "pattern": "marble"
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Black/Pink",
+          "hexes": [
+            "000000",
+            "db1f79"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rainbow",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Silver",
+          "hex": "d8d8d8"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        35,
+        40
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "3c39c6"
+        },
+        {
+          "name": "fire truck red",
+          "hex": "af0303"
+        },
+        {
+          "name": "Gray",
+          "hex": "7e8081"
+        },
+        {
+          "name": "Marble",
+          "hex": "d6d6d6"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8800"
+        },
+        {
+          "name": "Pink",
+          "hex": "eaa1b0"
+        },
+        {
+          "name": "Purple",
+          "hex": "4a2775"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Red (2589653)",
+          "hex": "500013"
+        },
+        {
+          "name": "Summer Reverie",
+          "hex": "ffff00"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Wood",
+          "hex": "887c7c"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffff00"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        }
+      ]
+    },
+    {
+      "name": "Silk Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Red,Yellow,Blue,Green,Purple",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "Wood {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Beaver",
+          "hex": "836c46"
+        },
+        {
+          "name": "Wood",
+          "hex": "808080"
+        }
+      ],
+      "fill": "wood"
+    }
+  ]
+}
