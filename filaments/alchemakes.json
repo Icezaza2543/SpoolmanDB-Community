@@ -1,0 +1,889 @@
+{
+  "manufacturer": "Alchemakes",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Baby Pink",
+          "hex": "d29dbc"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Fire Truck Red",
+          "hex": "990000"
+        },
+        {
+          "name": "Grey",
+          "hex": "999999"
+        },
+        {
+          "name": "Mint",
+          "hex": "78d7dd"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "extruder_temp_range": [
+        240,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ]
+    },
+    {
+      "name": "ABS-CF {color_name}",
+      "material": "ABS-CF",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        255,
+        285
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "ABS-GF {color_name}",
+      "material": "ABS-GF",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        255,
+        285
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "fill": "glass fiber"
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "2555e4"
+        },
+        {
+          "name": "Green",
+          "hex": "006100"
+        },
+        {
+          "name": "Grey",
+          "hex": "999999"
+        },
+        {
+          "name": "Milky White",
+          "hex": "f5f5ef"
+        },
+        {
+          "name": "Orange",
+          "hex": "fb752d"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "extruder_temp_range": [
+        240,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ]
+    },
+    {
+      "name": "ASA-CF {color_name}",
+      "material": "ASA-CF",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        255,
+        285
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "ASA-GF {color_name}",
+      "material": "ASA-GF",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        255,
+        285
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "fill": "glass fiber"
+    },
+    {
+      "name": "PA6-CF {color_name}",
+      "material": "PA6-CF",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "PETG Matte {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Army Green",
+          "hex": "1c4706"
+        },
+        {
+          "name": "Banana Yellow",
+          "hex": "fcf0a1"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Brown",
+          "hex": "522100"
+        },
+        {
+          "name": "Dark Grey",
+          "hex": "666666"
+        },
+        {
+          "name": "Desert Yellow",
+          "hex": "b48c46"
+        },
+        {
+          "name": "Fire Red",
+          "hex": "990000"
+        },
+        {
+          "name": "Fresh Green",
+          "hex": "6cc6b7"
+        },
+        {
+          "name": "Grass Green",
+          "hex": "1eff00"
+        },
+        {
+          "name": "Khaki",
+          "hex": "c2a584"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "999999"
+        },
+        {
+          "name": "Light Skin",
+          "hex": "ffece2"
+        },
+        {
+          "name": "Milky White",
+          "hex": "f5f5ef"
+        },
+        {
+          "name": "Mint Green",
+          "hex": "78d7dd"
+        },
+        {
+          "name": "Pink",
+          "hex": "d29dbc"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "0095ff"
+        },
+        {
+          "name": "Taro Purple",
+          "hex": "996aaf"
+        },
+        {
+          "name": "Very Peri",
+          "hex": "39008f"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow Orange",
+          "hex": "ff7b00"
+        },
+        {
+          "name": "Yves Klein Blue",
+          "hex": "002fa7"
+        },
+        {
+          "name": "Zinc Yellow",
+          "hex": "ffd500"
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "PETG Metal {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Antique Bronze",
+          "hex": "4d2814"
+        },
+        {
+          "name": "Blue",
+          "hex": "000238"
+        },
+        {
+          "name": "Blue Grey",
+          "hex": "455159"
+        },
+        {
+          "name": "Brass",
+          "hex": "8b682d"
+        },
+        {
+          "name": "Bronze",
+          "hex": "8b7b2d"
+        },
+        {
+          "name": "Copper",
+          "hex": "834321"
+        },
+        {
+          "name": "Green",
+          "hex": "006100"
+        },
+        {
+          "name": "Purple",
+          "hex": "622d71"
+        },
+        {
+          "name": "Silver",
+          "hex": "878787"
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "finish": "glossy"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Army Green",
+          "hex": "1c4706"
+        },
+        {
+          "name": "Banana Yellow",
+          "hex": "fcf0a1"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blackout White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Blood Orange",
+          "hex": "ff1100"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Cherry Blossom Pink",
+          "hex": "cd70a6"
+        },
+        {
+          "name": "Daisy Purple",
+          "hex": "39008f"
+        },
+        {
+          "name": "Fire Red",
+          "hex": "990000"
+        },
+        {
+          "name": "Fluorescent Green",
+          "hex": "73ff00"
+        },
+        {
+          "name": "Fluorescent Orange",
+          "hex": "ff4d00"
+        },
+        {
+          "name": "Grass Green",
+          "hex": "1eff00"
+        },
+        {
+          "name": "Grey",
+          "hex": "666666"
+        },
+        {
+          "name": "Light Coffee",
+          "hex": "7a5948"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "999999"
+        },
+        {
+          "name": "Milky White",
+          "hex": "f5f5ef"
+        },
+        {
+          "name": "Mint Green",
+          "hex": "78d7dd"
+        },
+        {
+          "name": "Navy Blue",
+          "hex": "000238"
+        },
+        {
+          "name": "Normal White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Pink",
+          "hex": "d29dbc"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "0095ff"
+        },
+        {
+          "name": "Taro Purple",
+          "hex": "996aaf"
+        },
+        {
+          "name": "Turquoise",
+          "hex": "6cc6b7"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow Orange",
+          "hex": "ff7b00"
+        },
+        {
+          "name": "Zinc Yellow",
+          "hex": "ffd500"
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ]
+    },
+    {
+      "name": "PETG-CF {color_name}",
+      "material": "PETG-CF",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black 12%",
+          "hex": "000000"
+        },
+        {
+          "name": "Black 5%",
+          "hex": "000000"
+        },
+        {
+          "name": "Black Red",
+          "hex": "450d0d"
+        },
+        {
+          "name": "Graphite Grey",
+          "hex": "3d3d3d"
+        },
+        {
+          "name": "Indigo",
+          "hex": "000238"
+        },
+        {
+          "name": "Olive Green",
+          "hex": "292d1a"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        270
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "PLA Marble {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Marble",
+          "hex": "ffffff"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        55,
+        55
+      ],
+      "pattern": "marble"
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Army Green",
+          "hex": "1c4706"
+        },
+        {
+          "name": "Banana Yellow",
+          "hex": "fcf0a1"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Desert Yellow",
+          "hex": "b48c46"
+        },
+        {
+          "name": "Fire Red",
+          "hex": "990000"
+        },
+        {
+          "name": "Grey",
+          "hex": "999999"
+        },
+        {
+          "name": "Light Coffee",
+          "hex": "7a5948"
+        },
+        {
+          "name": "Light Khaki",
+          "hex": "a59f97"
+        },
+        {
+          "name": "Milky White",
+          "hex": "f5f5ef"
+        },
+        {
+          "name": "Navy Blue",
+          "hex": "000238"
+        },
+        {
+          "name": "Pink",
+          "hex": "d29dbc"
+        },
+        {
+          "name": "Reddish Brown",
+          "hex": "371b0b"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "0095ff"
+        },
+        {
+          "name": "Tan",
+          "hex": "e5d4c2"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fff700"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        55,
+        55
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blood Orange",
+          "hex": "ff1100"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Dark Brown",
+          "hex": "512915"
+        },
+        {
+          "name": "Green",
+          "hex": "006100"
+        },
+        {
+          "name": "Grey",
+          "hex": "999999"
+        },
+        {
+          "name": "Light Coffee",
+          "hex": "7a5948"
+        },
+        {
+          "name": "Natural",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Pink",
+          "hex": "d29dbc"
+        },
+        {
+          "name": "Purple",
+          "hex": "6600ff"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Reddish Brown",
+          "hex": "371b0b"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "0095ff"
+        },
+        {
+          "name": "Tan",
+          "hex": "e5d4c2"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd500"
+        },
+        {
+          "name": "Yellow Orange",
+          "hex": "ff7b00"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        55,
+        55
+      ]
+    },
+    {
+      "name": "PLA-CF {color_name}",
+      "material": "PLA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Army Green",
+          "hex": "1c4706"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Maroon",
+          "hex": "450d0d"
+        },
+        {
+          "name": "Navy Blue",
+          "hex": "000238"
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "6d8196"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        250
+      ],
+      "bed_temp_range": [
+        55,
+        55
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "PP-GF {color_name}",
+      "material": "PP-GF",
+      "density": 0.9,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "ababab"
+        }
+      ],
+      "extruder_temp_range": [
+        235,
+        255
+      ],
+      "bed_temp_range": [
+        35,
+        35
+      ],
+      "fill": "glass fiber"
+    }
+  ]
+}
