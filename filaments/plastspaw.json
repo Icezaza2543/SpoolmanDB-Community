@@ -1,0 +1,138 @@
+{
+  "manufacturer": "Plastspaw",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Szary Gołębi",
+          "hex": "dddddd"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Grey",
+          "hex": "999999"
+        },
+        {
+          "name": "Orange",
+          "hex": "e05a00"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        35,
+        40
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Green",
+          "hex": "00f900"
+        },
+        {
+          "name": "Industrial grey",
+          "hex": "a5b3b3"
+        },
+        {
+          "name": "Light Blue",
+          "hex": "23a0da"
+        },
+        {
+          "name": "Light Brown / Jasny Brązowy",
+          "hex": "872807"
+        },
+        {
+          "name": "MIlitary Green (zielony wojskowy)",
+          "hex": "074331"
+        },
+        {
+          "name": "Orange / Pomarańczowy",
+          "hex": "fb7b4a"
+        },
+        {
+          "name": "Red",
+          "hex": "d31517"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Wood Beige / Drewno Beżowy",
+          "hex": "e9c8ad"
+        },
+        {
+          "name": "Żółty Satynowy",
+          "hex": "eacd1e"
+        }
+      ]
+    }
+  ]
+}
