@@ -1,0 +1,490 @@
+{
+  "manufacturer": "OVV3D",
+  "filaments": [
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "daa520",
+          "codes": [
+            "B0BTT2TVKG"
+          ]
+        },
+        {
+          "name": "Gold Coffee",
+          "hex": "b8860b",
+          "codes": [
+            "B0BTT2QJ7G"
+          ]
+        },
+        {
+          "name": "Purple",
+          "hex": "800080",
+          "codes": [
+            "B0BTT224RV"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5",
+          "codes": [
+            "B0G6CWC8QY"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Black & Blue",
+          "hexes": [
+            "000000",
+            "0066cc"
+          ],
+          "codes": [
+            "B0B138D2JL"
+          ]
+        },
+        {
+          "name": "Black & Green",
+          "hexes": [
+            "000000",
+            "228b22"
+          ],
+          "pattern": "sparkle",
+          "codes": [
+            "B0B13N3JHL"
+          ]
+        },
+        {
+          "name": "Black & Purple",
+          "hexes": [
+            "000000",
+            "800080"
+          ],
+          "codes": [
+            "B0B136CDLF",
+            "B0GTTVNJ88"
+          ]
+        },
+        {
+          "name": "Blue & Green",
+          "hexes": [
+            "0066cc",
+            "228b22"
+          ],
+          "codes": [
+            "B0BP76FTBP"
+          ]
+        },
+        {
+          "name": "Purple & Sky Blue",
+          "hexes": [
+            "800080",
+            "87ceeb"
+          ],
+          "codes": [
+            "B0CZ469ZMT"
+          ]
+        },
+        {
+          "name": "Red & Gold",
+          "hexes": [
+            "cc0000",
+            "daa520"
+          ],
+          "codes": [
+            "B0D4553N1Q"
+          ]
+        },
+        {
+          "name": "Silver & Grey",
+          "hexes": [
+            "c0c0c0",
+            "808080"
+          ],
+          "codes": [
+            "B0D8132JTP"
+          ]
+        },
+        {
+          "name": "Sky Blue & Rose Red",
+          "hexes": [
+            "87ceeb",
+            "ff007f"
+          ],
+          "codes": [
+            "B0BKKYB44F"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA Tri {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Blue-Green-Orange",
+          "hexes": [
+            "0066cc",
+            "228b22",
+            "ff8c00"
+          ],
+          "codes": [
+            "B0B9824FXH"
+          ]
+        },
+        {
+          "name": "Blue-Red-Green",
+          "hexes": [
+            "0066cc",
+            "cc0000",
+            "228b22"
+          ],
+          "codes": [
+            "B0B3JV15XH"
+          ]
+        },
+        {
+          "name": "Red-Yellow-Blue",
+          "hexes": [
+            "cc0000",
+            "ffff00",
+            "0066cc"
+          ],
+          "codes": [
+            "B0B431Y8RJ"
+          ]
+        },
+        {
+          "name": "Sky Blue-Rose Red-Green",
+          "hexes": [
+            "87ceeb",
+            "ff007f",
+            "228b22"
+          ],
+          "codes": [
+            "B0CKR7FJ19"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Matte PLA Tri {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "matte",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Red-Yellow-Blue",
+          "hexes": [
+            "cc0000",
+            "ffff00",
+            "0066cc"
+          ],
+          "codes": [
+            "B0DBZQZBRV"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Tri {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Red-Yellow-Blue",
+          "hexes": [
+            "cc0000",
+            "ffff00",
+            "0066cc"
+          ],
+          "codes": [
+            "B0FPCRTTHF"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Rainbow {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Gradient Multi-Color",
+          "hexes": [
+            "ff0000",
+            "ff7f00",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "4b0082",
+            "8b00ff"
+          ],
+          "codes": [
+            "B0FRXPV5KZ"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Translucent PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Blue-Purple Gradient",
+          "hexes": [
+            "0066cc",
+            "800080"
+          ],
+          "translucent": true,
+          "codes": [
+            "B0FRXX4WZ5"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Marble PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "pattern": "marble",
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Stone Brown Gradient",
+          "hexes": [
+            "8b7355",
+            "d2b48c",
+            "a0522d"
+          ],
+          "codes": [
+            "B0FRXZ2DWP"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wood PLA Bundle {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 800
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "fill": "wood",
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Walnut Oak Cherry Teak",
+          "hexes": [
+            "5c4033",
+            "c19a6b",
+            "de3163",
+            "b8860b"
+          ],
+          "codes": [
+            "B0BZ8XWX5D"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA Dual Bundle {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 800
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Red Gold Blue Green Sky Blue",
+          "hexes": [
+            "cc0000",
+            "daa520",
+            "0066cc",
+            "228b22",
+            "87ceeb"
+          ],
+          "codes": [
+            "B0BKKX9N9T"
+          ]
+        }
+      ]
+    }
+  ]
+}
