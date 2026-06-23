@@ -1,0 +1,556 @@
+{
+  "manufacturer": "Innofil3D",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "f2f2f2"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "c01010"
+        },
+        {
+          "name": "Blue",
+          "hex": "1010c0"
+        }
+      ]
+    },
+    {
+      "name": "PET {color_name}",
+      "material": "PET",
+      "density": 1.34,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        70,
+        75
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "Netherlands",
+      "tds_url": "https://cdn-reichelt.de/documents/datenblatt/E400/INNOFIL_ABS_DB-EN.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "f2f2f2"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "c01010"
+        },
+        {
+          "name": "Blue",
+          "hex": "1010c0"
+        },
+        {
+          "name": "Green",
+          "hex": "228b22"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00"
+        },
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        }
+      ]
+    },
+    {
+      "name": "Flex45 {color_name}",
+      "material": "TPU-45A",
+      "density": 1.15,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        }
+      ]
+    },
+    {
+      "name": "Flex60 {color_name}",
+      "material": "TPU-60A",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        }
+      ]
+    },
+    {
+      "name": "rPET {color_name}",
+      "material": "PET",
+      "density": 1.34,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        225,
+        245
+      ],
+      "bed_temp_range": [
+        70,
+        75
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        }
+      ]
+    },
+    {
+      "name": "PRO1 {color_name}",
+      "material": "PLA+",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "f2f2f2"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "ABS Fusion+ {color_name}",
+      "material": "ABS",
+      "density": 1.08,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        100,
+        120
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "f2f2f2"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.06,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        260,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        120
+      ],
+      "country_of_origin": "Netherlands",
+      "tds_url": "https://cdn-reichelt.de/documents/datenblatt/E400/INNOFIL_ASA_DB-EN.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "f2f2f2"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "HIPS {color_name}",
+      "material": "HIPS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "f2f2f2"
+        },
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        }
+      ]
+    },
+    {
+      "name": "PP {color_name}",
+      "material": "PP",
+      "density": 0.9,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        },
+        {
+          "name": "Black",
+          "hex": "101010"
+        }
+      ]
+    },
+    {
+      "name": "PET CF15 {color_name}",
+      "material": "PET-CF15",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        75
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        }
+      ]
+    },
+    {
+      "name": "PAHT CF15 {color_name}",
+      "material": "PA-CF15",
+      "density": 1.18,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        260,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        120
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "Netherlands",
+      "tds_url": "https://www.dim3nsions.ch/files/Diverse/TDS/Innofil3D_PAHT_CF15_TDS_EN_v2.0.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        }
+      ]
+    },
+    {
+      "name": "PP GF30 {color_name}",
+      "material": "PP-GF30",
+      "density": 0.94,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        20,
+        40
+      ],
+      "fill": "glass fiber",
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        }
+      ]
+    },
+    {
+      "name": "PA {color_name}",
+      "material": "PA",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        120
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        }
+      ]
+    },
+    {
+      "name": "TPU 85A {color_name}",
+      "material": "TPU-85A",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        30,
+        40
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "Natural",
+          "hex": "f1dfb9"
+        }
+      ]
+    }
+  ]
+}
