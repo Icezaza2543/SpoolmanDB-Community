@@ -1,0 +1,241 @@
+{
+  "manufacturer": "22 Network",
+  "filaments": [
+    {
+      "name": "{color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 220
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [190, 220],
+      "bed_temp_range": [50, 65],
+      "colors": [
+        {"name": "Cold White", "hex": "F5F5F5", "codes": ["33100"]},
+        {"name": "Warm White", "hex": "FAF0E6", "codes": ["10100"]},
+        {"name": "Black", "hex": "000000", "codes": ["10101"]},
+        {"name": "Light Grey", "hex": "D3D3D3", "codes": ["10104"]},
+        {"name": "Grey", "hex": "808080", "codes": ["10103"]},
+        {"name": "Grey Blue", "hex": "6699CC", "codes": ["10602"]},
+        {"name": "Dark Grey", "hex": "404040", "codes": ["10105"]},
+        {"name": "Red", "hex": "E30613", "codes": ["10200"]},
+        {"name": "Rouge Red", "hex": "A52A2A", "codes": ["10205"]},
+        {"name": "Sky Blue", "hex": "87CEEB", "codes": ["11601"]},
+        {"name": "Turquoise Green", "hex": "40E0D0", "codes": ["10605"]},
+        {"name": "Cyan", "hex": "00FFFF", "codes": ["10603"]},
+        {"name": "Cobalt Blue", "hex": "0047AB", "codes": ["10604"]},
+        {"name": "Blue Grey", "hex": "6699AA", "codes": ["2157C"]},
+        {"name": "Dark Blue", "hex": "00008B", "codes": ["10601"]},
+        {"name": "Army Blue", "hex": "002868", "codes": ["2140C"]},
+        {"name": "Dark Night Blue", "hex": "191970", "codes": ["11602"]},
+        {"name": "Apple Green", "hex": "8DB600", "codes": ["10503"]},
+        {"name": "Grass Green", "hex": "7CFC00", "codes": ["11500"]},
+        {"name": "Bambu Green", "hex": "228B22", "codes": ["10501"]},
+        {"name": "Christmas Green", "hex": "008000", "codes": ["10502"]},
+        {"name": "Dark Night Green", "hex": "013220", "codes": ["11501"]},
+        {"name": "Lilac Purple", "hex": "C8A2C8", "codes": ["11700"]},
+        {"name": "Purple", "hex": "800080", "codes": ["10700"]},
+        {"name": "Violet Purple", "hex": "4B0082", "codes": ["10701"]},
+        {"name": "Orange", "hex": "FF6600", "codes": ["10300"]},
+        {"name": "Pumpkin Orange", "hex": "FF7518", "codes": ["10301"]},
+        {"name": "Bronze", "hex": "CD7F32", "codes": ["10801"]},
+        {"name": "Brown", "hex": "8B4513", "codes": ["10800"]},
+        {"name": "Dark Night Brown", "hex": "3D2B1F", "codes": ["11801"]},
+        {"name": "Coco Brown", "hex": "6F4E37", "codes": ["10802"]},
+        {"name": "Dark Brown", "hex": "654321", "codes": ["11802"]},
+        {"name": "Pale Apricot", "hex": "FBE7B2", "codes": ["10201"]},
+        {"name": "Dessert Yellow", "hex": "F5DEB3", "codes": ["11401"]},
+        {"name": "Latte Brown", "hex": "C4A484", "codes": ["11800"]},
+        {"name": "Warm Yellow", "hex": "F5DEB3", "codes": ["10402"]},
+        {"name": "Yellow", "hex": "FFFF00", "codes": ["10400"]},
+        {"name": "Cherry Blossom", "hex": "FFB7C5", "codes": ["11201"]},
+        {"name": "Red Pink", "hex": "FF69B4", "codes": ["10204"]},
+        {"name": "Pink", "hex": "FFC0CB", "codes": ["10203"]},
+        {"name": "Magenta Red", "hex": "FF00FF", "codes": ["10202"]},
+        {"name": "Gold", "hex": "FFD700", "codes": ["10401"]},
+        {"name": "Silver", "hex": "C0C0C0", "codes": ["10102"]},
+        {"name": "Butter Yellow", "hex": "FFFACD", "codes": ["88101"]},
+        {"name": "Dusty Pink", "hex": "D8BFD8", "codes": ["88102"]},
+        {"name": "Azure Blue", "hex": "007FFF", "codes": ["88103"]},
+        {"name": "American Yellow", "hex": "FFAA1D", "codes": ["88104"]},
+        {"name": "Skin", "hex": "E8BEAC", "codes": ["88105"]},
+        {"name": "Forest Green", "hex": "228B22", "codes": ["88106"]},
+        {"name": "Fluorescent Green", "hex": "39FF14", "codes": ["88107"]},
+        {"name": "Fluorescent Orange", "hex": "FFBF00", "codes": ["88108"]},
+        {"name": "Rose Red", "hex": "C21E56", "codes": ["88109"]},
+        {"name": "Fluorescent Yellow", "hex": "CCFF00", "codes": ["88110"]}
+      ]
+    },
+    {
+      "name": "Luminous {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 220
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [190, 220],
+      "bed_temp_range": [50, 65],
+      "glow": true,
+      "colors": [
+        {"name": "Green", "hex": "ADFF2F", "codes": ["Luminous Green"]},
+        {"name": "Blue", "hex": "00BFFF", "codes": ["Luminous Blue"]}
+      ]
+    },
+    {
+      "name": "Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 220
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [190, 220],
+      "bed_temp_range": [50, 65],
+      "finish": "glossy",
+      "colors": [
+        {"name": "White", "hex": "FFFFFF", "codes": ["silk001"]},
+        {"name": "Yellow", "hex": "FFFF00", "codes": ["silk002"]},
+        {"name": "China Red", "hex": "E32636", "codes": ["silk003"]},
+        {"name": "Blue", "hex": "0000FF", "codes": ["silk004"]},
+        {"name": "Yellow-Gold", "hex": "FFD700", "codes": ["silk005"]},
+        {"name": "Silver", "hex": "C0C0C0", "codes": ["silk006"]},
+        {"name": "Purple", "hex": "800080", "codes": ["silk007"]},
+        {"name": "Black", "hex": "000000", "codes": ["silk008"]},
+        {"name": "Copper", "hex": "B87333", "codes": ["silk009"]},
+        {"name": "Bronze", "hex": "CD7F32", "codes": ["silk010"]},
+        {"name": "Christmas Green", "hex": "008000", "codes": ["silk011"]},
+        {"name": "Dark Gold", "hex": "B8860B", "codes": ["silk012"]},
+        {"name": "Pink", "hex": "FFC0CB", "codes": ["silk013"]},
+        {"name": "Cyan", "hex": "00FFFF", "codes": ["silk014"]}
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 220
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [190, 220],
+      "bed_temp_range": [50, 65],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {"name": "Red/Green", "hexes": ["E30613", "008000"], "codes": ["Dual 01"]},
+        {"name": "Red/Blue", "hexes": ["E30613", "0000FF"], "codes": ["Dual 02"]},
+        {"name": "Blue/Green", "hexes": ["0000FF", "008000"], "codes": ["Dual 03"]},
+        {"name": "Red/Gold", "hexes": ["E30613", "FFD700"], "codes": ["Dual 04"]},
+        {"name": "Gold/Copper", "hexes": ["FFD700", "B87333"], "codes": ["Dual 05"]},
+        {"name": "Gold/Silver", "hexes": ["FFD700", "C0C0C0"], "codes": ["Dual 06"]},
+        {"name": "Purple/Gold", "hexes": ["800080", "FFD700"], "codes": ["Dual 07"]},
+        {"name": "Yellow/Green", "hexes": ["FFFF00", "008000"], "codes": ["Dual 08"]},
+        {"name": "Rose Red/Light Blue", "hexes": ["C21E56", "ADD8E6"], "codes": ["Dual 09"]},
+        {"name": "Rose Red/Black", "hexes": ["C21E56", "000000"], "codes": ["Dual 10"]},
+        {"name": "Emerald Green/Black", "hexes": ["046307", "000000"], "codes": ["Dual 11"]},
+        {"name": "Black/Gold", "hexes": ["000000", "FFD700"], "codes": ["Dual 12"]},
+        {"name": "Black/Purple", "hexes": ["000000", "800080"], "codes": ["Dual 13"]},
+        {"name": "Black/Red", "hexes": ["000000", "E30613"], "codes": ["Dual 14"]},
+        {"name": "Purple/Green", "hexes": ["800080", "008000"], "codes": ["Dual 15"]},
+        {"name": "Teal/Coral", "hexes": ["008080", "FF7F50"], "codes": ["Dual 16"]},
+        {"name": "Blue/Silver", "hexes": ["0000FF", "C0C0C0"], "codes": ["Dual 17"]},
+        {"name": "Blue/Gold", "hexes": ["0000FF", "FFD700"], "codes": ["Dual 18"]},
+        {"name": "Coral/Purple", "hexes": ["FF7F50", "800080"], "codes": ["Dual 19"]},
+        {"name": "Blue/Purple", "hexes": ["0000FF", "800080"], "codes": ["Dual 20"]},
+        {"name": "Teal/Dark Violet", "hexes": ["008080", "9400D3"], "codes": ["Dual 21"]}
+      ]
+    },
+    {
+      "name": "Wood {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 220
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [190, 220],
+      "bed_temp_range": [50, 65],
+      "fill": "wood",
+      "colors": [
+        {"name": "Classic Birch", "hex": "F5F5DC", "codes": ["13505"]},
+        {"name": "Clay Brown", "hex": "D2691E", "codes": ["13801"]},
+        {"name": "Black Walnut", "hex": "3D2B1F", "codes": ["13107"]},
+        {"name": "Rosewood", "hex": "65000B", "codes": ["13204"]},
+        {"name": "White Oak", "hex": "E8DCC8", "codes": ["13106"]},
+        {"name": "Ochre Yellow", "hex": "CC7722", "codes": ["13403"]}
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 220
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [215, 230],
+      "bed_temp_range": [70, 90],
+      "colors": [
+        {"name": "Green", "hex": "008000", "codes": ["33500"]},
+        {"name": "Red", "hex": "E30613", "codes": ["33200"]},
+        {"name": "Yellow", "hex": "FFFF00", "codes": ["33400"]},
+        {"name": "Warm Yellow", "hex": "F5DEB3", "codes": ["10402"]},
+        {"name": "Black", "hex": "000000", "codes": ["33102"]},
+        {"name": "Grey", "hex": "808080", "codes": ["33101"]},
+        {"name": "White", "hex": "FFFFFF", "codes": ["33100"]},
+        {"name": "Orange", "hex": "FF6600", "codes": ["33300"]},
+        {"name": "Dark Blue", "hex": "00008B", "codes": ["33600"]},
+        {"name": "Dark Grey", "hex": "404040", "codes": ["33103"]},
+        {"name": "Lake Blue", "hex": "0066CC", "codes": ["33601"]},
+        {"name": "Forest Green", "hex": "228B22", "codes": ["33502"]},
+        {"name": "Lemon Green", "hex": "ADFF2F", "codes": ["33501"]},
+        {"name": "Cream White", "hex": "FFFDD0", "codes": ["33401"]},
+        {"name": "Peanut Brown", "hex": "D2B48C", "codes": ["33801"]},
+        {"name": "Transparent", "hex": "FFFFFF", "translucent": true, "codes": ["99100"]},
+        {"name": "Silver", "hex": "C0C0C0", "codes": ["10102"]},
+        {"name": "Transparent Blue", "hex": "ADD8E6", "translucent": true, "codes": ["99101"]},
+        {"name": "Transparent Yellow", "hex": "FFFFE0", "translucent": true, "codes": ["99102"]},
+        {"name": "Transparent Orange", "hex": "FFDAB9", "translucent": true, "codes": ["99103"]},
+        {"name": "Transparent Green", "hex": "90EE90", "translucent": true, "codes": ["99104"]},
+        {"name": "Purple", "hex": "800080", "codes": ["10700"]},
+        {"name": "Cherry Blossom", "hex": "FFB7C5", "codes": ["11201"]},
+        {"name": "Pink", "hex": "FFC0CB", "codes": ["10203"]},
+        {"name": "Magenta", "hex": "FF00FF", "codes": ["10202"]},
+        {"name": "Brown", "hex": "8B4513", "codes": ["10800"]},
+        {"name": "Sky Blue", "hex": "87CEEB", "codes": ["11601"]}
+      ]
+    }
+  ]
+}
