@@ -1,0 +1,284 @@
+{
+  "manufacturer": "LOCYFENS",
+  "filaments": [
+    {
+      "name": "Silk PLA Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Black & Green",
+          "hexes": [
+            "000000",
+            "228b22"
+          ],
+          "codes": [
+            "B0BR91CMR6"
+          ]
+        },
+        {
+          "name": "Black & Purple",
+          "hexes": [
+            "000000",
+            "800080"
+          ],
+          "codes": [
+            "B0BKKXVHDY"
+          ]
+        },
+        {
+          "name": "Black & Red",
+          "hexes": [
+            "000000",
+            "cc0000"
+          ],
+          "codes": [
+            "B0BR8YPXV8"
+          ]
+        },
+        {
+          "name": "Green & Blue",
+          "hexes": [
+            "228b22",
+            "0066cc"
+          ],
+          "codes": [
+            "B09P16NPXC"
+          ]
+        },
+        {
+          "name": "Silver & Blue",
+          "hexes": [
+            "c0c0c0",
+            "0066cc"
+          ],
+          "codes": [
+            "B09P16HBS9"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA Tri {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Black-Purple-Blue",
+          "hexes": [
+            "000000",
+            "800080",
+            "0066cc"
+          ],
+          "codes": [
+            "B0BRD94DMK"
+          ]
+        },
+        {
+          "name": "Gold-Red-Black",
+          "hexes": [
+            "daa520",
+            "cc0000",
+            "000000"
+          ],
+          "codes": [
+            "B09P15RM22"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Rainbow Color Change",
+          "hexes": [
+            "ff0000",
+            "ff7f00",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "4b0082",
+            "8b00ff"
+          ],
+          "codes": [
+            "B09P17LT2P"
+          ]
+        },
+        {
+          "name": "Rainbow Shiny",
+          "hexes": [
+            "ff0000",
+            "ff7f00",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "4b0082",
+            "8b00ff"
+          ],
+          "codes": [
+            "B09TTMCYHF"
+          ]
+        },
+        {
+          "name": "Silk Rainbow",
+          "hexes": [
+            "ff0000",
+            "ff7f00",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "4b0082",
+            "8b00ff"
+          ],
+          "codes": [
+            "B09P16QB32"
+          ]
+        },
+        {
+          "name": "Vintage Metal Rainbow",
+          "hexes": [
+            "b87333",
+            "c0c0c0",
+            "daa520",
+            "cd7f32",
+            "8b4513"
+          ],
+          "codes": [
+            "B09TTP1F4P"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA Rainbow Bundle {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 800
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Tri-Color Rainbow 4-Pack",
+          "hexes": [
+            "ff0000",
+            "00ff00",
+            "0000ff"
+          ],
+          "codes": [
+            "B0BKKW518Z"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG Transparent Bundle {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Red Green Blue Purple Orange",
+          "hexes": [
+            "cc0000",
+            "228b22",
+            "0066cc",
+            "800080",
+            "ff8c00"
+          ],
+          "translucent": true,
+          "codes": [
+            "B0B5YDRXXG"
+          ]
+        }
+      ]
+    }
+  ]
+}
