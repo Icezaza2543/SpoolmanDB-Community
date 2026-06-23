@@ -1,0 +1,196 @@
+{
+  "manufacturer": "Grilon3",
+  "filaments": [
+    {
+      "name": "Blend {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Boutique Carbón",
+          "hex": "212121"
+        },
+        {
+          "name": "Boutique Esmeralda",
+          "hex": "126768"
+        }
+      ]
+    },
+    {
+      "name": "HIPS {color_name}",
+      "material": "HIPS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        245
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        245
+      ],
+      "bed_temp_range": [
+        65,
+        65
+      ],
+      "colors": [
+        {
+          "name": "Clear Azul",
+          "hex": "2e35ff"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        175,
+        215
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Dorado/Gold",
+          "hexes": [
+            "edc244",
+            "ffd700"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        40
+      ],
+      "colors": [
+        {
+          "name": "Amarillo",
+          "hex": "fedf00"
+        },
+        {
+          "name": "Amarillo Fluo",
+          "hex": "e0e721"
+        },
+        {
+          "name": "Azul",
+          "hex": "0035a0"
+        },
+        {
+          "name": "Blanco",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Butique Chocolate",
+          "hex": "6d462c"
+        },
+        {
+          "name": "Gris Espacial",
+          "hex": "e0e0e0"
+        },
+        {
+          "name": "Gris Plata",
+          "hex": "75787b"
+        },
+        {
+          "name": "Negro",
+          "hex": "000000"
+        },
+        {
+          "name": "Piel 162",
+          "hex": "ffbe9f"
+        },
+        {
+          "name": "Rojo",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Rosa",
+          "hex": "ff7aed"
+        },
+        {
+          "name": "Verde",
+          "hex": "009a49"
+        },
+        {
+          "name": "Verde Fluo",
+          "hex": "29f91a"
+        }
+      ]
+    }
+  ]
+}
