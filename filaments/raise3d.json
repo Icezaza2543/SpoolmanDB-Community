@@ -1,0 +1,852 @@
+{
+  "manufacturer": "Raise3D",
+  "filaments": [
+    {
+      "name": "Premium PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Art White",
+          "hex": "f8f6f0"
+        },
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e3a"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2024/12/Raise3D-Premium_PLA_TDS_V6.0_EN.pdf"
+    },
+    {
+      "name": "Premium ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2025/08/Raise3D_Premium_ABS_TDS_V7.2.pdf"
+    },
+    {
+      "name": "Premium ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2024/07/Raise3D-Premium-ASA_TDS_v6.0.pdf"
+    },
+    {
+      "name": "Premium PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e3a"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Premium PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        260,
+        280
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Transparent",
+          "hex": "808080"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2024/07/Raise3d_Premium_PC_Black_White__TDS_V6.pdf"
+    },
+    {
+      "name": "Premium TPU-95A {color_name}",
+      "material": "TPU-95A",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Natural",
+          "hex": "f5f0e1"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2024/10/Raise3D-Premium-TPU95A_TDS_V2.2.pdf"
+    },
+    {
+      "name": "Premium PVA+ {color_name}",
+      "material": "PVA+",
+      "density": 1.19,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f5f0e1"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2021/06/Raise3D-Premium-PVA_TDS_V2.1-2021_06.pdf"
+    },
+    {
+      "name": "Hyper Speed PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 2500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Red",
+          "hex": "c41e3a"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2024/12/Raise3D_Hyper-Speed-PLA-Filament_TDS-V4.0_EN.pdf"
+    },
+    {
+      "name": "Hyper Speed ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 2500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Natural",
+          "hex": "f5f0e1"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2023/10/Raise3D_Hyper-Speed-ABS-V2-Filament_TDS_V1.0.pdf"
+    },
+    {
+      "name": "Hyper Speed PLA Pro {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Brick Red",
+          "hex": "8b3a3a"
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "808080"
+        },
+        {
+          "name": "Dark Green",
+          "hex": "808080"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2025/07/Raise3D-Hyper-Speed-PLA-Pro-_TDS_V1.0_1.pdf"
+    },
+    {
+      "name": "Hyper Core ABS CF15 {color_name}",
+      "material": "ABS-CF15",
+      "density": 1.08,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 2500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        260,
+        280
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2024/01/Raise3D-Hyper-Core-ABS-CF15_TDS_V1.0.pdf"
+    },
+    {
+      "name": "Hyper Core PPA CF25 {color_name}",
+      "material": "PPA-CF25",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        300,
+        320
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2024/09/Raise3D-Hyper-Core-PPA-CF25_TDS_V2.0.pdf"
+    },
+    {
+      "name": "Hyper Core PPA GF25 {color_name}",
+      "material": "PPA-GF25",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        300,
+        320
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "fill": "glass fiber",
+      "tds_url": "https://s1.raise3d.com/2024/05/Raise3D-Hyper-Core-PPA-GF25_TDS_V1.1.pdf"
+    },
+    {
+      "name": "Hyper Speed PET CF {color_name}",
+      "material": "PET-CF",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        290
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2025/05/Raise3D-Hyper-Speed-PET-CF_TDS_V1.0.pdf"
+    },
+    {
+      "name": "Hyper Speed PETG CF {color_name}",
+      "material": "PETG-CF",
+      "density": 1.35,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2025/05/Raise3D-Hyper-Speed-PETG-CF_TDS_V1.0.pdf"
+    },
+    {
+      "name": "Industrial PA12 CF Support {color_name}",
+      "material": "PA12-CF",
+      "density": 1.1,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        280,
+        300
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "808080"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2021/11/Raise3D-Industrial-PA12-CF-Support_TDS_V1.pdf"
+    },
+    {
+      "name": "Industrial PA12 CF+ {color_name}",
+      "material": "PA12-CF",
+      "density": 1.15,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        280,
+        300
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2024/09/Raise3D-Industrial-PA12-CF_TDS_V3.0.pdf"
+    },
+    {
+      "name": "Industrial PPA CF {color_name}",
+      "material": "PPA-CF",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        300,
+        320
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2022/04/Raise3D-Industrial-PPA-CF_TDS-V21.pdf"
+    },
+    {
+      "name": "Industrial PPA GF {color_name}",
+      "material": "PPA-GF",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        300,
+        320
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f5f0e1"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6600"
+        }
+      ],
+      "fill": "glass fiber",
+      "tds_url": "https://s1.raise3d.com/2023/02/Raise3D-Industrial-PPA-GF-TDS_v2.1.pdf"
+    },
+    {
+      "name": "Industrial PPA Support {color_name}",
+      "material": "PPA",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        280,
+        300
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "808080"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2021/12/Raise3D-Industrial-PPA-Support_TDS.pdf"
+    },
+    {
+      "name": "Industrial PET CF {color_name}",
+      "material": "PET-CF",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 2500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        290
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2024/09/Raise3D-Industrial-PET-CF_TDS_V4.0.pdf"
+    },
+    {
+      "name": "Industrial PET GF {color_name}",
+      "material": "PET-GF",
+      "density": 1.35,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        290
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "PET GF Black",
+          "hex": "808080"
+        },
+        {
+          "name": "PET GF Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "PET GF Orange",
+          "hex": "808080"
+        },
+        {
+          "name": "PET GF Red",
+          "hex": "808080"
+        }
+      ],
+      "fill": "glass fiber",
+      "tds_url": "https://s1.raise3d.com/2023/03/Raise3D-Industrial-PET-GF_TDS_V1.pdf"
+    },
+    {
+      "name": "Industrial PET Support {color_name}",
+      "material": "PET",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f5f0e1"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2023/03/Raise3D-Industrial-PET-Support_TDS_V1.pdf"
+    },
+    {
+      "name": "Industrial PETG ESD {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "tds_url": "https://s1.raise3d.com/2024/12/Raise3D_Industrial-PETG-ESD_TDS_V3.pdf"
+    },
+    {
+      "name": "Industrial PPS CF {color_name}",
+      "material": "PPS-CF",
+      "density": 1.35,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        310,
+        330
+      ],
+      "bed_temp_range": [
+        100,
+        120
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ],
+      "fill": "carbon fiber",
+      "tds_url": "https://s1.raise3d.com/2025/08/Raise3D-Industrial-PPS-CF_TDS_V1.1.pdf"
+    }
+  ]
+}
