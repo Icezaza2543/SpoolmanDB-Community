@@ -1,0 +1,721 @@
+{
+  "manufacturer": "Filamentree",
+  "filaments": [
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 5000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        60,
+        70
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Anthracite Grey",
+          "hex": "383838",
+          "codes": [
+            "30410451",
+            "30410541"
+          ]
+        },
+        {
+          "name": "Blue Lagoon",
+          "hex": "00bfff",
+          "codes": [
+            "30410251"
+          ]
+        },
+        {
+          "name": "Bright Red",
+          "hex": "ff0000",
+          "codes": [
+            "30410361"
+          ]
+        },
+        {
+          "name": "Flame Red T",
+          "hex": "ff4500",
+          "translucent": true,
+          "codes": [
+            "30410261"
+          ]
+        },
+        {
+          "name": "Heather Violet",
+          "hex": "9b59b6",
+          "codes": [
+            "30410411"
+          ]
+        },
+        {
+          "name": "Jet Black",
+          "hex": "000000",
+          "codes": [
+            "30410021",
+            "30450021"
+          ]
+        },
+        {
+          "name": "Light Green",
+          "hex": "90ee90",
+          "codes": [
+            "30410231"
+          ]
+        },
+        {
+          "name": "Luminous Green",
+          "hex": "39ff14",
+          "glow": true,
+          "codes": [
+            "30410311"
+          ]
+        },
+        {
+          "name": "Luminous Red",
+          "hex": "ff1744",
+          "glow": true,
+          "codes": [
+            "30410281"
+          ]
+        },
+        {
+          "name": "Luminous Yellow",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "30410391"
+          ]
+        },
+        {
+          "name": "Mint Green",
+          "hex": "98ff98",
+          "codes": [
+            "30410321"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "d8d0c0",
+          "codes": [
+            "30410101"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ffa500",
+          "codes": [
+            "30410111"
+          ]
+        },
+        {
+          "name": "Pure White",
+          "hex": "ffffff",
+          "codes": [
+            "30410031"
+          ]
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "87ceeb",
+          "codes": [
+            "30410271"
+          ]
+        },
+        {
+          "name": "Sky Blue T",
+          "hex": "87cefa",
+          "translucent": true,
+          "codes": [
+            "30410331"
+          ]
+        },
+        {
+          "name": "Turquoise Green Transparent",
+          "hex": "40e0d0",
+          "translucent": true,
+          "codes": [
+            "30410291"
+          ]
+        },
+        {
+          "name": "Violet Glass",
+          "hex": "8a2be2",
+          "translucent": true,
+          "codes": [
+            "30410091"
+          ]
+        },
+        {
+          "name": "Water Blue",
+          "hex": "0077be",
+          "codes": [
+            "30410341"
+          ]
+        },
+        {
+          "name": "Window Grey",
+          "hex": "808080",
+          "codes": [
+            "30410011"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffff00",
+          "codes": [
+            "30410241"
+          ]
+        },
+        {
+          "name": "Zinc Yellow",
+          "hex": "f4c430",
+          "codes": [
+            "30410401"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG Matt-5 {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        60,
+        70
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "000000",
+          "codes": [
+            "30410551"
+          ]
+        },
+        {
+          "name": "Pure White",
+          "hex": "ffffff",
+          "codes": [
+            "30410581"
+          ]
+        }
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "PETG Matt-7 {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        60,
+        70
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "000000",
+          "codes": [
+            "30410571"
+          ]
+        },
+        {
+          "name": "Pure White",
+          "hex": "ffffff",
+          "codes": [
+            "30410591"
+          ]
+        },
+        {
+          "name": "Signal Black",
+          "hex": "1a1a1a",
+          "codes": [
+            "30410561"
+          ]
+        }
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "PETG-CF {color_name}",
+      "material": "PETG-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        270
+      ],
+      "bed_temp_range": [
+        65,
+        80
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "30610461"
+          ]
+        }
+      ],
+      "fill": "carbon fiber",
+      "finish": "matte"
+    },
+    {
+      "name": "PLA Blaster {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750
+        },
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 5000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "000000",
+          "codes": [
+            "30310021"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "d8d0c0",
+          "codes": [
+            "30310101"
+          ]
+        },
+        {
+          "name": "Pure White",
+          "hex": "ffffff",
+          "codes": [
+            "30310031",
+            "30350031"
+          ]
+        },
+        {
+          "name": "Window Grey",
+          "hex": "808080",
+          "codes": [
+            "30307011",
+            "30310011"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA Plus {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 5000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Baby Blue",
+          "hex": "89cff0",
+          "codes": [
+            "30110131"
+          ]
+        },
+        {
+          "name": "Broom Yellow",
+          "hex": "e3a857",
+          "codes": [
+            "30110521"
+          ]
+        },
+        {
+          "name": "Candy Pink",
+          "hex": "ff69b4",
+          "codes": [
+            "30110611"
+          ]
+        },
+        {
+          "name": "Grey Beige",
+          "hex": "c5b9a8",
+          "codes": [
+            "30110171"
+          ]
+        },
+        {
+          "name": "Jet Black",
+          "hex": "000000",
+          "codes": [
+            "30110021"
+          ]
+        },
+        {
+          "name": "Lemonade",
+          "hex": "fffacd",
+          "codes": [
+            "30110621"
+          ]
+        },
+        {
+          "name": "Light Pink",
+          "hex": "ffb6c1",
+          "codes": [
+            "30110181"
+          ]
+        },
+        {
+          "name": "Lilac Snow",
+          "hex": "e6e6fa",
+          "codes": [
+            "30110631"
+          ]
+        },
+        {
+          "name": "Lime Cream",
+          "hex": "dfff00",
+          "codes": [
+            "30110641"
+          ]
+        },
+        {
+          "name": "Luminous Green",
+          "hex": "39ff14",
+          "glow": true,
+          "codes": [
+            "30110311"
+          ]
+        },
+        {
+          "name": "Military Green",
+          "hex": "4b5320",
+          "codes": [
+            "30110121"
+          ]
+        },
+        {
+          "name": "Mint Green",
+          "hex": "98ff98",
+          "codes": [
+            "30110321"
+          ]
+        },
+        {
+          "name": "Mint Turquoise",
+          "hex": "7fffd4",
+          "codes": [
+            "30110421"
+          ]
+        },
+        {
+          "name": "Moss Green",
+          "hex": "556b2f",
+          "codes": [
+            "30110161"
+          ]
+        },
+        {
+          "name": "Moss Grey",
+          "hex": "8a9a5b",
+          "codes": [
+            "30110481"
+          ]
+        },
+        {
+          "name": "Neon Yellow",
+          "hex": "ffff00",
+          "glow": true,
+          "codes": [
+            "30110431"
+          ]
+        },
+        {
+          "name": "Nut Brown",
+          "hex": "5c4033",
+          "codes": [
+            "30110661"
+          ]
+        },
+        {
+          "name": "Pale Peach",
+          "hex": "ffdab9",
+          "codes": [
+            "30110651"
+          ]
+        },
+        {
+          "name": "Pastel Orange",
+          "hex": "ffb347",
+          "codes": [
+            "30110041"
+          ]
+        },
+        {
+          "name": "Pearl Orange",
+          "hex": "ff8c42",
+          "codes": [
+            "30110531"
+          ]
+        },
+        {
+          "name": "Pool Blue",
+          "hex": "00bfff",
+          "codes": [
+            "30110201"
+          ]
+        },
+        {
+          "name": "Pure White",
+          "hex": "ffffff",
+          "codes": [
+            "30110031",
+            "30150031"
+          ]
+        },
+        {
+          "name": "Purple Violet",
+          "hex": "8b00ff",
+          "codes": [
+            "30110511"
+          ]
+        },
+        {
+          "name": "Traffic Red",
+          "hex": "cc0000",
+          "codes": [
+            "30110061"
+          ]
+        },
+        {
+          "name": "Traffic Yellow",
+          "hex": "ffcc00",
+          "codes": [
+            "30110211"
+          ]
+        },
+        {
+          "name": "Ultramarine Blue",
+          "hex": "120a8f",
+          "codes": [
+            "30110071"
+          ]
+        },
+        {
+          "name": "White Aluminum",
+          "hex": "d3d3d3",
+          "codes": [
+            "30110141"
+          ]
+        },
+        {
+          "name": "Window Grey",
+          "hex": "808080",
+          "codes": [
+            "30110011",
+            "30150011"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA Pro {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 5000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "000000",
+          "codes": [
+            "30210021",
+            "30250021"
+          ]
+        },
+        {
+          "name": "Pastel Orange",
+          "hex": "ffb347",
+          "codes": [
+            "30210041"
+          ]
+        },
+        {
+          "name": "Pure White",
+          "hex": "ffffff",
+          "codes": [
+            "30210031"
+          ]
+        },
+        {
+          "name": "Window Grey",
+          "hex": "808080",
+          "codes": [
+            "30210011"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Shimmering White",
+          "hex": "f8f8ff",
+          "codes": [
+            "30110010"
+          ]
+        }
+      ],
+      "finish": "glossy"
+    },
+    {
+      "name": "PLA-CF {color_name}",
+      "material": "PLA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "30710471"
+          ]
+        }
+      ],
+      "fill": "carbon fiber",
+      "finish": "matte"
+    }
+  ]
+}
