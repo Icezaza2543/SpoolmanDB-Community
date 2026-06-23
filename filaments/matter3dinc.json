@@ -1,0 +1,869 @@
+{
+  "manufacturer": "Matter3D Inc",
+  "filaments": [
+    {
+      "name": "Basics PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "Antique Gold",
+          "hex": "808080",
+          "codes": [
+            "7460678336689-42858278322353"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "7584310821041-44723039371441"
+          ]
+        },
+        {
+          "name": "CA",
+          "hex": "808080",
+          "codes": [
+            "FIL-1022-00-10-1-WOD"
+          ]
+        },
+        {
+          "name": "Glitter Blue",
+          "hex": "808080",
+          "codes": [
+            "7460678336689-42643795607729"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "daa520",
+          "codes": [
+            "7460678336689-42858278289585"
+          ]
+        },
+        {
+          "name": "Metallic (Silk) Blue",
+          "hex": "808080",
+          "codes": [
+            "7460678336689-43107658858673"
+          ]
+        },
+        {
+          "name": "Metallic (Silk) Orange",
+          "hex": "808080",
+          "codes": [
+            "7460678336689-43107654402225"
+          ]
+        },
+        {
+          "name": "Metallic (Silk) Red",
+          "hex": "808080",
+          "codes": [
+            "7460678336689-42642581946545"
+          ]
+        },
+        {
+          "name": "Pearl White",
+          "hex": "808080",
+          "codes": [
+            "7460678336689-42642581881009"
+          ]
+        },
+        {
+          "name": "Silk Purple",
+          "hex": "808080",
+          "codes": [
+            "7460678336689-44727024812209"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "7460678336689-42859906531505"
+          ]
+        },
+        {
+          "name": "Steel Wool",
+          "hex": "808080",
+          "codes": [
+            "7460678336689-42642581979313"
+          ]
+        },
+        {
+          "name": "US",
+          "hex": "808080",
+          "codes": [
+            "FIL-1022-00-10-1-WOD"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Basics PLA Bulk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 6300
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "8798937579697-46216348369073"
+          ]
+        },
+        {
+          "name": "Gunmetal Grey",
+          "hex": "2c3539",
+          "codes": [
+            "8798937579697-46216348467377"
+          ]
+        },
+        {
+          "name": "Medium Grey",
+          "hex": "808080",
+          "codes": [
+            "8798937579697-46216348434609"
+          ]
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "708090",
+          "codes": [
+            "8798937579697-46216348500145"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "8798937579697-46216348401841"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Performance ASA {color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1200
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "7605500313777-43201123680433"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "7605500313777-43201123778737"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000",
+          "codes": [
+            "7605500313777-43201123811505"
+          ]
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "708090",
+          "codes": [
+            "7605500313777-43201123745969"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "7605500313777-43201123713201"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Performance Matte PETG {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "FIL-1010-00-10-1-BLK"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "7333934137521-42215437041841"
+          ]
+        },
+        {
+          "name": "Brown",
+          "hex": "8b4513",
+          "codes": [
+            "7333934137521-42215437369521"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "7333934137521-42215437238449"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "7333934137521-42215436910769"
+          ]
+        },
+        {
+          "name": "Lavender",
+          "hex": "e6e6fa",
+          "codes": [
+            "7333934137521-42356848656561"
+          ]
+        },
+        {
+          "name": "Magenta",
+          "hex": "ff00ff",
+          "codes": [
+            "7333934137521-42356848591025"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "7333934137521-42215437303985"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000",
+          "codes": [
+            "7333934137521-42215436976305"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "7333934137521-42215462174897"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "7333934137521-42215437107377"
+          ]
+        }
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "Performance Matte PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "8818436997297-46258194645169"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "8818436997297-46258194874545"
+          ]
+        },
+        {
+          "name": "Dark/Forest Green",
+          "hex": "228b22",
+          "codes": [
+            "8818436997297-46258195005617"
+          ]
+        },
+        {
+          "name": "Gunmetal Grey",
+          "hex": "2c3539",
+          "codes": [
+            "8818436997297-46258194710705"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000",
+          "codes": [
+            "8818436997297-46258194809009"
+          ]
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "708090",
+          "codes": [
+            "8818436997297-46258194743473"
+          ]
+        },
+        {
+          "name": "Sunshine Yellow",
+          "hex": "ffda03",
+          "codes": [
+            "8818436997297-46258194841777"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "8818436997297-46258194677937"
+          ]
+        }
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "Performance Matte PETG {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "7506232443057-42858281468081",
+            "7506232443057-44947688915121"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "7506232443057-42858279698609",
+            "7506232443057-44947689144497"
+          ]
+        },
+        {
+          "name": "Chocolate Brown",
+          "hex": "7b3f00",
+          "codes": [
+            "7506232443057-42858279862449",
+            "7506232443057-44947689308337"
+          ]
+        },
+        {
+          "name": "Dark/Forest Green",
+          "hex": "228b22",
+          "codes": [
+            "7506232443057-42858279764145",
+            "7506232443057-44947689210033"
+          ]
+        },
+        {
+          "name": "Evergreen",
+          "hex": "115740",
+          "codes": [
+            "7506232443057-42858279796913",
+            "7506232443057-44947689242801"
+          ]
+        },
+        {
+          "name": "Fighter Jet Blue",
+          "hex": "1c2841",
+          "codes": [
+            "7506232443057-43107953770673",
+            "7506232443057-44947689373873"
+          ]
+        },
+        {
+          "name": "Gunmetal Grey",
+          "hex": "2c3539",
+          "codes": [
+            "7506232443057-42858279600305",
+            "7506232443057-44947689046193"
+          ]
+        },
+        {
+          "name": "Khaki/ Desert Tan",
+          "hex": "c3b091",
+          "codes": [
+            "7506232443057-42858279829681",
+            "7506232443057-44947689275569"
+          ]
+        },
+        {
+          "name": "Light Grey",
+          "hex": "d3d3d3",
+          "codes": [
+            "7506232443057-42858279567537",
+            "7506232443057-44947689013425"
+          ]
+        },
+        {
+          "name": "Magenta",
+          "hex": "ff00ff",
+          "codes": [
+            "7506232443057-42858279665841",
+            "7506232443057-44947689111729"
+          ]
+        },
+        {
+          "name": "Ocean Blue",
+          "hex": "0077be",
+          "codes": [
+            "7506232443057-42858279731377",
+            "7506232443057-44947689177265"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000",
+          "codes": [
+            "7506232443057-43107967959217",
+            "7506232443057-44947689406641"
+          ]
+        },
+        {
+          "name": "Royal Purple",
+          "hex": "7851a9",
+          "codes": [
+            "7506232443057-42858279633073",
+            "7506232443057-44947689078961"
+          ]
+        },
+        {
+          "name": "Safety Orange",
+          "hex": "ff6600",
+          "codes": [
+            "7506232443057-42858286842033",
+            "7506232443057-44947689341105"
+          ]
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "708090",
+          "codes": [
+            "7506232443057-42858279534769",
+            "7506232443057-44947688980657"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "7506232443057-42858279502001",
+            "7506232443057-44947688947889"
+          ]
+        }
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "Performance PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "FIL-1030-00-10-1-BLK",
+            "FIL-1030-00-50-1-BLK"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "FIL-1030-00-10-1-BLU"
+          ]
+        },
+        {
+          "name": "Cayman Blue",
+          "hex": "2e86ab",
+          "codes": [
+            "7130019463345-46216362950833"
+          ]
+        },
+        {
+          "name": "Chocolate Brown",
+          "hex": "7b3f00",
+          "codes": [
+            "FIL-1030-00-10-1-BRN"
+          ]
+        },
+        {
+          "name": "Dark/Forest Green",
+          "hex": "228b22",
+          "codes": [
+            "FIL-1030-00-10-1-DGN"
+          ]
+        },
+        {
+          "name": "Fighter Jet Blue",
+          "hex": "1c2841",
+          "codes": [
+            "FIL-1030-00-10-1-FJB"
+          ]
+        },
+        {
+          "name": "Fuchsia/Magenta",
+          "hex": "ff00ff",
+          "codes": [
+            "FIL-1030-00-10-1-FUC"
+          ]
+        },
+        {
+          "name": "Gunmetal Grey",
+          "hex": "2c3539",
+          "codes": [
+            "8201169371313-45001877618865",
+            "FIL-1030-00-10-1-GML"
+          ]
+        },
+        {
+          "name": "Lavender",
+          "hex": "e6e6fa",
+          "codes": [
+            "FIL-1030-00-10-1-LAV"
+          ]
+        },
+        {
+          "name": "Light Grey",
+          "hex": "d3d3d3",
+          "codes": [
+            "8201169371313-45001877684401",
+            "FIL-1030-00-10-1-LGY"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "f5deb3",
+          "codes": [
+            "8201169371313-45001878110385",
+            "FIL-1030-00-10-1-NAT"
+          ]
+        },
+        {
+          "name": "Ocean Blue",
+          "hex": "0077be",
+          "codes": [
+            "FIL-1030-00-10-1-OBL"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000",
+          "codes": [
+            "FIL-1030-00-10-1-RED"
+          ]
+        },
+        {
+          "name": "Royal Purple",
+          "hex": "7851a9",
+          "codes": [
+            "FIL-1030-00-10-1-PUR"
+          ]
+        },
+        {
+          "name": "Safety Orange",
+          "hex": "ff6600",
+          "codes": [
+            "FIL-1030-00-10-1-ORG"
+          ]
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "87ceeb",
+          "codes": [
+            "FIL-1030-00-10-1-SBL"
+          ]
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "708090",
+          "codes": [
+            "8201169371313-45001877651633",
+            "FIL-1030-00-10-1-GRY"
+          ]
+        },
+        {
+          "name": "Sunshine Yellow",
+          "hex": "ffda03",
+          "codes": [
+            "FIL-1030-00-10-1-YLW"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "8201169371313-45001877586097",
+            "FIL-1030-00-10-1-WHT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Performance PETG Bulk {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 6300
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "8798938267825-46216348565681"
+          ]
+        },
+        {
+          "name": "Gunmetal Grey",
+          "hex": "2c3539",
+          "codes": [
+            "8798938267825-46216348860593"
+          ]
+        },
+        {
+          "name": "Medium Grey",
+          "hex": "808080",
+          "codes": [
+            "8798938267825-46216348762289"
+          ]
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "708090",
+          "codes": [
+            "8798938267825-46216348958897"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "8798938267825-46216348663985"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Performance PETG HF Carbon Fiber {color_name}",
+      "material": "PETG-CF10",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        75,
+        90
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "10% - Prototyping",
+          "hex": "000000",
+          "codes": [
+            "FIL-1031-00-10-1-CPG"
+          ]
+        }
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "Performance PETG HF Carbon Fiber {color_name}",
+      "material": "PETG-CF15",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        75,
+        90
+      ],
+      "country_of_origin": "Canada",
+      "colors": [
+        {
+          "name": "15% - Functional Use",
+          "hex": "000000",
+          "codes": [
+            "6671027142833-42692098097329"
+          ]
+        },
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "7130394788017-41408171901105",
+            "FIL-1012-00-10-1-CAB"
+          ]
+        }
+      ],
+      "fill": "carbon fiber"
+    }
+  ]
+}
