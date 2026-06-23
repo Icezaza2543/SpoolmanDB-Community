@@ -1,0 +1,180 @@
+{
+  "manufacturer": "FiberThree",
+  "filaments": [
+    {
+      "name": "F3 PA Pure Pro {color_name}",
+      "material": "PA",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 407
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        280
+      ],
+      "bed_temp_range": [
+        0,
+        80
+      ],
+      "country_of_origin": "Germany",
+      "tds_url": "https://www.fiberthree.com/downloads/tdb/filaments/TDS_F3_PA_Pure_Pro_English_vers12_2024.pdf",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        }
+      ]
+    },
+    {
+      "name": "F3 PA-CF Pro {color_name}",
+      "material": "PA-CF",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 407
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 361
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        285
+      ],
+      "bed_temp_range": [
+        0,
+        80
+      ],
+      "fill": "carbon fiber",
+      "finish": "matte",
+      "country_of_origin": "Germany",
+      "tds_url": "https://www.fiberthree.com/downloads/tdb/filaments/TDS_F3_PA_CF_Pro_English_vers12_2024.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a",
+          "codes": [
+            "F3-7050",
+            "F3-7059"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "F3 PA-GF Pro {color_name}",
+      "material": "PA-GF",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 407
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        285
+      ],
+      "bed_temp_range": [
+        0,
+        80
+      ],
+      "fill": "glass fiber",
+      "finish": "matte",
+      "country_of_origin": "Germany",
+      "tds_url": "https://www.fiberthree.com/downloads/tdb/filaments/TDS_F3_PA_GF_Pro_English_vers12_2024.pdf",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        }
+      ]
+    },
+    {
+      "name": "F3 PA-GF30 Pro {color_name}",
+      "material": "PA-GF30",
+      "density": 1.35,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 407
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 361
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        285
+      ],
+      "bed_temp_range": [
+        70,
+        80
+      ],
+      "fill": "glass fiber",
+      "finish": "matte",
+      "country_of_origin": "Germany",
+      "tds_url": "https://www.fiberthree.com/downloads/tdb/filaments/TDS_F3_PA_GF30_Pro_English_vers8_2024.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a",
+          "codes": [
+            "F3-7089",
+            "F3-7090"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "F3 PA-ESD Safe {color_name}",
+      "material": "PA",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 407
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        280,
+        310
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "country_of_origin": "Germany",
+      "tds_url": "https://www.fiberthree.com/downloads/tdb/filaments/TDS_F3_PA_ESD_English_vers_12_2024.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "F3-PAESD-1KG"
+          ]
+        }
+      ]
+    }
+  ]
+}
