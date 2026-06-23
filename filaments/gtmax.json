@@ -1,0 +1,153 @@
+{
+  "manufacturer": "GTMax",
+  "filaments": [
+    {
+      "name": "ABS Premium {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Grey",
+          "hex": "9ba5ab"
+        }
+      ]
+    },
+    {
+      "name": "High Speed {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Azul Ciano",
+          "hex": "79ced6"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Branco",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Nude",
+          "hex": "edd2ce"
+        }
+      ]
+    },
+    {
+      "name": "High Speed {color_name}",
+      "material": "ABS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Branco",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "COBRE/COOPER",
+          "hex": "8f5f28"
+        },
+        {
+          "name": "MARROM/BROWN",
+          "hex": "60380b"
+        },
+        {
+          "name": "PRETO/BLACK",
+          "hex": "000000"
+        },
+        {
+          "name": "ROSA BEBE/PINK BABY",
+          "hex": "ffb8da"
+        },
+        {
+          "name": "ROXO/PURPLE",
+          "hexes": [
+            "6f027e",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "VERDE/GREEN",
+          "hexes": [
+            "0f620e",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    }
+  ]
+}
