@@ -1,0 +1,490 @@
+{
+  "manufacturer": "Kimya",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203250001",
+            "3203250002"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ABS-R {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 2200
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203220015"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ABS-S {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 2200
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203020003",
+            "3203020011"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HIPS-R {color_name}",
+      "material": "HIPS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203210002"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA6-CO {color_name}",
+      "material": "PA6",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203310004"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC-FR {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        280,
+        310
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203060003"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203130005"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG-R {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 750
+        },
+        {
+          "weight": 2200
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203120033",
+            "3203120036",
+            "3203120037",
+            "3203120038",
+            "3203120040"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG-S {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 750
+        },
+        {
+          "weight": 2200
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203120001",
+            "3203120004",
+            "3203120011",
+            "3203120017",
+            "3203120029"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA-R {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 2200
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203010052"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PPSU-S {color_name}",
+      "material": "PPSU",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        360,
+        400
+      ],
+      "bed_temp_range": [
+        120,
+        150
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203260001"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TPC-91A {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203050004",
+            "3203050005",
+            "3203050007",
+            "3203050008",
+            "3203050009"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TPC-ESD {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203220005"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TPU-92A {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203050015"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tough {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "France",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "3203010022"
+          ]
+        }
+      ]
+    }
+  ]
+}
