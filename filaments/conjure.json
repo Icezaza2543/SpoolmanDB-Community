@@ -1,0 +1,466 @@
+{
+  "manufacturer": "Conjure",
+  "filaments": [
+    {
+      "name": "Chameleon {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Burnt Titanium Green",
+          "hex": "2f5f57"
+        },
+        {
+          "name": "Purple Blue",
+          "hex": "0042aa"
+        }
+      ]
+    },
+    {
+      "name": "Glow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Rainbow 2",
+          "hex": "ffffff"
+        },
+        {
+          "name": "RAINBOW TO GLOW MULTICOLOR",
+          "hex": "5669f5"
+        }
+      ]
+    },
+    {
+      "name": "Marble {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "pattern": "marble"
+        }
+      ],
+      "pattern": "marble"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Dual Black Red",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        40
+      ],
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "00ff00"
+        },
+        {
+          "name": "Grey",
+          "hex": "616970"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        40
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black / Dark Green",
+          "hexes": [
+            "000000",
+            "006400"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Black Red",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue / Red",
+          "hexes": [
+            "0000ff",
+            "ff0000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Dual Black Purple",
+          "hex": "000000"
+        },
+        {
+          "name": "Dual Blue Green",
+          "hex": "008cb4"
+        },
+        {
+          "name": "Dual Red Gold",
+          "hex": "808080"
+        },
+        {
+          "name": "Gold / Black",
+          "hexes": [
+            "ffd700",
+            "000000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "hotpink/blue",
+          "hexes": [
+            "ad4fd8",
+            "0000ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "Silk Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "No. 1",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "Silk Triple {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black Purple Blue",
+          "hex": "000000"
+        },
+        {
+          "name": "Green/Gold/Orange",
+          "hexes": [
+            "008000",
+            "ffd700",
+            "808080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Purple-Orange-Blue",
+          "hex": "808080"
+        },
+        {
+          "name": "Red Blue Green Tri-Color",
+          "hex": "58b7ef"
+        },
+        {
+          "name": "Red Yellow Blue",
+          "hex": "0061ff"
+        },
+        {
+          "name": "Red/Gold/Blue",
+          "hexes": [
+            "ff0000",
+            "ffd700",
+            "0000ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red/Gold/Purple",
+          "hexes": [
+            "ff0000",
+            "ffd700",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "Wood {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Rose",
+          "hex": "3d1b00"
+        },
+        {
+          "name": "Walnut",
+          "hex": "6c3f19"
+        },
+        {
+          "name": "White Oak",
+          "hex": "bfa58e"
+        }
+      ],
+      "fill": "wood"
+    }
+  ]
+}
