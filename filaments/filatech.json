@@ -1,0 +1,1274 @@
+{
+  "manufacturer": "Filatech",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.03,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "AB120200"
+          ]
+        },
+        {
+          "name": "Dark Blue Luminous",
+          "hex": "1e90ff",
+          "glow": true,
+          "codes": [
+            "AB110502",
+            "AB120502"
+          ]
+        },
+        {
+          "name": "Dark Green Luminous",
+          "hex": "39ff14",
+          "glow": true,
+          "codes": [
+            "AB110602",
+            "AB120602"
+          ]
+        },
+        {
+          "name": "Dark Orange (Luminous)",
+          "hex": "ff4500",
+          "glow": true,
+          "codes": [
+            "AB110702",
+            "AB120702"
+          ]
+        },
+        {
+          "name": "Dark Yellow Luminous",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "AB120402"
+          ]
+        },
+        {
+          "name": "Natural White",
+          "hex": "f5f5dc",
+          "codes": [
+            "AB120000"
+          ]
+        },
+        {
+          "name": "Raven Black",
+          "hex": "808080",
+          "codes": [
+            "AB120201"
+          ]
+        },
+        {
+          "name": "Red (Luminous)",
+          "hex": "ff1744",
+          "glow": true,
+          "codes": [
+            "AB120301"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "AB110100",
+            "AB120100"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FilaCarbon {color_name}",
+      "material": "PLA-CF",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "AC110200",
+            "AC120200"
+          ]
+        }
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "FilaPLA {color_name}",
+      "material": "PLA",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PH120200"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "PH120600"
+          ]
+        },
+        {
+          "name": "Light Brown",
+          "hex": "808080",
+          "codes": [
+            "PH121407"
+          ]
+        },
+        {
+          "name": "Natural White",
+          "hex": "f5f5dc",
+          "codes": [
+            "PH120000"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PH120900"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PH120100"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PH120400"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FilaTough {color_name}",
+      "material": "PETG",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Natural White",
+          "hex": "f5f5dc",
+          "codes": [
+            "FT110000",
+            "FT120000"
+          ]
+        },
+        {
+          "name": "Yellow (Luminous)",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "FT120401"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HIPS {color_name}",
+      "material": "HIPS",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        60,
+        100
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "HP110200",
+            "HP120200"
+          ]
+        },
+        {
+          "name": "Dark Green Luminous",
+          "hex": "39ff14",
+          "glow": true,
+          "codes": [
+            "HP110602"
+          ]
+        },
+        {
+          "name": "Dark Orange (Luminous)",
+          "hex": "ff4500",
+          "glow": true,
+          "codes": [
+            "HP120702"
+          ]
+        },
+        {
+          "name": "Dark Red Luminous",
+          "hex": "ff1744",
+          "glow": true,
+          "codes": [
+            "HP110302"
+          ]
+        },
+        {
+          "name": "Dark Yellow Luminous",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "HP110402"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "808080",
+          "codes": [
+            "HP110000",
+            "HP120000"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "HP110100",
+            "HP120100"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hyper ABS {color_name}",
+      "material": "ABS",
+      "density": 1.03,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "HB120200"
+          ]
+        },
+        {
+          "name": "Dark Orange (Luminous)",
+          "hex": "ff4500",
+          "glow": true,
+          "codes": [
+            "HB120702"
+          ]
+        },
+        {
+          "name": "Dark Yellow Luminous",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "HB120402"
+          ]
+        },
+        {
+          "name": "Natural White",
+          "hex": "f5f5dc",
+          "codes": [
+            "HB120000"
+          ]
+        },
+        {
+          "name": "Raven Black",
+          "hex": "808080",
+          "codes": [
+            "HB120201"
+          ]
+        },
+        {
+          "name": "Red (Luminous)",
+          "hex": "ff1744",
+          "glow": true,
+          "codes": [
+            "HB120301"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "HB120100"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hyper PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        50,
+        90
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "HG120200"
+          ]
+        },
+        {
+          "name": "Natural Clear",
+          "hex": "ffffff66",
+          "translucent": true,
+          "codes": [
+            "HG120000"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "HG120100"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hyper PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "HL120200"
+          ]
+        },
+        {
+          "name": "Bronze Gold",
+          "hex": "cd7f32",
+          "codes": [
+            "HL121104"
+          ]
+        },
+        {
+          "name": "Dark Yellow",
+          "hex": "cccc00",
+          "codes": [
+            "HL120403"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "HL120800"
+          ]
+        },
+        {
+          "name": "Natural Transparent",
+          "hex": "ffffff80",
+          "translucent": true,
+          "codes": [
+            "HL120001"
+          ]
+        },
+        {
+          "name": "Natural White",
+          "hex": "f5f5dc",
+          "codes": [
+            "HL120000"
+          ]
+        },
+        {
+          "name": "Snow White",
+          "hex": "fffafa",
+          "codes": [
+            "HL120103"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "HL120400"
+          ]
+        },
+        {
+          "name": "Yellow (Luminous)",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "HL120401"
+          ]
+        }
+      ],
+      "tds_url": "https://fila-tech.store/wp-content/uploads/2021/11/PLA-Datasheet.pdf"
+    },
+    {
+      "name": "PA {color_name}",
+      "material": "NYLON",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PA110200"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "808080",
+          "codes": [
+            "PA110000",
+            "PA120000"
+          ]
+        },
+        {
+          "name": "Red (Luminous)",
+          "hex": "ff1744",
+          "glow": true,
+          "codes": [
+            "PA110301"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PA110100",
+            "PA120100"
+          ]
+        },
+        {
+          "name": "Yellow (Luminous)",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "PA110401",
+            "PA120401"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp_range": [
+        90,
+        120
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PC110200"
+          ]
+        },
+        {
+          "name": "Natural Clear",
+          "hex": "ffffff66",
+          "translucent": true,
+          "codes": [
+            "PC110000",
+            "PC120000"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "808080",
+          "codes": [
+            "PC110300",
+            "PC120300"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PC110100",
+            "PC120100"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PC110400"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        50,
+        90
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PG120200"
+          ]
+        },
+        {
+          "name": "Choco Brown",
+          "hex": "5c4033",
+          "codes": [
+            "PG121402"
+          ]
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "003366",
+          "codes": [
+            "PG120503"
+          ]
+        },
+        {
+          "name": "Dark Metallic Grey",
+          "hex": "4a4a4a",
+          "codes": [
+            "PG120805"
+          ]
+        },
+        {
+          "name": "Dark Orange (Luminous)",
+          "hex": "ff4500",
+          "glow": true,
+          "codes": [
+            "PG120702"
+          ]
+        },
+        {
+          "name": "Dark Red Luminous",
+          "hex": "ff1744",
+          "glow": true,
+          "codes": [
+            "PG110302",
+            "PG120302"
+          ]
+        },
+        {
+          "name": "Dark Yellow Luminous",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "PG110402"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700",
+          "codes": [
+            "PG121300"
+          ]
+        },
+        {
+          "name": "Natural Clear",
+          "hex": "ffffff66",
+          "translucent": true,
+          "codes": [
+            "PG120000"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PG120900"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PG120100"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PG120400"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 6000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PL120200",
+            "PL140200"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "PL120500"
+          ]
+        },
+        {
+          "name": "Choco Brown",
+          "hex": "5c4033",
+          "codes": [
+            "PL121402"
+          ]
+        },
+        {
+          "name": "Dark Green",
+          "hex": "006400",
+          "codes": [
+            "PL120603"
+          ]
+        },
+        {
+          "name": "Dark Metallic Grey",
+          "hex": "4a4a4a",
+          "codes": [
+            "PL120805"
+          ]
+        },
+        {
+          "name": "Dark Orange (Luminous)",
+          "hex": "ff4500",
+          "glow": true,
+          "codes": [
+            "PL120702"
+          ]
+        },
+        {
+          "name": "Dark Sky Blue",
+          "hex": "4169e1",
+          "codes": [
+            "PL120514"
+          ]
+        },
+        {
+          "name": "Dark Yellow",
+          "hex": "cccc00",
+          "codes": [
+            "PL120403"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PL120800"
+          ]
+        },
+        {
+          "name": "Green (Luminous)",
+          "hex": "39ff14",
+          "glow": true,
+          "codes": [
+            "PL120601"
+          ]
+        },
+        {
+          "name": "Hot Pink",
+          "hex": "ff69b4",
+          "codes": [
+            "PL121501"
+          ]
+        },
+        {
+          "name": "Natural White",
+          "hex": "f5f5dc",
+          "codes": [
+            "PL120000"
+          ]
+        },
+        {
+          "name": "Olive Gold",
+          "hex": "bdb76b",
+          "codes": [
+            "PL121308"
+          ]
+        },
+        {
+          "name": "Pink",
+          "hex": "ffc0cb",
+          "codes": [
+            "PL121500"
+          ]
+        },
+        {
+          "name": "Red (Luminous)",
+          "hex": "ff1744",
+          "glow": true,
+          "codes": [
+            "PL120301",
+            "PL140301"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PL120901"
+          ]
+        },
+        {
+          "name": "Snow White",
+          "hex": "fffafa",
+          "codes": [
+            "PL120103"
+          ]
+        },
+        {
+          "name": "Terracotta Brown",
+          "hex": "e2725b",
+          "codes": [
+            "PL121401"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PL120400"
+          ]
+        },
+        {
+          "name": "Yellow (Fluorescent)",
+          "hex": "ccff00",
+          "glow": true,
+          "codes": [
+            "PL120410"
+          ]
+        },
+        {
+          "name": "Yellow (Luminous)",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "PL120401"
+          ]
+        }
+      ],
+      "tds_url": "https://fila-tech.store/wp-content/uploads/2021/11/PLA-Datasheet.pdf"
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PU110200"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "PU110500",
+            "PU120500"
+          ]
+        },
+        {
+          "name": "Orange (Luminous)",
+          "hex": "ff6600",
+          "glow": true,
+          "codes": [
+            "PU110701",
+            "PU120701"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PU110900",
+            "PU120900"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PU120100"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PU110400",
+            "PU120400"
+          ]
+        }
+      ],
+      "tds_url": "https://fila-tech.store/wp-content/uploads/2021/10/PLA-plus-Datasheet.pdf"
+    },
+    {
+      "name": "TPE {color_name}",
+      "material": "TPE",
+      "density": 1.06,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        20,
+        55
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "TE110800"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "808080",
+          "codes": [
+            "TE110700"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "808080",
+          "codes": [
+            "TE110300"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "TE110900"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "TE110400"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TPU {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "TU110200"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "808080",
+          "codes": [
+            "TU110700"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "808080",
+          "codes": [
+            "TU110300"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "TU110100"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "TU110400"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TPU 2 {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "TP120200"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "TP110100"
+          ]
+        },
+        {
+          "name": "Yellow (Luminous)",
+          "hex": "ffff33",
+          "glow": true,
+          "codes": [
+            "TP110401"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wood PLA {color_name}",
+      "material": "PLA+WOOD",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "country_of_origin": "UAE",
+      "colors": [
+        {
+          "name": "Dark Ash",
+          "hex": "808080",
+          "codes": [
+            "PL121012"
+          ]
+        },
+        {
+          "name": "Mahogany",
+          "hex": "808080",
+          "codes": [
+            "PL121011"
+          ]
+        },
+        {
+          "name": "Natural Wood",
+          "hex": "808080",
+          "codes": [
+            "PL111000",
+            "PL121000"
+          ]
+        }
+      ],
+      "fill": "wood"
+    }
+  ]
+}
