@@ -1,0 +1,1529 @@
+{
+  "manufacturer": "Eolas Prints",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 900,
+          "spool_weight": 500,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 800,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 4500,
+          "spool_weight": 1100,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "ABS-PRM-1.75M-BLK-900G",
+            "ABS-PRM-1.75M-BLK-2.2KG",
+            "ABS-PRM-1.75M-BLK-4.5KG"
+          ],
+          "eans": [
+            "8436583684979",
+            "8436583684986",
+            "8436583685143"
+          ]
+        },
+        {
+          "name": "Cyan",
+          "hex": "00bcd4",
+          "codes": [
+            "ABS-PRM-1.75M-CYN-900G"
+          ],
+          "eans": [
+            "8436583685051"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "ABS-PRM-1.75M-GRY-900G",
+            "ABS-PRM-1.75M-GRY-2.2KG",
+            "ABS-PRM-1.75M-GRY-4.5KG"
+          ],
+          "eans": [
+            "8436583685037",
+            "8436583685044",
+            "8436583685150"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": [
+            "ABS-PRM-1.75M-RED-900G"
+          ],
+          "eans": [
+            "8436583684993"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "ABS-PRM-1.75M-WHT-900G",
+            "ABS-PRM-1.75M-WHT-2.2KG",
+            "ABS-PRM-1.75M-WHT-4.5KG"
+          ],
+          "eans": [
+            "8436583685006",
+            "8436583685020",
+            "8436583685013"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        110
+      ]
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 900,
+          "spool_weight": 700,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2200,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 4500,
+          "spool_weight": 1300,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "ASA-PRM-1.75M-BLK-900G",
+            "ASA-PRM-1.75M-BLK-2.2KG",
+            "ASA-PRM-1.75M-BLK-4.5KG"
+          ],
+          "eans": [
+            "8436583685464",
+            "8436583685518",
+            "8436583685549"
+          ]
+        },
+        {
+          "name": "Cyan",
+          "hex": "00bcd4",
+          "codes": [
+            "ASA-PRM-1.75M-CYN-900G"
+          ],
+          "eans": [
+            "8436583685495"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "ASA-PRM-1.75M-GRY-900G",
+            "ASA-PRM-1.75M-GRY-2.2KG",
+            "ASA-PRM-1.75M-GRY-4.5KG"
+          ],
+          "eans": [
+            "8436583685471",
+            "8436583685525",
+            "8436583685556"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "ASA-PRM-1.75M-ORG-900G"
+          ],
+          "eans": [
+            "8436583685488"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "ASA-PRM-1.75M-WHT-900G",
+            "ASA-PRM-1.75M-WHT-2.2KG",
+            "ASA-PRM-1.75M-WHT-4.5KG"
+          ],
+          "eans": [
+            "8436583685457",
+            "8436583685501",
+            "8436583685532"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ]
+    },
+    {
+      "name": "PETG Transition {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_weight": 350,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Transition",
+          "hexes": [
+            "ff0000",
+            "ff8800",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "8b00ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "codes": [
+            "PTG-TRN-1.75M-250G",
+            "PTG-TRN-1.75M-1KG"
+          ],
+          "eans": [
+            "8436583683521",
+            "8436583683538"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        245
+      ],
+      "bed_temp_range": [
+        60,
+        90
+      ]
+    },
+    {
+      "name": "PETG UV Resistant {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PTG-UV-1.75M-BLK-1KG"
+          ],
+          "eans": [
+            "8436583684931"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PTG-UV-1.75M-WHT-1KG"
+          ],
+          "eans": [
+            "8436583684955"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        245
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2500,
+          "spool_weight": 700,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PTG-PRM-1.75M-BLK-1KG",
+            "PTG-PRM-1.75M-BLK-2.5KG",
+            "PTG-PRM-1.75M-BLK-5KG"
+          ],
+          "eans": [
+            "8436583683293",
+            "8436583684689",
+            "8436583684764"
+          ]
+        },
+        {
+          "name": "Cyan",
+          "hex": "00bcd4",
+          "codes": [
+            "PTG-PRM-1.75M-CYN-1KG"
+          ],
+          "eans": [
+            "8436583683408"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "PTG-PRM-1.75M-GRN-1KG"
+          ],
+          "eans": [
+            "8436583685372"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "PTG-PRM-1.75M-GRY-1KG",
+            "PTG-PRM-1.75M-GRY-2.5KG",
+            "PTG-PRM-1.75M-GRY-5KG"
+          ],
+          "eans": [
+            "8436583683361",
+            "8436583684702",
+            "8436583684771"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e8dcc8",
+          "translucent": true,
+          "codes": [
+            "PTG-PRM-1.75M-NTR-1KG",
+            "PTG-PRM-1.75M-NTR-2.5KG",
+            "PTG-PRM-1.75M-NTR-5KG"
+          ],
+          "eans": [
+            "8436583683385",
+            "8436583684719",
+            "8436583684788"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": [
+            "PTG-PRM-1.75M-RED-1KG"
+          ],
+          "eans": [
+            "8436583683316"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PTG-PRM-1.75M-WHT-1KG",
+            "PTG-PRM-2.85M-WHT-2.5KG",
+            "PTG-PRM-1.75M-WHT-5KG"
+          ],
+          "eans": [
+            "8436583683330",
+            "8436583684696",
+            "8436583683347"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        245
+      ],
+      "bed_temp_range": [
+        60,
+        90
+      ]
+    },
+    {
+      "name": "High Speed PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-HSD-1.75M-BLK-1KG"
+          ],
+          "eans": [
+            "8436583685396"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "PLA-HSD-1.75M-BLU-1KG"
+          ],
+          "eans": [
+            "8436583685402"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "PLA-HSD-1.75M-GRY-1KG"
+          ],
+          "eans": [
+            "8436583685426"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": [
+            "PLA-HSD-1.75M-RED-1KG"
+          ],
+          "eans": [
+            "8436583685389"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLA-HSD-1.75M-WHT-1KG"
+          ],
+          "eans": [
+            "8436583685419"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        200,
+        240
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ]
+    },
+    {
+      "name": "PLA Antibacterial {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-ABL-1.75M-BLK-1KG"
+          ],
+          "eans": [
+            "8436583685709"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLA-ABL-1.75M-WHT-1KG"
+          ],
+          "eans": [
+            "8436583685716"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ]
+    },
+    {
+      "name": "PLA Ingeo 850 {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-850-1.75M-BLK-1KG"
+          ],
+          "eans": [
+            "8436583680001"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "PLA-850-1.75M-GRY-1KG"
+          ],
+          "eans": [
+            "8436583680186"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLA-850-1.75M-WHT-1KG"
+          ],
+          "eans": [
+            "8436583680179"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ]
+    },
+    {
+      "name": "PLA Ingeo 870 {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-870-1.75M-BLK-1KG"
+          ],
+          "eans": [
+            "8436583680360"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "PLA-870-1.75M-GRY-1KG"
+          ],
+          "eans": [
+            "8436583680384"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLA-870-1.75M-WHT-1KG"
+          ],
+          "eans": [
+            "8436583680377"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ]
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "finish": "matte",
+          "codes": [
+            "PLA-PRM-1.75M-BLK-M-1KG"
+          ],
+          "eans": [
+            "8436583684832"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "finish": "matte",
+          "codes": [
+            "PLA-PRM-1.75M-BLU-M-1KG"
+          ],
+          "eans": [
+            "8436583684849"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "finish": "matte",
+          "codes": [
+            "PLA-PRM-1.75M-RED-M-1KG"
+          ],
+          "eans": [
+            "8436583684870"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "finish": "matte",
+          "codes": [
+            "PLA-PRM-1.75M-WHT-M-1KG"
+          ],
+          "eans": [
+            "8436583684856"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffdd00",
+          "finish": "matte",
+          "codes": [
+            "PLA-PRM-1.75M-YLW-M-1KG"
+          ],
+          "eans": [
+            "8436583684863"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "PLA Neon {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "PLA-NEO-1.75M-GRN-1KG"
+          ],
+          "eans": [
+            "8436583685822"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "PLA-NEO-1.75M-ORG-1KG"
+          ],
+          "eans": [
+            "8436583685815"
+          ]
+        },
+        {
+          "name": "Pink",
+          "hex": "ff69b4",
+          "codes": [
+            "PLA-NEO-1.75M-PNK-1KG"
+          ],
+          "eans": [
+            "8436583685839"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffdd00",
+          "codes": [
+            "PLA-NEO-1.75M-YLW-1KG"
+          ],
+          "eans": [
+            "8436583685808"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Bronze",
+          "hex": "cd7f32",
+          "finish": "glossy",
+          "codes": [
+            "PLA-SLK-1.75M-BRZ-1KG"
+          ],
+          "eans": [
+            "8436583685310"
+          ]
+        },
+        {
+          "name": "Copper",
+          "hex": "b87333",
+          "finish": "glossy",
+          "codes": [
+            "PLA-SLK-1.75M-COP-1KG"
+          ],
+          "eans": [
+            "8436583685327"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700",
+          "finish": "glossy",
+          "codes": [
+            "PLA-SLK-1.75M-GLD-1KG"
+          ],
+          "eans": [
+            "8436583685297"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "finish": "glossy",
+          "codes": [
+            "PLA-SLK-1.75M-SLV-1KG"
+          ],
+          "eans": [
+            "8436583685303"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "finish": "glossy"
+    },
+    {
+      "name": "PLA Transition {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Transition",
+          "hexes": [
+            "ff0000",
+            "ff8800",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "8b00ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "codes": [
+            "PLA-TRN-1.75M-1KG"
+          ],
+          "eans": [
+            "8436583683262"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2500,
+          "spool_weight": 700,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Baby Blue",
+          "hex": "89cff0",
+          "codes": [
+            "PLA-PRM-1.75M-BBL-1KG"
+          ],
+          "eans": [
+            "8436583684290"
+          ]
+        },
+        {
+          "name": "Beige",
+          "hex": "f5f5dc",
+          "codes": [
+            "PLA-PRM-1.75M-BEG-1KG"
+          ],
+          "eans": [
+            "8436583680223"
+          ]
+        },
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-PRM-1.75M-BLK-1KG",
+            "PLA-PRM-1.75M-BLK-2.5KG",
+            "PLA-PRM-1.75M-BLK-5KG"
+          ],
+          "eans": [
+            "8436583683217",
+            "8436583683934",
+            "8436583683941"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "PLA-PRM-1.75M-BLU-1KG"
+          ],
+          "eans": [
+            "8436583683231"
+          ]
+        },
+        {
+          "name": "Brown",
+          "hex": "8b4513",
+          "eans": [
+            "8436583685853"
+          ]
+        },
+        {
+          "name": "Cyan",
+          "hex": "00bcd4",
+          "codes": [
+            "PLA-PRM-1.75M-CYN-1KG"
+          ],
+          "eans": [
+            "8436583683989"
+          ]
+        },
+        {
+          "name": "Dark Brown",
+          "hex": "5c4033",
+          "eans": [
+            "8436583685846"
+          ]
+        },
+        {
+          "name": "Dark Green",
+          "hex": "006400",
+          "codes": [
+            "PLA-PRM-1.75M-DGN-1KG"
+          ],
+          "eans": [
+            "8436583684191"
+          ]
+        },
+        {
+          "name": "Dark Grey",
+          "hex": "4a4a4a",
+          "codes": [
+            "PLA-PRM-1.75M-DGR-1KG"
+          ],
+          "eans": [
+            "8436583684092"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "PLA-PRM-1.75M-GRN-1KG"
+          ],
+          "eans": [
+            "8436583684177"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "PLA-PRM-1.75M-GRY-1KG",
+            "PLA-PRM-1.75M-GRY-2.5KG",
+            "PLA-PRM-1.75M-GRY-5KG"
+          ],
+          "eans": [
+            "8436583684115",
+            "8436583684122",
+            "8436583684139"
+          ]
+        },
+        {
+          "name": "Light Orange",
+          "hex": "ffb347",
+          "codes": [
+            "PLA-PRM-1.75M-LOG-1KG"
+          ],
+          "eans": [
+            "8436583684238"
+          ]
+        },
+        {
+          "name": "Mint",
+          "hex": "98ff98",
+          "codes": [
+            "PLA-PRM-1.75M-MNT-1KG"
+          ],
+          "eans": [
+            "8436583684023"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e8dcc8",
+          "translucent": true,
+          "codes": [
+            "PLA-PRM-1.75M-NTR-1KG",
+            "PLA-PRM-1.75M-NTR-2.5KG",
+            "PLA-PRM-1.75M-NTR-5KG"
+          ],
+          "eans": [
+            "8436583684313",
+            "8436583684320",
+            "8436583684337"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "PLA-PRM-1.75M-ORG-1KG"
+          ],
+          "eans": [
+            "8436583683965"
+          ]
+        },
+        {
+          "name": "Pink",
+          "hex": "ff69b4",
+          "codes": [
+            "PLA-PRM-1.75M-PNK-1KG"
+          ],
+          "eans": [
+            "8436583684009"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": [
+            "PLA-PRM-1.75M-RED-1KG"
+          ],
+          "eans": [
+            "8436583684351"
+          ]
+        },
+        {
+          "name": "Skin",
+          "hex": "e8beac",
+          "codes": [
+            "PLA-PRM-1.75M-SKN-1KG"
+          ],
+          "eans": [
+            "8436583685204"
+          ]
+        },
+        {
+          "name": "Straw",
+          "hex": "e4d96f",
+          "codes": [
+            "PLA-PRM-1.75M-STW-1KG"
+          ],
+          "eans": [
+            "8436583684214"
+          ]
+        },
+        {
+          "name": "Turquoise",
+          "hex": "40e0d0",
+          "codes": [
+            "PLA-PRM-1.75M-TQS-1KG"
+          ],
+          "eans": [
+            "8436583684252"
+          ]
+        },
+        {
+          "name": "Violet",
+          "hex": "8a2be2",
+          "codes": [
+            "PLA-PRM-1.75M-VLT-1KG"
+          ],
+          "eans": [
+            "8436583684276"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLA-PRM-1.75M-WHT-1KG",
+            "PLA-PRM-1.75M-WHT-2.5KG",
+            "PLA-PRM-1.75M-WHT-5KG"
+          ],
+          "eans": [
+            "8436583684054",
+            "8436583684061",
+            "8436583684078"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffdd00",
+          "codes": [
+            "PLA-PRM-1.75M-YLW-1KG"
+          ],
+          "eans": [
+            "8436583684153"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ]
+    },
+    {
+      "name": "TPU 93A {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Baby Blue",
+          "hex": "89cff0",
+          "codes": [
+            "TPU-FLX-1.75M-BBL-1KG"
+          ],
+          "eans": [
+            "8436583683712"
+          ]
+        },
+        {
+          "name": "Beige",
+          "hex": "f5f5dc",
+          "codes": [
+            "TPU-FLX-1.75M-BEG-1KG"
+          ],
+          "eans": [
+            "8436583683606"
+          ]
+        },
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "TPU-FLX-1.75M-BLK-1KG"
+          ],
+          "eans": [
+            "8436583683477"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "TPU-FLX-1.75M-BLU-1KG"
+          ],
+          "eans": [
+            "8436583683552"
+          ]
+        },
+        {
+          "name": "Cyan",
+          "hex": "00bcd4",
+          "codes": [
+            "TPU-FLX-1.75M-CYN-1KG"
+          ],
+          "eans": [
+            "8436583683576"
+          ]
+        },
+        {
+          "name": "Dark Green",
+          "hex": "006400",
+          "codes": [
+            "TPU-FLX-1.75M-DGN-1KG"
+          ],
+          "eans": [
+            "8436583683668"
+          ]
+        },
+        {
+          "name": "Dark Grey",
+          "hex": "4a4a4a",
+          "codes": [
+            "TPU-FLX-1.75M-DGR-1KG"
+          ],
+          "eans": [
+            "8436583683620"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "TPU-FLX-1.75M-GRN-1KG"
+          ],
+          "eans": [
+            "8436583683651"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "TPU-FLX-1.75M-GRY-1KG"
+          ],
+          "eans": [
+            "8436583683637"
+          ]
+        },
+        {
+          "name": "Light Orange",
+          "hex": "ffb347",
+          "codes": [
+            "TPU-FLX-1.75M-LOG-1KG"
+          ],
+          "eans": [
+            "8436583683682"
+          ]
+        },
+        {
+          "name": "Mint",
+          "hex": "98ff98",
+          "codes": [
+            "TPU-FLX-1.75M-MNT-1KG"
+          ],
+          "eans": [
+            "8436583683590"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e8dcc8",
+          "translucent": true,
+          "codes": [
+            "TPU-FLX-1.75M-NTR-1KG"
+          ],
+          "eans": [
+            "8436583683729"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "TPU-FLX-1.75M-ORG-1KG"
+          ],
+          "eans": [
+            "8436583683569"
+          ]
+        },
+        {
+          "name": "Pink",
+          "hex": "ff69b4",
+          "codes": [
+            "TPU-FLX-1.75M-PNK-1KG"
+          ],
+          "eans": [
+            "8436583683583"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000",
+          "codes": [
+            "TPU-FLX-1.75M-RED-1KG"
+          ],
+          "eans": [
+            "8436583683736"
+          ]
+        },
+        {
+          "name": "Straw",
+          "hex": "e4d96f",
+          "codes": [
+            "TPU-FLX-1.75M-STW-1KG"
+          ],
+          "eans": [
+            "8436583683675"
+          ]
+        },
+        {
+          "name": "Turquoise",
+          "hex": "40e0d0",
+          "codes": [
+            "TPU-FLX-1.75M-TQS-1KG"
+          ],
+          "eans": [
+            "8436583683699"
+          ]
+        },
+        {
+          "name": "Violet",
+          "hex": "8a2be2",
+          "codes": [
+            "TPU-FLX-1.75M-VLT-1KG"
+          ],
+          "eans": [
+            "8436583683705"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "TPU-FLX-1.75M-WHT-1KG"
+          ],
+          "eans": [
+            "8436583683613"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffdd00",
+          "codes": [
+            "TPU-FLX-1.75M-YLW-1KG"
+          ],
+          "eans": [
+            "8436583683644"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ]
+    },
+    {
+      "name": "TPU D53 {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "TPU-D53-1.75M-BLK-1KG"
+          ],
+          "eans": [
+            "8436583685679"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "TPU-D53-1.75M-GRY-1KG"
+          ],
+          "eans": [
+            "8436583685693"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "TPU-D53-1.75M-WHT-1KG"
+          ],
+          "eans": [
+            "8436583685747"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ]
+    },
+    {
+      "name": "TPU Transition {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_weight": 350,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Transition",
+          "hexes": [
+            "ff0000",
+            "ff8800",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "8b00ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "codes": [
+            "TPU-TRN-1.75M-250G",
+            "TPU-TRN-1.75M-1KG"
+          ],
+          "eans": [
+            "8436583683491",
+            "8436583683507"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        235
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ]
+    }
+  ]
+}
