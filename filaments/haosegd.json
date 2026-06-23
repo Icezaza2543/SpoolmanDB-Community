@@ -1,0 +1,109 @@
+{
+  "manufacturer": "Haosegd",
+  "filaments": [
+    {
+      "name": "Glow {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "2f60d0"
+        },
+        {
+          "name": "Green",
+          "hex": "80ff00"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c1a"
+        },
+        {
+          "name": "Yellow",
+          "hex": "dfd620"
+        }
+      ],
+      "country_of_origin": "China"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        55,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "808080"
+        },
+        {
+          "name": "Green",
+          "hex": "808080"
+        },
+        {
+          "name": "Light Green",
+          "hex": "9ef0dc"
+        },
+        {
+          "name": "Orange",
+          "hex": "f05d38"
+        },
+        {
+          "name": "Pink",
+          "hex": "ffe6de"
+        },
+        {
+          "name": "Purple",
+          "hex": "808080"
+        },
+        {
+          "name": "Silver",
+          "hex": "808080"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "China"
+    }
+  ]
+}
