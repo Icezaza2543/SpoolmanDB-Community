@@ -1,0 +1,178 @@
+{
+  "manufacturer": "PrimaValue",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        90,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Dark Grey",
+          "hex": "3b3d3f"
+        },
+        {
+          "name": "red",
+          "hex": "ff0000"
+        }
+      ]
+    },
+    {
+      "name": "Marble {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Marble",
+          "hex": "cccccc",
+          "pattern": "marble"
+        }
+      ],
+      "pattern": "marble"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        25,
+        25
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "03386d"
+        },
+        {
+          "name": "Dark Grey",
+          "hex": "444444"
+        },
+        {
+          "name": "Light Green",
+          "hex": "5de65b"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8000"
+        },
+        {
+          "name": "Silver",
+          "hex": "919191"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Matte {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black Matt",
+          "hex": "212121"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "c4c3c5"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "c4c7c1"
+        }
+      ]
+    }
+  ]
+}
