@@ -1,0 +1,129 @@
+{
+  "manufacturer": "Capital 3D",
+  "filaments": [
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        20,
+        60
+      ],
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Grey",
+          "hex": "ccccd0"
+        },
+        {
+          "name": "Leahs Green",
+          "hex": "e5ec8d"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Red",
+          "hex": "f7573b"
+        },
+        {
+          "name": "Silver",
+          "hex": "aaadb7"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Sparkle {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        205,
+        220
+      ],
+      "bed_temp_range": [
+        20,
+        20
+      ],
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Black Sparkle",
+          "hex": "524f57",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Burnt Titanium",
+          "hex": "293658",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Nebula",
+          "hex": "8568b5",
+          "pattern": "sparkle"
+        }
+      ],
+      "pattern": "sparkle"
+    }
+  ]
+}
