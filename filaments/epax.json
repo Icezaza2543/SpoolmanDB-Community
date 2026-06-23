@@ -1,0 +1,762 @@
+{
+  "manufacturer": "EPAX",
+  "filaments": [
+    {
+      "name": "Fast PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 315,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "EPAX-FPLA175B1"
+          ]
+        },
+        {
+          "name": "Cool White",
+          "hex": "f0f4f8",
+          "codes": [
+            "EPAX-FPLA175CW1"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "EPAX-FPLA175OR1"
+          ]
+        },
+        {
+          "name": "Candy Red",
+          "hex": "e32636",
+          "codes": [
+            "EPAX-FPLA175CANDYRED1"
+          ]
+        },
+        {
+          "name": "Fire Engine Red",
+          "hex": "ce2029",
+          "codes": [
+            "EPAX-FPLA175FER1"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "EPAX-FPLA175GREY1"
+          ]
+        },
+        {
+          "name": "Warm White",
+          "hex": "f5f0e1",
+          "codes": [
+            "EPAX-FPLA175WW1"
+          ]
+        },
+        {
+          "name": "Military Green",
+          "hex": "4b5320",
+          "codes": [
+            "EPAX-FPLA175MG1"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "EPAX-FPLA175BLUE1"
+          ]
+        },
+        {
+          "name": "Purple",
+          "hex": "800080",
+          "codes": [
+            "EPAX-FPLA175PPL1"
+          ]
+        },
+        {
+          "name": "Cyan",
+          "hex": "00bcd4",
+          "codes": [
+            "EPAX-FPLA175CYAN1"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffdd00",
+          "codes": [
+            "EPAX-FPLA175Y1"
+          ]
+        },
+        {
+          "name": "Magenta",
+          "hex": "ff1493",
+          "codes": [
+            "EPAX-FPLA175M1"
+          ]
+        },
+        {
+          "name": "Pine Green",
+          "hex": "01796f",
+          "codes": [
+            "EPAX-FPLA175PG1"
+          ]
+        },
+        {
+          "name": "Natural Translucent",
+          "hex": "e8dcc8",
+          "translucent": true,
+          "codes": [
+            "EPAX-FPLA175NATURAL1"
+          ]
+        },
+        {
+          "name": "Clear",
+          "hex": "ffffff",
+          "translucent": true,
+          "codes": [
+            "EPAX-FPLA175CLEAR1"
+          ]
+        },
+        {
+          "name": "Neutral White",
+          "hex": "fafafa",
+          "codes": [
+            "EPAX-FPLA175NW1"
+          ]
+        },
+        {
+          "name": "Navy Blue",
+          "hex": "000080",
+          "codes": [
+            "EPAX-FPLA175NAVYBLUE1"
+          ]
+        },
+        {
+          "name": "Dark Chocolate Brown",
+          "hex": "3d2314",
+          "codes": [
+            "EPAX-FPLA175DARKCHOC1"
+          ]
+        },
+        {
+          "name": "Light Brown",
+          "hex": "a67c52",
+          "codes": [
+            "EPAX-FPLA175LIGHTBROWN1"
+          ]
+        },
+        {
+          "name": "Pink",
+          "hex": "ff69b4",
+          "codes": [
+            "EPAX-FPLA175PINK1"
+          ]
+        },
+        {
+          "name": "Light Blue",
+          "hex": "87ceeb",
+          "codes": [
+            "EPAX-FPLA175LIGHTBLUE1"
+          ]
+        },
+        {
+          "name": "Nebula Purple",
+          "hex": "4b0082",
+          "pattern": "sparkle",
+          "codes": [
+            "EPAX-FPLA175NEBULAPURPLE1"
+          ]
+        },
+        {
+          "name": "Deep Space",
+          "hex": "1a1a2e",
+          "pattern": "sparkle",
+          "codes": [
+            "EPAX-FPLA175DEEPSPACE1"
+          ]
+        },
+        {
+          "name": "Purple Peony",
+          "hex": "9b59b6",
+          "pattern": "sparkle",
+          "codes": [
+            "EPAX-FPLA175PURPLEPEONY1"
+          ]
+        },
+        {
+          "name": "Solar Flare",
+          "hex": "ff4500",
+          "pattern": "sparkle",
+          "codes": [
+            "EPAX-FPLA175SOLARFLARE1"
+          ]
+        },
+        {
+          "name": "Cosmic Plum",
+          "hex": "6a0dad",
+          "pattern": "sparkle",
+          "codes": [
+            "EPAX-FPLA175COSMICPLUM1"
+          ]
+        },
+        {
+          "name": "Candy Rainbow",
+          "hexes": [
+            "ff0000",
+            "ff8800",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "8b00ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "codes": [
+            "EPAX-FPLA175CANDYRAINBOW1"
+          ]
+        },
+        {
+          "name": "Luminous Rainbow",
+          "hexes": [
+            "ff0000",
+            "ff8800",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "8b00ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "glow": true,
+          "codes": [
+            "EPAX-FPLA175LUMIRAINBOW1"
+          ]
+        },
+        {
+          "name": "Marble",
+          "hex": "f5f5f0",
+          "pattern": "marble",
+          "codes": [
+            "EPAX-FPLA175MARBLE1"
+          ]
+        },
+        {
+          "name": "Luminous Green",
+          "hex": "39ff14",
+          "glow": true,
+          "codes": [
+            "EPAX-FPLA175LUMIGREEN1"
+          ]
+        },
+        {
+          "name": "Matte Black",
+          "hex": "1a1a1a",
+          "finish": "matte",
+          "codes": [
+            "EPAX-FPLA175MATTEBLACK1"
+          ]
+        },
+        {
+          "name": "Pastel Mint",
+          "hex": "98ff98",
+          "codes": [
+            "EPAX-FPLA175PASTELMINT1"
+          ]
+        },
+        {
+          "name": "Glass Light Blue",
+          "hex": "87cefa",
+          "translucent": true
+        },
+        {
+          "name": "Glass Green",
+          "hex": "90ee90",
+          "translucent": true
+        },
+        {
+          "name": "Apricot",
+          "hex": "fbceb1"
+        },
+        {
+          "name": "Bone",
+          "hex": "e3dac9"
+        },
+        {
+          "name": "Glass Red",
+          "hex": "ff6b6b",
+          "translucent": true
+        },
+        {
+          "name": "Glass Purple",
+          "hex": "ba55d3",
+          "translucent": true
+        },
+        {
+          "name": "Glass Yellow",
+          "hex": "ffef96",
+          "translucent": true
+        },
+        {
+          "name": "Glass Blue",
+          "hex": "4169e1",
+          "translucent": true
+        },
+        {
+          "name": "Glass Orange",
+          "hex": "ff9f40",
+          "translucent": true
+        },
+        {
+          "name": "Lavender",
+          "hex": "e6e6fa"
+        },
+        {
+          "name": "Pale Yellow",
+          "hex": "fffacd"
+        },
+        {
+          "name": "Pastel Orange",
+          "hex": "ffcc99"
+        },
+        {
+          "name": "Matcha Green",
+          "hex": "8fbc8f"
+        }
+      ]
+    },
+    {
+      "name": "Magic Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 315,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        40
+      ],
+      "colors": [
+        {
+          "name": "Mermaid",
+          "hexes": [
+            "0000ff",
+            "800080",
+            "32cd32"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-MERMAID"
+          ]
+        },
+        {
+          "name": "Peacock",
+          "hexes": [
+            "800000",
+            "0000ff",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-PEACOCK"
+          ]
+        },
+        {
+          "name": "Patina",
+          "hexes": [
+            "008000",
+            "800080",
+            "b87333"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-PATINA"
+          ]
+        },
+        {
+          "name": "Prism",
+          "hexes": [
+            "ffc0cb",
+            "0000ff",
+            "ffd700"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-PRISM"
+          ]
+        },
+        {
+          "name": "Bayou",
+          "hexes": [
+            "0000ff",
+            "008000",
+            "b76e79"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-BAYOU"
+          ]
+        },
+        {
+          "name": "Treasure",
+          "hexes": [
+            "ffd700",
+            "c0c0c0",
+            "b87333"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-TREASURE"
+          ]
+        },
+        {
+          "name": "Royal Harvest",
+          "hexes": [
+            "ffd700",
+            "b87333",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy"
+        },
+        {
+          "name": "Mystic Forest",
+          "hexes": [
+            "0000ff",
+            "008000",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy"
+        },
+        {
+          "name": "Techno",
+          "hexes": [
+            "ff00ff",
+            "0000ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-TECHNO"
+          ]
+        },
+        {
+          "name": "Coral Sunrise",
+          "hexes": [
+            "f88379",
+            "ffd700"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy"
+        },
+        {
+          "name": "Blue Lagoon",
+          "hexes": [
+            "00ffff",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy"
+        },
+        {
+          "name": "Tarnished Copper",
+          "hexes": [
+            "2a3439",
+            "b87333"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-TARNISHED"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-GOLD"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "finish": "glossy",
+          "codes": [
+            "EPAX-MAGIC175-SILVER"
+          ]
+        },
+        {
+          "name": "Regal Rainbow",
+          "hexes": [
+            "ff0000",
+            "ff8800",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "8b00ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ],
+      "finish": "glossy"
+    },
+    {
+      "name": "Fast PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 315,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Solid Black",
+          "hex": "000000",
+          "codes": [
+            "EPAX-FPETG175BLK1"
+          ]
+        },
+        {
+          "name": "Solid White",
+          "hex": "ffffff",
+          "codes": [
+            "EPAX-FPETG175WHITE1"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffdd00",
+          "codes": [
+            "EPAX-FPETG175YELLOW1"
+          ]
+        },
+        {
+          "name": "Glass Red-Orange",
+          "hex": "ff4500",
+          "translucent": true,
+          "codes": [
+            "EPAX-FPETG175GLASSRED1"
+          ]
+        },
+        {
+          "name": "Glass Blue",
+          "hex": "4169e1",
+          "translucent": true,
+          "codes": [
+            "EPAX-FPETG175GLASSBLUE1"
+          ]
+        },
+        {
+          "name": "Glass Light Blue",
+          "hex": "87cefa",
+          "translucent": true,
+          "codes": [
+            "EPAX-FPETG175GLASSLIGHTBLUE1"
+          ]
+        },
+        {
+          "name": "Glass Green",
+          "hex": "90ee90",
+          "translucent": true,
+          "codes": [
+            "EPAX-FPETG175GLASSGREEN1"
+          ]
+        },
+        {
+          "name": "Glass Gray",
+          "hex": "a9a9a9",
+          "translucent": true,
+          "codes": [
+            "EPAX-FPETG175GLASSGREY1"
+          ]
+        },
+        {
+          "name": "Glass Purple",
+          "hex": "ba55d3",
+          "translucent": true,
+          "codes": [
+            "EPAX-FPETG175GLASSPURPLE1"
+          ]
+        },
+        {
+          "name": "Glass Orange",
+          "hex": "ff9f40",
+          "translucent": true
+        },
+        {
+          "name": "Glass Ruby Red",
+          "hex": "e0115f",
+          "translucent": true
+        },
+        {
+          "name": "Clear",
+          "hex": "ffffff",
+          "translucent": true
+        },
+        {
+          "name": "Deep Space",
+          "hex": "1a1a2e",
+          "codes": [
+            "EPAX-FPETG175DEEPSPACE1"
+          ]
+        },
+        {
+          "name": "Nebula Purple",
+          "hex": "4b0082",
+          "codes": [
+            "EPAX-FPETG175NEBULAPURPLE1"
+          ]
+        },
+        {
+          "name": "Metallic Purple",
+          "hex": "6a0dad"
+        },
+        {
+          "name": "Metallic Gray",
+          "hex": "708090"
+        },
+        {
+          "name": "Metallic Gold",
+          "hex": "d4af37"
+        },
+        {
+          "name": "Metallic Blue",
+          "hex": "1e90ff"
+        },
+        {
+          "name": "Metallic Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Metallic Green",
+          "hex": "2e8b57"
+        },
+        {
+          "name": "Metallic Red",
+          "hex": "dc143c"
+        },
+        {
+          "name": "Mulberry Sparkle",
+          "hex": "70193d",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Blueberry Sparkle",
+          "hex": "4f86f7",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Neon Yellow",
+          "hex": "ccff00"
+        },
+        {
+          "name": "Neon Green",
+          "hex": "39ff14"
+        },
+        {
+          "name": "Neon Orange",
+          "hex": "ff6700"
+        },
+        {
+          "name": "Crystal Candy Rainbow",
+          "hexes": [
+            "ff0000",
+            "ff8800",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "8b00ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "translucent": true
+        },
+        {
+          "name": "Crystal Sugarplum",
+          "hex": "9b59b6",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "PETG-CF {color_name}",
+      "material": "PETG-CF",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 315,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "carbon fiber"
+    }
+  ]
+}
