@@ -1,0 +1,484 @@
+{
+  "manufacturer": "Printbed",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 840
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Army Green",
+          "hex": "636452"
+        },
+        {
+          "name": "Baja Blue",
+          "hex": "017068"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "353537"
+        },
+        {
+          "name": "Cloud",
+          "hex": "c5c9d4"
+        },
+        {
+          "name": "Flamingo",
+          "hex": "db486e"
+        },
+        {
+          "name": "Meadow",
+          "hex": "2c784a"
+        },
+        {
+          "name": "Natural",
+          "hex": "e9e4d0"
+        },
+        {
+          "name": "Pistachio",
+          "hex": "b1d597"
+        },
+        {
+          "name": "Redwood",
+          "hex": "9b6251"
+        },
+        {
+          "name": "Robin Egg",
+          "hex": "79c5a8"
+        },
+        {
+          "name": "Tangerine",
+          "hex": "e17625"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Blend {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Purple Crystal",
+          "hex": "501f3f"
+        }
+      ]
+    },
+    {
+      "name": "Color Change Temp {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Chameleon",
+          "hex": "d3d302"
+        }
+      ]
+    },
+    {
+      "name": "Crystal {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Green Crystal",
+          "hex": "249d1d"
+        },
+        {
+          "name": "Sea Crystal",
+          "hex": "00a7a2"
+        }
+      ]
+    },
+    {
+      "name": "Glow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Glowstick Green",
+          "hex": "e3e1d5"
+        }
+      ]
+    },
+    {
+      "name": "Ht {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        235
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black FORGE",
+          "hex": "000000"
+        },
+        {
+          "name": "Natural FORGE",
+          "hex": "f3eed9"
+        },
+        {
+          "name": "White FORGE",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        255
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Clear",
+          "hex": "ccd4d6"
+        },
+        {
+          "name": "Flamingo",
+          "hex": "db486e"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Glacier",
+          "hex": "41b6b5"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Baja Blue V2",
+          "hex": "017068"
+        },
+        {
+          "name": "Banana Taffy",
+          "hex": "ffea00"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Black Cherry",
+          "hex": "722822"
+        },
+        {
+          "name": "Blue",
+          "hex": "015ad1"
+        },
+        {
+          "name": "Blue Steel",
+          "hex": "4e6168"
+        },
+        {
+          "name": "Blueberry Pearl",
+          "hex": "283964"
+        },
+        {
+          "name": "Bubble Gum",
+          "hex": "f69fb2"
+        },
+        {
+          "name": "Chocolate V2",
+          "hex": "4e3629"
+        },
+        {
+          "name": "Cookies N' Cream",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Cosmic Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Cosmic Purple",
+          "hex": "930ea4"
+        },
+        {
+          "name": "Dragon Egg",
+          "hex": "313c31"
+        },
+        {
+          "name": "Electric Orange",
+          "hex": "fb790e"
+        },
+        {
+          "name": "Evergreen",
+          "hex": "096d1d"
+        },
+        {
+          "name": "French Vanilla",
+          "hex": "f1e7cc"
+        },
+        {
+          "name": "Frost",
+          "hex": "a9c9d6"
+        },
+        {
+          "name": "Green",
+          "hex": "019c3e"
+        },
+        {
+          "name": "Grey",
+          "hex": "757a74"
+        },
+        {
+          "name": "Hot Pink",
+          "hex": "ff4e9b"
+        },
+        {
+          "name": "Jungle Green",
+          "hex": "546223"
+        },
+        {
+          "name": "Latte",
+          "hex": "ddcba4"
+        },
+        {
+          "name": "Lavender V2",
+          "hex": "d4c1d5"
+        },
+        {
+          "name": "Leftovers",
+          "hex": "dadfe2"
+        },
+        {
+          "name": "Licorice",
+          "hex": "991f1c"
+        },
+        {
+          "name": "Midnight Blue",
+          "hex": "26344f"
+        },
+        {
+          "name": "Mint",
+          "hex": "7dd3c9"
+        },
+        {
+          "name": "Mystery",
+          "hex": "fbff00"
+        },
+        {
+          "name": "Nacho Cheese",
+          "hex": "fcc543"
+        },
+        {
+          "name": "Natural",
+          "hex": "e6e0c6"
+        },
+        {
+          "name": "Orange",
+          "hex": "fd5307"
+        },
+        {
+          "name": "Peanut Butter V2",
+          "hex": "db9a55"
+        },
+        {
+          "name": "Pink Glaze",
+          "hex": "fd49ee"
+        },
+        {
+          "name": "Pirate's Gold",
+          "hex": "a16c25"
+        },
+        {
+          "name": "Pumpkin Pie",
+          "hex": "d2742d"
+        },
+        {
+          "name": "Purple",
+          "hex": "9c1e58"
+        },
+        {
+          "name": "Red",
+          "hex": "f62a29"
+        },
+        {
+          "name": "Royal Purple",
+          "hex": "513655"
+        },
+        {
+          "name": "Sour Apple V2",
+          "hex": "99ca20"
+        },
+        {
+          "name": "Tennis Ball",
+          "hex": "8dd945"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "f7c901"
+        }
+      ]
+    }
+  ]
+}
