@@ -1,0 +1,216 @@
+{
+  "manufacturer": "Kretrum",
+  "filaments": [
+    {
+      "name": "Glow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "964bc8"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        25
+      ],
+      "colors": [
+        {
+          "name": "Blue/Green",
+          "hexes": [
+            "0000ff",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red/Gold",
+          "hexes": [
+            "ff0000",
+            "ffd700"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rose/Blue",
+          "hexes": [
+            "d274c1",
+            "0000ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Violet/Green",
+          "hexes": [
+            "45008a",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "yellow&green",
+          "hex": "d9cc44"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        25,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Light Purple",
+          "hex": "afb1f3"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8000"
+        },
+        {
+          "name": "Pink",
+          "hex": "e880ac"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Yellow",
+          "hex": "d2ff57"
+        }
+      ]
+    },
+    {
+      "name": "Rapid {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        25,
+        25
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "001eff"
+        },
+        {
+          "name": "Blue - glow in dark",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Hyper Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Hyper White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "fa0000"
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        25
+      ],
+      "colors": [
+        {
+          "name": "Magenta Green",
+          "hex": "0fa341"
+        },
+        {
+          "name": "Red Gold",
+          "hex": "eaa52e"
+        },
+        {
+          "name": "Royal Blue Leaf Green",
+          "hex": "141ac2"
+        },
+        {
+          "name": "Sky Blue Pink Flamingo",
+          "hex": "3991d0"
+        }
+      ]
+    }
+  ]
+}
