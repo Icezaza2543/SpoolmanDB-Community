@@ -1,0 +1,206 @@
+{
+  "manufacturer": "BING3D",
+  "filaments": [
+    {
+      "name": "Cf {color_name}",
+      "material": "PLA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        60,
+        80
+      ],
+      "bed_temp_range": [
+        215,
+        215
+      ],
+      "colors": [
+        {
+          "name": "VERDE MILITAR/GREEN ARMY",
+          "hex": "6fb356"
+        }
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "F {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        35,
+        55
+      ],
+      "colors": [
+        {
+          "name": "black",
+          "hex": "000000"
+        },
+        {
+          "name": "Christmas Green",
+          "hex": "005a27"
+        },
+        {
+          "name": "Grey",
+          "hex": "5e5c64"
+        },
+        {
+          "name": "Light Purple",
+          "hex": "da94ff"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff7800"
+        },
+        {
+          "name": "Pink",
+          "hex": "ff72b6"
+        },
+        {
+          "name": "Red",
+          "hex": "e60005"
+        },
+        {
+          "name": "Walnut",
+          "hex": "808080"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Wood",
+          "hex": "e1ca89"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700"
+        }
+      ]
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "ABS-GF",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "glass fiber"
+    },
+    {
+      "name": "PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        280
+      ],
+      "bed_temp_range": [
+        70,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Grey",
+          "hex": "90969a"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        240
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Florescent Yellow",
+          "hex": "ffff00"
+        },
+        {
+          "name": "Fluorescent Green",
+          "hex": "00ff00"
+        },
+        {
+          "name": "Light Purple",
+          "hex": "da94ff"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Wood",
+          "hex": "87510b"
+        }
+      ]
+    }
+  ]
+}
