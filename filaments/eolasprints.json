@@ -1475,6 +1475,52 @@
       ]
     },
     {
+      "name": "TPU D60 UV Resistant {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "TPU-D60-1.75M-BLK-1KG"
+          ],
+          "eans": [
+            "8436583685433"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "TPU-D60-1.75M-WHT-1KG"
+          ],
+          "eans": [
+            "8436583685754"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        225,
+        240
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ]
+    },
+    {
       "name": "TPU Transition {color_name}",
       "material": "TPU",
       "density": 1.21,
