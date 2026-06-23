@@ -1,0 +1,463 @@
+{
+  "manufacturer": "Likesilk",
+  "filaments": [
+    {
+      "name": "95A {color_name}",
+      "material": "TPU",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Orange",
+          "hex": "f54900"
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        90
+      ],
+      "colors": [
+        {
+          "name": "flesh color",
+          "hex": "fe967c"
+        },
+        {
+          "name": "Green",
+          "hex": "00b315"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        245,
+        265
+      ],
+      "bed_temp_range": [
+        90,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "257bde"
+        },
+        {
+          "name": "Brown",
+          "hex": "6b1919"
+        },
+        {
+          "name": "Flesh",
+          "hex": "fec9a9"
+        },
+        {
+          "name": "Green",
+          "hex": "00b315"
+        },
+        {
+          "name": "Light Purple",
+          "hex": "d9caf4"
+        },
+        {
+          "name": "Orange",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffff00"
+        }
+      ]
+    },
+    {
+      "name": "ASA+PLUS {color_name}",
+      "material": "ASA+PLUS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        245,
+        265
+      ],
+      "bed_temp_range": [
+        90,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "0e730c"
+        }
+      ]
+    },
+    {
+      "name": "Color Change Uv {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        230
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "LUMINOUS GREEN",
+          "hex": "00b612"
+        }
+      ]
+    },
+    {
+      "name": "F {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        235
+      ],
+      "bed_temp_range": [
+        55,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Army Green",
+          "hex": "4d7028"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0656d5"
+        },
+        {
+          "name": "Cherry Wood",
+          "hex": "2b0409"
+        },
+        {
+          "name": "Christmas Green",
+          "hex": "0b7539"
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "1512af"
+        },
+        {
+          "name": "Dream Rainbow",
+          "hex": "ef930f"
+        },
+        {
+          "name": "Flesh",
+          "hex": "a76852"
+        },
+        {
+          "name": "Glow Red",
+          "hex": "d44a47"
+        },
+        {
+          "name": "Glow Yellow",
+          "hex": "fde295"
+        },
+        {
+          "name": "Gray",
+          "hex": "d3d3d3"
+        },
+        {
+          "name": "Green",
+          "hex": "00ff00"
+        },
+        {
+          "name": "Light Purple",
+          "hex": "c9cbff"
+        },
+        {
+          "name": "Mocha Brown",
+          "hex": "583a1d"
+        },
+        {
+          "name": "Oak",
+          "hex": "c5902a"
+        },
+        {
+          "name": "Orange",
+          "hex": "ffa500"
+        },
+        {
+          "name": "Pink",
+          "hex": "ffa8df"
+        },
+        {
+          "name": "Purple",
+          "hex": "512da4"
+        },
+        {
+          "name": "Red",
+          "hex": "ee3a3a"
+        },
+        {
+          "name": "Silver",
+          "hex": "a4a8ad"
+        },
+        {
+          "name": "Teak",
+          "hex": "724b14"
+        },
+        {
+          "name": "Teak Wood",
+          "hex": "724b14"
+        },
+        {
+          "name": "Walnut",
+          "hex": "2c200b"
+        },
+        {
+          "name": "White",
+          "hex": "f4e1ef"
+        },
+        {
+          "name": "Wood",
+          "hex": "624e32"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffff00"
+        }
+      ]
+    },
+    {
+      "name": "Hs Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "BLACK AND GOLD",
+          "hex": "01080e"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        245
+      ],
+      "bed_temp_range": [
+        55,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Black-Red",
+          "hex": "a21111"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700"
+        },
+        {
+          "name": "Silk Blue-Green",
+          "hex": "3481a8"
+        },
+        {
+          "name": "Silk Silver",
+          "hex": "bababa"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        235
+      ],
+      "bed_temp_range": [
+        40,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Flesh",
+          "hex": "d3aa96"
+        },
+        {
+          "name": "Light Purple",
+          "hex": "e2d7f7"
+        },
+        {
+          "name": "Wood",
+          "hex": "cdb793"
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        55,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Back + Red",
+          "hexes": [
+            "000000",
+            "ff0000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rose Red + Dark Blue",
+          "hexes": [
+            "981662",
+            "000080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Silk Gold Red",
+          "hex": "fb1818"
+        }
+      ]
+    }
+  ]
+}
