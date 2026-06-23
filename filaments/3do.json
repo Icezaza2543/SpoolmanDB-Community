@@ -1,0 +1,678 @@
+{
+    "manufacturer": "3DO",
+    "filaments": [
+        {
+            "name": "PLA 2.0 Tough {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                200,
+                230
+            ],
+            "bed_temp_range": [
+                20,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Anthracite",
+                    "hex": "383e42",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Army Green",
+                    "hex": "4b5320",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Blue",
+                    "hex": "0000ff",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Brown",
+                    "hex": "964b00",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Grass Green",
+                    "hex": "00ff00",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "d3d3d3",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Makita Blue",
+                    "hex": "016c78",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Orange",
+                    "hex": "ffa500"
+                },
+                {
+                    "name": "Pink",
+                    "hex": "ffc0cb"
+                },
+                {
+                    "name": "Red",
+                    "hex": "ff0000",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Sand White",
+                    "hex": "fae4d5",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Silver",
+                    "hex": "c0c0c0"
+                },
+                {
+                    "name": "Steel Blue",
+                    "hex": "32527b",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "ffff00"
+                }
+            ],
+            "finish": "matte",
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                200,
+                230
+            ],
+            "bed_temp_range": [
+                20,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Gold",
+                    "hex": "cfb53b",
+                    "codes": [
+                        "50509"
+                    ]
+                }
+            ],
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "PETG 2.0 Matt {color_name}",
+            "material": "PETG",
+            "density": 1.41,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                210,
+                240
+            ],
+            "bed_temp_range": [
+                60,
+                90
+            ],
+            "colors": [
+                {
+                    "name": "Army Green",
+                    "hex": "4b5320",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Blue",
+                    "hex": "0000ff"
+                },
+                {
+                    "name": "Grass Green",
+                    "hex": "00ff00",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "d3d3d3",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Makita Blue",
+                    "hex": "016c78",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Orange",
+                    "hex": "ffa500"
+                },
+                {
+                    "name": "RatRig Green",
+                    "hex": "7ec620"
+                },
+                {
+                    "name": "Red",
+                    "hex": "ff0000",
+                    "codes": [
+                        "50497"
+                    ]
+                },
+                {
+                    "name": "Steel Blue",
+                    "hex": "32527b"
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff"
+                }
+            ],
+            "finish": "matte",
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "PETG {color_name}",
+            "material": "PETG",
+            "density": 1.29,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                225,
+                245
+            ],
+            "bed_temp_range": [
+                60,
+                70
+            ],
+            "colors": [
+                {
+                    "name": "Glow In Dark",
+                    "hex": "befdb7",
+                    "codes": [
+                        "51650"
+                    ],
+                    "glow": true
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "ffffff80",
+                    "codes": [
+                        "51505"
+                    ],
+                    "translucent": true
+                }
+            ],
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "ASA {color_name}",
+            "material": "ASA",
+            "density": 1.05,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                220,
+                250
+            ],
+            "bed_temp_range": [
+                100,
+                110
+            ],
+            "colors": [
+                {
+                    "name": "Anthracite",
+                    "hex": "383e42",
+                    "codes": [
+                        "52581"
+                    ]
+                },
+                {
+                    "name": "Army Green",
+                    "hex": "4b5320"
+                },
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "52502"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "d3d3d3",
+                    "codes": [
+                        "52580"
+                    ]
+                },
+                {
+                    "name": "Light Blue",
+                    "hex": "7389f7",
+                    "codes": [
+                        "52688"
+                    ]
+                },
+                {
+                    "name": "Makita Blue",
+                    "hex": "016c78",
+                    "codes": [
+                        "52627"
+                    ]
+                },
+                {
+                    "name": "Neon Pink",
+                    "hex": "fb48c4",
+                    "codes": [
+                        "52688"
+                    ]
+                },
+                {
+                    "name": "Neon Yellow",
+                    "hex": "fff01f",
+                    "codes": [
+                        "52649"
+                    ]
+                },
+                {
+                    "name": "Orange",
+                    "hex": "ffa500",
+                    "codes": [
+                        "52648"
+                    ]
+                },
+                {
+                    "name": "Purple",
+                    "hex": "ff00ff",
+                    "codes": [
+                        "52647"
+                    ]
+                },
+                {
+                    "name": "RatRig Green",
+                    "hex": "7ec620",
+                    "codes": [
+                        "52599"
+                    ]
+                },
+                {
+                    "name": "Red",
+                    "hex": "ff0000",
+                    "codes": [
+                        "52501"
+                    ]
+                },
+                {
+                    "name": "Silver",
+                    "hex": "c0c0c0",
+                    "codes": [
+                        "52580"
+                    ]
+                },
+                {
+                    "name": "Steel Blue",
+                    "hex": "32527b",
+                    "codes": [
+                        "52628"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "52500"
+                    ]
+                }
+            ],
+            "finish": "matte",
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "ASA-CF {color_name}",
+            "material": "ASA-CF",
+            "density": 1.14,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                240,
+                260
+            ],
+            "bed_temp_range": [
+                110,
+                110
+            ],
+            "colors": [
+                {
+                    "name": "Blue",
+                    "hex": "0000ff"
+                },
+                {
+                    "name": "Carbon Black",
+                    "hex": "232323",
+                    "codes": [
+                        "52631"
+                    ]
+                },
+                {
+                    "name": "Gold",
+                    "hex": "cfb53b"
+                },
+                {
+                    "name": "Grey",
+                    "hex": "d3d3d3",
+                    "codes": [
+                        "52666"
+                    ]
+                },
+                {
+                    "name": "Purple",
+                    "hex": "ff00ff"
+                }
+            ],
+            "finish": "matte",
+            "fill": "carbon fiber",
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "ASA-GF {color_name}",
+            "material": "ASA-GF",
+            "density": 1.1,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                230,
+                270
+            ],
+            "bed_temp_range": [
+                110,
+                110
+            ],
+            "colors": [
+                {
+                    "name": "Magenta",
+                    "hex": "ff0090",
+                    "codes": [
+                        "52631"
+                    ]
+                },
+                {
+                    "name": "Makita Blue",
+                    "hex": "016c78"
+                },
+                {
+                    "name": "RatRig Green",
+                    "hex": "7ec620",
+                    "codes": [
+                        "52631"
+                    ]
+                }
+            ],
+            "finish": "matte",
+            "fill": "glass fiber",
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "PC-PBT {color_name}",
+            "material": "PC+PBT",
+            "density": 1.2,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                260,
+                290
+            ],
+            "bed_temp_range": [
+                110,
+                110
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                }
+            ],
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "PC-PBT-CF {color_name}",
+            "material": "PC+PBT-CF",
+            "density": 1.2,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                260,
+                290
+            ],
+            "bed_temp_range": [
+                110,
+                110
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                }
+            ],
+            "fill": "carbon fiber",
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "TPU-CF {color_name}",
+            "material": "TPU-CF",
+            "density": 1.22,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                230,
+                250
+            ],
+            "bed_temp_range": [
+                50,
+                90
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                }
+            ],
+            "fill": "carbon fiber",
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "PA12 {color_name}",
+            "material": "PA12",
+            "density": 1.01,
+            "weights": [
+                {
+                    "weight": 800,
+                    "spool_weight": 400,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                260,
+                290
+            ],
+            "bed_temp_range": [
+                110,
+                110
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                }
+            ],
+            "country_of_origin": "Denmark"
+        },
+        {
+            "name": "PA12-CF {color_name}",
+            "material": "PA12-CF",
+            "density": 1.03,
+            "weights": [
+                {
+                    "weight": 800,
+                    "spool_weight": 400,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                260,
+                290
+            ],
+            "bed_temp_range": [
+                110,
+                110
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000"
+                }
+            ],
+            "fill": "carbon fiber",
+            "country_of_origin": "Denmark"
+        }
+    ]
+}
