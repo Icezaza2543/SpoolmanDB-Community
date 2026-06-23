@@ -1,0 +1,69 @@
+{
+  "manufacturer": "Precision 3D Filament",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Clear",
+          "hex": "e8f4f8",
+          "translucent": true,
+          "codes": [
+            "PLA-CLEAR-1KG"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Glow PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "USA",
+      "colors": [
+        {
+          "name": "Glow Green",
+          "hex": "adff2f",
+          "glow": true,
+          "codes": [
+            "GLOW-PLA-1KG"
+          ]
+        }
+      ]
+    }
+  ]
+}
