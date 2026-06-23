@@ -1,0 +1,398 @@
+{
+  "manufacturer": "3D Filament",
+  "filaments": [
+    {
+      "name": "Cf {color_name}",
+      "material": "PLA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Carbon",
+          "hex": "000000"
+        }
+      ],
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "Color Change Temp {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Green to Neon-Yellow",
+          "hex": "1c3c31"
+        },
+        {
+          "name": "Temp. 33-45 C Black Red Yellow",
+          "hex": "302d0d"
+        }
+      ]
+    },
+    {
+      "name": "Glow {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Glowing Natural",
+          "hex": "ebebeb"
+        },
+        {
+          "name": "Glowing Yellow",
+          "hex": "ffff00"
+        }
+      ]
+    },
+    {
+      "name": "Multicolor Multicolor {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Red Yellow Green",
+          "hex": "f55183"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "808080"
+        },
+        {
+          "name": "Green",
+          "hex": "808080"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Orange",
+          "hex": "808080"
+        },
+        {
+          "name": "Pink",
+          "hex": "808080"
+        },
+        {
+          "name": "Purple",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "808080"
+        },
+        {
+          "name": "Weiss",
+          "hex": "ffffff"
+        },
+        {
+          "name": "White",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Blau",
+          "hex": "004b9e"
+        },
+        {
+          "name": "Goldgelb",
+          "hex": "feb43f"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        30,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Army Green",
+          "hex": "808080"
+        },
+        {
+          "name": "Carbon",
+          "hex": "030000"
+        },
+        {
+          "name": "Dark Green",
+          "hex": "795038"
+        },
+        {
+          "name": "Gelb neon",
+          "hex": "e9ff1c"
+        },
+        {
+          "name": "Luminous Starry Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Oro (GOLD)",
+          "hex": "b48907"
+        },
+        {
+          "name": "Red",
+          "hex": "fa0025"
+        },
+        {
+          "name": "Rosso",
+          "hex": "d21414"
+        },
+        {
+          "name": "Skin",
+          "hex": "9fab9a"
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        180,
+        220
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Gold Plated Black",
+          "hex": "938e06"
+        },
+        {
+          "name": "Red Copper",
+          "hex": "c37752"
+        },
+        {
+          "name": "silver/copper",
+          "hex": "4c4d4d"
+        }
+      ]
+    },
+    {
+      "name": "Silk Multi Color {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Green Black",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "Silk Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        180,
+        220
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Dragon Rainbow",
+          "hex": "032945"
+        }
+      ]
+    },
+    {
+      "name": "Transparent {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        55,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Azur trans",
+          "hex": "00736c"
+        },
+        {
+          "name": "Orange",
+          "hex": "bcd453"
+        },
+        {
+          "name": "Rot",
+          "hex": "9b001a"
+        }
+      ]
+    }
+  ]
+}
