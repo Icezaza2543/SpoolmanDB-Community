@@ -1,0 +1,3612 @@
+{
+    "manufacturer": "3DE",
+    "filaments": [
+        {
+            "name": "Premium ABS {color_name}",
+            "material": "ABS",
+            "density": 1.04,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                220,
+                250
+            ],
+            "bed_temp_range": [
+                80,
+                110
+            ],
+            "colors": [
+                {
+                    "name": "Choclate Brown",
+                    "hex": "7a5c3e",
+                    "codes": [
+                        "201115"
+                    ]
+                },
+                {
+                    "name": "Dark Blue",
+                    "hex": "0033a0",
+                    "codes": [
+                        "201110"
+                    ]
+                },
+                {
+                    "name": "Emerald Green",
+                    "hex": "2e8b57",
+                    "codes": [
+                        "210022"
+                    ]
+                },
+                {
+                    "name": "Flame Orange",
+                    "hex": "ff6900",
+                    "codes": [
+                        "201105"
+                    ]
+                },
+                {
+                    "name": "Gecko Green",
+                    "hex": "44d62c",
+                    "codes": [
+                        "201106"
+                    ]
+                },
+                {
+                    "name": "Leaf Green",
+                    "hex": "228b22",
+                    "codes": [
+                        "201107"
+                    ]
+                },
+                {
+                    "name": "Leather Brown",
+                    "hex": "8b5a2b",
+                    "codes": [
+                        "201116",
+                        "251116"
+                    ]
+                },
+                {
+                    "name": "Mailbox Red",
+                    "hex": "c8102e",
+                    "codes": [
+                        "201108"
+                    ]
+                },
+                {
+                    "name": "Nature",
+                    "hex": "f5f5dc",
+                    "codes": [
+                        "201113"
+                    ]
+                },
+                {
+                    "name": "Normal Blue",
+                    "hex": "005eb8",
+                    "codes": [
+                        "201109"
+                    ]
+                },
+                {
+                    "name": "Pirate Black",
+                    "hex": "25282a",
+                    "codes": [
+                        "201101"
+                    ]
+                },
+                {
+                    "name": "Signal Yellow",
+                    "hex": "fedd00",
+                    "codes": [
+                        "201114"
+                    ]
+                },
+                {
+                    "name": "Slate Grey",
+                    "hex": "4f5358",
+                    "codes": [
+                        "201104"
+                    ]
+                },
+                {
+                    "name": "Snow White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "201102"
+                    ]
+                },
+                {
+                    "name": "Terminator Grey",
+                    "hex": "97999b",
+                    "codes": [
+                        "201103"
+                    ]
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "808080",
+                    "codes": [
+                        "201112"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium ASA {color_name}",
+            "material": "ASA",
+            "density": 1.07,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                230,
+                250
+            ],
+            "bed_temp_range": [
+                90,
+                100
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "101820",
+                    "codes": [
+                        "200601"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "b1b3b3",
+                    "codes": [
+                        "200603",
+                        "250603"
+                    ]
+                },
+                {
+                    "name": "Slate Grey",
+                    "hex": "4f5358",
+                    "codes": [
+                        "200604"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "250602",
+                        "200602"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium NYLON {color_name}",
+            "material": "NYLON",
+            "density": 1.14,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                240,
+                260
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "25282a",
+                    "codes": [
+                        "201051",
+                        "251053",
+                        "251051",
+                        "201053"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "251052",
+                        "201052",
+                        "207077"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PBT {color_name}",
+            "material": "PBT",
+            "density": 1.31,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000,
+                    "spool_weight": 400,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 5000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                235,
+                235
+            ],
+            "bed_temp_range": [
+                65,
+                65
+            ],
+            "colors": [
+                {
+                    "name": "Avocado Green",
+                    "hex": "808080",
+                    "codes": [
+                        "201612"
+                    ]
+                },
+                {
+                    "name": "Blue Fish",
+                    "hex": "808080",
+                    "codes": [
+                        "201611"
+                    ]
+                },
+                {
+                    "name": "Carbon Black",
+                    "hex": "808080",
+                    "codes": [
+                        "201608"
+                    ]
+                },
+                {
+                    "name": "Cyber Yellow",
+                    "hex": "808080",
+                    "codes": [
+                        "201609"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "201603",
+                        "251603"
+                    ]
+                },
+                {
+                    "name": "Hot Red",
+                    "hex": "808080",
+                    "codes": [
+                        "201610"
+                    ]
+                },
+                {
+                    "name": "Pirate Black",
+                    "hex": "25282a",
+                    "codes": [
+                        "201601",
+                        "251601",
+                        "201615",
+                        "251613",
+                        "251615",
+                        "201613"
+                    ]
+                },
+                {
+                    "name": "Snow White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "201602",
+                        "251602"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "201614",
+                        "251614"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Tough PBT {color_name}",
+            "material": "PBT",
+            "density": 1.31,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                235,
+                235
+            ],
+            "bed_temp_range": [
+                65,
+                65
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "201001"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PBT {color_name}",
+            "material": "PC",
+            "density": 1.181,
+            "weights": [
+                {
+                    "weight": 1000
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                260,
+                270
+            ],
+            "bed_temp_range": [
+                100,
+                100
+            ],
+            "colors": [
+                {
+                    "name": "PC-PBT - Black",
+                    "hex": "808080",
+                    "codes": [
+                        "207109"
+                    ]
+                },
+                {
+                    "name": "PC-PBT - White",
+                    "hex": "808080",
+                    "codes": [
+                        "207110"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PC {color_name}",
+            "material": "PC",
+            "density": 1.2,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                260,
+                300
+            ],
+            "bed_temp_range": [
+                80,
+                120
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "250901",
+                        "200901"
+                    ]
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "808080",
+                    "codes": [
+                        "200903",
+                        "250903"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "200902",
+                        "250902"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PCTG {color_name}",
+            "material": "PCTG",
+            "density": 1.237,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                230,
+                250
+            ],
+            "bed_temp_range": [
+                75,
+                90
+            ],
+            "colors": [
+                {
+                    "name": "Fully Black",
+                    "hex": "808080",
+                    "codes": [
+                        "210038"
+                    ],
+                    "eans": [
+                        "5744008200035"
+                    ]
+                },
+                {
+                    "name": "Fully White",
+                    "hex": "808080",
+                    "codes": [
+                        "210039"
+                    ],
+                    "eans": [
+                        "5744008200042"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PET {color_name}",
+            "material": "PET",
+            "density": 1.29,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "cardboard"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                225,
+                245
+            ],
+            "bed_temp_range": [
+                0,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "High Speed PET - Black Diamond",
+                    "hex": "808080",
+                    "codes": [
+                        "207048"
+                    ],
+                    "eans": [
+                        "5745001109240"
+                    ]
+                },
+                {
+                    "name": "High Speed PET - White Agat",
+                    "hex": "808080",
+                    "codes": [
+                        "207049"
+                    ],
+                    "eans": [
+                        "5745001109257"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Carbon Fiber PETG {color_name}",
+            "material": "PETG",
+            "density": 1.17,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                230,
+                255
+            ],
+            "bed_temp_range": [
+                60,
+                80
+            ],
+            "colors": [
+                {
+                    "name": "Carbon Fiber Black",
+                    "hex": "1a1a1a",
+                    "codes": [
+                        "200723"
+                    ]
+                },
+                {
+                    "name": "Carbon Fiber Indigo Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "210020"
+                    ]
+                }
+            ],
+            "fill": "carbon fiber"
+        },
+        {
+            "name": "Premium Glow PLA {color_name}",
+            "material": "PETG",
+            "density": 1.17,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                230,
+                255
+            ],
+            "bed_temp_range": [
+                60,
+                80
+            ],
+            "colors": [
+                {
+                    "name": "Green",
+                    "hex": "008000",
+                    "glow": true,
+                    "codes": [
+                        "200453"
+                    ]
+                }
+            ],
+            "glow": true
+        },
+        {
+            "name": "Premium Opaque PETG {color_name}",
+            "material": "PETG",
+            "density": 1.17,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                230,
+                255
+            ],
+            "bed_temp_range": [
+                60,
+                80
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "9002025"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PETG {color_name}",
+            "material": "PETG",
+            "density": 1.17,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000,
+                    "spool_weight": 400,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 5000,
+                    "spool_weight": 500,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                230,
+                255
+            ],
+            "bed_temp_range": [
+                60,
+                80
+            ],
+            "colors": [
+                {
+                    "name": "Alien Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200717"
+                    ]
+                },
+                {
+                    "name": "Black in Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "210035"
+                    ],
+                    "eans": [
+                        "5745001109776"
+                    ]
+                },
+                {
+                    "name": "Budget Black",
+                    "hex": "808080",
+                    "codes": [
+                        "207122"
+                    ]
+                },
+                {
+                    "name": "Budget White",
+                    "hex": "808080",
+                    "codes": [
+                        "207123"
+                    ]
+                },
+                {
+                    "name": "Dark Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200715"
+                    ]
+                },
+                {
+                    "name": "Dark Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "200714"
+                    ]
+                },
+                {
+                    "name": "Fluorescent Green - Semi-transparent",
+                    "hex": "808080",
+                    "codes": [
+                        "200712"
+                    ]
+                },
+                {
+                    "name": "Fluorescent Orange - Semi-transparent",
+                    "hex": "808080",
+                    "codes": [
+                        "200710"
+                    ]
+                },
+                {
+                    "name": "Fluorescent Yellow - Semi-transparent",
+                    "hex": "808080",
+                    "codes": [
+                        "200711"
+                    ]
+                },
+                {
+                    "name": "Fluorescent Yellow - Solid Color",
+                    "hex": "808080",
+                    "codes": [
+                        "200716"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - Black",
+                    "hex": "808080",
+                    "codes": [
+                        "207111"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "207116"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - Dark Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "207113"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - Green",
+                    "hex": "808080",
+                    "codes": [
+                        "207117"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - Light Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "207114"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - Orange",
+                    "hex": "808080",
+                    "codes": [
+                        "207119"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - Red",
+                    "hex": "808080",
+                    "codes": [
+                        "207115"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - White",
+                    "hex": "808080",
+                    "codes": [
+                        "207112"
+                    ]
+                },
+                {
+                    "name": "High Speed PETG - Yellow",
+                    "hex": "808080",
+                    "codes": [
+                        "207118"
+                    ]
+                },
+                {
+                    "name": "PETG Magic - Blue, Green and Gold",
+                    "hex": "808080",
+                    "codes": [
+                        "207108"
+                    ],
+                    "eans": [
+                        "5745001109646"
+                    ]
+                },
+                {
+                    "name": "PETG Magic - Gold, Red and Purple",
+                    "hex": "808080",
+                    "codes": [
+                        "207103"
+                    ],
+                    "eans": [
+                        "5745001109592"
+                    ]
+                },
+                {
+                    "name": "PETG Magic - Red, Purple and Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "207102"
+                    ],
+                    "eans": [
+                        "5745001109585"
+                    ]
+                },
+                {
+                    "name": "Purple",
+                    "hex": "8031a7",
+                    "codes": [
+                        "200706"
+                    ]
+                },
+                {
+                    "name": "Solid Black",
+                    "hex": "101820",
+                    "codes": [
+                        "200795",
+                        "200790",
+                        "200701"
+                    ]
+                },
+                {
+                    "name": "Solid Blue",
+                    "hex": "005eb8",
+                    "codes": [
+                        "200713"
+                    ]
+                },
+                {
+                    "name": "Solid Green",
+                    "hex": "2e8b57",
+                    "codes": [
+                        "200709"
+                    ]
+                },
+                {
+                    "name": "Solid Orange",
+                    "hex": "808080",
+                    "codes": [
+                        "200705"
+                    ]
+                },
+                {
+                    "name": "Solid Red",
+                    "hex": "c8102e",
+                    "codes": [
+                        "200708"
+                    ]
+                },
+                {
+                    "name": "Solid Tool Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200719"
+                    ]
+                },
+                {
+                    "name": "Solid Warm Yellow",
+                    "hex": "808080",
+                    "codes": [
+                        "200718"
+                    ]
+                },
+                {
+                    "name": "Solid Water Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "200721"
+                    ]
+                },
+                {
+                    "name": "Solid White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "250702",
+                        "200796",
+                        "200702",
+                        "200791"
+                    ]
+                },
+                {
+                    "name": "Solid Yellow",
+                    "hex": "f3d03e",
+                    "codes": [
+                        "200722"
+                    ]
+                },
+                {
+                    "name": "Sort",
+                    "hex": "808080",
+                    "codes": [
+                        "210006"
+                    ],
+                    "eans": [
+                        "5745001109356"
+                    ]
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "808080",
+                    "codes": [
+                        "200792",
+                        "200704"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "201802"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PRO PETG {color_name}",
+            "material": "PETG",
+            "density": 1.17,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000,
+                    "spool_weight": 400,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                230,
+                255
+            ],
+            "bed_temp_range": [
+                60,
+                80
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "200814",
+                        "200801"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "200803"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "200802"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MAX PLA {color_name}",
+            "material": "PLA",
+            "density": 1.17,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000,
+                    "spool_weight": 400,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 5000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                190,
+                220
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Barbados Cherry",
+                    "hex": "808080",
+                    "codes": [
+                        "207094"
+                    ]
+                },
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "200141"
+                    ]
+                },
+                {
+                    "name": "Blue",
+                    "hex": "0000ff",
+                    "codes": [
+                        "200147"
+                    ]
+                },
+                {
+                    "name": "Bone",
+                    "hex": "808080",
+                    "codes": [
+                        "200125"
+                    ]
+                },
+                {
+                    "name": "Cappucino",
+                    "hex": "808080",
+                    "codes": [
+                        "207095"
+                    ]
+                },
+                {
+                    "name": "Chili Red",
+                    "hex": "ce0037",
+                    "codes": [
+                        "200106",
+                        "250110"
+                    ]
+                },
+                {
+                    "name": "Coffee Brown",
+                    "hex": "808080",
+                    "codes": [
+                        "200114"
+                    ]
+                },
+                {
+                    "name": "Cold White",
+                    "hex": "808080",
+                    "codes": [
+                        "200103"
+                    ]
+                },
+                {
+                    "name": "Dark Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "200143"
+                    ]
+                },
+                {
+                    "name": "Desert Beige",
+                    "hex": "808080",
+                    "codes": [
+                        "200122"
+                    ]
+                },
+                {
+                    "name": "Dusty Rose",
+                    "hex": "808080",
+                    "codes": [
+                        "207092"
+                    ]
+                },
+                {
+                    "name": "Evening Sand",
+                    "hex": "808080",
+                    "codes": [
+                        "200124"
+                    ]
+                },
+                {
+                    "name": "Fluorescent Green",
+                    "hex": "78d64b",
+                    "codes": [
+                        "200115"
+                    ]
+                },
+                {
+                    "name": "Fluorescent Orange",
+                    "hex": "808080",
+                    "codes": [
+                        "200117"
+                    ]
+                },
+                {
+                    "name": "Fluorescent Yellow",
+                    "hex": "e1e000",
+                    "codes": [
+                        "200116"
+                    ]
+                },
+                {
+                    "name": "Grass Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200109",
+                        "250112"
+                    ]
+                },
+                {
+                    "name": "Green",
+                    "hex": "008000",
+                    "codes": [
+                        "200148"
+                    ]
+                },
+                {
+                    "name": "Green Gin Fruit",
+                    "hex": "808080",
+                    "codes": [
+                        "207090"
+                    ]
+                },
+                {
+                    "name": "Green-Blue Slate",
+                    "hex": "808080",
+                    "codes": [
+                        "207091"
+                    ]
+                },
+                {
+                    "name": "Greige",
+                    "hex": "808080",
+                    "codes": [
+                        "207089"
+                    ]
+                },
+                {
+                    "name": "Gun Metal",
+                    "hex": "808080",
+                    "codes": [
+                        "200107",
+                        "250107"
+                    ]
+                },
+                {
+                    "name": "Jade Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200119"
+                    ]
+                },
+                {
+                    "name": "Lemon Yellow",
+                    "hex": "808080",
+                    "codes": [
+                        "200113",
+                        "250114"
+                    ]
+                },
+                {
+                    "name": "Light Grey",
+                    "hex": "97999b",
+                    "codes": [
+                        "200144"
+                    ]
+                },
+                {
+                    "name": "Ocean Blue",
+                    "hex": "005eb8",
+                    "codes": [
+                        "200108"
+                    ]
+                },
+                {
+                    "name": "Olive Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200121"
+                    ]
+                },
+                {
+                    "name": "Orange",
+                    "hex": "ffa500",
+                    "codes": [
+                        "200149"
+                    ]
+                },
+                {
+                    "name": "Pacific Turquoise",
+                    "hex": "808080",
+                    "codes": [
+                        "200127"
+                    ]
+                },
+                {
+                    "name": "Popular Green",
+                    "hex": "808080",
+                    "codes": [
+                        "207088"
+                    ]
+                },
+                {
+                    "name": "Pure Black",
+                    "hex": "25282a",
+                    "codes": [
+                        "200101",
+                        "250101",
+                        "250195",
+                        "200190",
+                        "207056",
+                        "200084"
+                    ]
+                },
+                {
+                    "name": "Pure Gold",
+                    "hex": "808080",
+                    "codes": [
+                        "200120"
+                    ]
+                },
+                {
+                    "name": "Pure White",
+                    "hex": "25282a",
+                    "codes": [
+                        "250196"
+                    ]
+                },
+                {
+                    "name": "Red",
+                    "hex": "ff0000",
+                    "codes": [
+                        "200145"
+                    ]
+                },
+                {
+                    "name": "Royal Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "200128"
+                    ]
+                },
+                {
+                    "name": "Shadow Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "200104",
+                        "250108",
+                        "200192"
+                    ]
+                },
+                {
+                    "name": "Sky Blue",
+                    "hex": "05c3de",
+                    "codes": [
+                        "200110"
+                    ]
+                },
+                {
+                    "name": "Solid Deep Purple",
+                    "hex": "512d6d",
+                    "codes": [
+                        "200111"
+                    ]
+                },
+                {
+                    "name": "Summer Sky Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "207093"
+                    ]
+                },
+                {
+                    "name": "Thunder Grey",
+                    "hex": "97999b",
+                    "codes": [
+                        "200105",
+                        "250109",
+                        "200193"
+                    ]
+                },
+                {
+                    "name": "True Orange",
+                    "hex": "ff6900",
+                    "codes": [
+                        "200112",
+                        "250113"
+                    ]
+                },
+                {
+                    "name": "Walnut Brown",
+                    "hex": "808080",
+                    "codes": [
+                        "200118"
+                    ]
+                },
+                {
+                    "name": "Warm White",
+                    "hex": "808080",
+                    "codes": [
+                        "200102",
+                        "207084"
+                    ]
+                },
+                {
+                    "name": "Warm Yellow",
+                    "hex": "808080",
+                    "codes": [
+                        "200126"
+                    ],
+                    "eans": [
+                        "7426934815276"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "200142"
+                    ]
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "ffff00",
+                    "codes": [
+                        "200146"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Carbon Fiber PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Carbon Fiber Black",
+                    "hex": "1a1a1a",
+                    "codes": [
+                        "200470"
+                    ]
+                }
+            ],
+            "fill": "carbon fiber"
+        },
+        {
+            "name": "Premium Flexible PLA {color_name}",
+            "material": "PLA",
+            "density": 1.16,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                195,
+                230
+            ],
+            "bed_temp_range": [
+                35,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "54D - All Black",
+                    "hex": "808080",
+                    "codes": [
+                        "207045"
+                    ],
+                    "eans": [
+                        "5745001109219"
+                    ]
+                },
+                {
+                    "name": "54D - All Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "207047"
+                    ],
+                    "eans": [
+                        "5745001109233"
+                    ]
+                },
+                {
+                    "name": "54D - All White",
+                    "hex": "808080",
+                    "codes": [
+                        "207046"
+                    ],
+                    "eans": [
+                        "5745001109226"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Fluorescent PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Neon Yellow - Fluorescent",
+                    "hex": "e1e000",
+                    "codes": [
+                        "200010"
+                    ]
+                },
+                {
+                    "name": "Nuclear Green",
+                    "hex": "78d64b",
+                    "codes": [
+                        "200011"
+                    ]
+                },
+                {
+                    "name": "Safety Orange",
+                    "hex": "808080",
+                    "codes": [
+                        "200012",
+                        "250012"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Glow PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Glow'n'Glitter Blue",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207039"
+                    ]
+                },
+                {
+                    "name": "Glow'n'Glitter Green",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207038"
+                    ]
+                },
+                {
+                    "name": "Glowing Blue",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207034"
+                    ]
+                },
+                {
+                    "name": "Glowing BluePurple",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207036"
+                    ]
+                },
+                {
+                    "name": "Glowing Green",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207035"
+                    ]
+                },
+                {
+                    "name": "Glowing Orange",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207037"
+                    ]
+                },
+                {
+                    "name": "Glowing Rainbow",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "glow": true,
+                    "codes": [
+                        "207030"
+                    ]
+                },
+                {
+                    "name": "Glowing Red",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207031"
+                    ]
+                },
+                {
+                    "name": "Glowing White",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207032"
+                    ]
+                },
+                {
+                    "name": "Glowing Yellow",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "207033"
+                    ]
+                },
+                {
+                    "name": "Green",
+                    "hex": "008000",
+                    "glow": true,
+                    "codes": [
+                        "200451"
+                    ]
+                },
+                {
+                    "name": "Green-Purple",
+                    "hex": "808080",
+                    "glow": true,
+                    "codes": [
+                        "200452"
+                    ]
+                },
+                {
+                    "name": "Multi Glow Rainbow",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "glow": true,
+                    "codes": [
+                        "210019"
+                    ]
+                }
+            ],
+            "glow": true
+        },
+        {
+            "name": "Premium High Speed PLA {color_name}",
+            "material": "PLA",
+            "density": 1.17,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                220
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Silky Bronze",
+                    "hex": "808080",
+                    "codes": [
+                        "1000438"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Matt PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Cool Grey",
+                    "hex": "808080",
+                    "finish": "matte",
+                    "codes": [
+                        "200305"
+                    ]
+                },
+                {
+                    "name": "Ghost White",
+                    "hex": "f8f8ff",
+                    "finish": "matte",
+                    "codes": [
+                        "200302"
+                    ]
+                },
+                {
+                    "name": "Marine Blue",
+                    "hex": "808080",
+                    "finish": "matte",
+                    "codes": [
+                        "200306"
+                    ]
+                },
+                {
+                    "name": "Matte Rainbow Macaron",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "matte",
+                    "codes": [
+                        "210007"
+                    ],
+                    "eans": [
+                        "5745001109363"
+                    ]
+                },
+                {
+                    "name": "Matte Rainbow Ocean Wave",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "matte",
+                    "codes": [
+                        "210012"
+                    ],
+                    "eans": [
+                        "5745001109417"
+                    ]
+                },
+                {
+                    "name": "Matte Rainbow Paddy Fields",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "matte",
+                    "codes": [
+                        "210014"
+                    ],
+                    "eans": [
+                        "5745001109431"
+                    ]
+                },
+                {
+                    "name": "Matte Rainbow Purple Rain",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "matte",
+                    "codes": [
+                        "210011"
+                    ],
+                    "eans": [
+                        "5745001109400"
+                    ]
+                },
+                {
+                    "name": "Matte Rainbow Sunrise",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "matte",
+                    "codes": [
+                        "210013"
+                    ],
+                    "eans": [
+                        "5745001109424"
+                    ]
+                },
+                {
+                    "name": "Midnight Black",
+                    "hex": "101820",
+                    "finish": "matte",
+                    "codes": [
+                        "200301"
+                    ]
+                },
+                {
+                    "name": "Moss Green",
+                    "hex": "808080",
+                    "finish": "matte",
+                    "codes": [
+                        "200303"
+                    ]
+                },
+                {
+                    "name": "Ruby Red",
+                    "hex": "808080",
+                    "finish": "matte",
+                    "codes": [
+                        "200304"
+                    ]
+                },
+                {
+                    "name": "Sun Yellow",
+                    "hex": "808080",
+                    "finish": "matte",
+                    "codes": [
+                        "200307"
+                    ]
+                }
+            ],
+            "finish": "matte"
+        },
+        {
+            "name": "Premium Opaque PETG {color_name}",
+            "material": "PLA",
+            "density": 1.17,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                2.85
+            ],
+            "extruder_temp_range": [
+                230,
+                255
+            ],
+            "bed_temp_range": [
+                60,
+                80
+            ],
+            "colors": [
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "251802"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Opaque PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "201901"
+                    ]
+                },
+                {
+                    "name": "Off White",
+                    "hex": "808080",
+                    "codes": [
+                        "201902"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000,
+                    "spool_weight": 400,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 5000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Aqua Blue",
+                    "hex": "40c1ac",
+                    "codes": [
+                        "200025"
+                    ]
+                },
+                {
+                    "name": "Army Green",
+                    "hex": "4b5320",
+                    "codes": [
+                        "200013"
+                    ]
+                },
+                {
+                    "name": "Army Green Camouflage",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "codes": [
+                        "200469"
+                    ]
+                },
+                {
+                    "name": "Black in Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "210023"
+                    ],
+                    "eans": [
+                        "5745001109653"
+                    ]
+                },
+                {
+                    "name": "Camel Beige",
+                    "hex": "d3bc8d",
+                    "codes": [
+                        "200027"
+                    ]
+                },
+                {
+                    "name": "Chameleon Blue",
+                    "hex": "808080",
+                    "codes": [
+                        "207082"
+                    ]
+                },
+                {
+                    "name": "Chameleon Purple",
+                    "hex": "808080",
+                    "codes": [
+                        "207083"
+                    ]
+                },
+                {
+                    "name": "Cherry Red",
+                    "hex": "93272c",
+                    "codes": [
+                        "200006"
+                    ]
+                },
+                {
+                    "name": "Chocolate Brown",
+                    "hex": "5b3427",
+                    "codes": [
+                        "200032"
+                    ]
+                },
+                {
+                    "name": "Dark Blue",
+                    "hex": "0033a0",
+                    "codes": [
+                        "200022"
+                    ]
+                },
+                {
+                    "name": "Dark Stone",
+                    "hex": "b2b4b2",
+                    "codes": [
+                        "200466"
+                    ]
+                },
+                {
+                    "name": "Emerald Green",
+                    "hex": "2e8b57",
+                    "codes": [
+                        "210021"
+                    ]
+                },
+                {
+                    "name": "Flame Orange",
+                    "hex": "ff6900",
+                    "codes": [
+                        "200030"
+                    ]
+                },
+                {
+                    "name": "Flourish Rainbow",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "codes": [
+                        "200471",
+                        "250471"
+                    ]
+                },
+                {
+                    "name": "Frosted Bronze",
+                    "hex": "808080",
+                    "codes": [
+                        "200460"
+                    ]
+                },
+                {
+                    "name": "Gecko Green",
+                    "hex": "44d62c",
+                    "codes": [
+                        "200029"
+                    ]
+                },
+                {
+                    "name": "Hot Pink",
+                    "hex": "ff69b4",
+                    "codes": [
+                        "200018"
+                    ]
+                },
+                {
+                    "name": "Ice Blue",
+                    "hex": "a5d8ff",
+                    "codes": [
+                        "200024"
+                    ]
+                },
+                {
+                    "name": "Kaki Camouflage",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "codes": [
+                        "200468"
+                    ]
+                },
+                {
+                    "name": "Leaf Green",
+                    "hex": "228b22",
+                    "codes": [
+                        "200028"
+                    ]
+                },
+                {
+                    "name": "Leather Brown",
+                    "hex": "8b5a2b",
+                    "codes": [
+                        "200031"
+                    ]
+                },
+                {
+                    "name": "Light Stone",
+                    "hex": "b0b0b0",
+                    "codes": [
+                        "200467"
+                    ]
+                },
+                {
+                    "name": "Magenta",
+                    "hex": "ce0f69",
+                    "codes": [
+                        "200026"
+                    ]
+                },
+                {
+                    "name": "Magic Green Forest",
+                    "hex": "808080",
+                    "codes": [
+                        "210002"
+                    ],
+                    "eans": [
+                        "5745001109318"
+                    ]
+                },
+                {
+                    "name": "Mailbox Red",
+                    "hex": "c8102e",
+                    "codes": [
+                        "200005",
+                        "210027"
+                    ],
+                    "eans_refill": [
+                        "5745001109691"
+                    ]
+                },
+                {
+                    "name": "Mystic Blue",
+                    "hex": "4b0082",
+                    "codes": [
+                        "200050"
+                    ]
+                },
+                {
+                    "name": "Normal Blue",
+                    "hex": "005eb8",
+                    "codes": [
+                        "200023"
+                    ]
+                },
+                {
+                    "name": "Nude Color",
+                    "hex": "e8beac",
+                    "codes": [
+                        "200020"
+                    ]
+                },
+                {
+                    "name": "Pearl Copper",
+                    "hex": "808080",
+                    "codes": [
+                        "200411"
+                    ]
+                },
+                {
+                    "name": "Pearl Nature",
+                    "hex": "808080",
+                    "codes": [
+                        "200019",
+                        "207055"
+                    ]
+                },
+                {
+                    "name": "Pearl Purplish Red",
+                    "hex": "808080",
+                    "codes": [
+                        "200412"
+                    ]
+                },
+                {
+                    "name": "Pearl Red Brown",
+                    "hex": "808080",
+                    "codes": [
+                        "200410"
+                    ]
+                },
+                {
+                    "name": "Pirate Black",
+                    "hex": "25282a",
+                    "codes": [
+                        "200080",
+                        "200001",
+                        "200090",
+                        "210024"
+                    ],
+                    "eans": [
+                        "5711336017895"
+                    ],
+                    "eans_refill": [
+                        "5745001109660"
+                    ]
+                },
+                {
+                    "name": "Purple",
+                    "hex": "8031a7",
+                    "codes": [
+                        "200009"
+                    ]
+                },
+                {
+                    "name": "Rainbow",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "codes": [
+                        "207060",
+                        "207061",
+                        "207062",
+                        "207064",
+                        "207065",
+                        "207066",
+                        "207067",
+                        "207068",
+                        "207069",
+                        "207070",
+                        "207071",
+                        "207072",
+                        "207073",
+                        "207074",
+                        "207063"
+                    ]
+                },
+                {
+                    "name": "Signal Yellow",
+                    "hex": "fedd00",
+                    "codes": [
+                        "200007"
+                    ]
+                },
+                {
+                    "name": "Silk Rainbow Universe",
+                    "hex": "808080",
+                    "codes": [
+                        "210016"
+                    ],
+                    "eans": [
+                        "5745001109295"
+                    ]
+                },
+                {
+                    "name": "Slate Grey",
+                    "hex": "4f5358",
+                    "codes": [
+                        "200003",
+                        "200092",
+                        "250092",
+                        "200082",
+                        "210026"
+                    ],
+                    "eans_refill": [
+                        "5745001109684"
+                    ]
+                },
+                {
+                    "name": "Snow White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "200002",
+                        "200091",
+                        "200081",
+                        "210025"
+                    ],
+                    "eans": [
+                        "5711336017888"
+                    ],
+                    "eans_refill": [
+                        "5745001109677"
+                    ]
+                },
+                {
+                    "name": "Terminator Grey",
+                    "hex": "97999b",
+                    "codes": [
+                        "200004",
+                        "200093",
+                        "200083",
+                        "210034"
+                    ],
+                    "eans_refill": [
+                        "5745001109769"
+                    ]
+                },
+                {
+                    "name": "Water Blue",
+                    "hex": "0077be",
+                    "codes": [
+                        "200040"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Pastel PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Dino Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200008"
+                    ]
+                },
+                {
+                    "name": "Lavender Purple - Pastel",
+                    "hex": "808080",
+                    "codes": [
+                        "200016"
+                    ]
+                },
+                {
+                    "name": "Steel Blue - Pastel",
+                    "hex": "808080",
+                    "codes": [
+                        "200015"
+                    ]
+                },
+                {
+                    "name": "Sunrise Yellow - Pastel",
+                    "hex": "808080",
+                    "codes": [
+                        "200014"
+                    ]
+                },
+                {
+                    "name": "Unicorn Pink - Pastel",
+                    "hex": "808080",
+                    "codes": [
+                        "200017"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Shimmer PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "25282a",
+                    "codes": [
+                        "200505"
+                    ]
+                },
+                {
+                    "name": "Dark Blue",
+                    "hex": "003366",
+                    "codes": [
+                        "200502"
+                    ]
+                },
+                {
+                    "name": "Dark Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200508"
+                    ]
+                },
+                {
+                    "name": "Gold",
+                    "hex": "ffd700",
+                    "codes": [
+                        "200509"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "200504"
+                    ]
+                },
+                {
+                    "name": "Red",
+                    "hex": "ff0000",
+                    "codes": [
+                        "200507"
+                    ]
+                },
+                {
+                    "name": "Silver",
+                    "hex": "c0c0c0",
+                    "codes": [
+                        "200501"
+                    ]
+                },
+                {
+                    "name": "Transparent Red",
+                    "hex": "c8102e",
+                    "codes": [
+                        "200503"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Silky PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "BiColor - Yellow&Blue",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207005"
+                    ]
+                },
+                {
+                    "name": "Black",
+                    "hex": "3f4444",
+                    "finish": "glossy",
+                    "codes": [
+                        "200206"
+                    ]
+                },
+                {
+                    "name": "Black & Gold",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207044"
+                    ]
+                },
+                {
+                    "name": "Black & Green",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207043"
+                    ]
+                },
+                {
+                    "name": "Blue",
+                    "hex": "71c5e8",
+                    "finish": "glossy",
+                    "codes": [
+                        "200212"
+                    ]
+                },
+                {
+                    "name": "Blue & Green",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207041"
+                    ]
+                },
+                {
+                    "name": "Blue Purple",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200216"
+                    ]
+                },
+                {
+                    "name": "Bronze",
+                    "hex": "635939",
+                    "finish": "glossy",
+                    "codes": [
+                        "200202",
+                        "250202"
+                    ]
+                },
+                {
+                    "name": "Candy Pink",
+                    "hex": "dc8699",
+                    "finish": "glossy",
+                    "codes": [
+                        "200218"
+                    ]
+                },
+                {
+                    "name": "Copper",
+                    "hex": "83412c",
+                    "finish": "glossy",
+                    "codes": [
+                        "200203"
+                    ]
+                },
+                {
+                    "name": "Dark Blue",
+                    "hex": "003366",
+                    "finish": "glossy",
+                    "codes": [
+                        "200213"
+                    ]
+                },
+                {
+                    "name": "Dark Blue & Gold",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207002"
+                    ]
+                },
+                {
+                    "name": "Deep Cyan",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200225"
+                    ]
+                },
+                {
+                    "name": "Elixir Blue",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200214",
+                        "250214"
+                    ]
+                },
+                {
+                    "name": "Gecko Green",
+                    "hex": "78d64b",
+                    "finish": "glossy",
+                    "codes": [
+                        "200209"
+                    ]
+                },
+                {
+                    "name": "Gold",
+                    "hex": "d19000",
+                    "finish": "glossy",
+                    "codes": [
+                        "200204"
+                    ]
+                },
+                {
+                    "name": "Golden Yellow",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200227"
+                    ]
+                },
+                {
+                    "name": "Goldfish Orange",
+                    "hex": "d45d00",
+                    "finish": "glossy",
+                    "codes": [
+                        "200220",
+                        "200620"
+                    ]
+                },
+                {
+                    "name": "Green",
+                    "hex": "008000",
+                    "finish": "glossy",
+                    "codes": [
+                        "200210",
+                        "250210"
+                    ]
+                },
+                {
+                    "name": "Green & Yellow",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207042"
+                    ]
+                },
+                {
+                    "name": "Iron Grey",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200230"
+                    ]
+                },
+                {
+                    "name": "Lagoon Blue",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200224"
+                    ]
+                },
+                {
+                    "name": "Mix Red-Sapphire Blue",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200222"
+                    ]
+                },
+                {
+                    "name": "Mocha Brown",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200226"
+                    ]
+                },
+                {
+                    "name": "Pink & Gold",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207001"
+                    ]
+                },
+                {
+                    "name": "Purple",
+                    "hex": "8031a7",
+                    "finish": "glossy",
+                    "codes": [
+                        "200215"
+                    ]
+                },
+                {
+                    "name": "Rainbow",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "200472",
+                        "250472"
+                    ]
+                },
+                {
+                    "name": "Red",
+                    "hex": "ba0c2f",
+                    "finish": "glossy",
+                    "codes": [
+                        "200219"
+                    ]
+                },
+                {
+                    "name": "Red & Black",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207040"
+                    ]
+                },
+                {
+                    "name": "Red & Blue",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207003"
+                    ]
+                },
+                {
+                    "name": "Red & Gold",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207004"
+                    ]
+                },
+                {
+                    "name": "Red & Light Green",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "207006"
+                    ]
+                },
+                {
+                    "name": "Red Copper",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200201"
+                    ]
+                },
+                {
+                    "name": "Rose Gold",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200229"
+                    ]
+                },
+                {
+                    "name": "Sage Green",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "200221"
+                    ]
+                },
+                {
+                    "name": "Silky Rainbow Blue Violet",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "210008"
+                    ],
+                    "eans": [
+                        "5745001109370"
+                    ]
+                },
+                {
+                    "name": "Silky Rainbow Candy",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "210009"
+                    ],
+                    "eans": [
+                        "5745001109387"
+                    ]
+                },
+                {
+                    "name": "Silky Rainbow Flower",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "210005"
+                    ],
+                    "eans": [
+                        "5745001109349"
+                    ]
+                },
+                {
+                    "name": "Silky Rainbow Forest",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "210010"
+                    ],
+                    "eans": [
+                        "5745001109394"
+                    ]
+                },
+                {
+                    "name": "Silky Rainbow Macaron",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "210003"
+                    ],
+                    "eans": [
+                        "5745001109325"
+                    ]
+                },
+                {
+                    "name": "Silky Rainbow Pastel",
+                    "hex": "808080",
+                    "finish": "glossy",
+                    "codes": [
+                        "210004"
+                    ],
+                    "eans": [
+                        "5745001109332"
+                    ]
+                },
+                {
+                    "name": "Silver",
+                    "hex": "7c878e",
+                    "finish": "glossy",
+                    "codes": [
+                        "200205"
+                    ]
+                },
+                {
+                    "name": "Sparkly Rainbow",
+                    "hexes": [
+                        "ff0000",
+                        "ff8800",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "200473"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Blue and Fuchsia",
+                    "hexes": [
+                        "ffd700",
+                        "0000ff",
+                        "808080"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207012"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Blue and Red",
+                    "hexes": [
+                        "ffd700",
+                        "0000ff",
+                        "ff0000"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207008"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Fuchsia and Black",
+                    "hexes": [
+                        "ffd700",
+                        "808080",
+                        "000000"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207011"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Green and Blue",
+                    "hexes": [
+                        "ffd700",
+                        "008000",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207010"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Green and Fuchsia",
+                    "hexes": [
+                        "ffd700",
+                        "008000",
+                        "808080"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207017"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Green and Pinkish",
+                    "hexes": [
+                        "ffd700",
+                        "008000",
+                        "808080"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207013"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Green and Purple",
+                    "hexes": [
+                        "ffd700",
+                        "008000",
+                        "8031a7"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207009"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Green and Red",
+                    "hexes": [
+                        "ffd700",
+                        "008000",
+                        "ff0000"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207014"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Red and Black",
+                    "hexes": [
+                        "ffd700",
+                        "ff0000",
+                        "000000"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207016"
+                    ]
+                },
+                {
+                    "name": "Tricolor Gold, Silver and Copper",
+                    "hexes": [
+                        "ffd700",
+                        "c0c0c0",
+                        "b87333"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207007"
+                    ]
+                },
+                {
+                    "name": "Tricolor Red, Green and Blue",
+                    "hexes": [
+                        "ff0000",
+                        "008000",
+                        "0000ff"
+                    ],
+                    "multi_color_direction": "longitudinal",
+                    "finish": "glossy",
+                    "codes": [
+                        "207015"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "finish": "glossy",
+                    "codes": [
+                        "200207"
+                    ]
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "ffff00",
+                    "finish": "glossy",
+                    "codes": [
+                        "200208",
+                        "250208"
+                    ]
+                }
+            ],
+            "finish": "glossy"
+        },
+        {
+            "name": "Premium Transparent PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                },
+                {
+                    "weight": 2000,
+                    "spool_weight": 400,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "332f21",
+                    "translucent": true,
+                    "codes": [
+                        "200037"
+                    ]
+                },
+                {
+                    "name": "Blue",
+                    "hex": "0000ff",
+                    "translucent": true,
+                    "codes": [
+                        "200035"
+                    ]
+                },
+                {
+                    "name": "Green",
+                    "hex": "009b77",
+                    "translucent": true,
+                    "codes": [
+                        "200036"
+                    ]
+                },
+                {
+                    "name": "Light Grey",
+                    "hex": "97999b",
+                    "translucent": true,
+                    "codes": [
+                        "200038"
+                    ]
+                },
+                {
+                    "name": "Orange",
+                    "hex": "ffa500",
+                    "translucent": true,
+                    "codes": [
+                        "200034"
+                    ]
+                },
+                {
+                    "name": "PLA Transparent Rainbow - Glacier Blue",
+                    "hex": "808080",
+                    "translucent": true,
+                    "codes": [
+                        "207096"
+                    ]
+                },
+                {
+                    "name": "PLA Transparent Rainbow - Lotus Pink",
+                    "hex": "808080",
+                    "translucent": true,
+                    "codes": [
+                        "207098"
+                    ]
+                },
+                {
+                    "name": "PLA Transparent Rainbow - Mint Green",
+                    "hex": "808080",
+                    "translucent": true,
+                    "codes": [
+                        "207097"
+                    ]
+                },
+                {
+                    "name": "PLA Transparent Rainbow - Phantom Blue",
+                    "hex": "808080",
+                    "translucent": true,
+                    "codes": [
+                        "207099"
+                    ]
+                },
+                {
+                    "name": "Red",
+                    "hex": "c63527",
+                    "translucent": true,
+                    "codes": [
+                        "200039"
+                    ]
+                },
+                {
+                    "name": "Transparent",
+                    "hex": "808080",
+                    "translucent": true,
+                    "codes": [
+                        "200094",
+                        "200021"
+                    ]
+                },
+                {
+                    "name": "Yellow",
+                    "hex": "f3e500",
+                    "translucent": true,
+                    "codes": [
+                        "200033"
+                    ]
+                }
+            ],
+            "translucent": true
+        },
+        {
+            "name": "Premium Woodfill PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Dark Wood",
+                    "hex": "bf9474",
+                    "pattern": null,
+                    "codes": [
+                        "200481"
+                    ]
+                },
+                {
+                    "name": "Light Wood",
+                    "hex": "c4a484",
+                    "pattern": null,
+                    "codes": [
+                        "200480"
+                    ]
+                },
+                {
+                    "name": "Wood",
+                    "hex": "808080",
+                    "pattern": null,
+                    "codes": [
+                        "200483",
+                        "200482"
+                    ]
+                }
+            ],
+            "fill": "wood"
+        },
+        {
+            "name": "Premium X-Strong PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "201501"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "201505"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "201502"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                220
+            ],
+            "bed_temp_range": [
+                35,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "202650"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium 4D PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Nature",
+                    "hex": "f5f5dc",
+                    "codes": [
+                        "205000"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Antibacterial PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "200491"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Antistatic PLA {color_name}",
+            "material": "PLA",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                200,
+                230
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "202651"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium High Temp PLA {color_name}",
+            "material": "PLAHIGHTEMP",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "200351",
+                        "250351"
+                    ]
+                },
+                {
+                    "name": "Grey",
+                    "hex": "808080",
+                    "codes": [
+                        "200353"
+                    ]
+                },
+                {
+                    "name": "White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "200352",
+                        "250352"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Magic PLA {color_name}",
+            "material": "PLAMAGIC",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Blue",
+                    "hex": "0000ff",
+                    "codes": [
+                        "207051"
+                    ]
+                },
+                {
+                    "name": "Gold",
+                    "hex": "ffd700",
+                    "codes": [
+                        "207050"
+                    ]
+                },
+                {
+                    "name": "Green",
+                    "hex": "008000",
+                    "codes": [
+                        "207052"
+                    ]
+                },
+                {
+                    "name": "Purple",
+                    "hex": "8031a7",
+                    "codes": [
+                        "207053"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Seaweed PLA {color_name}",
+            "material": "PLASEAWEED",
+            "density": 1.24,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                190,
+                210
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Yellow/Green",
+                    "hex": "808080",
+                    "codes": [
+                        "200454"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium PP {color_name}",
+            "material": "PP",
+            "density": 0.9,
+            "weights": [
+                {
+                    "weight": 1000,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75,
+                2.85
+            ],
+            "extruder_temp_range": [
+                230,
+                260
+            ],
+            "bed_temp_range": [
+                45,
+                60
+            ],
+            "colors": [
+                {
+                    "name": "Black",
+                    "hex": "000000",
+                    "codes": [
+                        "200851",
+                        "250852"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Premium Ceramic {color_name}",
+            "material": "PVB",
+            "density": 1.16,
+            "weights": [
+                {
+                    "weight": 500,
+                    "spool_weight": 200,
+                    "spool_type": "plastic"
+                }
+            ],
+            "diameters": [
+                1.75
+            ],
+            "extruder_temp_range": [
+                195,
+                215
+            ],
+            "bed_temp_range": [
+                60,
+                70
+            ],
+            "colors": [
+                {
+                    "name": "Jade Nature",
+                    "hex": "00a86b",
+                    "codes": [
+                        "10009115"
+                    ],
+                    "eans": [
+                        "7426934809503"
+                    ]
+                },
+                {
+                    "name": "Snow White",
+                    "hex": "ffffff",
+                    "codes": [
+                        "10009110"
+                    ],
+                    "eans": [
+                        "7426934809497"
+                    ]
+                }
+            ]
+        }
+    ]
+}
