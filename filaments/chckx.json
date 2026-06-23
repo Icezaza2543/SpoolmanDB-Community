@@ -1,0 +1,634 @@
+{
+  "manufacturer": "CHCKX",
+  "filaments": [
+    {
+      "name": "Crystal {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "8bbdfd"
+        },
+        {
+          "name": "Purple",
+          "hex": "8d8bfd"
+        }
+      ]
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "PETG-GF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Gray",
+          "hex": "b0b0b0"
+        },
+        {
+          "name": "White",
+          "hex": "808080"
+        }
+      ],
+      "fill": "glass fiber"
+    },
+    {
+      "name": "Matte Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Red and Yellow",
+          "hex": "e70d0d"
+        },
+        {
+          "name": "Yellow-Green",
+          "hex": "e4ef4e"
+        },
+        {
+          "name": "Yellow-Pink",
+          "hex": "f2e76e"
+        }
+      ]
+    },
+    {
+      "name": "Matte Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        20,
+        20
+      ],
+      "colors": [
+        {
+          "name": "Candy",
+          "hex": "35850a"
+        },
+        {
+          "name": "Candy 2",
+          "hex": "e1aeef"
+        },
+        {
+          "name": "Candy 3",
+          "hex": "5e94c9"
+        }
+      ]
+    },
+    {
+      "name": "Matte Tri Color {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black, Red, and Orange",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue, Green, and Purple",
+          "hex": "56a6f5"
+        },
+        {
+          "name": "Blue, Green, and Yellow",
+          "hex": "43ea64"
+        },
+        {
+          "name": "Blue, Yellow, and Pink",
+          "hex": "efe362"
+        },
+        {
+          "name": "CHCKX",
+          "hex": "f55193"
+        }
+      ]
+    },
+    {
+      "name": "Multicolor Multicolor {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Glass Aurora 1",
+          "hex": "aaccee"
+        },
+        {
+          "name": "Glass Blue-Purple",
+          "hex": "8d8bfd"
+        },
+        {
+          "name": "Glass Candy Colors",
+          "hex": "efaeea"
+        },
+        {
+          "name": "Glass Ice Cream",
+          "hex": "e78be9"
+        },
+        {
+          "name": "Glass Macarons",
+          "hex": "b3d4f5"
+        },
+        {
+          "name": "Glass Starry Sea",
+          "hex": "ebefae"
+        }
+      ]
+    },
+    {
+      "name": "PETG Matte {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "808080"
+        },
+        {
+          "name": "Grey",
+          "hex": "606060"
+        },
+        {
+          "name": "Matte Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Matte White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Pink",
+          "hex": "d357fe"
+        },
+        {
+          "name": "Red",
+          "hex": "e32400"
+        },
+        {
+          "name": "SKIN Color",
+          "hex": "c3b998"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "248ff9"
+        },
+        {
+          "name": "Brown",
+          "hex": "553d00"
+        },
+        {
+          "name": "Color",
+          "hex": "f3e1e1"
+        },
+        {
+          "name": "Crystal Purple",
+          "hex": "8d8bfd"
+        },
+        {
+          "name": "Flash Blue",
+          "hex": "8bbdfd"
+        },
+        {
+          "name": "Green",
+          "hex": "80ff00"
+        },
+        {
+          "name": "Grey",
+          "hex": "898989"
+        },
+        {
+          "name": "Metallic Coffee Brown",
+          "hex": "503e38"
+        },
+        {
+          "name": "Metallic Orange",
+          "hex": "955d48"
+        },
+        {
+          "name": "Metallic Rose Gold",
+          "hex": "a26872"
+        },
+        {
+          "name": "Metallic Teal (Green Eye)",
+          "hex": "7ba79d"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8000"
+        },
+        {
+          "name": "Orange-Light",
+          "hex": "fba966"
+        },
+        {
+          "name": "Purple",
+          "hex": "61177c"
+        },
+        {
+          "name": "Red",
+          "hex": "fa0000"
+        },
+        {
+          "name": "Silver",
+          "hex": "c4c4c4"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fbff00"
+        }
+      ]
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        20,
+        20
+      ],
+      "colors": [
+        {
+          "name": "Four Seasons of Autumn",
+          "hex": "e8a354"
+        },
+        {
+          "name": "Four Seasons of Spring",
+          "hex": "ff8afb"
+        },
+        {
+          "name": "Four Seasons of Summer",
+          "hex": "79f269"
+        },
+        {
+          "name": "Four Seasons of Winter",
+          "hex": "66aac7"
+        },
+        {
+          "name": "Powder Blue",
+          "hex": "d77af0"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Bamboo Green",
+          "hex": "58b04e"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Energetic Orange",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Gray",
+          "hex": "646b73"
+        },
+        {
+          "name": "Light Yellow",
+          "hex": "eee850"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6a00"
+        },
+        {
+          "name": "Peach Pink",
+          "hex": "fc5073"
+        },
+        {
+          "name": "Pink",
+          "hex": "fd9dba"
+        },
+        {
+          "name": "Purple",
+          "hex": "ab79c7"
+        },
+        {
+          "name": "Silver",
+          "hex": "4c5057"
+        },
+        {
+          "name": "Skin-Color",
+          "hex": "f3e2de"
+        },
+        {
+          "name": "Starry Blue",
+          "hex": "1044bb"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black and Red",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue Green",
+          "hex": "0080ff"
+        },
+        {
+          "name": "Red/Pink/Purple",
+          "hexes": [
+            "ff0000",
+            "808080",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "Silk Triple {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black/Blue/Purple",
+          "hexes": [
+            "000000",
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Blue, Black, and Purple",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Green/Purple/Copper",
+          "hexes": [
+            "008000",
+            "800080",
+            "808080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red Yellow Blue",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Red/Blue/Green",
+          "hexes": [
+            "ff0000",
+            "0000ff",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red/Gold/Green",
+          "hexes": [
+            "ff0000",
+            "ffd700",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "White/Blue/Green",
+          "hexes": [
+            "808080",
+            "0000ff",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "White/Gold/Green",
+          "hexes": [
+            "808080",
+            "ffd700",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Yellow/Blue/Purple",
+          "hexes": [
+            "ffff00",
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    }
+  ]
+}
