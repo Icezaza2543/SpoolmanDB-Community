@@ -1,0 +1,73 @@
+{
+  "manufacturer": "Tecnikoa",
+  "filaments": [
+    {
+      "name": "Filafresh {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 250
+        },
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        235
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Strawberry Red",
+          "hex": "FF4040"
+        },
+        {
+          "name": "Mint Green",
+          "hex": "40FF40"
+        },
+        {
+          "name": "Vanilla White",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "Filatecniko {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 250
+        },
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        235
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Stone Grey",
+          "hex": "888888"
+        }
+      ]
+    }
+  ]
+}
