@@ -1,0 +1,157 @@
+{
+  "manufacturer": "GolGeo",
+  "filaments": [
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Silk-like Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Silk Dual Colors Black Blue",
+          "hexes": [
+            "000000",
+            "0000FF"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk Dual Colors Black Red",
+          "hexes": [
+            "000000",
+            "FF0000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk Dual Colors Blue Green",
+          "hexes": [
+            "0000FF",
+            "008000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk Dual Colors Gold Black",
+          "hexes": [
+            "FFD700",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk Tricolor Purple Orange Blue",
+          "hexes": [
+            "800080",
+            "FFA500",
+            "0000FF"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk Tricolor Red Green Blue",
+          "hexes": [
+            "FF0000",
+            "008000",
+            "0000FF"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk Tricolor Orange Blue Green",
+          "hexes": [
+            "FFA500",
+            "0000FF",
+            "008000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk-like Rainbow Bright",
+          "hexes": [
+            "FF0000",
+            "FFA500",
+            "FFFF00",
+            "008000",
+            "0000FF",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Silk-like Rainbow Kingfisher",
+          "hexes": [
+            "008080",
+            "0087BD",
+            "0000FF",
+            "00FFFF"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Silk-like Rainbow Metal",
+          "hexes": [
+            "FFD700",
+            "C0C0C0",
+            "B87333",
+            "CD7F32"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk Bundle {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 200
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "colors": [
+        {
+          "name": "4 Pack Dual Color Red Gold Silver Blue Blue Green Red Silver",
+          "hexes": [
+            "FF0000",
+            "FFD700",
+            "C0C0C0",
+            "0000FF",
+            "008000"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ]
+    }
+  ]
+}
