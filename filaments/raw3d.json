@@ -1,0 +1,273 @@
+{
+  "manufacturer": "RAW3D",
+  "filaments": [
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Australia",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0721/0054/4748/files/PLA_5d4639fd-b650-49f1-ab9b-8efd9354eab4.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "glossy",
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Rainbow 1",
+          "hexes": [
+            "FF0000",
+            "FFFF00",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rainbow 2",
+          "hexes": [
+            "FFA500",
+            "0000FF",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Light Gold",
+          "hex": "FFE87C"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 900
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Assorted",
+          "hexes": [
+            "000000",
+            "FFFFFF",
+            "FF0000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "TPU-95A {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Assorted",
+          "hexes": [
+            "000000",
+            "FFFFFF",
+            "FF0000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PLA-CF {color_name}",
+      "material": "PLA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Assorted",
+          "hexes": [
+            "000000",
+            "333333"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PLA Glow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "glow": true,
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Assorted",
+          "hexes": [
+            "E0FFE0",
+            "FFF5E0"
+          ],
+          "multi_color_direction": "longitudinal",
+          "glow": true
+        }
+      ]
+    },
+    {
+      "name": "High Speed Matte PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "finish": "matte",
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Assorted",
+          "hexes": [
+            "000000",
+            "FFFFFF",
+            "808080"
+          ],
+          "multi_color_direction": "longitudinal",
+          "finish": "matte"
+        }
+      ]
+    }
+  ]
+}
