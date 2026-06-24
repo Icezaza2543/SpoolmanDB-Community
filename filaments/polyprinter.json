@@ -1,0 +1,402 @@
+{
+  "manufacturer": "PolyPrinter",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        260
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "BlueGrey",
+          "hex": "5A7D9A"
+        },
+        {
+          "name": "Bronze",
+          "hex": "CD7F32"
+        },
+        {
+          "name": "Brown",
+          "hex": "A52A2A"
+        },
+        {
+          "name": "Burnt Orange",
+          "hex": "CC5500"
+        },
+        {
+          "name": "Chocolate",
+          "hex": "7B3F00"
+        },
+        {
+          "name": "Copper",
+          "hex": "B87333"
+        },
+        {
+          "name": "Fluorescent Green",
+          "hex": "39FF14",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Fluorescent Orange",
+          "hex": "FF5F1F",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Fluorescent Yellow",
+          "hex": "CCFF00",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Glow in the Dark Green/Green",
+          "hex": "E0FFE0",
+          "glow": true
+        },
+        {
+          "name": "Glow in the Dark Green/White",
+          "hex": "F5FFF5",
+          "glow": true
+        },
+        {
+          "name": "Gold",
+          "hex": "FFD700"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Khaki",
+          "hex": "F0E68C"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "D3D3D3"
+        },
+        {
+          "name": "Light Sky Blue",
+          "hex": "87CEFA"
+        },
+        {
+          "name": "Maroon",
+          "hex": "800000"
+        },
+        {
+          "name": "Natural",
+          "hex": "EEEEEE"
+        },
+        {
+          "name": "Navy",
+          "hex": "000080"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Royal Purple",
+          "hex": "7851A9"
+        },
+        {
+          "name": "Salmon",
+          "hex": "FA8072"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "87CEEB"
+        },
+        {
+          "name": "Translucent Black",
+          "hex": "000000",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Blue",
+          "hex": "0000FF",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Green",
+          "hex": "008000",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Orange",
+          "hex": "FFA500",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Pink",
+          "hex": "FFC0CB",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Purple",
+          "hex": "800080",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Red",
+          "hex": "FF0000",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Violet",
+          "hex": "8F00FF",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Yellow",
+          "hex": "FFFF00",
+          "translucent": true
+        },
+        {
+          "name": "Transparent",
+          "hex": "FFFFFF",
+          "translucent": true
+        },
+        {
+          "name": "True Green",
+          "hex": "00A877"
+        },
+        {
+          "name": "Turquoise",
+          "hex": "40E0D0"
+        },
+        {
+          "name": "UV Sensitive",
+          "hex": "E6E6FA"
+        },
+        {
+          "name": "Violet",
+          "hex": "EE82EE"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        }
+      ]
+    },
+    {
+      "name": "ABS Wood {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "fill": "wood",
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Wood",
+          "hex": "D7B594"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Brown",
+          "hex": "A52A2A"
+        },
+        {
+          "name": "Copper",
+          "hex": "B87333"
+        },
+        {
+          "name": "Glow in the Dark Green/White",
+          "hex": "F5FFF5",
+          "glow": true
+        },
+        {
+          "name": "Gold",
+          "hex": "FFD700"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Khaki",
+          "hex": "F0E68C"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "D3D3D3"
+        },
+        {
+          "name": "Natural",
+          "hex": "EEEEEE"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "87CEEB"
+        },
+        {
+          "name": "Translucent Pink",
+          "hex": "FFC0CB",
+          "translucent": true
+        },
+        {
+          "name": "True Green",
+          "hex": "00A877"
+        },
+        {
+          "name": "Turquoise",
+          "hex": "40E0D0"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        }
+      ]
+    },
+    {
+      "name": "Wood (PLA based) {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "fill": "wood",
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Wood",
+          "hex": "D7B594"
+        }
+      ]
+    },
+    {
+      "name": "NinjaFlex {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Midnight (Black)",
+          "hex": "000000"
+        },
+        {
+          "name": "Snow",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "Water Soluble Support Material",
+      "material": "PVA",
+      "density": 1.19,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "EEEEEE"
+        }
+      ]
+    }
+  ]
+}
