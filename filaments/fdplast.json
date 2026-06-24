@@ -1,0 +1,566 @@
+{
+  "manufacturer": "FDplast",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        20,
+        70
+      ],
+      "country_of_origin": "Russia",
+      "colors": [
+        {
+          "name": "SILK Alfa Romeo red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "SILK Aston Martin green",
+          "hex": "006644"
+        },
+        {
+          "name": "SILK Lamborghini yellow",
+          "hex": "FFCC00"
+        },
+        {
+          "name": "SILK Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "SILK Subaru blue",
+          "hex": "003399"
+        },
+        {
+          "name": "Alligator",
+          "hex": "5B7053"
+        },
+        {
+          "name": "Antique brass",
+          "hex": "C3A65C"
+        },
+        {
+          "name": "Anemone",
+          "hex": "8B2252"
+        },
+        {
+          "name": "Snow White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Indigo children",
+          "hex": "4B0082"
+        },
+        {
+          "name": "Jungle calls",
+          "hex": "2E8B57"
+        },
+        {
+          "name": "Wild orchid",
+          "hex": "DA70D6"
+        },
+        {
+          "name": "Wild panther",
+          "hex": "1A1A1A"
+        },
+        {
+          "name": "Green lantern",
+          "hex": "00FF00"
+        },
+        {
+          "name": "Cardinal Richelieu",
+          "hex": "800020"
+        },
+        {
+          "name": "Coral reef",
+          "hex": "FF7F50"
+        },
+        {
+          "name": "Hard nut",
+          "hex": "8B5A2B"
+        },
+        {
+          "name": "Silver lily",
+          "hex": "E6E6FA"
+        },
+        {
+          "name": "Love carrot",
+          "hex": "FF7F00"
+        },
+        {
+          "name": "Jedi sword fluorescent",
+          "hex": "39FF14"
+        },
+        {
+          "name": "Cherry tomato",
+          "hex": "FF6347"
+        },
+        {
+          "name": "Pink flamingo",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Grey wolf",
+          "hex": "708090"
+        },
+        {
+          "name": "Ivory",
+          "hex": "FFFFF0"
+        },
+        {
+          "name": "Juicy apple",
+          "hex": "8DB600"
+        },
+        {
+          "name": "Dark night",
+          "hex": "0A0A0A"
+        },
+        {
+          "name": "Warm sun",
+          "hex": "FFD700"
+        },
+        {
+          "name": "Terminator",
+          "hex": "A9A9A9"
+        },
+        {
+          "name": "Terracotta warrior",
+          "hex": "C46210"
+        },
+        {
+          "name": "Tiffany",
+          "hex": "0ABAB5"
+        },
+        {
+          "name": "Morning dew natural",
+          "hex": "EEEEEE"
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles",
+          "hex": "228B22"
+        },
+        {
+          "name": "Gradient",
+          "hexes": [
+            "FF0000",
+            "008000",
+            "0000FF"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PLA Lumi {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "glow": true,
+      "country_of_origin": "Russia",
+      "colors": [
+        {
+          "name": "Lizun luminous",
+          "hex": "E0FFE0"
+        },
+        {
+          "name": "Phantom luminous",
+          "hex": "F5FFF5",
+          "glow": true
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        245,
+        260
+      ],
+      "country_of_origin": "Russia",
+      "colors": [
+        {
+          "name": "F35",
+          "hex": "36454F"
+        },
+        {
+          "name": "Scarlet flower",
+          "hex": "FF2400"
+        },
+        {
+          "name": "Velvet rose",
+          "hex": "D21F3C"
+        },
+        {
+          "name": "Cloudless sky",
+          "hex": "00BFFF"
+        },
+        {
+          "name": "Brigitte Bardot",
+          "hex": "F5F5DC"
+        },
+        {
+          "name": "Magic forest",
+          "hex": "005C29"
+        },
+        {
+          "name": "Hawaiian lagoon",
+          "hex": "008080"
+        },
+        {
+          "name": "Deep ocean",
+          "hex": "120A8F"
+        },
+        {
+          "name": "Mountain emerald",
+          "hex": "50C878"
+        },
+        {
+          "name": "Hot chocolate",
+          "hex": "4A2711"
+        },
+        {
+          "name": "Grinch",
+          "hex": "82FF23"
+        },
+        {
+          "name": "Christmas tree",
+          "hex": "00401A"
+        },
+        {
+          "name": "Inca gold",
+          "hex": "B76E79"
+        },
+        {
+          "name": "Cocoa",
+          "hex": "8F5E52"
+        },
+        {
+          "name": "Royal sapphire",
+          "hex": "082567"
+        },
+        {
+          "name": "Creme brulee",
+          "hex": "FFF8DC"
+        },
+        {
+          "name": "Silver lily",
+          "hex": "E6E6FA"
+        },
+        {
+          "name": "Wet asphalt",
+          "hex": "353839"
+        },
+        {
+          "name": "First snow",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Fresh air natural",
+          "hex": "EEEEEE"
+        },
+        {
+          "name": "Sweet orange",
+          "hex": "FF8000"
+        },
+        {
+          "name": "Juicy apple",
+          "hex": "8DB600"
+        },
+        {
+          "name": "Dark night",
+          "hex": "0A0A0A"
+        },
+        {
+          "name": "Kill Bill",
+          "hex": "FFCC00"
+        },
+        {
+          "name": "Khaki",
+          "hex": "F0E68C"
+        },
+        {
+          "name": "Flowering sakura",
+          "hex": "FFB7C5"
+        },
+        {
+          "name": "Enchanting lavender",
+          "hex": "E6E6FA"
+        },
+        {
+          "name": "Bright peony fluorescent",
+          "hex": "FF1493"
+        },
+        {
+          "name": "Beach party fluorescent",
+          "hex": "FF007F"
+        },
+        {
+          "name": "Gradient",
+          "hexes": [
+            "FF0000",
+            "000000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Russia",
+      "colors": [
+        {
+          "name": "Forest",
+          "hex": "224D17"
+        },
+        {
+          "name": "Avatar",
+          "hex": "0099FF"
+        },
+        {
+          "name": "White Guard",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Wasabi",
+          "hex": "A4C639"
+        },
+        {
+          "name": "Camouflage",
+          "hex": "556B2F"
+        },
+        {
+          "name": "Forest berry",
+          "hex": "8A2242"
+        },
+        {
+          "name": "Limoncello",
+          "hex": "FFFF4D"
+        },
+        {
+          "name": "Maldives",
+          "hex": "00FFFF"
+        },
+        {
+          "name": "Marvel",
+          "hex": "C41E3A"
+        },
+        {
+          "name": "Thor hammer",
+          "hex": "808080"
+        },
+        {
+          "name": "Naomi Campbell",
+          "hex": "2B2326"
+        },
+        {
+          "name": "Forget-me-not",
+          "hex": "7F00FF"
+        },
+        {
+          "name": "Netsuke",
+          "hex": "FFE4B5"
+        },
+        {
+          "name": "Pioneer tie",
+          "hex": "E60000"
+        },
+        {
+          "name": "Sunflower",
+          "hex": "FFD300"
+        },
+        {
+          "name": "Soviet champagne",
+          "hex": "B2A36B"
+        },
+        {
+          "name": "Frog princess",
+          "hex": "3D9140"
+        },
+        {
+          "name": "Black raven",
+          "hex": "0C090A"
+        },
+        {
+          "name": "Gradient",
+          "hexes": [
+            "FF0000",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "SBS {color_name}",
+      "material": "SBS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Russia",
+      "colors": [
+        {
+          "name": "Space flight",
+          "hex": "4B0082"
+        },
+        {
+          "name": "Wet asphalt",
+          "hex": "353839"
+        },
+        {
+          "name": "First snow",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Rose wine",
+          "hex": "C71585"
+        },
+        {
+          "name": "Dark night",
+          "hex": "0C090A"
+        }
+      ]
+    },
+    {
+      "name": "HIPS {color_name}",
+      "material": "HIPS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Russia",
+      "colors": [
+        {
+          "name": "Juicy apple",
+          "hex": "8DB600"
+        }
+      ]
+    },
+    {
+      "name": "Nylon {color_name}",
+      "material": "PA",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Russia",
+      "colors": [
+        {
+          "name": "CARBON 30",
+          "hex": "1A1A1A",
+          "fill": "carbon fiber"
+        },
+        {
+          "name": "GLASS 30",
+          "hex": "D3D3D3",
+          "fill": "glass fiber"
+        },
+        {
+          "name": "Malevich square",
+          "hex": "000000"
+        },
+        {
+          "name": "Natural",
+          "hex": "EEEEEE"
+        }
+      ]
+    },
+    {
+      "name": "TPU {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Russia",
+      "colors": [
+        {
+          "name": "Aquaman",
+          "hex": "003A6F"
+        },
+        {
+          "name": "Venom",
+          "hex": "1A1A1A"
+        },
+        {
+          "name": "SpongeBob",
+          "hex": "FFD700"
+        },
+        {
+          "name": "Ice Age",
+          "hex": "A5F2F3"
+        },
+        {
+          "name": "Face palm",
+          "hex": "D2B48C"
+        },
+        {
+          "name": "Sugar watermelon",
+          "hex": "E22B2B"
+        },
+        {
+          "name": "T-1000",
+          "hex": "C0C0C0"
+        }
+      ]
+    }
+  ]
+}
