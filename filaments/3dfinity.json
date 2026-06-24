@@ -1,0 +1,537 @@
+{
+  "manufacturer": "3Dfinity",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ],
+      "country_of_origin": "Slovakia",
+      "tds_url": "https://eshop.3dfinity.sk/user/related_files/tds_pla-12.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "0086c3"
+        },
+        {
+          "name": "Brown",
+          "hex": "8b4513"
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700"
+        },
+        {
+          "name": "Lumi Green",
+          "hex": "00a95b"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Pink",
+          "hex": "ffc0cb"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Sulfur Yellow",
+          "hex": "edff21"
+        },
+        {
+          "name": "Brown Grey",
+          "hex": "5b5149"
+        },
+        {
+          "name": "Olive Green",
+          "hex": "424632"
+        },
+        {
+          "name": "Beige",
+          "hex": "cfae7d"
+        },
+        {
+          "name": "Holiday Blue",
+          "hex": "0066cc"
+        },
+        {
+          "name": "Signal Grey",
+          "hex": "969992"
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "finish": "glossy",
+      "country_of_origin": "Slovakia",
+      "tds_url": "https://eshop.3dfinity.sk/user/related_files/tds_pla-12.pdf",
+      "colors": [
+        {
+          "name": "Rose Gold",
+          "hex": "b76e79"
+        },
+        {
+          "name": "Red Copper",
+          "hex": "cb6d51"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Bronze",
+          "hex": "cd7f32"
+        },
+        {
+          "name": "Pink",
+          "hex": "ffc0cb"
+        }
+      ]
+    },
+    {
+      "name": "Luminous PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ],
+      "glow": true,
+      "country_of_origin": "Slovakia",
+      "tds_url": "https://eshop.3dfinity.sk/user/related_files/tds_pla-12.pdf",
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Blue Green",
+          "hex": "00ffcc"
+        }
+      ]
+    },
+    {
+      "name": "PLA-CF {color_name}",
+      "material": "PLA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Brown",
+          "hex": "8b4513"
+        },
+        {
+          "name": "Gold",
+          "hex": "ffd700"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Pink",
+          "hex": "ffc0cb"
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffff00"
+        }
+      ]
+    },
+    {
+      "name": "Wood {color_name}",
+      "material": "PLA+",
+      "density": 1.28,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "fill": "wood",
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Bamboo",
+          "hex": "ba9d7d"
+        },
+        {
+          "name": "Cork",
+          "hex": "808080"
+        },
+        {
+          "name": "Natural",
+          "hex": "d1b898"
+        },
+        {
+          "name": "Ebony",
+          "hex": "3d2b1f"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        265
+      ],
+      "bed_temp_range": [
+        50,
+        80
+      ],
+      "country_of_origin": "Slovakia",
+      "tds_url": "https://eshop.3dfinity.sk/user/related_files/tds_petg-6.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Persian Red",
+          "hex": "cc3333"
+        },
+        {
+          "name": "Holiday Blue",
+          "hex": "0066cc"
+        },
+        {
+          "name": "Sapphire Blue",
+          "hex": "0f52ba"
+        },
+        {
+          "name": "Safety Orange",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Greenish Yellow",
+          "hex": "adff2f"
+        },
+        {
+          "name": "Brown Grey",
+          "hex": "5b5149"
+        },
+        {
+          "name": "Anthracite Grey",
+          "hex": "383e42"
+        },
+        {
+          "name": "Olive Green",
+          "hex": "424632"
+        },
+        {
+          "name": "Agate Grey",
+          "hex": "b5b5b5"
+        },
+        {
+          "name": "Grey Beige",
+          "hex": "9a9a8e"
+        },
+        {
+          "name": "Beige",
+          "hex": "cfae7d"
+        },
+        {
+          "name": "Dark Anthracite",
+          "hex": "2b2b2b"
+        },
+        {
+          "name": "Anthracite",
+          "hex": "383838"
+        }
+      ]
+    },
+    {
+      "name": "PETG Transparent {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        265
+      ],
+      "bed_temp_range": [
+        50,
+        80
+      ],
+      "country_of_origin": "Slovakia",
+      "tds_url": "https://eshop.3dfinity.sk/user/related_files/tds_petg-6.pdf",
+      "colors": [
+        {
+          "name": "Clear",
+          "hex": "ffffff",
+          "translucent": true
+        },
+        {
+          "name": "Persian Blue",
+          "hex": "0f52ba",
+          "translucent": true
+        },
+        {
+          "name": "Green",
+          "hex": "008000",
+          "translucent": true
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6600",
+          "translucent": true
+        },
+        {
+          "name": "Crimson Red",
+          "hex": "dc143c",
+          "translucent": true
+        },
+        {
+          "name": "Jungle Green",
+          "hex": "29ab87",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "PETG-CF {color_name}",
+      "material": "PETG-CF",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        265
+      ],
+      "bed_temp_range": [
+        50,
+        80
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Sapphire Blue",
+          "hex": "0f52ba"
+        },
+        {
+          "name": "Moss Green",
+          "hex": "8a9a5b"
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        110
+      ],
+      "country_of_origin": "Slovakia",
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Pink",
+          "hex": "ffc0cb"
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffff00"
+        }
+      ]
+    }
+  ]
+}
