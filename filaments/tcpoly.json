@@ -1,0 +1,61 @@
+{
+  "manufacturer": "TCPoly",
+  "filaments": [
+    {
+      "name": "Ice9 TPU {color_name}",
+      "material": "TPU",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        270
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ],
+      "country_of_origin": "United States",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "EEEEEE"
+        }
+      ]
+    },
+    {
+      "name": "Ice9 Nylon {color_name}",
+      "material": "PA",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        265,
+        310
+      ],
+      "bed_temp_range": [
+        70,
+        100
+      ],
+      "country_of_origin": "United States",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "EEEEEE"
+        }
+      ]
+    }
+  ]
+}
