@@ -1,0 +1,54 @@
+{
+  "manufacturer": "Goto Guard",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Silk Rainbow",
+          "hexes": [
+            "FF0000",
+            "00FF00",
+            "0000FF",
+            "FFFF00"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Silk Dual-Color Blue Green",
+          "hexes": [
+            "0000FF",
+            "00FF00"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Matte Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Matte White",
+          "hex": "FFFFFF"
+        }
+      ]
+    }
+  ]
+}
