@@ -1,0 +1,66 @@
+{
+  "manufacturer": "Protech",
+  "filaments": [
+    {
+      "name": "Tri-Chroma Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        80
+      ],
+      "country_of_origin": "Australia",
+      "colors": [
+        {
+          "name": "Blue Purple Yellow",
+          "hexes": [
+            "0000FF",
+            "800080",
+            "FFFF00"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Gold Green Black",
+          "hexes": [
+            "FFD700",
+            "008000",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Dark Blue Fuchsia Dark Green",
+          "hexes": [
+            "00008B",
+            "FF00FF",
+            "006400"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red Copper Purple Dark Green",
+          "hexes": [
+            "FF0000",
+            "B87333",
+            "800080",
+            "006400"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ]
+    }
+  ]
+}
