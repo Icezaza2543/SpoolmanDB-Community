@@ -1,0 +1,209 @@
+{
+  "manufacturer": "Semdon",
+  "filaments": [
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "colors": [
+        {
+          "name": "Silk Red Blue Green",
+          "hexes": [
+            "FF0000",
+            "0000FF",
+            "008000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Transparent",
+          "hex": "FFFFFF",
+          "translucent": true
+        },
+        {
+          "name": "Silk Dual Blue Green",
+          "hexes": [
+            "0000FF",
+            "008000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk Dual Red Black",
+          "hexes": [
+            "FF0000",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silk Tri-color Blue Green Orange",
+          "hexes": [
+            "0000FF",
+            "008000",
+            "FFA500"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Rainbow Candy",
+          "hexes": [
+            "FFC0CB",
+            "FFB6C1",
+            "FFD700",
+            "87CEEB"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rainbow Universe",
+          "hexes": [
+            "00008B",
+            "4B0082",
+            "483D8B",
+            "000000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Pla Gold",
+          "hex": "FFD700"
+        },
+        {
+          "name": "Pla Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Pla Copper",
+          "hex": "B87333"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk Bundle {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "colors": [
+        {
+          "name": "250g x4 Dualcolor Bundle",
+          "hexes": [
+            "FF0000",
+            "000000",
+            "FFD700",
+            "0000FF"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "250g x4 Tricolors Bundle",
+          "hexes": [
+            "FF0000",
+            "008000",
+            "0000FF",
+            "FFFF00"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "250g x4 Multicolor Bundle",
+          "hexes": [
+            "FFC0CB",
+            "87CEEB",
+            "FFFF00",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PLA Wood {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "fill": "wood",
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "colors": [
+        {
+          "name": "Pla Cherry Wood",
+          "hex": "8C3F3F"
+        },
+        {
+          "name": "Pla Maple Wood",
+          "hex": "E3C58F"
+        },
+        {
+          "name": "Pla Walnut Wood",
+          "hex": "5C4033"
+        },
+        {
+          "name": "Pla Mahogany Wood",
+          "hex": "4A1525"
+        },
+        {
+          "name": "4x250g Dark Wood Light Wood Red Wood Walnut",
+          "hexes": [
+            "5C4033",
+            "E3C58F",
+            "8C3F3F"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    }
+  ]
+}
