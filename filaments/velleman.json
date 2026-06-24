@@ -1,0 +1,150 @@
+{
+  "manufacturer": "Velleman",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-FIL-1"
+          ]
+        },
+        {
+          "name": "Transparent",
+          "hex": "FFFFFF",
+          "translucent": true,
+          "codes": [
+            "PLA-FIL-2"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "EEEEEE",
+          "codes": [
+            "PLA-FIL-3"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "codes": [
+            "PLA-FIL-4"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000",
+          "codes": [
+            "PLA-FIL-5"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF",
+          "codes": [
+            "PLA-FIL-6"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "008000",
+          "codes": [
+            "PLA-FIL-7"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500",
+          "codes": [
+            "PLA-FIL-8"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00",
+          "codes": [
+            "PLA-FIL-9"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "ABS-FIL-1"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "EEEEEE",
+          "codes": [
+            "ABS-FIL-2"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "codes": [
+            "ABS-FIL-3"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000",
+          "codes": [
+            "ABS-FIL-4"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF",
+          "codes": [
+            "ABS-FIL-5"
+          ]
+        }
+      ]
+    }
+  ]
+}
