@@ -1,0 +1,84 @@
+{
+  "manufacturer": "GNVTNTP",
+  "filaments": [
+    {
+      "name": "MagicPLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 250
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        180,
+        200
+      ],
+      "bed_temp_range": [
+        0,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Van Gogh Green",
+          "hexes": [
+            "0b6b3a",
+            "c5a14a"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Vintage Gold",
+          "hexes": [
+            "8a5a2b",
+            "d4af37"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Mineral Gold",
+          "hexes": [
+            "b8860b",
+            "f5d76e"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Cosmic Black",
+          "hexes": [
+            "000000",
+            "4b0082"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Purple - Burnt Orange - Teal",
+          "hexes": [
+            "800080",
+            "cc5500",
+            "008080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Shiny Rainbow",
+          "hexes": [
+            "ff0000",
+            "ffd100",
+            "00a651",
+            "0057b8",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal",
+          "pattern": "sparkle"
+        }
+      ]
+    }
+  ]
+}
