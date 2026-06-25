@@ -1,0 +1,45 @@
+{
+  "manufacturer": "Xtellar",
+  "filaments": [
+    {
+      "name": "Alloy 910 {color_name}",
+      "material": "PA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 450
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        255
+      ],
+      "bed_temp_range": [
+        30,
+        65
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "111111"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f0"
+        },
+        {
+          "name": "Natural",
+          "hex": "e8dcc0",
+          "translucent": true
+        }
+      ]
+    }
+  ]
+}
