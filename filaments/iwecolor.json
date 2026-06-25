@@ -1,0 +1,145 @@
+{
+  "manufacturer": "IWECOLOR",
+  "filaments": [
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        180,
+        210
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Yellow",
+          "hex": "ffd100"
+        },
+        {
+          "name": "Mustard Yellow",
+          "hex": "d4a017"
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        235
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "ff69b4"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd100"
+        }
+      ]
+    },
+    {
+      "name": "COEX-PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 200
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        235
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Red - Blue - Green",
+          "hexes": [
+            "ff0000",
+            "0057b8",
+            "00a651"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red - Gold - Purple",
+          "hexes": [
+            "ff0000",
+            "d4af37",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red - Yellow - Blue",
+          "hexes": [
+            "ff0000",
+            "ffd100",
+            "0057b8"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Orange - Blue - Green",
+          "hexes": [
+            "ff8200",
+            "0057b8",
+            "00a651"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Yellow - Green",
+          "hexes": [
+            "ffd100",
+            "00a651"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Black - Red",
+          "hexes": [
+            "000000",
+            "ff0000"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ]
+    }
+  ]
+}
