@@ -1,0 +1,61 @@
+{
+  "manufacturer": "Filabotics",
+  "filaments": [
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        20,
+        60
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        }
+      ]
+    },
+    {
+      "name": "ABS Translucent {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "translucent": true,
+      "colors": [
+        {
+          "name": "Translucent",
+          "hex": "f5f5f5",
+          "translucent": true
+        }
+      ]
+    }
+  ]
+}
