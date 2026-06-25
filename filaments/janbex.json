@@ -1,0 +1,72 @@
+{
+  "manufacturer": "Janbex",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Grey",
+          "hex": "8c8c8c"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c1a"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Marble",
+          "hex": "d9d9d9",
+          "pattern": "marble"
+        }
+      ]
+    }
+  ]
+}
