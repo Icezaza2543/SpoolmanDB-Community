@@ -1,0 +1,124 @@
+{
+  "manufacturer": "Smith3D",
+  "filaments": [
+    {
+      "name": "Marble PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "White Marble",
+          "hex": "f1f1ec"
+        },
+        {
+          "name": "Black Marble",
+          "hex": "2a2a2a"
+        }
+      ]
+    },
+    {
+      "name": "Transparent PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "e8dcc0",
+          "translucent": true
+        },
+        {
+          "name": "Green",
+          "hex": "22a35a",
+          "translucent": true
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c1a",
+          "translucent": true
+        },
+        {
+          "name": "Red",
+          "hex": "d71920",
+          "translucent": true
+        },
+        {
+          "name": "Blue",
+          "hex": "1f77b4",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "Silk Dual-color PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "glossy",
+      "colors": [
+        {
+          "name": "Purple Blue",
+          "hexes": [
+            "6f2dbd",
+            "1f77b4"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red Black",
+          "hexes": [
+            "d71920",
+            "111111"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ]
+    }
+  ]
+}
