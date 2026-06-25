@@ -1,0 +1,212 @@
+{
+  "manufacturer": "Maertz",
+  "filaments": [
+    {
+      "name": "PLA Pro {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Green",
+          "hex": "00a651"
+        },
+        {
+          "name": "Multicolor",
+          "hexes": [
+            "ff0000",
+            "ffd100",
+            "00a651",
+            "0057b8"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
+    },
+    {
+      "name": "PLA Matt {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "Light Grey",
+          "hex": "d3d3d3",
+          "finish": "matte"
+        }
+      ]
+    },
+    {
+      "name": "PLA Silk Tri Color {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Gold - Silver - Copper",
+          "hexes": [
+            "d4af37",
+            "c0c0c0",
+            "b87333"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Blue - Yellow - Pink",
+          "hexes": [
+            "0057b8",
+            "ffd100",
+            "ff69b4"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ]
+    },
+    {
+      "name": "PLA Glow+ {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "glow": true,
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "ccff99",
+          "glow": true
+        },
+        {
+          "name": "Green Glitter",
+          "hex": "ccff99",
+          "glow": true,
+          "pattern": "sparkle"
+        }
+      ]
+    },
+    {
+      "name": "PLA Carbon {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "fill": "carbon fiber",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Orange",
+          "hex": "ff8200"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    }
+  ]
+}
