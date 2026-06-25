@@ -1,0 +1,90 @@
+{
+  "manufacturer": "Plasticz",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Matte Black",
+          "hex": "111111"
+        },
+        {
+          "name": "Traffic Purple",
+          "hex": "7f1d78"
+        },
+        {
+          "name": "Twilight Emerald",
+          "hex": "0f6f5c"
+        },
+        {
+          "name": "Metallic Grey",
+          "hex": "8a8c8e"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Traffic Yellow",
+          "hex": "f7cd4a"
+        },
+        {
+          "name": "Transparent Orange",
+          "hex": "ff8c00",
+          "translucent": true
+        },
+        {
+          "name": "Blazing Orange",
+          "hex": "ff5f00"
+        },
+        {
+          "name": "Iron Grey",
+          "hex": "54575a"
+        },
+        {
+          "name": "Traffic Purple",
+          "hex": "7f1d78"
+        }
+      ]
+    }
+  ]
+}
