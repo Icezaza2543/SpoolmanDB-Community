@@ -1,0 +1,170 @@
+{
+  "manufacturer": "Capricorn",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 200
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Sparkly Blue",
+          "hex": "7796d8",
+          "pattern": "sparkle",
+          "translucent": true
+        },
+        {
+          "name": "Sparkly Purple",
+          "hex": "7a4fb3",
+          "pattern": "sparkle",
+          "translucent": true
+        },
+        {
+          "name": "Night Sky",
+          "hex": "121426",
+          "pattern": "sparkle"
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 200
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Magical Silky Gold",
+          "hex": "d4af37"
+        },
+        {
+          "name": "Silky Lavender",
+          "hex": "b79adf"
+        },
+        {
+          "name": "Aluminum",
+          "hex": "b8b8b8"
+        },
+        {
+          "name": "Silky Bright Rainbow UV",
+          "hex": "ff66cc"
+        }
+      ]
+    },
+    {
+      "name": "Gold Leaf PLA",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 200
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Gold Leaf",
+          "hex": "c9a646"
+        }
+      ]
+    },
+    {
+      "name": "Thermochromic PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 200
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Orange to Yellow",
+          "hex": "ff8c00"
+        },
+        {
+          "name": "Green to Yellow",
+          "hex": "7ed321"
+        },
+        {
+          "name": "Tri-Color Lava",
+          "hex": "ff3b1f"
+        }
+      ]
+    }
+  ]
+}
