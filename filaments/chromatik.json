@@ -1,0 +1,95 @@
+{
+  "manufacturer": "Chromatik",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 250
+        },
+        {
+          "weight": 750
+        },
+        {
+          "weight": 2300
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "f6f6f2"
+        },
+        {
+          "name": "Black",
+          "hex": "111111"
+        },
+        {
+          "name": "Blue",
+          "hex": "0067b1"
+        },
+        {
+          "name": "Green",
+          "hex": "22a447"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "d21f2b"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd400"
+        },
+        {
+          "name": "Brown",
+          "hex": "7b4a2d"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff7a00"
+        },
+        {
+          "name": "Pink",
+          "hex": "ff66a3"
+        },
+        {
+          "name": "Magenta",
+          "hex": "d1007f"
+        },
+        {
+          "name": "Violet",
+          "hex": "6f2da8"
+        },
+        {
+          "name": "Transparent",
+          "hex": "f2f2e8",
+          "translucent": true
+        },
+        {
+          "name": "Fluorescent Yellow",
+          "hex": "ccff00"
+        },
+        {
+          "name": "Fluorescent Orange",
+          "hex": "ff5f00"
+        }
+      ]
+    }
+  ]
+}
