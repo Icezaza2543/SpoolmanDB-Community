@@ -1,0 +1,67 @@
+{
+  "manufacturer": "FilaBlend",
+  "filaments": [
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "90's Child",
+          "hexes": [
+            "0000a0",
+            "39ff14",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Crayon Box",
+          "hexes": [
+            "0000ff",
+            "ffff00",
+            "ff0000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Full Moon",
+          "hexes": [
+            "000000",
+            "ffffff",
+            "0000ff"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Psychedelic Penguin",
+          "hexes": [
+            "000000",
+            "ffffff",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ]
+    }
+  ]
+}
