@@ -1,0 +1,84 @@
+{
+  "manufacturer": "PLASPORT",
+  "filaments": [
+    {
+      "name": "PLA Color Change UV {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "UV Glitter Black-Blue Starry Sky",
+          "hex": "20394c",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "UV Emerald White to Purple",
+          "hex": "50c878"
+        },
+        {
+          "name": "UV Translucent Blue to Purple",
+          "hex": "4f7fd6",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "Silk Tri-Color PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Red Green Blue",
+          "hexes": [
+            "c8102e",
+            "1f9d55",
+            "0057b8"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Chameleon Blue Green Purple Glitter",
+          "hexes": [
+            "0057b8",
+            "1f9d55",
+            "6f2da8"
+          ],
+          "multi_color_direction": "coaxial",
+          "pattern": "sparkle"
+        }
+      ]
+    }
+  ]
+}
