@@ -1,0 +1,96 @@
+{
+  "manufacturer": "rigid.ink",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        180,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "United Kingdom",
+      "tds_url": "https://dl.airtable.com/J3ELufMQRnmp9hRM4xnU_rigid.ink_PLA.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "111111"
+        },
+        {
+          "name": "White",
+          "hex": "f4f4f0"
+        },
+        {
+          "name": "Natural",
+          "hex": "e8ddc8",
+          "translucent": true
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Red",
+          "hex": "c8102e"
+        },
+        {
+          "name": "Blue",
+          "hex": "0057b8"
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "United Kingdom",
+      "tds_url": "https://dl.airtable.com/MgItdBLSclv4C6DGB6gt_rigid.ink_ABS.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "111111"
+        },
+        {
+          "name": "White",
+          "hex": "f4f4f0"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Blue",
+          "hex": "0057b8"
+        }
+      ]
+    }
+  ]
+}
