@@ -1,0 +1,70 @@
+{
+  "manufacturer": "Copper 3D",
+  "filaments": [
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750.0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "1000EB"
+        },
+        {
+          "name": "Green",
+          "hex": "00EB1B"
+        },
+        {
+          "name": "Red",
+          "hex": "C70000"
+        }
+      ]
+    },
+    {
+      "name": "TPU 98A {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 750.0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        245
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "C12E1F",
+          "eans": [
+            "793591374314"
+          ]
+        }
+      ]
+    }
+  ]
+}
