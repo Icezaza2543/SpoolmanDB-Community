@@ -1,0 +1,122 @@
+{
+  "manufacturer": "Ooznest",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        215
+      ],
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "111111"
+        },
+        {
+          "name": "White",
+          "hex": "f4f4ef"
+        },
+        {
+          "name": "Red",
+          "hex": "c8202f"
+        },
+        {
+          "name": "Blue",
+          "hex": "0067b1"
+        },
+        {
+          "name": "Green",
+          "hex": "1f9d55"
+        },
+        {
+          "name": "Natural",
+          "hex": "f1e6c8",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "GLITZ PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        205,
+        225
+      ],
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Penny Copper",
+          "hex": "b87333",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Vikings Bronze",
+          "hex": "8c6239",
+          "pattern": "sparkle"
+        }
+      ]
+    },
+    {
+      "name": "PLA-PRO {color_name}",
+      "material": "PLA",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "111111"
+        },
+        {
+          "name": "White",
+          "hex": "f4f4ef"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    }
+  ]
+}
