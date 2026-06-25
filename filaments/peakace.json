@@ -1,0 +1,99 @@
+{
+  "manufacturer": "PEAKACE",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "111111"
+        },
+        {
+          "name": "Brown",
+          "hex": "7b4a2d"
+        },
+        {
+          "name": "Red",
+          "hex": "c8102e"
+        },
+        {
+          "name": "Green",
+          "hex": "1f9d55"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "111111"
+        }
+      ]
+    },
+    {
+      "name": "ABS Clear",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Clear",
+          "hex": "e8eef2",
+          "translucent": true
+        }
+      ]
+    }
+  ]
+}
