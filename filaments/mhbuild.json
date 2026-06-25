@@ -1,0 +1,267 @@
+{
+  "manufacturer": "MatterHackers MH Build",
+  "filaments": [
+    {
+      "name": "Series PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        25,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "c8102e"
+        },
+        {
+          "name": "Blue",
+          "hex": "0057b8"
+        },
+        {
+          "name": "Green",
+          "hex": "00a651"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Tan",
+          "hex": "d2b48c"
+        }
+      ]
+    },
+    {
+      "name": "Series Matte PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        25,
+        55
+      ],
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "finish": "matte"
+        }
+      ]
+    },
+    {
+      "name": "Series Silky PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Silky Blue",
+          "hex": "0072ce"
+        }
+      ]
+    },
+    {
+      "name": "Series PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        235,
+        255
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "c8102e"
+        },
+        {
+          "name": "Blue",
+          "hex": "0057b8"
+        },
+        {
+          "name": "Green",
+          "hex": "00a651"
+        }
+      ]
+    },
+    {
+      "name": "Series ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0057b8"
+        }
+      ]
+    },
+    {
+      "name": "Series ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0057b8"
+        },
+        {
+          "name": "Green",
+          "hex": "00a651"
+        },
+        {
+          "name": "Red",
+          "hex": "c8102e"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd100"
+        }
+      ]
+    },
+    {
+      "name": "Series TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    }
+  ]
+}
