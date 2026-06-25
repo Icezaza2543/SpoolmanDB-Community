@@ -1,0 +1,159 @@
+{
+  "manufacturer": "Black Magic 3D",
+  "filaments": [
+    {
+      "name": "Glow PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        230
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Cosmic Blue",
+          "hex": "2f6fd6",
+          "glow": true
+        },
+        {
+          "name": "Nature Green",
+          "hex": "7ed957",
+          "glow": true
+        },
+        {
+          "name": "Rose Pink",
+          "hex": "ff6fae",
+          "glow": true
+        },
+        {
+          "name": "Sunlight Yellow",
+          "hex": "ffe45c",
+          "glow": true
+        }
+      ]
+    },
+    {
+      "name": "Conductive Graphene PLA Black",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 100
+        },
+        {
+          "weight": 200
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "0b0b0b"
+        }
+      ]
+    },
+    {
+      "name": "Ferro-Magnetic PLA Black",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 350
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        215,
+        225
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "171717"
+        }
+      ]
+    },
+    {
+      "name": "G6-Impact HIPS Carbon Fiber Graphene Black",
+      "material": "HIPS",
+      "density": 1.03,
+      "weights": [
+        {
+          "weight": 350
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        20,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black Silver Matte",
+          "hex": "242424"
+        }
+      ]
+    },
+    {
+      "name": "Conductive Flexible TPU Black",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 400
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        20,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "0b0b0b"
+        }
+      ]
+    }
+  ]
+}
