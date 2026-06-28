@@ -226,6 +226,928 @@
           "hex": "E3DF00"
         }
       ]
+    },
+    {
+      "name": "ABS CF {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Special Series-Carbon Fiber",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "PETG CF {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Special Series-Carbon Fiber",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Jessie Premium PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Bold Blue",
+          "hex": "2941BD"
+        },
+        {
+          "name": "Clear",
+          "hex": "E4E7E5"
+        },
+        {
+          "name": "Gun Metal Grey",
+          "hex": "6F727E"
+        },
+        {
+          "name": "Mystery Orange",
+          "hex": "FF8E24"
+        },
+        {
+          "name": "Neon Yellow",
+          "hex": "E4FF33"
+        },
+        {
+          "name": "Ps Red",
+          "hex": "EC0000"
+        },
+        {
+          "name": "Pure Cyan",
+          "hex": "0078BF"
+        },
+        {
+          "name": "Soul Black Glitter",
+          "hex": "000000"
+        },
+        {
+          "name": "Tree Green",
+          "hex": "3D9441"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow Bird",
+          "hex": "FBE200"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Bicolor Magic Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black-Bronze",
+          "hex": "000000"
+        },
+        {
+          "name": "Black-Copper",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue-Green",
+          "hex": "0099E6"
+        },
+        {
+          "name": "Blue-Red",
+          "hex": "0353BA"
+        },
+        {
+          "name": "Blue-Redwine",
+          "hex": "0099E6"
+        },
+        {
+          "name": "Blue-RoseRed",
+          "hex": "0099E6"
+        },
+        {
+          "name": "Blue-Yellow",
+          "hex": "0099E6"
+        },
+        {
+          "name": "DarkBlue-DarkGreen",
+          "hex": "0E21AE"
+        },
+        {
+          "name": "Gold -Copper",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Gold-Red",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Gold-RoseRed",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Gold-Silver",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Purple-Yellow",
+          "hex": "EBFF57"
+        },
+        {
+          "name": "PurpleRed-DarkGreen",
+          "hex": "1E5A4F"
+        },
+        {
+          "name": "Purplered-Green",
+          "hex": "B645A9"
+        },
+        {
+          "name": "Silver-Black",
+          "hex": "A8B0BD"
+        },
+        {
+          "name": "Silver-Bronze",
+          "hex": "A8B0BD"
+        },
+        {
+          "name": "Silver-DarkBlue",
+          "hex": "A8B0BD"
+        },
+        {
+          "name": "Silver-Green",
+          "hex": "A8B0BD"
+        },
+        {
+          "name": "Silver-Purple",
+          "hex": "A8B0BD"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "PLA CF {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Special Series-Carbon Fiber",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Elixir Jessie Premium Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Abyss",
+          "hex": "282D42"
+        },
+        {
+          "name": "Aquamarine",
+          "hex": "0378D0"
+        },
+        {
+          "name": "Electric Lemonade",
+          "hex": "C2BD5A"
+        },
+        {
+          "name": "Gold Rush",
+          "hex": "CE8D00"
+        },
+        {
+          "name": "Misty Green",
+          "hex": "1E5A4F"
+        },
+        {
+          "name": "Natural",
+          "hex": "DFDFD3"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Glow PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Rainbow Luminous Rainbow-Colorful",
+          "hex": "40E0D0",
+          "glow": true
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Gradient Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue-Green",
+          "hex": "005DA4"
+        },
+        {
+          "name": "Gold-Bronze",
+          "hex": "E3B145"
+        },
+        {
+          "name": "Gold-Red",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Purple-Black",
+          "hex": "372B74"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Jessie Premium PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "3Dpn Vanilla Bean Ice Cream",
+          "hex": "ACB1BA"
+        },
+        {
+          "name": "Army Green",
+          "hex": "404720"
+        },
+        {
+          "name": "Beige 500",
+          "hex": "EADAC2"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blood Red Light Glitter",
+          "hex": "C01616"
+        },
+        {
+          "name": "Blue Ice",
+          "hex": "033877",
+          "translucent": true
+        },
+        {
+          "name": "Blue Moon",
+          "hex": "0E21AE"
+        },
+        {
+          "name": "Blue Whale Grey",
+          "hex": "005DA4"
+        },
+        {
+          "name": "Bold Blue",
+          "hex": "2E56F1"
+        },
+        {
+          "name": "Brads Orange Glitter",
+          "hex": "F67405"
+        },
+        {
+          "name": "Deep Purple",
+          "hex": "372B74"
+        },
+        {
+          "name": "Design White",
+          "hex": "EFEFEF"
+        },
+        {
+          "name": "Golden Winner Glitter",
+          "hex": "816300"
+        },
+        {
+          "name": "Green Ice",
+          "hex": "06B100",
+          "translucent": true
+        },
+        {
+          "name": "Green Slime Glitter",
+          "hex": "A1AC21"
+        },
+        {
+          "name": "Gun Metal Grey",
+          "hex": "6F727E"
+        },
+        {
+          "name": "Limer Green",
+          "hex": "7FE200"
+        },
+        {
+          "name": "Mystery Orange",
+          "hex": "FA8423"
+        },
+        {
+          "name": "Natural",
+          "hex": "D9D8DE"
+        },
+        {
+          "name": "Neon Green",
+          "hex": "C4DC00"
+        },
+        {
+          "name": "Neon Pink",
+          "hex": "FC6D8E"
+        },
+        {
+          "name": "Neon Yellow",
+          "hex": "E4FF33"
+        },
+        {
+          "name": "Ps Red",
+          "hex": "E31A1F"
+        },
+        {
+          "name": "Pure Cyan",
+          "hex": "0099E6"
+        },
+        {
+          "name": "Pure Magenta",
+          "hex": "E8BEDD"
+        },
+        {
+          "name": "Purple Eater",
+          "hex": "7659B5"
+        },
+        {
+          "name": "Purple Ice",
+          "hex": "8846AE",
+          "translucent": true
+        },
+        {
+          "name": "Quarter White",
+          "hex": "EFEFEF"
+        },
+        {
+          "name": "Red Ice",
+          "hex": "ED1536",
+          "translucent": true
+        },
+        {
+          "name": "Safety Orange",
+          "hex": "FF8E24"
+        },
+        {
+          "name": "Soul Black Glitter",
+          "hex": "000000"
+        },
+        {
+          "name": "Tan 64",
+          "hex": "A79E82"
+        },
+        {
+          "name": "Tree Brown",
+          "hex": "50311E"
+        },
+        {
+          "name": "Tree Green",
+          "hex": "3D9441"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow Bird",
+          "hex": "FFD342"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Matte PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Bicolor Magic-Blue-Pink",
+          "hex": "0E21AE"
+        },
+        {
+          "name": "Bicolor Magic-Blue-RoseRed",
+          "hex": "0E21AE"
+        },
+        {
+          "name": "Bicolor Magic-DarkBlue-Yellow",
+          "hex": "0E21AE"
+        },
+        {
+          "name": "Bicolor Magic-DarkPurple-Green",
+          "hex": "6802BC"
+        },
+        {
+          "name": "Bicolor Magic-DarkPurple-Yellow",
+          "hex": "0E21AE"
+        },
+        {
+          "name": "Bicolor Magic-Green-Purple Red",
+          "hex": "3D9441"
+        },
+        {
+          "name": "Bicolor Magic-Red-Blue",
+          "hex": "C01616"
+        },
+        {
+          "name": "Bicolor Magic-Sapphire-BlackishGreen",
+          "hex": "0E21AE"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0353BA"
+        },
+        {
+          "name": "Green",
+          "hex": "206233"
+        },
+        {
+          "name": "Pink",
+          "hex": "FF5786"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "EA9E3F"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "C7BCF8"
+        },
+        {
+          "name": "Rainbow Forest Series",
+          "hex": "95D05C"
+        },
+        {
+          "name": "Rainbow Luminous Rainbow-White",
+          "hex": "EBFF57",
+          "translucent": true
+        },
+        {
+          "name": "Rainbow Macaron Series",
+          "hex": "FBE200"
+        },
+        {
+          "name": "Rainbow Star Series",
+          "hex": "41A840"
+        },
+        {
+          "name": "Shiny Gradient-Blue-Black",
+          "hex": "033877"
+        },
+        {
+          "name": "Special Series- Wood",
+          "hex": "8E5850"
+        },
+        {
+          "name": "Starry Sky Color-Star Black",
+          "hex": "545252",
+          "translucent": true
+        },
+        {
+          "name": "Starry Sky Color-Star Blackish Green",
+          "hex": "144F3B"
+        },
+        {
+          "name": "Starry Sky Color-Star Blue",
+          "hex": "1E2F5A",
+          "translucent": true
+        },
+        {
+          "name": "Starry Sky Color-Star Green",
+          "hex": "3D9441",
+          "translucent": true
+        },
+        {
+          "name": "Starry Sky Color-Star Pink",
+          "hex": "C63DBA",
+          "translucent": true
+        },
+        {
+          "name": "Starry Sky Color-Star Purple",
+          "hex": "372B74"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Rainbow Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Candy Series",
+          "hex": "DB3FA9"
+        },
+        {
+          "name": "Magic Rainbow",
+          "hex": "77A54B"
+        },
+        {
+          "name": "Rainbow-Blue Series",
+          "hex": "32A584"
+        },
+        {
+          "name": "Rainbow-Red Series",
+          "hex": "1E5A4F"
+        },
+        {
+          "name": "Universe Series",
+          "hex": "1E5A4F"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Shiny Gradient Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold-Green-Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Red-Purple-Blue",
+          "hex": "AC1A17"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "TriColor Magic Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue-Green-Orange",
+          "hex": "0353BA"
+        },
+        {
+          "name": "Blue-Purple-Yellow",
+          "hex": "0099E6"
+        },
+        {
+          "name": "Blue-Yellow-Fuchsia",
+          "hex": "0353BA"
+        },
+        {
+          "name": "DarkRed-Green-Blue",
+          "hex": "41A840"
+        },
+        {
+          "name": "Gold-Copper-Black",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Gold-Copper-Blue",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Gold-Copper-Purple",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Gold-Green-Black",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Gold-Green-Fuchsia",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Gold-Silver-Copper",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Green-Purple-Copper",
+          "hex": "11784F"
+        },
+        {
+          "name": "Red-Gold-Purple",
+          "hex": "FFCB47"
+        },
+        {
+          "name": "Red-Green-Blue",
+          "hex": "C80181"
+        },
+        {
+          "name": "Red-Yellow-Blue",
+          "hex": "E72F1D"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Elixir Jessie Premium Silk TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Bronze",
+          "hex": "6B5F37"
+        },
+        {
+          "name": "Nightshade",
+          "hex": "1F2761"
+        },
+        {
+          "name": "Royal Ruby",
+          "hex": "C00000"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "TPU PS Imports {color_name}",
+      "material": "TPU",
+      "density": 1.19,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Transparent Emerald",
+          "hex": "006036"
+        }
+      ],
+      "country_of_origin": "US"
     }
   ]
 }

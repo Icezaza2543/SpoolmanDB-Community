@@ -6,37 +6,335 @@
       "material": "PLA",
       "density": 1.24,
       "weights": [
-        {"weight": 500, "spool_weight": 227},
-        {"weight": 750, "spool_weight": 246},
-        {"weight": 1000, "spool_weight": 246},
-        {"weight": 5000, "spool_weight": 1050},
-        {"weight": 10000, "spool_weight": 1050}
+        {
+          "weight": 500,
+          "spool_weight": 227
+        },
+        {
+          "weight": 750,
+          "spool_weight": 246
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 246
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 1050
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1050
+        }
       ],
-      "diameters": [1.75, 2.85],
-      "extruder_temp_range": [200, 230],
-      "bed_temp_range": [30, 70],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        30,
+        70
+      ],
       "country_of_origin": "France",
       "tds_url": "https://francofil.fr/wp-content/uploads/2023/12/Fiche-technique-PLA.pdf",
       "sds_url": "https://francofil.fr/wp-content/uploads/2023/12/Fiche-de-Securite-PLA.pdf",
       "colors": [
-        {"name": "Black", "hex": "101010", "codes": ["PLA-NOI"]},
-        {"name": "White", "hex": "F6F6F6", "codes": ["PLA-BLA"]},
-        {"name": "Virgin", "hex": "E8E0C8", "codes": ["PLA-VIE"], "translucent": true},
-        {"name": "Blue RAL 5002", "hex": "20214F", "codes": ["PLA-5002"]},
-        {"name": "Blue RAL 5015", "hex": "007CB0", "codes": ["PLA-5015"]},
-        {"name": "Turquoise Blue", "hex": "00A9A5", "codes": ["PLA-BLT"]},
-        {"name": "Red RAL 3020", "hex": "CC0605", "codes": ["PLA-3020"]},
-        {"name": "Pink RAL 4003", "hex": "C63678", "codes": ["PLA-6019-1"]},
-        {"name": "Orange RAL 2003", "hex": "F67828", "codes": ["PLA-2003"]},
-        {"name": "Yellow RAL 1018", "hex": "F9A800", "codes": ["PLA-1018"]},
-        {"name": "Fluorescent Yellow RAL 1026", "hex": "FFFF00", "codes": ["PLA-JAU-1026"]},
-        {"name": "Green RAL 6000", "hex": "316650", "codes": ["PLA-6000"]},
-        {"name": "Green RAL 6018", "hex": "57A639", "codes": ["PLA-6018"]},
-        {"name": "Grey RAL 7001", "hex": "8A9597", "codes": ["PLA-7001"]},
-        {"name": "Grey RAL 7040", "hex": "9DA3A6", "codes": ["PLA-7040"]},
-        {"name": "Anthracite RAL 7016", "hex": "293133", "codes": ["PLA-7016"]},
-        {"name": "Phosphorescent Green", "hex": "8FD400", "codes": ["PLA-4003-2"], "glow": true},
-        {"name": "Violet Halloween", "hex": "5B2C8D", "eans": ["0117540050050"]}
+        {
+          "name": "Black",
+          "hex": "101010",
+          "codes": [
+            "PLA-NOI"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "F6F6F6",
+          "codes": [
+            "PLA-BLA"
+          ]
+        },
+        {
+          "name": "Virgin",
+          "hex": "E8E0C8",
+          "codes": [
+            "PLA-VIE"
+          ],
+          "translucent": true
+        },
+        {
+          "name": "Blue RAL 5002",
+          "hex": "20214F",
+          "codes": [
+            "PLA-5002"
+          ]
+        },
+        {
+          "name": "Blue RAL 5015",
+          "hex": "007CB0",
+          "codes": [
+            "PLA-5015"
+          ]
+        },
+        {
+          "name": "Turquoise Blue",
+          "hex": "00A9A5",
+          "codes": [
+            "PLA-BLT"
+          ]
+        },
+        {
+          "name": "Red RAL 3020",
+          "hex": "CC0605",
+          "codes": [
+            "PLA-3020"
+          ]
+        },
+        {
+          "name": "Pink RAL 4003",
+          "hex": "C63678",
+          "codes": [
+            "PLA-6019-1"
+          ]
+        },
+        {
+          "name": "Orange RAL 2003",
+          "hex": "F67828",
+          "codes": [
+            "PLA-2003"
+          ]
+        },
+        {
+          "name": "Yellow RAL 1018",
+          "hex": "F9A800",
+          "codes": [
+            "PLA-1018"
+          ]
+        },
+        {
+          "name": "Fluorescent Yellow RAL 1026",
+          "hex": "FFFF00",
+          "codes": [
+            "PLA-JAU-1026"
+          ]
+        },
+        {
+          "name": "Green RAL 6000",
+          "hex": "316650",
+          "codes": [
+            "PLA-6000"
+          ]
+        },
+        {
+          "name": "Green RAL 6018",
+          "hex": "57A639",
+          "codes": [
+            "PLA-6018"
+          ]
+        },
+        {
+          "name": "Grey RAL 7001",
+          "hex": "8A9597",
+          "codes": [
+            "PLA-7001"
+          ]
+        },
+        {
+          "name": "Grey RAL 7040",
+          "hex": "9DA3A6",
+          "codes": [
+            "PLA-7040"
+          ]
+        },
+        {
+          "name": "Anthracite RAL 7016",
+          "hex": "293133",
+          "codes": [
+            "PLA-7016"
+          ]
+        },
+        {
+          "name": "Phosphorescent Green",
+          "hex": "8FD400",
+          "codes": [
+            "PLA-4003-2"
+          ],
+          "glow": true
+        },
+        {
+          "name": "Violet Halloween",
+          "hex": "5B2C8D",
+          "eans": [
+            "0117540050050"
+          ]
+        },
+        {
+          "name": "Anthracite Violet",
+          "hex": "6D102E"
+        },
+        {
+          "name": "Beer - Co-produced",
+          "hex": "A54830"
+        },
+        {
+          "name": "Black Metal Glitter",
+          "hex": "232323"
+        },
+        {
+          "name": "Black | PMUC Certified",
+          "hex": "000000"
+        },
+        {
+          "name": "Bleu Pastel - Le Glacier",
+          "hex": "BED9EB"
+        },
+        {
+          "name": "Blue A 110",
+          "hex": "005DA4"
+        },
+        {
+          "name": "Bois - Co-produced",
+          "hex": "DC9C43"
+        },
+        {
+          "name": "Bronze",
+          "hex": "B26E3E"
+        },
+        {
+          "name": "Café - Coproduced",
+          "hex": "3E2617"
+        },
+        {
+          "name": "Copper",
+          "hex": "C06341"
+        },
+        {
+          "name": "Gold",
+          "hex": "CE8D00"
+        },
+        {
+          "name": "Granite Grey",
+          "hex": "D6D7D8"
+        },
+        {
+          "name": "Granite Red",
+          "hex": "CB4726"
+        },
+        {
+          "name": "Granite Vanilla",
+          "hex": "F1E6B2"
+        },
+        {
+          "name": "Granite White",
+          "hex": "ECEFED"
+        },
+        {
+          "name": "Granite Yellow",
+          "hex": "F2B70A"
+        },
+        {
+          "name": "Green Iridescent Glitter",
+          "hex": "84D18B"
+        },
+        {
+          "name": "Green | PMUC Certified",
+          "hex": "26A648"
+        },
+        {
+          "name": "Grey RAL 7000",
+          "hex": "545F67"
+        },
+        {
+          "name": "Mould - Co-product",
+          "hex": "E3B899"
+        },
+        {
+          "name": "Oyster - Co-produced",
+          "hex": "A88D5D"
+        },
+        {
+          "name": "Pastel Pink - Cotton Candy",
+          "hex": "F9C9D4"
+        },
+        {
+          "name": "Pastel Violet - Lilac",
+          "hex": "D3C6FF"
+        },
+        {
+          "name": "Pastel Yellow - Lemon Meringue",
+          "hex": "FCE575"
+        },
+        {
+          "name": "Peacock Blue",
+          "hex": "005DA4"
+        },
+        {
+          "name": "Pink - RAL 4003",
+          "hex": "FF5786"
+        },
+        {
+          "name": "Pistachio Green - RAL 6019",
+          "hex": "98AA7A"
+        },
+        {
+          "name": "Red | PMUC Certified",
+          "hex": "EC0000"
+        },
+        {
+          "name": "Saint-Jacques - Coproduced",
+          "hex": "EFE8D8"
+        },
+        {
+          "name": "Silver",
+          "hex": "848484"
+        },
+        {
+          "name": "Silver Pink",
+          "hex": "C9C1C8"
+        },
+        {
+          "name": "Slate - Coproduced",
+          "hex": "232323"
+        },
+        {
+          "name": "Terre Battue - Coproduced",
+          "hex": "A54830"
+        },
+        {
+          "name": "Translucent Blue",
+          "hex": "183681",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Green",
+          "hex": "206233",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Orange",
+          "hex": "F55928",
+          "translucent": true
+        },
+        {
+          "name": "Violet RAL 4009",
+          "hex": "D48DBD"
+        },
+        {
+          "name": "Wheat - Co-product",
+          "hex": "E6BA83"
+        },
+        {
+          "name": "White | PMUC Certified",
+          "hex": "F5F5F5"
+        },
+        {
+          "name": "Yellow Translucent",
+          "hex": "C7B91F",
+          "translucent": true
+        }
       ]
     },
     {
@@ -44,22 +342,94 @@
       "material": "PETG",
       "density": 1.27,
       "weights": [
-        {"weight": 500, "spool_weight": 227},
-        {"weight": 1000, "spool_weight": 246}
+        {
+          "weight": 500,
+          "spool_weight": 227
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 246
+        }
       ],
-      "diameters": [1.75, 2.85],
-      "extruder_temp_range": [220, 260],
-      "bed_temp_range": [70, 90],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
       "country_of_origin": "France",
       "tds_url": "https://francofil.fr/wp-content/uploads/2023/12/Fiche-technique-PETG.pdf",
       "sds_url": "https://francofil.fr/wp-content/uploads/2023/12/Fiche-de-Securite-PETG.pdf",
       "colors": [
-        {"name": "Black", "hex": "101010", "codes": ["PETG-Noir"]},
-        {"name": "White", "hex": "F6F6F6", "codes": ["PETG-Blanc"]},
-        {"name": "Virgin", "hex": "E8E0C8", "codes": ["PETG-Vierge"], "translucent": true},
-        {"name": "Blue", "hex": "0066B3", "codes": ["PETG-Bleu"]},
-        {"name": "Gray", "hex": "808080", "codes": ["PETG-Gris"]},
-        {"name": "Red", "hex": "CC0605", "codes": ["PETG-Rouge"]}
+        {
+          "name": "Black",
+          "hex": "101010",
+          "codes": [
+            "PETG-Noir"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "F6F6F6",
+          "codes": [
+            "PETG-Blanc"
+          ]
+        },
+        {
+          "name": "Virgin",
+          "hex": "E8E0C8",
+          "codes": [
+            "PETG-Vierge"
+          ],
+          "translucent": true
+        },
+        {
+          "name": "Blue",
+          "hex": "0066B3",
+          "codes": [
+            "PETG-Bleu"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PETG-Gris"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "CC0605",
+          "codes": [
+            "PETG-Rouge"
+          ]
+        },
+        {
+          "name": "Detectable M-XR",
+          "hex": "436176"
+        },
+        {
+          "name": "ESD Red",
+          "hex": "E72F1D"
+        },
+        {
+          "name": "Rose FME PMUC",
+          "hex": "E80078"
+        },
+        {
+          "name": "Virgin ESD",
+          "hex": "F2EFE9"
+        },
+        {
+          "name": "White PTFE",
+          "hex": "F5F5F5"
+        }
       ]
     },
     {
@@ -67,21 +437,301 @@
       "material": "ABS",
       "density": 1.04,
       "weights": [
-        {"weight": 500, "spool_weight": 227},
-        {"weight": 750, "spool_weight": 246},
-        {"weight": 1000, "spool_weight": 246},
-        {"weight": 5000, "spool_weight": 1050},
-        {"weight": 10000, "spool_weight": 1050}
+        {
+          "weight": 500,
+          "spool_weight": 227
+        },
+        {
+          "weight": 750,
+          "spool_weight": 246
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 246
+        },
+        {
+          "weight": 5000,
+          "spool_weight": 1050
+        },
+        {
+          "weight": 10000,
+          "spool_weight": 1050
+        }
       ],
-      "diameters": [1.75, 2.85],
-      "extruder_temp_range": [250, 270],
-      "bed_temp_range": [90, 110],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
       "country_of_origin": "France",
       "colors": [
-        {"name": "Black", "hex": "101010", "codes": ["ABS-BLA-2"]},
-        {"name": "White", "hex": "F6F6F6", "codes": ["ABS-BLA"]},
-        {"name": "Virgin", "hex": "E8E0C8", "codes": ["ABS-VIE"], "translucent": true}
+        {
+          "name": "Black",
+          "hex": "101010",
+          "codes": [
+            "ABS-BLA-2"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "F6F6F6",
+          "codes": [
+            "ABS-BLA"
+          ]
+        },
+        {
+          "name": "Virgin",
+          "hex": "E8E0C8",
+          "codes": [
+            "ABS-VIE"
+          ],
+          "translucent": true
+        },
+        {
+          "name": "Rose FME PMUC",
+          "hex": "FF00A2"
+        }
       ]
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blanc",
+          "hex": "F5F5F5"
+        },
+        {
+          "name": "Gris",
+          "hex": "6F727E"
+        },
+        {
+          "name": "Rose FME PMUC",
+          "hex": "E80078"
+        },
+        {
+          "name": "Rouge",
+          "hex": "E72F1D"
+        },
+        {
+          "name": "Virgin",
+          "hex": "F9F3E5"
+        }
+      ],
+      "extruder_temp_range": [
+        235,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "FR"
+    },
+    {
+      "name": "PETG CF {color_name}",
+      "material": "PETG",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Carbon",
+          "hex": "232323"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "FR"
+    },
+    {
+      "name": "Glow PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Phosphorescent Green",
+          "hex": "8CFF96",
+          "glow": true
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "FR"
+    },
+    {
+      "name": "88A TPE {color_name}",
+      "material": "TPE",
+      "density": 1.17,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gray",
+          "hex": "A2AAAD"
+        },
+        {
+          "name": "Virgin",
+          "hex": "F9F3E5"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "FR"
+    },
+    {
+      "name": "95A TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "183681"
+        },
+        {
+          "name": "Grey",
+          "hex": "5A696C"
+        },
+        {
+          "name": "Red",
+          "hex": "EC0000"
+        },
+        {
+          "name": "Virgin",
+          "hex": "DFDFD3"
+        },
+        {
+          "name": "White",
+          "hex": "F5F5F5"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "FR"
+    },
+    {
+      "name": "98A TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0353BA"
+        },
+        {
+          "name": "Grey",
+          "hex": "6A6C6E"
+        },
+        {
+          "name": "Red",
+          "hex": "EC0000"
+        },
+        {
+          "name": "Virgin",
+          "hex": "DFDFD3"
+        },
+        {
+          "name": "White",
+          "hex": "F5F5F5"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "FR"
     }
   ]
 }

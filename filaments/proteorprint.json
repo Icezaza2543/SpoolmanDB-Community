@@ -30,6 +30,11 @@
           "codes": [
             "PETG.F.2.85.4.5kg"
           ]
+        },
+        {
+          "name": "Clear",
+          "hex": "FFFFFF",
+          "translucent": true
         }
       ]
     },
@@ -156,8 +161,44 @@
           "codes": [
             "EVA+"
           ]
+        },
+        {
+          "name": "Baby Blue",
+          "hex": "00AAFF"
+        },
+        {
+          "name": "Black",
+          "hex": "0D0D0D"
+        },
+        {
+          "name": "Heart Breaker Pink",
+          "hex": "FF57E9"
+        },
+        {
+          "name": "White (Natural)",
+          "hex": "E8E2D3"
         }
       ]
+    },
+    {
+      "name": "CPX-PP {color_name}",
+      "material": "PP",
+      "density": 0.89,
+      "weights": [
+        {
+          "weight": 4310
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "E6E9DD"
+        }
+      ],
+      "country_of_origin": "US"
     }
   ]
 }

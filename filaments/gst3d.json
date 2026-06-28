@@ -12,7 +12,9 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
+      "diameters": [
+        1.75
+      ],
       "extruder_temp": 210,
       "bed_temp": 60,
       "colors": [
@@ -172,7 +174,9 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
+      "diameters": [
+        1.75
+      ],
       "extruder_temp": 240,
       "bed_temp": 70,
       "colors": [
@@ -195,7 +199,7 @@
       "name": "{color_name}",
       "material": "PETG-CF",
       "fill": "carbon fiber",
-      "density": 1.30,
+      "density": 1.3,
       "weights": [
         {
           "weight": 1000.0,
@@ -203,7 +207,9 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
+      "diameters": [
+        1.75
+      ],
       "extruder_temp": 240,
       "bed_temp": 70,
       "colors": [
@@ -224,7 +230,9 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
+      "diameters": [
+        1.75
+      ],
       "extruder_temp": 230,
       "bed_temp": 65,
       "colors": [
@@ -266,7 +274,9 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
+      "diameters": [
+        1.75
+      ],
       "extruder_temp": 220,
       "bed_temp": 60,
       "colors": [
@@ -327,7 +337,9 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
+      "diameters": [
+        1.75
+      ],
       "extruder_temp": 240,
       "bed_temp": 90,
       "colors": [
@@ -352,7 +364,9 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
+      "diameters": [
+        1.75
+      ],
       "extruder_temp": 250,
       "bed_temp": 80,
       "colors": [
@@ -365,6 +379,496 @@
           "hex": "FFFFFF"
         }
       ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "ASA 900Grs {color_name}",
+      "material": "ASA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 3500
+        },
+        {
+          "weight": 5000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Crystal",
+          "hex": "F5F1D9"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "PETG-CF {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 3500
+        },
+        {
+          "weight": 5000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Carbon fiber",
+          "hex": "010406"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "PETG translucent {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue translucent",
+          "hex": "010464"
+        },
+        {
+          "name": "Green translucent",
+          "hex": "038F45"
+        },
+        {
+          "name": "Red translucent",
+          "hex": "D23C43"
+        },
+        {
+          "name": "Yellow translucent",
+          "hex": "D87C11"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "Bright Pla+ Space {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "black",
+          "hex": "2C2D2E"
+        },
+        {
+          "name": "Blue",
+          "hex": "2C5AD6"
+        },
+        {
+          "name": "gold",
+          "hex": "DB9234"
+        },
+        {
+          "name": "green",
+          "hex": "567338"
+        },
+        {
+          "name": "red",
+          "hex": "F0534A"
+        },
+        {
+          "name": "Silver",
+          "hex": "C7C7C9"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        },
+        {
+          "weight": 3500
+        },
+        {
+          "weight": 5000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Apple green",
+          "hex": "66A947"
+        },
+        {
+          "name": "Army green",
+          "hex": "066346"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "005BD3"
+        },
+        {
+          "name": "Bone white",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Bronze",
+          "hex": "CD7F32"
+        },
+        {
+          "name": "Brown",
+          "hex": "9A5630"
+        },
+        {
+          "name": "Crystal",
+          "hex": "F5F1D9"
+        },
+        {
+          "name": "Fuchsia",
+          "hex": "C40071"
+        },
+        {
+          "name": "Gold",
+          "hex": "9C783C"
+        },
+        {
+          "name": "Khaki",
+          "hex": "CD9A14"
+        },
+        {
+          "name": "Light Blue",
+          "hex": "73ADED"
+        },
+        {
+          "name": "Light Brown",
+          "hex": "9C7D52"
+        },
+        {
+          "name": "Light Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Ocre",
+          "hex": "B78031"
+        },
+        {
+          "name": "Olive green",
+          "hex": "05AA3D"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF8A00"
+        },
+        {
+          "name": "Pink Panter",
+          "hex": "DF8BA3"
+        },
+        {
+          "name": "Red",
+          "hex": "F61F1F"
+        },
+        {
+          "name": "Silver",
+          "hex": "D3D3D3"
+        },
+        {
+          "name": "Violet",
+          "hex": "674C8F"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFE500"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "PLA+ Military {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Army green",
+          "hex": "066346"
+        },
+        {
+          "name": "Khaki",
+          "hex": "CD9A14"
+        },
+        {
+          "name": "Light Brown",
+          "hex": "9C7D52"
+        },
+        {
+          "name": "Ocre",
+          "hex": "B78031"
+        },
+        {
+          "name": "Olive green",
+          "hex": "05AA3D"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "PLA+ SILK {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Aluminum",
+          "hex": "A0A19B"
+        },
+        {
+          "name": "Blue",
+          "hex": "337BEA"
+        },
+        {
+          "name": "Fuchsia",
+          "hex": "FD1ACD"
+        },
+        {
+          "name": "Gold",
+          "hex": "F8D612"
+        },
+        {
+          "name": "Gold Rose",
+          "hex": "F7C9BC"
+        },
+        {
+          "name": "Graphite",
+          "hex": "8D978E"
+        },
+        {
+          "name": "Green",
+          "hex": "2FA185"
+        },
+        {
+          "name": "Green mint",
+          "hex": "00FFA5"
+        },
+        {
+          "name": "Peach",
+          "hex": "D52616"
+        },
+        {
+          "name": "Purple",
+          "hex": "BB1ABE"
+        },
+        {
+          "name": "Red",
+          "hex": "DE301C"
+        },
+        {
+          "name": "Sand",
+          "hex": "C1A480"
+        },
+        {
+          "name": "White pearl",
+          "hex": "DEE2D7"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "PLA+ Special {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Aquamarine",
+          "hex": "46725B"
+        },
+        {
+          "name": "Firefly",
+          "hex": "98E65F"
+        },
+        {
+          "name": "Fluor green",
+          "hex": "71F08C"
+        },
+        {
+          "name": "Fluor Orange",
+          "hex": "FF985B"
+        },
+        {
+          "name": "Fluor yellow",
+          "hex": "C9EA55"
+        },
+        {
+          "name": "Ice Blue",
+          "hex": "2D6E8C"
+        },
+        {
+          "name": "Marble",
+          "hex": "EEEFF3"
+        },
+        {
+          "name": "Mellow yellow",
+          "hex": "FBF4A9"
+        },
+        {
+          "name": "Mustard",
+          "hex": "594E15"
+        }
+      ],
+      "country_of_origin": "ES"
+    },
+    {
+      "name": "TPU {color_name}",
+      "material": "TPU",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Apple green",
+          "hex": "66A947"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "005BD3"
+        },
+        {
+          "name": "Red",
+          "hex": "F61F1F"
+        },
+        {
+          "name": "Silver",
+          "hex": "808080"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "ES"
     }
   ]
 }

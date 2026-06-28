@@ -1085,6 +1085,54 @@
           ]
         }
       ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Crystal Clear",
+          "hex": "E4E7E5"
+        },
+        {
+          "name": "Mystic Purple",
+          "hex": "9D00B1"
+        },
+        {
+          "name": "Silver",
+          "hex": "ABACB0"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFC946"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
     }
   ]
 }

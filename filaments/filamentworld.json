@@ -129,6 +129,30 @@
           "codes": [
             "ABS175XNYL"
           ]
+        },
+        {
+          "name": "Default",
+          "hex": "A2AAAD"
+        },
+        {
+          "name": "Grass Green",
+          "hex": "3D9441"
+        },
+        {
+          "name": "Neon Green",
+          "hex": "62E480"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "2941BD"
+        },
+        {
+          "name": "Snow White",
+          "hex": "F5F5F5"
+        },
+        {
+          "name": "Sun Yellow",
+          "hex": "F8CC00"
         }
       ],
       "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_ABS_Datenblatt.pdf"
@@ -295,6 +319,22 @@
           "codes": [
             "PETG175XYLW"
           ]
+        },
+        {
+          "name": "Crystal Clear",
+          "hex": "DEE2DA"
+        },
+        {
+          "name": "Grass Green",
+          "hex": "11784F"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "0353BA"
+        },
+        {
+          "name": "Snow White",
+          "hex": "F5F5F5"
         }
       ],
       "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PETG_Datenblatt.pdf"
@@ -460,6 +500,70 @@
           "codes": [
             "PLA175XNYL"
           ]
+        },
+        {
+          "name": "anthracite gray",
+          "hex": "5A696C"
+        },
+        {
+          "name": "Basic- Dark Green",
+          "hex": "04A584"
+        },
+        {
+          "name": "Grass Green",
+          "hex": "06924D"
+        },
+        {
+          "name": "​​Light Gray",
+          "hex": "F5F5F5"
+        },
+        {
+          "name": "Navy Blue / Navy",
+          "hex": "0066D9"
+        },
+        {
+          "name": "Neon Green",
+          "hex": "62E480"
+        },
+        {
+          "name": "PLUS Black",
+          "hex": "000000"
+        },
+        {
+          "name": "PLUS Blue",
+          "hex": "0378D0"
+        },
+        {
+          "name": "PLUS Gray",
+          "hex": "BDC8C8"
+        },
+        {
+          "name": "PLUS Green",
+          "hex": "70FA00"
+        },
+        {
+          "name": "PLUS Natural",
+          "hex": "F2ECE9"
+        },
+        {
+          "name": "PLUS Red",
+          "hex": "EC0000"
+        },
+        {
+          "name": "PLUS White",
+          "hex": "F5F5F5"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "0078BF"
+        },
+        {
+          "name": "Snow White",
+          "hex": "F5F5F5"
+        },
+        {
+          "name": "Sun Yellow",
+          "hex": "F8CC00"
         }
       ],
       "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf"
@@ -696,10 +800,78 @@
           "codes": [
             "PLASLK175XWHT"
           ]
+        },
+        {
+          "name": "Magic Blue-Green",
+          "hex": "0066D9"
+        },
+        {
+          "name": "Magic Blue-Yellow",
+          "hex": "0078BF"
+        },
+        {
+          "name": "Magic ​​Gold-Violet",
+          "hex": "F6C500"
+        },
+        {
+          "name": "Magic Red Gold",
+          "hex": "EC0000"
+        },
+        {
+          "name": "Magic Red-Green",
+          "hex": "EC0000"
+        },
+        {
+          "name": "Purple",
+          "hex": "7894F2"
+        },
+        {
+          "name": "Silver Grey",
+          "hex": "A8B0BD"
         }
       ],
       "finish": "glossy",
       "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf"
+    },
+    {
+      "name": "Metallic Silk PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "3375A7"
+        },
+        {
+          "name": "Bronze",
+          "hex": "A98C4B"
+        },
+        {
+          "name": "Green",
+          "hex": "446B20"
+        },
+        {
+          "name": "Silver",
+          "hex": "BDC8C8"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "DE"
     }
   ]
 }
