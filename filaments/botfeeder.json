@@ -1,97 +1,100 @@
 {
-   "manufacturer": "Botfeeder",
-   "filaments": [
-      {
-         "name": "neo-PLA {color_name}",
-         "material": "PLA",
-         "density": 1.24,
-         "weights": [
-            {
-               "weight": 1000.0,
-               "spool_weight": 250
-            }
-         ],
-         "diameters": [
-            1.75
-         ],
-         "extruder_temp": 210,
-         "bed_temp": 60,
-         "colors": [
-            {
-               "name": "Black",
-               "hex": "000000"
-            },
-            {
-               "name": "White",
-               "hex": "FFFFFF"
-            }
-         ]
-      },
-      {
-         "name": "PLA Basic {color_name}",
-         "material": "PLA",
-         "density": 1.24,
-         "weights": [
-            {
-               "weight": 1000.0
-            }
-         ],
-         "diameters": [
-            1.75
-         ],
-         "extruder_temp_range": [
-            190,
-            220
-         ],
-         "bed_temp_range": [
-            35,
-            65
-         ],
-         "colors": [
-            {
-               "name": "Coke Red",
-               "hex": "E12114"
-            },
-            {
-               "name": "Grey",
-               "hex": "575A5B"
-            },
-            {
-               "name": "Macaron Pink",
-               "hex": "EBC0EC"
-            },
-            {
-               "name": "Saphire",
-               "hex": "2C08DD"
-            },
-            {
-               "name": "Sky Blue",
-               "hex": "6DBBF3"
-            },
-            {
-               "name": "Turquoise",
-               "hex": "6AF694"
-            }
-         ]
-      },
-      {
-         "name": "TPE Flexible {color_name}",
-         "material": "TPE",
-         "density": 1.24,
-         "weights": [
-            {
-               "weight": 1000.0
-            }
-         ],
-         "diameters": [
-            1.75
-         ],
-         "colors": [
-            {
-               "name": "Whitish",
-               "hex": "EBEBEB"
-            }
-         ]
-      }
-   ]
+  "manufacturer": "Botfeeder",
+  "filaments": [
+    {
+      "name": "neo-PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        35,
+        65
+      ],
+      "colors": [
+        {
+          "name": "Coke Red",
+          "hex": "E12114"
+        },
+        {
+          "name": "Grey",
+          "hex": "575A5B"
+        },
+        {
+          "name": "Macaron Pink",
+          "hex": "EBC0EC"
+        },
+        {
+          "name": "Saphire",
+          "hex": "2C08DD"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "6DBBF3"
+        },
+        {
+          "name": "Turquoise",
+          "hex": "6AF694"
+        }
+      ]
+    },
+    {
+      "name": "TPE Flexible {color_name}",
+      "material": "TPE",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Whitish",
+          "hex": "EBEBEB"
+        }
+      ]
+    }
+  ]
 }

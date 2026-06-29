@@ -224,7 +224,7 @@
     }
 
     function normalizeSpoolType(type) {
-        if (!type || type === "null" || type === "none") return "Unknown";
+        if (!type || type === "null" || type === "none" || type === "unknow" || type === "unknown") return "Unknown";
         return type.charAt(0).toUpperCase() + type.slice(1);
     }
 
@@ -354,12 +354,12 @@
             addNode("col_" + name, name, 18, 2);
         });
 
-        const spoolTypes = ["Plastic", "Cardboard", "Metal", "Refill", "Unknown", "Other"];
+        const spoolTypes = ["Plastic", "Cardboard", "Refill", "Unknown", "Other"];
         spoolTypes.forEach((name) => {
             addNode("spl_" + name, name, 15, 3);
         });
 
-        const knownSpools = new Set(["Plastic", "Cardboard", "Metal", "Refill", "Unknown"]);
+        const knownSpools = new Set(["Plastic", "Cardboard", "Refill", "Unknown"]);
 
         state.filaments.forEach((item) => {
             const mfg = item.manufacturer || "Unknown";
