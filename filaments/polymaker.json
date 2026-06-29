@@ -2702,6 +2702,10 @@
           "weight": 1000.0,
           "spool_weight": 140.0,
           "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -2743,6 +2747,14 @@
         {
           "name": "Yellow",
           "hex": "F4C76A"
+        },
+        {
+          "name": "Celestial Light Yellow",
+          "hex": "d7ce89"
+        },
+        {
+          "name": "Celestial Light Pink",
+          "hex": "c3adb8"
         }
       ]
     },
@@ -5111,6 +5123,10 @@
       "weights": [
         {
           "weight": 1000
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -5192,6 +5208,34 @@
         {
           "name": "Wood Brown",
           "hex": "AD7441"
+        },
+        {
+          "name": "Matte Lava Red",
+          "hex": "e72f1d"
+        },
+        {
+          "name": "Matte Army Red",
+          "hex": "bf312e"
+        },
+        {
+          "name": "Matte Muted Red",
+          "hex": "d84b2e"
+        },
+        {
+          "name": "Matte Arctic Teal",
+          "hex": "61bcc3"
+        },
+        {
+          "name": "Matte Sunshine Yellow",
+          "hex": "f9e79f"
+        },
+        {
+          "name": "Matte Army Brown",
+          "hex": "795a4d"
+        },
+        {
+          "name": "Matte Earth Brown",
+          "hex": "795a4d"
         }
       ],
       "extruder_temp_range": [
@@ -5211,6 +5255,10 @@
       "weights": [
         {
           "weight": 1000
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -5232,6 +5280,50 @@
         {
           "name": "Uv Shift Natural To Orange",
           "hex": "F6A25C"
+        },
+        {
+          "name": "Neon Pink",
+          "hex": "ff3670"
+        },
+        {
+          "name": "Neon Green",
+          "hex": "00f263"
+        },
+        {
+          "name": "Neon Yellow",
+          "hex": "e5db2e"
+        },
+        {
+          "name": "Translucent Cyan",
+          "hex": "08abfb"
+        },
+        {
+          "name": "Translucent Magenta",
+          "hex": "d93b90"
+        },
+        {
+          "name": "Translucent Yellow",
+          "hex": "f9ed3d"
+        },
+        {
+          "name": "Translucent Grey",
+          "hex": "9199a4"
+        },
+        {
+          "name": "Gold",
+          "hex": "b8813c"
+        },
+        {
+          "name": "Matte Pastel Coral",
+          "hex": "f5a9a9"
+        },
+        {
+          "name": "Scarlet Red",
+          "hex": "e72f1d"
+        },
+        {
+          "name": "Teal",
+          "hex": "4cc0c7"
         }
       ],
       "extruder_temp_range": [

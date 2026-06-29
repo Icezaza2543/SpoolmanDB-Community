@@ -56,6 +56,10 @@
           "weight": 1000,
           "spool_weight": 200,
           "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -82,6 +86,10 @@
         {
           "name": "Grey",
           "hex": "808080"
+        },
+        {
+          "name": "Clear",
+          "hex": "F8F8FF"
         }
       ]
     },
@@ -92,6 +100,10 @@
       "weights": [
         {
           "weight": 1000
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [

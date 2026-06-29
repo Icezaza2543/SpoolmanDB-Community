@@ -541,6 +541,10 @@
       "weights": [
         {
           "weight": 1000
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -574,6 +578,14 @@
         {
           "name": "Wood",
           "hex": "DAC7A0"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
         }
       ],
       "extruder_temp_range": [
