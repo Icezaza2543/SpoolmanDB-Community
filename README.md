@@ -8,6 +8,8 @@
   <a href="https://github.com/Icezaza2543/SpoolmanDB-Community/actions/workflows/build.yml"><img alt="Build" src="https://github.com/Icezaza2543/SpoolmanDB-Community/actions/workflows/build.yml/badge.svg"></a>
   <a href="https://icezaza2543.github.io/SpoolmanDB-Community/"><img alt="GitHub Pages" src="https://img.shields.io/badge/data-live_on_GitHub_Pages-2ea44f"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="TERMS.md"><img alt="Terms" src="https://img.shields.io/badge/terms-project_terms-8b5cf6.svg"></a>
+  <a href="POLICY.md"><img alt="Policy" src="https://img.shields.io/badge/policy-data_%26_privacy-0ea5e9.svg"></a>
   <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-ff69b4.svg"></a>
   <a href="https://github.com/Donkie/SpoolmanDB"><img alt="Upstream" src="https://img.shields.io/badge/upstream-Donkie%2FSpoolmanDB-lightgrey"></a>
 </p>
@@ -29,14 +31,14 @@ The goal is boring in the best way: current filament data, predictable JSON, rep
 SpoolmanDB Community introduces several structural, validation, and metadata improvements over the original `Donkie/SpoolmanDB` project:
 
 *   **Native & Strict Quality Controls**:
-    *   **Unified Validation**: Uses a native Python validation script ([validate.py](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/scripts/validate.py)) powered by `jsonschema` instead of relying on external CLI tools.
-    *   **Rigid Compiler Checks**: A compiled schema ([filaments.compiled.schema.json](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/filaments.compiled.schema.json)) strictly validates the final compiled database to prevent broken data structures, bad IDs, or invalid formats from shipping.
-    *   **Unit Test Suite**: Includes automated compiler unit testing using `pytest` ([test_compile.py](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/tests/test_compile.py)) to safeguard ID normalization, multi-color constraints, and manufacturer duplicate checks.
+    *   **Unified Validation**: Uses a native Python validation script ([validate.py](scripts/validate.py)) powered by `jsonschema` instead of relying on external CLI tools.
+    *   **Rigid Compiler Checks**: A compiled schema ([filaments.compiled.schema.json](filaments.compiled.schema.json)) strictly validates the final compiled database to prevent broken data structures, bad IDs, or invalid formats from shipping.
+    *   **Unit Test Suite**: Includes automated compiler unit testing using `pytest` ([test_compile.py](tests/test_compile.py)) to safeguard ID normalization, multi-color constraints, and manufacturer duplicate checks.
 *   **Editor Experience**:
-    *   Workspace configurations ([settings.json](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/.vscode/settings.json)) bind schemas to JSON files in the IDE, offering real-time diagnostics, autocomplete, and inline linting.
+    *   Workspace configurations ([settings.json](.vscode/settings.json)) bind schemas to JSON files in the IDE, offering real-time diagnostics, autocomplete, and inline linting.
 *   **Expanded Data & Metadata**:
     *   **Additional Metadata**: Full compiler passthrough for new fields including `country_of_origin`, `sds_url`, and `tds_url` from source profiles to the final database.
-    *   **Modern Materials**: Added missing material definitions in [materials.json](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/materials.json) (`BVOH`, `CoPE`, `PP`, `PAHT`, `PPA`, `PPS`, `PET`).
+    *   **Modern Materials**: Added missing material definitions in [materials.json](materials.json) (`BVOH`, `CoPE`, `PP`, `PAHT`, `PPA`, `PPS`, `PET`).
     *   **Massive Brand Updates**: Expanded to **430+ brands** (added over 320 popular consumer, local, and community brands, such as Bambu Lab, Polymaker, 3D-Warhorse, Spectrum, and more).
     *   **Refill & Spool Type Support**: Added native schema, compiler, and data support for `refill` and `unknown` (`unknow`) spool types. We have integrated refill configurations across 13 major brands (Polymaker Panchroma, Bambu Lab PLA Basic, eSun, Sunlu, etc.).
 
@@ -48,6 +50,8 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | Compiled filament data | <https://icezaza2543.github.io/SpoolmanDB-Community/filaments.json> |
 | Material defaults | <https://icezaza2543.github.io/SpoolmanDB-Community/materials.json> |
 | Contributing guide | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Terms of use | [TERMS.md](TERMS.md) |
+| Project policy | [POLICY.md](POLICY.md) |
 | Upstream project | [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) |
 
 ## Current snapshot
@@ -164,6 +168,16 @@ All shared material defaults live in `materials.json`.
 ## Maintenance stance
 
 This fork exists to keep the data usable while upstream is inactive. If upstream maintainership resumes, changes here can be proposed back to the original project. Until then, this repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
+
+## Terms and policy
+
+This repository separates the project license from community and data-use expectations:
+
+- [LICENSE](LICENSE) preserves the upstream MIT license for source code and project materials covered by that license.
+- [TERMS.md](TERMS.md) explains the terms for using the hosted project resources, compiled JSON data, and contribution channels.
+- [POLICY.md](POLICY.md) explains data quality expectations, privacy notes, contribution moderation, and correction/removal requests.
+
+The project is a public, community-maintained reference dataset. Always verify safety-relevant filament information against manufacturer documentation, labels, SDS/TDS files, or your own testing before relying on it.
 
 ## License
 
