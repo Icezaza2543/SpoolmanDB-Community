@@ -1,70 +1,72 @@
 {
-    "manufacturer": "Hello3D",
-    "filaments": [
+  "manufacturer": "Hello3D",
+  "filaments": [
+    {
+      "name": "Hello3D PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-            "name": "Hello3D PLA {color_name}",
-            "material": "PLA",
-            "density": 1.24,
-            "weights": [
-                {
-                    "weight": 1000,
-                    "spool_weight": 250
-                }
-            ],
-            "diameters": [
-                1.75
-            ],
-            "extruder_temp": 205,
-            "bed_temp": 55,
-            "colors": [
-                {
-                    "name": "Black",
-                    "hex": "000000"
-                },
-                {
-                    "name": "White",
-                    "hex": "FFFFFF"
-                },
-                {
-                    "name": "Grey",
-                    "hex": "808080"
-                }
-            ]
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 205,
+      "bed_temp": 55,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
         },
         {
-            "name": "Hello3D Silk PLA {color_name}",
-            "material": "PLA",
-            "density": 1.24,
-            "weights": [
-                {
-                    "weight": 1000,
-                    "spool_weight": 250
-                }
-            ],
-            "diameters": [
-                1.75
-            ],
-            "extruder_temp": 210,
-            "bed_temp": 55,
-            "finish": "glossy",
-            "colors": [
-                {
-                    "name": "Gold",
-                    "hex": "FFD700"
-                },
-                {
-                    "name": "Silver",
-                    "hex": "C0C0C0"
-                },
-                {
-                    "name": "Copper",
-                    "hex": "B87333"
-                },
-                {
-                    "name": "Bronze",
-                    "hex": "CD7F32"
-                }
-            ]
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
         }
-    ]
+      ]
+    },
+    {
+      "name": "Hello3D Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 55,
+      "finish": "glossy",
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "FFD700"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Copper",
+          "hex": "B87333"
+        },
+        {
+          "name": "Bronze",
+          "hex": "CD7F32"
+        }
+      ]
+    }
+  ]
 }

@@ -1,43 +1,44 @@
 {
-    "manufacturer": "YOUSU",
-    "filaments": [
+  "manufacturer": "YOUSU",
+  "filaments": [
+    {
+      "name": "YOUSU PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-            "name": "YOUSU PLA {color_name}",
-            "material": "PLA",
-            "density": 1.24,
-            "weights": [
-                {
-                    "weight": 1000,
-                    "spool_weight": 220
-                }
-            ],
-            "diameters": [
-                1.75
-            ],
-            "extruder_temp": 200,
-            "bed_temp": 55,
-            "colors": [
-                {
-                    "name": "Black",
-                    "hex": "000000"
-                },
-                {
-                    "name": "White",
-                    "hex": "FFFFFF"
-                },
-                {
-                    "name": "Grey",
-                    "hex": "808080"
-                },
-                {
-                    "name": "Red",
-                    "hex": "FF0000"
-                },
-                {
-                    "name": "Blue",
-                    "hex": "0000FF"
-                }
-            ]
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic"
         }
-    ]
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 200,
+      "bed_temp": 55,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        }
+      ]
+    }
+  ]
 }

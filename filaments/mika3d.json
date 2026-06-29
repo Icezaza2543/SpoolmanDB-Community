@@ -1,36 +1,37 @@
 {
-    "manufacturer": "Mika3D",
-    "filaments": [
+  "manufacturer": "Mika3D",
+  "filaments": [
+    {
+      "name": "Mika3D Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-            "name": "Mika3D Silk PLA {color_name}",
-            "material": "PLA",
-            "density": 1.24,
-            "weights": [
-                {
-                    "weight": 1000,
-                    "spool_weight": 250
-                }
-            ],
-            "diameters": [
-                1.75
-            ],
-            "extruder_temp": 210,
-            "bed_temp": 50,
-            "finish": "glossy",
-            "colors": [
-                {
-                    "name": "Gold",
-                    "hex": "FFD700"
-                },
-                {
-                    "name": "Silver",
-                    "hex": "C0C0C0"
-                },
-                {
-                    "name": "Copper",
-                    "hex": "B87333"
-                }
-            ]
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
         }
-    ]
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 50,
+      "finish": "glossy",
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "FFD700"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Copper",
+          "hex": "B87333"
+        }
+      ]
+    }
+  ]
 }

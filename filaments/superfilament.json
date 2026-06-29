@@ -6,7 +6,10 @@
       "material": "PLA",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -20,25 +23,82 @@
         60
       ],
       "colors": [
-        { "name": "Black", "hex": "000000" },
-        { "name": "Gray", "hex": "7f7f7f" },
-        { "name": "Brown", "hex": "b97a57" },
-        { "name": "Olive", "hex": "9e9e5a" },
-        { "name": "Copper", "hex": "de9191" },
-        { "name": "Bronze", "hex": "a15d3d" },
-        { "name": "Gold", "hex": "ffc90e" },
-        { "name": "Yellow", "hex": "fff200" },
-        { "name": "Orange", "hex": "ff7f27" },
-        { "name": "Red", "hex": "ed1c24" },
-        { "name": "Pink", "hex": "f77bf7" },
-        { "name": "Violet", "hex": "7f00ff" },
-        { "name": "Blue", "hex": "005fe8" },
-        { "name": "Turquoise", "hex": "00a2e8" },
-        { "name": "Green", "hex": "22b14c" },
-        { "name": "Beige", "hex": "efe4b0" },
-        { "name": "White", "hex": "f6f6f6" },
-        { "name": "Natural", "hex": "f2f2f2" },
-        { "name": "Transparent", "hex": "f6f6f6" }
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Gray",
+          "hex": "7f7f7f"
+        },
+        {
+          "name": "Brown",
+          "hex": "b97a57"
+        },
+        {
+          "name": "Olive",
+          "hex": "9e9e5a"
+        },
+        {
+          "name": "Copper",
+          "hex": "de9191"
+        },
+        {
+          "name": "Bronze",
+          "hex": "a15d3d"
+        },
+        {
+          "name": "Gold",
+          "hex": "ffc90e"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fff200"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff7f27"
+        },
+        {
+          "name": "Red",
+          "hex": "ed1c24"
+        },
+        {
+          "name": "Pink",
+          "hex": "f77bf7"
+        },
+        {
+          "name": "Violet",
+          "hex": "7f00ff"
+        },
+        {
+          "name": "Blue",
+          "hex": "005fe8"
+        },
+        {
+          "name": "Turquoise",
+          "hex": "00a2e8"
+        },
+        {
+          "name": "Green",
+          "hex": "22b14c"
+        },
+        {
+          "name": "Beige",
+          "hex": "efe4b0"
+        },
+        {
+          "name": "White",
+          "hex": "f6f6f6"
+        },
+        {
+          "name": "Natural",
+          "hex": "f2f2f2"
+        },
+        {
+          "name": "Transparent",
+          "hex": "f6f6f6"
+        }
       ]
     },
     {
@@ -46,7 +106,10 @@
       "material": "PLA+",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -60,15 +123,42 @@
         60
       ],
       "colors": [
-        { "name": "Black", "hex": "000000" },
-        { "name": "Gray", "hex": "7f7f7f" },
-        { "name": "Yellow", "hex": "fff200" },
-        { "name": "Orange", "hex": "ff7f27" },
-        { "name": "Red", "hex": "ed1c24" },
-        { "name": "Blue", "hex": "005fe8" },
-        { "name": "Sky Blue", "hex": "0060e8" },
-        { "name": "Green", "hex": "22b14c" },
-        { "name": "White", "hex": "f6f6f6" }
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Gray",
+          "hex": "7f7f7f"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fff200"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff7f27"
+        },
+        {
+          "name": "Red",
+          "hex": "ed1c24"
+        },
+        {
+          "name": "Blue",
+          "hex": "005fe8"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "0060e8"
+        },
+        {
+          "name": "Green",
+          "hex": "22b14c"
+        },
+        {
+          "name": "White",
+          "hex": "f6f6f6"
+        }
       ]
     },
     {
@@ -76,7 +166,10 @@
       "material": "PLA",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -91,12 +184,30 @@
       ],
       "finish": "matte",
       "colors": [
-        { "name": "Black", "hex": "000000" },
-        { "name": "Orange", "hex": "ff7f27" },
-        { "name": "Red", "hex": "ed1c24" },
-        { "name": "Blue", "hex": "005fe8" },
-        { "name": "Green", "hex": "22b14c" },
-        { "name": "White", "hex": "f6f6f6" }
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff7f27"
+        },
+        {
+          "name": "Red",
+          "hex": "ed1c24"
+        },
+        {
+          "name": "Blue",
+          "hex": "005fe8"
+        },
+        {
+          "name": "Green",
+          "hex": "22b14c"
+        },
+        {
+          "name": "White",
+          "hex": "f6f6f6"
+        }
       ]
     },
     {
@@ -104,7 +215,10 @@
       "material": "PLA-CF",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -119,7 +233,10 @@
       ],
       "fill": "carbon fiber",
       "colors": [
-        { "name": "Black", "hex": "000000" }
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
       ]
     },
     {
@@ -127,7 +244,10 @@
       "material": "PLA",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -142,9 +262,18 @@
       ],
       "fill": "wood",
       "colors": [
-        { "name": "Ivory", "hex": "dd9268" },
-        { "name": "Natural", "hex": "de9268" },
-        { "name": "Walnut", "hex": "444041" }
+        {
+          "name": "Ivory",
+          "hex": "dd9268"
+        },
+        {
+          "name": "Natural",
+          "hex": "de9268"
+        },
+        {
+          "name": "Walnut",
+          "hex": "444041"
+        }
       ]
     },
     {
@@ -152,7 +281,10 @@
       "material": "PLA",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -167,7 +299,10 @@
       ],
       "glow": true,
       "colors": [
-        { "name": "Glow in the Dark", "hex": "01311c" }
+        {
+          "name": "Glow in the Dark",
+          "hex": "01311c"
+        }
       ]
     },
     {
@@ -175,7 +310,10 @@
       "material": "PLA",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -190,11 +328,26 @@
       ],
       "pattern": "sparkle",
       "colors": [
-        { "name": "Black", "hex": "000000" },
-        { "name": "Silver", "hex": "616161" },
-        { "name": "Blue", "hex": "005fe8" },
-        { "name": "Gold", "hex": "ffc90e" },
-        { "name": "Green", "hex": "22b14c" }
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Silver",
+          "hex": "616161"
+        },
+        {
+          "name": "Blue",
+          "hex": "005fe8"
+        },
+        {
+          "name": "Gold",
+          "hex": "ffc90e"
+        },
+        {
+          "name": "Green",
+          "hex": "22b14c"
+        }
       ]
     },
     {
@@ -202,7 +355,10 @@
       "material": "PLA",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -217,17 +373,50 @@
       ],
       "finish": "glossy",
       "colors": [
-        { "name": "Silver", "hex": "616161" },
-        { "name": "Bronze", "hex": "a15d3d" },
-        { "name": "Copper", "hex": "de9191" },
-        { "name": "Green", "hex": "22b14c" },
-        { "name": "Pink", "hex": "f77bf7" },
-        { "name": "Gold", "hex": "ffc90e" },
-        { "name": "Blue", "hex": "005fe8" },
-        { "name": "White", "hex": "f6f6f6" },
-        { "name": "Rose", "hex": "ffaec9" },
-        { "name": "Red", "hex": "ed1c24" },
-        { "name": "Yellow", "hex": "fff200" }
+        {
+          "name": "Silver",
+          "hex": "616161"
+        },
+        {
+          "name": "Bronze",
+          "hex": "a15d3d"
+        },
+        {
+          "name": "Copper",
+          "hex": "de9191"
+        },
+        {
+          "name": "Green",
+          "hex": "22b14c"
+        },
+        {
+          "name": "Pink",
+          "hex": "f77bf7"
+        },
+        {
+          "name": "Gold",
+          "hex": "ffc90e"
+        },
+        {
+          "name": "Blue",
+          "hex": "005fe8"
+        },
+        {
+          "name": "White",
+          "hex": "f6f6f6"
+        },
+        {
+          "name": "Rose",
+          "hex": "ffaec9"
+        },
+        {
+          "name": "Red",
+          "hex": "ed1c24"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fff200"
+        }
       ]
     },
     {
@@ -235,7 +424,10 @@
       "material": "PLA",
       "density": 1.24,
       "weights": [
-        { "weight": 1000.0 }
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
       ],
       "diameters": [
         1.75
@@ -250,7 +442,10 @@
       ],
       "pattern": "marble",
       "colors": [
-        { "name": "Marble / Stone", "hex": "c3c3c3" }
+        {
+          "name": "Marble / Stone",
+          "hex": "c3c3c3"
+        }
       ]
     }
   ]
