@@ -6,16 +6,18 @@
     const MAX_QUALITY_ROWS = 140;
     const GITHUB_REPO = "https://github.com/Icezaza2543/SpoolmanDB-Community";
     const SOURCE_FINDER_LIMIT = 8;
+    const SERVED_FROM_PUBLIC_DIR = window.location.pathname.split("/").includes("public");
+    const resourcePath = (file) => SERVED_FROM_PUBLIC_DIR ? "../" + file : file;
     const SCHEMA_CONFIG = {
         filament: {
             title: "Filament source schema",
             file: "filaments.schema.json",
-            paths: ["filaments.schema.json", "../filaments.schema.json"],
+            paths: [resourcePath("filaments.schema.json")],
         },
         material: {
             title: "Material defaults schema",
             file: "materials.schema.json",
-            paths: ["materials.schema.json", "../materials.schema.json"],
+            paths: [resourcePath("materials.schema.json")],
         },
     };
 
@@ -65,6 +67,7 @@
         heroSection: document.querySelector(".hero"),
         statsGrid: document.querySelector(".stats-grid"),
         homeSection: document.querySelector("#home"),
+        analyticsSection: document.querySelector("#analytics"),
         explorerSection: document.querySelector("#explorer"),
         qualitySection: document.querySelector("#quality"),
         schemaSection: document.querySelector("#schema"),
@@ -82,14 +85,13 @@
 
     function handleRouting() {
         const hash = window.location.hash || "#home";
-        const validHashes = ["#home", "#db-schema", "#explorer", "#quality", "#schema", "#contribute"];
+        const validHashes = ["#home", "#analytics", "#explorer", "#schema", "#contribute"];
         const activeHash = validHashes.includes(hash) ? hash : "#home";
 
         const sections = {
             "#home": elements.homeSection,
-            "#db-schema": elements.dbSchemaSection,
+            "#analytics": elements.analyticsSection,
             "#explorer": elements.explorerSection,
-            "#quality": elements.qualitySection,
             "#schema": elements.schemaSection,
             "#contribute": elements.contributeSection
         };
@@ -109,7 +111,7 @@
             }
         });
 
-        if (activeHash === "#home") {
+        if (activeHash === "#analytics") {
             if (!state.homeInitialized) {
                 if (state.filaments.length > 0) {
                     initHomeDashboard();
@@ -117,11 +119,14 @@
             } else {
                 resizeHomeCharts();
             }
-        } else if (activeHash === "#db-schema") {
+        } else if (activeHash === "#schema") {
             window.setTimeout(updateSchemaLines, 50);
         }
 
         window.scrollTo(0, 0);
+        window.setTimeout(function () {
+            window.scrollTo(0, 0);
+        }, 50);
     }
 
     async function init() {
@@ -131,9 +136,9 @@
         window.addEventListener("resize", function () {
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(function () {
-                if (window.location.hash === "#home" || !window.location.hash) {
+                if (window.location.hash === "#analytics") {
                     resizeHomeCharts();
-                } else if (window.location.hash === "#db-schema") {
+                } else if (window.location.hash === "#schema") {
                     updateSchemaLines();
                 }
             }, 100);
@@ -154,8 +159,8 @@
 
         try {
             const [filaments, materials] = await Promise.all([
-                fetchJson(["filaments.json", "../filaments.json"]),
-                fetchJson(["materials.json", "../materials.json"]),
+                fetchJson([resourcePath("filaments.json")]),
+                fetchJson([resourcePath("materials.json")]),
             ]);
 
             state.filaments = Array.isArray(filaments) ? filaments : [];
@@ -413,13 +418,13 @@
                     }
                     return `Connection: ${params.data.source.replace(/^\w+_/, "")} → ${params.data.target.replace(/^\w+_/, "")}`;
                 },
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             legend: [{
                 data: ["Manufacturers", "Materials", "Color Families", "Spool Types"],
-                textStyle: { color: "#9f9fbf" },
+                textStyle: { color: "#a1a1aa" },
                 bottom: 10
             }],
             series: [{
@@ -428,10 +433,10 @@
                 data: metrics.graph.nodes,
                 links: metrics.graph.links,
                 categories: [
-                    { name: "Manufacturers", itemStyle: { color: "#a084e8" } },
-                    { name: "Materials", itemStyle: { color: "#4ec5a5" } },
-                    { name: "Color Families", itemStyle: { color: "#f38ba8" } },
-                    { name: "Spool Types", itemStyle: { color: "#f9e2af" } }
+                    { name: "Manufacturers", itemStyle: { color: "#f59e0b" } },
+                    { name: "Materials", itemStyle: { color: "#06b6d4" } },
+                    { name: "Color Families", itemStyle: { color: "#f43f5e" } },
+                    { name: "Spool Types", itemStyle: { color: "#10b981" } }
                 ],
                 roam: true,
                 label: {
@@ -451,7 +456,7 @@
                     layoutAnimation: true
                 },
                 lineStyle: {
-                    color: "rgba(160, 132, 232, 0.15)",
+                    color: "rgba(245, 158, 11, 0.15)",
                     width: 1,
                     curveness: 0.1
                 },
@@ -459,7 +464,7 @@
                     focus: "adjacency",
                     lineStyle: {
                         width: 3,
-                        color: "rgba(160, 132, 232, 0.6)"
+                        color: "rgba(245, 158, 11, 0.6)"
                     }
                 }
             }]
@@ -484,11 +489,12 @@
 
         const option = {
             backgroundColor: "transparent",
+            color: ["#f59e0b", "#f97316", "#06b6d4", "#10b981", "#8b5cf6", "#ec4899", "#3b82f6", "#6b7280"],
             tooltip: {
                 trigger: "item",
                 formatter: "{b}: {c} ({d}%)",
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             series: [{
@@ -498,7 +504,7 @@
                 avoidLabelOverlap: true,
                 itemStyle: {
                     borderRadius: 8,
-                    borderColor: "#101014",
+                    borderColor: "#18181b",
                     borderWidth: 2
                 },
                 label: {
@@ -507,7 +513,7 @@
                     fontSize: 11
                 },
                 labelLine: {
-                    lineStyle: { color: "rgba(160, 132, 232, 0.3)" }
+                    lineStyle: { color: "rgba(245, 158, 11, 0.3)" }
                 },
                 data: mainData
             }]
@@ -525,8 +531,8 @@
             tooltip: {
                 trigger: "axis",
                 axisPointer: { type: "shadow" },
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             grid: {
@@ -538,8 +544,8 @@
             },
             xAxis: {
                 type: "value",
-                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } },
-                axisLabel: { color: "#9f9fbf" }
+                splitLine: { lineStyle: { color: "rgba(245, 158, 11, 0.08)" } },
+                axisLabel: { color: "#a1a1aa" }
             },
             yAxis: {
                 type: "category",
@@ -555,8 +561,8 @@
                         type: "linear",
                         x: 0, y: 0, x2: 1, y2: 0,
                         colorStops: [
-                            { offset: 0, color: "rgba(160, 132, 232, 0.2)" },
-                            { offset: 1, color: "#a084e8" }
+                            { offset: 0, color: "rgba(249, 115, 22, 0.1)" },
+                            { offset: 1, color: "#f59e0b" }
                         ]
                     },
                     borderRadius: [0, 4, 4, 0]
@@ -571,11 +577,12 @@
 
         const option = {
             backgroundColor: "transparent",
+            color: ["#f59e0b", "#f97316", "#06b6d4", "#10b981", "#6b7280"],
             tooltip: {
                 trigger: "item",
                 formatter: "{b}: {c} ({d}%)",
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             series: [{
@@ -585,7 +592,7 @@
                 avoidLabelOverlap: true,
                 itemStyle: {
                     borderRadius: 6,
-                    borderColor: "#101014",
+                    borderColor: "#18181b",
                     borderWidth: 2
                 },
                 label: {
@@ -594,7 +601,7 @@
                     fontSize: 11
                 },
                 labelLine: {
-                    lineStyle: { color: "rgba(160, 132, 232, 0.3)" }
+                    lineStyle: { color: "rgba(245, 158, 11, 0.3)" }
                 },
                 data: data
             }]
@@ -603,15 +610,23 @@
     }
 
     function renderColorSpectrumChart(chart, metrics) {
-        const data = metrics.colorPoints.map(p => [
-            p.h, 
-            p.l, 
-            "#" + p.hex, 
-            p.count, 
-            p.brandsCount,
-            p.brands.join(", "),
-            p.materials.join(", ")
-        ]);
+        const data = metrics.colorPoints.map(p => {
+            const hex = "#" + p.hex;
+            return {
+                value: [
+                    p.h,
+                    p.l,
+                    hex,
+                    p.count,
+                    p.brandsCount,
+                    p.brands.join(", "),
+                    p.materials.join(", ")
+                ],
+                itemStyle: {
+                    color: hex
+                }
+            };
+        });
 
         const option = {
             backgroundColor: "transparent",
@@ -626,16 +641,18 @@
                            `Brands (${val[4]}): ${brandsText}<br/>` +
                            `Materials: ${materialsText}`;
                 },
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             xAxis: {
                 type: "value",
                 min: 0,
                 max: 360,
+                interval: 60,
                 splitLine: { show: false },
                 axisLabel: {
+                    hideOverlap: false,
                     formatter: function (value) {
                         if (value === 0 || value === 360) return "Red";
                         if (value === 60) return "Yellow";
@@ -645,29 +662,26 @@
                         if (value === 300) return "Magenta";
                         return "";
                     },
-                    color: "#9f9fbf"
+                    color: "#a1a1aa"
                 }
             },
             yAxis: {
                 type: "value",
                 min: 0,
                 max: 100,
-                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } },
+                splitLine: { lineStyle: { color: "rgba(245, 158, 11, 0.08)" } },
                 name: "Lightness",
-                nameTextStyle: { color: "#9f9fbf" },
-                axisLabel: { color: "#9f9fbf" }
+                nameTextStyle: { color: "#a1a1aa" },
+                axisLabel: { color: "#a1a1aa" }
             },
             series: [{
                 type: "scatter",
                 data: data,
                 symbolSize: 8,
-                large: true,
+                large: false,
                 progressive: 500,
                 progressiveThreshold: 2000,
                 itemStyle: {
-                    color: function (params) {
-                        return params.value[2];
-                    },
                     borderColor: "rgba(255, 255, 255, 0.2)",
                     borderWidth: 1
                 }
@@ -715,8 +729,8 @@
                     return `<strong>${params[0].name}</strong><br/>` +
                            `Coverage: ${val}% (${reversedCounts[idx]} / ${total} variants)`;
                 },
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             grid: {
@@ -732,9 +746,9 @@
                 max: 100,
                 axisLabel: { 
                     formatter: "{value}%",
-                    color: "#9f9fbf"
+                    color: "#a1a1aa"
                 },
-                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } }
+                splitLine: { lineStyle: { color: "rgba(245, 158, 11, 0.08)" } }
             },
             yAxis: {
                 type: "category",
@@ -750,7 +764,7 @@
                         type: "linear",
                         x: 0, y: 0, x2: 1, y2: 0,
                         colorStops: [
-                            { offset: 0, color: "rgba(249, 115, 22, 0.2)" },
+                            { offset: 0, color: "rgba(249, 115, 22, 0.1)" },
                             { offset: 1, color: "#f97316" }
                         ]
                     },
@@ -1045,7 +1059,10 @@
     function renderSwatch(item) {
         const swatch = document.createElement("div");
         swatch.className = "swatch";
-        swatch.title = colorLabel(item);
+        const label = colorLabel(item) || "Color Swatch";
+        swatch.title = label;
+        swatch.setAttribute("role", "img");
+        swatch.setAttribute("aria-label", label);
         swatch.style.background = colorBackground(item);
         return swatch;
     }
@@ -2027,9 +2044,9 @@
                         (toRow && toRow.closest(".db-table-card").id === tableId)) {
                         path.setAttribute("stroke", "var(--orange)");
                         path.setAttribute("stroke-width", "3.5");
-                        path.style.filter = "drop-shadow(0 0 3px rgba(249, 115, 22, 0.6))";
+                        path.style.filter = "drop-shadow(0 0 4px rgba(245, 158, 11, 0.6))";
                     } else {
-                        path.setAttribute("stroke", "rgba(160, 132, 232, 0.15)");
+                        path.setAttribute("stroke", "rgba(255, 255, 255, 0.06)");
                     }
                 });
             });
@@ -2058,14 +2075,14 @@
                     if (fromId === rowId || toId === rowId) {
                         path.setAttribute("stroke", "var(--orange)");
                         path.setAttribute("stroke-width", "4");
-                        path.style.filter = "drop-shadow(0 0 5px rgba(249, 115, 22, 0.8))";
+                        path.style.filter = "drop-shadow(0 0 6px rgba(245, 158, 11, 0.8))";
                         
                         const fromEl = document.getElementById(fromId);
                         const toEl = document.getElementById(toId);
                         if (fromEl) fromEl.classList.add("row-highlight");
                         if (toEl) toEl.classList.add("row-highlight");
                     } else {
-                        path.setAttribute("stroke", "rgba(160, 132, 232, 0.1)");
+                        path.setAttribute("stroke", "rgba(255, 255, 255, 0.04)");
                     }
                 });
             });
