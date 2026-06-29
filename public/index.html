@@ -50,17 +50,35 @@
 
         <section class="insight-section home-dashboard" id="home">
             <section class="hero" aria-labelledby="page-title">
-                <div class="hero-copy">
+                <div class="hero-copy-card">
+                    <span class="badge">Community Database</span>
                     <h1 id="page-title">Find filament data before it reaches your spool shelf.</h1>
-                    <p>
+                    <p class="hero-desc">
                         Search the compiled Spoolman-compatible catalog, filter by material and manufacturer,
                         then copy the external database URL straight into Spoolman.
                     </p>
+                    <div class="hero-features">
+                        <span class="feature"><span class="feature-icon">⚡</span> 100% Static & Fast</span>
+                        <span class="feature"><span class="feature-icon">📦</span> Spoolman Compatible</span>
+                        <span class="feature"><span class="feature-icon">👥</span> Community Maintained</span>
+                    </div>
                 </div>
-                <div class="external-url" aria-label="Spoolman external database URL">
-                    <span>External DB URL</span>
-                    <code id="external-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
-                    <button class="button button-dark" type="button" data-copy="#external-url">Copy</button>
+                <div class="external-url-card" aria-label="Spoolman external database URL">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">spoolman-config.json</span>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="field-label">External Database Endpoint</span>
+                        <div class="code-copy-container">
+                            <code id="external-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
+                            <button class="button button-dark copy-btn" type="button" data-copy="#external-url">Copy</button>
+                        </div>
+                    </div>
                 </div>
             </section>
 
