@@ -37,7 +37,8 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 *   **Expanded Data & Metadata**:
     *   **Additional Metadata**: Full compiler passthrough for new fields including `country_of_origin`, `sds_url`, and `tds_url` from source profiles to the final database.
     *   **Modern Materials**: Added missing material definitions in [materials.json](file:///c:/Users/Icezaza/Documents/GitHub/SpoolmanDB-Community/materials.json) (`BVOH`, `CoPE`, `PP`, `PAHT`, `PPA`, `PPS`, `PET`).
-    *   **Massive Brand Updates**: Added 25 new popular global and consumer brands (such as NinjaTek, colorFabb, MatterHackers, Recreus, COEX, Atomic Filament, Cookiecad, Tecbears, AnkerMake, IC3D, MakerBot, etc.).
+    *   **Massive Brand Updates**: Expanded to **430+ brands** (added over 320 popular consumer, local, and community brands, such as Bambu Lab, Polymaker, 3D-Warhorse, Spectrum, and more).
+    *   **Refill & Spool Type Support**: Added native schema, compiler, and data support for `refill` and `unknown` (`unknow`) spool types. We have integrated refill configurations across 13 major brands (Polymaker Panchroma, Bambu Lab PLA Basic, eSun, Sunlu, etc.).
 
 ## Live data
 
@@ -53,11 +54,11 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 
 | Source | Count |
 | --- | ---: |
-| Manufacturer source files | 108 |
+| Manufacturer source files | 434 |
 | Material definitions | 49 |
-| Source filament objects | 627 |
-| Color entries | 5,081 |
-| Compiled filament variants | 9,824 |
+| Source filament objects | 4,626 |
+| Color entries | 28,586 |
+| Compiled filament variants | 50,342 |
 
 Counts are generated from the current repository state. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
 
