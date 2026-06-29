@@ -196,6 +196,10 @@
           "weight": 8000.0,
           "spool_type": "plastic",
           "spool_weight": 1040.0
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -374,6 +378,10 @@
         {
           "name": "Yellow Green",
           "hex": "a5f221"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
         }
       ]
     },
@@ -3332,6 +3340,10 @@
       "weights": [
         {
           "weight": 1000
+        },
+        {
+          "weight": 750,
+          "spool_type": "refill"
         }
       ],
       "diameters": [

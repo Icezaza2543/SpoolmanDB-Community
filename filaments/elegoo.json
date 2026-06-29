@@ -500,6 +500,10 @@
           "weight": 1000,
           "spool_weight": 154,
           "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -1185,6 +1189,10 @@
       "weights": [
         {
           "weight": 1000
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -1194,6 +1202,18 @@
         {
           "name": "Misty Blue",
           "hex": "4A7BAF"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Red",
+          "hex": "c12e1f"
+        },
+        {
+          "name": "Blue",
+          "hex": "00358e"
         }
       ],
       "country_of_origin": "CN"

@@ -1444,6 +1444,10 @@
       "weights": [
         {
           "weight": 1000
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
@@ -1549,6 +1553,10 @@
         {
           "name": "Yellow",
           "hex": "FFC946"
+        },
+        {
+          "name": "Clear",
+          "hex": "f5f5f5"
         }
       ],
       "extruder_temp_range": [
@@ -1921,6 +1929,10 @@
       "weights": [
         {
           "weight": 1000
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
         }
       ],
       "diameters": [
