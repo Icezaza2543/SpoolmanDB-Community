@@ -10,7 +10,8 @@ from typing import TypedDict, NotRequired
 class SpoolType(StrEnum):
     PLASTIC = "plastic"
     CARDBOARD = "cardboard"
-    METAL = "metal"
+    REFILL = "refill"
+    UNKNOW = "unknow"
 
 
 class Finish(StrEnum):
@@ -76,7 +77,8 @@ SPOOL_TYPE_MAP = {
     None: "n",
     SpoolType.PLASTIC: "p",
     SpoolType.CARDBOARD: "c",
-    SpoolType.METAL: "m",
+    SpoolType.REFILL: "r",
+    SpoolType.UNKNOW: "u",
 }
 
 
