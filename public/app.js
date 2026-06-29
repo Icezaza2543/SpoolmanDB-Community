@@ -1047,7 +1047,10 @@
     function renderSwatch(item) {
         const swatch = document.createElement("div");
         swatch.className = "swatch";
-        swatch.title = colorLabel(item);
+        const label = colorLabel(item) || "Color Swatch";
+        swatch.title = label;
+        swatch.setAttribute("role", "img");
+        swatch.setAttribute("aria-label", label);
         swatch.style.background = colorBackground(item);
         return swatch;
     }

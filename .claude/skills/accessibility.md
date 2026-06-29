@@ -1,21 +1,17 @@
-# Accessibility Skill Reference
+# SpoolmanDB Accessibility (A11y) Reference
 
-Accessibility (A11y) standards and implementation patterns for SpoolmanDB Community.
+Guidelines for ensuring high accessibility compliance across all components.
 
-## 1. Keyboard Navigability
-*   **Active Elements:** Ensure all interactive elements (`a`, `button`, `input`, `select`) are focusable.
-*   **Focus Outline:** Never suppress outlines completely. Implement customized `:focus-visible` styles using amber or orange glow borders to preserve visual indicator positioning:
-    ```css
-    button:focus-visible {
-        outline: 2px solid var(--orange);
-        outline-offset: 2px;
-    }
-    ```
+## 1. Table Accessibility
+- **Headers:** Define `<th scope="col">` and `<th scope="row">` structures to enable screen reader navigability.
+- **Sort Indicators:** Use appropriate `aria-sort` attributes when columns are interactive.
+- **Descriptions:** Use `aria-describedby` or captions describing the grid purpose to screen readers.
 
-## 2. Screen Reader Compatibility (ARIA)
-*   **Navigation:** Define clear `aria-label` or `aria-labelledby` roles on primary landmarks (e.g. `<header>`, `<nav>`, `<main>`, `<section>`).
-*   **Status updates:** Declare `aria-live="polite"` on message elements (like loading alerts or filter status readouts) to notify assistive technologies upon text changes.
+## 2. Keyboard Navigation & Focus
+- **Filter controls:** Ensure all search and select components are accessible via standard tab loops.
+- **Outline focus:** Preserve custom outlines (`outline: 2px solid var(--accent-gold)`) on interactive button hover states.
+- **Active state focus:** Reset focus back to the target container when operations (like URL copying) complete successfully.
 
-## 3. Contrast Ratios
-*   Ensure a contrast ratio of at least 4.5:1 for body copy and 3:1 for large headers in both light and dark mode versions.
-*   Validate swatches and badges with explicit fallback text representation, rather than relying strictly on color visualization alone.
+## 3. Screen Reader Alerts & Alternative Texts
+- **Filtering:** Declare `aria-live="polite"` on results status logs to announce active count updates automatically.
+- **Color Swatches:** Never rely solely on visual swatches. Always supply alternate text representing the specific color name alongside color circles to satisfy contrast requirements.

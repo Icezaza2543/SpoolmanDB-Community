@@ -1,18 +1,21 @@
-# Frontend Design Skill Reference
+# SpoolmanDB Frontend Design Reference
 
-Guidelines for layout, component structure, typography, spacing, and modern UI patterns for SpoolmanDB Community.
+Guidelines for Layouts, Components, Grid Systems, and Visual Elements.
 
-## 1. Typography & Hierarchy
-*   **Headings:** Use `Outfit` (sans-serif) for all headers (`h1`, `h2`, `h3`). Apply letter-spacing of `-0.02em` or `-0.03em` for clean, professional modern headers.
-*   **Body Copy:** Use `Inter` (sans-serif) for all body text, lists, and tables. Set line-height to `1.5` or `1.6` for optimal readability.
-*   **Monospace:** Use a solid mono font (e.g. `Cascadia Mono`, `SFMono-Regular`, `Consolas`) for technical specs, codes, and URLs.
+## 1. Hero Section Layout
+- **Structure:** Split layout or two-column responsive grid (`1.2fr` and `0.8fr`).
+- **Visuals:** Gold radial glowing accents in the background, a code-dash terminal box for the Copy URL Widget, and clean call-to-action buttons.
+- **Copy Box:** A distinct monospaced code container with dashed gold borders, clear copy states, and an dynamic check mark hover state.
 
-## 2. Spacing & Grid System
-*   **Layout Spacing:** Maintain a max-width container of `1180px` for consistent desktop wrapping.
-*   **Grid:** Utilize `display: grid` with `gap` properties instead of ad-hoc margins to prevent layout shifts.
-*   **Paddings:** Align card inner padding to `24px` or `34px` for breathing space.
+## 2. Stats Grid
+- **Responsiveness:** Use CSS grid `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))` to scale nicely on desktop and tablets, down to 1 column on mobile.
+- **Card Elements:** Lighter elevated card background (`var(--bg-elevated)`), large glowing stats numbers with gold/orange accents, and descriptions below.
 
-## 3. Dark Theme & Aesthetics
-*   **Background:** Use ultra-dark slate (`#0A0A0F`) to make content cards stand out.
-*   **Surfaces:** Cards and floating headers should use a lighter shade of dark gray (`#18181B` or `#27272A`) to establish a clear visual hierarchy.
-*   **Visual Enhancements:** Implement glassmorphism using `backdrop-filter: blur(10px)`. Add subtle gold shadows (`rgba(245, 158, 11, 0.08)`) on hover to produce high-end developer-tool vibes.
+## 3. Database Explorer Layout
+- **Filter Bar:** Flex or grid container displaying search field, select dropdown filters, and reset button.
+- **Table Structure:** Headers with standard `#111113` background, cells wrapping gracefully on small viewports, and round color swatches with scale transformations on hover.
+- **Hover effects:** Enhance active row selection by drawing a left gold border:
+  `border-l-2 border-[--accent-gold]`
+
+## 4. Glass Card Component
+- Apply `backdrop-filter: blur(10px)` with background color using transparent white opacity `rgba(255,255,255,0.03)` and line border `rgba(255,255,255,0.06)`.
