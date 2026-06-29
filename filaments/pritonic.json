@@ -29,7 +29,9 @@
           ],
           "multi_color_direction": "longitudinal"
         }
-      ]
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60
     },
     {
       "name": "PLA Hyper Pritonic {color_name}",
@@ -66,7 +68,9 @@
           "name": "Rojo",
           "hex": "FF0000"
         }
-      ]
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60
     },
     {
       "name": "PLA Matt Pritonic {color_name}",
@@ -89,7 +93,9 @@
           "hex": "FFFDD0",
           "finish": "matte"
         }
-      ]
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60
     },
     {
       "name": "PLA+ Pritonic plastic spool {color_name}",
@@ -115,7 +121,9 @@
           "name": "Azul",
           "hex": "0000FF"
         }
-      ]
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60
     }
   ]
 }

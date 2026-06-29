@@ -188,7 +188,9 @@
           "hex": "F5FFF5",
           "glow": true
         }
-      ]
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60
     },
     {
       "name": "ABS {color_name}",
@@ -430,7 +432,9 @@
           ],
           "multi_color_direction": "longitudinal"
         }
-      ]
+      ],
+      "extruder_temp": 240,
+      "bed_temp": 75
     },
     {
       "name": "SBS {color_name}",
@@ -467,7 +471,9 @@
           "name": "Dark night",
           "hex": "0C090A"
         }
-      ]
+      ],
+      "extruder_temp": 230,
+      "bed_temp": 70
     },
     {
       "name": "HIPS {color_name}",
@@ -488,7 +494,9 @@
           "name": "Juicy apple",
           "hex": "8DB600"
         }
-      ]
+      ],
+      "extruder_temp": 230,
+      "bed_temp": 100
     },
     {
       "name": "Nylon {color_name}",
@@ -523,7 +531,9 @@
           "name": "Natural",
           "hex": "EEEEEE"
         }
-      ]
+      ],
+      "extruder_temp": 265,
+      "bed_temp": 90
     },
     {
       "name": "TPU {color_name}",
@@ -568,7 +578,9 @@
           "name": "T-1000",
           "hex": "C0C0C0"
         }
-      ]
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 45
     }
   ]
 }
