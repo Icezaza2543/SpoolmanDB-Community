@@ -877,16 +877,71 @@
     }
 
     function populateFilters() {
-        populateSelect(elements.material, uniqueSorted(state.filaments.map((item) => item.material)));
-        populateSelect(elements.manufacturer, uniqueSorted(state.filaments.map((item) => item.manufacturer)));
+        const query = elements.search.value.trim().toLowerCase();
+        const material = elements.material.value;
+        const manufacturer = elements.manufacturer.value;
+        const diameter = elements.diameter.value;
+        const spool = elements.spool.value;
+
+        // Get filaments matching all filters except material
+        const filamentsForMaterial = state.filaments.filter(function (item) {
+            if (manufacturer && item.manufacturer !== manufacturer) return false;
+            if (diameter && String(item.diameter) !== diameter) return false;
+            if (spool && spoolValue(item.spool_type) !== spool) return false;
+            if (query && !searchText(item).includes(query)) return false;
+            return true;
+        });
+
+        // Get filaments matching all filters except manufacturer
+        const filamentsForManufacturer = state.filaments.filter(function (item) {
+            if (material && item.material !== material) return false;
+            if (diameter && String(item.diameter) !== diameter) return false;
+            if (spool && spoolValue(item.spool_type) !== spool) return false;
+            if (query && !searchText(item).includes(query)) return false;
+            return true;
+        });
+
+        // Get filaments matching all filters except diameter
+        const filamentsForDiameter = state.filaments.filter(function (item) {
+            if (material && item.material !== material) return false;
+            if (manufacturer && item.manufacturer !== manufacturer) return false;
+            if (spool && spoolValue(item.spool_type) !== spool) return false;
+            if (query && !searchText(item).includes(query)) return false;
+            return true;
+        });
+
+        // Get filaments matching all filters except spool type
+        const filamentsForSpool = state.filaments.filter(function (item) {
+            if (material && item.material !== material) return false;
+            if (manufacturer && item.manufacturer !== manufacturer) return false;
+            if (diameter && String(item.diameter) !== diameter) return false;
+            if (query && !searchText(item).includes(query)) return false;
+            return true;
+        });
+
+        // Save currently selected values
+        const currentMaterial = elements.material.value;
+        const currentManufacturer = elements.manufacturer.value;
+        const currentDiameter = elements.diameter.value;
+        const currentSpool = elements.spool.value;
+
+        // Repopulate selects
+        populateSelect(elements.material, uniqueSorted(filamentsForMaterial.map((item) => item.material)));
+        populateSelect(elements.manufacturer, uniqueSorted(filamentsForManufacturer.map((item) => item.manufacturer)));
         populateSelect(
             elements.diameter,
-            uniqueSorted(state.filaments.map((item) => item.diameter)).sort((a, b) => Number(a) - Number(b)),
+            uniqueSorted(filamentsForDiameter.map((item) => item.diameter)).sort((a, b) => Number(a) - Number(b)),
             function (value) {
                 return value + " mm";
             }
         );
-        populateSelect(elements.spool, uniqueSorted(state.filaments.map((item) => spoolValue(item.spool_type))), labelSpool);
+        populateSelect(elements.spool, uniqueSorted(filamentsForSpool.map((item) => spoolValue(item.spool_type))), labelSpool);
+
+        // Restore selected values
+        elements.material.value = currentMaterial;
+        elements.manufacturer.value = currentManufacturer;
+        elements.diameter.value = currentDiameter;
+        elements.spool.value = currentSpool;
     }
 
     function populateSelect(select, values, labeler) {
@@ -919,6 +974,8 @@
     }
 
     function renderFilteredResults() {
+        populateFilters();
+
         const query = elements.search.value.trim().toLowerCase();
         const material = elements.material.value;
         const manufacturer = elements.manufacturer.value;
