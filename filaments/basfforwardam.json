@@ -17,16 +17,41 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75, 2.85],
-      "extruder_temp_range": [210, 230],
-      "bed_temp_range": [50, 70],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
       "colors": [
-        {"name": "Black", "hex": "101010"},
-        {"name": "White", "hex": "F2F2F2"},
-        {"name": "Grey", "hex": "808080"},
-        {"name": "Red", "hex": "C01010"},
-        {"name": "Blue", "hex": "1010C0"}
-      ]
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "C01010"
+        },
+        {
+          "name": "Blue",
+          "hex": "1010C0"
+        }
+      ],
+      "country_of_origin": "DE"
     },
     {
       "name": "Ultrafuse PETG {color_name}",
@@ -44,15 +69,37 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75, 2.85],
-      "extruder_temp_range": [220, 260],
-      "bed_temp_range": [60, 80],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
       "colors": [
-        {"name": "Black", "hex": "101010"},
-        {"name": "White", "hex": "F2F2F2"},
-        {"name": "Grey", "hex": "808080"},
-        {"name": "Blue", "hex": "1010C0"}
-      ]
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Blue",
+          "hex": "1010C0"
+        }
+      ],
+      "country_of_origin": "DE"
     }
   ]
 }

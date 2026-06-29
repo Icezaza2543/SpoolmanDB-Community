@@ -47,7 +47,8 @@
           "name": "White",
           "hex": "FFFFFF"
         }
-      ]
+      ],
+      "country_of_origin": "SE"
     },
     {
       "name": "Marble {color_name}",
@@ -77,7 +78,8 @@
           "pattern": "marble"
         }
       ],
-      "pattern": "marble"
+      "pattern": "marble",
+      "country_of_origin": "SE"
     },
     {
       "name": "PLA {color_name}",
@@ -143,9 +145,11 @@
         },
         {
           "name": "Matte Black",
-          "hex": "1A1A1A"
+          "hex": "1A1A1A",
+          "finish": "matte"
         }
-      ]
+      ],
+      "country_of_origin": "SE"
     },
     {
       "name": "PLA+ Matte {color_name}",
@@ -177,7 +181,9 @@
           "name": "Light Grey",
           "hex": "c4c3c5"
         }
-      ]
+      ],
+      "finish": "matte",
+      "country_of_origin": "SE"
     },
     {
       "name": "PLA+ {color_name}",
@@ -209,7 +215,8 @@
           "name": "Light Grey",
           "hex": "c4c7c1"
         }
-      ]
+      ],
+      "country_of_origin": "SE"
     }
   ]
 }

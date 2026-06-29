@@ -17,16 +17,40 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
-      "extruder_temp_range": [210, 220],
-      "bed_temp_range": [0, 60],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
       "colors": [
-        {"name": "True Black", "hex": "101010"},
-        {"name": "True White", "hex": "F2F2F2"},
-        {"name": "True Gray", "hex": "808080"},
-        {"name": "True Red", "hex": "C01010"},
-        {"name": "True Blue", "hex": "1010C0"}
-      ]
+        {
+          "name": "True Black",
+          "hex": "101010"
+        },
+        {
+          "name": "True White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "True Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "True Red",
+          "hex": "C01010"
+        },
+        {
+          "name": "True Blue",
+          "hex": "1010C0"
+        }
+      ],
+      "country_of_origin": "US"
     },
     {
       "name": "MakerBot Tough PLA {color_name}",
@@ -44,15 +68,36 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
-      "extruder_temp_range": [210, 225],
-      "bed_temp_range": [0, 60],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        225
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
       "colors": [
-        {"name": "Slate Gray", "hex": "708090"},
-        {"name": "Onyx Black", "hex": "0F0F0F"},
-        {"name": "Stone White", "hex": "EAE6DF"},
-        {"name": "Safety Orange", "hex": "FF6600"}
-      ]
+        {
+          "name": "Slate Gray",
+          "hex": "708090"
+        },
+        {
+          "name": "Onyx Black",
+          "hex": "0F0F0F"
+        },
+        {
+          "name": "Stone White",
+          "hex": "EAE6DF"
+        },
+        {
+          "name": "Safety Orange",
+          "hex": "FF6600"
+        }
+      ],
+      "country_of_origin": "US"
     },
     {
       "name": "MakerBot PETG {color_name}",
@@ -65,14 +110,32 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
-      "extruder_temp_range": [220, 240],
-      "bed_temp_range": [60, 80],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
       "colors": [
-        {"name": "True Black", "hex": "101010"},
-        {"name": "True White", "hex": "F2F2F2"},
-        {"name": "True Red", "hex": "C01010"}
-      ]
+        {
+          "name": "True Black",
+          "hex": "101010"
+        },
+        {
+          "name": "True White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "True Red",
+          "hex": "C01010"
+        }
+      ],
+      "country_of_origin": "US"
     }
   ]
 }

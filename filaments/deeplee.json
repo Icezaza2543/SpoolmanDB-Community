@@ -1,156 +1,175 @@
 {
-    "manufacturer": "Deeplee",
-    "filaments": [
+  "manufacturer": "Deeplee",
+  "filaments": [
+    {
+      "name": "{color_name}",
+      "material": "PLA+",
+      "density": 1.25,
+      "weights": [
         {
-            "name": "{color_name}",
-            "material": "PLA+",
-            "density": 1.25,
-            "weights": [
-                {
-                    "weight": 1000.0,
-                    "spool_weight": 140,
-                    "spool_type": "cardboard"
-                }
-            ],
-            "diameters": [1.75],
-            "extruder_temp": 220,
-            "bed_temp": 60,
-            "colors": [
-                {
-                    "name": "Beige",
-                    "hex": "DDCDAC"
-                },
-                {
-                    "name": "Blue",
-                    "hex": "1017B3"
-                },
-                {
-                    "name": "Brown",
-                    "hex": "9C7860"
-                },
-                {
-                    "name": "Space Gray",
-                    "hex": "989795"
-                },
-                {
-                    "name": "Yellow",
-                    "hex": "F5E868"
-                },
-                {
-                    "name": "Gray",
-                    "hex": "B4B0AD"
-                },
-                {
-                    "name": "Sky Blue",
-                    "hex": "67CAE9"
-                },
-                {
-                    "name": "Clear",
-                    "hex": "00FFFFFF",
-                    "translucent": true
-                },
-                {
-                    "name": "Light Green",
-                    "hex": "6EDC85"
-                },
-                {
-                    "name": "Purple",
-                    "hex": "8B6BAA"
-                },
-                {
-                    "name": "Orange",
-                    "hex": "F5A769"
-                },
-                {
-                    "name": "Pink",
-                    "hex": "E5A6B7"
-                },
-                {
-                    "name": "Red",
-                    "hex": "D15B51"
-                },
-                {
-                    "name": "Black",
-                    "hex": "000000"
-                },
-                {
-                    "name": "See Green",
-                    "hex": "01a988"
-                },
-                {
-                    "name": "White",
-                    "hex": "FFFFFF"
-                }
-            ]
+          "weight": 1000.0,
+          "spool_weight": 140,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "DDCDAC"
         },
         {
-            "name": "{color_name}",
-            "material": "PLA",
-            "density": 1.25,
-            "weights": [
-                {
-                    "weight": 1000.0,
-                    "spool_weight": 140,
-                    "spool_type": "cardboard"
-                }
-            ],
-            "diameters": [1.75],
-            "extruder_temp": 220,
-            "bed_temp": 60,
-            "colors": [
-                {
-                    "name": "Matte Beige",
-                    "hex": "EFD8BE"
-                },
-                {
-                    "name": "Matte Navy Blue",
-                    "hex": "000080"
-                },
-                {
-                    "name": "Matte Black",
-                    "hex": "000000"
-                },
-                {
-                    "name": "Matte Blue Grey",
-                    "hex": "6699CC"
-                },
-                {
-                    "name": "Matte Gris ardoise",
-                    "hex": "989898"
-                },
-                {
-                    "name": "Matte Ice Blue",
-                    "hex": "84BDF5"
-                },
-                {
-                    "name": "Matte Mint Green",
-                    "hex": "ADEBB3"
-                },
-                {
-                    "name": "Matte Ruby Red",
-                    "hex": "E60000"
-                },
-                {
-                    "name": "Matte Sakura Pink",
-                    "hex": "FFB7C5"
-                },
-                {
-                    "name": "Matte Slate Grey",
-                    "hex": "B0B0B2"
-                },
-                {
-                    "name": "Matte Sunshine Yellow",
-                    "hex": "EBCA49"
-                },
-                {
-                    "name": "Matte Teal Green",
-                    "hex": "00D2D0"
-                },
-                {
-                    "name": "Matte White",
-                    "hex": "F4F4F4"
-                }
-            ]
+          "name": "Blue",
+          "hex": "1017B3"
+        },
+        {
+          "name": "Brown",
+          "hex": "9C7860"
+        },
+        {
+          "name": "Space Gray",
+          "hex": "989795"
+        },
+        {
+          "name": "Yellow",
+          "hex": "F5E868"
+        },
+        {
+          "name": "Gray",
+          "hex": "B4B0AD"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "67CAE9"
+        },
+        {
+          "name": "Clear",
+          "hex": "00FFFFFF",
+          "translucent": true
+        },
+        {
+          "name": "Light Green",
+          "hex": "6EDC85"
+        },
+        {
+          "name": "Purple",
+          "hex": "8B6BAA"
+        },
+        {
+          "name": "Orange",
+          "hex": "F5A769"
+        },
+        {
+          "name": "Pink",
+          "hex": "E5A6B7"
+        },
+        {
+          "name": "Red",
+          "hex": "D15B51"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "See Green",
+          "hex": "01a988"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
         }
-    ]
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "{color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Matte Beige",
+          "hex": "EFD8BE",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Navy Blue",
+          "hex": "000080",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Black",
+          "hex": "000000",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Blue Grey",
+          "hex": "6699CC",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Gris ardoise",
+          "hex": "989898",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Ice Blue",
+          "hex": "84BDF5",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Mint Green",
+          "hex": "ADEBB3",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Ruby Red",
+          "hex": "E60000",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Sakura Pink",
+          "hex": "FFB7C5",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Slate Grey",
+          "hex": "B0B0B2",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Sunshine Yellow",
+          "hex": "EBCA49",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Teal Green",
+          "hex": "00D2D0",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte White",
+          "hex": "F4F4F4",
+          "finish": "matte"
+        }
+      ],
+      "country_of_origin": "CN"
+    }
+  ]
 }

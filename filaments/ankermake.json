@@ -12,17 +12,44 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
-      "extruder_temp_range": [190, 230],
-      "bed_temp_range": [45, 65],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        65
+      ],
       "colors": [
-        {"name": "Black", "hex": "101010"},
-        {"name": "White", "hex": "F2F2F2"},
-        {"name": "Gray", "hex": "808080"},
-        {"name": "Red", "hex": "C01010"},
-        {"name": "Blue", "hex": "1010C0"},
-        {"name": "Yellow", "hex": "F0F010"}
-      ]
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "C01010"
+        },
+        {
+          "name": "Blue",
+          "hex": "1010C0"
+        },
+        {
+          "name": "Yellow",
+          "hex": "F0F010"
+        }
+      ],
+      "country_of_origin": "CN"
     },
     {
       "name": "AnkerMake PETG {color_name}",
@@ -35,14 +62,32 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75],
-      "extruder_temp_range": [230, 260],
-      "bed_temp_range": [60, 90],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        90
+      ],
       "colors": [
-        {"name": "Black", "hex": "101010"},
-        {"name": "White", "hex": "F2F2F2"},
-        {"name": "Gray", "hex": "808080"}
-      ]
+        {
+          "name": "Black",
+          "hex": "101010"
+        },
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "CN"
     }
   ]
 }

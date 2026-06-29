@@ -12,13 +12,26 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75, 2.85],
-      "extruder_temp_range": [220, 240],
-      "bed_temp_range": [80, 90],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        80,
+        90
+      ],
       "fill": "carbon fiber",
       "colors": [
-        {"name": "Black", "hex": "101010"}
-      ]
+        {
+          "name": "Black",
+          "hex": "101010"
+        }
+      ],
+      "country_of_origin": "FR"
     },
     {
       "name": "ABS CF {color_name}",
@@ -31,13 +44,26 @@
           "spool_type": "plastic"
         }
       ],
-      "diameters": [1.75, 2.85],
-      "extruder_temp_range": [240, 260],
-      "bed_temp_range": [100, 110],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
       "fill": "carbon fiber",
       "colors": [
-        {"name": "Black", "hex": "101010"}
-      ]
+        {
+          "name": "Black",
+          "hex": "101010"
+        }
+      ],
+      "country_of_origin": "FR"
     }
   ]
 }
