@@ -413,13 +413,13 @@
                     }
                     return `Connection: ${params.data.source.replace(/^\w+_/, "")} → ${params.data.target.replace(/^\w+_/, "")}`;
                 },
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             legend: [{
                 data: ["Manufacturers", "Materials", "Color Families", "Spool Types"],
-                textStyle: { color: "#9f9fbf" },
+                textStyle: { color: "#a1a1aa" },
                 bottom: 10
             }],
             series: [{
@@ -428,10 +428,10 @@
                 data: metrics.graph.nodes,
                 links: metrics.graph.links,
                 categories: [
-                    { name: "Manufacturers", itemStyle: { color: "#a084e8" } },
-                    { name: "Materials", itemStyle: { color: "#4ec5a5" } },
-                    { name: "Color Families", itemStyle: { color: "#f38ba8" } },
-                    { name: "Spool Types", itemStyle: { color: "#f9e2af" } }
+                    { name: "Manufacturers", itemStyle: { color: "#f59e0b" } },
+                    { name: "Materials", itemStyle: { color: "#06b6d4" } },
+                    { name: "Color Families", itemStyle: { color: "#f43f5e" } },
+                    { name: "Spool Types", itemStyle: { color: "#10b981" } }
                 ],
                 roam: true,
                 label: {
@@ -451,7 +451,7 @@
                     layoutAnimation: true
                 },
                 lineStyle: {
-                    color: "rgba(160, 132, 232, 0.15)",
+                    color: "rgba(245, 158, 11, 0.15)",
                     width: 1,
                     curveness: 0.1
                 },
@@ -459,7 +459,7 @@
                     focus: "adjacency",
                     lineStyle: {
                         width: 3,
-                        color: "rgba(160, 132, 232, 0.6)"
+                        color: "rgba(245, 158, 11, 0.6)"
                     }
                 }
             }]
@@ -484,11 +484,12 @@
 
         const option = {
             backgroundColor: "transparent",
+            color: ["#f59e0b", "#f97316", "#06b6d4", "#10b981", "#8b5cf6", "#ec4899", "#3b82f6", "#6b7280"],
             tooltip: {
                 trigger: "item",
                 formatter: "{b}: {c} ({d}%)",
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             series: [{
@@ -498,7 +499,7 @@
                 avoidLabelOverlap: true,
                 itemStyle: {
                     borderRadius: 8,
-                    borderColor: "#101014",
+                    borderColor: "#18181b",
                     borderWidth: 2
                 },
                 label: {
@@ -507,7 +508,7 @@
                     fontSize: 11
                 },
                 labelLine: {
-                    lineStyle: { color: "rgba(160, 132, 232, 0.3)" }
+                    lineStyle: { color: "rgba(245, 158, 11, 0.3)" }
                 },
                 data: mainData
             }]
@@ -525,8 +526,8 @@
             tooltip: {
                 trigger: "axis",
                 axisPointer: { type: "shadow" },
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             grid: {
@@ -538,8 +539,8 @@
             },
             xAxis: {
                 type: "value",
-                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } },
-                axisLabel: { color: "#9f9fbf" }
+                splitLine: { lineStyle: { color: "rgba(245, 158, 11, 0.08)" } },
+                axisLabel: { color: "#a1a1aa" }
             },
             yAxis: {
                 type: "category",
@@ -555,8 +556,8 @@
                         type: "linear",
                         x: 0, y: 0, x2: 1, y2: 0,
                         colorStops: [
-                            { offset: 0, color: "rgba(160, 132, 232, 0.2)" },
-                            { offset: 1, color: "#a084e8" }
+                            { offset: 0, color: "rgba(249, 115, 22, 0.1)" },
+                            { offset: 1, color: "#f59e0b" }
                         ]
                     },
                     borderRadius: [0, 4, 4, 0]
@@ -571,11 +572,12 @@
 
         const option = {
             backgroundColor: "transparent",
+            color: ["#f59e0b", "#f97316", "#06b6d4", "#10b981", "#6b7280"],
             tooltip: {
                 trigger: "item",
                 formatter: "{b}: {c} ({d}%)",
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             series: [{
@@ -585,7 +587,7 @@
                 avoidLabelOverlap: true,
                 itemStyle: {
                     borderRadius: 6,
-                    borderColor: "#101014",
+                    borderColor: "#18181b",
                     borderWidth: 2
                 },
                 label: {
@@ -594,7 +596,7 @@
                     fontSize: 11
                 },
                 labelLine: {
-                    lineStyle: { color: "rgba(160, 132, 232, 0.3)" }
+                    lineStyle: { color: "rgba(245, 158, 11, 0.3)" }
                 },
                 data: data
             }]
@@ -626,8 +628,8 @@
                            `Brands (${val[4]}): ${brandsText}<br/>` +
                            `Materials: ${materialsText}`;
                 },
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             xAxis: {
@@ -645,17 +647,17 @@
                         if (value === 300) return "Magenta";
                         return "";
                     },
-                    color: "#9f9fbf"
+                    color: "#a1a1aa"
                 }
             },
             yAxis: {
                 type: "value",
                 min: 0,
                 max: 100,
-                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } },
+                splitLine: { lineStyle: { color: "rgba(245, 158, 11, 0.08)" } },
                 name: "Lightness",
-                nameTextStyle: { color: "#9f9fbf" },
-                axisLabel: { color: "#9f9fbf" }
+                nameTextStyle: { color: "#a1a1aa" },
+                axisLabel: { color: "#a1a1aa" }
             },
             series: [{
                 type: "scatter",
@@ -715,8 +717,8 @@
                     return `<strong>${params[0].name}</strong><br/>` +
                            `Coverage: ${val}% (${reversedCounts[idx]} / ${total} variants)`;
                 },
-                backgroundColor: "rgba(24, 24, 30, 0.95)",
-                borderColor: "rgba(160, 132, 232, 0.3)",
+                backgroundColor: "rgba(24, 24, 28, 0.95)",
+                borderColor: "rgba(245, 158, 11, 0.3)",
                 textStyle: { color: "#f4f4f5" }
             },
             grid: {
@@ -732,9 +734,9 @@
                 max: 100,
                 axisLabel: { 
                     formatter: "{value}%",
-                    color: "#9f9fbf"
+                    color: "#a1a1aa"
                 },
-                splitLine: { lineStyle: { color: "rgba(160, 132, 232, 0.1)" } }
+                splitLine: { lineStyle: { color: "rgba(245, 158, 11, 0.08)" } }
             },
             yAxis: {
                 type: "category",
@@ -750,7 +752,7 @@
                         type: "linear",
                         x: 0, y: 0, x2: 1, y2: 0,
                         colorStops: [
-                            { offset: 0, color: "rgba(249, 115, 22, 0.2)" },
+                            { offset: 0, color: "rgba(249, 115, 22, 0.1)" },
                             { offset: 1, color: "#f97316" }
                         ]
                     },
@@ -2027,9 +2029,9 @@
                         (toRow && toRow.closest(".db-table-card").id === tableId)) {
                         path.setAttribute("stroke", "var(--orange)");
                         path.setAttribute("stroke-width", "3.5");
-                        path.style.filter = "drop-shadow(0 0 3px rgba(249, 115, 22, 0.6))";
+                        path.style.filter = "drop-shadow(0 0 4px rgba(245, 158, 11, 0.6))";
                     } else {
-                        path.setAttribute("stroke", "rgba(160, 132, 232, 0.15)");
+                        path.setAttribute("stroke", "rgba(255, 255, 255, 0.06)");
                     }
                 });
             });
@@ -2058,14 +2060,14 @@
                     if (fromId === rowId || toId === rowId) {
                         path.setAttribute("stroke", "var(--orange)");
                         path.setAttribute("stroke-width", "4");
-                        path.style.filter = "drop-shadow(0 0 5px rgba(249, 115, 22, 0.8))";
+                        path.style.filter = "drop-shadow(0 0 6px rgba(245, 158, 11, 0.8))";
                         
                         const fromEl = document.getElementById(fromId);
                         const toEl = document.getElementById(toId);
                         if (fromEl) fromEl.classList.add("row-highlight");
                         if (toEl) toEl.classList.add("row-highlight");
                     } else {
-                        path.setAttribute("stroke", "rgba(160, 132, 232, 0.1)");
+                        path.setAttribute("stroke", "rgba(255, 255, 255, 0.04)");
                     }
                 });
             });
