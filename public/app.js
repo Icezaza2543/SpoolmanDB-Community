@@ -6,16 +6,18 @@
     const MAX_QUALITY_ROWS = 140;
     const GITHUB_REPO = "https://github.com/Icezaza2543/SpoolmanDB-Community";
     const SOURCE_FINDER_LIMIT = 8;
+    const SERVED_FROM_PUBLIC_DIR = window.location.pathname.split("/").includes("public");
+    const resourcePath = (file) => SERVED_FROM_PUBLIC_DIR ? "../" + file : file;
     const SCHEMA_CONFIG = {
         filament: {
             title: "Filament source schema",
             file: "filaments.schema.json",
-            paths: ["filaments.schema.json", "../filaments.schema.json"],
+            paths: [resourcePath("filaments.schema.json")],
         },
         material: {
             title: "Material defaults schema",
             file: "materials.schema.json",
-            paths: ["materials.schema.json", "../materials.schema.json"],
+            paths: [resourcePath("materials.schema.json")],
         },
     };
 
@@ -65,6 +67,7 @@
         heroSection: document.querySelector(".hero"),
         statsGrid: document.querySelector(".stats-grid"),
         homeSection: document.querySelector("#home"),
+        analyticsSection: document.querySelector("#analytics"),
         explorerSection: document.querySelector("#explorer"),
         qualitySection: document.querySelector("#quality"),
         schemaSection: document.querySelector("#schema"),
@@ -82,14 +85,13 @@
 
     function handleRouting() {
         const hash = window.location.hash || "#home";
-        const validHashes = ["#home", "#db-schema", "#explorer", "#quality", "#schema", "#contribute"];
+        const validHashes = ["#home", "#analytics", "#explorer", "#schema", "#contribute"];
         const activeHash = validHashes.includes(hash) ? hash : "#home";
 
         const sections = {
             "#home": elements.homeSection,
-            "#db-schema": elements.dbSchemaSection,
+            "#analytics": elements.analyticsSection,
             "#explorer": elements.explorerSection,
-            "#quality": elements.qualitySection,
             "#schema": elements.schemaSection,
             "#contribute": elements.contributeSection
         };
@@ -109,7 +111,7 @@
             }
         });
 
-        if (activeHash === "#home") {
+        if (activeHash === "#analytics") {
             if (!state.homeInitialized) {
                 if (state.filaments.length > 0) {
                     initHomeDashboard();
@@ -117,11 +119,14 @@
             } else {
                 resizeHomeCharts();
             }
-        } else if (activeHash === "#db-schema") {
+        } else if (activeHash === "#schema") {
             window.setTimeout(updateSchemaLines, 50);
         }
 
         window.scrollTo(0, 0);
+        window.setTimeout(function () {
+            window.scrollTo(0, 0);
+        }, 50);
     }
 
     async function init() {
@@ -131,9 +136,9 @@
         window.addEventListener("resize", function () {
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(function () {
-                if (window.location.hash === "#home" || !window.location.hash) {
+                if (window.location.hash === "#analytics") {
                     resizeHomeCharts();
-                } else if (window.location.hash === "#db-schema") {
+                } else if (window.location.hash === "#schema") {
                     updateSchemaLines();
                 }
             }, 100);
@@ -154,8 +159,8 @@
 
         try {
             const [filaments, materials] = await Promise.all([
-                fetchJson(["filaments.json", "../filaments.json"]),
-                fetchJson(["materials.json", "../materials.json"]),
+                fetchJson([resourcePath("filaments.json")]),
+                fetchJson([resourcePath("materials.json")]),
             ]);
 
             state.filaments = Array.isArray(filaments) ? filaments : [];

@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Material+Symbols+Outlined:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
     <script src="app.js" defer></script>
@@ -18,28 +18,23 @@
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <a class="brand" href="./" aria-label="SpoolmanDB Community home">
-                <img alt="SpoolmanDB Community Logo" src="favicon.svg" class="logo">
-                <span>
-                    <strong>SpoolmanDB Community</strong>
-                    <small>Static filament database explorer</small>
-                </span>
+            <a class="brand" href="#home" aria-label="SpoolmanDB Community home">
+                <img alt="" src="favicon.svg" class="logo">
+                <span>SpoolmanDB Community</span>
             </a>
+
             <nav class="top-links" aria-label="Primary">
-                <div class="nav-group">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#db-schema" class="nav-link">Schema</a>
-                    <a href="#explorer" class="nav-link">Explorer</a>
-                    <a href="#quality" class="nav-link">Quality</a>
-                    <a href="#schema" class="nav-link">Validation Schemas</a>
-                    <a href="#contribute" class="nav-link">Contribute</a>
-                </div>
-                <div class="nav-actions">
-                    <a href="filaments.json" class="button">Filaments JSON</a>
-                    <a href="materials.json" class="button">Materials JSON</a>
-                    <a href="https://github.com/Icezaza2543/SpoolmanDB-Community" class="button button-dark">GitHub</a>
-                </div>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#analytics" class="nav-link">Analytics</a>
+                <a href="#explorer" class="nav-link">Explorer</a>
+                <a href="#schema" class="nav-link">Schema</a>
+                <a href="#contribute" class="nav-link">Contribute</a>
             </nav>
+
+            <button class="button button-primary header-copy" type="button" data-copy="#external-url">
+                <span class="material-symbols-outlined" aria-hidden="true">link</span>
+                Copy External DB URL
+            </button>
         </div>
     </header>
 
@@ -48,39 +43,26 @@
             <p id="load-status">Loading filament and material data...</p>
         </section>
 
-        <section class="insight-section home-dashboard" id="home">
-            <section class="hero" aria-labelledby="page-title">
-                <div class="hero-copy-card">
-                    <span class="badge">Community Database</span>
-                    <h1 id="page-title">Find filament data before it reaches your spool shelf.</h1>
-                    <p class="hero-desc">
-                        Search the compiled Spoolman-compatible catalog, filter by material and manufacturer,
-                        then copy the external database URL straight into Spoolman.
-                    </p>
-                    <div class="hero-features">
-                        <span class="feature"><span class="feature-icon">⚡</span> 100% Static & Fast</span>
-                        <span class="feature"><span class="feature-icon">📦</span> Spoolman Compatible</span>
-                        <span class="feature"><span class="feature-icon">👥</span> Community Maintained</span>
-                    </div>
+        <section class="page-section home-page" id="home">
+            <header class="home-hero" aria-labelledby="page-title">
+                <span class="hero-badge">Community-Driven Project</span>
+                <h1 id="page-title">Find filament data before it reaches <span>your</span> spool shelf.</h1>
+                <p>
+                    Access thousands of verified filament profiles, manufacturers, and materials.
+                    It integrates seamlessly with your Spoolman instance for precise inventory tracking.
+                </p>
+                <div class="hero-actions">
+                    <button class="button button-primary button-large" type="button" data-copy="#external-url">
+                        <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+                        Copy External DB URL
+                    </button>
+                    <a class="button button-ghost button-large" href="#explorer">
+                        <span class="material-symbols-outlined" aria-hidden="true">explore</span>
+                        Open Database Explorer
+                    </a>
                 </div>
-                <div class="external-url-card" aria-label="Spoolman external database URL">
-                    <div class="terminal-header">
-                        <div class="terminal-dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <span class="terminal-title">spoolman-config.json</span>
-                    </div>
-                    <div class="terminal-body">
-                        <span class="field-label">External Database Endpoint</span>
-                        <div class="code-copy-container">
-                            <code id="external-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
-                            <button class="button button-dark copy-btn" type="button" data-copy="#external-url">Copy</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <code id="external-url" class="copy-source">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
+            </header>
 
             <section class="stats-grid" aria-label="Database snapshot">
                 <article class="stat-card">
@@ -105,537 +87,673 @@
                 </article>
             </section>
 
-            <div class="dashboard-grid">
-                <div class="chart-card card-full">
-                    <h3>Database Knowledge Vault</h3>
-                    <p class="chart-subtitle">Obsidian-inspired graph mapping Manufacturers to their Materials and Color Families.</p>
-                    <div id="knowledge-graph-chart" class="echart-panel"></div>
+            <section class="resource-section" aria-labelledby="resources-title">
+                <div class="section-title">
+                    <h2 id="resources-title">Quick Resources</h2>
                 </div>
-                
-                <div class="chart-card">
-                    <h3>Material Composition</h3>
-                    <p class="chart-subtitle">Distribution of filament variants by material type.</p>
+
+                <div class="resource-grid">
+                    <a class="resource-card resource-card-wide" href="#explorer">
+                        <span class="resource-icon material-symbols-outlined" aria-hidden="true">explore</span>
+                        <strong>Open Explorer</strong>
+                        <span>Browse the full catalog with advanced filters for diameter, weight, and color variants.</span>
+                        <em>Launch Catalog <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></em>
+                    </a>
+                    <a class="resource-card" href="filaments.json" download>
+                        <span class="resource-icon material-symbols-outlined" aria-hidden="true">description</span>
+                        <strong>filaments.json</strong>
+                        <span>Raw filament definitions for manual ingestion.</span>
+                        <em>Download <span class="material-symbols-outlined" aria-hidden="true">download</span></em>
+                    </a>
+                    <a class="resource-card" href="materials.json" download>
+                        <span class="resource-icon material-symbols-outlined" aria-hidden="true">hub</span>
+                        <strong>materials.json</strong>
+                        <span>Standard material properties and density data.</span>
+                        <em>Download <span class="material-symbols-outlined" aria-hidden="true">download</span></em>
+                    </a>
+                </div>
+
+                <div class="support-strip">
+                    <div>
+                        <h3>Support community efforts</h3>
+                        <p>Missing a manufacturer? Found an error in a material density? Learn how to submit a Pull Request to our GitHub repository.</p>
+                    </div>
+                    <a class="button button-light" href="#contribute">
+                        <span class="material-symbols-outlined" aria-hidden="true">volunteer_activism</span>
+                        How to contribute
+                    </a>
+                </div>
+            </section>
+
+            <section class="ecosystem-band" aria-label="Ecosystem">
+                <span>Built on the project stack</span>
+                <div class="ecosystem-list">
+                    <strong><span class="material-symbols-outlined" aria-hidden="true">html</span> Static HTML</strong>
+                    <strong><span class="material-symbols-outlined" aria-hidden="true">css</span> CSS</strong>
+                    <strong><span class="material-symbols-outlined" aria-hidden="true">javascript</span> Vanilla JS</strong>
+                    <strong><span class="material-symbols-outlined" aria-hidden="true">bar_chart</span> ECharts</strong>
+                    <strong><span class="material-symbols-outlined" aria-hidden="true">data_object</span> JSON Schema</strong>
+                </div>
+            </section>
+
+            <section class="feature-split">
+                <div class="maker-visual" aria-hidden="true">
+                    <div class="spool-wall">
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="signal-bars">
+                        <i></i><i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                    <div class="accuracy-card">
+                        <span class="material-symbols-outlined">verified</span>
+                        <strong>Verified Accuracy</strong>
+                        <small>Verified by active makers</small>
+                    </div>
+                </div>
+
+                <div class="feature-copy">
+                    <h2>Designed for the Modern Maker</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
+                            <div>
+                                <strong>Instant Integration</strong>
+                                <p>Paste one URL into your Spoolman config and instantly access the entire catalog.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined" aria-hidden="true">science</span>
+                            <div>
+                                <strong>Precise Materials</strong>
+                                <p>The database includes specific gravity for materials from community-maintained defaults.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+                            <div>
+                                <strong>Crowdsourced & Curated</strong>
+                                <p>Entries are reviewed by maintainers so spool measurements stay useful and stable.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section class="page-section analytics-page" id="analytics" aria-labelledby="analytics-title">
+            <div class="page-heading split-heading">
+                <div>
+                    <h1 id="analytics-title">Analytics</h1>
+                    <p>Explore global filament material trends and insights from the community catalog.</p>
+                </div>
+            </div>
+
+            <div class="analytics-grid">
+                <article class="chart-card chart-card-wide">
+                    <div class="card-heading">
+                        <h2>Database Knowledge Vault</h2>
+                        <span>Live catalog graph</span>
+                    </div>
+                    <div id="knowledge-graph-chart" class="echart-panel echart-large"></div>
+                </article>
+                <article class="chart-card">
+                    <div class="card-heading">
+                        <h2>Material Mix</h2>
+                        <span>Catalog composition</span>
+                    </div>
                     <div id="material-composition-chart" class="echart-panel"></div>
-                </div>
-                
-                <div class="chart-card">
-                    <h3>Top Manufacturers</h3>
-                    <p class="chart-subtitle">Producers with the highest number of active variants.</p>
+                </article>
+                <article class="chart-card">
+                    <div class="card-heading">
+                        <h2>Top Manufacturers</h2>
+                        <span>Highest variant counts</span>
+                    </div>
                     <div id="top-manufacturers-chart" class="echart-panel"></div>
-                </div>
-                
-                <div class="chart-card">
-                    <h3>Spool Type Distribution</h3>
-                    <p class="chart-subtitle">Breakdown of filaments by packaging spool material.</p>
-                    <div id="spool-type-chart" class="echart-panel"></div>
-                </div>
-                
-                <div class="chart-card">
-                    <h3>Database Coverage</h3>
-                    <p class="chart-subtitle">How complete the published filament metadata is.</p>
+                </article>
+                <article class="chart-card">
+                    <div class="card-heading">
+                        <h2>Database Coverage</h2>
+                        <span>Metadata completeness</span>
+                    </div>
                     <div id="database-coverage-chart" class="echart-panel"></div>
-                </div>
-                
-                <div class="chart-card card-full">
-                    <h3>Color Spectrum Map</h3>
-                    <p class="chart-subtitle">HSL cluster distribution of unique hex values in the database.</p>
-                    <div id="color-spectrum-chart" class="echart-panel"></div>
-                </div>
-            </div>
-
-            <div class="quick-actions-panel">
-                <h3>Quick Actions</h3>
-                <div class="action-buttons">
-                    <a href="#explorer" class="button button-dark">Open Database Explorer</a>
-                    <button class="button" type="button" data-copy="#external-url">Copy External DB URL</button>
-                    <a href="filaments.json" class="button" download>Download filaments.json</a>
-                    <a href="materials.json" class="button" download>Download materials.json</a>
-                    <a href="https://github.com/Icezaza2543/SpoolmanDB-Community" class="button" target="_blank" rel="noopener noreferrer">Contribute Data</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="insight-section db-schema-section" id="db-schema" style="display: none;">
-            <h2>Database Schema</h2>
-
-            <div class="schema-container-wrapper">
-                <div class="schema-canvas" id="schema-canvas">
-                    <svg class="schema-svg" id="schema-svg">
-                        <defs>
-                            <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--orange-dark)" />
-                            </marker>
-                        </defs>
-                    </svg>
-
-                    <!-- Table Cards -->
-                    <!-- LEFT COLUMN -->
-                    <div class="schema-column left-column">
-                        <!-- MANUFACTURERS -->
-                        <div class="db-table-card" id="tbl-manufacturers" data-table="manufacturers">
-                            <div class="db-table-header">MANUFACTURERS</div>
-                            <div class="db-table-rows">
-                                <div class="db-table-row pk-row" id="row-mfg-pk">
-                                    <span class="field-name"><span class="pk-icon">🔑</span> manufacturer_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">name</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- MATERIALS -->
-                        <div class="db-table-card" id="tbl-materials" data-table="materials">
-                            <div class="db-table-header">MATERIALS</div>
-                            <div class="db-table-rows">
-                                <div class="db-table-row pk-row" id="row-mat-pk">
-                                    <span class="field-name"><span class="pk-icon">🔑</span> material_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">material</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">density</span>
-                                    <span class="field-type">float</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">extruder_temp</span>
-                                    <span class="field-type">integer</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">bed_temp</span>
-                                    <span class="field-type">integer</span>
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="chart-card chart-card-wide">
+                    <div class="card-heading">
+                        <h2>Color Spectrum Map</h2>
+                        <span>HSL cluster distribution</span>
                     </div>
-
-                    <!-- CENTER COLUMN (FACT) -->
-                    <div class="schema-column center-column">
-                        <!-- FILAMENTS -->
-                        <div class="db-table-card fact-table-card" id="tbl-filaments" data-table="filaments">
-                            <div class="db-table-header">FILAMENTS</div>
-                            <div class="db-table-rows">
-                                <div class="db-table-row pk-row">
-                                    <span class="field-name"><span class="pk-icon">🔑</span> filament_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">name</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row fk-row" id="row-fil-mfg-fk" data-target="row-mfg-pk">
-                                    <span class="field-name"><span class="fk-icon">🔗</span> manufacturer_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row fk-row" id="row-fil-mat-fk" data-target="row-mat-pk">
-                                    <span class="field-name"><span class="fk-icon">🔗</span> material_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">density</span>
-                                    <span class="field-type">float</span>
-                                </div>
-                                <div class="db-table-row fk-row" id="row-fil-dia-fk" data-target="row-dia-pk">
-                                    <span class="field-name"><span class="fk-icon">🔗</span> diameter_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row fk-row" id="row-fil-weight-fk" data-target="row-weight-pk">
-                                    <span class="field-name"><span class="fk-icon">🔗</span> weight_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row fk-row" id="row-fil-col-fk" data-target="row-col-pk">
-                                    <span class="field-name"><span class="fk-icon">🔗</span> color_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">extruder_temp</span>
-                                    <span class="field-type">integer</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">bed_temp</span>
-                                    <span class="field-type">integer</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SPOOL_TYPES -->
-                        <div class="db-table-card" id="tbl-spools" data-table="spools">
-                            <div class="db-table-header">SPOOL_TYPES</div>
-                            <div class="db-table-rows">
-                                <div class="db-table-row pk-row" id="row-spool-pk">
-                                    <span class="field-name"><span class="pk-icon">🔑</span> spool_type_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">type_name</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="color-spectrum-chart" class="echart-panel echart-medium"></div>
+                </article>
+                <article class="chart-card">
+                    <div class="card-heading">
+                        <h2>Spool Type Distribution</h2>
+                        <span>Packaging adoption</span>
                     </div>
-
-                    <!-- RIGHT COLUMN -->
-                    <div class="schema-column right-column">
-                        <!-- DIAMETERS -->
-                        <div class="db-table-card" id="tbl-diameters" data-table="diameters">
-                            <div class="db-table-header">DIAMETERS</div>
-                            <div class="db-table-rows">
-                                <div class="db-table-row pk-row" id="row-dia-pk">
-                                    <span class="field-name"><span class="pk-icon">🔑</span> diameter_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">diameter</span>
-                                    <span class="field-type">float</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- COLORS -->
-                        <div class="db-table-card" id="tbl-colors" data-table="colors">
-                            <div class="db-table-header">COLORS</div>
-                            <div class="db-table-rows">
-                                <div class="db-table-row pk-row" id="row-col-pk">
-                                    <span class="field-name"><span class="pk-icon">🔑</span> color_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">name</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">hex</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">finish</span>
-                                    <span class="field-type">enum</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">translucent</span>
-                                    <span class="field-type">boolean</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">glow</span>
-                                    <span class="field-type">boolean</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- WEIGHTS_SPOOLS -->
-                        <div class="db-table-card" id="tbl-weights" data-table="weights">
-                            <div class="db-table-header">WEIGHTS_SPOOLS</div>
-                            <div class="db-table-rows">
-                                <div class="db-table-row pk-row" id="row-weight-pk">
-                                    <span class="field-name"><span class="pk-icon">🔑</span> weight_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">weight</span>
-                                    <span class="field-type">float</span>
-                                </div>
-                                <div class="db-table-row">
-                                    <span class="field-name">spool_weight</span>
-                                    <span class="field-type">float</span>
-                                </div>
-                                <div class="db-table-row fk-row" id="row-weight-spool-fk" data-target="row-spool-pk">
-                                    <span class="field-name"><span class="fk-icon">🔗</span> spool_type_id</span>
-                                    <span class="field-type">string</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="explorer" id="explorer" aria-labelledby="explorer-title">
-            <div class="section-heading">
-                <div>
-                    <h2 id="explorer-title">Database explorer</h2>
-                    <p>Client-side search over the published JSON. Rendering is capped for speed.</p>
-                </div>
-                <div class="file-actions" aria-label="Data file actions">
-                    <a class="button" href="filaments.json" download>Download filaments</a>
-                    <a class="button" href="materials.json" download>Download materials</a>
-                </div>
-            </div>
-
-            <form class="filters" id="filters">
-                <label class="search-field">
-                    <span>Search</span>
-                    <input id="search" type="search"
-                        placeholder="Name, maker, material, hex, SKU, EAN..." autocomplete="off">
-                </label>
-                <label>
-                    <span>Material</span>
-                    <select id="material-filter">
-                        <option value="">All materials</option>
-                    </select>
-                </label>
-                <label>
-                    <span>Manufacturer</span>
-                    <select id="manufacturer-filter">
-                        <option value="">All manufacturers</option>
-                    </select>
-                </label>
-                <label>
-                    <span>Diameter</span>
-                    <select id="diameter-filter">
-                        <option value="">All diameters</option>
-                    </select>
-                </label>
-                <label>
-                    <span>Spool type</span>
-                    <select id="spool-filter">
-                        <option value="">All spool types</option>
-                    </select>
-                </label>
-                <button class="button button-dark" type="reset">Reset</button>
-            </form>
-
-            <div class="results-meta">
-                <p id="results-summary">Waiting for data...</p>
-                <p id="active-filters">No filters applied.</p>
-            </div>
-
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Color</th>
-                            <th scope="col">Manufacturer</th>
-                            <th scope="col">Filament</th>
-                            <th scope="col">Material</th>
-                            <th scope="col">Diameter</th>
-                            <th scope="col">Weight</th>
-                            <th scope="col">Spool</th>
-                            <th scope="col">Temps</th>
-                            <th scope="col">IDs</th>
-                        </tr>
-                    </thead>
-                    <tbody id="results-body">
-                        <tr>
-                            <td colspan="9">Loading...</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="insight-section quality-dashboard" id="quality" aria-labelledby="quality-title">
-            <div class="section-heading">
-                <div>
-                    <h2 id="quality-title">Data quality dashboard</h2>
-                    <p>Client-side checks over the published catalog. Signals help contributors decide what to review.</p>
-                </div>
-            </div>
-
-            <div class="quality-summary" id="quality-summary" aria-live="polite">
-                <article class="stat-card">
-                    <span>Quality status</span>
-                    <strong>-</strong>
+                    <div id="spool-type-chart" class="echart-panel"></div>
                 </article>
             </div>
 
-            <div class="quality-toolbar">
-                <label>
-                    <span>Issue type</span>
-                    <select id="quality-filter">
-                        <option value="actionable">Actionable issues</option>
-                        <option value="all">All tracked signals</option>
-                        <option value="duplicate-id">Duplicate IDs</option>
-                        <option value="unknown-material">No material defaults</option>
-                        <option value="invalid-color">Invalid colors</option>
-                        <option value="missing-size">Missing size data</option>
-                        <option value="missing-temp">Missing temperatures</option>
-                        <option value="missing-product-id">Missing SKU/EAN</option>
-                        <option value="multicolor">Multi-color rows</option>
-                    </select>
-                </label>
-                <div class="results-meta quality-meta">
-                    <p id="quality-meta">Waiting for data...</p>
+            <section class="insight-callout">
+                <div class="callout-icon">
+                    <span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>
                 </div>
-            </div>
-
-            <div class="table-wrap">
-                <table class="quality-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Severity</th>
-                            <th scope="col">Type</th>
-                            <th scope="col">Filament</th>
-                            <th scope="col">Detail</th>
-                        </tr>
-                    </thead>
-                    <tbody id="quality-issues-body">
-                        <tr>
-                            <td colspan="4">Waiting for data...</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="insight-section schema-viewer" id="schema" aria-labelledby="schema-title">
-            <div class="section-heading">
                 <div>
-                    <h2 id="schema-title">Source contribution schemas</h2>
-                    <p>Readable field map for PR validation inputs before the compiler creates public JSON.</p>
+                    <h2>Spoolman Static Index</h2>
+                    <p>Based on the compiled Spoolman-compatible catalog, these charts summarize real community data from the published JSON files.</p>
                 </div>
-                <div class="file-actions" aria-label="Schema actions">
-                    <a class="button" id="schema-open-link" href="filaments.schema.json" target="_blank"
-                        rel="noopener noreferrer">Open schema JSON</a>
-                    <button class="button button-dark" type="button" data-copy="#schema-copy-url">Copy URL</button>
-                    <code id="schema-copy-url" class="copy-source">filaments.schema.json</code>
-                </div>
-            </div>
-
-            <p class="schema-note">These schemas describe contributor source files:
-                <code>filaments/*.json</code> and <code>materials.json</code>. They are not the compiled
-                <code>filaments.json</code> output consumed by Spoolman.</p>
-
-            <div class="schema-toolbar">
-                <label>
-                    <span>Schema</span>
-                    <select id="schema-choice">
-                        <option value="filament">Filament source schema</option>
-                        <option value="material">Material defaults schema</option>
-                    </select>
-                </label>
-                <p id="schema-status" class="muted">Loading schemas...</p>
-            </div>
-
-            <div class="schema-summary" id="schema-summary" aria-live="polite">
-                <article class="stat-card">
-                    <span>Root type</span>
-                    <strong>-</strong>
-                </article>
-            </div>
-
-            <div class="table-wrap">
-                <table class="schema-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Field path</th>
-                            <th scope="col">Required</th>
-                            <th scope="col">Type / constraints</th>
-                            <th scope="col">Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody id="schema-fields-body">
-                        <tr>
-                            <td colspan="4">Loading schema fields...</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <a class="button button-light" href="#explorer">Inspect rows</a>
+            </section>
         </section>
 
-        <section class="contributor-section" id="contribute" aria-label="Contributor and data help">
-            <div class="contributor-layout">
-                <article class="helper-panel spoolman-panel">
-                    <h2>Use with Spoolman</h2>
-                    <p>Set Spoolman's external database URL to this community Pages endpoint.</p>
-                    <div class="copy-row">
-                        <code id="spoolman-url">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
-                        <button class="button button-dark" type="button" data-copy="#spoolman-url">Copy URL</button>
+        <section class="page-section explorer-page" id="explorer" aria-labelledby="explorer-title">
+            <div class="page-heading split-heading">
+                <div>
+                    <h1 id="explorer-title">Database Explorer</h1>
+                    <p id="results-summary">Waiting for data...</p>
+                </div>
+
+                <form class="filter-rail" id="filters">
+                    <label class="search-field">
+                        <span>Search</span>
+                        <input id="search" type="search" placeholder="Name, maker, material, hex, SKU, EAN..." autocomplete="off">
+                    </label>
+                    <label>
+                        <span>Manufacturer</span>
+                        <select id="manufacturer-filter">
+                            <option value="">All Manufacturers</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Material</span>
+                        <select id="material-filter">
+                            <option value="">All Materials</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Diameter</span>
+                        <select id="diameter-filter">
+                            <option value="">All Diameters</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Spool Type</span>
+                        <select id="spool-filter">
+                            <option value="">All Types</option>
+                        </select>
+                    </label>
+                    <button class="icon-button" type="reset" aria-label="Reset filters">
+                        <span class="material-symbols-outlined" aria-hidden="true">refresh</span>
+                    </button>
+                </form>
+            </div>
+
+            <p class="active-filter-line" id="active-filters">No filters applied.</p>
+
+            <div class="table-card">
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Color</th>
+                                <th scope="col">Manufacturer</th>
+                                <th scope="col">Filament Name</th>
+                                <th scope="col">Material</th>
+                                <th scope="col">Diameter</th>
+                                <th scope="col">Weight</th>
+                                <th scope="col">Spool</th>
+                                <th scope="col">Temps</th>
+                                <th scope="col">IDs</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-body">
+                            <tr>
+                                <td colspan="9">Loading...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <section class="insight-callout">
+                <div class="callout-icon">
+                    <span class="material-symbols-outlined" aria-hidden="true">database</span>
+                </div>
+                <div>
+                    <h2>SpoolmanDB Static Index</h2>
+                    <p>This is a global static mirror of community-contributed filament data. Copy the external database URL to link this catalog to your personal Spoolman instance.</p>
+                </div>
+                <button class="button button-light" type="button" data-copy="#external-url">Link to My Spoolman</button>
+            </section>
+        </section>
+
+        <section class="page-section schema-page" id="schema" aria-labelledby="schema-title">
+            <div class="page-heading">
+                <h1 id="schema-title">Schemas &amp; Quality</h1>
+                <p>Standardizing the global filament ledger with technical precision.</p>
+            </div>
+
+            <section class="schema-stage" aria-labelledby="db-schema-title">
+                <div class="section-row">
+                    <h2 id="db-schema-title"><span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Database Schema</h2>
+                    <div class="section-actions">
+                        <a class="button button-ghost" href="filaments.json" target="_blank" rel="noopener noreferrer">Export JSON</a>
+                        <a class="button button-primary" href="#contribute">Edit Schema</a>
                     </div>
-                </article>
+                </div>
 
-                <article class="helper-panel contributor-panel" aria-labelledby="contributor-title">
-                    <h2 id="contributor-title">Contributor helper</h2>
-                    <p>Edit source files in <code>filaments/*.json</code>. Do not hand-edit generated
-                        <code>filaments.json</code>.</p>
+                <div class="schema-container-wrapper">
+                    <div class="schema-canvas" id="schema-canvas">
+                        <svg class="schema-svg" id="schema-svg">
+                            <defs>
+                                <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                    <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--orange-dark)" />
+                                </marker>
+                            </defs>
+                        </svg>
 
-                    <ol class="contributor-steps">
-                        <li class="step-card">
-                            <span class="step-label">Step 1</span>
-                            <strong>Pick the source file</strong>
-                            <p>Work in <code>filaments/</code> and keep one manufacturer or focused fix per PR.</p>
-                        </li>
-                        <li class="step-card">
-                            <span class="step-label">Step 2</span>
-                            <strong>Edit source JSON</strong>
-                            <p>Add variants, correct fields, and keep generated files out of manual edits.</p>
-                        </li>
-                        <li class="step-card">
-                            <span class="step-label">Step 3</span>
-                            <strong>Validate locally</strong>
-                            <p>Run the compiler and schema checks before opening the pull request.</p>
-                        </li>
-                        <li class="step-card">
-                            <span class="step-label">Step 4</span>
-                            <strong>Open a PR</strong>
-                            <p>Include product pages, datasheets, or other evidence for the data change.</p>
-                        </li>
-                    </ol>
-
-                    <div class="contributor-block">
-                        <h3>Local commands</h3>
-                        <div class="command-list">
-                            <div class="copy-row">
-                                <code id="cmd-compile">python scripts/compile_filaments.py</code>
-                                <button class="button" type="button" data-copy="#cmd-compile">Copy</button>
+                        <div class="schema-column left-column">
+                            <div class="db-table-card" id="tbl-manufacturers" data-table="manufacturers">
+                                <div class="db-table-header">MANUFACTURERS</div>
+                                <div class="db-table-rows">
+                                    <div class="db-table-row pk-row" id="row-mfg-pk">
+                                        <span class="field-name">manufacturer_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">name</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="copy-row">
-                                <code id="cmd-materials">check-jsonschema --schemafile materials.schema.json materials.json</code>
-                                <button class="button" type="button" data-copy="#cmd-materials">Copy</button>
-                            </div>
-                            <div class="copy-row">
-                                <code id="cmd-filaments">check-jsonschema --schemafile filaments.schema.json filaments/*</code>
-                                <button class="button" type="button" data-copy="#cmd-filaments">Copy</button>
+
+                            <div class="db-table-card" id="tbl-materials" data-table="materials">
+                                <div class="db-table-header">MATERIALS</div>
+                                <div class="db-table-rows">
+                                    <div class="db-table-row pk-row" id="row-mat-pk">
+                                        <span class="field-name">material_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">material</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">density</span>
+                                        <span class="field-type">float</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">extruder_temp</span>
+                                        <span class="field-type">integer</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">bed_temp</span>
+                                        <span class="field-type">integer</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <p class="command-note">If the validator is missing, install it with
-                            <code>python -m pip install check-jsonschema</code>.</p>
-                    </div>
 
-                    <div class="contributor-block">
-                        <h3>PR checklist</h3>
-                        <pre class="checklist-pre"><code id="pr-checklist">- [ ] Edited source files in filaments/ only, not generated filaments.json
-- [ ] Kept the PR focused to one manufacturer or correction set
-- [ ] Linked product pages, datasheets, or other evidence
-- [ ] Ran python scripts/compile_filaments.py
-- [ ] Ran check-jsonschema for materials.json and filaments/*</code></pre>
-                        <button class="button button-dark" type="button" data-copy="#pr-checklist">Copy checklist</button>
-                    </div>
+                        <div class="schema-column center-column">
+                            <div class="db-table-card fact-table-card" id="tbl-filaments" data-table="filaments">
+                                <div class="db-table-header">FILAMENTS</div>
+                                <div class="db-table-rows">
+                                    <div class="db-table-row pk-row">
+                                        <span class="field-name">filament_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">name</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row fk-row" id="row-fil-mfg-fk" data-target="row-mfg-pk">
+                                        <span class="field-name">manufacturer_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row fk-row" id="row-fil-mat-fk" data-target="row-mat-pk">
+                                        <span class="field-name">material_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">density</span>
+                                        <span class="field-type">float</span>
+                                    </div>
+                                    <div class="db-table-row fk-row" id="row-fil-dia-fk" data-target="row-dia-pk">
+                                        <span class="field-name">diameter_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row fk-row" id="row-fil-weight-fk" data-target="row-weight-pk">
+                                        <span class="field-name">weight_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row fk-row" id="row-fil-col-fk" data-target="row-col-pk">
+                                        <span class="field-name">color_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">extruder_temp</span>
+                                        <span class="field-type">integer</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">bed_temp</span>
+                                        <span class="field-type">integer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="contributor-block">
-                        <h3>Quick links</h3>
-                        <div class="contributor-links">
-                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/tree/main/filaments" target="_blank" rel="noopener noreferrer">filaments/</a>
-                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/filaments.schema.json" target="_blank" rel="noopener noreferrer">Filament schema</a>
-                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/materials.schema.json" target="_blank" rel="noopener noreferrer">Material schema</a>
-                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/issues/new" target="_blank" rel="noopener noreferrer">Open issue</a>
-                            <a class="button" href="https://github.com/Icezaza2543/SpoolmanDB-Community/compare" target="_blank" rel="noopener noreferrer">New PR</a>
+                        <div class="schema-column right-column">
+                            <div class="db-table-card" id="tbl-diameters" data-table="diameters">
+                                <div class="db-table-header">DIAMETERS</div>
+                                <div class="db-table-rows">
+                                    <div class="db-table-row pk-row" id="row-dia-pk">
+                                        <span class="field-name">diameter_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">diameter</span>
+                                        <span class="field-type">float</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="db-table-card" id="tbl-colors" data-table="colors">
+                                <div class="db-table-header">COLORS</div>
+                                <div class="db-table-rows">
+                                    <div class="db-table-row pk-row" id="row-col-pk">
+                                        <span class="field-name">color_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">name</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">hex</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">finish</span>
+                                        <span class="field-type">enum</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">translucent</span>
+                                        <span class="field-type">boolean</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">glow</span>
+                                        <span class="field-type">boolean</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="db-table-card" id="tbl-weights" data-table="weights">
+                                <div class="db-table-header">WEIGHTS_SPOOLS</div>
+                                <div class="db-table-rows">
+                                    <div class="db-table-row pk-row" id="row-weight-pk">
+                                        <span class="field-name">weight_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">weight</span>
+                                        <span class="field-type">float</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">spool_weight</span>
+                                        <span class="field-type">float</span>
+                                    </div>
+                                    <div class="db-table-row fk-row" id="row-weight-spool-fk" data-target="row-spool-pk">
+                                        <span class="field-name">spool_type_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="schema-column lower-column">
+                            <div class="db-table-card" id="tbl-spools" data-table="spools">
+                                <div class="db-table-header">SPOOL_TYPES</div>
+                                <div class="db-table-rows">
+                                    <div class="db-table-row pk-row" id="row-spool-pk">
+                                        <span class="field-name">spool_type_id</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">type_name</span>
+                                        <span class="field-type">string</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="contributor-block source-finder">
-                        <h3>Source finder</h3>
-                        <p class="source-finder-note">Search loaded catalog data by manufacturer, then jump to GitHub code search. Source filenames are not guaranteed to match brand spelling.</p>
+            <section class="quality-dashboard" aria-labelledby="quality-title">
+                <div class="section-row">
+                    <h2 id="quality-title"><span class="material-symbols-outlined" aria-hidden="true">monitoring</span> Data Quality Health</h2>
+                    <div class="quality-toolbar">
                         <label>
-                            <span>Manufacturer</span>
-                            <input id="contributor-source-input" type="search"
-                                placeholder="Bambu, Polymaker, eSUN..." autocomplete="off">
+                            <span>Issue type</span>
+                            <select id="quality-filter">
+                                <option value="actionable">Actionable issues</option>
+                                <option value="all">All tracked signals</option>
+                                <option value="duplicate-id">Duplicate IDs</option>
+                                <option value="unknown-material">No material defaults</option>
+                                <option value="invalid-color">Invalid colors</option>
+                                <option value="missing-size">Missing size data</option>
+                                <option value="missing-temp">Missing temperatures</option>
+                                <option value="missing-product-id">Missing SKU/EAN</option>
+                                <option value="multicolor">Multi-color rows</option>
+                            </select>
                         </label>
-                        <ul id="contributor-source-results" class="source-results" aria-live="polite">
-                            <li class="source-empty">Type a manufacturer name to see matches.</li>
-                        </ul>
+                    </div>
+                </div>
+                <div class="quality-summary" id="quality-summary" aria-live="polite">
+                    <article class="stat-card">
+                        <span>Quality status</span>
+                        <strong>-</strong>
+                    </article>
+                </div>
+                <p class="results-meta quality-meta" id="quality-meta">Waiting for data...</p>
+
+                <div class="table-card compact-table-card">
+                    <div class="table-wrap">
+                        <table class="quality-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Severity</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Filament</th>
+                                    <th scope="col">Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody id="quality-issues-body">
+                                <tr>
+                                    <td colspan="4">Waiting for data...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="schema-viewer" aria-labelledby="source-schema-title">
+                <div class="section-row">
+                    <div>
+                        <h2 id="source-schema-title"><span class="material-symbols-outlined" aria-hidden="true">data_object</span> Filament Source Schema</h2>
+                        <p id="schema-status" class="muted">Loading schemas...</p>
+                    </div>
+                    <div class="schema-toolbar">
+                        <label>
+                            <span>Schema</span>
+                            <select id="schema-choice">
+                                <option value="filament">Filament source schema</option>
+                                <option value="material">Material defaults schema</option>
+                            </select>
+                        </label>
+                        <a class="button button-ghost" id="schema-open-link" href="filaments.schema.json" target="_blank" rel="noopener noreferrer">Open schema JSON</a>
+                        <button class="button button-primary" type="button" data-copy="#schema-copy-url">Copy URL</button>
+                        <code id="schema-copy-url" class="copy-source">filaments.schema.json</code>
+                    </div>
+                </div>
+
+                <div class="schema-summary" id="schema-summary" aria-live="polite">
+                    <article class="stat-card">
+                        <span>Root type</span>
+                        <strong>-</strong>
+                    </article>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-wrap">
+                        <table class="schema-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Path</th>
+                                    <th scope="col">Constraint</th>
+                                    <th scope="col">Validation rule</th>
+                                    <th scope="col">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="schema-fields-body">
+                                <tr>
+                                    <td colspan="4">Loading schema fields...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="page-section contribute-page" id="contribute" aria-labelledby="contribute-title">
+            <header class="contribute-hero">
+                <span class="hero-badge">Grow the Filament Registry</span>
+                <h1 id="contribute-title">Grow the Filament Registry</h1>
+                <p>SpoolmanDB thrives on technical precision and shared knowledge. Help thousands of makers by contributing accurate data for filament materials and brands.</p>
+            </header>
+
+            <section class="repo-cta">
+                <div class="github-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                        <path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Official Repository</h2>
+                    <p>Access the raw JSON database and start contributing through GitHub.</p>
+                </div>
+                <a class="button button-light" href="https://github.com/Icezaza2543/SpoolmanDB-Community" target="_blank" rel="noopener noreferrer">
+                    Open Repository
+                    <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+                </a>
+            </section>
+
+            <section class="contribution-timeline" aria-label="Contribution steps">
+                <article class="timeline-item">
+                    <span class="timeline-number">1</span>
+                    <div class="timeline-card">
+                        <h2>Pick the source file</h2>
+                        <p>Locate the relevant manufacturer file within the <code>filaments/</code> directory of the repository.</p>
+                        <div class="command-card">
+                            <div class="command-title">
+                                <span>Local Setup</span>
+                                <button class="icon-button icon-button-small" type="button" data-copy="#cmd-clone" aria-label="Copy local setup command">
+                                    <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+                                </button>
+                            </div>
+                            <pre><code id="cmd-clone">$ git clone https://github.com/Icezaza2543/SpoolmanDB-Community.git
+$ cd SpoolmanDB-Community</code></pre>
+                        </div>
                     </div>
                 </article>
-            </div>
+
+                <article class="timeline-item">
+                    <span class="timeline-number">2</span>
+                    <div class="timeline-card">
+                        <h2>Edit source JSON</h2>
+                        <p>Add or update filament entries in the relevant manufacturer JSON file. Follow the existing structure and provide accurate data.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-number">3</span>
+                    <div class="timeline-card">
+                        <h2>Validate locally</h2>
+                        <p>Use the local tools to compile and validate your changes against the official schemas before committing.</p>
+                        <div class="command-card">
+                            <div class="command-title">
+                                <span><span class="material-symbols-outlined" aria-hidden="true">terminal</span> Local commands</span>
+                            </div>
+                            <pre><code id="cmd-install"># Install dependencies
+$ pip install -r requirements-dev.txt</code></pre>
+                            <pre><code id="cmd-compile"># Run compiler
+$ python scripts/compile_filaments.py</code></pre>
+                            <pre><code id="cmd-filaments"># Validate schemas
+$ check-jsonschema --schemafile materials.schema.json materials.json
+$ check-jsonschema --schemafile filaments.schema.json filaments/*</code></pre>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-number">4</span>
+                    <div class="timeline-card">
+                        <h2>Open a PR</h2>
+                        <p>Submit your changes for review. Ensure your pull request follows the checklist below for a smooth approval process.</p>
+                        <div class="checklist-stack">
+                            <label><input type="checkbox"> <span><strong>Modify ONLY source files in filaments/</strong><small>Do not include the generated filaments.json in your commit.</small></span></label>
+                            <label><input type="checkbox"> <span><strong>One manufacturer per Pull Request</strong><small>This helps maintainers review and merge changes more efficiently.</small></span></label>
+                            <label><input type="checkbox"> <span><strong>Provide evidence (URLs/Photos)</strong><small>Link to manufacturer product pages or provide clear photos of spool labels.</small></span></label>
+                        </div>
+                        <a class="button button-primary submit-pr" href="https://github.com/Icezaza2543/SpoolmanDB-Community/compare" target="_blank" rel="noopener noreferrer">Submit Pull Request</a>
+                        <small class="review-time">Average review time: 24-48 hours</small>
+                    </div>
+                </article>
+            </section>
+
+            <section class="source-finder-panel">
+                <div class="callout-icon">
+                    <span class="material-symbols-outlined" aria-hidden="true">manage_search</span>
+                </div>
+                <div>
+                    <h2>Source finder</h2>
+                    <p>Need to find specific filament details? Search the loaded catalog by manufacturer and jump into repository code search.</p>
+                    <label class="source-search">
+                        <span>Manufacturer</span>
+                        <input id="contributor-source-input" type="search" placeholder="Bambu, Polymaker, eSUN..." autocomplete="off">
+                    </label>
+                    <ul id="contributor-source-results" class="source-results" aria-live="polite">
+                        <li class="source-empty">Type a manufacturer name to see matches.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="help-actions" aria-label="Help links">
+                <span>Need Help?</span>
+                <a class="button button-ghost" href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+                    <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
+                    Documentation
+                </a>
+                <a class="button button-ghost" href="https://github.com/Icezaza2543/SpoolmanDB-Community/issues/new" target="_blank" rel="noopener noreferrer">
+                    <span class="material-symbols-outlined" aria-hidden="true">forum</span>
+                    Open issue
+                </a>
+            </section>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>SpoolmanDB Community keeps the public JSON contract stable for Spoolman users.</p>
+        <div>
+            <strong>SpoolmanDB Community</strong>
+            <p>SpoolmanDB Community keeps the public JSON contract stable for Spoolman users.</p>
+        </div>
+        <div>
+            <a href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a href="https://github.com/Icezaza2543/SpoolmanDB-Community/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Terms</a>
+        </div>
     </footer>
 </body>
 
