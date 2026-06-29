@@ -530,7 +530,6 @@ main {
 
 .support-strip,
 .ecosystem-band,
-.feature-split,
 .insight-callout,
 .repo-cta,
 .source-finder-panel {
@@ -600,130 +599,6 @@ main {
     color: var(--primary-soft);
 }
 
-.feature-split {
-    margin: 0 calc(50% - 50vw);
-    padding: 94px max(28px, calc((100vw - var(--max-page)) / 2 + 28px));
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
-    display: grid;
-    grid-template-columns: minmax(320px, 1fr) minmax(320px, 0.95fr);
-    gap: 70px;
-    align-items: center;
-    background:
-        radial-gradient(circle at 32% 48%, rgba(245, 158, 11, 0.18), transparent 26%),
-        rgba(12, 12, 17, 0.9);
-}
-
-.maker-visual {
-    min-height: 360px;
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: 16px;
-    background:
-        linear-gradient(90deg, rgba(0, 0, 0, 0.25), transparent),
-        #14151a;
-    position: relative;
-    overflow: hidden;
-}
-
-.spool-wall {
-    position: absolute;
-    inset: 38px auto 38px 38px;
-    width: 56%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-}
-
-.spool-wall span {
-    min-height: 58px;
-    border-radius: 8px;
-    background:
-        repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0 4px, transparent 4px 10px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.04));
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
-}
-
-.signal-bars {
-    position: absolute;
-    right: 46px;
-    bottom: 80px;
-    height: 160px;
-    width: 140px;
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    opacity: 0.8;
-}
-
-.signal-bars i {
-    width: 14px;
-    border-radius: 8px 8px 0 0;
-    background: linear-gradient(180deg, #f8efe6, rgba(248, 239, 230, 0.08));
-}
-
-.signal-bars i:nth-child(1) { height: 36%; }
-.signal-bars i:nth-child(2) { height: 62%; }
-.signal-bars i:nth-child(3) { height: 48%; }
-.signal-bars i:nth-child(4) { height: 86%; }
-.signal-bars i:nth-child(5) { height: 58%; }
-.signal-bars i:nth-child(6) { height: 72%; }
-
-.accuracy-card {
-    position: absolute;
-    left: 44px;
-    bottom: 32px;
-    width: 220px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px 12px;
-    padding: 16px;
-    border: 1px solid rgba(255, 192, 106, 0.22);
-    border-radius: 16px;
-    background: rgba(30, 26, 23, 0.9);
-}
-
-.accuracy-card .material-symbols-outlined {
-    grid-row: span 2;
-    width: 48px;
-    height: 48px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: #ffc06a;
-    color: #2b1700;
-}
-
-.accuracy-card strong {
-    align-self: end;
-    font-family: "Instrument Sans", "Google Sans", system-ui, sans-serif;
-    font-size: 18px;
-}
-
-.accuracy-card small {
-    color: var(--text-secondary);
-}
-
-.feature-copy h2 {
-    margin-bottom: 28px;
-    font-size: 36px;
-}
-
-.feature-list {
-    list-style: none;
-    display: grid;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-}
-
-.feature-list li {
-    display: grid;
-    grid-template-columns: 44px 1fr;
-    gap: 18px;
-}
-
-.feature-list .material-symbols-outlined,
 .callout-icon {
     width: 44px;
     height: 44px;
@@ -732,14 +607,6 @@ main {
     border-radius: 50%;
     background: rgba(245, 158, 11, 0.12);
     color: var(--primary);
-}
-
-.feature-list strong {
-    font-size: 16px;
-}
-
-.feature-list p {
-    margin-bottom: 0;
 }
 
 .page-heading {
@@ -1543,7 +1410,6 @@ pre {
     }
 
     .split-heading,
-    .feature-split,
     .analytics-grid {
         grid-template-columns: 1fr;
     }
@@ -1666,34 +1532,6 @@ pre {
 
     .ecosystem-list {
         gap: 20px;
-    }
-
-    .feature-split {
-        padding-top: 64px;
-        padding-bottom: 64px;
-        gap: 34px;
-    }
-
-    .maker-visual {
-        min-height: 300px;
-    }
-
-    .spool-wall {
-        inset: 28px auto 28px 24px;
-        width: 60%;
-        gap: 8px;
-    }
-
-    .signal-bars {
-        right: 22px;
-        bottom: 80px;
-        width: 96px;
-    }
-
-    .accuracy-card {
-        left: 20px;
-        right: 20px;
-        width: auto;
     }
 
     .table-card {

@@ -610,15 +610,23 @@
     }
 
     function renderColorSpectrumChart(chart, metrics) {
-        const data = metrics.colorPoints.map(p => [
-            p.h, 
-            p.l, 
-            "#" + p.hex, 
-            p.count, 
-            p.brandsCount,
-            p.brands.join(", "),
-            p.materials.join(", ")
-        ]);
+        const data = metrics.colorPoints.map(p => {
+            const hex = "#" + p.hex;
+            return {
+                value: [
+                    p.h,
+                    p.l,
+                    hex,
+                    p.count,
+                    p.brandsCount,
+                    p.brands.join(", "),
+                    p.materials.join(", ")
+                ],
+                itemStyle: {
+                    color: hex
+                }
+            };
+        });
 
         const option = {
             backgroundColor: "transparent",
@@ -641,8 +649,10 @@
                 type: "value",
                 min: 0,
                 max: 360,
+                interval: 60,
                 splitLine: { show: false },
                 axisLabel: {
+                    hideOverlap: false,
                     formatter: function (value) {
                         if (value === 0 || value === 360) return "Red";
                         if (value === 60) return "Yellow";
@@ -668,13 +678,10 @@
                 type: "scatter",
                 data: data,
                 symbolSize: 8,
-                large: true,
+                large: false,
                 progressive: 500,
                 progressiveThreshold: 2000,
                 itemStyle: {
-                    color: function (params) {
-                        return params.value[2];
-                    },
                     borderColor: "rgba(255, 255, 255, 0.2)",
                     borderWidth: 1
                 }
