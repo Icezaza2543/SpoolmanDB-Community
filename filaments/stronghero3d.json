@@ -2,13 +2,17 @@
   "manufacturer": "Stronghero3D",
   "filaments": [
     {
-      "name": "Stronghero3D Silk PLA {color_name}",
+      "name": "Silk PLA {color_name}",
       "material": "PLA",
       "density": 1.24,
       "weights": [
         {
           "weight": 1000,
           "spool_weight": 250,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 200,
           "spool_type": "plastic"
         }
       ],
@@ -30,6 +34,786 @@
         {
           "name": "Copper",
           "hex": "B87333"
+        },
+        {
+          "name": "Gold Red",
+          "hexes": [
+            "ffd700",
+            "ff0000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Candy Silk Rainbow S3",
+          "hexes": [
+            "ff5e5b",
+            "ffc05e",
+            "5eae9f",
+            "8eff5e",
+            "c05eff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Silk Rainbow Candy",
+          "hexes": [
+            "ff6f91",
+            "ff9671",
+            "ffc75f",
+            "f9f871",
+            "4d807a",
+            "2c73d2"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Silk Rainbow Candy S2",
+          "hexes": [
+            "ff6f91",
+            "ff9671",
+            "ffc75f",
+            "d5cabd",
+            "845ec2"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Silk Silver Forge Black",
+          "hexes": [
+            "c0c0c0",
+            "1f1f1f"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Rainbow Silk",
+          "hexes": [
+            "ff0000",
+            "00ff00",
+            "0000ff",
+            "ffff00",
+            "ff00ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Gold Forge Red",
+          "hexes": [
+            "ffd700",
+            "8b0000"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Matte PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 205,
+      "bed_temp": 50,
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "Matte Palette",
+          "hexes": [
+            "2f4f4f",
+            "483d8b",
+            "708090",
+            "bc8f8f"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Matte Multicolor",
+          "hexes": [
+            "e6a8d7",
+            "a8d8ea",
+            "aaecd7",
+            "ffffd2"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Matte Rainbow Macaron",
+          "hexes": [
+            "ffb7b2",
+            "ffdac1",
+            "e2f0cb",
+            "b5ead7",
+            "c7ceea"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Wood PLA {color_name}",
+      "material": "PLA",
+      "density": 1.28,
+      "fill": "wood",
+      "weights": [
+        {
+          "weight": 1350,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 200,
+      "bed_temp": 50,
+      "colors": [
+        {
+          "name": "Forest Wood",
+          "hex": "8a5a36"
+        },
+        {
+          "name": "WoodSculpt",
+          "hex": "d2b48c"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Stone PLA {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1350,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 205,
+      "bed_temp": 50,
+      "pattern": "marble",
+      "colors": [
+        {
+          "name": "RockStone",
+          "hex": "7a7a7a"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Glow in the Dark PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "glow": true,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 50,
+      "colors": [
+        {
+          "name": "Glow Green Blue",
+          "hexes": [
+            "e0ffe0",
+            "e0ffff"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 1350,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 50,
+      "colors": [
+        {
+          "name": "Midnight Shimmer Purple",
+          "hex": "3a1f5d",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Black Silver",
+          "hexes": [
+            "1a1a1a",
+            "c0c0c0"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Golden Fire",
+          "hexes": [
+            "ffd700",
+            "ff4500"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Chameleon Mirror Chrome",
+          "hexes": [
+            "00ffff",
+            "8a2be2"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Chameleon Chrome Blue Purple",
+          "hexes": [
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silver Blue",
+          "hexes": [
+            "c0c0c0",
+            "0000ff"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Rainbow Galaxy Starly",
+          "hexes": [
+            "ff0000",
+            "ffff00",
+            "0000ff",
+            "ff00ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Winter Blue",
+          "hexes": [
+            "d4f1f9",
+            "a5ddf0",
+            "ffffff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Beige Skin",
+          "hex": "f5d0a9"
+        },
+        {
+          "name": "bro_rm",
+          "hex": "8b5a2b"
+        },
+        {
+          "name": "Summer Colors",
+          "hexes": [
+            "ff8c00",
+            "ffd700",
+            "ff1493"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Autumn Colors",
+          "hexes": [
+            "d2691e",
+            "8b4513",
+            "ff8c00",
+            "b22222"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Highspeed Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Coreshell Shadow Red",
+          "hexes": [
+            "ff0000",
+            "300000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Co-Gold Red",
+          "hexes": [
+            "ffd700",
+            "ff0000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Quick Rainbow",
+          "hexes": [
+            "ff0000",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "ff00ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Fireworks Rainbow",
+          "hexes": [
+            "ff0055",
+            "00ff66",
+            "0066ff",
+            "ffff00"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rainbow Ex31",
+          "hexes": [
+            "ff7f50",
+            "ffd700",
+            "98fb98",
+            "87cefa"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Colds Vibrant Gradient",
+          "hexes": [
+            "40e0d0",
+            "48d1cc",
+            "00ced1",
+            "1e90ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Ribbon Red Yellow Blue",
+          "hexes": [
+            "ff0000",
+            "ffff00",
+            "0000ff"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Rainbow EX51",
+          "hexes": [
+            "ff4500",
+            "ffd700",
+            "00ff7f",
+            "00bfff",
+            "ba55d3"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red Black Purple Multi Color",
+          "hexes": [
+            "ff0000",
+            "000000",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Dark Red Ruby Red",
+          "hexes": [
+            "8b0000",
+            "e0115f"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Sunset Red Orange Yellow",
+          "hexes": [
+            "ff0000",
+            "ff8c00",
+            "ffd700"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rainbow Green Blue Purple Pink",
+          "hexes": [
+            "00ff00",
+            "0000ff",
+            "800080",
+            "ffc0cb"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Rainbow Multi Color",
+          "hexes": [
+            "ff0000",
+            "00ff00",
+            "0000ff",
+            "ffff00"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Green-Black",
+          "hexes": [
+            "00ff00",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red-Black",
+          "hexes": [
+            "ff0000",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Rainbow Chameleon Galaxy",
+          "hexes": [
+            "00ffff",
+            "8a2be2",
+            "ff00ff"
+          ],
+          "multi_color_direction": "longitudinal",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Shadow Red",
+          "hexes": [
+            "ff0000",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Black Rose",
+          "hexes": [
+            "1a1a1a",
+            "c71585"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Black-Red-Gold N3",
+          "hexes": [
+            "000000",
+            "ff0000",
+            "ffd700"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red-Black-Purple",
+          "hexes": [
+            "ff0000",
+            "000000",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red-Gold-Green",
+          "hexes": [
+            "ff0000",
+            "ffd700",
+            "00ff00"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red Blue Purple N3",
+          "hexes": [
+            "ff0000",
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Silver-Black",
+          "hexes": [
+            "c0c0c0",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Soft Pinkish Pastel Yellow",
+          "hexes": [
+            "ffc0cb",
+            "fffaa0"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Black Blue Purple",
+          "hexes": [
+            "000000",
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Blue Green",
+          "hexes": [
+            "0000ff",
+            "00ff00"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 1350,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "bed_temp": 80,
+      "colors": [
+        {
+          "name": "Dragon Blood Red",
+          "hex": "8b0000"
+        },
+        {
+          "name": "High Speed Silk Rainbow",
+          "hexes": [
+            "ff0000",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "ff00ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Enchanting Night Purple",
+          "hex": "4b0082"
+        },
+        {
+          "name": "Agate Crystal",
+          "hex": "e0eeee",
+          "translucent": true
+        },
+        {
+          "name": "Chameleon",
+          "hexes": [
+            "00ff00",
+            "ff00ff"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "IceSnow Blue",
+          "hex": "e0ffff",
+          "translucent": true
+        },
+        {
+          "name": "Crimson Rainbow",
+          "hexes": [
+            "dc143c",
+            "ff4500",
+            "ff8c00",
+            "ffff00"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Shadowred",
+          "hexes": [
+            "ff0000",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Purple Gradient",
+          "hexes": [
+            "e6e6fa",
+            "da70d6",
+            "ba55d3",
+            "8a2be2"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Blue Gradient",
+          "hexes": [
+            "e0ffff",
+            "87cefa",
+            "1e90ff",
+            "00008b"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Venom Green",
+          "hexes": [
+            "00ff00",
+            "006400"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "High Speed Green Blue",
+          "hexes": [
+            "00ff00",
+            "0000ff"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Translucent Rainbow",
+          "hexes": [
+            "ffc0cb",
+            "ffe4b5",
+            "e0ffff",
+            "d8bfd8"
+          ],
+          "multi_color_direction": "longitudinal",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Rainbow Gem",
+          "hexes": [
+            "e0b0ff",
+            "98ff98",
+            "ffd700",
+            "ff7f50"
+          ],
+          "multi_color_direction": "longitudinal",
+          "translucent": true
+        },
+        {
+          "name": "Blue Purple",
+          "hexes": [
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Emerald Crystal",
+          "hex": "50c878",
+          "translucent": true
+        },
+        {
+          "name": "Purple Blue Multi Color",
+          "hexes": [
+            "800080",
+            "0000ff"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "High Speed Purple Blue Green",
+          "hexes": [
+            "800080",
+            "0000ff",
+            "00ff00"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red Black",
+          "hexes": [
+            "ff0000",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 100,
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hexes": [
+            "ff0000",
+            "ffff00",
+            "00ff00",
+            "0000ff",
+            "ff00ff"
+          ],
+          "multi_color_direction": "longitudinal"
         }
       ],
       "country_of_origin": "CN"
