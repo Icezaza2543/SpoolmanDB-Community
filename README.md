@@ -58,11 +58,11 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 
 | Source | Count |
 | --- | ---: |
-| Manufacturer source files | 434 |
-| Material definitions | 49 |
-| Source filament objects | 4,626 |
-| Color entries | 28,586 |
-| Compiled filament variants | 50,342 |
+| Manufacturer source files | 441 |
+| Material definitions | 151 |
+| Source filament objects | 4,649 |
+| Color entries | 28,676 |
+| Compiled filament variants | 50,542 |
 
 Counts are generated from the current repository state. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
 
