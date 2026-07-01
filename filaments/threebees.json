@@ -40,6 +40,11 @@
           "translucent": true
         },
         {
+          "name": "Clear Neon Pink",
+          "hex": "FF6EC7",
+          "translucent": true
+        },
+        {
           "name": "Deep Blue",
           "hex": "00008B"
         },
@@ -108,6 +113,10 @@
           "hex": "FFC0CB"
         },
         {
+          "name": "Pink Milk",
+          "hex": "F4C2C2"
+        },
+        {
           "name": "Purple",
           "hex": "800080"
         },
@@ -145,7 +154,7 @@
           "hex": "FFFF00"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     },
     {
       "name": "BOND {color_name}",
@@ -176,7 +185,7 @@
           "hex": "FFFFFF"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     },
     {
       "name": "W {color_name}",
@@ -235,7 +244,7 @@
           "hex": "FFD300"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     },
     {
       "name": "{color_name}",
@@ -523,7 +532,30 @@
           "hex": "FFD300"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
+    },
+    {
+      "name": "LIGNIN {color_name}",
+      "material": "PETG",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 238,
+      "bed_temp": 85,
+      "colors": [
+        {
+          "name": "Lignin",
+          "hex": "3B2416"
+        }
+      ],
+      "country_of_origin": "Thailand"
     },
     {
       "name": "High Flow {color_name}",
@@ -626,7 +658,7 @@
           "hex": "FFFFFF"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     },
     {
       "name": "{color_name}",
@@ -769,7 +801,7 @@
           "hex": "FFD300"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     },
     {
       "name": "High Temp {color_name}",
@@ -908,7 +940,7 @@
           "hex": "FFD300"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     },
     {
       "name": "M2 {color_name}",
@@ -935,7 +967,48 @@
           "hex": "FFFFFF"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        }
+      ],
+      "country_of_origin": "Thailand"
     },
     {
       "name": "{color_name}",
@@ -970,7 +1043,7 @@
           "hex": "F1C27D"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     },
     {
       "name": "{color_name}",
@@ -1001,7 +1074,7 @@
           "hex": "F1C27D"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     },
     {
       "name": "{color_name}",
@@ -1028,7 +1101,7 @@
           "hex": "FFFFFF"
         }
       ],
-      "country_of_origin": "GR"
+      "country_of_origin": "Thailand"
     }
   ]
 }
