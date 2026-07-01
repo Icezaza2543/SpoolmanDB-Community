@@ -189,7 +189,10 @@
         1.75
       ],
       "extruder_temp": 220,
-      "bed_temp": 0,
+      "bed_temp_range": [
+        0,
+        0
+      ],
       "finish": "glossy",
       "colors": [
         {
@@ -1611,7 +1614,11 @@
         }
       ],
       "country_of_origin": "US",
-      "extruder_temp": 60
+      "extruder_temp": 60,
+      "bed_temp_range": [
+        0,
+        0
+      ]
     },
     {
       "name": "PEEK {color_name}",

@@ -2560,7 +2560,15 @@
           "hex": "FADCA4"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "extruder_temp_range": [
+        350,
+        380
+      ],
+      "bed_temp_range": [
+        140,
+        160
+      ]
     },
     {
       "name": "PVA {color_name}",

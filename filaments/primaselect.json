@@ -1231,6 +1231,7 @@
         180,
         210
       ],
+      "bed_temp": 60,
       "country_of_origin": "SE"
     },
     {
@@ -1416,6 +1417,7 @@
         210,
         230
       ],
+      "bed_temp": 60,
       "country_of_origin": "SE"
     },
     {
@@ -1543,6 +1545,10 @@
       "extruder_temp_range": [
         210,
         230
+      ],
+      "bed_temp_range": [
+        40,
+        60
       ],
       "country_of_origin": "SE"
     },

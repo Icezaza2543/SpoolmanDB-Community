@@ -176,7 +176,10 @@
         1.75
       ],
       "extruder_temp": 220,
-      "bed_temp": 0,
+      "bed_temp_range": [
+        0,
+        0
+      ],
       "finish": "glossy",
       "colors": [
         {
