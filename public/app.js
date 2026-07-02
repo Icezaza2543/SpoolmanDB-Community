@@ -8,6 +8,12 @@
     const SOURCE_FINDER_LIMIT = 8;
     const SERVED_FROM_PUBLIC_DIR = window.location.pathname.split("/").includes("public");
     const resourcePath = (file) => SERVED_FROM_PUBLIC_DIR ? "../" + file : file;
+    const displayNameApi = window.SpoolmanDisplayName || {
+        getDisplayName: function (item) {
+            return item && item.name ? item.name : "";
+        },
+    };
+
     const SCHEMA_CONFIG = {
         filament: {
             title: "Filament source schema",
@@ -1040,7 +1046,11 @@
         const nameCell = document.createElement("td");
         const name = document.createElement("div");
         name.className = "filament-name";
-        name.textContent = item.name || "Unnamed filament";
+        const displayName = filamentDisplayName(item);
+        name.textContent = displayName;
+        if (item.name && displayName !== item.name) {
+            name.title = "Product name: " + item.name;
+        }
         const id = document.createElement("div");
         id.className = "muted";
         id.textContent = item.id || "";
@@ -1115,6 +1125,11 @@
         td.textContent = message;
         row.appendChild(td);
         return row;
+    }
+
+    function filamentDisplayName(item) {
+        const displayName = displayNameApi.getDisplayName(item);
+        return displayName || "Unnamed filament";
     }
 
     function searchText(item) {
