@@ -12,6 +12,9 @@
         getDisplayName: function (item) {
             return item && item.name ? item.name : "";
         },
+        buildFilamentSearchText: function (item) {
+            return item && item.name ? String(item.name).toLowerCase() : "";
+        },
     };
 
     const SCHEMA_CONFIG = {
@@ -1133,20 +1136,7 @@
     }
 
     function searchText(item) {
-        return [
-            item.id,
-            item.manufacturer,
-            item.name,
-            item.material,
-            item.color_hex,
-            ...(Array.isArray(item.color_hexes) ? item.color_hexes : []),
-            ...(Array.isArray(item.codes) ? item.codes : []),
-            ...(Array.isArray(item.eans) ? item.eans : []),
-            ...(Array.isArray(item.eans_refill) ? item.eans_refill : []),
-        ]
-            .filter(Boolean)
-            .join(" ")
-            .toLowerCase();
+        return displayNameApi.buildFilamentSearchText(item);
     }
 
     function describeFilters(query, material, manufacturer, diameter, spool) {
