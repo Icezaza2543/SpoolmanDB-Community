@@ -128,8 +128,8 @@ The source files in `filaments/` are intentionally compact. Deployment expands t
 
 | Field | Required | Notes |
 | --- | --- | --- |
-| `name` | yes | Product name. Usually contains `{color_name}` so each color expands into a readable compiled name. |
-| `material` | yes | Material name, such as `PLA`, `PETG`, `ABS`, `TPU-95A`, or schema-supported composites. |
+| `name` | yes | Product or product-line name. Usually contains `{color_name}` so each color expands into a readable compiled name. Follow manufacturer naming; do not add `material` here unless it is part of the official product name. |
+| `material` | yes | Authoritative material code, such as `PLA`, `PETG`, `ABS`, `TPU-95A`, or schema-supported composites. |
 | `density` | yes | Material density in g/cm3. |
 | `weights` | yes | Array of `weight`, optional `spool_weight`, and optional `spool_type`. |
 | `diameters` | yes | Filament diameters in mm, commonly `1.75` or `2.85`. |
@@ -148,6 +148,14 @@ The source files in `filaments/` are intentionally compact. Deployment expands t
 | `tds_url` | optional | Technical Data Sheet URL. |
 
 Color entries can override `finish`, `multi_color_direction`, `pattern`, `translucent`, and `glow` when a specific color differs from the product default. They can also include `codes`, `eans`, and `eans_refill` arrays for manufacturer SKUs and spooled/refill EAN or GTIN barcodes.
+
+### Display names and upstream compatibility
+
+Compiled `name` values stay upstream-compatible with [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB): the compiler expands the source template and color only. `material` remains a separate field.
+
+The Community Explorer may compose `material + name` for display and search when the product name does not already contain the material as its own token. For example, `name: "Plus BLACK"` with `material: "ABS"` is stored as-is in `filaments.json`, while Explorer shows `ABS Plus BLACK`.
+
+`python scripts/validate.py` prints non-blocking `WARN display-name` hints for ambiguous templates. Use `--strict-display-names` only when you want that check to fail validation.
 
 </details>
 

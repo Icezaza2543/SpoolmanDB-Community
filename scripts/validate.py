@@ -1,6 +1,11 @@
+import argparse
 import sys
 import json
 from pathlib import Path
+
+ROOT = Path(__file__).parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 try:
     import jsonschema
@@ -8,6 +13,9 @@ except ImportError:
     print("ERROR: 'jsonschema' package not found.")
     print("Please install it by running: pip install jsonschema")
     sys.exit(1)
+
+from scripts.display_name import collect_ambiguous_display_name_warnings
+
 
 def validate_json(schema_path: Path, data_path: Path) -> bool:
     try:
@@ -40,12 +48,36 @@ def validate_directory(schema_path: Path, dir_path: Path) -> bool:
             
     return all_valid
 
+def report_display_name_warnings(filaments_dir: Path, *, strict: bool) -> bool:
+    warnings = collect_ambiguous_display_name_warnings(filaments_dir)
+    if not warnings:
+        print("✓ No ambiguous display-name templates detected.")
+        return True
+
+    print(f"\nDisplay-name warnings ({len(warnings)}):")
+    for warning in warnings:
+        print(warning)
+
+    if strict:
+        print("\nERROR: --strict-display-names enabled and ambiguous templates were found.")
+        return False
+
+    print("\nDisplay-name warnings are informational only and do not fail validation by default.")
+    return True
+
 def main():
-    root = Path(__file__).parent.parent
-    materials_schema = root / "materials.schema.json"
-    materials_data = root / "materials.json"
-    filaments_schema = root / "filaments.schema.json"
-    filaments_dir = root / "filaments"
+    parser = argparse.ArgumentParser(description="Validate SpoolmanDB Community data files.")
+    parser.add_argument(
+        "--strict-display-names",
+        action="store_true",
+        help="Fail validation when source templates compile to names without a material token.",
+    )
+    args = parser.parse_args()
+
+    materials_schema = ROOT / "materials.schema.json"
+    materials_data = ROOT / "materials.json"
+    filaments_schema = ROOT / "filaments.schema.json"
+    filaments_dir = ROOT / "filaments"
     
     success = True
     
@@ -60,9 +92,12 @@ def main():
         print("✓ All filaments are valid.")
     else:
         success = False
+
+    if not report_display_name_warnings(filaments_dir, strict=args.strict_display_names):
+        success = False
         
-    compiled_data = root / "filaments.json"
-    compiled_schema = root / "filaments.compiled.schema.json"
+    compiled_data = ROOT / "filaments.json"
+    compiled_schema = ROOT / "filaments.compiled.schema.json"
     if compiled_data.exists():
         print("\nValidating compiled filaments.json...")
         if validate_json(compiled_schema, compiled_data):

@@ -1264,6 +1264,7 @@
             missingTemps: 0,
             missingProductIds: 0,
             multicolor: 0,
+            displayName: 0,
             tempCoverage: 0,
             productIdCoverage: 0,
         };
@@ -1298,6 +1299,13 @@
             if (Array.isArray(item.color_hexes) && item.color_hexes.length > 0) {
                 addQualityIssue(item, "multicolor", "Multi-color row. Verify color order and direction from source evidence.");
             }
+            if (item.name && filamentDisplayName(item) !== item.name) {
+                addQualityIssue(
+                    item,
+                    "display-name",
+                    'Explorer will display "' + filamentDisplayName(item) + '" from product name "' + item.name + '".'
+                );
+            }
         });
 
         state.qualityIssues.forEach(function (issue) {
@@ -1318,6 +1326,8 @@
                     metrics.missingProductIds += 1;
                 } else if (issue.category === "multicolor") {
                     metrics.multicolor += 1;
+                } else if (issue.category === "display-name") {
+                    metrics.displayName += 1;
                 }
             }
         });
@@ -1365,6 +1375,7 @@
             ["Temp coverage", metrics.tempCoverage, "Extruder and bed data"],
             ["Rows with SKU/EAN", metrics.productIdCoverage, "Product ID coverage"],
             ["Multi-color rows", formatNumber(metrics.multicolor), "Informational review signal"],
+            ["Display-name hints", formatNumber(metrics.displayName), "Explorer composes material + name"],
         ];
 
         elements.qualitySummary.replaceChildren(renderMetricCards(cards));
@@ -1473,6 +1484,7 @@
             "missing-temp": "Missing temperatures",
             "missing-product-id": "Missing SKU/EAN",
             multicolor: "Multi-color row",
+            "display-name": "Display-name hint",
         };
         return labels[category] || category;
     }
