@@ -14,13 +14,110 @@
       "diameters": [
         1.75
       ],
-      "extruder_temp": 210,
-      "bed_temp": 50,
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
       "country_of_origin": "China",
       "colors": [
         {
-          "name": "Assorted Colors (Shopee listing)",
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
           "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        65,
+        90
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Transparent",
+          "hex": "FFFFFF",
+          "translucent": true
         }
       ]
     },
@@ -48,8 +145,49 @@
       "country_of_origin": "China",
       "colors": [
         {
-          "name": "Assorted Colors (Shopee listing)",
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
           "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "China",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
         }
       ]
     },
@@ -77,8 +215,12 @@
       "country_of_origin": "China",
       "colors": [
         {
-          "name": "Assorted Colors (Shopee listing)",
-          "hex": "808080"
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
         }
       ]
     }
