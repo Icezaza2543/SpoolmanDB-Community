@@ -1,5 +1,9 @@
 const assert = require("assert");
-const { materialAppearsInName, getDisplayName } = require("../public/display-name.js");
+const {
+    materialAppearsInName,
+    getDisplayName,
+    buildFilamentSearchText,
+} = require("../public/display-name.js");
 
 function test(name, fn) {
     try {
@@ -42,6 +46,45 @@ test("getDisplayName does not treat ePLA as standalone PLA", function () {
         getDisplayName({ name: "ePLA Matte BLACK", material: "PLA" }),
         "PLA ePLA Matte BLACK"
     );
+});
+
+test("buildFilamentSearchText includes composite display names", function () {
+    const item = {
+        id: "azurefilm_abs_plusblack_1000_175_p",
+        manufacturer: "AzureFilm",
+        name: "Plus BLACK",
+        material: "ABS",
+        color_hex: "000000",
+    };
+    const searchText = buildFilamentSearchText(item);
+
+    assert.ok(searchText.includes("plus black"));
+    assert.ok(searchText.includes("abs plus black"));
+    assert.ok(searchText.includes("abs"));
+});
+
+test("buildFilamentSearchText keeps names that already include material", function () {
+    const item = {
+        manufacturer: "Example",
+        name: "ABS Prime White",
+        material: "ABS",
+    };
+    const searchText = buildFilamentSearchText(item);
+
+    assert.ok(searchText.includes("abs prime white"));
+    assert.strictEqual((searchText.match(/abs prime white/g) || []).length, 2);
+});
+
+test("buildFilamentSearchText does not treat ePLA as standalone PLA", function () {
+    const item = {
+        manufacturer: "Example",
+        name: "ePLA Matte BLACK",
+        material: "PLA",
+    };
+    const searchText = buildFilamentSearchText(item);
+
+    assert.ok(searchText.includes("epla matte black"));
+    assert.ok(searchText.includes("pla epla matte black"));
 });
 
 console.log("display-name tests passed");

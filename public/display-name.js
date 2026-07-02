@@ -31,9 +31,32 @@
         return material + " " + name;
     }
 
+    function buildFilamentSearchText(item) {
+        if (!item) {
+            return "";
+        }
+
+        return [
+            item.id,
+            item.manufacturer,
+            item.name,
+            getDisplayName(item),
+            item.material,
+            item.color_hex,
+            ...(Array.isArray(item.color_hexes) ? item.color_hexes : []),
+            ...(Array.isArray(item.codes) ? item.codes : []),
+            ...(Array.isArray(item.eans) ? item.eans : []),
+            ...(Array.isArray(item.eans_refill) ? item.eans_refill : []),
+        ]
+            .filter(Boolean)
+            .join(" ")
+            .toLowerCase();
+    }
+
     const api = {
         materialAppearsInName,
         getDisplayName,
+        buildFilamentSearchText,
     };
 
     global.SpoolmanDisplayName = api;
