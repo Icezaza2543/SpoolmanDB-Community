@@ -14,42 +14,59 @@
       "diameters": [
         1.75
       ],
-      "extruder_temp": 210,
-      "bed_temp": 50,
-      "country_of_origin": "Thailand",
-      "colors": [
-        {
-          "name": "Assorted Colors (Shopee listing)",
-          "hex": "808080"
-        }
-      ]
-    },
-    {
-      "name": "ABS {color_name}",
-      "material": "ABS",
-      "density": 1.04,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "unknow"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
       "extruder_temp_range": [
-        230,
-        260
+        190,
+        210
       ],
       "bed_temp_range": [
-        100,
-        110
+        0,
+        60
       ],
       "country_of_origin": "Thailand",
       "colors": [
         {
-          "name": "Assorted Colors (Shopee listing)",
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Gray",
           "hex": "808080"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF7800"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Brown",
+          "hex": "8B4513"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Gold",
+          "hex": "D4AF37"
         }
       ]
     },
@@ -68,17 +85,169 @@
       ],
       "extruder_temp_range": [
         220,
-        260
+        250
       ],
       "bed_temp_range": [
-        65,
-        90
+        60,
+        80
       ],
       "country_of_origin": "Thailand",
       "colors": [
         {
-          "name": "Assorted Colors (Shopee listing)",
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Gray",
           "hex": "808080"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF7800"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Brown",
+          "hex": "8B4513"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Gold",
+          "hex": "D4AF37"
+        },
+        {
+          "name": "Transparent",
+          "hex": "FFFFFF",
+          "translucent": true
+        },
+        {
+          "name": "Fluo Green",
+          "hex": "39FF14"
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp": 110,
+      "country_of_origin": "Thailand",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Brown",
+          "hex": "8B4513"
+        }
+      ]
+    },
+    {
+      "name": "TPU 95A {color_name}",
+      "material": "TPU-95A",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ],
+      "country_of_origin": "Thailand",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF7800"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
         }
       ]
     }
