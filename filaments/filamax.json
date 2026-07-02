@@ -2,6 +2,197 @@
   "manufacturer": "Filamax",
   "filaments": [
     {
+      "name": "PLA+ Basic Color {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Thailand",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Silk Color {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "glossy",
+      "country_of_origin": "Thailand",
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "D4AF37",
+          "finish": "glossy"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0",
+          "finish": "glossy"
+        },
+        {
+          "name": "Copper",
+          "hex": "B87333",
+          "finish": "glossy"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF",
+          "finish": "glossy"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000",
+          "finish": "glossy"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        65,
+        90
+      ],
+      "country_of_origin": "Thailand",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Transparent",
+          "hex": "FFFFFF",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "PETG+ Premium {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        65,
+        90
+      ],
+      "country_of_origin": "Thailand",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
       "name": "ABS {color_name}",
       "material": "ABS",
       "density": 1.04,
@@ -22,9 +213,18 @@
         100,
         110
       ],
+      "country_of_origin": "Thailand",
       "colors": [
         {
-          "name": "Assorted Colors (Shopee listing)",
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
           "hex": "808080"
         }
       ]
@@ -50,10 +250,23 @@
         40,
         60
       ],
+      "country_of_origin": "Thailand",
       "colors": [
         {
-          "name": "Assorted Basic Colors (Shopee listing)",
-          "hex": "808080"
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
         }
       ]
     }
