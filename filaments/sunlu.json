@@ -641,7 +641,13 @@
         },
         {
           "name": "Mint",
-          "hex": "40aa98"
+          "hex": "40aa98",
+          "codes": [
+            "DLZ-AU-SL-HSMPETG-MG-1KG",
+            "DLZ-CA-SL-HSMPETG-MG-1KG",
+            "DLZ-EU-SL-HSMPETG-MG-1KG",
+            "DLZ-US-SL-HSMPETG-MG-1KG"
+          ]
         },
         {
           "name": "Sky Blue",
@@ -1153,7 +1159,13 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "DLZ-AU-SL-ABSFR-BK-1KG",
+            "DLZ-CA-SL-ABSFR-BK-1KG",
+            "DLZ-EU-SL-ABSFR-BK-1KG",
+            "DLZ-US-SL-ABSFR-BK-1KG"
+          ]
         },
         {
           "name": "Natural",
@@ -1293,11 +1305,23 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "DLZ-AU-SL-PCABS-BK-1KG",
+            "DLZ-CA-SL-PCABS-BK-1KG",
+            "DLZ-EU-SL-PCABS-BK-1KG",
+            "DLZ-US-SL-PCABS-BK-1KG"
+          ]
         },
         {
           "name": "White",
-          "hex": "FFFFFF"
+          "hex": "FFFFFF",
+          "codes": [
+            "DLZ-AU-SL-PCABS-WT-1KG",
+            "DLZ-CA-SL-PCABS-WT-1KG",
+            "DLZ-EU-SL-PCABS-WT-1KG",
+            "DLZ-US-SL-PCABS-WT-1KG"
+          ]
         }
       ],
       "country_of_origin": "US",
@@ -1451,7 +1475,13 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "DLZ-AU-SL-PA12CF-BK-1KG",
+            "DLZ-CA-SL-PA12CF-BK-1KG",
+            "DLZ-EU-SL-PA12CF-BK-1KG",
+            "DLZ-US-SL-PA12CF-BK-1KG"
+          ]
         }
       ],
       "country_of_origin": "US",
@@ -1501,11 +1531,20 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "DLZ-AU-SL-EPA-BK-1KG",
+            "DLZ-CA-SL-EPA-BK-1KG",
+            "DLZ-EU-SL-EPA-BK-1KG",
+            "DLZ-US-SL-EPA-BK-1KG"
+          ]
         },
         {
           "name": "Natural",
-          "hex": "F2EBDD"
+          "hex": "F2EBDD",
+          "codes": [
+            "DLZ-EU-SL-EPA-BS-1KG"
+          ]
         }
       ],
       "extruder_temp_range": [
@@ -1561,7 +1600,13 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "DLZ-AU-SL-PA6CF-BK-1KG",
+            "DLZ-CA-SL-PA6CF-BK-1KG",
+            "DLZ-EU-SL-PA6CF-BK-1KG",
+            "DLZ-US-SL-PA6CF-BK-1KG"
+          ]
         }
       ],
       "extruder_temp_range": [
@@ -1617,11 +1662,23 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "DLZ-AU-SL-PA6GF-BK-1KG",
+            "DLZ-CA-SL-PA6GF-BK-1KG",
+            "DLZ-EU-SL-PA6GF-BK-1KG",
+            "DLZ-US-SL-PA6GF-BK-1KG"
+          ]
         },
         {
           "name": "Grey",
-          "hex": "808080"
+          "hex": "808080",
+          "codes": [
+            "DLZ-AU-SL-PA6GF-GY-1KG",
+            "DLZ-CA-SL-PA6GF-GY-1KG",
+            "DLZ-EU-SL-PA6GF-GY-1KG",
+            "DLZ-US-SL-PA6GF-GY-1KG"
+          ]
         }
       ],
       "country_of_origin": "US",
@@ -1810,7 +1867,12 @@
       "colors": [
         {
           "name": "Natural",
-          "hex": "F2EBDD"
+          "hex": "F2EBDD",
+          "codes": [
+            "DLZ-AU-SL-PEEK-BS-1KG",
+            "DLZ-CA-SL-PEEK-BS-1KG",
+            "DLZ-US-SL-PEEK-BS-1KG"
+          ]
         }
       ],
       "country_of_origin": "US",
@@ -2078,10 +2140,11 @@
           "name": "Klein Blue",
           "hex": "282099",
           "codes": [
-            "DLZ-US-SL-PETG-BL-1KG",
-            "DLZ-EU-SL-PETG-KB-1KG",
             "DLZ-AU-SL-PETG-BL-1KG",
-            "DLZ-CA-SL-PETG-KB-1KG"
+            "DLZ-CA-SL-PETG-BL-1KG",
+            "DLZ-CA-SL-PETG-KB-1KG",
+            "DLZ-EU-SL-PETG-KB-1KG",
+            "DLZ-US-SL-PETG-BL-1KG"
           ]
         },
         {
@@ -2162,9 +2225,10 @@
           "name": "Red",
           "hex": "F61F1F",
           "codes": [
-            "DLZ-US-SL-PETG-RD-1KG",
+            "DLZ-AU-SL-PETG-RD-1KG",
+            "DLZ-CA-SL-PETG-RD-1KG",
             "DLZ-EU-SL-PETG-RD-1KG",
-            "DLZ-AU-SL-PETG-RD-1KG"
+            "DLZ-US-SL-PETG-RD-1KG"
           ]
         },
         {
@@ -3290,6 +3354,8 @@
           "name": "Blue Grey",
           "hex": "4F7BBB",
           "codes": [
+            "DLZ-AU-SL-PLA-BG-1KG",
+            "DLZ-CA-SL-PLA-BG-1KG",
             "DLZ-EU-SL-PLA-BG-1KG"
           ]
         },
@@ -3297,9 +3363,10 @@
           "name": "Bone White",
           "hex": "FFFFFF",
           "codes": [
-            "DLZ-US-SL-PLA-BWT-1KG",
+            "DLZ-AU-SL-PLA-BWT-1KG",
+            "DLZ-CA-SL-PLA-BWT-1KG",
             "DLZ-EU-SL-PLA-BWT-1KG",
-            "DLZ-AU-SL-PLA-BWT-1KG"
+            "DLZ-US-SL-PLA-BWT-1KG"
           ]
         },
         {
@@ -3314,8 +3381,10 @@
           "name": "Ceramic White",
           "hex": "F4F9FF",
           "codes": [
-            "DLZ-US-SL-PLA-CM-1KG",
-            "DLZ-EU-SL-PLA-CM-1KG"
+            "DLZ-AU-SL-PLA-CM-1KG",
+            "DLZ-CA-SL-PLA-CM-1KG",
+            "DLZ-EU-SL-PLA-CM-1KG",
+            "DLZ-US-SL-PLA-CM-1KG"
           ]
         },
         {
@@ -3337,25 +3406,30 @@
           "name": "Coffee-Brown(Coffee)",
           "hex": "9A5630",
           "codes": [
-            "DLZ-US-SL-PLA-CBN-1KG",
-            "DLZ-EU-SL-PLA-CBN-1KG"
+            "DLZ-AU-SL-PLA-CBN-1KG",
+            "DLZ-CA-SL-PLA-CBN-1KG",
+            "DLZ-EU-SL-PLA-CBN-1KG",
+            "DLZ-US-SL-PLA-CBN-1KG"
           ]
         },
         {
           "name": "Cyan",
           "hex": "65FDFD",
           "codes": [
-            "DLZ-US-SL-PLA-CY-1KG",
-            "DLZ-EU-SL-PLA-CY-1KG"
+            "DLZ-AU-SL-PLA-CY-1KG",
+            "DLZ-CA-SL-PLA-CY-1KG",
+            "DLZ-EU-SL-PLA-CY-1KG",
+            "DLZ-US-SL-PLA-CY-1KG"
           ]
         },
         {
           "name": "Gold",
           "hex": "C9AB53",
           "codes": [
-            "DLZ-US-SL-PLA-GD-1KG",
+            "DLZ-AU-SL-PLA-GD-1KG",
+            "DLZ-CA-SL-PLA-GD-1KG",
             "DLZ-EU-SL-PLA-GD-1KG",
-            "DLZ-AU-SL-PLA-GD-1KG"
+            "DLZ-US-SL-PLA-GD-1KG"
           ]
         },
         {
@@ -3402,10 +3476,11 @@
           "name": "Lavender Purple",
           "hex": "A54DCF",
           "codes": [
-            "DLZ-US-SL-PLA-PP-1KG",
-            "DLZ-EU-SL-PLA-PP-1KG",
             "DLZ-AU-SL-PLA-LP-1KG",
-            "DLZ-CA-SL-PLA-PP-1KG"
+            "DLZ-AU-SL-PLA-PP-1KG",
+            "DLZ-CA-SL-PLA-PP-1KG",
+            "DLZ-EU-SL-PLA-PP-1KG",
+            "DLZ-US-SL-PLA-PP-1KG"
           ]
         },
         {
@@ -3425,6 +3500,8 @@
           "name": "Magenta",
           "hex": "A80DD1",
           "codes": [
+            "DLZ-AU-SL-PLA-MAG-1KG",
+            "DLZ-CA-SL-PLA-MAG-1KG",
             "DLZ-EU-SL-PLA-MAG-1KG"
           ]
         },
@@ -3469,8 +3546,10 @@
           "name": "Oak(Wood)",
           "hex": "C7955A",
           "codes": [
-            "DLZ-US-SL-PLA-OK-1KG",
-            "DLZ-EU-SL-PLA-OK-1KG"
+            "DLZ-AU-SL-PLA-OK-1KG",
+            "DLZ-CA-SL-PLA-OK-1KG",
+            "DLZ-EU-SL-PLA-OK-1KG",
+            "DLZ-US-SL-PLA-OK-1KG"
           ]
         },
         {
@@ -3530,17 +3609,20 @@
           "name": "Roasted Chestnut Black",
           "hex": "242422",
           "codes": [
-            "DLZ-US-SL-PLA-RCN-1KG",
-            "DLZ-EU-SL-PLA-RCN-1KG"
+            "DLZ-AU-SL-PLA-RCN-1KG",
+            "DLZ-CA-SL-PLA-RCN-1KG",
+            "DLZ-EU-SL-PLA-RCN-1KG",
+            "DLZ-US-SL-PLA-RCN-1KG"
           ]
         },
         {
           "name": "Silver",
           "hex": "A1A4AB",
           "codes": [
-            "DLZ-US-SL-PLA-SV-1KG",
+            "DLZ-AU-SL-PLA-SV-1KG",
+            "DLZ-CA-SL-PLA-SV-1KG",
             "DLZ-EU-SL-PLA-SV-1KG",
-            "DLZ-AU-SL-PLA-SV-1KG"
+            "DLZ-US-SL-PLA-SV-1KG"
           ]
         },
         {
@@ -3551,9 +3633,10 @@
           "name": "Skin(Beige)",
           "hex": "EAD8AB",
           "codes": [
-            "DLZ-US-SL-PLA-SK-1KG",
+            "DLZ-AU-SL-PLA-SK-1KG",
+            "DLZ-CA-SL-PLA-SK-1KG",
             "DLZ-EU-SL-PLA-SK-1KG",
-            "DLZ-CA-SL-PLA-SK-1KG"
+            "DLZ-US-SL-PLA-SK-1KG"
           ]
         },
         {
@@ -3589,8 +3672,10 @@
           "hex": "0066D9",
           "translucent": true,
           "codes": [
-            "DLZ-US-SL-PLA-TPBL-1KG",
-            "DLZ-EU-SL-PLA-TPBL-1KG"
+            "DLZ-AU-SL-PLA-TPBL-1KG",
+            "DLZ-CA-SL-PLA-TPBL-1KG",
+            "DLZ-EU-SL-PLA-TPBL-1KG",
+            "DLZ-US-SL-PLA-TPBL-1KG"
           ]
         },
         {
@@ -3598,8 +3683,10 @@
           "hex": "00CC00",
           "translucent": true,
           "codes": [
-            "DLZ-US-SL-PLA-TPGN-1KG",
-            "DLZ-EU-SL-PLA-TPGN-1KG"
+            "DLZ-AU-SL-PLA-TPGN-1KG",
+            "DLZ-CA-SL-PLA-TPGN-1KG",
+            "DLZ-EU-SL-PLA-TPGN-1KG",
+            "DLZ-US-SL-PLA-TPGN-1KG"
           ]
         },
         {
@@ -3607,8 +3694,10 @@
           "hex": "FE6638",
           "translucent": true,
           "codes": [
-            "DLZ-US-SL-PLA-TO2-1KG",
-            "DLZ-EU-SL-PLA-TO2-1KG"
+            "DLZ-AU-SL-PLA-TO2-1KG",
+            "DLZ-CA-SL-PLA-TO2-1KG",
+            "DLZ-EU-SL-PLA-TO2-1KG",
+            "DLZ-US-SL-PLA-TO2-1KG"
           ]
         },
         {
@@ -3616,8 +3705,10 @@
           "hex": "CE8BF0",
           "translucent": true,
           "codes": [
-            "DLZ-US-SL-PLA-TPP2-1KG",
-            "DLZ-EU-SL-PLA-TPP2-1KG"
+            "DLZ-AU-SL-PLA-TPP2-1KG",
+            "DLZ-CA-SL-PLA-TPP2-1KG",
+            "DLZ-EU-SL-PLA-TPP2-1KG",
+            "DLZ-US-SL-PLA-TPP2-1KG"
           ]
         },
         {
@@ -3625,8 +3716,10 @@
           "hex": "E20010",
           "translucent": true,
           "codes": [
-            "DLZ-US-SL-PLA-TPRD-1KG",
-            "DLZ-EU-SL-PLA-TPRD-1KG"
+            "DLZ-AU-SL-PLA-TPRD-1KG",
+            "DLZ-CA-SL-PLA-TPRD-1KG",
+            "DLZ-EU-SL-PLA-TPRD-1KG",
+            "DLZ-US-SL-PLA-TPRD-1KG"
           ]
         },
         {
@@ -3634,8 +3727,10 @@
           "hex": "EFCB2C",
           "translucent": true,
           "codes": [
-            "DLZ-US-SL-PLA-TY2-1KG",
-            "DLZ-EU-SL-PLA-TY2-1KG"
+            "DLZ-AU-SL-PLA-TY2-1KG",
+            "DLZ-CA-SL-PLA-TY2-1KG",
+            "DLZ-EU-SL-PLA-TY2-1KG",
+            "DLZ-US-SL-PLA-TY2-1KG"
           ]
         },
         {
@@ -3650,8 +3745,10 @@
           "name": "Vivid Yellow",
           "hex": "FFE500",
           "codes": [
-            "DLZ-US-SL-PLA-VY-1KG",
-            "DLZ-EU-SL-PLA-VY-1KG"
+            "DLZ-AU-SL-PLA-VY-1KG",
+            "DLZ-CA-SL-PLA-VY-1KG",
+            "DLZ-EU-SL-PLA-VY-1KG",
+            "DLZ-US-SL-PLA-VY-1KG"
           ]
         },
         {
@@ -3672,8 +3769,10 @@
           "name": "Yellow",
           "hex": "FFC347",
           "codes": [
-            "DLZ-US-SL-PLA-YL-1KG",
-            "DLZ-EU-SL-PLA-YL-1KG"
+            "DLZ-AU-SL-PLA-YL-1KG",
+            "DLZ-CA-SL-PLA-YL-1KG",
+            "DLZ-EU-SL-PLA-YL-1KG",
+            "DLZ-US-SL-PLA-YL-1KG"
           ]
         }
       ],
@@ -4734,7 +4833,10 @@
           "name": "Blue",
           "hex": "005BD3",
           "codes": [
-            "DLZ-EU-SL-PLAYG-BL-1KG"
+            "DLZ-AU-SL-PLAYG-BL-1KG",
+            "DLZ-CA-SL-PLAYG-BL-1KG",
+            "DLZ-EU-SL-PLAYG-BL-1KG",
+            "DLZ-US-SL-PLAYG-BL-1KG"
           ]
         },
         {
@@ -4745,17 +4847,20 @@
           "name": "Bright Yellow",
           "hex": "C4D62D",
           "codes": [
-            "DLZ-US-SL-PLAYG-BY-1KG",
+            "DLZ-AU-SL-PLAYG-BY-1KG",
+            "DLZ-CA-SL-PLAYG-BY-1KG",
             "DLZ-EU-SL-PLAYG-BY-1KG",
-            "DLZ-AU-SL-PLAYG-BY-1KG"
+            "DLZ-US-SL-PLAYG-BY-1KG"
           ]
         },
         {
           "name": "Clay",
           "hex": "8B8372",
           "codes": [
-            "DLZ-US-SL-PLAYG-CA-1KG",
-            "DLZ-EU-SL-PLAYG-CA-1KG"
+            "DLZ-AU-SL-PLAYG-CA-1KG",
+            "DLZ-CA-SL-PLAYG-CA-1KG",
+            "DLZ-EU-SL-PLAYG-CA-1KG",
+            "DLZ-US-SL-PLAYG-CA-1KG"
           ]
         },
         {
@@ -4766,9 +4871,10 @@
           "name": "Green",
           "hex": "08AA3D",
           "codes": [
-            "DLZ-US-SL-PLAYG-GN-1KG",
+            "DLZ-AU-SL-PLAYG-GN-1KG",
+            "DLZ-CA-SL-PLAYG-GN-1KG",
             "DLZ-EU-SL-PLAYG-GN-1KG",
-            "DLZ-AU-SL-PLAYG-GN-1KG"
+            "DLZ-US-SL-PLAYG-GN-1KG"
           ]
         },
         {
@@ -4785,8 +4891,10 @@
           "name": "Light Blue",
           "hex": "A1E1EA",
           "codes": [
-            "DLZ-US-SL-PLAYG-LB-1KG",
-            "DLZ-EU-SL-PLAYG-LB-1KG"
+            "DLZ-AU-SL-PLAYG-LB-1KG",
+            "DLZ-CA-SL-PLAYG-LB-1KG",
+            "DLZ-EU-SL-PLAYG-LB-1KG",
+            "DLZ-US-SL-PLAYG-LB-1KG"
           ]
         },
         {
@@ -4797,6 +4905,9 @@
           "name": "Olive Green",
           "hex": "BAB86C",
           "codes": [
+            "DLZ-AU-SL-PLAYG-OG-1KG",
+            "DLZ-CA-SL-PLAYG-OG-1KG",
+            "DLZ-EU-SL-PLAYG-OG-1KG",
             "DLZ-US-SL-PLAYG-OG-1KG"
           ]
         },
@@ -4808,8 +4919,10 @@
           "name": "Pink",
           "hex": "FFC0CB",
           "codes": [
-            "DLZ-US-SL-PLAYG-PK-1KG",
-            "DLZ-EU-SL-PLAYG-PK-1KG"
+            "DLZ-AU-SL-PLAYG-PK-1KG",
+            "DLZ-CA-SL-PLAYG-PK-1KG",
+            "DLZ-EU-SL-PLAYG-PK-1KG",
+            "DLZ-US-SL-PLAYG-PK-1KG"
           ]
         },
         {
@@ -4822,7 +4935,11 @@
         },
         {
           "name": "Purple",
-          "hex": "A54DCF"
+          "hex": "A54DCF",
+          "codes": [
+            "DLZ-CA-SL-PLAYG-PP-1KG",
+            "DLZ-EU-SL-PLAYG-PP-1KG"
+          ]
         },
         {
           "name": "Red",
@@ -5114,6 +5231,8 @@
           "name": "Olive Green",
           "hex": "BAB86C",
           "codes": [
+            "DLZ-AU-SL-PLAMT-OG-1KG",
+            "DLZ-CA-SL-PLAMT-OG-1KG",
             "DLZ-EU-SL-PLAMT-OG-1KG"
           ]
         },
@@ -5141,10 +5260,11 @@
           "name": "Sakura Pink",
           "hex": "F2D4D7",
           "codes": [
-            "DLZ-US-SL-PLAMT-PK-1KG",
-            "DLZ-EU-SL-PLAMT-SP-1KG",
             "DLZ-AU-SL-PLAMT-SP-1KG",
-            "DLZ-CA-SL-PLAMT-PK-1KG"
+            "DLZ-CA-SL-PLAMT-PK-1KG",
+            "DLZ-CA-SL-PLAMT-SP-1KG",
+            "DLZ-EU-SL-PLAMT-SP-1KG",
+            "DLZ-US-SL-PLAMT-PK-1KG"
           ]
         },
         {
@@ -5155,6 +5275,8 @@
           "name": "Sunny Orange",
           "hex": "FF8A00",
           "codes": [
+            "DLZ-AU-SL-PLAMT-SO-1KG",
+            "DLZ-CA-SL-PLAMT-SO-1KG",
             "DLZ-EU-SL-PLAMT-SO-1KG"
           ]
         },
