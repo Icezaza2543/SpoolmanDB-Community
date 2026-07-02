@@ -2,6 +2,7 @@
 
 from enum import StrEnum
 import json
+import re
 from pathlib import Path
 from typing import Iterator
 from typing import TypedDict, NotRequired
@@ -82,6 +83,19 @@ SPOOL_TYPE_MAP = {
 }
 
 
+def material_appears_in_name(name: str, material: str) -> bool:
+    """Return True when the material code already appears as its own token in the name."""
+    pattern = r"(?<![A-Z0-9])" + re.escape(material.upper()) + r"(?![A-Z0-9])"
+    return bool(re.search(pattern, name.upper()))
+
+
+def ensure_material_in_display_name(name: str, material: str) -> str:
+    """Prefix the material when the compiled display name does not already include it."""
+    if material_appears_in_name(name, material):
+        return name
+    return f"{material} {name}"
+
+
 def generate_id(
     *,
     manufacturer: str,
@@ -160,25 +174,26 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                     color_glow = glow
 
                 formatted_name = name.format(color_name=color_name)
+                display_name = ensure_material_in_display_name(formatted_name, material)
 
                 if color_hex is None and color_hexes is None:
                     raise ValueError(
-                        f"Filament {formatted_name} by {manufacturer} has no hex or hexes specified."
+                        f"Filament {display_name} by {manufacturer} has no hex or hexes specified."
                     )
 
                 if color_hex is not None and color_hexes is not None:
                     raise ValueError(
-                        f"Filament {formatted_name} by {manufacturer} has both hex and hexes specified."
+                        f"Filament {display_name} by {manufacturer} has both hex and hexes specified."
                     )
 
                 if color_multi_color_direction is not None and color_hexes is None:
                     raise ValueError(
-                        f"Filament {formatted_name} by {manufacturer} has no hexes specified but multi_color_direction is set."
+                        f"Filament {display_name} by {manufacturer} has no hexes specified but multi_color_direction is set."
                     )
 
                 if color_multi_color_direction is None and color_hexes is not None:
                     raise ValueError(
-                        f"Filament {formatted_name} by {manufacturer} has hexes specified but no multi_color_direction is set."
+                        f"Filament {display_name} by {manufacturer} has hexes specified but no multi_color_direction is set."
                     )
 
                 yield {
@@ -191,7 +206,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                         spool_type=spool_type,
                     ),
                     "manufacturer": manufacturer,
-                    "name": formatted_name,
+                    "name": display_name,
                     "material": material,
                     "density": density,
                     "weight": weight,

@@ -1,11 +1,29 @@
 import pytest
 from scripts.compile_filaments import (
-    generate_id,
+    ensure_material_in_display_name,
     expand_filament_data,
+    generate_id,
+    material_appears_in_name,
     SpoolType,
     Finish,
     MultiColorDirection,
 )
+
+def test_material_appears_in_name():
+    assert material_appears_in_name("ABS Prime White", "ABS")
+    assert material_appears_in_name("HT-PLA Red", "PLA")
+    assert material_appears_in_name("EasyFil ePLA Red", "PLA") is False
+    assert material_appears_in_name("Plus BLACK", "ABS") is False
+
+
+def test_ensure_material_in_display_name():
+    assert ensure_material_in_display_name("ABS Prime White", "ABS") == "ABS Prime White"
+    assert ensure_material_in_display_name("Plus BLACK", "ABS") == "ABS Plus BLACK"
+    assert (
+        ensure_material_in_display_name("EasyFil ePLA Red", "PLA")
+        == "PLA EasyFil ePLA Red"
+    )
+
 
 def test_generate_id_normalization():
     # Test lowercase, ascii-stripping, and space removal
@@ -102,9 +120,24 @@ def test_expand_filament_data_valid():
     first = results[0]
     assert first["manufacturer"] == "BrandX"
     assert first["name"] == "Super Fire Red PLA"
+    assert first["id"] == "brandx_pla_superfireredpla_1000_175_p"
     assert first["weight"] == 1000.0
     assert first["spool_weight"] == 250.0
     assert first["spool_type"] == SpoolType.PLASTIC
     assert first["diameter"] == 1.75
     assert first["color_hex"] == "FF0000"
     assert first["finish"] == Finish.GLOSSY
+
+
+def test_expand_filament_data_material_display_name():
+    filament_data = {
+        "name": "Plus {color_name}",
+        "material": "ABS",
+        "density": 1.04,
+        "weights": [{"weight": 1000, "spool_type": SpoolType.PLASTIC}],
+        "diameters": [1.75],
+        "colors": [{"name": "BLACK", "hex": "000000"}],
+    }
+    result = list(expand_filament_data("AzureFilm", filament_data))[0]
+    assert result["name"] == "ABS Plus BLACK"
+    assert result["id"] == "azurefilm_abs_plusblack_1000_175_p"
