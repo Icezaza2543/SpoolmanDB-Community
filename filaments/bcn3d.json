@@ -13,6 +13,9 @@
         {
           "weight": 2500,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 750
         }
       ],
       "diameters": [
@@ -46,6 +49,14 @@
         {
           "name": "Red",
           "hex": "c8102e"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffff00"
         }
       ],
       "country_of_origin": "ES"
@@ -99,6 +110,9 @@
         {
           "weight": 750,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 750
         }
       ],
       "diameters": [
@@ -128,6 +142,10 @@
         {
           "name": "Blue",
           "hex": "0057b8"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
         }
       ],
       "country_of_origin": "ES"
@@ -144,6 +162,9 @@
         {
           "weight": 2500,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 750
         }
       ],
       "diameters": [
@@ -165,6 +186,18 @@
         {
           "name": "Black",
           "hex": "1a1a1a"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
         }
       ],
       "country_of_origin": "ES"
@@ -197,6 +230,79 @@
         }
       ],
       "country_of_origin": "ES"
+    },
+    {
+      "name": "TPU 98A {color_name}",
+      "material": "TPU",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        }
+      ]
+    },
+    {
+      "name": "PA {color_name}",
+      "material": "PA",
+      "density": 1.02,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "country_of_origin": "Spain",
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "fffff0",
+          "translucent": true
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
     }
   ]
 }

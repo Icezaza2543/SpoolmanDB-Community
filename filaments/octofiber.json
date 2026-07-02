@@ -17,10 +17,14 @@
         {
           "weight": 1000,
           "spool_type": "cardboard"
+        },
+        {
+          "weight": 750
         }
       ],
       "diameters": [
-        1.75
+        1.75,
+        2.85
       ],
       "extruder_temp_range": [
         190,
@@ -39,6 +43,22 @@
           "name": "Pearl White Glitter",
           "hex": "f5f5f5",
           "pattern": "sparkle"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
         }
       ],
       "country_of_origin": "NL"

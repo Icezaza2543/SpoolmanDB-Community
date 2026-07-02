@@ -13,6 +13,9 @@
         {
           "weight": 1000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -38,6 +41,26 @@
         {
           "name": "White",
           "hex": "ffffff"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
         }
       ],
       "country_of_origin": "CA"
@@ -50,6 +73,9 @@
         {
           "weight": 1000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -91,6 +117,10 @@
         {
           "name": "Blue",
           "hex": "0057b8"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
         }
       ],
       "country_of_origin": "CA"
@@ -103,10 +133,14 @@
         {
           "weight": 1000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
-        1.75
+        1.75,
+        2.85
       ],
       "extruder_temp_range": [
         210,
@@ -120,6 +154,19 @@
         {
           "name": "Transparent",
           "hex": "f5f5f5",
+          "translucent": true
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Translucent Clear",
+          "hex": "ffffff",
           "translucent": true
         }
       ],

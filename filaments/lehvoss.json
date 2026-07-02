@@ -182,6 +182,38 @@
         }
       ],
       "country_of_origin": "DE"
+    },
+    {
+      "name": "LUVOCOM 3F PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "Germany",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Natural",
+          "hex": "fffff0"
+        }
+      ]
     }
   ]
 }

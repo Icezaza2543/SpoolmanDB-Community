@@ -166,6 +166,33 @@
         }
       ],
       "country_of_origin": "US"
+    },
+    {
+      "name": "Conductive Graphene PLA",
+      "material": "PLA",
+      "density": 1.15,
+      "weights": [
+        {
+          "weight": 350
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        }
+      ]
     }
   ]
 }

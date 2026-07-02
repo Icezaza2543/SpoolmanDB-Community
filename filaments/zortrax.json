@@ -13,6 +13,9 @@
         {
           "weight": 2000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 800
         }
       ],
       "diameters": [
@@ -38,6 +41,14 @@
         {
           "name": "Cool Grey",
           "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
         }
       ],
       "country_of_origin": "PL"
@@ -54,6 +65,9 @@
         {
           "weight": 2000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 800
         }
       ],
       "diameters": [
@@ -83,6 +97,18 @@
         {
           "name": "Yellow",
           "hex": "ffd100"
+        },
+        {
+          "name": "Ivory",
+          "hex": "fffff0"
+        },
+        {
+          "name": "Graphite",
+          "hex": "363636"
+        },
+        {
+          "name": "Burgundy",
+          "hex": "800020"
         }
       ],
       "country_of_origin": "PL"
@@ -137,6 +163,9 @@
         {
           "weight": 2000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 800
         }
       ],
       "diameters": [
@@ -159,6 +188,14 @@
           "name": "Natural",
           "hex": "d8eef2",
           "translucent": true
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
         }
       ],
       "country_of_origin": "PL"
@@ -236,6 +273,52 @@
         }
       ],
       "country_of_origin": "PL"
+    },
+    {
+      "name": "Z-HIPS {color_name}",
+      "material": "HIPS",
+      "density": 1.16,
+      "weights": [
+        {
+          "weight": 800
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Poland",
+      "colors": [
+        {
+          "name": "Natural White",
+          "hex": "fcfcfa"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "Z-GLASS {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 800
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "translucent": true,
+      "country_of_origin": "Poland",
+      "colors": [
+        {
+          "name": "Natural Translucent",
+          "hex": "ffffff",
+          "translucent": true
+        }
+      ]
     }
   ]
 }

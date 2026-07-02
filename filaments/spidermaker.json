@@ -9,6 +9,9 @@
         {
           "weight": 700,
           "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -27,11 +30,13 @@
       "colors": [
         {
           "name": "Coal Black",
-          "hex": "1b1b1b"
+          "hex": "1b1b1b",
+          "finish": "matte"
         },
         {
           "name": "Paper White",
-          "hex": "f2f0e8"
+          "hex": "f2f0e8",
+          "finish": "matte"
         },
         {
           "name": "Iron Gray",
@@ -43,7 +48,8 @@
         },
         {
           "name": "Steel Blue",
-          "hex": "5f788a"
+          "hex": "5f788a",
+          "finish": "matte"
         },
         {
           "name": "Iron Blue",
@@ -75,7 +81,8 @@
         },
         {
           "name": "Brick Red",
-          "hex": "a6473d"
+          "hex": "a6473d",
+          "finish": "matte"
         },
         {
           "name": "Sun Orange",
@@ -103,7 +110,8 @@
         },
         {
           "name": "Frosted Almond",
-          "hex": "d8c5a6"
+          "hex": "d8c5a6",
+          "finish": "matte"
         },
         {
           "name": "Fair Skin",
@@ -112,6 +120,50 @@
         {
           "name": "Clay",
           "hex": "b66d4c"
+        },
+        {
+          "name": "Olive Drab",
+          "hex": "4b5320",
+          "finish": "matte"
+        },
+        {
+          "name": "Kraft Paper",
+          "hex": "c4a482",
+          "finish": "matte"
+        }
+      ]
+    },
+    {
+      "name": "TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        30,
+        50
+      ],
+      "country_of_origin": "Taiwan",
+      "colors": [
+        {
+          "name": "Matte Black",
+          "hex": "000000",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte White",
+          "hex": "ffffff",
+          "finish": "matte"
         }
       ]
     }

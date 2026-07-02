@@ -147,6 +147,39 @@
         }
       ],
       "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hexes": [
+            "ff0000",
+            "00ff00",
+            "0000ff",
+            "ffff00"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
     }
   ]
 }

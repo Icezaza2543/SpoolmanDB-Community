@@ -65,6 +65,38 @@
         }
       ],
       "country_of_origin": "US"
+    },
+    {
+      "name": "PLA Tri-Color {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Primary Tri-Blend",
+          "hexes": [
+            "ff0000",
+            "00ff00",
+            "0000ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ]
     }
   ]
 }

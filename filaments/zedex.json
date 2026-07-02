@@ -58,6 +58,33 @@
           "hex": "e8dcc0"
         }
       ]
+    },
+    {
+      "name": "ZX-100 {color_name}",
+      "material": "PET",
+      "density": 1.35,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        265
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "ffffff"
+        }
+      ]
     }
   ]
 }

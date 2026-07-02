@@ -102,6 +102,55 @@
         }
       ],
       "country_of_origin": "DE"
+    },
+    {
+      "name": "rPLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "Netherlands",
+      "colors": [
+        {
+          "name": "Seaglass",
+          "hex": "a1dad7"
+        },
+        {
+          "name": "Earthy Brown",
+          "hex": "8b5a2b"
+        },
+        {
+          "name": "Emerald Green",
+          "hex": "50c878"
+        },
+        {
+          "name": "Muted Blue",
+          "hex": "3b5998"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
     }
   ]
 }

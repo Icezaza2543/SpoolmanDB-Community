@@ -9,10 +9,14 @@
         {
           "weight": 1000,
           "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
-        1.75
+        1.75,
+        2.85
       ],
       "extruder_temp_range": [
         180,
@@ -49,6 +53,10 @@
         {
           "name": "Blue",
           "hex": "0057b8"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
         }
       ]
     },

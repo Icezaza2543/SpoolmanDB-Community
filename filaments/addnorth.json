@@ -322,7 +322,8 @@
         },
         {
           "name": "Glitz Grey",
-          "hex": "C2C5CC"
+          "hex": "C2C5CC",
+          "pattern": "sparkle"
         },
         {
           "name": "Green",
@@ -760,27 +761,33 @@
         },
         {
           "name": "Glitz Black",
-          "hex": "161409"
+          "hex": "161409",
+          "pattern": "sparkle"
         },
         {
           "name": "Glitz Grey",
-          "hex": "C2C5CC"
+          "hex": "C2C5CC",
+          "pattern": "sparkle"
         },
         {
           "name": "Glitz Purple",
-          "hex": "8E3FE2"
+          "hex": "8E3FE2",
+          "pattern": "sparkle"
         },
         {
           "name": "Glitz Sapphire",
-          "hex": "0933C2"
+          "hex": "0933C2",
+          "pattern": "sparkle"
         },
         {
           "name": "Glitz Silver",
-          "hex": "CECFD2"
+          "hex": "CECFD2",
+          "pattern": "sparkle"
         },
         {
           "name": "Glow in the Dark Green",
-          "hex": "51FF0D"
+          "hex": "51FF0D",
+          "glow": true
         },
         {
           "name": "Gold",
@@ -800,7 +807,8 @@
         },
         {
           "name": "Marble",
-          "hex": "E3E0CD"
+          "hex": "E3E0CD",
+          "pattern": "marble"
         },
         {
           "name": "Medium Blue",
@@ -879,6 +887,12 @@
         {
           "weight": 250,
           "spool_type": "cardboard"
+        },
+        {
+          "weight": 100
+        },
+        {
+          "weight": 250
         }
       ],
       "diameters": [
@@ -1496,6 +1510,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1526,6 +1543,9 @@
           "weight": 750,
           "spool_type": "cardboard",
           "spool_weight": 135
+        },
+        {
+          "weight": 750
         }
       ],
       "diameters": [
@@ -1551,6 +1571,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1575,6 +1598,9 @@
           "weight": 500,
           "spool_type": "cardboard",
           "spool_weight": 120
+        },
+        {
+          "weight": 500
         }
       ],
       "diameters": [
@@ -1615,6 +1641,9 @@
           "weight": 500,
           "spool_type": "cardboard",
           "spool_weight": 120
+        },
+        {
+          "weight": 500
         }
       ],
       "diameters": [
@@ -1644,6 +1673,12 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1668,6 +1703,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1698,6 +1736,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1731,6 +1772,12 @@
         {
           "weight": 250,
           "spool_type": "cardboard"
+        },
+        {
+          "weight": 100
+        },
+        {
+          "weight": 250
         }
       ],
       "diameters": [
@@ -1756,6 +1803,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1804,6 +1854,12 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1836,6 +1892,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1874,6 +1933,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1905,6 +1967,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1935,6 +2000,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -1966,6 +2034,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2037,6 +2108,9 @@
           "weight": 750,
           "spool_type": "cardboard",
           "spool_weight": 135
+        },
+        {
+          "weight": 750
         }
       ],
       "diameters": [
@@ -2074,6 +2148,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2104,6 +2181,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2134,6 +2214,12 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2168,6 +2254,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2214,6 +2303,9 @@
           "weight": 750,
           "spool_type": "cardboard",
           "spool_weight": 135
+        },
+        {
+          "weight": 750
         }
       ],
       "diameters": [
@@ -2254,6 +2346,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2283,6 +2378,12 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2349,6 +2450,9 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2405,6 +2509,12 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -2447,6 +2557,12 @@
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 160
+        },
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [

@@ -243,30 +243,38 @@
           "name": "Black",
           "hex": "000000",
           "codes": [
-            "PETG-BLACK-03"
+            "PETG-BLACK-03",
+            "PETG-BLACK-01"
           ],
           "eans": [
-            "5744006030689"
+            "5744006030689",
+            "5744006030528"
           ]
         },
         {
           "name": "Gray",
           "hex": "808080",
           "codes": [
-            "PETG-GREY-03"
+            "PETG-GREY-03",
+            "PETG-GREY-01",
+            "PLA-LIGHT-GRAY-01"
           ],
           "eans": [
-            "5744006030696"
+            "5744006030696",
+            "5744006030535",
+            "5744006030962"
           ]
         },
         {
           "name": "White",
           "hex": "ffffff",
           "codes": [
-            "PETG-WHITE-03"
+            "PETG-WHITE-03",
+            "PETG-WHITE-01"
           ],
           "eans": [
-            "5744006030672"
+            "5744006030672",
+            "5744006030511"
           ]
         },
         {
@@ -283,11 +291,23 @@
         },
         {
           "name": "Orange",
-          "hex": "FF810A"
+          "hex": "FF810A",
+          "codes": [
+            "PETG-ORANGE-01"
+          ],
+          "eans": [
+            "5744006030603"
+          ]
         },
         {
           "name": "Yellow",
-          "hex": "FFEE00"
+          "hex": "FFEE00",
+          "codes": [
+            "PETG-YELLOW-01"
+          ],
+          "eans": [
+            "5744006030542"
+          ]
         }
       ]
     },
@@ -475,10 +495,12 @@
           "name": "White",
           "hex": "ffffff",
           "codes": [
-            "PLA-WHITE-03"
+            "PLA-WHITE-03",
+            "PLA-WHITE-01"
           ],
           "eans": [
-            "5744006030382"
+            "5744006030382",
+            "5744006030368"
           ]
         }
       ]
@@ -617,6 +639,9 @@
         {
           "weight": 1000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [
@@ -672,6 +697,9 @@
         {
           "weight": 1000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 1000
         }
       ],
       "diameters": [

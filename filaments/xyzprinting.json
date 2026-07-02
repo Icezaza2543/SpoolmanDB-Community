@@ -9,6 +9,9 @@
         {
           "weight": 600,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 600
         }
       ],
       "diameters": [
@@ -48,6 +51,19 @@
         {
           "name": "Blue",
           "hex": "0057b8"
+        },
+        {
+          "name": "Clear",
+          "hex": "ffffff",
+          "translucent": true
+        },
+        {
+          "name": "Tangerine",
+          "hex": "ff8c00"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffff00"
         }
       ],
       "country_of_origin": "TW"
@@ -64,6 +80,9 @@
         {
           "weight": 1000,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 600
         }
       ],
       "diameters": [
@@ -89,6 +108,14 @@
         {
           "name": "Green",
           "hex": "228848"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000ff"
         }
       ],
       "country_of_origin": "TW"
@@ -101,6 +128,9 @@
         {
           "weight": 600,
           "spool_type": "plastic"
+        },
+        {
+          "weight": 600
         }
       ],
       "diameters": [
@@ -124,9 +154,48 @@
           "name": "Clear Tangerine",
           "hex": "f58220",
           "translucent": true
+        },
+        {
+          "name": "Clear Blue",
+          "hex": "0000ff",
+          "translucent": true
+        },
+        {
+          "name": "Clear Yellow",
+          "hex": "ffff00",
+          "translucent": true
+        },
+        {
+          "name": "Clear Red",
+          "hex": "ff0000",
+          "translucent": true
         }
       ],
       "country_of_origin": "TW"
+    },
+    {
+      "name": "Tough PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 600
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Taiwan",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ]
     }
   ]
 }
