@@ -29,28 +29,40 @@
           "hex": "000000"
         },
         {
-          "name": "White",
-          "hex": "FFFFFF"
+          "name": "Blue",
+          "hex": "0000FF"
         },
         {
-          "name": "Grey",
-          "hex": "808080"
+          "name": "Gold",
+          "hex": "D4AF37"
         },
         {
           "name": "Red",
           "hex": "FF0000"
         },
         {
-          "name": "Blue",
-          "hex": "0000FF"
+          "name": "Silver",
+          "hex": "C0C0C0"
         },
         {
-          "name": "Green",
-          "hex": "228B22"
+          "name": "White",
+          "hex": "FFFFFF"
         },
         {
           "name": "Yellow",
           "hex": "FFFF00"
+        },
+        {
+          "name": "Nude",
+          "hex": "F3C7A4"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Candy",
+          "hex": "FF69B4"
         }
       ]
     },
@@ -79,18 +91,8 @@
       "country_of_origin": "Thailand",
       "colors": [
         {
-          "name": "Gold",
-          "hex": "D4AF37",
-          "finish": "glossy"
-        },
-        {
-          "name": "Silver",
-          "hex": "C0C0C0",
-          "finish": "glossy"
-        },
-        {
-          "name": "Copper",
-          "hex": "B87333",
+          "name": "Black",
+          "hex": "000000",
           "finish": "glossy"
         },
         {
@@ -102,6 +104,149 @@
           "name": "Red",
           "hex": "FF0000",
           "finish": "glossy"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "finish": "glossy"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00",
+          "finish": "glossy"
+        },
+        {
+          "name": "Gold",
+          "hex": "D4AF37",
+          "finish": "glossy"
+        },
+        {
+          "name": "Bronze",
+          "hex": "CD7F32",
+          "finish": "glossy"
+        },
+        {
+          "name": "Copper",
+          "hex": "B87333",
+          "finish": "glossy"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB",
+          "finish": "glossy"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0",
+          "finish": "glossy"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Matte Color {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "matte",
+      "country_of_origin": "Thailand",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "PLA+ Silk Magic 2 Color {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "country_of_origin": "Thailand",
+      "colors": [
+        {
+          "name": "Dark Blue-Green",
+          "hexes": [
+            "00008B",
+            "008000"
+          ]
+        },
+        {
+          "name": "Blue-Green",
+          "hexes": [
+            "0000FF",
+            "008000"
+          ]
+        },
+        {
+          "name": "Blue-Red",
+          "hexes": [
+            "0000FF",
+            "FF0000"
+          ]
+        },
+        {
+          "name": "Gold-Red",
+          "hexes": [
+            "D4AF37",
+            "FF0000"
+          ]
+        },
+        {
+          "name": "Red-Black",
+          "hexes": [
+            "FF0000",
+            "000000"
+          ]
         }
       ]
     },
@@ -147,6 +292,30 @@
         {
           "name": "Blue",
           "hex": "0000FF"
+        },
+        {
+          "name": "Gold",
+          "hex": "D4AF37"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Nude",
+          "hex": "F3C7A4"
         },
         {
           "name": "Transparent",
@@ -220,8 +389,28 @@
           "hex": "000000"
         },
         {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
           "name": "White",
           "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
         },
         {
           "name": "Grey",
@@ -253,20 +442,32 @@
       "country_of_origin": "Thailand",
       "colors": [
         {
-          "name": "Black",
-          "hex": "000000"
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Green",
+          "hex": "228B22"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
         },
         {
           "name": "White",
           "hex": "FFFFFF"
         },
         {
-          "name": "Red",
-          "hex": "FF0000"
+          "name": "Yellow",
+          "hex": "FFFF00"
         },
         {
-          "name": "Blue",
-          "hex": "0000FF"
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
         }
       ]
     }
