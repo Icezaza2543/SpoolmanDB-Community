@@ -72,6 +72,37 @@
       ]
     },
     {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "bed_temp": 100,
+      "country_of_origin": "Indonesia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Natural",
+          "hex": "F5F5DC"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        }
+      ]
+    },
+    {
       "name": "PP {color_name}",
       "material": "PP",
       "density": 0.9,
@@ -95,8 +126,36 @@
       "country_of_origin": "Indonesia",
       "colors": [
         {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
           "name": "Natural",
           "hex": "F5F5DC"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
         }
       ]
     }
