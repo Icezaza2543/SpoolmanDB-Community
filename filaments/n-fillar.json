@@ -1,0 +1,147 @@
+{
+  "manufacturer": "N-Fillar",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "finish": "glossy",
+      "country_of_origin": "Malaysia",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Zinc Silver",
+          "hex": "C0C0C0"
+        }
+      ]
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "finish": "matte",
+      "country_of_origin": "Malaysia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Dark Grey",
+          "hex": "4A4A4A"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "rPET {color_name}",
+      "material": "PET",
+      "density": 1.38,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 150,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        275
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "country_of_origin": "Malaysia",
+      "colors": [
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    }
+  ]
+}
