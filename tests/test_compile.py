@@ -5,6 +5,7 @@ from scripts.compile_filaments import (
     SpoolType,
     Finish,
     MultiColorDirection,
+    normalize_spool_type_for_spoolman,
 )
 
 def test_generate_id_normalization():
@@ -125,3 +126,77 @@ def test_expand_filament_data_upstream_compatible_name():
     assert result["name"] == "Plus BLACK"
     assert result["material"] == "ABS"
     assert result["id"] == "azurefilm_abs_plusblack_1000_175_p"
+
+
+def test_spool_type_normalization_and_id_stability():
+    # Test normalization helper
+    assert normalize_spool_type_for_spoolman(SpoolType.REFILL) is None
+    assert normalize_spool_type_for_spoolman(SpoolType.UNKNOW) is None
+    assert normalize_spool_type_for_spoolman("refill") is None
+    assert normalize_spool_type_for_spoolman("unknow") is None
+    assert normalize_spool_type_for_spoolman("unknown") is None
+    assert normalize_spool_type_for_spoolman(None) is None
+    
+    assert normalize_spool_type_for_spoolman(SpoolType.PLASTIC) == "plastic"
+    assert normalize_spool_type_for_spoolman(SpoolType.CARDBOARD) == "cardboard"
+    assert normalize_spool_type_for_spoolman(SpoolType.METAL) == "metal"
+    assert normalize_spool_type_for_spoolman("plastic") == "plastic"
+    assert normalize_spool_type_for_spoolman("cardboard") == "cardboard"
+    assert normalize_spool_type_for_spoolman("metal") == "metal"
+    
+    # Test expand_filament_data with refill, unknow, metal, plastic, cardboard, and unknown
+    filament_data = {
+        "name": "{color_name} PLA",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+            {"weight": 1000.0, "spool_type": SpoolType.REFILL},
+            {"weight": 1000.0, "spool_type": SpoolType.UNKNOW},
+            {"weight": 1000.0, "spool_type": SpoolType.METAL},
+            {"weight": 1000.0, "spool_type": SpoolType.PLASTIC},
+            {"weight": 1000.0, "spool_type": SpoolType.CARDBOARD},
+            {"weight": 1000.0, "spool_type": "unknown"}
+        ],
+        "diameters": [1.75],
+        "colors": [
+            {"name": "Red", "hex": "FF0000"}
+        ]
+    }
+    
+    results = list(expand_filament_data("TestBrand", filament_data))
+    assert len(results) == 6
+    
+    # 1. refill -> normalized to None, ID suffix remains _r
+    assert results[0]["spool_type"] is None
+    assert results[0]["id"] == "testbrand_pla_redpla_1000_175_r"
+    
+    # 2. unknow -> normalized to None, ID suffix remains _u
+    assert results[1]["spool_type"] is None
+    assert results[1]["id"] == "testbrand_pla_redpla_1000_175_u"
+    
+    # 3. metal -> kept as metal, ID suffix is _m
+    assert results[2]["spool_type"] == "metal"
+    assert results[2]["id"] == "testbrand_pla_redpla_1000_175_m"
+    
+    # 4. plastic -> kept as plastic, ID suffix is _p
+    assert results[3]["spool_type"] == "plastic"
+    assert results[3]["id"] == "testbrand_pla_redpla_1000_175_p"
+    
+    # 5. cardboard -> kept as cardboard, ID suffix is _c
+    assert results[4]["spool_type"] == "cardboard"
+    assert results[4]["id"] == "testbrand_pla_redpla_1000_175_c"
+    
+    # 6. unknown (string) -> normalized to None, ID suffix falls back to _n
+    assert results[5]["spool_type"] is None
+    assert results[5]["id"] == "testbrand_pla_redpla_1000_175_n"
+
+    # 7. unexpected invalid spool type -> raises KeyError
+    with pytest.raises(KeyError):
+        generate_id(
+            manufacturer="TestBrand",
+            name="PLA",
+            material="PLA",
+            weight=1000.0,
+            diameter=1.75,
+            spool_type="invalid_value"
+        )
