@@ -42,7 +42,7 @@
       },
       "spool_type": {
         "type": ["string", "null"],
-        "enum": ["plastic", "cardboard", "refill", "unknow", null]
+        "enum": ["plastic", "cardboard", "metal", null]
       },
       "diameter": {
         "type": "number",

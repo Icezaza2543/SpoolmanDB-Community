@@ -10,6 +10,7 @@ from typing import TypedDict, NotRequired
 class SpoolType(StrEnum):
     PLASTIC = "plastic"
     CARDBOARD = "cardboard"
+    METAL = "metal"
     REFILL = "refill"
     UNKNOW = "unknow"
 
@@ -77,9 +78,21 @@ SPOOL_TYPE_MAP = {
     None: "n",
     SpoolType.PLASTIC: "p",
     SpoolType.CARDBOARD: "c",
+    SpoolType.METAL: "m",
     SpoolType.REFILL: "r",
     SpoolType.UNKNOW: "u",
 }
+
+
+def normalize_spool_type_for_spoolman(
+    spool_type: SpoolType | str | None,
+) -> str | None:
+    """Normalizes community/source spool types to Spoolman-compatible ones."""
+    if spool_type in (SpoolType.REFILL, SpoolType.UNKNOW, "refill", "unknow", "unknown"):
+        return None
+    if spool_type is None:
+        return None
+    return str(spool_type)
 
 
 def generate_id(
@@ -89,14 +102,16 @@ def generate_id(
     material: str,
     weight: float,
     diameter: float,
-    spool_type: SpoolType | None,
+    spool_type: SpoolType | str | None,
 ) -> str:
     """Generates a unique ID for the given filament data."""
     # Remove any non-ascii from name
     name = name.encode("ascii", "ignore").decode()
     weight_s = f"{weight:.0f}"
     diameter_s = f"{diameter:.2f}".replace(".", "")
-    spooltype_s = SPOOL_TYPE_MAP[spool_type]
+    # Handle the defensive "unknown" string mapped to None ID suffix
+    spool_key = None if spool_type == "unknown" else spool_type
+    spooltype_s = SPOOL_TYPE_MAP[spool_key]
     return f"{manufacturer.lower()}_{material.lower()}_{name.lower()}_{weight_s}_{diameter_s}_{spooltype_s}".replace(
         " ", ""
     )
@@ -182,6 +197,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                     )
 
                 yield {
+                    # We pass the original source spool_type to generate_id to maintain public ID stability.
                     "id": generate_id(
                         manufacturer=manufacturer,
                         name=formatted_name,
@@ -196,7 +212,8 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                     "density": density,
                     "weight": weight,
                     "spool_weight": spool_weight,
-                    "spool_type": spool_type,
+                    # Emitted compiled field is normalized to Spoolman's public schema contract.
+                    "spool_type": normalize_spool_type_for_spoolman(spool_type),
                     "diameter": diameter,
                     "color_hex": color_hex,
                     "color_hexes": color_hexes,
