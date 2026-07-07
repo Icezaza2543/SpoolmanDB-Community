@@ -86,6 +86,360 @@
       ]
     },
     {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Philippines",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Light Blue",
+          "hex": "ADD8E6"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Brown",
+          "hex": "8B4513"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "Rose",
+          "hex": "FF007F"
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "finish": "glossy",
+      "country_of_origin": "Philippines",
+      "colors": [
+        {
+          "name": "Light Gold",
+          "hex": "E6C56E",
+          "finish": "glossy"
+        },
+        {
+          "name": "Gold",
+          "hex": "D4AF37",
+          "finish": "glossy"
+        },
+        {
+          "name": "Violet",
+          "hex": "8F00FF",
+          "finish": "glossy"
+        },
+        {
+          "name": "Green",
+          "hex": "008000",
+          "finish": "glossy"
+        },
+        {
+          "name": "Light Green",
+          "hex": "90EE90",
+          "finish": "glossy"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0",
+          "finish": "glossy"
+        },
+        {
+          "name": "Bronze",
+          "hex": "CD7F32",
+          "finish": "glossy"
+        },
+        {
+          "name": "Skin",
+          "hex": "F1C27D",
+          "finish": "glossy"
+        }
+      ]
+    },
+    {
+      "name": "Chameleon PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "pattern": "sparkle",
+      "country_of_origin": "Philippines",
+      "colors": [
+        {
+          "name": "Abyssal Red",
+          "hex": "7B1E2B",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Burnt Titanium",
+          "hex": "8A6F64",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Electric Light Purple",
+          "hex": "B56CFF",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Marsala",
+          "hex": "955251",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Nebula Purple",
+          "hex": "4B0082",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Skydiver",
+          "hex": "00A3E0",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Rose Quartz",
+          "hex": "F7CAC9",
+          "pattern": "sparkle"
+        }
+      ]
+    },
+    {
+      "name": "Tri-Color and Dual-Color PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "multi_color_direction": "coaxial",
+      "country_of_origin": "Philippines",
+      "colors": [
+        {
+          "name": "Blue-Rose",
+          "hexes": [
+            "0000FF",
+            "FF007F"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Blue-Green",
+          "hexes": [
+            "0000FF",
+            "008000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Black-Blue",
+          "hexes": [
+            "000000",
+            "0000FF"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Blue-Silver",
+          "hexes": [
+            "0000FF",
+            "C0C0C0"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Yellow-Pink",
+          "hexes": [
+            "FFFF00",
+            "FFC0CB"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Black-Red",
+          "hexes": [
+            "000000",
+            "FF0000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Gold-Rose",
+          "hexes": [
+            "D4AF37",
+            "FF007F"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Black-Green",
+          "hexes": [
+            "000000",
+            "008000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red-Blue-Green",
+          "hexes": [
+            "FF0000",
+            "0000FF",
+            "008000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red-Yellow-Blue",
+          "hexes": [
+            "FF0000",
+            "FFFF00",
+            "0000FF"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Purple-Gold-Black",
+          "hexes": [
+            "800080",
+            "D4AF37",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Red-Gold-Purple",
+          "hexes": [
+            "FF0000",
+            "D4AF37",
+            "800080"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ]
+    },
+    {
+      "name": "Flexible PLA {color_name}",
+      "material": "PLA",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "country_of_origin": "Philippines",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "TPU 95A {color_name}",
+      "material": "TPU-95A",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "Philippines",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
       "name": "PA Nylon {color_name}",
       "material": "PA",
       "density": 1.14,
