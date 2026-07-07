@@ -14,8 +14,12 @@
         1.75
       ],
       "extruder_temp_range": [
-        210,
+        190,
         240
+      ],
+      "bed_temp_range": [
+        0,
+        60
       ],
       "country_of_origin": "Vietnam",
       "colors": [
@@ -39,25 +43,46 @@
       "density": 1.27,
       "weights": [
         {
-          "weight": 1000
+          "weight": 1000,
+          "spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
       "country_of_origin": "Vietnam",
       "colors": [
-        {
-          "name": "White",
-          "hex": "FFFFFF"
-        },
         {
           "name": "Black",
           "hex": "000000"
         },
         {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
           "name": "Gray",
           "hex": "808080"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
         }
       ]
     }
