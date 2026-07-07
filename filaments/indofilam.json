@@ -7,6 +7,10 @@
       "density": 1.04,
       "weights": [
         {
+          "weight": 250,
+          "spool_type": "refill"
+        },
+        {
           "weight": 1000
         }
       ],
@@ -53,6 +57,14 @@
           "hex": "008000"
         },
         {
+          "name": "Green Army",
+          "hex": "4B5320"
+        },
+        {
+          "name": "Green Leaf",
+          "hex": "2E8B57"
+        },
+        {
           "name": "Grey",
           "hex": "808080"
         },
@@ -95,6 +107,51 @@
         {
           "name": "Yellow",
           "hex": "FFFF00"
+        }
+      ]
+    },
+    {
+      "name": "ABS+ {color_name}",
+      "material": "ABS+",
+      "density": 1.06,
+      "weights": [
+        {
+          "weight": 100,
+          "spool_type": "refill"
+        },
+        {
+          "weight": 250,
+          "spool_type": "refill"
+        },
+        {
+          "weight": 500,
+          "spool_type": "refill"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
+        },
+        {
+          "weight": 2000,
+          "spool_type": "refill"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        120
+      ],
+      "country_of_origin": "Indonesia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
         }
       ]
     },
