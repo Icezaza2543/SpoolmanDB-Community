@@ -134,6 +134,38 @@
       ]
     },
     {
+      "name": "PETG Glow in the Dark {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        60,
+        90
+      ],
+      "glow": true,
+      "country_of_origin": "Malaysia",
+      "tds_url": "https://daa5570c-4982-4143-a9aa-fc79f98eb01e.usrfiles.com/ugd/daa557_b8f80ce0015b41869d2922887f5a8dee.pdf",
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "E6FFB3",
+          "glow": true
+        }
+      ]
+    },
+    {
       "name": "PCTG {color_name}",
       "material": "PCTG",
       "density": 1.27,
