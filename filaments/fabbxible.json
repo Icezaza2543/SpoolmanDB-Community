@@ -194,6 +194,79 @@
       ]
     },
     {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        80,
+        110
+      ],
+      "country_of_origin": "Malaysia",
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Silver Grey",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Natural",
+          "hex": "F5F5DC"
+        },
+        {
+          "name": "Bright Blue",
+          "hex": "0099CC"
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "00008B"
+        },
+        {
+          "name": "Skin",
+          "hex": "F1C27D"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "87CEEB"
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "708090"
+        },
+        {
+          "name": "Fluorescent Yellow",
+          "hex": "CCFF00"
+        }
+      ]
+    },
+    {
       "name": "PPS {color_name}",
       "material": "PPS",
       "density": 1.35,
