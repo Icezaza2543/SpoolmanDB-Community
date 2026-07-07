@@ -31,6 +31,38 @@
       ]
     },
     {
+      "name": "PLA-CF {color_name}",
+      "material": "PLA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 300,
+          "spool_type": "unknow"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "fill": "carbon fiber",
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        20,
+        50
+      ],
+      "finish": "matte",
+      "country_of_origin": "Malaysia",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
       "name": "PETG Transparent {color_name}",
       "material": "PETG",
       "density": 1.27,
