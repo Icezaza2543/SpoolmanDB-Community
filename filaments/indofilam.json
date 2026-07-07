@@ -97,6 +97,36 @@
           "hex": "FFFF00"
         }
       ]
+    },
+    {
+      "name": "HIPS Matte {color_name}",
+      "material": "HIPS",
+      "density": 1.03,
+      "weights": [
+        {
+          "weight": 250
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "finish": "matte",
+      "country_of_origin": "Indonesia",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "finish": "matte"
+        },
+        {
+          "name": "Black",
+          "hex": "000000",
+          "finish": "matte"
+        }
+      ]
     }
   ]
 }
