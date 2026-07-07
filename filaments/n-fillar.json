@@ -4,11 +4,12 @@
     {
       "name": "PLA {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.25,
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "unknow"
+          "spool_weight": 150,
+          "spool_type": "cardboard"
         }
       ],
       "diameters": [
@@ -24,6 +25,7 @@
       ],
       "finish": "glossy",
       "country_of_origin": "Malaysia",
+      "tds_url": "https://static.wixstatic.com/media/90a54e_39903b8a42484b628974261742ecb8e0~mv2.jpg/v1/fill/w_457%2Ch_630%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/NF_PLA_TDS.jpg",
       "colors": [
         {
           "name": "White",
@@ -58,11 +60,12 @@
     {
       "name": "PLA Matte {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.4,
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "unknow"
+          "spool_weight": 150,
+          "spool_type": "cardboard"
         }
       ],
       "diameters": [
@@ -78,6 +81,7 @@
       ],
       "finish": "matte",
       "country_of_origin": "Malaysia",
+      "tds_url": "https://static.wixstatic.com/media/90a54e_f6c9055aae2848078e597f83500ff891~mv2.jpg/v1/fill/w_457%2Ch_630%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/NF_MAT_PLA_TDS.jpg",
       "colors": [
         {
           "name": "Black",
