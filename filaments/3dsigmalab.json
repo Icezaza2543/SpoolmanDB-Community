@@ -1,0 +1,39 @@
+{
+  "manufacturer": "3DSigmalab",
+  "filaments": [
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 300,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "Vietnam",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Smoke Grey",
+          "hex": "808080"
+        }
+      ]
+    }
+  ]
+}
