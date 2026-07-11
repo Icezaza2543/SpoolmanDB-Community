@@ -37,10 +37,11 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 *   **Editor Experience**:
     *   Workspace configurations ([settings.json](.vscode/settings.json)) bind schemas to JSON files in the IDE, offering real-time diagnostics, autocomplete, and inline linting.
 *   **Expanded Data & Metadata**:
-    *   **Additional Metadata**: Full compiler passthrough for new fields including `country_of_origin`, `sds_url`, and `tds_url` from source profiles to the final database.
+    *   **Additional Metadata**: Full compiler passthrough for source-backed fields including `country_of_origin`, `sds_url`, `tds_url`, `codes`, `eans`, and `eans_refill` from source profiles to the final database.
     *   **Modern Materials**: Added missing material definitions in [materials.json](materials.json) (`BVOH`, `CoPE`, `PP`, `PAHT`, `PPA`, `PPS`, `PET`).
-    *   **Massive Brand Updates**: Expanded to **430+ brands** (added over 320 popular consumer, local, and community brands, such as Bambu Lab, Polymaker, 3D-Warhorse, Spectrum, and more).
-    *   **Refill & Spool Type Support**: Added native schema, compiler, and data support for `refill` and `unknown` (`unknow`) spool types. We have integrated refill configurations across 13 major brands (Polymaker Panchroma, Bambu Lab PLA Basic, eSun, Sunlu, etc.).
+    *   **Massive Brand Updates**: Expanded to **458 manufacturer source files**, covering popular consumer, local, industrial, and community brands such as Bambu Lab, Polymaker, Spectrum, Threebees, Filamax, ProtoFil, Cubic3, and more.
+    *   **ASEAN & Local-Market Coverage**: Added source-backed local filament data across Thailand, Malaysia, Singapore, Indonesia, Vietnam, and the Philippines, with current coverage for 20 ASEAN manufacturers and 116 ASEAN source filament objects.
+    *   **Refill & Spool Type Support**: Added native schema, compiler, and data support for `plastic`, `cardboard`, `metal`, `refill`, and `unknow` spool types. Ambiguous spool evidence stays as `unknow` until a manufacturer page, datasheet, marketplace listing, or product image clearly supports a more specific value.
 
 ## Live data
 
@@ -58,13 +59,30 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 
 | Source | Count |
 | --- | ---: |
-| Manufacturer source files | 441 |
+| Manufacturer source files | 458 |
 | Material definitions | 151 |
-| Source filament objects | 4,651 |
-| Color entries | 28,683 |
-| Compiled filament variants | 50,549 |
+| Source filament objects | 4,763 |
+| Color entries | 29,395 |
+| Compiled filament variants | 51,339 |
+| Source filaments with country of origin | 4,762 |
+| Source filaments with TDS/product links | 493 |
+| Source filaments with SDS links | 11 |
+| Manufacturer SKU/code entries | 7,195 |
+| EAN/GTIN entries | 1,881 |
+| ASEAN manufacturer coverage | 20 brands / 116 source filaments |
 
 Counts are generated from the current repository state. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
+
+### Spool metadata snapshot
+
+| `spool_type` | Source weight entries |
+| --- | ---: |
+| `plastic` | 4,310 |
+| `cardboard` | 1,607 |
+| `refill` | 32 |
+| `unknow` | 41 |
+
+The database intentionally preserves the upstream-compatible `unknow` spelling used by the schema. New spool values should be evidence-backed; do not infer spool material from vague marketing phrases alone.
 
 ## Data model at a glance
 
