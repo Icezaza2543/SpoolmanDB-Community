@@ -1259,11 +1259,21 @@
       "density": 1.24,
       "weights": [
         {
-          "weight": 1000
+          "weight": 1000,
+          "spool_weight": 130,
+          "spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
       ],
       "finish": "glossy",
       "tds_url": "https://3dexpress.my/product/pla-silk-filament-1kg-prosumer-series/",
