@@ -1435,11 +1435,20 @@
       "weights": [
         {
           "weight": 1000,
+          "spool_weight": 130,
           "spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
       ],
       "finish": "glossy",
       "multi_color_direction": "coaxial",
@@ -1501,6 +1510,14 @@
       ],
       "diameters": [
         1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
       ],
       "finish": "glossy",
       "multi_color_direction": "coaxial",
