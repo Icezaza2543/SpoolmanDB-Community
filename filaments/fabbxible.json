@@ -300,6 +300,35 @@
       ]
     },
     {
+      "name": "PC {color_name}",
+      "material": "PC",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        270
+      ],
+      "bed_temp_range": [
+        80,
+        120
+      ],
+      "country_of_origin": "Malaysia",
+      "tds_url": "https://daa5570c-4982-4143-a9aa-fc79f98eb01e.usrfiles.com/ugd/daa557_c2a527ea551b4bdb81e41e9c3f2e0073.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
       "name": "ABS {color_name}",
       "material": "ABS",
       "density": 1.04,
