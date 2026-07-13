@@ -31,10 +31,26 @@
         return material + " " + name;
     }
 
+    function getSpoolValue(item) {
+        if (!item) {
+            return "none";
+        }
+        if (item.is_refill === true) {
+            return "refill";
+        }
+
+        const spoolType = item.spool_type && String(item.spool_type).toLowerCase();
+        if (!spoolType || ["null", "none", "unknow", "unknown"].includes(spoolType)) {
+            return "none";
+        }
+        return spoolType;
+    }
+
     function buildFilamentSearchText(item) {
         if (!item) {
             return "";
         }
+        const spoolValue = getSpoolValue(item);
 
         return [
             item.id,
@@ -42,6 +58,7 @@
             item.name,
             getDisplayName(item),
             item.material,
+            spoolValue === "none" ? null : spoolValue,
             item.color_hex,
             ...(Array.isArray(item.color_hexes) ? item.color_hexes : []),
             ...(Array.isArray(item.codes) ? item.codes : []),
@@ -56,6 +73,7 @@
     const api = {
         materialAppearsInName,
         getDisplayName,
+        getSpoolValue,
         buildFilamentSearchText,
     };
 

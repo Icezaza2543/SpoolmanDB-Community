@@ -55,7 +55,7 @@
                                     "minimum": 0
                                 },
                                 "spool_type": {
-                                    "$comment": "Material of the spool itself.",
+                                    "$comment": "Material of the physical spool. 'refill' and 'unknow' are legacy source sentinels retained for compatibility; use is_refill for new refill data.",
                                     "enum": [
                                         null,
                                         "plastic",
@@ -64,8 +64,55 @@
                                         "refill",
                                         "unknow"
                                     ]
+                                },
+                                "is_refill": {
+                                    "$comment": "True when the product is supplied without a spool. Preferred over the legacy spool_type value 'refill'.",
+                                    "type": "boolean"
                                 }
-                            }
+                            },
+                            "allOf": [
+                                {
+                                    "if": {
+                                        "properties": {
+                                            "is_refill": {
+                                                "const": true
+                                            }
+                                        },
+                                        "required": [
+                                            "is_refill"
+                                        ]
+                                    },
+                                    "then": {
+                                        "properties": {
+                                            "spool_type": {
+                                                "enum": [
+                                                    null,
+                                                    "refill"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if": {
+                                        "properties": {
+                                            "spool_type": {
+                                                "const": "refill"
+                                            }
+                                        },
+                                        "required": [
+                                            "spool_type"
+                                        ]
+                                    },
+                                    "then": {
+                                        "properties": {
+                                            "is_refill": {
+                                                "const": true
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     },
                     "diameters": {

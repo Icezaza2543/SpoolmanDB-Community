@@ -28,6 +28,12 @@ python scripts/validate.py
 
 # Run unit tests to verify compile functionality
 python -m pytest
+
+# Verify the complete output against Spoolman's current upstream model
+python scripts/check_spoolman_compat.py
+
+# Optional offline check against the reviewed contract used by normal CI builds
+python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py
 ```
 
 If requirements are missing, install the development dependencies:
@@ -36,7 +42,9 @@ If requirements are missing, install the development dependencies:
 pip install -r requirements-dev.txt
 ```
 
-The generated `filaments.json` should compile cleanly, and all validations and unit tests must pass.
+The generated `filaments.json` should compile cleanly, and all schema, unit, and Spoolman compatibility checks must pass.
+
+For refill products, use `"is_refill": true` in the relevant weight object and omit `spool_type`. The legacy source value `"spool_type": "refill"` is still accepted to avoid changing existing public IDs, but it is normalized to `spool_type: null` in the published database.
 
 ## Review expectations
 

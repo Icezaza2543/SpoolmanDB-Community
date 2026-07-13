@@ -8,11 +8,8 @@ on:
     branches:
       - main
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
   validate:
@@ -47,9 +44,11 @@ jobs:
       - name: Compile filaments
         run: python3 scripts/compile_filaments.py
       - name: Install validation dependencies
-        run: python -m pip install jsonschema
+        run: python -m pip install -r requirements-dev.txt
       - name: Validate compiled output
         run: python scripts/validate.py
+      - name: Check pinned Spoolman compatibility
+        run: python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py
       - uses: actions/upload-artifact@v7
         with:
           name: filaments
@@ -60,6 +59,10 @@ jobs:
   deploy:
     if: ${{ github.event_name != 'pull_request' }}
     needs: [compile]
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     concurrency:
       group: "pages"
       cancel-in-progress: true
@@ -81,6 +84,7 @@ jobs:
         run: |
           cp materials.json public/
           cp filaments.schema.json public/
+          cp filaments.compiled.schema.json public/
           cp materials.schema.json public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

@@ -11,6 +11,8 @@
       "material",
       "density",
       "weight",
+      "spool_type",
+      "is_refill",
       "diameter"
     ],
     "additionalProperties": false,
@@ -43,6 +45,9 @@
       "spool_type": {
         "type": ["string", "null"],
         "enum": ["plastic", "cardboard", "metal", null]
+      },
+      "is_refill": {
+        "type": "boolean"
       },
       "diameter": {
         "type": "number",
@@ -126,6 +131,45 @@
       "tds_url": {
         "type": ["string", "null"]
       }
-    }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "is_refill": {
+              "const": true
+            }
+          },
+          "required": ["is_refill"]
+        },
+        "then": {
+          "properties": {
+            "spool_type": {
+              "type": "null"
+            },
+            "id": {
+              "pattern": "_r$"
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "id": {
+              "pattern": "_r$"
+            }
+          },
+          "required": ["id"]
+        },
+        "then": {
+          "properties": {
+            "is_refill": {
+              "const": true
+            }
+          }
+        }
+      }
+    ]
   }
 }

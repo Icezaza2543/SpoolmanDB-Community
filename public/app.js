@@ -15,6 +15,12 @@
         buildFilamentSearchText: function (item) {
             return item && item.name ? String(item.name).toLowerCase() : "";
         },
+        getSpoolValue: function (item) {
+            if (item && item.is_refill === true) return "refill";
+            const spoolType = item && item.spool_type && String(item.spool_type).toLowerCase();
+            if (!spoolType || ["null", "none", "unknow", "unknown"].includes(spoolType)) return "none";
+            return spoolType;
+        },
     };
 
     const SCHEMA_CONFIG = {
@@ -22,6 +28,11 @@
             title: "Filament source schema",
             file: "filaments.schema.json",
             paths: [resourcePath("filaments.schema.json")],
+        },
+        compiledFilament: {
+            title: "Compiled filament schema",
+            file: "filaments.compiled.schema.json",
+            paths: [resourcePath("filaments.compiled.schema.json")],
         },
         material: {
             title: "Material defaults schema",
@@ -237,8 +248,9 @@
         return "Pink";
     }
 
-    function normalizeSpoolType(type) {
-        if (!type || type === "null" || type === "none" || type === "unknow" || type === "unknown") return "Unknown";
+    function normalizeSpoolType(item) {
+        const type = spoolValue(item);
+        if (type === "none") return "Unknown";
         return type.charAt(0).toUpperCase() + type.slice(1);
     }
 
@@ -262,7 +274,7 @@
             if (item.color_hex || (Array.isArray(item.color_hexes) && item.color_hexes.length > 0)) {
                 coverage.color++;
             }
-            if (item.spool_type && item.spool_type !== "null" && item.spool_type !== "none") {
+            if (spoolValue(item) !== "none") {
                 coverage.spoolType++;
             }
             if (item.extruder_temp || (Array.isArray(item.extruder_temp_range) && item.extruder_temp_range.length > 0) ||
@@ -284,7 +296,7 @@
             const mfg = item.manufacturer || "Unknown";
             mfgMap.set(mfg, (mfgMap.get(mfg) || 0) + 1);
 
-            const spool = normalizeSpoolType(item.spool_type);
+            const spool = normalizeSpoolType(item);
             spoolMap.set(spool, (spoolMap.get(spool) || 0) + 1);
 
             const hexes = item.color_hex ? [item.color_hex] : (item.color_hexes || []);
@@ -368,17 +380,17 @@
             addNode("col_" + name, name, 18, 2);
         });
 
-        const spoolTypes = ["Plastic", "Cardboard", "Refill", "Unknown", "Other"];
+        const spoolTypes = ["Plastic", "Cardboard", "Metal", "Refill", "Unknown", "Other"];
         spoolTypes.forEach((name) => {
             addNode("spl_" + name, name, 15, 3);
         });
 
-        const knownSpools = new Set(["Plastic", "Cardboard", "Refill", "Unknown"]);
+        const knownSpools = new Set(["Plastic", "Cardboard", "Metal", "Refill", "Unknown"]);
 
         state.filaments.forEach((item) => {
             const mfg = item.manufacturer || "Unknown";
             const mat = item.material || "Unknown";
-            const spool = normalizeSpoolType(item.spool_type);
+            const spool = normalizeSpoolType(item);
             const safeSpool = knownSpools.has(spool) ? spool : "Other";
 
             if (top25Mfg.some(e => e[0] === mfg) && topMaterials.some(e => e[0] === mat)) {
@@ -422,7 +434,7 @@
                 trigger: "item",
                 formatter: function (params) {
                     if (params.dataType === "node") {
-                        const catLabels = ["Manufacturer", "Material", "Color Family", "Spool Type"];
+                        const catLabels = ["Manufacturer", "Material", "Color Family", "Packaging"];
                         return `<strong>${params.name}</strong><br/>Type: ${catLabels[params.data.category]}`;
                     }
                     return `Connection: ${params.data.source.replace(/^\w+_/, "")} → ${params.data.target.replace(/^\w+_/, "")}`;
@@ -432,7 +444,7 @@
                 textStyle: { color: "#f4f4f5" }
             },
             legend: [{
-                data: ["Manufacturers", "Materials", "Color Families", "Spool Types"],
+                data: ["Manufacturers", "Materials", "Color Families", "Packaging"],
                 textStyle: { color: "#a1a1aa" },
                 bottom: 10
             }],
@@ -445,7 +457,7 @@
                     { name: "Manufacturers", itemStyle: { color: "#f59e0b" } },
                     { name: "Materials", itemStyle: { color: "#06b6d4" } },
                     { name: "Color Families", itemStyle: { color: "#f43f5e" } },
-                    { name: "Spool Types", itemStyle: { color: "#10b981" } }
+                    { name: "Packaging", itemStyle: { color: "#10b981" } }
                 ],
                 roam: true,
                 label: {
@@ -703,7 +715,7 @@
         const total = metrics.totalFilaments;
         const categories = [
             "Color Data",
-            "Spool Type",
+            "Packaging",
             "Temperature Data",
             "SKU / EAN",
             "Density",
@@ -910,7 +922,7 @@
         const filamentsForMaterial = state.filaments.filter(function (item) {
             if (manufacturer && item.manufacturer !== manufacturer) return false;
             if (diameter && String(item.diameter) !== diameter) return false;
-            if (spool && spoolValue(item.spool_type) !== spool) return false;
+            if (spool && spoolValue(item) !== spool) return false;
             if (query && !searchText(item).includes(query)) return false;
             return true;
         });
@@ -919,7 +931,7 @@
         const filamentsForManufacturer = state.filaments.filter(function (item) {
             if (material && item.material !== material) return false;
             if (diameter && String(item.diameter) !== diameter) return false;
-            if (spool && spoolValue(item.spool_type) !== spool) return false;
+            if (spool && spoolValue(item) !== spool) return false;
             if (query && !searchText(item).includes(query)) return false;
             return true;
         });
@@ -928,7 +940,7 @@
         const filamentsForDiameter = state.filaments.filter(function (item) {
             if (material && item.material !== material) return false;
             if (manufacturer && item.manufacturer !== manufacturer) return false;
-            if (spool && spoolValue(item.spool_type) !== spool) return false;
+            if (spool && spoolValue(item) !== spool) return false;
             if (query && !searchText(item).includes(query)) return false;
             return true;
         });
@@ -958,7 +970,7 @@
                 return value + " mm";
             }
         );
-        populateSelect(elements.spool, uniqueSorted(filamentsForSpool.map((item) => spoolValue(item.spool_type))), labelSpool);
+        populateSelect(elements.spool, uniqueSorted(filamentsForSpool.map((item) => spoolValue(item))), labelSpool);
 
         // Restore selected values
         elements.material.value = currentMaterial;
@@ -1015,7 +1027,7 @@
             if (diameter && String(item.diameter) !== diameter) {
                 return false;
             }
-            if (spool && spoolValue(item.spool_type) !== spool) {
+            if (spool && spoolValue(item) !== spool) {
                 return false;
             }
             if (query && !searchText(item).includes(query)) {
@@ -1063,7 +1075,7 @@
         row.appendChild(textCell(item.material));
         row.appendChild(textCell(formatNumber(item.diameter) + " mm"));
         row.appendChild(textCell(formatNumber(item.weight) + " g"));
-        row.appendChild(textCell(labelSpool(spoolValue(item.spool_type))));
+        row.appendChild(textCell(labelSpool(spoolValue(item))));
         row.appendChild(textCell(formatTemps(item)));
         row.appendChild(cell(renderTags(item)));
         return row;
@@ -1154,7 +1166,7 @@
             parts.push("diameter " + diameter + " mm");
         }
         if (spool) {
-            parts.push("spool " + labelSpool(spool));
+            parts.push("packaging " + labelSpool(spool));
         }
         return parts.length > 0 ? parts.join(" / ") : "No filters applied.";
     }
@@ -1222,8 +1234,8 @@
         });
     }
 
-    function spoolValue(value) {
-        return value || "none";
+    function spoolValue(item) {
+        return displayNameApi.getSpoolValue(item);
     }
 
     function labelSpool(value) {

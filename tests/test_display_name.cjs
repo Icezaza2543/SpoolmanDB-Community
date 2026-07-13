@@ -2,6 +2,7 @@ const assert = require("assert");
 const {
     materialAppearsInName,
     getDisplayName,
+    getSpoolValue,
     buildFilamentSearchText,
 } = require("../public/display-name.js");
 
@@ -46,6 +47,25 @@ test("getDisplayName does not treat ePLA as standalone PLA", function () {
         getDisplayName({ name: "ePLA Matte BLACK", material: "PLA" }),
         "PLA ePLA Matte BLACK"
     );
+});
+
+test("getSpoolValue preserves refill packaging separately from spool material", function () {
+    assert.strictEqual(getSpoolValue({ spool_type: null, is_refill: true }), "refill");
+    assert.strictEqual(getSpoolValue({ spool_type: "plastic", is_refill: false }), "plastic");
+    assert.strictEqual(getSpoolValue({ spool_type: null, is_refill: false }), "none");
+    assert.strictEqual(getSpoolValue({ spool_type: "unknow" }), "none");
+});
+
+test("buildFilamentSearchText makes refill products searchable", function () {
+    const searchText = buildFilamentSearchText({
+        manufacturer: "Example",
+        name: "Black",
+        material: "PLA",
+        is_refill: true,
+    });
+
+    assert.ok(searchText.includes("refill"));
+    assert.ok(!buildFilamentSearchText({ name: "Black" }).includes("none"));
 });
 
 test("buildFilamentSearchText includes composite display names", function () {

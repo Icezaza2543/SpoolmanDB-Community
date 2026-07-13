@@ -39,9 +39,9 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 *   **Expanded Data & Metadata**:
     *   **Additional Metadata**: Full compiler passthrough for source-backed fields including `country_of_origin`, `sds_url`, `tds_url`, `codes`, `eans`, and `eans_refill` from source profiles to the final database.
     *   **Modern Materials**: Added missing material definitions in [materials.json](materials.json) (`BVOH`, `CoPE`, `PP`, `PAHT`, `PPA`, `PPS`, `PET`).
-    *   **Massive Brand Updates**: Expanded to **458 manufacturer source files**, covering popular consumer, local, industrial, and community brands such as Bambu Lab, Polymaker, Spectrum, Threebees, Filamax, ProtoFil, Cubic3, and more.
+    *   **Massive Brand Updates**: Expanded to **460 manufacturer source files**, covering popular consumer, local, industrial, and community brands such as Bambu Lab, Polymaker, Spectrum, Threebees, Filamax, ProtoFil, Cubic3, and more.
     *   **ASEAN & Local-Market Coverage**: Added source-backed local filament data across Thailand, Malaysia, Singapore, Indonesia, Vietnam, and the Philippines, with current coverage for 20 ASEAN manufacturers and 116 ASEAN source filament objects.
-    *   **Refill & Spool Type Support**: Added native schema, compiler, and data support for `plastic`, `cardboard`, `metal`, `refill`, and `unknow` spool types. Ambiguous spool evidence stays as `unknow` until a manufacturer page, datasheet, marketplace listing, or product image clearly supports a more specific value.
+    *   **Refill & Spool Type Support**: Source data can preserve `plastic`, `cardboard`, `metal`, legacy `refill`, and legacy `unknow` evidence. The published Spoolman contract emits only `plastic`, `cardboard`, `metal`, or `null`, with refill packaging preserved separately as `is_refill`.
 
 ## Live data
 
@@ -49,6 +49,7 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | --- |
 | Browse the database | <https://icezaza2543.github.io/SpoolmanDB-Community/> |
 | Compiled filament data | <https://icezaza2543.github.io/SpoolmanDB-Community/filaments.json> |
+| Compiled filament schema | <https://icezaza2543.github.io/SpoolmanDB-Community/filaments.compiled.schema.json> |
 | Material defaults | <https://icezaza2543.github.io/SpoolmanDB-Community/materials.json> |
 | Contributing guide | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Terms of use | [TERMS.md](TERMS.md) |
@@ -59,15 +60,15 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 
 | Source | Count |
 | --- | ---: |
-| Manufacturer source files | 458 |
+| Manufacturer source files | 460 |
 | Material definitions | 151 |
-| Source filament objects | 4,763 |
-| Color entries | 29,395 |
-| Compiled filament variants | 51,339 |
-| Source filaments with country of origin | 4,762 |
-| Source filaments with TDS/product links | 493 |
-| Source filaments with SDS links | 11 |
-| Manufacturer SKU/code entries | 7,195 |
+| Source filament objects | 4,789 |
+| Color entries | 29,639 |
+| Compiled filament variants | 51,596 |
+| Source filaments with country of origin | 4,788 |
+| Source filaments with TDS/product links | 519 |
+| Source filaments with SDS links | 12 |
+| Manufacturer SKU/code entries | 7,427 |
 | EAN/GTIN entries | 1,881 |
 | ASEAN manufacturer coverage | 20 brands / 116 source filaments |
 
@@ -77,12 +78,29 @@ Counts are generated from the current repository state. The compiled variant cou
 
 | `spool_type` | Source weight entries |
 | --- | ---: |
-| `plastic` | 4,310 |
-| `cardboard` | 1,607 |
-| `refill` | 32 |
+| `plastic` | 4,321 |
+| `cardboard` | 1,615 |
+| `refill` | 34 |
 | `unknow` | 41 |
+| omitted | 14 |
 
-The database intentionally preserves the upstream-compatible `unknow` spelling used by the schema. New spool values should be evidence-backed; do not infer spool material from vague marketing phrases alone.
+The source database intentionally preserves the historical `unknow` spelling for ID and curation stability. New spool values should be evidence-backed; do not infer spool material from vague marketing phrases alone. New refill entries should use `is_refill: true`; the legacy source value `spool_type: "refill"` remains accepted so existing IDs do not change.
+
+### Spoolman compatibility contract
+
+`spool_type` in the published `filaments.json` describes physical spool material and is restricted to the values accepted by Spoolman. Community-only refill metadata is emitted as the additional boolean `is_refill`. The public Community JSON and Explorer retain that distinction; current Spoolman accepts the extra field but drops it when serializing data into its own cache.
+
+| Source weight metadata | Published `spool_type` | Published `is_refill` |
+| --- | --- | ---: |
+| `plastic`, `cardboard`, or `metal` | same value | `false` |
+| legacy `refill` or `is_refill: true` | `null` | `true` |
+| legacy `unknow`, `null`, or omitted | `null` | `false` |
+
+Compatibility is checked in three layers:
+
+1. Compiler normalization uses an explicit allowlist and preserves historical ID suffixes.
+2. The compiled schema rejects values outside Spoolman's public enum.
+3. Normal builds validate every record against a reviewed, pinned upstream contract snapshot without network access. A separate [weekly compatibility workflow](.github/workflows/spoolman-compatibility.yml) downloads the current `externaldb.py`, extracts its enums, required fields, defaults, and supported annotations with a strict AST parser, and detects drift without executing downloaded code.
 
 ## Data model at a glance
 
@@ -135,6 +153,7 @@ Then compile, validate, and test:
 python scripts/compile_filaments.py
 python scripts/validate.py
 python -m pytest
+python scripts/check_spoolman_compat.py
 ```
 
 ## Data model
@@ -149,7 +168,7 @@ The source files in `filaments/` are intentionally compact. Deployment expands t
 | `name` | yes | Product or product-line name. Usually contains `{color_name}` so each color expands into a readable compiled name. Follow manufacturer naming; do not add `material` here unless it is part of the official product name. |
 | `material` | yes | Authoritative material code, such as `PLA`, `PETG`, `ABS`, `TPU-95A`, or schema-supported composites. |
 | `density` | yes | Material density in g/cm3. |
-| `weights` | yes | Array of `weight`, optional `spool_weight`, and optional `spool_type`. |
+| `weights` | yes | Array of `weight`, optional `spool_weight`, optional physical `spool_type`, and optional `is_refill`. Prefer `is_refill: true` for spoolless products; legacy `spool_type: "refill"` remains accepted for ID stability. |
 | `diameters` | yes | Filament diameters in mm, commonly `1.75` or `2.85`. |
 | `colors` | yes | Color objects with `name` plus either `hex` or `hexes`. |
 | `extruder_temp` | optional | Recommended extruder temperature in degrees Celsius. |

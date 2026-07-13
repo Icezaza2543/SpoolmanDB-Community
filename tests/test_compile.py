@@ -6,6 +6,7 @@ from scripts.compile_filaments import (
     Finish,
     MultiColorDirection,
     normalize_spool_type_for_spoolman,
+    resolve_is_refill,
 )
 
 def test_generate_id_normalization():
@@ -96,10 +97,10 @@ def test_expand_filament_data_valid():
         ]
     }
     results = list(expand_filament_data("BrandX", filament_data))
-    
+
     # Total combinations = 2 weights * 2 diameters * 2 colors = 8 filaments
     assert len(results) == 8
-    
+
     first = results[0]
     assert first["manufacturer"] == "BrandX"
     assert first["name"] == "Super Fire Red PLA"
@@ -136,14 +137,21 @@ def test_spool_type_normalization_and_id_stability():
     assert normalize_spool_type_for_spoolman("unknow") is None
     assert normalize_spool_type_for_spoolman("unknown") is None
     assert normalize_spool_type_for_spoolman(None) is None
-    
+
     assert normalize_spool_type_for_spoolman(SpoolType.PLASTIC) == "plastic"
     assert normalize_spool_type_for_spoolman(SpoolType.CARDBOARD) == "cardboard"
     assert normalize_spool_type_for_spoolman(SpoolType.METAL) == "metal"
     assert normalize_spool_type_for_spoolman("plastic") == "plastic"
     assert normalize_spool_type_for_spoolman("cardboard") == "cardboard"
     assert normalize_spool_type_for_spoolman("metal") == "metal"
-    
+    with pytest.raises(ValueError, match="Unsupported source spool_type"):
+        normalize_spool_type_for_spoolman("invalid_value")
+
+    assert resolve_is_refill(SpoolType.REFILL, None) is True
+    assert resolve_is_refill(None, True) is True
+    assert resolve_is_refill(SpoolType.UNKNOW, None) is False
+    assert resolve_is_refill(None, None) is False
+
     # Test expand_filament_data with refill, unknow, metal, plastic, cardboard, and unknown
     filament_data = {
         "name": "{color_name} PLA",
@@ -162,32 +170,38 @@ def test_spool_type_normalization_and_id_stability():
             {"name": "Red", "hex": "FF0000"}
         ]
     }
-    
+
     results = list(expand_filament_data("TestBrand", filament_data))
     assert len(results) == 6
-    
+
     # 1. refill -> normalized to None, ID suffix remains _r
     assert results[0]["spool_type"] is None
+    assert results[0]["is_refill"] is True
     assert results[0]["id"] == "testbrand_pla_redpla_1000_175_r"
-    
+
     # 2. unknow -> normalized to None, ID suffix remains _u
     assert results[1]["spool_type"] is None
+    assert results[1]["is_refill"] is False
     assert results[1]["id"] == "testbrand_pla_redpla_1000_175_u"
-    
+
     # 3. metal -> kept as metal, ID suffix is _m
     assert results[2]["spool_type"] == "metal"
+    assert results[2]["is_refill"] is False
     assert results[2]["id"] == "testbrand_pla_redpla_1000_175_m"
-    
+
     # 4. plastic -> kept as plastic, ID suffix is _p
     assert results[3]["spool_type"] == "plastic"
+    assert results[3]["is_refill"] is False
     assert results[3]["id"] == "testbrand_pla_redpla_1000_175_p"
-    
+
     # 5. cardboard -> kept as cardboard, ID suffix is _c
     assert results[4]["spool_type"] == "cardboard"
+    assert results[4]["is_refill"] is False
     assert results[4]["id"] == "testbrand_pla_redpla_1000_175_c"
-    
+
     # 6. unknown (string) -> normalized to None, ID suffix falls back to _n
     assert results[5]["spool_type"] is None
+    assert results[5]["is_refill"] is False
     assert results[5]["id"] == "testbrand_pla_redpla_1000_175_n"
 
     # 7. unexpected invalid spool type -> raises KeyError
@@ -199,4 +213,38 @@ def test_spool_type_normalization_and_id_stability():
             weight=1000.0,
             diameter=1.75,
             spool_type="invalid_value"
-        )
+        )
+
+
+def test_explicit_refill_metadata_and_conflicts():
+    filament_data = {
+        "name": "{color_name} PLA",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [{"weight": 1000.0, "is_refill": True}],
+        "diameters": [1.75],
+        "colors": [{"name": "Red", "hex": "FF0000"}],
+    }
+
+    result = list(expand_filament_data("TestBrand", filament_data))[0]
+    assert result["spool_type"] is None
+    assert result["is_refill"] is True
+    assert result["id"] == "testbrand_pla_redpla_1000_175_r"
+
+    filament_data["weights"] = [
+        {"weight": 1000.0, "spool_type": SpoolType.PLASTIC, "is_refill": True}
+    ]
+    with pytest.raises(ValueError, match="cannot have another spool_type"):
+        list(expand_filament_data("TestBrand", filament_data))
+
+    filament_data["weights"] = [
+        {"weight": 1000.0, "spool_type": SpoolType.REFILL, "is_refill": False}
+    ]
+    with pytest.raises(ValueError, match="conflicts with is_refill false"):
+        list(expand_filament_data("TestBrand", filament_data))
+
+    filament_data["weights"] = [
+        {"weight": 1000.0, "spool_type": SpoolType.UNKNOW, "is_refill": True}
+    ]
+    with pytest.raises(ValueError, match="cannot have another spool_type"):
+        list(expand_filament_data("TestBrand", filament_data))

@@ -117,7 +117,7 @@
       <text x="48" y="105" class="mono">weight</text>
       <text x="138" y="105" class="mono-small">number &gt;= 0</text>
       <text x="48" y="130" class="mono-small">? spool_weight number &gt;=0</text>
-      <text x="48" y="152" class="mono-small">? spool_type enum</text>
+      <text x="48" y="152" class="mono-small">? spool_type enum; ? is_refill bool</text>
     </g>
 
     <g transform="translate(430 626)">
@@ -180,9 +180,9 @@
       <text x="174" y="69" class="note-light">Compiler output, not the source schema. Parsed by Spoolman's external DB model.</text>
       <g transform="translate(28 98)">
         <rect x="0" y="0" width="1028" height="116" rx="14" fill="#f2f2f2"/>
-        <text x="22" y="28" class="mono-small-light">required-ish contract: id, manufacturer, name, material, density, weight, diameter</text>
-        <text x="22" y="54" class="mono-small-light">expanded fields: spool_weight, spool_type, color_hex/color_hexes, temps, finish, pattern, booleans</text>
-        <text x="22" y="80" class="mono-small-light">community metadata: codes, eans, eans_refill; ignored by current Spoolman if unknown</text>
+        <text x="22" y="28" class="mono-small-light">required contract: id, manufacturer, name, material, density, weight, spool_type, is_refill, diameter</text>
+        <text x="22" y="54" class="mono-small-light">expanded fields: spool_weight, color_hex/color_hexes, temps, finish, pattern, booleans</text>
+        <text x="22" y="80" class="mono-small-light">community metadata: codes, eans, eans_refill, is_refill; retained here, ignored by current Spoolman</text>
       </g>
     </g>
   </g>

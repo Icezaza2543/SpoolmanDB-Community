@@ -185,7 +185,7 @@
                 </article>
                 <article class="chart-card">
                     <div class="card-heading">
-                        <h2>Spool Type Distribution</h2>
+                        <h2>Packaging Distribution</h2>
                         <span>Packaging adoption</span>
                     </div>
                     <div id="spool-type-chart" class="echart-panel"></div>
@@ -235,9 +235,9 @@
                         </select>
                     </label>
                     <label>
-                        <span>Spool Type</span>
+                        <span>Packaging</span>
                         <select id="spool-filter">
-                            <option value="">All Types</option>
+                            <option value="">All Packaging</option>
                         </select>
                     </label>
                     <button class="icon-button" type="reset" aria-label="Reset filters">
@@ -259,7 +259,7 @@
                                 <th scope="col">Material</th>
                                 <th scope="col">Diameter</th>
                                 <th scope="col">Weight</th>
-                                <th scope="col">Spool</th>
+                                <th scope="col">Packaging</th>
                                 <th scope="col">Temps</th>
                                 <th scope="col">IDs</th>
                             </tr>
@@ -464,6 +464,10 @@
                                         <span class="field-name">spool_type_id</span>
                                         <span class="field-type">string</span>
                                     </div>
+                                    <div class="db-table-row">
+                                        <span class="field-name">is_refill</span>
+                                        <span class="field-type">boolean</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -548,6 +552,7 @@
                             <span>Schema</span>
                             <select id="schema-choice">
                                 <option value="filament">Filament source schema</option>
+                                <option value="compiledFilament">Compiled filament schema</option>
                                 <option value="material">Material defaults schema</option>
                             </select>
                         </label>

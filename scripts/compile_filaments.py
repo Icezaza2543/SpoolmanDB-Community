@@ -34,6 +34,7 @@ class Weight(TypedDict):
     weight: float
     spool_weight: NotRequired[float]
     spool_type: NotRequired[SpoolType | None]
+    is_refill: NotRequired[bool]
 
 
 class Color(TypedDict):
@@ -83,16 +84,48 @@ SPOOL_TYPE_MAP = {
     SpoolType.UNKNOW: "u",
 }
 
+SPOOLMAN_SPOOL_TYPES = {
+    SpoolType.PLASTIC,
+    SpoolType.CARDBOARD,
+    SpoolType.METAL,
+    "plastic",
+    "cardboard",
+    "metal",
+}
+
+LEGACY_NULL_SPOOL_TYPES = {
+    SpoolType.REFILL,
+    SpoolType.UNKNOW,
+    "refill",
+    "unknow",
+    "unknown",
+}
+
 
 def normalize_spool_type_for_spoolman(
     spool_type: SpoolType | str | None,
 ) -> str | None:
-    """Normalizes community/source spool types to Spoolman-compatible ones."""
-    if spool_type in (SpoolType.REFILL, SpoolType.UNKNOW, "refill", "unknow", "unknown"):
+    """Normalize source metadata to Spoolman's strict public spool material enum."""
+    if spool_type is None or spool_type in LEGACY_NULL_SPOOL_TYPES:
         return None
-    if spool_type is None:
-        return None
-    return str(spool_type)
+    if spool_type in SPOOLMAN_SPOOL_TYPES:
+        return str(spool_type)
+    raise ValueError(f"Unsupported source spool_type: {spool_type!r}")
+
+
+def resolve_is_refill(
+    spool_type: SpoolType | str | None,
+    explicit_is_refill: bool | None,
+) -> bool:
+    """Resolve refill packaging while accepting the legacy source sentinel."""
+    legacy_is_refill = spool_type in (SpoolType.REFILL, "refill")
+
+    if explicit_is_refill is False and legacy_is_refill:
+        raise ValueError("spool_type 'refill' conflicts with is_refill false")
+    if explicit_is_refill is True and spool_type not in (None, SpoolType.REFILL, "refill"):
+        raise ValueError("is_refill true cannot have another spool_type")
+
+    return legacy_is_refill if explicit_is_refill is None else explicit_is_refill
 
 
 def generate_id(
@@ -103,14 +136,17 @@ def generate_id(
     weight: float,
     diameter: float,
     spool_type: SpoolType | str | None,
+    is_refill: bool = False,
 ) -> str:
     """Generates a unique ID for the given filament data."""
     # Remove any non-ascii from name
     name = name.encode("ascii", "ignore").decode()
     weight_s = f"{weight:.0f}"
     diameter_s = f"{diameter:.2f}".replace(".", "")
-    # Handle the defensive "unknown" string mapped to None ID suffix
-    spool_key = None if spool_type == "unknown" else spool_type
+    # Preserve the historical refill suffix for both legacy and explicit refill metadata.
+    spool_key = SpoolType.REFILL if is_refill else spool_type
+    # Handle the defensive "unknown" string mapped to None ID suffix.
+    spool_key = None if spool_key == "unknown" else spool_key
     spooltype_s = SPOOL_TYPE_MAP[spool_key]
     return f"{manufacturer.lower()}_{material.lower()}_{name.lower()}_{weight_s}_{diameter_s}_{spooltype_s}".replace(
         " ", ""
@@ -142,6 +178,10 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
         weight = weight_obj["weight"]
         spool_weight = weight_obj.get("spool_weight", None)
         spool_type = weight_obj.get("spool_type", None)
+        is_refill = resolve_is_refill(
+            spool_type,
+            weight_obj.get("is_refill", None),
+        )
 
         for diameter in diameters:
             for color_obj in colors:
@@ -205,6 +245,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                         weight=weight,
                         diameter=diameter,
                         spool_type=spool_type,
+                        is_refill=is_refill,
                     ),
                     "manufacturer": manufacturer,
                     "name": formatted_name,
@@ -214,6 +255,8 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                     "spool_weight": spool_weight,
                     # Emitted compiled field is normalized to Spoolman's public schema contract.
                     "spool_type": normalize_spool_type_for_spoolman(spool_type),
+                    # Community metadata remains explicit even though Spoolman ignores extra fields.
+                    "is_refill": is_refill,
                     "diameter": diameter,
                     "color_hex": color_hex,
                     "color_hexes": color_hexes,
