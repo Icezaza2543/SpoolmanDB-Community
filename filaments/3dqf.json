@@ -1,0 +1,175 @@
+{
+  "manufacturer": "3DQF",
+  "filaments": [
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
+        },
+        {
+          "weight": 2000,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 4500,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        210,
+        225
+      ],
+      "bed_temp_range": [
+        40,
+        50
+      ],
+      "tds_url": "https://www.3dqf.co.uk/_files/ugd/33dbdc_aefee5e14646421fae814df4121cee8f.pdf",
+      "country_of_origin": "United Kingdom",
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-009",
+            "PLA-009-R",
+            "PLA-009-2",
+            "PLA-009-3",
+            "PLA-009-45",
+            "PLA-209"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA-Plus {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        40,
+        50
+      ],
+      "tds_url": "https://www.3dqf.co.uk/_files/ugd/33dbdc_37f4bf34f4e04df08554868e55c45eca.pdf",
+      "country_of_origin": "United Kingdom",
+      "colors": [
+        {
+          "name": "Deep Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-Plus-009"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "spool_type": "refill"
+        },
+        {
+          "weight": 2600,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 4600,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        100
+      ],
+      "tds_url": "https://www.3dqf.co.uk/_files/ugd/33dbdc_6afdd09576324f95ab415eb0771c7ce8.pdf",
+      "country_of_origin": "United Kingdom",
+      "colors": [
+        {
+          "name": "Shadow Black",
+          "hex": "000000",
+          "codes": [
+            "PETG-009",
+            "PETG-009-R",
+            "PETG-009-2.6",
+            "PETG-009-4.6"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 4100
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp": 110,
+      "tds_url": "https://www.3dqf.co.uk/_files/ugd/33dbdc_0f6ec01a77c84a4c8a64c5d30cb54143.pdf",
+      "country_of_origin": "United Kingdom",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "ABS-009",
+            "ABS-009-41"
+          ]
+        }
+      ]
+    }
+  ]
+}
