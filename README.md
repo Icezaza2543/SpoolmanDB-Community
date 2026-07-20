@@ -39,8 +39,8 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 *   **Expanded Data & Metadata**:
     *   **Additional Metadata**: Full compiler passthrough for source-backed fields including `country_of_origin`, `sds_url`, `tds_url`, `codes`, `eans`, and `eans_refill` from source profiles to the final database.
     *   **Modern Materials**: Added missing material definitions in [materials.json](materials.json) (`BVOH`, `CoPE`, `PP`, `PAHT`, `PPA`, `PPS`, `PET`).
-    *   **Massive Brand Updates**: Expanded to **460 manufacturer source files**, covering popular consumer, local, industrial, and community brands such as Bambu Lab, Polymaker, Spectrum, Threebees, Filamax, ProtoFil, Cubic3, and more.
-    *   **ASEAN & Local-Market Coverage**: Added source-backed local filament data across Thailand, Malaysia, Singapore, Indonesia, Vietnam, and the Philippines, with current coverage for 21 ASEAN manufacturers and 138 ASEAN source filament objects.
+    *   **Massive Brand Updates**: Broad coverage of popular consumer, local, industrial, and community brands such as Bambu Lab, Polymaker, Spectrum, Threebees, Filamax, ProtoFil, Cubic3, and more.
+    *   **ASEAN & Local-Market Coverage**: Source-backed local filament data across Thailand, Malaysia, Singapore, Indonesia, Vietnam, and the Philippines, with current totals generated in the snapshot below.
     *   **Refill & Spool Type Support**: Source data can preserve `plastic`, `cardboard`, `metal`, legacy `refill`, and legacy `unknow` evidence. The published Spoolman contract emits only `plastic`, `cardboard`, `metal`, or `null`, with refill packaging preserved separately as `is_refill`.
 
 ## Live data
@@ -58,6 +58,7 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 
 ## Current snapshot
 
+<!-- readme-snapshot:start -->
 | Source | Count |
 | --- | ---: |
 | Manufacturer source files | 460 |
@@ -72,17 +73,23 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | EAN/GTIN entries | 1,952 |
 | ASEAN manufacturer coverage | 21 brands / 138 source filaments |
 
-Counts are generated from the current repository state. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
+Counts in this block are generated from the current repository state. Run `python scripts/readme_snapshot.py --write` after source-data changes. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
 
 ### Spool metadata snapshot
 
-| `spool_type` | Source weight entries |
+| Source weight metadata | Entries |
 | --- | ---: |
-| `plastic` | 4,321 |
-| `cardboard` | 1,615 |
-| `refill` | 34 |
-| `unknow` | 41 |
-| omitted | 14 |
+| `spool_type: plastic` | 4,321 |
+| `spool_type: cardboard` | 1,615 |
+| `spool_type: metal` | 0 |
+| `spool_type: refill` (legacy) | 34 |
+| `spool_type: unknow` (legacy) | 41 |
+| `spool_type: null` | 0 |
+| `spool_type` omitted | 14 |
+| Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 34 |
+<!-- readme-snapshot:end -->
+
+ASEAN coverage uses the curated [ASEAN manufacturer registry](scripts/asean_manufacturers.json); it is never inferred from `country_of_origin`, which records manufacturing origin rather than brand location.
 
 The source database intentionally preserves the historical `unknow` spelling for ID and curation stability. New spool values should be evidence-backed; do not infer spool material from vague marketing phrases alone. New refill entries should use `is_refill: true`; the legacy source value `spool_type: "refill"` remains accepted so existing IDs do not change.
 
@@ -125,7 +132,10 @@ filaments/                 Manufacturer source JSON files
 materials.json             Shared material defaults
 filaments.schema.json      Schema for manufacturer source files
 materials.schema.json      Schema for material defaults
-scripts/compile_filaments.py
+scripts/
+  compile_filaments.py      Compile source data into public JSON
+  readme_snapshot.py        Generate/check README repository metrics
+  asean_manufacturers.json  Curated ASEAN brand-location registry
 public/                    GitHub Pages shell and deployed data target
 ```
 
@@ -150,9 +160,10 @@ pip install -r requirements-dev.txt
 Then compile, validate, and test:
 
 ```powershell
+python scripts/readme_snapshot.py --write
 python scripts/compile_filaments.py
 python scripts/validate.py
-python -m pytest
+python -m pytest -q
 python scripts/check_spoolman_compat.py
 ```
 

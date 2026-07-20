@@ -29,6 +29,8 @@ Provide a brief summary of the changes and what they accomplish.
 Please run the following validation checks locally before submitting. Check all that apply:
 
 - [ ] **Data compiles successfully:** Ran `python scripts/compile_filaments.py` with no errors.
+- [ ] **ASEAN registry updated if applicable:** Added the manufacturer source filename to `scripts/asean_manufacturers.json`.
+- [ ] **README snapshot is current:** Ran `python scripts/readme_snapshot.py --check` and passed.
 - [ ] **Data and schemas validate:** Ran `python scripts/validate.py` and passed.
 - [ ] **Regression tests pass:** Ran `python -m pytest -q` and passed.
 - [ ] **Spoolman compatibility passes:** Ran `python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py` and passed.
