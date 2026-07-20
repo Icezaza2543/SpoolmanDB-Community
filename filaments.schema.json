@@ -261,7 +261,7 @@
                                     "type": "boolean"
                                 },
                                 "codes": {
-                                    "$comment": "Manufacturer product codes / SKUs for this color variant.",
+                                    "$comment": "Manufacturer product codes, SKUs, or platform variant IDs for this color variant.",
                                     "type": "array",
                                     "items": {
                                         "type": "string",

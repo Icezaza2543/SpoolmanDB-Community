@@ -61,7 +61,7 @@
         statManufacturers: document.querySelector("#stat-manufacturers"),
         statMaterials: document.querySelector("#stat-materials"),
         statMulticolor: document.querySelector("#stat-multicolor"),
-        statBarcodes: document.querySelector("#stat-barcodes"),
+        statProductIds: document.querySelector("#stat-product-ids"),
         filters: document.querySelector("#filters"),
         search: document.querySelector("#search"),
         material: document.querySelector("#material-filter"),
@@ -265,7 +265,7 @@
             color: 0,
             spoolType: 0,
             temp: 0,
-            skuEan: 0,
+            productIds: 0,
             density: 0,
             multicolor: 0
         };
@@ -282,7 +282,7 @@
                 coverage.temp++;
             }
             if (hasProductIds(item)) {
-                coverage.skuEan++;
+                coverage.productIds++;
             }
             if (typeof item.density === "number" && item.density > 0) {
                 coverage.density++;
@@ -717,7 +717,7 @@
             "Color Data",
             "Packaging",
             "Temperature Data",
-            "SKU / EAN",
+            "Product IDs",
             "Density",
             "Multi-Color"
         ];
@@ -725,7 +725,7 @@
             metrics.coverage.color,
             metrics.coverage.spoolType,
             metrics.coverage.temp,
-            metrics.coverage.skuEan,
+            metrics.coverage.productIds,
             metrics.coverage.density,
             metrics.coverage.multicolor
         ].map(count => total ? Math.round((count / total) * 100) : 0);
@@ -742,7 +742,7 @@
                         metrics.coverage.color,
                         metrics.coverage.spoolType,
                         metrics.coverage.temp,
-                        metrics.coverage.skuEan,
+                        metrics.coverage.productIds,
                         metrics.coverage.density,
                         metrics.coverage.multicolor
                     ];
@@ -999,13 +999,13 @@
         const manufacturers = new Set(state.filaments.map((item) => item.manufacturer).filter(Boolean));
         const materials = new Set(state.filaments.map((item) => item.material).filter(Boolean));
         const multicolor = state.filaments.filter((item) => Array.isArray(item.color_hexes) && item.color_hexes.length > 0);
-        const barcodes = state.filaments.filter(hasProductIds);
+        const productIds = state.filaments.filter(hasProductIds);
 
         elements.statFilaments.textContent = formatNumber(state.filaments.length);
         elements.statManufacturers.textContent = formatNumber(manufacturers.size);
         elements.statMaterials.textContent = formatNumber(materials.size) + " / " + formatNumber(state.materials.length);
         elements.statMulticolor.textContent = formatNumber(multicolor.length);
-        elements.statBarcodes.textContent = formatNumber(barcodes.length);
+        elements.statProductIds.textContent = formatNumber(productIds.length);
     }
 
     function renderFilteredResults() {
@@ -1097,7 +1097,7 @@
         list.className = "tag-list";
 
         if (Array.isArray(item.codes) && item.codes.length > 0) {
-            list.appendChild(tag("SKU", true));
+            list.appendChild(tag("CODE/ID", true));
         }
         if (Array.isArray(item.eans) && item.eans.length > 0) {
             list.appendChild(tag("EAN", true));
@@ -1306,7 +1306,7 @@
                 addQualityIssue(item, "missing-temp", "Extruder or bed temperature data is missing.");
             }
             if (!hasProductIds(item)) {
-                addQualityIssue(item, "missing-product-id", "No SKU, EAN, or refill EAN is published for this variant.");
+                addQualityIssue(item, "missing-product-id", "No product code, platform variant ID, EAN, or refill EAN is published for this variant.");
             }
             if (Array.isArray(item.color_hexes) && item.color_hexes.length > 0) {
                 addQualityIssue(item, "multicolor", "Multi-color row. Verify color order and direction from source evidence.");
@@ -1385,7 +1385,7 @@
             ["No defaults", formatNumber(metrics.unknownMaterials), "Not in materials.json"],
             ["Invalid colors", formatNumber(metrics.invalidColors), "Missing or invalid hex"],
             ["Temp coverage", metrics.tempCoverage, "Extruder and bed data"],
-            ["Rows with SKU/EAN", metrics.productIdCoverage, "Product ID coverage"],
+            ["Rows with product IDs", metrics.productIdCoverage, "Product ID coverage"],
             ["Multi-color rows", formatNumber(metrics.multicolor), "Informational review signal"],
             ["Display-name hints", formatNumber(metrics.displayName), "Explorer composes material + name"],
         ];
@@ -1494,7 +1494,7 @@
             "invalid-color": "Invalid color",
             "missing-size": "Missing size data",
             "missing-temp": "Missing temperatures",
-            "missing-product-id": "Missing SKU/EAN",
+            "missing-product-id": "Missing product IDs",
             multicolor: "Multi-color row",
             "display-name": "Display-name hint",
         };

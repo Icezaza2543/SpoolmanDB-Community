@@ -6,7 +6,7 @@ This policy explains how SpoolmanDB Community handles data quality, privacy expe
 
 ## 1. Data scope
 
-SpoolmanDB Community is intended to store public filament and material reference data, including manufacturer names, product names, material types, densities, temperatures, diameters, weights, spool types, color names, color hex values, SKU/EAN identifiers, and public SDS/TDS links.
+SpoolmanDB Community is intended to store public filament and material reference data, including manufacturer names, product names, material types, densities, temperatures, diameters, weights, spool types, color names, color hex values, manufacturer product codes, SKUs, platform variant IDs, EAN/GTIN identifiers, and public SDS/TDS links.
 
 The project is not intended to store personal data, private customer information, confidential manufacturer files, private pricing agreements, authentication tokens, or non-public business records.
 
@@ -14,7 +14,7 @@ The project is not intended to store personal data, private customer information
 
 Preferred sources include manufacturer product pages, product labels, datasheets, safety data sheets, technical data sheets, marketplace pages, and direct community verification.
 
-Maintainers may ask contributors for source evidence when a change adds a new manufacturer, changes material properties, changes safety-relevant fields, or updates identifiers such as SKUs and EANs.
+Maintainers may ask contributors for source evidence when a change adds a new manufacturer, changes material properties, changes safety-relevant fields, or updates identifiers such as product codes, SKUs, platform variant IDs, and EAN/GTINs.
 
 The project favors reviewable source files in `filaments/` and `materials.json`. Generated files should be produced by the compiler and should not be hand-edited unless maintainers explicitly request it.
 
