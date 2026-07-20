@@ -654,9 +654,12 @@ $ cd SpoolmanDB-Community</code></pre>
 $ pip install -r requirements-dev.txt</code></pre>
                             <pre><code id="cmd-compile"># Run compiler
 $ python scripts/compile_filaments.py</code></pre>
-                            <pre><code id="cmd-filaments"># Validate schemas
-$ check-jsonschema --schemafile materials.schema.json materials.json
-$ check-jsonschema --schemafile filaments.schema.json filaments/*</code></pre>
+                            <pre><code id="cmd-validate"># Validate source and compiled data
+$ python scripts/validate.py</code></pre>
+                            <pre><code id="cmd-tests"># Run regression tests
+$ python -m pytest -q</code></pre>
+                            <pre><code id="cmd-compat"># Check the pinned Spoolman contract
+$ python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py</code></pre>
                         </div>
                     </div>
                 </article>
