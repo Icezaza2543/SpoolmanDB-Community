@@ -76,7 +76,7 @@ Search matches:
 - raw `name` (`Plus BLACK`)
 - composed display text (`ABS Plus BLACK`)
 - `material` (`ABS`)
-- manufacturer, SKU/EAN, and color hex values already indexed by Explorer
+- manufacturer, product codes/IDs, EAN/GTINs, and color hex values already indexed by Explorer
 
 Searching `ABS Plus` finds the variant even though raw `name` does not contain `ABS`.
 

@@ -68,7 +68,7 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | Source filaments with country of origin | 4,788 |
 | Source filaments with TDS/product links | 519 |
 | Source filaments with SDS links | 12 |
-| Manufacturer SKU/code entries | 7,731 |
+| Manufacturer product code/ID entries | 7,731 |
 | EAN/GTIN entries | 1,952 |
 | ASEAN manufacturer coverage | 20 brands / 116 source filaments |
 
@@ -184,7 +184,7 @@ The source files in `filaments/` are intentionally compact. Deployment expands t
 | `sds_url` | optional | Safety Data Sheet URL. |
 | `tds_url` | optional | Technical Data Sheet URL. |
 
-Color entries can override `finish`, `multi_color_direction`, `pattern`, `translucent`, and `glow` when a specific color differs from the product default. They can also include `codes`, `eans`, and `eans_refill` arrays for manufacturer SKUs and spooled/refill EAN or GTIN barcodes.
+Color entries can override `finish`, `multi_color_direction`, `pattern`, `translucent`, and `glow` when a specific color differs from the product default. They can also include `codes`, `eans`, and `eans_refill` arrays for manufacturer product codes, SKUs, or platform variant IDs and spooled/refill EAN or GTIN barcodes.
 
 ### Display names and upstream compatibility
 
