@@ -29,8 +29,9 @@ Provide a brief summary of the changes and what they accomplish.
 Please run the following validation checks locally before submitting. Check all that apply:
 
 - [ ] **Data compiles successfully:** Ran `python scripts/compile_filaments.py` with no errors.
-- [ ] **Materials schema valid:** Ran `check-jsonschema --schemafile materials.schema.json materials.json` and passed.
-- [ ] **Filaments schema valid:** Ran `check-jsonschema --schemafile filaments.schema.json filaments/*` and passed.
+- [ ] **Data and schemas validate:** Ran `python scripts/validate.py` and passed.
+- [ ] **Regression tests pass:** Ran `python -m pytest -q` and passed.
+- [ ] **Spoolman compatibility passes:** Ran `python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py` and passed.
 
 ---
 
