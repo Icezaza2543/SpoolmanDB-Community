@@ -40,7 +40,7 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
     *   **Additional Metadata**: Full compiler passthrough for source-backed fields including `country_of_origin`, `sds_url`, `tds_url`, `codes`, `eans`, and `eans_refill` from source profiles to the final database.
     *   **Modern Materials**: Added missing material definitions in [materials.json](materials.json) (`BVOH`, `CoPE`, `PP`, `PAHT`, `PPA`, `PPS`, `PET`).
     *   **Massive Brand Updates**: Expanded to **460 manufacturer source files**, covering popular consumer, local, industrial, and community brands such as Bambu Lab, Polymaker, Spectrum, Threebees, Filamax, ProtoFil, Cubic3, and more.
-    *   **ASEAN & Local-Market Coverage**: Added source-backed local filament data across Thailand, Malaysia, Singapore, Indonesia, Vietnam, and the Philippines, with current coverage for 20 ASEAN manufacturers and 116 ASEAN source filament objects.
+    *   **ASEAN & Local-Market Coverage**: Added source-backed local filament data across Thailand, Malaysia, Singapore, Indonesia, Vietnam, and the Philippines, with current coverage for 21 ASEAN manufacturers and 138 ASEAN source filament objects.
     *   **Refill & Spool Type Support**: Source data can preserve `plastic`, `cardboard`, `metal`, legacy `refill`, and legacy `unknow` evidence. The published Spoolman contract emits only `plastic`, `cardboard`, `metal`, or `null`, with refill packaging preserved separately as `is_refill`.
 
 ## Live data
@@ -70,7 +70,7 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | Source filaments with SDS links | 12 |
 | Manufacturer product code/ID entries | 7,731 |
 | EAN/GTIN entries | 1,952 |
-| ASEAN manufacturer coverage | 20 brands / 116 source filaments |
+| ASEAN manufacturer coverage | 21 brands / 138 source filaments |
 
 Counts are generated from the current repository state. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
 
