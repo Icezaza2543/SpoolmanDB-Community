@@ -14,12 +14,16 @@ We welcome contributions of all types. Depending on your experience with Git and
 - Keep manufacturer names, color names, weights, diameters, and temperatures aligned with manufacturer-published data when possible.
 - Include source links in your pull request description for any new brand, new material, or data correction.
 - Keep changes focused. Prefer one manufacturer or one related correction set per pull request.
+- When adding an ASEAN manufacturer, register its source filename in `scripts/asean_manufacturers.json`. Use the brand's location; never infer it from `country_of_origin`.
 
 ## Validation
 
 Run these checks before opening a pull request:
 
 ```bash
+# Refresh generated repository metrics in README.md
+python scripts/readme_snapshot.py --write
+
 # Compile the individual filament files into filaments.json
 python scripts/compile_filaments.py
 
@@ -27,7 +31,7 @@ python scripts/compile_filaments.py
 python scripts/validate.py
 
 # Run unit tests to verify compile functionality
-python -m pytest
+python -m pytest -q
 
 # Verify the complete output against Spoolman's current upstream model
 python scripts/check_spoolman_compat.py

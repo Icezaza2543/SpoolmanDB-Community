@@ -652,6 +652,8 @@ $ cd SpoolmanDB-Community</code></pre>
                             </div>
                             <pre><code id="cmd-install"># Install dependencies
 $ pip install -r requirements-dev.txt</code></pre>
+                            <pre><code id="cmd-snapshot"># Refresh generated README metrics
+$ python scripts/readme_snapshot.py --write</code></pre>
                             <pre><code id="cmd-compile"># Run compiler
 $ python scripts/compile_filaments.py</code></pre>
                             <pre><code id="cmd-validate"># Validate source and compiled data
@@ -670,8 +672,9 @@ $ python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_ext
                         <h2>Open a PR</h2>
                         <p>Submit your changes for review. Ensure your pull request follows the checklist below for a smooth approval process.</p>
                         <div class="checklist-stack">
-                            <label><input type="checkbox"> <span><strong>Modify ONLY source files in filaments/</strong><small>Do not include the generated filaments.json in your commit.</small></span></label>
+                            <label><input type="checkbox"> <span><strong>Edit source data, not generated JSON</strong><small>Modify filaments/ and include README.md when the snapshot tool updates it. Do not commit filaments.json.</small></span></label>
                             <label><input type="checkbox"> <span><strong>One manufacturer per Pull Request</strong><small>This helps maintainers review and merge changes more efficiently.</small></span></label>
+                            <label><input type="checkbox"> <span><strong>Register ASEAN manufacturers when applicable</strong><small>Add the source filename to scripts/asean_manufacturers.json using brand location, not manufacturing origin.</small></span></label>
                             <label><input type="checkbox"> <span><strong>Provide evidence (URLs/Photos)</strong><small>Link to manufacturer product pages or provide clear photos of spool labels.</small></span></label>
                         </div>
                         <a class="button button-primary submit-pr" href="https://github.com/Icezaza2543/SpoolmanDB-Community/compare" target="_blank" rel="noopener noreferrer">Submit Pull Request</a>
