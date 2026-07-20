@@ -8,6 +8,7 @@
       "weights": [
         {
           "weight": 1000,
+          "spool_weight": 130,
           "spool_type": "plastic"
         }
       ],
@@ -22,8 +23,6 @@
         50,
         60
       ],
-      "tds_url": "https://3dexpress.my/product/pla-pro-filament-1kg-basic-series-solid-color/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Black",
@@ -231,8 +230,6 @@
         1.75
       ],
       "finish": "matte",
-      "tds_url": "https://3dexpress.my/product/pla-pro-filament-1kg-basic-series-solid-color/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Black",
@@ -285,8 +282,6 @@
         1.75
       ],
       "translucent": true,
-      "tds_url": "https://3dexpress.my/product/pla-pro-filament-1kg-basic-series-solid-color/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Blue",
@@ -342,8 +337,14 @@
       "diameters": [
         1.75
       ],
-      "tds_url": "https://3dexpress.my/product/pla-pro-filament-1kg-prosumer-series/",
-      "country_of_origin": "Malaysia",
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
       "colors": [
         {
           "name": "Asap Grey",
@@ -578,14 +579,21 @@
       "weights": [
         {
           "weight": 1000,
+          "spool_weight": 130,
           "spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "tds_url": "https://3dexpress.my/product/petg-pro-3d-filament-1kg-solid-color-basic-series/",
-      "country_of_origin": "Malaysia",
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        105
+      ],
       "colors": [
         {
           "name": "Black",
@@ -752,8 +760,14 @@
       "diameters": [
         1.75
       ],
-      "tds_url": "https://3dexpress.my/product/petg-pro-filament-1kg-prosumer-series/",
-      "country_of_origin": "Malaysia",
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        90
+      ],
       "colors": [
         {
           "name": "Asap Grey",
@@ -910,8 +924,6 @@
       "diameters": [
         1.75
       ],
-      "tds_url": "https://3dexpress.my/product/3dexpress-my-basic-series-petg-standard-1-75mm-filament/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Black",
@@ -936,14 +948,21 @@
       "weights": [
         {
           "weight": 1000,
+          "spool_weight": 130,
           "spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "tds_url": "https://3dexpress.my/product/abs-pro-3d-filament-1kg-solid-color-basic-series/",
-      "country_of_origin": "Malaysia",
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        105
+      ],
       "colors": [
         {
           "name": "Black",
@@ -1066,8 +1085,6 @@
         80,
         120
       ],
-      "tds_url": "https://3dexpress.my/product/abs-pro-3d-filament-1kg-prosumer-series-solid-color/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Asap Grey",
@@ -1203,8 +1220,6 @@
       "diameters": [
         1.75
       ],
-      "tds_url": "https://3dexpress.my/product/3dexpress-my-basic-series-abs-standard-1-75mm-filament-5kg/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Black",
@@ -1229,15 +1244,22 @@
       "weights": [
         {
           "weight": 1000,
+          "spool_weight": 130,
           "spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
       "finish": "glossy",
-      "tds_url": "https://3dexpress.my/product/pla-silk-filament-1kg-silk-solid-and-rainbow-basic-series/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Blue",
@@ -1388,8 +1410,6 @@
       "diameters": [
         1.75
       ],
-      "tds_url": "https://3dexpress.my/product/3dexpress-my-basic-series-pla-standard-1-75mm-filament-5kg/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Black",
@@ -1430,8 +1450,6 @@
         60
       ],
       "finish": "glossy",
-      "tds_url": "https://3dexpress.my/product/pla-silk-filament-1kg-prosumer-series/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "24K Gold",
@@ -1606,8 +1624,6 @@
       ],
       "finish": "glossy",
       "multi_color_direction": "coaxial",
-      "tds_url": "https://3dexpress.my/product/pla-silk-dual-colour-co-extrusion-filament-1kg-extreme-series/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Blue-Green",
@@ -1675,8 +1691,6 @@
       ],
       "finish": "glossy",
       "multi_color_direction": "coaxial",
-      "tds_url": "https://3dexpress.my/product/pla-silk-tri-colour-co-extrusion-filament-1kg-extreme-series/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Blue + Green + Purple",
@@ -1774,14 +1788,21 @@
       "density": 1.05,
       "weights": [
         {
-          "weight": 1000
+          "weight": 1000,
+          "spool_weight": 130
         }
       ],
       "diameters": [
         1.75
       ],
-      "tds_url": "https://3dexpress.my/product/asa-filament-1kg-solid-colour-extreme-series/",
-      "country_of_origin": "Malaysia",
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
       "colors": [
         {
           "name": "Black",
@@ -1825,9 +1846,15 @@
       "diameters": [
         1.75
       ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        90
+      ],
       "finish": "matte",
-      "tds_url": "https://3dexpress.my/product/pla-matte-filament-1kg-prosumer-series/",
-      "country_of_origin": "Malaysia",
       "colors": [
         {
           "name": "Asap Grey",
