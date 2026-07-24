@@ -22,8 +22,11 @@ FORMAT_CHECKER = jsonschema.FormatChecker()
 def _check_uri(val):
     if not isinstance(val, str):
         return True
-    parsed = urlparse(val)
-    return bool(parsed.scheme and parsed.netloc)
+    try:
+        parsed = urlparse(val)
+        return parsed.scheme.lower() in ("http", "https") and bool(parsed.netloc and parsed.hostname)
+    except Exception:
+        return False
 
 from scripts.display_name import collect_ambiguous_display_name_warnings
 
