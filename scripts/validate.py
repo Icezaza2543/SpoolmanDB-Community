@@ -107,9 +107,23 @@ def main():
         
     print("\nValidating filaments directory...")
     if validate_directory(filaments_schema, filaments_dir):
-        print("✓ All filaments are valid.")
+        print("✓ All filaments are valid against JSON schema.")
     else:
         success = False
+
+    from scripts.data_semantics import check_source_data_semantics
+
+    print("\nChecking semantic data integrity...")
+    sem_errors, sem_warnings = check_source_data_semantics(filaments_dir, materials_data)
+    for warn in sem_warnings:
+        print(f"WARN semantics: {warn}")
+
+    if sem_errors:
+        for err in sem_errors:
+            print(f"ERROR semantics: {err}", file=sys.stderr)
+        success = False
+    else:
+        print("✓ Semantic data integrity passed.")
 
     if not report_display_name_warnings(filaments_dir, strict=args.strict_display_names):
         success = False
