@@ -4,7 +4,8 @@ import argparse
 import json
 from pathlib import Path
 import sys
-from typing import Dict, List, Tuple
+import tempfile
+from typing import Any, Dict, List, Tuple
 
 ROOT = Path(__file__).parent.parent
 if str(ROOT) not in sys.path:
@@ -14,13 +15,28 @@ from scripts.compile_filaments import expand_filament_data, load_json
 
 BASELINE_PATH = ROOT / "contracts" / "compiled_id_baseline.json"
 FILAMENTS_DIR = ROOT / "filaments"
+ALLOWED_TOP_LEVEL_KEYS = {"version", "count", "manifest"}
+
+
+def parse_json_without_duplicates(json_str: str) -> Any:
+    """Parse JSON string and raise ValueError if duplicate keys exist at any object level."""
+
+    def dict_raise_on_duplicates(pairs):
+        d = {}
+        for k, v in pairs:
+            if k in d:
+                raise ValueError(f"Duplicate JSON key detected: '{k}'")
+            d[k] = v
+        return d
+
+    return json.loads(json_str, object_pairs_hook=dict_raise_on_duplicates)
 
 
 def make_canonical_identity_key(
     fname: str,
     manufacturer: str,
     fil_template_name: str,
-    color_name: str,
+    compiled_name: str,
     material: str,
     weight: float,
     diameter: float,
@@ -28,7 +44,7 @@ def make_canonical_identity_key(
     is_refill: bool,
 ) -> str:
     """Generate a deterministic physical identity key for a filament variant."""
-    return f"{fname}::{manufacturer}::{fil_template_name}::{color_name}::{material}::{weight}::{diameter}::{spool_type}::{is_refill}"
+    return f"{fname}::{manufacturer}::{fil_template_name}::{compiled_name}::{material}::{weight}::{diameter}::{spool_type}::{is_refill}"
 
 
 def compile_current_id_manifest(
@@ -60,7 +76,7 @@ def compile_current_id_manifest(
             fil_template_name = fil.get("name", "<unnamed>")
             mat = fil.get("material", "<unnamed>")
             for rec in expand_filament_data(mfr, fil):
-                color_name = rec["name"]
+                compiled_name = rec["name"]
                 w = rec["weight"]
                 d = rec["diameter"]
                 st = rec["spool_type"]
@@ -71,7 +87,7 @@ def compile_current_id_manifest(
                     fname=fname,
                     manufacturer=mfr,
                     fil_template_name=fil_template_name,
-                    color_name=color_name,
+                    compiled_name=compiled_name,
                     material=mat,
                     weight=w,
                     diameter=d,
@@ -96,6 +112,86 @@ def compile_current_id_manifest(
                     seen_ids[pub_id] = ckey
 
     return manifest, errors
+
+
+def validate_baseline_structure(baseline_data: Any) -> List[str]:
+    """Validate top-level metadata schema and internal consistency of baseline object."""
+    errors: List[str] = []
+
+    if not isinstance(baseline_data, dict):
+        errors.append("Invalid baseline format: top-level element must be a JSON object")
+        return errors
+
+    unexpected_keys = set(baseline_data.keys()) - ALLOWED_TOP_LEVEL_KEYS
+    if unexpected_keys:
+        unexpected_fmt = ", ".join(sorted(f"'{k}'" for k in unexpected_keys))
+        errors.append(
+            f"Invalid baseline format: unexpected top-level field(s) {unexpected_fmt}. Allowed fields: 'version', 'count', 'manifest'"
+        )
+
+    if "version" not in baseline_data:
+        errors.append("Invalid baseline format: missing top-level 'version' field")
+    else:
+        version_val = baseline_data["version"]
+        if isinstance(version_val, bool) or not isinstance(version_val, int):
+            errors.append(
+                f"Invalid baseline format: 'version' field must be an integer, got {type(version_val).__name__}"
+            )
+        elif version_val != 1:
+            errors.append(
+                f"Invalid baseline format: unsupported version {version_val}. Only version 1 is supported."
+            )
+
+    if "manifest" not in baseline_data:
+        errors.append("Invalid baseline format: missing top-level 'manifest' dictionary")
+        manifest_obj = None
+    else:
+        manifest_obj = baseline_data["manifest"]
+        if not isinstance(manifest_obj, dict):
+            errors.append("Invalid baseline format: 'manifest' field must be a JSON object")
+            manifest_obj = None
+
+    if "count" not in baseline_data:
+        errors.append("Invalid baseline format: missing top-level 'count' field")
+    else:
+        count_val = baseline_data["count"]
+        if isinstance(count_val, bool) or not isinstance(count_val, int):
+            errors.append(
+                f"Invalid baseline format: 'count' field must be a non-negative integer, got {type(count_val).__name__}"
+            )
+        elif count_val < 0:
+            errors.append(
+                f"Invalid baseline format: 'count' field cannot be negative, got {count_val}"
+            )
+        elif manifest_obj is not None and count_val != len(manifest_obj):
+            errors.append(
+                f"Invalid baseline format: 'count' field ({count_val}) does not match actual manifest entry count ({len(manifest_obj)})"
+            )
+
+    if manifest_obj is not None:
+        seen_baseline_ids: Dict[str, str] = {}
+        for ckey, pub_id in manifest_obj.items():
+            if not isinstance(ckey, str) or not ckey:
+                errors.append(
+                    "Invalid baseline format: manifest identity keys must be non-empty strings"
+                )
+                break
+            if not isinstance(pub_id, str) or not pub_id:
+                errors.append(
+                    f"Invalid baseline format: manifest Public ID for variant '{ckey}' must be a non-empty string"
+                )
+                break
+
+            if pub_id in seen_baseline_ids:
+                errors.append(
+                    f"Duplicate Public ID '{pub_id}' found in baseline for different identity keys:\n"
+                    f"  1) '{seen_baseline_ids[pub_id]}'\n"
+                    f"  2) '{ckey}'"
+                )
+            else:
+                seen_baseline_ids[pub_id] = ckey
+
+    return errors
 
 
 def check_baseline_manifest(
@@ -124,25 +220,18 @@ def check_baseline_manifest(
         return errors, warnings, stats
 
     try:
-        with baseline_path.open(encoding="utf-8") as f:
-            baseline_data = json.load(f)
+        raw_content = baseline_path.read_text(encoding="utf-8")
+        baseline_data = parse_json_without_duplicates(raw_content)
     except Exception as exc:
         errors.append(f"Failed to parse baseline manifest '{baseline_path}': {exc}")
         return errors, warnings, stats
 
-    if not isinstance(baseline_data, dict) or "manifest" not in baseline_data:
-        errors.append(
-            f"Invalid baseline format in '{baseline_path}': missing top-level 'manifest' dictionary"
-        )
+    struct_errors = validate_baseline_structure(baseline_data)
+    if struct_errors:
+        errors.extend(struct_errors)
         return errors, warnings, stats
 
-    baseline_manifest = baseline_data["manifest"]
-    if not isinstance(baseline_manifest, dict):
-        errors.append(
-            f"Invalid baseline format in '{baseline_path}': 'manifest' field must be a dict"
-        )
-        return errors, warnings, stats
-
+    baseline_manifest: Dict[str, str] = baseline_data["manifest"]
     stats["baseline_count"] = len(baseline_manifest)
 
     current_manifest, compile_errors = compile_current_id_manifest(filaments_dir)
@@ -165,7 +254,8 @@ def check_baseline_manifest(
         else:
             stats["added"] += 1
             warnings.append(
-                f"New variant added (not in baseline): '{ckey}' -> '{current_id}'"
+                f"New variant added (not in baseline): '{ckey}' -> '{current_id}'\n"
+                f"  Note: New variants are not protected against historical ID regression until the baseline is updated via 'python scripts/compile_id_baseline.py --update'."
             )
 
     # Check for missing baseline variants
@@ -181,30 +271,84 @@ def check_baseline_manifest(
     return errors, warnings, stats
 
 
+def write_baseline_manifest_atomic(
+    payload: dict,
+    baseline_path: Path = BASELINE_PATH,
+) -> None:
+    """Atomic write of baseline payload to baseline_path."""
+    struct_errors = validate_baseline_structure(payload)
+    if struct_errors:
+        raise ValueError(f"Refusing to write invalid baseline payload: {struct_errors}")
+
+    baseline_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = baseline_path.with_name(f".{baseline_path.name}.tmp")
+
+    try:
+        with tmp_path.open("w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+            f.flush()
+
+        # Perform atomic replace
+        tmp_path.replace(baseline_path)
+    except Exception as exc:
+        if tmp_path.exists():
+            try:
+                tmp_path.unlink()
+            except Exception:
+                pass
+        raise RuntimeError(f"Failed atomic write to '{baseline_path}': {exc}") from exc
+
+
 def write_baseline_manifest(
     baseline_path: Path = BASELINE_PATH,
     filaments_dir: Path = FILAMENTS_DIR,
+    accept_breaking_changes: bool = False,
 ) -> None:
-    """Generate and write a fresh baseline manifest file."""
-    manifest, errors = compile_current_id_manifest(filaments_dir)
+    """Generate and write a baseline manifest file with safety checks and atomic write."""
+    current_manifest, errors = compile_current_id_manifest(filaments_dir)
     if errors:
         print("ERROR: Cannot generate baseline manifest due to compilation errors:", file=sys.stderr)
         for err in errors:
             print(f"  {err}", file=sys.stderr)
         sys.exit(1)
 
+    # Safety check against existing baseline if it exists
+    if baseline_path.exists():
+        check_errors, check_warnings, stats = check_baseline_manifest(
+            baseline_path=baseline_path, filaments_dir=filaments_dir
+        )
+        has_breaking_changes = (stats["changed"] > 0) or (stats["missing"] > 0)
+
+        if has_breaking_changes and not accept_breaking_changes:
+            print(
+                f"ERROR: Refusing to update baseline '{baseline_path.name}': breaking baseline changes detected!\n"
+                f"  Matched: {stats['matched']} | Added: {stats['added']} | Changed: {stats['changed']} | Missing: {stats['missing']}\n"
+                f"  If these breaking changes are intentional, re-run with '--accept-breaking-baseline-changes'.",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+
+        if accept_breaking_changes:
+            print(
+                f"Updating baseline with breaking changes explicitly enabled:\n"
+                f"  Matched: {stats['matched']} | Added: {stats['added']} | Changed: {stats['changed']} | Missing: {stats['missing']}"
+            )
+        else:
+            print(
+                f"Updating baseline (additions-only update):\n"
+                f"  Matched: {stats['matched']} | Added: {stats['added']} | Changed: 0 | Missing: 0"
+            )
+
     payload = {
         "version": 1,
-        "count": len(manifest),
-        "manifest": dict(sorted(manifest.items())),
+        "count": len(current_manifest),
+        "manifest": dict(sorted(current_manifest.items())),
     }
 
-    baseline_path.parent.mkdir(parents=True, exist_ok=True)
-    with baseline_path.open("w", encoding="utf-8") as f:
-        json.dump(payload, f, indent=2, ensure_ascii=False)
-        f.write("\n")
-
-    print(f"✓ Baseline manifest successfully written to '{baseline_path}' ({len(manifest)} records).")
+    write_baseline_manifest_atomic(payload, baseline_path=baseline_path)
+    update_mode_str = "breaking" if accept_breaking_changes else "additions-only/fresh"
+    print(f"✓ Baseline manifest successfully written to '{baseline_path}' ({len(current_manifest)} records, mode: {update_mode_str}).")
 
 
 def main():
@@ -216,10 +360,21 @@ def main():
         action="store_true",
         help="Explicitly update the committed baseline manifest file.",
     )
+    parser.add_argument(
+        "--accept-breaking-baseline-changes",
+        action="store_true",
+        help="Allow baseline update even when breaking changes (changed or missing historical IDs) are detected. Must be used with --update.",
+    )
     args = parser.parse_args()
 
+    if args.accept_breaking_baseline_changes and not args.update:
+        print("ERROR: '--accept-breaking-baseline-changes' can only be used together with '--update'.", file=sys.stderr)
+        sys.exit(1)
+
     if args.update:
-        write_baseline_manifest()
+        write_baseline_manifest(
+            accept_breaking_changes=args.accept_breaking_baseline_changes
+        )
         sys.exit(0)
 
     print(f"Checking Public Compiled ID baseline against '{BASELINE_PATH.name}'...")

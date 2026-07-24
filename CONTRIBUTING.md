@@ -27,10 +27,16 @@ python scripts/readme_snapshot.py --write
 # Compile the individual filament files into filaments.json
 python scripts/compile_filaments.py
 
-# Validate all files and compiled outputs against schemas
+# Validate all files, compiled outputs, and Public ID baseline
 python scripts/validate.py
 
-# Run unit tests to verify compile functionality
+# Check Public Compiled ID baseline manifest directly
+python scripts/compile_id_baseline.py
+
+# If you legitimately added new filament variants, update the baseline:
+python scripts/compile_id_baseline.py --update
+
+# Run unit tests to verify compile and baseline functionality
 python -m pytest -q
 
 # Verify the complete output against Spoolman's current upstream model
@@ -40,11 +46,7 @@ python scripts/check_spoolman_compat.py
 python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py
 ```
 
-If requirements are missing, install the development dependencies:
-
-```bash
-pip install -r requirements-dev.txt
-```
+New filament variants (additions) generate informational baseline warnings until `python scripts/compile_id_baseline.py --update` is run. If a pull request legitimately alters historical IDs or removes existing variants, `--update` will safely refuse to write unless `--accept-breaking-baseline-changes` is explicitly specified.
 
 The generated `filaments.json` should compile cleanly, and all schema, unit, and Spoolman compatibility checks must pass.
 
