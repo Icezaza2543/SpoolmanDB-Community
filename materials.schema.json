@@ -2,6 +2,7 @@
     "type": "array",
     "items": {
         "type": "object",
+        "additionalProperties": false,
         "required": [
             "material",
             "density"
