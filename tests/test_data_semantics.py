@@ -228,12 +228,17 @@ def test_existing_repository_passes_semantics():
     assert len(warnings) == 39  # Known Spectrum vs The Filament duplicates
 
 
-def test_compiled_public_ids_stability():
-    # 14. Public compiled IDs do not change
-    compiled_file = ROOT / "filaments.json"
-    with compiled_file.open(encoding="utf-8") as f:
-        compiled_data = json.load(f)
+def test_compiled_public_ids_are_unique():
+    from scripts.compile_filaments import expand_filament_data, load_json
 
-    assert len(compiled_data) == 51596
-    id_set = {item["id"] for item in compiled_data}
+    filaments_dir = ROOT / "filaments"
+    compiled_records = []
+    for fpath in sorted(filaments_dir.glob("*.json")):
+        data = load_json(fpath)
+        mfr = data.get("manufacturer")
+        for fil in data.get("filaments", []):
+            compiled_records.extend(expand_filament_data(mfr, fil))
+
+    assert len(compiled_records) == 51596
+    id_set = {item["id"] for item in compiled_records}
     assert len(id_set) == 51596

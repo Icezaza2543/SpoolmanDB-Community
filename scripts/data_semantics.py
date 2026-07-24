@@ -1,6 +1,5 @@
 """Semantic data integrity checks for SpoolmanDB Community source files."""
 
-json_module = None
 import json
 from pathlib import Path
 from typing import Dict, List, Tuple
