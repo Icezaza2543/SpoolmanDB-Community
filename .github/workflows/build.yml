@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - name: Check git whitespace
+        run: git diff-tree --check --no-commit-id -r HEAD
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
