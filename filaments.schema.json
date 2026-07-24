@@ -1,5 +1,6 @@
 {
     "type": "object",
+    "additionalProperties": false,
     "required": [
         "manufacturer",
         "filaments"
@@ -14,6 +15,7 @@
             "uniqueItems": true,
             "items": {
                 "type": "object",
+                "additionalProperties": false,
                 "required": [
                     "name",
                     "density",
@@ -42,6 +44,7 @@
                         "uniqueItems": true,
                         "items": {
                             "type": "object",
+                            "additionalProperties": false,
                             "required": [
                                 "weight"
                             ],
@@ -195,6 +198,7 @@
                         "uniqueItems": true,
                         "items": {
                             "type": "object",
+                            "additionalProperties": false,
                             "oneOf": [
                                 {
                                     "required": [

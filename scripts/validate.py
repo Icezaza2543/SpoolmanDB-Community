@@ -7,12 +7,23 @@ ROOT = Path(__file__).parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from urllib.parse import urlparse
+
 try:
     import jsonschema
 except ImportError:
     print("ERROR: 'jsonschema' package not found.")
     print("Please install it by running: pip install jsonschema")
     sys.exit(1)
+
+FORMAT_CHECKER = jsonschema.FormatChecker()
+
+@FORMAT_CHECKER.checks("uri")
+def _check_uri(val):
+    if not isinstance(val, str):
+        return True
+    parsed = urlparse(val)
+    return bool(parsed.scheme and parsed.netloc)
 
 from scripts.display_name import collect_ambiguous_display_name_warnings
 
@@ -24,7 +35,9 @@ def validate_json(schema_path: Path, data_path: Path) -> bool:
         with data_path.open(encoding="utf-8") as f:
             data = json.load(f)
         
-        jsonschema.validate(instance=data, schema=schema)
+        jsonschema.validate(
+            instance=data, schema=schema, format_checker=FORMAT_CHECKER
+        )
         return True
     except Exception as e:
         print(f"Validation failed for {data_path.name} with schema {schema_path.name}:")
@@ -40,7 +53,9 @@ def validate_directory(schema_path: Path, dir_path: Path) -> bool:
         try:
             with file.open(encoding="utf-8") as f:
                 data = json.load(f)
-            jsonschema.validate(instance=data, schema=schema)
+            jsonschema.validate(
+                instance=data, schema=schema, format_checker=FORMAT_CHECKER
+            )
         except Exception as e:
             print(f"Validation failed for {file.name} with schema {schema_path.name}:")
             print(e)
