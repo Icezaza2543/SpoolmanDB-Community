@@ -89,22 +89,33 @@ def test_schema_validates_uri_format():
         schema, format_checker=FORMAT_CHECKER
     )
 
-    data_invalid_uri = {
-        "manufacturer": "TestBrand",
-        "filaments": [
-            {
-                "name": "PLA {color_name}",
-                "material": "PLA",
-                "density": 1.24,
-                "weights": [{"weight": 1000}],
-                "diameters": [1.75],
-                "colors": [{"name": "Red", "hex": "FF0000"}],
-                "sds_url": "invalid-not-a-uri",
-            }
-        ],
-    }
+    def make_filament_data(url: str):
+        return {
+            "manufacturer": "TestBrand",
+            "filaments": [
+                {
+                    "name": "PLA {color_name}",
+                    "material": "PLA",
+                    "density": 1.24,
+                    "weights": [{"weight": 1000}],
+                    "diameters": [1.75],
+                    "colors": [{"name": "Red", "hex": "FF0000"}],
+                    "sds_url": url,
+                }
+            ],
+        }
 
-    assert not validator.is_valid(data_invalid_uri)
+    # Valid http and https URLs pass
+    assert validator.is_valid(make_filament_data("https://example.com/sds.pdf"))
+    assert validator.is_valid(make_filament_data("http://example.com/tds.pdf"))
+
+    # Non-http/https, relative, or malformed URLs fail
+    assert not validator.is_valid(make_filament_data("ftp://example.com/sds.pdf"))
+    assert not validator.is_valid(make_filament_data("javascript:alert(1)"))
+    assert not validator.is_valid(make_filament_data("path/to/file.pdf"))
+    assert not validator.is_valid(make_filament_data("/path/to/file.pdf"))
+    assert not validator.is_valid(make_filament_data("http://"))
+    assert not validator.is_valid(make_filament_data("not-a-url"))
 
 
 def test_materials_schema_rejects_unknown_properties():
