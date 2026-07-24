@@ -1,6 +1,7 @@
-"""Comprehensive unit tests for Public Compiled ID baseline manifest checking and update safety."""
+"""Comprehensive unit tests for Public Compiled ID baseline manifest checking, malformed protection, and atomic update safety."""
 
 import json
+import os
 from pathlib import Path
 import tempfile
 import pytest
@@ -377,165 +378,314 @@ def test_baseline_check_does_not_rely_on_record_count_alone():
         assert any("Public ID regression detected for variant" in err for err in errors)
 
 
-def test_update_additions_only_succeeds():
-    """22. Baseline --update succeeds when only additions are present."""
-    with tempfile.TemporaryDirectory() as tmp_dir:
-        tmp_path = Path(tmp_dir)
-        filaments_dir = tmp_path / "filaments"
-        filaments_dir.mkdir()
-        baseline_file = tmp_path / "baseline.json"
+def test_update_refuses_malformed_baselines(tmp_path):
+    """22-28. --update refuses to overwrite malformed baselines even with --accept-breaking-baseline-changes."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
 
-        fil_data = {
-            "manufacturer": "BrandA",
-            "filaments": [
-                {
-                    "name": "PLA {color_name}",
-                    "material": "PLA",
-                    "density": 1.24,
-                    "weights": [{"weight": 1000}],
-                    "diameters": [1.75],
-                    "colors": [{"name": "Red", "hex": "FF0000"}],
-                }
-            ],
-        }
-        (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    malformed_cases = [
+        ("invalid_json", "{invalid json syntax: 123"),
+        ("dup_top_key", '{\n "version": 1,\n "version": 1,\n "count": 0,\n "manifest": {}\n}'),
+        ("dup_manifest_key", '{\n "version": 1,\n "count": 2,\n "manifest": {"k1":"id1", "k1":"id2"}\n}'),
+        ("unsupported_version", json.dumps({"version": 99, "count": 0, "manifest": {}})),
+        ("count_mismatch", json.dumps({"version": 1, "count": 999, "manifest": {}})),
+        ("duplicate_public_id", json.dumps({"version": 1, "count": 2, "manifest": {"k1": "id1", "k2": "id1"}})),
+        ("invalid_manifest_type", json.dumps({"version": 1, "count": 0, "manifest": [1, 2, 3]})),
+    ]
 
-        # Initial baseline write
-        write_baseline_manifest(baseline_file, filaments_dir)
-        assert baseline_file.exists()
-        _, _, stats1 = check_baseline_manifest(baseline_file, filaments_dir)
-        assert stats1["baseline_count"] == 1
+    for case_name, raw_content in malformed_cases:
+        baseline_file = tmp_path / f"malformed_{case_name}.json"
+        baseline_file.write_text(raw_content, encoding="utf-8")
+        original_bytes = baseline_file.read_bytes()
 
-        # Add second color
-        fil_data["filaments"][0]["colors"].append({"name": "Blue", "hex": "0000FF"})
-        (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+        # Without breaking flag
+        with pytest.raises(SystemExit) as exc1:
+            write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=False)
+        assert exc1.value.code == 1
+        assert baseline_file.read_bytes() == original_bytes
 
-        # Additions-only update should succeed without breaking flag
+        # WITH breaking flag (breaking flag CANNOT bypass malformed baseline!)
+        with pytest.raises(SystemExit) as exc2:
+            write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=True)
+        assert exc2.value.code == 1
+        assert baseline_file.read_bytes() == original_bytes
+
+        # Verify no temp files left behind
+        temp_files = list(tmp_path.glob(".malformed_*.tmp"))
+        assert temp_files == []
+
+
+def test_fresh_baseline_creation(tmp_path):
+    """29. Fresh baseline file creation when baseline does not exist."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "fresh_baseline.json"
+
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+
+    assert not baseline_file.exists()
+    write_baseline_manifest(baseline_file, filaments_dir)
+    assert baseline_file.exists()
+
+    errors, warnings, stats = check_baseline_manifest(baseline_file, filaments_dir)
+    assert errors == []
+    assert stats["matched"] == 1
+
+
+def test_atomic_write_failure_json_dump_error(tmp_path, monkeypatch):
+    """30. Atomic write failure during json.dump leaves target baseline untouched and cleans up temp file."""
+    baseline_file = tmp_path / "target_baseline.json"
+    original_payload = {"version": 1, "count": 0, "manifest": {}}
+    write_baseline_manifest_atomic(original_payload, baseline_file)
+    original_bytes = baseline_file.read_bytes()
+
+    def mock_dump(*args, **kwargs):
+        raise OSError("Simulated JSON dump disk failure")
+
+    monkeypatch.setattr(json, "dump", mock_dump)
+
+    with pytest.raises(RuntimeError) as exc_info:
+        write_baseline_manifest_atomic({"version": 1, "count": 0, "manifest": {}}, baseline_file)
+
+    assert "Simulated JSON dump disk failure" in str(exc_info.value)
+    assert baseline_file.read_bytes() == original_bytes
+    assert list(tmp_path.glob(".target_baseline.json.*.tmp")) == []
+
+
+def test_atomic_write_failure_flush_error(tmp_path, monkeypatch):
+    """31. Atomic write failure during flush leaves target baseline untouched and cleans up temp file."""
+    baseline_file = tmp_path / "target_baseline.json"
+    original_payload = {"version": 1, "count": 0, "manifest": {}}
+    write_baseline_manifest_atomic(original_payload, baseline_file)
+    original_bytes = baseline_file.read_bytes()
+
+    real_named_tempfile = tempfile.NamedTemporaryFile
+
+    def mock_named_tempfile(*args, **kwargs):
+        f = real_named_tempfile(*args, **kwargs)
+        f.flush = lambda: (_ for _ in ()).throw(OSError("Simulated flush failure"))
+        return f
+
+    monkeypatch.setattr(tempfile, "NamedTemporaryFile", mock_named_tempfile)
+
+    with pytest.raises(RuntimeError) as exc_info:
+        write_baseline_manifest_atomic({"version": 1, "count": 0, "manifest": {}}, baseline_file)
+
+    assert "Simulated flush failure" in str(exc_info.value)
+    assert baseline_file.read_bytes() == original_bytes
+    assert list(tmp_path.glob(".target_baseline.json.*.tmp")) == []
+
+
+def test_atomic_write_failure_fsync_error(tmp_path, monkeypatch):
+    """32. Atomic write failure during os.fsync leaves target baseline untouched and cleans up temp file."""
+    baseline_file = tmp_path / "target_baseline.json"
+    original_payload = {"version": 1, "count": 0, "manifest": {}}
+    write_baseline_manifest_atomic(original_payload, baseline_file)
+    original_bytes = baseline_file.read_bytes()
+
+    def mock_fsync(fd):
+        raise OSError("Simulated fsync I/O failure")
+
+    monkeypatch.setattr(os, "fsync", mock_fsync)
+
+    with pytest.raises(RuntimeError) as exc_info:
+        write_baseline_manifest_atomic({"version": 1, "count": 0, "manifest": {}}, baseline_file)
+
+    assert "Simulated fsync I/O failure" in str(exc_info.value)
+    assert baseline_file.read_bytes() == original_bytes
+    assert list(tmp_path.glob(".target_baseline.json.*.tmp")) == []
+
+
+def test_atomic_write_failure_replace_error(tmp_path, monkeypatch):
+    """33. Atomic write failure during os.replace leaves target baseline untouched and cleans up temp file."""
+    baseline_file = tmp_path / "target_baseline.json"
+    original_payload = {"version": 1, "count": 0, "manifest": {}}
+    write_baseline_manifest_atomic(original_payload, baseline_file)
+    original_bytes = baseline_file.read_bytes()
+
+    def mock_replace(src, dst):
+        raise OSError("Simulated os.replace permission/I/O failure")
+
+    monkeypatch.setattr(os, "replace", mock_replace)
+
+    with pytest.raises(RuntimeError) as exc_info:
+        write_baseline_manifest_atomic({"version": 1, "count": 0, "manifest": {}}, baseline_file)
+
+    assert "Simulated os.replace permission/I/O failure" in str(exc_info.value)
+    assert baseline_file.read_bytes() == original_bytes
+    assert list(tmp_path.glob(".target_baseline.json.*.tmp")) == []
+
+
+def test_successful_atomic_replacement(tmp_path):
+    """34. Successful atomic replacement writes valid JSON, correct count, and cleans temp files."""
+    baseline_file = tmp_path / "target_baseline.json"
+    initial_payload = {"version": 1, "count": 0, "manifest": {}}
+    write_baseline_manifest_atomic(initial_payload, baseline_file)
+
+    new_payload = {
+        "version": 1,
+        "count": 1,
+        "manifest": {"key1": "id1"},
+    }
+    write_baseline_manifest_atomic(new_payload, baseline_file)
+
+    assert baseline_file.exists()
+    data = json.loads(baseline_file.read_text(encoding="utf-8"))
+    assert data["count"] == 1
+    assert data["manifest"] == {"key1": "id1"}
+    assert list(tmp_path.glob(".target_baseline.json.*.tmp")) == []
+
+
+def test_update_additions_only_succeeds(tmp_path):
+    """35. Baseline --update succeeds when only additions are present."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
+
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+
+    write_baseline_manifest(baseline_file, filaments_dir)
+    assert baseline_file.exists()
+    _, _, stats1 = check_baseline_manifest(baseline_file, filaments_dir)
+    assert stats1["baseline_count"] == 1
+
+    fil_data["filaments"][0]["colors"].append({"name": "Blue", "hex": "0000FF"})
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+
+    write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=False)
+    _, _, stats2 = check_baseline_manifest(baseline_file, filaments_dir)
+    assert stats2["baseline_count"] == 2
+    assert stats2["matched"] == 2
+
+
+def test_update_rejects_changed_id_without_flag(tmp_path):
+    """36. Baseline --update rejects updating when a historical ID changes unless breaking flag is given."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
+
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
+
+    raw = json.loads(baseline_file.read_text(encoding="utf-8"))
+    ckey = list(raw["manifest"].keys())[0]
+    raw["manifest"][ckey] = "altered_id"
+    baseline_file.write_text(json.dumps(raw), encoding="utf-8")
+
+    with pytest.raises(SystemExit) as exc_info:
         write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=False)
-        _, _, stats2 = check_baseline_manifest(baseline_file, filaments_dir)
-        assert stats2["baseline_count"] == 2
-        assert stats2["matched"] == 2
+    assert exc_info.value.code == 1
 
 
-def test_update_rejects_changed_id_without_flag():
-    """23. Baseline --update rejects updating when a historical ID changes unless breaking flag is given."""
-    with tempfile.TemporaryDirectory() as tmp_dir:
-        tmp_path = Path(tmp_dir)
-        filaments_dir = tmp_path / "filaments"
-        filaments_dir.mkdir()
-        baseline_file = tmp_path / "baseline.json"
+def test_update_rejects_missing_variant_without_flag(tmp_path):
+    """37. Baseline --update rejects updating when a historical variant is missing unless breaking flag is given."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
 
-        fil_data = {
-            "manufacturer": "BrandA",
-            "filaments": [
-                {
-                    "name": "PLA {color_name}",
-                    "material": "PLA",
-                    "density": 1.24,
-                    "weights": [{"weight": 1000}],
-                    "diameters": [1.75],
-                    "colors": [{"name": "Red", "hex": "FF0000"}],
-                }
-            ],
-        }
-        (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
-        write_baseline_manifest(baseline_file, filaments_dir)
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
 
-        # Manually alter ID in baseline file
-        raw = json.loads(baseline_file.read_text(encoding="utf-8"))
-        ckey = list(raw["manifest"].keys())[0]
-        raw["manifest"][ckey] = "altered_id"
-        baseline_file.write_text(json.dumps(raw), encoding="utf-8")
+    (filaments_dir / "branda.json").unlink()
 
-        # Without flag, write_baseline_manifest should sys.exit(1)
-        with pytest.raises(SystemExit) as exc_info:
-            write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=False)
-        assert exc_info.value.code == 1
+    with pytest.raises(SystemExit) as exc_info:
+        write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=False)
+    assert exc_info.value.code == 1
 
 
-def test_update_rejects_missing_variant_without_flag():
-    """24. Baseline --update rejects updating when a historical variant is missing unless breaking flag is given."""
-    with tempfile.TemporaryDirectory() as tmp_dir:
-        tmp_path = Path(tmp_dir)
-        filaments_dir = tmp_path / "filaments"
-        filaments_dir.mkdir()
-        baseline_file = tmp_path / "baseline.json"
+def test_update_accepts_breaking_changes_with_flag(tmp_path):
+    """38. Baseline --update accepts breaking changes when accept_breaking_changes=True on a valid baseline."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
 
-        fil_data = {
-            "manufacturer": "BrandA",
-            "filaments": [
-                {
-                    "name": "PLA {color_name}",
-                    "material": "PLA",
-                    "density": 1.24,
-                    "weights": [{"weight": 1000}],
-                    "diameters": [1.75],
-                    "colors": [{"name": "Red", "hex": "FF0000"}],
-                }
-            ],
-        }
-        (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
-        write_baseline_manifest(baseline_file, filaments_dir)
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
 
-        # Delete source file
-        (filaments_dir / "branda.json").unlink()
+    (filaments_dir / "branda.json").unlink()
 
-        # Without flag, write_baseline_manifest should sys.exit(1)
-        with pytest.raises(SystemExit) as exc_info:
-            write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=False)
-        assert exc_info.value.code == 1
+    write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=True)
+    _, _, stats = check_baseline_manifest(baseline_file, filaments_dir)
+    assert stats["baseline_count"] == 0
 
 
-def test_update_accepts_breaking_changes_with_flag():
-    """25. Baseline --update accepts breaking changes when accept_breaking_changes=True."""
-    with tempfile.TemporaryDirectory() as tmp_dir:
-        tmp_path = Path(tmp_dir)
-        filaments_dir = tmp_path / "filaments"
-        filaments_dir.mkdir()
-        baseline_file = tmp_path / "baseline.json"
+def test_malformed_baseline_rejects_update_even_with_breaking_flag(tmp_path):
+    """39. Malformed baseline is strictly rejected during update even when --accept-breaking-baseline-changes is set."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "corrupted_baseline.json"
 
-        fil_data = {
-            "manufacturer": "BrandA",
-            "filaments": [
-                {
-                    "name": "PLA {color_name}",
-                    "material": "PLA",
-                    "density": 1.24,
-                    "weights": [{"weight": 1000}],
-                    "diameters": [1.75],
-                    "colors": [{"name": "Red", "hex": "FF0000"}],
-                }
-            ],
-        }
-        (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
-        write_baseline_manifest(baseline_file, filaments_dir)
+    # Write malformed JSON (missing closing brace)
+    baseline_file.write_text('{\n "version": 1,\n "count": 1,\n "manifest": {"key1": "id1"', encoding="utf-8")
+    original_bytes = baseline_file.read_bytes()
 
-        # Remove source file
-        (filaments_dir / "branda.json").unlink()
-
-        # With breaking flag, update should succeed
+    with pytest.raises(SystemExit) as exc_info:
         write_baseline_manifest(baseline_file, filaments_dir, accept_breaking_changes=True)
-        _, _, stats = check_baseline_manifest(baseline_file, filaments_dir)
-        assert stats["baseline_count"] == 0
 
-
-def test_write_baseline_atomic_safety():
-    """26. Atomic write leaves target baseline file undamaged if validation or payload fails."""
-    with tempfile.TemporaryDirectory() as tmp_dir:
-        tmp_path = Path(tmp_dir)
-        baseline_file = tmp_path / "baseline.json"
-
-        # Create original valid baseline
-        original_payload = {"version": 1, "count": 0, "manifest": {}}
-        write_baseline_manifest_atomic(original_payload, baseline_file)
-        assert baseline_file.exists()
-        original_content = baseline_file.read_text(encoding="utf-8")
-
-        # Attempt atomic write of invalid payload
-        invalid_payload = {"version": 999, "count": 0, "manifest": {}}
-        with pytest.raises(ValueError) as exc_info:
-            write_baseline_manifest_atomic(invalid_payload, baseline_file)
-        assert "Refusing to write invalid baseline payload" in str(exc_info.value)
-
-        # Target file must remain untouched and intact
-        assert baseline_file.read_text(encoding="utf-8") == original_content
+    assert exc_info.value.code == 1
+    assert baseline_file.read_bytes() == original_bytes
