@@ -46,7 +46,7 @@ python scripts/check_spoolman_compat.py
 python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py
 ```
 
-New filament variants (additions) generate informational baseline warnings until `python scripts/compile_id_baseline.py --update` is run. If a pull request legitimately alters historical IDs or removes existing variants, `--update` will safely refuse to write unless `--accept-breaking-baseline-changes` is explicitly specified.
+New filament variants (additions) generate informational baseline warnings until `python scripts/compile_id_baseline.py --update` is run. `--update` will safely refuse to write if the existing baseline is malformed, or if breaking changes (altered historical IDs / removed variants) are detected without specifying `--accept-breaking-baseline-changes` (breaking flags cannot bypass malformed baseline files).
 
 The generated `filaments.json` should compile cleanly, and all schema, unit, and Spoolman compatibility checks must pass.
 

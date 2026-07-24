@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 from pathlib import Path
 import sys
 import tempfile
@@ -16,6 +17,36 @@ from scripts.compile_filaments import expand_filament_data, load_json
 BASELINE_PATH = ROOT / "contracts" / "compiled_id_baseline.json"
 FILAMENTS_DIR = ROOT / "filaments"
 ALLOWED_TOP_LEVEL_KEYS = {"version", "count", "manifest"}
+
+
+class BaselineCheckResult:
+    """Structured check result separating structural errors from historical ID changes."""
+
+    def __init__(
+        self,
+        structural_errors: List[str],
+        changed_errors: List[str],
+        missing_errors: List[str],
+        warnings: List[str],
+        stats: Dict[str, int],
+    ):
+        self.structural_errors = structural_errors
+        self.changed_errors = changed_errors
+        self.missing_errors = missing_errors
+        self.warnings = warnings
+        self.stats = stats
+
+    @property
+    def all_errors(self) -> List[str]:
+        return self.structural_errors + self.changed_errors + self.missing_errors
+
+    @property
+    def is_valid_structure(self) -> bool:
+        return len(self.structural_errors) == 0
+
+    @property
+    def has_breaking_changes(self) -> bool:
+        return (self.stats["changed"] > 0) or (self.stats["missing"] > 0)
 
 
 def parse_json_without_duplicates(json_str: str) -> Any:
@@ -194,17 +225,14 @@ def validate_baseline_structure(baseline_data: Any) -> List[str]:
     return errors
 
 
-def check_baseline_manifest(
+def check_baseline_manifest_detailed(
     baseline_path: Path = BASELINE_PATH,
     filaments_dir: Path = FILAMENTS_DIR,
-) -> Tuple[List[str], List[str], Dict[str, int]]:
-    """Compare current in-memory compiled IDs against committed baseline.
-
-    Returns:
-        (errors, warnings, stats): Tuple of error list, warning list, and stats dict.
-        stats = {"baseline_count": int, "current_count": int, "matched": int, "added": int, "changed": int, "missing": int}
-    """
-    errors: List[str] = []
+) -> BaselineCheckResult:
+    """Compare current in-memory compiled IDs against committed baseline and return detailed result."""
+    structural_errors: List[str] = []
+    changed_errors: List[str] = []
+    missing_errors: List[str] = []
     warnings: List[str] = []
     stats = {
         "baseline_count": 0,
@@ -216,26 +244,29 @@ def check_baseline_manifest(
     }
 
     if not baseline_path.exists():
-        errors.append(f"Baseline file does not exist at '{baseline_path}'")
-        return errors, warnings, stats
+        structural_errors.append(f"Baseline file does not exist at '{baseline_path}'")
+        return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
 
     try:
         raw_content = baseline_path.read_text(encoding="utf-8")
         baseline_data = parse_json_without_duplicates(raw_content)
     except Exception as exc:
-        errors.append(f"Failed to parse baseline manifest '{baseline_path}': {exc}")
-        return errors, warnings, stats
+        structural_errors.append(f"Failed to parse baseline manifest '{baseline_path}': {exc}")
+        return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
 
     struct_errors = validate_baseline_structure(baseline_data)
     if struct_errors:
-        errors.extend(struct_errors)
-        return errors, warnings, stats
+        structural_errors.extend(struct_errors)
+        return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
 
     baseline_manifest: Dict[str, str] = baseline_data["manifest"]
     stats["baseline_count"] = len(baseline_manifest)
 
     current_manifest, compile_errors = compile_current_id_manifest(filaments_dir)
-    errors.extend(compile_errors)
+    if compile_errors:
+        structural_errors.extend(compile_errors)
+        return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
+
     stats["current_count"] = len(current_manifest)
 
     # Check for changes and additions
@@ -246,7 +277,7 @@ def check_baseline_manifest(
                 stats["matched"] += 1
             else:
                 stats["changed"] += 1
-                errors.append(
+                changed_errors.append(
                     f"Public ID regression detected for variant '{ckey}':\n"
                     f"  Historical ID: '{historical_id}'\n"
                     f"  Current ID:    '{current_id}'"
@@ -262,36 +293,65 @@ def check_baseline_manifest(
     for ckey, historical_id in sorted(baseline_manifest.items()):
         if ckey not in current_manifest:
             stats["missing"] += 1
-            errors.append(
+            missing_errors.append(
                 f"Historical baseline variant missing from current source data:\n"
                 f"  Identity key:   '{ckey}'\n"
                 f"  Historical ID:  '{historical_id}'"
             )
 
-    return errors, warnings, stats
+    return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
+
+
+def check_baseline_manifest(
+    baseline_path: Path = BASELINE_PATH,
+    filaments_dir: Path = FILAMENTS_DIR,
+) -> Tuple[List[str], List[str], Dict[str, int]]:
+    """Compare current in-memory compiled IDs against committed baseline.
+
+    Returns:
+        (errors, warnings, stats): Tuple of all error strings, warning strings, and stats dict.
+    """
+    result = check_baseline_manifest_detailed(baseline_path, filaments_dir)
+    return result.all_errors, result.warnings, result.stats
 
 
 def write_baseline_manifest_atomic(
     payload: dict,
     baseline_path: Path = BASELINE_PATH,
 ) -> None:
-    """Atomic write of baseline payload to baseline_path."""
+    """Atomic write of baseline payload to baseline_path using a unique temporary file."""
     struct_errors = validate_baseline_structure(payload)
     if struct_errors:
         raise ValueError(f"Refusing to write invalid baseline payload: {struct_errors}")
 
-    baseline_path.parent.mkdir(parents=True, exist_ok=True)
-    tmp_path = baseline_path.with_name(f".{baseline_path.name}.tmp")
+    baseline_dir = baseline_path.parent
+    baseline_dir.mkdir(parents=True, exist_ok=True)
+
+    tmp_file = tempfile.NamedTemporaryFile(
+        mode="w",
+        encoding="utf-8",
+        dir=baseline_dir,
+        prefix=f".{baseline_path.name}.",
+        suffix=".tmp",
+        delete=False,
+    )
+    tmp_path = Path(tmp_file.name)
 
     try:
-        with tmp_path.open("w", encoding="utf-8") as f:
-            json.dump(payload, f, indent=2, ensure_ascii=False)
-            f.write("\n")
-            f.flush()
+        json.dump(payload, tmp_file, indent=2, ensure_ascii=False)
+        tmp_file.write("\n")
+        tmp_file.flush()
+        os.fsync(tmp_file.fileno())
+        tmp_file.close()
 
-        # Perform atomic replace
-        tmp_path.replace(baseline_path)
+        # Atomic replacement
+        os.replace(tmp_path, baseline_path)
     except Exception as exc:
+        if tmp_file and not tmp_file.closed:
+            try:
+                tmp_file.close()
+            except Exception:
+                pass
         if tmp_path.exists():
             try:
                 tmp_path.unlink()
@@ -306,24 +366,32 @@ def write_baseline_manifest(
     accept_breaking_changes: bool = False,
 ) -> None:
     """Generate and write a baseline manifest file with safety checks and atomic write."""
-    current_manifest, errors = compile_current_id_manifest(filaments_dir)
-    if errors:
-        print("ERROR: Cannot generate baseline manifest due to compilation errors:", file=sys.stderr)
-        for err in errors:
+    current_manifest, compile_errors = compile_current_id_manifest(filaments_dir)
+    if compile_errors:
+        print("ERROR: Cannot generate baseline manifest due to source compilation errors:", file=sys.stderr)
+        for err in compile_errors:
             print(f"  {err}", file=sys.stderr)
         sys.exit(1)
 
     # Safety check against existing baseline if it exists
     if baseline_path.exists():
-        check_errors, check_warnings, stats = check_baseline_manifest(
+        result = check_baseline_manifest_detailed(
             baseline_path=baseline_path, filaments_dir=filaments_dir
         )
-        has_breaking_changes = (stats["changed"] > 0) or (stats["missing"] > 0)
 
-        if has_breaking_changes and not accept_breaking_changes:
+        if not result.is_valid_structure:
+            print(
+                f"ERROR: Refusing to update baseline '{baseline_path.name}': existing baseline file is malformed or invalid!\n"
+                f"  Existing baseline must be structurally valid before automated updates can proceed.\n"
+                f"  Structural errors:\n" + "\n".join(f"    - {err}" for err in result.structural_errors),
+                file=sys.stderr,
+            )
+            sys.exit(1)
+
+        if result.has_breaking_changes and not accept_breaking_changes:
             print(
                 f"ERROR: Refusing to update baseline '{baseline_path.name}': breaking baseline changes detected!\n"
-                f"  Matched: {stats['matched']} | Added: {stats['added']} | Changed: {stats['changed']} | Missing: {stats['missing']}\n"
+                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Changed: {result.stats['changed']} | Missing: {result.stats['missing']}\n"
                 f"  If these breaking changes are intentional, re-run with '--accept-breaking-baseline-changes'.",
                 file=sys.stderr,
             )
@@ -332,12 +400,12 @@ def write_baseline_manifest(
         if accept_breaking_changes:
             print(
                 f"Updating baseline with breaking changes explicitly enabled:\n"
-                f"  Matched: {stats['matched']} | Added: {stats['added']} | Changed: {stats['changed']} | Missing: {stats['missing']}"
+                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Changed: {result.stats['changed']} | Missing: {result.stats['missing']}"
             )
         else:
             print(
                 f"Updating baseline (additions-only update):\n"
-                f"  Matched: {stats['matched']} | Added: {stats['added']} | Changed: 0 | Missing: 0"
+                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Changed: 0 | Missing: 0"
             )
 
     payload = {
