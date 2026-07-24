@@ -125,6 +125,25 @@ def main():
     else:
         print("✓ Semantic data integrity passed.")
 
+    from scripts.compile_id_baseline import check_baseline_manifest
+
+    print("\nChecking Public Compiled ID baseline...")
+    base_errors, base_warnings, base_stats = check_baseline_manifest(filaments_dir=filaments_dir)
+    print(
+        f"Baseline: {base_stats['baseline_count']} | Current: {base_stats['current_count']} | "
+        f"Matched: {base_stats['matched']} | Added: {base_stats['added']} | Changed: {base_stats['changed']} | Missing: {base_stats['missing']}"
+    )
+
+    for warn in base_warnings:
+        print(f"WARN baseline: {warn}")
+
+    if base_errors:
+        for err in base_errors:
+            print(f"ERROR baseline: {err}", file=sys.stderr)
+        success = False
+    else:
+        print("✓ Public Compiled ID baseline check passed.")
+
     if not report_display_name_warnings(filaments_dir, strict=args.strict_display_names):
         success = False
         
