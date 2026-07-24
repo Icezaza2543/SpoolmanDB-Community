@@ -306,4 +306,3 @@ def test_expand_filament_data_fill_metadata():
 
     validator = jsonschema.Draft7Validator(compiled_schema)
     validator.validate(results)
-
