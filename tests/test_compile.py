@@ -248,3 +248,62 @@ def test_explicit_refill_metadata_and_conflicts():
     ]
     with pytest.raises(ValueError, match="cannot have another spool_type"):
         list(expand_filament_data("TestBrand", filament_data))
+
+
+def test_expand_filament_data_fill_metadata():
+    import json
+    import jsonschema
+    from pathlib import Path
+    from scripts.compile_filaments import Fill
+
+    filament_data = {
+        "name": "Nylon {color_name}",
+        "material": "PA",
+        "density": 1.14,
+        "fill": Fill.CARBON_FIBER,
+        "weights": [{"weight": 1000, "spool_type": SpoolType.PLASTIC}],
+        "diameters": [1.75],
+        "colors": [
+            {"name": "Standard CF", "hex": "1A1A1A"},
+            {"name": "Custom GF", "hex": "D3D3D3", "fill": Fill.GLASS_FIBER},
+        ],
+    }
+
+    results = list(expand_filament_data("TestBrand", filament_data))
+    assert len(results) == 2
+
+    # Top-level fill passthrough
+    assert results[0]["fill"] == Fill.CARBON_FIBER
+    assert results[0]["id"] == "testbrand_pa_nylonstandardcf_1000_175_p"
+
+    # Color-level override
+    assert results[1]["fill"] == Fill.GLASS_FIBER
+    assert results[1]["id"] == "testbrand_pa_nyloncustomgf_1000_175_p"
+
+    # Omitted fill
+    no_fill_data = {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [{"weight": 1000, "spool_type": SpoolType.PLASTIC}],
+        "diameters": [1.75],
+        "colors": [{"name": "Red", "hex": "FF0000"}],
+    }
+    no_fill_res = list(expand_filament_data("TestBrand", no_fill_data))[0]
+    assert no_fill_res["fill"] is None
+
+    # Verify ID is identical whether fill is provided or omitted
+    data_without_fill = dict(filament_data)
+    del data_without_fill["fill"]
+    data_without_fill["colors"] = [{"name": "Standard CF", "hex": "1A1A1A"}]
+    res_no_fill_id = list(expand_filament_data("TestBrand", data_without_fill))[0]
+    assert results[0]["id"] == res_no_fill_id["id"]
+
+    # Validate against compiled schema
+    compiled_schema_path = Path(__file__).parent.parent / "filaments.compiled.schema.json"
+    with compiled_schema_path.open(encoding="utf-8") as f:
+        compiled_schema = json.load(f)
+
+    validator = jsonschema.Draft7Validator(compiled_schema)
+    validator.validate(results)
+

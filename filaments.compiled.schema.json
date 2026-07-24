@@ -86,6 +86,10 @@
           "type": "integer"
         }
       },
+      "fill": {
+        "type": ["string", "null"],
+        "enum": ["glass fiber", "carbon fiber", "wood", null]
+      },
       "finish": {
         "type": ["string", "null"],
         "enum": ["matte", "glossy", null]

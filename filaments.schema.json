@@ -228,6 +228,15 @@
                                         "pattern": "^[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"
                                     }
                                 },
+                                "fill": {
+                                    "$comment": "Type of fill material of this color.",
+                                    "enum": [
+                                        null,
+                                        "glass fiber",
+                                        "carbon fiber",
+                                        "wood"
+                                    ]
+                                },
                                 "finish": {
                                     "$comment": "Surface finish of this color. Don't set if it's not explicitly stated by the manufacturer.",
                                     "enum": [

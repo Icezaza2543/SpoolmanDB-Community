@@ -20,6 +20,12 @@ class Finish(StrEnum):
     GLOSSY = "glossy"
 
 
+class Fill(StrEnum):
+    GLASS_FIBER = "glass fiber"
+    CARBON_FIBER = "carbon fiber"
+    WOOD = "wood"
+
+
 class MultiColorDirection(StrEnum):
     COAXIAL = "coaxial"
     LONGITUDINAL = "longitudinal"
@@ -41,6 +47,7 @@ class Color(TypedDict):
     name: str
     hex: NotRequired[str]
     hexes: NotRequired[list[str]]
+    fill: NotRequired[Fill | None]
     finish: NotRequired[Finish | None]
     multi_color_direction: NotRequired[MultiColorDirection | None]
     pattern: NotRequired[Pattern | None]
@@ -65,6 +72,7 @@ class Filament(TypedDict):
     extruder_temp_range: NotRequired[list[int]]
     bed_temp: NotRequired[int]
     bed_temp_range: NotRequired[list[int]]
+    fill: NotRequired[Fill | None]
     finish: NotRequired[Finish | None]
     multi_color_direction: NotRequired[MultiColorDirection | None]
     pattern: NotRequired[Pattern | None]
@@ -165,6 +173,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
     extruder_temp_range = data.get("extruder_temp_range", None)
     bed_temp = data.get("bed_temp", None)
     bed_temp_range = data.get("bed_temp_range", None)
+    fill = data.get("fill", None)
     finish = data.get("finish", None)
     multi_color_direction = data.get("multi_color_direction", None)
     pattern = data.get("pattern", None)
@@ -188,6 +197,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                 color_name = color_obj["name"]
                 color_hex = color_obj.get("hex", None)
                 color_hexes = color_obj.get("hexes", None)
+                color_fill = color_obj.get("fill", None)
                 color_finish = color_obj.get("finish", None)
                 color_multi_color_direction = color_obj.get(
                     "multi_color_direction", None
@@ -198,6 +208,9 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                 color_codes = color_obj.get("codes", None)
                 color_eans = color_obj.get("eans", None)
                 color_eans_refill = color_obj.get("eans_refill", None)
+
+                if color_fill is None:
+                    color_fill = fill
 
                 if color_finish is None:
                     color_finish = finish
@@ -264,6 +277,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                     "extruder_temp_range": extruder_temp_range,
                     "bed_temp": bed_temp,
                     "bed_temp_range": bed_temp_range,
+                    "fill": color_fill,
                     "finish": color_finish,
                     "multi_color_direction": color_multi_color_direction,
                     "pattern": color_pattern,
