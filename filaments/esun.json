@@ -1405,22 +1405,14 @@
       "name": "PETG-Basic {color_name}",
       "material": "PETG",
       "density": 1.27,
-      "extruder_temp": 260,
       "extruder_temp_range": [
-        250,
-        265
+        240,
+        260
       ],
-      "bed_temp": 70,
       "bed_temp_range": [
-        65,
-        80
+        75,
+        90
       ],
-      "fill": null,
-      "finish": null,
-      "multi_color_direction": null,
-      "pattern": null,
-      "translucent": true,
-      "glow": false,
       "weights": [
         {
           "weight": 1000,
@@ -1433,11 +1425,82 @@
       ],
       "colors": [
         {
+          "name": "Black",
+          "hex": "070707"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Blue",
+          "hex": "0D1553"
+        },
+        {
+          "name": "Clear",
+          "hex": "F5F5F5",
+          "translucent": true
+        },
+        {
+          "name": "Grey",
+          "hex": "878696"
+        },
+        {
+          "name": "Red",
+          "hex": "D82A33"
+        },
+        {
+          "name": "Silver",
+          "hex": "878286"
+        },
+        {
+          "name": "Translucent Blue",
+          "hex": "4A90D9",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Green",
+          "hex": "3CB371",
+          "translucent": true
+        },
+        {
           "name": "Translucent Orange",
-          "hex": "ff8126"
+          "hex": "ff8126",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Light Blue",
+          "hex": "87CEEB",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Light Green",
+          "hex": "90EE90",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Light Orange",
+          "hex": "FFB366",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Light Pink",
+          "hex": "FFB6C1",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Light Purple",
+          "hex": "D8BFD8",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Red",
+          "hex": "E57373",
+          "translucent": true
         }
       ],
-      "country_of_origin": "CN"
+      "country_of_origin": "CN",
+      "tds_url": "https://3d.nice-cdn.com/upload/file/PETG-Basic-TDS.pdf"
     },
     {
       "name": "{color_name}",
