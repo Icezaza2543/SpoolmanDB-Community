@@ -40,6 +40,7 @@ class Weight(TypedDict):
     weight: float
     spool_weight: NotRequired[float]
     spool_type: NotRequired[SpoolType | None]
+    legacy_id_spool_type: NotRequired[SpoolType | None]
     is_refill: NotRequired[bool]
 
 
@@ -187,6 +188,11 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
         weight = weight_obj["weight"]
         spool_weight = weight_obj.get("spool_weight", None)
         spool_type = weight_obj.get("spool_type", None)
+        id_spool_type = (
+            weight_obj["legacy_id_spool_type"]
+            if "legacy_id_spool_type" in weight_obj
+            else spool_type
+        )
         is_refill = resolve_is_refill(
             spool_type,
             weight_obj.get("is_refill", None),
@@ -257,7 +263,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                         material=material,
                         weight=weight,
                         diameter=diameter,
-                        spool_type=spool_type,
+                        spool_type=id_spool_type,
                         is_refill=is_refill,
                     ),
                     "manufacturer": manufacturer,

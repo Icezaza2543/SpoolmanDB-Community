@@ -306,3 +306,39 @@ def test_expand_filament_data_fill_metadata():
 
     validator = jsonschema.Draft7Validator(compiled_schema)
     validator.validate(results)
+
+
+def test_legacy_id_spool_type_behavior():
+    filament_data = {
+        "name": "{color_name} PLA",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+            {
+                "weight": 1000.0,
+                "spool_type": SpoolType.PLASTIC,
+                "legacy_id_spool_type": SpoolType.UNKNOW,
+            },
+            {
+                "weight": 1000.0,
+                "spool_type": SpoolType.CARDBOARD,
+                "legacy_id_spool_type": None,
+            },
+        ],
+        "diameters": [1.75],
+        "colors": [{"name": "White", "hex": "FFFFFF"}],
+    }
+
+    results = list(expand_filament_data("TestBrand", filament_data))
+    assert len(results) == 2
+
+    # Result 0: real spool_type is plastic, but generated ID has legacy _u suffix
+    assert results[0]["spool_type"] == "plastic"
+    assert results[0]["id"] == "testbrand_pla_whitepla_1000_175_u"
+    assert "legacy_id_spool_type" not in results[0]
+
+    # Result 1: real spool_type is cardboard, legacy_id_spool_type is null, so generated ID has legacy _n suffix
+    assert results[1]["spool_type"] == "cardboard"
+    assert results[1]["id"] == "testbrand_pla_whitepla_1000_175_n"
+    assert "legacy_id_spool_type" not in results[1]
+

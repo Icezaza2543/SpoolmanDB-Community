@@ -71,6 +71,17 @@
                                 "is_refill": {
                                     "$comment": "True when the product is supplied without a spool. Preferred over the legacy spool_type value 'refill'.",
                                     "type": "boolean"
+                                },
+                                "legacy_id_spool_type": {
+                                    "$comment": "Source-only field to preserve historical generated variant IDs when updating real spool_type metadata. Never emitted in compiled output.",
+                                    "enum": [
+                                        null,
+                                        "plastic",
+                                        "cardboard",
+                                        "metal",
+                                        "refill",
+                                        "unknow"
+                                    ]
                                 }
                             },
                             "allOf": [
