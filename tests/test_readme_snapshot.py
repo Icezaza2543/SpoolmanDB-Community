@@ -59,7 +59,7 @@ def test_collect_snapshot_counts_source_and_compiled_metrics(tmp_path):
                             "codes": ["CODE-3"],
                         },
                     ],
-                    "country_of_origin": "China",
+                    "country_of_origin": "CN",
                     "tds_url": "https://example.com/tds",
                     "sds_url": "https://example.com/sds",
                 }
@@ -80,7 +80,7 @@ def test_collect_snapshot_counts_source_and_compiled_metrics(tmp_path):
                     ],
                     "diameters": [1.75],
                     "colors": [{"name": "Clear", "hex": "FFFFFF"}],
-                    "country_of_origin": "Malaysia",
+                    "country_of_origin": "MY",
                 }
             ],
         },

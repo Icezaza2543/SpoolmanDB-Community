@@ -218,6 +218,52 @@ def test_duplicate_ean_reporting(tmp_path):
     assert "Duplicate GTIN '4006381333931'" in warnings[0]
 
 
+def test_country_of_origin_requires_iso_alpha2(tmp_path):
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    materials_file = tmp_path / "materials.json"
+    materials_file.write_text(
+        json.dumps([{"material": "PLA", "density": 1.24}]), encoding="utf-8"
+    )
+
+    valid = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+                "country_of_origin": "CN",
+            }
+        ],
+    }
+    (filaments_dir / "valid.json").write_text(json.dumps(valid), encoding="utf-8")
+    errors, _ = check_source_data_semantics(filaments_dir, materials_file)
+    assert errors == []
+
+    invalid = {
+        "manufacturer": "BrandB",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+                "country_of_origin": "China",
+            }
+        ],
+    }
+    (filaments_dir / "invalid.json").write_text(json.dumps(invalid), encoding="utf-8")
+    errors, _ = check_source_data_semantics(filaments_dir, materials_file)
+    assert any("invalid country_of_origin 'China'" in e for e in errors)
+    assert any("ISO 3166-1 alpha-2" in e for e in errors)
+
+
 def test_existing_repository_passes_semantics():
     # 13. Existing repository passes all semantic checks
     filaments_dir = ROOT / "filaments"
