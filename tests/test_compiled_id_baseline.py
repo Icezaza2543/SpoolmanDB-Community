@@ -24,9 +24,9 @@ def test_current_baseline_passes():
         filaments_dir=ROOT / "filaments",
     )
     assert errors == []
-    assert stats["baseline_count"] == 51621
-    assert stats["current_count"] == 51621
-    assert stats["matched"] == 51621
+    assert stats["baseline_count"] == 51626
+    assert stats["current_count"] == 51626
+    assert stats["matched"] == 51626
     assert stats["changed"] == 0
     assert stats["missing"] == 0
 
@@ -35,16 +35,16 @@ def test_compiled_public_ids_are_unique():
     """2. Compiled Public IDs are unique across all variants compiled in memory."""
     current_manifest, errors = compile_current_id_manifest(ROOT / "filaments")
     assert errors == []
-    assert len(current_manifest) == 51621
+    assert len(current_manifest) == 51626
     id_set = set(current_manifest.values())
-    assert len(id_set) == 51621
+    assert len(id_set) == 51626
 
 
 def test_identity_keys_are_unique():
     """3. Canonical identity keys are unique across all variants compiled in memory."""
     current_manifest, errors = compile_current_id_manifest(ROOT / "filaments")
     assert errors == []
-    assert len(current_manifest) == 51621
+    assert len(current_manifest) == 51626
 
 
 def test_simulated_id_change_fails():
@@ -328,7 +328,7 @@ def test_baseline_check_works_without_compiled_filaments_json():
         filaments_dir=ROOT / "filaments",
     )
     assert errors == []
-    assert stats["matched"] == 51621
+    assert stats["matched"] == 51626
 
 
 def test_baseline_check_does_not_rely_on_record_count_alone():
