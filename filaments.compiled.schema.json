@@ -127,7 +127,9 @@
         }
       },
       "country_of_origin": {
-        "type": ["string", "null"]
+        "$comment": "ISO 3166-1 alpha-2 manufacturing country code, or null when unset.",
+        "type": ["string", "null"],
+        "pattern": "^[A-Z]{2}$"
       },
       "sds_url": {
         "type": ["string", "null"]
