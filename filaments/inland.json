@@ -220,11 +220,79 @@
         },
         {
           "name": "Wood Brown",
-          "hex": "B38460"
+          "hex": "B38460",
+          "finish": "matte"
+        },
+        {
+          "name": "White",
+          "hex": "E0E3E5",
+          "finish": "matte"
+        },
+        {
+          "name": "Ash Gray",
+          "hex": "3B4045",
+          "finish": "matte"
+        },
+        {
+          "name": "Pink",
+          "hex": "F291A5",
+          "finish": "matte"
         }
       ],
       "finish": "matte",
       "country_of_origin": "US"
+    },
+    {
+      "name": "PLA Tough {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0544FF"
+        },
+        {
+          "name": "Light Gray",
+          "hex": "E1E1E1"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF8000"
+        },
+        {
+          "name": "Red",
+          "hex": "B53322"
+        },
+        {
+          "name": "White",
+          "hex": "E0E3E5"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFBB3F"
+        }
+      ]
     },
     {
       "name": "PLA Glow in Dark {color_name}",
