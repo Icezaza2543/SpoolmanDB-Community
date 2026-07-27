@@ -79,11 +79,11 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 4,330 |
+| `spool_type: plastic` | 4,341 |
 | `spool_type: cardboard` | 1,617 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 34 |
-| `spool_type: unknow` (legacy) | 40 |
+| `spool_type: unknow` (legacy) | 29 |
 | `spool_type: null` | 0 |
 | `spool_type` omitted | 7 |
 | Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 34 |
