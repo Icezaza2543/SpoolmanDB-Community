@@ -64,8 +64,8 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | Manufacturer source files | 460 |
 | Material definitions | 152 |
 | Source filament objects | 4,790 |
-| Color entries | 29,639 |
-| Compiled filament variants | 51,596 |
+| Color entries | 29,641 |
+| Compiled filament variants | 51,620 |
 | Source filaments with country of origin | 4,740 |
 | Source filaments with TDS/product links | 469 |
 | Source filaments with SDS links | 9 |
