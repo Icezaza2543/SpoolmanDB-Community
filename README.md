@@ -69,8 +69,8 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | Source filaments with country of origin | 4,740 |
 | Source filaments with TDS/product links | 469 |
 | Source filaments with SDS links | 9 |
-| Manufacturer product code/ID entries | 7,731 |
-| EAN/GTIN entries | 1,950 |
+| Manufacturer product code/ID entries | 7,756 |
+| EAN/GTIN entries | 1,958 |
 | ASEAN manufacturer coverage | 21 brands / 139 source filaments |
 
 Counts in this block are generated from the current repository state. Run `python scripts/readme_snapshot.py --write` after source-data changes. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
