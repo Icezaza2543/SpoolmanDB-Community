@@ -191,7 +191,7 @@ The source files in `filaments/` are intentionally compact. Deployment expands t
 | `pattern` | optional | Currently `marble` or `sparkle`. |
 | `translucent` | optional | Boolean for partially see-through filament. |
 | `glow` | optional | Boolean for glow-in-the-dark filament. |
-| `country_of_origin` | optional | Manufacturing country. |
+| `country_of_origin` | optional | Manufacturing country as ISO 3166-1 alpha-2 (`US`, `CN`, `DE`, …). Full names and non-ISO strings are rejected. |
 | `sds_url` | optional | Safety Data Sheet URL. |
 | `tds_url` | optional | Technical Data Sheet URL. |
 

@@ -307,8 +307,11 @@
                         }
                     },
                     "country_of_origin": {
-                        "$comment": "Country where the filament was manufactured (e.g. 'USA', 'China', 'Germany').",
-                        "type": "string"
+                        "$comment": "ISO 3166-1 alpha-2 manufacturing country code only (e.g. US, CN, DE). Full names and non-ISO strings are rejected.",
+                        "type": "string",
+                        "pattern": "^[A-Z]{2}$",
+                        "minLength": 2,
+                        "maxLength": 2
                     },
                     "sds_url": {
                         "$comment": "Link to the Safety Data Sheet (SDS).",
