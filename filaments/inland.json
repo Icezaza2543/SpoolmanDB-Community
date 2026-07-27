@@ -259,7 +259,10 @@
         210,
         230
       ],
-      "bed_temp": 60,
+      "bed_temp_range": [
+        30,
+        60
+      ],
       "colors": [
         {
           "name": "Black",
@@ -289,8 +292,7 @@
           "name": "Yellow",
           "hex": "FFBB3F"
         }
-      ],
-      "country_of_origin": "US"
+      ]
     },
     {
       "name": "PLA Glow in Dark {color_name}",
