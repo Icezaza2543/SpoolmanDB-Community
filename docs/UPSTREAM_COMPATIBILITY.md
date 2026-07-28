@@ -40,7 +40,7 @@ Status Enum Definitions:
 | Feature / Capability | Status | Upstream Spoolman Behavior | Community Implementation | Upstream References |
 | :--- | :--- | :--- | :--- | :--- |
 | **`spool_type` Material Enum** | `supported` | Native enum in `ExternalFilament` (`plastic`, `cardboard`, `metal`) | Normalized to strict enum; legacy null types sanitized. | — |
-| **Refill & `is_refill` Boolean** | `community-extension` | Absent from `ExternalFilament`; Spoolman handles legacy `spool_type: refill` internally | Explicit `is_refill` boolean with `legacy_id_spool_type` sentinel preservation. | `Donkie/SpoolmanDB#26` |
+| **Refill & `is_refill` Boolean** | `community-extension` | Absent from `ExternalFilament`; accepts `plastic`/`cardboard`/`metal` or `null` only | Supported (source `refill` normalized to `null` `spool_type` + explicit `is_refill: true`, preserving `legacy_id_spool_type`). | `Donkie/SpoolmanDB#26` |
 | **Country of Origin (COO)** | `community-extension` | Absent from `ExternalFilament` | Maintained in source metadata (ISO 3166-1 alpha-2 standard). | `Donkie/SpoolmanDB#283` |
 | **SDS & TDS URLs** | `community-extension` | Absent from `ExternalFilament` (upstream proposals pending) | Supported with strict URI format validation. | `Donkie/SpoolmanDB#282`, `Donkie/Spoolman#395` |
 | **Product & Article Codes** | `community-extension` | Absent from `ExternalFilament` | Supported in community source files. | `Donkie/SpoolmanDB#198`, `Donkie/SpoolmanDB#263`, `Donkie/Spoolman#789` |
@@ -60,3 +60,4 @@ Automated CI tests ([`tests/test_upstream_compatibility.py`](../tests/test_upstr
 4. Repository references use qualified repository notation (`Repository#PR`).
 5. SpoolmanDB SHA matches exact 40-character hex SHA.
 6. `last_reviewed` matches ISO 8601 date format (`YYYY-MM-DD`).
+7. `test_no_false_native_contract_claims` dynamically parses `ExternalFilament` via `load_spoolman_contract()` to ensure native vs extension field assertions remain accurate.
