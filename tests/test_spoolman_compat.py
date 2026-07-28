@@ -11,6 +11,7 @@ from scripts.check_spoolman_compat import (
     load_stable_contract,
     load_upstream_config,
     main,
+    matches_annotation,
     resolve_contract_source,
     validate_compiled_data,
     validate_schema_spool_types,
@@ -483,3 +484,62 @@ def test_cli_verify_pin_fails_on_drift(monkeypatch, capsys):
     assert exit_code == 1
     assert "does not match" in captured.err
     assert "density" in captured.err
+
+
+def test_matches_annotation_shared_matcher_coverage():
+    """Verify shared AST annotation matcher correctly handles primitives, float/int compat, bool, unions, lists, enums, Any."""
+    import ast
+
+    contract = load_spoolman_contract(UPSTREAM_MODEL)
+
+    def parse_expr(expr_str: str) -> ast.expr:
+        return ast.parse(expr_str, mode="eval").body
+
+    # 1. Primitives: str, float/int compatibility, bool
+    str_expr = parse_expr("str")
+    assert matches_annotation("hello", str_expr, contract) is True
+    assert matches_annotation(123, str_expr, contract) is False
+    assert matches_annotation(True, str_expr, contract) is False
+
+    float_expr = parse_expr("float")
+    assert matches_annotation(1.24, float_expr, contract) is True
+    assert matches_annotation(100, float_expr, contract) is True  # int compatible with float
+    assert matches_annotation(True, float_expr, contract) is False  # bool is not float
+    assert matches_annotation("1.24", float_expr, contract) is False
+
+    int_expr = parse_expr("int")
+    assert matches_annotation(100, int_expr, contract) is True
+    assert matches_annotation(1.24, int_expr, contract) is False
+    assert matches_annotation(True, int_expr, contract) is False
+
+    bool_expr = parse_expr("bool")
+    assert matches_annotation(True, bool_expr, contract) is True
+    assert matches_annotation(False, bool_expr, contract) is True
+    assert matches_annotation(1, bool_expr, contract) is False
+    assert matches_annotation("true", bool_expr, contract) is False
+
+    # 2. Optional/union values: T | None
+    union_expr = parse_expr("str | None")
+    assert matches_annotation("hello", union_expr, contract) is True
+    assert matches_annotation(None, union_expr, contract) is True
+    assert matches_annotation(123, union_expr, contract) is False
+
+    # 3. List values: valid list[str], invalid scalar, invalid element type
+    list_expr = parse_expr("list[str]")
+    assert matches_annotation(["a", "b"], list_expr, contract) is True
+    assert matches_annotation("a", list_expr, contract) is False
+    assert matches_annotation(["a", 123], list_expr, contract) is False
+
+    # 4. Enums: SpoolType, Finish, etc.
+    spool_enum_expr = parse_expr("SpoolType")
+    assert matches_annotation("plastic", spool_enum_expr, contract) is True
+    assert matches_annotation("invalid_spool", spool_enum_expr, contract) is False
+
+    finish_enum_expr = parse_expr("Finish")
+    assert matches_annotation("matte", finish_enum_expr, contract) is True
+    assert matches_annotation("invalid_finish", finish_enum_expr, contract) is False
+
+    # 5. Any
+    any_expr = parse_expr("Any")
+    assert matches_annotation("anything", any_expr, contract) is True
+    assert matches_annotation(123, any_expr, contract) is True
