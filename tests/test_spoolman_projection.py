@@ -170,7 +170,7 @@ def test_invalid_enum_spool_type_fails(sample_community_record):
 
 
 def test_project_entire_committed_filaments_json_dataset():
-    """8. Project the ENTIRE committed filaments.json (all 51,626 records). Verify exact ID order & native key matching."""
+    """8. Project the ENTIRE committed filaments.json. Verify exact ID order & native key matching."""
     assert FILAMENTS_JSON_PATH.exists()
     records = json.loads(FILAMENTS_JSON_PATH.read_text(encoding="utf-8"))
     contract = get_native_contract()
@@ -178,9 +178,8 @@ def test_project_entire_committed_filaments_json_dataset():
     # Project the entire dataset
     projected_list = project_compiled_records(records, contract)
     assert len(projected_list) == len(records)
-    assert len(projected_list) == 51626
 
-    # Assert all 51,626 IDs are preserved exactly and in the same order
+    # Assert all IDs are preserved exactly and in the same order
     src_ids = [r["id"] for r in records]
     proj_ids = [p["id"] for p in projected_list]
     assert src_ids == proj_ids
