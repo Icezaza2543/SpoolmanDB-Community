@@ -97,6 +97,13 @@ def main():
         default=None,
         help="Git ref (e.g. commit SHA or 'origin/main') or file path to trusted base baseline manifest for PR checking.",
     )
+    parser.add_argument(
+        "--strict",
+        "--strict-head-sync",
+        dest="strict_head_sync",
+        action="store_true",
+        help="Strict mode: require PR HEAD baseline manifest to match current compiled source manifest exactly.",
+    )
     args = parser.parse_args()
 
     materials_schema = ROOT / "materials.schema.json"
@@ -137,9 +144,12 @@ def main():
     print("\nChecking Public Compiled ID baseline...")
     if args.base_ref:
         print(f"Trusted BASE baseline ref/file: '{args.base_ref}'")
+    if args.strict_head_sync:
+        print("Strict mode: HEAD baseline synchronization required.")
     base_result = check_baseline_manifest_detailed(
         filaments_dir=filaments_dir,
         base_baseline_path=args.base_ref,
+        strict_head_sync=args.strict_head_sync,
     )
     print(
         f"Baseline: {base_result.stats['baseline_count']} | Current: {base_result.stats['current_count']} | "
