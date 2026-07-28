@@ -20,25 +20,30 @@ ALLOWED_TOP_LEVEL_KEYS = {"version", "count", "manifest"}
 
 
 class BaselineCheckResult:
-    """Structured check result separating structural errors from historical ID changes."""
+    """Structured check result separating structural errors, historical ID changes, rekeys, and additions."""
 
     def __init__(
         self,
         structural_errors: List[str],
         changed_errors: List[str],
-        missing_errors: List[str],
+        removed_errors: List[str],
+        added_diagnostics: List[str],
+        rekeyed_diagnostics: List[str],
         warnings: List[str],
         stats: Dict[str, int],
     ):
         self.structural_errors = structural_errors
         self.changed_errors = changed_errors
-        self.missing_errors = missing_errors
+        self.removed_errors = removed_errors
+        self.missing_errors = removed_errors  # Backward compatibility alias
+        self.added_diagnostics = added_diagnostics
+        self.rekeyed_diagnostics = rekeyed_diagnostics
         self.warnings = warnings
         self.stats = stats
 
     @property
     def all_errors(self) -> List[str]:
-        return self.structural_errors + self.changed_errors + self.missing_errors
+        return self.structural_errors + self.changed_errors + self.removed_errors
 
     @property
     def is_valid_structure(self) -> bool:
@@ -46,7 +51,11 @@ class BaselineCheckResult:
 
     @property
     def has_breaking_changes(self) -> bool:
-        return (self.stats["changed"] > 0) or (self.stats["missing"] > 0)
+        return (
+            (self.stats.get("changed", 0) > 0)
+            or (self.stats.get("removed", 0) > 0)
+            or (self.stats.get("missing", 0) > 0)
+        )
 
 
 def parse_json_without_duplicates(json_str: str) -> Any:
@@ -232,32 +241,42 @@ def check_baseline_manifest_detailed(
     """Compare current in-memory compiled IDs against committed baseline and return detailed result."""
     structural_errors: List[str] = []
     changed_errors: List[str] = []
-    missing_errors: List[str] = []
+    removed_errors: List[str] = []
+    added_diagnostics: List[str] = []
+    rekeyed_diagnostics: List[str] = []
     warnings: List[str] = []
     stats = {
         "baseline_count": 0,
         "current_count": 0,
         "matched": 0,
         "added": 0,
+        "removed": 0,
         "changed": 0,
+        "rekeyed": 0,
         "missing": 0,
     }
 
     if not baseline_path.exists():
         structural_errors.append(f"Baseline file does not exist at '{baseline_path}'")
-        return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
+        return BaselineCheckResult(
+            structural_errors, changed_errors, removed_errors, added_diagnostics, rekeyed_diagnostics, warnings, stats
+        )
 
     try:
         raw_content = baseline_path.read_text(encoding="utf-8")
         baseline_data = parse_json_without_duplicates(raw_content)
     except Exception as exc:
         structural_errors.append(f"Failed to parse baseline manifest '{baseline_path}': {exc}")
-        return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
+        return BaselineCheckResult(
+            structural_errors, changed_errors, removed_errors, added_diagnostics, rekeyed_diagnostics, warnings, stats
+        )
 
     struct_errors = validate_baseline_structure(baseline_data)
     if struct_errors:
         structural_errors.extend(struct_errors)
-        return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
+        return BaselineCheckResult(
+            structural_errors, changed_errors, removed_errors, added_diagnostics, rekeyed_diagnostics, warnings, stats
+        )
 
     baseline_manifest: Dict[str, str] = baseline_data["manifest"]
     stats["baseline_count"] = len(baseline_manifest)
@@ -265,11 +284,15 @@ def check_baseline_manifest_detailed(
     current_manifest, compile_errors = compile_current_id_manifest(filaments_dir)
     if compile_errors:
         structural_errors.extend(compile_errors)
-        return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
+        return BaselineCheckResult(
+            structural_errors, changed_errors, removed_errors, added_diagnostics, rekeyed_diagnostics, warnings, stats
+        )
 
     stats["current_count"] = len(current_manifest)
 
-    # Check for changes and additions
+    historical_id_to_ckey: Dict[str, str] = {pub_id: ckey for ckey, pub_id in baseline_manifest.items()}
+    current_id_to_ckey: Dict[str, str] = {pub_id: ckey for ckey, pub_id in current_manifest.items()}
+
     for ckey, current_id in sorted(current_manifest.items()):
         if ckey in baseline_manifest:
             historical_id = baseline_manifest[ckey]
@@ -283,23 +306,40 @@ def check_baseline_manifest_detailed(
                     f"  Current ID:    '{current_id}'"
                 )
         else:
-            stats["added"] += 1
-            warnings.append(
-                f"New variant added (not in baseline): '{ckey}' -> '{current_id}'\n"
-                f"  Note: New variants are not protected against historical ID regression until the baseline is updated via 'python scripts/compile_id_baseline.py --update'."
-            )
+            if current_id in historical_id_to_ckey:
+                historical_ckey = historical_id_to_ckey[current_id]
+                stats["rekeyed"] += 1
+                msg = (
+                    f"Source identity rekey with unchanged public ID: ID '{current_id}'\n"
+                    f"  Historical key: '{historical_ckey}'\n"
+                    f"  Current key:    '{ckey}'"
+                )
+                rekeyed_diagnostics.append(msg)
+                warnings.append(msg)
+            else:
+                stats["added"] += 1
+                msg = (
+                    f"New variant added (not in baseline): '{current_id}'\n"
+                    f"  Current key: '{ckey}'\n"
+                    f"  Note: New variants are not protected against historical ID regression until the baseline is updated via 'python scripts/compile_id_baseline.py --update'."
+                )
+                added_diagnostics.append(msg)
+                warnings.append(msg)
 
-    # Check for missing baseline variants
-    for ckey, historical_id in sorted(baseline_manifest.items()):
-        if ckey not in current_manifest:
-            stats["missing"] += 1
-            missing_errors.append(
-                f"Historical baseline variant missing from current source data:\n"
-                f"  Identity key:   '{ckey}'\n"
-                f"  Historical ID:  '{historical_id}'"
-            )
+    for ckey_old, historical_id in sorted(baseline_manifest.items()):
+        if ckey_old not in current_manifest:
+            if historical_id not in current_id_to_ckey:
+                stats["removed"] += 1
+                removed_errors.append(
+                    f"Historical baseline variant missing from current source data:\n"
+                    f"  Historical ID:  '{historical_id}'\n"
+                    f"  Historical key: '{ckey_old}'"
+                )
 
-    return BaselineCheckResult(structural_errors, changed_errors, missing_errors, warnings, stats)
+    stats["missing"] = stats["removed"]
+    return BaselineCheckResult(
+        structural_errors, changed_errors, removed_errors, added_diagnostics, rekeyed_diagnostics, warnings, stats
+    )
 
 
 def check_baseline_manifest(
@@ -344,7 +384,6 @@ def write_baseline_manifest_atomic(
         os.fsync(tmp_file.fileno())
         tmp_file.close()
 
-        # Atomic replacement
         os.replace(tmp_path, baseline_path)
     except Exception as exc:
         if tmp_file and not tmp_file.closed:
@@ -373,7 +412,6 @@ def write_baseline_manifest(
             print(f"  {err}", file=sys.stderr)
         sys.exit(1)
 
-    # Safety check against existing baseline if it exists
     if baseline_path.exists():
         result = check_baseline_manifest_detailed(
             baseline_path=baseline_path, filaments_dir=filaments_dir
@@ -391,7 +429,7 @@ def write_baseline_manifest(
         if result.has_breaking_changes and not accept_breaking_changes:
             print(
                 f"ERROR: Refusing to update baseline '{baseline_path.name}': breaking baseline changes detected!\n"
-                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Changed: {result.stats['changed']} | Missing: {result.stats['missing']}\n"
+                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Rekeyed: {result.stats['rekeyed']} | Changed: {result.stats['changed']} | Removed: {result.stats['removed']}\n"
                 f"  If these breaking changes are intentional, re-run with '--accept-breaking-baseline-changes'.",
                 file=sys.stderr,
             )
@@ -400,12 +438,12 @@ def write_baseline_manifest(
         if accept_breaking_changes:
             print(
                 f"Updating baseline with breaking changes explicitly enabled:\n"
-                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Changed: {result.stats['changed']} | Missing: {result.stats['missing']}"
+                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Rekeyed: {result.stats['rekeyed']} | Changed: {result.stats['changed']} | Removed: {result.stats['removed']}"
             )
         else:
             print(
-                f"Updating baseline (additions-only update):\n"
-                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Changed: 0 | Missing: 0"
+                f"Updating baseline (additions & rekeys safe update):\n"
+                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Rekeyed: {result.stats['rekeyed']} | Changed: 0 | Removed: 0"
             )
 
     payload = {
@@ -415,7 +453,7 @@ def write_baseline_manifest(
     }
 
     write_baseline_manifest_atomic(payload, baseline_path=baseline_path)
-    update_mode_str = "breaking" if accept_breaking_changes else "additions-only/fresh"
+    update_mode_str = "breaking" if accept_breaking_changes else "safe"
     print(f"✓ Baseline manifest successfully written to '{baseline_path}' ({len(current_manifest)} records, mode: {update_mode_str}).")
 
 
@@ -446,24 +484,43 @@ def main():
         sys.exit(0)
 
     print(f"Checking Public Compiled ID baseline against '{BASELINE_PATH.name}'...")
-    errors, warnings, stats = check_baseline_manifest()
+    result = check_baseline_manifest_detailed()
 
     print(
-        f"Baseline records: {stats['baseline_count']} | Current compiled: {stats['current_count']} | "
-        f"Matched: {stats['matched']} | Added: {stats['added']} | Changed: {stats['changed']} | Missing: {stats['missing']}"
+        f"Baseline records: {result.stats['baseline_count']} | Current compiled: {result.stats['current_count']} | "
+        f"Matched: {result.stats['matched']} | Added: {result.stats['added']} | Removed: {result.stats['removed']} | "
+        f"Changed: {result.stats['changed']} | Rekeyed: {result.stats['rekeyed']}"
     )
 
-    if warnings:
-        for w in warnings:
-            print(f"WARN baseline: {w}")
+    if result.rekeyed_diagnostics:
+        print("\nSource identity rekeys (unchanged public ID):")
+        for diag in result.rekeyed_diagnostics:
+            print(f"  {diag}")
 
-    if errors:
-        print("\nERROR: Public Compiled ID baseline check failed:", file=sys.stderr)
-        for err in errors:
+    if result.added_diagnostics:
+        print("\nAdded public IDs:")
+        for diag in result.added_diagnostics:
+            print(f"  {diag}")
+
+    if result.changed_errors:
+        print("\nERROR: Changed ID mappings (Public ID regressions):", file=sys.stderr)
+        for err in result.changed_errors:
             print(f"  {err}", file=sys.stderr)
-        sys.exit(1)
 
-    print("✓ Public Compiled ID baseline check passed successfully.")
+    if result.removed_errors:
+        print("\nERROR: Removed public IDs:", file=sys.stderr)
+        for err in result.removed_errors:
+            print(f"  {err}", file=sys.stderr)
+
+    if result.structural_errors:
+        print("\nERROR: Structural / compilation errors:", file=sys.stderr)
+        for err in result.structural_errors:
+            print(f"  {err}", file=sys.stderr)
+
+    if not result.all_errors:
+        print("✓ Public Compiled ID baseline check passed successfully.")
+    else:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

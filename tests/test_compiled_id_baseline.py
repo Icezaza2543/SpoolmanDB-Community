@@ -8,6 +8,7 @@ import pytest
 
 from scripts.compile_id_baseline import (
     check_baseline_manifest,
+    check_baseline_manifest_detailed,
     compile_current_id_manifest,
     make_canonical_identity_key,
     write_baseline_manifest,
@@ -689,3 +690,239 @@ def test_malformed_baseline_rejects_update_even_with_breaking_flag(tmp_path):
 
     assert exc_info.value.code == 1
     assert baseline_file.read_bytes() == original_bytes
+
+
+def test_regression_normal_metadata_only_correction(tmp_path):
+    """40. Regression test: Normal metadata-only correction (temp, hex, url) preserves ID and key."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
+
+    fil_data_v1 = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+                "extruder_temp": 200,
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data_v1), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
+
+    # Modify metadata only (no change to identity key or ID)
+    fil_data_v2 = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "DD0000", "tds_url": "https://example.com/tds.pdf"}],
+                "extruder_temp": 210,
+                "bed_temp": 60,
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data_v2), encoding="utf-8")
+
+    res = check_baseline_manifest_detailed(baseline_file, filaments_dir)
+    assert res.all_errors == []
+    assert res.stats["matched"] == 1
+    assert res.stats["changed"] == 0
+    assert res.stats["removed"] == 0
+    assert res.stats["rekeyed"] == 0
+
+
+def test_regression_legitimate_new_variant(tmp_path):
+    """41. Regression test: Legitimate new variant is reported as added public ID and passes check."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
+
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
+
+    # Add a legitimate new color variant
+    fil_data["filaments"][0]["colors"].append({"name": "Blue", "hex": "0000FF"})
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+
+    res = check_baseline_manifest_detailed(baseline_file, filaments_dir)
+    assert res.all_errors == []
+    assert res.stats["matched"] == 1
+    assert res.stats["added"] == 1
+    assert res.stats["removed"] == 0
+    assert res.stats["changed"] == 0
+    assert any("New variant added (not in baseline)" in item for item in res.added_diagnostics)
+
+
+def test_regression_legacy_identity_rekey_preserving_public_id(tmp_path):
+    """42. Regression test: Legacy identity rekeying preserves historical public ID."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
+
+    # Historical data had spool_type: plastic
+    fil_data_v1 = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000, "spool_type": "plastic"}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data_v1), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
+
+    # Rekey source identity to spool_type: cardboard with legacy_id_spool_type: plastic
+    fil_data_v2 = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [
+                    {
+                        "weight": 1000,
+                        "spool_type": "cardboard",
+                        "legacy_id_spool_type": "plastic",
+                    }
+                ],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data_v2), encoding="utf-8")
+
+    res = check_baseline_manifest_detailed(baseline_file, filaments_dir)
+    assert res.all_errors == []
+    assert res.stats["matched"] == 0
+    assert res.stats["rekeyed"] == 1
+    assert res.stats["removed"] == 0
+    assert res.stats["changed"] == 0
+    assert any("Source identity rekey with unchanged public ID" in item for item in res.rekeyed_diagnostics)
+
+
+def test_regression_accidental_id_removal(tmp_path):
+    """43. Regression test: Accidental removal of a published public ID fails CI gate."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
+
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}, {"name": "Green", "hex": "00FF00"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
+
+    # Accidentally delete Green color variant
+    fil_data["filaments"][0]["colors"] = [{"name": "Red", "hex": "FF0000"}]
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+
+    res = check_baseline_manifest_detailed(baseline_file, filaments_dir)
+    assert res.has_breaking_changes is True
+    assert res.stats["removed"] == 1
+    assert any("Historical baseline variant missing from current source data" in err for err in res.removed_errors)
+
+
+def test_regression_accidental_id_migration(tmp_path):
+    """44. Regression test: Accidental migration of an existing public ID fails CI gate."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
+
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
+
+    # Change template name without legacy compatibility, causing ID migration
+    fil_data["filaments"][0]["name"] = "Standard PLA {color_name}"
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+
+    res = check_baseline_manifest_detailed(baseline_file, filaments_dir)
+    assert res.has_breaking_changes is True
+    assert res.stats["changed"] == 0
+    assert res.stats["removed"] == 1
+    assert res.stats["added"] == 1
+    assert any("Historical baseline variant missing from current source data" in err for err in res.removed_errors)
+
+
+def test_regression_baseline_tampering(tmp_path):
+    """45. Regression test: Baseline file tampering is detected and fails CI gate."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    baseline_file = tmp_path / "baseline.json"
+
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(baseline_file, filaments_dir)
+
+    # Tamper with baseline file (corrupt count)
+    raw = json.loads(baseline_file.read_text(encoding="utf-8"))
+    raw["count"] = 9999
+    baseline_file.write_text(json.dumps(raw), encoding="utf-8")
+
+    res = check_baseline_manifest_detailed(baseline_file, filaments_dir)
+    assert res.is_valid_structure is False
+    assert any("does not match actual manifest entry count" in err for err in res.structural_errors)

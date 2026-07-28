@@ -125,20 +125,24 @@ def main():
     else:
         print("✓ Semantic data integrity passed.")
 
-    from scripts.compile_id_baseline import check_baseline_manifest
+    from scripts.compile_id_baseline import check_baseline_manifest_detailed
 
     print("\nChecking Public Compiled ID baseline...")
-    base_errors, base_warnings, base_stats = check_baseline_manifest(filaments_dir=filaments_dir)
+    base_result = check_baseline_manifest_detailed(filaments_dir=filaments_dir)
     print(
-        f"Baseline: {base_stats['baseline_count']} | Current: {base_stats['current_count']} | "
-        f"Matched: {base_stats['matched']} | Added: {base_stats['added']} | Changed: {base_stats['changed']} | Missing: {base_stats['missing']}"
+        f"Baseline: {base_result.stats['baseline_count']} | Current: {base_result.stats['current_count']} | "
+        f"Matched: {base_result.stats['matched']} | Added: {base_result.stats['added']} | Removed: {base_result.stats['removed']} | "
+        f"Changed: {base_result.stats['changed']} | Rekeyed: {base_result.stats['rekeyed']}"
     )
 
-    for warn in base_warnings:
-        print(f"WARN baseline: {warn}")
+    for diag in base_result.rekeyed_diagnostics:
+        print(f"REKEY baseline: {diag}")
 
-    if base_errors:
-        for err in base_errors:
+    for diag in base_result.added_diagnostics:
+        print(f"WARN baseline: {diag}")
+
+    if base_result.all_errors:
+        for err in base_result.all_errors:
             print(f"ERROR baseline: {err}", file=sys.stderr)
         success = False
     else:
