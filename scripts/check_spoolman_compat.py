@@ -1,4 +1,13 @@
-"""Validate compiled data against Spoolman's current external DB contract."""
+"""Validate compiled data against Spoolman's external DB contract.
+
+Upstream refs are configured only in contracts/spoolman_upstream.json:
+
+- stable  (required): pinned Spoolman release / commit; blocks merge
+- canary  (advisory): current master; reports ExternalFilament drift
+
+Stable mode uses the reviewed local snapshot by default (deterministic, offline).
+Canary mode fetches master and compares ExternalFilament fields/types to stable.
+"""
 
 from __future__ import annotations
 
@@ -14,10 +23,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).parent.parent
-DEFAULT_UPSTREAM_URL = (
-    "https://raw.githubusercontent.com/Donkie/Spoolman/"
-    "master/spoolman/externaldb.py"
-)
+UPSTREAM_CONFIG_PATH = ROOT / "contracts" / "spoolman_upstream.json"
 ENUM_CLASS_NAMES = {
     "SpoolType",
     "Finish",
@@ -40,6 +46,85 @@ class FieldContract:
 class SpoolmanContract:
     enum_values: dict[str, frozenset[str]]
     fields: dict[str, FieldContract]
+
+
+@dataclass(frozen=True)
+class UpstreamConfig:
+    repository: str
+    contract_path: str
+    local_snapshot: Path
+    stable_version: str
+    stable_commit: str
+    canary_ref: str
+
+    def raw_url(self, ref: str) -> str:
+        return (
+            f"https://raw.githubusercontent.com/{self.repository}/"
+            f"{ref}/{self.contract_path}"
+        )
+
+    @property
+    def stable_url(self) -> str:
+        return self.raw_url(self.stable_commit)
+
+    @property
+    def canary_url(self) -> str:
+        return self.raw_url(self.canary_ref)
+
+    @property
+    def stable_blob_url(self) -> str:
+        return (
+            f"https://github.com/{self.repository}/blob/"
+            f"{self.stable_commit}/{self.contract_path}"
+        )
+
+
+@dataclass(frozen=True)
+class FieldChange:
+    """One ExternalFilament field/type difference between two contracts."""
+
+    field: str
+    kind: str
+    stable: str | None
+    canary: str | None
+
+    def format(self) -> str:
+        if self.kind == "added":
+            return f"+ {self.field}: {self.canary} (present on canary only)"
+        if self.kind == "removed":
+            return f"- {self.field}: {self.stable} (present on stable only)"
+        if self.kind == "type_changed":
+            return f"~ {self.field}: type {self.stable} -> {self.canary}"
+        if self.kind == "required_changed":
+            return (
+                f"~ {self.field}: required {self.stable} -> {self.canary}"
+            )
+        return f"? {self.field}: {self.kind} ({self.stable} -> {self.canary})"
+
+
+def load_upstream_config(path: Path = UPSTREAM_CONFIG_PATH) -> UpstreamConfig:
+    """Load the single upstream pin / canary configuration file."""
+    if not path.is_file():
+        raise RuntimeError(f"Missing Spoolman upstream config: {path}")
+
+    with path.open(encoding="utf-8") as file:
+        raw = json.load(file)
+
+    try:
+        stable = raw["stable"]
+        canary = raw["canary"]
+        return UpstreamConfig(
+            repository=raw["repository"],
+            contract_path=raw["contract_path"],
+            local_snapshot=(ROOT / raw["local_snapshot"]).resolve(),
+            stable_version=stable["version"],
+            stable_commit=stable["commit"],
+            canary_ref=canary["ref"],
+        )
+    except (KeyError, TypeError) as exc:
+        raise RuntimeError(
+            f"Invalid Spoolman upstream config in {path}: missing {exc}"
+        ) from exc
 
 
 def fetch_upstream_source(
@@ -296,6 +381,92 @@ def load_spoolman_contract(source: str) -> SpoolmanContract:
     return SpoolmanContract(enum_values=enum_values, fields=fields)
 
 
+def field_signature(field: FieldContract) -> str:
+    """Human-readable type signature for an ExternalFilament field."""
+    required = "required" if field.required else "optional"
+    return f"{ast.unparse(field.annotation)} ({required})"
+
+
+def compare_external_filament_fields(
+    stable: SpoolmanContract,
+    canary: SpoolmanContract,
+) -> list[FieldChange]:
+    """Report exact ExternalFilament field/type changes between two contracts."""
+    changes: list[FieldChange] = []
+    stable_names = set(stable.fields)
+    canary_names = set(canary.fields)
+
+    for name in sorted(canary_names - stable_names):
+        changes.append(
+            FieldChange(
+                field=name,
+                kind="added",
+                stable=None,
+                canary=field_signature(canary.fields[name]),
+            )
+        )
+    for name in sorted(stable_names - canary_names):
+        changes.append(
+            FieldChange(
+                field=name,
+                kind="removed",
+                stable=field_signature(stable.fields[name]),
+                canary=None,
+            )
+        )
+    for name in sorted(stable_names & canary_names):
+        left = stable.fields[name]
+        right = canary.fields[name]
+        left_type = ast.unparse(left.annotation)
+        right_type = ast.unparse(right.annotation)
+        if left_type != right_type:
+            changes.append(
+                FieldChange(
+                    field=name,
+                    kind="type_changed",
+                    stable=left_type,
+                    canary=right_type,
+                )
+            )
+        if left.required != right.required:
+            changes.append(
+                FieldChange(
+                    field=name,
+                    kind="required_changed",
+                    stable="required" if left.required else "optional",
+                    canary="required" if right.required else "optional",
+                )
+            )
+
+    for enum_name in sorted(ENUM_CLASS_NAMES):
+        left_values = stable.enum_values.get(enum_name, frozenset())
+        right_values = canary.enum_values.get(enum_name, frozenset())
+        if left_values == right_values:
+            continue
+        added = sorted(right_values - left_values)
+        removed = sorted(left_values - right_values)
+        if added:
+            changes.append(
+                FieldChange(
+                    field=f"enum:{enum_name}",
+                    kind="added",
+                    stable=None,
+                    canary=", ".join(added),
+                )
+            )
+        if removed:
+            changes.append(
+                FieldChange(
+                    field=f"enum:{enum_name}",
+                    kind="removed",
+                    stable=", ".join(removed),
+                    canary=None,
+                )
+            )
+
+    return changes
+
+
 def _matches_annotation(
     value: Any,
     annotation: ast.expr,
@@ -378,9 +549,71 @@ def validate_compiled_data(
                 )
 
 
-def parse_args() -> argparse.Namespace:
+def resolve_contract_source(
+    *,
+    mode: str,
+    config: UpstreamConfig,
+    upstream_url: str | None,
+    upstream_file: Path | None,
+) -> tuple[str, str, str | None]:
+    """Return (source_text, source_label, etag) for the selected mode."""
+    if upstream_file is not None:
+        source = upstream_file.read_text(encoding="utf-8")
+        return source, str(upstream_file), None
+
+    if upstream_url is not None:
+        source, etag = fetch_upstream_source(upstream_url)
+        return source, upstream_url, etag
+
+    if mode == "stable":
+        # Deterministic offline path: reviewed snapshot pinned in config.
+        snapshot = config.local_snapshot
+        if not snapshot.is_file():
+            raise RuntimeError(
+                f"Stable snapshot missing at {snapshot}; expected pin "
+                f"{config.stable_version} ({config.stable_commit})"
+            )
+        source = snapshot.read_text(encoding="utf-8")
+        label = (
+            f"{snapshot} [stable {config.stable_version} "
+            f"@ {config.stable_commit}]"
+        )
+        return source, label, None
+
+    if mode == "canary":
+        source, etag = fetch_upstream_source(config.canary_url)
+        label = (
+            f"{config.canary_url} [canary {config.repository}:"
+            f"{config.canary_ref}]"
+        )
+        return source, label, etag
+
+    raise RuntimeError(f"Unknown compatibility mode: {mode}")
+
+
+def load_stable_contract(config: UpstreamConfig) -> SpoolmanContract:
+    """Load the deterministic stable (pinned) contract from the local snapshot."""
+    source = config.local_snapshot.read_text(encoding="utf-8")
+    return load_spoolman_contract(source)
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Check compiled filaments against Spoolman's current external DB contract."
+        description=(
+            "Check compiled filaments against Spoolman's external DB contract. "
+            "Stable pin and canary ref live in contracts/spoolman_upstream.json."
+        )
+    )
+    parser.add_argument(
+        "--mode",
+        choices=("stable", "canary"),
+        default="stable",
+        help=(
+            "stable: required pin from contracts/spoolman_upstream.json "
+            "(default, offline snapshot). "
+            "canary: advisory check against Donkie/Spoolman master plus "
+            "ExternalFilament field/type drift report vs stable."
+        ),
     )
     parser.add_argument(
         "--compiled",
@@ -394,12 +627,19 @@ def parse_args() -> argparse.Namespace:
         default=ROOT / "filaments.compiled.schema.json",
         help="Path to the compiled JSON schema.",
     )
+    parser.add_argument(
+        "--config",
+        type=Path,
+        default=UPSTREAM_CONFIG_PATH,
+        help="Path to the Spoolman upstream pin config JSON.",
+    )
     source_group = parser.add_mutually_exclusive_group()
     source_group.add_argument(
         "--upstream-url",
         help=(
-            "Raw URL for Spoolman's authoritative externaldb.py model. "
-            "Defaults to the current upstream branch."
+            "Override raw URL for Spoolman's externaldb.py model. "
+            "When omitted, stable uses the local snapshot and canary uses "
+            "the canary ref from the config file."
         ),
     )
     source_group.add_argument(
@@ -407,13 +647,21 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help="Reviewed local externaldb.py contract snapshot for offline validation.",
     )
-    return parser.parse_args()
+    parser.add_argument(
+        "--diff-only",
+        action="store_true",
+        help=(
+            "In canary mode, only compare ExternalFilament fields/types to "
+            "stable and skip compiled data validation."
+        ),
+    )
+    return parser.parse_args(argv)
 
 
-def main() -> int:
-    args = parse_args()
+def run_check(args: argparse.Namespace) -> int:
+    config = load_upstream_config(args.config)
 
-    if not args.compiled.exists():
+    if not args.compiled.exists() and not args.diff_only:
         print(
             f"ERROR: {args.compiled} does not exist; run compile_filaments.py first.",
             file=sys.stderr,
@@ -421,35 +669,85 @@ def main() -> int:
         return 1
 
     try:
-        if args.upstream_file:
-            source = args.upstream_file.read_text(encoding="utf-8")
-            etag = None
-            source_label = str(args.upstream_file)
-        else:
-            source_url = args.upstream_url or DEFAULT_UPSTREAM_URL
-            source, etag = fetch_upstream_source(source_url)
-            source_label = source_url
+        source, source_label, etag = resolve_contract_source(
+            mode=args.mode,
+            config=config,
+            upstream_url=args.upstream_url,
+            upstream_file=args.upstream_file,
+        )
         contract = load_spoolman_contract(source)
 
-        with args.schema.open(encoding="utf-8") as file:
-            schema = json.load(file)
-        with args.compiled.open(encoding="utf-8") as file:
-            compiled_data = json.load(file)
+        field_changes: list[FieldChange] = []
+        if args.mode == "canary":
+            stable_contract = load_stable_contract(config)
+            field_changes = compare_external_filament_fields(
+                stable_contract, contract
+            )
 
-        validate_schema_spool_types(schema, contract)
-        validate_compiled_data(compiled_data, contract)
+        if not args.diff_only:
+            with args.schema.open(encoding="utf-8") as file:
+                schema = json.load(file)
+            with args.compiled.open(encoding="utf-8") as file:
+                compiled_data = json.load(file)
+
+            validate_schema_spool_types(schema, contract)
+            validate_compiled_data(compiled_data, contract)
+        else:
+            compiled_data = []
     except Exception as exc:
         print(f"ERROR: Spoolman compatibility check failed: {exc}", file=sys.stderr)
         return 1
 
+    mode_label = args.mode.upper()
     source_version = f" (ETag {etag})" if etag else ""
+    print(f"✓ Mode: {mode_label}")
+    if args.mode == "stable":
+        print(
+            f"✓ Stable pin: {config.stable_version} "
+            f"({config.stable_commit})"
+        )
+        print(f"✓ Stable blob: {config.stable_blob_url}")
+    else:
+        print(
+            f"✓ Canary ref: {config.repository}:{config.canary_ref}"
+        )
+        print(
+            f"✓ Compared to stable: {config.stable_version} "
+            f"({config.stable_commit})"
+        )
     print(f"✓ Upstream contract: {source_label}{source_version}")
     print(
         f"✓ Statically checked {len(contract.fields)} upstream fields; "
         "contract source was not executed."
     )
-    print(f"✓ {len(compiled_data)} compiled filaments accepted by the contract.")
+    if not args.diff_only:
+        print(f"✓ {len(compiled_data)} compiled filaments accepted by the contract.")
+
+    if args.mode == "canary":
+        if field_changes:
+            print(
+                "⚠ CANARY DRIFT: ExternalFilament fields/types differ "
+                "between stable pin and master:",
+                file=sys.stderr,
+            )
+            for change in field_changes:
+                print(f"  {change.format()}", file=sys.stderr)
+            print(
+                "CANARY: drift detected "
+                f"({len(field_changes)} change(s)). "
+                "This is advisory and does not block data PRs.",
+                file=sys.stderr,
+            )
+            return 2
+        print(
+            "✓ CANARY: no ExternalFilament field/type drift vs stable pin."
+        )
+
     return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    return run_check(parse_args(argv))
 
 
 if __name__ == "__main__":
