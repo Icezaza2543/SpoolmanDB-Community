@@ -4776,10 +4776,15 @@
       "diameters": [
         1.75
       ],
+      "finish": "glossy",
       "colors": [
         {
           "name": "Aurora Purple",
-          "hex": "7F3696",
+          "hexes": [
+            "7F3696",
+            "006EC9"
+          ],
+          "multi_color_direction": "longitudinal",
           "codes": [
             "13909",
             "601295643847753738",
@@ -4788,7 +4793,11 @@
         },
         {
           "name": "Blue Hawaii (Blue-Green)",
-          "hex": "60A4E8",
+          "hexes": [
+            "60A4E8",
+            "4CE4A0"
+          ],
+          "multi_color_direction": "coaxial",
           "codes": [
             "13904",
             "41191473119347",
@@ -4797,7 +4806,13 @@
         },
         {
           "name": "Dawn Radiance",
-          "hex": "EC984C",
+          "hexes": [
+            "EC984C",
+            "6CD4BC",
+            "A66EB9",
+            "D87694"
+          ],
+          "multi_color_direction": "longitudinal",
           "codes": [
             "13912",
             "601295643847753732",
@@ -4806,7 +4821,11 @@
         },
         {
           "name": "Gilded Rose (Pink-Gold)",
-          "hex": "FF9425",
+          "hexes": [
+            "FF9425",
+            "FCA2BF"
+          ],
+          "multi_color_direction": "coaxial",
           "codes": [
             "13901",
             "41191473021043",
@@ -4815,7 +4834,11 @@
         },
         {
           "name": "Midnight Blaze (Blue-Red)",
-          "hex": "0047BB",
+          "hexes": [
+            "0047BB",
+            "7D1B49"
+          ],
+          "multi_color_direction": "coaxial",
           "codes": [
             "13902",
             "41191473053811",
@@ -4824,7 +4847,11 @@
         },
         {
           "name": "Mystic Magenta (Green-Purple)",
-          "hex": "720062",
+          "hexes": [
+            "720062",
+            "3A913F"
+          ],
+          "multi_color_direction": "coaxial",
           "codes": [
             "13913",
             "665320638623891459",
@@ -4833,7 +4860,11 @@
         },
         {
           "name": "Neon City (Blue-Magenta)",
-          "hex": "0047BB",
+          "hexes": [
+            "0047BB",
+            "BB22A3"
+          ],
+          "multi_color_direction": "coaxial",
           "codes": [
             "13903",
             "41191473086579",
@@ -4842,7 +4873,11 @@
         },
         {
           "name": "Phantom Blue (Blue-Black)",
-          "hex": "00629B",
+          "hexes": [
+            "00629B",
+            "000000"
+          ],
+          "multi_color_direction": "coaxial",
           "codes": [
             "13916",
             "665320638623891465",
@@ -4851,7 +4886,11 @@
         },
         {
           "name": "South Beach",
-          "hex": "F772A4",
+          "hexes": [
+            "F772A4",
+            "00918B"
+          ],
+          "multi_color_direction": "longitudinal",
           "codes": [
             "13906",
             "601295643847753744",
@@ -4860,7 +4899,11 @@
         },
         {
           "name": "Velvet Eclipse (Black-Red)",
-          "hex": "000000",
+          "hexes": [
+            "000000",
+            "A34342"
+          ],
+          "multi_color_direction": "coaxial",
           "codes": [
             "13905",
             "535956066632282114",
@@ -4869,9 +4912,15 @@
         }
       ],
       "country_of_origin": "CN",
-      "extruder_temp": 210,
-      "bed_temp": 40,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-silk-tds"
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        35,
+        45
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0584/7236/6216/files/Bambu_PLA_Silk_Dual_Color_Technical_Data_Sheet.pdf"
     },
     {
       "name": "Silk PLA {color_name}",
