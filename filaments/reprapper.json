@@ -8,15 +8,13 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 180,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
       "extruder_temp": 200,
-      "bed_temp": 55,
       "colors": [
         {
           "name": "Black",
@@ -38,8 +36,7 @@
           "name": "Blue",
           "hex": "0000FF"
         }
-      ],
-      "country_of_origin": "CN"
+      ]
     }
   ]
 }
