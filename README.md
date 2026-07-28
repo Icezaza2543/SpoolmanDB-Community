@@ -107,9 +107,9 @@ Compatibility is checked in three layers:
 
 1. Compiler normalization uses an explicit allowlist and preserves historical ID suffixes.
 2. The compiled schema rejects values outside Spoolman's public enum.
-3. Normal builds validate every record against a **required stable pin** of Spoolman's `ExternalFilament` contract. The pin (currently Spoolman **v0.25.0**, commit `6e1065009c7c45c9e38d5e1bec21d47273442889`) is configured in one place: [`contracts/spoolman_upstream.json`](contracts/spoolman_upstream.json). CI uses the reviewed offline snapshot [`contracts/spoolman_externaldb.py`](contracts/spoolman_externaldb.py) so merge checks are deterministic and network-free.
+3. Normal builds validate every record against a **required stable pin** of Spoolman's `ExternalFilament` contract. Version and commit are defined only in [`contracts/spoolman_upstream.json`](contracts/spoolman_upstream.json). CI uses the reviewed offline snapshot [`contracts/spoolman_externaldb.py`](contracts/spoolman_externaldb.py) so merge checks are deterministic and network-free. Details: [docs/spoolman-compatibility.md](docs/spoolman-compatibility.md).
 
-A separate **canary** check fetches current `Donkie/Spoolman:master`, validates against it, and reports exactly which `ExternalFilament` fields or types changed relative to the stable pin. Canary failures are visible in CI (job summary + warning) but **do not block data PRs**. The weekly [Spoolman compatibility workflow](.github/workflows/spoolman-compatibility.yml) runs both stable and canary.
+A separate **canary** check fetches current `Donkie/Spoolman:master`, validates against it, and reports exactly which `ExternalFilament` fields or types changed relative to the stable pin. Canary failures are visible in CI (job summary + warning) but **do not block data PRs**. The weekly [Spoolman compatibility workflow](.github/workflows/spoolman-compatibility.yml) also runs **pin integrity** (`--mode verify-pin`): it fetches the configured stable commit and asserts the local snapshot still matches, without changing offline PR CI.
 
 ## Data model at a glance
 

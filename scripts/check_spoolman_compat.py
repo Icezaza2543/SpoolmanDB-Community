@@ -597,6 +597,26 @@ def load_stable_contract(config: UpstreamConfig) -> SpoolmanContract:
     return load_spoolman_contract(source)
 
 
+def verify_pin_integrity(
+    config: UpstreamConfig,
+    *,
+    remote_source: str | None = None,
+) -> tuple[list[FieldChange], str, str | None]:
+    """Fetch the configured stable commit and compare it to the local snapshot.
+
+    Network access is intentional and only for this explicit verification path.
+    Remote source is parsed AST-only and never executed.
+    """
+    etag: str | None = None
+    if remote_source is None:
+        remote_source, etag = fetch_upstream_source(config.stable_url)
+    remote_contract = load_spoolman_contract(remote_source)
+    local_contract = load_stable_contract(config)
+    # Reuse field/type/enum diff: empty list means local snapshot matches pin.
+    changes = compare_external_filament_fields(local_contract, remote_contract)
+    return changes, config.stable_url, etag
+
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
@@ -606,13 +626,15 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument(
         "--mode",
-        choices=("stable", "canary"),
+        choices=("stable", "canary", "verify-pin"),
         default="stable",
         help=(
             "stable: required pin from contracts/spoolman_upstream.json "
             "(default, offline snapshot). "
             "canary: advisory check against Donkie/Spoolman master plus "
-            "ExternalFilament field/type drift report vs stable."
+            "ExternalFilament field/type drift report vs stable. "
+            "verify-pin: fetch the configured stable commit URL and assert "
+            "the local snapshot matches (weekly/explicit only; not for PR CI)."
         ),
     )
     parser.add_argument(
@@ -661,6 +683,51 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 def run_check(args: argparse.Namespace) -> int:
     config = load_upstream_config(args.config)
 
+    # Explicit pin integrity: fetch stable_url from config and match local snapshot.
+    # Not used by normal PR/build stable CI (which stays offline).
+    if args.mode == "verify-pin":
+        if args.upstream_file is not None or args.upstream_url is not None:
+            print(
+                "ERROR: verify-pin always uses stable_url from the config file; "
+                "do not pass --upstream-file/--upstream-url.",
+                file=sys.stderr,
+            )
+            return 1
+        try:
+            changes, source_label, etag = verify_pin_integrity(config)
+        except Exception as exc:
+            print(
+                f"ERROR: Spoolman pin integrity check failed: {exc}",
+                file=sys.stderr,
+            )
+            return 1
+
+        source_version = f" (ETag {etag})" if etag else ""
+        print("✓ Mode: VERIFY-PIN")
+        print(
+            f"✓ Config pin: {config.stable_version} "
+            f"({config.stable_commit}) from {args.config}"
+        )
+        print(f"✓ Fetched: {source_label}{source_version}")
+        print(f"✓ Local snapshot: {config.local_snapshot}")
+        print(
+            "✓ Compared ExternalFilament fields/enums AST-only; "
+            "remote source was not executed."
+        )
+        if changes:
+            print(
+                "ERROR: Local stable snapshot does not match the configured "
+                "stable commit (ExternalFilament field/type/enum drift):",
+                file=sys.stderr,
+            )
+            for change in changes:
+                print(f"  {change.format()}", file=sys.stderr)
+            return 1
+        print(
+            "✓ PIN INTEGRITY: local snapshot matches configured stable commit."
+        )
+        return 0
+
     if not args.compiled.exists() and not args.diff_only:
         print(
             f"ERROR: {args.compiled} does not exist; run compile_filaments.py first.",
@@ -704,7 +771,7 @@ def run_check(args: argparse.Namespace) -> int:
     if args.mode == "stable":
         print(
             f"✓ Stable pin: {config.stable_version} "
-            f"({config.stable_commit})"
+            f"({config.stable_commit}) from {args.config}"
         )
         print(f"✓ Stable blob: {config.stable_blob_url}")
     else:
@@ -713,7 +780,7 @@ def run_check(args: argparse.Namespace) -> int:
         )
         print(
             f"✓ Compared to stable: {config.stable_version} "
-            f"({config.stable_commit})"
+            f"({config.stable_commit}) from {args.config}"
         )
     print(f"✓ Upstream contract: {source_label}{source_version}")
     print(

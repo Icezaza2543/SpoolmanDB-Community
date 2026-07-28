@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   stable:
-    name: Stable pin (required contract)
+    name: Stable pin (required contract, offline)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -24,8 +24,22 @@ jobs:
         run: python scripts/compile_filaments.py
       - name: Validate compiled output
         run: python scripts/validate.py
-      - name: Check stable Spoolman pin
+      - name: Check stable Spoolman pin (offline)
         run: python scripts/check_spoolman_compat.py --mode stable
+
+  pin-integrity:
+    name: Pin integrity (local snapshot vs configured commit)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Install validation dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Verify local snapshot matches configured stable commit
+        run: python scripts/check_spoolman_compat.py --mode verify-pin
 
   canary:
     name: Canary vs master (advisory)

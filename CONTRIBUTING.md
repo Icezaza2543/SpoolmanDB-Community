@@ -40,16 +40,20 @@ python scripts/compile_id_baseline.py --update
 # Run unit tests to verify compile and baseline functionality
 python -m pytest -q
 
-# Required: deterministic check against the pinned Spoolman contract
-# (v0.25.0 / commit in contracts/spoolman_upstream.json)
+# Required: deterministic offline check against the pinned Spoolman contract
+# (version/commit: contracts/spoolman_upstream.json only)
 python scripts/check_spoolman_compat.py --mode stable
 
 # Advisory: fetch Donkie/Spoolman master and report ExternalFilament field/type drift
 # Canary failures are diagnostic only; they do not block normal data PRs.
 python scripts/check_spoolman_compat.py --mode canary
+
+# Maintainer / weekly only: fetch the configured stable commit and assert the
+# local snapshot matches (not part of normal PR stable CI).
+python scripts/check_spoolman_compat.py --mode verify-pin
 ```
 
-The stable pin and canary ref are configured only in [`contracts/spoolman_upstream.json`](contracts/spoolman_upstream.json). Do not hardcode Spoolman SHAs elsewhere. Updating the pin is a deliberate maintainer change (bump version/commit, refresh `contracts/spoolman_externaldb.py`, and re-run stable checks).
+The stable pin and canary ref are configured only in [`contracts/spoolman_upstream.json`](contracts/spoolman_upstream.json). Do not hardcode Spoolman SHAs elsewhere. See [docs/spoolman-compatibility.md](docs/spoolman-compatibility.md). Updating the pin is a deliberate maintainer change (edit the config, refresh `contracts/spoolman_externaldb.py`, run stable + verify-pin).
 
 New filament variants (additions) generate informational baseline warnings until `python scripts/compile_id_baseline.py --update` is run. `--update` will safely refuse to write if the existing baseline is malformed, or if breaking changes (altered historical IDs / removed variants) are detected without specifying `--accept-breaking-baseline-changes` (breaking flags cannot bypass malformed baseline files).
 
