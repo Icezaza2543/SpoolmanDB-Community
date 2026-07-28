@@ -8,15 +8,12 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 220,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 200,
-      "bed_temp": 55,
       "colors": [
         {
           "name": "Black",
@@ -39,7 +36,11 @@
           "hex": "0000FF"
         }
       ],
-      "country_of_origin": "CN"
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "tds_url": "https://ysfilament.com/u_file/2206/14/file/YOUSUPLATDS-081b.pdf"
     }
   ]
 }
