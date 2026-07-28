@@ -8,8 +8,7 @@
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -71,18 +70,16 @@
           "hex": "F7EC13"
         }
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf"
     },
     {
       "name": "PLA Silk {color_name}",
       "material": "PLA",
       "density": 1.24,
-      "finish": "glossy",
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -101,61 +98,50 @@
       "colors": [
         {
           "name": "Blue",
-          "hex": "1D95E0",
-          "finish": "glossy"
+          "hex": "1D95E0"
         },
         {
           "name": "Bronze",
-          "hex": "C99A60",
-          "finish": "glossy"
+          "hex": "C99A60"
         },
         {
           "name": "Copper",
-          "hex": "E89C74",
-          "finish": "glossy"
+          "hex": "E89C74"
         },
         {
           "name": "Dark Gold",
-          "hex": "DBC63D",
-          "finish": "glossy"
+          "hex": "DBC63D"
         },
         {
           "name": "Gold",
-          "hex": "FFD500",
-          "finish": "glossy"
+          "hex": "FFD500"
         },
         {
           "name": "Ice Blue",
-          "hex": "96DEFF",
-          "finish": "glossy"
+          "hex": "96DEFF"
         },
         {
           "name": "Pink",
-          "hex": "FC62B9",
-          "finish": "glossy"
+          "hex": "FC62B9"
         },
         {
           "name": "Red",
-          "hex": "F55858",
-          "finish": "glossy"
+          "hex": "F55858"
         },
         {
           "name": "Rose",
-          "hex": "F08BC9",
-          "finish": "glossy"
+          "hex": "F08BC9"
         },
         {
           "name": "Ultra Violet",
-          "hex": "A328D4",
-          "finish": "glossy"
+          "hex": "A328D4"
         },
         {
           "name": "White",
-          "hex": "F5F5F5",
-          "finish": "glossy"
+          "hex": "F5F5F5"
         }
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf"
     },
     {
       "name": "PLA Glitter {color_name}",
@@ -164,8 +150,7 @@
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -203,18 +188,16 @@
           "pattern": "sparkle"
         }
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf"
     },
     {
       "name": "PLA Pearl {color_name}",
       "material": "PLA",
       "density": 1.24,
-      "finish": "glossy",
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -233,16 +216,14 @@
       "colors": [
         {
           "name": "Blue",
-          "hex": "3548D4",
-          "finish": "glossy"
+          "hex": "3548D4"
         },
         {
           "name": "Green",
-          "hex": "2EA656",
-          "finish": "glossy"
+          "hex": "2EA656"
         }
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf"
     },
     {
       "name": "PLA Stone {color_name}",
@@ -252,8 +233,7 @@
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -276,24 +256,21 @@
           "pattern": "marble"
         }
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf"
     },
     {
       "name": "PLA+ Skin tone {color_name}",
       "material": "PLA+",
-      "density": 1.24,
-      "finish": "matte",
+      "density": 1.25,
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 200,
       "extruder_temp_range": [
         190,
         210
@@ -302,43 +279,37 @@
       "colors": [
         {
           "name": "477C",
-          "hex": "623B2A",
-          "finish": "matte"
+          "hex": "623B2A"
         },
         {
           "name": "478C",
-          "hex": "703F2A",
-          "finish": "matte"
+          "hex": "703F2A"
         },
         {
           "name": "479C",
-          "hex": "AA8066",
-          "finish": "matte"
+          "hex": "AA8066"
         },
         {
           "name": "480C",
-          "hex": "C6A992",
-          "finish": "matte"
+          "hex": "C6A992"
         }
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/3724716/technical-data-sheet.pdf"
     },
     {
       "name": "PLA+ Lithophane",
       "material": "PLA+",
-      "density": 1.24,
+      "density": 1.25,
       "finish": "matte",
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 200,
       "extruder_temp_range": [
         190,
         210
@@ -352,7 +323,8 @@
           "translucent": true
         }
       ],
-      "country_of_origin": "CZ"
+      "country_of_origin": "CZ",
+      "tds_url": "https://www.prusa3d.com/file/3724716/technical-data-sheet.pdf"
     },
     {
       "name": "{color_name}",
@@ -361,8 +333,7 @@
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -419,8 +390,7 @@
           "name": "Yellow",
           "hex": "FFF645"
         }
-      ],
-      "country_of_origin": "CZ"
+      ]
     },
     {
       "name": "PETG Matt {color_name}",
@@ -430,8 +400,7 @@
       "weights": [
         {
           "weight": 1000.0,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -458,8 +427,7 @@
           "hex": "FFFFFF",
           "finish": "matte"
         }
-      ],
-      "country_of_origin": "CZ"
+      ]
     },
     {
       "name": "ASA {color_name}",
@@ -468,7 +436,7 @@
       "weights": [
         {
           "weight": 750.0,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -506,8 +474,7 @@
           "name": "Yellow",
           "hex": "F5EC97"
         }
-      ],
-      "country_of_origin": "CZ"
+      ]
     },
     {
       "name": "{color_name}",
@@ -516,7 +483,7 @@
       "weights": [
         {
           "weight": 750.0,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -524,8 +491,8 @@
       ],
       "extruder_temp": 255,
       "extruder_temp_range": [
-        230,
-        260
+        240,
+        265
       ],
       "bed_temp": 100,
       "bed_temp_range": [
@@ -551,7 +518,7 @@
           "hex": "FFFFFF"
         }
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626592/buddy3d-abs-technical-data-sheet.pdf"
     },
     {
       "name": "ABS FR {color_name}",
@@ -560,7 +527,7 @@
       "weights": [
         {
           "weight": 750.0,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -568,8 +535,8 @@
       ],
       "extruder_temp": 255,
       "extruder_temp_range": [
-        230,
-        260
+        240,
+        265
       ],
       "bed_temp": 100,
       "bed_temp_range": [
@@ -586,17 +553,16 @@
           "hex": "EBEDDA",
           "translucent": true
         }
-      ],
-      "country_of_origin": "CZ"
+      ]
     },
     {
       "name": "ABS ESD {color_name}",
       "material": "ABS+ESD",
-      "density": 1.04,
+      "density": 1.12,
       "weights": [
         {
           "weight": 750.0,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -604,8 +570,8 @@
       ],
       "extruder_temp": 255,
       "extruder_temp_range": [
-        230,
-        260
+        240,
+        265
       ],
       "bed_temp": 100,
       "bed_temp_range": [
@@ -615,10 +581,10 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "080808"
+          "hex": "000000"
         }
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626594/technical-data-sheet.pdf"
     },
     {
       "name": "ABS {color_name}",
@@ -627,7 +593,7 @@
       "weights": [
         {
           "weight": 750,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -656,14 +622,16 @@
         }
       ],
       "extruder_temp_range": [
-        230,
-        260
+        240,
+        265
       ],
       "bed_temp_range": [
-        90,
+        80,
         110
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626592/buddy3d-abs-technical-data-sheet.pdf",
+      "extruder_temp": 255,
+      "bed_temp": 100
     },
     {
       "name": "Matte ABS {color_name}",
@@ -672,7 +640,7 @@
       "weights": [
         {
           "weight": 750,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -685,15 +653,16 @@
         }
       ],
       "extruder_temp_range": [
-        230,
-        260
+        240,
+        265
       ],
       "bed_temp_range": [
-        90,
+        80,
         110
       ],
-      "country_of_origin": "CZ",
-      "finish": "matte"
+      "finish": "matte",
+      "extruder_temp": 255,
+      "bed_temp": 100
     },
     {
       "name": "PETG {color_name}",
@@ -702,12 +671,11 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         },
         {
           "weight": 5000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -775,8 +743,7 @@
       "bed_temp_range": [
         70,
         90
-      ],
-      "country_of_origin": "CZ"
+      ]
     },
     {
       "name": "Glow PLA {color_name}",
@@ -785,8 +752,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -800,14 +766,16 @@
         }
       ],
       "extruder_temp_range": [
-        205,
-        225
+        200,
+        230
       ],
       "bed_temp_range": [
-        40,
+        50,
         60
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf",
+      "extruder_temp": 215,
+      "bed_temp": 55
     },
     {
       "name": "PLA {color_name}",
@@ -816,12 +784,11 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         },
         {
           "weight": 5000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -830,7 +797,7 @@
       "colors": [
         {
           "name": "Beige",
-          "hex": "E9D1C1"
+          "hex": "F2EFBF"
         },
         {
           "name": "Black",
@@ -899,14 +866,16 @@
         }
       ],
       "extruder_temp_range": [
-        205,
-        225
+        200,
+        230
       ],
       "bed_temp_range": [
-        40,
+        50,
         60
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf",
+      "extruder_temp": 215,
+      "bed_temp": 55
     },
     {
       "name": "Silk PLA {color_name}",
@@ -915,8 +884,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -973,14 +941,16 @@
         }
       ],
       "extruder_temp_range": [
-        205,
-        225
+        200,
+        230
       ],
       "bed_temp_range": [
-        40,
+        50,
         60
       ],
-      "country_of_origin": "CZ"
+      "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf",
+      "extruder_temp": 215,
+      "bed_temp": 55
     }
   ]
 }
