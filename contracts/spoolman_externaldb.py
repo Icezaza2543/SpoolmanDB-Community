@@ -1,9 +1,9 @@
 """Reviewed AST-only snapshot of Spoolman's external filament data contract.
 
-Pinned in contracts/spoolman_upstream.json as Spoolman v0.25.0
-(commit 6e1065009c7c45c9e38d5e1bec21d47273442889).
+Stable version and commit are defined only in contracts/spoolman_upstream.json
+(stable.version / stable.commit). This path is local_snapshot in that config.
 
-Source: https://github.com/Donkie/Spoolman/blob/6e1065009c7c45c9e38d5e1bec21d47273442889/spoolman/externaldb.py
+Upstream source: Donkie/Spoolman spoolman/externaldb.py at the configured commit.
 This file is parsed but never imported or executed by the compatibility checker.
 """
 

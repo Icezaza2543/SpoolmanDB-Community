@@ -14,13 +14,14 @@ from scripts.check_spoolman_compat import (
     resolve_contract_source,
     validate_compiled_data,
     validate_schema_spool_types,
+    verify_pin_integrity,
 )
 
 ROOT = Path(__file__).parent.parent
 UPSTREAM_CONFIG = ROOT / "contracts" / "spoolman_upstream.json"
-STABLE_SNAPSHOT = ROOT / "contracts" / "spoolman_externaldb.py"
-PINNED_STABLE_COMMIT = "6e1065009c7c45c9e38d5e1bec21d47273442889"
-PINNED_STABLE_VERSION = "v0.25.0"
+# Version/commit come only from contracts/spoolman_upstream.json (no hardcoded pin).
+_UPSTREAM = load_upstream_config(UPSTREAM_CONFIG)
+STABLE_SNAPSHOT = _UPSTREAM.local_snapshot
 
 
 UPSTREAM_MODEL = """
@@ -216,26 +217,29 @@ def test_compiled_schema_enforces_refill_output_invariants():
     assert not validator.is_valid(missing_spool_type)
 
 
-def test_upstream_config_pins_stable_spoolman_v0_25_0():
-    """Stable pin lives in one config file; no scattered SHAs required for CI."""
+def test_upstream_config_is_sole_stable_pin_source():
+    """Stable pin lives only in contracts/spoolman_upstream.json."""
     config = load_upstream_config(UPSTREAM_CONFIG)
 
-    assert config.stable_version == PINNED_STABLE_VERSION
-    assert config.stable_commit == PINNED_STABLE_COMMIT
-    assert config.canary_ref == "master"
-    assert config.repository == "Donkie/Spoolman"
-    assert config.contract_path == "spoolman/externaldb.py"
-    assert config.local_snapshot == STABLE_SNAPSHOT.resolve()
-    assert config.stable_url.endswith(
-        f"/{PINNED_STABLE_COMMIT}/spoolman/externaldb.py"
-    )
-    assert config.canary_url.endswith("/master/spoolman/externaldb.py")
-
-    # Config is the only place the pin is declared as structured data.
     with UPSTREAM_CONFIG.open(encoding="utf-8") as file:
         raw = json.load(file)
-    assert raw["stable"]["commit"] == PINNED_STABLE_COMMIT
-    assert raw["stable"]["version"] == PINNED_STABLE_VERSION
+
+    assert config.stable_version == raw["stable"]["version"]
+    assert config.stable_commit == raw["stable"]["commit"]
+    assert config.canary_ref == raw["canary"]["ref"]
+    assert config.repository == raw["repository"]
+    assert config.contract_path == raw["contract_path"]
+    assert config.local_snapshot == (ROOT / raw["local_snapshot"]).resolve()
+    assert config.stable_url.endswith(
+        f"/{raw['stable']['commit']}/{raw['contract_path']}"
+    )
+    assert config.canary_url.endswith(
+        f"/{raw['canary']['ref']}/{raw['contract_path']}"
+    )
+    # Structured pin fields must be non-empty and not redefined in this test module.
+    assert config.stable_commit
+    assert config.stable_version
+    assert len(config.stable_commit) == 40
 
 
 def test_stable_mode_is_deterministic_offline():
@@ -257,8 +261,8 @@ def test_stable_mode_is_deterministic_offline():
 
     assert source_a == source_b == STABLE_SNAPSHOT.read_text(encoding="utf-8")
     assert etag_a is None and etag_b is None
-    assert PINNED_STABLE_COMMIT in label_a
-    assert PINNED_STABLE_VERSION in label_a
+    assert config.stable_commit in label_a
+    assert config.stable_version in label_a
     assert label_a == label_b
 
     contract_a = load_spoolman_contract(source_a)
@@ -342,6 +346,7 @@ def test_compare_reports_enum_member_drift():
 
 def test_cli_stable_mode_default_uses_pinned_snapshot(tmp_path, monkeypatch, capsys):
     """CLI stable mode is offline and deterministic (no network)."""
+    config = load_upstream_config(UPSTREAM_CONFIG)
     compiled = tmp_path / "filaments.json"
     schema = ROOT / "filaments.compiled.schema.json"
     compiled.write_text(
@@ -372,8 +377,8 @@ def test_cli_stable_mode_default_uses_pinned_snapshot(tmp_path, monkeypatch, cap
     captured = capsys.readouterr()
     assert exit_code == 0
     assert "STABLE" in captured.out
-    assert PINNED_STABLE_COMMIT in captured.out
-    assert PINNED_STABLE_VERSION in captured.out
+    assert config.stable_commit in captured.out
+    assert config.stable_version in captured.out
 
 
 def test_cli_canary_diff_only_detects_master_drift(tmp_path, monkeypatch, capsys):
@@ -387,7 +392,7 @@ def test_cli_canary_diff_only_detects_master_drift(tmp_path, monkeypatch, capsys
     assert drifted != stable_source
 
     def fake_fetch(url, **_kwargs):
-        assert "master" in url
+        assert config.canary_ref in url
         return drifted, '"etag-canary"'
 
     monkeypatch.setattr(
@@ -410,4 +415,71 @@ def test_cli_canary_diff_only_detects_master_drift(tmp_path, monkeypatch, capsys
     assert "density" in captured.err
     assert "float" in captured.err
     assert "int" in captured.err
-    assert config.stable_commit in captured.out or PINNED_STABLE_COMMIT in captured.out
+    assert config.stable_commit in captured.out
+
+
+def test_verify_pin_integrity_matches_when_remote_equals_local():
+    """Pin integrity compares remote stable commit contract to local snapshot."""
+    config = load_upstream_config(UPSTREAM_CONFIG)
+    # Remote full upstream files may include extra modules; field contracts must match.
+    remote = STABLE_SNAPSHOT.read_text(encoding="utf-8")
+    changes, label, etag = verify_pin_integrity(config, remote_source=remote)
+    assert changes == []
+    assert label == config.stable_url
+    assert etag is None
+
+
+def test_verify_pin_integrity_detects_snapshot_drift():
+    config = load_upstream_config(UPSTREAM_CONFIG)
+    drifted = STABLE_SNAPSHOT.read_text(encoding="utf-8").replace(
+        "density: float = Field(description=\"Density in g/cm3.\")",
+        "density: int = Field(description=\"Density in g/cm3.\")",
+    )
+    changes, _label, _etag = verify_pin_integrity(config, remote_source=drifted)
+    assert any(
+        change.field == "density" and change.kind == "type_changed"
+        for change in changes
+    )
+
+
+def test_cli_verify_pin_fetches_stable_url_only(monkeypatch, capsys):
+    """verify-pin uses config stable_url; not used by offline stable PR CI."""
+    config = load_upstream_config(UPSTREAM_CONFIG)
+    calls: list[str] = []
+
+    def fake_fetch(url, **_kwargs):
+        calls.append(url)
+        assert url == config.stable_url
+        assert config.stable_commit in url
+        return STABLE_SNAPSHOT.read_text(encoding="utf-8"), '"etag-pin"'
+
+    monkeypatch.setattr(
+        "scripts.check_spoolman_compat.fetch_upstream_source",
+        fake_fetch,
+    )
+
+    exit_code = main(["--mode", "verify-pin", "--config", str(UPSTREAM_CONFIG)])
+    captured = capsys.readouterr()
+    assert exit_code == 0
+    assert calls == [config.stable_url]
+    assert "PIN INTEGRITY" in captured.out
+    assert config.stable_commit in captured.out
+
+
+def test_cli_verify_pin_fails_on_drift(monkeypatch, capsys):
+    config = load_upstream_config(UPSTREAM_CONFIG)
+    drifted = STABLE_SNAPSHOT.read_text(encoding="utf-8").replace(
+        "density: float = Field(description=\"Density in g/cm3.\")",
+        "density: int = Field(description=\"Density in g/cm3.\")",
+    )
+
+    monkeypatch.setattr(
+        "scripts.check_spoolman_compat.fetch_upstream_source",
+        lambda url, **_kwargs: (drifted, None),
+    )
+
+    exit_code = main(["--mode", "verify-pin", "--config", str(UPSTREAM_CONFIG)])
+    captured = capsys.readouterr()
+    assert exit_code == 1
+    assert "does not match" in captured.err
+    assert "density" in captured.err
