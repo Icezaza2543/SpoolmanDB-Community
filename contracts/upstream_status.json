@@ -30,8 +30,8 @@
     "refill_is_refill": {
       "feature": "refill packaging sentinel & explicit is_refill boolean",
       "status": "community-extension",
-      "spoolman_support": "Absent from ExternalFilament contract; Spoolman handles legacy spool_type: refill internally",
-      "community_status": "Supported (explicit is_refill boolean with legacy spool_type: refill sentinel compatibility)",
+      "spoolman_support": "Absent from ExternalFilament contract; current Spoolman ExternalFilament accepts plastic/cardboard/metal or null only.",
+      "community_status": "Supported (source 'refill' normalized to null spool_type + explicit is_refill: true, preserving legacy_id_spool_type)",
       "upstream_references": ["Donkie/SpoolmanDB#26"]
     },
     "country_of_origin": {

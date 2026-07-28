@@ -4,9 +4,15 @@ from datetime import datetime
 import json
 from pathlib import Path
 import re
+import sys
 import pytest
 
 ROOT = Path(__file__).parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from scripts.check_spoolman_compat import load_spoolman_contract
+
 TRACKER_PATH = ROOT / "contracts" / "upstream_status.json"
 UPSTREAM_CONFIG_PATH = ROOT / "contracts" / "spoolman_upstream.json"
 EXTERNAL_DB_PATH = ROOT / "contracts" / "spoolman_externaldb.py"
@@ -77,7 +83,7 @@ def test_active_vs_inactive_upstreams_distinction_and_sha_format():
 
     upstreams = tracker["upstreams"]
     assert upstreams["spoolman"]["status"] == "active_upstream"
-    
+
     spoolmandb = upstreams["spoolmandb_upstream"]
     assert spoolmandb["status"] == "inactive_upstream"
     assert "latest_known_commit" in spoolmandb
@@ -110,7 +116,7 @@ def test_capabilities_schema_enums_and_qualified_refs():
         assert "spoolman_support" in cap_info
         assert "community_status" in cap_info
         assert "upstream_references" in cap_info
-        
+
         refs = cap_info["upstream_references"]
         assert isinstance(refs, list)
         for ref in refs:
@@ -120,24 +126,36 @@ def test_capabilities_schema_enums_and_qualified_refs():
 
 
 def test_no_false_native_contract_claims():
-    """5. Verify no capability claims native Spoolman support for fields absent from ExternalFilament contract."""
+    """5. Dynamically parse ExternalFilament contract via load_spoolman_contract() and verify native vs community-extension claims."""
     with TRACKER_PATH.open(encoding="utf-8") as f:
         tracker = json.load(f)
 
-    # Load known ExternalFilament fields from contracts/spoolman_externaldb.py
+    # Dynamically parse pinned ExternalFilament model from contracts/spoolman_externaldb.py via load_spoolman_contract
     assert EXTERNAL_DB_PATH.exists()
-    db_content = EXTERNAL_DB_PATH.read_text(encoding="utf-8")
-    
-    # Check that spool_type is the only capability marked as native 'supported'
+    snapshot_source = EXTERNAL_DB_PATH.read_text(encoding="utf-8")
+    spoolman_contract = load_spoolman_contract(snapshot_source)
+    native_fields = set(spoolman_contract.fields.keys())
+
     caps = tracker["capabilities"]
-    for cap_name, cap_info in caps.items():
-        if cap_name == "spool_type":
-            assert cap_info["status"] == "supported"
-        else:
-            # Fields absent from ExternalFilament (is_refill, COO, SDS/TDS, codes, EAN/GTIN, legacy IDs) must be community-extension
-            assert (
-                cap_info["status"] == "community-extension"
-            ), f"Capability '{cap_name}' must be 'community-extension' as field is absent from ExternalFilament contract"
+
+    # Assert spool_type exists in native fields and is marked 'supported'
+    assert "spool_type" in native_fields
+    assert caps["spool_type"]["status"] == "supported"
+
+    # Map capabilities to target field names and assert current extension fields are NOT in native_fields
+    community_extension_keys = {
+        "refill_is_refill": "is_refill",
+        "country_of_origin": "country_of_origin",
+        "sds_tds_urls": "sds_url",
+        "codes": "codes",
+        "eans_gtin": "eans",
+    }
+
+    for cap_key, field_name in community_extension_keys.items():
+        assert field_name not in native_fields, f"Field '{field_name}' unexpectedly exists in native ExternalFilament contract"
+        assert (
+            caps[cap_key]["status"] == "community-extension"
+        ), f"Capability '{cap_key}' must be 'community-extension' as field '{field_name}' is absent from native ExternalFilament contract"
 
 
 def test_documentation_file_integrity_and_relative_links():
