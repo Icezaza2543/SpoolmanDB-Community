@@ -1019,3 +1019,172 @@ def test_regression_trusted_base_detects_deletion_from_pr_baseline(tmp_path):
     trusted_res = check_baseline_manifest_detailed(head_file, filaments_dir, base_baseline_path=base_file)
     assert trusted_res.has_breaking_changes is True
     assert any("PR baseline tampering detected" in err for err in trusted_res.removed_errors)
+
+
+def test_regression_new_source_variant_without_head_baseline_update_fails(tmp_path):
+    """48. Regression test: New source variant without HEAD baseline update fails in strict mode."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    base_file = tmp_path / "base_baseline.json"
+    head_file = tmp_path / "head_baseline.json"
+
+    # Base state: Red only
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(base_file, filaments_dir)
+    write_baseline_manifest(head_file, filaments_dir)
+
+    # Source adds Blue variant, but HEAD baseline is NOT updated (still has Red only)
+    fil_data["filaments"][0]["colors"].append({"name": "Blue", "hex": "0000FF"})
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+
+    # Strict HEAD sync check must fail because HEAD baseline is missing Blue variant
+    strict_res = check_baseline_manifest_detailed(
+        head_file, filaments_dir, base_baseline_path=base_file, strict_head_sync=True
+    )
+    assert len(strict_res.all_errors) > 0
+    assert any("PR HEAD baseline is out of sync with current compiled source manifest" in err for err in strict_res.all_errors)
+
+
+def test_regression_new_source_variant_with_updated_head_baseline_passes(tmp_path):
+    """49. Regression test: New source variant with correctly updated HEAD baseline passes and reports Added vs BASE."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    base_file = tmp_path / "base_baseline.json"
+    head_file = tmp_path / "head_baseline.json"
+
+    # Base state: Red only
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(base_file, filaments_dir)
+
+    # Source adds Blue variant AND HEAD baseline IS updated
+    fil_data["filaments"][0]["colors"].append({"name": "Blue", "hex": "0000FF"})
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(head_file, filaments_dir)
+
+    strict_res = check_baseline_manifest_detailed(
+        head_file, filaments_dir, base_baseline_path=base_file, strict_head_sync=True
+    )
+    assert strict_res.all_errors == []
+    assert strict_res.stats["added"] == 1
+    assert strict_res.stats["matched"] == 1
+    assert any("New variant added (not in baseline)" in item for item in strict_res.added_diagnostics)
+
+
+def test_regression_phantom_id_added_only_to_head_baseline_fails(tmp_path):
+    """50. Regression test: Phantom ID/key added only to HEAD baseline fails strict HEAD sync check."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    base_file = tmp_path / "base_baseline.json"
+    head_file = tmp_path / "head_baseline.json"
+
+    # Base state & Source state: Red only
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(base_file, filaments_dir)
+
+    # HEAD baseline is tampered to add a phantom entry not in source
+    base_data = json.loads(base_file.read_text(encoding="utf-8"))
+    base_data["manifest"]["phantom.json::BrandA::PLA {color_name}::PLA Phantom::PLA::1000::1.75::None::False"] = "branda_pla_plaphantom_1000_175_n"
+    base_data["count"] = len(base_data["manifest"])
+    head_file.write_text(json.dumps(base_data), encoding="utf-8")
+
+    strict_res = check_baseline_manifest_detailed(
+        head_file, filaments_dir, base_baseline_path=base_file, strict_head_sync=True
+    )
+    assert len(strict_res.all_errors) > 0
+    assert any("phantom/stale entry(ies) not present in current compiled source" in err for err in strict_res.all_errors)
+
+
+def test_regression_trusted_legacy_rekey_with_refreshed_head_baseline_passes(tmp_path):
+    """51. Regression test: Trusted legacy rekey with correctly refreshed HEAD baseline passes strict mode."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    base_file = tmp_path / "base_baseline.json"
+    head_file = tmp_path / "head_baseline.json"
+
+    # Base state: plastic spool_type
+    fil_data_v1 = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000, "spool_type": "plastic"}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data_v1), encoding="utf-8")
+    write_baseline_manifest(base_file, filaments_dir)
+
+    # Rekey source identity to cardboard spool_type with legacy_id_spool_type: plastic
+    fil_data_v2 = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [
+                    {
+                        "weight": 1000,
+                        "spool_type": "cardboard",
+                        "legacy_id_spool_type": "plastic",
+                    }
+                ],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data_v2), encoding="utf-8")
+
+    # Refresh HEAD baseline to reflect new canonical key mapping
+    write_baseline_manifest(head_file, filaments_dir)
+
+    strict_res = check_baseline_manifest_detailed(
+        head_file, filaments_dir, base_baseline_path=base_file, strict_head_sync=True
+    )
+    assert strict_res.all_errors == []
+    assert strict_res.stats["rekeyed"] == 1
+    assert any("Source identity rekey with unchanged public ID" in item for item in strict_res.rekeyed_diagnostics)

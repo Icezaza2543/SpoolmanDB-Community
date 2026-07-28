@@ -296,6 +296,7 @@ def check_baseline_manifest_detailed(
     baseline_path: Path | str | dict = BASELINE_PATH,
     filaments_dir: Path = FILAMENTS_DIR,
     base_baseline_path: Path | str | dict | None = None,
+    strict_head_sync: bool = False,
 ) -> BaselineCheckResult:
     """Compare current in-memory compiled IDs and PR HEAD baseline against trusted BASE baseline."""
     structural_errors: List[str] = []
@@ -449,6 +450,35 @@ def check_baseline_manifest_detailed(
                         changed_errors.append(msg)
                         stats["changed"] += 1
 
+    # --- CHECK C: PR HEAD Baseline Manifest vs Current Compiled Source Manifest Equality ---
+    if strict_head_sync and head_manifest != current_manifest:
+        missing_in_head = set(current_manifest.items()) - set(head_manifest.items())
+        phantom_in_head = set(head_manifest.items()) - set(current_manifest.items())
+
+        if missing_in_head:
+            count_m = len(missing_in_head)
+            sample_key, sample_id = sorted(missing_in_head)[0]
+            msg = (
+                f"PR HEAD baseline is out of sync with current compiled source manifest: {count_m} compiled variant(s) missing from HEAD baseline.\n"
+                f"  Example missing entry: '{sample_key}' -> '{sample_id}'\n"
+                f"  Run 'python scripts/compile_id_baseline.py --update' to sync contracts/compiled_id_baseline.json."
+            )
+            if msg not in changed_errors:
+                changed_errors.append(msg)
+                stats["changed"] += 1
+
+        if phantom_in_head:
+            count_p = len(phantom_in_head)
+            sample_key, sample_id = sorted(phantom_in_head)[0]
+            msg = (
+                f"PR HEAD baseline manifest contains {count_p} phantom/stale entry(ies) not present in current compiled source.\n"
+                f"  Example phantom entry: '{sample_key}' -> '{sample_id}'\n"
+                f"  Run 'python scripts/compile_id_baseline.py --update' to sync contracts/compiled_id_baseline.json."
+            )
+            if msg not in changed_errors:
+                changed_errors.append(msg)
+                stats["changed"] += 1
+
     stats["missing"] = stats["removed"]
     return BaselineCheckResult(
         structural_errors, changed_errors, removed_errors, added_diagnostics, rekeyed_diagnostics, warnings, stats
@@ -459,6 +489,7 @@ def check_baseline_manifest(
     baseline_path: Path | str = BASELINE_PATH,
     filaments_dir: Path = FILAMENTS_DIR,
     base_baseline_path: Path | str | None = None,
+    strict_head_sync: bool = False,
 ) -> Tuple[List[str], List[str], Dict[str, int]]:
     """Compare current in-memory compiled IDs against committed baseline.
 
@@ -466,7 +497,10 @@ def check_baseline_manifest(
         (errors, warnings, stats): Tuple of all error strings, warning strings, and stats dict.
     """
     result = check_baseline_manifest_detailed(
-        baseline_path=baseline_path, filaments_dir=filaments_dir, base_baseline_path=base_baseline_path
+        baseline_path=baseline_path,
+        filaments_dir=filaments_dir,
+        base_baseline_path=base_baseline_path,
+        strict_head_sync=strict_head_sync,
     )
     return result.all_errors, result.warnings, result.stats
 
@@ -600,6 +634,13 @@ def main():
         default=BASELINE_PATH,
         help="Path to baseline manifest JSON file (defaults to contracts/compiled_id_baseline.json).",
     )
+    parser.add_argument(
+        "--strict",
+        "--strict-head-sync",
+        dest="strict_head_sync",
+        action="store_true",
+        help="Strict mode: require PR HEAD baseline manifest to match current compiled source manifest exactly.",
+    )
     args = parser.parse_args()
 
     if args.accept_breaking_baseline_changes and not args.update:
@@ -616,10 +657,13 @@ def main():
     print(f"Checking Public Compiled ID baseline against '{args.baseline_path}'...")
     if args.base_ref:
         print(f"Trusted BASE baseline ref/file: '{args.base_ref}'")
+    if args.strict_head_sync:
+        print("Strict mode: HEAD baseline synchronization required.")
 
     result = check_baseline_manifest_detailed(
         baseline_path=args.baseline_path,
         base_baseline_path=args.base_ref,
+        strict_head_sync=args.strict_head_sync,
     )
 
     print(
@@ -639,7 +683,7 @@ def main():
             print(f"  {diag}")
 
     if result.changed_errors:
-        print("\nERROR: Changed ID mappings (Public ID regressions / tampering):", file=sys.stderr)
+        print("\nERROR: Changed ID mappings (Public ID regressions / tampering / sync errors):", file=sys.stderr)
         for err in result.changed_errors:
             print(f"  {err}", file=sys.stderr)
 
