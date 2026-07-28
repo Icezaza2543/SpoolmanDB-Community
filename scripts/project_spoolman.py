@@ -10,6 +10,7 @@ the primary rich 'filaments.json' artifact published by SpoolmanDB-Community.
 from __future__ import annotations
 
 import argparse
+import ast
 import json
 from pathlib import Path
 import sys
@@ -38,6 +39,48 @@ def get_native_contract(config_path: Path | None = None) -> SpoolmanContract:
     return load_spoolman_contract(source)
 
 
+def check_value_matches_annotation(
+    val: Any,
+    annotation: ast.expr,
+    contract: SpoolmanContract,
+) -> bool:
+    """Recursively check if a python value satisfies an AST type annotation from SpoolmanContract."""
+    if isinstance(annotation, ast.Name):
+        tname = annotation.id
+        if tname == "str":
+            return isinstance(val, str)
+        if tname == "float":
+            return isinstance(val, (float, int)) and not isinstance(val, bool)
+        if tname == "int":
+            return isinstance(val, int) and not isinstance(val, bool)
+        if tname == "bool":
+            return isinstance(val, bool)
+        if tname == "Any":
+            return True
+        if tname in contract.enum_values:
+            return isinstance(val, str) and val in contract.enum_values[tname]
+        return False
+
+    if isinstance(annotation, ast.Constant) and annotation.value is None:
+        return val is None
+
+    if isinstance(annotation, ast.BinOp) and isinstance(annotation.op, ast.BitOr):
+        return check_value_matches_annotation(val, annotation.left, contract) or check_value_matches_annotation(
+            val, annotation.right, contract
+        )
+
+    if (
+        isinstance(annotation, ast.Subscript)
+        and isinstance(annotation.value, ast.Name)
+        and annotation.value.id == "list"
+    ):
+        if not isinstance(val, list):
+            return False
+        return all(check_value_matches_annotation(elem, annotation.slice, contract) for elem in val)
+
+    return False
+
+
 def project_single_record(
     record: Dict[str, Any],
     contract: SpoolmanContract,
@@ -48,31 +91,35 @@ def project_single_record(
     1. Only include keys present in contract.fields.
     2. Preserve public `id` exactly.
     3. Fail (raise ValueError) if any required field according to the contract is missing or None.
-    4. Validate enum fields (e.g. spool_type) if present and non-null.
+    4. Validate every retained native field against its pinned AST annotation / enum constraints.
     """
+    rec_id = record.get("id", "<unknown_id>")
     projected: Dict[str, Any] = {}
 
     for field_name, field_contract in contract.fields.items():
         if field_name in record:
             val = record[field_name]
-            if val is None and field_contract.required:
-                raise ValueError(
-                    f"Record '{record.get('id', '<unknown>')}' missing required native field '{field_name}' (value is None)"
-                )
-
-            if val is not None:
-                if field_name == "spool_type":
-                    valid_spool_types = contract.enum_values.get("SpoolType", set())
-                    if valid_spool_types and val not in valid_spool_types:
-                        raise ValueError(
-                            f"Record '{record.get('id', '<unknown>')}' has invalid spool_type '{val}'. Allowed: {sorted(valid_spool_types)}"
-                        )
-
-            projected[field_name] = val
+            if val is None:
+                if field_contract.required:
+                    raise ValueError(
+                        f"Record '{rec_id}' missing required native field '{field_name}' (value is None)"
+                    )
+                if not check_value_matches_annotation(val, field_contract.annotation, contract):
+                    raise ValueError(
+                        f"Record '{rec_id}' field '{field_name}' is None but annotation '{ast.unparse(field_contract.annotation)}' does not accept None"
+                    )
+                projected[field_name] = None
+            else:
+                if not check_value_matches_annotation(val, field_contract.annotation, contract):
+                    annot_str = ast.unparse(field_contract.annotation)
+                    raise ValueError(
+                        f"Record '{rec_id}' field '{field_name}' has invalid value {val!r} of type {type(val).__name__}; expected annotation '{annot_str}'"
+                    )
+                projected[field_name] = val
         else:
             if field_contract.required:
                 raise ValueError(
-                    f"Record '{record.get('id', '<unknown>')}' missing required native field '{field_name}'"
+                    f"Record '{rec_id}' missing required native field '{field_name}'"
                 )
 
     return projected
@@ -100,18 +147,13 @@ def project_compiled_records(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Project compiled filaments to Spoolman-native fields."
+        description="Validate and project compiled filaments to Spoolman-native fields."
     )
     parser.add_argument(
         "--input",
         type=Path,
         default=FILAMENTS_JSON_PATH,
         help="Input filaments JSON file (defaults to filaments.json).",
-    )
-    parser.add_argument(
-        "--check-only",
-        action="store_true",
-        help="Run projection in memory and report stats without writing output.",
     )
     args = parser.parse_args()
 
