@@ -4,19 +4,16 @@
     {
       "name": "Kingroon PLA {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.23,
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 150,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 205,
-      "bed_temp": 55,
       "colors": [
         {
           "name": "Black",
@@ -39,24 +36,28 @@
           "hex": "0000FF"
         }
       ],
-      "country_of_origin": "CN"
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ]
     },
     {
       "name": "Kingroon PETG {color_name}",
       "material": "PETG",
-      "density": 1.25,
+      "density": 1.28,
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 150,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 240,
-      "bed_temp": 70,
       "colors": [
         {
           "name": "Black",
@@ -71,7 +72,14 @@
           "hex": "808080"
         }
       ],
-      "country_of_origin": "CN"
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ]
     },
     {
       "name": "ABS {color_name}",
@@ -80,7 +88,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -135,8 +143,7 @@
       "bed_temp_range": [
         90,
         110
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "PETG CF {color_name}",
@@ -145,7 +152,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -164,13 +171,12 @@
       "bed_temp_range": [
         70,
         90
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "High Speed PETG {color_name}",
       "material": "PETG",
-      "density": 1.27,
+      "density": 1.28,
       "weights": [
         {
           "weight": 1000,
@@ -215,23 +221,24 @@
         }
       ],
       "extruder_temp_range": [
-        220,
-        250
+        230,
+        260
       ],
       "bed_temp_range": [
-        70,
-        90
+        65,
+        75
       ],
-      "country_of_origin": "CN"
+      "finish": "matte",
+      "tds_url": "https://wiki.kingroon.com/kingroon_petg_hs_technical_data_sheet_v1.0.pdf"
     },
     {
       "name": "PETG {color_name}",
       "material": "PETG",
-      "density": 1.27,
+      "density": 1.28,
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -288,23 +295,22 @@
         }
       ],
       "extruder_temp_range": [
-        220,
+        230,
         250
       ],
       "bed_temp_range": [
         70,
         90
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "PLA Basic {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.23,
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -370,13 +376,12 @@
       ],
       "extruder_temp_range": [
         190,
-        230
+        210
       ],
       "bed_temp_range": [
         50,
         70
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "PLA CF {color_name}",
@@ -385,7 +390,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -404,8 +409,7 @@
       "bed_temp_range": [
         50,
         70
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "Glow PLA {color_name}",
@@ -414,7 +418,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -434,8 +438,7 @@
       "bed_temp_range": [
         50,
         70
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "High Speed PLA {color_name}",
@@ -444,7 +447,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -471,8 +474,7 @@
       "bed_temp_range": [
         50,
         70
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "Matte PLA {color_name}",
@@ -481,7 +483,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -545,7 +547,6 @@
         50,
         70
       ],
-      "country_of_origin": "CN",
       "finish": "matte"
     },
     {
@@ -555,7 +556,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         },
         {
           "weight": 1000,
@@ -610,8 +611,7 @@
       "bed_temp_range": [
         50,
         70
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "Silk PLA {color_name}",
@@ -620,7 +620,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -715,8 +715,7 @@
       "bed_temp_range": [
         50,
         70
-      ],
-      "country_of_origin": "CN"
+      ]
     },
     {
       "name": "TPU {color_name}",
@@ -725,7 +724,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -764,8 +763,7 @@
       "bed_temp_range": [
         30,
         60
-      ],
-      "country_of_origin": "CN"
+      ]
     }
   ]
 }
