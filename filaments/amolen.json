@@ -4,19 +4,16 @@
     {
       "name": "Amolen Silk PLA {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.27,
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 220,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 210,
-      "bed_temp": 50,
       "finish": "glossy",
       "colors": [
         {
@@ -31,25 +28,29 @@
           "name": "Copper",
           "hex": "B87333"
         }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        65
       ]
     },
     {
       "name": "Amolen Wood PLA {color_name}",
       "material": "PLA",
-      "density": 1.2,
+      "density": 1.23,
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 150,
-          "spool_type": "cardboard"
+          "legacy_id_spool_type": "cardboard"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 200,
-      "bed_temp": 50,
-      "finish": "matte",
       "colors": [
         {
           "name": "Walnut",
@@ -59,7 +60,16 @@
           "name": "Bamboo",
           "hex": "E1C699"
         }
-      ]
+      ],
+      "extruder_temp_range": [
+        180,
+        210
+      ],
+      "bed_temp_range": [
+        30,
+        65
+      ],
+      "fill": "wood"
     },
     {
       "name": "90A Flexible PEBA {color_name}",
@@ -68,8 +78,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -103,8 +112,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -182,8 +190,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -276,12 +283,11 @@
     {
       "name": "Basic Silk PLA {color_name}",
       "material": "PLA",
-      "density": 1.25,
+      "density": 1.27,
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -362,12 +368,12 @@
         }
       ],
       "extruder_temp_range": [
-        190,
-        230
+        210,
+        240
       ],
       "bed_temp_range": [
-        50,
-        70
+        30,
+        65
       ]
     },
     {
@@ -377,8 +383,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -434,8 +439,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -524,8 +528,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -578,8 +581,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -683,8 +685,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -788,8 +789,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -929,8 +929,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -990,8 +989,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1104,8 +1102,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1153,8 +1150,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1207,8 +1203,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1257,12 +1252,11 @@
     {
       "name": "S-Series Silk PLA {color_name}",
       "material": "PLA",
-      "density": 1.25,
+      "density": 1.29,
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1335,12 +1329,12 @@
         }
       ],
       "extruder_temp_range": [
-        190,
-        230
+        210,
+        240
       ],
       "bed_temp_range": [
-        50,
-        70
+        30,
+        65
       ]
     },
     {
@@ -1350,8 +1344,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1404,8 +1397,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1478,8 +1470,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1507,8 +1498,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1540,8 +1530,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1581,8 +1570,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1626,8 +1614,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1660,8 +1647,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1737,8 +1723,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1778,8 +1763,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1839,8 +1823,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1889,8 +1872,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
