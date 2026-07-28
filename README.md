@@ -22,9 +22,16 @@
 
 ## What this is
 
-SpoolmanDB Community is a community-maintained continuation of [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB). It keeps the original project history, attribution, and MIT license while keeping the filament database reviewed, validated, and available while upstream maintenance is quiet.
+SpoolmanDB Community is an actively maintained community extension of SpoolmanDB, focused on faster filament updates, provenance, data quality, public-ID stability, and compatibility with the actively developed Spoolman application.
 
-The goal is boring in the best way: current filament data, predictable JSON, repeatable validation, and small pull requests that are easy to review.
+### Upstream Relationships & Positioning
+
+* **Active Application Upstream**: [Donkie/Spoolman](https://github.com/Donkie/Spoolman) — The actively developed application server that consumes external filament data via its `ExternalFilament` contract (`spoolman/externaldb.py`).
+* **Original Data Upstream**: [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) — The original upstream static dataset. It has no visible commits since 2025-11-28, with open PRs remaining unmerged.
+* **SpoolmanDB-Community Position**: An independent community extension and staging-quality dataset. It is **not** a replacement application fork, but a community-driven database maintaining strict quality controls, public-ID stability, and rich metadata extensions.
+* **Contract Compatibility**: Compatible with Spoolman's pinned stable release (`v0.25.0`) and monitored against the `master` canary. See the detailed [Upstream Compatibility & Divergence Tracker](docs/UPSTREAM_COMPATIBILITY.md).
+* **Public ID Stability**: Every published filament record is protected by an automated PR-base baseline stability gate (`contracts/compiled_id_baseline.json`) ensuring historical IDs never disappear or change accidentally.
+* **Community Extensions**: Metadata such as Country of Origin (COO), SDS/TDS document links, manufacturer article codes, and EAN/GTIN barcodes are maintained as Community extensions.
 
 ## Key Enhancements & Differences from Upstream
 
