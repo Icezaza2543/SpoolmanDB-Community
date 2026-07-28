@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "last_reviewed": "2026-07-28",
+  "upstreams": {
+    "spoolman": {
+      "name": "Spoolman (Application Server)",
+      "repository": "Donkie/Spoolman",
+      "status": "active_upstream",
+      "config_ref": "contracts/spoolman_upstream.json",
+      "canary_status": "passing",
+      "description": "Active upstream application server implementing ExternalFilament contract."
+    },
+    "spoolmandb_upstream": {
+      "name": "SpoolmanDB (Original Static Data Repository)",
+      "repository": "Donkie/SpoolmanDB",
+      "status": "inactive_upstream",
+      "base_known_commit": "remotes/upstream/main",
+      "description": "Original upstream static data repository. Currently inactive / unmerged upstream."
+    }
+  },
+  "capabilities": {
+    "spool_type": {
+      "feature": "spool_type material enum (plastic, cardboard, metal)",
+      "status": "supported",
+      "spoolman_support": "Native enum ('plastic', 'cardboard', 'metal')",
+      "community_status": "Supported (normalized to plastic, cardboard, metal; legacy null types sanitized)",
+      "upstream_references": []
+    },
+    "refill_is_refill": {
+      "feature": "refill packaging sentinel & explicit is_refill boolean",
+      "status": "community-extension",
+      "spoolman_support": "Community extended field (is_refill boolean emitted in community dataset)",
+      "community_status": "Supported (explicit is_refill boolean with legacy spool_type: refill sentinel compatibility)",
+      "upstream_references": ["#282", "#283"]
+    },
+    "country_of_origin": {
+      "feature": "Country of Origin (COO) ISO alpha-2 codes",
+      "status": "community-extension",
+      "spoolman_support": "Ignored by Spoolman core schema (community extension)",
+      "community_status": "Supported in community source metadata (ISO 3166-1 alpha-2 standard)",
+      "upstream_references": ["#198"]
+    },
+    "sds_tds_urls": {
+      "feature": "Safety Data Sheet (SDS) and Technical Data Sheet (TDS) URLs",
+      "status": "supported",
+      "spoolman_support": "Native optional URI fields (sds_url, tds_url)",
+      "community_status": "Supported with strict URI format validation",
+      "upstream_references": []
+    },
+    "codes": {
+      "feature": "Manufacturer / product article codes",
+      "status": "supported",
+      "spoolman_support": "Native optional string list",
+      "community_status": "Supported in community source files",
+      "upstream_references": []
+    },
+    "eans_gtin": {
+      "feature": "EAN / GTIN barcode identifiers (standard & refill)",
+      "status": "community-extension",
+      "spoolman_support": "Native eans string list; eans_refill community extension",
+      "community_status": "Supported (eans + eans_refill metadata)",
+      "upstream_references": ["#282"]
+    },
+    "legacy_public_id_compat": {
+      "feature": "Historical Public ID stability & legacy_id_spool_type compatibility",
+      "status": "supported",
+      "spoolman_support": "Crucial for downstream Spoolman database external ID key binding",
+      "community_status": "Protected by automated CI stability gate & legacy_id_spool_type preservation mechanism",
+      "upstream_references": []
+    }
+  }
+}
