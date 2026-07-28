@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - name: Check git whitespace
         run: git diff-tree --check --no-commit-id -r HEAD
       - name: Set up Python
@@ -24,10 +26,23 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: python -m pip install -r requirements-dev.txt
+      - name: Fetch PR base commit for trusted baseline check
+        if: github.event_name == 'pull_request'
+        run: git fetch origin ${{ github.event.pull_request.base.sha }}
       - name: Run validation script
-        run: python scripts/validate.py
-      - name: Check Public ID stability gate
-        run: python scripts/compile_id_baseline.py
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            python scripts/validate.py --base-ref ${{ github.event.pull_request.base.sha }}
+          else
+            python scripts/validate.py
+          fi
+      - name: Check Public ID stability gate against trusted BASE baseline
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            python scripts/compile_id_baseline.py --base-ref ${{ github.event.pull_request.base.sha }}
+          else
+            python scripts/compile_id_baseline.py
+          fi
       - name: Check README snapshot
         run: python scripts/readme_snapshot.py --check
       - name: Run unit tests

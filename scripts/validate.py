@@ -90,6 +90,13 @@ def main():
         action="store_true",
         help="Fail validation when source templates compile to names without a material token.",
     )
+    parser.add_argument(
+        "--base-ref",
+        "--base-baseline",
+        dest="base_ref",
+        default=None,
+        help="Git ref (e.g. commit SHA or 'origin/main') or file path to trusted base baseline manifest for PR checking.",
+    )
     args = parser.parse_args()
 
     materials_schema = ROOT / "materials.schema.json"
@@ -128,7 +135,12 @@ def main():
     from scripts.compile_id_baseline import check_baseline_manifest_detailed
 
     print("\nChecking Public Compiled ID baseline...")
-    base_result = check_baseline_manifest_detailed(filaments_dir=filaments_dir)
+    if args.base_ref:
+        print(f"Trusted BASE baseline ref/file: '{args.base_ref}'")
+    base_result = check_baseline_manifest_detailed(
+        filaments_dir=filaments_dir,
+        base_baseline_path=args.base_ref,
+    )
     print(
         f"Baseline: {base_result.stats['baseline_count']} | Current: {base_result.stats['current_count']} | "
         f"Matched: {base_result.stats['matched']} | Added: {base_result.stats['added']} | Removed: {base_result.stats['removed']} | "

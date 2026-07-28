@@ -926,3 +926,96 @@ def test_regression_baseline_tampering(tmp_path):
     res = check_baseline_manifest_detailed(baseline_file, filaments_dir)
     assert res.is_valid_structure is False
     assert any("does not match actual manifest entry count" in err for err in res.structural_errors)
+
+
+def test_regression_trusted_base_detects_coordinated_tampering(tmp_path):
+    """46. Regression test: Coordinated source ID migration + PR baseline rewrite fails trusted-base gate."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    base_file = tmp_path / "base_baseline.json"
+    head_file = tmp_path / "head_baseline.json"
+
+    # Base state: BrandA PLA Red mapped to old ID
+    fil_data_v1 = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data_v1), encoding="utf-8")
+    write_baseline_manifest(base_file, filaments_dir)
+
+    # Coordinated change: source template renamed to "Standard PLA {color_name}" (generates new_id)
+    fil_data_v2 = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "Standard PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data_v2), encoding="utf-8")
+
+    # PR author rewrites PR HEAD baseline to match the new source ID using --accept-breaking-baseline-changes
+    write_baseline_manifest(head_file, filaments_dir, accept_breaking_changes=True)
+
+    # HEAD-only check mode would PASS because current source matches HEAD baseline
+    head_only_res = check_baseline_manifest_detailed(head_file, filaments_dir, base_baseline_path=None)
+    assert head_only_res.all_errors == []
+    assert head_only_res.stats["matched"] == 1
+
+    # Trusted-BASE mode MUST FAIL because current source and HEAD baseline deviate from trusted BASE baseline!
+    trusted_res = check_baseline_manifest_detailed(head_file, filaments_dir, base_baseline_path=base_file)
+    assert trusted_res.has_breaking_changes is True
+    assert trusted_res.stats["changed"] > 0 or trusted_res.stats["removed"] > 0
+    assert any("Public ID regression" in err or "tampering" in err for err in trusted_res.all_errors)
+
+
+def test_regression_trusted_base_detects_deletion_from_pr_baseline(tmp_path):
+    """47. Regression test: Deleting a historical entry from PR baseline while source still exists fails trusted-base gate."""
+    filaments_dir = tmp_path / "filaments"
+    filaments_dir.mkdir()
+    base_file = tmp_path / "base_baseline.json"
+    head_file = tmp_path / "head_baseline.json"
+
+    # Base state: 2 variants
+    fil_data = {
+        "manufacturer": "BrandA",
+        "filaments": [
+            {
+                "name": "PLA {color_name}",
+                "material": "PLA",
+                "density": 1.24,
+                "weights": [{"weight": 1000}],
+                "diameters": [1.75],
+                "colors": [{"name": "Red", "hex": "FF0000"}, {"name": "Blue", "hex": "0000FF"}],
+            }
+        ],
+    }
+    (filaments_dir / "branda.json").write_text(json.dumps(fil_data), encoding="utf-8")
+    write_baseline_manifest(base_file, filaments_dir)
+
+    # PR HEAD baseline deletes entry for Blue color from PR baseline manifest
+    base_data = json.loads(base_file.read_text(encoding="utf-8"))
+    manifest = base_data["manifest"]
+    blue_key = [k for k in manifest.keys() if "PLA Blue" in k][0]
+    del manifest[blue_key]
+    base_data["count"] = len(manifest)
+    head_file.write_text(json.dumps(base_data), encoding="utf-8")
+
+    # Source files still contain both Red and Blue
+    trusted_res = check_baseline_manifest_detailed(head_file, filaments_dir, base_baseline_path=base_file)
+    assert trusted_res.has_breaking_changes is True
+    assert any("PR baseline tampering detected" in err for err in trusted_res.removed_errors)
