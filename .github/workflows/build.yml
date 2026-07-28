@@ -51,13 +51,52 @@ jobs:
         run: python -m pip install -r requirements-dev.txt
       - name: Validate compiled output
         run: python scripts/validate.py
-      - name: Check pinned Spoolman compatibility
-        run: python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py
+      - name: Check pinned Spoolman compatibility (stable, required)
+        run: python scripts/check_spoolman_compat.py --mode stable
       - uses: actions/upload-artifact@v7
         with:
           name: filaments
           path: filaments.json
           if-no-files-found: error
+
+  spoolman-canary:
+    # Advisory only: visible diagnostics when master drifts from the stable pin.
+    # Failures must not block data PRs (continue-on-error + non-required job).
+    runs-on: ubuntu-latest
+    needs: [validate]
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Compile filaments
+        run: python scripts/compile_filaments.py
+      - name: Canary Spoolman compatibility (master, non-blocking)
+        id: canary
+        run: |
+          set +e
+          python scripts/check_spoolman_compat.py --mode canary
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" -eq 0 ]; then
+            echo "### Spoolman canary: OK" >> "$GITHUB_STEP_SUMMARY"
+            echo "No ExternalFilament field/type drift vs stable pin." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### Spoolman canary: DRIFT or failure (exit $code)" >> "$GITHUB_STEP_SUMMARY"
+            echo "Advisory only — does not fail the required build job." >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            python scripts/check_spoolman_compat.py --mode canary --diff-only 2>&1 | tee -a "$GITHUB_STEP_SUMMARY" || true
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit 0
+      - name: Surface canary status
+        if: steps.canary.outputs.exit_code != '0'
+        run: |
+          echo "::warning::Spoolman canary reported exit ${{ steps.canary.outputs.exit_code }} (advisory; does not block merge)"
 
   # Single deploy job since we're just deploying
   deploy:
