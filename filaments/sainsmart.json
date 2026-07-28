@@ -8,15 +8,12 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 200,
-          "spool_type": "plastic"
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 220,
-      "bed_temp": 50,
       "colors": [
         {
           "name": "Black",
@@ -35,7 +32,14 @@
           "hex": "0000FF"
         }
       ],
-      "country_of_origin": "US"
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ]
     },
     {
       "name": "ABS {color_name}",
@@ -691,8 +695,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -710,10 +713,9 @@
         240
       ],
       "bed_temp_range": [
-        30,
-        60
-      ],
-      "country_of_origin": "US"
+        0,
+        50
+      ]
     },
     {
       "name": "Flexible 95A Matte TPU {color_name}",
@@ -722,8 +724,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -740,14 +741,13 @@
         }
       ],
       "extruder_temp_range": [
-        210,
-        240
+        200,
+        220
       ],
       "bed_temp_range": [
         30,
-        60
+        55
       ],
-      "country_of_origin": "US",
       "finish": "matte"
     },
     {
@@ -827,8 +827,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -892,14 +891,13 @@
         }
       ],
       "extruder_temp_range": [
-        210,
+        220,
         240
       ],
       "bed_temp_range": [
         30,
-        60
-      ],
-      "country_of_origin": "US"
+        50
+      ]
     },
     {
       "name": "TPU Liquid Luster {color_name}",
@@ -1143,8 +1141,7 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 220
+          "legacy_id_spool_type": "plastic"
         }
       ],
       "diameters": [
@@ -1157,14 +1154,13 @@
         }
       ],
       "extruder_temp_range": [
-        210,
-        240
+        190,
+        230
       ],
       "bed_temp_range": [
-        30,
+        45,
         60
-      ],
-      "country_of_origin": "US"
+      ]
     }
   ]
 }
