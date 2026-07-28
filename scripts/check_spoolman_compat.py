@@ -467,20 +467,21 @@ def compare_external_filament_fields(
     return changes
 
 
-def _matches_annotation(
+def matches_annotation(
     value: Any,
     annotation: ast.expr,
     contract: SpoolmanContract,
 ) -> bool:
+    """Check if a python value satisfies an AST type annotation from SpoolmanContract."""
     if isinstance(annotation, ast.BinOp) and isinstance(annotation.op, ast.BitOr):
-        return _matches_annotation(
+        return matches_annotation(
             value, annotation.left, contract
-        ) or _matches_annotation(value, annotation.right, contract)
+        ) or matches_annotation(value, annotation.right, contract)
     if isinstance(annotation, ast.Constant) and annotation.value is None:
         return value is None
     if isinstance(annotation, ast.Subscript):
         return isinstance(value, list) and all(
-            _matches_annotation(item, annotation.slice, contract) for item in value
+            matches_annotation(item, annotation.slice, contract) for item in value
         )
     if not isinstance(annotation, ast.Name):
         return False
@@ -501,6 +502,9 @@ def _matches_annotation(
     return False
 
 
+_matches_annotation = matches_annotation
+
+
 def validate_schema_spool_types(
     schema: dict[str, Any],
     contract: SpoolmanContract,
@@ -513,7 +517,7 @@ def validate_schema_spool_types(
     unsupported = [
         value
         for value in schema_enum
-        if not _matches_annotation(value, spool_field.annotation, contract)
+        if not matches_annotation(value, spool_field.annotation, contract)
     ]
 
     if unsupported:
@@ -542,7 +546,7 @@ def validate_compiled_data(
                         f"Record {index} ({record_id}) is missing required field {name}"
                     )
                 continue
-            if not _matches_annotation(record[name], field.annotation, contract):
+            if not matches_annotation(record[name], field.annotation, contract):
                 raise RuntimeError(
                     f"Record {index} ({record_id}) has incompatible {name}: "
                     f"expected {ast.unparse(field.annotation)}, got {record[name]!r}"

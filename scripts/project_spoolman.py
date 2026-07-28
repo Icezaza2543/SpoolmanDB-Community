@@ -23,6 +23,7 @@ if str(ROOT) not in sys.path:
 from scripts.check_spoolman_compat import (
     load_spoolman_contract,
     load_upstream_config,
+    matches_annotation,
     SpoolmanContract,
 )
 
@@ -39,46 +40,7 @@ def get_native_contract(config_path: Path | None = None) -> SpoolmanContract:
     return load_spoolman_contract(source)
 
 
-def check_value_matches_annotation(
-    val: Any,
-    annotation: ast.expr,
-    contract: SpoolmanContract,
-) -> bool:
-    """Recursively check if a python value satisfies an AST type annotation from SpoolmanContract."""
-    if isinstance(annotation, ast.Name):
-        tname = annotation.id
-        if tname == "str":
-            return isinstance(val, str)
-        if tname == "float":
-            return isinstance(val, (float, int)) and not isinstance(val, bool)
-        if tname == "int":
-            return isinstance(val, int) and not isinstance(val, bool)
-        if tname == "bool":
-            return isinstance(val, bool)
-        if tname == "Any":
-            return True
-        if tname in contract.enum_values:
-            return isinstance(val, str) and val in contract.enum_values[tname]
-        return False
-
-    if isinstance(annotation, ast.Constant) and annotation.value is None:
-        return val is None
-
-    if isinstance(annotation, ast.BinOp) and isinstance(annotation.op, ast.BitOr):
-        return check_value_matches_annotation(val, annotation.left, contract) or check_value_matches_annotation(
-            val, annotation.right, contract
-        )
-
-    if (
-        isinstance(annotation, ast.Subscript)
-        and isinstance(annotation.value, ast.Name)
-        and annotation.value.id == "list"
-    ):
-        if not isinstance(val, list):
-            return False
-        return all(check_value_matches_annotation(elem, annotation.slice, contract) for elem in val)
-
-    return False
+check_value_matches_annotation = matches_annotation
 
 
 def project_single_record(
