@@ -4,19 +4,16 @@
     {
       "name": "GratKit PLA {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.25,
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 155,
           "spool_type": "cardboard"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 205,
-      "bed_temp": 55,
       "colors": [
         {
           "name": "Black",
@@ -43,24 +40,29 @@
           "hex": "008000"
         }
       ],
-      "country_of_origin": "CN"
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "tds_url": "https://forums.gratkit.com/d/36-filament-tdsgratkit-standard-pla"
     },
     {
       "name": "GratKit PETG {color_name}",
       "material": "PETG",
-      "density": 1.25,
+      "density": 1.27,
       "weights": [
         {
           "weight": 1000,
-          "spool_weight": 155,
           "spool_type": "cardboard"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 240,
-      "bed_temp": 70,
       "colors": [
         {
           "name": "Black",
@@ -75,7 +77,15 @@
           "hex": "808080"
         }
       ],
-      "country_of_origin": "CN"
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        75,
+        80
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0549/2650/8112/files/TDS_PETG.pdf?v=1750658694"
     }
   ]
 }
