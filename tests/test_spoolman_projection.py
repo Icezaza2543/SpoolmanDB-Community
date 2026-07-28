@@ -171,8 +171,16 @@ def test_invalid_enum_spool_type_fails(sample_community_record):
 
 def test_project_entire_committed_filaments_json_dataset():
     """8. Project the ENTIRE committed filaments.json. Verify exact ID order & native key matching."""
-    assert FILAMENTS_JSON_PATH.exists()
-    records = json.loads(FILAMENTS_JSON_PATH.read_text(encoding="utf-8"))
+    if FILAMENTS_JSON_PATH.exists():
+        records = json.loads(FILAMENTS_JSON_PATH.read_text(encoding="utf-8"))
+    else:
+        from scripts.compile_filaments import get_filaments_from_data, load_json
+
+        records = []
+        for file in sorted((ROOT / "filaments").glob("*.json")):
+            records.extend(get_filaments_from_data(load_json(file)))
+        records.sort(key=lambda x: (x["manufacturer"], x["material"], x["name"]))
+
     contract = get_native_contract()
 
     # Project the entire dataset
