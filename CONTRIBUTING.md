@@ -40,16 +40,24 @@ python scripts/compile_id_baseline.py --update
 # Run unit tests to verify compile and baseline functionality
 python -m pytest -q
 
-# Verify the complete output against Spoolman's current upstream model
-python scripts/check_spoolman_compat.py
+# Required: deterministic offline check against the pinned Spoolman contract
+# (version/commit: contracts/spoolman_upstream.json only)
+python scripts/check_spoolman_compat.py --mode stable
 
-# Optional offline check against the reviewed contract used by normal CI builds
-python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py
+# Advisory: fetch Donkie/Spoolman master and report ExternalFilament field/type drift
+# Canary failures are diagnostic only; they do not block normal data PRs.
+python scripts/check_spoolman_compat.py --mode canary
+
+# Maintainer / weekly only: fetch the configured stable commit and assert the
+# local snapshot matches (not part of normal PR stable CI).
+python scripts/check_spoolman_compat.py --mode verify-pin
 ```
+
+The stable pin and canary ref are configured only in [`contracts/spoolman_upstream.json`](contracts/spoolman_upstream.json). Do not hardcode Spoolman SHAs elsewhere. See [docs/spoolman-compatibility.md](docs/spoolman-compatibility.md). Updating the pin is a deliberate maintainer change (edit the config, refresh `contracts/spoolman_externaldb.py`, run stable + verify-pin).
 
 New filament variants (additions) generate informational baseline warnings until `python scripts/compile_id_baseline.py --update` is run. `--update` will safely refuse to write if the existing baseline is malformed, or if breaking changes (altered historical IDs / removed variants) are detected without specifying `--accept-breaking-baseline-changes` (breaking flags cannot bypass malformed baseline files).
 
-The generated `filaments.json` should compile cleanly, and all schema, unit, and Spoolman compatibility checks must pass.
+The generated `filaments.json` should compile cleanly, and all schema, unit, and **stable** Spoolman compatibility checks must pass.
 
 For refill products, use `"is_refill": true` in the relevant weight object and omit `spool_type`. The legacy source value `"spool_type": "refill"` is still accepted to avoid changing existing public IDs, but it is normalized to `spool_type: null` in the published database.
 

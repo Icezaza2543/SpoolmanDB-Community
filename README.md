@@ -107,7 +107,9 @@ Compatibility is checked in three layers:
 
 1. Compiler normalization uses an explicit allowlist and preserves historical ID suffixes.
 2. The compiled schema rejects values outside Spoolman's public enum.
-3. Normal builds validate every record against a reviewed, pinned upstream contract snapshot without network access. A separate [weekly compatibility workflow](.github/workflows/spoolman-compatibility.yml) downloads the current `externaldb.py`, extracts its enums, required fields, defaults, and supported annotations with a strict AST parser, and detects drift without executing downloaded code.
+3. Normal builds validate every record against a **required stable pin** of Spoolman's `ExternalFilament` contract. Version and commit are defined only in [`contracts/spoolman_upstream.json`](contracts/spoolman_upstream.json). CI uses the reviewed offline snapshot [`contracts/spoolman_externaldb.py`](contracts/spoolman_externaldb.py) so merge checks are deterministic and network-free. Details: [docs/spoolman-compatibility.md](docs/spoolman-compatibility.md).
+
+A separate **canary** check fetches current `Donkie/Spoolman:master`, validates against it, and reports exactly which `ExternalFilament` fields or types changed relative to the stable pin. Canary failures are visible in CI (job summary + warning) but **do not block data PRs**. The weekly [Spoolman compatibility workflow](.github/workflows/spoolman-compatibility.yml) also runs **pin integrity** (`--mode verify-pin`): it fetches the configured stable commit and asserts the local snapshot still matches, without changing offline PR CI.
 
 ## Data model at a glance
 
@@ -164,7 +166,9 @@ python scripts/readme_snapshot.py --write
 python scripts/compile_filaments.py
 python scripts/validate.py
 python -m pytest -q
-python scripts/check_spoolman_compat.py
+python scripts/check_spoolman_compat.py --mode stable
+# Optional advisory check against Donkie/Spoolman master (does not block merge):
+python scripts/check_spoolman_compat.py --mode canary
 ```
 
 ## Data model
