@@ -170,6 +170,37 @@
       ]
     },
     {
+      "name": "MH Build Series PLA {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        25,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "ABACB0",
+          "codes": [
+            "M-K0P-DTFA"
+          ]
+        }
+      ]
+    },
+    {
       "name": "MH Build Series ABS {color_name}",
       "material": "ABS",
       "density": 1.04,
