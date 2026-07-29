@@ -70,13 +70,13 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 460 |
 | Material definitions | 152 |
-| Source filament objects | 4,793 |
-| Color entries | 29,672 |
-| Compiled filament variants | 51,629 |
+| Source filament objects | 4,794 |
+| Color entries | 29,673 |
+| Compiled filament variants | 51,630 |
 | Source filaments with country of origin | 4,514 |
 | Source filaments with TDS/product links | 493 |
 | Source filaments with SDS links | 9 |
-| Manufacturer product code/ID entries | 7,759 |
+| Manufacturer product code/ID entries | 7,760 |
 | EAN/GTIN entries | 1,958 |
 | ASEAN manufacturer coverage | 21 brands / 139 source filaments |
 
@@ -92,8 +92,8 @@ Counts in this block are generated from the current repository state. Run `pytho
 | `spool_type: refill` (legacy) | 34 |
 | `spool_type: unknow` (legacy) | 26 |
 | `spool_type: null` | 0 |
-| `spool_type` omitted | 77 |
-| Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 34 |
+| `spool_type` omitted | 78 |
+| Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 35 |
 <!-- readme-snapshot:end -->
 
 ASEAN coverage uses the curated [ASEAN manufacturer registry](scripts/asean_manufacturers.json); it is never inferred from `country_of_origin`, which records manufacturing origin rather than brand location.
