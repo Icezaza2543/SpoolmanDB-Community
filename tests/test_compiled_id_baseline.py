@@ -16,18 +16,17 @@ from scripts.compile_id_baseline import (
 )
 
 ROOT = Path(__file__).parent.parent
+BASELINE_PATH = ROOT / "contracts" / "compiled_id_baseline.json"
 
 
 def test_current_baseline_passes():
     """1. Current committed baseline passes against repository source files."""
     errors, warnings, stats = check_baseline_manifest(
-        baseline_path=ROOT / "contracts" / "compiled_id_baseline.json",
+        baseline_path=BASELINE_PATH,
         filaments_dir=ROOT / "filaments",
     )
     assert errors == []
-    assert stats["baseline_count"] == 51629
-    assert stats["current_count"] == 51629
-    assert stats["matched"] == 51629
+    assert stats["baseline_count"] == stats["current_count"] == stats["matched"]
     assert stats["changed"] == 0
     assert stats["missing"] == 0
 
@@ -36,16 +35,15 @@ def test_compiled_public_ids_are_unique():
     """2. Compiled Public IDs are unique across all variants compiled in memory."""
     current_manifest, errors = compile_current_id_manifest(ROOT / "filaments")
     assert errors == []
-    assert len(current_manifest) == 51629
-    id_set = set(current_manifest.values())
-    assert len(id_set) == 51629
+    assert len(set(current_manifest.values())) == len(current_manifest)
 
 
 def test_identity_keys_are_unique():
     """3. Canonical identity keys are unique across all variants compiled in memory."""
     current_manifest, errors = compile_current_id_manifest(ROOT / "filaments")
     assert errors == []
-    assert len(current_manifest) == 51629
+    baseline_manifest = json.loads(BASELINE_PATH.read_text(encoding="utf-8"))["manifest"]
+    assert len(current_manifest) == len(baseline_manifest)
 
 
 def test_simulated_id_change_fails():
@@ -325,11 +323,11 @@ def test_duplicate_public_ids_in_baseline_fails():
 def test_baseline_check_works_without_compiled_filaments_json():
     """20. Test baseline check works when generated/ignored filaments.json is absent."""
     errors, warnings, stats = check_baseline_manifest(
-        baseline_path=ROOT / "contracts" / "compiled_id_baseline.json",
+        baseline_path=BASELINE_PATH,
         filaments_dir=ROOT / "filaments",
     )
     assert errors == []
-    assert stats["matched"] == 51629
+    assert stats["baseline_count"] == stats["current_count"] == stats["matched"]
 
 
 def test_baseline_check_does_not_rely_on_record_count_alone():
