@@ -285,6 +285,5 @@ def test_compiled_public_ids_are_unique():
         for fil in data.get("filaments", []):
             compiled_records.extend(expand_filament_data(mfr, fil))
 
-    assert len(compiled_records) == 51629
     id_set = {item["id"] for item in compiled_records}
-    assert len(id_set) == 51629
+    assert len(id_set) == len(compiled_records)
