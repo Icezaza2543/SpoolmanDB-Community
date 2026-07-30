@@ -1,0 +1,56 @@
+{
+  "manufacturer": "FIL-A-GEHR",
+  "filaments": [
+    {
+      "name": "FIL-A-GEHR PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        260,
+        280
+      ],
+      "bed_temp_range": [
+        110,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "ece4d2"
+        }
+      ]
+    },
+    {
+      "name": "FIL-A-GEHR PPS-CF {color_name}",
+      "material": "PPS-CF",
+      "density": 1.51,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "bed_temp_range": [
+        110,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "181818"
+        }
+      ]
+    }
+  ]
+}
