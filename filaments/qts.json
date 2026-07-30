@@ -1,0 +1,128 @@
+{
+  "manufacturer": "QTS",
+  "filaments": [
+    {
+      "name": "Standard PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {"name": "Red (V3)", "hex": "FF0000"},
+        {"name": "Pink", "hex": "FF69B4"},
+        {"name": "Light Pink (V2)", "hex": "FFB6C1"},
+        {"name": "Yellow", "hex": "FFD700"},
+        {"name": "Transparent Orange", "hex": "FFA500", "translucent": true},
+        {"name": "Orange (V3)", "hex": "FF6600"},
+        {"name": "Pink Skin", "hex": "F2C6A0"},
+        {"name": "Green (V3)", "hex": "00A651"},
+        {"name": "Transparent Green", "hex": "7FFF7F", "translucent": true},
+        {"name": "Dark Green", "hex": "006400"},
+        {"name": "Blue", "hex": "0057B8"},
+        {"name": "Light Blue", "hex": "87CEEB"},
+        {"name": "Aqua Blue", "hex": "00B7C7"},
+        {"name": "Dark Blue", "hex": "003366"},
+        {"name": "Purple (V3)", "hex": "800080"},
+        {"name": "Dark Purple", "hex": "4B0082"},
+        {"name": "Brown (V3)", "hex": "8B4513"},
+        {"name": "Silver", "hex": "C0C0C0"},
+        {"name": "Gold", "hex": "D4AF37"},
+        {"name": "Black (V3)", "hex": "000000"},
+        {"name": "Gray (V3)", "hex": "808080"},
+        {"name": "White (V3)", "hex": "FFFFFF"},
+        {"name": "Transparent", "hex": "E8F1F2", "translucent": true}
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {"name": "Black", "hex": "000000"},
+        {"name": "White", "hex": "FFFFFF"},
+        {"name": "Gray", "hex": "808080"},
+        {"name": "Red", "hex": "D71920"}
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        80
+      ]
+    },
+    {
+      "name": "PA6 {color_name}",
+      "material": "PA6",
+      "density": 1.157,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {"name": "Black", "hex": "000000"}
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        120
+      ]
+    },
+    {
+      "name": "PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {"name": "Black", "hex": "000000"},
+        {"name": "White", "hex": "FFFFFF"},
+        {"name": "Transparent", "hex": "E8F1F2", "translucent": true}
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        60,
+        100
+      ]
+    }
+  ]
+}

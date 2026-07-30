@@ -2,6 +2,149 @@
   "manufacturer": "Nanovia",
   "filaments": [
     {
+      "name": "PLA EF {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750
+        },
+        {
+          "weight": 2000
+        },
+        {
+          "weight": 4000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "colors": [
+        {"name": "Native", "hex": "EEEBD8", "translucent": true},
+        {"name": "White", "hex": "E9E5CE"},
+        {"name": "Black", "hex": "0A0A0A"},
+        {"name": "Blue", "hex": "3B83BD"},
+        {"name": "Gray", "hex": "575D5E"},
+        {"name": "Green", "hex": "3F8F3E"},
+        {"name": "Orange", "hex": "E25303"},
+        {"name": "Red", "hex": "A72920"},
+        {"name": "Yellow", "hex": "CDA434"}
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 750
+        },
+        {
+          "weight": 2000
+        },
+        {
+          "weight": 4000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        80,
+        90
+      ],
+      "colors": [
+        {"name": "Native", "hex": "E8F1F2", "translucent": true},
+        {"name": "White", "hex": "FFFFFF"},
+        {"name": "Black", "hex": "0A0A0A"},
+        {"name": "Blue", "hex": "3B83BD"},
+        {"name": "Gray", "hex": "575D5E"},
+        {"name": "Green", "hex": "3F8F3E"},
+        {"name": "Orange", "hex": "E25303"},
+        {"name": "Red", "hex": "A72920"},
+        {"name": "Yellow", "hex": "CDA434"}
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 750
+        },
+        {
+          "weight": 2000
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        80,
+        90
+      ],
+      "colors": [
+        {"name": "White", "hex": "FFFFFF"},
+        {"name": "Black", "hex": "0A0A0A"},
+        {"name": "Blue", "hex": "3B83BD"},
+        {"name": "Gray", "hex": "575D5E"},
+        {"name": "Green", "hex": "3F8F3E"},
+        {"name": "Orange", "hex": "E25303"},
+        {"name": "Red", "hex": "A72920"},
+        {"name": "Yellow", "hex": "CDA434"}
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 4000
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        80,
+        90
+      ],
+      "colors": [
+        {"name": "Native", "hex": "E8F1F2", "translucent": true},
+        {"name": "White", "hex": "FFFFFF"},
+        {"name": "Black", "hex": "0A0A0A"},
+        {"name": "Blue", "hex": "3B83BD"},
+        {"name": "Gray", "hex": "575D5E"},
+        {"name": "Green", "hex": "3F8F3E"},
+        {"name": "Orange", "hex": "E25303"},
+        {"name": "Red", "hex": "A72920"},
+        {"name": "Yellow", "hex": "CDA434"}
+      ]
+    },
+    {
       "name": "PETG CF {color_name}",
       "material": "PETG-CF",
       "density": 1.35,
