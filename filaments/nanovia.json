@@ -145,6 +145,34 @@
       ]
     },
     {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 2000
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "101010"
+        }
+      ]
+    },
+    {
       "name": "PETG CF {color_name}",
       "material": "PETG-CF",
       "density": 1.35,
