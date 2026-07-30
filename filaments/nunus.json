@@ -1,0 +1,107 @@
+{
+  "manufacturer": "NuNus",
+  "filaments": [
+    {
+      "name": "PETG Filament {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        255
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Yellow",
+          "hex": "E2C62E",
+          "codes": [
+            "105376"
+          ]
+        },
+        {
+          "name": "Light Blue",
+          "hex": "60A8D8",
+          "codes": [
+            "105378"
+          ]
+        },
+        {
+          "name": "Black",
+          "hex": "1A1A1A",
+          "codes": [
+            "105380"
+          ]
+        },
+        {
+          "name": "Beige",
+          "hex": "C8B69B",
+          "codes": [
+            "105420"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "A6AAAD",
+          "codes": [
+            "105475"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "C43B3B",
+          "codes": [
+            "105496"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "777B7E",
+          "codes": [
+            "105498"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Smart ABS Filament {color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        255
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Orange",
+          "hex": "ED702D",
+          "codes": [
+            "104329"
+          ]
+        }
+      ]
+    }
+  ]
+}
