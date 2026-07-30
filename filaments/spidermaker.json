@@ -114,6 +114,63 @@
           "hex": "b66d4c"
         }
       ]
+    },
+    {
+      "name": "PA-CF20 {color_name}",
+      "material": "PA-CF",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 500
+        },
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        60,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "181818"
+        }
+      ]
+    },
+    {
+      "name": "Impact PC Alloy {color_name}",
+      "material": "PC",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        270,
+        290
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "181818"
+        }
+      ]
     }
   ]
 }
