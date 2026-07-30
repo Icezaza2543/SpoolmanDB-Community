@@ -1,0 +1,731 @@
+{
+  "manufacturer": "3DFOX",
+  "filaments": [
+    {
+      "name": "PLA REFILL {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        205,
+        235
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Antracit RAL7016",
+          "hex": "3f4548",
+          "codes": [
+            "7046"
+          ],
+          "eans_refill": [
+            "0796554969725"
+          ]
+        },
+        {
+          "name": "Hedvábně měděná",
+          "hex": "b46a45",
+          "codes": [
+            "6680"
+          ],
+          "eans_refill": [
+            "0721688578222"
+          ]
+        },
+        {
+          "name": "Pastelově tyrkysová",
+          "hex": "4aa9aa",
+          "codes": [
+            "6765"
+          ],
+          "eans_refill": [
+            "726529850819"
+          ]
+        },
+        {
+          "name": "Pistáciová zelená",
+          "hex": "4f8a4f",
+          "codes": [
+            "6770"
+          ],
+          "eans_refill": [
+            "07265298508642"
+          ]
+        },
+        {
+          "name": "Růžová",
+          "hex": "777777",
+          "codes": [
+            "7047"
+          ],
+          "eans_refill": [
+            "0796554969718"
+          ]
+        },
+        {
+          "name": "Stříbrná",
+          "hex": "8b9194",
+          "codes": [
+            "6692"
+          ],
+          "eans_refill": [
+            "0721688578215"
+          ]
+        },
+        {
+          "name": "Světle zelená",
+          "hex": "4f8a4f",
+          "codes": [
+            "6767"
+          ],
+          "eans_refill": [
+            "7265298508338"
+          ]
+        },
+        {
+          "name": "Tmavě modrá",
+          "hex": "326ea3",
+          "codes": [
+            "6764"
+          ],
+          "eans_refill": [
+            "07265298508024"
+          ]
+        },
+        {
+          "name": "Travnatě zelená",
+          "hex": "4f8a4f",
+          "codes": [
+            "6768"
+          ],
+          "eans_refill": [
+            "0726529850840"
+          ]
+        },
+        {
+          "name": "Třpytivý antracit",
+          "hex": "3f4548",
+          "codes": [
+            "6769"
+          ],
+          "eans_refill": [
+            "0726529850857"
+          ]
+        },
+        {
+          "name": "Tyrkysová modrá",
+          "hex": "326ea3",
+          "codes": [
+            "6766"
+          ],
+          "eans_refill": [
+            "0726529850826"
+          ]
+        },
+        {
+          "name": "Zlatá",
+          "hex": "b98a32",
+          "codes": [
+            "6749"
+          ],
+          "eans_refill": [
+            "0726529850888"
+          ]
+        },
+        {
+          "name": "Žlutá FLUO",
+          "hex": "f0d928",
+          "codes": [
+            "7048"
+          ],
+          "eans_refill": [
+            "0796554969701"
+          ]
+        },
+        {
+          "name": "Armádní zelená",
+          "hex": "4f8a4f",
+          "codes": [
+            "6214"
+          ],
+          "eans_refill": [
+            "0792649827222"
+          ]
+        },
+        {
+          "name": "Béžová",
+          "hex": "777777",
+          "codes": [
+            "6255"
+          ],
+          "eans_refill": [
+            "0721688578031"
+          ]
+        },
+        {
+          "name": "Bílá",
+          "hex": "f2f1e8",
+          "codes": [
+            "5904"
+          ],
+          "eans_refill": [
+            "0796554969749"
+          ]
+        },
+        {
+          "name": "Černá",
+          "hex": "171717",
+          "codes": [
+            "5907"
+          ],
+          "eans_refill": [
+            "0796554969756"
+          ]
+        },
+        {
+          "name": "Červená",
+          "hex": "b83232",
+          "codes": [
+            "5931"
+          ],
+          "eans_refill": [
+            "0792649827260"
+          ]
+        },
+        {
+          "name": "Citronově žlutá",
+          "hex": "f0d928",
+          "codes": [
+            "6259"
+          ],
+          "eans_refill": [
+            "0721688578093"
+          ]
+        },
+        {
+          "name": "Čokoládově hnědá",
+          "hex": "70452d",
+          "codes": [
+            "6256"
+          ],
+          "eans_refill": [
+            "0721688578048"
+          ]
+        },
+        {
+          "name": "Fialová",
+          "hex": "79519b",
+          "codes": [
+            "6254"
+          ],
+          "eans_refill": [
+            "0721688578000"
+          ]
+        },
+        {
+          "name": "Fuchsiová",
+          "hex": "777777",
+          "codes": [
+            "6262"
+          ],
+          "eans_refill": [
+            "0721688578024"
+          ]
+        },
+        {
+          "name": "Levandulová",
+          "hex": "777777",
+          "codes": [
+            "6263"
+          ],
+          "eans_refill": [
+            "0721688578017"
+          ]
+        },
+        {
+          "name": "Modrá",
+          "hex": "326ea3",
+          "codes": [
+            "6170"
+          ],
+          "eans_refill": [
+            "0792649827215"
+          ]
+        },
+        {
+          "name": "Pastelově oranžová",
+          "hex": "ef731d",
+          "codes": [
+            "6258"
+          ],
+          "eans_refill": [
+            "0721688578062"
+          ]
+        },
+        {
+          "name": "Přírodní",
+          "hex": "e8e8e3",
+          "codes": [
+            "5914"
+          ],
+          "eans_refill": [
+            "0796554969787"
+          ]
+        },
+        {
+          "name": "Šedá",
+          "hex": "8b9194",
+          "codes": [
+            "6215"
+          ],
+          "eans_refill": [
+            "0792649827208"
+          ]
+        },
+        {
+          "name": "Sírově žlutá",
+          "hex": "f0d928",
+          "codes": [
+            "6260"
+          ],
+          "eans_refill": [
+            "0721688578086"
+          ]
+        },
+        {
+          "name": "Světle hnědá",
+          "hex": "70452d",
+          "codes": [
+            "6261"
+          ],
+          "eans_refill": [
+            "0721688578055"
+          ]
+        },
+        {
+          "name": "Zářivě oranžová",
+          "hex": "ef731d",
+          "codes": [
+            "6257"
+          ],
+          "eans_refill": [
+            "0721688578079"
+          ]
+        },
+        {
+          "name": "Zelená",
+          "hex": "4f8a4f",
+          "codes": [
+            "5932"
+          ],
+          "eans_refill": [
+            "0792649827246"
+          ]
+        }
+      ],
+      "country_of_origin": "CZ",
+      "tds_url": "https://www.3dfoxshop.cz/user/related_files/technicky_list_pla_3dfox-8.pdf"
+    },
+    {
+      "name": "PLA REFILL {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 3000,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        205,
+        235
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Bílá",
+          "hex": "f2f1e8",
+          "codes": [
+            "6900"
+          ],
+          "eans_refill": [
+            "0726529850871"
+          ]
+        },
+        {
+          "name": "Černá",
+          "hex": "171717",
+          "codes": [
+            "6899"
+          ],
+          "eans_refill": [
+            "0735745926567"
+          ]
+        }
+      ],
+      "country_of_origin": "CZ",
+      "tds_url": "https://www.3dfoxshop.cz/user/related_files/technicky_list_pla_3dfox-8.pdf"
+    },
+    {
+      "name": "PETG REFILL {color_name}",
+      "material": "PETG",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Antracit",
+          "hex": "3f4548",
+          "codes": [
+            "7500"
+          ],
+          "eans_refill": [
+            "0792649827253"
+          ]
+        },
+        {
+          "name": "UV glow bílá",
+          "hex": "f2f1e8",
+          "codes": [
+            "7717"
+          ],
+          "eans_refill": [
+            "0735745926598"
+          ]
+        },
+        {
+          "name": "Armádní zelená",
+          "hex": "4f8a4f",
+          "codes": [
+            "6182"
+          ],
+          "eans_refill": [
+            "0792649827291"
+          ]
+        },
+        {
+          "name": "Béžová",
+          "hex": "777777",
+          "codes": [
+            "6452"
+          ],
+          "eans_refill": [
+            "0721688578147"
+          ]
+        },
+        {
+          "name": "Bílá",
+          "hex": "f2f1e8",
+          "codes": [
+            "5910"
+          ],
+          "eans_refill": [
+            "0796554969763"
+          ]
+        },
+        {
+          "name": "Černá",
+          "hex": "171717",
+          "codes": [
+            "5913"
+          ],
+          "eans_refill": [
+            "0796554969770"
+          ]
+        },
+        {
+          "name": "Červená",
+          "hex": "b83232",
+          "codes": [
+            "6180"
+          ],
+          "eans_refill": [
+            "0792649827277"
+          ]
+        },
+        {
+          "name": "Citronově žlutá",
+          "hex": "f0d928",
+          "codes": [
+            "6482"
+          ],
+          "eans_refill": [
+            "0721688578208"
+          ]
+        },
+        {
+          "name": "Čokoládově hnědá",
+          "hex": "70452d",
+          "codes": [
+            "6469"
+          ],
+          "eans_refill": [
+            "0721688578154"
+          ]
+        },
+        {
+          "name": "Fialová",
+          "hex": "79519b",
+          "codes": [
+            "6484"
+          ],
+          "eans_refill": [
+            "0721688578116"
+          ]
+        },
+        {
+          "name": "Fuchsiová",
+          "hex": "777777",
+          "codes": [
+            "6479"
+          ],
+          "eans_refill": [
+            "0721688578130"
+          ]
+        },
+        {
+          "name": "Levandulová",
+          "hex": "777777",
+          "codes": [
+            "6483"
+          ],
+          "eans_refill": [
+            "0721688578123"
+          ]
+        },
+        {
+          "name": "Modrá",
+          "hex": "326ea3",
+          "codes": [
+            "6171"
+          ],
+          "eans_refill": [
+            "0792649827284"
+          ]
+        },
+        {
+          "name": "Pastelově oranžová",
+          "hex": "ef731d",
+          "codes": [
+            "6453"
+          ],
+          "eans_refill": [
+            "0721688578178"
+          ]
+        },
+        {
+          "name": "Přírodní",
+          "hex": "e8e8e3",
+          "codes": [
+            "6179"
+          ],
+          "eans_refill": [
+            "0796554969794"
+          ]
+        },
+        {
+          "name": "Šedá",
+          "hex": "8b9194",
+          "codes": [
+            "6181"
+          ],
+          "eans_refill": [
+            "0735745926529"
+          ]
+        },
+        {
+          "name": "Sírově žlutá",
+          "hex": "f0d928",
+          "codes": [
+            "6481"
+          ],
+          "eans_refill": [
+            "0721688578192"
+          ]
+        },
+        {
+          "name": "Světle hnědá",
+          "hex": "70452d",
+          "codes": [
+            "6478"
+          ],
+          "eans_refill": [
+            "0721688578161"
+          ]
+        },
+        {
+          "name": "Zářivě oranžová",
+          "hex": "ef731d",
+          "codes": [
+            "6480"
+          ],
+          "eans_refill": [
+            "0721688578185"
+          ]
+        },
+        {
+          "name": "Zelená",
+          "hex": "4f8a4f",
+          "codes": [
+            "6199"
+          ],
+          "eans_refill": [
+            "0792649827239"
+          ]
+        }
+      ],
+      "country_of_origin": "CZ",
+      "tds_url": "https://www.3dfoxshop.cz/user/related_files/technicky_list_petg_3dfox-5.pdf"
+    },
+    {
+      "name": "PETG REFILL {color_name}",
+      "material": "PETG",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 3000,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Bílá",
+          "hex": "f2f1e8",
+          "codes": [
+            "6866"
+          ],
+          "eans_refill": [
+            "0726529850895"
+          ]
+        },
+        {
+          "name": "Černá",
+          "hex": "171717",
+          "codes": [
+            "6865"
+          ],
+          "eans_refill": [
+            "0735745926505"
+          ]
+        }
+      ],
+      "country_of_origin": "CZ",
+      "tds_url": "https://www.3dfoxshop.cz/user/related_files/technicky_list_petg_3dfox-5.pdf"
+    },
+    {
+      "name": "ABS REFILL {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 850,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        280
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Černá",
+          "hex": "171717",
+          "codes": [
+            "6818"
+          ],
+          "eans_refill": [
+            "0721688578246"
+          ]
+        }
+      ],
+      "country_of_origin": "CZ",
+      "tds_url": "https://www.3dfoxshop.cz/user/related_files/technick___list_abs_fox_refill.pdf"
+    },
+    {
+      "name": "ASA REFILL {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 850,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        280
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Černá",
+          "hex": "171717",
+          "codes": [
+            "6849"
+          ],
+          "eans_refill": [
+            "0721688578239"
+          ]
+        }
+      ],
+      "country_of_origin": "CZ",
+      "tds_url": "https://www.3dfoxshop.cz/user/related_files/materialovy_list_asa.pdf"
+    }
+  ]
+}
