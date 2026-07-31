@@ -4,7 +4,7 @@
     {
       "name": "Blend {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.26,
       "weights": [
         {
           "weight": 1000,
@@ -20,7 +20,7 @@
       ],
       "bed_temp_range": [
         45,
-        45
+        55
       ],
       "colors": [
         {
@@ -32,7 +32,7 @@
           "hex": "126768"
         }
       ],
-      "country_of_origin": "CH"
+      "country_of_origin": "AR"
     },
     {
       "name": "HIPS {color_name}",
@@ -52,8 +52,8 @@
         245
       ],
       "bed_temp_range": [
-        80,
-        80
+        75,
+        85
       ],
       "colors": [
         {
@@ -61,7 +61,7 @@
           "hex": "000000"
         }
       ],
-      "country_of_origin": "CH"
+      "country_of_origin": "AR"
     },
     {
       "name": "PETG {color_name}",
@@ -82,7 +82,7 @@
       ],
       "bed_temp_range": [
         65,
-        65
+        80
       ],
       "colors": [
         {
@@ -90,12 +90,12 @@
           "hex": "2e35ff"
         }
       ],
-      "country_of_origin": "CH"
+      "country_of_origin": "AR"
     },
     {
       "name": "PLA Silk {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.23,
       "weights": [
         {
           "weight": 1000,
@@ -123,12 +123,12 @@
           "multi_color_direction": "longitudinal"
         }
       ],
-      "country_of_origin": "CH"
+      "country_of_origin": "AR"
     },
     {
       "name": "PLA {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.25,
       "weights": [
         {
           "weight": 1000,
@@ -144,7 +144,7 @@
       ],
       "bed_temp_range": [
         40,
-        40
+        55
       ],
       "colors": [
         {
@@ -200,7 +200,72 @@
           "hex": "29f91a"
         }
       ],
-      "country_of_origin": "CH"
+      "country_of_origin": "AR"
+    },
+    {
+      "name": "Acetal {color_name}",
+      "material": "POM",
+      "density": 1.37,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Blanco",
+          "hex": "f5f5f5",
+          "codes": [
+            "M03IBL175CJ"
+          ],
+          "eans": [
+            "7798049654010"
+          ]
+        },
+        {
+          "name": "Gris Acero",
+          "hex": "73777b",
+          "codes": [
+            "M03IGA175CJ"
+          ],
+          "eans": [
+            "7798049653686"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M03ING175CJ"
+          ],
+          "eans": [
+            "7798049654003"
+          ]
+        },
+        {
+          "name": "Rojo",
+          "hex": "c62828",
+          "codes": [
+            "M03IRJ175CJ"
+          ],
+          "eans": [
+            "7798049653990"
+          ]
+        }
+      ],
+      "country_of_origin": "AR"
     }
   ]
 }

@@ -280,6 +280,34 @@
           "hex": "181818"
         }
       ]
+    },
+    {
+      "name": "TECAFIL PES {color_name}",
+      "material": "PES",
+      "density": 1.37,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        380,
+        430
+      ],
+      "bed_temp_range": [
+        180,
+        240
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "c99b63"
+        }
+      ]
     }
   ]
 }
