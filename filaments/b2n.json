@@ -1,0 +1,113 @@
+{
+  "manufacturer": "B2N",
+  "filaments": [
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "tds_url": "https://cdn.b2n.bg/files/TDS/B2N%20ASA%20TDS.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Natural",
+          "hex": "e8e0d0"
+        },
+        {
+          "name": "Silver",
+          "hex": "a6a9ad"
+        },
+        {
+          "name": "White",
+          "hex": "f5f5f5"
+        }
+      ]
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ],
+      "tds_url": "https://cdn.b2n.bg/files/TDS/B2N%20PLA%20MATTE%20TDS.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Blue",
+          "hex": "1f4e9a"
+        },
+        {
+          "name": "Yellow",
+          "hex": "f2c500"
+        }
+      ]
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        0,
+        50
+      ],
+      "tds_url": "https://cdn.b2n.bg/files/TDS/B2N%20PLA%20MATTE%20TDS.pdf",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ]
+    }
+  ]
+}
