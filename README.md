@@ -68,13 +68,13 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 <!-- readme-snapshot:start -->
 | Source | Count |
 | --- | ---: |
-| Manufacturer source files | 476 |
+| Manufacturer source files | 477 |
 | Material definitions | 152 |
-| Source filament objects | 4,885 |
-| Color entries | 30,295 |
-| Compiled filament variants | 52,459 |
+| Source filament objects | 4,889 |
+| Color entries | 30,351 |
+| Compiled filament variants | 52,517 |
 | Source filaments with country of origin | 4,520 |
-| Source filaments with TDS/product links | 501 |
+| Source filaments with TDS/product links | 504 |
 | Source filaments with SDS links | 9 |
 | Manufacturer product code/ID entries | 7,845 |
 | EAN/GTIN entries | 2,015 |
@@ -92,7 +92,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 | `spool_type: refill` (legacy) | 34 |
 | `spool_type: unknow` (legacy) | 26 |
 | `spool_type: null` | 0 |
-| `spool_type` omitted | 177 |
+| `spool_type` omitted | 182 |
 | Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 42 |
 <!-- readme-snapshot:end -->
 
