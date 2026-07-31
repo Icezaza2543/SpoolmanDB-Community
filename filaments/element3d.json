@@ -1,0 +1,125 @@
+{
+  "manufacturer": "Element3D",
+  "filaments": [
+    {
+      "name": "ABS X {color_name}",
+      "material": "ABS",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 750
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        255
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Yellow",
+          "hex": "f2c037"
+        },
+        {
+          "name": "Red",
+          "hex": "c62828"
+        },
+        {
+          "name": "Blue",
+          "hex": "2456a6"
+        },
+        {
+          "name": "Light Blue",
+          "hex": "35a9c5"
+        },
+        {
+          "name": "Orange",
+          "hex": "ef6c00"
+        },
+        {
+          "name": "Green",
+          "hex": "2e7d32"
+        },
+        {
+          "name": "Light Green",
+          "hex": "7ed321"
+        },
+        {
+          "name": "Brown",
+          "hex": "7a4a2a"
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf"
+        },
+        {
+          "name": "White",
+          "hex": "f2f2ee"
+        },
+        {
+          "name": "Beige",
+          "hex": "d3b48f"
+        },
+        {
+          "name": "Aqua",
+          "hex": "777777"
+        },
+        {
+          "name": "Pink",
+          "hex": "ec7aa8"
+        },
+        {
+          "name": "Black",
+          "hex": "1b1b1b"
+        },
+        {
+          "name": "Purple",
+          "hex": "7b4aa8"
+        },
+        {
+          "name": "Gray",
+          "hex": "777777"
+        }
+      ]
+    },
+    {
+      "name": "FLEX 45 {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 500
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1b1b1b"
+        },
+        {
+          "name": "White",
+          "hex": "f2f2ee"
+        }
+      ]
+    }
+  ]
+}
