@@ -58,7 +58,13 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "M08ING175CJ"
+          ],
+          "eans": [
+            "7798049653136"
+          ]
         }
       ],
       "country_of_origin": "AR"
@@ -87,7 +93,13 @@
       "colors": [
         {
           "name": "Clear Azul",
-          "hex": "2e35ff"
+          "hex": "2e35ff",
+          "codes": [
+            "M77IAZ175CJ"
+          ],
+          "eans": [
+            "7798049653778"
+          ]
         }
       ],
       "country_of_origin": "AR"
@@ -120,7 +132,13 @@
             "edc244",
             "ffd700"
           ],
-          "multi_color_direction": "longitudinal"
+          "multi_color_direction": "longitudinal",
+          "codes": [
+            "M10IGE175CJ-1"
+          ],
+          "eans": [
+            "7798049654492"
+          ]
         }
       ],
       "country_of_origin": "AR"
@@ -149,19 +167,43 @@
       "colors": [
         {
           "name": "Amarillo",
-          "hex": "fedf00"
+          "hex": "fedf00",
+          "codes": [
+            "M10IAM175CJ"
+          ],
+          "eans": [
+            "7798049652832"
+          ]
         },
         {
           "name": "Amarillo Fluo",
-          "hex": "e0e721"
+          "hex": "e0e721",
+          "codes": [
+            "M10IAF175CJ"
+          ],
+          "eans": [
+            "7798049652979"
+          ]
         },
         {
           "name": "Azul",
-          "hex": "0035a0"
+          "hex": "0035a0",
+          "codes": [
+            "M10IAZ175CJ"
+          ],
+          "eans": [
+            "7798049652856"
+          ]
         },
         {
           "name": "Blanco",
-          "hex": "ffffff"
+          "hex": "ffffff",
+          "codes": [
+            "M10IBL175CJ"
+          ],
+          "eans": [
+            "7798049652788"
+          ]
         },
         {
           "name": "Butique Chocolate",
@@ -169,35 +211,83 @@
         },
         {
           "name": "Gris Espacial",
-          "hex": "e0e0e0"
+          "hex": "e0e0e0",
+          "codes": [
+            "M10IGE175CJ"
+          ],
+          "eans": [
+            "7798049652986"
+          ]
         },
         {
           "name": "Gris Plata",
-          "hex": "75787b"
+          "hex": "75787b",
+          "codes": [
+            "M10IGR175CJ"
+          ],
+          "eans": [
+            "7798049652818"
+          ]
         },
         {
           "name": "Negro",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "M10ING175CJ"
+          ],
+          "eans": [
+            "7798049652795"
+          ]
         },
         {
           "name": "Piel 162",
-          "hex": "ffbe9f"
+          "hex": "ffbe9f",
+          "codes": [
+            "M10IPI175CJ"
+          ],
+          "eans": [
+            "7798049654577"
+          ]
         },
         {
           "name": "Rojo",
-          "hex": "ff0000"
+          "hex": "ff0000",
+          "codes": [
+            "M10IRJ175CJ"
+          ],
+          "eans": [
+            "7798049652825"
+          ]
         },
         {
           "name": "Rosa",
-          "hex": "ff7aed"
+          "hex": "ff7aed",
+          "codes": [
+            "M10IRS175CJ"
+          ],
+          "eans": [
+            "7798049652894"
+          ]
         },
         {
           "name": "Verde",
-          "hex": "009a49"
+          "hex": "009a49",
+          "codes": [
+            "M10IVR175CJ"
+          ],
+          "eans": [
+            "7798049652849"
+          ]
         },
         {
           "name": "Verde Fluo",
-          "hex": "29f91a"
+          "hex": "29f91a",
+          "codes": [
+            "M10IVF175CJ"
+          ],
+          "eans": [
+            "7798049652955"
+          ]
         }
       ],
       "country_of_origin": "AR"
@@ -262,6 +352,2014 @@
           ],
           "eans": [
             "7798049653990"
+          ]
+        }
+      ],
+      "country_of_origin": "AR"
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Fucsia",
+          "hex": "d81b60",
+          "codes": [
+            "M09IFU175CJ"
+          ],
+          "eans": [
+            "7798049653099"
+          ]
+        },
+        {
+          "name": "Naranja Flúo",
+          "hex": "ef6c00",
+          "codes": [
+            "M09INF175CJ"
+          ],
+          "eans": [
+            "7798049653082"
+          ]
+        },
+        {
+          "name": "Azul",
+          "hex": "2456a6",
+          "codes": [
+            "M09IAZ175CJ"
+          ],
+          "eans": [
+            "7798049653075"
+          ]
+        },
+        {
+          "name": "Verde",
+          "hex": "2e7d32",
+          "codes": [
+            "M09IVR175CJ"
+          ],
+          "eans": [
+            "7798049653068"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M09INT175CJ"
+          ],
+          "eans": [
+            "7798049653020"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M09ING175C"
+          ],
+          "eans": [
+            "7798049653013"
+          ]
+        },
+        {
+          "name": "Amarillo",
+          "hex": "f2c037",
+          "codes": [
+            "M09IAM175CJ"
+          ],
+          "eans": [
+            "7798049653051"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M09IBL175CJ"
+          ],
+          "eans": [
+            "7798049653006"
+          ]
+        },
+        {
+          "name": "Gris Plata",
+          "hex": "80868b",
+          "codes": [
+            "M09IGR175CJ"
+          ],
+          "eans": [
+            "7798049653037"
+          ]
+        },
+        {
+          "name": "Rojo",
+          "hex": "c62828",
+          "codes": [
+            "M09IRJ175CJ"
+          ],
+          "eans": [
+            "7798049653044"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        85,
+        95
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Clear Ámbar",
+          "hex": "e6dfcf",
+          "codes": [
+            "M77IAM175CJ-1"
+          ],
+          "eans": [
+            "7798049653785"
+          ]
+        },
+        {
+          "name": "Gris Plata",
+          "hex": "80868b",
+          "codes": [
+            "M77IGA175CJ-1"
+          ],
+          "eans": [
+            "7798049654157"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M77IBL175CJ"
+          ],
+          "eans": [
+            "7798049653693"
+          ]
+        },
+        {
+          "name": "Clear Amarillo",
+          "hex": "e6dfcf",
+          "codes": [
+            "M77IAM175CJ"
+          ],
+          "eans": [
+            "7798049653754"
+          ]
+        },
+        {
+          "name": "Grís Acero",
+          "hex": "80868b",
+          "codes": [
+            "M77IGA175CJ"
+          ],
+          "eans": [
+            "7798049653730"
+          ]
+        },
+        {
+          "name": "Naranja Praga",
+          "hex": "ef6c00",
+          "codes": [
+            "M77INP175CJ"
+          ],
+          "eans": [
+            "7798049653716"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M77INT175CJ"
+          ],
+          "eans": [
+            "7798049653723"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M77ING175CJ"
+          ],
+          "eans": [
+            "7798049653709"
+          ]
+        },
+        {
+          "name": "Chocolate",
+          "hex": "7a4a2a",
+          "codes": [
+            "M77ICH175CJ"
+          ],
+          "eans": [
+            "7798049654065"
+          ]
+        },
+        {
+          "name": "Clear Nova",
+          "hex": "e6dfcf",
+          "codes": [
+            "M77INV175CJ"
+          ],
+          "eans": [
+            "7798049653808"
+          ]
+        },
+        {
+          "name": "Clear Rojo",
+          "hex": "e6dfcf",
+          "codes": [
+            "M77IRJ175CJ"
+          ],
+          "eans": [
+            "7798049653747"
+          ]
+        },
+        {
+          "name": "Clear Verde",
+          "hex": "e6dfcf",
+          "codes": [
+            "M77IVR175CJ"
+          ],
+          "eans": [
+            "7798049653761"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        65,
+        80
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "colors": [
+        {
+          "name": "Dorado",
+          "hex": "f2c037",
+          "codes": [
+            "M10IDO175CJ"
+          ],
+          "eans": [
+            "7798049657370"
+          ]
+        },
+        {
+          "name": "Magenta",
+          "hex": "d81b60",
+          "codes": [
+            "M10IMF175CJ"
+          ],
+          "eans": [
+            "7798049657363"
+          ]
+        },
+        {
+          "name": "Carpincho &#8211; Serie Limitada",
+          "hex": "7a4a2a",
+          "codes": [
+            "M10ICA175CJ"
+          ],
+          "eans": [
+            "7798049657387"
+          ]
+        },
+        {
+          "name": "Azul Prusia",
+          "hex": "2456a6",
+          "codes": [
+            "M10IAF175CJ-1"
+          ],
+          "eans": [
+            "7798049654706"
+          ]
+        },
+        {
+          "name": "Piel 720",
+          "hex": "d3b48f",
+          "codes": [
+            "M10IPI175CJ-1"
+          ],
+          "eans": [
+            "7798049654560"
+          ]
+        },
+        {
+          "name": "Verde Manzana",
+          "hex": "2e7d32",
+          "codes": [
+            "M10IVM175CJ"
+          ],
+          "eans": [
+            "7798049652993"
+          ]
+        },
+        {
+          "name": "Bordó",
+          "hex": "c62828",
+          "codes": [
+            "M10IBO175CJ"
+          ],
+          "eans": [
+            "7798049652948"
+          ]
+        },
+        {
+          "name": "Turquesa",
+          "hex": "35a9c5",
+          "codes": [
+            "M10ITU175CJ"
+          ],
+          "eans": [
+            "7798049652931"
+          ]
+        },
+        {
+          "name": "Cobre",
+          "hex": "7a4a2a",
+          "codes": [
+            "M10ICO175CJ"
+          ],
+          "eans": [
+            "7798049652924"
+          ]
+        },
+        {
+          "name": "Bronce",
+          "hex": "7a4a2a",
+          "codes": [
+            "M10IBR175CJ"
+          ],
+          "eans": [
+            "7798049652917"
+          ]
+        },
+        {
+          "name": "Celeste",
+          "hex": "35a9c5",
+          "codes": [
+            "M10ICE175CJ"
+          ],
+          "eans": [
+            "7798049652900"
+          ]
+        },
+        {
+          "name": "Violeta",
+          "hex": "7b4aa8",
+          "codes": [
+            "M10IVI175CJ"
+          ],
+          "eans": [
+            "7798049652887"
+          ]
+        },
+        {
+          "name": "Fucsia",
+          "hex": "d81b60",
+          "codes": [
+            "M10IFU175CJ"
+          ],
+          "eans": [
+            "7798049652870"
+          ]
+        },
+        {
+          "name": "Naranja Flúo",
+          "hex": "ef6c00",
+          "codes": [
+            "M10INF175CJ"
+          ],
+          "eans": [
+            "7798049652863"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M10INT175CJ"
+          ],
+          "eans": [
+            "7798049652801"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        40,
+        55
+      ]
+    },
+    {
+      "name": "Acetal {color_name}",
+      "material": "POM",
+      "density": 1.37,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "colors": [
+        {
+          "name": "Gris Plata",
+          "hex": "80868b",
+          "codes": [
+            "M03IGR175CJ"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        90,
+        110
+      ]
+    },
+    {
+      "name": "HIPS {color_name}",
+      "material": "HIPS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Azul",
+          "hex": "2456a6",
+          "codes": [
+            "M08ING175CJ-2-1"
+          ],
+          "eans": [
+            "7798049653174"
+          ]
+        },
+        {
+          "name": "Rojo",
+          "hex": "c62828",
+          "codes": [
+            "M08ING175CJ-2"
+          ],
+          "eans": [
+            "7798049653150"
+          ]
+        },
+        {
+          "name": "Verde",
+          "hex": "2e7d32",
+          "codes": [
+            "M08ING175CJ-1"
+          ],
+          "eans": [
+            "7798049653167"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M08INT175CJ"
+          ],
+          "eans": [
+            "7798049653143"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M08IBL175CJ"
+          ],
+          "eans": [
+            "7798049653129"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        75,
+        85
+      ]
+    },
+    {
+      "name": "PLA Astra {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "colors": [
+        {
+          "name": "Roby",
+          "hex": "777777",
+          "codes": [
+            "M22IRO175CJ"
+          ],
+          "eans": [
+            "7798049654515"
+          ]
+        },
+        {
+          "name": "Nebula",
+          "hex": "2456a6",
+          "codes": [
+            "M22INE175CJ"
+          ],
+          "eans": [
+            "7798049654546"
+          ]
+        },
+        {
+          "name": "Dark",
+          "hex": "1b1b1b",
+          "codes": [
+            "M22IDA175CJ"
+          ],
+          "eans": [
+            "7798049654508"
+          ]
+        },
+        {
+          "name": "Noche",
+          "hex": "2456a6",
+          "codes": [
+            "M22INO175CJ"
+          ],
+          "eans": [
+            "7798049654539"
+          ]
+        },
+        {
+          "name": "Jade",
+          "hex": "2e7d32",
+          "codes": [
+            "M22IJA175CJ"
+          ],
+          "eans": [
+            "7798049654522"
+          ]
+        },
+        {
+          "name": "Calipso",
+          "hex": "35a9c5",
+          "codes": [
+            "M22ICA175CJ"
+          ],
+          "eans": [
+            "7798049654553"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        40,
+        55
+      ]
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        175,
+        215
+      ],
+      "colors": [
+        {
+          "name": "Tutti Frutti",
+          "hex": "777777",
+          "codes": [
+            "M10IGE175CJ-1-3-2-1-1"
+          ],
+          "eans": [
+            "7798049654645"
+          ]
+        },
+        {
+          "name": "Platino",
+          "hex": "80868b",
+          "codes": [
+            "M10IGE175CJ-1-3-2-1"
+          ],
+          "eans": [
+            "7798049654638"
+          ]
+        },
+        {
+          "name": "Cobre",
+          "hex": "7a4a2a",
+          "codes": [
+            "M10IGE175CJ-1-3-2"
+          ],
+          "eans": [
+            "7798049654652"
+          ]
+        },
+        {
+          "name": "Azabache",
+          "hex": "1b1b1b",
+          "codes": [
+            "M10IGE175CJ-1-3-1"
+          ],
+          "eans": [
+            "7798049654584"
+          ]
+        },
+        {
+          "name": "Verde",
+          "hex": "2e7d32",
+          "codes": [
+            "M10IGE175CJ-1-3"
+          ],
+          "eans": [
+            "7798049654485"
+          ]
+        },
+        {
+          "name": "Blanco Perla",
+          "hex": "f2f2ee",
+          "codes": [
+            "M10IGE175CJ-1-2"
+          ],
+          "eans": [
+            "7798049654461"
+          ]
+        },
+        {
+          "name": "Azul",
+          "hex": "2456a6",
+          "codes": [
+            "M10IGE175CJ-1-1"
+          ],
+          "eans": [
+            "7798049654478"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        45,
+        45
+      ]
+    },
+    {
+      "name": "PLA Wood {color_name}",
+      "material": "PLA",
+      "density": 1.18,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        200
+      ],
+      "colors": [
+        {
+          "name": "Cerezo",
+          "hex": "d3b48f",
+          "codes": [
+            "M20ICE175CJ"
+          ],
+          "eans": [
+            "7798049654379"
+          ]
+        },
+        {
+          "name": "Nogal",
+          "hex": "7a4a2a",
+          "codes": [
+            "M20INO175CJ"
+          ],
+          "eans": [
+            "7798049654355"
+          ]
+        },
+        {
+          "name": "Pino",
+          "hex": "d3b48f",
+          "codes": [
+            "M20IPI175CJ"
+          ],
+          "eans": [
+            "7798049654348"
+          ]
+        },
+        {
+          "name": "Caoba",
+          "hex": "7a4a2a",
+          "codes": [
+            "M20ICA175CJ"
+          ],
+          "eans": [
+            "7798049654362"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        50,
+        50
+      ]
+    },
+    {
+      "name": "Simpliflex {color_name}",
+      "material": "TPU",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Celeste",
+          "hex": "35a9c5",
+          "codes": [
+            "M13ICE175CJ"
+          ],
+          "eans": [
+            "7798049653860"
+          ]
+        },
+        {
+          "name": "Naranja",
+          "hex": "ef6c00",
+          "codes": [
+            "M13INA175CJ"
+          ],
+          "eans": [
+            "7798049653877"
+          ]
+        },
+        {
+          "name": "Verde",
+          "hex": "2e7d32",
+          "codes": [
+            "M13IVR175CJ"
+          ],
+          "eans": [
+            "7798049653853"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M13INT175CJ"
+          ],
+          "eans": [
+            "7798049653822"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M13ING175CJ"
+          ],
+          "eans": [
+            "7798049653846"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M13IBL175CJ"
+          ],
+          "eans": [
+            "7798049653839"
+          ]
+        },
+        {
+          "name": "Nova",
+          "hex": "777777",
+          "codes": [
+            "M13INV175CJ"
+          ],
+          "eans": [
+            "7798049653983"
+          ]
+        }
+      ],
+      "country_of_origin": "AR"
+    },
+    {
+      "name": "Nylon 12 {color_name}",
+      "material": "PA12",
+      "density": 1.01,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        250
+      ],
+      "colors": [
+        {
+          "name": "Titanio",
+          "hex": "80868b",
+          "codes": [
+            "M12ITI175CJ"
+          ],
+          "eans": [
+            "7798049653273"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M12INT175CJ"
+          ],
+          "eans": [
+            "7798049653266"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M12ING175CJ"
+          ],
+          "eans": [
+            "7798049653259"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M12IBL175CJ"
+          ],
+          "eans": [
+            "7798049653242"
+          ]
+        },
+        {
+          "name": "Azul",
+          "hex": "2456a6",
+          "codes": [
+            "M12IAZ175CJ"
+          ],
+          "eans": [
+            "7798049653280"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        90,
+        110
+      ]
+    },
+    {
+      "name": "Nylon 6 {color_name}",
+      "material": "PA6",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M01INT175CJ"
+          ],
+          "eans": [
+            "7798049653204"
+          ]
+        },
+        {
+          "name": "Verde Flúo",
+          "hex": "7ed321",
+          "codes": [
+            "M01IVF175CJ"
+          ],
+          "eans": [
+            "7798049653228"
+          ]
+        },
+        {
+          "name": "Óptico",
+          "hex": "777777",
+          "codes": [
+            "M01IOT175CJ"
+          ],
+          "eans": [
+            "7798049653235"
+          ]
+        },
+        {
+          "name": "Naranja Flúo",
+          "hex": "ef6c00",
+          "codes": [
+            "M01INF175CJ"
+          ],
+          "eans": [
+            "7798049653211"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M01ING175CJ"
+          ],
+          "eans": [
+            "7798049653198"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M01IBL175CJ"
+          ],
+          "eans": [
+            "7798049653181"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        90,
+        110
+      ]
+    },
+    {
+      "name": "PLA 850 {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "colors": [
+        {
+          "name": "Turquesa",
+          "hex": "35a9c5",
+          "codes": [
+            "M11ITU175CJ"
+          ],
+          "eans": [
+            "7798049653440"
+          ]
+        },
+        {
+          "name": "Rojo",
+          "hex": "c62828",
+          "codes": [
+            "M11IRJ175CJ"
+          ],
+          "eans": [
+            "7798049653402"
+          ]
+        },
+        {
+          "name": "Gris Plata",
+          "hex": "80868b",
+          "codes": [
+            "M11IGR175CJ"
+          ],
+          "eans": [
+            "7798049653396"
+          ]
+        },
+        {
+          "name": "Bronce",
+          "hex": "7a4a2a",
+          "codes": [
+            "M11IBR175CJ"
+          ],
+          "eans": [
+            "7798049653792"
+          ]
+        },
+        {
+          "name": "Bordó",
+          "hex": "c62828",
+          "codes": [
+            "M11IBO175CJ"
+          ],
+          "eans": [
+            "7798049653457"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M11IBL175CJ"
+          ],
+          "eans": [
+            "7798049653372"
+          ]
+        },
+        {
+          "name": "Azul",
+          "hex": "2456a6",
+          "codes": [
+            "M11IAZ175CJ"
+          ],
+          "eans": [
+            "7798049653419"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M11ING175C"
+          ],
+          "eans": [
+            "7798049653389"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        40,
+        55
+      ]
+    },
+    {
+      "name": "PLA 870 {color_name}",
+      "material": "PLA",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "colors": [
+        {
+          "name": "Turquesa",
+          "hex": "35a9c5",
+          "codes": [
+            "M15ITU175CJ"
+          ],
+          "eans": [
+            "7798049653495"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M15ING175CJ"
+          ],
+          "eans": [
+            "7798049653471"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M15INT175CJ"
+          ],
+          "eans": [
+            "7798049653945"
+          ]
+        },
+        {
+          "name": "Bordó",
+          "hex": "c62828",
+          "codes": [
+            "M15IBO175CJ"
+          ],
+          "eans": [
+            "7798049653501"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M15IBL175CJ"
+          ],
+          "eans": [
+            "7798049653464"
+          ]
+        },
+        {
+          "name": "Gris Plata",
+          "hex": "80868b",
+          "codes": [
+            "M15IGR175CJ"
+          ],
+          "eans": [
+            "7798049653488"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        45,
+        55
+      ]
+    },
+    {
+      "name": "PLA Zeta {color_name}",
+      "material": "PLA",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "colors": [
+        {
+          "name": "Clear Cristal",
+          "hex": "e6dfcf",
+          "codes": [
+            "M16ICR175CJ"
+          ],
+          "eans": [
+            "7798049653624"
+          ]
+        },
+        {
+          "name": "Azabache",
+          "hex": "1b1b1b",
+          "codes": [
+            "M16IZB175CJ"
+          ],
+          "eans": [
+            "7798049653617"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        60,
+        75
+      ]
+    },
+    {
+      "name": "PP-T {color_name}",
+      "material": "PP",
+      "density": 0.92,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        230
+      ],
+      "colors": [
+        {
+          "name": "Verde",
+          "hex": "2e7d32",
+          "codes": [
+            "M04IVR175CJ"
+          ],
+          "eans": [
+            "7798049654737"
+          ]
+        },
+        {
+          "name": "Amarillo",
+          "hex": "f2c037",
+          "codes": [
+            "M04IAM175CJ"
+          ],
+          "eans": [
+            "7798049654720"
+          ]
+        },
+        {
+          "name": "Azul",
+          "hex": "2456a6",
+          "codes": [
+            "M04IAZ175CJ"
+          ],
+          "eans": [
+            "7798049654447"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M04INT175CJ"
+          ],
+          "eans": [
+            "7798049654423"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        90,
+        100
+      ]
+    },
+    {
+      "name": "PVA Soluble {color_name}",
+      "material": "PVA",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "e6dfcf",
+          "codes": [
+            "M18INT175CI"
+          ],
+          "eans": [
+            "7798049653815"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        60,
+        60
+      ]
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "1b1b1b"
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee"
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        85,
+        95
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        225,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "1b1b1b"
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee"
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        65,
+        80
+      ]
+    },
+    {
+      "name": "Maxicarrete ABS {color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 2500,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Turquesa",
+          "hex": "35a9c5",
+          "codes": [
+            "M09IFU175CJ-1-1-1"
+          ],
+          "eans": [
+            "7798049654393"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M09IFU175CJ-1-1"
+          ],
+          "eans": [
+            "7798049654713"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M09IFU175CJ-1"
+          ],
+          "eans": [
+            "7798049654386"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        85,
+        95
+      ]
+    },
+    {
+      "name": "Maxicarrete PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 2500,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M77IBL175CJ-1-1"
+          ],
+          "eans": [
+            "7798049654232"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M77IBL175CJ-1"
+          ],
+          "eans": [
+            "7798049654225"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        65,
+        80
+      ]
+    },
+    {
+      "name": "Maxicarrete PLA 850 {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 2500,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "colors": [
+        {
+          "name": "Gris Plata",
+          "hex": "80868b",
+          "codes": [
+            "M11IGR175C2"
+          ],
+          "eans": [
+            "7798049654195"
+          ]
+        },
+        {
+          "name": "Bronce",
+          "hex": "7a4a2a",
+          "codes": [
+            "M11IBR175C2"
+          ],
+          "eans": [
+            "7798049654188"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M11IBL175C2"
+          ],
+          "eans": [
+            "7798049654164"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M11ING175C2"
+          ],
+          "eans": [
+            "7798049654171"
+          ]
+        },
+        {
+          "name": "Azul",
+          "hex": "2456a6",
+          "codes": [
+            "M11IAZ175C2"
+          ],
+          "eans": [
+            "7798049654218"
+          ]
+        },
+        {
+          "name": "Rojo",
+          "hex": "c62828",
+          "codes": [
+            "M11IRJ175C2"
+          ],
+          "eans": [
+            "7798049654201"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        40,
+        55
+      ]
+    },
+    {
+      "name": "PLA {color_name} Megafill",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 4000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "colors": [
+        {
+          "name": "Piel 162",
+          "hex": "d3b48f",
+          "codes": [
+            "M10IPI175C4"
+          ],
+          "eans": [
+            "7798049654812"
+          ]
+        },
+        {
+          "name": "Amarillo",
+          "hex": "f2c037",
+          "codes": [
+            "M10IAM175C4"
+          ],
+          "eans": [
+            "7798049654782"
+          ]
+        },
+        {
+          "name": "Gris Plata",
+          "hex": "80868b",
+          "codes": [
+            "M10IGR175C4"
+          ],
+          "eans": [
+            "7798049654768"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M10ING175C4"
+          ],
+          "eans": [
+            "7798049654751"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M10IBL175C4"
+          ],
+          "eans": [
+            "7798049654744"
+          ]
+        },
+        {
+          "name": "Azul",
+          "hex": "2456a6",
+          "codes": [
+            "M10IAZ175C4"
+          ],
+          "eans": [
+            "7798049654799"
+          ]
+        },
+        {
+          "name": "Rojo",
+          "hex": "c62828",
+          "codes": [
+            "M10IRJ175C4"
+          ],
+          "eans": [
+            "7798049654775"
+          ]
+        },
+        {
+          "name": "Turquesa",
+          "hex": "35a9c5",
+          "codes": [
+            "M10ITU175C4"
+          ],
+          "eans": [
+            "7798049654805"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        40,
+        55
+      ]
+    },
+    {
+      "name": "PETG {color_name} Megafill",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 4000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        225,
+        245
+      ],
+      "colors": [
+        {
+          "name": "Clear Verde",
+          "hex": "e6dfcf",
+          "codes": [
+            "M77IVR175C4"
+          ]
+        },
+        {
+          "name": "Blanco",
+          "hex": "f2f2ee",
+          "codes": [
+            "M77IBL175C4"
+          ],
+          "eans": [
+            "7798049657424"
+          ]
+        },
+        {
+          "name": "Negro",
+          "hex": "1b1b1b",
+          "codes": [
+            "M77ING175C4"
+          ],
+          "eans": [
+            "7798049657431"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        65,
+        80
+      ]
+    },
+    {
+      "name": "PLA Boutique {color_name} Megafill",
+      "material": "PLA",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 4000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "colors": [
+        {
+          "name": "Perla",
+          "hex": "f2f2ee",
+          "codes": [
+            "M17IPE175C4"
+          ],
+          "eans": [
+            "7798049654829"
+          ]
+        }
+      ],
+      "country_of_origin": "AR",
+      "bed_temp_range": [
+        45,
+        55
+      ]
+    },
+    {
+      "name": "PLA Boutique {color_name}",
+      "material": "PLA",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        45,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Perla frío",
+          "hex": "f2f2ee",
+          "codes": [
+            "M17IPE175CJ-1"
+          ]
+        },
+        {
+          "name": "Rubí",
+          "hex": "c62828",
+          "codes": [
+            "M17IRU175CJ"
+          ],
+          "eans": [
+            "7798049653570"
+          ]
+        },
+        {
+          "name": "Verde Aviador",
+          "hex": "2e7d32",
+          "codes": [
+            "M17IVA175CJ"
+          ],
+          "eans": [
+            "7798049654287"
+          ]
+        },
+        {
+          "name": "Frutilla",
+          "hex": "ec7aa8",
+          "codes": [
+            "M17IFR175CJ"
+          ],
+          "eans": [
+            "7798049654263"
+          ]
+        },
+        {
+          "name": "Dulce de Leche",
+          "hex": "d3b48f",
+          "codes": [
+            "M17IDL175CJ"
+          ],
+          "eans": [
+            "7798049654256"
+          ]
+        },
+        {
+          "name": "Crema del Cielo",
+          "hex": "d3b48f",
+          "codes": [
+            "M17ICI175CJ"
+          ],
+          "eans": [
+            "7798049654270"
+          ]
+        },
+        {
+          "name": "Arena",
+          "hex": "d3b48f",
+          "codes": [
+            "M17IAR175CJ"
+          ],
+          "eans": [
+            "7798049654249"
+          ]
+        },
+        {
+          "name": "Zafiro",
+          "hex": "2456a6",
+          "codes": [
+            "M17IZA175CJ"
+          ],
+          "eans": [
+            "7798049653587"
+          ]
+        },
+        {
+          "name": "Salmón",
+          "hex": "ec7aa8",
+          "codes": [
+            "M17ISA175CJ"
+          ],
+          "eans": [
+            "7798049653532"
+          ]
+        },
+        {
+          "name": "Perla",
+          "hex": "f2f2ee",
+          "codes": [
+            "M17IPE175CJ"
+          ],
+          "eans": [
+            "7798049653518"
+          ]
+        },
+        {
+          "name": "Lavanda",
+          "hex": "7b4aa8",
+          "codes": [
+            "M17ILA175CJ"
+          ],
+          "eans": [
+            "7798049653525"
+          ]
+        },
+        {
+          "name": "Esmeralda",
+          "hex": "2e7d32",
+          "codes": [
+            "M17IES175CJ"
+          ],
+          "eans": [
+            "7798049653600"
+          ]
+        },
+        {
+          "name": "Chocolate",
+          "hex": "7a4a2a",
+          "codes": [
+            "M17ICH175CJ"
+          ],
+          "eans": [
+            "7798049653563"
+          ]
+        },
+        {
+          "name": "Carbón",
+          "hex": "1b1b1b",
+          "codes": [
+            "M17ICB175CJ"
+          ],
+          "eans": [
+            "7798049653594"
+          ]
+        },
+        {
+          "name": "Acqua",
+          "hex": "35a9c5",
+          "codes": [
+            "M17IAQ175CJ"
+          ],
+          "eans": [
+            "7798049653549"
+          ]
+        },
+        {
+          "name": "Caribe",
+          "hex": "35a9c5",
+          "codes": [
+            "M17ICA175CJ"
+          ],
+          "eans": [
+            "7798049653556"
           ]
         }
       ],
