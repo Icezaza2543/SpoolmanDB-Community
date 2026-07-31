@@ -20,6 +20,15 @@
 
 ---
 
+## Project Status
+
+* **Project status**: MAINTENANCE MODE
+* **Published records**: 52,941
+* **P0/P1**: Complete
+* **P2/P3**: Complete
+* **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
+* **Maintenance guide**: [docs/maintenance.md](docs/maintenance.md)
+
 ## What this is
 
 SpoolmanDB Community is an actively maintained community extension of SpoolmanDB, focused on faster filament updates, provenance, data quality, public-ID stability, and compatibility with the actively developed Spoolman application.
