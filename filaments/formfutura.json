@@ -1146,7 +1146,7 @@
     },
     {
       "name": "ASA ApolloX CF10 {color_name}",
-      "material": "ASA",
+      "material": "ASA-CF",
       "tds_url": "https://www.formfutura.com/web/content/256467?download=true",
       "sds_url": "https://www.formfutura.com/web/content/256465?download=true",
       "density": 1.1,
@@ -1369,7 +1369,7 @@
     },
     {
       "name": "PA6 CF {color_name}",
-      "material": "PA6",
+      "material": "PA6-CF",
       "density": 1.14,
       "weights": [
         {
@@ -1486,7 +1486,7 @@
     },
     {
       "name": "LUVOCOM 3F PAHT CF 9742 {color_name}",
-      "material": "PA6",
+      "material": "PA-CF",
       "tds_url": "https://www.formfutura.com/web/content/256553?download=true",
       "sds_url": "https://www.formfutura.com/web/content/256554?download=true",
       "density": 1.25,
@@ -1528,7 +1528,7 @@
     },
     {
       "name": "LUVOCOM 3F PAHT CF 9891 {color_name}",
-      "material": "PA6",
+      "material": "PA-CF",
       "tds_url": "https://www.formfutura.com/web/content/256555?download=true",
       "sds_url": "https://www.formfutura.com/web/content/256556?download=true",
       "density": 1.24,
@@ -1694,7 +1694,7 @@
     },
     {
       "name": "STYX PA6-CF15 {color_name}",
-      "material": "PA6",
+      "material": "PA6-CF",
       "tds_url": "https://www.formfutura.com/web/content/256638?download=true",
       "sds_url": "https://www.formfutura.com/web/content/290165?download=true",
       "density": 1.18,
@@ -1753,7 +1753,7 @@
     },
     {
       "name": "Styx PA6-GF30 {color_name}",
-      "material": "PA6",
+      "material": "PA6-GF",
       "tds_url": "https://www.formfutura.com/web/content/256639?download=true",
       "sds_url": "https://www.formfutura.com/web/content/290166?download=true",
       "density": 1.34,
@@ -1807,7 +1807,7 @@
     },
     {
       "name": "PC CF {color_name}",
-      "material": "PC",
+      "material": "PC-CF",
       "density": 1.2,
       "weights": [
         {
@@ -1891,7 +1891,7 @@
     },
     {
       "name": "Kratos PC CF10 {color_name}",
-      "material": "PC",
+      "material": "PC-CF",
       "tds_url": "https://www.formfutura.com/web/content/256547?download=true",
       "sds_url": "https://www.formfutura.com/web/content/256548?download=true",
       "density": 1.2,
@@ -2153,7 +2153,7 @@
     },
     {
       "name": "PCTG CF {color_name}",
-      "material": "PCTG",
+      "material": "PC-CF",
       "density": 1.23,
       "weights": [
         {
@@ -2224,7 +2224,7 @@
     },
     {
       "name": "LUVOCOM 3F PEEK CF 9676 {color_name}",
-      "material": "PEEK",
+      "material": "PEEK-CF",
       "tds_url": "https://www.formfutura.com/web/content/256579?download=true",
       "sds_url": "https://www.formfutura.com/web/content/256580?download=true",
       "density": 1.34,
@@ -2764,7 +2764,7 @@
     },
     {
       "name": "PETG CarbonFil {color_name}",
-      "material": "PETG",
+      "material": "PETG-CF",
       "tds_url": "https://www.formfutura.com/web/content/256493?download=true",
       "sds_url": "https://www.formfutura.com/web/content/256492?download=true",
       "density": 1.32,
@@ -2950,7 +2950,7 @@
     },
     {
       "name": "PETG Hdglass {color_name}",
-      "material": "PETG",
+      "material": "PETG-GF",
       "tds_url": "https://www.formfutura.com/web/content/256561?download=true",
       "sds_url": "https://www.formfutura.com/web/content/256562?download=true",
       "density": 1.27,
@@ -3405,6 +3405,17 @@
           "name": "Green",
           "hex": "00C26B",
           "glow": true
+        },
+        {
+          "name": "EasyFil PLA – Glow in the Dark",
+          "hex": "00C26B",
+          "glow": true,
+          "codes": [
+            "EPLG-175GREN-00750"
+          ],
+          "eans": [
+            "8718924471005"
+          ]
         }
       ],
       "extruder_temp_range": [
@@ -3575,47 +3586,6 @@
       ],
       "bed_temp_range": [
         50,
-        60
-      ],
-      "country_of_origin": "NL"
-    },
-    {
-      "name": "EasyFil PLA - Glow in the Dark {color_name}",
-      "material": "PLA",
-      "density": 1.24,
-      "weights": [
-        {
-          "weight": 750,
-          "spool_type": "cardboard",
-          "spool_weight": 160
-        },
-        {
-          "weight": 2300,
-          "spool_type": "cardboard"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "EasyFil PLA – Glow in the Dark",
-          "hex": "00C26B",
-          "glow": true,
-          "codes": [
-            "EPLG-175GREN-00750"
-          ],
-          "eans": [
-            "8718924471005"
-          ]
-        }
-      ],
-      "extruder_temp_range": [
-        195,
-        220
-      ],
-      "bed_temp_range": [
-        0,
         60
       ],
       "country_of_origin": "NL"
@@ -4287,7 +4257,7 @@
     },
     {
       "name": "PP CF {color_name}",
-      "material": "PP",
+      "material": "PP-CF",
       "density": 0.9,
       "weights": [
         {
@@ -4335,7 +4305,7 @@
     },
     {
       "name": "PPS CF {color_name}",
-      "material": "PPS",
+      "material": "PPS-CF",
       "tds_url": "https://www.formfutura.com/web/content/256586?download=true",
       "sds_url": "https://www.formfutura.com/web/content/256587?download=true",
       "density": 1.24,
