@@ -74,6 +74,10 @@
         {
           "name": "Beige",
           "hex": "f5f5dc"
+        },
+        {
+          "name": "Red",
+          "hex": "D72E1E"
         }
       ],
       "country_of_origin": "ES"
@@ -314,7 +318,7 @@
     },
     {
       "name": "PETG-CF {color_name}",
-      "material": "PETG",
+      "material": "PETG-CF",
       "density": 1.32,
       "weights": [
         {
@@ -380,7 +384,7 @@
     },
     {
       "name": "Hyper PLA+ {color_name}",
-      "material": "PLA",
+      "material": "PLA+",
       "density": 1.23,
       "weights": [
         {
@@ -422,45 +426,6 @@
         70
       ],
       "country_of_origin": "CZ"
-    },
-    {
-      "name": "PLA+ {color_name}",
-      "material": "PLA",
-      "density": 1.23,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "000000"
-        },
-        {
-          "name": "Blue",
-          "hex": "2C55A9"
-        },
-        {
-          "name": "Red",
-          "hex": "D72E1E"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
-        },
-        {
-          "name": "Yellow",
-          "hex": "F8D737"
-        }
-      ],
-      "country_of_origin": "CZ",
-      "extruder_temp": 210,
-      "bed_temp": 60
     },
     {
       "name": "PLA Basic {color_name}",
@@ -553,7 +518,7 @@
     },
     {
       "name": "PLA-CF {color_name}",
-      "material": "PLA",
+      "material": "PLA-CF",
       "density": 1.22,
       "weights": [
         {
@@ -866,7 +831,7 @@
     },
     {
       "name": "TPU 95A {color_name}",
-      "material": "TPU",
+      "material": "TPU-95A",
       "density": 1.22,
       "weights": [
         {
