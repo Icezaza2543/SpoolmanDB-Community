@@ -4,7 +4,6 @@
     {
       "name": "{color_name}",
       "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -128,12 +127,12 @@
           "name": "Sunny Orange",
           "hex": "FC743A"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf"
     },
     {
       "name": "{color_name}",
       "material": "ABS",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/ABS-TDS.pdf",
       "density": 1.04,
       "weights": [
         {
@@ -172,12 +171,12 @@
           "name": "Green",
           "hex": "5FC50D"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf"
     },
     {
       "name": "Silk {color_name}",
       "material": "TPU",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU_SILK-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -216,12 +215,12 @@
           "name": "Burgundy",
           "hex": "3F2028"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU_SILK-TDS.pdf"
     },
     {
       "name": "{color_name}",
       "material": "TPU-95A",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU-TDS.pdf",
       "density": 1.23,
       "weights": [
         {
@@ -256,12 +255,12 @@
           "name": "Orange",
           "hex": "FB6D23"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf"
     },
     {
       "name": "Transparent {color_name}",
       "material": "TPU-95A",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU-TDS.pdf",
       "density": 1.23,
       "weights": [
         {
@@ -288,12 +287,12 @@
           "name": "Orange",
           "hex": "FB6D23"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU-TDS.pdf"
     },
     {
       "name": "{color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA-TDS.pdf",
       "density": 1.26,
       "weights": [
         {
@@ -324,7 +323,28 @@
         {
           "name": "Red (Glow Orange)",
           "hex": "FF0000"
-        },
+        }
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf"
+    },
+    {
+      "name": "{color_name}",
+      "material": "PLA",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 162.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "glow": false,
+      "colors": [
         {
           "name": "Black",
           "hex": "2B2B2D"
@@ -350,12 +370,12 @@
           "hex": "ffffffaa",
           "translucent": true
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf"
     },
     {
       "name": "{color_name}",
       "material": "PETG",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf",
       "density": 1.23,
       "weights": [
         {
@@ -441,12 +461,12 @@
           "translucent": true,
           "hex": "3A87FE"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf"
     },
     {
       "name": "High Speed Matte PLA - {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_Matte_PLA-TDS.pdf",
       "density": 1.26,
       "finish": "matte",
       "weights": [
@@ -572,7 +592,8 @@
           "name": "CMYK Yellow",
           "hex": "fef966"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_Matte_PLA-TDS.pdf"
     },
     {
       "name": "High Speed Matte PETG - {color_name}",
@@ -717,7 +738,6 @@
     {
       "name": "High Speed {color_name} Marble",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_PLA_Marble-TDS.pdf",
       "density": 1.25,
       "weights": [
         {
@@ -756,12 +776,12 @@
           "name": "Forest Green",
           "hex": "C3D3D0"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_PLA_Marble-TDS.pdf"
     },
     {
       "name": "{color_name} Wood",
       "material": "WOOD",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Wood-TDS.pdf",
       "density": 1.25,
       "weights": [
         {
@@ -792,12 +812,12 @@
           "name": "Walnut",
           "hex": "564e44"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Wood-TDS.pdf"
     },
     {
       "name": "Silk Dual Color {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_Dual_Color-TDS.pdf",
       "density": 1.25,
       "weights": [
         {
@@ -821,12 +841,12 @@
             "002789"
           ]
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_Dual_Color-TDS.pdf"
     },
     {
       "name": "Meta {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Meta-TDS.pdf",
       "density": 1.22,
       "weights": [
         {
@@ -908,12 +928,12 @@
           "name": "Sunny Orange",
           "hex": "FC8B4C"
         }
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Meta-TDS.pdf"
     },
     {
       "name": "ABS {color_name}",
       "material": "ABS",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/ABS-TDS.pdf",
       "density": 1.04,
       "weights": [
         {
@@ -1092,11 +1112,12 @@
       "bed_temp_range": [
         90,
         110
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/ABS-TDS.pdf"
     },
     {
       "name": "ABS-FR {color_name}",
-      "material": "ABS+FR",
+      "material": "ABS",
       "density": 1.1,
       "weights": [
         {
@@ -1156,7 +1177,6 @@
     {
       "name": "High Speed ABS {color_name}",
       "material": "ABS",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_ABS-TDS.pdf",
       "density": 1.04,
       "weights": [
         {
@@ -1237,12 +1257,12 @@
         }
       ],
       "extruder_temp": 240,
-      "bed_temp": 100
+      "bed_temp": 100,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_ABS-TDS.pdf"
     },
     {
       "name": "PC-ABS {color_name}",
-      "material": "PC+ABS",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PC-ABS-TDS.pdf",
+      "material": "ABS",
       "density": 1.04,
       "weights": [
         {
@@ -1303,7 +1323,8 @@
         }
       ],
       "extruder_temp": 255,
-      "bed_temp": 100
+      "bed_temp": 100,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PC-ABS-TDS.pdf"
     },
     {
       "name": "ASA {color_name}",
@@ -1411,8 +1432,7 @@
     },
     {
       "name": "PA12-CF {color_name}",
-      "material": "PA12-CF",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PA12-CF-TDS.pdf",
+      "material": "PA12",
       "density": 1.04,
       "weights": [
         {
@@ -1463,12 +1483,12 @@
         }
       ],
       "extruder_temp": 265,
-      "bed_temp": 110
+      "bed_temp": 110,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PA12-CF-TDS.pdf"
     },
     {
       "name": "PA6 Easy PA {color_name}",
       "material": "PA6",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Easy_PA-TDS.pdf",
       "density": 1.08,
       "weights": [
         {
@@ -1532,12 +1552,12 @@
       "bed_temp_range": [
         80,
         100
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Easy_PA-TDS.pdf"
     },
     {
       "name": "PA6-CF {color_name}",
-      "material": "PA6-CF",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PA6-CF-TDS.pdf",
+      "material": "PA6",
       "density": 1.04,
       "weights": [
         {
@@ -1594,11 +1614,12 @@
       "bed_temp_range": [
         80,
         100
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PA6-CF-TDS.pdf"
     },
     {
       "name": "PA6-GF {color_name}",
-      "material": "PA6-GF",
+      "material": "PA6",
       "density": 1.04,
       "weights": [
         {
@@ -1713,7 +1734,6 @@
     {
       "name": "PCL {color_name}",
       "material": "PCL",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PCL-TDS.pdf",
       "density": 1.2,
       "weights": [
         {
@@ -1797,7 +1817,8 @@
       "bed_temp_range": [
         0,
         0
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PCL-TDS.pdf"
     },
     {
       "name": "PEEK {color_name}",
@@ -1925,7 +1946,6 @@
     {
       "name": "Luminous Glow In The Dark PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG_Glow_In_The_Dark-TDS.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -1976,12 +1996,12 @@
       "bed_temp_range": [
         70,
         90
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG_Glow_In_The_Dark-TDS.pdf"
     },
     {
       "name": "PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -2329,12 +2349,12 @@
       "bed_temp_range": [
         70,
         90
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG-TDS.pdf"
     },
     {
       "name": "PETG Carbon Fiber {color_name}",
-      "material": "PETG-CF",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG_Carbon_Fiber-TDS.pdf",
+      "material": "PETG",
       "density": 1.24,
       "weights": [
         {
@@ -2385,12 +2405,12 @@
         }
       ],
       "extruder_temp": 235,
-      "bed_temp": 75
+      "bed_temp": 75,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG_Carbon_Fiber-TDS.pdf"
     },
     {
       "name": "PETG Glow In The Dark Filament {color_name}",
       "material": "PETG",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG_Glow_In_The_Dark-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -2483,11 +2503,12 @@
         }
       ],
       "extruder_temp": 235,
-      "bed_temp": 75
+      "bed_temp": 75,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PETG_Glow_In_The_Dark-TDS.pdf"
     },
     {
       "name": "Matte PETG CF {color_name}",
-      "material": "PETG-CF",
+      "material": "PETG",
       "density": 1.27,
       "weights": [
         {
@@ -2518,7 +2539,6 @@
     {
       "name": "APLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/APLA-TDS.pdf",
       "density": 1.26,
       "weights": [
         {
@@ -2613,12 +2633,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/APLA-TDS.pdf"
     },
     {
       "name": "PLA CF {color_name}",
-      "material": "PLA-CF",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Carbon_Fiber-TDS.pdf",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -2643,7 +2663,8 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Carbon_Fiber-TDS.pdf"
     },
     {
       "name": "Fluorescent PLA {color_name}",
@@ -2733,7 +2754,6 @@
     {
       "name": "Glow PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Glow_In_The_Dark-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -2784,12 +2804,12 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Glow_In_The_Dark-TDS.pdf"
     },
     {
       "name": "High Speed PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_PLA-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -3020,12 +3040,12 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_PLA-TDS.pdf"
     },
     {
       "name": "High Speed PLA+ {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_PLA_-TDS.pdf",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -3146,12 +3166,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 60
+      "bed_temp": 60,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_PLA_-TDS.pdf"
     },
     {
       "name": "High Speed PLA Marble {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_PLA_Marble-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -3256,12 +3276,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/High_Speed_PLA_Marble-TDS.pdf"
     },
     {
       "name": "PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA-TDS.pdf",
       "density": 1.26,
       "weights": [
         {
@@ -3755,12 +3775,12 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA-TDS.pdf"
     },
     {
       "name": "PLA+ {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_-TDS.pdf",
+      "material": "PLA",
       "density": 1.26,
       "weights": [
         {
@@ -4190,12 +4210,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 60
+      "bed_temp": 60,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_-TDS.pdf"
     },
     {
       "name": "PLA+ 2.0 {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_2.0-TDS.pdf",
+      "material": "PLA",
       "density": 1.26,
       "weights": [
         {
@@ -4447,12 +4467,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 60
+      "bed_temp": 60,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_2.0-TDS.pdf"
     },
     {
       "name": "PLA Carbon Fiber {color_name}",
-      "material": "PLA-CF",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Carbon_Fiber-TDS.pdf",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -4503,12 +4523,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Carbon_Fiber-TDS.pdf"
     },
     {
       "name": "PLA Classic {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Classic-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -4609,7 +4629,8 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Classic-TDS.pdf"
     },
     {
       "name": "PLA Galaxy {color_name}",
@@ -4669,7 +4690,6 @@
     {
       "name": "PLA Glow In The Dark {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Glow_In_The_Dark-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -4772,12 +4792,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Glow_In_The_Dark-TDS.pdf"
     },
     {
       "name": "PLA Matte {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Matte-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -4941,7 +4961,8 @@
         50,
         70
       ],
-      "finish": "matte"
+      "finish": "matte",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Matte-TDS.pdf"
     },
     {
       "name": "PLA Matte Dual-Color {color_name}",
@@ -5061,8 +5082,7 @@
     },
     {
       "name": "PLA-Meta {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Meta-TDS.pdf",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -5276,12 +5296,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Meta-TDS.pdf"
     },
     {
       "name": "PLA Rainbow {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Rainbow-TDS.pdf",
       "density": 1.23,
       "weights": [
         {
@@ -5358,12 +5378,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Rainbow-TDS.pdf"
     },
     {
       "name": "PLA Transparent Rainbow {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Transparent_Rainbow-TDS.pdf",
       "density": 1.23,
       "weights": [
         {
@@ -5420,7 +5440,8 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Transparent_Rainbow-TDS.pdf"
     },
     {
       "name": "PLA Twinkling {color_name}",
@@ -5490,7 +5511,6 @@
     {
       "name": "Real Wood Fiber PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Wood-TDS.pdf",
       "density": 1.26,
       "weights": [
         {
@@ -5523,7 +5543,8 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Wood-TDS.pdf"
     },
     {
       "name": "PLA Silk {color_name}",
@@ -5569,8 +5590,7 @@
     },
     {
       "name": "Silk PLA+ {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_-TDS.pdf",
+      "material": "PLA",
       "density": 1.26,
       "weights": [
         {
@@ -5743,12 +5763,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_-TDS.pdf"
     },
     {
       "name": "Silk PLA+ Dual-Color {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_Dual_Color-TDS.pdf",
+      "material": "PLA",
       "density": 1.23,
       "weights": [
         {
@@ -5882,11 +5902,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_Dual_Color-TDS.pdf"
     },
     {
       "name": "Silk PLA+ Four-Color {color_name}",
-      "material": "PLA+",
+      "material": "PLA",
       "density": 1.23,
       "weights": [
         {
@@ -5971,8 +5992,7 @@
     },
     {
       "name": "Silk PLA+ Rainbow {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_Rainbow-TDS.pdf",
+      "material": "PLA",
       "density": 1.23,
       "weights": [
         {
@@ -6037,12 +6057,12 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_Rainbow-TDS.pdf"
     },
     {
       "name": "Silk PLA+ Tri-Color {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_Tri-Color-TDS.pdf",
+      "material": "PLA",
       "density": 1.23,
       "weights": [
         {
@@ -6127,7 +6147,8 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Silk_PLA_Tri-Color-TDS.pdf"
     },
     {
       "name": "Temperature Color Change PLA {color_name}",
@@ -6283,7 +6304,6 @@
     {
       "name": "PLA Wood {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Wood-TDS.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -6364,7 +6384,8 @@
         }
       ],
       "extruder_temp": 210,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/Wood-TDS.pdf"
     },
     {
       "name": "PP {color_name}",
@@ -6418,7 +6439,6 @@
     {
       "name": "PVA {color_name}",
       "material": "PVA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PVA-TDS.pdf",
       "density": 1.19,
       "weights": [
         {
@@ -6463,12 +6483,12 @@
         }
       ],
       "extruder_temp": 205,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PVA-TDS.pdf"
     },
     {
       "name": "PVB {color_name}",
       "material": "PVB",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PVB-TDS.pdf",
       "density": 1.19,
       "weights": [
         {
@@ -6537,11 +6557,12 @@
         }
       ],
       "extruder_temp": 205,
-      "bed_temp": 55
+      "bed_temp": 55,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PVB-TDS.pdf"
     },
     {
       "name": "95A High Speed TPU {color_name}",
-      "material": "TPU-95A",
+      "material": "TPU",
       "density": 1.21,
       "weights": [
         {
@@ -6607,7 +6628,6 @@
     {
       "name": "TPU {color_name}",
       "material": "TPU",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU-TDS.pdf",
       "density": 1.21,
       "weights": [
         {
@@ -6632,12 +6652,12 @@
       "bed_temp_range": [
         30,
         60
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU-TDS.pdf"
     },
     {
       "name": "TPU90A {color_name}",
-      "material": "TPU-90A",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU90A-TDS.pdf",
+      "material": "TPU",
       "density": 1.07,
       "weights": [
         {
@@ -6716,12 +6736,12 @@
         }
       ],
       "extruder_temp": 220,
-      "bed_temp": 45
+      "bed_temp": 45,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU90A-TDS.pdf"
     },
     {
       "name": "TPU95A {color_name}",
-      "material": "TPU-95A",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU-TDS.pdf",
+      "material": "TPU",
       "density": 1.07,
       "weights": [
         {
@@ -6822,12 +6842,12 @@
         }
       ],
       "extruder_temp": 220,
-      "bed_temp": 45
+      "bed_temp": 45,
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU-TDS.pdf"
     },
     {
       "name": "TPU Silk {color_name}",
       "material": "TPU",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU_SILK-TDS.pdf",
       "density": 1.07,
       "weights": [
         {
@@ -6936,7 +6956,8 @@
       "bed_temp_range": [
         30,
         60
-      ]
+      ],
+      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/TPU_SILK-TDS.pdf"
     }
   ]
 }
