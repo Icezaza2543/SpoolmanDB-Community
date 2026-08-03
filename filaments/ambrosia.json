@@ -372,6 +372,72 @@
       "country_of_origin": "US"
     },
     {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.08,
+      "weights": [
+        {
+          "weight": 2000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        100,
+        115
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Voron Red",
+          "hex": "A12336"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.08,
+      "weights": [
+        {
+          "weight": 5000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        100,
+        115
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Voron Red",
+          "hex": "A12336"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
       "name": "Dolos Color Shifting {color_name}",
       "material": "ASA",
       "density": 1.08,
@@ -1213,7 +1279,7 @@
     },
     {
       "name": "ASA-CF {color_name}",
-      "material": "ASA-CF",
+      "material": "ASA",
       "density": 1.09,
       "weights": [
         {
@@ -1413,7 +1479,7 @@
     },
     {
       "name": "ASA-GF {color_name}",
-      "material": "ASA-GF",
+      "material": "ASA",
       "density": 1.1,
       "weights": [
         {
@@ -1591,7 +1657,7 @@
     },
     {
       "name": "PC-CF {color_name}",
-      "material": "PC-CF",
+      "material": "PC",
       "density": 1.21,
       "weights": [
         {
@@ -1632,7 +1698,7 @@
     },
     {
       "name": "PC-ABS {color_name}",
-      "material": "PC+ABS",
+      "material": "PC",
       "density": 1.14,
       "weights": [
         {
