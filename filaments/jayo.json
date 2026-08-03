@@ -113,6 +113,22 @@
           "name": "Matte White",
           "hex": "FFFFFF",
           "finish": "matte"
+        },
+        {
+          "name": "White (Glow Green)",
+          "hex": "000000"
+        },
+        {
+          "name": "White (Glow Blue)",
+          "hex": "000000"
+        },
+        {
+          "name": "Yellow (Glow Yellow)",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Red (Glow Orange)",
+          "hex": "FF0000"
         }
       ],
       "country_of_origin": "CN"
@@ -201,43 +217,6 @@
         {
           "name": "Burgundy",
           "hex": "3F2028"
-        }
-      ],
-      "country_of_origin": "CN"
-    },
-    {
-      "name": "{color_name}",
-      "material": "PLA",
-      "density": 1.24,
-      "weights": [
-        {
-          "weight": 1100.0,
-          "spool_weight": 120.0,
-          "spool_type": "cardboard"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp": 210,
-      "bed_temp": 60,
-      "glow": true,
-      "colors": [
-        {
-          "name": "White (Glow Green)",
-          "hex": "000000"
-        },
-        {
-          "name": "White (Glow Blue)",
-          "hex": "000000"
-        },
-        {
-          "name": "Yellow (Glow Yellow)",
-          "hex": "FFFF00"
-        },
-        {
-          "name": "Red (Glow Orange)",
-          "hex": "FF0000"
         }
       ],
       "country_of_origin": "CN"
@@ -565,7 +544,7 @@
     },
     {
       "name": "PLA+ {color_name}",
-      "material": "PLA",
+      "material": "PLA+",
       "density": 1.24,
       "weights": [
         {
