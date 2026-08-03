@@ -50,34 +50,6 @@
           "codes": [
             "B0CJM8WTT7"
           ]
-        },
-        {
-          "name": "Brown",
-          "hex": "8B4513"
-        },
-        {
-          "name": "Gray",
-          "hex": "808080"
-        },
-        {
-          "name": "Green",
-          "hex": "008000"
-        },
-        {
-          "name": "Orange",
-          "hex": "FFA500"
-        },
-        {
-          "name": "Pink",
-          "hex": "FFC0CB"
-        },
-        {
-          "name": "Purple",
-          "hex": "800080"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
         }
       ],
       "country_of_origin": "CN"
@@ -603,7 +575,7 @@
     },
     {
       "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
-      "material": "PLA+",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -740,6 +712,75 @@
       ],
       "country_of_origin": "CN",
       "finish": "matte"
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Brown",
+          "hex": "8B4513"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "CN"
     },
     {
       "name": "Silk Magic PLA {color_name}",
