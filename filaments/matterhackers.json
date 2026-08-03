@@ -30,17 +30,11 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "1a1a1a",
-          "codes": [
-            "M-NCJ-PEK5"
-          ]
+          "hex": "1a1a1a"
         },
         {
           "name": "White",
-          "hex": "f5f5f5",
-          "codes": [
-            "M-J3Y-ZPRY"
-          ]
+          "hex": "f5f5f5"
         },
         {
           "name": "Red",
@@ -77,6 +71,37 @@
         {
           "name": "Natural",
           "hex": "e8e0d0"
+        }
+      ]
+    },
+    {
+      "name": "MH Build Series PLA {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        25,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "1a1a1a",
+          "codes": [
+            "M-NCJ-PEK5"
+          ]
         },
         {
           "name": "Gray",
@@ -86,10 +111,10 @@
           ]
         },
         {
-          "name": "Silver",
-          "hex": "ABACB0",
+          "name": "White",
+          "hex": "f5f5f5",
           "codes": [
-            "M-K0P-DTFA"
+            "M-J3Y-ZPRY"
           ]
         }
       ]
@@ -141,6 +166,37 @@
           "name": "Natural",
           "hex": "e8e0d0",
           "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "MH Build Series PLA {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        25,
+        55
+      ],
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "ABACB0",
+          "codes": [
+            "M-K0P-DTFA"
+          ]
         }
       ]
     },
@@ -624,7 +680,7 @@
     },
     {
       "name": "PA12 CF {color_name}",
-      "material": "PA12-CF",
+      "material": "PA12",
       "density": 1.01,
       "weights": [
         {
@@ -653,7 +709,7 @@
     },
     {
       "name": "PA12 GF {color_name}",
-      "material": "PA-GF",
+      "material": "PA12",
       "density": 1.01,
       "weights": [
         {
