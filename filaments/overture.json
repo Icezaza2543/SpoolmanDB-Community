@@ -1827,7 +1827,7 @@
     },
     {
       "name": "PLA CF {color_name}",
-      "material": "PLA-CF",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -2559,7 +2559,7 @@
     },
     {
       "name": "PLA Professional {color_name}",
-      "material": "PLA+",
+      "material": "PLA",
       "density": 1.16,
       "weights": [
         {
@@ -3250,7 +3250,143 @@
           "name": "Black",
           "hex": "000000",
           "codes": [
-            "OT1001015",
+            "OT1001015"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "codes": [
+            "OT1001014"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFD700",
+          "codes": [
+            "OT1001005"
+          ]
+        },
+        {
+          "name": "Cold White",
+          "hex": "DEDFE3",
+          "codes": [
+            "OT1001013"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "FF7A00",
+          "codes": [
+            "OT1001004"
+          ]
+        },
+        {
+          "name": "Light Gray",
+          "hex": "9BA0A6",
+          "codes": [
+            "OT1001012"
+          ]
+        },
+        {
+          "name": "Purple",
+          "hex": "7B4FC2",
+          "codes": [
+            "OT1001011"
+          ]
+        },
+        {
+          "name": "Pink",
+          "hex": "E898B5",
+          "codes": [
+            "OT1001010"
+          ]
+        },
+        {
+          "name": "Fresh Red",
+          "hex": "FF3531",
+          "codes": [
+            "OT1001009"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "E60000",
+          "codes": [
+            "OT1001008"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0057B8",
+          "codes": [
+            "OT1001007"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "00A651",
+          "codes": [
+            "OT1001006"
+          ]
+        },
+        {
+          "name": "Gray Blue",
+          "hex": "4C7593",
+          "codes": [
+            "OT1001003"
+          ]
+        },
+        {
+          "name": "Olive Green",
+          "hex": "898524",
+          "codes": [
+            "OT1001002"
+          ]
+        },
+        {
+          "name": "Space Gray",
+          "hex": "92999F",
+          "codes": [
+            "OT1001077"
+          ]
+        },
+        {
+          "name": "Chocolate",
+          "hex": "573C2B",
+          "codes": [
+            "OT1001076"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.21,
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "tds_url": "https://wiki.overture3d.com/en/Filament/PLAVariants",
+      "weights": [
+        {
+          "weight": 1000,
+          "is_refill": true
+        }
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
             "OT1001124"
           ]
         },
@@ -3258,120 +3394,105 @@
           "name": "White",
           "hex": "FFFFFF",
           "codes": [
-            "OT1001014",
             "OT1001123"
-          ]
-        },
-        {
-          "name": "Yellow",
-          "hex": "FFD700",
-          "codes": [
-            "OT1001005",
-            "OT1001112"
           ]
         },
         {
           "name": "Cold White",
           "hex": "DEDFE3",
           "codes": [
-            "OT1001013",
             "OT1001122"
-          ]
-        },
-        {
-          "name": "Orange",
-          "hex": "FF7A00",
-          "codes": [
-            "OT1001004",
-            "OT1001111"
-          ]
-        },
-        {
-          "name": "Light Gray",
-          "hex": "9BA0A6",
-          "codes": [
-            "OT1001012",
-            "OT1001120"
-          ]
-        },
-        {
-          "name": "Purple",
-          "hex": "7B4FC2",
-          "codes": [
-            "OT1001011",
-            "OT1001118"
-          ]
-        },
-        {
-          "name": "Pink",
-          "hex": "E898B5",
-          "codes": [
-            "OT1001010",
-            "OT1001117"
-          ]
-        },
-        {
-          "name": "Fresh Red",
-          "hex": "FF3531",
-          "codes": [
-            "OT1001009",
-            "OT1001116"
           ]
         },
         {
           "name": "Red",
           "hex": "E60000",
           "codes": [
-            "OT1001008",
             "OT1001115"
           ]
         },
         {
-          "name": "Blue",
-          "hex": "0057B8",
+          "name": "Fresh Red",
+          "hex": "FF3531",
           "codes": [
-            "OT1001007",
-            "OT1001114"
+            "OT1001116"
           ]
         },
         {
-          "name": "Green",
-          "hex": "00A651",
+          "name": "Orange",
+          "hex": "FF7A00",
           "codes": [
-            "OT1001006",
-            "OT1001113"
+            "OT1001111"
           ]
         },
         {
-          "name": "Gray Blue",
-          "hex": "4C7593",
+          "name": "Pink",
+          "hex": "E898B5",
           "codes": [
-            "OT1001003",
-            "OT1001110"
-          ]
-        },
-        {
-          "name": "Olive Green",
-          "hex": "898524",
-          "codes": [
-            "OT1001002",
-            "OT1001109"
+            "OT1001117"
           ]
         },
         {
           "name": "Space Gray",
           "hex": "92999F",
           "codes": [
-            "OT1001077",
             "OT1001121"
           ]
         },
         {
-          "name": "Chocolate",
-          "hex": "573C2B",
+          "name": "Light Gray",
+          "hex": "9BA0A6",
           "codes": [
-            "OT1001076",
+            "OT1001120"
+          ]
+        },
+        {
+          "name": "Chocolate",
+          "hex": "280606",
+          "codes": [
             "OT1001119"
+          ]
+        },
+        {
+          "name": "Purple",
+          "hex": "7B4FC2",
+          "codes": [
+            "OT1001118"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0057B8",
+          "codes": [
+            "OT1001114"
+          ]
+        },
+        {
+          "name": "Gray Blue",
+          "hex": "4C7593",
+          "codes": [
+            "OT1001110"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFD700",
+          "codes": [
+            "OT1001112"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "00A651",
+          "codes": [
+            "OT1001113"
+          ]
+        },
+        {
+          "name": "Olive Green",
+          "hex": "898524",
+          "codes": [
+            "OT1001109"
           ]
         }
       ]
