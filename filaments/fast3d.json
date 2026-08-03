@@ -1,0 +1,69 @@
+{
+  "manufacturer": "FAST 3D",
+  "filaments": [
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "tds_url": "https://fasttoner.in.th/fast-3d/fast-3d-filament-abs/",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        0,
+        80
+      ],
+      "tds_url": "https://fasttoner.in.th/fast-3d/fast-3d-petg-1-75-filament/",
+      "colors": [
+        {
+          "name": "Solid Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Solid White",
+          "hex": "FFFFFF"
+        }
+      ]
+    }
+  ]
+}
