@@ -62,6 +62,7 @@
         statMaterials: document.querySelector("#stat-materials"),
         statMulticolor: document.querySelector("#stat-multicolor"),
         statProductIds: document.querySelector("#stat-product-ids"),
+        statDocuments: document.querySelector("#stat-documents"),
         filters: document.querySelector("#filters"),
         search: document.querySelector("#search"),
         material: document.querySelector("#material-filter"),
@@ -266,6 +267,8 @@
             spoolType: 0,
             temp: 0,
             productIds: 0,
+            documents: 0,
+            origin: 0,
             density: 0,
             multicolor: 0
         };
@@ -283,6 +286,12 @@
             }
             if (hasProductIds(item)) {
                 coverage.productIds++;
+            }
+            if (hasDocuments(item)) {
+                coverage.documents++;
+            }
+            if (item.country_of_origin) {
+                coverage.origin++;
             }
             if (typeof item.density === "number" && item.density > 0) {
                 coverage.density++;
@@ -718,6 +727,8 @@
             "Packaging",
             "Temperature Data",
             "Product IDs",
+            "TDS / SDS",
+            "Country of Origin",
             "Density",
             "Multi-Color"
         ];
@@ -726,6 +737,8 @@
             metrics.coverage.spoolType,
             metrics.coverage.temp,
             metrics.coverage.productIds,
+            metrics.coverage.documents,
+            metrics.coverage.origin,
             metrics.coverage.density,
             metrics.coverage.multicolor
         ].map(count => total ? Math.round((count / total) * 100) : 0);
@@ -743,6 +756,8 @@
                         metrics.coverage.spoolType,
                         metrics.coverage.temp,
                         metrics.coverage.productIds,
+                        metrics.coverage.documents,
+                        metrics.coverage.origin,
                         metrics.coverage.density,
                         metrics.coverage.multicolor
                     ];
@@ -1000,12 +1015,14 @@
         const materials = new Set(state.filaments.map((item) => item.material).filter(Boolean));
         const multicolor = state.filaments.filter((item) => Array.isArray(item.color_hexes) && item.color_hexes.length > 0);
         const productIds = state.filaments.filter(hasProductIds);
+        const documents = state.filaments.filter(hasDocuments);
 
         elements.statFilaments.textContent = formatNumber(state.filaments.length);
         elements.statManufacturers.textContent = formatNumber(manufacturers.size);
         elements.statMaterials.textContent = formatNumber(materials.size) + " / " + formatNumber(state.materials.length);
         elements.statMulticolor.textContent = formatNumber(multicolor.length);
         elements.statProductIds.textContent = formatNumber(productIds.length);
+        elements.statDocuments.textContent = formatNumber(documents.length);
     }
 
     function renderFilteredResults() {
@@ -1078,6 +1095,7 @@
         row.appendChild(textCell(labelSpool(spoolValue(item))));
         row.appendChild(textCell(formatTemps(item)));
         row.appendChild(cell(renderTags(item)));
+        row.appendChild(cell(renderMetadata(item)));
         return row;
     }
 
@@ -1114,6 +1132,36 @@
         return list;
     }
 
+    function renderMetadata(item) {
+        const list = document.createElement("div");
+        list.className = "tag-list";
+
+        if (item.country_of_origin) {
+            list.appendChild(tag("ORIGIN " + String(item.country_of_origin).toUpperCase(), false));
+        }
+        if (item.tds_url) {
+            list.appendChild(documentLink("TDS", item.tds_url));
+        }
+        if (item.sds_url) {
+            list.appendChild(documentLink("SDS", item.sds_url));
+        }
+        if (list.children.length === 0) {
+            list.appendChild(tag("-", false));
+        }
+        return list;
+    }
+
+    function documentLink(label, url) {
+        const link = document.createElement("a");
+        link.className = "tag tag-orange tag-link";
+        link.href = url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = label;
+        link.setAttribute("aria-label", "Open " + label + " document");
+        return link;
+    }
+
     function tag(text, orange) {
         const span = document.createElement("span");
         span.className = orange ? "tag tag-orange" : "tag";
@@ -1136,7 +1184,7 @@
     function emptyRow(message) {
         const row = document.createElement("tr");
         const td = document.createElement("td");
-        td.colSpan = 9;
+        td.colSpan = 10;
         td.textContent = message;
         row.appendChild(td);
         return row;
@@ -1148,7 +1196,12 @@
     }
 
     function searchText(item) {
-        return displayNameApi.buildFilamentSearchText(item);
+        const metadata = [
+            item.country_of_origin,
+            item.tds_url ? "tds datasheet document" : "",
+            item.sds_url ? "sds safety document" : ""
+        ].filter(Boolean).join(" ");
+        return (displayNameApi.buildFilamentSearchText(item) + " " + metadata).toLowerCase();
     }
 
     function describeFilters(query, material, manufacturer, diameter, spool) {
@@ -1226,6 +1279,10 @@
         return [item.codes, item.eans, item.eans_refill].some(function (value) {
             return Array.isArray(value) && value.length > 0;
         });
+    }
+
+    function hasDocuments(item) {
+        return Boolean(item.tds_url || item.sds_url);
     }
 
     function uniqueSorted(values) {

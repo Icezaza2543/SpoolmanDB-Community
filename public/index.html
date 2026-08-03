@@ -49,7 +49,7 @@
                 <span class="hero-badge">Community-Driven Project</span>
                 <h1 id="page-title">Find filament data before it reaches <span>your</span> spool shelf.</h1>
                 <p>
-                    Access thousands of verified filament profiles, manufacturers, and materials.
+                    Access thousands of source-backed filament profiles, manufacturers, materials, and technical documents.
                     It integrates seamlessly with your Spoolman instance for precise inventory tracking.
                 </p>
                 <div class="hero-actions">
@@ -85,6 +85,10 @@
                 <article class="stat-card">
                     <span>Rows with product IDs</span>
                     <strong id="stat-product-ids">-</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Rows with TDS / SDS</span>
+                    <strong id="stat-documents">-</strong>
                 </article>
             </section>
 
@@ -214,7 +218,7 @@
                 <form class="filter-rail" id="filters">
                     <label class="search-field">
                         <span>Search</span>
-                        <input id="search" type="search" placeholder="Name, maker, material, hex, product code/ID, EAN..." autocomplete="off">
+                        <input id="search" type="search" placeholder="Name, maker, material, origin, product ID, EAN, TDS/SDS..." autocomplete="off">
                     </label>
                     <label>
                         <span>Manufacturer</span>
@@ -262,11 +266,12 @@
                                 <th scope="col">Packaging</th>
                                 <th scope="col">Temps</th>
                                 <th scope="col">IDs</th>
+                                <th scope="col">Metadata</th>
                             </tr>
                         </thead>
                         <tbody id="results-body">
                             <tr>
-                                <td colspan="9">Loading...</td>
+                                <td colspan="10">Loading...</td>
                             </tr>
                         </tbody>
                     </table>
@@ -293,7 +298,10 @@
 
             <section class="schema-stage" aria-labelledby="db-schema-title">
                 <div class="section-row">
-                    <h2 id="db-schema-title"><span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Database Schema</h2>
+                    <div>
+                        <h2 id="db-schema-title"><span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Core Database Relationships</h2>
+                        <p class="muted">The live schema viewer below includes current extension fields such as fill, country of origin, product identifiers, TDS, and SDS links.</p>
+                    </div>
                     <div class="section-actions">
                         <a class="button button-ghost" href="filaments.json" target="_blank" rel="noopener noreferrer">Export JSON</a>
                         <a class="button button-primary" href="#contribute">Edit Schema</a>
