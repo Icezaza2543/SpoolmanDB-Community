@@ -116,7 +116,8 @@
           "name": "Midnight Black",
           "hex": "000000",
           "codes": [
-            "TF-24214"
+            "TF-24214",
+            "TF-24194"
           ],
           "eans": [
             "5907138401745"
@@ -156,73 +157,12 @@
           "name": "Traffic White",
           "hex": "FFFFFF",
           "codes": [
-            "TF-24209"
+            "TF-24209",
+            "TF-24195"
           ],
           "eans": [
             "5907138401684"
           ]
-        }
-      ],
-      "finish": "matte"
-    },
-    {
-      "name": "ASA {color_name}",
-      "material": "ASA",
-      "density": 1.07,
-      "weights": [
-        {
-          "weight": 3000,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        230,
-        265
-      ],
-      "bed_temp_range": [
-        75,
-        100
-      ],
-      "country_of_origin": "PL",
-      "colors": [
-        {
-          "name": "Midnight Black",
-          "hex": "000000",
-          "codes": [
-            "TF-24194"
-          ],
-          "eans": [
-            "5907138401943"
-          ]
-        },
-        {
-          "name": "Traffic White",
-          "hex": "FFFFFF",
-          "codes": [
-            "TF-24195"
-          ],
-          "eans": [
-            "5907138401950"
-          ]
-        },
-        {
-          "name": "Grass Green",
-          "hex": "0FAD72"
-        },
-        {
-          "name": "Pure Red",
-          "hex": "DF2E3E"
-        },
-        {
-          "name": "Sky Blue",
-          "hex": "0666A0"
-        },
-        {
-          "name": "Slate Grey",
-          "hex": "555A60"
         }
       ],
       "finish": "matte"
@@ -285,7 +225,8 @@
           "name": "Jet Black",
           "hex": "000000",
           "codes": [
-            "TF-24143"
+            "TF-24143",
+            "TF-24196"
           ],
           "eans": [
             "5907138401851"
@@ -375,101 +316,12 @@
           "name": "Warm White",
           "hex": "FFFFFF",
           "codes": [
-            "TF-24137"
+            "TF-24137",
+            "TF-24197"
           ],
           "eans": [
             "5907138401752"
           ]
-        }
-      ],
-      "finish": "matte"
-    },
-    {
-      "name": "HT-PLA {color_name}",
-      "material": "PLA",
-      "density": 1.2,
-      "weights": [
-        {
-          "weight": 3000,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        195,
-        220
-      ],
-      "bed_temp_range": [
-        40,
-        50
-      ],
-      "country_of_origin": "PL",
-      "colors": [
-        {
-          "name": "Jet Black",
-          "hex": "000000",
-          "codes": [
-            "TF-24196"
-          ],
-          "eans": [
-            "5907138402018"
-          ]
-        },
-        {
-          "name": "Warm White",
-          "hex": "FFFFFF",
-          "codes": [
-            "TF-24197"
-          ],
-          "eans": [
-            "5907138402025"
-          ]
-        },
-        {
-          "name": "Camel Beige",
-          "hex": "F9DFB1"
-        },
-        {
-          "name": "Cobalt Blue",
-          "hex": "1C8EFC"
-        },
-        {
-          "name": "Dark Grey",
-          "hex": "848F91"
-        },
-        {
-          "name": "Light Grey",
-          "hex": "C4C6C2"
-        },
-        {
-          "name": "Tooling Dark Green",
-          "hex": "164032"
-        },
-        {
-          "name": "Tooling Green",
-          "hex": "0A3732"
-        },
-        {
-          "name": "Tooling Lime",
-          "hex": "F0EA63"
-        },
-        {
-          "name": "Tooling Red",
-          "hex": "FC565B"
-        },
-        {
-          "name": "Tooling Turquoise",
-          "hex": "62A6AD"
-        },
-        {
-          "name": "Tooling Yellow",
-          "hex": "FCDA63"
-        },
-        {
-          "name": "Vivid Red",
-          "hex": "FC4C5A"
         }
       ],
       "finish": "matte"
@@ -736,7 +588,9 @@
           "name": "Midnight Black",
           "hex": "000000",
           "codes": [
-            "TF-24015"
+            "TF-24015",
+            "TF-24084",
+            "TF-24090"
           ],
           "eans": [
             "5905991405191"
@@ -776,7 +630,9 @@
           "name": "Snow White",
           "hex": "FFFFFF",
           "codes": [
-            "TF-24016"
+            "TF-24016",
+            "TF-24085",
+            "TF-24091"
           ],
           "eans": [
             "5905991405207"
@@ -831,146 +687,14 @@
           "eans": [
             "5905991405320"
           ]
-        }
-      ],
-      "finish": "glossy"
-    },
-    {
-      "name": "PETG {color_name}",
-      "material": "PETG",
-      "density": 1.29,
-      "weights": [
-        {
-          "weight": 3000,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        230,
-        255
-      ],
-      "bed_temp_range": [
-        60,
-        75
-      ],
-      "country_of_origin": "PL",
-      "colors": [
-        {
-          "name": "Midnight Black",
-          "hex": "000000",
-          "codes": [
-            "TF-24084"
-          ],
-          "eans": [
-            "5907138400922"
-          ]
-        },
-        {
-          "name": "Snow White",
-          "hex": "FFFFFF",
-          "codes": [
-            "TF-24085"
-          ],
-          "eans": [
-            "5907138400939"
-          ]
-        }
-      ],
-      "finish": "glossy"
-    },
-    {
-      "name": "PETG {color_name}",
-      "material": "PETG",
-      "density": 1.29,
-      "weights": [
-        {
-          "weight": 5000,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        230,
-        255
-      ],
-      "bed_temp_range": [
-        60,
-        75
-      ],
-      "country_of_origin": "PL",
-      "colors": [
-        {
-          "name": "Midnight Black",
-          "hex": "000000",
-          "codes": [
-            "TF-24090"
-          ],
-          "eans": [
-            "5907138400984"
-          ]
-        },
-        {
-          "name": "Snow White",
-          "hex": "FFFFFF",
-          "codes": [
-            "TF-24091"
-          ],
-          "eans": [
-            "5907138400991"
-          ]
-        },
-        {
-          "name": "Basalt Grey",
-          "hex": "505A5C"
-        },
-        {
-          "name": "Circuit Green",
-          "hex": "327D38"
-        },
-        {
-          "name": "Cloud Grey",
-          "hex": "6C6E69"
         },
         {
           "name": "Machine Orange",
           "hex": "E56A2F"
         },
         {
-          "name": "Performance Blue",
-          "hex": "004298"
-        },
-        {
-          "name": "Plasma Purple",
-          "hex": "9E618A"
-        },
-        {
           "name": "Silver Aluminum",
           "hex": "70777D"
-        },
-        {
-          "name": "Sorbet Yellow",
-          "hex": "FFE12F"
-        },
-        {
-          "name": "Strawberry Pink",
-          "hex": "F95F6B"
-        },
-        {
-          "name": "Technical Red",
-          "hex": "EE4D53"
-        },
-        {
-          "name": "Transparent Blue",
-          "hex": "288CE1"
-        },
-        {
-          "name": "Transparent Red",
-          "hex": "D2303B"
         }
       ],
       "finish": "glossy"
@@ -1444,7 +1168,8 @@
           "name": "Snow White",
           "hex": "FFFFFF",
           "codes": [
-            "TF-24198"
+            "TF-24198",
+            "TF-24193"
           ],
           "eans": [
             "5907138401158"
@@ -1454,7 +1179,8 @@
           "name": "Stealth Black",
           "hex": "000000",
           "codes": [
-            "TF-24208"
+            "TF-24208",
+            "TF-24192"
           ],
           "eans": [
             "5907138401677"
@@ -1479,88 +1205,6 @@
           "eans": [
             "5907138401660"
           ]
-        }
-      ],
-      "finish": "matte"
-    },
-    {
-      "name": "PLA Matte {color_name}",
-      "material": "PLA",
-      "density": 1.27,
-      "weights": [
-        {
-          "weight": 3000,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        195,
-        220
-      ],
-      "bed_temp_range": [
-        40,
-        50
-      ],
-      "country_of_origin": "PL",
-      "colors": [
-        {
-          "name": "Snow White",
-          "hex": "FFFFFF",
-          "codes": [
-            "TF-24193"
-          ],
-          "eans": [
-            "5907138401905"
-          ]
-        },
-        {
-          "name": "Stealth Black",
-          "hex": "000000",
-          "codes": [
-            "TF-24192"
-          ],
-          "eans": [
-            "5907138401691"
-          ]
-        },
-        {
-          "name": "Army Green",
-          "hex": "454732"
-        },
-        {
-          "name": "Camo Green",
-          "hex": "42422A"
-        },
-        {
-          "name": "Desert Beige",
-          "hex": "CEB78E"
-        },
-        {
-          "name": "Jungle Green",
-          "hex": "1858A0"
-        },
-        {
-          "name": "Military Olive",
-          "hex": "2E2A1F"
-        },
-        {
-          "name": "Night Blue",
-          "hex": "1858A0"
-        },
-        {
-          "name": "October Red",
-          "hex": "8C2B29"
-        },
-        {
-          "name": "Trooper Grey",
-          "hex": "A2A6A5"
-        },
-        {
-          "name": "Urban Grey",
-          "hex": "727473"
         }
       ],
       "finish": "matte"
@@ -1643,7 +1287,9 @@
           "name": "Midnight Black",
           "hex": "000000",
           "codes": [
-            "TF-24000"
+            "TF-24000",
+            "TF-24082",
+            "TF-24088"
           ],
           "eans": [
             "5905991405078"
@@ -1723,7 +1369,9 @@
           "name": "Traffic White",
           "hex": "FFFFFF",
           "codes": [
-            "TF-24001"
+            "TF-24001",
+            "TF-24083",
+            "TF-24089"
           ],
           "eans": [
             "5905991405085"
@@ -1738,150 +1386,10 @@
           "eans": [
             "5907138400380"
           ]
-        }
-      ],
-      "finish": "glossy"
-    },
-    {
-      "name": "PLA {color_name}",
-      "material": "PLA",
-      "density": 1.24,
-      "weights": [
-        {
-          "weight": 3000,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        185,
-        215
-      ],
-      "bed_temp_range": [
-        40,
-        50
-      ],
-      "country_of_origin": "PL",
-      "colors": [
-        {
-          "name": "Midnight Black",
-          "hex": "000000",
-          "codes": [
-            "TF-24082"
-          ],
-          "eans": [
-            "5907138400908"
-          ]
-        },
-        {
-          "name": "Traffic White",
-          "hex": "FFFFFF",
-          "codes": [
-            "TF-24083"
-          ],
-          "eans": [
-            "5907138400915"
-          ]
-        }
-      ],
-      "finish": "glossy"
-    },
-    {
-      "name": "PLA {color_name}",
-      "material": "PLA",
-      "density": 1.24,
-      "weights": [
-        {
-          "weight": 5000,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        185,
-        215
-      ],
-      "bed_temp_range": [
-        40,
-        50
-      ],
-      "country_of_origin": "PL",
-      "colors": [
-        {
-          "name": "Midnight Black",
-          "hex": "000000",
-          "codes": [
-            "TF-24088"
-          ],
-          "eans": [
-            "5907138400960"
-          ]
-        },
-        {
-          "name": "Traffic White",
-          "hex": "FFFFFF",
-          "codes": [
-            "TF-24089"
-          ],
-          "eans": [
-            "5907138400977"
-          ]
-        },
-        {
-          "name": "Basalt Grey",
-          "hex": "7A8D8B"
-        },
-        {
-          "name": "Bison Brown",
-          "hex": "614230"
-        },
-        {
-          "name": "Circuit Green",
-          "hex": "02B31B"
-        },
-        {
-          "name": "Cloud Grey",
-          "hex": "EAECE7"
-        },
-        {
-          "name": "Machinery Orange",
-          "hex": "F8DB11"
-        },
-        {
-          "name": "Performance Blue",
-          "hex": "3C7ECC"
-        },
-        {
-          "name": "Plasma Purple",
-          "hex": "99679C"
         },
         {
           "name": "Silver Aluminum",
           "hex": "CAD6D2"
-        },
-        {
-          "name": "Sky Blue",
-          "hex": "56A8CD"
-        },
-        {
-          "name": "Sorbet Yellow",
-          "hex": "F8DB11"
-        },
-        {
-          "name": "Strawberry Pink",
-          "hex": "EA4D6A"
-        },
-        {
-          "name": "Technical Red",
-          "hex": "D42A44"
-        },
-        {
-          "name": "Wood Ash",
-          "hex": "E1CCB1"
         }
       ],
       "finish": "glossy"
@@ -3242,7 +2750,7 @@
     },
     {
       "name": "TPU-95A {color_name}",
-      "material": "TPU",
+      "material": "TPU-95A",
       "density": 1.21,
       "weights": [
         {
@@ -3316,138 +2824,6 @@
         }
       ],
       "finish": "glossy"
-    },
-    {
-      "name": "ASA CF {color_name}",
-      "material": "ASA",
-      "density": 1.12,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 205
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "010006"
-        },
-        {
-          "name": "Blue",
-          "hex": "6A9DB2"
-        },
-        {
-          "name": "Green",
-          "hex": "63765A"
-        },
-        {
-          "name": "Grey",
-          "hex": "636268"
-        },
-        {
-          "name": "Red",
-          "hex": "934948"
-        }
-      ],
-      "country_of_origin": "PL",
-      "extruder_temp": 250,
-      "bed_temp": 90
-    },
-    {
-      "name": "PETG CF {color_name}",
-      "material": "PETG",
-      "density": 1.32,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 205
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "2D2E30"
-        },
-        {
-          "name": "Blue",
-          "hex": "0A748E"
-        },
-        {
-          "name": "Green",
-          "hex": "275749"
-        },
-        {
-          "name": "Grey",
-          "hex": "5C6E7A"
-        },
-        {
-          "name": "Purple",
-          "hex": "5B425F"
-        },
-        {
-          "name": "Red",
-          "hex": "71271A"
-        }
-      ],
-      "country_of_origin": "PL",
-      "extruder_temp": 240,
-      "bed_temp": 75
-    },
-    {
-      "name": "PLA CF {color_name}",
-      "material": "PLA",
-      "density": 1.3,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 205
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "141819"
-        },
-        {
-          "name": "Blue",
-          "hex": "255981"
-        },
-        {
-          "name": "Green",
-          "hex": "307B64"
-        },
-        {
-          "name": "Grey",
-          "hex": "C7D5D8"
-        },
-        {
-          "name": "Purple",
-          "hex": "9079A5"
-        },
-        {
-          "name": "Red",
-          "hex": "895255"
-        },
-        {
-          "name": "Violet",
-          "hex": "8E486D"
-        }
-      ],
-      "country_of_origin": "PL",
-      "extruder_temp": 210,
-      "bed_temp": 60
     }
   ]
 }
