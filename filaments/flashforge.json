@@ -4,7 +4,6 @@
     {
       "name": "PLA - {color_name}",
       "material": "PLA",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_TDS_EN.pdf",
       "density": 1.25,
       "weights": [
         {
@@ -161,7 +160,8 @@
           "hex": "F55928"
         }
       ],
-      "country_of_origin": "CN"
+      "country_of_origin": "CN",
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_TDS_EN.pdf"
     },
     {
       "name": "Starter PLA - {color_name}",
@@ -190,8 +190,7 @@
     },
     {
       "name": "PLA Pro - {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_Pro_TDS_EN.pdf",
+      "material": "PLA",
       "density": 1.25,
       "weights": [
         {
@@ -303,12 +302,12 @@
           "hex": "F08400"
         }
       ],
-      "country_of_origin": "CN"
+      "country_of_origin": "CN",
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_Pro_TDS_EN.pdf"
     },
     {
       "name": "ABS {color_name}",
       "material": "ABS",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/ABS_TDS_EN.pdf",
       "density": 1.04,
       "weights": [
         {
@@ -344,7 +343,8 @@
       "bed_temp_range": [
         90,
         110
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/ABS_TDS_EN.pdf"
     },
     {
       "name": "D Series ABS {color_name}",
@@ -377,7 +377,6 @@
     {
       "name": "ASA {color_name}",
       "material": "ASA",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/ASA_TDS_EN.pdf",
       "density": 1.07,
       "weights": [
         {
@@ -457,12 +456,12 @@
       "bed_temp_range": [
         90,
         110
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/ASA_TDS_EN.pdf"
     },
     {
       "name": "ASA Basic {color_name}",
       "material": "ASA",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/ASA_TDS_EN.pdf",
       "density": 1.08,
       "weights": [
         {
@@ -488,7 +487,8 @@
         }
       ],
       "extruder_temp": 250,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/ASA_TDS_EN.pdf"
     },
     {
       "name": "Chameleon PETG {color_name}",
@@ -557,7 +557,6 @@
     {
       "name": "PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PETG_TDS_EN.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -613,12 +612,12 @@
       "bed_temp_range": [
         70,
         90
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PETG_TDS_EN.pdf"
     },
     {
       "name": "PETG CF {color_name}",
-      "material": "PETG-CF",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PETG_CF_TDS_EN.pdf",
+      "material": "PETG",
       "density": 1.27,
       "weights": [
         {
@@ -646,12 +645,12 @@
       "bed_temp_range": [
         70,
         90
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PETG_CF_TDS_EN.pdf"
     },
     {
       "name": "Rapid PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PETG_HS_TDS_EN.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -695,7 +694,8 @@
       "bed_temp_range": [
         70,
         90
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PETG_HS_TDS_EN.pdf"
     },
     {
       "name": "Gradient Rapid Chameleon PLA {color_name}",
@@ -736,7 +736,6 @@
     {
       "name": "High Speed PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_HS_TDS_EN.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -760,12 +759,12 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_HS_TDS_EN.pdf"
     },
     {
       "name": "Matte PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_Matte_TDS_EN.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -810,12 +809,12 @@
         50,
         70
       ],
-      "finish": "matte"
+      "finish": "matte",
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_Matte_TDS_EN.pdf"
     },
     {
       "name": "PLA CF {color_name}",
-      "material": "PLA-CF",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_CF_TDS_EN.pdf",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -863,12 +862,12 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_CF_TDS_EN.pdf"
     },
     {
       "name": "Rapid Chameleon PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_Multicolor_TDS_EN.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -912,7 +911,8 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_Multicolor_TDS_EN.pdf"
     },
     {
       "name": "Rapid Glow PLA {color_name}",
@@ -996,7 +996,6 @@
     {
       "name": "Rapid PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_HS_TDS_EN.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -1152,12 +1151,12 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_HS_TDS_EN.pdf"
     },
     {
       "name": "Silk PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_Silk_TDS_EN.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -1317,7 +1316,8 @@
       "bed_temp_range": [
         50,
         70
-      ]
+      ],
+      "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_Silk_TDS_EN.pdf"
     }
   ]
 }
