@@ -1131,7 +1131,27 @@
         {
           "name": "PET",
           "hex": "2F2F2D"
-        },
+        }
+      ],
+      "country_of_origin": "SI"
+    },
+    {
+      "name": "Carbon Fiber {color_name}",
+      "material": "CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 280,
+      "bed_temp": 110,
+      "colors": [
         {
           "name": "PAHT",
           "hex": "1D1D1C"
@@ -1397,7 +1417,7 @@
     },
     {
       "name": "PA6 Carbonfiber nylon {color_name}",
-      "material": "PA6-CF",
+      "material": "PA6",
       "density": 1.08,
       "weights": [
         {
@@ -1463,7 +1483,7 @@
     },
     {
       "name": "Carbonfiber PET {color_name}",
-      "material": "PET-CF",
+      "material": "PET",
       "density": 1.27,
       "weights": [
         {
@@ -2055,7 +2075,7 @@
     },
     {
       "name": "TPU 85A {color_name}",
-      "material": "TPU-85A",
+      "material": "TPU",
       "density": 1.12,
       "weights": [
         {
