@@ -79,15 +79,15 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 483 |
 | Material definitions | 152 |
-| Source filament objects | 4,974 |
-| Color entries | 30,736 |
-| Compiled filament variants | 52,942 |
+| Source filament objects | 4,975 |
+| Color entries | 30,737 |
+| Compiled filament variants | 52,943 |
 | Source filaments with country of origin | 4,548 |
-| Source filaments with TDS/product links | 511 |
-| Source filaments with SDS links | 10 |
+| Source filaments with TDS/product links | 512 |
+| Source filaments with SDS links | 11 |
 | Manufacturer product code/ID entries | 8,098 |
 | EAN/GTIN entries | 2,211 |
-| ASEAN manufacturer coverage | 21 brands / 139 source filaments |
+| ASEAN manufacturer coverage | 21 brands / 140 source filaments |
 
 Counts in this block are generated from the current repository state. Run `python scripts/readme_snapshot.py --write` after source-data changes. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
 
@@ -101,7 +101,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 | `spool_type: refill` (legacy) | 34 |
 | `spool_type: unknow` (legacy) | 26 |
 | `spool_type: null` | 0 |
-| `spool_type` omitted | 244 |
+| `spool_type` omitted | 245 |
 | Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 46 |
 <!-- readme-snapshot:end -->
 
