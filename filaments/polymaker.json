@@ -3,7 +3,7 @@
   "filaments": [
     {
       "name": "Fiberon™ PA12-CF10 {color_name}",
-      "material": "PA",
+      "material": "PA12-CF",
       "density": 1.06,
       "weights": [
         {
@@ -40,7 +40,7 @@
     },
     {
       "name": "Fiberon™ PA6-CF20 {color_name}",
-      "material": "PA",
+      "material": "PA6-CF",
       "density": 1.17,
       "weights": [
         {
@@ -84,7 +84,7 @@
     },
     {
       "name": "Fiberon™ PA6-GF25 {color_name}",
-      "material": "PA",
+      "material": "PA6-GF",
       "density": 1.2,
       "weights": [
         {
@@ -128,7 +128,7 @@
     },
     {
       "name": "Fiberon™ PA612-CF15 {color_name}",
-      "material": "PA",
+      "material": "PA6-CF",
       "density": 1.03,
       "weights": [
         {
@@ -286,7 +286,7 @@
     },
     {
       "name": "Fiberon™ PETG-rCF08 {color_name}",
-      "material": "PETG",
+      "material": "PETG-CF",
       "density": 1.3,
       "weights": [
         {
@@ -322,7 +322,7 @@
     },
     {
       "name": "Fiberon™ PPS-CF10 {color_name}",
-      "material": "PPS-CF",
+      "material": "PP-CF",
       "density": 1.29,
       "weights": [
         {
@@ -358,7 +358,7 @@
     },
     {
       "name": "Fiberon™ PPS-GF20 {color_name}",
-      "material": "PPS-GF20",
+      "material": "PP-GF",
       "density": 1.36,
       "weights": [
         {
@@ -1438,39 +1438,7 @@
             "6938936708728",
             "6938936708742"
           ]
-        }
-      ],
-      "country_of_origin": "CN",
-      "tds_url": "https://wiki.polymaker.com/en/Technical_Data_Sheets"
-    },
-    {
-      "name": "PolyLite CosPLA {color_name}",
-      "material": "PLA",
-      "density": 1.22,
-      "weights": [
-        {
-          "weight": 1000.0,
-          "spool_weight": 140.0,
-          "spool_type": "cardboard"
         },
-        {
-          "weight": 5000.0,
-          "spool_weight": 819.0,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        190,
-        230
-      ],
-      "bed_temp_range": [
-        25,
-        60
-      ],
-      "colors": [
         {
           "name": "Version B",
           "hex": "B1B1B1",
@@ -2260,7 +2228,7 @@
     },
     {
       "name": "PolyLite™ PLA Pro {color_name}",
-      "material": "PLA",
+      "material": "PLA+",
       "density": 1.22,
       "weights": [
         {
@@ -2979,7 +2947,7 @@
     },
     {
       "name": "Polymaker PC-ABS {color_name}",
-      "material": "PC",
+      "material": "PC+ABS",
       "density": 1.1,
       "weights": [
         {
@@ -3031,7 +2999,7 @@
     },
     {
       "name": "Polymaker PC-PBT {color_name}",
-      "material": "PC",
+      "material": "PC+PBT",
       "density": 1.2,
       "weights": [
         {
@@ -3803,7 +3771,7 @@
     },
     {
       "name": "PolySonic™ PLA Pro {color_name}",
-      "material": "PLA",
+      "material": "PLA+",
       "density": 1.23,
       "weights": [
         {
@@ -6187,7 +6155,7 @@
     },
     {
       "name": "PA12 CF {color_name}",
-      "material": "PA12",
+      "material": "PA12-CF",
       "density": 1.01,
       "weights": [
         {
@@ -6218,7 +6186,7 @@
     },
     {
       "name": "PA6 CF {color_name}",
-      "material": "PA6",
+      "material": "PA6-CF",
       "density": 1.14,
       "weights": [
         {
@@ -6249,7 +6217,7 @@
     },
     {
       "name": "PA6 GF {color_name}",
-      "material": "PA6",
+      "material": "PA6-GF",
       "density": 1.14,
       "weights": [
         {
@@ -6350,7 +6318,7 @@
     },
     {
       "name": "PC-ABS {color_name}",
-      "material": "PC",
+      "material": "PC+ABS",
       "density": 1.1,
       "weights": [
         {
@@ -6380,7 +6348,7 @@
     },
     {
       "name": "PC-PBT {color_name}",
-      "material": "PC",
+      "material": "PC+PBT",
       "density": 1.2,
       "weights": [
         {
@@ -6410,7 +6378,7 @@
     },
     {
       "name": "PET CF {color_name}",
-      "material": "PET",
+      "material": "PET-CF",
       "density": 1.38,
       "weights": [
         {
@@ -6441,7 +6409,7 @@
     },
     {
       "name": "PETG CF {color_name}",
-      "material": "PETG",
+      "material": "PETG-CF",
       "density": 1.27,
       "weights": [
         {
@@ -7139,7 +7107,7 @@
     },
     {
       "name": "HT-PLA-GF {color_name}",
-      "material": "PLA",
+      "material": "PLA-GF",
       "density": 1.33,
       "weights": [
         {
@@ -8082,7 +8050,7 @@
     },
     {
       "name": "Polylite PLA CF {color_name}",
-      "material": "PLA",
+      "material": "PLA-CF",
       "density": 1.24,
       "weights": [
         {
@@ -8423,7 +8391,7 @@
     },
     {
       "name": "PPS CF {color_name}",
-      "material": "PPS",
+      "material": "PPS-CF",
       "density": 1.24,
       "weights": [
         {
@@ -8733,7 +8701,8 @@
           "name": "Black",
           "hex": "000000",
           "codes": [
-            "FL02001"
+            "FL02001",
+            "FL02002"
           ]
         },
         {
@@ -8775,38 +8744,6 @@
       "tds_url": "https://wiki.polymaker.com/polymaker-products/polymaker-filaments/technical-data-at-a-glance"
     },
     {
-      "name": "Fiberon™ PET-GF15 {color_name}",
-      "material": "PET-GF",
-      "density": 1.43,
-      "weights": [
-        {
-          "weight": 3000,
-          "spool_type": "cardboard"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        280,
-        310
-      ],
-      "bed_temp_range": [
-        70,
-        80
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "000000",
-          "codes": [
-            "FL02002"
-          ]
-        }
-      ],
-      "tds_url": "https://wiki.polymaker.com/polymaker-products/polymaker-filaments/technical-data-at-a-glance"
-    },
-    {
       "name": "Fiberon™ ASA-CF08 {color_name}",
       "material": "ASA-CF",
       "density": 1.09,
@@ -8831,7 +8768,8 @@
           "name": "Black",
           "hex": "000000",
           "codes": [
-            "FF02001"
+            "FF02001",
+            "FF02002"
           ]
         },
         {
@@ -8867,37 +8805,6 @@
           "hex": "CEB69C",
           "codes": [
             "FF02006"
-          ]
-        }
-      ],
-      "tds_url": "https://wiki.polymaker.com/polymaker-products/polymaker-filaments/fiberon-tm/fiberon-tm-asa-cf08"
-    },
-    {
-      "name": "Fiberon™ ASA-CF08 {color_name}",
-      "material": "ASA-CF",
-      "density": 1.09,
-      "weights": [
-        {
-          "weight": 3000
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        260,
-        280
-      ],
-      "bed_temp_range": [
-        90,
-        100
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "000000",
-          "codes": [
-            "FF02002"
           ]
         }
       ],
