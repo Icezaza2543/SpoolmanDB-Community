@@ -3,7 +3,7 @@
   "filaments": [
     {
       "name": "PLA Pro {color_name}",
-      "material": "PLA",
+      "material": "PLA+",
       "density": 1.25,
       "weights": [
         {
@@ -14,23 +14,75 @@
         1.75
       ],
       "colors": [
-        {"name": "Lithophane White", "hex": "F7F4E8"},
-        {"name": "Crystal Clear", "hex": "E8F1F2", "translucent": true},
-        {"name": "Traffic White", "hex": "F1F0EA"},
-        {"name": "Jet Black", "hex": "0A0A0A"},
-        {"name": "Silver Grey", "hex": "A6A6A6"},
-        {"name": "Slate Grey", "hex": "65717C"},
-        {"name": "Traffic Red", "hex": "CC0605"},
-        {"name": "Deep Orange", "hex": "E75B12"},
-        {"name": "Signal Yellow", "hex": "F7BA0B"},
-        {"name": "Lemon Yellow", "hex": "F4E500"},
-        {"name": "Baby Pink", "hex": "F4B6C2"},
-        {"name": "Heather Pink", "hex": "D98AA8"},
-        {"name": "Brown Red", "hex": "781F19"},
-        {"name": "Ultramarine Blue", "hex": "20214F"},
-        {"name": "Signal Violet", "hex": "924E7D"},
-        {"name": "Sky Blue", "hex": "6C9BD2"},
-        {"name": "Yellow Green", "hex": "57A639"}
+        {
+          "name": "Lithophane White",
+          "hex": "F7F4E8"
+        },
+        {
+          "name": "Crystal Clear",
+          "hex": "E8F1F2",
+          "translucent": true
+        },
+        {
+          "name": "Traffic White",
+          "hex": "F1F0EA"
+        },
+        {
+          "name": "Jet Black",
+          "hex": "0A0A0A"
+        },
+        {
+          "name": "Silver Grey",
+          "hex": "A6A6A6"
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "65717C"
+        },
+        {
+          "name": "Traffic Red",
+          "hex": "CC0605"
+        },
+        {
+          "name": "Deep Orange",
+          "hex": "E75B12"
+        },
+        {
+          "name": "Signal Yellow",
+          "hex": "F7BA0B"
+        },
+        {
+          "name": "Lemon Yellow",
+          "hex": "F4E500"
+        },
+        {
+          "name": "Baby Pink",
+          "hex": "F4B6C2"
+        },
+        {
+          "name": "Heather Pink",
+          "hex": "D98AA8"
+        },
+        {
+          "name": "Brown Red",
+          "hex": "781F19"
+        },
+        {
+          "name": "Ultramarine Blue",
+          "hex": "20214F"
+        },
+        {
+          "name": "Signal Violet",
+          "hex": "924E7D"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "6C9BD2"
+        },
+        {
+          "name": "Yellow Green",
+          "hex": "57A639"
+        }
       ],
       "extruder_temp_range": [
         190,
@@ -54,17 +106,51 @@
         1.75
       ],
       "colors": [
-        {"name": "Crystal Clear", "hex": "E8F1F2", "translucent": true},
-        {"name": "Traffic White", "hex": "F1F0EA"},
-        {"name": "Jet Black", "hex": "0A0A0A"},
-        {"name": "Silver Grey", "hex": "A6A6A6"},
-        {"name": "Slate Grey", "hex": "65717C"},
-        {"name": "Traffic Red", "hex": "CC0605"},
-        {"name": "Deep Orange", "hex": "E75B12"},
-        {"name": "Lemon Yellow", "hex": "F4E500"},
-        {"name": "Ultramarine Blue", "hex": "20214F"},
-        {"name": "Sky Blue", "hex": "6C9BD2"},
-        {"name": "Yellow Green", "hex": "57A639"}
+        {
+          "name": "Crystal Clear",
+          "hex": "E8F1F2",
+          "translucent": true
+        },
+        {
+          "name": "Traffic White",
+          "hex": "F1F0EA"
+        },
+        {
+          "name": "Jet Black",
+          "hex": "0A0A0A"
+        },
+        {
+          "name": "Silver Grey",
+          "hex": "A6A6A6"
+        },
+        {
+          "name": "Slate Grey",
+          "hex": "65717C"
+        },
+        {
+          "name": "Traffic Red",
+          "hex": "CC0605"
+        },
+        {
+          "name": "Deep Orange",
+          "hex": "E75B12"
+        },
+        {
+          "name": "Lemon Yellow",
+          "hex": "F4E500"
+        },
+        {
+          "name": "Ultramarine Blue",
+          "hex": "20214F"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "6C9BD2"
+        },
+        {
+          "name": "Yellow Green",
+          "hex": "57A639"
+        }
       ],
       "extruder_temp_range": [
         200,
