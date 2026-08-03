@@ -4,7 +4,6 @@
     {
       "name": "{color_name} Metallic",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -55,12 +54,13 @@
           "hex": "f77f41"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Translucent",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -87,12 +87,13 @@
           "hex": "a60217"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Glitter",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -119,12 +120,13 @@
           "hex": "d4d4d2"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Carbon Fiber",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_CF7.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -158,12 +160,13 @@
           "hex": "0f0f0f"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__CarbonFiber_HTPLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_HTPLA_CF.pdf?v=1773099686"
     },
     {
       "name": "Simply {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -193,18 +196,42 @@
         {
           "name": "White",
           "hex": "fcfcfc"
-        },
+        }
+      ],
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
+    },
+    {
+      "name": "Simply {color_name}",
+      "material": "PETG",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 70,
+      "translucent": true,
+      "glow": false,
+      "finish": "glossy",
+      "colors": [
         {
           "name": "Clear",
           "hex": "ffffff"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
     },
     {
       "name": "Recycled {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -235,13 +262,13 @@
           "hex": "010204"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Static Dissipative {color_name}",
       "material": "PETG",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETGxxxx-ESD_TDS.pdf?v=1731010137",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_ESD.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -271,13 +298,13 @@
           "hex": "010204"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA1xxxx-ESD_TDS.pdf?v=1731010137",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_ESD.pdf?v=1773099686"
     },
     {
       "name": "Composite Conductive {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CDP1xxxx_TDS.pdf?v=1731010137",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CDP1xxxx_SDS.pdf?v=1773100227",
       "density": 1.24,
       "weights": [
         {
@@ -313,13 +340,50 @@
           "hex": "070707"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CDP1xxxx_TDS.pdf?v=1731010137",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CDP1xxxx_SDS.pdf?v=1773100227"
+    },
+    {
+      "name": "Composite Conductive {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        },
+        {
+          "weight": 2000,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "translucent": false,
+      "glow": false,
+      "finish": "glossy",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "070707"
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CDP1xxxx_TDS.pdf?v=1731010137",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CDP1xxxx_SDS.pdf?v=1773100227"
     },
     {
       "name": "Composite Carbon Fiber {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__CarbonFiber_HTPLA_1.0.1.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_HTPLA_CF.pdf?v=1773099686",
       "density": 1.14,
       "weights": [
         {
@@ -359,13 +423,13 @@
           ]
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__CarbonFiber_HTPLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_HTPLA_CF.pdf?v=1773099686"
     },
     {
       "name": "Composite Iron {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Iron_PLA_1.0.1.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/FEP1xxxx_SDS.pdf?v=1773101059",
       "density": 1.85,
       "weights": [
         {
@@ -406,13 +470,13 @@
           "hex": "6d6e70"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Iron_PLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/FEP1xxxx_SDS.pdf?v=1773101059"
     },
     {
       "name": "Composite Steel {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Stainless_Steel_PLA_1.0.1.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Steel.pdf?v=1773099686",
       "density": 2.3,
       "weights": [
         {
@@ -457,12 +521,77 @@
           "hex": "7e7e7c"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Stainless_Steel_PLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Steel.pdf?v=1773099686"
+    },
+    {
+      "name": "Composite Iron {color_name}",
+      "material": "PLA",
+      "density": 1.85,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        185,
+        215
+      ],
+      "bed_temp": 60,
+      "translucent": false,
+      "glow": false,
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "Gray",
+          "hex": "6d6e70"
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Iron_PLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/FEP1xxxx_SDS.pdf?v=1773101059"
+    },
+    {
+      "name": "Composite Steel {color_name}",
+      "material": "PLA",
+      "density": 2.3,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "translucent": false,
+      "glow": false,
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "Gray",
+          "hex": "7e7e7c"
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Stainless_Steel_PLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Steel.pdf?v=1773099686"
     },
     {
       "name": "{color_name} High Flow",
       "material": "PLA",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -496,13 +625,12 @@
           "hex": "f7f2ec"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Glitter",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -601,13 +729,13 @@
           ]
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Multicolor",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -925,7 +1053,9 @@
           "multi_color_direction": "longitudinal"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Marble",
@@ -976,8 +1106,6 @@
     {
       "name": "Matte Fiber {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Matte_Fiber_HTPLA_1.0.0.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/HTPLA_MF.pdf?v=1773099686",
       "density": 1.14,
       "weights": [
         {
@@ -1010,7 +1138,35 @@
         {
           "name": "Matte Fiber White",
           "hex": "f6f5f1"
-        },
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Matte_Fiber_HTPLA_1.0.0.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/HTPLA_MF.pdf?v=1773099686"
+    },
+    {
+      "name": "Matte Fiber {color_name}",
+      "material": "PLA",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "translucent": false,
+      "glow": false,
+      "finish": "matte",
+      "colors": [
         {
           "name": "Matte Fiber Daffodil",
           "hex": "d5a76f"
@@ -1028,13 +1184,49 @@
           "hex": "78635a"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Matte_Fiber_HTPLA_1.0.0.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/HTPLA_MF.pdf?v=1773099686"
+    },
+    {
+      "name": "Matte Fiber {color_name}",
+      "material": "PLA",
+      "density": 1.14,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "translucent": false,
+      "glow": false,
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "Matte Fiber White",
+          "hex": "f6f5f1"
+        },
+        {
+          "name": "Matte Fiber Black",
+          "hex": "29292b"
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Matte_Fiber_HTPLA_1.0.0.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/HTPLA_MF.pdf?v=1773099686"
     },
     {
       "name": "Amber Alchemy Translucent {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1064,13 +1256,13 @@
           "hex": "d05e20"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Ecto Ooze Translucent {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1100,13 +1292,13 @@
           "hex": "b8df84"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Gloop! Translucent {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1136,13 +1328,13 @@
           "hex": "583f65"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Translucent",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1210,7 +1402,34 @@
           "name": "Nerfed Orange",
           "hex": "f69e22",
           "translucent": true
-        },
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
+    },
+    {
+      "name": "{color_name} Translucent",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "translucent": true,
+      "glow": false,
+      "colors": [
         {
           "name": "Iridescent Ice Translucent",
           "hex": "ffffff"
@@ -1220,13 +1439,13 @@
           "hex": "b7b1a9"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Totally Translucent {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1260,13 +1479,13 @@
           ]
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Opaque",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1341,13 +1560,13 @@
         }
       ],
       "finish": "matte",
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Opaque {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -1384,7 +1603,35 @@
         {
           "name": "White",
           "hex": "f7f7f7"
-        },
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
+    },
+    {
+      "name": "Opaque {color_name}",
+      "material": "PLA",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "translucent": false,
+      "glow": false,
+      "finish": "glossy",
+      "colors": [
         {
           "name": "Natural",
           "hex": "ffffff"
@@ -1394,13 +1641,49 @@
           "hex": "dd0021"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
+    },
+    {
+      "name": "Opaque {color_name}",
+      "material": "PLA",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "translucent": false,
+      "glow": false,
+      "finish": "glossy",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "010204"
+        },
+        {
+          "name": "White",
+          "hex": "f7f7f7"
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Carbon Fiber",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__CarbonFiber_HTPLA_1.0.1.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_HTPLA_CF.pdf?v=1773099686",
       "density": 1.15,
       "weights": [
         {
@@ -1435,7 +1718,74 @@
         {
           "name": "Black",
           "hex": "0f0f0f"
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__CarbonFiber_HTPLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_HTPLA_CF.pdf?v=1773099686"
+    },
+    {
+      "name": "{color_name} Carbon Fiber",
+      "material": "PLA",
+      "density": 1.15,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 75
         },
+        {
+          "weight": 3000,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "fill": "carbon fiber",
+      "translucent": false,
+      "glow": false,
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "0f0f0f"
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__CarbonFiber_HTPLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_HTPLA_CF.pdf?v=1773099686"
+    },
+    {
+      "name": "{color_name} Carbon Fiber",
+      "material": "PLA",
+      "density": 1.15,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "fill": "carbon fiber",
+      "translucent": false,
+      "glow": false,
+      "finish": "matte",
+      "colors": [
         {
           "name": "Dark",
           "hex": "4e555b"
@@ -1445,13 +1795,13 @@
           "hex": "afbdc6"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__CarbonFiber_HTPLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_HTPLA_CF.pdf?v=1773099686"
     },
     {
       "name": "Fluorescent {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1481,13 +1831,13 @@
           "hex": "d4ed3a"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Composite",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__BrassBronzeCopper_HTPLA_1.0.0.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/HTPLA_Copper_Alloy.pdf?v=1773099686",
       "density": 2.3,
       "weights": [
         {
@@ -1531,13 +1881,13 @@
           "hex": "995a49"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__BrassBronzeCopper_HTPLA_1.0.0.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/HTPLA_Copper_Alloy.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Metallic",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1652,13 +2002,13 @@
           "translucent": false
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Pearl",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1708,13 +2058,13 @@
           "translucent": true
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Satin",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1744,12 +2094,13 @@
           "hex": "f9f9f9"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} cMatte",
       "material": "PLA",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_CaCO3.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1803,13 +2154,12 @@
           ]
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_CaCO3.pdf?v=1773099686"
     },
     {
       "name": "Basic {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1833,7 +2183,40 @@
         {
           "name": "Natural",
           "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
+    },
+    {
+      "name": "Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 75
         },
+        {
+          "weight": 3000,
+          "spool_type": "cardboard",
+          "spool_weight": 75
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        225
+      ],
+      "bed_temp": 60,
+      "translucent": false,
+      "glow": false,
+      "finish": "glossy",
+      "colors": [
         {
           "name": "Black",
           "hex": "101010"
@@ -1843,13 +2226,13 @@
           "hex": "fcfcfc"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Recycled {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1879,13 +2262,13 @@
           "hex": "000000"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Thermochromic",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1935,13 +2318,13 @@
           "translucent": false
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "{color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -1971,13 +2354,13 @@
           "hex": "c25542"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Green Glow-in-the-Dark {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -2025,13 +2408,13 @@
           "hex": "c5ec82"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Static Dissipative Carbon Fiber {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CFP1xxxx-ESD_TDS.pdf?v=1731010137",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CF_ESD.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -2062,13 +2445,13 @@
           "hex": "010204"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CFP1xxxx-ESD_TDS.pdf?v=1731010137",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CF_ESD.pdf?v=1773099686"
     },
     {
       "name": "Static Dissipative {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA1xxxx-ESD_TDS.pdf?v=1731010137",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_ESD.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -2098,7 +2481,9 @@
           "hex": "010204"
         }
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA1xxxx-ESD_TDS.pdf?v=1731010137",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_ESD.pdf?v=1773099686"
     },
     {
       "name": "{color_name} Flexible",
@@ -2177,8 +2562,7 @@
     },
     {
       "name": "PETG CF {color_name}",
-      "material": "PETG-CF",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_CF7.pdf?v=1773099686",
+      "material": "PETG",
       "density": 1.27,
       "weights": [
         {
@@ -2221,12 +2605,12 @@
         70,
         90
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_CF7.pdf?v=1773099686"
     },
     {
       "name": "Glitter PETG {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -2257,12 +2641,12 @@
         60,
         80
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
     },
     {
       "name": "Metallic PETG {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -2317,12 +2701,12 @@
         60,
         80
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
     },
     {
       "name": "PETG {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.27,
       "weights": [
         {
@@ -2374,12 +2758,12 @@
         70,
         90
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
     },
     {
       "name": "Recycled PETG {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.27,
       "weights": [
         {
@@ -2409,12 +2793,12 @@
         70,
         80
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
     },
     {
       "name": "Silk PETG {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.27,
       "weights": [
         {
@@ -2448,12 +2832,12 @@
         70,
         90
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
     },
     {
       "name": "Simply PETG {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -2491,13 +2875,12 @@
         60,
         80
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
     },
     {
       "name": "Static Dissipative PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETGxxxx-ESD_TDS.pdf?v=1731010137",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_ESD.pdf?v=1773099686",
       "density": 1.27,
       "weights": [
         {
@@ -2528,12 +2911,13 @@
         60,
         80
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETGxxxx-ESD_TDS.pdf?v=1731010137",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_ESD.pdf?v=1773099686"
     },
     {
       "name": "Translucent PETG {color_name}",
       "material": "PETG",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686",
       "density": 1.2,
       "weights": [
         {
@@ -2564,13 +2948,12 @@
         60,
         80
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PETG_Colors.pdf?v=1773099686"
     },
     {
       "name": "Basic PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -2608,11 +2991,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "PLA CF {color_name}",
-      "material": "PLA-CF",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -2684,8 +3069,6 @@
     {
       "name": "Conductive PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -2720,7 +3103,9 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Fiber HT Matte PLA {color_name}",
@@ -2805,8 +3190,6 @@
     {
       "name": "Fluorescent PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -2837,13 +3220,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Glitter PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -2918,13 +3301,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Glow PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -2952,13 +3335,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "PLA Green Glow-in-the-Dark {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -3005,12 +3388,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "High Speed PLA {color_name}",
       "material": "PLA",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -3056,13 +3440,12 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Iron Metal Composite PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Iron_PLA_1.0.1.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/FEP1xxxx_SDS.pdf?v=1773101059",
       "density": 1.85,
       "weights": [
         {
@@ -3100,7 +3483,9 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Iron_PLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/FEP1xxxx_SDS.pdf?v=1773101059"
     },
     {
       "name": "Marble PLA {color_name}",
@@ -3152,8 +3537,6 @@
     {
       "name": "Matte PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -3205,13 +3588,13 @@
         70
       ],
       "country_of_origin": "US",
-      "finish": "matte"
+      "finish": "matte",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Metal Composite PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__BrassBronzeCopper_HTPLA_1.0.0.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/HTPLA_Copper_Alloy.pdf?v=1773099686",
       "density": 2.3,
       "weights": [
         {
@@ -3268,13 +3651,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__BrassBronzeCopper_HTPLA_1.0.0.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/HTPLA_Copper_Alloy.pdf?v=1773099686"
     },
     {
       "name": "Metallic PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -3373,13 +3756,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Multicolor PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -3414,13 +3797,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Nebula PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -3461,13 +3844,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Opaque PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -3567,13 +3950,13 @@
         70
       ],
       "country_of_origin": "US",
-      "finish": "matte"
+      "finish": "matte",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Pearl PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -3620,13 +4003,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4074,13 +4457,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Recycled PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4111,13 +4494,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Satin PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4148,13 +4531,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Silk PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4241,13 +4624,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Stainless Steel Metal Composite PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Stainless_Steel_PLA_1.0.1.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Steel.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4281,13 +4664,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Stainless_Steel_PLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Steel.pdf?v=1773099686"
     },
     {
       "name": "Static Dissipative Carbon Fiber PLA {color_name}",
-      "material": "PLA-CF",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CFP1xxxx-ESD_TDS.pdf?v=1731010137",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CF_ESD.pdf?v=1773099686",
+      "material": "PLA",
       "density": 1.24,
       "weights": [
         {
@@ -4318,13 +4701,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CFP1xxxx-ESD_TDS.pdf?v=1731010137",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/CF_ESD.pdf?v=1773099686"
     },
     {
       "name": "Static Dissipative PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA1xxxx-ESD_TDS.pdf?v=1731010137",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_ESD.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4355,13 +4738,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA1xxxx-ESD_TDS.pdf?v=1731010137",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_ESD.pdf?v=1773099686"
     },
     {
       "name": "Steel Metal Composite PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Stainless_Steel_PLA_1.0.1.pdf?1771",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Steel.pdf?v=1773099686",
       "density": 2.3,
       "weights": [
         {
@@ -4403,13 +4786,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Stainless_Steel_PLA_1.0.1.pdf?1771",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Steel.pdf?v=1773099686"
     },
     {
       "name": "Still Colorful Recycled PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4471,13 +4854,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Thermochromic PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4524,13 +4907,13 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "Translucent PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
       "density": 1.24,
       "weights": [
         {
@@ -4622,7 +5005,9 @@
         50,
         70
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
     },
     {
       "name": "TPE {color_name}",
