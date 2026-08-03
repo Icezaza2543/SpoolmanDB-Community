@@ -46,8 +46,6 @@
     {
       "name": "PLA Premium {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_tds_spectrum_pla_premium.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/08/en_msds_spectrum_pla_premium.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -606,13 +604,13 @@
           "hex": "A27DAD"
         }
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_tds_spectrum_pla_premium.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/08/en_msds_spectrum_pla_premium.pdf"
     },
     {
       "name": "PLA Pro {color_name}",
-      "material": "PLA+",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/07/en_tds_spectrum_pla_pro.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/07/en_msds_spectrum_pla_pro.pdf",
+      "material": "PLA",
       "density": 1.22,
       "weights": [
         {
@@ -949,13 +947,13 @@
           ]
         }
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/07/en_tds_spectrum_pla_pro.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/07/en_msds_spectrum_pla_pro.pdf"
     },
     {
       "name": "The Filament {color_name}",
       "material": "ASA-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_tds_the_filament_asa_cf.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_msds_the_filament_asa_cf.pdf",
       "density": 1.12,
       "weights": [
         {
@@ -998,7 +996,9 @@
           "hex": "901c24"
         }
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_tds_the_filament_asa_cf.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_msds_the_filament_asa_cf.pdf"
     },
     {
       "name": "ABS {color_name}",
@@ -1097,8 +1097,6 @@
     {
       "name": "ABS GP450 {color_name}",
       "material": "ABS",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_abs_gp450.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_abs_gp450.pdf",
       "density": 1.04,
       "weights": [
         {
@@ -1184,13 +1182,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 240,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_abs_gp450.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_abs_gp450.pdf"
     },
     {
       "name": "ABS Kevlar {color_name}",
       "material": "ABS",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_tds_spectrum_abs_kevlar.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_abs_kevlar.pdf",
       "density": 1.05,
       "weights": [
         {
@@ -1210,13 +1208,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 240,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_tds_spectrum_abs_kevlar.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_abs_kevlar.pdf"
     },
     {
       "name": "ABS Medical {color_name}",
       "material": "ABS",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_medical.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_abs_medical.pdf",
       "density": 1.06,
       "weights": [
         {
@@ -1236,13 +1234,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 240,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_medical.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_abs_medical.pdf"
     },
     {
       "name": "smart ABS {color_name}",
       "material": "ABS",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_smart_abs.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_smart_abs.pdf",
       "density": 1.05,
       "weights": [
         {
@@ -1298,7 +1296,9 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 240,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_smart_abs.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_smart_abs.pdf"
     },
     {
       "name": "ASA {color_name}",
@@ -1437,8 +1437,6 @@
     {
       "name": "ASA 275 {color_name}",
       "material": "ASA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_asa_275.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_asa275.pdf",
       "density": 1.07,
       "weights": [
         {
@@ -1607,12 +1605,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 245,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_asa_275.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_asa275.pdf"
     },
     {
       "name": "ASA Kevlar {color_name}",
       "material": "ASA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_asa_kevlar.pdf",
       "density": 1.07,
       "weights": [
         {
@@ -1636,12 +1635,12 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 245,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_asa_kevlar.pdf"
     },
     {
       "name": "ASA-X CF10 {color_name}",
-      "material": "ASA-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_asax_cf10.pdf",
+      "material": "ASA",
       "density": 1.1,
       "weights": [
         {
@@ -1671,13 +1670,12 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 245,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_asax_cf10.pdf"
     },
     {
       "name": "ASA-X GF10 {color_name}",
-      "material": "ASA-GF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_tds_spectrum_asax_x_gf10.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_asa-x_gf10.pdf",
+      "material": "ASA",
       "density": 1.11,
       "weights": [
         {
@@ -1706,11 +1704,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 245,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_tds_spectrum_asax_x_gf10.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_asa-x_gf10.pdf"
     },
     {
       "name": "ASA CF {color_name}",
-      "material": "ASA-CF",
+      "material": "ASA",
       "density": 1.11,
       "weights": [
         {
@@ -1790,9 +1790,7 @@
     },
     {
       "name": "X Gf10 GF ASA {color_name}",
-      "material": "ASA-GF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_tds_spectrum_asax_x_gf10.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_asa-x_gf10.pdf",
+      "material": "ASA",
       "density": 1.11,
       "weights": [
         {
@@ -1822,13 +1820,13 @@
         90,
         110
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_tds_spectrum_asax_x_gf10.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_asa-x_gf10.pdf"
     },
     {
       "name": "HIPS-X {color_name}",
       "material": "HIPS",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_hipsx.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_hipsx.pdf",
       "density": 1.05,
       "weights": [
         {
@@ -1860,13 +1858,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 230,
-      "bed_temp": 100
+      "bed_temp": 100,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_hipsx.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_hipsx.pdf"
     },
     {
       "name": "PA12 CF15 {color_name}",
-      "material": "PA12-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_pa12_cf15.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_pa12-cf15.pdf",
+      "material": "PA12",
       "density": 1.07,
       "weights": [
         {
@@ -1886,13 +1884,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 265,
-      "bed_temp": 92
+      "bed_temp": 92,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_pa12_cf15.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_pa12-cf15.pdf"
     },
     {
       "name": "PA6 CF15 {color_name}",
-      "material": "PA6-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pa6_cf15.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_cf15.pdf",
+      "material": "PA6",
       "density": 1.25,
       "weights": [
         {
@@ -1911,13 +1909,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 270,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pa6_cf15.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_cf15.pdf"
     },
     {
       "name": "PA6 CS20 FR V0 {color_name}",
       "material": "PA6",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_tds_spectrum_pa6_cs20_frv0.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_pa6_cs20frv0.pdf",
       "density": 1.49,
       "weights": [
         {
@@ -1937,13 +1935,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 270,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_tds_spectrum_pa6_cs20_frv0.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_pa6_cs20frv0.pdf"
     },
     {
       "name": "PA6 GK10 {color_name}",
       "material": "PA6",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pa6_gk10.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_gk10.pdf",
       "density": 1.01,
       "weights": [
         {
@@ -1963,13 +1961,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 270,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pa6_gk10.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_gk10.pdf"
     },
     {
       "name": "PA6 Low Warp {color_name}",
       "material": "PA6",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_pa6_low_warp.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_low_warp.pdf",
       "density": 1.15,
       "weights": [
         {
@@ -2004,13 +2002,13 @@
         80,
         100
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_pa6_low_warp.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_low_warp.pdf"
     },
     {
       "name": "PA6 Low Warp CF15S {color_name}",
-      "material": "PA6-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pa6_low_warp_cf15s.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_pa6_lowwarp_cf15s.pdf",
+      "material": "PA6",
       "density": 1.28,
       "weights": [
         {
@@ -2035,13 +2033,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 270,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pa6_low_warp_cf15s.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_pa6_lowwarp_cf15s.pdf"
     },
     {
       "name": "PA6 Low Warp GF30 {color_name}",
-      "material": "PA6-GF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pa6_low_warp_gf30.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_pa6_lowwarp_gf30.pdf",
+      "material": "PA6",
       "density": 1.34,
       "weights": [
         {
@@ -2070,13 +2068,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 270,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pa6_low_warp_gf30.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_pa6_lowwarp_gf30.pdf"
     },
     {
       "name": "PA6 Neat BK {color_name}",
       "material": "PA6",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pa6_neat_bk.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_neat_bk.pdf",
       "density": 1.14,
       "weights": [
         {
@@ -2095,13 +2093,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 270,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pa6_neat_bk.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_neat_bk.pdf"
     },
     {
       "name": "Pa6 Neat Nt {color_name}",
       "material": "PA6",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_pa6_neat_nt.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_nt.pdf",
       "density": 1.14,
       "weights": [
         {
@@ -2121,13 +2119,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 270,
-      "bed_temp": 90
+      "bed_temp": 90,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_pa6_neat_nt.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pa6_nt.pdf"
     },
     {
       "name": "ThermaTech PA {color_name}",
       "material": "PA6",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_thermatech_pa.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_thermatech_pa.pdf",
       "density": 1.3,
       "weights": [
         {
@@ -2150,7 +2148,9 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 270,
-      "bed_temp": 100
+      "bed_temp": 100,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_thermatech_pa.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_thermatech_pa.pdf"
     },
     {
       "name": "Fr V0 PC {color_name}",
@@ -2189,8 +2189,6 @@
     {
       "name": "PC 275 {color_name}",
       "material": "PC",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_pc_275.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_pc275.pdf",
       "density": 1.2,
       "weights": [
         {
@@ -2263,11 +2261,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 265,
-      "bed_temp": 100
+      "bed_temp": 100,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_pc_275.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_pc275.pdf"
     },
     {
       "name": "PCTG CF {color_name}",
-      "material": "PC-CF",
+      "material": "PCTG",
       "density": 1.28,
       "weights": [
         {
@@ -2297,7 +2297,7 @@
     },
     {
       "name": "PCTG GF {color_name}",
-      "material": "PC-GF",
+      "material": "PCTG",
       "density": 1.31,
       "weights": [
         {
@@ -2327,8 +2327,7 @@
     },
     {
       "name": "PCTG CF10 {color_name}",
-      "material": "PC-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pctg_cf10.pdf",
+      "material": "PCTG",
       "density": 1.28,
       "weights": [
         {
@@ -2353,13 +2352,12 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 250,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pctg_cf10.pdf"
     },
     {
       "name": "PCTG GF10 {color_name}",
-      "material": "PC-GF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pctg_gf10.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_pctg_gf10.pdf",
+      "material": "PCTG",
       "density": 1.31,
       "weights": [
         {
@@ -2384,13 +2382,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 250,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pctg_gf10.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_pctg_gf10.pdf"
     },
     {
       "name": "PCTG Premium {color_name}",
       "material": "PCTG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pctg.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_msds_spectrum_pctg_premium.pdf",
       "density": 1.23,
       "weights": [
         {
@@ -2494,13 +2492,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pctg.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_msds_spectrum_pctg_premium.pdf"
     },
     {
       "name": "PET CF15 {color_name}",
-      "material": "PET-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pet_cf15.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pet_cf15.pdf",
+      "material": "PET",
       "density": 1.4,
       "weights": [
         {
@@ -2519,13 +2517,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 245,
-      "bed_temp": 75
+      "bed_temp": 75,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pet_cf15.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pet_cf15.pdf"
     },
     {
       "name": "PETG CF {color_name}",
-      "material": "PETG-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_petg_carbon.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_carbon.pdf",
+      "material": "PETG",
       "density": 1.32,
       "weights": [
         {
@@ -2575,13 +2573,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_petg_carbon.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_carbon.pdf"
     },
     {
       "name": "Glow PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_glow.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_glow_in_the_dark.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -2613,13 +2611,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_glow.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_glow_in_the_dark.pdf"
     },
     {
       "name": "PET-G FR V0 PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_petg_frv0.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_petg_frv0.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -2649,13 +2647,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_petg_frv0.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_petg_frv0.pdf"
     },
     {
       "name": "PET-G Glitter PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_glitter.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_petg_glitter.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -2685,13 +2683,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_glitter.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_petg_glitter.pdf"
     },
     {
       "name": "PET-G HT100 PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_ht100.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_ht100.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -2742,13 +2740,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_ht100.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_ht100.pdf"
     },
     {
       "name": "PET G Matt Matte PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_petg_matt.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_petg_matt.pdf",
       "density": 1.35,
       "weights": [
         {
@@ -2811,13 +2809,13 @@
         90
       ],
       "country_of_origin": "PL",
-      "finish": "matte"
+      "finish": "matte",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_petg_matt.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_petg_matt.pdf"
     },
     {
       "name": "PET-G Premium PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_premium.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_premium.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -3103,7 +3101,9 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_premium.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_premium.pdf"
     },
     {
       "name": "PETG {color_name}",
@@ -3141,9 +3141,7 @@
     },
     {
       "name": "PETG Carbon {color_name}",
-      "material": "PETG-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_petg_carbon.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_carbon.pdf",
+      "material": "PETG",
       "density": 1.32,
       "weights": [
         {
@@ -3173,13 +3171,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 235,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_tds_spectrum_petg_carbon.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_carbon.pdf"
     },
     {
       "name": "PETG FR V0 {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_petg_frv0.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_petg_frv0.pdf",
       "density": 1.26,
       "weights": [
         {
@@ -3208,13 +3206,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 235,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_petg_frv0.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_petg_frv0.pdf"
     },
     {
       "name": "PETG FX120 {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_fx120.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_fx120.pdf",
       "density": 1.13,
       "weights": [
         {
@@ -3247,13 +3245,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 235,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_fx120.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_fx120.pdf"
     },
     {
       "name": "PETG Glitter {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_glitter.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_petg_glitter.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -3277,13 +3275,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 235,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_glitter.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_petg_glitter.pdf"
     },
     {
       "name": "PETG Glow in the Dark {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_glow.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_glow_in_the_dark.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -3312,13 +3310,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 235,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_glow.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_glow_in_the_dark.pdf"
     },
     {
       "name": "PETG HT100 {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_ht100.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_ht100.pdf",
       "density": 1.18,
       "weights": [
         {
@@ -3367,13 +3365,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 235,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_ht100.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_ht100.pdf"
     },
     {
       "name": "PETG MATT {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_petg_matt.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_petg_matt.pdf",
       "density": 1.35,
       "weights": [
         {
@@ -3429,13 +3427,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 235,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_petg_matt.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_petg_matt.pdf"
     },
     {
       "name": "PETG Premium {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_premium.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_premium.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -3544,13 +3542,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 235,
-      "bed_temp": 80
+      "bed_temp": 80,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_petg_premium.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_petg_premium.pdf"
     },
     {
       "name": "PETG Premium High Speed {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_petg_premium_high_speed.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_petg_premium_high_speed.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -3646,13 +3644,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_petg_premium_high_speed.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_petg_premium_high_speed.pdf"
     },
     {
       "name": "PTFE {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf",
       "density": 1.32,
       "weights": [
         {
@@ -3688,13 +3686,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 240,
-      "bed_temp": 75
+      "bed_temp": 75,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf"
     },
     {
       "name": "R PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_rpetg.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_msds_spectrum_rpetg.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -3748,13 +3746,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_rpetg.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_msds_spectrum_rpetg.pdf"
     },
     {
       "name": "The Filament PETG {color_name}",
       "material": "PETG",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/eng_tds_the_filament_petg.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_the_filament_petg.pdf",
       "density": 1.27,
       "weights": [
         {
@@ -3950,13 +3948,13 @@
         70,
         90
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/eng_tds_the_filament_petg.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_the_filament_petg.pdf"
     },
     {
       "name": "PLA AquaPrint {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/02/en_tds_spectrum_aquaprint.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_spectrum_aquaprint.pdf",
       "density": 0.9,
       "weights": [
         {
@@ -3976,11 +3974,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/02/en_tds_spectrum_aquaprint.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_spectrum_aquaprint.pdf"
     },
     {
       "name": "PLA CF {color_name}",
-      "material": "PLA-CF",
+      "material": "PLA",
       "density": 1.3,
       "weights": [
         {
@@ -4095,8 +4095,6 @@
     {
       "name": "FlameGuard PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_flameguard_pla.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_flameguard_pla.pdf",
       "density": 1.26,
       "weights": [
         {
@@ -4141,7 +4139,9 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_flameguard_pla.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_flameguard_pla.pdf"
     },
     {
       "name": "FlameGuard Silk PLA {color_name}",
@@ -4254,8 +4254,6 @@
     {
       "name": "Glow PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_glow_in_the_dark.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_glow_in_the_dark.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -4287,13 +4285,13 @@
         50,
         70
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_glow_in_the_dark.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_glow_in_the_dark.pdf"
     },
     {
       "name": "PLA GreenyHT {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_greenyht.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_greenyht.pdf",
       "density": 1.54,
       "weights": [
         {
@@ -4329,13 +4327,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_greenyht.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_greenyht.pdf"
     },
     {
       "name": "PLA GreenyPro {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_greeny_pro.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_greenypro.pdf",
       "density": 1.34,
       "weights": [
         {
@@ -4393,12 +4391,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_greeny_pro.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_greenypro.pdf"
     },
     {
       "name": "High Speed PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/05/en_tds_spectrum_high_speed.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -4572,13 +4571,12 @@
         50,
         70
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/05/en_tds_spectrum_high_speed.pdf"
     },
     {
       "name": "Huracan PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_tds_spectrum_pla_huracan.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_msds_spectrum_huracan_pla.pdf",
       "density": 1.23,
       "weights": [
         {
@@ -4650,7 +4648,9 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_tds_spectrum_pla_huracan.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_msds_spectrum_huracan_pla.pdf"
     },
     {
       "name": "Huracan Silk PLA {color_name}",
@@ -4737,8 +4737,6 @@
     {
       "name": "LW-PLA UltraFoam {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_tds_spectrum_lw-pla_ultrafoam.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_msds_spectrum_lw_pla_ultra_foam.pdf",
       "density": 1.23,
       "weights": [
         {
@@ -4781,13 +4779,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_tds_spectrum_lw-pla_ultrafoam.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_msds_spectrum_lw_pla_ultra_foam.pdf"
     },
     {
       "name": "Matte PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_matt.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_matt.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -4886,7 +4884,9 @@
         70
       ],
       "country_of_origin": "PL",
-      "finish": "matte"
+      "finish": "matte",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_matt.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_matt.pdf"
     },
     {
       "name": "Metal Silk PLA {color_name}",
@@ -4925,8 +4925,6 @@
     {
       "name": "Pastello PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_pla_pastello.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_msds_spectrum_pla_pastello.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -4995,7 +4993,9 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_pla_pastello.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_msds_spectrum_pla_pastello.pdf"
     },
     {
       "name": "PLA {color_name}",
@@ -5141,9 +5141,7 @@
     },
     {
       "name": "PLA Carbon {color_name}",
-      "material": "PLA-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_carbon.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_carbon.pdf",
+      "material": "PLA",
       "density": 1.3,
       "weights": [
         {
@@ -5168,13 +5166,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_carbon.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_carbon.pdf"
     },
     {
       "name": "PLA Crystal {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_pla_crystal.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_msds_spectrum_pla_cristal.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -5219,13 +5217,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_pla_crystal.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_msds_spectrum_pla_cristal.pdf"
     },
     {
       "name": "PLA Electrically Conductive {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_tds_spectrum_pla_conductive.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_msds_pla_conductive.pdf",
       "density": 1.35,
       "weights": [
         {
@@ -5245,13 +5243,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_tds_spectrum_pla_conductive.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2025/09/en_msds_pla_conductive.pdf"
     },
     {
       "name": "PLA Glitter {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_glitter.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_glitter.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -5309,13 +5307,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_glitter.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_glitter.pdf"
     },
     {
       "name": "PLA Glow in the Dark {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_glow_in_the_dark.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_glow_in_the_dark.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -5345,13 +5343,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_glow_in_the_dark.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_glow_in_the_dark.pdf"
     },
     {
       "name": "PLA Magic SILK {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/10/en_tds_spectrum_pla_magic_silk.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_pla_magic_silk.pdf",
       "density": 1.22,
       "weights": [
         {
@@ -5432,13 +5430,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/10/en_tds_spectrum_pla_magic_silk.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_pla_magic_silk.pdf"
     },
     {
       "name": "PLA MATT {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_matt.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_matt.pdf",
       "density": 1.22,
       "weights": [
         {
@@ -5567,7 +5565,9 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_matt.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_matt.pdf"
     },
     {
       "name": "PLA Metal {color_name}",
@@ -5607,8 +5607,6 @@
     {
       "name": "PLA Nature {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_pla_nature.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_msds_spectrum_pla_nature.pdf",
       "density": 1.25,
       "weights": [
         {
@@ -5653,12 +5651,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_tds_spectrum_pla_nature.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/10/en_msds_spectrum_pla_nature.pdf"
     },
     {
       "name": "PLA Premium HighSpeed {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/05/en_tds_spectrum_high_speed.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -5782,13 +5781,12 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/05/en_tds_spectrum_high_speed.pdf"
     },
     {
       "name": "PLA SILK {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_silk.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_silk.pdf",
       "density": 1.22,
       "weights": [
         {
@@ -5883,13 +5881,13 @@
         50,
         70
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_silk.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_silk.pdf"
     },
     {
       "name": "PLA SILK Rainbow {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/05/en_tds_spectrum_pla_silk_rainbow.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/05/en_msds_spectrum_pla_silk_rainbow.pdf",
       "density": 1.22,
       "weights": [
         {
@@ -5930,13 +5928,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/05/en_tds_spectrum_pla_silk_rainbow.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/05/en_msds_spectrum_pla_silk_rainbow.pdf"
     },
     {
       "name": "PLA Thermoactive {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_thermoactive.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_thermoactive.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -5961,13 +5959,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_thermoactive.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_thermoactive.pdf"
     },
     {
       "name": "PLA Tough {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_tough.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_tough.pdf",
       "density": 1.2,
       "weights": [
         {
@@ -6000,13 +5998,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_tough.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_tough.pdf"
     },
     {
       "name": "R PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_rpla.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_rpla.pdf",
       "density": 1.54,
       "weights": [
         {
@@ -6056,13 +6054,13 @@
         50,
         70
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_rpla.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_rpla.pdf"
     },
     {
       "name": "SafeGuard PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_safeguard_pla.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_safeguard_pla.pdf",
       "density": 1.24,
       "weights": [
         {
@@ -6127,13 +6125,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_tds_spectrum_safeguard_pla.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_spectrum_safeguard_pla.pdf"
     },
     {
       "name": "Stone Age PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_stone_age.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_stone_age.pdf",
       "density": 1.54,
       "weights": [
         {
@@ -6163,13 +6161,13 @@
         50,
         70
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pla_stone_age.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pla_stone_age.pdf"
     },
     {
       "name": "The Filament PLA {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/eng_tds_the_filament_pla.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_the_filament_pla.pdf",
       "density": 1.54,
       "weights": [
         {
@@ -6375,13 +6373,13 @@
         50,
         70
       ],
-      "country_of_origin": "PL"
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/eng_tds_the_filament_pla.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_the_filament_pla.pdf"
     },
     {
       "name": "PLA WOOD {color_name}",
       "material": "PLA",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_wood.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_wood.pdf",
       "density": 1.15,
       "weights": [
         {
@@ -6414,13 +6412,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 205,
-      "bed_temp": 30
+      "bed_temp": 30,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_wood.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_wood.pdf"
     },
     {
       "name": "PP {color_name}",
       "material": "PP",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pp.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pp.pdf",
       "density": 0.89,
       "weights": [
         {
@@ -6439,13 +6437,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 240,
-      "bed_temp": 100
+      "bed_temp": 100,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_pp.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_pp.pdf"
     },
     {
       "name": "PPS AM230 {color_name}",
       "material": "PPS",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pps_am230.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_pps_am230.pdf",
       "density": 1.33,
       "weights": [
         {
@@ -6464,13 +6462,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 295,
-      "bed_temp": 110
+      "bed_temp": 110,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_pps_am230.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_pps_am230.pdf"
     },
     {
       "name": "TPU S-Flex 85A {color_name}",
-      "material": "TPU-85A",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_sflex_85a.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_sflex_85a.pdf",
+      "material": "TPU",
       "density": 1.11,
       "weights": [
         {
@@ -6524,13 +6522,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 215,
-      "bed_temp": 40
+      "bed_temp": 40,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_sflex_85a.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/12/en_msds_spectrum_sflex_85a.pdf"
     },
     {
       "name": "TPU S-Flex 90A {color_name}",
-      "material": "TPU-90A",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_sflex_90a.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_sflex_90a.pdf",
+      "material": "TPU",
       "density": 1.22,
       "weights": [
         {
@@ -6588,13 +6586,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 215,
-      "bed_temp": 40
+      "bed_temp": 40,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_sflex_90a.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_sflex_90a.pdf"
     },
     {
       "name": "TPU S-Flex 98A {color_name}",
       "material": "TPU",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_sflex_98a.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_sflex_98a.pdf",
       "density": 1.09,
       "weights": [
         {
@@ -6652,13 +6650,13 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 215,
-      "bed_temp": 40
+      "bed_temp": 40,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/05/en_tds_spectrum_sflex_98a.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2021/09/en_msds_spectrum_sflex_98a.pdf"
     },
     {
       "name": "TPU S-Flex Carbon {color_name}",
-      "material": "TPU-CF",
-      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/02/en_tds_spectrum_sflex_carbon.pdf",
-      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_sflex_carbon.pdf",
+      "material": "TPU",
       "density": 1.09,
       "weights": [
         {
@@ -6683,7 +6681,9 @@
       ],
       "country_of_origin": "PL",
       "extruder_temp": 215,
-      "bed_temp": 40
+      "bed_temp": 40,
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/02/en_tds_spectrum_sflex_carbon.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2023/11/en_msds_sflex_carbon.pdf"
     },
     {
       "name": "The Filament TPU {color_name}",
