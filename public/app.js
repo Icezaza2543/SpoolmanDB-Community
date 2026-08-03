@@ -1094,8 +1094,7 @@
         row.appendChild(textCell(formatNumber(item.weight) + " g"));
         row.appendChild(textCell(labelSpool(spoolValue(item))));
         row.appendChild(textCell(formatTemps(item)));
-        row.appendChild(cell(renderTags(item)));
-        row.appendChild(cell(renderMetadata(item)));
+        row.appendChild(item.tds_url ? cell(documentLink("Open TDS", item.tds_url)) : textCell("-"));
         return row;
     }
 
@@ -1110,47 +1109,6 @@
         return swatch;
     }
 
-    function renderTags(item) {
-        const list = document.createElement("div");
-        list.className = "tag-list";
-
-        if (Array.isArray(item.codes) && item.codes.length > 0) {
-            list.appendChild(tag("CODE/ID", true));
-        }
-        if (Array.isArray(item.eans) && item.eans.length > 0) {
-            list.appendChild(tag("EAN", true));
-        }
-        if (Array.isArray(item.eans_refill) && item.eans_refill.length > 0) {
-            list.appendChild(tag("REFILL", true));
-        }
-        if (Array.isArray(item.color_hexes) && item.color_hexes.length > 0) {
-            list.appendChild(tag("MULTI", false));
-        }
-        if (list.children.length === 0) {
-            list.appendChild(tag("DATA", false));
-        }
-        return list;
-    }
-
-    function renderMetadata(item) {
-        const list = document.createElement("div");
-        list.className = "tag-list";
-
-        if (item.country_of_origin) {
-            list.appendChild(tag("ORIGIN " + String(item.country_of_origin).toUpperCase(), false));
-        }
-        if (item.tds_url) {
-            list.appendChild(documentLink("TDS", item.tds_url));
-        }
-        if (item.sds_url) {
-            list.appendChild(documentLink("SDS", item.sds_url));
-        }
-        if (list.children.length === 0) {
-            list.appendChild(tag("-", false));
-        }
-        return list;
-    }
-
     function documentLink(label, url) {
         const link = document.createElement("a");
         link.className = "tag tag-orange tag-link";
@@ -1160,13 +1118,6 @@
         link.textContent = label;
         link.setAttribute("aria-label", "Open " + label + " document");
         return link;
-    }
-
-    function tag(text, orange) {
-        const span = document.createElement("span");
-        span.className = orange ? "tag tag-orange" : "tag";
-        span.textContent = text;
-        return span;
     }
 
     function cell(child) {
@@ -1184,7 +1135,7 @@
     function emptyRow(message) {
         const row = document.createElement("tr");
         const td = document.createElement("td");
-        td.colSpan = 10;
+        td.colSpan = 9;
         td.textContent = message;
         row.appendChild(td);
         return row;
@@ -1197,9 +1148,7 @@
 
     function searchText(item) {
         const metadata = [
-            item.country_of_origin,
-            item.tds_url ? "tds datasheet document" : "",
-            item.sds_url ? "sds safety document" : ""
+            item.tds_url ? "tds datasheet document" : ""
         ].filter(Boolean).join(" ");
         return (displayNameApi.buildFilamentSearchText(item) + " " + metadata).toLowerCase();
     }
