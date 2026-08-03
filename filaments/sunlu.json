@@ -324,28 +324,7 @@
         {
           "name": "Red (Glow Orange)",
           "hex": "FF0000"
-        }
-      ]
-    },
-    {
-      "name": "{color_name}",
-      "material": "PLA",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA-TDS.pdf",
-      "density": 1.23,
-      "weights": [
-        {
-          "weight": 1000.0,
-          "spool_weight": 162.0,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp": 210,
-      "bed_temp": 60,
-      "glow": false,
-      "colors": [
+        },
         {
           "name": "Black",
           "hex": "2B2B2D"
@@ -5082,7 +5061,7 @@
     },
     {
       "name": "PLA-Meta {color_name}",
-      "material": "PLA",
+      "material": "PLA+",
       "tds_url": "https://cdn.shopify.com/s/files/1/0909/3450/9859/files/PLA_Meta-TDS.pdf",
       "density": 1.24,
       "weights": [
