@@ -1152,34 +1152,7 @@
         {
           "name": "Neon Yellow",
           "hex": "FFFF00"
-        }
-      ],
-      "country_of_origin": "AT"
-    },
-    {
-      "name": "{color_name}",
-      "material": "PETG",
-      "tds_url": "https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/petg-TDS-en.pdf",
-      "density": 1.29,
-      "weights": [
-        {
-          "weight": 800.0,
-          "spool_weight": 260.0,
-          "spool_type": "plastic"
         },
-        {
-          "weight": 2500.0,
-          "spool_weight": 600.0,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75,
-        2.85
-      ],
-      "extruder_temp": 230,
-      "bed_temp": 70,
-      "colors": [
         {
           "name": "glowEx",
           "hex": "00BB2D",
@@ -1713,7 +1686,7 @@
     },
     {
       "name": "DuraPro CF PA12 {color_name}",
-      "material": "PA12",
+      "material": "PA12-CF",
       "tds_url": "https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/durapro-pa12-cf-TDS-en.pdf",
       "density": 1.01,
       "weights": [
@@ -2552,7 +2525,7 @@
     },
     {
       "name": "FLEX Hard CF TPU {color_name}",
-      "material": "TPU",
+      "material": "TPU-CF",
       "tds_url": "https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/flex-hard-cf-TDS-en.pdf",
       "density": 1.21,
       "weights": [
