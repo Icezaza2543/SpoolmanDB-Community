@@ -408,6 +408,10 @@ main {
     margin-bottom: 72px;
 }
 
+.stats-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .stat-card {
     min-height: 116px;
     padding: 22px 24px;
@@ -791,6 +795,18 @@ tbody tr:hover {
     border-color: rgba(245, 158, 11, 0.28);
     background: rgba(245, 158, 11, 0.13);
     color: var(--primary-soft);
+}
+
+.tag-link {
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.tag-link:hover,
+.tag-link:focus-visible {
+    border-color: var(--primary-soft);
+    background: rgba(245, 158, 11, 0.24);
+    color: #ffffff;
 }
 
 .severity-critical {
