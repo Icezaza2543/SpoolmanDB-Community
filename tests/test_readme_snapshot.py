@@ -10,6 +10,7 @@ from scripts.readme_snapshot import (
     collect_snapshot,
     expected_readme,
     render_snapshot,
+    replace_published_records,
     replace_snapshot_block,
     snapshot_is_current,
 )
@@ -153,6 +154,26 @@ def test_replace_snapshot_block_uses_marker_line_ending(tmp_path):
 
     generated = updated.split(SNAPSHOT_END, maxsplit=1)[0]
     assert "\r" not in generated
+
+
+def test_replace_published_records_preserves_line_ending():
+    readme = "# Test\r\n\r\n* **Published records**: 12\r\n"
+
+    updated = replace_published_records(readme, 12345)
+
+    assert updated == "# Test\r\n\r\n* **Published records**: 12,345\r\n"
+
+
+@pytest.mark.parametrize(
+    "readme",
+    (
+        "# no published count\n",
+        "* **Published records**: 1\n* **Published records**: 2\n",
+    ),
+)
+def test_replace_published_records_requires_exactly_one_line(readme):
+    with pytest.raises(SnapshotError, match="exactly one"):
+        replace_published_records(readme, 1)
 
 
 def test_collect_snapshot_rejects_duplicate_asean_files(tmp_path):
