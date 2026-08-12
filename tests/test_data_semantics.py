@@ -271,7 +271,7 @@ def test_existing_repository_passes_semantics():
 
     errors, warnings = check_source_data_semantics(filaments_dir, materials_file)
     assert errors == []
-    assert len(warnings) == 39  # Known Spectrum vs The Filament duplicates
+    assert warnings == []
 
 
 def test_compiled_public_ids_are_unique():
