@@ -1362,7 +1362,33 @@
         {
           "name": "LW- UltraFoam Traffic Black",
           "hex": "000000"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        235,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "PL"
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 180
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "The Filament Grass Green",
           "hex": "26A648",
@@ -1425,12 +1451,12 @@
         }
       ],
       "extruder_temp_range": [
-        235,
-        260
+        230,
+        265
       ],
       "bed_temp_range": [
-        90,
-        110
+        75,
+        100
       ],
       "country_of_origin": "PL"
     },
@@ -1724,6 +1750,36 @@
       ],
       "colors": [
         {
+          "name": "X CF10™",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        235,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "PL"
+    },
+    {
+      "name": "ASA CF {color_name}",
+      "material": "ASA",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 180
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
           "name": "The Filament CF Black",
           "hex": "000000",
           "codes": [
@@ -1772,19 +1828,15 @@
           "eans": [
             "5907138401899"
           ]
-        },
-        {
-          "name": "X CF10™",
-          "hex": "000000"
         }
       ],
       "extruder_temp_range": [
         235,
-        260
+        270
       ],
       "bed_temp_range": [
-        90,
-        110
+        75,
+        100
       ],
       "country_of_origin": "PL"
     },
@@ -3796,38 +3848,6 @@
           ]
         },
         {
-          "name": "Lite Black",
-          "hex": "000000"
-        },
-        {
-          "name": "Lite Blue",
-          "hex": "0099E6"
-        },
-        {
-          "name": "Lite Green",
-          "hex": "D0FF61"
-        },
-        {
-          "name": "Lite Grey",
-          "hex": "6A6C6E"
-        },
-        {
-          "name": "Lite Red",
-          "hex": "EC0000"
-        },
-        {
-          "name": "Lite Silver",
-          "hex": "A2AAAD"
-        },
-        {
-          "name": "Lite White",
-          "hex": "FFFFFF"
-        },
-        {
-          "name": "Lite Yellow",
-          "hex": "FADB24"
-        },
-        {
           "name": "Machinery Orange",
           "hex": "FF8133",
           "codes": [
@@ -3941,16 +3961,75 @@
         }
       ],
       "extruder_temp_range": [
-        220,
-        250
+        230,
+        255
       ],
       "bed_temp_range": [
-        70,
-        90
+        60,
+        75
       ],
       "country_of_origin": "PL",
       "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/eng_tds_the_filament_petg.pdf",
       "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_the_filament_petg.pdf"
+    },
+    {
+      "name": "The Filament PETG {color_name}",
+      "material": "PETG",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 180
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Lite Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Lite Blue",
+          "hex": "0099E6"
+        },
+        {
+          "name": "Lite Green",
+          "hex": "D0FF61"
+        },
+        {
+          "name": "Lite Grey",
+          "hex": "6A6C6E"
+        },
+        {
+          "name": "Lite Red",
+          "hex": "EC0000"
+        },
+        {
+          "name": "Lite Silver",
+          "hex": "A2AAAD"
+        },
+        {
+          "name": "Lite White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Lite Yellow",
+          "hex": "FADB24"
+        }
+      ],
+      "extruder_temp_range": [
+        235,
+        255
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "country_of_origin": "PL",
+      "tds_url": "https://shop.spectrumfilaments.com/data/include/cms/download/tds/EN_TDS_The_Filament_PETG_Lite.pdf?v=1756980721386"
     },
     {
       "name": "PLA AquaPrint {color_name}",
@@ -6168,7 +6247,7 @@
     {
       "name": "The Filament PLA {color_name}",
       "material": "PLA",
-      "density": 1.54,
+      "density": 1.24,
       "weights": [
         {
           "weight": 1000,
@@ -6221,46 +6300,6 @@
           ]
         },
         {
-          "name": "Lite Black",
-          "hex": "000000"
-        },
-        {
-          "name": "Lite Blue",
-          "hex": "0066D9"
-        },
-        {
-          "name": "Lite Green",
-          "hex": "62E480"
-        },
-        {
-          "name": "Lite Grey",
-          "hex": "808080"
-        },
-        {
-          "name": "Lite Magenta",
-          "hex": "DB3FA9"
-        },
-        {
-          "name": "Lite Orange",
-          "hex": "FA8423"
-        },
-        {
-          "name": "Lite Red",
-          "hex": "EC0000"
-        },
-        {
-          "name": "Lite Silver",
-          "hex": "9C9D9D"
-        },
-        {
-          "name": "Lite White",
-          "hex": "FFFFFF"
-        },
-        {
-          "name": "Lite Yellow",
-          "hex": "E8BD00"
-        },
-        {
           "name": "Machinery Orange",
           "hex": "FF5F2E",
           "codes": [
@@ -6311,10 +6350,6 @@
           ]
         },
         {
-          "name": "Sma Purple",
-          "hex": "C63DBA"
-        },
-        {
           "name": "Sorbet Yellow",
           "hex": "FADB24",
           "codes": [
@@ -6363,6 +6398,105 @@
           "eans": [
             "5907138400380"
           ]
+        }
+      ],
+      "extruder_temp_range": [
+        185,
+        215
+      ],
+      "bed_temp_range": [
+        40,
+        50
+      ],
+      "country_of_origin": "PL",
+      "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/eng_tds_the_filament_pla.pdf",
+      "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2024/11/en_msds_the_filament_pla.pdf"
+    },
+    {
+      "name": "The Filament PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 180
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Lite Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Lite Blue",
+          "hex": "0066D9"
+        },
+        {
+          "name": "Lite Green",
+          "hex": "62E480"
+        },
+        {
+          "name": "Lite Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Lite Magenta",
+          "hex": "DB3FA9"
+        },
+        {
+          "name": "Lite Orange",
+          "hex": "FA8423"
+        },
+        {
+          "name": "Lite Red",
+          "hex": "EC0000"
+        },
+        {
+          "name": "Lite Silver",
+          "hex": "9C9D9D"
+        },
+        {
+          "name": "Lite White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Lite Yellow",
+          "hex": "E8BD00"
+        }
+      ],
+      "extruder_temp_range": [
+        195,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        50
+      ],
+      "country_of_origin": "PL",
+      "tds_url": "https://shop.spectrumfilaments.com/data/include/cms/download/tds/EN_TDS_The_Filament_PLA_Lite.pdf?v=1756980721386"
+    },
+    {
+      "name": "The Filament PLA {color_name}",
+      "material": "PLA",
+      "density": 1.54,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 180
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Sma Purple",
+          "hex": "C63DBA"
         }
       ],
       "extruder_temp_range": [
