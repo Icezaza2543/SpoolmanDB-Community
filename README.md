@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 52,941
+* **Published records**: 52,958
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)

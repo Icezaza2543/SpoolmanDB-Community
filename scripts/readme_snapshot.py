@@ -17,6 +17,7 @@ from scripts.compile_filaments import get_filaments_from_data
 
 SNAPSHOT_START = "<!-- readme-snapshot:start -->"
 SNAPSHOT_END = "<!-- readme-snapshot:end -->"
+PUBLISHED_RECORDS_PREFIX = "* **Published records**: "
 
 # Curated brand-location registry. Never infer it from country_of_origin, which
 # records manufacturing origin and can differ from the manufacturer's location.
@@ -229,6 +230,32 @@ def replace_snapshot_block(readme: str, rendered_snapshot: str) -> str:
     return readme[:start] + newline + rendered + newline + readme[end:]
 
 
+def replace_published_records(readme: str, count: int) -> str:
+    lines = readme.splitlines(keepends=True)
+    matches = [
+        index
+        for index, line in enumerate(lines)
+        if line.startswith(PUBLISHED_RECORDS_PREFIX)
+    ]
+    if len(matches) != 1:
+        raise SnapshotError(
+            "README must contain exactly one published-records status line."
+        )
+
+    index = matches[0]
+    line = lines[index]
+    if line.endswith("\r\n"):
+        newline = "\r\n"
+    elif line.endswith("\n"):
+        newline = "\n"
+    elif line.endswith("\r"):
+        newline = "\r"
+    else:
+        newline = ""
+    lines[index] = f"{PUBLISHED_RECORDS_PREFIX}{format_count(count)}{newline}"
+    return "".join(lines)
+
+
 def read_text(path: Path) -> str:
     with path.open(encoding="utf-8", newline="") as file:
         return file.read()
@@ -250,7 +277,9 @@ def snapshot_is_current(current: str, expected: str) -> bool:
 def expected_readme(root: Path = ROOT) -> tuple[str, str]:
     readme_path = root / "README.md"
     current = read_text(readme_path)
-    expected = replace_snapshot_block(current, render_snapshot(collect_snapshot(root)))
+    snapshot = collect_snapshot(root)
+    expected = replace_snapshot_block(current, render_snapshot(snapshot))
+    expected = replace_published_records(expected, snapshot.compiled_variants)
     return current, expected
 
 
