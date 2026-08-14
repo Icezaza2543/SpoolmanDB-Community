@@ -113,6 +113,107 @@
       ],
       "sds_url": "https://upload.3dprinter.sindoh.com/supplies/1524015481099__ABS_MSDS.pdf",
       "tds_url": "https://m.sindoh4u.com/goods/view?no=45"
+    },
+    {
+      "name": "3DWOX 7X {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1500,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 200,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        }
+      ],
+      "sds_url": "https://upload.3dprinter.sindoh.com/supplies/1524015361174__PLA_MSDS.pdf",
+      "tds_url": "https://m.sindoh4u.com/goods/view_contents?no=77&view_preload=1&zoom=1"
+    },
+    {
+      "name": "3DWOX Series Flexible {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 500,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "codes": [
+            "REF3DPFWH-R"
+          ]
+        },
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "REF3DPFBK-R"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        }
+      ],
+      "tds_url": "https://www.sindoh.com/hubfs/site/catalog/7X_RODIN-H%20%EA%B5%AD%EB%AC%B8_%EC%82%AC%EC%9A%A9%EC%84%A4%EB%AA%85%EC%84%9C.pdf"
+    },
+    {
+      "name": "3DWOX Series PVA+ {color_name}",
+      "material": "PVA+",
+      "density": 1.19,
+      "weights": [
+        {
+          "weight": 500,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 200,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "F5F0E1",
+          "translucent": true
+        }
+      ],
+      "tds_url": "https://m.sindoh4u.com/goods/view_contents?no=72&zoom=1"
     }
   ]
 }
