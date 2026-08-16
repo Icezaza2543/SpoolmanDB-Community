@@ -320,6 +320,37 @@
         }
       ],
       "country_of_origin": "PL"
+    },
+    {
+      "name": "BioWOOD {color_name}",
+      "material": "BioWOOD",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        170,
+        210
+      ],
+      "bed_temp_range": [
+        30,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "D2B48C"
+        }
+      ],
+      "country_of_origin": "PL",
+      "tds_url": "https://rosa3d.pl/en/portfolio-items/biowood-en/"
     }
   ]
 }
