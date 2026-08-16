@@ -433,6 +433,102 @@
       ],
       "fill": "wood",
       "country_of_origin": "CN"
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        75,
+        95
+      ],
+      "colors": [
+        {
+          "name": "Carbon Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Dark Gray",
+          "hex": "4B4B4B"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        25,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "D4AF37"
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0"
+        },
+        {
+          "name": "Copper",
+          "hex": "B87333"
+        },
+        {
+          "name": "Garnet Red",
+          "hex": "78131D"
+        },
+        {
+          "name": "Pearl Pink",
+          "hex": "E8C2C8"
+        },
+        {
+          "name": "Sapphire Blue",
+          "hex": "0F52BA"
+        }
+      ],
+      "country_of_origin": "CN"
     }
   ]
 }
