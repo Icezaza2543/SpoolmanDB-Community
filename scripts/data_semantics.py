@@ -51,6 +51,7 @@ def check_source_data_semantics(
         with materials_path.open(encoding="utf-8") as f:
             materials_data = json.load(f)
         valid_materials = {m["material"] for m in materials_data if "material" in m}
+        valid_materials_lower = {m["material"].lower() for m in materials_data if "material" in m}
     except Exception as exc:
         errors.append(f"Failed to load materials from {materials_path}: {exc}")
         return errors, warnings
@@ -86,7 +87,7 @@ def check_source_data_semantics(
             fil_name = fil.get("name", "<unnamed>")
 
             mat = fil.get("material")
-            if mat and mat not in valid_materials:
+            if mat and mat not in valid_materials and mat.lower() not in valid_materials_lower:
                 errors.append(
                     f"{fname}: manufacturer '{mfr}', filament '{fil_name}' references unknown material '{mat}'"
                 )
