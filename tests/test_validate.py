@@ -130,3 +130,40 @@ def test_materials_schema_rejects_unknown_properties():
 
     invalid_materials = [{"material": "PLA", "density": 1.24, "unknown_prop": "val"}]
     assert not validator.is_valid(invalid_materials)
+
+
+def test_schema_validates_diverse_material_names():
+    schema_path = ROOT / "filaments.schema.json"
+    with schema_path.open(encoding="utf-8") as f:
+        schema = json.load(f)
+
+    validator = jsonschema.Draft7Validator(
+        schema, format_checker=FORMAT_CHECKER
+    )
+
+    def make_data(mat: str):
+        return {
+            "manufacturer": "TestBrand",
+            "filaments": [
+                {
+                    "name": "Test Filament {color_name}",
+                    "material": mat,
+                    "density": 1.24,
+                    "weights": [{"weight": 1000}],
+                    "diameters": [1.75],
+                    "colors": [{"name": "Red", "hex": "FF0000"}],
+                }
+            ],
+        }
+
+    # Legitimate diverse material names (BioWOOD, rPLA, ePLA-ST, composite, hardness, slash/plus)
+    for valid_mat in [
+        "PLA", "ABS", "BioWOOD", "Bio-WOOD", "rPLA", "rPETG", "ePLA-ST",
+        "PA6-GF", "TPU-95A", "TPU-64D", "PC+ABS", "PC/PBT", "PVDF+GRAPHENE",
+        "ABS-GF20", "PETG+CF10", "PLA+WOOD"
+    ]:
+        assert validator.is_valid(make_data(valid_mat)), f"Expected {valid_mat} to be valid"
+
+    # Invalid malformed material names
+    for invalid_mat in ["", " ", "PLA Wood", "PLA@123", "PETG#CF", "<script>"]:
+        assert not validator.is_valid(make_data(invalid_mat)), f"Expected {invalid_mat!r} to be invalid"
