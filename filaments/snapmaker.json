@@ -810,6 +810,316 @@
       "country_of_origin": "CN"
     },
     {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        280
+      ],
+      "bed_temp_range": [
+        90,
+        100
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "codes": [
+            "34237"
+          ],
+          "eans": [
+            "6971573444581"
+          ]
+        },
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "34238"
+          ],
+          "eans": [
+            "6971573444598"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFB81C",
+          "codes": [
+            "34239"
+          ],
+          "eans": [
+            "6971573444604"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "DE4343",
+          "codes": [
+            "34240"
+          ],
+          "eans": [
+            "6971573444611"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "3A913F",
+          "codes": [
+            "34241"
+          ],
+          "eans": [
+            "6971573444628"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "FF6A13",
+          "codes": [
+            "34242"
+          ],
+          "eans": [
+            "6971573444635"
+          ]
+        },
+        {
+          "name": "Purple",
+          "hex": "6E3FA3",
+          "codes": [
+            "34243"
+          ],
+          "eans": [
+            "6971573444642"
+          ]
+        },
+        {
+          "name": "Light Blue",
+          "hex": "5BC2E7",
+          "codes": [
+            "34244"
+          ],
+          "eans": [
+            "6971573444659"
+          ]
+        },
+        {
+          "name": "Navy Blue",
+          "hex": "002677",
+          "codes": [
+            "34245"
+          ],
+          "eans": [
+            "6971573444666"
+          ]
+        },
+        {
+          "name": "Dark Gray",
+          "hex": "54585A",
+          "codes": [
+            "34246"
+          ],
+          "eans": [
+            "6971573444673"
+          ]
+        }
+      ],
+      "tds_url": "https://s3.us-west-2.amazonaws.com/snapmaker.com/download/manual/Snapmaker+ABS+Technical+Data+Sheet+V1.0.1.pdf"
+    },
+    {
+      "name": "Silk Dual-Color PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        25,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Sunset Ember",
+          "hexes": [
+            "D9A63A",
+            "CC434F"
+          ],
+          "codes": [
+            "34202"
+          ],
+          "eans": [
+            "6971573444192"
+          ]
+        },
+        {
+          "name": "Aurora Gold",
+          "hexes": [
+            "D9A63A",
+            "9675CD"
+          ],
+          "codes": [
+            "34203"
+          ],
+          "eans": [
+            "6971573444208"
+          ]
+        },
+        {
+          "name": "Solar Alloy",
+          "hexes": [
+            "D9A63A",
+            "C4C7D9"
+          ],
+          "codes": [
+            "34204"
+          ],
+          "eans": [
+            "6971573444215"
+          ]
+        },
+        {
+          "name": "Mint Lemonade",
+          "hexes": [
+            "ECED17",
+            "44ADE5"
+          ],
+          "codes": [
+            "34205"
+          ],
+          "eans": [
+            "6971573444222"
+          ]
+        },
+        {
+          "name": "Sea Glass",
+          "hexes": [
+            "44ADE5",
+            "18CCAF"
+          ],
+          "codes": [
+            "34206"
+          ],
+          "eans": [
+            "6971573444239"
+          ]
+        },
+        {
+          "name": "Ice Lake",
+          "hexes": [
+            "C4C7D9",
+            "44ADE5"
+          ],
+          "codes": [
+            "34207"
+          ],
+          "eans": [
+            "6971573444246"
+          ]
+        },
+        {
+          "name": "City Billboard",
+          "hexes": [
+            "CBF914",
+            "D623AA"
+          ],
+          "codes": [
+            "34208"
+          ],
+          "eans": [
+            "6971573444253"
+          ]
+        }
+      ],
+      "tds_url": "https://s3.us-west-2.amazonaws.com/snapmaker.com/download/manual/Snapmaker+Silk+Dual-Color+PLA+Technical+Data+Sheet.pdf"
+    },
+    {
+      "name": "Wood PLA {color_name}",
+      "material": "PLA",
+      "density": 1.17,
+      "finish": "matte",
+      "fill": "wood",
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        260
+      ],
+      "bed_temp_range": [
+        50,
+        65
+      ],
+      "colors": [
+        {
+          "name": "Oak",
+          "hex": "C0A086",
+          "codes": [
+            "34056"
+          ],
+          "eans": [
+            "6971573444406"
+          ]
+        },
+        {
+          "name": "Maple",
+          "hex": "F2C6A2",
+          "codes": [
+            "34057"
+          ],
+          "eans": [
+            "6971573444413"
+          ]
+        },
+        {
+          "name": "Walnut",
+          "hex": "775C50",
+          "codes": [
+            "34058"
+          ],
+          "eans": [
+            "6971573444420"
+          ]
+        },
+        {
+          "name": "Rosewood",
+          "hex": "AE7575",
+          "codes": [
+            "34059"
+          ],
+          "eans": [
+            "6971573444437"
+          ]
+        }
+      ],
+      "tds_url": "https://s3.us-west-2.amazonaws.com/snapmaker.com/download/manual/Snapmaker+Wood+PLA+Technical+Data+Sheet+V1.0.0.pdf"
+    },
+    {
       "name": "TPU 90A {color_name}",
       "material": "TPU",
       "density": 1.12,
