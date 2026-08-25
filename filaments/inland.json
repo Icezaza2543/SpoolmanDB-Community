@@ -691,23 +691,34 @@
       "weights": [
         {
           "weight": 500,
-          "spool_weight": 300,
           "spool_type": "plastic"
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 270,
-      "bed_temp": 80,
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp_range": [
+        25,
+        50
+      ],
       "fill": "carbon fiber",
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "301424",
+            "MCPA12-CFB1"
+          ],
+          "eans": [
+            "618996742431"
+          ]
         }
-      ],
-      "country_of_origin": "US"
+      ]
     },
     {
       "name": "PLA Twinkling {color_name}",
