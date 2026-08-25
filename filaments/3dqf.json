@@ -138,6 +138,95 @@
       ]
     },
     {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        100
+      ],
+      "tds_url": "https://www.3dqf.co.uk/_files/ugd/33dbdc_6afdd09576324f95ab415eb0771c7ce8.pdf",
+      "country_of_origin": "GB",
+      "colors": [
+        {
+          "name": "Stirling Silver",
+          "hex": "C0C0C0",
+          "codes": [
+            "PETG-051",
+            "PETG-051-R"
+          ]
+        },
+        {
+          "name": "Nikita Power Tool Blue",
+          "hex": "0000FF",
+          "codes": [
+            "PETG-050",
+            "PETG-050-R"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000,
+          "is_refill": true
+        },
+        {
+          "weight": 2600,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        100
+      ],
+      "tds_url": "https://www.3dqf.co.uk/_files/ugd/33dbdc_6afdd09576324f95ab415eb0771c7ce8.pdf",
+      "country_of_origin": "GB",
+      "colors": [
+        {
+          "name": "DeFAULT Power Tool Yellow",
+          "hex": "FFFF00",
+          "codes": [
+            "PETG-049",
+            "PETG-049-R",
+            "PETG-049-2.6"
+          ]
+        }
+      ]
+    },
+    {
       "name": "ABS {color_name}",
       "material": "ABS",
       "density": 1.05,
