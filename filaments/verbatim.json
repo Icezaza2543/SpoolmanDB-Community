@@ -262,11 +262,12 @@
     {
       "name": "ABS {color_name}",
       "material": "ABS",
-      "density": 1.04,
+      "density": 1.05,
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "spool_type": "plastic",
+          "spool_weight": 500
         }
       ],
       "diameters": [
@@ -275,31 +276,52 @@
       "colors": [
         {
           "name": "Aluminium Grey",
-          "hex": "9F9F9F"
+          "hex": "9F9F9F",
+          "codes": [
+            "55032"
+          ]
         },
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "55026"
+          ]
         },
         {
           "name": "Blue",
-          "hex": "2C3294"
+          "hex": "2C3294",
+          "codes": [
+            "55029"
+          ]
         },
         {
           "name": "Green",
-          "hex": "739549"
+          "hex": "739549",
+          "codes": [
+            "55031"
+          ]
         },
         {
           "name": "Natural/Milky",
-          "hex": "DFDFD3"
+          "hex": "DFDFD3",
+          "codes": [
+            "55028"
+          ]
         },
         {
           "name": "Red",
-          "hex": "E60000"
+          "hex": "E60000",
+          "codes": [
+            "55030"
+          ]
         },
         {
           "name": "White",
-          "hex": "FFFFFF"
+          "hex": "FFFFFF",
+          "codes": [
+            "55027"
+          ]
         }
       ],
       "extruder_temp_range": [
@@ -310,7 +332,8 @@
         90,
         110
       ],
-      "country_of_origin": "DE"
+      "country_of_origin": "DE",
+      "tds_url": "https://3d-druckershop.com/mediafiles/Sonstiges/Datenblaetter/Filament/Verbatim/ABS_Datasheet_2018_EN.pdf"
     },
     {
       "name": "BVOH {color_name}",
@@ -348,7 +371,8 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "spool_type": "plastic",
+          "spool_weight": 500
         }
       ],
       "diameters": [
@@ -357,39 +381,63 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "55052"
+          ]
         },
         {
           "name": "Blue",
-          "hex": "2C3294"
+          "hex": "2C3294",
+          "codes": [
+            "55055"
+          ]
         },
         {
           "name": "Blue Transparent",
           "hex": "0099E6",
-          "translucent": true
+          "translucent": true,
+          "codes": [
+            "55056"
+          ]
         },
         {
           "name": "Clear",
           "hex": "DFDFD3",
-          "translucent": true
+          "translucent": true,
+          "codes": [
+            "55051"
+          ]
         },
         {
           "name": "Green Transparent",
           "hex": "58C91B",
-          "translucent": true
+          "translucent": true,
+          "codes": [
+            "55057"
+          ]
         },
         {
           "name": "Red",
-          "hex": "E60000"
+          "hex": "E60000",
+          "codes": [
+            "55053"
+          ]
         },
         {
           "name": "Red Transparent",
           "hex": "E60000",
-          "translucent": true
+          "translucent": true,
+          "codes": [
+            "55054"
+          ]
         },
         {
           "name": "White",
-          "hex": "FFFFFF"
+          "hex": "FFFFFF",
+          "codes": [
+            "55050"
+          ]
         }
       ],
       "extruder_temp_range": [
@@ -400,7 +448,8 @@
         70,
         90
       ],
-      "country_of_origin": "DE"
+      "country_of_origin": "DE",
+      "tds_url": "https://3d-druckershop.com/mediafiles/Sonstiges/Datenblaetter/Filament/Verbatim/PET_G_Datasheet_2018_EN.pdf"
     },
     {
       "name": "PLA {color_name}",
@@ -409,7 +458,8 @@
       "weights": [
         {
           "weight": 1000,
-          "spool_type": "plastic"
+          "spool_type": "plastic",
+          "spool_weight": 500
         }
       ],
       "diameters": [
@@ -418,31 +468,52 @@
       "colors": [
         {
           "name": "Aluminium Grey",
-          "hex": "9F9F9F"
+          "hex": "9F9F9F",
+          "codes": [
+            "55319"
+          ]
         },
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "55318"
+          ]
         },
         {
           "name": "Blue",
-          "hex": "2C3294"
+          "hex": "2C3294",
+          "codes": [
+            "55322"
+          ]
         },
         {
           "name": "Green",
-          "hex": "739549"
+          "hex": "739549",
+          "codes": [
+            "55324"
+          ]
         },
         {
           "name": "Natural/Transparent",
-          "hex": "DFDFD3"
+          "hex": "DFDFD3",
+          "codes": [
+            "55317"
+          ]
         },
         {
           "name": "Red",
-          "hex": "E60000"
+          "hex": "E60000",
+          "codes": [
+            "55320"
+          ]
         },
         {
           "name": "White",
-          "hex": "FFFFFF"
+          "hex": "FFFFFF",
+          "codes": [
+            "55315"
+          ]
         }
       ],
       "extruder_temp_range": [
@@ -453,7 +524,8 @@
         50,
         70
       ],
-      "country_of_origin": "DE"
+      "country_of_origin": "DE",
+      "tds_url": "https://3d-druckershop.com/mediafiles/Sonstiges/Datenblaetter/Filament/Verbatim/PLA_Datasheet_2018_EN.pdf"
     },
     {
       "name": "PP {color_name}",
