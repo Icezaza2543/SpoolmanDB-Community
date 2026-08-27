@@ -46,6 +46,7 @@ class Weight(TypedDict):
 
 class Color(TypedDict):
     name: str
+    display_name: NotRequired[str]
     hex: NotRequired[str]
     hexes: NotRequired[list[str]]
     fill: NotRequired[Fill | None]
@@ -201,6 +202,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
         for diameter in diameters:
             for color_obj in colors:
                 color_name = color_obj["name"]
+                color_display_name = color_obj.get("display_name", None)
                 color_hex = color_obj.get("hex", None)
                 color_hexes = color_obj.get("hexes", None)
                 color_fill = color_obj.get("fill", None)
@@ -234,6 +236,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                     color_glow = glow
 
                 formatted_name = name.format(color_name=color_name)
+                output_name = color_display_name or formatted_name
 
                 if color_hex is None and color_hexes is None:
                     raise ValueError(
@@ -267,7 +270,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                         is_refill=is_refill,
                     ),
                     "manufacturer": manufacturer,
-                    "name": formatted_name,
+                    "name": output_name,
                     "material": material,
                     "density": density,
                     "weight": weight,
