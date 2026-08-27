@@ -228,6 +228,11 @@
                                 "name": {
                                     "type": "string"
                                 },
+                                "display_name": {
+                                    "$comment": "Optional full compiled filament name when combining the product template and official color name would be redundant. Does not alter the historical public ID input.",
+                                    "type": "string",
+                                    "minLength": 1
+                                },
                                 "hex": {
                                     "$comment": "For a single-color filament.",
                                     "type": "string",

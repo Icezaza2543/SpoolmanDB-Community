@@ -342,3 +342,26 @@ def test_legacy_id_spool_type_behavior():
     assert results[1]["id"] == "testbrand_pla_whitepla_1000_175_n"
     assert "legacy_id_spool_type" not in results[1]
 
+
+def test_color_display_name_preserves_public_id_input():
+    data = {
+        "name": "PLA Pure {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [{"weight": 1000, "spool_type": SpoolType.PLASTIC}],
+        "diameters": [1.75],
+        "colors": [
+            {
+                "name": "Pure White",
+                "display_name": "PLA Pure White",
+                "hex": "FFFFFF",
+            }
+        ],
+    }
+
+    result = list(expand_filament_data("Bambu Lab", data))[0]
+
+    assert result["name"] == "PLA Pure White"
+    assert result["id"] == "bambulab_pla_plapurepurewhite_1000_175_p"
+    assert "display_name" not in result
+
