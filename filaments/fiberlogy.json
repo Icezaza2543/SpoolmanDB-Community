@@ -1868,7 +1868,7 @@
     {
       "name": "Easy PET-G {color_name}",
       "material": "PETG",
-      "density": 1.27,
+      "density": 1.29,
       "weights": [
         {
           "weight": 850,
@@ -1879,6 +1879,11 @@
       "diameters": [
         1.75
       ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp": 90,
       "colors": [
         {
           "name": "Black",
@@ -2050,7 +2055,7 @@
     {
       "name": "Easy PETG {color_name}",
       "material": "PETG",
-      "density": 1.27,
+      "density": 1.29,
       "weights": [
         {
           "weight": 1000,
@@ -2165,10 +2170,7 @@
         220,
         250
       ],
-      "bed_temp_range": [
-        70,
-        90
-      ],
+      "bed_temp": 90,
       "country_of_origin": "PL",
       "tds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_EASYPETG_TDS.pdf",
       "sds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_EASYPETG_SDS_EN.pdf"
