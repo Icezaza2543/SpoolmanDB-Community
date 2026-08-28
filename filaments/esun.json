@@ -2013,13 +2013,13 @@
         300
       ],
       "bed_temp_range": [
-        45,
-        60
+        60,
+        90
       ],
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "272729"
         }
       ],
       "fill": "carbon fiber",
@@ -2050,11 +2050,12 @@
       "colors": [
         {
           "name": "Natural",
-          "hex": "f5deb3"
+          "display_name": "ePLA-LW White",
+          "hex": "e3e4d4"
         },
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "272729"
         }
       ],
       "country_of_origin": "CN",
@@ -2084,31 +2085,43 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "272729"
         },
         {
           "name": "Cold White",
-          "hex": "dbeefd"
+          "hex": "dbd6dc"
         },
         {
           "name": "Grey",
-          "hex": "808080"
+          "hex": "606783"
         },
         {
           "name": "Red",
-          "hex": "d54837"
+          "hex": "b40200"
         },
         {
           "name": "Silver",
-          "hex": "888d93"
+          "hex": "68676c"
         },
         {
           "name": "Green",
-          "hex": "068e1f"
+          "hex": "1b2d39"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fffc01"
+        },
+        {
+          "name": "Blue",
+          "hex": "01378d"
+        },
+        {
+          "name": "Warm White",
+          "hex": "e1d7d6"
         }
       ],
       "country_of_origin": "CN",
-      "tds_url": "https://www.esun3d.com/easa-product/"
+      "tds_url": "https://www.esun3d.com/asa-pro-product/"
     },
     {
       "name": "ePLA-ST {color_name}",
@@ -2134,15 +2147,15 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "272729"
         },
         {
           "name": "White",
-          "hex": "ffffff"
+          "hex": "e3e4d4"
         },
         {
           "name": "Grey",
-          "hex": "808080"
+          "hex": "606783"
         }
       ],
       "country_of_origin": "CN",
