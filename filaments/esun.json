@@ -1994,6 +1994,159 @@
       ],
       "country_of_origin": "CN",
       "fill": "carbon fiber"
+    },
+    {
+      "name": "{color_name}",
+      "material": "PA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "CN",
+      "tds_url": "https://www.esun3d.com/epa-cf-product/"
+    },
+    {
+      "name": "ePLA-LW {color_name}",
+      "material": "PLA",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        270
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "f5deb3"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://www.esun3d.com/epla-lw-product/"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA+",
+      "density": 1.06,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Cold White",
+          "hex": "dbeefd"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Red",
+          "hex": "d54837"
+        },
+        {
+          "name": "Silver",
+          "hex": "888d93"
+        },
+        {
+          "name": "Green",
+          "hex": "068e1f"
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://www.esun3d.com/easa-product/"
+    },
+    {
+      "name": "ePLA-ST {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://www.esun3d.com/epla-st-product/"
     }
   ]
 }
