@@ -172,10 +172,7 @@
         235,
         250
       ],
-      "bed_temp_range": [
-        80,
-        100
-      ],
+      "bed_temp": 90,
       "country_of_origin": "US",
       "tds_url": "https://cdn.shopify.com/s/files/1/0260/7421/files/Push_Plastic_PETG_Technical_Data_sheet_6b420a6b-aea1-47d5-b931-464a8804abb4.pdf",
       "colors": [
@@ -372,7 +369,7 @@
     {
       "name": "ABS {color_name}",
       "material": "ABS",
-      "density": 1.04,
+      "density": 1.03,
       "weights": [
         {
           "weight": 1000,
@@ -489,7 +486,8 @@
         90,
         110
       ],
-      "country_of_origin": "US"
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0260/7421/files/Push_Plastic_ABS_Technical_Data_sheet_8f0e2174-914e-4312-8018-fb4d1a5d2e9b.pdf"
     },
     {
       "name": "CF ABS {color_name}",
@@ -958,14 +956,12 @@
         }
       ],
       "extruder_temp_range": [
-        220,
+        235,
         250
       ],
-      "bed_temp_range": [
-        70,
-        90
-      ],
-      "country_of_origin": "US"
+      "bed_temp": 90,
+      "country_of_origin": "US",
+      "tds_url": "https://cdn.shopify.com/s/files/1/0260/7421/files/Push_Plastic_PETG_Technical_Data_sheet_6b420a6b-aea1-47d5-b931-464a8804abb4.pdf"
     },
     {
       "name": "High Heat PLA {color_name}",
