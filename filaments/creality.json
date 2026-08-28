@@ -15,8 +15,14 @@
       "diameters": [
         1.75
       ],
-      "extruder_temp": 210,
-      "bed_temp": 60,
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
       "colors": [
         {
           "name": "White",
@@ -603,8 +609,14 @@
         }
       ],
       "country_of_origin": "CN",
-      "extruder_temp": 220,
-      "bed_temp": 60
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ]
     },
     {
       "name": "PLA CR-Wood {color_name}",
