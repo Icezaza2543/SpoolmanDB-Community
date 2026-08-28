@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 53,312
+* **Published records**: 53,316
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -80,8 +80,8 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | Manufacturer source files | 489 |
 | Material definitions | 153 |
 | Source filament objects | 5,035 |
-| Color entries | 31,087 |
-| Compiled filament variants | 53,312 |
+| Color entries | 31,091 |
+| Compiled filament variants | 53,316 |
 | Source filaments with country of origin | 4,581 |
 | Source filaments with TDS/product links | 1,123 |
 | Source filaments with SDS links | 382 |
