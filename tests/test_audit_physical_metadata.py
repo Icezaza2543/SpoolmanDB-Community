@@ -54,6 +54,18 @@ def test_audit_temperatures_implausibly_low_and_high():
     assert any(f.field == "bed_temp" and f.severity == "HIGH" for f in findings)
 
 
+def test_audit_temperatures_zero_placeholder_range():
+    fil = {
+        "name": "Placeholder {color_name}",
+        "material": "SMP",
+        "extruder_temp_range": [0, 0],
+        "bed_temp_range": [0, 0],
+    }
+    findings = audit_temperatures(fil, "test.json", "TestBrand")
+    assert len(findings) >= 1
+    assert any(f.field == "extruder_temp_range" and f.severity == "HIGH" for f in findings)
+
+
 def test_audit_temperatures_pcl_exception():
     fil = {
         "name": "PCL {color_name}",
