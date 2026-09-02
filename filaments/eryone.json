@@ -3360,6 +3360,37 @@
       "fill": "carbon fiber"
     },
     {
+      "name": "PPS-CF10 {color_name}",
+      "material": "PPS-CF",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 130
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp_range": [
+        285,
+        320
+      ],
+      "bed_temp_range": [
+        100,
+        120
+      ],
+      "fill": "carbon fiber"
+    },
+    {
       "name": "TPU {color_name}",
       "material": "TPU",
       "density": 1.21,
