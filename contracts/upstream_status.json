@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-07-28",
+  "last_reviewed": "2026-09-04",
   "upstreams": {
     "spoolman": {
       "name": "Spoolman (Application Server)",
@@ -13,10 +13,12 @@
     "spoolmandb_upstream": {
       "name": "SpoolmanDB (Original Static Data Repository)",
       "repository": "Donkie/SpoolmanDB",
-      "status": "inactive_upstream",
-      "latest_known_commit": "5b61e755926568ec3b3235701684595872b70b49",
-      "latest_known_commit_date": "2025-11-28",
-      "description": "Original upstream static data repository. No visible upstream commits since 2025-11-28; open PRs remain unmerged."
+      "status": "active_upstream",
+      "latest_known_commit": "77c3ad7f4eecd342be72845063fe5b34dad69cd0",
+      "latest_known_commit_date": "2026-08-31",
+      "historical_community_base_commit": "5b61e755926568ec3b3235701684595872b70b49",
+      "historical_community_base_commit_date": "2025-11-28",
+      "description": "Original upstream static data repository. Activity resumed in August 2026 with contributor tooling and catalog-preview automation; open data PRs remain subject to upstream review."
     }
   },
   "capabilities": {

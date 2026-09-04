@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 53,317
+* **Published records**: 53,339
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -36,7 +36,7 @@ SpoolmanDB Community is an actively maintained community extension of SpoolmanDB
 ### Upstream Relationships & Positioning
 
 * **Active Application Upstream**: [Donkie/Spoolman](https://github.com/Donkie/Spoolman) — The actively developed application server that consumes external filament data via its `ExternalFilament` contract (`spoolman/externaldb.py`).
-* **Original Data Upstream**: [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) — The original upstream static dataset. It has no visible commits since 2025-11-28, with open PRs remaining unmerged.
+* **Original Data Upstream**: [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) — The original upstream static dataset. Repository activity resumed in August 2026 with contributor tooling and catalog-preview automation; Community remains independently maintained while upstream data PRs are reviewed on their own timeline.
 * **SpoolmanDB-Community Position**: An independent community extension and staging-quality dataset. It is **not** a replacement application fork, but a community-driven database maintaining strict quality controls, public-ID stability, and rich metadata extensions.
 * **Contract Compatibility**: Compatible with Spoolman's pinned stable release (`v0.25.0`) and monitored against the `master` canary. See the detailed [Upstream Compatibility & Divergence Tracker](docs/UPSTREAM_COMPATIBILITY.md).
 * **Public ID Stability**: Every published filament record is protected by an automated PR-base baseline stability gate (`contracts/compiled_id_baseline.json`) ensuring historical IDs never disappear or change accidentally.
@@ -79,13 +79,13 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 489 |
 | Material definitions | 153 |
-| Source filament objects | 5,036 |
-| Color entries | 31,092 |
-| Compiled filament variants | 53,317 |
-| Source filaments with country of origin | 4,582 |
-| Source filaments with TDS/product links | 1,123 |
+| Source filament objects | 5,037 |
+| Color entries | 31,114 |
+| Compiled filament variants | 53,339 |
+| Source filaments with country of origin | 4,583 |
+| Source filaments with TDS/product links | 1,124 |
 | Source filaments with SDS links | 382 |
-| Manufacturer product code/ID entries | 8,144 |
+| Manufacturer product code/ID entries | 8,166 |
 | EAN/GTIN entries | 2,194 |
 | ASEAN manufacturer coverage | 24 brands / 147 source filaments |
 
@@ -95,7 +95,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 4,319 |
+| `spool_type: plastic` | 4,320 |
 | `spool_type: cardboard` | 1,653 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 34 |
@@ -243,7 +243,7 @@ All shared material defaults live in `materials.json`.
 
 ## Maintenance stance
 
-This fork exists to keep the data usable while upstream is inactive. If upstream maintainership resumes, changes here can be proposed back to the original project. Until then, this repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
+This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
 
 ## Terms and policy
 
