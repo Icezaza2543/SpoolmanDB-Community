@@ -76,8 +76,8 @@ def test_upstream_config_reference_no_duplication():
     assert "commit" in upstream_config["stable"]
 
 
-def test_active_vs_inactive_upstreams_distinction_and_sha_format():
-    """3. Verify distinct labeling of active Spoolman vs inactive SpoolmanDB and exact 40-character hex SHA."""
+def test_active_upstreams_and_spoolmandb_sha_formats():
+    """3. Verify active upstream labels plus current and historical SpoolmanDB SHA metadata."""
     with TRACKER_PATH.open(encoding="utf-8") as f:
         tracker = json.load(f)
 
@@ -85,9 +85,11 @@ def test_active_vs_inactive_upstreams_distinction_and_sha_format():
     assert upstreams["spoolman"]["status"] == "active_upstream"
 
     spoolmandb = upstreams["spoolmandb_upstream"]
-    assert spoolmandb["status"] == "inactive_upstream"
+    assert spoolmandb["status"] == "active_upstream"
     assert "latest_known_commit" in spoolmandb
     assert "latest_known_commit_date" in spoolmandb
+    assert "historical_community_base_commit" in spoolmandb
+    assert "historical_community_base_commit_date" in spoolmandb
 
     sha = spoolmandb["latest_known_commit"]
     assert HEX_SHA_40_PATTERN.match(sha), f"SpoolmanDB commit SHA '{sha}' is not a valid 40-character hex SHA"
@@ -97,6 +99,17 @@ def test_active_vs_inactive_upstreams_distinction_and_sha_format():
         datetime.strptime(commit_date, "%Y-%m-%d")
     except ValueError:
         pytest.fail(f"latest_known_commit_date '{commit_date}' is not a valid YYYY-MM-DD ISO date")
+
+    historical_sha = spoolmandb["historical_community_base_commit"]
+    assert HEX_SHA_40_PATTERN.match(
+        historical_sha
+    ), f"SpoolmanDB historical Community base SHA '{historical_sha}' is not a valid 40-character hex SHA"
+
+    historical_date = spoolmandb["historical_community_base_commit_date"]
+    try:
+        datetime.strptime(historical_date, "%Y-%m-%d")
+    except ValueError:
+        pytest.fail(f"historical_community_base_commit_date '{historical_date}' is not a valid YYYY-MM-DD ISO date")
 
 
 def test_capabilities_schema_enums_and_qualified_refs():
@@ -169,6 +182,7 @@ def test_documentation_file_integrity_and_relative_links():
     assert "Capability & Divergence Matrix" in content
     assert "compatible with the pinned stable Spoolman contract and monitored against the current master canary." in content
     assert "5b61e755926568ec3b3235701684595872b70b49" in content
+    assert "77c3ad7f4eecd342be72845063fe5b34dad69cd0" in content
 
     # Disallow file:/// absolute/file links in markdown documentation
     assert "file:///" not in content, "Documentation contains absolute file:/// links; use relative repository links instead"

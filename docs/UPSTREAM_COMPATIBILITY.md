@@ -9,7 +9,7 @@ This document tracks the compatibility status, technical divergence, and capabil
 | Upstream Repository | Role / Type | Status | Observed State & Relationship |
 | :--- | :--- | :--- | :--- |
 | **`Donkie/Spoolman`** | Application Server & Contract Provider | **ACTIVE UPSTREAM** | Primary target contract provider. Community dataset compiles strictly to Spoolman's `ExternalFilament` contract (`spoolman/externaldb.py`). |
-| **`Donkie/SpoolmanDB`** | Static Data Repository | **INACTIVE UPSTREAM** | Original upstream static data repository. Latest known commit `5b61e755926568ec3b3235701684595872b70b49` (`2025-11-28`). No visible upstream commits since that date; open PRs remain unmerged. |
+| **`Donkie/SpoolmanDB`** | Static Data Repository | **ACTIVE UPSTREAM** | Original upstream static data repository. Activity resumed with contributor tooling and catalog-preview automation merged in PRs [#314](https://github.com/Donkie/SpoolmanDB/pull/314) and [#316](https://github.com/Donkie/SpoolmanDB/pull/316). Latest observed main commit: `77c3ad7f4eecd342be72845063fe5b34dad69cd0` (`2026-08-31`). Open data PRs remain subject to upstream review. |
 
 > [!NOTE]
 > **SpoolmanDB-Community** operates as an independent community database for 3D printing filaments. It is compatible with the pinned stable Spoolman contract and monitored against the current master canary. It enforces strict public ID stability, data verification guidelines, and rich technical metadata.
@@ -22,10 +22,13 @@ Upstream testing configurations are defined in [`contracts/spoolman_upstream.jso
 
 * **Spoolman Stable Pin (Required Contract)**: `v0.25.0` (`6e1065009c7c45c9e38d5e1bec21d47273442889`)
   * Local snapshot: [`contracts/spoolman_externaldb.py`](../contracts/spoolman_externaldb.py)
-  * Contract Check: **PASSING** (51,626 compiled records validated)
+  * Contract Check: **PASSING** (current compiled dataset validated)
 * **Spoolman Canary (Advisory)**: Branch `master`
   * Contract Check: **PASSING** (No `ExternalFilament` field or type drift)
-* **SpoolmanDB Original Base**: `5b61e755926568ec3b3235701684595872b70b49` (`2025-11-28`)
+* **SpoolmanDB Historical Community Base**: `5b61e755926568ec3b3235701684595872b70b49` (`2025-11-28`)
+  * This remains the historical data base used when Community diverged; it is not the current upstream head.
+* **SpoolmanDB Latest Observed Main**: `77c3ad7f4eecd342be72845063fe5b34dad69cd0` (`2026-08-31`)
+  * Recent merged work is repository tooling and catalog-preview automation; this observation does not change Community's historical base or imply automatic data synchronization.
 
 ---
 
