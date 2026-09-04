@@ -49,6 +49,35 @@
       "country_of_origin": "GB"
     },
     {
+      "name": "rPLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        }
+      ],
+      "country_of_origin": "GB"
+    },
+    {
       "name": "rPETG {color_name}",
       "material": "PETG",
       "density": 1.25,
