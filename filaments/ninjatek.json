@@ -287,7 +287,9 @@
     {
       "name": "Chinchilla TPU {color_name}",
       "material": "TPU",
-      "density": 1.21,
+      "density": 1.13,
+      "finish": "matte",
+      "tds_url": "https://ninjatek.com/wp-content/uploads/Chinchilla-TDS.pdf",
       "weights": [
         {
           "weight": 1000,
@@ -316,12 +318,8 @@
         }
       ],
       "extruder_temp_range": [
-        210,
-        240
-      ],
-      "bed_temp_range": [
-        30,
-        60
+        225,
+        235
       ],
       "country_of_origin": "US"
     },
