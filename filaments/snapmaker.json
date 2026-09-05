@@ -2,6 +2,48 @@
   "manufacturer": "Snapmaker",
   "filaments": [
     {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "finish": "glossy",
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        25,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Pearl White",
+          "hex": "DFE4E4"
+        },
+        {
+          "name": "Neon Green",
+          "hex": "A8FF54"
+        },
+        {
+          "name": "Aqua Blue",
+          "hex": "4CC1CB"
+        },
+        {
+          "name": "Emerald Green",
+          "hex": "55B687"
+        }
+      ],
+      "tds_url": "https://s3.us-west-2.amazonaws.com/snapmaker.com/download/manual/Snapmaker+Silk+PLA+Technical+Data+Sheet+V1.0.0.pdf"
+    },
+    {
       "name": "PLA-CF {color_name}",
       "material": "PLA-CF",
       "density": 1.29,
