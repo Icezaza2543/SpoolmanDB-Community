@@ -5,6 +5,7 @@
       "name": "NinjaFlex {color_name}",
       "material": "TPU",
       "density": 1.19,
+      "tds_url": "https://ninjatek.com/wp-content/uploads/NinjaFlex-TDS.pdf",
       "weights": [
         {
           "weight": 500,
@@ -27,10 +28,6 @@
       "extruder_temp_range": [
         225,
         250
-      ],
-      "bed_temp_range": [
-        0,
-        50
       ],
       "colors": [
         {
@@ -400,7 +397,8 @@
     {
       "name": "NinjaFlex TPU {color_name}",
       "material": "TPU",
-      "density": 1.21,
+      "density": 1.19,
+      "tds_url": "https://ninjatek.com/wp-content/uploads/NinjaFlex-TDS.pdf",
       "weights": [
         {
           "weight": 1000,
@@ -453,12 +451,8 @@
         }
       ],
       "extruder_temp_range": [
-        210,
-        240
-      ],
-      "bed_temp_range": [
-        30,
-        60
+        225,
+        250
       ],
       "country_of_origin": "US"
     },
