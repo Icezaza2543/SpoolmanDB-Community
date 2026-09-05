@@ -161,6 +161,7 @@
       "name": "Armadillo {color_name}",
       "material": "TPU",
       "density": 1.18,
+      "tds_url": "https://ninjatek.com/wp-content/uploads/Armadillo-TDS.pdf",
       "weights": [
         {
           "weight": 500,
@@ -177,12 +178,8 @@
         2.85
       ],
       "extruder_temp_range": [
-        220,
+        210,
         230
-      ],
-      "bed_temp_range": [
-        0,
-        50
       ],
       "colors": [
         {
