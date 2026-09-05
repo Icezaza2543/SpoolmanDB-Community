@@ -2,6 +2,61 @@
   "manufacturer": "Snapmaker",
   "filaments": [
     {
+      "name": "PLA-CF {color_name}",
+      "material": "PLA-CF",
+      "density": 1.29,
+      "finish": "matte",
+      "fill": "carbon fiber",
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        250
+      ],
+      "bed_temp_range": [
+        35,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Wine Red",
+          "hex": "823F2E"
+        },
+        {
+          "name": "Matcha Green",
+          "hex": "6F8653"
+        },
+        {
+          "name": "Graphite Gray",
+          "hex": "54555B"
+        },
+        {
+          "name": "Violet Purple",
+          "hex": "725E7C"
+        },
+        {
+          "name": "Chestnut Brown",
+          "hex": "9B7C56"
+        },
+        {
+          "name": "Denim Blue",
+          "hex": "49799D"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "tds_url": "https://s3.us-west-2.amazonaws.com/snapmaker.com/download/manual/Snapmaker+PLA-CF+Technical+Data+Sheet+V1.0.0.pdf"
+    },
+    {
       "name": "95A {color_name}",
       "material": "TPU",
       "density": 1.21,
