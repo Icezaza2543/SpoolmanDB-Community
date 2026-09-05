@@ -1172,6 +1172,7 @@
       "name": "PETG HF {color_name}",
       "material": "PETG",
       "density": 1.3,
+      "tds_url": "https://s3.us-west-2.amazonaws.com/snapmaker.com/download/manual/Snapmaker+PETG+HF+Technical+Data+Sheet+V1.0.0.pdf",
       "weights": [
         {
           "weight": 1000,
@@ -1259,6 +1260,22 @@
           "codes": [
             "34166"
           ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "FBE95C"
+        },
+        {
+          "name": "Green",
+          "hex": "38B837"
+        },
+        {
+          "name": "Dark Green",
+          "hex": "223622"
+        },
+        {
+          "name": "Light Pink",
+          "hex": "F5BEE9"
         }
       ],
       "country_of_origin": "CN"
