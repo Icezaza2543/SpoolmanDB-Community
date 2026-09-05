@@ -298,8 +298,9 @@
             <section class="schema-stage" aria-labelledby="db-schema-title">
                 <div class="section-row">
                     <div>
-                        <h2 id="db-schema-title"><span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Core Database Relationships</h2>
-                        <p class="muted">The live schema viewer below includes current extension fields such as fill, country of origin, product identifiers, TDS, and SDS links.</p>
+                        <h2 id="db-schema-title"><span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Conceptual Data Relationships</h2>
+                        <p class="muted">Conceptual diagram only: the tables and relationship IDs below illustrate catalog concepts, not the JSON storage format. Fields such as manufacturer_id, material_id, and spool_type_id are illustrative, not published JSON fields.</p>
+                        <p class="muted">Source files contain manufacturer and filaments, with nested weights, diameters, and colors. Published filaments.json is a flat array of records with id, manufacturer, material, diameter, weight, and packaging metadata. Use the live schema viewer below for the exact source, compiled, and material-default fields.</p>
                     </div>
                     <div class="section-actions">
                         <a class="button button-ghost" href="filaments.json" target="_blank" rel="noopener noreferrer">Export JSON</a>
@@ -551,7 +552,7 @@
             <section class="schema-viewer" aria-labelledby="source-schema-title">
                 <div class="section-row">
                     <div>
-                        <h2 id="source-schema-title"><span class="material-symbols-outlined" aria-hidden="true">data_object</span> Filament Source Schema</h2>
+                        <h2 id="source-schema-title"><span class="material-symbols-outlined" aria-hidden="true">data_object</span> Live JSON Schema Viewer</h2>
                         <p id="schema-status" class="muted">Loading schemas...</p>
                     </div>
                     <div class="schema-toolbar">
@@ -663,12 +664,26 @@ $ pip install -r requirements-dev.txt</code></pre>
 $ python scripts/readme_snapshot.py --write</code></pre>
                             <pre><code id="cmd-compile"># Run compiler
 $ python scripts/compile_filaments.py</code></pre>
+                            <pre><code id="cmd-baseline-update"># Only for verified new variants: enroll their public IDs
+$ python scripts/compile_id_baseline.py --update</code></pre>
+                            <p>Skip enrollment when no identities were added. Inspect the baseline diff: only the intended new identities may be added; never change or remove historical entries or use a breaking-change override.</p>
+                            <pre><code id="cmd-baseline-check"># Compare with the target branch and require exact baseline synchronization
+$ python scripts/compile_id_baseline.py --strict --base-ref origin/main</code></pre>
                             <pre><code id="cmd-validate"># Validate source and compiled data
-$ python scripts/validate.py</code></pre>
+$ python scripts/validate.py --strict</code></pre>
+                            <pre><code id="cmd-snapshot-check"># Verify generated README metrics
+$ python scripts/readme_snapshot.py --check</code></pre>
                             <pre><code id="cmd-tests"># Run regression tests
 $ python -m pytest -q</code></pre>
                             <pre><code id="cmd-compat"># Check the pinned Spoolman contract
-$ python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_externaldb.py</code></pre>
+$ python scripts/check_spoolman_compat.py --mode stable</code></pre>
+                            <pre><code id="cmd-canary"># Advisory check against current Spoolman master
+$ python scripts/check_spoolman_compat.py --mode canary</code></pre>
+                            <pre><code id="cmd-projection"># Verify the strict Spoolman projection
+$ python scripts/project_spoolman.py</code></pre>
+                            <pre><code id="cmd-diff-check"># Review whitespace and the intended file changes
+$ git diff --check
+$ git status --short</code></pre>
                         </div>
                     </div>
                 </article>
@@ -680,12 +695,13 @@ $ python scripts/check_spoolman_compat.py --upstream-file contracts/spoolman_ext
                         <p>Submit your changes for review. Ensure your pull request follows the checklist below for a smooth approval process.</p>
                         <div class="checklist-stack">
                             <label><input type="checkbox"> <span><strong>Edit source data, not generated JSON</strong><small>Modify filaments/ and include README.md when the snapshot tool updates it. Do not commit filaments.json.</small></span></label>
+                            <label><input type="checkbox"> <span><strong>Preserve historical public IDs</strong><small>Include contracts/compiled_id_baseline.json only for verified new identities. Its additions must exactly match the intended new compiled variants.</small></span></label>
                             <label><input type="checkbox"> <span><strong>One manufacturer per Pull Request</strong><small>This helps maintainers review and merge changes more efficiently.</small></span></label>
                             <label><input type="checkbox"> <span><strong>Register ASEAN manufacturers when applicable</strong><small>Add the source filename to scripts/asean_manufacturers.json using brand location, not manufacturing origin.</small></span></label>
                             <label><input type="checkbox"> <span><strong>Provide evidence (URLs/Photos)</strong><small>Link to manufacturer product pages or provide clear photos of spool labels.</small></span></label>
                         </div>
                         <a class="button button-primary submit-pr" href="https://github.com/Icezaza2543/SpoolmanDB-Community/compare" target="_blank" rel="noopener noreferrer">Submit Pull Request</a>
-                        <small class="review-time">Average review time: 24-48 hours</small>
+                        <small class="review-time">Review timing depends on maintainer availability and the evidence needed.</small>
                     </div>
                 </article>
             </section>

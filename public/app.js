@@ -50,6 +50,7 @@
         qualityMetrics: null,
         schemas: {},
         schemaPaths: {},
+        schemaErrors: {},
         homeCharts: [],
         dashboardMetrics: null,
         homeInitialized: false,
@@ -1558,21 +1559,19 @@
             return;
         }
 
-        setSchemaStatus("Loading source schemas...");
-        try {
-            const [filament, material] = await Promise.all([
-                fetchJsonWithPath(SCHEMA_CONFIG.filament.paths),
-                fetchJsonWithPath(SCHEMA_CONFIG.material.paths),
-            ]);
-            state.schemas.filament = filament.data;
-            state.schemas.material = material.data;
-            state.schemaPaths.filament = filament.path;
-            state.schemaPaths.material = material.path;
-            renderSchemaViewer();
-        } catch (error) {
-            setSchemaStatus("Schema data failed to load: " + error.message, true);
-            renderSchemaError("Could not load schema JSON.");
-        }
+        setSchemaStatus("Loading schemas...");
+        await Promise.all(Object.entries(SCHEMA_CONFIG).map(async function ([kind, config]) {
+            delete state.schemas[kind];
+            delete state.schemaErrors[kind];
+            try {
+                const result = await fetchJsonWithPath(config.paths);
+                state.schemas[kind] = result.data;
+                state.schemaPaths[kind] = result.path;
+            } catch (error) {
+                state.schemaErrors[kind] = "Could not load " + config.file + ": " + error.message;
+            }
+        }));
+        renderSchemaViewer();
     }
 
     function bindSchemaViewer() {
@@ -1590,7 +1589,9 @@
         updateSchemaLinks();
 
         if (!schema) {
-            renderSchemaError("Schema is still loading.");
+            const error = state.schemaErrors[kind];
+            setSchemaStatus(error || "Loading " + SCHEMA_CONFIG[kind].title + "...", Boolean(error));
+            renderSchemaError(error || "Schema is still loading.", error ? "Unavailable" : "Loading");
             return;
         }
 
@@ -1792,9 +1793,9 @@
         return row;
     }
 
-    function renderSchemaError(message) {
+    function renderSchemaError(message, status = "Unavailable") {
         if (elements.schemaSummary) {
-            elements.schemaSummary.replaceChildren(renderMetricCards([["Schema status", "Waiting", "Source schemas"]]));
+            elements.schemaSummary.replaceChildren(renderMetricCards([["Schema status", status, "Selected schema"]]));
         }
         if (elements.schemaFieldsBody) {
             elements.schemaFieldsBody.replaceChildren(emptySchemaRow(message));

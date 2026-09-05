@@ -108,3 +108,9 @@ test("buildFilamentSearchText does not treat ePLA as standalone PLA", function (
 });
 
 console.log("display-name tests passed");
+
+// Keep frontend regression coverage in the existing CI entry point.
+require("./test_schema_viewer.cjs")().catch(error => {
+    console.error(error);
+    process.exitCode = 1;
+});
