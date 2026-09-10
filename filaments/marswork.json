@@ -128,6 +128,186 @@
       "country_of_origin": "CN"
     },
     {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 1000,
+          "is_refill": true
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        35,
+        65
+      ],
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "f4a925"
+        },
+        {
+          "name": "Silver",
+          "hex": "c8c8c8"
+        },
+        {
+          "name": "Baby Blue",
+          "hex": "a8c6ee"
+        },
+        {
+          "name": "Blue",
+          "hex": "008bda"
+        },
+        {
+          "name": "Candy Green",
+          "hex": "018814"
+        },
+        {
+          "name": "Candy Red",
+          "hex": "d02727"
+        },
+        {
+          "name": "Champagne",
+          "hex": "f3cfb2"
+        },
+        {
+          "name": "Dark Gold",
+          "hex": "b8860b"
+        },
+        {
+          "name": "Mint Green",
+          "hex": "96dcb9"
+        },
+        {
+          "name": "Pink",
+          "hex": "f7ada6"
+        },
+        {
+          "name": "Purple",
+          "hex": "8671cb"
+        },
+        {
+          "name": "Rose Gold",
+          "hex": "ba9594"
+        },
+        {
+          "name": "Titan Gray",
+          "hex": "5f6367"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "finish": "glossy",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        35,
+        65
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hexes": [
+            "018814",
+            "008bda",
+            "8671cb",
+            "ba9594"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Dual Black Green",
+          "hexes": [
+            "000000",
+            "018814"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Dual Black Red",
+          "hexes": [
+            "000000",
+            "d02727"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Dual Purple Green",
+          "hexes": [
+            "8671cb",
+            "018814"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Dual Red Blue",
+          "hexes": [
+            "d02727",
+            "008bda"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Dual Red Gold",
+          "hexes": [
+            "d02727",
+            "f4a925"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Triple Red Blue Green",
+          "hexes": [
+            "d02727",
+            "008bda",
+            "018814"
+          ],
+          "multi_color_direction": "coaxial"
+        },
+        {
+          "name": "Triple Red Gold Purple",
+          "hexes": [
+            "d02727",
+            "f4a925",
+            "8671cb"
+          ],
+          "multi_color_direction": "coaxial"
+        }
+      ],
+      "finish": "glossy",
+      "country_of_origin": "CN"
+    },
+    {
       "name": "PLA {color_name}",
       "material": "PLA",
       "density": 1.24,
