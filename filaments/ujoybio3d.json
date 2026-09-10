@@ -215,12 +215,12 @@
         1.75
       ],
       "extruder_temp_range": [
-        220,
-        270
+        230,
+        255
       ],
       "bed_temp_range": [
         70,
-        70
+        85
       ],
       "colors": [
         {
@@ -274,6 +274,112 @@
         {
           "name": "Yellow",
           "hex": "ffdc64"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        255
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Transparent",
+          "hex": "808080",
+          "translucent": true
+        },
+        {
+          "name": "Jade White",
+          "hex": "dfebe6"
+        },
+        {
+          "name": "Cream White",
+          "hex": "f8f5e8"
+        },
+        {
+          "name": "Grey",
+          "hex": "5d5d5d"
+        },
+        {
+          "name": "Purple Grey",
+          "hex": "69687a"
+        },
+        {
+          "name": "Red",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Peach Red",
+          "hex": "e9706d"
+        },
+        {
+          "name": "Cobalt Blue",
+          "hex": "2555aa"
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "173b6c"
+        },
+        {
+          "name": "Light Blue",
+          "hex": "39c9e8"
+        },
+        {
+          "name": "Green",
+          "hex": "44bd60"
+        },
+        {
+          "name": "Christmas Green",
+          "hex": "1d4127"
+        },
+        {
+          "name": "Bamboo Green",
+          "hex": "2f8c48"
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffdc64"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff7611"
+        },
+        {
+          "name": "Iris Purple",
+          "hex": "6f42c1"
+        },
+        {
+          "name": "Pink",
+          "hex": "ffb4c8"
+        },
+        {
+          "name": "Beige Skin",
+          "hex": "f6c8b4"
+        },
+        {
+          "name": "Coffee Brown",
+          "hex": "65361f"
         }
       ],
       "country_of_origin": "CN"
