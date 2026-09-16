@@ -2100,6 +2100,60 @@
       "bed_temp": 40
     },
     {
+      "name": "TPU 72D {color_name}",
+      "material": "TPU-72D",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 154
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "2240AF"
+        },
+        {
+          "name": "Green",
+          "hex": "08E327"
+        },
+        {
+          "name": "Grey",
+          "hex": "8F949B"
+        },
+        {
+          "name": "Red",
+          "hex": "EA140E"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FBEC07"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        45
+      ],
+      "country_of_origin": "CN"
+    },
+    {
       "name": "TPU 95A {color_name}",
       "material": "TPU",
       "density": 1.16,
