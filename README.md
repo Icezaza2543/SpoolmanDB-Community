@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 51,728
+* **Published records**: 51,724
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,10 +79,10 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 10,007 |
-| Color entries | 33,556 |
-| Compiled filament variants | 51,728 |
-| Source filaments with country of origin | 7,408 |
+| Source filament objects | 10,006 |
+| Color entries | 33,552 |
+| Compiled filament variants | 51,724 |
+| Source filaments with country of origin | 7,407 |
 | Source filaments with TDS/product links | 4,574 |
 | Source filaments with SDS links | 1,012 |
 | Manufacturer product code/ID entries | 11,891 |
@@ -95,7 +95,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 8,122 |
+| `spool_type: plastic` | 8,121 |
 | `spool_type: cardboard` | 2,490 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 235 |
@@ -512,6 +512,12 @@ The [complete mappings and conflicts](docs/audits/2026-10-03-teqstone-duplicate-
 This **intentional breaking catalog migration** retires 6 exact duplicate IDs in 6 reviewed groups: 51,734 → 51,728 catalog records, with 0 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
 
 The [complete mappings and conflicts](docs/audits/2026-10-03-zyltech-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-zyltech-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 10 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
+
+### aceaddity duplicate migration (2026-10-03)
+
+This **intentional breaking catalog migration** retires 4 exact duplicate IDs in 4 reviewed groups: 51,728 → 51,724 catalog records, with 1 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
+
+The [complete mappings and conflicts](docs/audits/2026-10-03-aceaddity-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-aceaddity-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 0 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
 ## Terms and policy
 

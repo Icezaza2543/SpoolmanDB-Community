@@ -1,0 +1,6740 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "aceaddity",
+  "audit_digest": "0760b6ec051c841b160ba155f14d4042b99d343b5b5bff3c69dd3cf94c0a5fe0",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "68c532fc88c0253ae1222bae6d651d3f3e4231d6",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {
+    "dup-3f653d51ee1683239cb29de5661b97ee68b946eb8cb201be43f71c4c485fd994": {
+      "approved": true,
+      "survivor": "aceaddity_pla_mattegooseyellow_1000_175_p",
+      "retire": [
+        "aceaddity_pla_matteplagooseyellow_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-aceaddity-duplicate-review.json",
+      "source": "68c532fc88c0253ae1222bae6d651d3f3e4231d6"
+    },
+    "dup-da53a942cfcbd1dda0b5b828eae63c2db13293d0461a79298c1544bf08088534": {
+      "approved": true,
+      "survivor": "aceaddity_pla_mattelightpink_1000_175_p",
+      "retire": [
+        "aceaddity_pla_matteplalightpink_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-aceaddity-duplicate-review.json",
+      "source": "68c532fc88c0253ae1222bae6d651d3f3e4231d6"
+    },
+    "dup-dfae5b4b37f267f8fad0897269af0ca620fbf2876d9e6999a8f3d3f1d60b071f": {
+      "approved": true,
+      "survivor": "aceaddity_pla_mattepinkblue_1000_175_p",
+      "retire": [
+        "aceaddity_pla_matteplapinkblue_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-aceaddity-duplicate-review.json",
+      "source": "68c532fc88c0253ae1222bae6d651d3f3e4231d6"
+    },
+    "dup-d9bac021289c29363010ccbebb02bfec2b7f9e81aff38130a7634417c1a81b4c": {
+      "approved": true,
+      "survivor": "aceaddity_pla_mattewatergreen_1000_175_p",
+      "retire": [
+        "aceaddity_pla_matteplawatergreen_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-aceaddity-duplicate-review.json",
+      "source": "68c532fc88c0253ae1222bae6d651d3f3e4231d6"
+    }
+  },
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-215b581197e595d71341f5362d3d64aec29209bdbcedc619a130894a51ebb220",
+      "ids": [
+        "aceaddity_pla_marblemarble_1000_175_p",
+        "aceaddity_pla_marbleplamarble_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "aceaddity_pla_marblemarble_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Marble Marble",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "C2C0BA",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": "marble",
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0D97QFJLM"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Marble {color_name}::Marble Marble::PLA::1000.0::1.75::plastic::False",
+          "template": "Marble {color_name}",
+          "source_color": "Marble",
+          "source_line": "Marble",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 8,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "aceaddity_pla_marbleplamarble_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Marble PLA Marble",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ADB4B9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Marble PLA {color_name}::Marble PLA Marble::PLA::1000::1.75::plastic::False",
+          "template": "Marble PLA {color_name}",
+          "source_color": "Marble",
+          "source_line": "Marble PLA",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "aceaddity_pla_marblemarble_1000_175_p": "C2C0BA",
+          "aceaddity_pla_marbleplamarble_1000_175_p": "ADB4B9"
+        },
+        "pattern": {
+          "aceaddity_pla_marblemarble_1000_175_p": "marble",
+          "aceaddity_pla_marbleplamarble_1000_175_p": null
+        },
+        "codes": {
+          "aceaddity_pla_marblemarble_1000_175_p": [
+            "B0D97QFJLM"
+          ],
+          "aceaddity_pla_marbleplamarble_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "AC001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    },
+    {
+      "group_id": "dup-3f653d51ee1683239cb29de5661b97ee68b946eb8cb201be43f71c4c485fd994",
+      "ids": [
+        "aceaddity_pla_mattegooseyellow_1000_175_p",
+        "aceaddity_pla_matteplagooseyellow_1000_175_p"
+      ],
+      "proposed_survivor": "aceaddity_pla_mattegooseyellow_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aceaddity_pla_matteplagooseyellow_1000_175_p": "aceaddity_pla_mattegooseyellow_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aceaddity_pla_mattegooseyellow_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Matte Goose Yellow",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "F5E868",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0D97MSJCT"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Matte {color_name}::Matte Goose Yellow::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "Goose Yellow",
+          "source_line": "Matte",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 6,
+            "compiled_records": 6
+          },
+          "upstream": false
+        },
+        {
+          "id": "aceaddity_pla_matteplagooseyellow_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Matte PLA Goose Yellow",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "F0C75E",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Matte PLA {color_name}::Matte PLA Goose Yellow::PLA::1000::1.75::plastic::False",
+          "template": "Matte PLA {color_name}",
+          "source_color": "Goose Yellow",
+          "source_line": "Matte PLA",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 11,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "aceaddity_pla_mattegooseyellow_1000_175_p": "F5E868",
+          "aceaddity_pla_matteplagooseyellow_1000_175_p": "F0C75E"
+        },
+        "codes": {
+          "aceaddity_pla_mattegooseyellow_1000_175_p": [
+            "B0D97MSJCT"
+          ],
+          "aceaddity_pla_matteplagooseyellow_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "AC002",
+      "status": "APPROVED",
+      "survivor": "aceaddity_pla_mattegooseyellow_1000_175_p",
+      "retire": [
+        "aceaddity_pla_matteplagooseyellow_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    },
+    {
+      "group_id": "dup-da53a942cfcbd1dda0b5b828eae63c2db13293d0461a79298c1544bf08088534",
+      "ids": [
+        "aceaddity_pla_mattelightpink_1000_175_p",
+        "aceaddity_pla_matteplalightpink_1000_175_p"
+      ],
+      "proposed_survivor": "aceaddity_pla_mattelightpink_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aceaddity_pla_matteplalightpink_1000_175_p": "aceaddity_pla_mattelightpink_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aceaddity_pla_mattelightpink_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Matte Light Pink",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "E5A6B7",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0D97MP4Q6"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Matte {color_name}::Matte Light Pink::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "Light Pink",
+          "source_line": "Matte",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 6,
+            "compiled_records": 6
+          },
+          "upstream": false
+        },
+        {
+          "id": "aceaddity_pla_matteplalightpink_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Matte PLA Light Pink",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFB6C1",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Matte PLA {color_name}::Matte PLA Light Pink::PLA::1000::1.75::plastic::False",
+          "template": "Matte PLA {color_name}",
+          "source_color": "Light Pink",
+          "source_line": "Matte PLA",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 11,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "aceaddity_pla_mattelightpink_1000_175_p": "E5A6B7",
+          "aceaddity_pla_matteplalightpink_1000_175_p": "FFB6C1"
+        },
+        "codes": {
+          "aceaddity_pla_mattelightpink_1000_175_p": [
+            "B0D97MP4Q6"
+          ],
+          "aceaddity_pla_matteplalightpink_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "AC003",
+      "status": "APPROVED",
+      "survivor": "aceaddity_pla_mattelightpink_1000_175_p",
+      "retire": [
+        "aceaddity_pla_matteplalightpink_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    },
+    {
+      "group_id": "dup-dfae5b4b37f267f8fad0897269af0ca620fbf2876d9e6999a8f3d3f1d60b071f",
+      "ids": [
+        "aceaddity_pla_mattepinkblue_1000_175_p",
+        "aceaddity_pla_matteplapinkblue_1000_175_p"
+      ],
+      "proposed_survivor": "aceaddity_pla_mattepinkblue_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aceaddity_pla_matteplapinkblue_1000_175_p": "aceaddity_pla_mattepinkblue_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aceaddity_pla_mattepinkblue_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Matte Pink Blue",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9B8EC4",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0D97ML822"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Matte {color_name}::Matte Pink Blue::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "Pink Blue",
+          "source_line": "Matte",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 6,
+            "compiled_records": 6
+          },
+          "upstream": false
+        },
+        {
+          "id": "aceaddity_pla_matteplapinkblue_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Matte PLA Pink Blue",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DDA0DD",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Matte PLA {color_name}::Matte PLA Pink Blue::PLA::1000::1.75::plastic::False",
+          "template": "Matte PLA {color_name}",
+          "source_color": "Pink Blue",
+          "source_line": "Matte PLA",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 11,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "aceaddity_pla_mattepinkblue_1000_175_p": "9B8EC4",
+          "aceaddity_pla_matteplapinkblue_1000_175_p": "DDA0DD"
+        },
+        "codes": {
+          "aceaddity_pla_mattepinkblue_1000_175_p": [
+            "B0D97ML822"
+          ],
+          "aceaddity_pla_matteplapinkblue_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "AC004",
+      "status": "APPROVED",
+      "survivor": "aceaddity_pla_mattepinkblue_1000_175_p",
+      "retire": [
+        "aceaddity_pla_matteplapinkblue_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    },
+    {
+      "group_id": "dup-d9bac021289c29363010ccbebb02bfec2b7f9e81aff38130a7634417c1a81b4c",
+      "ids": [
+        "aceaddity_pla_matteplawatergreen_1000_175_p",
+        "aceaddity_pla_mattewatergreen_1000_175_p"
+      ],
+      "proposed_survivor": "aceaddity_pla_mattewatergreen_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aceaddity_pla_matteplawatergreen_1000_175_p": "aceaddity_pla_mattewatergreen_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aceaddity_pla_matteplawatergreen_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Matte PLA Water Green",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "7FFFD4",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Matte PLA {color_name}::Matte PLA Water Green::PLA::1000::1.75::plastic::False",
+          "template": "Matte PLA {color_name}",
+          "source_color": "Water Green",
+          "source_line": "Matte PLA",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 11,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        },
+        {
+          "id": "aceaddity_pla_mattewatergreen_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Matte Water Green",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8FD4B4",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0D97N8J7Q"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Matte {color_name}::Matte Water Green::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "Water Green",
+          "source_line": "Matte",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 6,
+            "compiled_records": 6
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "aceaddity_pla_matteplawatergreen_1000_175_p": "7FFFD4",
+          "aceaddity_pla_mattewatergreen_1000_175_p": "8FD4B4"
+        },
+        "codes": {
+          "aceaddity_pla_matteplawatergreen_1000_175_p": null,
+          "aceaddity_pla_mattewatergreen_1000_175_p": [
+            "B0D97N8J7Q"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "AC005",
+      "status": "APPROVED",
+      "survivor": "aceaddity_pla_mattewatergreen_1000_175_p",
+      "retire": [
+        "aceaddity_pla_matteplawatergreen_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-215b581197e595d71341f5362d3d64aec29209bdbcedc619a130894a51ebb220",
+      "ids": [
+        "aceaddity_pla_marblemarble_1000_175_p",
+        "aceaddity_pla_marbleplamarble_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "aceaddity_pla_marblemarble_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Marble Marble",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "C2C0BA",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": "marble",
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0D97QFJLM"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Marble {color_name}::Marble Marble::PLA::1000.0::1.75::plastic::False",
+          "template": "Marble {color_name}",
+          "source_color": "Marble",
+          "source_line": "Marble",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 8,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "aceaddity_pla_marbleplamarble_1000_175_p",
+          "manufacturer": "Aceaddity",
+          "name": "Marble PLA Marble",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ADB4B9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aceaddity.json::Aceaddity::Marble PLA {color_name}::Marble PLA Marble::PLA::1000::1.75::plastic::False",
+          "template": "Marble PLA {color_name}",
+          "source_color": "Marble",
+          "source_line": "Marble PLA",
+          "source_file": "aceaddity.json",
+          "source_definition": {
+            "source_file": "aceaddity.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "aceaddity_pla_marblemarble_1000_175_p": "C2C0BA",
+          "aceaddity_pla_marbleplamarble_1000_175_p": "ADB4B9"
+        },
+        "pattern": {
+          "aceaddity_pla_marblemarble_1000_175_p": "marble",
+          "aceaddity_pla_marbleplamarble_1000_175_p": null
+        },
+        "codes": {
+          "aceaddity_pla_marblemarble_1000_175_p": [
+            "B0D97QFJLM"
+          ],
+          "aceaddity_pla_marbleplamarble_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "AC001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {
+    "aceaddity_pla_matteplagooseyellow_1000_175_p": {
+      "replaced_by": "aceaddity_pla_mattegooseyellow_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-aceaddity-duplicate-review.json",
+      "source": "68c532fc88c0253ae1222bae6d651d3f3e4231d6",
+      "retired_key": "aceaddity.json::Aceaddity::Matte PLA {color_name}::Matte PLA Goose Yellow::PLA::1000::1.75::plastic::False"
+    },
+    "aceaddity_pla_matteplalightpink_1000_175_p": {
+      "replaced_by": "aceaddity_pla_mattelightpink_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-aceaddity-duplicate-review.json",
+      "source": "68c532fc88c0253ae1222bae6d651d3f3e4231d6",
+      "retired_key": "aceaddity.json::Aceaddity::Matte PLA {color_name}::Matte PLA Light Pink::PLA::1000::1.75::plastic::False"
+    },
+    "aceaddity_pla_matteplapinkblue_1000_175_p": {
+      "replaced_by": "aceaddity_pla_mattepinkblue_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-aceaddity-duplicate-review.json",
+      "source": "68c532fc88c0253ae1222bae6d651d3f3e4231d6",
+      "retired_key": "aceaddity.json::Aceaddity::Matte PLA {color_name}::Matte PLA Pink Blue::PLA::1000::1.75::plastic::False"
+    },
+    "aceaddity_pla_matteplawatergreen_1000_175_p": {
+      "replaced_by": "aceaddity_pla_mattewatergreen_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-aceaddity-duplicate-review.json",
+      "source": "68c532fc88c0253ae1222bae6d651d3f3e4231d6",
+      "retired_key": "aceaddity.json::Aceaddity::Matte PLA {color_name}::Matte PLA Water Green::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "official_evidence": [],
+  "metadata_review": "Four Rule4 strict Matte groups retain larger well-formed family without Cartesian warning; identifiers already on survivors and no transfers. Marble tie is unbound with differing HEX/pattern; defer. Existing B0D97... values retained historically, not asserted newly verified manufacturer SKUs. No exact current numeric first-party evidence found; printing/density retained unresolved.",
+  "original_source_definitions": [
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "B0CJLR62MF"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFF200",
+          "codes": [
+            "B0CJM935VF"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ED1C24",
+          "codes": [
+            "B0CJM4DTFL"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "005FE8",
+          "codes": [
+            "B0CJM8WTT7"
+          ]
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Flash PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "B0C7G7YRVK"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "F6F6F6",
+          "codes": [
+            "B0C7G8Z1Y9"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "7F7F7F",
+          "codes": [
+            "B0C7G5L66D"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFF200",
+          "codes": [
+            "B0C7G7Q154"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "005FE8",
+          "codes": [
+            "B0C7G55M6M"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "ED1C24"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        240
+      ],
+      "bed_temp_range": [
+        70,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "212322",
+          "codes": [
+            "B0C7RCM75G"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "F6F6F6"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        },
+        {
+          "name": "Space Grey",
+          "hex": "989795"
+        },
+        {
+          "name": "Red",
+          "hex": "D15B51",
+          "codes": [
+            "B0C7RBV438"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "005FE8",
+          "codes": [
+            "B0C7RDV36B"
+          ]
+        },
+        {
+          "name": "Clear",
+          "hex": "00FFFFFF",
+          "translucent": true,
+          "codes": [
+            "B0C7RDGYB5"
+          ]
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "F6F6F6",
+          "codes": [
+            "B0D97L4PNB"
+          ]
+        },
+        {
+          "name": "Water Green",
+          "hex": "8FD4B4",
+          "codes": [
+            "B0D97N8J7Q"
+          ]
+        },
+        {
+          "name": "Light Pink",
+          "hex": "E5A6B7",
+          "codes": [
+            "B0D97MP4Q6"
+          ]
+        },
+        {
+          "name": "Goose Yellow",
+          "hex": "F5E868",
+          "codes": [
+            "B0D97MSJCT"
+          ]
+        },
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "B0D97P2HTX"
+          ]
+        },
+        {
+          "name": "Pink Blue",
+          "hex": "9B8EC4",
+          "codes": [
+            "B0D97ML822"
+          ]
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk Magic Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Blue & Rose Red",
+          "hexes": [
+            "005FE8",
+            "C21E56"
+          ],
+          "codes": [
+            "B0BFLPR3B6"
+          ]
+        },
+        {
+          "name": "Purple & Yellow",
+          "hexes": [
+            "7F00FF",
+            "FFF200"
+          ],
+          "codes": [
+            "B0BFLR9SBY"
+          ]
+        },
+        {
+          "name": "Gold & Red",
+          "hexes": [
+            "D5983E",
+            "ED1C24"
+          ],
+          "codes": [
+            "B0BFLRVBJS"
+          ]
+        },
+        {
+          "name": "Silver & Dark Blue",
+          "hexes": [
+            "A6A9AA",
+            "1B3A6B"
+          ],
+          "codes": [
+            "B0BFM1WCTH"
+          ]
+        },
+        {
+          "name": "Blue & Green",
+          "hexes": [
+            "005FE8",
+            "22B14C"
+          ],
+          "codes": [
+            "B0BFM1S8MH"
+          ]
+        },
+        {
+          "name": "Gold & Rose Red",
+          "hexes": [
+            "D5983E",
+            "C21E56"
+          ],
+          "codes": [
+            "B0BFLR4W3H"
+          ]
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk Magic Tri {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Blue-Red-Green",
+          "hexes": [
+            "005FE8",
+            "ED1C24",
+            "22B14C"
+          ],
+          "codes": [
+            "B0BFLW7K4D"
+          ]
+        },
+        {
+          "name": "Blue-Purple-Yellow",
+          "hexes": [
+            "005FE8",
+            "7F00FF",
+            "FFF200"
+          ],
+          "codes": [
+            "B0BFLX8KHW"
+          ]
+        },
+        {
+          "name": "Blue-Green-Orange",
+          "hexes": [
+            "005FE8",
+            "22B14C",
+            "FF7F27"
+          ],
+          "codes": [
+            "B0BFLX3FNZ"
+          ]
+        },
+        {
+          "name": "Gold-Copper-Black",
+          "hexes": [
+            "D5983E",
+            "B36A51",
+            "000000"
+          ],
+          "codes": [
+            "B0BFLXG5YF"
+          ]
+        },
+        {
+          "name": "Gold-Silver-Copper",
+          "hexes": [
+            "D5983E",
+            "A6A9AA",
+            "B36A51"
+          ],
+          "codes": [
+            "B0BFLVCPHS"
+          ]
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "finish": "glossy",
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Cosmic",
+          "hexes": [
+            "5B3378",
+            "3D5AFE",
+            "7C4DFF",
+            "00BCD4",
+            "1A237E"
+          ],
+          "codes": [
+            "B0C7ZGTGD3"
+          ]
+        },
+        {
+          "name": "Candy",
+          "hexes": [
+            "FF6EC7",
+            "FF4081",
+            "FFC107",
+            "81D4FA",
+            "E1BEE7"
+          ],
+          "codes": [
+            "B0C7ZFLJ8D"
+          ]
+        },
+        {
+          "name": "Forest",
+          "hexes": [
+            "2E7D32",
+            "558B2F",
+            "8BC34A",
+            "33691E",
+            "689F38"
+          ],
+          "codes": [
+            "B0C7ZDB2ZZ"
+          ]
+        },
+        {
+          "name": "Macaron",
+          "hexes": [
+            "F8BBD0",
+            "B3E5FC",
+            "C8E6C9",
+            "FFF9C4",
+            "E1BEE7"
+          ]
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Wood PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        205,
+        215
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "fill": "wood",
+      "finish": "matte",
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "DD9268",
+          "codes": [
+            "B0D97P1Z47"
+          ]
+        },
+        {
+          "name": "Wood",
+          "hex": "C7A071"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Marble {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "pattern": "marble",
+      "colors": [
+        {
+          "name": "Marble",
+          "hex": "C2C0BA",
+          "pattern": "marble",
+          "codes": [
+            "B0D97QFJLM"
+          ]
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Brown",
+          "hex": "8B4513"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Marble PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Marble",
+          "hex": "ADB4B9"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Matte PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Goose Yellow",
+          "hex": "F0C75E"
+        },
+        {
+          "name": "Light Pink",
+          "hex": "FFB6C1"
+        },
+        {
+          "name": "Pink Blue",
+          "hex": "DDA0DD"
+        },
+        {
+          "name": "Water Green",
+          "hex": "7FFFD4"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "CN",
+      "finish": "matte"
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Brown",
+          "hex": "8B4513"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "Green",
+          "hex": "008000"
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFC0CB"
+        },
+        {
+          "name": "Purple",
+          "hex": "800080"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk Magic PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue Rose Red",
+          "hex": "4169E1"
+        },
+        {
+          "name": "Gold Copper Black",
+          "hex": "D4AF37"
+        },
+        {
+          "name": "Gold Rose Red",
+          "hex": "D4AF37"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "CN"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "aceaddity_pla+_pla+black_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Black",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          210
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0CJLR62MF"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Black::PLA+::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA+ {color_name}",
+      "color": "Black",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          210
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "B0CJLR62MF"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_pla+yellow_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Yellow",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFF200",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          210
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0CJM935VF"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Yellow::PLA+::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA+ {color_name}",
+      "color": "Yellow",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          210
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "FFF200",
+            "codes": [
+              "B0CJM935VF"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_pla+red_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Red",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ED1C24",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          210
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0CJM4DTFL"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Red::PLA+::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA+ {color_name}",
+      "color": "Red",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          210
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "ED1C24",
+            "codes": [
+              "B0CJM4DTFL"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_pla+blue_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Blue",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "005FE8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          210
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0CJM8WTT7"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Blue::PLA+::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA+ {color_name}",
+      "color": "Blue",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          210
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "005FE8",
+            "codes": [
+              "B0CJM8WTT7"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_flashpla+black_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ Black",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7G7YRVK"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ {color_name}::Flash PLA+ Black::PLA+::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Flash PLA+ {color_name}",
+      "color": "Black",
+      "line": "Flash PLA+",
+      "cell": {
+        "name": "Flash PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "B0C7G7YRVK"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_flashpla+white_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ White",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F6F6F6",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7G8Z1Y9"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ {color_name}::Flash PLA+ White::PLA+::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Flash PLA+ {color_name}",
+      "color": "White",
+      "line": "Flash PLA+",
+      "cell": {
+        "name": "Flash PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "F6F6F6",
+            "codes": [
+              "B0C7G8Z1Y9"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_flashpla+grey_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ Grey",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "7F7F7F",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7G5L66D"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ {color_name}::Flash PLA+ Grey::PLA+::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Flash PLA+ {color_name}",
+      "color": "Grey",
+      "line": "Flash PLA+",
+      "cell": {
+        "name": "Flash PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Grey",
+            "hex": "7F7F7F",
+            "codes": [
+              "B0C7G5L66D"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_flashpla+yellow_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ Yellow",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFF200",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7G7Q154"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ {color_name}::Flash PLA+ Yellow::PLA+::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Flash PLA+ {color_name}",
+      "color": "Yellow",
+      "line": "Flash PLA+",
+      "cell": {
+        "name": "Flash PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "FFF200",
+            "codes": [
+              "B0C7G7Q154"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_flashpla+blue_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ Blue",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "005FE8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7G55M6M"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ {color_name}::Flash PLA+ Blue::PLA+::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Flash PLA+ {color_name}",
+      "color": "Blue",
+      "line": "Flash PLA+",
+      "cell": {
+        "name": "Flash PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "005FE8",
+            "codes": [
+              "B0C7G55M6M"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla+_flashpla+red_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ Red",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ED1C24",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ {color_name}::Flash PLA+ Red::PLA+::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "Flash PLA+ {color_name}",
+      "color": "Red",
+      "line": "Flash PLA+",
+      "cell": {
+        "name": "Flash PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "ED1C24"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_petg_petgblack_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PETG Black",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "212322",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7RCM75G"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PETG {color_name}::PETG Black::PETG::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG {color_name}",
+      "color": "Black",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "212322",
+            "codes": [
+              "B0C7RCM75G"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_petg_petgwhite_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PETG White",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F6F6F6",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PETG {color_name}::PETG White::PETG::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PETG {color_name}",
+      "color": "White",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "F6F6F6"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_petg_petggrey_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PETG Grey",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PETG {color_name}::PETG Grey::PETG::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PETG {color_name}",
+      "color": "Grey",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Grey",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_petg_petgspacegrey_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PETG Space Grey",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "989795",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PETG {color_name}::PETG Space Grey::PETG::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PETG {color_name}",
+      "color": "Space Grey",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Space Grey",
+            "hex": "989795"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_petg_petgred_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PETG Red",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "D15B51",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7RBV438"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PETG {color_name}::PETG Red::PETG::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PETG {color_name}",
+      "color": "Red",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "D15B51",
+            "codes": [
+              "B0C7RBV438"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_petg_petgblue_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PETG Blue",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "005FE8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7RDV36B"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PETG {color_name}::PETG Blue::PETG::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PETG {color_name}",
+      "color": "Blue",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "005FE8",
+            "codes": [
+              "B0C7RDV36B"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_petg_petgclear_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PETG Clear",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "00FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": true,
+        "glow": false,
+        "codes": [
+          "B0C7RDGYB5"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PETG {color_name}::PETG Clear::PETG::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PETG {color_name}",
+      "color": "Clear",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          220,
+          240
+        ],
+        "bed_temp_range": [
+          70,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Clear",
+            "hex": "00FFFFFF",
+            "translucent": true,
+            "codes": [
+              "B0C7RDGYB5"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_mattewhite_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Matte White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F6F6F6",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0D97L4PNB"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Matte {color_name}::Matte White::PLA::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Matte {color_name}",
+      "color": "White",
+      "line": "Matte",
+      "cell": {
+        "name": "Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "finish": "matte",
+        "colors": [
+          {
+            "name": "White",
+            "hex": "F6F6F6",
+            "codes": [
+              "B0D97L4PNB"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_matteblack_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Matte Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0D97P2HTX"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Matte {color_name}::Matte Black::PLA::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Matte {color_name}",
+      "color": "Black",
+      "line": "Matte",
+      "cell": {
+        "name": "Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "finish": "matte",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "B0D97P2HTX"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicdualblue&rosered_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Dual Blue & Rose Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "005FE8",
+          "C21E56"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLPR3B6"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Dual {color_name}::Silk Magic Dual Blue & Rose Red::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Magic Dual {color_name}",
+      "color": "Blue & Rose Red",
+      "line": "Silk Magic Dual",
+      "cell": {
+        "name": "Silk Magic Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Blue & Rose Red",
+            "hexes": [
+              "005FE8",
+              "C21E56"
+            ],
+            "codes": [
+              "B0BFLPR3B6"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicdualpurple&yellow_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Dual Purple & Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "7F00FF",
+          "FFF200"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLR9SBY"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Dual {color_name}::Silk Magic Dual Purple & Yellow::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Silk Magic Dual {color_name}",
+      "color": "Purple & Yellow",
+      "line": "Silk Magic Dual",
+      "cell": {
+        "name": "Silk Magic Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Purple & Yellow",
+            "hexes": [
+              "7F00FF",
+              "FFF200"
+            ],
+            "codes": [
+              "B0BFLR9SBY"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicdualgold&red_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Dual Gold & Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "D5983E",
+          "ED1C24"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLRVBJS"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Dual {color_name}::Silk Magic Dual Gold & Red::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk Magic Dual {color_name}",
+      "color": "Gold & Red",
+      "line": "Silk Magic Dual",
+      "cell": {
+        "name": "Silk Magic Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Gold & Red",
+            "hexes": [
+              "D5983E",
+              "ED1C24"
+            ],
+            "codes": [
+              "B0BFLRVBJS"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicdualsilver&darkblue_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Dual Silver & Dark Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "A6A9AA",
+          "1B3A6B"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFM1WCTH"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Dual {color_name}::Silk Magic Dual Silver & Dark Blue::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Silk Magic Dual {color_name}",
+      "color": "Silver & Dark Blue",
+      "line": "Silk Magic Dual",
+      "cell": {
+        "name": "Silk Magic Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Silver & Dark Blue",
+            "hexes": [
+              "A6A9AA",
+              "1B3A6B"
+            ],
+            "codes": [
+              "B0BFM1WCTH"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicdualblue&green_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Dual Blue & Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "005FE8",
+          "22B14C"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFM1S8MH"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Dual {color_name}::Silk Magic Dual Blue & Green::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Silk Magic Dual {color_name}",
+      "color": "Blue & Green",
+      "line": "Silk Magic Dual",
+      "cell": {
+        "name": "Silk Magic Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Blue & Green",
+            "hexes": [
+              "005FE8",
+              "22B14C"
+            ],
+            "codes": [
+              "B0BFM1S8MH"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicdualgold&rosered_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Dual Gold & Rose Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "D5983E",
+          "C21E56"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLR4W3H"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Dual {color_name}::Silk Magic Dual Gold & Rose Red::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "Silk Magic Dual {color_name}",
+      "color": "Gold & Rose Red",
+      "line": "Silk Magic Dual",
+      "cell": {
+        "name": "Silk Magic Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Gold & Rose Red",
+            "hexes": [
+              "D5983E",
+              "C21E56"
+            ],
+            "codes": [
+              "B0BFLR4W3H"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagictriblue-red-green_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Tri Blue-Red-Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "005FE8",
+          "ED1C24",
+          "22B14C"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLW7K4D"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Tri {color_name}::Silk Magic Tri Blue-Red-Green::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Magic Tri {color_name}",
+      "color": "Blue-Red-Green",
+      "line": "Silk Magic Tri",
+      "cell": {
+        "name": "Silk Magic Tri {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Blue-Red-Green",
+            "hexes": [
+              "005FE8",
+              "ED1C24",
+              "22B14C"
+            ],
+            "codes": [
+              "B0BFLW7K4D"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagictriblue-purple-yellow_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Tri Blue-Purple-Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "005FE8",
+          "7F00FF",
+          "FFF200"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLX8KHW"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Tri {color_name}::Silk Magic Tri Blue-Purple-Yellow::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Silk Magic Tri {color_name}",
+      "color": "Blue-Purple-Yellow",
+      "line": "Silk Magic Tri",
+      "cell": {
+        "name": "Silk Magic Tri {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Blue-Purple-Yellow",
+            "hexes": [
+              "005FE8",
+              "7F00FF",
+              "FFF200"
+            ],
+            "codes": [
+              "B0BFLX8KHW"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagictriblue-green-orange_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Tri Blue-Green-Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "005FE8",
+          "22B14C",
+          "FF7F27"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLX3FNZ"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Tri {color_name}::Silk Magic Tri Blue-Green-Orange::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk Magic Tri {color_name}",
+      "color": "Blue-Green-Orange",
+      "line": "Silk Magic Tri",
+      "cell": {
+        "name": "Silk Magic Tri {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Blue-Green-Orange",
+            "hexes": [
+              "005FE8",
+              "22B14C",
+              "FF7F27"
+            ],
+            "codes": [
+              "B0BFLX3FNZ"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagictrigold-copper-black_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Tri Gold-Copper-Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "D5983E",
+          "B36A51",
+          "000000"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLXG5YF"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Tri {color_name}::Silk Magic Tri Gold-Copper-Black::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Silk Magic Tri {color_name}",
+      "color": "Gold-Copper-Black",
+      "line": "Silk Magic Tri",
+      "cell": {
+        "name": "Silk Magic Tri {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Gold-Copper-Black",
+            "hexes": [
+              "D5983E",
+              "B36A51",
+              "000000"
+            ],
+            "codes": [
+              "B0BFLXG5YF"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagictrigold-silver-copper_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic Tri Gold-Silver-Copper",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "D5983E",
+          "A6A9AA",
+          "B36A51"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0BFLVCPHS"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic Tri {color_name}::Silk Magic Tri Gold-Silver-Copper::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Silk Magic Tri {color_name}",
+      "color": "Gold-Silver-Copper",
+      "line": "Silk Magic Tri",
+      "cell": {
+        "name": "Silk Magic Tri {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "coaxial",
+        "colors": [
+          {
+            "name": "Gold-Silver-Copper",
+            "hexes": [
+              "D5983E",
+              "A6A9AA",
+              "B36A51"
+            ],
+            "codes": [
+              "B0BFLVCPHS"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_rainbowcosmic_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Rainbow Cosmic",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "5B3378",
+          "3D5AFE",
+          "7C4DFF",
+          "00BCD4",
+          "1A237E"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7ZGTGD3"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Rainbow {color_name}::Rainbow Cosmic::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Rainbow {color_name}",
+      "color": "Cosmic",
+      "line": "Rainbow",
+      "cell": {
+        "name": "Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "longitudinal",
+        "colors": [
+          {
+            "name": "Cosmic",
+            "hexes": [
+              "5B3378",
+              "3D5AFE",
+              "7C4DFF",
+              "00BCD4",
+              "1A237E"
+            ],
+            "codes": [
+              "B0C7ZGTGD3"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_rainbowcandy_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Rainbow Candy",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "FF6EC7",
+          "FF4081",
+          "FFC107",
+          "81D4FA",
+          "E1BEE7"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7ZFLJ8D"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Rainbow {color_name}::Rainbow Candy::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Rainbow {color_name}",
+      "color": "Candy",
+      "line": "Rainbow",
+      "cell": {
+        "name": "Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "longitudinal",
+        "colors": [
+          {
+            "name": "Candy",
+            "hexes": [
+              "FF6EC7",
+              "FF4081",
+              "FFC107",
+              "81D4FA",
+              "E1BEE7"
+            ],
+            "codes": [
+              "B0C7ZFLJ8D"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_rainbowforest_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Rainbow Forest",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "2E7D32",
+          "558B2F",
+          "8BC34A",
+          "33691E",
+          "689F38"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0C7ZDB2ZZ"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Rainbow {color_name}::Rainbow Forest::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Rainbow {color_name}",
+      "color": "Forest",
+      "line": "Rainbow",
+      "cell": {
+        "name": "Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "longitudinal",
+        "colors": [
+          {
+            "name": "Forest",
+            "hexes": [
+              "2E7D32",
+              "558B2F",
+              "8BC34A",
+              "33691E",
+              "689F38"
+            ],
+            "codes": [
+              "B0C7ZDB2ZZ"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_rainbowmacaron_1000_175_c",
+        "manufacturer": "Aceaddity",
+        "name": "Rainbow Macaron",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": 140.0,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "F8BBD0",
+          "B3E5FC",
+          "C8E6C9",
+          "FFF9C4",
+          "E1BEE7"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Rainbow {color_name}::Rainbow Macaron::PLA::1000.0::1.75::cardboard::False",
+      "filename": "aceaddity.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Rainbow {color_name}",
+      "color": "Macaron",
+      "line": "Rainbow",
+      "cell": {
+        "name": "Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 140.0,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "finish": "glossy",
+        "multi_color_direction": "longitudinal",
+        "colors": [
+          {
+            "name": "Macaron",
+            "hexes": [
+              "F8BBD0",
+              "B3E5FC",
+              "C8E6C9",
+              "FFF9C4",
+              "E1BEE7"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_woodplabeige_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Wood PLA Beige",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "DD9268",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          205,
+          215
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": "wood",
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "B0D97P1Z47"
+        ],
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Wood PLA {color_name}::Wood PLA Beige::PLA::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Wood PLA {color_name}",
+      "color": "Beige",
+      "line": "Wood PLA",
+      "cell": {
+        "name": "Wood PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          205,
+          215
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": "wood",
+        "finish": "matte",
+        "colors": [
+          {
+            "name": "Beige",
+            "hex": "DD9268",
+            "codes": [
+              "B0D97P1Z47"
+            ]
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_woodplawood_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Wood PLA Wood",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000.0,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "C7A071",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          205,
+          215
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": "wood",
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Wood PLA {color_name}::Wood PLA Wood::PLA::1000.0::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Wood PLA {color_name}",
+      "color": "Wood",
+      "line": "Wood PLA",
+      "cell": {
+        "name": "Wood PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          205,
+          215
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": "wood",
+        "finish": "matte",
+        "colors": [
+          {
+            "name": "Wood",
+            "hex": "C7A071"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)black_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Black::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Black",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)blue_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0000FF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Blue::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Blue",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "0000FF"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)brown_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "8B4513",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Brown::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Brown",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Brown",
+            "hex": "8B4513"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)gray_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Gray",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Gray::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Gray",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Gray",
+            "hex": "808080"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)green_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "008000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Green::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Green",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Green",
+            "hex": "008000"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)orange_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFA500",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Orange::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Orange",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Orange",
+            "hex": "FFA500"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)pink_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Pink",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFC0CB",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Pink::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Pink",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Pink",
+            "hex": "FFC0CB"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)purple_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "800080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Purple::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Purple",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Purple",
+            "hex": "800080"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)red_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FF0000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Red::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Red",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "FF0000"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)white_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) White::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "White",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_flashpla+(highspeed600mm/s)yellow_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Flash PLA+ (High Speed 600mm/s) Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFF00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Flash PLA+ (High Speed 600mm/s) {color_name}::Flash PLA+ (High Speed 600mm/s) Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+      "color": "Yellow",
+      "line": "Flash PLA+ (High Speed 600mm/s)",
+      "cell": {
+        "name": "Flash PLA+ (High Speed 600mm/s) {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "FFFF00"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          45,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+black_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Black::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA+ {color_name}",
+      "color": "Black",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+blue_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0000FF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Blue::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA+ {color_name}",
+      "color": "Blue",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "0000FF"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+brown_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "8B4513",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Brown::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA+ {color_name}",
+      "color": "Brown",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Brown",
+            "hex": "8B4513"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+gray_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Gray",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Gray::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA+ {color_name}",
+      "color": "Gray",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Gray",
+            "hex": "808080"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+green_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "008000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Green::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA+ {color_name}",
+      "color": "Green",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Green",
+            "hex": "008000"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+orange_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFA500",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Orange::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PLA+ {color_name}",
+      "color": "Orange",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Orange",
+            "hex": "FFA500"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+pink_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Pink",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFC0CB",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Pink::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PLA+ {color_name}",
+      "color": "Pink",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Pink",
+            "hex": "FFC0CB"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+purple_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "800080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Purple::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PLA+ {color_name}",
+      "color": "Purple",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Purple",
+            "hex": "800080"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+red_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FF0000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Red::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PLA+ {color_name}",
+      "color": "Red",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "FF0000"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+white_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ White::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "PLA+ {color_name}",
+      "color": "White",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_pla+yellow_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "PLA+ Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFF00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::PLA+ {color_name}::PLA+ Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "PLA+ {color_name}",
+      "color": "Yellow",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "FFFF00"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicplabluerosered_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic PLA Blue Rose Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "4169E1",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic PLA {color_name}::Silk Magic PLA Blue Rose Red::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 13,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Magic PLA {color_name}",
+      "color": "Blue Rose Red",
+      "line": "Silk Magic PLA",
+      "cell": {
+        "name": "Silk Magic PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Blue Rose Red",
+            "hex": "4169E1"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicplagoldcopperblack_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic PLA Gold Copper Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "D4AF37",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic PLA {color_name}::Silk Magic PLA Gold Copper Black::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 13,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Silk Magic PLA {color_name}",
+      "color": "Gold Copper Black",
+      "line": "Silk Magic PLA",
+      "cell": {
+        "name": "Silk Magic PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Gold Copper Black",
+            "hex": "D4AF37"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "aceaddity_pla_silkmagicplagoldrosered_1000_175_p",
+        "manufacturer": "Aceaddity",
+        "name": "Silk Magic PLA Gold Rose Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "D4AF37",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "aceaddity.json::Aceaddity::Silk Magic PLA {color_name}::Silk Magic PLA Gold Rose Red::PLA::1000::1.75::plastic::False",
+      "filename": "aceaddity.json",
+      "definition_index": 13,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk Magic PLA {color_name}",
+      "color": "Gold Rose Red",
+      "line": "Silk Magic PLA",
+      "cell": {
+        "name": "Silk Magic PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Gold Rose Red",
+            "hex": "D4AF37"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          60
+        ],
+        "country_of_origin": "CN"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 5,
+    "approved_groups": 4,
+    "retired": 4,
+    "deferred": 1,
+    "hard_stops": 0,
+    "before_count": 51728,
+    "after_count": 51724,
+    "brand_before": 71,
+    "brand_after": 67,
+    "registry_before": 1706,
+    "registry_after": 1710,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "AC",
+    "metadata": [],
+    "no_transfers": true,
+    "metadata_review": "Four Rule4 strict Matte groups retain larger well-formed family without Cartesian warning; identifiers already on survivors and no transfers. Marble tie is unbound with differing HEX/pattern; defer. Existing B0D97... values retained historically, not asserted newly verified manufacturer SKUs. No exact current numeric first-party evidence found; printing/density retained unresolved.",
+    "official_evidence": [],
+    "printing_default_flags": []
+  }
+}
