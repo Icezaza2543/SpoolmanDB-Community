@@ -471,6 +471,12 @@ This **intentional breaking catalog migration** retires 11 exact duplicate IDs i
 
 The [complete mappings and conflicts](docs/audits/2026-10-03-ldo-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-ldo-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 0 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
+### francofil duplicate audit (2026-10-03)
+
+All 10 candidate groups are deferred for identity or tooling review. No migration was applied; the catalog remains at 51,764 records. Original IDs, compiled metadata, identifiers, packaging and tare are unchanged.
+
+The [review](docs/audits/2026-10-03-francofil-duplicate-review.md) and [JSON audit](docs/audits/2026-10-03-francofil-duplicate-review.json) retain the complete candidates, evidence and conflicts; all blockers are recorded in the [running backlog](docs/audits/duplicate-backlog.md).
+
 ## Terms and policy
 
 This repository separates the project license from community and data-use expectations:
