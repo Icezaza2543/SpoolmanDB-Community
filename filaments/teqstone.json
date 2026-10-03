@@ -718,16 +718,6 @@
           "name": "Blue",
           "hex": "00BFFF",
           "glow": true
-        },
-        {
-          "name": "Green",
-          "hex": "39FF14",
-          "glow": true
-        },
-        {
-          "name": "Orange",
-          "hex": "FF4500",
-          "glow": true
         }
       ],
       "extruder_temp_range": [
@@ -758,14 +748,6 @@
         {
           "name": "Blue",
           "hex": "6495ED"
-        },
-        {
-          "name": "Brown",
-          "hex": "D2B48C"
-        },
-        {
-          "name": "Grey",
-          "hex": "B0B0B0"
         }
       ],
       "extruder_temp_range": [
@@ -897,31 +879,153 @@
         {
           "name": "Bronze",
           "hex": "CD7F32"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        225
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Copper",
-          "hex": "B87333"
-        },
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 190
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Dual Gold Silver",
           "hex": "FFD700"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        225
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Gold",
-          "hex": "D4A017"
-        },
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 190
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Rainbow",
           "hex": "FF0000"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        225
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 190
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Royal Blue",
           "hex": "002AFF"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        225
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 190
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Tri Red Blue Green",
           "hex": "CC0000"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        225
+      ],
+      "bed_temp_range": [
+        0,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 190
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "White",
           "hex": "F5F7F9"
