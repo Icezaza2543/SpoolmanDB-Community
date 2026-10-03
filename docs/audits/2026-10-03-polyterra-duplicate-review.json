@@ -1,0 +1,2873 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "polyterra",
+  "audit_digest": "7aa3a6dfc46d02daac3bd3bcd31ed496e019288f6fcc8f3a18139cc68b866af4",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "eaaa485c71e500dfa5bec68b6fc4d31aa1f05d6e",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {
+    "dup-643e41a9f3be4cea39248970f96718a463a653fad2b3525a3015bb5633a5a895": {
+      "approved": true,
+      "survivor": "polyterra_pla_plasapphireblue_1000_175_c",
+      "retire": [
+        "polyterra_pla_polyterrasapphireblue_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-03-polyterra-duplicate-review.json",
+      "source": "eaaa485c71e500dfa5bec68b6fc4d31aa1f05d6e"
+    }
+  },
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-643e41a9f3be4cea39248970f96718a463a653fad2b3525a3015bb5633a5a895",
+      "ids": [
+        "polyterra_pla_plasapphireblue_1000_175_c",
+        "polyterra_pla_polyterrasapphireblue_1000_175_c"
+      ],
+      "proposed_survivor": "polyterra_pla_plasapphireblue_1000_175_c",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "polyterra_pla_polyterrasapphireblue_1000_175_c": "polyterra_pla_plasapphireblue_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "polyterra_pla_plasapphireblue_1000_175_c",
+          "manufacturer": "PolyTerra",
+          "name": "PLA Sapphire Blue",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "2191db",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            25,
+            25
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Sapphire Blue::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "Sapphire Blue",
+          "source_line": "PLA",
+          "source_file": "polyterra.json",
+          "source_definition": {
+            "source_file": "polyterra.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 17,
+            "compiled_records": 17
+          },
+          "upstream": false
+        },
+        {
+          "id": "polyterra_pla_polyterrasapphireblue_1000_175_c",
+          "manufacturer": "PolyTerra",
+          "name": "Polyterra Sapphire Blue",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            25,
+            25
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "polyterra.json::PolyTerra::Polyterra {color_name}::Polyterra Sapphire Blue::PLA::1000::1.75::cardboard::False",
+          "template": "Polyterra {color_name}",
+          "source_color": "Sapphire Blue",
+          "source_line": "Polyterra",
+          "source_file": "polyterra.json",
+          "source_definition": {
+            "source_file": "polyterra.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "polyterra_pla_plasapphireblue_1000_175_c": "2191db",
+          "polyterra_pla_polyterrasapphireblue_1000_175_c": "808080"
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "PT001",
+      "status": "APPROVED",
+      "survivor": "polyterra_pla_plasapphireblue_1000_175_c",
+      "retire": [
+        "polyterra_pla_polyterrasapphireblue_1000_175_c"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    }
+  ],
+  "deferred_groups": [],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {
+    "polyterra_pla_polyterrasapphireblue_1000_175_c": {
+      "replaced_by": "polyterra_pla_plasapphireblue_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-polyterra-duplicate-review.json",
+      "source": "eaaa485c71e500dfa5bec68b6fc4d31aa1f05d6e",
+      "retired_key": "polyterra.json::PolyTerra::Polyterra {color_name}::Polyterra Sapphire Blue::PLA::1000::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "official_evidence": [
+    {
+      "url": "https://eu-wholesale.polymaker.com/products/panchroma-matte-pla",
+      "note": "Current page says formerlyPolyTerraPLA but simultaneously lists1.75mm/1kg/SapphireBlue as CA04038 and a separate1.75mm(PolyTerra)/1kg/SapphireBlue as PM70828. The current page density1.37 is not explicitly SKU-bound to the legacy PM variant; no blind formula substitution."
+    },
+    {
+      "url": "https://polymaker.com/wp-content/uploads/lana-downloads/PolyTerra-PLA_TDS_EN_V5.4-1.pdf",
+      "note": "Officialsearchindexed exactoldPolyTerraPLA sheet gives1.31, but document fetchfailed; conflicts with current successor1.37. No density substitution."
+    }
+  ],
+  "metadata_review": "OneRule2 strictSapphireBlue duplicate, survivorPLA family. Legacy density1.24/bed25-only looksPLA-default-like. Reopened exact current first-party page: current CA04038 and legacy PM70828 are simultaneously sold as separate variant selectors, despite formerlyPolyTerra branding. Page1.37 and unavailable exactoldPolyTerra sheet indexed1.31 are not unambiguously bound to this legacy record. Keep survivor printing unresolved; current-line printing evidence needs no lot binding, but separate current product/SKU choices cannot be conflated. No guessed formula, identifier transfer, cross-brand rename or packaging/tare change.",
+  "original_source_definitions": [
+    {
+      "name": "Multicolor Multicolor {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Foggy Orange (Grey-Orange)",
+          "hex": "878787"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        27
+      ],
+      "colors": [
+        {
+          "name": "Arctic Teal",
+          "hex": "61bcc3"
+        },
+        {
+          "name": "Artic Teal",
+          "hex": "61bcc3"
+        },
+        {
+          "name": "Charcoal black",
+          "hex": "000000"
+        },
+        {
+          "name": "Charcoal Black (noir charbon)",
+          "hex": "1c1c1c"
+        },
+        {
+          "name": "Forest Green",
+          "hex": "78ff7a"
+        },
+        {
+          "name": "Lavender Purple",
+          "hex": "9572bf"
+        },
+        {
+          "name": "Muted White",
+          "hex": "bbada4"
+        },
+        {
+          "name": "Pastel Ice",
+          "hex": "a4d0df"
+        },
+        {
+          "name": "Savannah Yellow",
+          "hex": "f3c432"
+        },
+        {
+          "name": "Sunrise Orange",
+          "hex": "f88b17"
+        },
+        {
+          "name": "white",
+          "hex": "f7f7f7"
+        }
+      ],
+      "finish": "matte",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "aab7c4"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        25
+      ],
+      "colors": [
+        {
+          "name": "Army Beige",
+          "hex": "dbbaa5"
+        },
+        {
+          "name": "Army Brown",
+          "hex": "795a4d"
+        },
+        {
+          "name": "Army Dark Green",
+          "hex": "4b5320"
+        },
+        {
+          "name": "Charcoal Black",
+          "hex": "414144"
+        },
+        {
+          "name": "Cotton white",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Earth Brown",
+          "hex": "8a5c45"
+        },
+        {
+          "name": "Forest Green",
+          "hex": "70ae69"
+        },
+        {
+          "name": "Lava Red",
+          "hex": "e42525"
+        },
+        {
+          "name": "Marble Slate Grey",
+          "hex": "85b2d8"
+        },
+        {
+          "name": "Marble White",
+          "hex": "f2f9ff"
+        },
+        {
+          "name": "Muted Blue",
+          "hex": "5f778e"
+        },
+        {
+          "name": "Muted Green",
+          "hex": "777e71"
+        },
+        {
+          "name": "Muted Purple",
+          "hex": "7c5c78"
+        },
+        {
+          "name": "Peanut",
+          "hex": "b88656"
+        },
+        {
+          "name": "Sakura Pink",
+          "hex": "eaaabb"
+        },
+        {
+          "name": "Sapphire Blue",
+          "hex": "2191db"
+        },
+        {
+          "name": "Wood Brown",
+          "hex": "e0a272"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Polyterra {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        25
+      ],
+      "colors": [
+        {
+          "name": "Fossil Gray",
+          "hex": "8a8c94"
+        },
+        {
+          "name": "Sapphire Blue",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Wood {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        25
+      ],
+      "colors": [
+        {
+          "name": "Wood Brown",
+          "hex": "ad7441"
+        }
+      ],
+      "fill": "wood",
+      "country_of_origin": "CN"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "polyterra_pla_multicolormulticolorfoggyorange(grey-orange)_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "Multicolor Multicolor Foggy Orange (Grey-Orange)",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "878787",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::Multicolor Multicolor {color_name}::Multicolor Multicolor Foggy Orange (Grey-Orange)::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Multicolor Multicolor {color_name}",
+      "color": "Foggy Orange (Grey-Orange)",
+      "line": "Multicolor Multicolor",
+      "cell": {
+        "name": "Multicolor Multicolor {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Foggy Orange (Grey-Orange)",
+            "hex": "878787"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattearcticteal_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Arctic Teal",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "61bcc3",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Arctic Teal::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA Matte {color_name}",
+      "color": "Arctic Teal",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Arctic Teal",
+            "hex": "61bcc3"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattearticteal_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Artic Teal",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "61bcc3",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Artic Teal::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA Matte {color_name}",
+      "color": "Artic Teal",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Artic Teal",
+            "hex": "61bcc3"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattecharcoalblack_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Charcoal black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Charcoal black::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA Matte {color_name}",
+      "color": "Charcoal black",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Charcoal black",
+            "hex": "000000"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattecharcoalblack(noircharbon)_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Charcoal Black (noir charbon)",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "1c1c1c",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Charcoal Black (noir charbon)::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA Matte {color_name}",
+      "color": "Charcoal Black (noir charbon)",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Charcoal Black (noir charbon)",
+            "hex": "1c1c1c"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamatteforestgreen_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Forest Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "78ff7a",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Forest Green::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA Matte {color_name}",
+      "color": "Forest Green",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Forest Green",
+            "hex": "78ff7a"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattelavenderpurple_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Lavender Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "9572bf",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Lavender Purple::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PLA Matte {color_name}",
+      "color": "Lavender Purple",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Lavender Purple",
+            "hex": "9572bf"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattemutedwhite_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Muted White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "bbada4",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Muted White::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PLA Matte {color_name}",
+      "color": "Muted White",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Muted White",
+            "hex": "bbada4"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattepastelice_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Pastel Ice",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "a4d0df",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Pastel Ice::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PLA Matte {color_name}",
+      "color": "Pastel Ice",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Pastel Ice",
+            "hex": "a4d0df"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattesavannahyellow_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Savannah Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f3c432",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Savannah Yellow::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PLA Matte {color_name}",
+      "color": "Savannah Yellow",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Savannah Yellow",
+            "hex": "f3c432"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattesunriseorange_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte Sunrise Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f88b17",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte Sunrise Orange::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "PLA Matte {color_name}",
+      "color": "Sunrise Orange",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "Sunrise Orange",
+            "hex": "f88b17"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamattewhite_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Matte white",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f7f7f7",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Matte {color_name}::PLA Matte white::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "PLA Matte {color_name}",
+      "color": "white",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          27
+        ],
+        "colors": [
+          {
+            "name": "white",
+            "hex": "f7f7f7"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plasilksilver_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Silk Silver",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "aab7c4",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA Silk {color_name}::PLA Silk Silver::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA Silk {color_name}",
+      "color": "Silver",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Silver",
+            "hex": "aab7c4"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plaarmybeige_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Army Beige",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "dbbaa5",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Army Beige::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA {color_name}",
+      "color": "Army Beige",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Army Beige",
+            "hex": "dbbaa5"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plaarmybrown_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Army Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "795a4d",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Army Brown::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA {color_name}",
+      "color": "Army Brown",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Army Brown",
+            "hex": "795a4d"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plaarmydarkgreen_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Army Dark Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "4b5320",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Army Dark Green::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA {color_name}",
+      "color": "Army Dark Green",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Army Dark Green",
+            "hex": "4b5320"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_placharcoalblack_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Charcoal Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "414144",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Charcoal Black::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA {color_name}",
+      "color": "Charcoal Black",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Charcoal Black",
+            "hex": "414144"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_placottonwhite_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Cotton white",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Cotton white::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA {color_name}",
+      "color": "Cotton white",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Cotton white",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plaearthbrown_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Earth Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "8a5c45",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Earth Brown::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PLA {color_name}",
+      "color": "Earth Brown",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Earth Brown",
+            "hex": "8a5c45"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plaforestgreen_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Forest Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "70ae69",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Forest Green::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PLA {color_name}",
+      "color": "Forest Green",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Forest Green",
+            "hex": "70ae69"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plalavared_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Lava Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e42525",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Lava Red::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PLA {color_name}",
+      "color": "Lava Red",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Lava Red",
+            "hex": "e42525"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamarbleslategrey_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Marble Slate Grey",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "85b2d8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Marble Slate Grey::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PLA {color_name}",
+      "color": "Marble Slate Grey",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Marble Slate Grey",
+            "hex": "85b2d8"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamarblewhite_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Marble White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f2f9ff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Marble White::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "PLA {color_name}",
+      "color": "Marble White",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Marble White",
+            "hex": "f2f9ff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamutedblue_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Muted Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "5f778e",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Muted Blue::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "PLA {color_name}",
+      "color": "Muted Blue",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Muted Blue",
+            "hex": "5f778e"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamutedgreen_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Muted Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "777e71",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Muted Green::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 11,
+      "template": "PLA {color_name}",
+      "color": "Muted Green",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Muted Green",
+            "hex": "777e71"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plamutedpurple_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Muted Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "7c5c78",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Muted Purple::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 12,
+      "template": "PLA {color_name}",
+      "color": "Muted Purple",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Muted Purple",
+            "hex": "7c5c78"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plapeanut_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Peanut",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "b88656",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Peanut::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 13,
+      "template": "PLA {color_name}",
+      "color": "Peanut",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Peanut",
+            "hex": "b88656"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plasakurapink_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Sakura Pink",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "eaaabb",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Sakura Pink::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 14,
+      "template": "PLA {color_name}",
+      "color": "Sakura Pink",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Sakura Pink",
+            "hex": "eaaabb"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_plawoodbrown_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "PLA Wood Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e0a272",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::PLA {color_name}::PLA Wood Brown::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 16,
+      "template": "PLA {color_name}",
+      "color": "Wood Brown",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Wood Brown",
+            "hex": "e0a272"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_polyterrafossilgray_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "Polyterra Fossil Gray",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "8a8c94",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::Polyterra {color_name}::Polyterra Fossil Gray::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Polyterra {color_name}",
+      "color": "Fossil Gray",
+      "line": "Polyterra",
+      "cell": {
+        "name": "Polyterra {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Fossil Gray",
+            "hex": "8a8c94"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "polyterra_pla_woodwoodbrown_1000_175_c",
+        "manufacturer": "PolyTerra",
+        "name": "Wood Wood Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ad7441",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "fill": "wood",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "polyterra.json::PolyTerra::Wood {color_name}::Wood Wood Brown::PLA::1000::1.75::cardboard::False",
+      "filename": "polyterra.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Wood {color_name}",
+      "color": "Wood Brown",
+      "line": "Wood",
+      "cell": {
+        "name": "Wood {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          25
+        ],
+        "colors": [
+          {
+            "name": "Wood Brown",
+            "hex": "ad7441"
+          }
+        ],
+        "fill": "wood",
+        "country_of_origin": "CN"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "hard_stops": 0,
+    "before_count": 51702,
+    "after_count": 51701,
+    "brand_before": 33,
+    "brand_after": 32,
+    "registry_before": 1732,
+    "registry_after": 1733,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "PT",
+    "metadata": [],
+    "no_transfers": true,
+    "official_evidence": [
+      {
+        "url": "https://eu-wholesale.polymaker.com/products/panchroma-matte-pla",
+        "note": "Current page says formerlyPolyTerraPLA but simultaneously lists1.75mm/1kg/SapphireBlue as CA04038 and a separate1.75mm(PolyTerra)/1kg/SapphireBlue as PM70828. The current page density1.37 is not explicitly SKU-bound to the legacy PM variant; no blind formula substitution."
+      },
+      {
+        "url": "https://polymaker.com/wp-content/uploads/lana-downloads/PolyTerra-PLA_TDS_EN_V5.4-1.pdf",
+        "note": "Officialsearchindexed exactoldPolyTerraPLA sheet gives1.31, but document fetchfailed; conflicts with current successor1.37. No density substitution."
+      }
+    ],
+    "metadata_review": "OneRule2 strictSapphireBlue duplicate, survivorPLA family. Legacy density1.24/bed25-only looksPLA-default-like. Reopened exact current first-party page: current CA04038 and legacy PM70828 are simultaneously sold as separate variant selectors, despite formerlyPolyTerra branding. Page1.37 and unavailable exactoldPolyTerra sheet indexed1.31 are not unambiguously bound to this legacy record. Keep survivor printing unresolved; current-line printing evidence needs no lot binding, but separate current product/SKU choices cannot be conflated. No guessed formula, identifier transfer, cross-brand rename or packaging/tare change.",
+    "printing_default_flags": []
+  }
+}
