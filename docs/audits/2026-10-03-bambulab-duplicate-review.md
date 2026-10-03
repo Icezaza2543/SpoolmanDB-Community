@@ -103,7 +103,9 @@ Survivor values are kept for PLA Silk single-color and PLA Lite (seven groups); 
 
 ## Complete approved retired ID list
 
-The JSON audit retains every exact original baseline key, original source definition, source color, compiled record, metadata conflict and decision. Each registry entry references that tracked JSON file and the immutable source/audit base commit.
+The JSON audit retains every exact original baseline key, source-definition location/counts, source template/color, compiled record, metadata conflict and decision. Complete original source definitions remain available at the pinned source base `139a98e6edf87d7158318d6b42ee649cabfad88f`. Each registry entry references that tracked JSON file and the immutable source/audit base commit.
+
+Original STEP 3 candidate notes and nested `OWNER_APPROVAL_REQUIRED` identifier-transfer statuses are preserved historical proposal snapshots, not pending approval gates. The approved root decisions and metadata entries supersede those notes, including their older newer-lot-only wording for printing evidence. Packaging/spool/tare still requires exact lot binding.
 
 | Group | Retired ID | Existing survivor | Rule |
 | --- | --- | --- | --- |
