@@ -1,0 +1,3434 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "sirayatech",
+  "audit_digest": "2e76833ef84198903eaf04089838ce09591e6010ccfaf18671296e1ce4cf7500",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "12e7b92febf7b5da38e9051a99edfc6a9b02c0f5",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-e8f507721d490796752bf5cccef4e230205242341cae0ad8b38ffb5871318d98",
+      "ids": [
+        "sirayatech_petg-cf_cfhf-black_1000_175_p",
+        "sirayatech_petg-cf_cfhfblack_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "sirayatech_petg-cf_cfhf-black_1000_175_p",
+          "manufacturer": "Siraya Tech",
+          "name": "Cf HF - Black",
+          "material": "PETG-CF",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            250,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            70
+          ],
+          "fill": "carbon fiber",
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf HF - Black::PETG-CF::1000::1.75::plastic::False",
+          "template": "Cf {color_name}",
+          "source_color": "HF - Black",
+          "source_line": "Cf",
+          "source_file": "sirayatech.json",
+          "source_definition": {
+            "source_file": "sirayatech.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "sirayatech_petg-cf_cfhfblack_1000_175_p",
+          "manufacturer": "Siraya Tech",
+          "name": "Cf HF Black",
+          "material": "PETG-CF",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            250,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            70
+          ],
+          "fill": "carbon fiber",
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf HF Black::PETG-CF::1000::1.75::plastic::False",
+          "template": "Cf {color_name}",
+          "source_color": "HF Black",
+          "source_line": "Cf",
+          "source_file": "sirayatech.json",
+          "source_definition": {
+            "source_file": "sirayatech.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {},
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "ST001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-e8f507721d490796752bf5cccef4e230205242341cae0ad8b38ffb5871318d98",
+      "ids": [
+        "sirayatech_petg-cf_cfhf-black_1000_175_p",
+        "sirayatech_petg-cf_cfhfblack_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "sirayatech_petg-cf_cfhf-black_1000_175_p",
+          "manufacturer": "Siraya Tech",
+          "name": "Cf HF - Black",
+          "material": "PETG-CF",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            250,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            70
+          ],
+          "fill": "carbon fiber",
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf HF - Black::PETG-CF::1000::1.75::plastic::False",
+          "template": "Cf {color_name}",
+          "source_color": "HF - Black",
+          "source_line": "Cf",
+          "source_file": "sirayatech.json",
+          "source_definition": {
+            "source_file": "sirayatech.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "sirayatech_petg-cf_cfhfblack_1000_175_p",
+          "manufacturer": "Siraya Tech",
+          "name": "Cf HF Black",
+          "material": "PETG-CF",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            250,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            70
+          ],
+          "fill": "carbon fiber",
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf HF Black::PETG-CF::1000::1.75::plastic::False",
+          "template": "Cf {color_name}",
+          "source_color": "HF Black",
+          "source_line": "Cf",
+          "source_file": "sirayatech.json",
+          "source_definition": {
+            "source_file": "sirayatech.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {},
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "ST001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "official_evidence": [
+    {
+      "url": "https://siraya.tech/pages/fibreheart-petg-cf-hf-tds-3d-printing-filament",
+      "density": 1.25,
+      "sku": "ST3018",
+      "note": "CurrentHighFlowBlack; pageprintingsection saysPET-CF andspec saysglassfiber despiteCF, so230–250/80 remains copy-error-ambiguous. ProHF/ST3031distinct."
+    }
+  ],
+  "metadata_review": "HF-Black/HFBlack tie unbound exactline/SKU despite bothblack. Defer; currentTDS copyerrors not resolved by borrowingProHF1.3. No identifiers or metadata edits.",
+  "original_source_definitions": [
+    {
+      "name": "64D {color_name}",
+      "material": "TPU",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        270
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "85A {color_name}",
+      "material": "PEBA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "85A {color_name}",
+      "material": "TPU",
+      "density": 1.16,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        20,
+        30
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Clear",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Green",
+          "hex": "b6f671"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "95A {color_name}",
+      "material": "TPU",
+      "density": 1.16,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        20,
+        20
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "95A {color_name}",
+      "material": "PEBA",
+      "density": 1.0,
+      "weights": [
+        {
+          "weight": 800,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Air {color_name}",
+      "material": "PEBA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 800,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        270
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Air {color_name}",
+      "material": "TPU",
+      "density": 1.15,
+      "weights": [
+        {
+          "weight": 800,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        270
+      ],
+      "bed_temp_range": [
+        35,
+        35
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Green",
+          "hex": "b2ed6f"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Cf {color_name}",
+      "material": "PPA-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        300,
+        300
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Cf {color_name}",
+      "material": "PET-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        300,
+        300
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Cf {color_name}",
+      "material": "PAHT-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        290,
+        310
+      ],
+      "bed_temp_range": [
+        90,
+        90
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Cf {color_name}",
+      "material": "PETG-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black - rCF08",
+          "hex": "000000"
+        },
+        {
+          "name": "HF - Black",
+          "hex": "000000"
+        },
+        {
+          "name": "HF Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Pro HF Black",
+          "hex": "000000"
+        },
+        {
+          "name": "rCF08 Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Cf {color_name}",
+      "material": "ABS-CF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Core Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "carbon fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "ASA-GF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "fill": "glass fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "PPA-GF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        300,
+        320
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "glass fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "PET-GF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        300,
+        300
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Flat Dark Earth",
+          "hex": "745f39"
+        },
+        {
+          "name": "OD Green",
+          "hex": "36320c"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "fill": "glass fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "TPU-GF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "fill": "glass fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "ABS-GF",
+      "density": 1.08,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Grey",
+          "hex": "e7eae7"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "fill": "glass fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Ht {color_name}",
+      "material": "ABS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        100,
+        100
+      ],
+      "colors": [
+        {
+          "name": "HF Black",
+          "hex": "000000"
+        },
+        {
+          "name": "HF White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "CN"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "sirayatech_tpu_64dblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "64D Black",
+        "material": "TPU",
+        "density": 1.25,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::64D {color_name}::64D Black::TPU::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "64D {color_name}",
+      "color": "Black",
+      "line": "64D",
+      "cell": {
+        "name": "64D {color_name}",
+        "material": "TPU",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_64dwhite_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "64D White",
+        "material": "TPU",
+        "density": 1.25,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::64D {color_name}::64D White::TPU::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "64D {color_name}",
+      "color": "White",
+      "line": "64D",
+      "cell": {
+        "name": "64D {color_name}",
+        "material": "TPU",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_peba_85ablack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "85A Black",
+        "material": "PEBA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::85A {color_name}::85A Black::PEBA::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "85A {color_name}",
+      "color": "Black",
+      "line": "85A",
+      "cell": {
+        "name": "85A {color_name}",
+        "material": "PEBA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_85ablack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "85A Black",
+        "material": "TPU",
+        "density": 1.16,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::85A {color_name}::85A Black::TPU::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "85A {color_name}",
+      "color": "Black",
+      "line": "85A",
+      "cell": {
+        "name": "85A {color_name}",
+        "material": "TPU",
+        "density": 1.16,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          20,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_85aclear_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "85A Clear",
+        "material": "TPU",
+        "density": 1.16,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::85A {color_name}::85A Clear::TPU::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "85A {color_name}",
+      "color": "Clear",
+      "line": "85A",
+      "cell": {
+        "name": "85A {color_name}",
+        "material": "TPU",
+        "density": 1.16,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          20,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Clear",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_85agreen_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "85A Green",
+        "material": "TPU",
+        "density": 1.16,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "b6f671",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::85A {color_name}::85A Green::TPU::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "85A {color_name}",
+      "color": "Green",
+      "line": "85A",
+      "cell": {
+        "name": "85A {color_name}",
+        "material": "TPU",
+        "density": 1.16,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          20,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Green",
+            "hex": "b6f671"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_85awhite_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "85A White",
+        "material": "TPU",
+        "density": 1.16,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::85A {color_name}::85A White::TPU::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "85A {color_name}",
+      "color": "White",
+      "line": "85A",
+      "cell": {
+        "name": "85A {color_name}",
+        "material": "TPU",
+        "density": 1.16,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          20,
+          30
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_95ablack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "95A Black",
+        "material": "TPU",
+        "density": 1.16,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::95A {color_name}::95A Black::TPU::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "95A {color_name}",
+      "color": "Black",
+      "line": "95A",
+      "cell": {
+        "name": "95A {color_name}",
+        "material": "TPU",
+        "density": 1.16,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_peba_95ablack_800_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "95A Black",
+        "material": "PEBA",
+        "density": 1.0,
+        "weight": 800,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::95A {color_name}::95A Black::PEBA::800::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "95A {color_name}",
+      "color": "Black",
+      "line": "95A",
+      "cell": {
+        "name": "95A {color_name}",
+        "material": "PEBA",
+        "density": 1.0,
+        "weights": [
+          {
+            "weight": 800,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_peba_airblack_800_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Air Black",
+        "material": "PEBA",
+        "density": 1.24,
+        "weight": 800,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Air {color_name}::Air Black::PEBA::800::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Air {color_name}",
+      "color": "Black",
+      "line": "Air",
+      "cell": {
+        "name": "Air {color_name}",
+        "material": "PEBA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 800,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_airblack_800_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Air Black",
+        "material": "TPU",
+        "density": 1.15,
+        "weight": 800,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          35,
+          35
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Air {color_name}::Air Black::TPU::800::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Air {color_name}",
+      "color": "Black",
+      "line": "Air",
+      "cell": {
+        "name": "Air {color_name}",
+        "material": "TPU",
+        "density": 1.15,
+        "weights": [
+          {
+            "weight": 800,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          270
+        ],
+        "bed_temp_range": [
+          35,
+          35
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_airgreen_800_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Air Green",
+        "material": "TPU",
+        "density": 1.15,
+        "weight": 800,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "b2ed6f",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          35,
+          35
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Air {color_name}::Air Green::TPU::800::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Air {color_name}",
+      "color": "Green",
+      "line": "Air",
+      "cell": {
+        "name": "Air {color_name}",
+        "material": "TPU",
+        "density": 1.15,
+        "weights": [
+          {
+            "weight": 800,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          270
+        ],
+        "bed_temp_range": [
+          35,
+          35
+        ],
+        "colors": [
+          {
+            "name": "Green",
+            "hex": "b2ed6f"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu_airwhite_800_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Air White",
+        "material": "TPU",
+        "density": 1.15,
+        "weight": 800,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          35,
+          35
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Air {color_name}::Air White::TPU::800::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Air {color_name}",
+      "color": "White",
+      "line": "Air",
+      "cell": {
+        "name": "Air {color_name}",
+        "material": "TPU",
+        "density": 1.15,
+        "weights": [
+          {
+            "weight": 800,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          270
+        ],
+        "bed_temp_range": [
+          35,
+          35
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_ppa-cf_cfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Cf Black",
+        "material": "PPA-CF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf Black::PPA-CF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Cf {color_name}",
+      "color": "Black",
+      "line": "Cf",
+      "cell": {
+        "name": "Cf {color_name}",
+        "material": "PPA-CF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "carbon fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_pet-cf_cfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Cf Black",
+        "material": "PET-CF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf Black::PET-CF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Cf {color_name}",
+      "color": "Black",
+      "line": "Cf",
+      "cell": {
+        "name": "Cf {color_name}",
+        "material": "PET-CF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "carbon fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_paht-cf_cfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Cf Black",
+        "material": "PAHT-CF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          290,
+          310
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          90,
+          90
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf Black::PAHT-CF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Cf {color_name}",
+      "color": "Black",
+      "line": "Cf",
+      "cell": {
+        "name": "Cf {color_name}",
+        "material": "PAHT-CF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          290,
+          310
+        ],
+        "bed_temp_range": [
+          90,
+          90
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "carbon fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_petg-cf_cfblack-rcf08_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Cf Black - rCF08",
+        "material": "PETG-CF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf Black - rCF08::PETG-CF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Cf {color_name}",
+      "color": "Black - rCF08",
+      "line": "Cf",
+      "cell": {
+        "name": "Cf {color_name}",
+        "material": "PETG-CF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Black - rCF08",
+            "hex": "000000"
+          }
+        ],
+        "fill": "carbon fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_petg-cf_cfprohfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Cf Pro HF Black",
+        "material": "PETG-CF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf Pro HF Black::PETG-CF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Cf {color_name}",
+      "color": "Pro HF Black",
+      "line": "Cf",
+      "cell": {
+        "name": "Cf {color_name}",
+        "material": "PETG-CF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Pro HF Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "carbon fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_petg-cf_cfrcf08black_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Cf rCF08 Black",
+        "material": "PETG-CF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf rCF08 Black::PETG-CF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Cf {color_name}",
+      "color": "rCF08 Black",
+      "line": "Cf",
+      "cell": {
+        "name": "Cf {color_name}",
+        "material": "PETG-CF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "rCF08 Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "carbon fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_abs-cf_cfcoreblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Cf Core Black",
+        "material": "ABS-CF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Cf {color_name}::Cf Core Black::ABS-CF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Cf {color_name}",
+      "color": "Core Black",
+      "line": "Cf",
+      "cell": {
+        "name": "Cf {color_name}",
+        "material": "ABS-CF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "colors": [
+          {
+            "name": "Core Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "carbon fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_asa-gf_gfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf Black",
+        "material": "ASA-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf Black::ASA-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Gf {color_name}",
+      "color": "Black",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "ASA-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_asa-gf_gfwhite_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf White",
+        "material": "ASA-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf White::ASA-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Gf {color_name}",
+      "color": "White",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "ASA-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_ppa-gf_gfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf Black",
+        "material": "PPA-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          300,
+          320
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf Black::PPA-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 13,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Gf {color_name}",
+      "color": "Black",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "PPA-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          300,
+          320
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_pet-gf_gfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf Black",
+        "material": "PET-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf Black::PET-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 14,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Gf {color_name}",
+      "color": "Black",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "PET-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_pet-gf_gfflatdarkearth_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf Flat Dark Earth",
+        "material": "PET-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "745f39",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf Flat Dark Earth::PET-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 14,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Gf {color_name}",
+      "color": "Flat Dark Earth",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "PET-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Flat Dark Earth",
+            "hex": "745f39"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_pet-gf_gfodgreen_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf OD Green",
+        "material": "PET-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "36320c",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf OD Green::PET-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 14,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Gf {color_name}",
+      "color": "OD Green",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "PET-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "OD Green",
+            "hex": "36320c"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_pet-gf_gfwhite_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf White",
+        "material": "PET-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf White::PET-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 14,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Gf {color_name}",
+      "color": "White",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "PET-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          300,
+          300
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_tpu-gf_gfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf Black",
+        "material": "TPU-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          210,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf Black::TPU-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 15,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Gf {color_name}",
+      "color": "Black",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "TPU-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          210,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_abs-gf_gfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf Black",
+        "material": "ABS-GF",
+        "density": 1.08,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf Black::ABS-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 16,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Gf {color_name}",
+      "color": "Black",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "ABS-GF",
+        "density": 1.08,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          280
+        ],
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_abs-gf_gfgrey_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf Grey",
+        "material": "ABS-GF",
+        "density": 1.08,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e7eae7",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf Grey::ABS-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 16,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Gf {color_name}",
+      "color": "Grey",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "ABS-GF",
+        "density": 1.08,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          280
+        ],
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "colors": [
+          {
+            "name": "Grey",
+            "hex": "e7eae7"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_abs-gf_gfwhite_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Gf White",
+        "material": "ABS-GF",
+        "density": 1.08,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Gf {color_name}::Gf White::ABS-GF::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 16,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Gf {color_name}",
+      "color": "White",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "ABS-GF",
+        "density": 1.08,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          280
+        ],
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_abs_hthfblack_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Ht HF Black",
+        "material": "ABS",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Ht {color_name}::Ht HF Black::ABS::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 17,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Ht {color_name}",
+      "color": "HF Black",
+      "line": "Ht",
+      "cell": {
+        "name": "Ht {color_name}",
+        "material": "ABS",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "colors": [
+          {
+            "name": "HF Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "sirayatech_abs_hthfwhite_1000_175_p",
+        "manufacturer": "Siraya Tech",
+        "name": "Ht HF White",
+        "material": "ABS",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "sirayatech.json::Siraya Tech::Ht {color_name}::Ht HF White::ABS::1000::1.75::plastic::False",
+      "filename": "sirayatech.json",
+      "definition_index": 17,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Ht {color_name}",
+      "color": "HF White",
+      "line": "Ht",
+      "cell": {
+        "name": "Ht {color_name}",
+        "material": "ABS",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          250,
+          270
+        ],
+        "bed_temp_range": [
+          100,
+          100
+        ],
+        "colors": [
+          {
+            "name": "HF White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 1,
+    "hard_stops": 0,
+    "before_count": 51701,
+    "after_count": 51701,
+    "brand_before": 35,
+    "brand_after": 35,
+    "registry_before": 1733,
+    "registry_after": 1733,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "ST",
+    "metadata": [],
+    "no_transfers": true,
+    "official_evidence": [
+      {
+        "url": "https://siraya.tech/pages/fibreheart-petg-cf-hf-tds-3d-printing-filament",
+        "density": 1.25,
+        "sku": "ST3018",
+        "note": "CurrentHighFlowBlack; pageprintingsection saysPET-CF andspec saysglassfiber despiteCF, so230–250/80 remains copy-error-ambiguous. ProHF/ST3031distinct."
+      }
+    ],
+    "metadata_review": "HF-Black/HFBlack tie unbound exactline/SKU despite bothblack. Defer; currentTDS copyerrors not resolved by borrowingProHF1.3. No identifiers or metadata edits.",
+    "printing_default_flags": []
+  }
+}
