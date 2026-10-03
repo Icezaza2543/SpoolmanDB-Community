@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 52,368
+* **Published records**: 52,294
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,11 +79,11 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 6,708 |
-| Color entries | 31,665 |
-| Compiled filament variants | 52,368 |
-| Source filaments with country of origin | 6,108 |
-| Source filaments with TDS/product links | 2,158 |
+| Source filament objects | 6,900 |
+| Color entries | 31,748 |
+| Compiled filament variants | 52,294 |
+| Source filaments with country of origin | 6,300 |
+| Source filaments with TDS/product links | 2,350 |
 | Source filaments with SDS links | 988 |
 | Manufacturer product code/ID entries | 8,202 |
 | EAN/GTIN entries | 2,194 |
@@ -95,8 +95,8 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 5,382 |
-| `spool_type: cardboard` | 2,129 |
+| `spool_type: plastic` | 5,497 |
+| `spool_type: cardboard` | 2,201 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 124 |
 | `spool_type: unknow` (legacy) | 26 |
@@ -326,6 +326,12 @@ The [complete mappings and conflicts](docs/audits/2026-10-03-elegoo-duplicate-re
 This **intentional breaking catalog migration** retires 81 exact duplicate IDs in 81 reviewed groups: 52,449 → 52,368 catalog records, with 2 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
 
 The [complete mappings and conflicts](docs/audits/2026-10-03-overture-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-overture-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 0 official-evidence printing/document field changes and 4 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
+
+### prusament duplicate migration (2026-10-03)
+
+This **intentional breaking catalog migration** retires 74 exact duplicate IDs in 74 reviewed groups: 52,368 → 52,294 catalog records, with 1 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
+
+The [complete mappings and conflicts](docs/audits/2026-10-03-prusament-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-prusament-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 116 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
 ## Terms and policy
 

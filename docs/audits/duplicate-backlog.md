@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## prusament deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|PR017 / `dup-d5990b44fc6c4d56820254fd79bcff19e1876b68ae74a3bef6e0f34c0df6f06f`|`prusament_petg_matteblack_1000_175_c`<br>`prusament_petg_mattepetgblack_1000_175_c`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-prusament-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## overture deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
