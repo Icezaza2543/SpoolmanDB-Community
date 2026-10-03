@@ -12005,6 +12005,34 @@
       "ref": "docs/audits/2026-10-03-nobufil-duplicate-review.json",
       "source": "8d68c8f08374181a45a4092c1918ed32b477e667",
       "retired_key": "nobufil.json::Nobufil::PETG {color_name}::PETG Yellow::PETG::1000::1.75::cardboard::False"
+    },
+    "gst3d_abs_absblack_1000_175_p": {
+      "replaced_by": "gst3d_abs_black_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-gst3d-duplicate-review.json",
+      "source": "41faacca40e01ac50bb86f3321700682eeb505d9",
+      "retired_key": "gst3d.json::GST3D::ABS {color_name}::ABS Black::ABS::1000::1.75::plastic::False"
+    },
+    "gst3d_abs_abswhite_1000_175_p": {
+      "replaced_by": "gst3d_abs_white_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-gst3d-duplicate-review.json",
+      "source": "41faacca40e01ac50bb86f3321700682eeb505d9",
+      "retired_key": "gst3d.json::GST3D::ABS {color_name}::ABS White::ABS::1000::1.75::plastic::False"
+    },
+    "gst3d_petg_petgblack_1000_175_p": {
+      "replaced_by": "gst3d_petg_black_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-gst3d-duplicate-review.json",
+      "source": "41faacca40e01ac50bb86f3321700682eeb505d9",
+      "retired_key": "gst3d.json::GST3D::PETG {color_name}::PETG Black::PETG::1000::1.75::plastic::False"
+    },
+    "gst3d_petg_petgwhite_1000_175_p": {
+      "replaced_by": "gst3d_petg_white_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-gst3d-duplicate-review.json",
+      "source": "41faacca40e01ac50bb86f3321700682eeb505d9",
+      "retired_key": "gst3d.json::GST3D::PETG {color_name}::PETG White::PETG::1000::1.75::plastic::False"
     }
   }
 }
