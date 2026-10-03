@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## inland deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|IN001 / `dup-0bc49e98c8e449298a280432faa4f1b9cac9de925498a7791e96354ecb7dc6d5`|`inland_pla_plabasicgray_1000_175_c`<br>`inland_pla_plabasicgrey_1000_175_c`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-inland-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## iboss deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
