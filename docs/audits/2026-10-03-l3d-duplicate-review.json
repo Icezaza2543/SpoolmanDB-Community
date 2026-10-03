@@ -1,0 +1,5792 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "l3d",
+  "audit_digest": "7aa3a6dfc46d02daac3bd3bcd31ed496e019288f6fcc8f3a18139cc68b866af4",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "8078820142cbab5165eac2a3457020c807e57593",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-377dfee5243440f2c3d930ca9e3d9e5ead5a2d4fabfada1965a1d1eb79a9c284",
+      "ids": [
+        "l3d_petg_petggray_3000_175_c",
+        "l3d_petg_petggrey_3000_175_c"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "l3d_petg_petggray_3000_175_c",
+          "manufacturer": "L3D",
+          "name": "PETG Gray",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 3000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PETG-GREY-03"
+          ],
+          "eans": [
+            "5744006030696"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "DK",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "l3d.json::L3D::PETG {color_name}::PETG Gray::PETG::3000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Gray",
+          "source_line": "PETG",
+          "source_file": "l3d.json",
+          "source_definition": {
+            "source_file": "l3d.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "l3d_petg_petggrey_3000_175_c",
+          "manufacturer": "L3D",
+          "name": "PETG Grey",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 3000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "A3A3A3",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DK",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "l3d.json::L3D::PETG {color_name}::PETG Grey::PETG::3000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Grey",
+          "source_line": "PETG",
+          "source_file": "l3d.json",
+          "source_definition": {
+            "source_file": "l3d.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "l3d_petg_petggray_3000_175_c": "808080",
+          "l3d_petg_petggrey_3000_175_c": "A3A3A3"
+        },
+        "codes": {
+          "l3d_petg_petggray_3000_175_c": [
+            "PETG-GREY-03"
+          ],
+          "l3d_petg_petggrey_3000_175_c": null
+        },
+        "eans": {
+          "l3d_petg_petggray_3000_175_c": [
+            "5744006030696"
+          ],
+          "l3d_petg_petggrey_3000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "LD001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-377dfee5243440f2c3d930ca9e3d9e5ead5a2d4fabfada1965a1d1eb79a9c284",
+      "ids": [
+        "l3d_petg_petggray_3000_175_c",
+        "l3d_petg_petggrey_3000_175_c"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "l3d_petg_petggray_3000_175_c",
+          "manufacturer": "L3D",
+          "name": "PETG Gray",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 3000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PETG-GREY-03"
+          ],
+          "eans": [
+            "5744006030696"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "DK",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "l3d.json::L3D::PETG {color_name}::PETG Gray::PETG::3000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Gray",
+          "source_line": "PETG",
+          "source_file": "l3d.json",
+          "source_definition": {
+            "source_file": "l3d.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "l3d_petg_petggrey_3000_175_c",
+          "manufacturer": "L3D",
+          "name": "PETG Grey",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 3000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "A3A3A3",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DK",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "l3d.json::L3D::PETG {color_name}::PETG Grey::PETG::3000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Grey",
+          "source_line": "PETG",
+          "source_file": "l3d.json",
+          "source_definition": {
+            "source_file": "l3d.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "l3d_petg_petggray_3000_175_c": "808080",
+          "l3d_petg_petggrey_3000_175_c": "A3A3A3"
+        },
+        "codes": {
+          "l3d_petg_petggray_3000_175_c": [
+            "PETG-GREY-03"
+          ],
+          "l3d_petg_petggrey_3000_175_c": null
+        },
+        "eans": {
+          "l3d_petg_petggray_3000_175_c": [
+            "5744006030696"
+          ],
+          "l3d_petg_petggrey_3000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "LD001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "official_evidence": [
+    {
+      "url": "https://shop.lab3d.dk/collections/lab3d-filament-petg",
+      "note": "CurrentlyGrey1kg, not proof for3kgPETG-GREY-03/EAN5744006030696."
+    }
+  ],
+  "metadata_review": "One3kgGray/Grey tie HEX808080/A3A3A3 and unbound sameSKU; preserve source code/EAN exact placement. No transfer to current1kg products; both historicalrecords unchanged.",
+  "original_source_definitions": [
+    {
+      "name": "Glitter PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "DK",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-G-BLACK-01"
+          ],
+          "eans": [
+            "5744006030795"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "PLA-G-Black-025"
+          ],
+          "eans": [
+            "5744006030764"
+          ]
+        }
+      ],
+      "pattern": "sparkle"
+    },
+    {
+      "name": "Matte PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "country_of_origin": "DK",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PETG-MATT-BLACK-25"
+          ],
+          "eans": [
+            "5744006030955"
+          ]
+        }
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "Matte PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "DK",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-MATT-BLACK-25"
+          ],
+          "eans": [
+            "5744006031136"
+          ]
+        }
+      ],
+      "finish": "matte"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "country_of_origin": "DK",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PETG-BLACK-01"
+          ],
+          "eans": [
+            "5744006030528"
+          ]
+        },
+        {
+          "name": "Dark Green",
+          "hex": "006400",
+          "codes": [
+            "PETG-Dark-Green-01"
+          ],
+          "eans": [
+            "5744006030641"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PETG-GREY-01",
+            "PLA-LIGHT-GRAY-01"
+          ],
+          "eans": [
+            "5744006030535",
+            "5744006030962"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8c00",
+          "codes": [
+            "PETG-ORANGE-01"
+          ],
+          "eans": [
+            "5744006030603"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000",
+          "codes": [
+            "PETG-RED-01"
+          ],
+          "eans": [
+            "5744006030559"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PETG-WHITE-01"
+          ],
+          "eans": [
+            "5744006030511"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PETG-YELLOW-01"
+          ],
+          "eans": [
+            "5744006030542"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "country_of_origin": "DK",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PETG-BLACK-03"
+          ],
+          "eans": [
+            "5744006030689"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PETG-GREY-03"
+          ],
+          "eans": [
+            "5744006030696"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PETG-WHITE-03"
+          ],
+          "eans": [
+            "5744006030672"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "A3A3A3"
+        },
+        {
+          "name": "Matt Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Matt White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF810A"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFEE00"
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "DK",
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "PLA-BLACK-01",
+            "SK-21568"
+          ],
+          "eans": [
+            "5744006030146",
+            "5744006030375"
+          ]
+        },
+        {
+          "name": "Blue",
+          "hex": "0066cc",
+          "codes": [
+            "PLA-BLUE-01"
+          ],
+          "eans": [
+            "5744006030313"
+          ]
+        },
+        {
+          "name": "Brown",
+          "hex": "8b4513",
+          "codes": [
+            "SK-215468"
+          ],
+          "eans": [
+            "5744006030320"
+          ]
+        },
+        {
+          "name": "Cyan",
+          "hex": "00ffff",
+          "codes": [
+            "PLA-CYAN-01"
+          ],
+          "eans": [
+            "5744006030276"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "daa520",
+          "codes": [
+            "PLA-Gold-01"
+          ],
+          "eans": [
+            "5744006030290"
+          ]
+        },
+        {
+          "name": "Gray",
+          "hex": "808080",
+          "codes": [
+            "PLA-DARK-GRAY-01"
+          ],
+          "eans": [
+            "5744006030351"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "228b22",
+          "codes": [
+            "PLA-GREEN-01"
+          ],
+          "eans": [
+            "5744006030283"
+          ]
+        },
+        {
+          "name": "Khaki",
+          "hex": "c3b091",
+          "codes": [
+            "Khaki"
+          ],
+          "eans": [
+            "5744006031785"
+          ]
+        },
+        {
+          "name": "Light Wood",
+          "hex": "deb887",
+          "codes": [
+            "Light Wood"
+          ],
+          "eans": [
+            "5744006031778"
+          ]
+        },
+        {
+          "name": "Magenta",
+          "hex": "ff00ff",
+          "codes": [
+            "PLA-Magenta-01"
+          ],
+          "eans": [
+            "5744006030252"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000",
+          "codes": [
+            "PLA-RED-01"
+          ],
+          "eans": [
+            "5744006030269"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLA-WHITE-01"
+          ],
+          "eans": [
+            "5744006030368"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "ffd700",
+          "codes": [
+            "PLA-YELLOW-01"
+          ],
+          "eans": [
+            "5744006030337"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "DK",
+      "colors": [
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "PLA-WHITE-03"
+          ],
+          "eans": [
+            "5744006030382"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "DK",
+      "colors": [
+        {
+          "name": "Army Green",
+          "hex": "4b5320",
+          "codes": [
+            "Silk-Army-Green-01"
+          ],
+          "eans": [
+            "5744006030917"
+          ]
+        },
+        {
+          "name": "Copper",
+          "hex": "b87333",
+          "codes": [
+            "Silk-copper-01"
+          ],
+          "eans": [
+            "5744006030948"
+          ]
+        },
+        {
+          "name": "Gold",
+          "hex": "daa520",
+          "codes": [
+            "Silk-Gold-01"
+          ],
+          "eans": [
+            "5744006030894"
+          ]
+        },
+        {
+          "name": "Light Blue",
+          "hex": "add8e6",
+          "codes": [
+            "Silk-Light-Blue-01"
+          ],
+          "eans": [
+            "5744006030856"
+          ]
+        },
+        {
+          "name": "Light Green",
+          "hex": "90ee90",
+          "codes": [
+            "Silk-Light-Green-01"
+          ],
+          "eans": [
+            "5744006030887"
+          ]
+        },
+        {
+          "name": "Light Lilac",
+          "hex": "c8a2c8",
+          "codes": [
+            "Silk-Light-Lilla-01"
+          ],
+          "eans": [
+            "5744006030900"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "cc0000",
+          "codes": [
+            "Silk-Red-01"
+          ],
+          "eans": [
+            "5744006030870"
+          ]
+        },
+        {
+          "name": "Rose",
+          "hex": "ff007f",
+          "codes": [
+            "Silk-Rose-01"
+          ],
+          "eans": [
+            "5744006030863"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "c0c0c0",
+          "codes": [
+            "Silk-Silver-01"
+          ],
+          "eans": [
+            "5744006030931"
+          ]
+        },
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "codes": [
+            "Silk-White-01"
+          ],
+          "eans": [
+            "5744006030924"
+          ]
+        }
+      ],
+      "finish": "glossy"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "3224FF"
+        },
+        {
+          "name": "Cyan",
+          "hex": "52AEFF"
+        },
+        {
+          "name": "Dark Gray",
+          "hex": "616161"
+        },
+        {
+          "name": "Gold",
+          "hex": "EEA11B"
+        },
+        {
+          "name": "Green",
+          "hex": "2C8901"
+        },
+        {
+          "name": "Magenta",
+          "hex": "F73B86"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFDD00"
+        }
+      ],
+      "country_of_origin": "DK",
+      "extruder_temp": 210,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Army green",
+          "hex": "008A10"
+        },
+        {
+          "name": "Copper",
+          "hex": "800000"
+        },
+        {
+          "name": "Gold",
+          "hex": "C7BA00"
+        },
+        {
+          "name": "Light Blue",
+          "hex": "38B3FF"
+        },
+        {
+          "name": "Light Green",
+          "hex": "55EB1E"
+        },
+        {
+          "name": "Light Lilla",
+          "hex": "ED61FF"
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Rose",
+          "hex": "FF9494"
+        },
+        {
+          "name": "Silver",
+          "hex": "A3A3A3"
+        },
+        {
+          "name": "White",
+          "hex": "DEDEDE"
+        }
+      ],
+      "country_of_origin": "DK",
+      "extruder_temp": 210,
+      "bed_temp": 60
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "l3d_pla_glitterplablack_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Glitter PLA Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": "sparkle",
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-G-BLACK-01"
+        ],
+        "eans": [
+          "5744006030795"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Glitter PLA {color_name}::Glitter PLA Black::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Glitter PLA {color_name}",
+      "color": "Black",
+      "line": "Glitter PLA",
+      "cell": {
+        "name": "Glitter PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "PLA-G-BLACK-01"
+            ],
+            "eans": [
+              "5744006030795"
+            ]
+          }
+        ],
+        "pattern": "sparkle"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_glitterplasilver_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Glitter PLA Silver",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "c0c0c0",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": "sparkle",
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-G-Black-025"
+        ],
+        "eans": [
+          "5744006030764"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Glitter PLA {color_name}::Glitter PLA Silver::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Glitter PLA {color_name}",
+      "color": "Silver",
+      "line": "Glitter PLA",
+      "cell": {
+        "name": "Glitter PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Silver",
+            "hex": "c0c0c0",
+            "codes": [
+              "PLA-G-Black-025"
+            ],
+            "eans": [
+              "5744006030764"
+            ]
+          }
+        ],
+        "pattern": "sparkle"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_mattepetgblack_3000_175_c",
+        "manufacturer": "L3D",
+        "name": "Matte PETG Black",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 3000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-MATT-BLACK-25"
+        ],
+        "eans": [
+          "5744006030955"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Matte PETG {color_name}::Matte PETG Black::PETG::3000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Matte PETG {color_name}",
+      "color": "Black",
+      "line": "Matte PETG",
+      "cell": {
+        "name": "Matte PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 3000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "PETG-MATT-BLACK-25"
+            ],
+            "eans": [
+              "5744006030955"
+            ]
+          }
+        ],
+        "finish": "matte"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_matteplablack_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Matte PLA Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-MATT-BLACK-25"
+        ],
+        "eans": [
+          "5744006031136"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Matte PLA {color_name}::Matte PLA Black::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Matte PLA {color_name}",
+      "color": "Black",
+      "line": "Matte PLA",
+      "cell": {
+        "name": "Matte PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "PLA-MATT-BLACK-25"
+            ],
+            "eans": [
+              "5744006031136"
+            ]
+          }
+        ],
+        "finish": "matte"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgblack_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Black",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-BLACK-01"
+        ],
+        "eans": [
+          "5744006030528"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Black::PETG::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG {color_name}",
+      "color": "Black",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "PETG-BLACK-01"
+            ],
+            "eans": [
+              "5744006030528"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgdarkgreen_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Dark Green",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "006400",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-Dark-Green-01"
+        ],
+        "eans": [
+          "5744006030641"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Dark Green::PETG::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PETG {color_name}",
+      "color": "Dark Green",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Dark Green",
+            "hex": "006400",
+            "codes": [
+              "PETG-Dark-Green-01"
+            ],
+            "eans": [
+              "5744006030641"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petggray_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Gray",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-GREY-01",
+          "PLA-LIGHT-GRAY-01"
+        ],
+        "eans": [
+          "5744006030535",
+          "5744006030962"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Gray::PETG::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PETG {color_name}",
+      "color": "Gray",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Gray",
+            "hex": "808080",
+            "codes": [
+              "PETG-GREY-01",
+              "PLA-LIGHT-GRAY-01"
+            ],
+            "eans": [
+              "5744006030535",
+              "5744006030962"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgorange_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Orange",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ff8c00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-ORANGE-01"
+        ],
+        "eans": [
+          "5744006030603"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Orange::PETG::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PETG {color_name}",
+      "color": "Orange",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Orange",
+            "hex": "ff8c00",
+            "codes": [
+              "PETG-ORANGE-01"
+            ],
+            "eans": [
+              "5744006030603"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgred_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Red",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "cc0000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-RED-01"
+        ],
+        "eans": [
+          "5744006030559"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Red::PETG::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PETG {color_name}",
+      "color": "Red",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "cc0000",
+            "codes": [
+              "PETG-RED-01"
+            ],
+            "eans": [
+              "5744006030559"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgwhite_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG White",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-WHITE-01"
+        ],
+        "eans": [
+          "5744006030511"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG White::PETG::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PETG {color_name}",
+      "color": "White",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff",
+            "codes": [
+              "PETG-WHITE-01"
+            ],
+            "eans": [
+              "5744006030511"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgyellow_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Yellow",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffd700",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-YELLOW-01"
+        ],
+        "eans": [
+          "5744006030542"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Yellow::PETG::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PETG {color_name}",
+      "color": "Yellow",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "ffd700",
+            "codes": [
+              "PETG-YELLOW-01"
+            ],
+            "eans": [
+              "5744006030542"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgblack_3000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Black",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 3000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-BLACK-03"
+        ],
+        "eans": [
+          "5744006030689"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Black::PETG::3000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG {color_name}",
+      "color": "Black",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 3000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "PETG-BLACK-03"
+            ],
+            "eans": [
+              "5744006030689"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgwhite_3000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG White",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 3000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PETG-WHITE-03"
+        ],
+        "eans": [
+          "5744006030672"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG White::PETG::3000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PETG {color_name}",
+      "color": "White",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 3000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff",
+            "codes": [
+              "PETG-WHITE-03"
+            ],
+            "eans": [
+              "5744006030672"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgmattblack_3000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Matt Black",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 3000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Matt Black::PETG::3000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PETG {color_name}",
+      "color": "Matt Black",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 3000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Matt Black",
+            "hex": "000000"
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgmattwhite_3000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Matt White",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 3000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Matt White::PETG::3000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PETG {color_name}",
+      "color": "Matt White",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 3000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Matt White",
+            "hex": "FFFFFF"
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgorange_3000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Orange",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 3000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FF810A",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Orange::PETG::3000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PETG {color_name}",
+      "color": "Orange",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 3000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Orange",
+            "hex": "FF810A"
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_petg_petgyellow_3000_175_c",
+        "manufacturer": "L3D",
+        "name": "PETG Yellow",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 3000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFEE00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Yellow::PETG::3000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PETG {color_name}",
+      "color": "Yellow",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 3000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "FFEE00"
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plablack_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-BLACK-01",
+          "SK-21568"
+        ],
+        "eans": [
+          "5744006030146",
+          "5744006030375"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Black::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA {color_name}",
+      "color": "Black",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000",
+            "codes": [
+              "PLA-BLACK-01",
+              "SK-21568"
+            ],
+            "eans": [
+              "5744006030146",
+              "5744006030375"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plablue_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0066cc",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-BLUE-01"
+        ],
+        "eans": [
+          "5744006030313"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Blue::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA {color_name}",
+      "color": "Blue",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "0066cc",
+            "codes": [
+              "PLA-BLUE-01"
+            ],
+            "eans": [
+              "5744006030313"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabrown_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "8b4513",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "SK-215468"
+        ],
+        "eans": [
+          "5744006030320"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Brown::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA {color_name}",
+      "color": "Brown",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Brown",
+            "hex": "8b4513",
+            "codes": [
+              "SK-215468"
+            ],
+            "eans": [
+              "5744006030320"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_placyan_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Cyan",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "00ffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-CYAN-01"
+        ],
+        "eans": [
+          "5744006030276"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Cyan::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA {color_name}",
+      "color": "Cyan",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Cyan",
+            "hex": "00ffff",
+            "codes": [
+              "PLA-CYAN-01"
+            ],
+            "eans": [
+              "5744006030276"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plagold_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Gold",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "daa520",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-Gold-01"
+        ],
+        "eans": [
+          "5744006030290"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Gold::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA {color_name}",
+      "color": "Gold",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Gold",
+            "hex": "daa520",
+            "codes": [
+              "PLA-Gold-01"
+            ],
+            "eans": [
+              "5744006030290"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plagray_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Gray",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-DARK-GRAY-01"
+        ],
+        "eans": [
+          "5744006030351"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Gray::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PLA {color_name}",
+      "color": "Gray",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Gray",
+            "hex": "808080",
+            "codes": [
+              "PLA-DARK-GRAY-01"
+            ],
+            "eans": [
+              "5744006030351"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plagreen_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "228b22",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-GREEN-01"
+        ],
+        "eans": [
+          "5744006030283"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Green::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PLA {color_name}",
+      "color": "Green",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Green",
+            "hex": "228b22",
+            "codes": [
+              "PLA-GREEN-01"
+            ],
+            "eans": [
+              "5744006030283"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plakhaki_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Khaki",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "c3b091",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Khaki"
+        ],
+        "eans": [
+          "5744006031785"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Khaki::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PLA {color_name}",
+      "color": "Khaki",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Khaki",
+            "hex": "c3b091",
+            "codes": [
+              "Khaki"
+            ],
+            "eans": [
+              "5744006031785"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plalightwood_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Light Wood",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "deb887",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Light Wood"
+        ],
+        "eans": [
+          "5744006031778"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Light Wood::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PLA {color_name}",
+      "color": "Light Wood",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Light Wood",
+            "hex": "deb887",
+            "codes": [
+              "Light Wood"
+            ],
+            "eans": [
+              "5744006031778"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plamagenta_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Magenta",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ff00ff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-Magenta-01"
+        ],
+        "eans": [
+          "5744006030252"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Magenta::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "PLA {color_name}",
+      "color": "Magenta",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Magenta",
+            "hex": "ff00ff",
+            "codes": [
+              "PLA-Magenta-01"
+            ],
+            "eans": [
+              "5744006030252"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plared_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "cc0000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-RED-01"
+        ],
+        "eans": [
+          "5744006030269"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Red::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "PLA {color_name}",
+      "color": "Red",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "cc0000",
+            "codes": [
+              "PLA-RED-01"
+            ],
+            "eans": [
+              "5744006030269"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plawhite_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-WHITE-01"
+        ],
+        "eans": [
+          "5744006030368"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA White::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 11,
+      "template": "PLA {color_name}",
+      "color": "White",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff",
+            "codes": [
+              "PLA-WHITE-01"
+            ],
+            "eans": [
+              "5744006030368"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_playellow_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffd700",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-YELLOW-01"
+        ],
+        "eans": [
+          "5744006030337"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA Yellow::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 12,
+      "template": "PLA {color_name}",
+      "color": "Yellow",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "ffd700",
+            "codes": [
+              "PLA-YELLOW-01"
+            ],
+            "eans": [
+              "5744006030337"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plawhite_3000_175_c",
+        "manufacturer": "L3D",
+        "name": "PLA White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 3000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "PLA-WHITE-03"
+        ],
+        "eans": [
+          "5744006030382"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA {color_name}::PLA White::PLA::3000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA {color_name}",
+      "color": "White",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 3000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff",
+            "codes": [
+              "PLA-WHITE-03"
+            ],
+            "eans": [
+              "5744006030382"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplaarmygreen_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Army Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "4b5320",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-Army-Green-01"
+        ],
+        "eans": [
+          "5744006030917"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Army Green::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk PLA {color_name}",
+      "color": "Army Green",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Army Green",
+            "hex": "4b5320",
+            "codes": [
+              "Silk-Army-Green-01"
+            ],
+            "eans": [
+              "5744006030917"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplacopper_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Copper",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "b87333",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-copper-01"
+        ],
+        "eans": [
+          "5744006030948"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Copper::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Silk PLA {color_name}",
+      "color": "Copper",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Copper",
+            "hex": "b87333",
+            "codes": [
+              "Silk-copper-01"
+            ],
+            "eans": [
+              "5744006030948"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplagold_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Gold",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "daa520",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-Gold-01"
+        ],
+        "eans": [
+          "5744006030894"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Gold::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk PLA {color_name}",
+      "color": "Gold",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Gold",
+            "hex": "daa520",
+            "codes": [
+              "Silk-Gold-01"
+            ],
+            "eans": [
+              "5744006030894"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplalightblue_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Light Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "add8e6",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-Light-Blue-01"
+        ],
+        "eans": [
+          "5744006030856"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Light Blue::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Silk PLA {color_name}",
+      "color": "Light Blue",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Light Blue",
+            "hex": "add8e6",
+            "codes": [
+              "Silk-Light-Blue-01"
+            ],
+            "eans": [
+              "5744006030856"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplalightgreen_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Light Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "90ee90",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-Light-Green-01"
+        ],
+        "eans": [
+          "5744006030887"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Light Green::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Silk PLA {color_name}",
+      "color": "Light Green",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Light Green",
+            "hex": "90ee90",
+            "codes": [
+              "Silk-Light-Green-01"
+            ],
+            "eans": [
+              "5744006030887"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplalightlilac_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Light Lilac",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "c8a2c8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-Light-Lilla-01"
+        ],
+        "eans": [
+          "5744006030900"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Light Lilac::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "Silk PLA {color_name}",
+      "color": "Light Lilac",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Light Lilac",
+            "hex": "c8a2c8",
+            "codes": [
+              "Silk-Light-Lilla-01"
+            ],
+            "eans": [
+              "5744006030900"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplared_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "cc0000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-Red-01"
+        ],
+        "eans": [
+          "5744006030870"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Red::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "Silk PLA {color_name}",
+      "color": "Red",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "cc0000",
+            "codes": [
+              "Silk-Red-01"
+            ],
+            "eans": [
+              "5744006030870"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplarose_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Rose",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ff007f",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-Rose-01"
+        ],
+        "eans": [
+          "5744006030863"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Rose::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "Silk PLA {color_name}",
+      "color": "Rose",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Rose",
+            "hex": "ff007f",
+            "codes": [
+              "Silk-Rose-01"
+            ],
+            "eans": [
+              "5744006030863"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplasilver_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA Silver",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "c0c0c0",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-Silver-01"
+        ],
+        "eans": [
+          "5744006030931"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA Silver::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "Silk PLA {color_name}",
+      "color": "Silver",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "Silver",
+            "hex": "c0c0c0",
+            "codes": [
+              "Silk-Silver-01"
+            ],
+            "eans": [
+              "5744006030931"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_silkplawhite_1000_175_c",
+        "manufacturer": "L3D",
+        "name": "Silk PLA White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "cardboard",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "glossy",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": [
+          "Silk-White-01"
+        ],
+        "eans": [
+          "5744006030924"
+        ],
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::Silk PLA {color_name}::Silk PLA White::PLA::1000::1.75::cardboard::False",
+      "filename": "l3d.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "Silk PLA {color_name}",
+      "color": "White",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "cardboard"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "DK",
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff",
+            "codes": [
+              "Silk-White-01"
+            ],
+            "eans": [
+              "5744006030924"
+            ]
+          }
+        ],
+        "finish": "glossy"
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasicblue_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "3224FF",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic Blue::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA Basic {color_name}",
+      "color": "Blue",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "3224FF"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasiccyan_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic Cyan",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "52AEFF",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic Cyan::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA Basic {color_name}",
+      "color": "Cyan",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Cyan",
+            "hex": "52AEFF"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasicdarkgray_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic Dark Gray",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "616161",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic Dark Gray::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA Basic {color_name}",
+      "color": "Dark Gray",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Dark Gray",
+            "hex": "616161"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasicgold_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic Gold",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "EEA11B",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic Gold::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA Basic {color_name}",
+      "color": "Gold",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Gold",
+            "hex": "EEA11B"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasicgreen_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "2C8901",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic Green::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA Basic {color_name}",
+      "color": "Green",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Green",
+            "hex": "2C8901"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasicmagenta_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic Magenta",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F73B86",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic Magenta::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PLA Basic {color_name}",
+      "color": "Magenta",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Magenta",
+            "hex": "F73B86"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasicred_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FF0000",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic Red::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PLA Basic {color_name}",
+      "color": "Red",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "FF0000"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasicwhite_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic White::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PLA Basic {color_name}",
+      "color": "White",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plabasicyellow_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Basic Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFDD00",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Basic {color_name}::PLA Basic Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PLA Basic {color_name}",
+      "color": "Yellow",
+      "line": "PLA Basic",
+      "cell": {
+        "name": "PLA Basic {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "FFDD00"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilkarmygreen_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Army green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "008A10",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Army green::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA Silk {color_name}",
+      "color": "Army green",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Army green",
+            "hex": "008A10"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilkcopper_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Copper",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "800000",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Copper::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA Silk {color_name}",
+      "color": "Copper",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Copper",
+            "hex": "800000"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilkgold_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Gold",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "C7BA00",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Gold::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA Silk {color_name}",
+      "color": "Gold",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Gold",
+            "hex": "C7BA00"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilklightblue_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Light Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "38B3FF",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Light Blue::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA Silk {color_name}",
+      "color": "Light Blue",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Light Blue",
+            "hex": "38B3FF"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilklightgreen_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Light Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "55EB1E",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Light Green::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA Silk {color_name}",
+      "color": "Light Green",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Light Green",
+            "hex": "55EB1E"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilklightlilla_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Light Lilla",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ED61FF",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Light Lilla::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PLA Silk {color_name}",
+      "color": "Light Lilla",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Light Lilla",
+            "hex": "ED61FF"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilkred_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FF0000",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Red::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PLA Silk {color_name}",
+      "color": "Red",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "FF0000"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilkrose_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Rose",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FF9494",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Rose::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PLA Silk {color_name}",
+      "color": "Rose",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Rose",
+            "hex": "FF9494"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilksilver_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk Silver",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "A3A3A3",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk Silver::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PLA Silk {color_name}",
+      "color": "Silver",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Silver",
+            "hex": "A3A3A3"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    },
+    {
+      "record": {
+        "id": "l3d_pla_plasilkwhite_1000_175_p",
+        "manufacturer": "L3D",
+        "name": "PLA Silk White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "DEDEDE",
+        "color_hexes": null,
+        "extruder_temp": 210,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "DK",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "l3d.json::L3D::PLA Silk {color_name}::PLA Silk White::PLA::1000::1.75::plastic::False",
+      "filename": "l3d.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "PLA Silk {color_name}",
+      "color": "White",
+      "line": "PLA Silk",
+      "cell": {
+        "name": "PLA Silk {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "DEDEDE"
+          }
+        ],
+        "country_of_origin": "DK",
+        "extruder_temp": 210,
+        "bed_temp": 60
+      }
+    }
+  ],
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 1,
+    "hard_stops": 0,
+    "before_count": 51702,
+    "after_count": 51702,
+    "brand_before": 62,
+    "brand_after": 62,
+    "registry_before": 1732,
+    "registry_after": 1732,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "LD",
+    "metadata": [],
+    "no_transfers": true,
+    "official_evidence": [
+      {
+        "url": "https://shop.lab3d.dk/collections/lab3d-filament-petg",
+        "note": "CurrentlyGrey1kg, not proof for3kgPETG-GREY-03/EAN5744006030696."
+      }
+    ],
+    "metadata_review": "One3kgGray/Grey tie HEX808080/A3A3A3 and unbound sameSKU; preserve source code/EAN exact placement. No transfer to current1kg products; both historicalrecords unchanged.",
+    "printing_default_flags": []
+  }
+}

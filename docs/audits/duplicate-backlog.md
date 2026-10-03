@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## l3d deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|LD001 / `dup-377dfee5243440f2c3d930ca9e3d9e5ead5a2d4fabfada1965a1d1eb79a9c284`|`l3d_petg_petggray_3000_175_c`<br>`l3d_petg_petggrey_3000_175_c`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-l3d-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## inland deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
