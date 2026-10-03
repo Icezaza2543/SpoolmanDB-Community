@@ -670,7 +670,7 @@
     {
       "name": "Aero {color_name}",
       "material": "PLA",
-      "density": 0.74,
+      "density": 1.21,
       "weights": [
         {
           "weight": 1000,
@@ -691,7 +691,28 @@
             "14102",
             "40908299108467"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Aero {color_name}",
+      "material": "PLA",
+      "density": 0.74,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 230,
+      "bed_temp": 40,
+      "colors": [
         {
           "name": "Black",
           "hex": "000000",
@@ -699,7 +720,28 @@
             "14103",
             "40908299141235"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Aero {color_name}",
+      "material": "PLA",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 230,
+      "bed_temp": 40,
+      "colors": [
         {
           "name": "Gray",
           "hex": "CECDCA",
@@ -1662,7 +1704,6 @@
       "diameters": [
         1.75
       ],
-      "extruder_temp": 240,
       "bed_temp": 55,
       "colors": [
         {
@@ -1671,7 +1712,11 @@
         }
       ],
       "country_of_origin": "CN",
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides",
+      "extruder_temp_range": [
+        220,
+        250
+      ]
     },
     {
       "name": "Support for {color_name}",
@@ -2136,66 +2181,442 @@
         {
           "name": "Beige",
           "hex": "DFD1A7"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Lavender",
           "hex": "7248BD"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Olive",
-          "hex": "789D4A"
-        },
+          "hex": "789D4A",
+          "codes": [
+            "40502",
+            "42078846615667",
+            "42720053952648"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Tangerine Yellow",
-          "hex": "FFC72C"
-        },
+          "hex": "FFC72C",
+          "codes": [
+            "40402",
+            "42078846713971",
+            "42720059097224"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Azure",
-          "hex": "489FDF"
-        },
+          "hex": "489FDF",
+          "codes": [
+            "40601",
+            "42078846124147",
+            "42720053362824"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Navy Blue",
-          "hex": "0C2340"
-        },
+          "hex": "0C2340",
+          "codes": [
+            "40602",
+            "42078845599859",
+            "42720052707464"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "White",
-          "hex": "FFFFFF"
-        },
+          "hex": "FFFFFF",
+          "codes": [
+            "40100",
+            "40204456099955",
+            "40883033702515",
+            "40475105493128",
+            "41216786694280"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Silver",
-          "hex": "87909A"
-        },
+          "hex": "87909A",
+          "codes": [
+            "40102",
+            "40830227710067",
+            "500089458897068033",
+            "41195746295944",
+            "42851556556936"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Red",
-          "hex": "D32941"
-        },
+          "hex": "D32941",
+          "codes": [
+            "40200",
+            "40204456132723",
+            "40475105525896"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Orange",
-          "hex": "FF6A13"
-        },
+          "hex": "FF6A13",
+          "codes": [
+            "40300",
+            "41898393993331",
+            "42512931750024"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Yellow",
           "hex": "FCE900"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Mint",
           "hex": "7AE1BF"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Bambu Green",
-          "hex": "00AE42"
-        },
+          "hex": "00AE42",
+          "codes": [
+            "40500",
+            "41898393436275",
+            "42512928833672"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Blue",
-          "hex": "0A2CA5"
-        },
+          "hex": "0A2CA5",
+          "codes": [
+            "40600",
+            "40204456198259",
+            "40475105591432"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Purple",
           "hex": "AF1685"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "40101",
+            "40204456067187",
+            "40883035046003",
+            "40475105460360",
+            "41216786432136"
+          ]
         }
       ],
       "country_of_origin": "CN",
@@ -2274,27 +2695,162 @@
       "colors": [
         {
           "name": "White",
-          "hex": "FFFAF2"
-        },
+          "hex": "FFFAF2",
+          "codes": [
+            "45100",
+            "40896410681459",
+            "41227780849800"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Gray",
-          "hex": "8A949E"
-        },
+          "hex": "8A949E",
+          "codes": [
+            "45102",
+            "40896410714227",
+            "41227780882568"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Red",
-          "hex": "E02928"
-        },
+          "hex": "E02928",
+          "codes": [
+            "45200",
+            "40896410550387",
+            "41227780718728"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Green",
-          "hex": "00A6A0"
-        },
+          "hex": "00A6A0",
+          "codes": [
+            "45500",
+            "40896410583155",
+            "41227780751496"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Blue",
-          "hex": "2140B4"
-        },
+          "hex": "2140B4",
+          "codes": [
+            "45600",
+            "40896410615923",
+            "41227780784264"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 90,
+      "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "45101",
+            "40896410648691",
+            "41227780817032"
+          ]
         }
       ],
       "country_of_origin": "CN",
@@ -2339,33 +2895,128 @@
       "diameters": [
         1.75
       ],
-      "extruder_temp": 250,
       "bed_temp": 100,
       "colors": [
         {
           "name": "Transparent",
-          "hex": "FFFFFF"
-        },
-        {
-          "name": "Clear Black",
-          "hex": "000000"
-        },
-        {
-          "name": "Black",
-          "hex": "000000"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
+          "hex": "FFFFFF",
+          "codes": [
+            "60103",
+            "40821570895987",
+            "41135409496200"
+          ]
         }
       ],
       "country_of_origin": "CN",
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides",
+      "extruder_temp_range": [
+        260,
+        280
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "bed_temp": 100,
+      "colors": [
+        {
+          "name": "Clear Black",
+          "hex": "000000",
+          "codes": [
+            "60102",
+            "40821570863219",
+            "40741214617736"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides",
+      "extruder_temp_range": [
+        260,
+        280
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "bed_temp": 100,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "60101",
+            "40404317241459",
+            "41135409528968"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides",
+      "extruder_temp_range": [
+        260,
+        280
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "bed_temp": 100,
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "codes": [
+            "60100",
+            "40404317208691",
+            "40741214650504"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides",
+      "extruder_temp_range": [
+        260,
+        280
+      ]
     },
     {
       "name": "FR {color_name}",
       "material": "PC",
-      "density": 1.19,
+      "density": 1.18,
       "weights": [
         {
           "weight": 1000,
@@ -2381,15 +3032,69 @@
       "colors": [
         {
           "name": "White",
-          "hex": "FFFFFF"
-        },
+          "hex": "FFFFFF",
+          "codes": [
+            "63101",
+            "546457940221771790"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "FR {color_name}",
+      "material": "PC",
+      "density": 1.18,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 270,
+      "bed_temp": 110,
+      "colors": [
         {
           "name": "Grey",
-          "hex": "A8A8AA"
-        },
+          "hex": "A8A8AA",
+          "codes": [
+            "63102",
+            "546457940221771796"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "FR {color_name}",
+      "material": "PC",
+      "density": 1.18,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 270,
+      "bed_temp": 110,
+      "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "codes": [
+            "63100",
+            "546457940221771784"
+          ]
         }
       ],
       "country_of_origin": "CN",
@@ -2943,146 +3648,6 @@
       "fill": "carbon fiber"
     },
     {
-      "name": "ABS {color_name}",
-      "material": "ABS",
-      "density": 1.05,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Azure",
-          "hex": "489FDF",
-          "codes": [
-            "40601",
-            "42078846124147",
-            "42720053362824"
-          ]
-        },
-        {
-          "name": "Bambu Green",
-          "hex": "00AE42",
-          "codes": [
-            "40500",
-            "41898393436275",
-            "42512928833672"
-          ]
-        },
-        {
-          "name": "Beige",
-          "hex": "DACF9D"
-        },
-        {
-          "name": "Black",
-          "hex": "000000",
-          "codes": [
-            "40101",
-            "40204456067187",
-            "40883035046003",
-            "40475105460360",
-            "41216786432136"
-          ]
-        },
-        {
-          "name": "Blue",
-          "hex": "0A2CA5",
-          "codes": [
-            "40600",
-            "40204456198259",
-            "40475105591432"
-          ]
-        },
-        {
-          "name": "Lavender",
-          "hex": "543C7A"
-        },
-        {
-          "name": "Navy Blue",
-          "hex": "0C2340",
-          "codes": [
-            "40602",
-            "42078845599859",
-            "42720052707464"
-          ]
-        },
-        {
-          "name": "Olive",
-          "hex": "789D4A",
-          "codes": [
-            "40502",
-            "42078846615667",
-            "42720053952648"
-          ]
-        },
-        {
-          "name": "Orange",
-          "hex": "FF6A13",
-          "codes": [
-            "40300",
-            "41898393993331",
-            "42512931750024"
-          ]
-        },
-        {
-          "name": "Red",
-          "hex": "D32941",
-          "codes": [
-            "40200",
-            "40204456132723",
-            "40475105525896"
-          ]
-        },
-        {
-          "name": "Silver",
-          "hex": "87909A",
-          "codes": [
-            "40102",
-            "40830227710067",
-            "500089458897068033",
-            "41195746295944",
-            "42851556556936"
-          ]
-        },
-        {
-          "name": "Tangerine Yellow",
-          "hex": "FFC72C",
-          "codes": [
-            "40402",
-            "42078846713971",
-            "42720059097224"
-          ]
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF",
-          "codes": [
-            "40100",
-            "40204456099955",
-            "40883033702515",
-            "40475105493128",
-            "41216786694280"
-          ]
-        }
-      ],
-      "extruder_temp_range": [
-        230,
-        260
-      ],
-      "bed_temp_range": [
-        90,
-        110
-      ],
-      "country_of_origin": "CN",
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
-    },
-    {
       "name": "ABS-GF {color_name}",
       "material": "ABS",
       "density": 1.08,
@@ -3199,87 +3764,6 @@
       "country_of_origin": "CN",
       "extruder_temp": 255,
       "bed_temp": 90,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/asa-tds"
-    },
-    {
-      "name": "ASA {color_name}",
-      "material": "ASA",
-      "density": 1.05,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "000000",
-          "codes": [
-            "45101",
-            "40896410648691",
-            "41227780817032"
-          ]
-        },
-        {
-          "name": "Blue",
-          "hex": "2140B4",
-          "codes": [
-            "45600",
-            "40896410615923",
-            "41227780784264"
-          ]
-        },
-        {
-          "name": "Gray",
-          "hex": "8A949E",
-          "codes": [
-            "45102",
-            "40896410714227",
-            "41227780882568"
-          ]
-        },
-        {
-          "name": "Green",
-          "hex": "00A6A0",
-          "codes": [
-            "45500",
-            "40896410583155",
-            "41227780751496"
-          ]
-        },
-        {
-          "name": "Red",
-          "hex": "E02928",
-          "codes": [
-            "45200",
-            "40896410550387",
-            "41227780718728"
-          ]
-        },
-        {
-          "name": "White",
-          "hex": "FFFAF2",
-          "codes": [
-            "45100",
-            "40896410681459",
-            "41227780849800"
-          ]
-        }
-      ],
-      "extruder_temp_range": [
-        235,
-        260
-      ],
-      "bed_temp_range": [
-        90,
-        110
-      ],
-      "country_of_origin": "CN",
       "tds_url": "https://wiki.bambulab.com/en/filament-guides/asa-tds"
     },
     {
@@ -3546,116 +4030,6 @@
       "fill": "carbon fiber"
     },
     {
-      "name": "PC {color_name}",
-      "material": "PC",
-      "density": 1.2,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "000000",
-          "translucent": true,
-          "codes": [
-            "60101",
-            "40404317241459",
-            "41135409528968"
-          ]
-        },
-        {
-          "name": "Clear Black",
-          "hex": "5A5061",
-          "translucent": true,
-          "codes": [
-            "60102",
-            "40821570863219",
-            "40741214617736"
-          ]
-        },
-        {
-          "name": "Transparent",
-          "hex": "FFFFFF",
-          "codes": [
-            "60103",
-            "40821570895987",
-            "41135409496200"
-          ]
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF",
-          "codes": [
-            "60100",
-            "40404317208691",
-            "40741214650504"
-          ]
-        }
-      ],
-      "extruder_temp_range": [
-        260,
-        300
-      ],
-      "bed_temp_range": [
-        100,
-        120
-      ],
-      "country_of_origin": "CN",
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pc-tds"
-    },
-    {
-      "name": "PC FR {color_name}",
-      "material": "PC",
-      "density": 1.18,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "000000",
-          "codes": [
-            "63100",
-            "546457940221771784"
-          ]
-        },
-        {
-          "name": "Gray",
-          "hex": "A8A8AA",
-          "codes": [
-            "63102",
-            "546457940221771796"
-          ]
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF",
-          "codes": [
-            "63101",
-            "546457940221771790"
-          ]
-        }
-      ],
-      "country_of_origin": "CN",
-      "extruder_temp": 270,
-      "bed_temp": 100,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pc-fr-tds"
-    },
-    {
       "name": "PET-CF {color_name}",
       "material": "PET",
       "density": 1.29,
@@ -3698,98 +4072,6 @@
       "country_of_origin": "CN",
       "tds_url": "https://wiki.bambulab.com/en/filament-guides/pet-cf-tds",
       "fill": "carbon fiber"
-    },
-    {
-      "name": "PETG HF {color_name}",
-      "material": "PETG",
-      "density": 1.28,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "000000",
-          "codes": [
-            "33102"
-          ]
-        },
-        {
-          "name": "Blue",
-          "hex": "002E96",
-          "codes": [
-            "33600"
-          ]
-        },
-        {
-          "name": "Cream",
-          "hex": "F9DFB9",
-          "codes": [
-            "33401"
-          ]
-        },
-        {
-          "name": "Dark Gray",
-          "hex": "515151"
-        },
-        {
-          "name": "Forest Green",
-          "hex": "39541A",
-          "codes": [
-            "33502"
-          ]
-        },
-        {
-          "name": "Gray",
-          "hex": "ADB1B2"
-        },
-        {
-          "name": "Green",
-          "hex": "00AE42"
-        },
-        {
-          "name": "Lake Blue",
-          "hex": "1F79E5"
-        },
-        {
-          "name": "Lime Green",
-          "hex": "6EE53C"
-        },
-        {
-          "name": "Orange",
-          "hex": "F75403"
-        },
-        {
-          "name": "Peanut Brown",
-          "hex": "875718",
-          "codes": [
-            "33801"
-          ]
-        },
-        {
-          "name": "Red",
-          "hex": "EB3A3A"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
-        },
-        {
-          "name": "Yellow",
-          "hex": "FFD00B"
-        }
-      ],
-      "country_of_origin": "CN",
-      "extruder_temp": 245,
-      "bed_temp": 70,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/petg-hf-tds"
     },
     {
       "name": "PETG Basic {color_name}",
@@ -4026,9 +4308,324 @@
       "tds_url": "https://store.bblcdn.com/s1/default/338c9cd853fd44d9b6ed354a49048e72/Bambu_PETG_Translucent_Technical_Data_Sheet.pdf"
     },
     {
-      "name": "PLA Aero {color_name}",
+      "name": "PLA Basic {color_name}",
       "material": "PLA",
-      "density": 1.21,
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Bambu Green",
+          "hex": "00AE42",
+          "codes": [
+            "10501"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Beige",
+          "hex": "F7E6DE"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "10101"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "0A2989",
+          "codes": [
+            "10601"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Bright Green",
+          "hex": "BECF00"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Bronze",
+          "hex": "847D48"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Brown",
+          "hex": "9D432C"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Cobalt Blue",
+          "hex": "0056B8"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Cocoa Brown",
+          "hex": "6F5034",
+          "codes": [
+            "10802"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Cyan",
+          "hex": "0086D6",
+          "codes": [
+            "10603"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Dark Gray",
+          "hex": "545454"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "E4BD68"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
       "weights": [
         {
           "weight": 1000,
@@ -4042,17 +4639,13 @@
       "colors": [
         {
           "name": "Gray",
-          "hex": "CDCDCB"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
+          "hex": "8E9089"
         }
       ],
       "country_of_origin": "CN",
-      "extruder_temp": 240,
+      "extruder_temp": 210,
       "bed_temp": 40,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-aero-tds"
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
     },
     {
       "name": "PLA Basic {color_name}",
@@ -4063,7 +4656,470 @@
           "weight": 1000,
           "spool_type": "plastic",
           "spool_weight": 250
-        },
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "003B44"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Hot Pink",
+          "hex": "F5547C",
+          "codes": [
+            "10204"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Indigo Purple",
+          "hex": "482960",
+          "codes": [
+            "10701"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Jade White",
+          "hex": "FFFFFF",
+          "codes": [
+            "10100"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Light Gray",
+          "hex": "D1D3D5"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Magenta",
+          "hex": "EC008C"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Maroon Red",
+          "hex": "9D2235"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Mistletoe Green",
+          "hex": "3F8E43"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Orange",
+          "hex": "FF6A13"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "F55A74"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Pumpkin Orange",
+          "hex": "FF9016",
+          "codes": [
+            "10301"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "5E43B7"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "C12E1F"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "A6A9AA"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Sunflower Yellow",
+          "hex": "FEC600",
+          "codes": [
+            "10402"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Turquoise",
+          "hex": "00B1B7",
+          "codes": [
+            "10605"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Yellow",
+          "hex": "F4EE2A"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue Grey",
+          "hex": "5b6579"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
           "weight": 1000,
           "spool_type": "refill",
@@ -4080,157 +5136,783 @@
           "codes": [
             "10501"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Beige",
           "hex": "F7E6DE"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Black",
           "hex": "000000",
           "codes": [
             "10101"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Blue",
           "hex": "0A2989",
           "codes": [
             "10601"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Blue Gray",
-          "hex": "5B6579"
-        },
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Bright Green",
           "hex": "BECF00"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Bronze",
           "hex": "847D48"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Brown",
           "hex": "9D432C"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Cobalt Blue",
           "hex": "0056B8"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Cocoa Brown",
           "hex": "6F5034",
           "codes": [
             "10802"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Cyan",
           "hex": "0086D6",
           "codes": [
             "10603"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Dark Gray",
           "hex": "545454"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gold",
           "hex": "E4BD68"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gray",
           "hex": "8E9089"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Green",
           "hex": "003B44"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Hot Pink",
           "hex": "F5547C",
           "codes": [
             "10204"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Indigo Purple",
           "hex": "482960",
           "codes": [
             "10701"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Jade White",
           "hex": "FFFFFF",
           "codes": [
             "10100"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Light Gray",
           "hex": "D1D3D5"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Magenta",
           "hex": "EC008C"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Maroon Red",
           "hex": "9D2235"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Mistletoe Green",
           "hex": "3F8E43"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Orange",
           "hex": "FF6A13"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Pink",
           "hex": "F55A74"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Pumpkin Orange",
           "hex": "FF9016",
           "codes": [
             "10301"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Purple",
           "hex": "5E43B7"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red",
           "hex": "C12E1F"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Silver",
           "hex": "A6A9AA"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Sunflower Yellow",
           "hex": "FEC600",
           "codes": [
             "10402"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Turquoise",
           "hex": "00B1B7",
           "codes": [
             "10605"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Yellow",
           "hex": "F4EE2A"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 210,
+      "bed_temp": 40,
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-basic-tds"
+    },
+    {
+      "name": "PLA Basic {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "refill",
+          "spool_weight": 0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Blue Grey",
           "hex": "5b6579"
@@ -4332,58 +6014,6 @@
       "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-galaxy-tds"
     },
     {
-      "name": "PLA Glow {color_name}",
-      "material": "PLA",
-      "density": 1.26,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Blue",
-          "hex": "7AC0E9",
-          "glow": true
-        },
-        {
-          "name": "Green",
-          "hex": "A1FFAC",
-          "glow": true
-        },
-        {
-          "name": "Orange",
-          "hex": "FF9D5B",
-          "glow": true
-        },
-        {
-          "name": "Pink",
-          "hex": "F17B8F",
-          "glow": true
-        },
-        {
-          "name": "Yellow",
-          "hex": "F8FF80",
-          "glow": true
-        }
-      ],
-      "extruder_temp_range": [
-        190,
-        230
-      ],
-      "bed_temp_range": [
-        50,
-        70
-      ],
-      "country_of_origin": "CN",
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
-    },
-    {
       "name": "PLA Marble {color_name}",
       "material": "PLA",
       "density": 1.22,
@@ -4411,149 +6041,6 @@
       "extruder_temp": 210,
       "bed_temp": 40,
       "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-marble-tds"
-    },
-    {
-      "name": "PLA Matte {color_name}",
-      "material": "PLA",
-      "density": 1.31,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Apple Green",
-          "hex": "C2E189"
-        },
-        {
-          "name": "Ash Gray",
-          "hex": "9B9EA0",
-          "codes": [
-            "11102"
-          ]
-        },
-        {
-          "name": "Bone White",
-          "hex": "CBC6B8"
-        },
-        {
-          "name": "Caramel",
-          "hex": "AE835B"
-        },
-        {
-          "name": "Charcoal",
-          "hex": "000000",
-          "codes": [
-            "11101"
-          ]
-        },
-        {
-          "name": "Dark Blue",
-          "hex": "042F56"
-        },
-        {
-          "name": "Dark Brown",
-          "hex": "7D6556"
-        },
-        {
-          "name": "Dark Chocolate",
-          "hex": "3F3730"
-        },
-        {
-          "name": "Dark Green",
-          "hex": "68724D"
-        },
-        {
-          "name": "Dark Red",
-          "hex": "BB3D43"
-        },
-        {
-          "name": "Desert Tan",
-          "hex": "E8DBB7"
-        },
-        {
-          "name": "Grass Green",
-          "hex": "61C680"
-        },
-        {
-          "name": "Ice Blue",
-          "hex": "A3D8E1"
-        },
-        {
-          "name": "Ivory White",
-          "hex": "FFFFFF",
-          "codes": [
-            "11100"
-          ]
-        },
-        {
-          "name": "Latte Brown",
-          "hex": "D3B7A7"
-        },
-        {
-          "name": "Lemon Yellow",
-          "hex": "F7D959"
-        },
-        {
-          "name": "Lilac purple",
-          "hex": "AE96D4"
-        },
-        {
-          "name": "Mandarin Orange",
-          "hex": "F99963"
-        },
-        {
-          "name": "Marine Blue",
-          "hex": "0078BF",
-          "codes": [
-            "11600"
-          ]
-        },
-        {
-          "name": "Nardo Grey",
-          "hex": "737375"
-        },
-        {
-          "name": "Plum",
-          "hex": "9B3A5F"
-        },
-        {
-          "name": "Sakura Pink",
-          "hex": "E8AFCF"
-        },
-        {
-          "name": "Scarlet Red",
-          "hex": "DE4343",
-          "codes": [
-            "11200"
-          ]
-        },
-        {
-          "name": "Sky Blue",
-          "hex": "56B7E6"
-        },
-        {
-          "name": "Terracotta",
-          "hex": "A15636"
-        }
-      ],
-      "extruder_temp_range": [
-        190,
-        230
-      ],
-      "bed_temp_range": [
-        50,
-        70
-      ],
-      "country_of_origin": "CN",
-      "finish": "matte",
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-matte-tds"
     },
     {
       "name": "PLA Metal {color_name}",
@@ -4682,104 +6169,6 @@
       "country_of_origin": "CN",
       "tds_url": "https://wiki.bambulab.com/en/filament-guides",
       "fill": "carbon fiber"
-    },
-    {
-      "name": "PLA Lite {color_name}",
-      "material": "PLA",
-      "density": 1.4,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Red",
-          "hex": "FF0000"
-        }
-      ],
-      "country_of_origin": "CN",
-      "extruder_temp": 215,
-      "bed_temp": 50,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
-    },
-    {
-      "name": "PLA Silk+ {color_name}",
-      "material": "PLA",
-      "density": 1.27,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Baby Blue",
-          "hex": "A8C6EE"
-        },
-        {
-          "name": "Blue",
-          "hex": "008BDA"
-        },
-        {
-          "name": "Candy Green",
-          "hex": "018814"
-        },
-        {
-          "name": "Candy Red",
-          "hex": "D02727"
-        },
-        {
-          "name": "Champagne",
-          "hex": "F3CFB2"
-        },
-        {
-          "name": "Gold",
-          "hex": "F4A925"
-        },
-        {
-          "name": "Mint",
-          "hex": "96DCB9"
-        },
-        {
-          "name": "Pink",
-          "hex": "F7ADA6"
-        },
-        {
-          "name": "Purple",
-          "hex": "8671CB"
-        },
-        {
-          "name": "Rose Gold",
-          "hex": "BA9594"
-        },
-        {
-          "name": "Silver",
-          "hex": "C8C8C8"
-        },
-        {
-          "name": "Titan Gray",
-          "hex": "5F6367"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
-        }
-      ],
-      "country_of_origin": "CN",
-      "extruder_temp": 210,
-      "bed_temp": 40,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-silk-tds"
     },
     {
       "name": "PLA Silk Dual Color {color_name}",
@@ -4959,82 +6348,254 @@
         {
           "name": "Baby Blue",
           "hex": "9BCBEB"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Blue",
-          "hex": "005DA4"
-        },
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Candy Green",
           "hex": "217165"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Candy Red",
           "hex": "DF3303"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Champagne",
           "hex": "E3B899"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Dual Color Blue Hawaii (Blue-Green)",
-          "hex": "39B9DB"
-        },
-        {
-          "name": "Dual Color Gilded Rose (Pink-Gold)",
-          "hex": "E3B145"
-        },
-        {
-          "name": "Dual Color Midnight Blaze (Blue-Red)",
-          "hex": "0E21AE"
-        },
-        {
-          "name": "Dual Color Neon City (Blue-Magenta)",
-          "hex": "0E21AE"
-        },
-        {
-          "name": "Dual Color Velvet Eclipse (Black-Red)",
-          "hex": "8B3A3A"
-        },
-        {
-          "name": "Gold",
-          "hex": "F6C500"
-        },
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Metal Cobalt Blue Metallic",
           "hex": "436176"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Metal Oxide Green Metallic",
           "hex": "1D7C6A"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Mint",
           "hex": "98FBCB"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Pink",
-          "hex": "F8B9A6"
-        },
-        {
-          "name": "Purple",
-          "hex": "8D65C7"
-        },
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Rose Gold",
           "hex": "BF7473"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN",
+      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Silver",
-          "hex": "ABACB0"
-        },
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Titan Gray",
           "hex": "63646B"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
         }
       ],
       "extruder_temp_range": [
@@ -5139,106 +6700,14 @@
       ],
       "colors": [
         {
-          "name": "Black",
-          "hex": "000000"
-        },
-        {
-          "name": "Cyan",
-          "hex": "009BD8"
-        },
-        {
           "name": "Gold",
           "hex": "DDA52F"
-        },
-        {
-          "name": "Gray",
-          "hex": "AFB1AE"
-        },
-        {
-          "name": "Orange",
-          "hex": "DC3A27"
-        },
-        {
-          "name": "Silver",
-          "hex": "959698"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
-        },
-        {
-          "name": "Yellow",
-          "hex": "F4D53F",
-          "codes": [
-            "12401"
-          ]
         }
       ],
       "country_of_origin": "CN",
       "extruder_temp": 215,
       "bed_temp": 40,
       "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-tough-tds"
-    },
-    {
-      "name": "PLA Translucent {color_name}",
-      "material": "PLA",
-      "density": 1.22,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Blue",
-          "hex": "0047BB"
-        },
-        {
-          "name": "Cherry Pink",
-          "hex": "F5B6CD"
-        },
-        {
-          "name": "Ice Blue",
-          "hex": "B8CDE9"
-        },
-        {
-          "name": "Lavender",
-          "hex": "B8ACD6"
-        },
-        {
-          "name": "Light Jade",
-          "hex": "96D8AF"
-        },
-        {
-          "name": "Mellow Yellow",
-          "hex": "F5DBAB"
-        },
-        {
-          "name": "Orange",
-          "hex": "F74E02"
-        },
-        {
-          "name": "Purple",
-          "hex": "8344B0"
-        },
-        {
-          "name": "Red",
-          "hex": "B50011"
-        },
-        {
-          "name": "Teal",
-          "hex": "009FA1"
-        }
-      ],
-      "country_of_origin": "CN",
-      "extruder_temp": 210,
-      "bed_temp": 40,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides/pla-translucent-tds"
     },
     {
       "name": "PLA Wood {color_name}",
@@ -5445,37 +6914,6 @@
       "tds_url": "https://wiki.bambulab.com/en/filament-guides/support-for-pla-tds"
     },
     {
-      "name": "PVA {color_name}",
-      "material": "PVA",
-      "density": 1.27,
-      "weights": [
-        {
-          "weight": 500,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Clear",
-          "hex": "F0F1A8"
-        }
-      ],
-      "extruder_temp_range": [
-        180,
-        210
-      ],
-      "bed_temp_range": [
-        50,
-        60
-      ],
-      "country_of_origin": "CN",
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
-    },
-    {
       "name": "TPU 95A HF {color_name}",
       "material": "TPU",
       "density": 1.22,
@@ -5513,55 +6951,6 @@
         {
           "name": "Yellow",
           "hex": "F3E600"
-        }
-      ],
-      "country_of_origin": "CN",
-      "extruder_temp": 225,
-      "bed_temp": 30,
-      "tds_url": "https://wiki.bambulab.com/en/filament-guides"
-    },
-    {
-      "name": "TPU for AMS {color_name}",
-      "material": "TPU",
-      "density": 1.26,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "plastic",
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "000000"
-        },
-        {
-          "name": "Blue",
-          "hex": "5898DD"
-        },
-        {
-          "name": "Gray",
-          "hex": "939393"
-        },
-        {
-          "name": "Neon Green",
-          "hex": "90FF1A"
-        },
-        {
-          "name": "Red",
-          "hex": "ED0000"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
-        },
-        {
-          "name": "Yellow",
-          "hex": "F9EF41"
         }
       ],
       "country_of_origin": "CN",
