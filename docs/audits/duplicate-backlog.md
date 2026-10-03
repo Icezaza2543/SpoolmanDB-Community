@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## conjure deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|CJ001 / `dup-8b57502205f1098c2b42cfc16287a836f54b49b8278d3dfe3d9f75be12a0ee48`|`conjure_pla_plasilkdualblackred_1000_175_p`<br>`conjure_pla_silkdualblackred_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-conjure-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## chckx deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
