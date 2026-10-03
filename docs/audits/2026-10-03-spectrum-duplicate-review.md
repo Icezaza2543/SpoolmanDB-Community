@@ -1,0 +1,2151 @@
+# spectrum duplicate migration review
+
+Base `69d195fa390bbb083052edb3356b1554ec04c54b`; read-only upstream `8f1a99f9cda7a58ca3118d6bd28c707647caa3db`; digest `2e76833ef84198903eaf04089838ce09591e6010ccfaf18671296e1ce4cf7500`.
+
+## Authorization and result
+
+{"groups": 1, "approved_groups": 0, "retired": 0, "deferred": 1, "hard_stops": 0, "before_count": 51701, "after_count": 51701, "brand_before": 2063, "brand_after": 2063, "registry_before": 1733, "registry_after": 1733, "metadata_fields_changed": 0, "code_transfers": 0, "new": 0, "changed_identity": 0, "rekeyed": 0}
+
+OnePTFEline versus/PTFESignalWhitecolor strict decomposition mismatch deferred byRule5. Well-formedPTFE survivorvalues matchcurrentTDS, genericPETG-like other side not used. No new identifiers or metadata changes.
+
+This is an audit-only result: no records are retired and no catalog migration is applied. Packaging, tare and all identities remain unchanged. Future reviewed retirements would not redirect external catalog lookups automatically.
+
+## Current first-party evidence
+
+- {"url": "https://shop.spectrumfilaments.com/product-eng-1529-Filament-Spectrum-PETG-PTFE-1-75mm-SIGNAL-WHITE-1kg-RAL-9003.html", "density": 1.32, "nozzle": [230, 255], "bed": [60, 80], "sku": "80743", "ean": "5903175655370"}
+- {"url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf", "note": "MatchingPETG/PTFE survivorTDS, not plainPETG."}
+
+## Complete approved retired ID list
+
+| Retired ID | Survivor | Original baseline key |
+|---|---|---|
+
+## Per-group decisions and unresolved metadata
+
+### SC001: dup-e78a0754c1c46f31ecdbcad5f9c6264ae480595155b21f9a8bfb1a5d9b3b8f3f
+
+Status: DEFERRED; survivor `spectrum_petg_ptfesignalwhite_1000_175_c`; Rule 5 physical line/color decomposition mismatch.
+
+| ID | Source template | Source color | Axes / upstream |
+|---|---|---|---|
+|`spectrum_petg_petg/ptfesignalwhite_1000_175_c`|`PETG {color_name}`|`/PTFE Signal White`|{"source_file": "spectrum.json", "definition_index": 45, "weights": 1, "diameters": 1, "colors": 2, "compiled_records": 2} / False|
+|`spectrum_petg_ptfesignalwhite_1000_175_c`|`PTFE {color_name}`|`Signal White`|{"source_file": "spectrum.json", "definition_index": 55, "weights": 1, "diameters": 1, "colors": 5, "compiled_records": 5} / False|
+
+
+
+Conflicts (both original values retained; unresolved unless explicitly corrected below):
+```json
+{
+  "density": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": 1.27,
+    "spectrum_petg_ptfesignalwhite_1000_175_c": 1.32
+  },
+  "color_hex": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": "EFEFEF",
+    "spectrum_petg_ptfesignalwhite_1000_175_c": "D9DBD8"
+  },
+  "extruder_temp": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+    "spectrum_petg_ptfesignalwhite_1000_175_c": 240
+  },
+  "extruder_temp_range": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+      220,
+      250
+    ],
+    "spectrum_petg_ptfesignalwhite_1000_175_c": null
+  },
+  "bed_temp": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+    "spectrum_petg_ptfesignalwhite_1000_175_c": 75
+  },
+  "bed_temp_range": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+      70,
+      90
+    ],
+    "spectrum_petg_ptfesignalwhite_1000_175_c": null
+  },
+  "sds_url": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+    "spectrum_petg_ptfesignalwhite_1000_175_c": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf"
+  },
+  "tds_url": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+    "spectrum_petg_ptfesignalwhite_1000_175_c": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf"
+  }
+}
+```
+
+## Exact metadata and identifier decisions
+
+```json
+{
+  "metadata": [],
+  "transfers": []
+}
+```
+
+## Preserved out-of-scope IDs
+
+- `spectrum_pctg_trafficblack_1000_175_p` — Traffic Black
+- `spectrum_pctg_arcticwhite_1000_175_p` — Arctic White
+- `spectrum_pctg_sulfuryellow_1000_175_p` — Sulfur Yellow
+- `spectrum_pctg_transparentgreen_1000_175_p` — Transparent Green
+- `spectrum_pla_plapremiumtranslucent_250_175_p` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_250_175_p` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_250_175_p` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_250_175_p` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_250_175_p` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_250_175_p` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_250_175_p` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_250_175_p` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_250_175_p` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_250_175_p` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_250_175_p` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_250_175_p` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_250_175_p` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_250_175_p` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_250_175_p` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_250_175_p` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_250_175_p` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_250_175_p` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_250_175_p` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_250_175_p` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_250_175_p` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_250_175_p` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_250_175_p` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_250_175_p` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_250_175_p` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_250_175_p` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_250_175_p` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_250_175_p` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_250_175_p` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_250_175_p` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_250_175_p` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_250_175_p` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_250_175_p` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_250_175_p` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_250_175_p` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_250_175_p` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_250_175_p` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_250_175_p` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_250_175_p` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_250_175_p` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_250_175_p` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_250_175_p` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_250_175_p` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_250_175_p` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_250_175_p` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_250_175_p` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_250_175_p` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_250_175_p` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_250_175_p` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_250_175_p` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_250_175_p` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_250_175_p` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_250_175_p` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_250_175_p` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_250_175_c` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_250_175_c` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_250_175_c` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_250_175_c` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_250_175_c` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_250_175_c` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_250_175_c` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_250_175_c` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_250_175_c` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_250_175_c` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_250_175_c` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_250_175_c` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_250_175_c` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_250_175_c` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_250_175_c` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_250_175_c` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_250_175_c` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_250_175_c` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_250_175_c` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_250_175_c` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_250_175_c` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_250_175_c` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_250_175_c` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_250_175_c` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_250_175_c` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_250_175_c` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_250_175_c` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_250_175_c` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_250_175_c` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_250_175_c` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_250_175_c` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_250_175_c` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_250_175_c` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_250_175_c` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_250_175_c` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_250_175_c` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_250_175_c` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_250_175_c` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_250_175_c` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_250_175_c` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_250_175_c` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_250_175_c` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_250_175_c` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_250_175_c` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_250_175_c` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_250_175_c` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_250_175_c` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_250_175_c` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_250_175_c` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_250_175_c` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_250_175_c` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_250_175_c` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_250_175_c` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_250_175_c` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_500_175_p` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_500_175_p` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_500_175_p` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_500_175_p` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_500_175_p` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_500_175_p` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_500_175_p` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_500_175_p` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_500_175_p` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_500_175_p` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_500_175_p` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_500_175_p` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_500_175_p` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_500_175_p` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_500_175_p` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_500_175_p` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_500_175_p` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_500_175_p` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_500_175_p` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_500_175_p` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_500_175_p` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_500_175_p` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_500_175_p` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_500_175_p` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_500_175_p` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_500_175_p` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_500_175_p` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_500_175_p` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_500_175_p` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_500_175_p` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_500_175_p` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_500_175_p` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_500_175_p` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_500_175_p` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_500_175_p` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_500_175_p` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_500_175_p` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_500_175_p` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_500_175_p` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_500_175_p` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_500_175_p` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_500_175_p` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_500_175_p` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_500_175_p` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_500_175_p` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_500_175_p` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_500_175_p` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_500_175_p` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_500_175_p` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_500_175_p` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_500_175_p` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_500_175_p` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_500_175_p` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_500_175_p` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_750_175_p` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_750_175_p` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_750_175_p` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_750_175_p` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_750_175_p` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_750_175_p` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_750_175_p` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_750_175_p` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_750_175_p` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_750_175_p` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_750_175_p` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_750_175_p` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_750_175_p` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_750_175_p` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_750_175_p` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_750_175_p` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_750_175_p` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_750_175_p` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_750_175_p` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_750_175_p` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_750_175_p` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_750_175_p` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_750_175_p` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_750_175_p` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_750_175_p` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_750_175_p` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_750_175_p` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_750_175_p` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_750_175_p` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_750_175_p` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_750_175_p` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_750_175_p` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_750_175_p` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_750_175_p` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_750_175_p` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_750_175_p` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_750_175_p` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_750_175_p` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_750_175_p` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_750_175_p` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_750_175_p` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_750_175_p` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_750_175_p` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_750_175_p` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_750_175_p` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_750_175_p` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_750_175_p` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_750_175_p` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_750_175_p` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_750_175_p` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_750_175_p` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_750_175_p` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_750_175_p` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_750_175_p` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_1000_175_p` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_1000_175_p` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_1000_175_p` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_1000_175_p` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_1000_175_p` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_1000_175_p` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_1000_175_p` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_1000_175_p` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_1000_175_p` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_1000_175_p` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_1000_175_p` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_1000_175_p` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_1000_175_p` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_1000_175_p` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_1000_175_p` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_1000_175_p` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_1000_175_p` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_1000_175_p` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_1000_175_p` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_1000_175_p` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_1000_175_p` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_1000_175_p` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_1000_175_p` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_1000_175_p` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_1000_175_p` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_1000_175_p` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_1000_175_p` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_1000_175_p` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_1000_175_p` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_1000_175_p` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_1000_175_p` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_1000_175_p` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_1000_175_p` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_1000_175_p` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_1000_175_p` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_1000_175_p` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_1000_175_p` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_1000_175_p` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_1000_175_p` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_1000_175_p` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_1000_175_p` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_1000_175_p` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_1000_175_p` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_1000_175_p` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_1000_175_p` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_1000_175_p` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_1000_175_p` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_1000_175_p` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_1000_175_p` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_1000_175_p` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_1000_175_p` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_1000_175_p` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_1000_175_p` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_1000_175_p` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_1000_175_c` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_1000_175_c` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_1000_175_c` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_1000_175_c` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_1000_175_c` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_1000_175_c` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_1000_175_c` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_1000_175_c` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_1000_175_c` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_1000_175_c` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_1000_175_c` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_1000_175_c` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_1000_175_c` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_1000_175_c` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_1000_175_c` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_1000_175_c` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_1000_175_c` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_1000_175_c` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_1000_175_c` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_1000_175_c` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_1000_175_c` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_1000_175_c` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_1000_175_c` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_1000_175_c` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_1000_175_c` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_1000_175_c` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_1000_175_c` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_1000_175_c` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_1000_175_c` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_1000_175_c` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_1000_175_c` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_1000_175_c` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_1000_175_c` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_1000_175_c` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_1000_175_c` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_1000_175_c` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_1000_175_c` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_1000_175_c` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_1000_175_c` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_1000_175_c` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_1000_175_c` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_1000_175_c` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_1000_175_c` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_1000_175_c` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_1000_175_c` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_1000_175_c` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_1000_175_c` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_1000_175_c` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_1000_175_c` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_1000_175_c` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_1000_175_c` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_1000_175_c` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_1000_175_c` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_1000_175_c` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_2000_175_p` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_2000_175_p` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_2000_175_p` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_2000_175_p` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_2000_175_p` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_2000_175_p` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_2000_175_p` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_2000_175_p` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_2000_175_p` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_2000_175_p` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_2000_175_p` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_2000_175_p` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_2000_175_p` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_2000_175_p` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_2000_175_p` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_2000_175_p` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_2000_175_p` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_2000_175_p` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_2000_175_p` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_2000_175_p` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_2000_175_p` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_2000_175_p` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_2000_175_p` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_2000_175_p` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_2000_175_p` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_2000_175_p` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_2000_175_p` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_2000_175_p` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_2000_175_p` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_2000_175_p` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_2000_175_p` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_2000_175_p` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_2000_175_p` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_2000_175_p` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_2000_175_p` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_2000_175_p` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_2000_175_p` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_2000_175_p` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_2000_175_p` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_2000_175_p` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_2000_175_p` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_2000_175_p` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_2000_175_p` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_2000_175_p` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_2000_175_p` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_2000_175_p` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_2000_175_p` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_2000_175_p` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_2000_175_p` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_2000_175_p` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_2000_175_p` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_2000_175_p` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_2000_175_p` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_2000_175_p` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_2000_175_c` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_2000_175_c` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_2000_175_c` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_2000_175_c` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_2000_175_c` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_2000_175_c` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_2000_175_c` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_2000_175_c` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_2000_175_c` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_2000_175_c` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_2000_175_c` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_2000_175_c` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_2000_175_c` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_2000_175_c` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_2000_175_c` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_2000_175_c` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_2000_175_c` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_2000_175_c` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_2000_175_c` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_2000_175_c` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_2000_175_c` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_2000_175_c` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_2000_175_c` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_2000_175_c` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_2000_175_c` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_2000_175_c` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_2000_175_c` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_2000_175_c` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_2000_175_c` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_2000_175_c` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_2000_175_c` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_2000_175_c` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_2000_175_c` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_2000_175_c` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_2000_175_c` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_2000_175_c` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_2000_175_c` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_2000_175_c` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_2000_175_c` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_2000_175_c` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_2000_175_c` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_2000_175_c` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_2000_175_c` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_2000_175_c` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_2000_175_c` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_2000_175_c` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_2000_175_c` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_2000_175_c` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_2000_175_c` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_2000_175_c` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_2000_175_c` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_2000_175_c` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_2000_175_c` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_2000_175_c` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_4500_175_p` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_4500_175_p` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_4500_175_p` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_4500_175_p` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_4500_175_p` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_4500_175_p` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_4500_175_p` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_4500_175_p` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_4500_175_p` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_4500_175_p` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_4500_175_p` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_4500_175_p` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_4500_175_p` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_4500_175_p` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_4500_175_p` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_4500_175_p` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_4500_175_p` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_4500_175_p` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_4500_175_p` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_4500_175_p` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_4500_175_p` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_4500_175_p` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_4500_175_p` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_4500_175_p` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_4500_175_p` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_4500_175_p` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_4500_175_p` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_4500_175_p` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_4500_175_p` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_4500_175_p` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_4500_175_p` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_4500_175_p` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_4500_175_p` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_4500_175_p` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_4500_175_p` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_4500_175_p` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_4500_175_p` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_4500_175_p` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_4500_175_p` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_4500_175_p` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_4500_175_p` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_4500_175_p` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_4500_175_p` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_4500_175_p` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_4500_175_p` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_4500_175_p` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_4500_175_p` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_4500_175_p` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_4500_175_p` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_4500_175_p` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_4500_175_p` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_4500_175_p` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_4500_175_p` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_4500_175_p` — PLA Premium Lavender Violett
+- `spectrum_pla_plapremiumtranslucent_8000_175_p` — PLA Premium Translucent
+- `spectrum_pla_plapremiumnatural_8000_175_p` — PLA Premium Natural
+- `spectrum_pla_plapremiumpolarwhite_8000_175_p` — PLA Premium Polar White
+- `spectrum_pla_plapremiumarcticwhite_8000_175_p` — PLA Premium Arctic White
+- `spectrum_pla_plapremiumlightgrey_8000_175_p` — PLA Premium Light Grey
+- `spectrum_pla_plapremiumivorybeige_8000_175_p` — PLA Premium Ivory Beige
+- `spectrum_pla_plapremiumbahamayellow_8000_175_p` — PLA Premium Bahama Yellow
+- `spectrum_pla_plapremiumdahliayellow_8000_175_p` — PLA Premium Dahlia Yellow
+- `spectrum_pla_plapremiumlionorange_8000_175_p` — PLA Premium Lion Orange
+- `spectrum_pla_plapremiumcarrotorange_8000_175_p` — PLA Premium Carrot Orange
+- `spectrum_pla_plapremiumfluorescentorange_8000_175_p` — PLA Premium Fluorescent Orange
+- `spectrum_pla_plapremiumfoxorange_8000_175_p` — PLA Premium Fox Orange
+- `spectrum_pla_plapremiumtruered_8000_175_p` — PLA Premium True Red
+- `spectrum_pla_plapremiumbloodyred_8000_175_p` — PLA Premium Bloody Red
+- `spectrum_pla_plapremiumdragonred_8000_175_p` — PLA Premium Dragon Red
+- `spectrum_pla_plapremiumcherryred_8000_175_p` — PLA Premium Cherry Red
+- `spectrum_pla_plapremiummagenta_8000_175_p` — PLA Premium Magenta
+- `spectrum_pla_plapremiumpinkpanther_8000_175_p` — PLA Premium Pink Panther
+- `spectrum_pla_plapremiumsignalviolet_8000_175_p` — PLA Premium Signal Violet
+- `spectrum_pla_plapremiumlavenderviolet_8000_175_p` — PLA Premium Lavender Violet
+- `spectrum_pla_plapremiumroyalblue_8000_175_p` — PLA Premium Royal Blue
+- `spectrum_pla_plapremiumnavyblue_8000_175_p` — PLA Premium Navy Blue
+- `spectrum_pla_plapremiumpigeonblue_8000_175_p` — PLA Premium Pigeon Blue
+- `spectrum_pla_plapremiumpacificblue_8000_175_p` — PLA Premium Pacific Blue
+- `spectrum_pla_plapremiumbabyblue_8000_175_p` — PLA Premium Baby Blue
+- `spectrum_pla_plapremiumbluelagoon_8000_175_p` — PLA Premium Blue Lagoon
+- `spectrum_pla_plapremiumpastelturquoise_8000_175_p` — PLA Premium Pastel Turquoise
+- `spectrum_pla_plapremiumcaribbeanblue_8000_175_p` — PLA Premium Caribbean Blue
+- `spectrum_pla_plapremiumchrysocollagreen_8000_175_p` — PLA Premium Chrysocolla Green
+- `spectrum_pla_plapremiumflipflopgreen_8000_175_p` — PLA Premium Flipflop Green
+- `spectrum_pla_plapremiumforestgreen_8000_175_p` — PLA Premium Forest Green
+- `spectrum_pla_plapremiumoreganogreen_8000_175_p` — PLA Premium Oregano Green
+- `spectrum_pla_plapremiumfluorescentgreen_8000_175_p` — PLA Premium Fluorescent Green
+- `spectrum_pla_plapremiumlimegreen_8000_175_p` — PLA Premium Lime Green
+- `spectrum_pla_plapremiumfluorescentyellow_8000_175_p` — PLA Premium Fluorescent Yellow
+- `spectrum_pla_plapremiummilitarykhaki_8000_175_p` — PLA Premium Military Khaki
+- `spectrum_pla_plapremiumpearlgold_8000_175_p` — PLA Premium Pearl Gold
+- `spectrum_pla_plapremiumgoldenline_8000_175_p` — PLA Premium Golden Line
+- `spectrum_pla_plapremiumrustcopper_8000_175_p` — PLA Premium Rust Copper
+- `spectrum_pla_plapremiumpearlbronze_8000_175_p` — PLA Premium Pearl Bronze
+- `spectrum_pla_plapremiumoldgold_8000_175_p` — PLA Premium Old Gold
+- `spectrum_pla_plapremiumchocolatebrown_8000_175_p` — PLA Premium Chocolate Brown
+- `spectrum_pla_plapremiumwizardcharcoal_8000_175_p` — PLA Premium Wizard Charcoal
+- `spectrum_pla_plapremiumwizardgreen_8000_175_p` — PLA Premium Wizard Green
+- `spectrum_pla_plapremiumwizardindigo_8000_175_p` — PLA Premium Wizard Indigo
+- `spectrum_pla_plapremiumsilverstar_8000_175_p` — PLA Premium Silver Star
+- `spectrum_pla_plapremiumdarkgrey_8000_175_p` — PLA Premium Dark Grey
+- `spectrum_pla_plapremiumanthracitegrey_8000_175_p` — PLA Premium Anthracite Grey
+- `spectrum_pla_plapremiumpearlgrey_8000_175_p` — PLA Premium Pearl Grey
+- `spectrum_pla_plapremiumdeepblack_8000_175_p` — PLA Premium Deep Black
+- `spectrum_pla_plapremiumfluogreen_8000_175_p` — PLA Premium Fluo Green
+- `spectrum_pla_plapremiumfluoorange_8000_175_p` — PLA Premium Fluo Orange
+- `spectrum_pla_plapremiumfluoyellow_8000_175_p` — PLA Premium Fluo Yellow
+- `spectrum_pla_plapremiumlavenderviolett_8000_175_p` — PLA Premium Lavender Violett
+- `spectrum_pla_plaproarcticwhite_250_175_p` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_250_175_p` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_250_175_p` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_250_175_p` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_250_175_p` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_250_175_p` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_250_175_p` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_250_175_p` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_250_175_p` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_250_175_p` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_250_175_p` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_250_175_p` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_250_175_p` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_250_175_p` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_250_175_p` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_250_175_p` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_250_175_p` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_250_175_p` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_250_175_p` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_250_175_p` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_250_175_p` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_250_175_p` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_250_175_p` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_250_175_p` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_250_175_p` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_250_175_p` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_250_175_p` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_250_175_c` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_250_175_c` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_250_175_c` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_250_175_c` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_250_175_c` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_250_175_c` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_250_175_c` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_250_175_c` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_250_175_c` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_250_175_c` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_250_175_c` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_250_175_c` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_250_175_c` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_250_175_c` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_250_175_c` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_250_175_c` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_250_175_c` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_250_175_c` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_250_175_c` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_250_175_c` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_250_175_c` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_250_175_c` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_250_175_c` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_250_175_c` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_250_175_c` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_250_175_c` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_250_175_c` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_500_175_p` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_500_175_p` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_500_175_p` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_500_175_p` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_500_175_p` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_500_175_p` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_500_175_p` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_500_175_p` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_500_175_p` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_500_175_p` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_500_175_p` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_500_175_p` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_500_175_p` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_500_175_p` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_500_175_p` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_500_175_p` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_500_175_p` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_500_175_p` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_500_175_p` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_500_175_p` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_500_175_p` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_500_175_p` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_500_175_p` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_500_175_p` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_500_175_p` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_500_175_p` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_500_175_p` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_750_175_p` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_750_175_p` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_750_175_p` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_750_175_p` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_750_175_p` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_750_175_p` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_750_175_p` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_750_175_p` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_750_175_p` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_750_175_p` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_750_175_p` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_750_175_p` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_750_175_p` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_750_175_p` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_750_175_p` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_750_175_p` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_750_175_p` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_750_175_p` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_750_175_p` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_750_175_p` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_750_175_p` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_750_175_p` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_750_175_p` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_750_175_p` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_750_175_p` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_750_175_p` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_750_175_p` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_1000_175_p` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_1000_175_p` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_1000_175_p` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_1000_175_p` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_1000_175_p` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_1000_175_p` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_1000_175_p` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_1000_175_p` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_1000_175_p` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_1000_175_p` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_1000_175_p` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_1000_175_p` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_1000_175_p` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_1000_175_p` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_1000_175_p` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_1000_175_p` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_1000_175_p` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_1000_175_p` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_1000_175_p` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_1000_175_p` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_1000_175_p` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_1000_175_p` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_1000_175_p` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_1000_175_p` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_1000_175_p` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_1000_175_p` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_1000_175_p` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_1000_175_c` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_1000_175_c` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_1000_175_c` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_1000_175_c` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_1000_175_c` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_1000_175_c` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_1000_175_c` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_1000_175_c` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_1000_175_c` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_1000_175_c` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_1000_175_c` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_1000_175_c` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_1000_175_c` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_1000_175_c` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_1000_175_c` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_1000_175_c` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_1000_175_c` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_1000_175_c` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_1000_175_c` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_1000_175_c` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_1000_175_c` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_1000_175_c` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_1000_175_c` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_1000_175_c` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_1000_175_c` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_1000_175_c` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_1000_175_c` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_2000_175_p` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_2000_175_p` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_2000_175_p` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_2000_175_p` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_2000_175_p` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_2000_175_p` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_2000_175_p` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_2000_175_p` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_2000_175_p` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_2000_175_p` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_2000_175_p` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_2000_175_p` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_2000_175_p` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_2000_175_p` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_2000_175_p` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_2000_175_p` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_2000_175_p` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_2000_175_p` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_2000_175_p` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_2000_175_p` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_2000_175_p` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_2000_175_p` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_2000_175_p` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_2000_175_p` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_2000_175_p` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_2000_175_p` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_2000_175_p` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_2000_175_c` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_2000_175_c` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_2000_175_c` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_2000_175_c` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_2000_175_c` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_2000_175_c` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_2000_175_c` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_2000_175_c` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_2000_175_c` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_2000_175_c` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_2000_175_c` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_2000_175_c` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_2000_175_c` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_2000_175_c` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_2000_175_c` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_2000_175_c` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_2000_175_c` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_2000_175_c` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_2000_175_c` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_2000_175_c` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_2000_175_c` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_2000_175_c` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_2000_175_c` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_2000_175_c` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_2000_175_c` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_2000_175_c` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_2000_175_c` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_4500_175_p` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_4500_175_p` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_4500_175_p` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_4500_175_p` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_4500_175_p` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_4500_175_p` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_4500_175_p` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_4500_175_p` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_4500_175_p` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_4500_175_p` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_4500_175_p` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_4500_175_p` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_4500_175_p` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_4500_175_p` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_4500_175_p` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_4500_175_p` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_4500_175_p` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_4500_175_p` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_4500_175_p` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_4500_175_p` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_4500_175_p` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_4500_175_p` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_4500_175_p` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_4500_175_p` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_4500_175_p` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_4500_175_p` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_4500_175_p` — PLA Pro deep black
+- `spectrum_pla_plaproarcticwhite_8000_175_p` — PLA Pro arctic white
+- `spectrum_pla_plapropolarwhite_8000_175_p` — PLA Pro polar white
+- `spectrum_pla_plaprolightgrey_8000_175_p` — PLA Pro light grey
+- `spectrum_pla_plaproivorybeige_8000_175_p` — PLA Pro ivory beige
+- `spectrum_pla_plaprocoral_8000_175_p` — PLA Pro coral
+- `spectrum_pla_plaprobahamayellow_8000_175_p` — PLA Pro bahama yellow
+- `spectrum_pla_plaprolionorange_8000_175_p` — PLA Pro lion orange
+- `spectrum_pla_plaprocarrotorange_8000_175_p` — PLA Pro carrot orange
+- `spectrum_pla_plaprobloodyred_8000_175_p` — PLA Pro bloody red
+- `spectrum_pla_plaprodragonred_8000_175_p` — PLA Pro dragon red
+- `spectrum_pla_plapromagenta_8000_175_p` — PLA Pro magenta
+- `spectrum_pla_plapropinkpanther_8000_175_p` — PLA Pro pink panther
+- `spectrum_pla_plaprolavenderviolet_8000_175_p` — PLA Pro lavender violet
+- `spectrum_pla_plapronavyblue_8000_175_p` — PLA Pro navy blue
+- `spectrum_pla_plapropacificblue_8000_175_p` — PLA Pro pacific blue
+- `spectrum_pla_plaprobluelagoon_8000_175_p` — PLA Pro blue lagoon
+- `spectrum_pla_plapropastelturquoise_8000_175_p` — PLA Pro pastel turquoise
+- `spectrum_pla_plaproforestgreen_8000_175_p` — PLA Pro forest green
+- `spectrum_pla_plaprolimegreen_8000_175_p` — PLA Pro lime green
+- `spectrum_pla_plapromilitarykhaki_8000_175_p` — PLA Pro military khaki
+- `spectrum_pla_plapropearlbronze_8000_175_p` — PLA Pro pearl bronze
+- `spectrum_pla_plaprochocolatebrown_8000_175_p` — PLA Pro chocolate brown
+- `spectrum_pla_plaprorustcopper_8000_175_p` — PLA Pro rust copper
+- `spectrum_pla_plapropearlgold_8000_175_p` — PLA Pro pearl gold
+- `spectrum_pla_plaprosilverstar_8000_175_p` — PLA Pro silver star
+- `spectrum_pla_plaprodarkgrey_8000_175_p` — PLA Pro dark grey
+- `spectrum_pla_plaprodeepblack_8000_175_p` — PLA Pro deep black
+- `spectrum_asa-cf_thefilamentgrey_1000_175_p` — The Filament Grey
+- `spectrum_asa-cf_thefilamentgreen_1000_175_p` — The Filament Green
+- `spectrum_asa-cf_thefilamentblue_1000_175_p` — The Filament Blue
+- `spectrum_asa-cf_thefilamentblack_1000_175_p` — The Filament Black
+- `spectrum_asa-cf_thefilamentred_1000_175_p` — The Filament Red
+- `spectrum_abs_abssmartbahamayellow_1000_175_c` — ABS smart ™ Bahama Yellow
+- `spectrum_abs_abssmartcoral_1000_175_c` — ABS smart ™ Coral
+- `spectrum_abs_abssmartdarkgrey_1000_175_c` — ABS smart ™ Dark Grey
+- `spectrum_abs_abssmartdeepblack_1000_175_c` — ABS smart ™ Deep Black
+- `spectrum_abs_abssmartdragonred_1000_175_c` — ABS smart ™ Dragon Red
+- `spectrum_abs_abssmartforestgreen_1000_175_c` — ABS smart ™ Forest Green
+- `spectrum_abs_abssmartlionorange_1000_175_c` — ABS smart ™ Lion Orange
+- `spectrum_abs_abssmartpacificblue_1000_175_c` — ABS smart ™ Pacific Blue
+- `spectrum_abs_abssmartpolarwhite_1000_175_c` — ABS smart ™ Polar White
+- `spectrum_abs_abssmartsilverstar_1000_175_c` — ABS smart ™ Silver Star
+- `spectrum_abs_absfrv0black_1000_175_c` — ABS FR V0 Black
+- `spectrum_abs_absfrv0white_1000_175_c` — ABS FR V0 White
+- `spectrum_abs_absgp450darkblue_1000_175_c` — ABS GP450 Dark Blue
+- `spectrum_abs_absgp450natural_1000_175_c` — ABS GP450 Natural
+- `spectrum_abs_absgp450obsidianblack_1000_175_c` — ABS GP450 Obsidian Black
+- `spectrum_abs_absgp450puregreen_1000_175_c` — ABS GP450 Pure Green
+- `spectrum_abs_absgp450purewhite_1000_175_c` — ABS GP450 Pure White
+- `spectrum_abs_absgp450silver_1000_175_c` — ABS GP450 Silver
+- `spectrum_abs_absgp450trafficred_1000_175_c` — ABS GP450 Traffic Red
+- `spectrum_abs_abskevlarblack_1000_175_c` — ABS Kevlar Black
+- `spectrum_abs_absmedicalnatural_1000_175_c` — ABS Medical Natural
+- `spectrum_abs_smartabsbahamayellow_1000_175_c` — smart ABS Bahama Yellow
+- `spectrum_abs_smartabscoral_1000_175_c` — smart ABS Coral
+- `spectrum_abs_smartabsdarkgrey_1000_175_c` — smart ABS Dark Grey
+- `spectrum_abs_smartabsdeepblack_1000_175_c` — smart ABS Deep Black
+- `spectrum_abs_smartabsdragonred_1000_175_c` — smart ABS Dragon Red
+- `spectrum_abs_smartabsforestgreen_1000_175_c` — smart ABS Forest Green
+- `spectrum_abs_smartabslionorange_1000_175_c` — smart ABS Lion Orange
+- `spectrum_abs_smartabspacificblue_1000_175_c` — smart ABS Pacific Blue
+- `spectrum_abs_smartabspolarwhite_1000_175_c` — smart ABS Polar White
+- `spectrum_abs_smartabssilverstar_1000_175_c` — smart ABS Silver Star
+- `spectrum_asa_asaelectricallyconductiveblack_1000_175_c` — ASA Electrically Conductive Black
+- `spectrum_asa_asaflameguard275bloodyred_1000_175_c` — ASA FlameGuard 275 Bloody Red
+- `spectrum_asa_asaflameguard275darkgrey_1000_175_c` — ASA FlameGuard 275 Dark Grey
+- `spectrum_asa_asaflameguard275polarwhite_1000_175_c` — ASA FlameGuard 275 Polar White
+- `spectrum_asa_asaflameguard275silverstar_1000_175_c` — ASA FlameGuard 275 Silver Star
+- `spectrum_asa_asalw-ultrafoambloodyred_1000_175_c` — ASA LW- UltraFoam Bloody Red
+- `spectrum_asa_asalw-ultrafoamdarkgrey_1000_175_c` — ASA LW- UltraFoam Dark Grey
+- `spectrum_asa_asalw-ultrafoamlightgrey_1000_175_c` — ASA LW- UltraFoam Light Grey
+- `spectrum_asa_asalw-ultrafoamnatural_1000_175_c` — ASA LW- UltraFoam Natural
+- `spectrum_asa_asalw-ultrafoamnavyblue_1000_175_c` — ASA LW- UltraFoam Navy Blue
+- `spectrum_asa_asalw-ultrafoampurewhite_1000_175_c` — ASA LW- UltraFoam Pure White
+- `spectrum_asa_asalw-ultrafoamtrafficblack_1000_175_c` — ASA LW- UltraFoam Traffic Black
+- `spectrum_asa_asathefilamentgrassgreen_1000_175_c` — ASA The Filament Grass Green
+- `spectrum_asa_asathefilamentmidnightblack_1000_175_c` — ASA The Filament Midnight Black
+- `spectrum_asa_asathefilamentpurered_1000_175_c` — ASA The Filament Pure Red
+- `spectrum_asa_asathefilamentskyblue_1000_175_c` — ASA The Filament Sky Blue
+- `spectrum_asa_asathefilamentslategrey_1000_175_c` — ASA The Filament Slate Grey
+- `spectrum_asa_asathefilamenttrafficwhite_1000_175_c` — ASA The Filament Traffic White
+- `spectrum_asa_asa275bloodyred_250_175_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_250_175_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_250_175_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_250_175_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_250_175_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_250_175_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_250_175_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_250_175_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_250_175_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_250_175_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_250_175_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_250_175_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_250_175_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_250_175_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_250_285_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_250_285_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_250_285_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_250_285_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_250_285_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_250_285_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_250_285_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_250_285_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_250_285_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_250_285_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_250_285_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_250_285_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_250_285_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_250_285_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_1000_175_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_1000_175_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_1000_175_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_1000_175_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_1000_175_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_1000_175_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_1000_175_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_1000_175_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_1000_175_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_1000_175_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_1000_175_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_1000_175_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_1000_175_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_1000_175_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_1000_285_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_1000_285_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_1000_285_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_1000_285_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_1000_285_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_1000_285_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_1000_285_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_1000_285_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_1000_285_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_1000_285_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_1000_285_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_1000_285_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_1000_285_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_1000_285_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_2000_175_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_2000_175_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_2000_175_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_2000_175_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_2000_175_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_2000_175_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_2000_175_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_2000_175_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_2000_175_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_2000_175_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_2000_175_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_2000_175_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_2000_175_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_2000_175_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_2000_285_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_2000_285_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_2000_285_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_2000_285_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_2000_285_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_2000_285_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_2000_285_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_2000_285_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_2000_285_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_2000_285_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_2000_285_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_2000_285_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_2000_285_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_2000_285_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_4500_175_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_4500_175_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_4500_175_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_4500_175_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_4500_175_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_4500_175_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_4500_175_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_4500_175_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_4500_175_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_4500_175_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_4500_175_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_4500_175_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_4500_175_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_4500_175_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_4500_285_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_4500_285_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_4500_285_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_4500_285_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_4500_285_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_4500_285_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_4500_285_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_4500_285_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_4500_285_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_4500_285_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_4500_285_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_4500_285_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_4500_285_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_4500_285_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_8000_175_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_8000_175_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_8000_175_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_8000_175_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_8000_175_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_8000_175_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_8000_175_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_8000_175_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_8000_175_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_8000_175_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_8000_175_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_8000_175_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_8000_175_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_8000_175_c` — ASA 275 Yellow-green
+- `spectrum_asa_asa275bloodyred_8000_285_c` — ASA 275 Bloody Red
+- `spectrum_asa_asa275brownred_8000_285_c` — ASA 275 Brown Red
+- `spectrum_asa_asa275darkgrey_8000_285_c` — ASA 275 Dark Grey
+- `spectrum_asa_asa275deepblack_8000_285_c` — ASA 275 Deep Black
+- `spectrum_asa_asa275forestgreen_8000_285_c` — ASA 275 Forest Green
+- `spectrum_asa_asa275limegreen_8000_285_c` — ASA 275 Lime Green
+- `spectrum_asa_asa275lionorange_8000_285_c` — ASA 275 Lion Orange
+- `spectrum_asa_asa275natural_8000_285_c` — ASA 275 Natural
+- `spectrum_asa_asa275navyblue_8000_285_c` — ASA 275 Navy Blue
+- `spectrum_asa_asa275pacificblue_8000_285_c` — ASA 275 Pacific Blue
+- `spectrum_asa_asa275polarwhite_8000_285_c` — ASA 275 Polar White
+- `spectrum_asa_asa275silverstar_8000_285_c` — ASA 275 Silver Star
+- `spectrum_asa_asa275trafficyellow_8000_285_c` — ASA 275 Traffic Yellow
+- `spectrum_asa_asa275yellow-green_8000_285_c` — ASA 275 Yellow-green
+- `spectrum_asa_asakevlarblack_1000_175_c` — ASA Kevlar Black
+- `spectrum_asa_asakevlarnatural_1000_175_c` — ASA Kevlar Natural
+- `spectrum_asa_asa-xcf10black_500_175_c` — ASA-X CF10 Black
+- `spectrum_asa_asa-xcf10black_1000_175_c` — ASA-X CF10 Black
+- `spectrum_asa_asa-xcf10black_2000_175_c` — ASA-X CF10 Black
+- `spectrum_asa_asa-xgf10natural_500_175_c` — ASA-X GF10 Natural
+- `spectrum_asa_asa-xgf10trafficblack_500_175_c` — ASA-X GF10 Traffic Black
+- `spectrum_asa_asa-xgf10natural_1000_175_c` — ASA-X GF10 Natural
+- `spectrum_asa_asa-xgf10trafficblack_1000_175_c` — ASA-X GF10 Traffic Black
+- `spectrum_asa_asacfxcf10_1000_175_c` — ASA CF X CF10™
+- `spectrum_asa_asacfthefilamentcfblack_1000_175_c` — ASA CF The Filament CF Black
+- `spectrum_asa_asacfthefilamentcfblue_1000_175_c` — ASA CF The Filament CF Blue
+- `spectrum_asa_asacfthefilamentcfgreen_1000_175_c` — ASA CF The Filament CF Green
+- `spectrum_asa_asacfthefilamentcfgrey_1000_175_c` — ASA CF The Filament CF Grey
+- `spectrum_asa_asacfthefilamentcfred_1000_175_c` — ASA CF The Filament CF Red
+- `spectrum_asa_xgf10gfasablack_1000_175_c` — X Gf10 GF ASA Black
+- `spectrum_asa_xgf10gfasanatural_1000_175_c` — X Gf10 GF ASA Natural
+- `spectrum_hips_hips-xbahamayellow_1000_175_c` — HIPS-X Bahama Yellow
+- `spectrum_hips_hips-xdeepblack_1000_175_c` — HIPS-X Deep Black
+- `spectrum_hips_hips-xdragonred_1000_175_c` — HIPS-X Dragon Red
+- `spectrum_hips_hips-xgypsumwhite_1000_175_c` — HIPS-X Gypsum White
+- `spectrum_pa12_pa12cf15carbonblack_1000_175_c` — PA12 CF15 Carbon Black
+- `spectrum_pa6_pa6cf15black_750_175_c` — PA6 CF15 Black
+- `spectrum_pa6_pa6cs20frv0black_1000_175_c` — PA6 CS20 FR V0 Black
+- `spectrum_pa6_pa6gk10natural_1000_175_c` — PA6 GK10 Natural
+- `spectrum_pa6_pa6lowwarpblack_500_175_c` — PA6 Low Warp Black
+- `spectrum_pa6_pa6lowwarpnatural_500_175_c` — PA6 Low Warp Natural
+- `spectrum_pa6_pa6lowwarpblack_1000_175_c` — PA6 Low Warp Black
+- `spectrum_pa6_pa6lowwarpnatural_1000_175_c` — PA6 Low Warp Natural
+- `spectrum_pa6_pa6lowwarpcf15sblack_500_175_c` — PA6 Low Warp CF15S Black
+- `spectrum_pa6_pa6lowwarpcf15sblack_1000_175_c` — PA6 Low Warp CF15S Black
+- `spectrum_pa6_pa6lowwarpgf30black_500_175_c` — PA6 Low Warp GF30 Black
+- `spectrum_pa6_pa6lowwarpgf30natural_500_175_c` — PA6 Low Warp GF30 Natural
+- `spectrum_pa6_pa6lowwarpgf30black_1000_175_c` — PA6 Low Warp GF30 Black
+- `spectrum_pa6_pa6lowwarpgf30natural_1000_175_c` — PA6 Low Warp GF30 Natural
+- `spectrum_pa6_pa6neatbkblack_750_175_c` — PA6 Neat BK Black
+- `spectrum_pa6_pa6neatntnatural_1000_175_c` — Pa6 Neat Nt Natural
+- `spectrum_pa6_thermatechpablack_750_175_c` — ThermaTech PA Black
+- `spectrum_pa6_thermatechpanatural_750_175_c` — ThermaTech PA Natural
+- `spectrum_pc_frv0pcblack_1000_175_c` — Fr V0 PC Black
+- `spectrum_pc_frv0pcwhite_1000_175_c` — Fr V0 PC White
+- `spectrum_pc_pc275irongrey_250_175_c` — PC 275 Iron Grey
+- `spectrum_pc_pc275limegreen_250_175_c` — PC 275 Lime Green
+- `spectrum_pc_pc275lionorange_250_175_c` — PC 275 Lion Orange
+- `spectrum_pc_pc275natural_250_175_c` — PC 275 Natural
+- `spectrum_pc_pc275navyblue_250_175_c` — PC 275 Navy Blue
+- `spectrum_pc_pc275signalyellow_250_175_c` — PC 275 Signal Yellow
+- `spectrum_pc_pc275trafficblack_250_175_c` — PC 275 Traffic Black
+- `spectrum_pc_pc275trafficred_250_175_c` — PC 275 Traffic Red
+- `spectrum_pc_pc275trafficwhite_250_175_c` — PC 275 Traffic White
+- `spectrum_pc_pc275transparentblue_250_175_c` — PC 275 Transparent Blue
+- `spectrum_pc_pc275transparentorange_250_175_c` — PC 275 Transparent Orange
+- `spectrum_pc_pc275transparentred_250_175_c` — PC 275 Transparent Red
+- `spectrum_pc_pc275transparentyellow_250_175_c` — PC 275 Transparent Yellow
+- `spectrum_pc_pc275irongrey_1000_175_c` — PC 275 Iron Grey
+- `spectrum_pc_pc275limegreen_1000_175_c` — PC 275 Lime Green
+- `spectrum_pc_pc275lionorange_1000_175_c` — PC 275 Lion Orange
+- `spectrum_pc_pc275natural_1000_175_c` — PC 275 Natural
+- `spectrum_pc_pc275navyblue_1000_175_c` — PC 275 Navy Blue
+- `spectrum_pc_pc275signalyellow_1000_175_c` — PC 275 Signal Yellow
+- `spectrum_pc_pc275trafficblack_1000_175_c` — PC 275 Traffic Black
+- `spectrum_pc_pc275trafficred_1000_175_c` — PC 275 Traffic Red
+- `spectrum_pc_pc275trafficwhite_1000_175_c` — PC 275 Traffic White
+- `spectrum_pc_pc275transparentblue_1000_175_c` — PC 275 Transparent Blue
+- `spectrum_pc_pc275transparentorange_1000_175_c` — PC 275 Transparent Orange
+- `spectrum_pc_pc275transparentred_1000_175_c` — PC 275 Transparent Red
+- `spectrum_pc_pc275transparentyellow_1000_175_c` — PC 275 Transparent Yellow
+- `spectrum_pctg_pctgcfcf10black_1000_175_c` — PCTG CF CF10 Black
+- `spectrum_pctg_pctggfgf10natural_1000_175_c` — PCTG GF GF10 Natural
+- `spectrum_pctg_pctgcf10black_500_175_c` — PCTG CF10 Black
+- `spectrum_pctg_pctgcf10black_1000_175_c` — PCTG CF10 Black
+- `spectrum_pctg_pctggf10natural_500_175_c` — PCTG GF10 Natural
+- `spectrum_pctg_pctggf10natural_1000_175_c` — PCTG GF10 Natural
+- `spectrum_pctg_pctgpremiumarcticwhite_1000_175_c` — PCTG Premium Arctic White
+- `spectrum_pctg_pctgpremiumclear_1000_175_c` — PCTG Premium Clear
+- `spectrum_pctg_pctgpremiumirongrey_1000_175_c` — PCTG Premium Iron Grey
+- `spectrum_pctg_pctgpremiumlightgreen_1000_175_c` — PCTG Premium Light Green
+- `spectrum_pctg_pctgpremiumnavyblue_1000_175_c` — PCTG Premium Navy Blue
+- `spectrum_pctg_pctgpremiumpureorange_1000_175_c` — PCTG Premium Pure Orange
+- `spectrum_pctg_pctgpremiumsilversteel_1000_175_c` — PCTG Premium Silver Steel
+- `spectrum_pctg_pctgpremiumskyblue_1000_175_c` — PCTG Premium Sky Blue
+- `spectrum_pctg_pctgpremiumsulfuryellow_1000_175_c` — PCTG Premium Sulfur Yellow
+- `spectrum_pctg_pctgpremiumtrafficblack_1000_175_c` — PCTG Premium Traffic Black
+- `spectrum_pctg_pctgpremiumtrafficred_1000_175_c` — PCTG Premium Traffic Red
+- `spectrum_pctg_pctgpremiumtransparentblue_1000_175_c` — PCTG Premium Transparent Blue
+- `spectrum_pctg_pctgpremiumtransparentgreen_1000_175_c` — PCTG Premium Transparent Green
+- `spectrum_pctg_pctgpremiumtransparentorange_1000_175_c` — PCTG Premium Transparent Orange
+- `spectrum_pctg_pctgpremiumtransparentred_1000_175_c` — PCTG Premium Transparent Red
+- `spectrum_pctg_pctgpremiumtransparentyellow_1000_175_c` — PCTG Premium Transparent Yellow
+- `spectrum_pctg_pctgpremiumarcticwhite_2000_175_c` — PCTG Premium Arctic White
+- `spectrum_pctg_pctgpremiumclear_2000_175_c` — PCTG Premium Clear
+- `spectrum_pctg_pctgpremiumirongrey_2000_175_c` — PCTG Premium Iron Grey
+- `spectrum_pctg_pctgpremiumlightgreen_2000_175_c` — PCTG Premium Light Green
+- `spectrum_pctg_pctgpremiumnavyblue_2000_175_c` — PCTG Premium Navy Blue
+- `spectrum_pctg_pctgpremiumpureorange_2000_175_c` — PCTG Premium Pure Orange
+- `spectrum_pctg_pctgpremiumsilversteel_2000_175_c` — PCTG Premium Silver Steel
+- `spectrum_pctg_pctgpremiumskyblue_2000_175_c` — PCTG Premium Sky Blue
+- `spectrum_pctg_pctgpremiumsulfuryellow_2000_175_c` — PCTG Premium Sulfur Yellow
+- `spectrum_pctg_pctgpremiumtrafficblack_2000_175_c` — PCTG Premium Traffic Black
+- `spectrum_pctg_pctgpremiumtrafficred_2000_175_c` — PCTG Premium Traffic Red
+- `spectrum_pctg_pctgpremiumtransparentblue_2000_175_c` — PCTG Premium Transparent Blue
+- `spectrum_pctg_pctgpremiumtransparentgreen_2000_175_c` — PCTG Premium Transparent Green
+- `spectrum_pctg_pctgpremiumtransparentorange_2000_175_c` — PCTG Premium Transparent Orange
+- `spectrum_pctg_pctgpremiumtransparentred_2000_175_c` — PCTG Premium Transparent Red
+- `spectrum_pctg_pctgpremiumtransparentyellow_2000_175_c` — PCTG Premium Transparent Yellow
+- `spectrum_pctg_pctgpremiumarcticwhite_4500_175_c` — PCTG Premium Arctic White
+- `spectrum_pctg_pctgpremiumclear_4500_175_c` — PCTG Premium Clear
+- `spectrum_pctg_pctgpremiumirongrey_4500_175_c` — PCTG Premium Iron Grey
+- `spectrum_pctg_pctgpremiumlightgreen_4500_175_c` — PCTG Premium Light Green
+- `spectrum_pctg_pctgpremiumnavyblue_4500_175_c` — PCTG Premium Navy Blue
+- `spectrum_pctg_pctgpremiumpureorange_4500_175_c` — PCTG Premium Pure Orange
+- `spectrum_pctg_pctgpremiumsilversteel_4500_175_c` — PCTG Premium Silver Steel
+- `spectrum_pctg_pctgpremiumskyblue_4500_175_c` — PCTG Premium Sky Blue
+- `spectrum_pctg_pctgpremiumsulfuryellow_4500_175_c` — PCTG Premium Sulfur Yellow
+- `spectrum_pctg_pctgpremiumtrafficblack_4500_175_c` — PCTG Premium Traffic Black
+- `spectrum_pctg_pctgpremiumtrafficred_4500_175_c` — PCTG Premium Traffic Red
+- `spectrum_pctg_pctgpremiumtransparentblue_4500_175_c` — PCTG Premium Transparent Blue
+- `spectrum_pctg_pctgpremiumtransparentgreen_4500_175_c` — PCTG Premium Transparent Green
+- `spectrum_pctg_pctgpremiumtransparentorange_4500_175_c` — PCTG Premium Transparent Orange
+- `spectrum_pctg_pctgpremiumtransparentred_4500_175_c` — PCTG Premium Transparent Red
+- `spectrum_pctg_pctgpremiumtransparentyellow_4500_175_c` — PCTG Premium Transparent Yellow
+- `spectrum_pctg_pctgpremiumarcticwhite_8000_175_c` — PCTG Premium Arctic White
+- `spectrum_pctg_pctgpremiumclear_8000_175_c` — PCTG Premium Clear
+- `spectrum_pctg_pctgpremiumirongrey_8000_175_c` — PCTG Premium Iron Grey
+- `spectrum_pctg_pctgpremiumlightgreen_8000_175_c` — PCTG Premium Light Green
+- `spectrum_pctg_pctgpremiumnavyblue_8000_175_c` — PCTG Premium Navy Blue
+- `spectrum_pctg_pctgpremiumpureorange_8000_175_c` — PCTG Premium Pure Orange
+- `spectrum_pctg_pctgpremiumsilversteel_8000_175_c` — PCTG Premium Silver Steel
+- `spectrum_pctg_pctgpremiumskyblue_8000_175_c` — PCTG Premium Sky Blue
+- `spectrum_pctg_pctgpremiumsulfuryellow_8000_175_c` — PCTG Premium Sulfur Yellow
+- `spectrum_pctg_pctgpremiumtrafficblack_8000_175_c` — PCTG Premium Traffic Black
+- `spectrum_pctg_pctgpremiumtrafficred_8000_175_c` — PCTG Premium Traffic Red
+- `spectrum_pctg_pctgpremiumtransparentblue_8000_175_c` — PCTG Premium Transparent Blue
+- `spectrum_pctg_pctgpremiumtransparentgreen_8000_175_c` — PCTG Premium Transparent Green
+- `spectrum_pctg_pctgpremiumtransparentorange_8000_175_c` — PCTG Premium Transparent Orange
+- `spectrum_pctg_pctgpremiumtransparentred_8000_175_c` — PCTG Premium Transparent Red
+- `spectrum_pctg_pctgpremiumtransparentyellow_8000_175_c` — PCTG Premium Transparent Yellow
+- `spectrum_pet_petcf15black_750_175_c` — PET CF15 Black
+- `spectrum_petg_petgcfpet-gcarbon_1000_175_c` — PETG CF PET-G Carbon
+- `spectrum_petg_petgcfthefilamentcfblack_1000_175_c` — PETG CF The Filament CF Black
+- `spectrum_petg_petgcfthefilamentcfblue_1000_175_c` — PETG CF The Filament CF Blue
+- `spectrum_petg_petgcfthefilamentcfgreen_1000_175_c` — PETG CF The Filament CF Green
+- `spectrum_petg_petgcfthefilamentcfgrey_1000_175_c` — PETG CF The Filament CF Grey
+- `spectrum_petg_petgcfthefilamentcfpurple_1000_175_c` — PETG CF The Filament CF Purple
+- `spectrum_petg_petgcfthefilamentcfred_1000_175_c` — PETG CF The Filament CF Red
+- `spectrum_petg_glowpetgblue_1000_175_c` — Glow PETG Blue
+- `spectrum_petg_glowpetgyellowgreen_1000_175_c` — Glow PETG Yellow Green
+- `spectrum_petg_pet-gfrv0petgblack_1000_175_c` — PET-G FR V0 PETG Black
+- `spectrum_petg_pet-gfrv0petgnatural_1000_175_c` — PET-G FR V0 PETG Natural
+- `spectrum_petg_pet-gglitterpetgauroragold_1000_175_c` — PET-G Glitter PETG Aurora Gold
+- `spectrum_petg_pet-gglitterpetgstardustblue_1000_175_c` — PET-G Glitter PETG Stardust Blue
+- `spectrum_petg_pet-ght100petgclear_1000_175_c` — PET-G HT100 PETG Clear
+- `spectrum_petg_pet-ght100petgirongrey_1000_175_c` — PET-G HT100 PETG Iron Grey
+- `spectrum_petg_pet-ght100petgobsidianblack_1000_175_c` — PET-G HT100 PETG Obsidian Black
+- `spectrum_petg_pet-ght100petgpurewhite_1000_175_c` — PET-G HT100 PETG Pure White
+- `spectrum_petg_pet-ght100petgsilversteel_1000_175_c` — PET-G HT100 PETG Silver Steel
+- `spectrum_petg_pet-ght100petgtrafficred_1000_175_c` — PET-G HT100 PETG Traffic Red
+- `spectrum_petg_pet-ght100petgtransparentblue_1000_175_c` — PET-G HT100 PETG Transparent Blue
+- `spectrum_petg_petgmattmattepetgbloodyred_1000_175_c` — PET G Matt Matte PETG Bloody Red
+- `spectrum_petg_petgmattmattepetgbrownuniform_1000_175_c` — PET G Matt Matte PETG Brown Uniform
+- `spectrum_petg_petgmattmattepetgdarkgrey_1000_175_c` — PET G Matt Matte PETG Dark Grey
+- `spectrum_petg_petgmattmattepetgdeepblack_1000_175_c` — PET G Matt Matte PETG Deep Black
+- `spectrum_petg_petgmattmattepetgdesertstorm_1000_175_c` — PET G Matt Matte PETG Desert Storm
+- `spectrum_petg_petgmattmattepetglionorange_1000_175_c` — PET G Matt Matte PETG Lion Orange
+- `spectrum_petg_petgmattmattepetgnavyblue_1000_175_c` — PET G Matt Matte PETG Navy Blue
+- `spectrum_petg_petgmattmattepetgolivegreen_1000_175_c` — PET G Matt Matte PETG Olive Green
+- `spectrum_petg_petgmattmattepetgpolarwhite_1000_175_c` — PET G Matt Matte PETG Polar White
+- `spectrum_petg_petgmattmattepetgsandkhaki_1000_175_c` — PET G Matt Matte PETG Sand Khaki
+- `spectrum_petg_pet-gpremiumpetganthracitegrey_1000_175_c` — PET-G Premium PETG Anthracite Grey
+- `spectrum_petg_pet-gpremiumpetgarcticwhite_1000_175_c` — PET-G Premium PETG Arctic White
+- `spectrum_petg_pet-gpremiumpetgbahamayellow_1000_175_c` — PET-G Premium PETG Bahama Yellow
+- `spectrum_petg_pet-gpremiumpetgbeige_1000_175_c` — PET-G Premium PETG Beige
+- `spectrum_petg_pet-gpremiumpetgbloodyred_1000_175_c` — PET-G Premium PETG Bloody Red
+- `spectrum_petg_pet-gpremiumpetgchocolatebrown_1000_175_c` — PET-G Premium PETG Chocolate Brown
+- `spectrum_petg_pet-gpremiumpetgdarkgrey_1000_175_c` — PET-G Premium PETG Dark Grey
+- `spectrum_petg_pet-gpremiumpetgdeepblack_1000_175_c` — PET-G Premium PETG Deep Black
+- `spectrum_petg_pet-gpremiumpetgglassy_1000_175_c` — PET-G Premium PETG Glassy
+- `spectrum_petg_pet-gpremiumpetgicelandblue_1000_175_c` — PET-G Premium PETG Iceland Blue
+- `spectrum_petg_pet-gpremiumpetglightgrey_1000_175_c` — PET-G Premium PETG Light Grey
+- `spectrum_petg_pet-gpremiumpetglimegreen_1000_175_c` — PET-G Premium PETG Lime Green
+- `spectrum_petg_pet-gpremiumpetglionorange_1000_175_c` — PET-G Premium PETG Lion Orange
+- `spectrum_petg_pet-gpremiumpetgmintgreen_1000_175_c` — PET-G Premium PETG Mint Green
+- `spectrum_petg_pet-gpremiumpetgnavyblue_1000_175_c` — PET-G Premium PETG Navy Blue
+- `spectrum_petg_pet-gpremiumpetgolivegreen_1000_175_c` — PET-G Premium PETG Olive Green
+- `spectrum_petg_pet-gpremiumpetgpacificblue_1000_175_c` — PET-G Premium PETG Pacific Blue
+- `spectrum_petg_pet-gpremiumpetgpearlgold_1000_175_c` — PET-G Premium PETG Pearl Gold
+- `spectrum_petg_pet-gpremiumpetgpink_1000_175_c` — PET-G Premium PETG Pink
+- `spectrum_petg_pet-gpremiumpetgsignalyellow_1000_175_c` — PET-G Premium PETG Signal Yellow
+- `spectrum_petg_pet-gpremiumpetgsilverstar_1000_175_c` — PET-G Premium PETG Silver Star
+- `spectrum_petg_pet-gpremiumpetgtransparentblack_1000_175_c` — PET-G Premium PETG Transparent Black
+- `spectrum_petg_pet-gpremiumpetgtransparentblue_1000_175_c` — PET-G Premium PETG Transparent Blue
+- `spectrum_petg_pet-gpremiumpetgtransparentorange_1000_175_c` — PET-G Premium PETG Transparent Orange
+- `spectrum_petg_pet-gpremiumpetgtransparentred_1000_175_c` — PET-G Premium PETG Transparent Red
+- `spectrum_petg_pet-gpremiumpetgtransparentyellow_1000_175_c` — PET-G Premium PETG Transparent Yellow
+- `spectrum_petg_pet-gpremiumpetgturquoiseblue_1000_175_c` — PET-G Premium PETG Turquoise Blue
+- `spectrum_petg_petgpet-gfx120clear_1000_175_c` — PETG PET-G FX120™ Clear
+- `spectrum_petg_petgcarbonblack_500_175_c` — PETG Carbon Black
+- `spectrum_petg_petgcarbonblack_1000_175_c` — PETG Carbon Black
+- `spectrum_petg_petgcarbonblack_2000_175_c` — PETG Carbon Black
+- `spectrum_petg_petgfrv0black_750_175_c` — PETG FR V0 Black
+- `spectrum_petg_petgfrv0natural_750_175_c` — PETG FR V0 Natural
+- `spectrum_petg_petgfrv0black_750_285_c` — PETG FR V0 Black
+- `spectrum_petg_petgfrv0natural_750_285_c` — PETG FR V0 Natural
+- `spectrum_petg_petgfrv0black_1000_175_c` — PETG FR V0 Black
+- `spectrum_petg_petgfrv0natural_1000_175_c` — PETG FR V0 Natural
+- `spectrum_petg_petgfrv0black_1000_285_c` — PETG FR V0 Black
+- `spectrum_petg_petgfrv0natural_1000_285_c` — PETG FR V0 Natural
+- `spectrum_petg_petgfx120irongrey_500_175_c` — PETG FX120 Iron Grey
+- `spectrum_petg_petgfx120natural_500_175_c` — PETG FX120 Natural
+- `spectrum_petg_petgfx120obsidianblack_500_175_c` — PETG FX120 Obsidian Black
+- `spectrum_petg_petgfx120irongrey_1000_175_c` — PETG FX120 Iron Grey
+- `spectrum_petg_petgfx120natural_1000_175_c` — PETG FX120 Natural
+- `spectrum_petg_petgfx120obsidianblack_1000_175_c` — PETG FX120 Obsidian Black
+- `spectrum_petg_petgglitterauroragold_1000_175_c` — PETG Glitter Aurora Gold
+- `spectrum_petg_petgglitterstardustblue_1000_175_c` — PETG Glitter Stardust Blue
+- `spectrum_petg_petgglowinthedarkblue_500_175_c` — PETG Glow in the Dark Blue
+- `spectrum_petg_petgglowinthedarkyellow-green_500_175_c` — PETG Glow in the Dark Yellow-green
+- `spectrum_petg_petgglowinthedarkblue_1000_175_c` — PETG Glow in the Dark Blue
+- `spectrum_petg_petgglowinthedarkyellow-green_1000_175_c` — PETG Glow in the Dark Yellow-green
+- `spectrum_petg_petght100clear_500_175_c` — PETG HT100 Clear
+- `spectrum_petg_petght100irongrey_500_175_c` — PETG HT100 Iron Grey
+- `spectrum_petg_petght100obsidianblack_500_175_c` — PETG HT100 Obsidian Black
+- `spectrum_petg_petght100purewhite_500_175_c` — PETG HT100 Pure White
+- `spectrum_petg_petght100silversteel_500_175_c` — PETG HT100 Silver Steel
+- `spectrum_petg_petght100trafficred_500_175_c` — PETG HT100 Traffic Red
+- `spectrum_petg_petght100transparentblue_500_175_c` — PETG HT100 Transparent Blue
+- `spectrum_petg_petght100clear_1000_175_c` — PETG HT100 Clear
+- `spectrum_petg_petght100irongrey_1000_175_c` — PETG HT100 Iron Grey
+- `spectrum_petg_petght100obsidianblack_1000_175_c` — PETG HT100 Obsidian Black
+- `spectrum_petg_petght100purewhite_1000_175_c` — PETG HT100 Pure White
+- `spectrum_petg_petght100silversteel_1000_175_c` — PETG HT100 Silver Steel
+- `spectrum_petg_petght100trafficred_1000_175_c` — PETG HT100 Traffic Red
+- `spectrum_petg_petght100transparentblue_1000_175_c` — PETG HT100 Transparent Blue
+- `spectrum_petg_petgmattbloodyred_1000_175_c` — PETG MATT Bloody Red
+- `spectrum_petg_petgmattbrownuniform_1000_175_c` — PETG MATT Brown Uniform
+- `spectrum_petg_petgmattdarkgrey_1000_175_c` — PETG MATT Dark Grey
+- `spectrum_petg_petgmattdeepblack_1000_175_c` — PETG MATT Deep Black
+- `spectrum_petg_petgmattdesertstorm_1000_175_c` — PETG MATT Desert Storm
+- `spectrum_petg_petgmattlionorange_1000_175_c` — PETG MATT Lion Orange
+- `spectrum_petg_petgmattnavyblue_1000_175_c` — PETG MATT Navy Blue
+- `spectrum_petg_petgmattolivegreen_1000_175_c` — PETG MATT Olive Green
+- `spectrum_petg_petgmattpolarwhite_1000_175_c` — PETG MATT Polar White
+- `spectrum_petg_petgmattsandkhaki_1000_175_c` — PETG MATT Sand Khaki
+- `spectrum_petg_petgpremiumanthracitegrey_1000_175_c` — PETG Premium Anthracite Grey
+- `spectrum_petg_petgpremiumarcticwhite_1000_175_c` — PETG Premium Arctic White
+- `spectrum_petg_petgpremiumbeige_1000_175_c` — PETG Premium Beige
+- `spectrum_petg_petgpremiumbloodyred_1000_175_c` — PETG Premium Bloody Red
+- `spectrum_petg_petgpremiumdarkgrey_1000_175_c` — PETG Premium Dark Grey
+- `spectrum_petg_petgpremiumdeepblack_1000_175_c` — PETG Premium Deep Black
+- `spectrum_petg_petgpremiumglassy_1000_175_c` — PETG Premium Glassy
+- `spectrum_petg_petgpremiumicelandblue_1000_175_c` — PETG Premium Iceland Blue
+- `spectrum_petg_petgpremiumlightgrey_1000_175_c` — PETG Premium Light Grey
+- `spectrum_petg_petgpremiumlimegreen_1000_175_c` — PETG Premium Lime Green
+- `spectrum_petg_petgpremiumlionorange_1000_175_c` — PETG Premium Lion Orange
+- `spectrum_petg_petgpremiumnavyblue_1000_175_c` — PETG Premium Navy Blue
+- `spectrum_petg_petgpremiumolivegreen_1000_175_c` — PETG Premium Olive Green
+- `spectrum_petg_petgpremiumpacificblue_1000_175_c` — PETG Premium Pacific Blue
+- `spectrum_petg_petgpremiumpearlgold_1000_175_c` — PETG Premium Pearl Gold
+- `spectrum_petg_petgpremiumpink_1000_175_c` — PETG Premium Pink
+- `spectrum_petg_petgpremiumsignalyellow_1000_175_c` — PETG Premium Signal Yellow
+- `spectrum_petg_petgpremiumsilverstar_1000_175_c` — PETG Premium Silver Star
+- `spectrum_petg_petgpremiumtransparentblack_1000_175_c` — PETG Premium Transparent Black
+- `spectrum_petg_petgpremiumtransparentred_1000_175_c` — PETG Premium Transparent Red
+- `spectrum_petg_petgpremiumanthracitegrey_2000_175_c` — PETG Premium Anthracite Grey
+- `spectrum_petg_petgpremiumarcticwhite_2000_175_c` — PETG Premium Arctic White
+- `spectrum_petg_petgpremiumbeige_2000_175_c` — PETG Premium Beige
+- `spectrum_petg_petgpremiumbloodyred_2000_175_c` — PETG Premium Bloody Red
+- `spectrum_petg_petgpremiumdarkgrey_2000_175_c` — PETG Premium Dark Grey
+- `spectrum_petg_petgpremiumdeepblack_2000_175_c` — PETG Premium Deep Black
+- `spectrum_petg_petgpremiumglassy_2000_175_c` — PETG Premium Glassy
+- `spectrum_petg_petgpremiumicelandblue_2000_175_c` — PETG Premium Iceland Blue
+- `spectrum_petg_petgpremiumlightgrey_2000_175_c` — PETG Premium Light Grey
+- `spectrum_petg_petgpremiumlimegreen_2000_175_c` — PETG Premium Lime Green
+- `spectrum_petg_petgpremiumlionorange_2000_175_c` — PETG Premium Lion Orange
+- `spectrum_petg_petgpremiumnavyblue_2000_175_c` — PETG Premium Navy Blue
+- `spectrum_petg_petgpremiumolivegreen_2000_175_c` — PETG Premium Olive Green
+- `spectrum_petg_petgpremiumpacificblue_2000_175_c` — PETG Premium Pacific Blue
+- `spectrum_petg_petgpremiumpearlgold_2000_175_c` — PETG Premium Pearl Gold
+- `spectrum_petg_petgpremiumpink_2000_175_c` — PETG Premium Pink
+- `spectrum_petg_petgpremiumsignalyellow_2000_175_c` — PETG Premium Signal Yellow
+- `spectrum_petg_petgpremiumsilverstar_2000_175_c` — PETG Premium Silver Star
+- `spectrum_petg_petgpremiumtransparentblack_2000_175_c` — PETG Premium Transparent Black
+- `spectrum_petg_petgpremiumtransparentred_2000_175_c` — PETG Premium Transparent Red
+- `spectrum_petg_petgpremiumanthracitegrey_4500_175_c` — PETG Premium Anthracite Grey
+- `spectrum_petg_petgpremiumarcticwhite_4500_175_c` — PETG Premium Arctic White
+- `spectrum_petg_petgpremiumbeige_4500_175_c` — PETG Premium Beige
+- `spectrum_petg_petgpremiumbloodyred_4500_175_c` — PETG Premium Bloody Red
+- `spectrum_petg_petgpremiumdarkgrey_4500_175_c` — PETG Premium Dark Grey
+- `spectrum_petg_petgpremiumdeepblack_4500_175_c` — PETG Premium Deep Black
+- `spectrum_petg_petgpremiumglassy_4500_175_c` — PETG Premium Glassy
+- `spectrum_petg_petgpremiumicelandblue_4500_175_c` — PETG Premium Iceland Blue
+- `spectrum_petg_petgpremiumlightgrey_4500_175_c` — PETG Premium Light Grey
+- `spectrum_petg_petgpremiumlimegreen_4500_175_c` — PETG Premium Lime Green
+- `spectrum_petg_petgpremiumlionorange_4500_175_c` — PETG Premium Lion Orange
+- `spectrum_petg_petgpremiumnavyblue_4500_175_c` — PETG Premium Navy Blue
+- `spectrum_petg_petgpremiumolivegreen_4500_175_c` — PETG Premium Olive Green
+- `spectrum_petg_petgpremiumpacificblue_4500_175_c` — PETG Premium Pacific Blue
+- `spectrum_petg_petgpremiumpearlgold_4500_175_c` — PETG Premium Pearl Gold
+- `spectrum_petg_petgpremiumpink_4500_175_c` — PETG Premium Pink
+- `spectrum_petg_petgpremiumsignalyellow_4500_175_c` — PETG Premium Signal Yellow
+- `spectrum_petg_petgpremiumsilverstar_4500_175_c` — PETG Premium Silver Star
+- `spectrum_petg_petgpremiumtransparentblack_4500_175_c` — PETG Premium Transparent Black
+- `spectrum_petg_petgpremiumtransparentred_4500_175_c` — PETG Premium Transparent Red
+- `spectrum_petg_petgpremiumanthracitegrey_8000_175_c` — PETG Premium Anthracite Grey
+- `spectrum_petg_petgpremiumarcticwhite_8000_175_c` — PETG Premium Arctic White
+- `spectrum_petg_petgpremiumbeige_8000_175_c` — PETG Premium Beige
+- `spectrum_petg_petgpremiumbloodyred_8000_175_c` — PETG Premium Bloody Red
+- `spectrum_petg_petgpremiumdarkgrey_8000_175_c` — PETG Premium Dark Grey
+- `spectrum_petg_petgpremiumdeepblack_8000_175_c` — PETG Premium Deep Black
+- `spectrum_petg_petgpremiumglassy_8000_175_c` — PETG Premium Glassy
+- `spectrum_petg_petgpremiumicelandblue_8000_175_c` — PETG Premium Iceland Blue
+- `spectrum_petg_petgpremiumlightgrey_8000_175_c` — PETG Premium Light Grey
+- `spectrum_petg_petgpremiumlimegreen_8000_175_c` — PETG Premium Lime Green
+- `spectrum_petg_petgpremiumlionorange_8000_175_c` — PETG Premium Lion Orange
+- `spectrum_petg_petgpremiumnavyblue_8000_175_c` — PETG Premium Navy Blue
+- `spectrum_petg_petgpremiumolivegreen_8000_175_c` — PETG Premium Olive Green
+- `spectrum_petg_petgpremiumpacificblue_8000_175_c` — PETG Premium Pacific Blue
+- `spectrum_petg_petgpremiumpearlgold_8000_175_c` — PETG Premium Pearl Gold
+- `spectrum_petg_petgpremiumpink_8000_175_c` — PETG Premium Pink
+- `spectrum_petg_petgpremiumsignalyellow_8000_175_c` — PETG Premium Signal Yellow
+- `spectrum_petg_petgpremiumsilverstar_8000_175_c` — PETG Premium Silver Star
+- `spectrum_petg_petgpremiumtransparentblack_8000_175_c` — PETG Premium Transparent Black
+- `spectrum_petg_petgpremiumtransparentred_8000_175_c` — PETG Premium Transparent Red
+- `spectrum_petg_petgpremiumhighspeedarcticwhite_1000_175_c` — PETG Premium High Speed Arctic White
+- `spectrum_petg_petgpremiumhighspeedbrightgreen_1000_175_c` — PETG Premium High Speed Bright Green
+- `spectrum_petg_petgpremiumhighspeeddarkgrey_1000_175_c` — PETG Premium High Speed Dark Grey
+- `spectrum_petg_petgpremiumhighspeeddeepblack_1000_175_c` — PETG Premium High Speed Deep Black
+- `spectrum_petg_petgpremiumhighspeedheartred_1000_175_c` — PETG Premium High Speed Heart Red
+- `spectrum_petg_petgpremiumhighspeedlightgreen_1000_175_c` — PETG Premium High Speed Light Green
+- `spectrum_petg_petgpremiumhighspeedlightgrey_1000_175_c` — PETG Premium High Speed Light Grey
+- `spectrum_petg_petgpremiumhighspeedlightivory_1000_175_c` — PETG Premium High Speed Light Ivory
+- `spectrum_petg_petgpremiumhighspeedlionorange_1000_175_c` — PETG Premium High Speed Lion Orange
+- `spectrum_petg_petgpremiumhighspeednavyblue_1000_175_c` — PETG Premium High Speed Navy Blue
+- `spectrum_petg_petgpremiumhighspeedolivegreen_1000_175_c` — PETG Premium High Speed Olive Green
+- `spectrum_petg_petgpremiumhighspeedpastelblue_1000_175_c` — PETG Premium High Speed Pastel Blue
+- `spectrum_petg_petgpremiumhighspeedsilverstar_1000_175_c` — PETG Premium High Speed Silver Star
+- `spectrum_petg_petgpremiumhighspeedsulfuryellow_1000_175_c` — PETG Premium High Speed Sulfur Yellow
+- `spectrum_petg_petgpremiumhighspeedtr.blue_1000_175_c` — PETG Premium High Speed Tr. Blue
+- `spectrum_petg_petgpremiumhighspeedtr.red_1000_175_c` — PETG Premium High Speed Tr. Red
+- `spectrum_petg_petgpremiumhighspeedtransparentblue_1000_175_c` — PETG Premium High Speed Transparent Blue
+- `spectrum_petg_petgpremiumhighspeedtransparetred_1000_175_c` — PETG Premium High Speed Transparet Red
+- `spectrum_petg_ptfedarkgrey_1000_175_c` — PTFE Dark Grey
+- `spectrum_petg_ptfelightblue_1000_175_c` — PTFE Light Blue
+- `spectrum_petg_ptfetrafficblack_1000_175_c` — PTFE Traffic Black
+- `spectrum_petg_ptfetrafficred_1000_175_c` — PTFE Traffic Red
+- `spectrum_petg_rpetgcarminered_1000_175_c` — R PETG Carmine Red
+- `spectrum_petg_rpetgirongrey_1000_175_c` — R PETG Iron Grey
+- `spectrum_petg_rpetgorange_1000_175_c` — R PETG Orange
+- `spectrum_petg_rpetgporcelainwhite_1000_175_c` — R PETG Porcelain White
+- `spectrum_petg_rpetgsignalblue_1000_175_c` — R PETG Signal Blue
+- `spectrum_petg_rpetgsignalyellow_1000_175_c` — R PETG Signal Yellow
+- `spectrum_petg_rpetgtrafficblack_1000_175_c` — R PETG Traffic Black
+- `spectrum_petg_rpetgtrafficgreen_1000_175_c` — R PETG Traffic Green
+- `spectrum_petg_thefilamentpetgbasaltgrey_1000_175_c` — The Filament PETG Basalt Grey
+- `spectrum_petg_thefilamentpetgcircuitgreen_1000_175_c` — The Filament PETG Circuit Green
+- `spectrum_petg_thefilamentpetgcloudgrey_1000_175_c` — The Filament PETG Cloud Grey
+- `spectrum_petg_thefilamentpetgmachineryorange_1000_175_c` — The Filament PETG Machinery Orange
+- `spectrum_petg_thefilamentpetgmidnightblack_1000_175_c` — The Filament PETG Midnight Black
+- `spectrum_petg_thefilamentpetgperformanceblue_1000_175_c` — The Filament PETG Performance Blue
+- `spectrum_petg_thefilamentpetgplasmapurple_1000_175_c` — The Filament PETG Plasma Purple
+- `spectrum_petg_thefilamentpetgsilveraluminium_1000_175_c` — The Filament PETG Silver Aluminium
+- `spectrum_petg_thefilamentpetgsnowwhite_1000_175_c` — The Filament PETG Snow White
+- `spectrum_petg_thefilamentpetgsorbetyellow_1000_175_c` — The Filament PETG Sorbet Yellow
+- `spectrum_petg_thefilamentpetgstrawberrypink_1000_175_c` — The Filament PETG Strawberry Pink
+- `spectrum_petg_thefilamentpetgtechnicalred_1000_175_c` — The Filament PETG Technical Red
+- `spectrum_petg_thefilamentpetgtransparentblue_1000_175_c` — The Filament PETG Transparent Blue
+- `spectrum_petg_thefilamentpetgtransparentred_1000_175_c` — The Filament PETG Transparent Red
+- `spectrum_petg_thefilamentpetgliteblack_1000_175_c` — The Filament PETG Lite Black
+- `spectrum_petg_thefilamentpetgliteblue_1000_175_c` — The Filament PETG Lite Blue
+- `spectrum_petg_thefilamentpetglitegreen_1000_175_c` — The Filament PETG Lite Green
+- `spectrum_petg_thefilamentpetglitegrey_1000_175_c` — The Filament PETG Lite Grey
+- `spectrum_petg_thefilamentpetglitered_1000_175_c` — The Filament PETG Lite Red
+- `spectrum_petg_thefilamentpetglitesilver_1000_175_c` — The Filament PETG Lite Silver
+- `spectrum_petg_thefilamentpetglitewhite_1000_175_c` — The Filament PETG Lite White
+- `spectrum_petg_thefilamentpetgliteyellow_1000_175_c` — The Filament PETG Lite Yellow
+- `spectrum_pla_plaaquaprintnatural_500_175_c` — PLA AquaPrint Natural
+- `spectrum_pla_placfcarbon_1000_175_c` — PLA CF Carbon
+- `spectrum_pla_placfthefilamentcf_1000_175_c` — PLA CF The Filament CF
+- `spectrum_pla_placfthefilamentcfblack_1000_175_c` — PLA CF The Filament CF Black
+- `spectrum_pla_placfthefilamentcfblue_1000_175_c` — PLA CF The Filament CF Blue
+- `spectrum_pla_placfthefilamentcfgrey_1000_175_c` — PLA CF The Filament CF Grey
+- `spectrum_pla_placfthefilamentcfpurple_1000_175_c` — PLA CF The Filament CF Purple
+- `spectrum_pla_placfthefilamentcfred_1000_175_c` — PLA CF The Filament CF Red
+- `spectrum_pla_placfthefilamentcfviolet_1000_175_c` — PLA CF The Filament CF Violet
+- `spectrum_pla_crystalsilkplabluehorizon_1000_175_c` — Crystal Silk PLA Blue Horizon
+- `spectrum_pla_crystalsilkplaelectricyellow_1000_175_c` — Crystal Silk PLA Electric Yellow
+- `spectrum_pla_crystalsilkplafrozenberry_1000_175_c` — Crystal Silk PLA Frozen Berry
+- `spectrum_pla_crystalsilkplaneongreen_1000_175_c` — Crystal Silk PLA Neon Green
+- `spectrum_pla_crystalsilkplaneonorange_1000_175_c` — Crystal Silk PLA Neon Orange
+- `spectrum_pla_crystalsilkplaraspberryred_1000_175_c` — Crystal Silk PLA Raspberry Red
+- `spectrum_pla_flameguardplaindustrialgrey_250_175_c` — FlameGuard PLA Industrial Grey
+- `spectrum_pla_flameguardplalightgrey_250_175_c` — FlameGuard PLA Light Grey
+- `spectrum_pla_flameguardplamidnightblack_250_175_c` — FlameGuard PLA Midnight Black
+- `spectrum_pla_flameguardplaperformanceblue_250_175_c` — FlameGuard PLA Performance Blue
+- `spectrum_pla_flameguardplapolarwhite_250_175_c` — FlameGuard PLA Polar White
+- `spectrum_pla_flameguardplatechnicalred_250_175_c` — FlameGuard PLA Technical Red
+- `spectrum_pla_flameguardplaindustrialgrey_1000_175_c` — FlameGuard PLA Industrial Grey
+- `spectrum_pla_flameguardplalightgrey_1000_175_c` — FlameGuard PLA Light Grey
+- `spectrum_pla_flameguardplamidnightblack_1000_175_c` — FlameGuard PLA Midnight Black
+- `spectrum_pla_flameguardplaperformanceblue_1000_175_c` — FlameGuard PLA Performance Blue
+- `spectrum_pla_flameguardplapolarwhite_1000_175_c` — FlameGuard PLA Polar White
+- `spectrum_pla_flameguardplatechnicalred_1000_175_c` — FlameGuard PLA Technical Red
+- `spectrum_pla_flameguardsilkpladeepblack_1000_175_c` — FlameGuard Silk PLA Deep Black
+- `spectrum_pla_flameguardsilkplaindustrialgrey_1000_175_c` — FlameGuard Silk PLA Industrial Grey
+- `spectrum_pla_flameguardsilkplalightgrey_1000_175_c` — FlameGuard Silk PLA Light Grey
+- `spectrum_pla_flameguardsilkplaperformanceblue_1000_175_c` — FlameGuard Silk PLA Performance Blue
+- `spectrum_pla_flameguardsilkplapolarwhite_1000_175_c` — FlameGuard Silk PLA Polar White
+- `spectrum_pla_flameguardsilkplatechnicalred_1000_175_c` — FlameGuard Silk PLA Technical Red
+- `spectrum_pla_glittersilkplaauroragold_1000_175_c` — Glitter Silk PLA Aurora Gold
+- `spectrum_pla_glittersilkplaaztecgold_1000_175_c` — Glitter Silk PLA Aztec Gold
+- `spectrum_pla_glittersilkplacleargold_1000_175_c` — Glitter Silk PLA Clear Gold
+- `spectrum_pla_glittersilkplaemeraldgreen_1000_175_c` — Glitter Silk PLA Emerald Green
+- `spectrum_pla_glittersilkplametallicsilver_1000_175_c` — Glitter Silk PLA Metallic Silver
+- `spectrum_pla_glittersilkplaredsparkle_1000_175_c` — Glitter Silk PLA Red Sparkle
+- `spectrum_pla_glittersilkplastardustblue_1000_175_c` — Glitter Silk PLA Stardust Blue
+- `spectrum_pla_glittersilkplavolcanogrey_1000_175_c` — Glitter Silk PLA Volcano Grey
+- `spectrum_pla_glowplablue_1000_175_c` — Glow PLA Blue
+- `spectrum_pla_glowplayellowgreen_1000_175_c` — Glow PLA Yellow Green
+- `spectrum_pla_plagreenyhtanthracitegrey_1000_175_c` — PLA GreenyHT Anthracite Grey
+- `spectrum_pla_plagreenyhtlightblue_1000_175_c` — PLA GreenyHT Light Blue
+- `spectrum_pla_plagreenyhtsignalwhite_1000_175_c` — PLA GreenyHT Signal White
+- `spectrum_pla_plagreenyhtstrawberryred_1000_175_c` — PLA GreenyHT Strawberry Red
+- `spectrum_pla_plagreenyhttrafficblack_1000_175_c` — PLA GreenyHT Traffic Black
+- `spectrum_pla_plagreenyprodarkgrey_250_175_c` — PLA GreenyPro Dark Grey
+- `spectrum_pla_plagreenyprolightgrey_250_175_c` — PLA GreenyPro Light Grey
+- `spectrum_pla_plagreenypropureorange_250_175_c` — PLA GreenyPro Pure Orange
+- `spectrum_pla_plagreenypropurered_250_175_c` — PLA GreenyPro Pure Red
+- `spectrum_pla_plagreenypropurewhite_250_175_c` — PLA GreenyPro Pure White
+- `spectrum_pla_plagreenyprorealgreen_250_175_c` — PLA GreenyPro Real Green
+- `spectrum_pla_plagreenyprotrafficblack_250_175_c` — PLA GreenyPro Traffic Black
+- `spectrum_pla_plagreenyproultramarineblue_250_175_c` — PLA GreenyPro Ultramarine Blue
+- `spectrum_pla_plagreenyprodarkgrey_1000_175_c` — PLA GreenyPro Dark Grey
+- `spectrum_pla_plagreenyprolightgrey_1000_175_c` — PLA GreenyPro Light Grey
+- `spectrum_pla_plagreenypropureorange_1000_175_c` — PLA GreenyPro Pure Orange
+- `spectrum_pla_plagreenypropurered_1000_175_c` — PLA GreenyPro Pure Red
+- `spectrum_pla_plagreenypropurewhite_1000_175_c` — PLA GreenyPro Pure White
+- `spectrum_pla_plagreenyprorealgreen_1000_175_c` — PLA GreenyPro Real Green
+- `spectrum_pla_plagreenyprotrafficblack_1000_175_c` — PLA GreenyPro Traffic Black
+- `spectrum_pla_plagreenyproultramarineblue_1000_175_c` — PLA GreenyPro Ultramarine Blue
+- `spectrum_pla_plagreenyprodarkgrey_2000_175_c` — PLA GreenyPro Dark Grey
+- `spectrum_pla_plagreenyprolightgrey_2000_175_c` — PLA GreenyPro Light Grey
+- `spectrum_pla_plagreenypropureorange_2000_175_c` — PLA GreenyPro Pure Orange
+- `spectrum_pla_plagreenypropurered_2000_175_c` — PLA GreenyPro Pure Red
+- `spectrum_pla_plagreenypropurewhite_2000_175_c` — PLA GreenyPro Pure White
+- `spectrum_pla_plagreenyprorealgreen_2000_175_c` — PLA GreenyPro Real Green
+- `spectrum_pla_plagreenyprotrafficblack_2000_175_c` — PLA GreenyPro Traffic Black
+- `spectrum_pla_plagreenyproultramarineblue_2000_175_c` — PLA GreenyPro Ultramarine Blue
+- `spectrum_pla_highspeedplaarcticwhite_1000_175_c` — High Speed PLA Arctic White
+- `spectrum_pla_highspeedplababyblue_1000_175_c` — High Speed PLA Baby Blue
+- `spectrum_pla_highspeedplacrimsonred_1000_175_c` — High Speed PLA Crimson Red
+- `spectrum_pla_highspeedpladarkgrey_1000_175_c` — High Speed PLA Dark Grey
+- `spectrum_pla_highspeedpladeepblack_1000_175_c` — High Speed PLA Deep Black
+- `spectrum_pla_highspeedplagold_1000_175_c` — High Speed PLA Gold
+- `spectrum_pla_highspeedplagranitegrey_1000_175_c` — High Speed PLA Granite Grey
+- `spectrum_pla_highspeedplagrassgreen_1000_175_c` — High Speed PLA Grass Green
+- `spectrum_pla_highspeedplaicelandblue_1000_175_c` — High Speed PLA Iceland Blue
+- `spectrum_pla_highspeedplalattebeige_1000_175_c` — High Speed PLA Latte Beige
+- `spectrum_pla_highspeedplaleafgreen_1000_175_c` — High Speed PLA Leaf Green
+- `spectrum_pla_highspeedplalimegreen_1000_175_c` — High Speed PLA Lime Green
+- `spectrum_pla_highspeedplalionorange_1000_175_c` — High Speed PLA Lion Orange
+- `spectrum_pla_highspeedplanavyblue_1000_175_c` — High Speed PLA Navy Blue
+- `spectrum_pla_highspeedplaneored_1000_175_c` — High Speed PLA Neo Red
+- `spectrum_pla_highspeedplaneongreenuv_1000_175_c` — High Speed PLA Neon Green UV
+- `spectrum_pla_highspeedplaneonorangeuv_1000_175_c` — High Speed PLA Neon Orange UV
+- `spectrum_pla_highspeedplaneontransparent_1000_175_c` — High Speed PLA Neon Transparent
+- `spectrum_pla_highspeedplapacificblue_1000_175_c` — High Speed PLA Pacific Blue
+- `spectrum_pla_highspeedplapinkpanther_1000_175_c` — High Speed PLA Pink Panther
+- `spectrum_pla_highspeedplasignalwhite_1000_175_c` — High Speed PLA Signal White
+- `spectrum_pla_highspeedplasilverstar_1000_175_c` — High Speed PLA Silver Star
+- `spectrum_pla_highspeedplatelegrey_1000_175_c` — High Speed PLA Telegrey
+- `spectrum_pla_highspeedplathefilamenthsenergygreen_1000_175_c` — High Speed PLA The Filament HS Energy Green
+- `spectrum_pla_highspeedplathefilamenthsfirered_1000_175_c` — High Speed PLA The Filament HS Fire Red
+- `spectrum_pla_highspeedplathefilamenthsgridbeige_1000_175_c` — High Speed PLA The Filament HS Grid Beige
+- `spectrum_pla_highspeedplathefilamenthsmidnightblack_1000_175_c` — High Speed PLA The Filament HS Midnight Black
+- `spectrum_pla_highspeedplathefilamenthsmiragegrey_1000_175_c` — High Speed PLA The Filament HS Mirage Grey
+- `spectrum_pla_highspeedplathefilamenthsmossgreen_1000_175_c` — High Speed PLA The Filament HS Moss Green
+- `spectrum_pla_highspeedplathefilamenthsmossgrey_1000_175_c` — High Speed PLA The Filament HS Moss Grey
+- `spectrum_pla_highspeedplathefilamenthspureorange_1000_175_c` — High Speed PLA The Filament HS Pure Orange
+- `spectrum_pla_highspeedplathefilamenthsquantumpurple_1000_175_c` — High Speed PLA The Filament HS Quantum Purple
+- `spectrum_pla_highspeedplathefilamenthstrafficwhite_1000_175_c` — High Speed PLA The Filament HS Traffic White
+- `spectrum_pla_highspeedplathefilamenthstuscanyyellow_1000_175_c` — High Speed PLA The Filament HS Tuscany Yellow
+- `spectrum_pla_highspeedplathefilamenthswinterblue_1000_175_c` — High Speed PLA The Filament HS Winter Blue
+- `spectrum_pla_highspeedplatrafficred_1000_175_c` — High Speed PLA Traffic Red
+- `spectrum_pla_highspeedplatrueyellow_1000_175_c` — High Speed PLA True Yellow
+- `spectrum_pla_highspeedplawalnutbrown_1000_175_c` — High Speed PLA Walnut Brown
+- `spectrum_pla_huracanplaaluminumsilver_1000_175_c` — Huracan PLA Aluminum Silver
+- `spectrum_pla_huracanplaanthracitegrey_1000_175_c` — Huracan PLA Anthracite Grey
+- `spectrum_pla_huracanplababyblue_1000_175_c` — Huracan PLA Baby Blue
+- `spectrum_pla_huracanplabananayellow_1000_175_c` — Huracan PLA Banana Yellow
+- `spectrum_pla_huracanplacreambeige_1000_175_c` — Huracan PLA Cream Beige
+- `spectrum_pla_huracanplafreshgreen_1000_175_c` — Huracan PLA Fresh Green
+- `spectrum_pla_huracanplalightgrey_1000_175_c` — Huracan PLA Light Grey
+- `spectrum_pla_huracanplalionorange_1000_175_c` — Huracan PLA Lion Orange
+- `spectrum_pla_huracanpla!olapink_1000_175_c` — Huracan PLA !ola Pink
+- `spectrum_pla_huracanplapurplegrape_1000_175_c` — Huracan PLA Purple Grape
+- `spectrum_pla_huracanplaroyalblue_1000_175_c` — Huracan PLA Royal Blue
+- `spectrum_pla_huracanplasignalwhite_1000_175_c` — Huracan PLA Signal White
+- `spectrum_pla_huracanplatrafficblack_1000_175_c` — Huracan PLA Traffic Black
+- `spectrum_pla_huracanplatruered_1000_175_c` — Huracan PLA True Red
+- `spectrum_pla_huracansilkplaaluminiumsilver_1000_175_c` — Huracan Silk PLA Aluminium Silver
+- `spectrum_pla_huracansilkplaanthracitegrey_1000_175_c` — Huracan Silk PLA Anthracite Grey
+- `spectrum_pla_huracansilkplababyblue_1000_175_c` — Huracan Silk PLA Baby Blue
+- `spectrum_pla_huracansilkplabananayellow_1000_175_c` — Huracan Silk PLA Banana Yellow
+- `spectrum_pla_huracansilkplacreambeige_1000_175_c` — Huracan Silk PLA Cream Beige
+- `spectrum_pla_huracansilkplafreshgreen_1000_175_c` — Huracan Silk PLA Fresh Green
+- `spectrum_pla_huracansilkplalightgrey_1000_175_c` — Huracan Silk PLA Light Grey
+- `spectrum_pla_huracansilkplalionorange_1000_175_c` — Huracan Silk PLA Lion Orange
+- `spectrum_pla_huracansilkplaolapink_1000_175_c` — Huracan Silk PLA Ola Pink
+- `spectrum_pla_huracansilkplapurplegrape_1000_175_c` — Huracan Silk PLA Purple Grape
+- `spectrum_pla_huracansilkplaroyalblue_1000_175_c` — Huracan Silk PLA Royal Blue
+- `spectrum_pla_huracansilkplasignalwhite_1000_175_c` — Huracan Silk PLA Signal White
+- `spectrum_pla_huracansilkplatrafficblack_1000_175_c` — Huracan Silk PLA Traffic Black
+- `spectrum_pla_huracansilkplatruered_1000_175_c` — Huracan Silk PLA True Red
+- `spectrum_pla_lw-plaultrafoamdarkgrey_750_175_c` — LW-PLA UltraFoam Dark Grey
+- `spectrum_pla_lw-plaultrafoamlightgrey_750_175_c` — LW-PLA UltraFoam Light Grey
+- `spectrum_pla_lw-plaultrafoamlionorange_750_175_c` — LW-PLA UltraFoam Lion Orange
+- `spectrum_pla_lw-plaultrafoampersianblue_750_175_c` — LW-PLA UltraFoam Persian Blue
+- `spectrum_pla_lw-plaultrafoampurered_750_175_c` — LW-PLA UltraFoam Pure Red
+- `spectrum_pla_lw-plaultrafoampurewhite_750_175_c` — LW-PLA UltraFoam Pure White
+- `spectrum_pla_lw-plaultrafoamtrafficblack_750_175_c` — LW-PLA UltraFoam Traffic Black
+- `spectrum_pla_matteplamattbahamayellow_1000_175_c` — Matte PLA MATT Bahama Yellow
+- `spectrum_pla_matteplamattbloodyred_1000_175_c` — Matte PLA MATT Bloody Red
+- `spectrum_pla_matteplamattdarkgrey_1000_175_c` — Matte PLA MATT Dark Grey
+- `spectrum_pla_matteplamattdeepblack_1000_175_c` — Matte PLA MATT Deep Black
+- `spectrum_pla_matteplamattlimegreen_1000_175_c` — Matte PLA MATT Lime Green
+- `spectrum_pla_matteplamattlionorange_1000_175_c` — Matte PLA MATT Lion Orange
+- `spectrum_pla_matteplamattnavyblue_1000_175_c` — Matte PLA MATT Navy Blue
+- `spectrum_pla_matteplamattpolarwhite_1000_175_c` — Matte PLA MATT Polar White
+- `spectrum_pla_matteplathefilamentarmygreen_1000_175_c` — Matte PLA The Filament Army Green
+- `spectrum_pla_matteplathefilamentcamogreen_1000_175_c` — Matte PLA The Filament Camo Green
+- `spectrum_pla_matteplathefilamentdesertbeige_1000_175_c` — Matte PLA The Filament Desert Beige
+- `spectrum_pla_matteplathefilamentjunglegreen_1000_175_c` — Matte PLA The Filament Jungle Green
+- `spectrum_pla_matteplathefilamentmilitaryolive_1000_175_c` — Matte PLA The Filament Military Olive
+- `spectrum_pla_matteplathefilamentnightblue_1000_175_c` — Matte PLA The Filament Night Blue
+- `spectrum_pla_matteplathefilamentoctoberred_1000_175_c` — Matte PLA The Filament October Red
+- `spectrum_pla_matteplathefilamentsnowwhite_1000_175_c` — Matte PLA The Filament Snow White
+- `spectrum_pla_matteplathefilamentstealthblack_1000_175_c` — Matte PLA The Filament Stealth Black
+- `spectrum_pla_matteplathefilamenttroopergrey_1000_175_c` — Matte PLA The Filament Trooper Grey
+- `spectrum_pla_matteplathefilamenturbangrey_1000_175_c` — Matte PLA The Filament Urban Grey
+- `spectrum_pla_metalsilkplabronze_1000_175_c` — Metal Silk PLA Bronze
+- `spectrum_pla_metalsilkplacopper_1000_175_c` — Metal Silk PLA Copper
+- `spectrum_pla_pastelloplaapricotorange_250_175_c` — Pastello PLA Apricot Orange
+- `spectrum_pla_pastelloplaatmosphericblue_250_175_c` — Pastello PLA Atmospheric Blue
+- `spectrum_pla_pastelloplabonbonrose_250_175_c` — Pastello PLA Bonbon Rose
+- `spectrum_pla_pastelloplacocktailgreen_250_175_c` — Pastello PLA Cocktail Green
+- `spectrum_pla_pastelloplacoctailgreen_250_175_c` — Pastello PLA Coctail Green
+- `spectrum_pla_pastelloplacosmeticmauve_250_175_c` — Pastello PLA Cosmetic Mauve
+- `spectrum_pla_pastelloplaflamingored_250_175_c` — Pastello PLA Flamingo Red
+- `spectrum_pla_pastelloplahollandred_250_175_c` — Pastello PLA Holland Red
+- `spectrum_pla_pastelloplalemoncream_250_175_c` — Pastello PLA Lemon Cream
+- `spectrum_pla_pastelloplapalesalmon_250_175_c` — Pastello PLA Pale Salmon
+- `spectrum_pla_pastelloplapinkpastel_250_175_c` — Pastello PLA Pink Pastel
+- `spectrum_pla_pastelloplawaterblue_250_175_c` — Pastello PLA Water Blue
+- `spectrum_pla_pastelloplaapricotorange_1000_175_c` — Pastello PLA Apricot Orange
+- `spectrum_pla_pastelloplaatmosphericblue_1000_175_c` — Pastello PLA Atmospheric Blue
+- `spectrum_pla_pastelloplabonbonrose_1000_175_c` — Pastello PLA Bonbon Rose
+- `spectrum_pla_pastelloplacocktailgreen_1000_175_c` — Pastello PLA Cocktail Green
+- `spectrum_pla_pastelloplacoctailgreen_1000_175_c` — Pastello PLA Coctail Green
+- `spectrum_pla_pastelloplacosmeticmauve_1000_175_c` — Pastello PLA Cosmetic Mauve
+- `spectrum_pla_pastelloplaflamingored_1000_175_c` — Pastello PLA Flamingo Red
+- `spectrum_pla_pastelloplahollandred_1000_175_c` — Pastello PLA Holland Red
+- `spectrum_pla_pastelloplalemoncream_1000_175_c` — Pastello PLA Lemon Cream
+- `spectrum_pla_pastelloplapalesalmon_1000_175_c` — Pastello PLA Pale Salmon
+- `spectrum_pla_pastelloplapinkpastel_1000_175_c` — Pastello PLA Pink Pastel
+- `spectrum_pla_pastelloplawaterblue_1000_175_c` — Pastello PLA Water Blue
+- `spectrum_pla_plaarcticwhite_1000_175_c` — PLA Arctic White
+- `spectrum_pla_plabahamayellow_1000_175_c` — PLA Bahama Yellow
+- `spectrum_pla_plabloodyred_1000_175_c` — PLA Bloody Red
+- `spectrum_pla_plabluelagoon_1000_175_c` — PLA Blue Lagoon
+- `spectrum_pla_placarrotorange_1000_175_c` — PLA Carrot Orange
+- `spectrum_pla_plachocolatebrown_1000_175_c` — PLA Chocolate Brown
+- `spectrum_pla_placoral_1000_175_c` — PLA Coral
+- `spectrum_pla_pladarkgrey_1000_175_c` — PLA Dark Grey
+- `spectrum_pla_pladeepblack_1000_175_c` — PLA Deep Black
+- `spectrum_pla_pladefault_1000_175_c` — PLA Default
+- `spectrum_pla_pladragonred_1000_175_c` — PLA Dragon Red
+- `spectrum_pla_plaelectricallyconductive_1000_175_c` — PLA Electrically Conductive
+- `spectrum_pla_plaforestgreen_1000_175_c` — PLA Forest Green
+- `spectrum_pla_plaivorybeige_1000_175_c` — PLA Ivory Beige
+- `spectrum_pla_plalavenderviolet_1000_175_c` — PLA Lavender Violet
+- `spectrum_pla_plalimegreen_1000_175_c` — PLA Lime Green
+- `spectrum_pla_plalionorange_1000_175_c` — PLA Lion Orange
+- `spectrum_pla_plamagenta_1000_175_c` — PLA Magenta
+- `spectrum_pla_plamilitarykhaki_1000_175_c` — PLA Military Khaki
+- `spectrum_pla_planatural_1000_175_c` — PLA Natural
+- `spectrum_pla_planavyblue_1000_175_c` — PLA Navy Blue
+- `spectrum_pla_plapacificblue_1000_175_c` — PLA Pacific Blue
+- `spectrum_pla_plapearlbronze_1000_175_c` — PLA Pearl Bronze
+- `spectrum_pla_plapearlgold_1000_175_c` — PLA Pearl Gold
+- `spectrum_pla_plapinkpanther_1000_175_c` — PLA Pink Panther
+- `spectrum_pla_plapolarwhite_1000_175_c` — PLA Polar White
+- `spectrum_pla_plapremium_1000_175_c` — PLA Premium
+- `spectrum_pla_plasilverstar_1000_175_c` — PLA Silver Star
+- `spectrum_pla_plathermoactivered_1000_175_c` — PLA Thermoactive Red
+- `spectrum_pla_placarbonblack_500_175_c` — PLA Carbon Black
+- `spectrum_pla_placarbonblack_1000_175_c` — PLA Carbon Black
+- `spectrum_pla_placrystalbluehorizon_250_175_c` — PLA Crystal Blue Horizon
+- `spectrum_pla_placrystalelectricyellow_250_175_c` — PLA Crystal Electric Yellow
+- `spectrum_pla_placrystalfrozenberry_250_175_c` — PLA Crystal Frozen Berry
+- `spectrum_pla_placrystalneongreen_250_175_c` — PLA Crystal Neon Green
+- `spectrum_pla_placrystalneonorange_250_175_c` — PLA Crystal Neon Orange
+- `spectrum_pla_placrystalraspberryred_250_175_c` — PLA Crystal Raspberry Red
+- `spectrum_pla_placrystalbluehorizon_1000_175_c` — PLA Crystal Blue Horizon
+- `spectrum_pla_placrystalelectricyellow_1000_175_c` — PLA Crystal Electric Yellow
+- `spectrum_pla_placrystalfrozenberry_1000_175_c` — PLA Crystal Frozen Berry
+- `spectrum_pla_placrystalneongreen_1000_175_c` — PLA Crystal Neon Green
+- `spectrum_pla_placrystalneonorange_1000_175_c` — PLA Crystal Neon Orange
+- `spectrum_pla_placrystalraspberryred_1000_175_c` — PLA Crystal Raspberry Red
+- `spectrum_pla_plaelectricallyconductiveblack_1000_175_c` — PLA Electrically Conductive Black
+- `spectrum_pla_plaglitterauroragold_500_175_c` — PLA Glitter Aurora Gold
+- `spectrum_pla_plaglitteraztecgold_500_175_c` — PLA Glitter Aztec Gold
+- `spectrum_pla_plaglittercleargold_500_175_c` — PLA Glitter Clear Gold
+- `spectrum_pla_plaglitteremeraldgreen_500_175_c` — PLA Glitter Emerald Green
+- `spectrum_pla_plaglittersilvermetallic_500_175_c` — PLA Glitter Silver Metallic
+- `spectrum_pla_plaglittersparklered_500_175_c` — PLA Glitter Sparkle Red
+- `spectrum_pla_plaglitterstardustblue_500_175_c` — PLA Glitter Stardust Blue
+- `spectrum_pla_plaglitterviolet_500_175_c` — PLA Glitter Violet
+- `spectrum_pla_plaglittervolcanogrey_500_175_c` — PLA Glitter Volcano Grey
+- `spectrum_pla_plaglitterauroragold_500_285_c` — PLA Glitter Aurora Gold
+- `spectrum_pla_plaglitteraztecgold_500_285_c` — PLA Glitter Aztec Gold
+- `spectrum_pla_plaglittercleargold_500_285_c` — PLA Glitter Clear Gold
+- `spectrum_pla_plaglitteremeraldgreen_500_285_c` — PLA Glitter Emerald Green
+- `spectrum_pla_plaglittersilvermetallic_500_285_c` — PLA Glitter Silver Metallic
+- `spectrum_pla_plaglittersparklered_500_285_c` — PLA Glitter Sparkle Red
+- `spectrum_pla_plaglitterstardustblue_500_285_c` — PLA Glitter Stardust Blue
+- `spectrum_pla_plaglitterviolet_500_285_c` — PLA Glitter Violet
+- `spectrum_pla_plaglittervolcanogrey_500_285_c` — PLA Glitter Volcano Grey
+- `spectrum_pla_plaglitterauroragold_1000_175_c` — PLA Glitter Aurora Gold
+- `spectrum_pla_plaglitteraztecgold_1000_175_c` — PLA Glitter Aztec Gold
+- `spectrum_pla_plaglittercleargold_1000_175_c` — PLA Glitter Clear Gold
+- `spectrum_pla_plaglitteremeraldgreen_1000_175_c` — PLA Glitter Emerald Green
+- `spectrum_pla_plaglittersilvermetallic_1000_175_c` — PLA Glitter Silver Metallic
+- `spectrum_pla_plaglittersparklered_1000_175_c` — PLA Glitter Sparkle Red
+- `spectrum_pla_plaglitterstardustblue_1000_175_c` — PLA Glitter Stardust Blue
+- `spectrum_pla_plaglitterviolet_1000_175_c` — PLA Glitter Violet
+- `spectrum_pla_plaglittervolcanogrey_1000_175_c` — PLA Glitter Volcano Grey
+- `spectrum_pla_plaglitterauroragold_1000_285_c` — PLA Glitter Aurora Gold
+- `spectrum_pla_plaglitteraztecgold_1000_285_c` — PLA Glitter Aztec Gold
+- `spectrum_pla_plaglittercleargold_1000_285_c` — PLA Glitter Clear Gold
+- `spectrum_pla_plaglitteremeraldgreen_1000_285_c` — PLA Glitter Emerald Green
+- `spectrum_pla_plaglittersilvermetallic_1000_285_c` — PLA Glitter Silver Metallic
+- `spectrum_pla_plaglittersparklered_1000_285_c` — PLA Glitter Sparkle Red
+- `spectrum_pla_plaglitterstardustblue_1000_285_c` — PLA Glitter Stardust Blue
+- `spectrum_pla_plaglitterviolet_1000_285_c` — PLA Glitter Violet
+- `spectrum_pla_plaglittervolcanogrey_1000_285_c` — PLA Glitter Volcano Grey
+- `spectrum_pla_plaglowinthedarkblue_500_175_c` — PLA Glow in the Dark Blue
+- `spectrum_pla_plaglowinthedarkyellow-green_500_175_c` — PLA Glow in the Dark Yellow-Green
+- `spectrum_pla_plaglowinthedarkblue_500_285_c` — PLA Glow in the Dark Blue
+- `spectrum_pla_plaglowinthedarkyellow-green_500_285_c` — PLA Glow in the Dark Yellow-Green
+- `spectrum_pla_plaglowinthedarkblue_1000_175_c` — PLA Glow in the Dark Blue
+- `spectrum_pla_plaglowinthedarkyellow-green_1000_175_c` — PLA Glow in the Dark Yellow-Green
+- `spectrum_pla_plaglowinthedarkblue_1000_285_c` — PLA Glow in the Dark Blue
+- `spectrum_pla_plaglowinthedarkyellow-green_1000_285_c` — PLA Glow in the Dark Yellow-Green
+- `spectrum_pla_plamagicsilkamberleaf_250_175_c` — PLA Magic SILK Amber Leaf
+- `spectrum_pla_plamagicsilkaurorabloom_250_175_c` — PLA Magic SILK Aurora Bloom
+- `spectrum_pla_plamagicsilkfire&ice_250_175_c` — PLA Magic SILK Fire & Ice
+- `spectrum_pla_plamagicsilkforestflame_250_175_c` — PLA Magic SILK Forest Flame
+- `spectrum_pla_plamagicsilkgoldenberry_250_175_c` — PLA Magic SILK Golden Berry
+- `spectrum_pla_plamagicsilklagoonbreeze_250_175_c` — PLA Magic SILK Lagoon Breeze
+- `spectrum_pla_plamagicsilkmagentablossom_250_175_c` — PLA Magic SILK Magenta Blossom
+- `spectrum_pla_plamagicsilkmagentadream_250_175_c` — PLA Magic SILK Magenta Dream
+- `spectrum_pla_plamagicsilkmysticorchid_250_175_c` — PLA Magic SILK Mystic Orchid
+- `spectrum_pla_plamagicsilknightfire_250_175_c` — PLA Magic SILK Nightfire
+- `spectrum_pla_plamagicsilkraspberryblush_250_175_c` — PLA Magic SILK Raspberry Blush
+- `spectrum_pla_plamagicsilkroyalamethyst_250_175_c` — PLA Magic SILK Royal Amethyst
+- `spectrum_pla_plamagicsilksolareclipse_250_175_c` — PLA Magic SILK Solar Eclipse
+- `spectrum_pla_plamagicsilksolarflare_250_175_c` — PLA Magic SILK Solar Flare
+- `spectrum_pla_plamagicsilkvividlavender_250_175_c` — PLA Magic SILK Vivid Lavender
+- `spectrum_pla_plamagicsilkamberleaf_1000_175_c` — PLA Magic SILK Amber Leaf
+- `spectrum_pla_plamagicsilkaurorabloom_1000_175_c` — PLA Magic SILK Aurora Bloom
+- `spectrum_pla_plamagicsilkfire&ice_1000_175_c` — PLA Magic SILK Fire & Ice
+- `spectrum_pla_plamagicsilkforestflame_1000_175_c` — PLA Magic SILK Forest Flame
+- `spectrum_pla_plamagicsilkgoldenberry_1000_175_c` — PLA Magic SILK Golden Berry
+- `spectrum_pla_plamagicsilklagoonbreeze_1000_175_c` — PLA Magic SILK Lagoon Breeze
+- `spectrum_pla_plamagicsilkmagentablossom_1000_175_c` — PLA Magic SILK Magenta Blossom
+- `spectrum_pla_plamagicsilkmagentadream_1000_175_c` — PLA Magic SILK Magenta Dream
+- `spectrum_pla_plamagicsilkmysticorchid_1000_175_c` — PLA Magic SILK Mystic Orchid
+- `spectrum_pla_plamagicsilknightfire_1000_175_c` — PLA Magic SILK Nightfire
+- `spectrum_pla_plamagicsilkraspberryblush_1000_175_c` — PLA Magic SILK Raspberry Blush
+- `spectrum_pla_plamagicsilkroyalamethyst_1000_175_c` — PLA Magic SILK Royal Amethyst
+- `spectrum_pla_plamagicsilksolareclipse_1000_175_c` — PLA Magic SILK Solar Eclipse
+- `spectrum_pla_plamagicsilksolarflare_1000_175_c` — PLA Magic SILK Solar Flare
+- `spectrum_pla_plamagicsilkvividlavender_1000_175_c` — PLA Magic SILK Vivid Lavender
+- `spectrum_pla_plamattarcticwhite_1000_175_c` — PLA MATT Arctic White
+- `spectrum_pla_plamattbloodyred_1000_175_c` — PLA MATT Bloody Red
+- `spectrum_pla_plamattbluelagoon_1000_175_c` — PLA MATT Blue Lagoon
+- `spectrum_pla_plamattcarrotorange_1000_175_c` — PLA MATT Carrot Orange
+- `spectrum_pla_plamattchocolatebrown_1000_175_c` — PLA MATT Chocolate Brown
+- `spectrum_pla_plamattdarkgrey_1000_175_c` — PLA MATT Dark Grey
+- `spectrum_pla_plamattdeepblack_1000_175_c` — PLA MATT Deep Black
+- `spectrum_pla_plamattdragonred_1000_175_c` — PLA MATT Dragon Red
+- `spectrum_pla_plamattforestgreen_1000_175_c` — PLA MATT Forest Green
+- `spectrum_pla_plamattivorybeige_1000_175_c` — PLA MATT Ivory Beige
+- `spectrum_pla_plamattlavenderviolett_1000_175_c` — PLA MATT Lavender Violett
+- `spectrum_pla_plamattlightgrey_1000_175_c` — PLA MATT Light Grey
+- `spectrum_pla_plamattlimegreen_1000_175_c` — PLA MATT Lime Green
+- `spectrum_pla_plamattmagenta_1000_175_c` — PLA MATT Magenta
+- `spectrum_pla_plamattmilitarykhaki_1000_175_c` — PLA MATT Military Khaki
+- `spectrum_pla_plamattnatural_1000_175_c` — PLA MATT Natural
+- `spectrum_pla_plamattnavyblue_1000_175_c` — PLA MATT Navy Blue
+- `spectrum_pla_plamattpacificblue_1000_175_c` — PLA MATT Pacific Blue
+- `spectrum_pla_plamattpastelturquoise_1000_175_c` — PLA MATT Pastel Turquoise
+- `spectrum_pla_plamattpearlbronze_1000_175_c` — PLA MATT Pearl Bronze
+- `spectrum_pla_plamattpearlgold_1000_175_c` — PLA MATT Pearl Gold
+- `spectrum_pla_plamattpinkpanther_1000_175_c` — PLA MATT Pink Panther
+- `spectrum_pla_plamattpolarwhite_1000_175_c` — PLA MATT Polar White
+- `spectrum_pla_plamattrustcopper_1000_175_c` — PLA MATT Rust Copper
+- `spectrum_pla_plamattsilverstar_1000_175_c` — PLA MATT Silver Star
+- `spectrum_pla_plamattarcticwhite_2000_175_c` — PLA MATT Arctic White
+- `spectrum_pla_plamattbloodyred_2000_175_c` — PLA MATT Bloody Red
+- `spectrum_pla_plamattbluelagoon_2000_175_c` — PLA MATT Blue Lagoon
+- `spectrum_pla_plamattcarrotorange_2000_175_c` — PLA MATT Carrot Orange
+- `spectrum_pla_plamattchocolatebrown_2000_175_c` — PLA MATT Chocolate Brown
+- `spectrum_pla_plamattdarkgrey_2000_175_c` — PLA MATT Dark Grey
+- `spectrum_pla_plamattdeepblack_2000_175_c` — PLA MATT Deep Black
+- `spectrum_pla_plamattdragonred_2000_175_c` — PLA MATT Dragon Red
+- `spectrum_pla_plamattforestgreen_2000_175_c` — PLA MATT Forest Green
+- `spectrum_pla_plamattivorybeige_2000_175_c` — PLA MATT Ivory Beige
+- `spectrum_pla_plamattlavenderviolett_2000_175_c` — PLA MATT Lavender Violett
+- `spectrum_pla_plamattlightgrey_2000_175_c` — PLA MATT Light Grey
+- `spectrum_pla_plamattlimegreen_2000_175_c` — PLA MATT Lime Green
+- `spectrum_pla_plamattmagenta_2000_175_c` — PLA MATT Magenta
+- `spectrum_pla_plamattmilitarykhaki_2000_175_c` — PLA MATT Military Khaki
+- `spectrum_pla_plamattnatural_2000_175_c` — PLA MATT Natural
+- `spectrum_pla_plamattnavyblue_2000_175_c` — PLA MATT Navy Blue
+- `spectrum_pla_plamattpacificblue_2000_175_c` — PLA MATT Pacific Blue
+- `spectrum_pla_plamattpastelturquoise_2000_175_c` — PLA MATT Pastel Turquoise
+- `spectrum_pla_plamattpearlbronze_2000_175_c` — PLA MATT Pearl Bronze
+- `spectrum_pla_plamattpearlgold_2000_175_c` — PLA MATT Pearl Gold
+- `spectrum_pla_plamattpinkpanther_2000_175_c` — PLA MATT Pink Panther
+- `spectrum_pla_plamattpolarwhite_2000_175_c` — PLA MATT Polar White
+- `spectrum_pla_plamattrustcopper_2000_175_c` — PLA MATT Rust Copper
+- `spectrum_pla_plamattsilverstar_2000_175_c` — PLA MATT Silver Star
+- `spectrum_pla_plamattarcticwhite_4500_175_c` — PLA MATT Arctic White
+- `spectrum_pla_plamattbloodyred_4500_175_c` — PLA MATT Bloody Red
+- `spectrum_pla_plamattbluelagoon_4500_175_c` — PLA MATT Blue Lagoon
+- `spectrum_pla_plamattcarrotorange_4500_175_c` — PLA MATT Carrot Orange
+- `spectrum_pla_plamattchocolatebrown_4500_175_c` — PLA MATT Chocolate Brown
+- `spectrum_pla_plamattdarkgrey_4500_175_c` — PLA MATT Dark Grey
+- `spectrum_pla_plamattdeepblack_4500_175_c` — PLA MATT Deep Black
+- `spectrum_pla_plamattdragonred_4500_175_c` — PLA MATT Dragon Red
+- `spectrum_pla_plamattforestgreen_4500_175_c` — PLA MATT Forest Green
+- `spectrum_pla_plamattivorybeige_4500_175_c` — PLA MATT Ivory Beige
+- `spectrum_pla_plamattlavenderviolett_4500_175_c` — PLA MATT Lavender Violett
+- `spectrum_pla_plamattlightgrey_4500_175_c` — PLA MATT Light Grey
+- `spectrum_pla_plamattlimegreen_4500_175_c` — PLA MATT Lime Green
+- `spectrum_pla_plamattmagenta_4500_175_c` — PLA MATT Magenta
+- `spectrum_pla_plamattmilitarykhaki_4500_175_c` — PLA MATT Military Khaki
+- `spectrum_pla_plamattnatural_4500_175_c` — PLA MATT Natural
+- `spectrum_pla_plamattnavyblue_4500_175_c` — PLA MATT Navy Blue
+- `spectrum_pla_plamattpacificblue_4500_175_c` — PLA MATT Pacific Blue
+- `spectrum_pla_plamattpastelturquoise_4500_175_c` — PLA MATT Pastel Turquoise
+- `spectrum_pla_plamattpearlbronze_4500_175_c` — PLA MATT Pearl Bronze
+- `spectrum_pla_plamattpearlgold_4500_175_c` — PLA MATT Pearl Gold
+- `spectrum_pla_plamattpinkpanther_4500_175_c` — PLA MATT Pink Panther
+- `spectrum_pla_plamattpolarwhite_4500_175_c` — PLA MATT Polar White
+- `spectrum_pla_plamattrustcopper_4500_175_c` — PLA MATT Rust Copper
+- `spectrum_pla_plamattsilverstar_4500_175_c` — PLA MATT Silver Star
+- `spectrum_pla_plamattarcticwhite_8000_175_c` — PLA MATT Arctic White
+- `spectrum_pla_plamattbloodyred_8000_175_c` — PLA MATT Bloody Red
+- `spectrum_pla_plamattbluelagoon_8000_175_c` — PLA MATT Blue Lagoon
+- `spectrum_pla_plamattcarrotorange_8000_175_c` — PLA MATT Carrot Orange
+- `spectrum_pla_plamattchocolatebrown_8000_175_c` — PLA MATT Chocolate Brown
+- `spectrum_pla_plamattdarkgrey_8000_175_c` — PLA MATT Dark Grey
+- `spectrum_pla_plamattdeepblack_8000_175_c` — PLA MATT Deep Black
+- `spectrum_pla_plamattdragonred_8000_175_c` — PLA MATT Dragon Red
+- `spectrum_pla_plamattforestgreen_8000_175_c` — PLA MATT Forest Green
+- `spectrum_pla_plamattivorybeige_8000_175_c` — PLA MATT Ivory Beige
+- `spectrum_pla_plamattlavenderviolett_8000_175_c` — PLA MATT Lavender Violett
+- `spectrum_pla_plamattlightgrey_8000_175_c` — PLA MATT Light Grey
+- `spectrum_pla_plamattlimegreen_8000_175_c` — PLA MATT Lime Green
+- `spectrum_pla_plamattmagenta_8000_175_c` — PLA MATT Magenta
+- `spectrum_pla_plamattmilitarykhaki_8000_175_c` — PLA MATT Military Khaki
+- `spectrum_pla_plamattnatural_8000_175_c` — PLA MATT Natural
+- `spectrum_pla_plamattnavyblue_8000_175_c` — PLA MATT Navy Blue
+- `spectrum_pla_plamattpacificblue_8000_175_c` — PLA MATT Pacific Blue
+- `spectrum_pla_plamattpastelturquoise_8000_175_c` — PLA MATT Pastel Turquoise
+- `spectrum_pla_plamattpearlbronze_8000_175_c` — PLA MATT Pearl Bronze
+- `spectrum_pla_plamattpearlgold_8000_175_c` — PLA MATT Pearl Gold
+- `spectrum_pla_plamattpinkpanther_8000_175_c` — PLA MATT Pink Panther
+- `spectrum_pla_plamattpolarwhite_8000_175_c` — PLA MATT Polar White
+- `spectrum_pla_plamattrustcopper_8000_175_c` — PLA MATT Rust Copper
+- `spectrum_pla_plamattsilverstar_8000_175_c` — PLA MATT Silver Star
+- `spectrum_pla_plametalbrass_750_175_c` — PLA Metal Brass
+- `spectrum_pla_plametalbronze_750_175_c` — PLA Metal Bronze
+- `spectrum_pla_plametalcopper_750_175_c` — PLA Metal Copper
+- `spectrum_pla_plametalbrass_1500_175_c` — PLA Metal Brass
+- `spectrum_pla_plametalbronze_1500_175_c` — PLA Metal Bronze
+- `spectrum_pla_plametalcopper_1500_175_c` — PLA Metal Copper
+- `spectrum_pla_planaturealgae_250_175_c` — PLA Nature Algae
+- `spectrum_pla_planaturealgaenori_250_175_c` — PLA Nature Algae Nori
+- `spectrum_pla_planaturedarkbeer_250_175_c` — PLA Nature Dark Beer
+- `spectrum_pla_planatureflax_250_175_c` — PLA Nature Flax
+- `spectrum_pla_planaturehemp_250_175_c` — PLA Nature Hemp
+- `spectrum_pla_planaturepilsbeer_250_175_c` — PLA Nature Pils Beer
+- `spectrum_pla_planaturealgae_1000_175_c` — PLA Nature Algae
+- `spectrum_pla_planaturealgaenori_1000_175_c` — PLA Nature Algae Nori
+- `spectrum_pla_planaturedarkbeer_1000_175_c` — PLA Nature Dark Beer
+- `spectrum_pla_planatureflax_1000_175_c` — PLA Nature Flax
+- `spectrum_pla_planaturehemp_1000_175_c` — PLA Nature Hemp
+- `spectrum_pla_planaturepilsbeer_1000_175_c` — PLA Nature Pils Beer
+- `spectrum_pla_plapremiumhighspeedarcticwhite_1000_175_c` — PLA Premium HighSpeed Arctic White
+- `spectrum_pla_plapremiumhighspeedbabyblue_1000_175_c` — PLA Premium HighSpeed Baby Blue
+- `spectrum_pla_plapremiumhighspeedcrimsonred_1000_175_c` — PLA Premium HighSpeed Crimson Red
+- `spectrum_pla_plapremiumhighspeeddarkgrey_1000_175_c` — PLA Premium HighSpeed Dark Grey
+- `spectrum_pla_plapremiumhighspeeddeepblack_1000_175_c` — PLA Premium HighSpeed Deep Black
+- `spectrum_pla_plapremiumhighspeedgold_1000_175_c` — PLA Premium HighSpeed Gold
+- `spectrum_pla_plapremiumhighspeedgranitegrey_1000_175_c` — PLA Premium HighSpeed Granite Grey
+- `spectrum_pla_plapremiumhighspeedgrassgreen_1000_175_c` — PLA Premium HighSpeed Grass Green
+- `spectrum_pla_plapremiumhighspeedicelandblue_1000_175_c` — PLA Premium HighSpeed Iceland Blue
+- `spectrum_pla_plapremiumhighspeedlattebeige_1000_175_c` — PLA Premium HighSpeed Latte Beige
+- `spectrum_pla_plapremiumhighspeedleafgreen_1000_175_c` — PLA Premium HighSpeed Leaf Green
+- `spectrum_pla_plapremiumhighspeedlimegreen_1000_175_c` — PLA Premium HighSpeed Lime Green
+- `spectrum_pla_plapremiumhighspeedlionorange_1000_175_c` — PLA Premium HighSpeed Lion Orange
+- `spectrum_pla_plapremiumhighspeednavyblue_1000_175_c` — PLA Premium HighSpeed Navy Blue
+- `spectrum_pla_plapremiumhighspeedneored_1000_175_c` — PLA Premium HighSpeed Neo Red
+- `spectrum_pla_plapremiumhighspeedneongreenuv_1000_175_c` — PLA Premium HighSpeed Neon Green UV
+- `spectrum_pla_plapremiumhighspeedneonorangeuv_1000_175_c` — PLA Premium HighSpeed Neon Orange UV
+- `spectrum_pla_plapremiumhighspeedneontransparent_1000_175_c` — PLA Premium HighSpeed Neon Transparent
+- `spectrum_pla_plapremiumhighspeedpacificblue_1000_175_c` — PLA Premium HighSpeed Pacific Blue
+- `spectrum_pla_plapremiumhighspeedpinkpanther_1000_175_c` — PLA Premium HighSpeed Pink Panther
+- `spectrum_pla_plapremiumhighspeedsignalwhite_1000_175_c` — PLA Premium HighSpeed Signal White
+- `spectrum_pla_plapremiumhighspeedsilverstar_1000_175_c` — PLA Premium HighSpeed Silver Star
+- `spectrum_pla_plapremiumhighspeedtelegrey_1000_175_c` — PLA Premium HighSpeed Telegrey
+- `spectrum_pla_plapremiumhighspeedtrafficred_1000_175_c` — PLA Premium HighSpeed Traffic Red
+- `spectrum_pla_plapremiumhighspeedtrueyellow_1000_175_c` — PLA Premium HighSpeed True Yellow
+- `spectrum_pla_plapremiumhighspeedwalnutbrown_1000_175_c` — PLA Premium HighSpeed Walnut Brown
+- `spectrum_pla_plapremiumhighspeedarcticwhite_1000_175_r` — PLA Premium HighSpeed Arctic White
+- `spectrum_pla_plapremiumhighspeedbabyblue_1000_175_r` — PLA Premium HighSpeed Baby Blue
+- `spectrum_pla_plapremiumhighspeedcrimsonred_1000_175_r` — PLA Premium HighSpeed Crimson Red
+- `spectrum_pla_plapremiumhighspeeddarkgrey_1000_175_r` — PLA Premium HighSpeed Dark Grey
+- `spectrum_pla_plapremiumhighspeeddeepblack_1000_175_r` — PLA Premium HighSpeed Deep Black
+- `spectrum_pla_plapremiumhighspeedgold_1000_175_r` — PLA Premium HighSpeed Gold
+- `spectrum_pla_plapremiumhighspeedgranitegrey_1000_175_r` — PLA Premium HighSpeed Granite Grey
+- `spectrum_pla_plapremiumhighspeedgrassgreen_1000_175_r` — PLA Premium HighSpeed Grass Green
+- `spectrum_pla_plapremiumhighspeedicelandblue_1000_175_r` — PLA Premium HighSpeed Iceland Blue
+- `spectrum_pla_plapremiumhighspeedlattebeige_1000_175_r` — PLA Premium HighSpeed Latte Beige
+- `spectrum_pla_plapremiumhighspeedleafgreen_1000_175_r` — PLA Premium HighSpeed Leaf Green
+- `spectrum_pla_plapremiumhighspeedlimegreen_1000_175_r` — PLA Premium HighSpeed Lime Green
+- `spectrum_pla_plapremiumhighspeedlionorange_1000_175_r` — PLA Premium HighSpeed Lion Orange
+- `spectrum_pla_plapremiumhighspeednavyblue_1000_175_r` — PLA Premium HighSpeed Navy Blue
+- `spectrum_pla_plapremiumhighspeedneored_1000_175_r` — PLA Premium HighSpeed Neo Red
+- `spectrum_pla_plapremiumhighspeedneongreenuv_1000_175_r` — PLA Premium HighSpeed Neon Green UV
+- `spectrum_pla_plapremiumhighspeedneonorangeuv_1000_175_r` — PLA Premium HighSpeed Neon Orange UV
+- `spectrum_pla_plapremiumhighspeedneontransparent_1000_175_r` — PLA Premium HighSpeed Neon Transparent
+- `spectrum_pla_plapremiumhighspeedpacificblue_1000_175_r` — PLA Premium HighSpeed Pacific Blue
+- `spectrum_pla_plapremiumhighspeedpinkpanther_1000_175_r` — PLA Premium HighSpeed Pink Panther
+- `spectrum_pla_plapremiumhighspeedsignalwhite_1000_175_r` — PLA Premium HighSpeed Signal White
+- `spectrum_pla_plapremiumhighspeedsilverstar_1000_175_r` — PLA Premium HighSpeed Silver Star
+- `spectrum_pla_plapremiumhighspeedtelegrey_1000_175_r` — PLA Premium HighSpeed Telegrey
+- `spectrum_pla_plapremiumhighspeedtrafficred_1000_175_r` — PLA Premium HighSpeed Traffic Red
+- `spectrum_pla_plapremiumhighspeedtrueyellow_1000_175_r` — PLA Premium HighSpeed True Yellow
+- `spectrum_pla_plapremiumhighspeedwalnutbrown_1000_175_r` — PLA Premium HighSpeed Walnut Brown
+- `spectrum_pla_plasilkaluminiumsilver_250_175_c` — PLA SILK Aluminium Silver
+- `spectrum_pla_plasilkaluminumsilver_250_175_c` — PLA SILK Aluminum Silver
+- `spectrum_pla_plasilkamethystviolet_250_175_c` — PLA SILK Amethyst Violet
+- `spectrum_pla_plasilkapplegreen_250_175_c` — PLA SILK Apple Green
+- `spectrum_pla_plasilkcandyblue_250_175_c` — PLA SILK Candy Blue
+- `spectrum_pla_plasilkcinnamonbronze_250_175_c` — PLA SILK Cinnamon Bronze
+- `spectrum_pla_plasilkgloriousgold_250_175_c` — PLA SILK Glorious Gold
+- `spectrum_pla_plasilkindigoblue_250_175_c` — PLA SILK Indigo Blue
+- `spectrum_pla_plasilkpearlwhite_250_175_c` — PLA SILK Pearl White
+- `spectrum_pla_plasilkrosegold_250_175_c` — PLA SILK Rose Gold
+- `spectrum_pla_plasilkrubyred_250_175_c` — PLA SILK Ruby Red
+- `spectrum_pla_plasilksapphireblue_250_175_c` — PLA SILK Sapphire Blue
+- `spectrum_pla_plasilkspicycopper_250_175_c` — PLA SILK Spicy Copper
+- `spectrum_pla_plasilksterlingsilver_250_175_c` — PLA SILK Sterling Silver
+- `spectrum_pla_plasilktaffypink_250_175_c` — PLA SILK Taffy Pink
+- `spectrum_pla_plasilktropicalgreen_250_175_c` — PLA SILK Tropical Green
+- `spectrum_pla_plasilkunmellowyellow_250_175_c` — PLA SILK Unmellow Yellow
+- `spectrum_pla_plasilkaluminiumsilver_1000_175_c` — PLA SILK Aluminium Silver
+- `spectrum_pla_plasilkaluminumsilver_1000_175_c` — PLA SILK Aluminum Silver
+- `spectrum_pla_plasilkamethystviolet_1000_175_c` — PLA SILK Amethyst Violet
+- `spectrum_pla_plasilkapplegreen_1000_175_c` — PLA SILK Apple Green
+- `spectrum_pla_plasilkcandyblue_1000_175_c` — PLA SILK Candy Blue
+- `spectrum_pla_plasilkcinnamonbronze_1000_175_c` — PLA SILK Cinnamon Bronze
+- `spectrum_pla_plasilkgloriousgold_1000_175_c` — PLA SILK Glorious Gold
+- `spectrum_pla_plasilkindigoblue_1000_175_c` — PLA SILK Indigo Blue
+- `spectrum_pla_plasilkpearlwhite_1000_175_c` — PLA SILK Pearl White
+- `spectrum_pla_plasilkrosegold_1000_175_c` — PLA SILK Rose Gold
+- `spectrum_pla_plasilkrubyred_1000_175_c` — PLA SILK Ruby Red
+- `spectrum_pla_plasilksapphireblue_1000_175_c` — PLA SILK Sapphire Blue
+- `spectrum_pla_plasilkspicycopper_1000_175_c` — PLA SILK Spicy Copper
+- `spectrum_pla_plasilksterlingsilver_1000_175_c` — PLA SILK Sterling Silver
+- `spectrum_pla_plasilktaffypink_1000_175_c` — PLA SILK Taffy Pink
+- `spectrum_pla_plasilktropicalgreen_1000_175_c` — PLA SILK Tropical Green
+- `spectrum_pla_plasilkunmellowyellow_1000_175_c` — PLA SILK Unmellow Yellow
+- `spectrum_pla_plasilkrainbowancient_1000_175_c` — PLA SILK Rainbow Ancient
+- `spectrum_pla_plasilkrainbowearthblend_1000_175_c` — PLA SILK Rainbow Earth Blend
+- `spectrum_pla_plasilkrainbowfirered_1000_175_c` — PLA SILK Rainbow Fire Red
+- `spectrum_pla_plasilkrainbowfrostgloss_1000_175_c` — PLA SILK Rainbow Frost Gloss
+- `spectrum_pla_plasilkrainbowfusion_1000_175_c` — PLA SILK Rainbow Fusion
+- `spectrum_pla_plasilkrainbowoceanmelange_1000_175_c` — PLA SILK Rainbow Ocean Melange
+- `spectrum_pla_plathermoactivethermoactivered_500_175_c` — PLA Thermoactive Thermoactive Red
+- `spectrum_pla_plathermoactivethermoactivered_1000_175_c` — PLA Thermoactive Thermoactive Red
+- `spectrum_pla_platoughdarkgrey_1000_175_c` — PLA Tough Dark Grey
+- `spectrum_pla_platoughdeepblack_1000_175_c` — PLA Tough Deep Black
+- `spectrum_pla_platoughnatural_1000_175_c` — PLA Tough Natural
+- `spectrum_pla_platoughpolarwhite_1000_175_c` — PLA Tough Polar White
+- `spectrum_pla_platoughdarkgrey_1000_285_c` — PLA Tough Dark Grey
+- `spectrum_pla_platoughdeepblack_1000_285_c` — PLA Tough Deep Black
+- `spectrum_pla_platoughnatural_1000_285_c` — PLA Tough Natural
+- `spectrum_pla_platoughpolarwhite_1000_285_c` — PLA Tough Polar White
+- `spectrum_pla_rplabasaltgrey_1000_175_c` — R PLA Basalt Grey
+- `spectrum_pla_rplaleafgreen_1000_175_c` — R PLA Leaf Green
+- `spectrum_pla_rplasignalblue_1000_175_c` — R PLA Signal Blue
+- `spectrum_pla_rplasignalred_1000_175_c` — R PLA Signal Red
+- `spectrum_pla_rplasignalwhite_1000_175_c` — R PLA Signal White
+- `spectrum_pla_rplatrafficblack_1000_175_c` — R PLA Traffic Black
+- `spectrum_pla_rplayelloworange_1000_175_c` — R PLA Yellow Orange
+- `spectrum_pla_safeguardplababyblue_250_175_c` — SafeGuard PLA Baby Blue
+- `spectrum_pla_safeguardplabahamayellow_250_175_c` — SafeGuard PLA Bahama Yellow
+- `spectrum_pla_safeguardpladarkblue_250_175_c` — SafeGuard PLA Dark Blue
+- `spectrum_pla_safeguardpladeepblack_250_175_c` — SafeGuard PLA Deep Black
+- `spectrum_pla_safeguardplaindustrialgrey_250_175_c` — SafeGuard PLA Industrial Grey
+- `spectrum_pla_safeguardplalightgrey_250_175_c` — SafeGuard PLA Light Grey
+- `spectrum_pla_safeguardplalimegreen_250_175_c` — SafeGuard PLA Lime Green
+- `spectrum_pla_safeguardplamidnightblack_250_175_c` — SafeGuard PLA Midnight Black
+- `spectrum_pla_safeguardplaperformanceblue_250_175_c` — SafeGuard PLA Performance Blue
+- `spectrum_pla_safeguardplapolarwhite_250_175_c` — SafeGuard PLA Polar White
+- `spectrum_pla_safeguardplatruered_250_175_c` — SafeGuard PLA True Red
+- `spectrum_pla_safeguardplababyblue_1000_175_c` — SafeGuard PLA Baby Blue
+- `spectrum_pla_safeguardplabahamayellow_1000_175_c` — SafeGuard PLA Bahama Yellow
+- `spectrum_pla_safeguardpladarkblue_1000_175_c` — SafeGuard PLA Dark Blue
+- `spectrum_pla_safeguardpladeepblack_1000_175_c` — SafeGuard PLA Deep Black
+- `spectrum_pla_safeguardplaindustrialgrey_1000_175_c` — SafeGuard PLA Industrial Grey
+- `spectrum_pla_safeguardplalightgrey_1000_175_c` — SafeGuard PLA Light Grey
+- `spectrum_pla_safeguardplalimegreen_1000_175_c` — SafeGuard PLA Lime Green
+- `spectrum_pla_safeguardplamidnightblack_1000_175_c` — SafeGuard PLA Midnight Black
+- `spectrum_pla_safeguardplaperformanceblue_1000_175_c` — SafeGuard PLA Performance Blue
+- `spectrum_pla_safeguardplapolarwhite_1000_175_c` — SafeGuard PLA Polar White
+- `spectrum_pla_safeguardplatruered_1000_175_c` — SafeGuard PLA True Red
+- `spectrum_pla_stoneageplaacelight_1000_175_c` — Stone Age PLA Ace Light
+- `spectrum_pla_stoneagepladark_1000_175_c` — Stone Age PLA Dark
+- `spectrum_pla_thefilamentplabasaltgrey_1000_175_c` — The Filament PLA Basalt Grey
+- `spectrum_pla_thefilamentplabisonbrown_1000_175_c` — The Filament PLA Bison Brown
+- `spectrum_pla_thefilamentplacircuitgreen_1000_175_c` — The Filament PLA Circuit Green
+- `spectrum_pla_thefilamentplacloudgrey_1000_175_c` — The Filament PLA Cloud Grey
+- `spectrum_pla_thefilamentplamachineryorange_1000_175_c` — The Filament PLA Machinery Orange
+- `spectrum_pla_thefilamentplamidnightblack_1000_175_c` — The Filament PLA Midnight Black
+- `spectrum_pla_thefilamentplaperformanceblue_1000_175_c` — The Filament PLA Performance Blue
+- `spectrum_pla_thefilamentplasilveraluminium_1000_175_c` — The Filament PLA Silver Aluminium
+- `spectrum_pla_thefilamentplaskyblue_1000_175_c` — The Filament PLA Sky Blue
+- `spectrum_pla_thefilamentplasorbetyellow_1000_175_c` — The Filament PLA Sorbet Yellow
+- `spectrum_pla_thefilamentplastrawberrypink_1000_175_c` — The Filament PLA Strawberry Pink
+- `spectrum_pla_thefilamentplatechnicalred_1000_175_c` — The Filament PLA Technical Red
+- `spectrum_pla_thefilamentplatrafficwhite_1000_175_c` — The Filament PLA Traffic White
+- `spectrum_pla_thefilamentplawoodash_1000_175_c` — The Filament PLA Wood Ash
+- `spectrum_pla_thefilamentplaliteblack_1000_175_c` — The Filament PLA Lite Black
+- `spectrum_pla_thefilamentplaliteblue_1000_175_c` — The Filament PLA Lite Blue
+- `spectrum_pla_thefilamentplalitegreen_1000_175_c` — The Filament PLA Lite Green
+- `spectrum_pla_thefilamentplalitegrey_1000_175_c` — The Filament PLA Lite Grey
+- `spectrum_pla_thefilamentplalitemagenta_1000_175_c` — The Filament PLA Lite Magenta
+- `spectrum_pla_thefilamentplaliteorange_1000_175_c` — The Filament PLA Lite Orange
+- `spectrum_pla_thefilamentplalitered_1000_175_c` — The Filament PLA Lite Red
+- `spectrum_pla_thefilamentplalitesilver_1000_175_c` — The Filament PLA Lite Silver
+- `spectrum_pla_thefilamentplalitewhite_1000_175_c` — The Filament PLA Lite White
+- `spectrum_pla_thefilamentplaliteyellow_1000_175_c` — The Filament PLA Lite Yellow
+- `spectrum_pla_thefilamentplasmapurple_1000_175_c` — The Filament PLA Sma Purple
+- `spectrum_pla_plawoodebonyblack_500_175_c` — PLA WOOD Ebony Black
+- `spectrum_pla_plawoodnatural_500_175_c` — PLA WOOD Natural
+- `spectrum_pla_plawoodoak_500_175_c` — PLA WOOD Oak
+- `spectrum_pla_plawoodebonyblack_1000_175_c` — PLA WOOD Ebony Black
+- `spectrum_pla_plawoodnatural_1000_175_c` — PLA WOOD Natural
+- `spectrum_pla_plawoodoak_1000_175_c` — PLA WOOD Oak
+- `spectrum_pp_ppnatural_750_175_c` — PP Natural
+- `spectrum_pps_ppsam230natural_750_175_c` — PPS AM230 Natural
+- `spectrum_tpu_tpus-flex85abahamayellow_250_175_c` — TPU S-Flex 85A Bahama Yellow
+- `spectrum_tpu_tpus-flex85abloodyred_250_175_c` — TPU S-Flex 85A Bloody Red
+- `spectrum_tpu_tpus-flex85adeepblack_250_175_c` — TPU S-Flex 85A Deep Black
+- `spectrum_tpu_tpus-flex85alimegreen_250_175_c` — TPU S-Flex 85A Lime Green
+- `spectrum_tpu_tpus-flex85alionorange_250_175_c` — TPU S-Flex 85A Lion Orange
+- `spectrum_tpu_tpus-flex85apacificblue_250_175_c` — TPU S-Flex 85A Pacific Blue
+- `spectrum_tpu_tpus-flex85awhite_250_175_c` — TPU S-Flex 85A White
+- `spectrum_tpu_tpus-flex85abahamayellow_500_175_c` — TPU S-Flex 85A Bahama Yellow
+- `spectrum_tpu_tpus-flex85abloodyred_500_175_c` — TPU S-Flex 85A Bloody Red
+- `spectrum_tpu_tpus-flex85adeepblack_500_175_c` — TPU S-Flex 85A Deep Black
+- `spectrum_tpu_tpus-flex85alimegreen_500_175_c` — TPU S-Flex 85A Lime Green
+- `spectrum_tpu_tpus-flex85alionorange_500_175_c` — TPU S-Flex 85A Lion Orange
+- `spectrum_tpu_tpus-flex85apacificblue_500_175_c` — TPU S-Flex 85A Pacific Blue
+- `spectrum_tpu_tpus-flex85awhite_500_175_c` — TPU S-Flex 85A White
+- `spectrum_tpu_tpus-flex85abahamayellow_1000_175_c` — TPU S-Flex 85A Bahama Yellow
+- `spectrum_tpu_tpus-flex85abloodyred_1000_175_c` — TPU S-Flex 85A Bloody Red
+- `spectrum_tpu_tpus-flex85adeepblack_1000_175_c` — TPU S-Flex 85A Deep Black
+- `spectrum_tpu_tpus-flex85alimegreen_1000_175_c` — TPU S-Flex 85A Lime Green
+- `spectrum_tpu_tpus-flex85alionorange_1000_175_c` — TPU S-Flex 85A Lion Orange
+- `spectrum_tpu_tpus-flex85apacificblue_1000_175_c` — TPU S-Flex 85A Pacific Blue
+- `spectrum_tpu_tpus-flex85awhite_1000_175_c` — TPU S-Flex 85A White
+- `spectrum_tpu_tpus-flex90abahamayellow_250_175_c` — TPU S-Flex 90A Bahama Yellow
+- `spectrum_tpu_tpus-flex90abloodyred_250_175_c` — TPU S-Flex 90A Bloody Red
+- `spectrum_tpu_tpus-flex90adeepblack_250_175_c` — TPU S-Flex 90A Deep Black
+- `spectrum_tpu_tpus-flex90aglowinthedark_250_175_c` — TPU S-Flex 90A Glow In The Dark
+- `spectrum_tpu_tpus-flex90alimegreen_250_175_c` — TPU S-Flex 90A Lime Green
+- `spectrum_tpu_tpus-flex90alionorange_250_175_c` — TPU S-Flex 90A Lion Orange
+- `spectrum_tpu_tpus-flex90apacificblue_250_175_c` — TPU S-Flex 90A Pacific Blue
+- `spectrum_tpu_tpus-flex90apolarwhite_250_175_c` — TPU S-Flex 90A Polar White
+- `spectrum_tpu_tpus-flex90abahamayellow_500_175_c` — TPU S-Flex 90A Bahama Yellow
+- `spectrum_tpu_tpus-flex90abloodyred_500_175_c` — TPU S-Flex 90A Bloody Red
+- `spectrum_tpu_tpus-flex90adeepblack_500_175_c` — TPU S-Flex 90A Deep Black
+- `spectrum_tpu_tpus-flex90aglowinthedark_500_175_c` — TPU S-Flex 90A Glow In The Dark
+- `spectrum_tpu_tpus-flex90alimegreen_500_175_c` — TPU S-Flex 90A Lime Green
+- `spectrum_tpu_tpus-flex90alionorange_500_175_c` — TPU S-Flex 90A Lion Orange
+- `spectrum_tpu_tpus-flex90apacificblue_500_175_c` — TPU S-Flex 90A Pacific Blue
+- `spectrum_tpu_tpus-flex90apolarwhite_500_175_c` — TPU S-Flex 90A Polar White
+- `spectrum_tpu_tpus-flex90abahamayellow_1000_175_c` — TPU S-Flex 90A Bahama Yellow
+- `spectrum_tpu_tpus-flex90abloodyred_1000_175_c` — TPU S-Flex 90A Bloody Red
+- `spectrum_tpu_tpus-flex90adeepblack_1000_175_c` — TPU S-Flex 90A Deep Black
+- `spectrum_tpu_tpus-flex90aglowinthedark_1000_175_c` — TPU S-Flex 90A Glow In The Dark
+- `spectrum_tpu_tpus-flex90alimegreen_1000_175_c` — TPU S-Flex 90A Lime Green
+- `spectrum_tpu_tpus-flex90alionorange_1000_175_c` — TPU S-Flex 90A Lion Orange
+- `spectrum_tpu_tpus-flex90apacificblue_1000_175_c` — TPU S-Flex 90A Pacific Blue
+- `spectrum_tpu_tpus-flex90apolarwhite_1000_175_c` — TPU S-Flex 90A Polar White
+- `spectrum_tpu_tpus-flex98abahamayellow_250_175_c` — TPU S-Flex 98A Bahama Yellow
+- `spectrum_tpu_tpus-flex98abloodyred_250_175_c` — TPU S-Flex 98A Bloody Red
+- `spectrum_tpu_tpus-flex98adeepblack_250_175_c` — TPU S-Flex 98A Deep Black
+- `spectrum_tpu_tpus-flex98aglowinthedark_250_175_c` — TPU S-Flex 98A Glow In The Dark
+- `spectrum_tpu_tpus-flex98alimegreen_250_175_c` — TPU S-Flex 98A Lime Green
+- `spectrum_tpu_tpus-flex98alionorange_250_175_c` — TPU S-Flex 98A Lion Orange
+- `spectrum_tpu_tpus-flex98apacificblue_250_175_c` — TPU S-Flex 98A Pacific Blue
+- `spectrum_tpu_tpus-flex98apolarwhite_250_175_c` — TPU S-Flex 98A Polar White
+- `spectrum_tpu_tpus-flex98abahamayellow_500_175_c` — TPU S-Flex 98A Bahama Yellow
+- `spectrum_tpu_tpus-flex98abloodyred_500_175_c` — TPU S-Flex 98A Bloody Red
+- `spectrum_tpu_tpus-flex98adeepblack_500_175_c` — TPU S-Flex 98A Deep Black
+- `spectrum_tpu_tpus-flex98aglowinthedark_500_175_c` — TPU S-Flex 98A Glow In The Dark
+- `spectrum_tpu_tpus-flex98alimegreen_500_175_c` — TPU S-Flex 98A Lime Green
+- `spectrum_tpu_tpus-flex98alionorange_500_175_c` — TPU S-Flex 98A Lion Orange
+- `spectrum_tpu_tpus-flex98apacificblue_500_175_c` — TPU S-Flex 98A Pacific Blue
+- `spectrum_tpu_tpus-flex98apolarwhite_500_175_c` — TPU S-Flex 98A Polar White
+- `spectrum_tpu_tpus-flex98abahamayellow_1000_175_c` — TPU S-Flex 98A Bahama Yellow
+- `spectrum_tpu_tpus-flex98abloodyred_1000_175_c` — TPU S-Flex 98A Bloody Red
+- `spectrum_tpu_tpus-flex98adeepblack_1000_175_c` — TPU S-Flex 98A Deep Black
+- `spectrum_tpu_tpus-flex98aglowinthedark_1000_175_c` — TPU S-Flex 98A Glow In The Dark
+- `spectrum_tpu_tpus-flex98alimegreen_1000_175_c` — TPU S-Flex 98A Lime Green
+- `spectrum_tpu_tpus-flex98alionorange_1000_175_c` — TPU S-Flex 98A Lion Orange
+- `spectrum_tpu_tpus-flex98apacificblue_1000_175_c` — TPU S-Flex 98A Pacific Blue
+- `spectrum_tpu_tpus-flex98apolarwhite_1000_175_c` — TPU S-Flex 98A Polar White
+- `spectrum_tpu_tpus-flexcarbonblack_250_175_c` — TPU S-Flex Carbon Black
+- `spectrum_tpu_tpus-flexcarbonblack_500_175_c` — TPU S-Flex Carbon Black
+- `spectrum_tpu_thefilamenttpu82ablack_1000_175_c` — The Filament TPU 82A Black
+- `spectrum_tpu_thefilamenttpu82ablue_1000_175_c` — The Filament TPU 82A Blue
+- `spectrum_tpu_thefilamenttpu82agreen_1000_175_c` — The Filament TPU 82A Green
+- `spectrum_tpu_thefilamenttpu82ared_1000_175_c` — The Filament TPU 82A Red
+- `spectrum_tpu_thefilamenttpu82awhite_1000_175_c` — The Filament TPU 82A White
+- `spectrum_tpu_thefilamenttpu87ablack_1000_175_c` — The Filament TPU 87A Black
+- `spectrum_tpu_thefilamenttpu87ablue_1000_175_c` — The Filament TPU 87A Blue
+- `spectrum_tpu_thefilamenttpu87agreen_1000_175_c` — The Filament TPU 87A Green
+- `spectrum_tpu_thefilamenttpu87ared_1000_175_c` — The Filament TPU 87A Red
+- `spectrum_tpu_thefilamenttpu87awhite_1000_175_c` — The Filament TPU 87A White
+- `spectrum_tpu_thefilamenttpu95ablack_1000_175_c` — The Filament TPU 95A Black
+- `spectrum_tpu_thefilamenttpu95ablue_1000_175_c` — The Filament TPU 95A Blue
+- `spectrum_tpu_thefilamenttpu95agreen_1000_175_c` — The Filament TPU 95A Green
+- `spectrum_tpu_thefilamenttpu95ared_1000_175_c` — The Filament TPU 95A Red
+- `spectrum_tpu_thefilamenttpu95awhite_1000_175_c` — The Filament TPU 95A White

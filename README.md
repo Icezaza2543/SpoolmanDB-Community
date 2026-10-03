@@ -657,6 +657,12 @@ All 1 candidate groups are deferred for identity or tooling review. No migration
 
 The [review](docs/audits/2026-10-03-smartprint-duplicate-review.md) and [JSON audit](docs/audits/2026-10-03-smartprint-duplicate-review.json) retain the complete candidates, evidence and conflicts; all blockers are recorded in the [running backlog](docs/audits/duplicate-backlog.md).
 
+### spectrum duplicate audit (2026-10-03)
+
+All 1 candidate groups are deferred for identity or tooling review. No migration was applied; the catalog remains at 51,701 records. Original IDs, compiled metadata, identifiers, packaging and tare are unchanged.
+
+The [review](docs/audits/2026-10-03-spectrum-duplicate-review.md) and [JSON audit](docs/audits/2026-10-03-spectrum-duplicate-review.json) retain the complete candidates, evidence and conflicts; all blockers are recorded in the [running backlog](docs/audits/duplicate-backlog.md).
+
 ## Terms and policy
 
 This repository separates the project license from community and data-use expectations:
