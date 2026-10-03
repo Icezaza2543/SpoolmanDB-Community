@@ -1,0 +1,3276 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "AmazonBasics",
+  "audit_digest": "72a3c2eab55874a6c18295a34ab83845abbf5573be9b9f2e38236dc4e91d1ca6",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "f5272390dae8954626e59c03d13e74c09886b6f9",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {
+    "dup-ddacf0339a9c2c332a2aacbdc87536e441adda8f73d9a685d77b4ccd2492383e": {
+      "approved": true,
+      "survivor": "amazonbasics_pla_silkblue_1000_175_p",
+      "retire": [
+        "amazonbasics_pla_silkplablue_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-amazonbasics-duplicate-review.json",
+      "source": "f5272390dae8954626e59c03d13e74c09886b6f9"
+    },
+    "dup-02258db08d09a1fbd1bfba61facb2bd57a36e28e04c5e4c3f56a8300d46d919f": {
+      "approved": true,
+      "survivor": "amazonbasics_pla_silkgold_1000_175_p",
+      "retire": [
+        "amazonbasics_pla_silkplagold_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-amazonbasics-duplicate-review.json",
+      "source": "f5272390dae8954626e59c03d13e74c09886b6f9"
+    },
+    "dup-3f087b12e2537f07eb7c73814f0ebc10a085ebb738ebaf1ef2e0e90d5a0cad94": {
+      "approved": true,
+      "survivor": "amazonbasics_pla_silksilver_1000_175_p",
+      "retire": [
+        "amazonbasics_pla_silkplasilver_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-amazonbasics-duplicate-review.json",
+      "source": "f5272390dae8954626e59c03d13e74c09886b6f9"
+    }
+  },
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-ddacf0339a9c2c332a2aacbdc87536e441adda8f73d9a685d77b4ccd2492383e",
+      "ids": [
+        "amazonbasics_pla_silkblue_1000_175_p",
+        "amazonbasics_pla_silkplablue_1000_175_p"
+      ],
+      "proposed_survivor": "amazonbasics_pla_silkblue_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "amazonbasics_pla_silkplablue_1000_175_p": "amazonbasics_pla_silkblue_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "amazonbasics_pla_silkblue_1000_175_p",
+          "manufacturer": "AmazonBasics",
+          "name": "Silk Blue",
+          "material": "PLA",
+          "density": 1.25,
+          "weight": 1000.0,
+          "spool_weight": 266,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "1E90EC",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AmazonBasics.json::AmazonBasics::Silk {color_name}::Silk Blue::PLA::1000.0::1.75::plastic::False",
+          "template": "Silk {color_name}",
+          "source_color": "Blue",
+          "source_line": "Silk",
+          "source_file": "AmazonBasics.json",
+          "source_definition": {
+            "source_file": "AmazonBasics.json",
+            "definition_index": 2,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": true
+        },
+        {
+          "id": "amazonbasics_pla_silkplablue_1000_175_p",
+          "manufacturer": "AmazonBasics",
+          "name": "Silk PLA Blue",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0099E6",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AmazonBasics.json::AmazonBasics::Silk PLA {color_name}::Silk PLA Blue::PLA::1000::1.75::plastic::False",
+          "template": "Silk PLA {color_name}",
+          "source_color": "Blue",
+          "source_line": "Silk PLA",
+          "source_file": "AmazonBasics.json",
+          "source_definition": {
+            "source_file": "AmazonBasics.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "amazonbasics_pla_silkblue_1000_175_p": 1.25,
+          "amazonbasics_pla_silkplablue_1000_175_p": 1.24
+        },
+        "spool_weight": {
+          "amazonbasics_pla_silkblue_1000_175_p": 266,
+          "amazonbasics_pla_silkplablue_1000_175_p": null
+        },
+        "color_hex": {
+          "amazonbasics_pla_silkblue_1000_175_p": "1E90EC",
+          "amazonbasics_pla_silkplablue_1000_175_p": "0099E6"
+        },
+        "extruder_temp": {
+          "amazonbasics_pla_silkblue_1000_175_p": 220,
+          "amazonbasics_pla_silkplablue_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "amazonbasics_pla_silkblue_1000_175_p": null,
+          "amazonbasics_pla_silkplablue_1000_175_p": [
+            190,
+            230
+          ]
+        },
+        "bed_temp": {
+          "amazonbasics_pla_silkblue_1000_175_p": 60,
+          "amazonbasics_pla_silkplablue_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "amazonbasics_pla_silkblue_1000_175_p": null,
+          "amazonbasics_pla_silkplablue_1000_175_p": [
+            50,
+            70
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "AB001",
+      "status": "APPROVED",
+      "survivor": "amazonbasics_pla_silkblue_1000_175_p",
+      "retire": [
+        "amazonbasics_pla_silkplablue_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    },
+    {
+      "group_id": "dup-02258db08d09a1fbd1bfba61facb2bd57a36e28e04c5e4c3f56a8300d46d919f",
+      "ids": [
+        "amazonbasics_pla_silkgold_1000_175_p",
+        "amazonbasics_pla_silkplagold_1000_175_p"
+      ],
+      "proposed_survivor": "amazonbasics_pla_silkgold_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "amazonbasics_pla_silkplagold_1000_175_p": "amazonbasics_pla_silkgold_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "amazonbasics_pla_silkgold_1000_175_p",
+          "manufacturer": "AmazonBasics",
+          "name": "Silk Gold",
+          "material": "PLA",
+          "density": 1.25,
+          "weight": 1000.0,
+          "spool_weight": 266,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "F8CC6D",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AmazonBasics.json::AmazonBasics::Silk {color_name}::Silk Gold::PLA::1000.0::1.75::plastic::False",
+          "template": "Silk {color_name}",
+          "source_color": "Gold",
+          "source_line": "Silk",
+          "source_file": "AmazonBasics.json",
+          "source_definition": {
+            "source_file": "AmazonBasics.json",
+            "definition_index": 2,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": true
+        },
+        {
+          "id": "amazonbasics_pla_silkplagold_1000_175_p",
+          "manufacturer": "AmazonBasics",
+          "name": "Silk PLA Gold",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DDB95D",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AmazonBasics.json::AmazonBasics::Silk PLA {color_name}::Silk PLA Gold::PLA::1000::1.75::plastic::False",
+          "template": "Silk PLA {color_name}",
+          "source_color": "Gold",
+          "source_line": "Silk PLA",
+          "source_file": "AmazonBasics.json",
+          "source_definition": {
+            "source_file": "AmazonBasics.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "amazonbasics_pla_silkgold_1000_175_p": 1.25,
+          "amazonbasics_pla_silkplagold_1000_175_p": 1.24
+        },
+        "spool_weight": {
+          "amazonbasics_pla_silkgold_1000_175_p": 266,
+          "amazonbasics_pla_silkplagold_1000_175_p": null
+        },
+        "color_hex": {
+          "amazonbasics_pla_silkgold_1000_175_p": "F8CC6D",
+          "amazonbasics_pla_silkplagold_1000_175_p": "DDB95D"
+        },
+        "extruder_temp": {
+          "amazonbasics_pla_silkgold_1000_175_p": 220,
+          "amazonbasics_pla_silkplagold_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "amazonbasics_pla_silkgold_1000_175_p": null,
+          "amazonbasics_pla_silkplagold_1000_175_p": [
+            190,
+            230
+          ]
+        },
+        "bed_temp": {
+          "amazonbasics_pla_silkgold_1000_175_p": 60,
+          "amazonbasics_pla_silkplagold_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "amazonbasics_pla_silkgold_1000_175_p": null,
+          "amazonbasics_pla_silkplagold_1000_175_p": [
+            50,
+            70
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "AB002",
+      "status": "APPROVED",
+      "survivor": "amazonbasics_pla_silkgold_1000_175_p",
+      "retire": [
+        "amazonbasics_pla_silkplagold_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    },
+    {
+      "group_id": "dup-3f087b12e2537f07eb7c73814f0ebc10a085ebb738ebaf1ef2e0e90d5a0cad94",
+      "ids": [
+        "amazonbasics_pla_silkplasilver_1000_175_p",
+        "amazonbasics_pla_silksilver_1000_175_p"
+      ],
+      "proposed_survivor": "amazonbasics_pla_silksilver_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "amazonbasics_pla_silkplasilver_1000_175_p": "amazonbasics_pla_silksilver_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "amazonbasics_pla_silkplasilver_1000_175_p",
+          "manufacturer": "AmazonBasics",
+          "name": "Silk PLA Silver",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "C9D0D4",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AmazonBasics.json::AmazonBasics::Silk PLA {color_name}::Silk PLA Silver::PLA::1000::1.75::plastic::False",
+          "template": "Silk PLA {color_name}",
+          "source_color": "Silver",
+          "source_line": "Silk PLA",
+          "source_file": "AmazonBasics.json",
+          "source_definition": {
+            "source_file": "AmazonBasics.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        },
+        {
+          "id": "amazonbasics_pla_silksilver_1000_175_p",
+          "manufacturer": "AmazonBasics",
+          "name": "Silk Silver",
+          "material": "PLA",
+          "density": 1.25,
+          "weight": 1000.0,
+          "spool_weight": 266,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "A0AAB1",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AmazonBasics.json::AmazonBasics::Silk {color_name}::Silk Silver::PLA::1000.0::1.75::plastic::False",
+          "template": "Silk {color_name}",
+          "source_color": "Silver",
+          "source_line": "Silk",
+          "source_file": "AmazonBasics.json",
+          "source_definition": {
+            "source_file": "AmazonBasics.json",
+            "definition_index": 2,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "amazonbasics_pla_silkplasilver_1000_175_p": 1.24,
+          "amazonbasics_pla_silksilver_1000_175_p": 1.25
+        },
+        "spool_weight": {
+          "amazonbasics_pla_silkplasilver_1000_175_p": null,
+          "amazonbasics_pla_silksilver_1000_175_p": 266
+        },
+        "color_hex": {
+          "amazonbasics_pla_silkplasilver_1000_175_p": "C9D0D4",
+          "amazonbasics_pla_silksilver_1000_175_p": "A0AAB1"
+        },
+        "extruder_temp": {
+          "amazonbasics_pla_silkplasilver_1000_175_p": null,
+          "amazonbasics_pla_silksilver_1000_175_p": 220
+        },
+        "extruder_temp_range": {
+          "amazonbasics_pla_silkplasilver_1000_175_p": [
+            190,
+            230
+          ],
+          "amazonbasics_pla_silksilver_1000_175_p": null
+        },
+        "bed_temp": {
+          "amazonbasics_pla_silkplasilver_1000_175_p": null,
+          "amazonbasics_pla_silksilver_1000_175_p": 60
+        },
+        "bed_temp_range": {
+          "amazonbasics_pla_silkplasilver_1000_175_p": [
+            50,
+            70
+          ],
+          "amazonbasics_pla_silksilver_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "AB003",
+      "status": "APPROVED",
+      "survivor": "amazonbasics_pla_silksilver_1000_175_p",
+      "retire": [
+        "amazonbasics_pla_silkplasilver_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    }
+  ],
+  "deferred_groups": [],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {
+    "amazonbasics_pla_silkplablue_1000_175_p": {
+      "replaced_by": "amazonbasics_pla_silkblue_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-amazonbasics-duplicate-review.json",
+      "source": "f5272390dae8954626e59c03d13e74c09886b6f9",
+      "retired_key": "AmazonBasics.json::AmazonBasics::Silk PLA {color_name}::Silk PLA Blue::PLA::1000::1.75::plastic::False"
+    },
+    "amazonbasics_pla_silkplagold_1000_175_p": {
+      "replaced_by": "amazonbasics_pla_silkgold_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-amazonbasics-duplicate-review.json",
+      "source": "f5272390dae8954626e59c03d13e74c09886b6f9",
+      "retired_key": "AmazonBasics.json::AmazonBasics::Silk PLA {color_name}::Silk PLA Gold::PLA::1000::1.75::plastic::False"
+    },
+    "amazonbasics_pla_silkplasilver_1000_175_p": {
+      "replaced_by": "amazonbasics_pla_silksilver_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-amazonbasics-duplicate-review.json",
+      "source": "f5272390dae8954626e59c03d13e74c09886b6f9",
+      "retired_key": "AmazonBasics.json::AmazonBasics::Silk PLA {color_name}::Silk PLA Silver::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "official_evidence": [],
+  "metadata_review": "Three Rule1 strict SilkPLA duplicates. No readable current exact first-party printing evidence found; retain density1.25/nozzle220/bed60 unresolved. No identifiers or packaging/tare change.",
+  "original_source_definitions": [
+    {
+      "name": "{color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 232,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 55,
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "50C2EF"
+        },
+        {
+          "name": "Brown",
+          "hex": "7D503F"
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "0828A0"
+        },
+        {
+          "name": "Dark Gray",
+          "hex": "5E6872"
+        },
+        {
+          "name": "Translucent",
+          "hex": "00FFFFFF",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Red",
+          "hex": "3CD8100C",
+          "translucent": true
+        },
+        {
+          "name": "Yellow",
+          "hex": "F9EB51"
+        },
+        {
+          "name": "Gold",
+          "hex": "C8A970"
+        },
+        {
+          "name": "Light Grey",
+          "hex": "F7F3F0"
+        },
+        {
+          "name": "Bright Green",
+          "hex": "B4D68D"
+        },
+        {
+          "name": "Luminous",
+          "hex": "E2DFD0",
+          "glow": true
+        },
+        {
+          "name": "Neon Green",
+          "hex": "3C8AD77F",
+          "translucent": true
+        },
+        {
+          "name": "Neon Orange",
+          "hex": "3CF8A813",
+          "translucent": true
+        },
+        {
+          "name": "Orange",
+          "hex": "E3A03D"
+        },
+        {
+          "name": "Pearl White",
+          "hex": "F7F3E6"
+        },
+        {
+          "name": "Pink",
+          "hex": "D9B8B4"
+        },
+        {
+          "name": "Red",
+          "hex": "E5371C"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Silver",
+          "hex": "9F9D9E"
+        },
+        {
+          "name": "Purple",
+          "hex": "D90258"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 252,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 255,
+      "bed_temp": 90,
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Dark Gray",
+          "hex": "636363"
+        },
+        {
+          "name": "Blue",
+          "hex": "00B4D8"
+        },
+        {
+          "name": "Red",
+          "hex": "D1001F"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 266,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "F8CC6D"
+        },
+        {
+          "name": "Copper",
+          "hex": "926043"
+        },
+        {
+          "name": "Blue",
+          "hex": "1E90EC"
+        },
+        {
+          "name": "Silver",
+          "hex": "A0AAB1"
+        },
+        {
+          "name": "Cream",
+          "hex": "FEFDFA"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "{color_name}",
+      "material": "PETG",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 390,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "bed_temp": 70,
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Orange",
+          "hex": "FEA608"
+        },
+        {
+          "name": "Blue",
+          "hex": "2578D8"
+        },
+        {
+          "name": "Red",
+          "hex": "FC1E08"
+        },
+        {
+          "name": "Gray",
+          "hex": "BCC0B2"
+        },
+        {
+          "name": "Yellow",
+          "hex": "F7ED78"
+        },
+        {
+          "name": "Translucent",
+          "hex": "FFFFFF",
+          "translucent": true
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "0099E6"
+        },
+        {
+          "name": "Gold",
+          "hex": "DDB95D"
+        },
+        {
+          "name": "Off White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Silver",
+          "hex": "C9D0D4"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "amazonbasics_pla_blue_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Blue",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "50C2EF",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Blue::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "{color_name}",
+      "color": "Blue",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "50C2EF"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_brown_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Brown",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "7D503F",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Brown::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "{color_name}",
+      "color": "Brown",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Brown",
+            "hex": "7D503F"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_darkblue_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Dark Blue",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0828A0",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Dark Blue::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "{color_name}",
+      "color": "Dark Blue",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Dark Blue",
+            "hex": "0828A0"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_darkgray_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Dark Gray",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "5E6872",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Dark Gray::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "{color_name}",
+      "color": "Dark Gray",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Dark Gray",
+            "hex": "5E6872"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_translucent_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Translucent",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "00FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": true,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Translucent::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "{color_name}",
+      "color": "Translucent",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Translucent",
+            "hex": "00FFFFFF",
+            "translucent": true
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_translucentred_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Translucent Red",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "3CD8100C",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": true,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Translucent Red::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "{color_name}",
+      "color": "Translucent Red",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Translucent Red",
+            "hex": "3CD8100C",
+            "translucent": true
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_yellow_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Yellow",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F9EB51",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Yellow::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "{color_name}",
+      "color": "Yellow",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "F9EB51"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_gold_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Gold",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "C8A970",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Gold::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "{color_name}",
+      "color": "Gold",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Gold",
+            "hex": "C8A970"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_lightgrey_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Light Grey",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F7F3F0",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Light Grey::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "{color_name}",
+      "color": "Light Grey",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Light Grey",
+            "hex": "F7F3F0"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_brightgreen_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Bright Green",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "B4D68D",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Bright Green::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "{color_name}",
+      "color": "Bright Green",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Bright Green",
+            "hex": "B4D68D"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_luminous_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Luminous",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "E2DFD0",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": true,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Luminous::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "{color_name}",
+      "color": "Luminous",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Luminous",
+            "hex": "E2DFD0",
+            "glow": true
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_neongreen_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Neon Green",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "3C8AD77F",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": true,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Neon Green::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 11,
+      "template": "{color_name}",
+      "color": "Neon Green",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Neon Green",
+            "hex": "3C8AD77F",
+            "translucent": true
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_neonorange_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Neon Orange",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "3CF8A813",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": true,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Neon Orange::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 12,
+      "template": "{color_name}",
+      "color": "Neon Orange",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Neon Orange",
+            "hex": "3CF8A813",
+            "translucent": true
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_orange_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Orange",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "E3A03D",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Orange::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 13,
+      "template": "{color_name}",
+      "color": "Orange",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Orange",
+            "hex": "E3A03D"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_pearlwhite_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Pearl White",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F7F3E6",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Pearl White::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 14,
+      "template": "{color_name}",
+      "color": "Pearl White",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Pearl White",
+            "hex": "F7F3E6"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_pink_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Pink",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "D9B8B4",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Pink::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 15,
+      "template": "{color_name}",
+      "color": "Pink",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Pink",
+            "hex": "D9B8B4"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_red_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Red",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "E5371C",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Red::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 16,
+      "template": "{color_name}",
+      "color": "Red",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "E5371C"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_black_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Black",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Black::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 17,
+      "template": "{color_name}",
+      "color": "Black",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_silver_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Silver",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "9F9D9E",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Silver::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 18,
+      "template": "{color_name}",
+      "color": "Silver",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Silver",
+            "hex": "9F9D9E"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_purple_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Purple",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "D90258",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Purple::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 19,
+      "template": "{color_name}",
+      "color": "Purple",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Purple",
+            "hex": "D90258"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_white_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "White",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 232,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::White::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 20,
+      "template": "{color_name}",
+      "color": "White",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 232,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_abs_white_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "White",
+        "material": "ABS",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": 252,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": 255,
+        "extruder_temp_range": null,
+        "bed_temp": 90,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::White::ABS::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "{color_name}",
+      "color": "White",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "ABS",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 252,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 255,
+        "bed_temp": 90,
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_abs_black_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Black",
+        "material": "ABS",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": 252,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": 255,
+        "extruder_temp_range": null,
+        "bed_temp": 90,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Black::ABS::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "{color_name}",
+      "color": "Black",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "ABS",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 252,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 255,
+        "bed_temp": 90,
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_abs_darkgray_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Dark Gray",
+        "material": "ABS",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": 252,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "636363",
+        "color_hexes": null,
+        "extruder_temp": 255,
+        "extruder_temp_range": null,
+        "bed_temp": 90,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Dark Gray::ABS::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "{color_name}",
+      "color": "Dark Gray",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "ABS",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 252,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 255,
+        "bed_temp": 90,
+        "colors": [
+          {
+            "name": "Dark Gray",
+            "hex": "636363"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_abs_blue_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Blue",
+        "material": "ABS",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": 252,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "00B4D8",
+        "color_hexes": null,
+        "extruder_temp": 255,
+        "extruder_temp_range": null,
+        "bed_temp": 90,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Blue::ABS::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "{color_name}",
+      "color": "Blue",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "ABS",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 252,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 255,
+        "bed_temp": 90,
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "00B4D8"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_abs_red_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Red",
+        "material": "ABS",
+        "density": 1.27,
+        "weight": 1000.0,
+        "spool_weight": 252,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "D1001F",
+        "color_hexes": null,
+        "extruder_temp": 255,
+        "extruder_temp_range": null,
+        "bed_temp": 90,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Red::ABS::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "{color_name}",
+      "color": "Red",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "ABS",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 252,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 255,
+        "bed_temp": 90,
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "D1001F"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_silkcopper_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Silk Copper",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 266,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "926043",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::Silk {color_name}::Silk Copper::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Silk {color_name}",
+      "color": "Copper",
+      "line": "Silk",
+      "cell": {
+        "name": "Silk {color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 266,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 60,
+        "colors": [
+          {
+            "name": "Copper",
+            "hex": "926043"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_silkcream_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Silk Cream",
+        "material": "PLA",
+        "density": 1.25,
+        "weight": 1000.0,
+        "spool_weight": 266,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FEFDFA",
+        "color_hexes": null,
+        "extruder_temp": 220,
+        "extruder_temp_range": null,
+        "bed_temp": 60,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::Silk {color_name}::Silk Cream::PLA::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Silk {color_name}",
+      "color": "Cream",
+      "line": "Silk",
+      "cell": {
+        "name": "Silk {color_name}",
+        "material": "PLA",
+        "density": 1.25,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 266,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 220,
+        "bed_temp": 60,
+        "colors": [
+          {
+            "name": "Cream",
+            "hex": "FEFDFA"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_petg_white_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "White",
+        "material": "PETG",
+        "density": 1.29,
+        "weight": 1000.0,
+        "spool_weight": 390,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": 240,
+        "extruder_temp_range": null,
+        "bed_temp": 70,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::White::PETG::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "{color_name}",
+      "color": "White",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PETG",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 390,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 240,
+        "bed_temp": 70,
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_petg_black_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Black",
+        "material": "PETG",
+        "density": 1.29,
+        "weight": 1000.0,
+        "spool_weight": 390,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": 240,
+        "extruder_temp_range": null,
+        "bed_temp": 70,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Black::PETG::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "{color_name}",
+      "color": "Black",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PETG",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 390,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 240,
+        "bed_temp": 70,
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_petg_orange_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Orange",
+        "material": "PETG",
+        "density": 1.29,
+        "weight": 1000.0,
+        "spool_weight": 390,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FEA608",
+        "color_hexes": null,
+        "extruder_temp": 240,
+        "extruder_temp_range": null,
+        "bed_temp": 70,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Orange::PETG::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "{color_name}",
+      "color": "Orange",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PETG",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 390,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 240,
+        "bed_temp": 70,
+        "colors": [
+          {
+            "name": "Orange",
+            "hex": "FEA608"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_petg_blue_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Blue",
+        "material": "PETG",
+        "density": 1.29,
+        "weight": 1000.0,
+        "spool_weight": 390,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "2578D8",
+        "color_hexes": null,
+        "extruder_temp": 240,
+        "extruder_temp_range": null,
+        "bed_temp": 70,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Blue::PETG::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "{color_name}",
+      "color": "Blue",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PETG",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 390,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 240,
+        "bed_temp": 70,
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "2578D8"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_petg_red_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Red",
+        "material": "PETG",
+        "density": 1.29,
+        "weight": 1000.0,
+        "spool_weight": 390,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FC1E08",
+        "color_hexes": null,
+        "extruder_temp": 240,
+        "extruder_temp_range": null,
+        "bed_temp": 70,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Red::PETG::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "{color_name}",
+      "color": "Red",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PETG",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 390,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 240,
+        "bed_temp": 70,
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "FC1E08"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_petg_gray_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Gray",
+        "material": "PETG",
+        "density": 1.29,
+        "weight": 1000.0,
+        "spool_weight": 390,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "BCC0B2",
+        "color_hexes": null,
+        "extruder_temp": 240,
+        "extruder_temp_range": null,
+        "bed_temp": 70,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Gray::PETG::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "{color_name}",
+      "color": "Gray",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PETG",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 390,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 240,
+        "bed_temp": 70,
+        "colors": [
+          {
+            "name": "Gray",
+            "hex": "BCC0B2"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_petg_yellow_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Yellow",
+        "material": "PETG",
+        "density": 1.29,
+        "weight": 1000.0,
+        "spool_weight": 390,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F7ED78",
+        "color_hexes": null,
+        "extruder_temp": 240,
+        "extruder_temp_range": null,
+        "bed_temp": 70,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Yellow::PETG::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "{color_name}",
+      "color": "Yellow",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PETG",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 390,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 240,
+        "bed_temp": 70,
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "F7ED78"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_petg_translucent_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Translucent",
+        "material": "PETG",
+        "density": 1.29,
+        "weight": 1000.0,
+        "spool_weight": 390,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": 240,
+        "extruder_temp_range": null,
+        "bed_temp": 70,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": true,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::{color_name}::Translucent::PETG::1000.0::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "{color_name}",
+      "color": "Translucent",
+      "line": "",
+      "cell": {
+        "name": "{color_name}",
+        "material": "PETG",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000.0,
+            "spool_weight": 390,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 240,
+        "bed_temp": 70,
+        "colors": [
+          {
+            "name": "Translucent",
+            "hex": "FFFFFF",
+            "translucent": true
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "amazonbasics_pla_silkplaoffwhite_1000_175_p",
+        "manufacturer": "AmazonBasics",
+        "name": "Silk PLA Off White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "AmazonBasics.json::AmazonBasics::Silk PLA {color_name}::Silk PLA Off White::PLA::1000::1.75::plastic::False",
+      "filename": "AmazonBasics.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk PLA {color_name}",
+      "color": "Off White",
+      "line": "Silk PLA",
+      "cell": {
+        "name": "Silk PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Off White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          50,
+          70
+        ],
+        "country_of_origin": "US"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 3,
+    "approved_groups": 3,
+    "retired": 3,
+    "deferred": 0,
+    "hard_stops": 0,
+    "before_count": 51712,
+    "after_count": 51709,
+    "brand_before": 43,
+    "brand_after": 40,
+    "registry_before": 1722,
+    "registry_after": 1725,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "AB",
+    "metadata": [],
+    "no_transfers": true,
+    "official_evidence": [],
+    "metadata_review": "Three Rule1 strict SilkPLA duplicates. No readable current exact first-party printing evidence found; retain density1.25/nozzle220/bed60 unresolved. No identifiers or packaging/tare change.",
+    "printing_default_flags": []
+  }
+}
