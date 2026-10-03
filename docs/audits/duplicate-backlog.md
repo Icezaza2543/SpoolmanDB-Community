@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## chckx deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|CH001 / `dup-299c93ce44bdb22707f2e67bae927a012f826cf8664dbc679df4a75da5965d98`|`chckx_petg_crystalpurple_1000_175_p`<br>`chckx_petg_petgcrystalpurple_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-chckx-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## r3d deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
