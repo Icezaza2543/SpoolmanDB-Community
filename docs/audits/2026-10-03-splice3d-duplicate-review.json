@@ -1,0 +1,2388 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "splice3d",
+  "audit_digest": "2e76833ef84198903eaf04089838ce09591e6010ccfaf18671296e1ce4cf7500",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "ab87807148374ab7e905376cb78ef4c3e26a36bd",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-eb862602306fe656b8f581804b1cf96273a4503a63d4a60f44c9a794874885b1",
+      "ids": [
+        "splice3d_pla_plaindustrialgray_1000_175_p",
+        "splice3d_pla_plaindustrialgrey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "splice3d_pla_plaindustrialgray_1000_175_p",
+          "manufacturer": "Splice3D",
+          "name": "PLA Industrial Gray",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "bdb7b9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            30
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "GB",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Industrial Gray::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Industrial Gray",
+          "source_line": "PLA",
+          "source_file": "splice3d.json",
+          "source_definition": {
+            "source_file": "splice3d.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 23,
+            "compiled_records": 23
+          },
+          "upstream": false
+        },
+        {
+          "id": "splice3d_pla_plaindustrialgrey_1000_175_p",
+          "manufacturer": "Splice3D",
+          "name": "PLA Industrial Grey",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "5a5955",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            30
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "GB",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Industrial Grey::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Industrial Grey",
+          "source_line": "PLA",
+          "source_file": "splice3d.json",
+          "source_definition": {
+            "source_file": "splice3d.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 23,
+            "compiled_records": 23
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "splice3d_pla_plaindustrialgray_1000_175_p": "bdb7b9",
+          "splice3d_pla_plaindustrialgrey_1000_175_p": "5a5955"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "SL001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-eb862602306fe656b8f581804b1cf96273a4503a63d4a60f44c9a794874885b1",
+      "ids": [
+        "splice3d_pla_plaindustrialgray_1000_175_p",
+        "splice3d_pla_plaindustrialgrey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "splice3d_pla_plaindustrialgray_1000_175_p",
+          "manufacturer": "Splice3D",
+          "name": "PLA Industrial Gray",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "bdb7b9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            30
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "GB",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Industrial Gray::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Industrial Gray",
+          "source_line": "PLA",
+          "source_file": "splice3d.json",
+          "source_definition": {
+            "source_file": "splice3d.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 23,
+            "compiled_records": 23
+          },
+          "upstream": false
+        },
+        {
+          "id": "splice3d_pla_plaindustrialgrey_1000_175_p",
+          "manufacturer": "Splice3D",
+          "name": "PLA Industrial Grey",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "5a5955",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            30
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "GB",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Industrial Grey::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Industrial Grey",
+          "source_line": "PLA",
+          "source_file": "splice3d.json",
+          "source_definition": {
+            "source_file": "splice3d.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 23,
+            "compiled_records": 23
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "splice3d_pla_plaindustrialgray_1000_175_p": "bdb7b9",
+          "splice3d_pla_plaindustrialgrey_1000_175_p": "5a5955"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "SL001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "official_evidence": [
+    {
+      "url": "https://splice3d.com/products/workday-pla?variant=42268611346572",
+      "nozzle": [
+        190,
+        220
+      ],
+      "bed": [
+        30,
+        60
+      ],
+      "note": "IndustrialGray exists, not proof that sourceGray/GreyHEXbdb7b9/5a5955 are sameSKU."
+    }
+  ],
+  "metadata_review": "IndustrialGray/Grey visibly differentHEX tie, no sameSKU proof; defer. Currentbedrange30–60 versusexisting25/30-only held in audit; no edits to deferredrecords.",
+  "original_source_definitions": [
+    {
+      "name": "Hf {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        65,
+        65
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "0f0f0f"
+        },
+        {
+          "name": "Midnight Blue",
+          "hex": "5041be"
+        },
+        {
+          "name": "Spring Green",
+          "hex": "81f57f"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "GB"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        30
+      ],
+      "colors": [
+        {
+          "name": "Aquamarine Blue",
+          "hex": "afe3df"
+        },
+        {
+          "name": "Autumn Orange",
+          "hex": "ee9a3a"
+        },
+        {
+          "name": "Black",
+          "hex": "0d0d0d"
+        },
+        {
+          "name": "Blue Lilac",
+          "hex": "ad9ccd"
+        },
+        {
+          "name": "Bubblegum Pink",
+          "hex": "e4aad7"
+        },
+        {
+          "name": "Caribbean Blue",
+          "hex": "026677"
+        },
+        {
+          "name": "Charcoal Gray",
+          "hex": "6c7277"
+        },
+        {
+          "name": "Chocolate Brown",
+          "hex": "472516"
+        },
+        {
+          "name": "Copper",
+          "hex": "bb5528"
+        },
+        {
+          "name": "Fluorescent Orange",
+          "hex": "f37133"
+        },
+        {
+          "name": "Hot Magenta",
+          "hex": "ec4999"
+        },
+        {
+          "name": "Industrial Gray",
+          "hex": "bdb7b9"
+        },
+        {
+          "name": "Industrial Grey",
+          "hex": "5a5955"
+        },
+        {
+          "name": "Jungle Green",
+          "hex": "36820d"
+        },
+        {
+          "name": "Lively Yellow",
+          "hex": "ffc122"
+        },
+        {
+          "name": "Midnight Blue",
+          "hex": "003366"
+        },
+        {
+          "name": "Nutty Brown",
+          "hex": "9d370b"
+        },
+        {
+          "name": "Poppy Red",
+          "hex": "ea1a1a"
+        },
+        {
+          "name": "Ryobyte Green",
+          "hex": "d4e15d"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "4e9fe6"
+        },
+        {
+          "name": "Spring Green",
+          "hex": "00ff7f"
+        },
+        {
+          "name": "White",
+          "hex": "fafafa"
+        },
+        {
+          "name": "Zinc Yellow",
+          "hex": "f2ed64"
+        }
+      ],
+      "country_of_origin": "GB"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "splice3d_petg_hfblack_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "Hf Black",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0f0f0f",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          65,
+          65
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::Hf {color_name}::Hf Black::PETG::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Hf {color_name}",
+      "color": "Black",
+      "line": "Hf",
+      "cell": {
+        "name": "Hf {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp_range": [
+          65,
+          65
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "0f0f0f"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_petg_hfmidnightblue_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "Hf Midnight Blue",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "5041be",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          65,
+          65
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::Hf {color_name}::Hf Midnight Blue::PETG::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Hf {color_name}",
+      "color": "Midnight Blue",
+      "line": "Hf",
+      "cell": {
+        "name": "Hf {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp_range": [
+          65,
+          65
+        ],
+        "colors": [
+          {
+            "name": "Midnight Blue",
+            "hex": "5041be"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_petg_hfspringgreen_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "Hf Spring Green",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "81f57f",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          65,
+          65
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::Hf {color_name}::Hf Spring Green::PETG::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Hf {color_name}",
+      "color": "Spring Green",
+      "line": "Hf",
+      "cell": {
+        "name": "Hf {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp_range": [
+          65,
+          65
+        ],
+        "colors": [
+          {
+            "name": "Spring Green",
+            "hex": "81f57f"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_petg_hfwhite_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "Hf White",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          65,
+          65
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::Hf {color_name}::Hf White::PETG::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Hf {color_name}",
+      "color": "White",
+      "line": "Hf",
+      "cell": {
+        "name": "Hf {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp_range": [
+          65,
+          65
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plaaquamarineblue_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Aquamarine Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "afe3df",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Aquamarine Blue::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA {color_name}",
+      "color": "Aquamarine Blue",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Aquamarine Blue",
+            "hex": "afe3df"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plaautumnorange_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Autumn Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ee9a3a",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Autumn Orange::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA {color_name}",
+      "color": "Autumn Orange",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Autumn Orange",
+            "hex": "ee9a3a"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plablack_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0d0d0d",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Black::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA {color_name}",
+      "color": "Black",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "0d0d0d"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plabluelilac_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Blue Lilac",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ad9ccd",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Blue Lilac::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA {color_name}",
+      "color": "Blue Lilac",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Blue Lilac",
+            "hex": "ad9ccd"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plabubblegumpink_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Bubblegum Pink",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e4aad7",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Bubblegum Pink::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA {color_name}",
+      "color": "Bubblegum Pink",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Bubblegum Pink",
+            "hex": "e4aad7"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_placaribbeanblue_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Caribbean Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "026677",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Caribbean Blue::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PLA {color_name}",
+      "color": "Caribbean Blue",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Caribbean Blue",
+            "hex": "026677"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_placharcoalgray_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Charcoal Gray",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "6c7277",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Charcoal Gray::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PLA {color_name}",
+      "color": "Charcoal Gray",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Charcoal Gray",
+            "hex": "6c7277"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plachocolatebrown_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Chocolate Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "472516",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Chocolate Brown::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PLA {color_name}",
+      "color": "Chocolate Brown",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Chocolate Brown",
+            "hex": "472516"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_placopper_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Copper",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "bb5528",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Copper::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PLA {color_name}",
+      "color": "Copper",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Copper",
+            "hex": "bb5528"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plafluorescentorange_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Fluorescent Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f37133",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Fluorescent Orange::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "PLA {color_name}",
+      "color": "Fluorescent Orange",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Fluorescent Orange",
+            "hex": "f37133"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plahotmagenta_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Hot Magenta",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ec4999",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Hot Magenta::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "PLA {color_name}",
+      "color": "Hot Magenta",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Hot Magenta",
+            "hex": "ec4999"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plajunglegreen_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Jungle Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "36820d",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Jungle Green::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 13,
+      "template": "PLA {color_name}",
+      "color": "Jungle Green",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Jungle Green",
+            "hex": "36820d"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plalivelyyellow_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Lively Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffc122",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Lively Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 14,
+      "template": "PLA {color_name}",
+      "color": "Lively Yellow",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Lively Yellow",
+            "hex": "ffc122"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plamidnightblue_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Midnight Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "003366",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Midnight Blue::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 15,
+      "template": "PLA {color_name}",
+      "color": "Midnight Blue",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Midnight Blue",
+            "hex": "003366"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_planuttybrown_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Nutty Brown",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "9d370b",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Nutty Brown::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 16,
+      "template": "PLA {color_name}",
+      "color": "Nutty Brown",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Nutty Brown",
+            "hex": "9d370b"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plapoppyred_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Poppy Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ea1a1a",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Poppy Red::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 17,
+      "template": "PLA {color_name}",
+      "color": "Poppy Red",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Poppy Red",
+            "hex": "ea1a1a"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plaryobytegreen_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Ryobyte Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "d4e15d",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Ryobyte Green::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 18,
+      "template": "PLA {color_name}",
+      "color": "Ryobyte Green",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Ryobyte Green",
+            "hex": "d4e15d"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plaskyblue_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Sky Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "4e9fe6",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Sky Blue::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 19,
+      "template": "PLA {color_name}",
+      "color": "Sky Blue",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Sky Blue",
+            "hex": "4e9fe6"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plaspringgreen_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Spring Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "00ff7f",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Spring Green::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 20,
+      "template": "PLA {color_name}",
+      "color": "Spring Green",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Spring Green",
+            "hex": "00ff7f"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plawhite_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "fafafa",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA White::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 21,
+      "template": "PLA {color_name}",
+      "color": "White",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "fafafa"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    },
+    {
+      "record": {
+        "id": "splice3d_pla_plazincyellow_1000_175_p",
+        "manufacturer": "Splice3D",
+        "name": "PLA Zinc Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f2ed64",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "GB",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "splice3d.json::Splice3D::PLA {color_name}::PLA Zinc Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "splice3d.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 22,
+      "template": "PLA {color_name}",
+      "color": "Zinc Yellow",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          30,
+          30
+        ],
+        "colors": [
+          {
+            "name": "Zinc Yellow",
+            "hex": "f2ed64"
+          }
+        ],
+        "country_of_origin": "GB"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 1,
+    "hard_stops": 0,
+    "before_count": 51701,
+    "after_count": 51701,
+    "brand_before": 27,
+    "brand_after": 27,
+    "registry_before": 1733,
+    "registry_after": 1733,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "SL",
+    "metadata": [],
+    "no_transfers": true,
+    "official_evidence": [
+      {
+        "url": "https://splice3d.com/products/workday-pla?variant=42268611346572",
+        "nozzle": [
+          190,
+          220
+        ],
+        "bed": [
+          30,
+          60
+        ],
+        "note": "IndustrialGray exists, not proof that sourceGray/GreyHEXbdb7b9/5a5955 are sameSKU."
+      }
+    ],
+    "metadata_review": "IndustrialGray/Grey visibly differentHEX tie, no sameSKU proof; defer. Currentbedrange30–60 versusexisting25/30-only held in audit; no edits to deferredrecords.",
+    "printing_default_flags": []
+  }
+}

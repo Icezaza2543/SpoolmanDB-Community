@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## splice3d deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|SL001 / `dup-eb862602306fe656b8f581804b1cf96273a4503a63d4a60f44c9a794874885b1`|`splice3d_pla_plaindustrialgray_1000_175_p`<br>`splice3d_pla_plaindustrialgrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-splice3d-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## spectrum deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
