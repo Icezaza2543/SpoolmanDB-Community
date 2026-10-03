@@ -2,7 +2,7 @@
 
 Date: 2026-10-03 · Related: Community issue #66 (Kingroon PETG duplicates)
 
-Status: revised spec awaiting owner review. This revision authorizes no implementation, data retirement, push or GitHub comment.
+Status: owner approved `fa55358` with the retired-key and exact-reinstatement amendments below. STEP 2 authorizes tooling, CI and documentation only. No data retirement, push or GitHub comment is authorized.
 
 ## Problem
 
@@ -40,30 +40,33 @@ New contract file `contracts/retired_ids.json`, initially with an empty `retired
       "replaced_by": "<surviving_id>",
       "reason": "duplicate",
       "ref": "#66",
-      "source": "<evidence commit SHA or URL>"
+      "source": "<evidence commit SHA or URL>",
+      "retired_key": "<exact original baseline key>"
     }
   }
 }
 ```
 
-`reason` has one allowed value, `duplicate`. Each entry requires a review reference in `ref` and a commit SHA or evidence URL in `source`. The brand audit preserves the before/after records and evidence needed to reproduce the decision.
+`reason` has one allowed value, `duplicate`. Each entry requires a review reference in `ref`, a commit SHA or evidence URL in `source`, and the retired record's original baseline key in `retired_key`. Store that key byte-for-byte. The brand audit preserves the before/after records and evidence needed to reproduce the decision.
 
 `scripts/compile_id_baseline.py --strict` enforces these rules:
 
 1. A historical baseline ID may be absent only when a valid registry entry records its approved retirement. Unregistered removals remain breaking errors. A new entry must refer to a historical record, not a fabricated ID.
 2. `replaced_by` must name a surviving record in the current compiled data. The duplicate-color migration selects an existing survivor; it does not generate a replacement ID by renaming a unique record.
 3. No chains, cycles or self-mappings. A replacement must not itself be retired. If a later migration retires a target, that same commit must re-point all affected entries to the final surviving target and validate those mappings.
-4. A retired ID must not reappear in the compiled data during normal maintenance.
-5. Retired and replacement records must match on manufacturer, material, weight, diameter, `spool_type`, `is_refill`, normalized color name and normalized product-line tokens. Black must not map to White. The checker compiles the retired source from the trusted base ref and compares it with the current replacement. It uses source definitions and the reviewed audit to identify the color and line. Some source styles put line words inside color labels; the audit must document that decomposition without dropping physical color words. An ambiguous decomposition does not authorize retirement. For an older retirement whose target changes, the checker must recover the original retired record from the retirement's Git history and retained audit evidence; the immediate base catalog no longer contains that ID.
-6. Compare the registry with `--base-ref`. Entries are append-only; deletion or modification is an error. The sole normal-maintenance exception is changing `replaced_by` under rule 3. Preserve the original `reason`, `ref` and `source`, and record the re-pointing rationale and evidence in the new migration audit.
+4. A retired ID must not reappear in the compiled data, except through exact reinstatement under the rollback rule below.
+5. Retired and replacement records must match on manufacturer, material, weight, diameter, `spool_type`, `is_refill`, normalized color name and normalized product-line tokens. Black must not map to White. The checker reads the retired identity from `retired_key`, plus the reviewed audit, and compares it with the current replacement. It does not recover the retired identity from Git history. A newly registered key must match the trusted base's mapping to the retired ID. Some source styles put line words inside color labels; the audit must document that decomposition without dropping physical color words. An ambiguous decomposition does not authorize retirement.
+6. Compare the registry with `--base-ref`. Entries are append-only except for rule 3 target re-pointing and exact reinstatement. Other deletions or modifications are errors. A re-pointing preserves the original `reason`, `ref`, `source` and `retired_key`, with its rationale and evidence in the new migration audit.
 
 `--update` removes exactly the registered retired keys from the baseline without `--accept-breaking-baseline-changes`. It preserves surviving mappings and checks that the updated baseline matches the current compiled manifest. Unregistered removals remain breaking and cannot use the registry as a bypass; the existing explicit breaking flag is not part of this migration workflow.
 
 The build workflow publishes `retired_ids.json` beside `filaments.json` on GitHub Pages. The registry records migration history; it provides no automatic compatibility behavior in Spoolman.
 
-### Rollback decision before a data retirement
+### Rollback: exact reinstatement only
 
-The current append-only and no-reappearance rules would reject a normal revert that restores retired records and removes their registry entries. This revision adds no rollback exception. The owner must approve a checked rollback rule before authorizing the first data-retirement apply. Until then, work may reach the no-data tooling stage and Kingroon dry-run review, but must not retire IDs. Do not solve this conflict with a force-push, history rewrite or unchecked breaking override.
+A migration may delete a registry entry only if the same commit restores that retired ID in compiled data with a baseline key byte-identical to the entry's `retired_key`, and re-enrolls that exact key-to-ID mapping in the baseline. Reinstatement with a different key, deletion without reinstatement, or any other registry modification is an error, apart from rule 3 target re-pointing.
+
+Use a normal commit or revert commit for an exact reinstatement. The checker validates the source, baseline and registry together against the trusted base. Do not force-push, rewrite history or use an unchecked breaking override. Exact reinstatement is the sole exception to rule 4's no-reappearance requirement.
 
 ## 2. Duplicate definition and merge rules
 
@@ -145,7 +148,8 @@ Document these rules in `docs/maintenance.md` during implementation:
 Tests cover:
 
 - Registry rules 1–6, including missing targets, self-mappings, cycles, stale IDs, cross-color/line mappings, registry edits and validated target re-pointing.
-- Evidence and audit retention for an older retirement whose target changes.
+- Retired identity checks from the stored `retired_key`, including a later target change without Git-history recovery.
+- Exact reinstatement passes; reinstatement with a different key fails; registry deletion without reinstatement fails.
 - Registered retirement enrollment without the breaking flag, rejection of unregistered removals, and exact HEAD baseline synchronization.
 - Ordered normalization: PLA versus PLA+, PETG versus PETG Basic, protected version tokens, multi-color order and repeated tokens.
 - Merge preservation of unique colors, surviving IDs and partial package matrices, with no new Cartesian variants.
@@ -156,10 +160,10 @@ Tests cover:
 
 Follow the owner's no-PR maintenance workflow in `docs/maintenance.md` section 8. Use one focused local commit per step and later per approved brand. Do not create or push remote feature branches. Fast-forward local main only for an accepted delivery; push only when the owner authorizes it. Do not post GitHub comments or change issue status under this request.
 
-1. **Spec revision:** commit only this document on `design/duplicate-merge`, self-review it and stop for owner approval. No implementation, registry files, baseline or filament changes.
+1. **Spec revision:** apply the two owner-approved amendments, self-review and commit this document on `design/duplicate-merge`. The owner has authorized proceeding to STEP 2 after that commit. No registry, baseline or filament changes belong in the spec commit.
 2. **Tooling:** after spec approval, use TDD to implement the empty registries, scripts, CI checks and documentation, without data retirements. Run the full validation suite in maintenance section 7, make one focused local commit and stop with command results. Do not proceed to data apply or push.
 3. **Kingroon pilot review:** after the preceding approvals, run the Kingroon audit and merge dry-run. Show the exact proposed mappings and conflicts. Expected candidates include `Kingroon PETG {Black,White,Grey}` versus `PETG {Black,White,Gray}` and the older PLA groups where confirmed duplicates. These expectations are not merge approvals. Leave PETG Basic untouched, touch no other brand and stop for owner approval before `--apply`.
-4. **Accepted Kingroon delivery:** only after owner approval of the mappings and rollback rule, apply the selected changes, validate and commit. Fast-forward and push only under explicit owner delivery authorization; verify hosted checks and publication before cleanup. Closing issue #66 or posting a response requires separate authorization.
+4. **Accepted Kingroon delivery:** only after owner approval of the mappings, apply the selected changes, validate and commit under the exact-reinstatement rule. Fast-forward and push only under explicit owner delivery authorization; verify hosted checks and publication before cleanup. Closing issue #66 or posting a response requires separate authorization.
 5. **Later brands:** after the Kingroon pilot succeeds, seek authorization for the next brand. Candidate group counts help set the order; they do not authorize merging all roughly 2,300 records. Use one focused commit per approved brand and the same audit, approval, validation and delivery gates.
 
 Each report lists changed files, commands with pass/fail output, exact retired mappings, unresolved metadata, counts before/after and open decisions. Report intentional historical retirements as retirements, not as zero historical impact. Require zero unregistered removals, zero changed survivor/unique IDs and zero unintended new variants, and inspect the baseline delta against the immutable starting commit.
