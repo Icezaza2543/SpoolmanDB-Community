@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## buddy3d deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|BD022 / `dup-8954032c26a801fd9a434ce249e827dccf1228b1497651401adc263078454d27`|`buddy3d_pla_plaglitterblack/gold_1000_175_p`<br>`buddy3d_pla_plaglitterblackgold_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-buddy3d-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## sakata3d deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
