@@ -21,11 +21,51 @@
         {
           "name": "Gold",
           "hex": "D5983E"
-        },
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 187.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 60,
+      "colors": [
         {
           "name": "Copper",
           "hex": "B36A51"
-        },
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 187.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 60,
+      "colors": [
         {
           "name": "Black & Rose Red",
           "multi_color_direction": "coaxial",
@@ -33,7 +73,27 @@
             "000000",
             "C21E56"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 187.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 60,
+      "colors": [
         {
           "name": "Black & Gold & Purple",
           "multi_color_direction": "coaxial",
@@ -109,7 +169,10 @@
       "colors": [
         {
           "name": "Gray",
-          "hex": "80817F"
+          "hex": "80817F",
+          "codes": [
+            "B0106003"
+          ]
         }
       ],
       "country_of_origin": "CN"
@@ -755,7 +818,27 @@
           "codes": [
             "B0106001"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 250,
+      "bed_temp": 77
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Blue",
           "hex": "0690F5",
@@ -763,21 +846,54 @@
             "B0106005",
             "B0106007"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 250,
+      "bed_temp": 77
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
         {
-          "name": "Gray",
-          "hex": "5B605E",
-          "codes": [
-            "B0106003"
-          ]
-        },
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Orange",
           "hex": "FFA60E",
           "codes": [
             "B0106009"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 250,
+      "bed_temp": 77
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red",
           "hex": "D71B14",
@@ -785,29 +901,129 @@
             "B0106006",
             "B0106008"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 250,
+      "bed_temp": 77
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "TRANS Blue",
           "hex": "024892"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 250,
+      "bed_temp": 77
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "TRANS Red",
           "hex": "93343B"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 250,
+      "bed_temp": 77
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Transparent",
           "hex": "DBDADF",
           "codes": [
             "B0106004"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 250,
+      "bed_temp": 77
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "White",
           "hex": "F0EFF2",
           "codes": [
             "B0106002"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 250,
+      "bed_temp": 77
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Yellow",
           "hex": "F8E449",
@@ -2619,12 +2835,2189 @@
         {
           "weight": 250,
           "spool_type": "cardboard"
-        },
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black&Blue&Purple",
+          "hex": "362E7C"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black & Dark Gold",
+          "hex": "C5C1A5"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black & dark green",
+          "hex": "063B46"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black&Gold&Purple",
+          "hex": "80550F"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black&Purple",
+          "hex": "4E2971"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black&Red",
+          "hex": "522E38"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black & Red & Gold",
+          "hex": "963801"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black & Rose",
+          "hex": "50254D"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "52DCFF",
+          "codes": [
+            "B0102005"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue&Green",
+          "hex": "2BA7A2"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue green & Orange",
+          "hex": "00848E"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue & Purple",
+          "hex": "1837BA"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Copper",
+          "hex": "DA7A6F",
+          "codes": [
+            "B0102003"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Dark Green",
+          "hex": "A0C6BB",
+          "codes": [
+            "B0102004"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Dark Green & Midnight Blue & Black",
+          "hex": "5A825E"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Dark green&Purple&Yellow",
+          "hex": "BA5B7D"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "F29F43",
+          "codes": [
+            "B0102001"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold & Blue",
+          "hex": "00ABD2"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Blue&Purple",
+          "hex": "00479E"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Copper",
+          "hex": "CF7C41"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Green&Purple",
+          "hex": "AA821A"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Purple",
+          "hex": "A73E51"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Silver",
+          "hex": "B09A6A"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "GOLD&SILVER&COPPER",
+          "hex": "FDDAB6"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "90F6EA",
+          "codes": [
+            "B0102414"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Midnight Blue & Black",
+          "hex": "193F79"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Midnight Blue & Silver",
+          "hex": "242C79"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Orange & Blue",
+          "hex": "9189AB"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "ORANGE&BLUE&GREEN",
+          "hex": "FFFF72"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "FFCDD9",
+          "codes": [
+            "B0102006"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Purple & Green",
+          "hex": "0D5C3F"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Purple & Orange",
+          "hex": "862EA7"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Purple & Teal & Burnt Orange",
+          "hex": "FFB9FF"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Blue",
+          "hex": "7E74B0"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Blue&Green",
+          "hex": "1AD7CC"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Gold",
+          "hex": "FE7D7B"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Gold&Blue",
+          "hex": "D5C2C8"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Gold&Purple",
+          "hex": "F9A799"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Green",
+          "hex": "494922"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Purple&Green",
+          "hex": "F3DABE"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Yellow&Blue",
+          "hex": "F5AAF1"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Rose Red & Light Blue",
+          "hex": "543269"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Sapphire green & Orange red & Gold",
+          "hex": "F2B7A7"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "B6BEC7",
+          "codes": [
+            "B0102002"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "F0F0EE",
+          "codes": [
+            "B0102007"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 250,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Yellow&Green",
+          "hex": "74B73C"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
         {
           "weight": 1000,
           "spool_type": "cardboard",
           "spool_weight": 267
-        },
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black&Blue&Purple",
+          "hex": "362E7C"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black & Dark Gold",
+          "hex": "C5C1A5"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black & dark green",
+          "hex": "063B46"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black&Purple",
+          "hex": "4E2971"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black&Red",
+          "hex": "522E38"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black & Red & Gold",
+          "hex": "963801"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black & Rose",
+          "hex": "50254D"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "52DCFF",
+          "codes": [
+            "B0102005"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue&Green",
+          "hex": "2BA7A2"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue green & Orange",
+          "hex": "00848E"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue & Purple",
+          "hex": "1837BA"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Copper",
+          "hex": "DA7A6F",
+          "codes": [
+            "B0102003"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Dark Green",
+          "hex": "A0C6BB",
+          "codes": [
+            "B0102004"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Dark Green & Midnight Blue & Black",
+          "hex": "5A825E"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Dark green&Purple&Yellow",
+          "hex": "BA5B7D"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "F29F43",
+          "codes": [
+            "B0102001"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold & Blue",
+          "hex": "00ABD2"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Blue&Purple",
+          "hex": "00479E"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Copper",
+          "hex": "CF7C41"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Green&Purple",
+          "hex": "AA821A"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Purple",
+          "hex": "A73E51"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Gold&Silver",
+          "hex": "B09A6A"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "GOLD&SILVER&COPPER",
+          "hex": "FDDAB6"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "90F6EA",
+          "codes": [
+            "B0102414"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Midnight Blue & Black",
+          "hex": "193F79"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Midnight Blue & Silver",
+          "hex": "242C79"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Orange & Blue",
+          "hex": "9189AB"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "ORANGE&BLUE&GREEN",
+          "hex": "FFFF72"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "FFCDD9",
+          "codes": [
+            "B0102006"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Purple & Green",
+          "hex": "0D5C3F"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Purple & Orange",
+          "hex": "862EA7"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Purple & Teal & Burnt Orange",
+          "hex": "FFB9FF"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Blue",
+          "hex": "7E74B0"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Blue&Green",
+          "hex": "1AD7CC"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Gold",
+          "hex": "FE7D7B"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Gold&Blue",
+          "hex": "D5C2C8"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Gold&Purple",
+          "hex": "F9A799"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Green",
+          "hex": "494922"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Purple&Green",
+          "hex": "F3DABE"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red&Yellow&Blue",
+          "hex": "F5AAF1"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Rose Red & Light Blue",
+          "hex": "543269"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Sapphire green & Orange red & Gold",
+          "hex": "F2B7A7"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "B6BEC7",
+          "codes": [
+            "B0102002"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "F0F0EE",
+          "codes": [
+            "B0102007"
+          ]
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 267
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Yellow&Green",
+          "hex": "74B73C"
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
         {
           "weight": 3000,
           "spool_type": "cardboard"
@@ -2637,207 +5030,1062 @@
         {
           "name": "Black&Blue&Purple",
           "hex": "362E7C"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Black & Dark Gold",
           "hex": "C5C1A5"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Black & dark green",
           "hex": "063B46"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Black&Gold&Purple",
           "hex": "80550F"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Black&Purple",
           "hex": "4E2971"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Black&Red",
           "hex": "522E38"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Black & Red & Gold",
           "hex": "963801"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Black & Rose",
           "hex": "50254D"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Blue",
           "hex": "52DCFF",
           "codes": [
             "B0102005"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Blue&Green",
           "hex": "2BA7A2"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Blue green & Orange",
           "hex": "00848E"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Blue & Purple",
           "hex": "1837BA"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Copper",
           "hex": "DA7A6F",
           "codes": [
             "B0102003"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Dark Green",
           "hex": "A0C6BB",
           "codes": [
             "B0102004"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Dark Green & Midnight Blue & Black",
           "hex": "5A825E"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Dark green&Purple&Yellow",
           "hex": "BA5B7D"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gold",
           "hex": "F29F43",
           "codes": [
             "B0102001"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gold & Blue",
           "hex": "00ABD2"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gold&Blue&Purple",
           "hex": "00479E"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gold&Copper",
           "hex": "CF7C41"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gold&Green&Purple",
           "hex": "AA821A"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gold&Purple",
           "hex": "A73E51"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Gold&Silver",
           "hex": "B09A6A"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "GOLD&SILVER&COPPER",
           "hex": "FDDAB6"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Green",
           "hex": "90F6EA",
           "codes": [
             "B0102414"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Midnight Blue & Black",
           "hex": "193F79"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Midnight Blue & Silver",
           "hex": "242C79"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Orange & Blue",
           "hex": "9189AB"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "ORANGE&BLUE&GREEN",
           "hex": "FFFF72"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Pink",
           "hex": "FFCDD9",
           "codes": [
             "B0102006"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Purple & Green",
           "hex": "0D5C3F"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Purple & Orange",
           "hex": "862EA7"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Purple & Teal & Burnt Orange",
           "hex": "FFB9FF"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red&Blue",
           "hex": "7E74B0"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red&Blue&Green",
           "hex": "1AD7CC"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red&Gold",
           "hex": "FE7D7B"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red&Gold&Blue",
           "hex": "D5C2C8"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red&Gold&Purple",
           "hex": "F9A799"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red&Green",
           "hex": "494922"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red&Purple&Green",
           "hex": "F3DABE"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Red&Yellow&Blue",
           "hex": "F5AAF1"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Rose Red & Light Blue",
           "hex": "543269"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Sapphire green & Orange red & Gold",
           "hex": "F2B7A7"
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Silver",
           "hex": "B6BEC7",
           "codes": [
             "B0102002"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "White",
           "hex": "F0F0EE",
           "codes": [
             "B0102007"
           ]
-        },
+        }
+      ],
+      "country_of_origin": "CN",
+      "extruder_temp": 205,
+      "bed_temp": 60
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.32,
+      "weights": [
+        {
+          "weight": 3000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Yellow&Green",
           "hex": "74B73C"

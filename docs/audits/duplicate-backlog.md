@@ -45,6 +45,18 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## eryone deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|ER002 / `dup-4c79fe615e92b5df6c0ceec7f4e29667ae94ac0c518d01fa6cb2d2d74c9b631d`|`eryone_pla_black_1000_175_c`<br>`eryone_pla_plablack_1000_175_c`|PLABlackB0101001 replicated across1000/3000g; exactweight binding unavailable; no blindtransfer.|[review](2026-10-03-eryone-duplicate-review.json)|
+|ER004 / `dup-6fb3abad4ea3d22f49bd87229853acd0b08ff5b1986400c8d8a16d8bb91156e1`|`eryone_pla_plasilkcopper_1000_175_c`<br>`eryone_pla_silkcopper_1000_175_c`|CopperB0102003 replicated across250/1000/3000g; live exactweight binding unproven; defer without blindtransfer.|[review](2026-10-03-eryone-duplicate-review.json)|
+|ER005 / `dup-1d945c5c6a1e4e0828e9a027594da05e3ce5f765af0b551328ee3ff2f34f6ddc`|`eryone_pla_plasilkgold_1000_175_c`<br>`eryone_pla_silkgold_1000_175_c`|GoldB0102001 replicated across250/1000/3000g; live exactweight binding unproven; defer without blindtransfer.|[review](2026-10-03-eryone-duplicate-review.json)|
+|ER006 / `dup-ed95c1be3053cfc50c55b6052beb9b9536bc4e35bf3ae51c8ca266c7b0bf177b`|`eryone_pla_plawhite_1000_175_c`<br>`eryone_pla_white_1000_175_c`|PLAWhiteB0101002 replicated across1000/3000g; exactweight binding unavailable; no blindtransfer.|[review](2026-10-03-eryone-duplicate-review.json)|
+|ER007 / `dup-5db75a39a4bc36500111552096953f46e258439cd4834e1de5dbf828acd2caad`|`eryone_tpu_black_500_175_c`<br>`eryone_tpu_tpublack_500_175_c`|TPUBlack500g candidate carriesB0107001/B0107015 replicated across500/1000g; no sameSKUweight proof; retainPLA-like density unresolved and both records.|[review](2026-10-03-eryone-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## francofil deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
