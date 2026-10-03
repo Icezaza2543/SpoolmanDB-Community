@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## matterhackers deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|MH001 / `dup-b8f73bd251b848e33c161f1d6b40855c4e0c0215183388fe73a7acc0c9152f19`|`matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p`<br>`matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-matterhackers-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## l3d deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
