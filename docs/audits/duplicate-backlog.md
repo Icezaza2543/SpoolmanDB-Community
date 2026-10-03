@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## filamentsdepot deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|FD001 / `dup-16506851842feae0bb209ddb6736636a144ea00105cb6cd27b8e75e137c475e1`|`filamentsdepot_petg_petgstonegray_1000_175_p`<br>`filamentsdepot_petg_petgstonegrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-filamentsdepot-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## conjure deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
