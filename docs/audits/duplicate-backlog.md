@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## filamentworld deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|FW001 / `dup-461266fe7f1d4169145c930b68114c01ac4cc9c936b98588d382fd7e4a051a25`|`filamentworld_pla_plabasic-darkgreen_1000_175_p`<br>`filamentworld_pla_plabasicdarkgreen_1000_175_p`|Strict line/color mismatch and Cartesian/malformed alternative; existingPLAXBASX175XDGR officially binds750g1.75, not source1000g. Defer all retirement/transfer pending exact weight identity review.|[review](2026-10-03-filamentworld-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## filamentsdepot deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
