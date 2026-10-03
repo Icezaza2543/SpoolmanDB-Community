@@ -45,6 +45,23 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## francofil deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|FR001 / `dup-02c7504d6ac4e9277e748c0d1bf4e0e4dde6903dcbbfad79ae01520e024d3fc1`|`francofil_pla_plapink-ral4003_10000_285_p`<br>`francofil_pla_plapinkral4003_10000_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR002 / `dup-0ebb0c8378fe753243a4ebd75e05525a2e6c11adacb10b27274519c5c546a110`|`francofil_pla_plapink-ral4003_500_175_p`<br>`francofil_pla_plapinkral4003_500_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR003 / `dup-2202b445976c07aefeb9d6cb399e294e96f596012eec93ccbe21a2027c00dc3c`|`francofil_pla_plapink-ral4003_500_285_p`<br>`francofil_pla_plapinkral4003_500_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR004 / `dup-34a3f46380647d750f516d955e6bafdb9f5c292d23728635e0daba9a6671c2b4`|`francofil_pla_plapink-ral4003_750_175_p`<br>`francofil_pla_plapinkral4003_750_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR005 / `dup-5f945178c86fce058140f2496279e151d3099d8e7d875ca73fe12a2eca6e78ce`|`francofil_pla_plapink-ral4003_5000_285_p`<br>`francofil_pla_plapinkral4003_5000_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR006 / `dup-783a3bedcc43dc2fbc88c25f8b8f6ca23e34f1453ad55e3028d460dcd044bf73`|`francofil_pla_plapink-ral4003_1000_285_p`<br>`francofil_pla_plapinkral4003_1000_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR007 / `dup-814bd7d928391710869458c748be27780f2beb3903aa05b42fd78079619e7b61`|`francofil_pla_plapink-ral4003_750_285_p`<br>`francofil_pla_plapinkral4003_750_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR008 / `dup-b76abf93d48c86e9d6e51a000dc22f6272d0d415d4fa399ef0a72b3628b14e27`|`francofil_pla_plapink-ral4003_5000_175_p`<br>`francofil_pla_plapinkral4003_5000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR009 / `dup-dc38f931837b749d705ac9cd2e825064aebca2c009bd13f128de85d4dd0431c7`|`francofil_pla_plapink-ral4003_1000_175_p`<br>`francofil_pla_plapinkral4003_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+|FR010 / `dup-eaf709a60d41906de1a14ac5128801c0f02877f120fdb946fb4963e12b9555bc`|`francofil_pla_plapink-ral4003_10000_175_p`<br>`francofil_pla_plapinkral4003_10000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-francofil-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## 22network deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
