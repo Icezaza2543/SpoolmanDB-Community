@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 52,689
+* **Published records**: 52,575
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,10 +79,10 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 6,075 |
-| Color entries | 31,681 |
-| Compiled filament variants | 52,689 |
-| Source filaments with country of origin | 5,616 |
+| Source filament objects | 6,072 |
+| Color entries | 31,567 |
+| Compiled filament variants | 52,575 |
+| Source filaments with country of origin | 5,613 |
 | Source filaments with TDS/product links | 2,158 |
 | Source filaments with SDS links | 988 |
 | Manufacturer product code/ID entries | 8,192 |
@@ -95,7 +95,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 5,075 |
+| `spool_type: plastic` | 5,072 |
 | `spool_type: cardboard` | 1,872 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 64 |
@@ -300,6 +300,12 @@ This is an **intentional breaking catalog migration** approved for 110 duplicate
 The [complete list of 110 retired IDs and existing survivors](docs/audits/2026-10-03-devildesign-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-devildesign-duplicate-review.json) preserve original baseline keys, source definitions, compiled records, official evidence and unresolved conflicts. D031–D035 (Galaxy PETG line/color decomposition) remain deferred in the [running duplicate backlog](docs/audits/duplicate-backlog.md); all ten IDs and 378 other unique/out-of-scope Devil Design records are untouched. Survivor printing values, HEX, packaging and tare are retained.
 
 Retired IDs disappear from the published catalog. Existing Spoolman spools retain their imported local data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must follow the exact mappings themselves; rollback requires exact original-key reinstatement and baseline re-enrollment. This approval does not authorize retirement of Galaxy PETG, new variants, naming changes or packaging corrections.
+
+### Paramount 3D duplicate migration (2026-10-03)
+
+This is an **intentional breaking catalog migration** retiring 114 duplicate OFD IDs: the catalog decreases from 52,689 to 52,575 records, Paramount 3D from 266 to 152, and the registry grows from 745 to 859 entries. The owner-selected older, well-formed `Paramount 3D PLA/PETG/ABS/ASA` families survive; their prefixes are not renamed. Survivor/unique identities, metadata, packaging and tare are unchanged, with no new IDs or identifier transfers. All 109 SKU bindings and 108 unique SKU values remain.
+
+The [exact retired IDs, survivors and original keys](docs/audits/2026-10-03-paramount3d-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-paramount3d-duplicate-review.json) record the explicit owner-pattern override and unresolved metadata. PM070 (Matte Black) and prefix cleanup remain in the [backlog](docs/audits/duplicate-backlog.md). Existing Spoolman spools keep local imported data, but Spoolman does not consume the registry or redirect retired external lookups.
 
 This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
 
