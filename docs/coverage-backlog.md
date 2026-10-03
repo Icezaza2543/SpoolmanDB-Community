@@ -96,3 +96,16 @@ Snapmaker Matte PLA and SnapSpeed PLA were also inspected; no independently safe
 ### Older generic PETG overlaps — HISTORICAL_ID_REVIEW
 
 [Issue #66](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/66) remains open for the overlapping historical `Kingroon PETG {color_name}` and `PETG {color_name}` groups. Adding the evidenced PETG Basic line does not resolve those older overlaps. All older definitions, metadata, public IDs and baseline keys are preserved; no rename, deletion, rekey or namespace consolidation is authorized by this import. Reopen that part only for an explicitly approved, identity-safe resolution.
+
+## Protopasta duplicate-review deferrals — 2026-10-03
+
+The owner approved and authorized local application of 38 other Protopasta duplicate groups (41 retirements), including the three Simply line/color bindings, but deferred the following four groups. Exact identities, approved mappings, printing-metadata evidence and document-link decisions are retained in the [review audit](audits/2026-10-03-protopasta-duplicate-review.json). The migration does not authorize changes to these deferred groups.
+
+| Group | Preserved source pair | Blocker |
+| --- | --- | --- |
+| P004 | `protopasta_tpe_blackflexible_1000_175_c` / `protopasta_tpe_tpeblackflexible_1000_175_c` | Flexible qualifier is in the survivor family template versus the other source color; current Rule 5 decomposition rejects the mapping. |
+| P012 | `protopasta_tpe_blackflexible_500_175_c` / `protopasta_tpe_tpeblackflexible_500_175_c` | Same Flexible line/color decomposition blocker. |
+| P009 | `protopasta_pla_texasteablackwithgoldglitter_1000_175_c` / `protopasta_pla_platexasteablackwithgoldglitter_1000_175_c` | Glitter qualifier is in the survivor family template versus the other source color; current Rule 5 decomposition rejects the mapping. |
+| P016 | `protopasta_pla_texasteablackwithgoldglitter_500_175_c` / `protopasta_pla_platexasteablackwithgoldglitter_500_175_c` | Same Glitter line/color decomposition blocker. |
+
+No tooling change or retirement of these four groups is authorized now. All eight IDs remain intact. Recycled PETG and Recycled Carbon Fiber PETG density also remain unresolved: current base-line SDS documents report 1.2 g/cc but do not explicitly identify the RPET variants; the owner approved retaining survivor density 1.24 unresolved. P034/P041 printing values use owner-approved family-level PETG/PETG-CF7 material-table evidence, not an inferred temperature range. Current official product-line printing guidance is valid evidence without lot binding; exact lot binding is required only for packaging/spool/tare, which remain untouched. Wrong PLA/HTPLA document links were removed from these two recycled survivors; exact RPET documents remain an evidence gap.
