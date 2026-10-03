@@ -73,3 +73,26 @@ These findings were recorded during the evidence-maintenance audit ending at `65
 ### Recent no-delta checks
 
 Snapmaker Matte PLA and SnapSpeed PLA were also inspected; no independently safe additional delta was accepted. This is not a claim of permanent worldwide completeness. Do not rerun those checks without a concrete new gap or evidence trigger.
+
+## Kingroon PETG Basic evidence handoff — 2026-10-03
+
+- **Accepted evidence:** The owner confirms that PETG and PETG Basic are separate product lines and approves the ten-color/SKU set contributed in [Community PR #65](https://github.com/Icezaza2543/SpoolmanDB-Community/pull/65). The [contributor's package-label photo](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/66#issuecomment-5938025135) explicitly identifies PETG Basic White, SKU `NPETG088`, diameter 1.75 mm, nozzle 230–260°C and bed 70–90°C. The other nine SKU/color bindings are accepted contributor data, not independently photographed labels.
+- **Current official page:** [Kingroon PETG Basic](https://kingroon.com/products/kingroon-petg-basic), checked in Chrome on this date, lists a 1 kg product, 1.75 mm technical guidance, density 1.26 g/cm³, nozzle 230–250°C and bed 70–90°C. The [10 kg pack page](https://kingroon.com/products/10kg-petg-filament-1-75mm-3d-print-materials) is the contributor's original source; 10 kg is the pack total, not the mass of one spool. This import is limited to the approved ten-color set, not every current selector option.
+- **Implementation:** Two source definitions generate exactly ten 1 kg / 1.75 mm records. White is separated to retain its photographed 230–260°C nozzle range; the other nine use the current page's 230–250°C range. All ten use density 1.26. HEX swatches are representative contributor values, not official manufacturer HEX specifications. Spool material and tare remain unknown; no refill or legacy plastic-ID marker is introduced.
+
+| Accepted color | SKU | New public ID |
+| --- | --- | --- |
+| Black | NPETG087 | `kingroon_petg_petgbasicblack_1000_175_n` |
+| Dark Blue | NPETG019 | `kingroon_petg_petgbasicdarkblue_1000_175_n` |
+| Green | NPETG018 | `kingroon_petg_petgbasicgreen_1000_175_n` |
+| Grey | NPETG006 | `kingroon_petg_petgbasicgrey_1000_175_n` |
+| Yellow | NPETG003 | `kingroon_petg_petgbasicyellow_1000_175_n` |
+| Orange | NPETG017 | `kingroon_petg_petgbasicorange_1000_175_n` |
+| Red | NPETG001 | `kingroon_petg_petgbasicred_1000_175_n` |
+| Silver | NPETG016 | `kingroon_petg_petgbasicsilver_1000_175_n` |
+| White | NPETG088 | `kingroon_petg_petgbasicwhite_1000_175_n` |
+| Transparent | NPETG007 | `kingroon_petg_petgbasictransparent_1000_175_n` |
+
+### Older generic PETG overlaps — HISTORICAL_ID_REVIEW
+
+[Issue #66](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/66) remains open for the overlapping historical `Kingroon PETG {color_name}` and `PETG {color_name}` groups. Adding the evidenced PETG Basic line does not resolve those older overlaps. All older definitions, metadata, public IDs and baseline keys are preserved; no rename, deletion, rekey or namespace consolidation is authorized by this import. Reopen that part only for an explicitly approved, identity-safe resolution.
