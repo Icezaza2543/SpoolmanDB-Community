@@ -45,6 +45,49 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## fiberlogy deferred groups
+
+### Additional source-GTIN tooling deferrals
+
+All 13 otherwise matching ASA 750 g groups are also deferred: transferring EANs to a separate 750 g survivor creates source-level duplicate GTIN warnings with the untouched historical 1 kg definition. No source, baseline, registry or compiled metadata change remains. Resolving this requires an explicitly reviewed weight-specific identifier reconciliation or checker change, not unapproved fanout/removal.
+
+| Group | Preserved IDs | Audit |
+|---|---|---|
+|FL004 / `dup-1570824e4330210fc75f44de4c427fcc9de83e306fa072458df5f5b35b579e58`|`fiberlogy_asa_asablack_750_175_p`<br>`fiberlogy_asa_black_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL005 / `dup-009af81872320f4eb89126a3ec283dd23e1ca4e29624fa0c7b58e984d8b280e6`|`fiberlogy_asa_asablue_750_175_p`<br>`fiberlogy_asa_blue_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL006 / `dup-73a2be73416cf5527b63615887d62cde5412022c6086ce333b50854240f9a348`|`fiberlogy_asa_asagraphite_750_175_p`<br>`fiberlogy_asa_graphite_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL009 / `dup-d090c7d9b8e6f5a24b4b8ac0a201748c315124e3454a06b284397264ea1235da`|`fiberlogy_asa_asainox_750_175_p`<br>`fiberlogy_asa_inox_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL010 / `dup-cc7ed72794907540cbc2912fe1a2baeefb5177853f7dd88ae42fd77a31c97941`|`fiberlogy_asa_asalightgreen_750_175_p`<br>`fiberlogy_asa_lightgreen_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL011 / `dup-5c0da0ead9cc228563574bbd99c0a8c9f4766fc580c86616c17ab142923d677d`|`fiberlogy_asa_asanatural_750_175_p`<br>`fiberlogy_asa_natural_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL012 / `dup-0f8e5bf3ed6af6451cb597871140dda249706b5d619d3d47caf0109abb7475fe`|`fiberlogy_asa_asaolivegreen_750_175_p`<br>`fiberlogy_asa_olivegreen_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL013 / `dup-9cedeafc62ec5af5f80815326db701e050a69e66574086efd22f1f80156739fd`|`fiberlogy_asa_asaonyx_750_175_p`<br>`fiberlogy_asa_onyx_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL014 / `dup-9f84be225dbbd4b5e590170e495468d5a52b4186d51e7ede52e23821b901f089`|`fiberlogy_asa_asaorange_750_175_p`<br>`fiberlogy_asa_orange_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL015 / `dup-21c892a0296946176d3ff02f7bd5269a410291c2a464b0c812895383c6840231`|`fiberlogy_asa_asared_750_175_p`<br>`fiberlogy_asa_red_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL016 / `dup-1db950ce5c92c34f8c2013db8131c2f85ef3cd119e0f29af67fc6b1517faede7`|`fiberlogy_asa_asavertigo_750_175_p`<br>`fiberlogy_asa_vertigo_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL017 / `dup-c5899608b6029e91a378cb9572d7a55d86d5804bac7e89e045ede6ccc003d35c`|`fiberlogy_asa_asawhite_750_175_p`<br>`fiberlogy_asa_white_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL018 / `dup-d8dc0d278a89be1767c1fedad23a39803d78c21ff655ef9b1c4b4c77e5d1b20d`|`fiberlogy_asa_asayellow_750_175_p`<br>`fiberlogy_asa_yellow_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+
+Existing ASA075/ASA085 code/EAN bindings replicated onto 1000 g source variants remain an unresolved weight-binding gap. This migration transfers identifiers only onto the 13 reviewed 750 g survivor IDs; it does not verify or change the existing 1000 g bindings. See the Fiberlogy JSON audit for original cells and values.
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|FL001 / `dup-07ebcbf93ecf8cc0112817509c8f84c495d4e37a687f7d8c060630dbc0a6af80`|`fiberlogy_abs_absgray_850_175_p`<br>`fiberlogy_abs_absgrey_850_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL002 / `dup-fdeb0e7f48710584747c4bc856e93c89ec3e4f8915f513c6ee0ce5fde2d9ccea`|`fiberlogy_abs_absgray_1000_175_p`<br>`fiberlogy_abs_absgrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL003 / `dup-faf9d4c8d3e8cf3eef63254f5190c651bdc4b8d2847ddd57b293fdf0ed5fdba1`|`fiberlogy_abs_absplusgray_850_175_p`<br>`fiberlogy_abs_absplusgrey_850_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL007 / `dup-c9edf5efd23f20be61f218c4e2cbb5fe01dccd1481ec5b641b89018c1eea47fc`|`fiberlogy_asa_asagray_1000_175_p`<br>`fiberlogy_asa_asagrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL008 / `dup-dd633b62d0e5ce19d985c61299696348d4f395795511a984387ecd1a13b234de`|`fiberlogy_asa_asagray_750_175_p`<br>`fiberlogy_asa_asagrey_750_175_p`<br>`fiberlogy_asa_gray_750_175_p`|Three-member ASA750 group contains Gray/Grey intra-template ambiguity, differentHEX and unboundGrey; no same-SKU proof, defer whole group|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL019 / `dup-41d47905d6af939a8155f07ce8304f9cf76377ef6748fbed298643b7183ecf0c`|`fiberlogy_pctg_pctggray_1000_175_p`<br>`fiberlogy_pctg_pctggrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL020 / `dup-5c1d19df7e34d7f55fef9f35c647c85c49e64e3a5a093a4e45115e90d040fb30`|`fiberlogy_pctg_pctggray_750_175_p`<br>`fiberlogy_pctg_pctggrey_750_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL021 / `dup-839afa98731094aac0bae39da8a86ccdcec48983f3bb3c076d12e2c7379b31af`|`fiberlogy_pla_easyplagray_1000_175_p`<br>`fiberlogy_pla_easyplagrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL022 / `dup-ca8d889cabc187e50b216b405f039bc2e204d548a468a49b45e42e0313bb303a`|`fiberlogy_pla_easyplagray_850_175_p`<br>`fiberlogy_pla_easyplagrey_850_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL023 / `dup-2f7273758c5c5b57aae07c653d34311fa6e3e47d65590e5e180df73182bfe734`|`fiberlogy_pla_impactplagray_1000_175_p`<br>`fiberlogy_pla_impactplagrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL024 / `dup-f2cc62d3fb63a2b4518a6946bda162d62ed27aa7406024e786882e0dbf5e8b58`|`fiberlogy_pla_impactplagray_850_175_p`<br>`fiberlogy_pla_impactplagrey_850_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL025 / `dup-8bbbd2473fc7febdcd68b472073e71e4e2ecaa2509b04953e0829de3fc78dec0`|`fiberlogy_pp_ppgray_750_175_p`<br>`fiberlogy_pp_ppgrey_750_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL026 / `dup-8dbfbd48b4b86877dd9c10a2b09fc53c13cc39188c75a52ea0fe87357ca4bfbe`|`fiberlogy_pp_ppgray_1000_175_p`<br>`fiberlogy_pp_ppgrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+|FL027 / `dup-a4be2f041b75302871e9dc2a69aaaf15806c963b962b16b5757acec21d7968ee`|`fiberlogy_pp_ppranthracite_750_175_p`<br>`fiberlogy_pp_rppanthracite_750_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-fiberlogy-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## winkle deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
