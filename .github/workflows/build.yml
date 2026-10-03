@@ -26,20 +26,30 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: python -m pip install -r requirements-dev.txt
-      - name: Fetch PR base commit for trusted baseline check
-        if: github.event_name == 'pull_request'
-        run: git fetch origin ${{ github.event.pull_request.base.sha }}
-      - name: Run validation script
+      - name: Resolve trusted event base (push before / PR base)
+        id: trusted-base
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PUSH_BEFORE: ${{ github.event.before }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
         run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            python scripts/validate.py --base-ref ${{ github.event.pull_request.base.sha }} --strict
+          base=$(python scripts/ci_base_ref.py --event "$EVENT_NAME" --before "$PUSH_BEFORE" --pr-base "$PR_BASE" --fetch)
+          echo "sha=$base" >> "$GITHUB_OUTPUT"
+      - name: Run validation script
+        env:
+          TRUSTED_BASE: ${{ steps.trusted-base.outputs.sha }}
+        run: |
+          if [ -n "$TRUSTED_BASE" ]; then
+            python scripts/validate.py --base-ref "$TRUSTED_BASE" --strict
           else
             python scripts/validate.py --strict
           fi
       - name: Check Public ID stability gate against trusted BASE baseline
+        env:
+          TRUSTED_BASE: ${{ steps.trusted-base.outputs.sha }}
         run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            python scripts/compile_id_baseline.py --base-ref ${{ github.event.pull_request.base.sha }} --strict
+          if [ -n "$TRUSTED_BASE" ]; then
+            python scripts/compile_id_baseline.py --base-ref "$TRUSTED_BASE" --strict
           else
             python scripts/compile_id_baseline.py --strict
           fi
@@ -146,6 +156,7 @@ jobs:
           cp filaments.schema.json public/
           cp filaments.compiled.schema.json public/
           cp materials.schema.json public/
+          cp contracts/retired_ids.json public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:

@@ -297,6 +297,10 @@ def check_baseline_manifest_detailed(
     filaments_dir: Path = FILAMENTS_DIR,
     base_baseline_path: Path | str | dict | None = None,
     strict_head_sync: bool = False,
+    retired_path: Path | str | dict | None = None,
+    base_retired: Path | str | dict | None = None,
+    audits: dict | None = None,
+    enrollment: bool = False,
 ) -> BaselineCheckResult:
     """Compare current in-memory compiled IDs and PR HEAD baseline against trusted BASE baseline."""
     structural_errors: List[str] = []
@@ -314,6 +318,8 @@ def check_baseline_manifest_detailed(
         "changed": 0,
         "rekeyed": 0,
         "missing": 0,
+        "retired": 0,
+        "reinstated": 0,
     }
 
     # 1. Load HEAD baseline
@@ -369,6 +375,42 @@ def check_baseline_manifest_detailed(
     current_id_to_ckey: Dict[str, str] = {pub_id: ckey for ckey, pub_id in current_manifest.items()}
     head_id_to_ckey: Dict[str, str] = {pub_id: ckey for ckey, pub_id in head_manifest.items()}
 
+    from scripts.retired_ids import check_registry, load_contract, reviewed_bindings
+    try:
+        repository_root = filaments_dir.parent
+        registry = load_contract(retired_path, repository_root, "retired_ids.json", "retired")
+        registry_base = base_retired
+        if registry_base is None:
+            if isinstance(base_baseline_path, str) and not Path(base_baseline_path).is_file():
+                registry_base = base_baseline_path
+            elif base_baseline_path is not None:
+                registry_base = {"version": 1, "retired": {}}
+            else:
+                # Never trust an edited HEAD registry as its own prior state.
+                git_root = subprocess.run(
+                    ["git", "rev-parse", "--show-toplevel"], cwd=repository_root,
+                    capture_output=True, text=True,
+                )
+                if git_root.returncode == 0 and Path(git_root.stdout.strip()).resolve() == repository_root.resolve():
+                    registry_base = "HEAD"
+                else:
+                    # File-only fixtures/imports have no historical registry: all
+                    # entries must prove themselves against the original baseline.
+                    registry_base = {"version": 1, "retired": {}}
+        previous_registry = load_contract(registry_base, repository_root, "retired_ids.json", "retired")
+        bindings = reviewed_bindings(registry, repository_root)
+        bindings.update(audits or {})
+        registry_errors, approved_retired, reinstated = check_registry(
+            registry, previous_registry, base_manifest, current_manifest,
+            current_manifest if enrollment else head_manifest, audits=bindings,
+        )
+        structural_errors.extend(registry_errors)
+        stats["retired"] = len(approved_retired)
+        stats["reinstated"] = len(reinstated)
+    except (ValueError, OSError, subprocess.SubprocessError, TypeError) as exc:
+        structural_errors.append(f"Failed to check retirement registry: {exc}")
+        approved_retired = set()
+
     # --- CHECK A: Current Source vs Trusted BASE Baseline ---
     for ckey, current_id in sorted(current_manifest.items()):
         if ckey in base_manifest:
@@ -405,7 +447,7 @@ def check_baseline_manifest_detailed(
 
     for ckey_old, base_id in sorted(base_manifest.items()):
         if ckey_old not in current_manifest:
-            if base_id not in current_id_to_ckey:
+            if base_id not in current_id_to_ckey and base_id not in approved_retired:
                 stats["removed"] += 1
                 removed_errors.append(
                     f"Historical baseline variant missing from current source data:\n"
@@ -428,7 +470,7 @@ def check_baseline_manifest_detailed(
                         changed_errors.append(msg)
                         stats["changed"] += 1
             else:
-                if base_id not in head_id_to_ckey:
+                if base_id not in head_id_to_ckey and base_id not in approved_retired:
                     msg = (
                         f"PR baseline tampering detected: Historical BASE ID '{base_id}' (key: '{ckey_base}') "
                         f"was removed from PR baseline manifest."
@@ -553,6 +595,10 @@ def write_baseline_manifest(
     baseline_path: Path = BASELINE_PATH,
     filaments_dir: Path = FILAMENTS_DIR,
     accept_breaking_changes: bool = False,
+    base_baseline_path: Path | str | dict | None = None,
+    retired_path: Path | str | dict | None = None,
+    base_retired: Path | str | dict | None = None,
+    audits: dict | None = None,
 ) -> None:
     """Generate and write a baseline manifest file with safety checks and atomic write."""
     current_manifest, compile_errors = compile_current_id_manifest(filaments_dir)
@@ -564,7 +610,9 @@ def write_baseline_manifest(
 
     if baseline_path.exists():
         result = check_baseline_manifest_detailed(
-            baseline_path=baseline_path, filaments_dir=filaments_dir
+            baseline_path=baseline_path, filaments_dir=filaments_dir,
+            base_baseline_path=base_baseline_path, retired_path=retired_path,
+            base_retired=base_retired, audits=audits, enrollment=True,
         )
 
         if not result.is_valid_structure:
@@ -593,7 +641,7 @@ def write_baseline_manifest(
         else:
             print(
                 f"Updating baseline (additions & rekeys safe update):\n"
-                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Rekeyed: {result.stats['rekeyed']} | Changed: 0 | Removed: 0"
+                f"  Matched: {result.stats['matched']} | Added: {result.stats['added']} | Rekeyed: {result.stats['rekeyed']} | Registered retirements: {result.stats['retired']} | Reinstated: {result.stats['reinstated']} | Unregistered removed: 0"
             )
 
     payload = {
@@ -651,6 +699,7 @@ def main():
         write_baseline_manifest(
             baseline_path=Path(args.baseline_path),
             accept_breaking_changes=args.accept_breaking_baseline_changes,
+            base_baseline_path=args.base_ref,
         )
         sys.exit(0)
 
@@ -670,6 +719,7 @@ def main():
         f"Baseline records: {result.stats['baseline_count']} | Current compiled: {result.stats['current_count']} | "
         f"Matched: {result.stats['matched']} | Added: {result.stats['added']} | Removed: {result.stats['removed']} | "
         f"Changed: {result.stats['changed']} | Rekeyed: {result.stats['rekeyed']}"
+        f" | Registered retired: {result.stats['retired']} | Reinstated: {result.stats['reinstated']}"
     )
 
     if result.rekeyed_diagnostics:

@@ -243,6 +243,8 @@ All shared material defaults live in `materials.json`.
 
 ## Maintenance stance
 
+Duplicate-migration tooling is available, with an initially empty [retired-ID registry](contracts/retired_ids.json). It retires no data automatically. A separately approved true-duplicate migration intentionally removes the listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry or redirect old catalog lookups. See the [review, ID-safety and exact-reinstatement rules](docs/maintenance.md#4-public-id-immutability-rule).
+
 This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
 
 ## Terms and policy

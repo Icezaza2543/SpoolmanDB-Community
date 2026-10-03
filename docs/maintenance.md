@@ -34,9 +34,45 @@ See [the source schema](../filaments.schema.json), [the compiled schema](../fila
 
 `scripts/compile_filaments.py::generate_id` derives IDs from manufacturer, material, the expanded source name, weight, diameter and the packaging suffix. Color HEX values are **not** part of the ID. The compiler applies its own normalization; do not construct replacement IDs by hand.
 
-Historical public IDs and their enrolled identity keys in `contracts/compiled_id_baseline.json` must not change, disappear or be rekeyed. New identities are allowed only for verified additions. Metadata corrections must preserve identity. Do not use a breaking-baseline override to deliver ordinary maintenance.
+Historical public IDs and their enrolled identity keys in `contracts/compiled_id_baseline.json` must not change, disappear or be rekeyed during ordinary maintenance. New identities are allowed only for verified additions. Metadata corrections must preserve identity. Do not use a breaking-baseline override to deliver ordinary maintenance.
+
+The sole removal exception is an exact, owner-approved true-duplicate migration recorded in `contracts/retired_ids.json`, checked against a trusted starting commit and a reviewed brand audit. This is an **intentional breaking migration**: retired entries disappear from the published catalog. Existing Spoolman spools retain their local imported data; Spoolman does not consume the registry or redirect stored external IDs. Publish no separate compatibility catalog. The tooling commit starts with an empty registry and retires nothing.
+
+Each registry entry stores `replaced_by`, `reason: "duplicate"`, `ref`, `source` (evidence URL or commit SHA), and `retired_key` (the byte-identical original baseline key). The replacement must already exist and match physical identity, including normalized ordered line and color tokens. No chains, cycles, invented historical IDs or Black-to-White mappings are allowed. Later target retirement must re-point existing entries to the final survivor without altering their original key/evidence.
+
+Rollback permits **exact reinstatement only**: deleting a registry entry must restore its original ID under its byte-identical `retired_key` and re-enroll that mapping in the same commit. A different key, missing re-enrollment or registry deletion without reinstatement fails validation. Use normal commits/reverts, never history rewriting.
 
 Record the starting main SHA before editing. Compare the final manifest against that immutable starting SHA, not only against a baseline file edited in the same change. Replace `STARTING_MAIN_SHA` in the validation command below with the recorded commit. Require zero historical changed, removed or rekeyed identities, and inspect every new ID and baseline addition.
+
+For an approved duplicate migration, report the exact registered retirements separately; require zero **unregistered** removals, zero changed/rekeyed survivor or unique identities and zero new IDs. `--update --base-ref STARTING_MAIN_SHA` enrolls only the reviewed removals without a breaking override. Strict checking must still match the HEAD baseline exactly.
+
+### Naming and production-lot evidence
+
+- Keep distinct product versions/lines (`PETG 2.0`, `PETG Basic`, `Sunlu PETG v2`). Do not merge Kingroon PETG with PETG Basic without exact SKU/label evidence and owner approval.
+- New families use the manufacturer's product name without a redundant manufacturer prefix. A pure rename uses `display_name`, preserves its ID and requires separate approval for any baseline-key refresh.
+- For the same family/SKU and packaging, evidence from the newest production lot wins, including buyer-submitted manufacturer labels. Record the lot/revision and source proving recency. Never average or use Git recency. Report “manufacturer revised recommended values in newer lot”, not a presumed formula change.
+- If neither duplicate has evidence, retain survivor metadata and record both values/conflicts. That alone does not block an owner-confirmed identity merge.
+
+### Reviewed duplicate tooling
+
+The auditor is read-only on catalog sources. Matching normalized names are candidates, not merge evidence. Ordered normalization retains `+`, versions, qualifiers and repeated tokens; `gray`/`grey` equivalence is comparison-only. `contracts/not_duplicates.json` exempts only exact, human-reviewed ID memberships with evidence, never whole brands or patterns.
+
+After separate authorization for a brand, create an audit outside `filaments/` and `contracts/` using an already fetched read-only upstream commit:
+
+```bash
+python scripts/audit_duplicates.py --brand BRAND --upstream-ref UPSTREAM_SHA --output .git/duplicate-audit
+python scripts/merge_duplicates.py --brand BRAND --review docs/audits/BRAND-review.json
+# Only after owner approval of exact mappings:
+python scripts/merge_duplicates.py --brand BRAND --review docs/audits/BRAND-review.json --apply
+```
+
+The review JSON contains `version: 1`, `approved: true`, the audit's `audit_digest`, a pinned full `upstream_ref` SHA, `groups`, `bindings` and `metadata`. Each exact group ID maps to `{approved: true, survivor: ID, retire: [IDs], ref: REVIEW_REFERENCE, source: SHA_OR_URL}`. The selected survivor follows upstream preference, then no manufacturer prefix, evidenced official name, family size; ties require owner selection. Optional `official_names`/`upstream_exceptions` provide manufacturer evidence. `--exclude GROUP_ID` is repeatable. Without a review file the merge command only shows unreviewed proposals; without `--apply` it writes no data.
+
+Ambiguous source decomposition requires a lossless binding `{key: EXACT_KEY, line: PRODUCT_LINE, color: PHYSICAL_COLOR}` keyed by public ID. When a `display_name` hides the source name, also retain `source_color` with its exact original source value; template qualifiers such as `Basic` cannot be discarded or relabeled as a color. Keep those bindings in a repository JSON audit referenced by each affected registry entry's `ref`; the audit file must exist and remain available for later checks. The checker reads the stored key plus that reviewed decomposition, never historical source recovery. Without an explicit base, baseline checks use the committed HEAD registry as their prior state, never the edited registry as its own authorization.
+
+Metadata decisions are explicit objects `{id: SURVIVOR, values: {...}, source: SHA_OR_URL, lot: LOT_OR_REVISION, same_variant: true, approved: true}`. The reviewer establishes newest-lot recency and matching SKU/package; tooling does not infer it from arbitrary lot strings. Only supported ID-neutral fields are accepted. The plan retains the audit's older values/conflicts and supplied evidence. Apply splits exact source cells, preserves untouched compiled metadata/identities, rejects stale reviews, and restores original files after an ordinary write failure. It cannot promise a multi-file transaction across power loss; do not run it concurrently with catalog edits.
+
+CI compares new candidate relationships against the trusted event base. Existing groups, including surviving subsets after an approved retirement, are warnings. New unreviewed members/groups fail, requesting review rather than automatic consolidation. Pushes use `github.event.before`; PRs use their base SHA. Only an all-zero push base permits explicit HEAD-only checks; an unavailable nonzero base fails closed.
 
 ## 5. Spool/Refill & Package-Matrix Rules
 
