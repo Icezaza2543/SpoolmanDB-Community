@@ -45,6 +45,16 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## aurapol deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|AU011 / `dup-7f4f5cdbeb4d3f3dda13bb1df31d31ac91cc54ebdd56600d702b3fcc1077fba5`|`aurapol_pla_l-egoplared_1000_175_p`<br>`aurapol_pla_l-egored_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-aurapol-duplicate-review.json)|
+|AU012 / `dup-97d4093cd5eeb5abae12521b13d5af41ff7e37eb0ba23bc6af862e543e513044`|`aurapol_pla_l-egoplayellow_1000_175_p`<br>`aurapol_pla_l-egoyellow_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-aurapol-duplicate-review.json)|
+|AU014 / `dup-382b48f7726f9762bebd8fbb9b3023c247357d6b0d7a60fa62125f6598a6f33a`|`aurapol_pla_metallicbrick_1000_175_p`<br>`aurapol_pla_metallicplabrick_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-aurapol-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## verbatim deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
