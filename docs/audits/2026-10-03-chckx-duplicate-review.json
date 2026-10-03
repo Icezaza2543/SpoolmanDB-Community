@@ -1,0 +1,6882 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "chckx",
+  "audit_digest": "7aa3a6dfc46d02daac3bd3bcd31ed496e019288f6fcc8f3a18139cc68b866af4",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "87406189a515e133519bc74f05508fe760fe7269",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-299c93ce44bdb22707f2e67bae927a012f826cf8664dbc679df4a75da5965d98",
+      "ids": [
+        "chckx_petg_crystalpurple_1000_175_p",
+        "chckx_petg_petgcrystalpurple_1000_175_p"
+      ],
+      "proposed_survivor": "chckx_petg_petgcrystalpurple_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "chckx_petg_crystalpurple_1000_175_p": "chckx_petg_petgcrystalpurple_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "chckx_petg_crystalpurple_1000_175_p",
+          "manufacturer": "CHCKX",
+          "name": "Crystal Purple",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8d8bfd",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "chckx.json::CHCKX::Crystal {color_name}::Crystal Purple::PETG::1000::1.75::plastic::False",
+          "template": "Crystal {color_name}",
+          "source_color": "Purple",
+          "source_line": "Crystal",
+          "source_file": "chckx.json",
+          "source_definition": {
+            "source_file": "chckx.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        },
+        {
+          "id": "chckx_petg_petgcrystalpurple_1000_175_p",
+          "manufacturer": "CHCKX",
+          "name": "PETG Crystal Purple",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8d8bfd",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "chckx.json::CHCKX::PETG {color_name}::PETG Crystal Purple::PETG::1000::1.75::plastic::False",
+          "template": "PETG {color_name}",
+          "source_color": "Crystal Purple",
+          "source_line": "PETG",
+          "source_file": "chckx.json",
+          "source_definition": {
+            "source_file": "chckx.json",
+            "definition_index": 7,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 19,
+            "compiled_records": 19
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "extruder_temp_range": {
+          "chckx_petg_crystalpurple_1000_175_p": [
+            230,
+            250
+          ],
+          "chckx_petg_petgcrystalpurple_1000_175_p": [
+            240,
+            260
+          ]
+        },
+        "bed_temp_range": {
+          "chckx_petg_crystalpurple_1000_175_p": [
+            70,
+            85
+          ],
+          "chckx_petg_petgcrystalpurple_1000_175_p": [
+            70,
+            70
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "CH001",
+      "status": "DEFERRED",
+      "defer_reason": "Rule 5 physical line/color decomposition mismatch"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-299c93ce44bdb22707f2e67bae927a012f826cf8664dbc679df4a75da5965d98",
+      "ids": [
+        "chckx_petg_crystalpurple_1000_175_p",
+        "chckx_petg_petgcrystalpurple_1000_175_p"
+      ],
+      "proposed_survivor": "chckx_petg_petgcrystalpurple_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "chckx_petg_crystalpurple_1000_175_p": "chckx_petg_petgcrystalpurple_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "chckx_petg_crystalpurple_1000_175_p",
+          "manufacturer": "CHCKX",
+          "name": "Crystal Purple",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8d8bfd",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "chckx.json::CHCKX::Crystal {color_name}::Crystal Purple::PETG::1000::1.75::plastic::False",
+          "template": "Crystal {color_name}",
+          "source_color": "Purple",
+          "source_line": "Crystal",
+          "source_file": "chckx.json",
+          "source_definition": {
+            "source_file": "chckx.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        },
+        {
+          "id": "chckx_petg_petgcrystalpurple_1000_175_p",
+          "manufacturer": "CHCKX",
+          "name": "PETG Crystal Purple",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8d8bfd",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "chckx.json::CHCKX::PETG {color_name}::PETG Crystal Purple::PETG::1000::1.75::plastic::False",
+          "template": "PETG {color_name}",
+          "source_color": "Crystal Purple",
+          "source_line": "PETG",
+          "source_file": "chckx.json",
+          "source_definition": {
+            "source_file": "chckx.json",
+            "definition_index": 7,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 19,
+            "compiled_records": 19
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "extruder_temp_range": {
+          "chckx_petg_crystalpurple_1000_175_p": [
+            230,
+            250
+          ],
+          "chckx_petg_petgcrystalpurple_1000_175_p": [
+            240,
+            260
+          ]
+        },
+        "bed_temp_range": {
+          "chckx_petg_crystalpurple_1000_175_p": [
+            70,
+            85
+          ],
+          "chckx_petg_petgcrystalpurple_1000_175_p": [
+            70,
+            70
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "CH001",
+      "status": "DEFERRED",
+      "defer_reason": "Rule 5 physical line/color decomposition mismatch"
+    }
+  ],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "official_evidence": [
+    {
+      "url": "https://chckx.net/",
+      "note": "Explicit concept-demonstration site; representative figures are not manufacturer-specification evidence."
+    }
+  ],
+  "metadata_review": "CrystalPurple candidate blocked by strict product-line/color decomposition. Source website self-identifies as conceptdemo; no numeric substitution or identity inference. Preserve both records.",
+  "original_source_definitions": [
+    {
+      "name": "Crystal {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "8bbdfd"
+        },
+        {
+          "name": "Purple",
+          "hex": "8d8bfd"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Gf {color_name}",
+      "material": "PETG-GF",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Gray",
+          "hex": "b0b0b0"
+        },
+        {
+          "name": "White",
+          "hex": "808080"
+        }
+      ],
+      "fill": "glass fiber",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Matte Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Red and Yellow",
+          "hex": "e70d0d"
+        },
+        {
+          "name": "Yellow-Green",
+          "hex": "e4ef4e"
+        },
+        {
+          "name": "Yellow-Pink",
+          "hex": "f2e76e"
+        }
+      ],
+      "finish": "matte",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Matte Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        20,
+        20
+      ],
+      "colors": [
+        {
+          "name": "Candy",
+          "hex": "35850a"
+        },
+        {
+          "name": "Candy 2",
+          "hex": "e1aeef"
+        },
+        {
+          "name": "Candy 3",
+          "hex": "5e94c9"
+        }
+      ],
+      "finish": "matte",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Matte Tri Color {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black, Red, and Orange",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue, Green, and Purple",
+          "hex": "56a6f5"
+        },
+        {
+          "name": "Blue, Green, and Yellow",
+          "hex": "43ea64"
+        },
+        {
+          "name": "Blue, Yellow, and Pink",
+          "hex": "efe362"
+        },
+        {
+          "name": "CHCKX",
+          "hex": "f55193"
+        }
+      ],
+      "finish": "matte",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Multicolor Multicolor {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Glass Aurora 1",
+          "hex": "aaccee"
+        },
+        {
+          "name": "Glass Blue-Purple",
+          "hex": "8d8bfd"
+        },
+        {
+          "name": "Glass Candy Colors",
+          "hex": "efaeea"
+        },
+        {
+          "name": "Glass Ice Cream",
+          "hex": "e78be9"
+        },
+        {
+          "name": "Glass Macarons",
+          "hex": "b3d4f5"
+        },
+        {
+          "name": "Glass Starry Sea",
+          "hex": "ebefae"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PETG Matte {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "808080"
+        },
+        {
+          "name": "Grey",
+          "hex": "606060"
+        },
+        {
+          "name": "Matte Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Matte White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Pink",
+          "hex": "d357fe"
+        },
+        {
+          "name": "Red",
+          "hex": "e32400"
+        },
+        {
+          "name": "SKIN Color",
+          "hex": "c3b998"
+        }
+      ],
+      "finish": "matte",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue",
+          "hex": "248ff9"
+        },
+        {
+          "name": "Brown",
+          "hex": "553d00"
+        },
+        {
+          "name": "Color",
+          "hex": "f3e1e1"
+        },
+        {
+          "name": "Crystal Purple",
+          "hex": "8d8bfd"
+        },
+        {
+          "name": "Flash Blue",
+          "hex": "8bbdfd"
+        },
+        {
+          "name": "Green",
+          "hex": "80ff00"
+        },
+        {
+          "name": "Grey",
+          "hex": "898989"
+        },
+        {
+          "name": "Metallic Coffee Brown",
+          "hex": "503e38"
+        },
+        {
+          "name": "Metallic Orange",
+          "hex": "955d48"
+        },
+        {
+          "name": "Metallic Rose Gold",
+          "hex": "a26872"
+        },
+        {
+          "name": "Metallic Teal (Green Eye)",
+          "hex": "7ba79d"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff8000"
+        },
+        {
+          "name": "Orange-Light",
+          "hex": "fba966"
+        },
+        {
+          "name": "Purple",
+          "hex": "61177c"
+        },
+        {
+          "name": "Red",
+          "hex": "fa0000"
+        },
+        {
+          "name": "Silver",
+          "hex": "c4c4c4"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Yellow",
+          "hex": "fbff00"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        20,
+        20
+      ],
+      "colors": [
+        {
+          "name": "Four Seasons of Autumn",
+          "hex": "e8a354"
+        },
+        {
+          "name": "Four Seasons of Spring",
+          "hex": "ff8afb"
+        },
+        {
+          "name": "Four Seasons of Summer",
+          "hex": "79f269"
+        },
+        {
+          "name": "Four Seasons of Winter",
+          "hex": "66aac7"
+        },
+        {
+          "name": "Powder Blue",
+          "hex": "d77af0"
+        }
+      ],
+      "finish": "matte",
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Bamboo Green",
+          "hex": "58b04e"
+        },
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Energetic Orange",
+          "hex": "ff6600"
+        },
+        {
+          "name": "Gray",
+          "hex": "646b73"
+        },
+        {
+          "name": "Light Yellow",
+          "hex": "eee850"
+        },
+        {
+          "name": "Orange",
+          "hex": "ff6a00"
+        },
+        {
+          "name": "Peach Pink",
+          "hex": "fc5073"
+        },
+        {
+          "name": "Pink",
+          "hex": "fd9dba"
+        },
+        {
+          "name": "Purple",
+          "hex": "ab79c7"
+        },
+        {
+          "name": "Silver",
+          "hex": "4c5057"
+        },
+        {
+          "name": "Skin-Color",
+          "hex": "f3e2de"
+        },
+        {
+          "name": "Starry Blue",
+          "hex": "1044bb"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black and Red",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue Green",
+          "hex": "0080ff"
+        },
+        {
+          "name": "Red/Pink/Purple",
+          "hexes": [
+            "ff0000",
+            "808080",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "Silk Triple {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Black/Blue/Purple",
+          "hexes": [
+            "000000",
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Blue, Black, and Purple",
+          "hex": "0000ff"
+        },
+        {
+          "name": "Green/Purple/Copper",
+          "hexes": [
+            "008000",
+            "800080",
+            "808080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red Yellow Blue",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Red/Blue/Green",
+          "hexes": [
+            "ff0000",
+            "0000ff",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red/Gold/Green",
+          "hexes": [
+            "ff0000",
+            "ffd700",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "White/Blue/Green",
+          "hexes": [
+            "808080",
+            "0000ff",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "White/Gold/Green",
+          "hexes": [
+            "808080",
+            "ffd700",
+            "008000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Yellow/Blue/Purple",
+          "hexes": [
+            "ffff00",
+            "0000ff",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ],
+      "country_of_origin": "CN"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "chckx_petg_crystalblue_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Crystal Blue",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "8bbdfd",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Crystal {color_name}::Crystal Blue::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Crystal {color_name}",
+      "color": "Blue",
+      "line": "Crystal",
+      "cell": {
+        "name": "Crystal {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "8bbdfd"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg-gf_gfblack_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Gf Black",
+        "material": "PETG-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Gf {color_name}::Gf Black::PETG-GF::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Gf {color_name}",
+      "color": "Black",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "PETG-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg-gf_gfgray_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Gf Gray",
+        "material": "PETG-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "b0b0b0",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Gf {color_name}::Gf Gray::PETG-GF::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Gf {color_name}",
+      "color": "Gray",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "PETG-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Gray",
+            "hex": "b0b0b0"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg-gf_gfwhite_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Gf White",
+        "material": "PETG-GF",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Gf {color_name}::Gf White::PETG-GF::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Gf {color_name}",
+      "color": "White",
+      "line": "Gf",
+      "cell": {
+        "name": "Gf {color_name}",
+        "material": "PETG-GF",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "808080"
+          }
+        ],
+        "fill": "glass fiber",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_mattedualredandyellow_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Dual Red and Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e70d0d",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Dual {color_name}::Matte Dual Red and Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Matte Dual {color_name}",
+      "color": "Red and Yellow",
+      "line": "Matte Dual",
+      "cell": {
+        "name": "Matte Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Red and Yellow",
+            "hex": "e70d0d"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_mattedualyellow-green_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Dual Yellow-Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e4ef4e",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Dual {color_name}::Matte Dual Yellow-Green::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Matte Dual {color_name}",
+      "color": "Yellow-Green",
+      "line": "Matte Dual",
+      "cell": {
+        "name": "Matte Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Yellow-Green",
+            "hex": "e4ef4e"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_mattedualyellow-pink_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Dual Yellow-Pink",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f2e76e",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Dual {color_name}::Matte Dual Yellow-Pink::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Matte Dual {color_name}",
+      "color": "Yellow-Pink",
+      "line": "Matte Dual",
+      "cell": {
+        "name": "Matte Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Yellow-Pink",
+            "hex": "f2e76e"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_matterainbowcandy_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Rainbow Candy",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "35850a",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Rainbow {color_name}::Matte Rainbow Candy::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Matte Rainbow {color_name}",
+      "color": "Candy",
+      "line": "Matte Rainbow",
+      "cell": {
+        "name": "Matte Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Candy",
+            "hex": "35850a"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_matterainbowcandy2_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Rainbow Candy 2",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e1aeef",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Rainbow {color_name}::Matte Rainbow Candy 2::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Matte Rainbow {color_name}",
+      "color": "Candy 2",
+      "line": "Matte Rainbow",
+      "cell": {
+        "name": "Matte Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Candy 2",
+            "hex": "e1aeef"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_matterainbowcandy3_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Rainbow Candy 3",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "5e94c9",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Rainbow {color_name}::Matte Rainbow Candy 3::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Matte Rainbow {color_name}",
+      "color": "Candy 3",
+      "line": "Matte Rainbow",
+      "cell": {
+        "name": "Matte Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Candy 3",
+            "hex": "5e94c9"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_mattetricolorblack,red,andorange_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Tri Color Black, Red, and Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Tri Color {color_name}::Matte Tri Color Black, Red, and Orange::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Matte Tri Color {color_name}",
+      "color": "Black, Red, and Orange",
+      "line": "Matte Tri Color",
+      "cell": {
+        "name": "Matte Tri Color {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Black, Red, and Orange",
+            "hex": "000000"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_mattetricolorblue,green,andpurple_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Tri Color Blue, Green, and Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "56a6f5",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Tri Color {color_name}::Matte Tri Color Blue, Green, and Purple::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Matte Tri Color {color_name}",
+      "color": "Blue, Green, and Purple",
+      "line": "Matte Tri Color",
+      "cell": {
+        "name": "Matte Tri Color {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Blue, Green, and Purple",
+            "hex": "56a6f5"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_mattetricolorblue,green,andyellow_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Tri Color Blue, Green, and Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "43ea64",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Tri Color {color_name}::Matte Tri Color Blue, Green, and Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Matte Tri Color {color_name}",
+      "color": "Blue, Green, and Yellow",
+      "line": "Matte Tri Color",
+      "cell": {
+        "name": "Matte Tri Color {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Blue, Green, and Yellow",
+            "hex": "43ea64"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_mattetricolorblue,yellow,andpink_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Tri Color Blue, Yellow, and Pink",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "efe362",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Tri Color {color_name}::Matte Tri Color Blue, Yellow, and Pink::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Matte Tri Color {color_name}",
+      "color": "Blue, Yellow, and Pink",
+      "line": "Matte Tri Color",
+      "cell": {
+        "name": "Matte Tri Color {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Blue, Yellow, and Pink",
+            "hex": "efe362"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_mattetricolorchckx_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Matte Tri Color CHCKX",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f55193",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Matte Tri Color {color_name}::Matte Tri Color CHCKX::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Matte Tri Color {color_name}",
+      "color": "CHCKX",
+      "line": "Matte Tri Color",
+      "cell": {
+        "name": "Matte Tri Color {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "CHCKX",
+            "hex": "f55193"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_multicolormulticolorglassaurora1_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Multicolor Multicolor Glass Aurora 1",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "aaccee",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Multicolor Multicolor {color_name}::Multicolor Multicolor Glass Aurora 1::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Multicolor Multicolor {color_name}",
+      "color": "Glass Aurora 1",
+      "line": "Multicolor Multicolor",
+      "cell": {
+        "name": "Multicolor Multicolor {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Glass Aurora 1",
+            "hex": "aaccee"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_multicolormulticolorglassblue-purple_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Multicolor Multicolor Glass Blue-Purple",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "8d8bfd",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Multicolor Multicolor {color_name}::Multicolor Multicolor Glass Blue-Purple::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Multicolor Multicolor {color_name}",
+      "color": "Glass Blue-Purple",
+      "line": "Multicolor Multicolor",
+      "cell": {
+        "name": "Multicolor Multicolor {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Glass Blue-Purple",
+            "hex": "8d8bfd"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_multicolormulticolorglasscandycolors_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Multicolor Multicolor Glass Candy Colors",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "efaeea",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Multicolor Multicolor {color_name}::Multicolor Multicolor Glass Candy Colors::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Multicolor Multicolor {color_name}",
+      "color": "Glass Candy Colors",
+      "line": "Multicolor Multicolor",
+      "cell": {
+        "name": "Multicolor Multicolor {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Glass Candy Colors",
+            "hex": "efaeea"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_multicolormulticolorglassicecream_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Multicolor Multicolor Glass Ice Cream",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e78be9",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Multicolor Multicolor {color_name}::Multicolor Multicolor Glass Ice Cream::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Multicolor Multicolor {color_name}",
+      "color": "Glass Ice Cream",
+      "line": "Multicolor Multicolor",
+      "cell": {
+        "name": "Multicolor Multicolor {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Glass Ice Cream",
+            "hex": "e78be9"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_multicolormulticolorglassmacarons_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Multicolor Multicolor Glass Macarons",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "b3d4f5",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Multicolor Multicolor {color_name}::Multicolor Multicolor Glass Macarons::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Multicolor Multicolor {color_name}",
+      "color": "Glass Macarons",
+      "line": "Multicolor Multicolor",
+      "cell": {
+        "name": "Multicolor Multicolor {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Glass Macarons",
+            "hex": "b3d4f5"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_multicolormulticolorglassstarrysea_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Multicolor Multicolor Glass Starry Sea",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ebefae",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Multicolor Multicolor {color_name}::Multicolor Multicolor Glass Starry Sea::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "Multicolor Multicolor {color_name}",
+      "color": "Glass Starry Sea",
+      "line": "Multicolor Multicolor",
+      "cell": {
+        "name": "Multicolor Multicolor {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Glass Starry Sea",
+            "hex": "ebefae"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmatteblue_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Matte Blue",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG Matte {color_name}::PETG Matte Blue::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG Matte {color_name}",
+      "color": "Blue",
+      "line": "PETG Matte",
+      "cell": {
+        "name": "PETG Matte {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "808080"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmattegrey_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Matte Grey",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "606060",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG Matte {color_name}::PETG Matte Grey::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PETG Matte {color_name}",
+      "color": "Grey",
+      "line": "PETG Matte",
+      "cell": {
+        "name": "PETG Matte {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Grey",
+            "hex": "606060"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmattematteblack_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Matte Matte Black",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG Matte {color_name}::PETG Matte Matte Black::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PETG Matte {color_name}",
+      "color": "Matte Black",
+      "line": "PETG Matte",
+      "cell": {
+        "name": "PETG Matte {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Matte Black",
+            "hex": "000000"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmattemattewhite_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Matte Matte White",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG Matte {color_name}::PETG Matte Matte White::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PETG Matte {color_name}",
+      "color": "Matte White",
+      "line": "PETG Matte",
+      "cell": {
+        "name": "PETG Matte {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Matte White",
+            "hex": "ffffff"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmattepink_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Matte Pink",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "d357fe",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG Matte {color_name}::PETG Matte Pink::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PETG Matte {color_name}",
+      "color": "Pink",
+      "line": "PETG Matte",
+      "cell": {
+        "name": "PETG Matte {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Pink",
+            "hex": "d357fe"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmattered_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Matte Red",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e32400",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG Matte {color_name}::PETG Matte Red::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PETG Matte {color_name}",
+      "color": "Red",
+      "line": "PETG Matte",
+      "cell": {
+        "name": "PETG Matte {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "e32400"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmatteskincolor_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Matte SKIN Color",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "c3b998",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG Matte {color_name}::PETG Matte SKIN Color::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PETG Matte {color_name}",
+      "color": "SKIN Color",
+      "line": "PETG Matte",
+      "cell": {
+        "name": "PETG Matte {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "SKIN Color",
+            "hex": "c3b998"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgblack_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Black",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Black::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG {color_name}",
+      "color": "Black",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgblue_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Blue",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "248ff9",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Blue::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PETG {color_name}",
+      "color": "Blue",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Blue",
+            "hex": "248ff9"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgbrown_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Brown",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "553d00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Brown::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PETG {color_name}",
+      "color": "Brown",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Brown",
+            "hex": "553d00"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgcolor_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Color",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f3e1e1",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Color::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PETG {color_name}",
+      "color": "Color",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Color",
+            "hex": "f3e1e1"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgflashblue_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Flash Blue",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "8bbdfd",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Flash Blue::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PETG {color_name}",
+      "color": "Flash Blue",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Flash Blue",
+            "hex": "8bbdfd"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petggreen_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Green",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "80ff00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Green::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PETG {color_name}",
+      "color": "Green",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Green",
+            "hex": "80ff00"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petggrey_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Grey",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "898989",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Grey::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PETG {color_name}",
+      "color": "Grey",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Grey",
+            "hex": "898989"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmetalliccoffeebrown_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Metallic Coffee Brown",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "503e38",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Metallic Coffee Brown::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PETG {color_name}",
+      "color": "Metallic Coffee Brown",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Metallic Coffee Brown",
+            "hex": "503e38"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmetallicorange_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Metallic Orange",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "955d48",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Metallic Orange::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "PETG {color_name}",
+      "color": "Metallic Orange",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Metallic Orange",
+            "hex": "955d48"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmetallicrosegold_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Metallic Rose Gold",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "a26872",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Metallic Rose Gold::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "PETG {color_name}",
+      "color": "Metallic Rose Gold",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Metallic Rose Gold",
+            "hex": "a26872"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgmetallicteal(greeneye)_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Metallic Teal (Green Eye)",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "7ba79d",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Metallic Teal (Green Eye)::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 11,
+      "template": "PETG {color_name}",
+      "color": "Metallic Teal (Green Eye)",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Metallic Teal (Green Eye)",
+            "hex": "7ba79d"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgorange_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Orange",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ff8000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Orange::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 12,
+      "template": "PETG {color_name}",
+      "color": "Orange",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Orange",
+            "hex": "ff8000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgorange-light_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Orange-Light",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "fba966",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Orange-Light::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 13,
+      "template": "PETG {color_name}",
+      "color": "Orange-Light",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Orange-Light",
+            "hex": "fba966"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgpurple_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Purple",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "61177c",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Purple::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 14,
+      "template": "PETG {color_name}",
+      "color": "Purple",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Purple",
+            "hex": "61177c"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgred_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Red",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "fa0000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Red::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 15,
+      "template": "PETG {color_name}",
+      "color": "Red",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "fa0000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgsilver_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Silver",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "c4c4c4",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Silver::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 16,
+      "template": "PETG {color_name}",
+      "color": "Silver",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Silver",
+            "hex": "c4c4c4"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgwhite_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG White",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG White::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 17,
+      "template": "PETG {color_name}",
+      "color": "White",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_petg_petgyellow_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PETG Yellow",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "fbff00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Yellow::PETG::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 18,
+      "template": "PETG {color_name}",
+      "color": "Yellow",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          240,
+          260
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "fbff00"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plamattefourseasonsofautumn_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Matte Four Seasons of Autumn",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e8a354",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA Matte {color_name}::PLA Matte Four Seasons of Autumn::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA Matte {color_name}",
+      "color": "Four Seasons of Autumn",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Four Seasons of Autumn",
+            "hex": "e8a354"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plamattefourseasonsofspring_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Matte Four Seasons of Spring",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ff8afb",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA Matte {color_name}::PLA Matte Four Seasons of Spring::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA Matte {color_name}",
+      "color": "Four Seasons of Spring",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Four Seasons of Spring",
+            "hex": "ff8afb"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plamattefourseasonsofsummer_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Matte Four Seasons of Summer",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "79f269",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA Matte {color_name}::PLA Matte Four Seasons of Summer::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA Matte {color_name}",
+      "color": "Four Seasons of Summer",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Four Seasons of Summer",
+            "hex": "79f269"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plamattefourseasonsofwinter_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Matte Four Seasons of Winter",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "66aac7",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA Matte {color_name}::PLA Matte Four Seasons of Winter::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA Matte {color_name}",
+      "color": "Four Seasons of Winter",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Four Seasons of Winter",
+            "hex": "66aac7"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plamattepowderblue_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Matte Powder Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "d77af0",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA Matte {color_name}::PLA Matte Powder Blue::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA Matte {color_name}",
+      "color": "Powder Blue",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          20,
+          20
+        ],
+        "colors": [
+          {
+            "name": "Powder Blue",
+            "hex": "d77af0"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plabamboogreen_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Bamboo Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "58b04e",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Bamboo Green::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA {color_name}",
+      "color": "Bamboo Green",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Bamboo Green",
+            "hex": "58b04e"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plablack_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Black::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA {color_name}",
+      "color": "Black",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plaenergeticorange_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Energetic Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ff6600",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Energetic Orange::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA {color_name}",
+      "color": "Energetic Orange",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Energetic Orange",
+            "hex": "ff6600"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plagray_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Gray",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "646b73",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Gray::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PLA {color_name}",
+      "color": "Gray",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Gray",
+            "hex": "646b73"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plalightyellow_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Light Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "eee850",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Light Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "PLA {color_name}",
+      "color": "Light Yellow",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Light Yellow",
+            "hex": "eee850"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plaorange_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ff6a00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Orange::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "PLA {color_name}",
+      "color": "Orange",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Orange",
+            "hex": "ff6a00"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plapeachpink_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Peach Pink",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "fc5073",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Peach Pink::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PLA {color_name}",
+      "color": "Peach Pink",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Peach Pink",
+            "hex": "fc5073"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plapink_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Pink",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "fd9dba",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Pink::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "PLA {color_name}",
+      "color": "Pink",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Pink",
+            "hex": "fd9dba"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plapurple_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ab79c7",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Purple::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "PLA {color_name}",
+      "color": "Purple",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Purple",
+            "hex": "ab79c7"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plasilver_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Silver",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "4c5057",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Silver::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 9,
+      "template": "PLA {color_name}",
+      "color": "Silver",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Silver",
+            "hex": "4c5057"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plaskin-color_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Skin-Color",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "f3e2de",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Skin-Color::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 10,
+      "template": "PLA {color_name}",
+      "color": "Skin-Color",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Skin-Color",
+            "hex": "f3e2de"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plastarryblue_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA Starry Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "1044bb",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA Starry Blue::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 11,
+      "template": "PLA {color_name}",
+      "color": "Starry Blue",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Starry Blue",
+            "hex": "1044bb"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_plawhite_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "PLA White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::PLA {color_name}::PLA White::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 12,
+      "template": "PLA {color_name}",
+      "color": "White",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silkdualblackandred_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Dual Black and Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Dual {color_name}::Silk Dual Black and Red::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Dual {color_name}",
+      "color": "Black and Red",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Black and Red",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silkdualbluegreen_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Dual Blue Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0080ff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Dual {color_name}::Silk Dual Blue Green::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Silk Dual {color_name}",
+      "color": "Blue Green",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Blue Green",
+            "hex": "0080ff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silkdualred/pink/purple_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Dual Red/Pink/Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "ff0000",
+          "808080",
+          "800080"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Dual {color_name}::Silk Dual Red/Pink/Purple::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk Dual {color_name}",
+      "color": "Red/Pink/Purple",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Red/Pink/Purple",
+            "hexes": [
+              "ff0000",
+              "808080",
+              "800080"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktripleblack/blue/purple_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple Black/Blue/Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "000000",
+          "0000ff",
+          "800080"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple Black/Blue/Purple::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Triple {color_name}",
+      "color": "Black/Blue/Purple",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Black/Blue/Purple",
+            "hexes": [
+              "000000",
+              "0000ff",
+              "800080"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktripleblue,black,andpurple_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple Blue, Black, and Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0000ff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple Blue, Black, and Purple::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Silk Triple {color_name}",
+      "color": "Blue, Black, and Purple",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Blue, Black, and Purple",
+            "hex": "0000ff"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktriplegreen/purple/copper_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple Green/Purple/Copper",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "008000",
+          "800080",
+          "808080"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple Green/Purple/Copper::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk Triple {color_name}",
+      "color": "Green/Purple/Copper",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Green/Purple/Copper",
+            "hexes": [
+              "008000",
+              "800080",
+              "808080"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktripleredyellowblue_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple Red Yellow Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ff0000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple Red Yellow Blue::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Silk Triple {color_name}",
+      "color": "Red Yellow Blue",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Red Yellow Blue",
+            "hex": "ff0000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktriplered/blue/green_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple Red/Blue/Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "ff0000",
+          "0000ff",
+          "008000"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple Red/Blue/Green::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Silk Triple {color_name}",
+      "color": "Red/Blue/Green",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Red/Blue/Green",
+            "hexes": [
+              "ff0000",
+              "0000ff",
+              "008000"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktriplered/gold/green_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple Red/Gold/Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "ff0000",
+          "ffd700",
+          "008000"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple Red/Gold/Green::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "Silk Triple {color_name}",
+      "color": "Red/Gold/Green",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Red/Gold/Green",
+            "hexes": [
+              "ff0000",
+              "ffd700",
+              "008000"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktriplewhite/blue/green_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple White/Blue/Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "808080",
+          "0000ff",
+          "008000"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple White/Blue/Green::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "Silk Triple {color_name}",
+      "color": "White/Blue/Green",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "White/Blue/Green",
+            "hexes": [
+              "808080",
+              "0000ff",
+              "008000"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktriplewhite/gold/green_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple White/Gold/Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "808080",
+          "ffd700",
+          "008000"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple White/Gold/Green::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 7,
+      "template": "Silk Triple {color_name}",
+      "color": "White/Gold/Green",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "White/Gold/Green",
+            "hexes": [
+              "808080",
+              "ffd700",
+              "008000"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "chckx_pla_silktripleyellow/blue/purple_1000_175_p",
+        "manufacturer": "CHCKX",
+        "name": "Silk Triple Yellow/Blue/Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "ffff00",
+          "0000ff",
+          "800080"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "chckx.json::CHCKX::Silk Triple {color_name}::Silk Triple Yellow/Blue/Purple::PLA::1000::1.75::plastic::False",
+      "filename": "chckx.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 8,
+      "template": "Silk Triple {color_name}",
+      "color": "Yellow/Blue/Purple",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Yellow/Blue/Purple",
+            "hexes": [
+              "ffff00",
+              "0000ff",
+              "800080"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 1,
+    "hard_stops": 0,
+    "before_count": 51702,
+    "after_count": 51702,
+    "brand_before": 78,
+    "brand_after": 78,
+    "registry_before": 1732,
+    "registry_after": 1732,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "CH",
+    "metadata": [],
+    "no_transfers": true,
+    "official_evidence": [
+      {
+        "url": "https://chckx.net/",
+        "note": "Explicit concept-demonstration site; representative figures are not manufacturer-specification evidence."
+      }
+    ],
+    "metadata_review": "CrystalPurple candidate blocked by strict product-line/color decomposition. Source website self-identifies as conceptdemo; no numeric substitution or identity inference. Preserve both records.",
+    "printing_default_flags": []
+  }
+}
