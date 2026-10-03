@@ -172,6 +172,18 @@ def main():
 
     if not report_display_name_warnings(filaments_dir, strict=args.strict_display_names):
         success = False
+
+    from scripts.duplicate_guard import check_duplicate_candidates
+
+    print("\nChecking duplicate-candidate review guard...")
+    duplicate_errors, duplicate_warnings = check_duplicate_candidates(ROOT, args.base_ref)
+    print(f"Duplicate candidates: {len(duplicate_warnings)} existing warning(s), {len(duplicate_errors)} error(s).")
+    for warning in duplicate_warnings:
+        print(f"WARN duplicates: {warning}")
+    for error in duplicate_errors:
+        print(f"ERROR duplicates: {error}", file=sys.stderr)
+    if duplicate_errors:
+        success = False
         
     compiled_data = ROOT / "filaments.json"
     compiled_schema = ROOT / "filaments.compiled.schema.json"
