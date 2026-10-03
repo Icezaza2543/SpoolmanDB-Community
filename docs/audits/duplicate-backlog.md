@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## professionallab deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|PL001 / `dup-f19051aa2dcd18ae24e90b53dd45e7af7ab84c0d9c04e662c3b8d46c0443e2aa`|`professionallab_pla_plagray_1000_175_p`<br>`professionallab_pla_plagrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-professionallab-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## matterhackers deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
