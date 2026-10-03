@@ -12075,6 +12075,27 @@
       "ref": "docs/audits/2026-10-03-amazonbasics-duplicate-review.json",
       "source": "f5272390dae8954626e59c03d13e74c09886b6f9",
       "retired_key": "AmazonBasics.json::AmazonBasics::Silk PLA {color_name}::Silk PLA Silver::PLA::1000::1.75::plastic::False"
+    },
+    "iemai_pc_iemaipcblack_1000_175_p": {
+      "replaced_by": "iemai_pc_pcblack_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd",
+      "retired_key": "iemai.json::IEMAI::IEMAI PC {color_name}::IEMAI PC Black::PC::1000::1.75::plastic::False"
+    },
+    "iemai_pla_iemaiplablack_1000_175_p": {
+      "replaced_by": "iemai_pla_plablack_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd",
+      "retired_key": "iemai.json::IEMAI::IEMAI PLA {color_name}::IEMAI PLA Black::PLA::1000::1.75::plastic::False"
+    },
+    "iemai_pla_iemaiplawhite_1000_175_p": {
+      "replaced_by": "iemai_pla_plawhite_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd",
+      "retired_key": "iemai.json::IEMAI::IEMAI PLA {color_name}::IEMAI PLA White::PLA::1000::1.75::plastic::False"
     }
   }
 }

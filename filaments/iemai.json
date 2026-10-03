@@ -19,14 +19,6 @@
       "bed_temp": 55,
       "colors": [
         {
-          "name": "Black",
-          "hex": "000000"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
-        },
-        {
           "name": "Grey",
           "hex": "808080"
         }
@@ -50,10 +42,6 @@
       "extruder_temp": 260,
       "bed_temp": 100,
       "colors": [
-        {
-          "name": "Black",
-          "hex": "000000"
-        },
         {
           "name": "Transparent",
           "hex": "00000000"
@@ -383,7 +371,7 @@
     {
       "name": "PC {color_name}",
       "material": "PC",
-      "density": 1.2,
+      "density": 1.19,
       "weights": [
         {
           "weight": 1000,
@@ -398,7 +386,33 @@
         {
           "name": "Black",
           "hex": "000000"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Clear",
           "hex": "F0F0F0",
@@ -639,7 +653,7 @@
     {
       "name": "PLA {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.17,
       "weights": [
         {
           "weight": 1000,
@@ -654,7 +668,33 @@
         {
           "name": "Black",
           "hex": "000000"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.17,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "White",
           "hex": "FFFFFF"

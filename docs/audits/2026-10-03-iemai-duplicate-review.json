@@ -1,0 +1,3753 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "iemai",
+  "audit_digest": "f9c01db857f46744649f280025804ff2fcb870ee32dc34e9f871fc3cd1c3df90",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {
+    "dup-87136a46ecd8954df476b085b8865beafbb92058287f3848ddd82ca7163bacb8": {
+      "approved": true,
+      "survivor": "iemai_pc_pcblack_1000_175_p",
+      "retire": [
+        "iemai_pc_iemaipcblack_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd"
+    },
+    "dup-82cf2209518965bd62585805c1257e28ca114170e78b848d90d3d972a9aaf9c7": {
+      "approved": true,
+      "survivor": "iemai_pla_plablack_1000_175_p",
+      "retire": [
+        "iemai_pla_iemaiplablack_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd"
+    },
+    "dup-2c36e60d84f446bc5c6899adbf386bc1c23c30036a86d00bb67f706e7b88b226": {
+      "approved": true,
+      "survivor": "iemai_pla_plawhite_1000_175_p",
+      "retire": [
+        "iemai_pla_iemaiplawhite_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd"
+    }
+  },
+  "bindings": {},
+  "metadata": [
+    {
+      "id": "iemai_pla_plawhite_1000_175_p",
+      "values": {
+        "density": 1.17
+      },
+      "source": "https://store.iemai3d.com/wp-content/uploads/2024/01/06_PLA-Filament-TDS.pdf",
+      "lot": "current exact product-line manufacturer recommendations; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "iemai_pla_plablack_1000_175_p",
+      "values": {
+        "density": 1.17
+      },
+      "source": "https://store.iemai3d.com/wp-content/uploads/2024/01/06_PLA-Filament-TDS.pdf",
+      "lot": "current exact product-line manufacturer recommendations; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "iemai_pc_pcblack_1000_175_p",
+      "values": {
+        "density": 1.19
+      },
+      "source": "https://www.iemai3d.com/wp-content/uploads/2022/11/00_IEMAI_All_Filament_TDS.pdf",
+      "lot": "current exact product-line manufacturer recommendations; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-87136a46ecd8954df476b085b8865beafbb92058287f3848ddd82ca7163bacb8",
+      "ids": [
+        "iemai_pc_iemaipcblack_1000_175_p",
+        "iemai_pc_pcblack_1000_175_p"
+      ],
+      "proposed_survivor": "iemai_pc_pcblack_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "iemai_pc_iemaipcblack_1000_175_p": "iemai_pc_pcblack_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "iemai_pc_iemaipcblack_1000_175_p",
+          "manufacturer": "IEMAI",
+          "name": "IEMAI PC Black",
+          "material": "PC",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": 260,
+          "extruder_temp_range": null,
+          "bed_temp": 100,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "iemai.json::IEMAI::IEMAI PC {color_name}::IEMAI PC Black::PC::1000::1.75::plastic::False",
+          "template": "IEMAI PC {color_name}",
+          "source_color": "Black",
+          "source_line": "IEMAI PC",
+          "source_file": "iemai.json",
+          "source_definition": {
+            "source_file": "iemai.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        },
+        {
+          "id": "iemai_pc_pcblack_1000_175_p",
+          "manufacturer": "IEMAI",
+          "name": "PC Black",
+          "material": "PC",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            250,
+            280
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            100,
+            110
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "iemai.json::IEMAI::PC {color_name}::PC Black::PC::1000::1.75::plastic::False",
+          "template": "PC {color_name}",
+          "source_color": "Black",
+          "source_line": "PC",
+          "source_file": "iemai.json",
+          "source_definition": {
+            "source_file": "iemai.json",
+            "definition_index": 12,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "iemai_pc_iemaipcblack_1000_175_p": 200,
+          "iemai_pc_pcblack_1000_175_p": 250
+        },
+        "extruder_temp": {
+          "iemai_pc_iemaipcblack_1000_175_p": 260,
+          "iemai_pc_pcblack_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "iemai_pc_iemaipcblack_1000_175_p": null,
+          "iemai_pc_pcblack_1000_175_p": [
+            250,
+            280
+          ]
+        },
+        "bed_temp": {
+          "iemai_pc_iemaipcblack_1000_175_p": 100,
+          "iemai_pc_pcblack_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "iemai_pc_iemaipcblack_1000_175_p": null,
+          "iemai_pc_pcblack_1000_175_p": [
+            100,
+            110
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "IE001",
+      "status": "APPROVED",
+      "survivor": "iemai_pc_pcblack_1000_175_p",
+      "retire": [
+        "iemai_pc_iemaipcblack_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    },
+    {
+      "group_id": "dup-82cf2209518965bd62585805c1257e28ca114170e78b848d90d3d972a9aaf9c7",
+      "ids": [
+        "iemai_pla_iemaiplablack_1000_175_p",
+        "iemai_pla_plablack_1000_175_p"
+      ],
+      "proposed_survivor": "iemai_pla_plablack_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "iemai_pla_iemaiplablack_1000_175_p": "iemai_pla_plablack_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "iemai_pla_iemaiplablack_1000_175_p",
+          "manufacturer": "IEMAI",
+          "name": "IEMAI PLA Black",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 55,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "iemai.json::IEMAI::IEMAI PLA {color_name}::IEMAI PLA Black::PLA::1000::1.75::plastic::False",
+          "template": "IEMAI PLA {color_name}",
+          "source_color": "Black",
+          "source_line": "IEMAI PLA",
+          "source_file": "iemai.json",
+          "source_definition": {
+            "source_file": "iemai.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 3,
+            "compiled_records": 3
+          },
+          "upstream": false
+        },
+        {
+          "id": "iemai_pla_plablack_1000_175_p",
+          "manufacturer": "IEMAI",
+          "name": "PLA Black",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            45,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "iemai.json::IEMAI::PLA {color_name}::PLA Black::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Black",
+          "source_line": "PLA",
+          "source_file": "iemai.json",
+          "source_definition": {
+            "source_file": "iemai.json",
+            "definition_index": 20,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "iemai_pla_iemaiplablack_1000_175_p": 200,
+          "iemai_pla_plablack_1000_175_p": 250
+        },
+        "extruder_temp": {
+          "iemai_pla_iemaiplablack_1000_175_p": 205,
+          "iemai_pla_plablack_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "iemai_pla_iemaiplablack_1000_175_p": null,
+          "iemai_pla_plablack_1000_175_p": [
+            190,
+            240
+          ]
+        },
+        "bed_temp": {
+          "iemai_pla_iemaiplablack_1000_175_p": 55,
+          "iemai_pla_plablack_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "iemai_pla_iemaiplablack_1000_175_p": null,
+          "iemai_pla_plablack_1000_175_p": [
+            45,
+            60
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "IE002",
+      "status": "APPROVED",
+      "survivor": "iemai_pla_plablack_1000_175_p",
+      "retire": [
+        "iemai_pla_iemaiplablack_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    },
+    {
+      "group_id": "dup-2c36e60d84f446bc5c6899adbf386bc1c23c30036a86d00bb67f706e7b88b226",
+      "ids": [
+        "iemai_pla_iemaiplawhite_1000_175_p",
+        "iemai_pla_plawhite_1000_175_p"
+      ],
+      "proposed_survivor": "iemai_pla_plawhite_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "iemai_pla_iemaiplawhite_1000_175_p": "iemai_pla_plawhite_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "iemai_pla_iemaiplawhite_1000_175_p",
+          "manufacturer": "IEMAI",
+          "name": "IEMAI PLA White",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 55,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "iemai.json::IEMAI::IEMAI PLA {color_name}::IEMAI PLA White::PLA::1000::1.75::plastic::False",
+          "template": "IEMAI PLA {color_name}",
+          "source_color": "White",
+          "source_line": "IEMAI PLA",
+          "source_file": "iemai.json",
+          "source_definition": {
+            "source_file": "iemai.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 3,
+            "compiled_records": 3
+          },
+          "upstream": false
+        },
+        {
+          "id": "iemai_pla_plawhite_1000_175_p",
+          "manufacturer": "IEMAI",
+          "name": "PLA White",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            45,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "iemai.json::IEMAI::PLA {color_name}::PLA White::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "White",
+          "source_line": "PLA",
+          "source_file": "iemai.json",
+          "source_definition": {
+            "source_file": "iemai.json",
+            "definition_index": 20,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "iemai_pla_iemaiplawhite_1000_175_p": 200,
+          "iemai_pla_plawhite_1000_175_p": 250
+        },
+        "extruder_temp": {
+          "iemai_pla_iemaiplawhite_1000_175_p": 205,
+          "iemai_pla_plawhite_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "iemai_pla_iemaiplawhite_1000_175_p": null,
+          "iemai_pla_plawhite_1000_175_p": [
+            190,
+            240
+          ]
+        },
+        "bed_temp": {
+          "iemai_pla_iemaiplawhite_1000_175_p": 55,
+          "iemai_pla_plawhite_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "iemai_pla_iemaiplawhite_1000_175_p": null,
+          "iemai_pla_plawhite_1000_175_p": [
+            45,
+            60
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved under continuous owner authorization; unresolved metadata retained unless listed in metadata decisions.",
+      "label": "IE003",
+      "status": "APPROVED",
+      "survivor": "iemai_pla_plawhite_1000_175_p",
+      "retire": [
+        "iemai_pla_iemaiplawhite_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact physical identity matches; authorized catalog survivor priority"
+    }
+  ],
+  "deferred_groups": [],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {
+    "iemai_pc_iemaipcblack_1000_175_p": {
+      "replaced_by": "iemai_pc_pcblack_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd",
+      "retired_key": "iemai.json::IEMAI::IEMAI PC {color_name}::IEMAI PC Black::PC::1000::1.75::plastic::False"
+    },
+    "iemai_pla_iemaiplablack_1000_175_p": {
+      "replaced_by": "iemai_pla_plablack_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd",
+      "retired_key": "iemai.json::IEMAI::IEMAI PLA {color_name}::IEMAI PLA Black::PLA::1000::1.75::plastic::False"
+    },
+    "iemai_pla_iemaiplawhite_1000_175_p": {
+      "replaced_by": "iemai_pla_plawhite_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-03-iemai-duplicate-review.json",
+      "source": "f4a3099ea18f4d6f3284f9f8cd18c3e481e00bcd",
+      "retired_key": "iemai.json::IEMAI::IEMAI PLA {color_name}::IEMAI PLA White::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "official_evidence": [
+    {
+      "url": "https://store.iemai3d.com/index.php/product/pla/",
+      "note": "Current product actively links exactPLA TDS."
+    },
+    {
+      "url": "https://store.iemai3d.com/wp-content/uploads/2024/01/06_PLA-Filament-TDS.pdf",
+      "density": 1.17
+    },
+    {
+      "url": "https://www.iemai3d.com/index.php/download/",
+      "note": "Current manufacturer downloadcentre actively links all-materialTDS."
+    },
+    {
+      "url": "https://www.iemai3d.com/wp-content/uploads/2022/11/00_IEMAI_All_Filament_TDS.pdf",
+      "note": "PC sectionp17 density1.19; no printing values stated."
+    }
+  ],
+  "metadata_review": "Three Rule2 strict duplicates. Correct twoPLA densities1.24→1.17 and onePC1.20→1.19 from current-linked exactmaterialTDS. No current printing manual retrieved; existing temperatures kept unresolved. No identifiers or packaging/tare edits.",
+  "original_source_definitions": [
+    {
+      "name": "IEMAI PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 205,
+      "bed_temp": 55,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "IEMAI PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 260,
+      "bed_temp": 100,
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Transparent",
+          "hex": "00000000"
+        }
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "ABS {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "CF-ABS {color_name}",
+      "material": "ABS",
+      "density": 1.1,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "country_of_origin": "CN",
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "ESD-ABS {color_name}",
+      "material": "ABS",
+      "density": 1.08,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "ASA {color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "CF-ASA {color_name}",
+      "material": "ASA",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "country_of_origin": "CN",
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "CF-PA12 {color_name}",
+      "material": "PA12",
+      "density": 1.15,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp_range": [
+        80,
+        110
+      ],
+      "country_of_origin": "CN",
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "GF-PA12 {color_name}",
+      "material": "PA12",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp_range": [
+        80,
+        110
+      ],
+      "country_of_origin": "CN",
+      "fill": "glass fiber"
+    },
+    {
+      "name": "PA12 {color_name}",
+      "material": "PA12",
+      "density": 1.01,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Natural",
+          "hex": "F5E6C8"
+        }
+      ],
+      "extruder_temp_range": [
+        250,
+        290
+      ],
+      "bed_temp_range": [
+        80,
+        110
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "CF-PA6 {color_name}",
+      "material": "PA6",
+      "density": 1.18,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp_range": [
+        80,
+        110
+      ],
+      "country_of_origin": "CN",
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "CF-PC {color_name}",
+      "material": "PC",
+      "density": 1.38,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Matte Black",
+          "hex": "1A1A1A",
+          "finish": "matte"
+        }
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        80,
+        100
+      ],
+      "country_of_origin": "CN",
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "PC {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Clear",
+          "hex": "F0F0F0",
+          "translucent": true
+        }
+      ],
+      "extruder_temp_range": [
+        250,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        110
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PEEK {color_name}",
+      "material": "PEEK",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "F5E6C8"
+        }
+      ],
+      "extruder_temp_range": [
+        360,
+        410
+      ],
+      "bed_temp_range": [
+        120,
+        160
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PEI 1010 {color_name}",
+      "material": "PEI",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "F5E6C8"
+        }
+      ],
+      "extruder_temp_range": [
+        330,
+        370
+      ],
+      "bed_temp_range": [
+        120,
+        160
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PEI 9085 {color_name}",
+      "material": "PEI",
+      "density": 1.34,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Amber",
+          "hex": "FFBF00"
+        }
+      ],
+      "extruder_temp_range": [
+        330,
+        370
+      ],
+      "bed_temp_range": [
+        120,
+        160
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PEKK {color_name}",
+      "material": "PEKK",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "F5E6C8"
+        }
+      ],
+      "extruder_temp_range": [
+        360,
+        410
+      ],
+      "bed_temp_range": [
+        120,
+        160
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "CF-PETG {color_name}",
+      "material": "PETG",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "country_of_origin": "CN",
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Clear",
+          "hex": "F0F0F0",
+          "translucent": true
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        260
+      ],
+      "bed_temp_range": [
+        60,
+        80
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "CF-PLA {color_name}",
+      "material": "PLA",
+      "density": 1.28,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "country_of_origin": "CN",
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        240
+      ],
+      "bed_temp_range": [
+        45,
+        60
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "PP {color_name}",
+      "material": "PP",
+      "density": 0.9,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "F5E6C8"
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        50,
+        80
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "CF-PPS {color_name}",
+      "material": "PPS",
+      "density": 1.45,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        }
+      ],
+      "extruder_temp_range": [
+        300,
+        340
+      ],
+      "bed_temp_range": [
+        120,
+        150
+      ],
+      "country_of_origin": "CN",
+      "fill": "carbon fiber"
+    },
+    {
+      "name": "PPSU {color_name}",
+      "material": "PPSU",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "F5E6C8"
+        }
+      ],
+      "extruder_temp_range": [
+        320,
+        370
+      ],
+      "bed_temp_range": [
+        120,
+        160
+      ],
+      "country_of_origin": "CN"
+    },
+    {
+      "name": "TPU {color_name}",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic",
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFFF"
+        }
+      ],
+      "extruder_temp_range": [
+        200,
+        240
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "CN"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "iemai_pla_iemaiplagrey_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "IEMAI PLA Grey",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": 200,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": 205,
+        "extruder_temp_range": null,
+        "bed_temp": 55,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::IEMAI PLA {color_name}::IEMAI PLA Grey::PLA::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "IEMAI PLA {color_name}",
+      "color": "Grey",
+      "line": "IEMAI PLA",
+      "cell": {
+        "name": "IEMAI PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_weight": 200,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 205,
+        "bed_temp": 55,
+        "colors": [
+          {
+            "name": "Grey",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pc_iemaipctransparent_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "IEMAI PC Transparent",
+        "material": "PC",
+        "density": 1.2,
+        "weight": 1000,
+        "spool_weight": 200,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "00000000",
+        "color_hexes": null,
+        "extruder_temp": 260,
+        "extruder_temp_range": null,
+        "bed_temp": 100,
+        "bed_temp_range": null,
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::IEMAI PC {color_name}::IEMAI PC Transparent::PC::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "IEMAI PC {color_name}",
+      "color": "Transparent",
+      "line": "IEMAI PC",
+      "cell": {
+        "name": "IEMAI PC {color_name}",
+        "material": "PC",
+        "density": 1.2,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_weight": 200,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp": 260,
+        "bed_temp": 100,
+        "colors": [
+          {
+            "name": "Transparent",
+            "hex": "00000000"
+          }
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_abs_absblack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "ABS Black",
+        "material": "ABS",
+        "density": 1.04,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::ABS {color_name}::ABS Black::ABS::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "ABS {color_name}",
+      "color": "Black",
+      "line": "ABS",
+      "cell": {
+        "name": "ABS {color_name}",
+        "material": "ABS",
+        "density": 1.04,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_abs_abswhite_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "ABS White",
+        "material": "ABS",
+        "density": 1.04,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::ABS {color_name}::ABS White::ABS::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "ABS {color_name}",
+      "color": "White",
+      "line": "ABS",
+      "cell": {
+        "name": "ABS {color_name}",
+        "material": "ABS",
+        "density": 1.04,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_abs_cf-absblack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "CF-ABS Black",
+        "material": "ABS",
+        "density": 1.1,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          110
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::CF-ABS {color_name}::CF-ABS Black::ABS::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "CF-ABS {color_name}",
+      "color": "Black",
+      "line": "CF-ABS",
+      "cell": {
+        "name": "CF-ABS {color_name}",
+        "material": "ABS",
+        "density": 1.1,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp_range": [
+          100,
+          110
+        ],
+        "country_of_origin": "CN",
+        "fill": "carbon fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_abs_esd-absblack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "ESD-ABS Black",
+        "material": "ABS",
+        "density": 1.08,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::ESD-ABS {color_name}::ESD-ABS Black::ABS::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "ESD-ABS {color_name}",
+      "color": "Black",
+      "line": "ESD-ABS",
+      "cell": {
+        "name": "ESD-ABS {color_name}",
+        "material": "ABS",
+        "density": 1.08,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          230,
+          260
+        ],
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_asa_asablack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "ASA Black",
+        "material": "ASA",
+        "density": 1.07,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::ASA {color_name}::ASA Black::ASA::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "ASA {color_name}",
+      "color": "Black",
+      "line": "ASA",
+      "cell": {
+        "name": "ASA {color_name}",
+        "material": "ASA",
+        "density": 1.07,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_asa_asawhite_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "ASA White",
+        "material": "ASA",
+        "density": 1.07,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::ASA {color_name}::ASA White::ASA::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "ASA {color_name}",
+      "color": "White",
+      "line": "ASA",
+      "cell": {
+        "name": "ASA {color_name}",
+        "material": "ASA",
+        "density": 1.07,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp_range": [
+          90,
+          110
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_asa_cf-asablack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "CF-ASA Black",
+        "material": "ASA",
+        "density": 1.12,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          110
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::CF-ASA {color_name}::CF-ASA Black::ASA::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "CF-ASA {color_name}",
+      "color": "Black",
+      "line": "CF-ASA",
+      "cell": {
+        "name": "CF-ASA {color_name}",
+        "material": "ASA",
+        "density": 1.12,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp_range": [
+          100,
+          110
+        ],
+        "country_of_origin": "CN",
+        "fill": "carbon fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pa12_cf-pa12black_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "CF-PA12 Black",
+        "material": "PA12",
+        "density": 1.15,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          260,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::CF-PA12 {color_name}::CF-PA12 Black::PA12::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "CF-PA12 {color_name}",
+      "color": "Black",
+      "line": "CF-PA12",
+      "cell": {
+        "name": "CF-PA12 {color_name}",
+        "material": "PA12",
+        "density": 1.15,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          260,
+          300
+        ],
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "country_of_origin": "CN",
+        "fill": "carbon fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pa12_gf-pa12black_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "GF-PA12 Black",
+        "material": "PA12",
+        "density": 1.2,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          260,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "fill": "glass fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::GF-PA12 {color_name}::GF-PA12 Black::PA12::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "GF-PA12 {color_name}",
+      "color": "Black",
+      "line": "GF-PA12",
+      "cell": {
+        "name": "GF-PA12 {color_name}",
+        "material": "PA12",
+        "density": 1.2,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          260,
+          300
+        ],
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "country_of_origin": "CN",
+        "fill": "glass fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pa12_pa12black_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PA12 Black",
+        "material": "PA12",
+        "density": 1.01,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          290
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PA12 {color_name}::PA12 Black::PA12::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PA12 {color_name}",
+      "color": "Black",
+      "line": "PA12",
+      "cell": {
+        "name": "PA12 {color_name}",
+        "material": "PA12",
+        "density": 1.01,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          250,
+          290
+        ],
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pa12_pa12natural_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PA12 Natural",
+        "material": "PA12",
+        "density": 1.01,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F5E6C8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          290
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PA12 {color_name}::PA12 Natural::PA12::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PA12 {color_name}",
+      "color": "Natural",
+      "line": "PA12",
+      "cell": {
+        "name": "PA12 {color_name}",
+        "material": "PA12",
+        "density": 1.01,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Natural",
+            "hex": "F5E6C8"
+          }
+        ],
+        "extruder_temp_range": [
+          250,
+          290
+        ],
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pa6_cf-pa6black_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "CF-PA6 Black",
+        "material": "PA6",
+        "density": 1.18,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          260,
+          300
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::CF-PA6 {color_name}::CF-PA6 Black::PA6::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "CF-PA6 {color_name}",
+      "color": "Black",
+      "line": "CF-PA6",
+      "cell": {
+        "name": "CF-PA6 {color_name}",
+        "material": "PA6",
+        "density": 1.18,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          260,
+          300
+        ],
+        "bed_temp_range": [
+          80,
+          110
+        ],
+        "country_of_origin": "CN",
+        "fill": "carbon fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pc_cf-pcmatteblack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "CF-PC Matte Black",
+        "material": "PC",
+        "density": 1.38,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "1A1A1A",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          100
+        ],
+        "fill": "carbon fiber",
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::CF-PC {color_name}::CF-PC Matte Black::PC::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "CF-PC {color_name}",
+      "color": "Matte Black",
+      "line": "CF-PC",
+      "cell": {
+        "name": "CF-PC {color_name}",
+        "material": "PC",
+        "density": 1.38,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Matte Black",
+            "hex": "1A1A1A",
+            "finish": "matte"
+          }
+        ],
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp_range": [
+          80,
+          100
+        ],
+        "country_of_origin": "CN",
+        "fill": "carbon fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pc_pcclear_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PC Clear",
+        "material": "PC",
+        "density": 1.2,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F0F0F0",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          100,
+          110
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": true,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PC {color_name}::PC Clear::PC::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PC {color_name}",
+      "color": "Clear",
+      "line": "PC",
+      "cell": {
+        "name": "PC {color_name}",
+        "material": "PC",
+        "density": 1.2,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Clear",
+            "hex": "F0F0F0",
+            "translucent": true
+          }
+        ],
+        "extruder_temp_range": [
+          250,
+          280
+        ],
+        "bed_temp_range": [
+          100,
+          110
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_peek_peeknatural_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PEEK Natural",
+        "material": "PEEK",
+        "density": 1.3,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F5E6C8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          360,
+          410
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PEEK {color_name}::PEEK Natural::PEEK::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 13,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PEEK {color_name}",
+      "color": "Natural",
+      "line": "PEEK",
+      "cell": {
+        "name": "PEEK {color_name}",
+        "material": "PEEK",
+        "density": 1.3,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Natural",
+            "hex": "F5E6C8"
+          }
+        ],
+        "extruder_temp_range": [
+          360,
+          410
+        ],
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pei_pei1010natural_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PEI 1010 Natural",
+        "material": "PEI",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F5E6C8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          330,
+          370
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PEI 1010 {color_name}::PEI 1010 Natural::PEI::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 14,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PEI 1010 {color_name}",
+      "color": "Natural",
+      "line": "PEI 1010",
+      "cell": {
+        "name": "PEI 1010 {color_name}",
+        "material": "PEI",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Natural",
+            "hex": "F5E6C8"
+          }
+        ],
+        "extruder_temp_range": [
+          330,
+          370
+        ],
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pei_pei9085amber_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PEI 9085 Amber",
+        "material": "PEI",
+        "density": 1.34,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFBF00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          330,
+          370
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PEI 9085 {color_name}::PEI 9085 Amber::PEI::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 15,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PEI 9085 {color_name}",
+      "color": "Amber",
+      "line": "PEI 9085",
+      "cell": {
+        "name": "PEI 9085 {color_name}",
+        "material": "PEI",
+        "density": 1.34,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Amber",
+            "hex": "FFBF00"
+          }
+        ],
+        "extruder_temp_range": [
+          330,
+          370
+        ],
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pekk_pekknatural_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PEKK Natural",
+        "material": "PEKK",
+        "density": 1.3,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F5E6C8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          360,
+          410
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PEKK {color_name}::PEKK Natural::PEKK::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 16,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PEKK {color_name}",
+      "color": "Natural",
+      "line": "PEKK",
+      "cell": {
+        "name": "PEKK {color_name}",
+        "material": "PEKK",
+        "density": 1.3,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Natural",
+            "hex": "F5E6C8"
+          }
+        ],
+        "extruder_temp_range": [
+          360,
+          410
+        ],
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_petg_cf-petgblack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "CF-PETG Black",
+        "material": "PETG",
+        "density": 1.3,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          80
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::CF-PETG {color_name}::CF-PETG Black::PETG::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 17,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "CF-PETG {color_name}",
+      "color": "Black",
+      "line": "CF-PETG",
+      "cell": {
+        "name": "CF-PETG {color_name}",
+        "material": "PETG",
+        "density": 1.3,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          60,
+          80
+        ],
+        "country_of_origin": "CN",
+        "fill": "carbon fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_petg_petgblack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PETG Black",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PETG {color_name}::PETG Black::PETG::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 18,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG {color_name}",
+      "color": "Black",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp_range": [
+          60,
+          80
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_petg_petgclear_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PETG Clear",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F0F0F0",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": true,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PETG {color_name}::PETG Clear::PETG::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 18,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PETG {color_name}",
+      "color": "Clear",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Clear",
+            "hex": "F0F0F0",
+            "translucent": true
+          }
+        ],
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp_range": [
+          60,
+          80
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_petg_petgwhite_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PETG White",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PETG {color_name}::PETG White::PETG::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 18,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PETG {color_name}",
+      "color": "White",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "extruder_temp_range": [
+          220,
+          260
+        ],
+        "bed_temp_range": [
+          60,
+          80
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pla_cf-plablack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "CF-PLA Black",
+        "material": "PLA",
+        "density": 1.28,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::CF-PLA {color_name}::CF-PLA Black::PLA::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 19,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "CF-PLA {color_name}",
+      "color": "Black",
+      "line": "CF-PLA",
+      "cell": {
+        "name": "CF-PLA {color_name}",
+        "material": "PLA",
+        "density": 1.28,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "country_of_origin": "CN",
+        "fill": "carbon fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pp_ppnatural_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PP Natural",
+        "material": "PP",
+        "density": 0.9,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F5E6C8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PP {color_name}::PP Natural::PP::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 21,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PP {color_name}",
+      "color": "Natural",
+      "line": "PP",
+      "cell": {
+        "name": "PP {color_name}",
+        "material": "PP",
+        "density": 0.9,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Natural",
+            "hex": "F5E6C8"
+          }
+        ],
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp_range": [
+          50,
+          80
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_pps_cf-ppsblack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "CF-PPS Black",
+        "material": "PPS",
+        "density": 1.45,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          300,
+          340
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          120,
+          150
+        ],
+        "fill": "carbon fiber",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::CF-PPS {color_name}::CF-PPS Black::PPS::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 22,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "CF-PPS {color_name}",
+      "color": "Black",
+      "line": "CF-PPS",
+      "cell": {
+        "name": "CF-PPS {color_name}",
+        "material": "PPS",
+        "density": 1.45,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          300,
+          340
+        ],
+        "bed_temp_range": [
+          120,
+          150
+        ],
+        "country_of_origin": "CN",
+        "fill": "carbon fiber"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_ppsu_ppsunatural_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "PPSU Natural",
+        "material": "PPSU",
+        "density": 1.29,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "F5E6C8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          320,
+          370
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::PPSU {color_name}::PPSU Natural::PPSU::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 23,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PPSU {color_name}",
+      "color": "Natural",
+      "line": "PPSU",
+      "cell": {
+        "name": "PPSU {color_name}",
+        "material": "PPSU",
+        "density": 1.29,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Natural",
+            "hex": "F5E6C8"
+          }
+        ],
+        "extruder_temp_range": [
+          320,
+          370
+        ],
+        "bed_temp_range": [
+          120,
+          160
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_tpu_tpublack_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "TPU Black",
+        "material": "TPU",
+        "density": 1.21,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::TPU {color_name}::TPU Black::TPU::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 24,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "TPU {color_name}",
+      "color": "Black",
+      "line": "TPU",
+      "cell": {
+        "name": "TPU {color_name}",
+        "material": "TPU",
+        "density": 1.21,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "000000"
+          }
+        ],
+        "extruder_temp_range": [
+          200,
+          240
+        ],
+        "bed_temp_range": [
+          50,
+          70
+        ],
+        "country_of_origin": "CN"
+      }
+    },
+    {
+      "record": {
+        "id": "iemai_tpu_tpuwhite_1000_175_p",
+        "manufacturer": "IEMAI",
+        "name": "TPU White",
+        "material": "TPU",
+        "density": 1.21,
+        "weight": 1000,
+        "spool_weight": 250,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "FFFFFF",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          240
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CN",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "iemai.json::IEMAI::TPU {color_name}::TPU White::TPU::1000::1.75::plastic::False",
+      "filename": "iemai.json",
+      "definition_index": 24,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "TPU {color_name}",
+      "color": "White",
+      "line": "TPU",
+      "cell": {
+        "name": "TPU {color_name}",
+        "material": "TPU",
+        "density": 1.21,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic",
+            "spool_weight": 250
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "FFFFFF"
+          }
+        ],
+        "extruder_temp_range": [
+          200,
+          240
+        ],
+        "bed_temp_range": [
+          50,
+          70
+        ],
+        "country_of_origin": "CN"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 3,
+    "approved_groups": 3,
+    "retired": 3,
+    "deferred": 0,
+    "hard_stops": 0,
+    "before_count": 51709,
+    "after_count": 51706,
+    "brand_before": 36,
+    "brand_after": 33,
+    "registry_before": 1725,
+    "registry_after": 1728,
+    "metadata_fields_changed": 3,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "IE",
+    "metadata": [
+      {
+        "id": "iemai_pla_plawhite_1000_175_p",
+        "values": {
+          "density": 1.17
+        },
+        "source": "https://store.iemai3d.com/wp-content/uploads/2024/01/06_PLA-Filament-TDS.pdf",
+        "lot": "current exact product-line manufacturer recommendations; no packaging/tare inference",
+        "same_variant": true,
+        "approved": true
+      },
+      {
+        "id": "iemai_pla_plablack_1000_175_p",
+        "values": {
+          "density": 1.17
+        },
+        "source": "https://store.iemai3d.com/wp-content/uploads/2024/01/06_PLA-Filament-TDS.pdf",
+        "lot": "current exact product-line manufacturer recommendations; no packaging/tare inference",
+        "same_variant": true,
+        "approved": true
+      },
+      {
+        "id": "iemai_pc_pcblack_1000_175_p",
+        "values": {
+          "density": 1.19
+        },
+        "source": "https://www.iemai3d.com/wp-content/uploads/2022/11/00_IEMAI_All_Filament_TDS.pdf",
+        "lot": "current exact product-line manufacturer recommendations; no packaging/tare inference",
+        "same_variant": true,
+        "approved": true
+      }
+    ],
+    "no_transfers": true,
+    "line_metadata": [
+      {
+        "template": "PLA {color_name}",
+        "material": "PLA",
+        "source": "https://store.iemai3d.com/wp-content/uploads/2024/01/06_PLA-Filament-TDS.pdf",
+        "values": {
+          "density": 1.17
+        }
+      },
+      {
+        "template": "PC {color_name}",
+        "material": "PC",
+        "source": "https://www.iemai3d.com/wp-content/uploads/2022/11/00_IEMAI_All_Filament_TDS.pdf",
+        "values": {
+          "density": 1.19
+        }
+      }
+    ],
+    "official_evidence": [
+      {
+        "url": "https://store.iemai3d.com/index.php/product/pla/",
+        "note": "Current product actively links exactPLA TDS."
+      },
+      {
+        "url": "https://store.iemai3d.com/wp-content/uploads/2024/01/06_PLA-Filament-TDS.pdf",
+        "density": 1.17
+      },
+      {
+        "url": "https://www.iemai3d.com/index.php/download/",
+        "note": "Current manufacturer downloadcentre actively links all-materialTDS."
+      },
+      {
+        "url": "https://www.iemai3d.com/wp-content/uploads/2022/11/00_IEMAI_All_Filament_TDS.pdf",
+        "note": "PC sectionp17 density1.19; no printing values stated."
+      }
+    ],
+    "metadata_review": "Three Rule2 strict duplicates. Correct twoPLA densities1.24→1.17 and onePC1.20→1.19 from current-linked exactmaterialTDS. No current printing manual retrieved; existing temperatures kept unresolved. No identifiers or packaging/tare edits.",
+    "printing_default_flags": []
+  }
+}
