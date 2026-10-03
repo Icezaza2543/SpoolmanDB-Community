@@ -3,6 +3,7 @@
 import json
 import os
 from pathlib import Path
+import subprocess
 import tempfile
 import pytest
 
@@ -17,15 +18,20 @@ from scripts.compile_id_baseline import (
 
 ROOT = Path(__file__).parent.parent
 BASELINE_PATH = ROOT / "contracts" / "compiled_id_baseline.json"
+RETIRED_PATH = ROOT / "contracts" / "retired_ids.json"
 
 
 def test_current_baseline_passes():
-    """1. Current committed baseline passes against repository source files."""
-    errors, warnings, stats = check_baseline_manifest(
+    """1. Working-tree baseline, source and registry form a consistent snapshot."""
+    # Snapshot consistency is separate from trusted-base transition authorization.
+    result = check_baseline_manifest_detailed(
         baseline_path=BASELINE_PATH,
         filaments_dir=ROOT / "filaments",
+        retired_path=RETIRED_PATH,
+        base_retired=RETIRED_PATH,
     )
-    assert errors == []
+    assert result.all_errors == []
+    stats = result.stats
     assert stats["baseline_count"] == stats["current_count"] == stats["matched"]
     assert stats["changed"] == 0
     assert stats["missing"] == 0
@@ -322,12 +328,85 @@ def test_duplicate_public_ids_in_baseline_fails():
 
 def test_baseline_check_works_without_compiled_filaments_json():
     """20. Test baseline check works when generated/ignored filaments.json is absent."""
-    errors, warnings, stats = check_baseline_manifest(
+    result = check_baseline_manifest_detailed(
         baseline_path=BASELINE_PATH,
         filaments_dir=ROOT / "filaments",
+        retired_path=RETIRED_PATH,
+        base_retired=RETIRED_PATH,
     )
-    assert errors == []
+    assert result.all_errors == []
+    stats = result.stats
     assert stats["baseline_count"] == stats["current_count"] == stats["matched"]
+
+
+@pytest.mark.parametrize("snapshot_test", [
+    test_current_baseline_passes,
+    test_baseline_check_works_without_compiled_filaments_json,
+], ids=lambda test: test.__name__)
+def test_repository_baseline_snapshots_use_worktree_registry(tmp_path, monkeypatch, snapshot_test):
+    """An uncommitted valid retirement must not mix working files with HEAD's registry."""
+    def git(*args):
+        return subprocess.run(
+            ["git", *args], cwd=tmp_path, check=True, capture_output=True, text=True,
+        ).stdout.strip()
+
+    sources, contracts = tmp_path / "filaments", tmp_path / "contracts"
+    sources.mkdir()
+    contracts.mkdir()
+    source = sources / "acme.json"
+    baseline = contracts / "compiled_id_baseline.json"
+    registry = contracts / "retired_ids.json"
+    survivor = {
+        "name": "PETG {color_name}", "material": "PETG", "density": 1.27,
+        "weights": [{"weight": 1000, "spool_type": "plastic"}], "diameters": [1.75],
+        "colors": [{"name": "Gray", "hex": "888888"}],
+    }
+    source.write_text(json.dumps({
+        "manufacturer": "Acme", "filaments": [{**survivor, "name": "Acme PETG {color_name}"}, survivor],
+    }), encoding="utf-8")
+    empty_registry = {"version": 1, "retired": {}}
+    registry.write_text(json.dumps(empty_registry), encoding="utf-8")
+    write_baseline_manifest(baseline, sources)
+    historical = json.loads(baseline.read_text(encoding="utf-8"))
+    old_id = "acme_petg_acmepetggray_1000_175_p"
+    keep_id = "acme_petg_petggray_1000_175_p"
+    assert set(historical["manifest"].values()) == {old_id, keep_id}
+    old_key = next(key for key, value in historical["manifest"].items() if value == old_id)
+
+    git("init")
+    git("config", "user.name", "Fixture")
+    git("config", "user.email", "fixture@example.invalid")
+    git("add", ".")
+    git("commit", "-m", "baseline fixture")
+    base_commit = git("rev-parse", "HEAD")
+
+    source.write_text(json.dumps({"manufacturer": "Acme", "filaments": [survivor]}), encoding="utf-8")
+    current, errors = compile_current_id_manifest(sources)
+    assert errors == []
+    assert set(current.values()) == {keep_id}
+    write_baseline_manifest_atomic({"version": 1, "count": len(current), "manifest": current}, baseline)
+    registry.write_text(json.dumps({"version": 1, "retired": {old_id: {
+        "replaced_by": keep_id, "reason": "duplicate", "ref": "#66",
+        "source": base_commit, "retired_key": old_key,
+    }}}), encoding="utf-8")
+    assert json.loads(git("show", "HEAD:contracts/retired_ids.json")) == empty_registry
+    assert not (tmp_path / "filaments.json").exists()
+
+    # A real trusted-base check proves the fixture is valid; default authorization
+    # must still reject a newly edited registry without that historical baseline.
+    trusted = check_baseline_manifest_detailed(
+        baseline, sources, base_baseline_path=historical, strict_head_sync=True,
+        base_retired=empty_registry,
+    )
+    assert trusted.all_errors == []
+    assert trusted.stats["retired"] == 1
+    default = check_baseline_manifest_detailed(baseline, sources)
+    assert any("new retirement must refer to a historical ID" in error for error in default.all_errors)
+
+    monkeypatch.setitem(globals(), "ROOT", tmp_path)
+    monkeypatch.setitem(globals(), "BASELINE_PATH", baseline)
+    monkeypatch.setitem(globals(), "RETIRED_PATH", registry)
+    snapshot_test()
 
 
 def test_baseline_check_does_not_rely_on_record_count_alone():
