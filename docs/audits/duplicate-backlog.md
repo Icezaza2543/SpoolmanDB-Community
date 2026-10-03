@@ -45,6 +45,15 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## r3d deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|RD001 / `dup-034167fdd92059eb1d45ce02a412601a506e428663ee171e1c9bc957ccdd1678`|`r3d_petg_petggray_1000_175_c`<br>`r3d_petg_petggrey_1000_175_c`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-r3d-duplicate-review.json)|
+|RD002 / `dup-2aeaee15e70fe5dcad05e0feb9216866dee6a061fa5d0d02b96f78a8217ffa87`|`r3d_petg_petggray_1000_175_p`<br>`r3d_petg_petggrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-r3d-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## flashforge deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
