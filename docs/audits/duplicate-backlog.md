@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## iboss deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|IB001 / `dup-a4f56d98a88206c53508feaa7d858e2419a0607dde34407de25b9378348c3659`|`iboss_pla+_silkdualred/green_1000_175_p`<br>`iboss_pla+_silkdualredgreen_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-iboss-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## filamentworld deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
