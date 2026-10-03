@@ -153,7 +153,7 @@ All 13 otherwise matching ASA 750 g groups are also deferred: transferring EANs 
 |FL017 / `dup-c5899608b6029e91a378cb9572d7a55d86d5804bac7e89e045ede6ccc003d35c`|`fiberlogy_asa_asawhite_750_175_p`<br>`fiberlogy_asa_white_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
 |FL018 / `dup-d8dc0d278a89be1767c1fedad23a39803d78c21ff655ef9b1c4b4c77e5d1b20d`|`fiberlogy_asa_asayellow_750_175_p`<br>`fiberlogy_asa_yellow_750_175_p`|[review](2026-10-03-fiberlogy-duplicate-review.json)|
 
-Existing ASA075/ASA085 code/EAN bindings replicated onto 1000 g source variants remain an unresolved weight-binding gap. This migration transfers identifiers only onto the 13 reviewed 750 g survivor IDs; it does not verify or change the existing 1000 g bindings. See the Fiberlogy JSON audit for original cells and values.
+Existing ASA075/ASA085 code/EAN bindings replicated onto 1000 g source variants remain an unresolved weight-binding gap. This audit transfers no identifiers: the 13 otherwise matching 750 g groups are also deferred because the current source-level GTIN checker rejects transfers while the 1000 g bindings remain untouched. No existing 1000 g binding is verified or changed. See the Fiberlogy JSON audit for original cells and values.
 
 | Group | Preserved IDs | Blocker | Audit |
 |---|---|---|---|
