@@ -4,7 +4,7 @@
 
 This running ledger records deferred duplicate candidates, not retirement authorization. The owner's continuous-batch authorization supersedes the earlier ten-brand limit: process all remaining brands, one commit per brand, and push batches of at most ten brands after full local validation. No PR, remote feature branch or GitHub comment is part of this workflow.
 
-Exact-target code/EAN transfers are permitted only when unique values are preserved and no unrelated variant gains or loses identifiers. Current official TDS/product evidence for the exact product line may correct density/nozzle/bed; without it, retain survivor values and mark conflicts unresolved. Packaging and tare remain untouched. An explicitly reviewed owner-pattern override may retain an older well-formed family instead of a malformed or Cartesian-inflated Rule2/4 choice. Rule5/tooling-only blocks are deferred without invented bindings or production tooling changes. Hard stops remain uncovered cases, unresolved ties, unique-variant loss/change, unexpected compiled differences and CI failure. Pinned original keys and evidence remain in each linked brand audit.
+Exact-target code/EAN transfers are permitted only when unique values are preserved and no unrelated variant gains or loses identifiers. Current official TDS/product evidence for the exact product line may correct density/nozzle/bed; without it, retain survivor values and mark conflicts unresolved. Packaging and tare remain untouched. An explicitly reviewed owner-pattern override may retain an older well-formed family instead of a malformed or Cartesian-inflated Rule2/4 choice. Rule5/tooling-only blocks are deferred without invented bindings or production tooling changes. Under the latest owner rules, intra-brand spelling ties use the current official spelling with its URL only when physical color and SKU binding are established; materially different HEX or unbound SKU cases are deferred. Other identity-only uncertainty is also deferred. Hard stops are unexpected compiled differences, rule conflicts affecting a whole brand, or CI failure. Pinned original keys and evidence remain in each linked brand audit.
 
 ## Deferred groups
 
@@ -42,6 +42,18 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 |AF057 / `dup-56b44cdab4af07af4bcbd0113d6cb71da7137d26b0ba57f9f8ebffb1d924d4b9`|`azurefilm_pla_mattehsplarosy_1000_175_p`<br>`azurefilm_pla_mattehsrosy_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
 |AF058 / `dup-5d3f76d17092e0376d881a93c47a3a4218eff9ea954967a0cd079b46fac1ffb7`|`azurefilm_pla_mattehsplasage_1000_175_p`<br>`azurefilm_pla_mattehssage_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
 |AF059 / `dup-037d58f2258e645378e82715b1f5212e5b4fd665be2fbd0f8be977924f8e4498`|`azurefilm_pla_mattehsplawhite_1000_175_p`<br>`azurefilm_pla_mattehswhite_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
+## winkle deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|WI001 / `dup-227809e3f178bcbc46bedc531cd6195070fa391e1769e5784c4cb13874635be5`|`winkle_petg_petgashgray_1000_175_c`<br>`winkle_petg_petgashgrey_1000_175_c`|Ash Gray/Grey spelling tie has visibly different HEX and no same-SKU binding; current official spelling alone insufficient|[review](2026-10-03-winkle-duplicate-review.json)|
+|WI002 / `dup-c72a1a4fd6ddfec5532776e7b30144a82cded9db61ca29d36cf6a6b2675cc96f`|`winkle_petg_petgashgray_300_175_c`<br>`winkle_petg_petgashgrey_300_175_c`|Ash Gray/Grey spelling tie has visibly different HEX and no same-SKU binding; current official spelling alone insufficient|[review](2026-10-03-winkle-duplicate-review.json)|
+|WI018 / `dup-86340b8e0149cdefdd56e484a96479d470c15d07c68bf9717c6f9e2e87a69391`|`winkle_pla_hdplapurple_1000_175_c`<br>`winkle_pla_plahdpurple_1000_175_c`|Identity-only uncertainty: ordinary Purple versus explicit glitter-particles product code; current official handout separates colors, no same-SKU proof|[review](2026-10-03-winkle-duplicate-review.json)|
+
+Additional Winkle identifier evidence gap: all 28 non-tie candidate survivor records already carry product-code slugs containing `0300-kg` despite their 1000 g identity. This migration does not add or transfer those codes and does not claim a fresh package binding. Exact current 1 kg versus 300 g SKU reconciliation remains a separate evidence review; the complete original bindings are retained in the [audit](2026-10-03-winkle-duplicate-review.json).
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
