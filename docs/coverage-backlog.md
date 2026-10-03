@@ -118,3 +118,11 @@ The owner approved all 124 reviewed duplicate groups, exact code transfers to 24
 - **20 non-case HEX/representation differences:** Keep survivor swatches, retain both original values, and await exact official/user-approved color evidence. These comprise 15 different single HEX values and five Dual Color single-HEX versus multi-HEX representations. B043/B044 are case-only HEX differences, not part of these 20; their official Blue Grey survivor spelling was explicitly approved.
 - **Other printing conflicts/current-TDS discrepancies:** Both duplicate-side values and current product-line findings remain in the per-group audit. Keep survivor values unless an exact correction was explicitly approved; PVA bed 55°C versus TDS 35–45°C is one such unresolved discrepancy.
 - **Packaging/spool/tare and remaining package/refill bindings:** Untouched. Exact lot/generation evidence remains required. All 366 out-of-scope Bambu records are preserved individually; no new identifiers or implicit Cartesian variants are authorized.
+
+## Fillamentum duplicate-review evidence backlog — 2026-10-03
+
+The owner approved F001–F120 as duplicates with all survivor metadata unchanged. Original values, exact mappings, full source definitions and current first-party evidence are retained in the [reviewed audit](audits/2026-10-03-fillamentum-duplicate-review.json). This migration does not authorize metadata corrections or additional current SKUs.
+
+- **Printing-profile/document conflicts:** ASA's 8/2024 guide gives bed 65–75°C in basic setup and 90–105°C in its tips; PLA's guide density 1.8 differs from the linked TDS 1.24. Keep survivor values, retain both documents and do not infer a manufacturer typo, universal temperature range or formulation change.
+- **Packaging/tare generation:** Current family pages give 230 g for 750 g filament, exact product pages give 210 g, and linked 2019 TDS gives 250 g. No exact lot binding establishes which historical package should change; existing plastic/tare values stay unchanged.
+- **Historical matrix/current catalog:** Current shop listings confirm 41 matching weight/diameter/color combinations; 79 groups are current-unconfirmed, not proven discontinued. Current 1 kg PLA additions, SKU/EAN imports and Show White/Snow White spelling changes require separate authorization. Four unique PLA Lilac records are untouched.

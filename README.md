@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 52,919
+* **Published records**: 52,799
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,12 +79,12 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 5,741 |
-| Color entries | 31,514 |
-| Compiled filament variants | 52,919 |
-| Source filaments with country of origin | 5,282 |
-| Source filaments with TDS/product links | 1,824 |
-| Source filaments with SDS links | 990 |
+| Source filament objects | 5,739 |
+| Color entries | 31,484 |
+| Compiled filament variants | 52,799 |
+| Source filaments with country of origin | 5,280 |
+| Source filaments with TDS/product links | 1,822 |
+| Source filaments with SDS links | 988 |
 | Manufacturer product code/ID entries | 8,192 |
 | EAN/GTIN entries | 2,194 |
 | ASEAN manufacturer coverage | 24 brands / 147 source filaments |
@@ -95,7 +95,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 4,750 |
+| `spool_type: plastic` | 4,746 |
 | `spool_type: cardboard` | 1,872 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 64 |
@@ -281,9 +281,17 @@ The owner also approved 19 printing-field corrections on nine PETG survivors usi
 
 This is an **intentional breaking catalog migration** approved for 124 groups: 117 Rule 1 groups, five Rule 3 Dual Color groups, and B043/B044 with the official **Blue Grey** survivor name. It retires 124 duplicate IDs, reducing the catalog from 53,043 to 52,919 and Bambu Lab from 614 to 490 records. No new IDs or changed/rekeyed survivor identities are introduced. Existing Spoolman spools keep their local imported data, but retired catalog lookups disappear; Spoolman does not follow the registry automatically.
 
-The [complete list of 124 retired IDs and existing survivors](docs/audits/2026-10-03-bambulab-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-bambulab-duplicate-review.json) retain exact original baseline keys, source definitions, conflicts and ten lossless Dual Color bindings. Existing codes are transferred only to the 24 approved target IDs, with no identifier changes to other weights/refills: Bambu code bindings become 734 → 723 as redundant bindings collapse, while all 678 unique values are preserved. EAN and refill-EAN bindings remain 18 and three respectively.
+The [complete list of 124 retired IDs and existing survivors](docs/audits/2026-10-03-bambulab-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-bambulab-duplicate-review.json) retain exact original baseline keys, source-definition locations/templates, conflicts and ten lossless Dual Color bindings; full source definitions remain available at the pinned audit base. Existing codes are transferred only to the 24 approved target IDs, with no identifier changes to other weights/refills: Bambu code bindings become 734 → 723 as redundant bindings collapse, while all 678 unique values are preserved. EAN and refill-EAN bindings remain 18 and three respectively.
 
 The owner also approved 15 printing-field changes on ten survivors using current official TDS: Aero uses raw-filament density 1.21 g/cm³ for length calculation; PC nozzle is 260–280°C; PC FR density is 1.18 g/cm³; PVA nozzle is 220–250°C. Silk/Lite values and 20 non-case HEX/representation differences remain unresolved, retaining survivor values. All 366 out-of-scope Bambu records, packaging/spool/tare and other manufacturers are unchanged.
+
+### Fillamentum duplicate migration (2026-10-03)
+
+This is an **intentional breaking catalog migration** approved for F001–F120: 60 ASA and 60 PLA groups. It retires exactly 120 duplicate IDs, reducing the catalog from 52,919 to 52,799 and Fillamentum from 244 to 124 records. Existing upstream-preferred `Extrafill {color_name}` IDs survive by Rule 1; no new IDs or changed/rekeyed survivor identities are introduced. Existing Spoolman spools retain their imported local data, but retired catalog lookups disappear; Spoolman does not consume the registry or redirect those lookups automatically.
+
+The [complete list of 120 retired IDs and existing survivors](docs/audits/2026-10-03-fillamentum-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-fillamentum-duplicate-review.json) retain each byte-identical original baseline key, all four full source definitions, compiled records and official evidence. All survivor metadata is unchanged, including packaging/spool/tare; four unique PLA Lilac records and every other manufacturer's compiled data are untouched. Codes/EAN bindings and unique values remain zero, with no transfers or losses.
+
+Temperature-profile, density-document and 210/230/250 g tare conflicts remain documented and unresolved; 16 HEX differences are case-only. The current shop confirms 41 matching weight/diameter/color combinations, not the entire historical Cartesian matrix. The remaining 79 groups are current-unconfirmed, not declared unavailable or removed as obsolete. This approval authorizes duplicate retirement only, not new 1 kg variants, name changes or packaging corrections.
 
 This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
 
