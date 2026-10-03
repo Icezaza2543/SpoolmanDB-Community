@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 51,712
+* **Published records**: 51,709
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -80,8 +80,8 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
 | Source filament objects | 10,036 |
-| Color entries | 33,546 |
-| Compiled filament variants | 51,712 |
+| Color entries | 33,543 |
+| Compiled filament variants | 51,709 |
 | Source filaments with country of origin | 7,437 |
 | Source filaments with TDS/product links | 4,573 |
 | Source filaments with SDS links | 1,012 |
@@ -542,6 +542,12 @@ The [complete mappings and conflicts](docs/audits/2026-10-03-gst3d-duplicate-rev
 This **intentional breaking catalog migration** retires 3 exact duplicate IDs in 3 reviewed groups: 51,715 → 51,712 catalog records, with 0 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
 
 The [complete mappings and conflicts](docs/audits/2026-10-03-3de-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-3de-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 0 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
+
+### AmazonBasics duplicate migration (2026-10-03)
+
+This **intentional breaking catalog migration** retires 3 exact duplicate IDs in 3 reviewed groups: 51,712 → 51,709 catalog records, with 0 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
+
+The [complete mappings and conflicts](docs/audits/2026-10-03-amazonbasics-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-amazonbasics-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 0 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
 ## Terms and policy
 
