@@ -1,0 +1,2055 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "filamentsdepot",
+  "audit_digest": "7aa3a6dfc46d02daac3bd3bcd31ed496e019288f6fcc8f3a18139cc68b866af4",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "91f2f515d4f1c723e5ebc0b5ca146b2f61f8a9bd",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-16506851842feae0bb209ddb6736636a144ea00105cb6cd27b8e75e137c475e1",
+      "ids": [
+        "filamentsdepot_petg_petgstonegray_1000_175_p",
+        "filamentsdepot_petg_petgstonegrey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filamentsdepot_petg_petgstonegray_1000_175_p",
+          "manufacturer": "Filaments Depot",
+          "name": "PETG Stone Gray",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "c9bba0",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            235,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            80
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CA",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Stone Gray::PETG::1000::1.75::plastic::False",
+          "template": "PETG {color_name}",
+          "source_color": "Stone Gray",
+          "source_line": "PETG",
+          "source_file": "filamentsdepot.json",
+          "source_definition": {
+            "source_file": "filamentsdepot.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 7,
+            "compiled_records": 7
+          },
+          "upstream": false
+        },
+        {
+          "id": "filamentsdepot_petg_petgstonegrey_1000_175_p",
+          "manufacturer": "Filaments Depot",
+          "name": "PETG Stone Grey",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "5c5e61",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            235,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            80
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CA",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Stone Grey::PETG::1000::1.75::plastic::False",
+          "template": "PETG {color_name}",
+          "source_color": "Stone Grey",
+          "source_line": "PETG",
+          "source_file": "filamentsdepot.json",
+          "source_definition": {
+            "source_file": "filamentsdepot.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 7,
+            "compiled_records": 7
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filamentsdepot_petg_petgstonegray_1000_175_p": "c9bba0",
+          "filamentsdepot_petg_petgstonegrey_1000_175_p": "5c5e61"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "FD001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-16506851842feae0bb209ddb6736636a144ea00105cb6cd27b8e75e137c475e1",
+      "ids": [
+        "filamentsdepot_petg_petgstonegray_1000_175_p",
+        "filamentsdepot_petg_petgstonegrey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filamentsdepot_petg_petgstonegray_1000_175_p",
+          "manufacturer": "Filaments Depot",
+          "name": "PETG Stone Gray",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "c9bba0",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            235,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            80
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CA",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Stone Gray::PETG::1000::1.75::plastic::False",
+          "template": "PETG {color_name}",
+          "source_color": "Stone Gray",
+          "source_line": "PETG",
+          "source_file": "filamentsdepot.json",
+          "source_definition": {
+            "source_file": "filamentsdepot.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 7,
+            "compiled_records": 7
+          },
+          "upstream": false
+        },
+        {
+          "id": "filamentsdepot_petg_petgstonegrey_1000_175_p",
+          "manufacturer": "Filaments Depot",
+          "name": "PETG Stone Grey",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "5c5e61",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            235,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            80
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CA",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Stone Grey::PETG::1000::1.75::plastic::False",
+          "template": "PETG {color_name}",
+          "source_color": "Stone Grey",
+          "source_line": "PETG",
+          "source_file": "filamentsdepot.json",
+          "source_definition": {
+            "source_file": "filamentsdepot.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 7,
+            "compiled_records": 7
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filamentsdepot_petg_petgstonegray_1000_175_p": "c9bba0",
+          "filamentsdepot_petg_petgstonegrey_1000_175_p": "5c5e61"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "FD001",
+      "status": "DEFERRED",
+      "defer_reason": "Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral"
+    }
+  ],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "official_evidence": [
+    {
+      "url": "https://www.filamentsdepot.com/products/filaments-depot-gray-petg",
+      "density": "1.23–1.27",
+      "nozzle": [
+        235,
+        250
+      ],
+      "bed": [
+        80,
+        90
+      ],
+      "note": "StandardGray, not proven StoneGray identity."
+    }
+  ],
+  "metadata_review": "StoneGray/Grey visibly differing HEXc9bba0/5c5e61 cannot be bound sameSKU; defer. StandardGray page is not proof for Stone. Both records remain unchanged.",
+  "original_source_definitions": [
+    {
+      "name": "Galaxy {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Burnt Titanium",
+          "hex": "184168"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "Gradient {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        205,
+        235
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Camouflage",
+          "hex": "b5b372"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "PCTG {color_name}",
+      "material": "PCTG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        255
+      ],
+      "bed_temp_range": [
+        70,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Clear",
+          "hex": "808080"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Almond",
+          "hex": "ded3b0"
+        },
+        {
+          "name": "Black",
+          "hex": "212121"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "36424a"
+        },
+        {
+          "name": "Gray",
+          "hex": "828a8f"
+        },
+        {
+          "name": "Stone Gray",
+          "hex": "c9bba0"
+        },
+        {
+          "name": "Stone Grey",
+          "hex": "5c5e61"
+        },
+        {
+          "name": "Teal",
+          "hex": "7cc4f8"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "PETG+PLUS {color_name}",
+      "material": "PETG+PLUS",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        235,
+        250
+      ],
+      "bed_temp_range": [
+        80,
+        80
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Mystery White",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Natural",
+          "hex": "e1e3e5"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "Recycled {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Grey/Black (inconsistent)",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "Recycled {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Grey/Black (inconsistent)",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        205,
+        235
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Flame (Gold-Red)",
+          "hex": "fea34a"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "Tough {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Grey",
+          "hex": "c4c6c8"
+        },
+        {
+          "name": "Yellow",
+          "hex": "d0d256"
+        }
+      ],
+      "country_of_origin": "CA"
+    },
+    {
+      "name": "Tough {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        85
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "CA"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "filamentsdepot_pla_galaxyburnttitanium_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "Galaxy Burnt Titanium",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "184168",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::Galaxy {color_name}::Galaxy Burnt Titanium::PLA::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Galaxy {color_name}",
+      "color": "Burnt Titanium",
+      "line": "Galaxy",
+      "cell": {
+        "name": "Galaxy {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Burnt Titanium",
+            "hex": "184168"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pla_gradientcamouflage_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "Gradient Camouflage",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "b5b372",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          205,
+          235
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::Gradient {color_name}::Gradient Camouflage::PLA::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Gradient {color_name}",
+      "color": "Camouflage",
+      "line": "Gradient",
+      "cell": {
+        "name": "Gradient {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          205,
+          235
+        ],
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Camouflage",
+            "hex": "b5b372"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pctg_pctgclear_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PCTG Clear",
+        "material": "PCTG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          255
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PCTG {color_name}::PCTG Clear::PCTG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PCTG {color_name}",
+      "color": "Clear",
+      "line": "PCTG",
+      "cell": {
+        "name": "PCTG {color_name}",
+        "material": "PCTG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          255
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "Clear",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pctg_pctgwhite_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PCTG White",
+        "material": "PCTG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          255
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PCTG {color_name}::PCTG White::PCTG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PCTG {color_name}",
+      "color": "White",
+      "line": "PCTG",
+      "cell": {
+        "name": "PCTG {color_name}",
+        "material": "PCTG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          255
+        ],
+        "bed_temp_range": [
+          70,
+          70
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_petg_petgalmond_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PETG Almond",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ded3b0",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Almond::PETG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG {color_name}",
+      "color": "Almond",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Almond",
+            "hex": "ded3b0"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_petg_petgblack_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PETG Black",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "212121",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Black::PETG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PETG {color_name}",
+      "color": "Black",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "212121"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_petg_petgcharcoal_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PETG Charcoal",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "36424a",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Charcoal::PETG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PETG {color_name}",
+      "color": "Charcoal",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Charcoal",
+            "hex": "36424a"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_petg_petggray_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PETG Gray",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "828a8f",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Gray::PETG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "PETG {color_name}",
+      "color": "Gray",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Gray",
+            "hex": "828a8f"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_petg_petgteal_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PETG Teal",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "7cc4f8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PETG {color_name}::PETG Teal::PETG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "PETG {color_name}",
+      "color": "Teal",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "Teal",
+            "hex": "7cc4f8"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_petg+plus_petg+pluswhite_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PETG+PLUS White",
+        "material": "PETG+PLUS",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PETG+PLUS {color_name}::PETG+PLUS White::PETG+PLUS::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG+PLUS {color_name}",
+      "color": "White",
+      "line": "PETG+PLUS",
+      "cell": {
+        "name": "PETG+PLUS {color_name}",
+        "material": "PETG+PLUS",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          235,
+          250
+        ],
+        "bed_temp_range": [
+          80,
+          80
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pla_plamysterywhite_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PLA Mystery White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PLA {color_name}::PLA Mystery White::PLA::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA {color_name}",
+      "color": "Mystery White",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Mystery White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pla_planatural_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "PLA Natural",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "e1e3e5",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::PLA {color_name}::PLA Natural::PLA::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 5,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA {color_name}",
+      "color": "Natural",
+      "line": "PLA",
+      "cell": {
+        "name": "PLA {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Natural",
+            "hex": "e1e3e5"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pla_recycledgrey/black(inconsistent)_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "Recycled Grey/Black (inconsistent)",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::Recycled {color_name}::Recycled Grey/Black (inconsistent)::PLA::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Recycled {color_name}",
+      "color": "Grey/Black (inconsistent)",
+      "line": "Recycled",
+      "cell": {
+        "name": "Recycled {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Grey/Black (inconsistent)",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_petg_recycledgrey/black(inconsistent)_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "Recycled Grey/Black (inconsistent)",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::Recycled {color_name}::Recycled Grey/Black (inconsistent)::PETG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Recycled {color_name}",
+      "color": "Grey/Black (inconsistent)",
+      "line": "Recycled",
+      "cell": {
+        "name": "Recycled {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "colors": [
+          {
+            "name": "Grey/Black (inconsistent)",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pla_silkdualflame(gold-red)_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "Silk Dual Flame (Gold-Red)",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "fea34a",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          205,
+          235
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::Silk Dual {color_name}::Silk Dual Flame (Gold-Red)::PLA::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Dual {color_name}",
+      "color": "Flame (Gold-Red)",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          205,
+          235
+        ],
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Flame (Gold-Red)",
+            "hex": "fea34a"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pla_toughgrey_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "Tough Grey",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "c4c6c8",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          50
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::Tough {color_name}::Tough Grey::PLA::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Tough {color_name}",
+      "color": "Grey",
+      "line": "Tough",
+      "cell": {
+        "name": "Tough {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          50,
+          50
+        ],
+        "colors": [
+          {
+            "name": "Grey",
+            "hex": "c4c6c8"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_pla_toughyellow_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "Tough Yellow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "d0d256",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          50
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::Tough {color_name}::Tough Yellow::PLA::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Tough {color_name}",
+      "color": "Yellow",
+      "line": "Tough",
+      "cell": {
+        "name": "Tough {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          50,
+          50
+        ],
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "d0d256"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    },
+    {
+      "record": {
+        "id": "filamentsdepot_petg_toughwhite_1000_175_p",
+        "manufacturer": "Filaments Depot",
+        "name": "Tough White",
+        "material": "PETG",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "CA",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "filamentsdepot.json::Filaments Depot::Tough {color_name}::Tough White::PETG::1000::1.75::plastic::False",
+      "filename": "filamentsdepot.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Tough {color_name}",
+      "color": "White",
+      "line": "Tough",
+      "cell": {
+        "name": "Tough {color_name}",
+        "material": "PETG",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          230,
+          250
+        ],
+        "bed_temp_range": [
+          70,
+          85
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "CA"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 1,
+    "hard_stops": 0,
+    "before_count": 51702,
+    "after_count": 51702,
+    "brand_before": 20,
+    "brand_after": 20,
+    "registry_before": 1732,
+    "registry_after": 1732,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "FD",
+    "metadata": [],
+    "no_transfers": true,
+    "official_evidence": [
+      {
+        "url": "https://www.filamentsdepot.com/products/filaments-depot-gray-petg",
+        "density": "1.23–1.27",
+        "nozzle": [
+          235,
+          250
+        ],
+        "bed": [
+          80,
+          90
+        ],
+        "note": "StandardGray, not proven StoneGray identity."
+      }
+    ],
+    "metadata_review": "StoneGray/Grey visibly differing HEXc9bba0/5c5e61 cannot be bound sameSKU; defer. StandardGray page is not proof for Stone. Both records remain unchanged.",
+    "printing_default_flags": []
+  }
+}
