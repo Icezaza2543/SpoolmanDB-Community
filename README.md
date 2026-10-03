@@ -405,6 +405,12 @@ This **intentional breaking catalog migration** retires 27 exact duplicate IDs i
 
 The [complete mappings and conflicts](docs/audits/2026-10-03-3djake-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-3djake-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 29 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
+### fiberlogy duplicate audit (2026-10-03)
+
+All 27 candidate groups are deferred for identity or tooling review. No migration was applied; the catalog remains at 51,889 records. Original IDs, compiled metadata, identifiers, packaging and tare are unchanged.
+
+The [review](docs/audits/2026-10-03-fiberlogy-duplicate-review.md) and [JSON audit](docs/audits/2026-10-03-fiberlogy-duplicate-review.json) retain the complete candidates, evidence and conflicts; all blockers are recorded in the [running backlog](docs/audits/duplicate-backlog.md). Exact-target EAN transfers conflicted with the current source-level duplicate-GTIN checker while unrelated 1 kg bindings remained intact, so all data changes were withdrawn before commit.
+
 ## Terms and policy
 
 This repository separates the project license from community and data-use expectations:
