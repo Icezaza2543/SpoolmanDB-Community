@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 51,719
+* **Published records**: 51,715
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,10 +79,10 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 10,030 |
-| Color entries | 33,547 |
-| Compiled filament variants | 51,719 |
-| Source filaments with country of origin | 7,431 |
+| Source filament objects | 10,037 |
+| Color entries | 33,549 |
+| Compiled filament variants | 51,715 |
+| Source filaments with country of origin | 7,438 |
 | Source filaments with TDS/product links | 4,574 |
 | Source filaments with SDS links | 1,012 |
 | Manufacturer product code/ID entries | 11,891 |
@@ -95,7 +95,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 8,121 |
+| `spool_type: plastic` | 8,126 |
 | `spool_type: cardboard` | 2,514 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 235 |
@@ -530,6 +530,12 @@ The [complete mappings and conflicts](docs/audits/2026-10-03-nobufil-duplicate-r
 All 4 candidate groups are deferred for identity or tooling review. No migration was applied; the catalog remains at 51,719 records. Original IDs, compiled metadata, identifiers, packaging and tare are unchanged.
 
 The [review](docs/audits/2026-10-03-arianeplast-duplicate-review.md) and [JSON audit](docs/audits/2026-10-03-arianeplast-duplicate-review.json) retain the complete candidates, evidence and conflicts; all blockers are recorded in the [running backlog](docs/audits/duplicate-backlog.md).
+
+### gst3d duplicate migration (2026-10-03)
+
+This **intentional breaking catalog migration** retires 4 exact duplicate IDs in 4 reviewed groups: 51,719 → 51,715 catalog records, with 0 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
+
+The [complete mappings and conflicts](docs/audits/2026-10-03-gst3d-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-gst3d-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 2 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
 ## Terms and policy
 
