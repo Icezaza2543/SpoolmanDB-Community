@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 53,084
+* **Published records**: 53,043
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,13 +79,13 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 5,431 |
-| Color entries | 31,502 |
-| Compiled filament variants | 53,084 |
-| Source filaments with country of origin | 4,972 |
-| Source filaments with TDS/product links | 1,520 |
-| Source filaments with SDS links | 765 |
-| Manufacturer product code/ID entries | 8,182 |
+| Source filament objects | 5,658 |
+| Color entries | 31,606 |
+| Compiled filament variants | 53,043 |
+| Source filaments with country of origin | 5,199 |
+| Source filaments with TDS/product links | 1,741 |
+| Source filaments with SDS links | 990 |
+| Manufacturer product code/ID entries | 8,192 |
 | EAN/GTIN entries | 2,194 |
 | ASEAN manufacturer coverage | 24 brands / 147 source filaments |
 
@@ -96,7 +96,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 | Source weight metadata | Entries |
 | --- | ---: |
 | `spool_type: plastic` | 4,698 |
-| `spool_type: cardboard` | 1,658 |
+| `spool_type: cardboard` | 1,872 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 34 |
 | `spool_type: unknow` (legacy) | 26 |
@@ -268,6 +268,14 @@ This is an **intentional breaking catalog migration** approved for groups N001�
 The [complete list of 345 retired IDs and their survivors](docs/audits/2026-10-03-nebula-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-nebula-duplicate-review.json) retain each original baseline key, source record and unresolved conflict. All 773 Nebula SKU/code bindings are preserved. PETG page-versus-TDS ranges and PETG 5kg density/temperature conflicts remain unresolved; survivor values are kept because no matching newer-lot evidence establishes a correction.
 
 All 505 non-matching or otherwise out-of-scope OFD variants remain untouched, including all 2.85mm and Silk records. No other brand is changed. Retired IDs disappear from catalog lookups; existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect those lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves.
+
+### Protopasta duplicate migration (2026-10-03)
+
+This is an **intentional breaking catalog migration** approved for 38 groups. It retires 41 duplicate IDs, reducing the compiled catalog from 53,084 to 53,043 and Protopasta from 889 to 848 records. Existing upstream-preferred IDs survive by Rule 1; no new IDs or changed/rekeyed survivor identities are introduced. Existing Spoolman spools retain their local imported data, but old catalog lookups disappear and Spoolman does not follow the retired-ID registry automatically.
+
+The [complete list of 41 retired IDs and their survivors](docs/audits/2026-10-03-protopasta-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-protopasta-duplicate-review.json) retain exact original baseline keys, source templates, unresolved conflicts and the three approved Simply line/color bindings. All 234 Protopasta SKU/code bindings are preserved. P004/P009/P012/P016 remain deferred and untouched; packaging/spool/tare and all other brands are unchanged.
+
+The owner also approved 19 printing-field corrections on nine PETG survivors using current official product-line evidence, plus eight wrong-document-link corrections on four survivors. P034/P041 use explicitly approved **family-level PETG/PETG-CF7 material-table evidence** (250°C at 12 mm³/s, 80°C plate), not a manufactured min/max range or production-lot claim. Their recycled density stays 1.24 g/cm³ unresolved. Static Dissipative PETG now links matching PETG-ESD TDS/SDS; wrong PLA/HTPLA links on the two recycled survivors were removed because exact RPET document coverage is not confirmed. See the audit for every old/new field and source.
 
 This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
 
