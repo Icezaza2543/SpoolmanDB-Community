@@ -1,0 +1,3137 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "conjure",
+  "audit_digest": "7aa3a6dfc46d02daac3bd3bcd31ed496e019288f6fcc8f3a18139cc68b866af4",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "base_sha": "e4e8923ef7407b9f9fd923bee237f67d378cbc58",
+  "authorization": "Owner continuous batch request: exact-target identifiers, official printing metadata, owner-pattern override, tooling deferral",
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-8b57502205f1098c2b42cfc16287a836f54b49b8278d3dfe3d9f75be12a0ee48",
+      "ids": [
+        "conjure_pla_plasilkdualblackred_1000_175_p",
+        "conjure_pla_silkdualblackred_1000_175_p"
+      ],
+      "proposed_survivor": "conjure_pla_silkdualblackred_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "conjure_pla_plasilkdualblackred_1000_175_p": "conjure_pla_silkdualblackred_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "conjure_pla_plasilkdualblackred_1000_175_p",
+          "manufacturer": "Conjure",
+          "name": "PLA Silk Dual Black Red",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            45,
+            45
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "conjure.json::Conjure::PLA Silk {color_name}::PLA Silk Dual Black Red::PLA::1000::1.75::plastic::False",
+          "template": "PLA Silk {color_name}",
+          "source_color": "Dual Black Red",
+          "source_line": "PLA Silk",
+          "source_file": "conjure.json",
+          "source_definition": {
+            "source_file": "conjure.json",
+            "definition_index": 5,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "conjure_pla_silkdualblackred_1000_175_p",
+          "manufacturer": "Conjure",
+          "name": "Silk Dual Black Red",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            45,
+            45
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual Black Red::PLA::1000::1.75::plastic::False",
+          "template": "Silk Dual {color_name}",
+          "source_color": "Black Red",
+          "source_line": "Silk Dual",
+          "source_file": "conjure.json",
+          "source_definition": {
+            "source_file": "conjure.json",
+            "definition_index": 8,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 7,
+            "compiled_records": 7
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {},
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "CJ001",
+      "status": "DEFERRED",
+      "defer_reason": "Rule 5 physical line/color decomposition mismatch"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-8b57502205f1098c2b42cfc16287a836f54b49b8278d3dfe3d9f75be12a0ee48",
+      "ids": [
+        "conjure_pla_plasilkdualblackred_1000_175_p",
+        "conjure_pla_silkdualblackred_1000_175_p"
+      ],
+      "proposed_survivor": "conjure_pla_silkdualblackred_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "conjure_pla_plasilkdualblackred_1000_175_p": "conjure_pla_silkdualblackred_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "conjure_pla_plasilkdualblackred_1000_175_p",
+          "manufacturer": "Conjure",
+          "name": "PLA Silk Dual Black Red",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            45,
+            45
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "conjure.json::Conjure::PLA Silk {color_name}::PLA Silk Dual Black Red::PLA::1000::1.75::plastic::False",
+          "template": "PLA Silk {color_name}",
+          "source_color": "Dual Black Red",
+          "source_line": "PLA Silk",
+          "source_file": "conjure.json",
+          "source_definition": {
+            "source_file": "conjure.json",
+            "definition_index": 5,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "conjure_pla_silkdualblackred_1000_175_p",
+          "manufacturer": "Conjure",
+          "name": "Silk Dual Black Red",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            45,
+            45
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual Black Red::PLA::1000::1.75::plastic::False",
+          "template": "Silk Dual {color_name}",
+          "source_color": "Black Red",
+          "source_line": "Silk Dual",
+          "source_file": "conjure.json",
+          "source_definition": {
+            "source_file": "conjure.json",
+            "definition_index": 8,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 7,
+            "compiled_records": 7
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {},
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "CJ001",
+      "status": "DEFERRED",
+      "defer_reason": "Rule 5 physical line/color decomposition mismatch"
+    }
+  ],
+  "hard_stop_groups": [],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "official_evidence": [
+    {
+      "url": "https://www.chitusystems.com/products/conjure-silk-dual-color-pla-filament",
+      "note": "BlackRed1/2kg options; does not resolve source line/color decomposition; no verified density or printing table."
+    }
+  ],
+  "metadata_review": "One PLA Silk/DualBlackRed versusSilkDual/BlackRed strict decomposition mismatch; defer. No invented qualifier binding, no packaging/tare/metadata edits.",
+  "original_source_definitions": [
+    {
+      "name": "Chameleon {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Burnt Titanium Green",
+          "hex": "2f5f57"
+        },
+        {
+          "name": "Purple Blue",
+          "hex": "0042aa"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Glow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Rainbow 2",
+          "hex": "ffffff"
+        },
+        {
+          "name": "RAINBOW TO GLOW MULTICOLOR",
+          "hex": "5669f5"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Marble {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "ffffff",
+          "pattern": "marble"
+        }
+      ],
+      "pattern": "marble",
+      "country_of_origin": "US"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        60,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "PLA Matte {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "808080"
+        }
+      ],
+      "finish": "matte",
+      "country_of_origin": "US"
+    },
+    {
+      "name": "PLA Silk {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Dual Black Red",
+          "hex": "000000"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "PLA+ {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        40,
+        40
+      ],
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "00ff00"
+        },
+        {
+          "name": "Grey",
+          "hex": "616970"
+        },
+        {
+          "name": "White",
+          "hex": "ffffff"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        40
+      ],
+      "colors": [
+        {
+          "name": "Rainbow",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black / Dark Green",
+          "hexes": [
+            "000000",
+            "006400"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Black Red",
+          "hex": "000000"
+        },
+        {
+          "name": "Blue / Red",
+          "hexes": [
+            "0000ff",
+            "ff0000"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Dual Black Purple",
+          "hex": "000000"
+        },
+        {
+          "name": "Dual Blue Green",
+          "hex": "008cb4"
+        },
+        {
+          "name": "Dual Red Gold",
+          "hex": "808080"
+        },
+        {
+          "name": "Gold / Black",
+          "hexes": [
+            "ffd700",
+            "000000"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk Dual {color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        195,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "hotpink/blue",
+          "hexes": [
+            "ad4fd8",
+            "0000ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk Rainbow {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "No. 1",
+          "hex": "808080"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk Triple {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        40,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Black Purple Blue",
+          "hex": "000000"
+        },
+        {
+          "name": "Green/Gold/Orange",
+          "hexes": [
+            "008000",
+            "ffd700",
+            "808080"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Purple-Orange-Blue",
+          "hex": "808080"
+        },
+        {
+          "name": "Red Blue Green Tri-Color",
+          "hex": "58b7ef"
+        },
+        {
+          "name": "Red Yellow Blue",
+          "hex": "0061ff"
+        },
+        {
+          "name": "Red/Gold/Blue",
+          "hexes": [
+            "ff0000",
+            "ffd700",
+            "0000ff"
+          ],
+          "multi_color_direction": "longitudinal"
+        },
+        {
+          "name": "Red/Gold/Purple",
+          "hexes": [
+            "ff0000",
+            "ffd700",
+            "800080"
+          ],
+          "multi_color_direction": "longitudinal"
+        }
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Wood {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        45,
+        45
+      ],
+      "colors": [
+        {
+          "name": "Rose",
+          "hex": "3d1b00"
+        },
+        {
+          "name": "Walnut",
+          "hex": "6c3f19"
+        },
+        {
+          "name": "White Oak",
+          "hex": "bfa58e"
+        }
+      ],
+      "fill": "wood",
+      "country_of_origin": "US"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "record": {
+        "id": "conjure_pla_chameleonburnttitaniumgreen_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Chameleon Burnt Titanium Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "2f5f57",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          50
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Chameleon {color_name}::Chameleon Burnt Titanium Green::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Chameleon {color_name}",
+      "color": "Burnt Titanium Green",
+      "line": "Chameleon",
+      "cell": {
+        "name": "Chameleon {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          50
+        ],
+        "colors": [
+          {
+            "name": "Burnt Titanium Green",
+            "hex": "2f5f57"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_chameleonpurpleblue_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Chameleon Purple Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0042aa",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          50
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Chameleon {color_name}::Chameleon Purple Blue::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 0,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Chameleon {color_name}",
+      "color": "Purple Blue",
+      "line": "Chameleon",
+      "cell": {
+        "name": "Chameleon {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          50
+        ],
+        "colors": [
+          {
+            "name": "Purple Blue",
+            "hex": "0042aa"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_glowrainbow_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Glow Rainbow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Glow {color_name}::Glow Rainbow::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Glow {color_name}",
+      "color": "Rainbow",
+      "line": "Glow",
+      "cell": {
+        "name": "Glow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Rainbow",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_glowrainbow2_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Glow Rainbow 2",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Glow {color_name}::Glow Rainbow 2::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Glow {color_name}",
+      "color": "Rainbow 2",
+      "line": "Glow",
+      "cell": {
+        "name": "Glow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Rainbow 2",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_glowrainbowtoglowmulticolor_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Glow RAINBOW TO GLOW MULTICOLOR",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "5669f5",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Glow {color_name}::Glow RAINBOW TO GLOW MULTICOLOR::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 1,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Glow {color_name}",
+      "color": "RAINBOW TO GLOW MULTICOLOR",
+      "line": "Glow",
+      "cell": {
+        "name": "Glow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "colors": [
+          {
+            "name": "RAINBOW TO GLOW MULTICOLOR",
+            "hex": "5669f5"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_marblewhite_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Marble White",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": "marble",
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Marble {color_name}::Marble White::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 2,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Marble {color_name}",
+      "color": "White",
+      "line": "Marble",
+      "cell": {
+        "name": "Marble {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff",
+            "pattern": "marble"
+          }
+        ],
+        "pattern": "marble",
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_petg_petgrainbow_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "PETG Rainbow",
+        "material": "PETG",
+        "density": 1.27,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::PETG {color_name}::PETG Rainbow::PETG::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 3,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PETG {color_name}",
+      "color": "Rainbow",
+      "line": "PETG",
+      "cell": {
+        "name": "PETG {color_name}",
+        "material": "PETG",
+        "density": 1.27,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp_range": [
+          60,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Rainbow",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_plamatterainbow_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "PLA Matte Rainbow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "fill": null,
+        "finish": "matte",
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::PLA Matte {color_name}::PLA Matte Rainbow::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 4,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA Matte {color_name}",
+      "color": "Rainbow",
+      "line": "PLA Matte",
+      "cell": {
+        "name": "PLA Matte {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          50,
+          60
+        ],
+        "colors": [
+          {
+            "name": "Rainbow",
+            "hex": "808080"
+          }
+        ],
+        "finish": "matte",
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla+_pla+green_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "PLA+ Green",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "00ff00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          40
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::PLA+ {color_name}::PLA+ Green::PLA+::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "PLA+ {color_name}",
+      "color": "Green",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          40,
+          40
+        ],
+        "colors": [
+          {
+            "name": "Green",
+            "hex": "00ff00"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla+_pla+grey_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "PLA+ Grey",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "616970",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          40
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::PLA+ {color_name}::PLA+ Grey::PLA+::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "PLA+ {color_name}",
+      "color": "Grey",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          40,
+          40
+        ],
+        "colors": [
+          {
+            "name": "Grey",
+            "hex": "616970"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla+_pla+white_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "PLA+ White",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "ffffff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          40
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::PLA+ {color_name}::PLA+ White::PLA+::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 6,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "PLA+ {color_name}",
+      "color": "White",
+      "line": "PLA+",
+      "cell": {
+        "name": "PLA+ {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          40,
+          40
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "hex": "ffffff"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_rainbowrainbow_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Rainbow Rainbow",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          40
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Rainbow {color_name}::Rainbow Rainbow::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 7,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Rainbow {color_name}",
+      "color": "Rainbow",
+      "line": "Rainbow",
+      "cell": {
+        "name": "Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          40
+        ],
+        "colors": [
+          {
+            "name": "Rainbow",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silkdualblack/darkgreen_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Dual Black / Dark Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "000000",
+          "006400"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual Black / Dark Green::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Dual {color_name}",
+      "color": "Black / Dark Green",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Black / Dark Green",
+            "hexes": [
+              "000000",
+              "006400"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silkdualblue/red_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Dual Blue / Red",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "0000ff",
+          "ff0000"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual Blue / Red::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk Dual {color_name}",
+      "color": "Blue / Red",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Blue / Red",
+            "hexes": [
+              "0000ff",
+              "ff0000"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silkdualdualblackpurple_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Dual Dual Black Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual Dual Black Purple::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Silk Dual {color_name}",
+      "color": "Dual Black Purple",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Dual Black Purple",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silkdualdualbluegreen_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Dual Dual Blue Green",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "008cb4",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual Dual Blue Green::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Silk Dual {color_name}",
+      "color": "Dual Blue Green",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Dual Blue Green",
+            "hex": "008cb4"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silkdualdualredgold_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Dual Dual Red Gold",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual Dual Red Gold::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "Silk Dual {color_name}",
+      "color": "Dual Red Gold",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Dual Red Gold",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silkdualgold/black_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Dual Gold / Black",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "ffd700",
+          "000000"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual Gold / Black::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 8,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "Silk Dual {color_name}",
+      "color": "Gold / Black",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Gold / Black",
+            "hexes": [
+              "ffd700",
+              "000000"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla+_silkdualhotpink/blue_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Dual hotpink/blue",
+        "material": "PLA+",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "ad4fd8",
+          "0000ff"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          195,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          25,
+          60
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Dual {color_name}::Silk Dual hotpink/blue::PLA+::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 9,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Dual {color_name}",
+      "color": "hotpink/blue",
+      "line": "Silk Dual",
+      "cell": {
+        "name": "Silk Dual {color_name}",
+        "material": "PLA+",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          195,
+          230
+        ],
+        "bed_temp_range": [
+          25,
+          60
+        ],
+        "colors": [
+          {
+            "name": "hotpink/blue",
+            "hexes": [
+              "ad4fd8",
+              "0000ff"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silkrainbowno.1_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Rainbow No. 1",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Rainbow {color_name}::Silk Rainbow No. 1::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 10,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Rainbow {color_name}",
+      "color": "No. 1",
+      "line": "Silk Rainbow",
+      "cell": {
+        "name": "Silk Rainbow {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "No. 1",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silktripleblackpurpleblue_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Triple Black Purple Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "000000",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Triple {color_name}::Silk Triple Black Purple Blue::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Silk Triple {color_name}",
+      "color": "Black Purple Blue",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Black Purple Blue",
+            "hex": "000000"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silktriplegreen/gold/orange_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Triple Green/Gold/Orange",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "008000",
+          "ffd700",
+          "808080"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Triple {color_name}::Silk Triple Green/Gold/Orange::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Silk Triple {color_name}",
+      "color": "Green/Gold/Orange",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Green/Gold/Orange",
+            "hexes": [
+              "008000",
+              "ffd700",
+              "808080"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silktriplepurple-orange-blue_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Triple Purple-Orange-Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "808080",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Triple {color_name}::Silk Triple Purple-Orange-Blue::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Silk Triple {color_name}",
+      "color": "Purple-Orange-Blue",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Purple-Orange-Blue",
+            "hex": "808080"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silktripleredbluegreentri-color_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Triple Red Blue Green Tri-Color",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "58b7ef",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Triple {color_name}::Silk Triple Red Blue Green Tri-Color::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 3,
+      "template": "Silk Triple {color_name}",
+      "color": "Red Blue Green Tri-Color",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Red Blue Green Tri-Color",
+            "hex": "58b7ef"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silktripleredyellowblue_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Triple Red Yellow Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "0061ff",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Triple {color_name}::Silk Triple Red Yellow Blue::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 4,
+      "template": "Silk Triple {color_name}",
+      "color": "Red Yellow Blue",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Red Yellow Blue",
+            "hex": "0061ff"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silktriplered/gold/blue_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Triple Red/Gold/Blue",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "ff0000",
+          "ffd700",
+          "0000ff"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Triple {color_name}::Silk Triple Red/Gold/Blue::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 5,
+      "template": "Silk Triple {color_name}",
+      "color": "Red/Gold/Blue",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Red/Gold/Blue",
+            "hexes": [
+              "ff0000",
+              "ffd700",
+              "0000ff"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_silktriplered/gold/purple_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Silk Triple Red/Gold/Purple",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": null,
+        "color_hexes": [
+          "ff0000",
+          "ffd700",
+          "800080"
+        ],
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "fill": null,
+        "finish": null,
+        "multi_color_direction": "longitudinal",
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Silk Triple {color_name}::Silk Triple Red/Gold/Purple::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 11,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 6,
+      "template": "Silk Triple {color_name}",
+      "color": "Red/Gold/Purple",
+      "line": "Silk Triple",
+      "cell": {
+        "name": "Silk Triple {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          40,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Red/Gold/Purple",
+            "hexes": [
+              "ff0000",
+              "ffd700",
+              "800080"
+            ],
+            "multi_color_direction": "longitudinal"
+          }
+        ],
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_woodrose_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Wood Rose",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "3d1b00",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": "wood",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Wood {color_name}::Wood Rose::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 0,
+      "template": "Wood {color_name}",
+      "color": "Rose",
+      "line": "Wood",
+      "cell": {
+        "name": "Wood {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Rose",
+            "hex": "3d1b00"
+          }
+        ],
+        "fill": "wood",
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_woodwalnut_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Wood Walnut",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "6c3f19",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": "wood",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Wood {color_name}::Wood Walnut::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 1,
+      "template": "Wood {color_name}",
+      "color": "Walnut",
+      "line": "Wood",
+      "cell": {
+        "name": "Wood {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "Walnut",
+            "hex": "6c3f19"
+          }
+        ],
+        "fill": "wood",
+        "country_of_origin": "US"
+      }
+    },
+    {
+      "record": {
+        "id": "conjure_pla_woodwhiteoak_1000_175_p",
+        "manufacturer": "Conjure",
+        "name": "Wood White Oak",
+        "material": "PLA",
+        "density": 1.24,
+        "weight": 1000,
+        "spool_weight": null,
+        "spool_type": "plastic",
+        "is_refill": false,
+        "diameter": 1.75,
+        "color_hex": "bfa58e",
+        "color_hexes": null,
+        "extruder_temp": null,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "fill": "wood",
+        "finish": null,
+        "multi_color_direction": null,
+        "pattern": null,
+        "translucent": false,
+        "glow": false,
+        "codes": null,
+        "eans": null,
+        "eans_refill": null,
+        "country_of_origin": "US",
+        "sds_url": null,
+        "tds_url": null
+      },
+      "key": "conjure.json::Conjure::Wood {color_name}::Wood White Oak::PLA::1000::1.75::plastic::False",
+      "filename": "conjure.json",
+      "definition_index": 12,
+      "weight_index": 0,
+      "diameter_index": 0,
+      "color_index": 2,
+      "template": "Wood {color_name}",
+      "color": "White Oak",
+      "line": "Wood",
+      "cell": {
+        "name": "Wood {color_name}",
+        "material": "PLA",
+        "density": 1.24,
+        "weights": [
+          {
+            "weight": 1000,
+            "spool_type": "plastic"
+          }
+        ],
+        "diameters": [
+          1.75
+        ],
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp_range": [
+          45,
+          45
+        ],
+        "colors": [
+          {
+            "name": "White Oak",
+            "hex": "bfa58e"
+          }
+        ],
+        "fill": "wood",
+        "country_of_origin": "US"
+      }
+    }
+  ],
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 1,
+    "hard_stops": 0,
+    "before_count": 51702,
+    "after_count": 51702,
+    "brand_before": 32,
+    "brand_after": 32,
+    "registry_before": 1732,
+    "registry_after": 1732,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0,
+    "new": 0,
+    "changed_identity": 0,
+    "rekeyed": 0
+  },
+  "policy": {
+    "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "prefix": "CJ",
+    "metadata": [],
+    "no_transfers": true,
+    "official_evidence": [
+      {
+        "url": "https://www.chitusystems.com/products/conjure-silk-dual-color-pla-filament",
+        "note": "BlackRed1/2kg options; does not resolve source line/color decomposition; no verified density or printing table."
+      }
+    ],
+    "metadata_review": "One PLA Silk/DualBlackRed versusSilkDual/BlackRed strict decomposition mismatch; defer. No invented qualifier binding, no packaging/tare/metadata edits.",
+    "printing_default_flags": []
+  }
+}
