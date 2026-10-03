@@ -82,6 +82,123 @@
       ]
     },
     {
+      "name": "PETG Basic {color_name}",
+      "material": "PETG",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "000000",
+          "codes": [
+            "NPETG087"
+          ]
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "00008B",
+          "codes": [
+            "NPETG019"
+          ]
+        },
+        {
+          "name": "Green",
+          "hex": "008000",
+          "codes": [
+            "NPETG018"
+          ]
+        },
+        {
+          "name": "Grey",
+          "hex": "808080",
+          "codes": [
+            "NPETG006"
+          ]
+        },
+        {
+          "name": "Yellow",
+          "hex": "FFFF00",
+          "codes": [
+            "NPETG003"
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "FFA500",
+          "codes": [
+            "NPETG017"
+          ]
+        },
+        {
+          "name": "Red",
+          "hex": "FF0000",
+          "codes": [
+            "NPETG001"
+          ]
+        },
+        {
+          "name": "Silver",
+          "hex": "C0C0C0",
+          "codes": [
+            "NPETG016"
+          ]
+        },
+        {
+          "name": "Transparent",
+          "hex": "FFFFFF",
+          "translucent": true,
+          "codes": [
+            "NPETG007"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ]
+    },
+    {
+      "name": "PETG Basic {color_name}",
+      "material": "PETG",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "FFFFFF",
+          "codes": [
+            "NPETG088"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        230,
+        260
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ]
+    },
+    {
       "name": "ABS {color_name}",
       "material": "ABS",
       "density": 1.04,
