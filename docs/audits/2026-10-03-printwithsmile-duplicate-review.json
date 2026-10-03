@@ -19570,14 +19570,14 @@
       "name": "HIS PLA natural",
       "sku": "515",
       "ean": "8594196455154",
-      "note": "Official HIS PLA line identified; source-color decomposition differs from broad OFD PLA/HIS natural. Current tooling cannot bind line/color safely; defer without inventing binding."
+      "note": "Historical candidate URL returns 404 on final review; current product, technical values and SKU/EAN binding remain unverified. Source-color decomposition differs from broad OFD PLA/HIS natural; defer without inventing binding."
     },
     {
       "url": "https://pws.3dfilaments.cz/gb/",
       "note": "Manufacturer catalog distinguishes SATIN PLA and HIS PLA product lines. Duplicated material words inside color labels cannot be removed by the immutable-key Rule5 checker; retained for tooling review."
     }
   ],
-  "metadata_review": "All 68 candidates are retained: source-color material-token duplication/line-color decomposition or unresolved tie. No current same-SKU binding is established for the Cartesian broad variants. Official HIS PLA 210–250/40–60 confirms the narrower source metadata but does not authorize relabeling historical source colors. No data edits, identifiers or packaging changes.",
+  "metadata_review": "All 68 candidates are retained: source-color material-token duplication/line-color decomposition or unresolved tie. No current same-SKU binding is established for the Cartesian broad variants. The previously cited HIS PLA product URL returns 404 on final review; its technical values and SKU/EAN binding are not treated as current verified evidence. No data edits, identifiers or packaging changes.",
   "original_source_definitions": [
     {
       "name": "ABS {color_name}",
@@ -74269,14 +74269,14 @@
         "name": "HIS PLA natural",
         "sku": "515",
         "ean": "8594196455154",
-        "note": "Official HIS PLA line identified; source-color decomposition differs from broad OFD PLA/HIS natural. Current tooling cannot bind line/color safely; defer without inventing binding."
+        "note": "Historical candidate URL returns 404 on final review; current product, technical values and SKU/EAN binding remain unverified. Source-color decomposition differs from broad OFD PLA/HIS natural; defer without inventing binding."
       },
       {
         "url": "https://pws.3dfilaments.cz/gb/",
         "note": "Manufacturer catalog distinguishes SATIN PLA and HIS PLA product lines. Duplicated material words inside color labels cannot be removed by the immutable-key Rule5 checker; retained for tooling review."
       }
     ],
-    "metadata_review": "All 68 candidates are retained: source-color material-token duplication/line-color decomposition or unresolved tie. No current same-SKU binding is established for the Cartesian broad variants. Official HIS PLA 210–250/40–60 confirms the narrower source metadata but does not authorize relabeling historical source colors. No data edits, identifiers or packaging changes.",
+    "metadata_review": "All 68 candidates are retained: source-color material-token duplication/line-color decomposition or unresolved tie. No current same-SKU binding is established for the Cartesian broad variants. The previously cited HIS PLA product URL returns 404 on final review; its technical values and SKU/EAN binding are not treated as current verified evidence. No data edits, identifiers or packaging changes.",
     "unresolved_default_flags": []
   }
 }
