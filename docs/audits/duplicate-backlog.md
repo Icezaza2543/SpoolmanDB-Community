@@ -45,6 +45,17 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## americanfilament deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|AF001 / `dup-0cbd82daca2198c43293ed83488990f8ff57d0a83cfe5a4f3176c531b7583dc9`|`americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p`<br>`americanfilament_pctg_pctgarmygreen_1000_175_p`|PCTG source arrays replicate1KG and4KG codes across weights; live exact SKU binding unavailable. Do not transfer4KG to1000g; retain both records pending exact package-scoped review/tooling.|[review](2026-10-03-americanfilament-duplicate-review.json)|
+|AF002 / `dup-793c5a66c846857b1437cf6b3e8afdc8207fc302c6f85abf70148c350477a30a`|`americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p`<br>`americanfilament_pctg_pctgblizzardwhite_1000_175_p`|PCTG source arrays replicate1KG and4KG codes across weights; live exact SKU binding unavailable. Do not transfer4KG to1000g; retain both records pending exact package-scoped review/tooling.|[review](2026-10-03-americanfilament-duplicate-review.json)|
+|AF003 / `dup-76c5690a3879b598d0b4ecb78333c50a73f26633fed94092d7d2f4fda6d68fbe`|`americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p`<br>`americanfilament_pctg_pctggunmetalgray_1000_175_p`|PCTG source arrays replicate1KG and4KG codes across weights; live exact SKU binding unavailable. Do not transfer4KG to1000g; retain both records pending exact package-scoped review/tooling.|[review](2026-10-03-americanfilament-duplicate-review.json)|
+|AF004 / `dup-555a43455a3fec10a9a0e419a007527eb4c953aaee9dd9c296af49c72d51d8e7`|`americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p`<br>`americanfilament_pctg_pctgobsidianblack_1000_175_p`|PCTG source arrays replicate1KG and4KG codes across weights; live exact SKU binding unavailable. Do not transfer4KG to1000g; retain both records pending exact package-scoped review/tooling.|[review](2026-10-03-americanfilament-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## aurapol deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
