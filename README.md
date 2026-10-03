@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 51,702
+* **Published records**: 51,701
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -80,8 +80,8 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
 | Source filament objects | 10,113 |
-| Color entries | 33,536 |
-| Compiled filament variants | 51,702 |
+| Color entries | 33,535 |
+| Compiled filament variants | 51,701 |
 | Source filaments with country of origin | 7,514 |
 | Source filaments with TDS/product links | 4,573 |
 | Source filaments with SDS links | 1,012 |
@@ -632,6 +632,12 @@ The [review](docs/audits/2026-10-03-l3d-duplicate-review.md) and [JSON audit](do
 All 1 candidate groups are deferred for identity or tooling review. No migration was applied; the catalog remains at 51,702 records. Original IDs, compiled metadata, identifiers, packaging and tare are unchanged.
 
 The [review](docs/audits/2026-10-03-matterhackers-duplicate-review.md) and [JSON audit](docs/audits/2026-10-03-matterhackers-duplicate-review.json) retain the complete candidates, evidence and conflicts; all blockers are recorded in the [running backlog](docs/audits/duplicate-backlog.md).
+
+### polyterra duplicate migration (2026-10-03)
+
+This **intentional breaking catalog migration** retires 1 exact duplicate IDs in 1 reviewed groups: 51,702 → 51,701 catalog records, with 0 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
+
+The [complete mappings and conflicts](docs/audits/2026-10-03-polyterra-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-polyterra-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 0 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
 ## Terms and policy
 
