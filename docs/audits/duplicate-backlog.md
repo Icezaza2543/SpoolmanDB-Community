@@ -2,14 +2,15 @@
 
 ## Scope and current owner policy
 
-This running ledger records deferred duplicate candidates, not retirement authorization. Rule5/tooling-only groups are deferred while other groups may proceed only under the owner-approved automatic conditions: Rule1/3 survivor, no Rule4/tie/Cartesian warning, no identifier transfer/loss, no other-material-default survivor values, no metadata proposal, exact retirement-only compiled delta. A non-tooling blocker or hosted CI failure stops the loop. No tooling change or invented line/color binding is authorized here.
+This running ledger records deferred duplicate candidates, not retirement authorization. The owner's continuous-batch authorization supersedes the earlier ten-brand limit: process all remaining brands, one commit per brand, and push batches of at most ten brands after full local validation. No PR, remote feature branch or GitHub comment is part of this workflow.
 
-Devil Design is brand1 of the10-brand limit in the current loop. Keep survivor metadata. Pinned original keys, identities and evidence remain in each linked brand audit.
+Exact-target code/EAN transfers are permitted only when unique values are preserved and no unrelated variant gains or loses identifiers. Current official TDS/product evidence for the exact product line may correct density/nozzle/bed; without it, retain survivor values and mark conflicts unresolved. Packaging and tare remain untouched. An explicitly reviewed owner-pattern override may retain an older well-formed family instead of a malformed or Cartesian-inflated Rule2/4 choice. Rule5/tooling-only blocks are deferred without invented bindings or production tooling changes. Hard stops remain uncovered cases, unresolved ties, unique-variant loss/change, unexpected compiled differences and CI failure. Pinned original keys and evidence remain in each linked brand audit.
 
 ## Deferred groups
 
 | Brand | Group | Exact group ID | Preserved IDs | Blocker | Audit |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
+|Paramount 3D|PM070|`dup-a1193cacb2ff8f22a493492cafcb6e459a308c4596b0d316e30ddf4708c8b29a`|`paramount3d_pla_paramount3dplamatteblack_1000_175_p`<br>`paramount3d_pla_mattepla(black)_1000_175_p`|Owner-deferred Rule5 line/color split: Matte Black color versus Matte PLA family. Both records retained; no invented binding.|[review](2026-10-03-paramount3d-duplicate-review.json)|
 |Protopasta|P004|`dup-13b2ef36edb25e45ce0776b4d76b16515ba134070c2cbb250d7bd9a062c802dd`|`protopasta_tpe_blackflexible_1000_175_c`<br>`protopasta_tpe_tpeblackflexible_1000_175_c`|Rule 5 line/color decomposition differs because Flexible/Glitter is positioned in the source color versus the family template. No tooling change or retirement authorized now.|[review](2026-10-03-protopasta-duplicate-review.json)|
 |Protopasta|P009|`dup-4e8f4652ee824c13ccba26c47e514988ec0e37d618143b2db58cb7ab31c6924a`|`protopasta_pla_platexasteablackwithgoldglitter_1000_175_c`<br>`protopasta_pla_texasteablackwithgoldglitter_1000_175_c`|Rule 5 line/color decomposition differs because Flexible/Glitter is positioned in the source color versus the family template. No tooling change or retirement authorized now.|[review](2026-10-03-protopasta-duplicate-review.json)|
 |Protopasta|P012|`dup-516d3b6e9c241f733bfe087b756a6ef7f31edf53d29c5a0643ff22c2dcf5e6fc`|`protopasta_tpe_blackflexible_500_175_c`<br>`protopasta_tpe_tpeblackflexible_500_175_c`|Rule 5 line/color decomposition differs because Flexible/Glitter is positioned in the source color versus the family template. No tooling change or retirement authorized now.|[review](2026-10-03-protopasta-duplicate-review.json)|
@@ -20,9 +21,10 @@ Devil Design is brand1 of the10-brand limit in the current loop. Keep survivor m
 |Devil Design|D034|`dup-ec0e804e21c0dbb4534a9db1f6b38930a638478658f2d2a399badee24ce15a02`|`devildesign_petg_galaxypetgsuperblue_1000_175_p`<br>`devildesign_petg_galaxysuperblue_1000_175_p`|Rule 5 line/color split: Galaxy is embedded in one source color and is a product-line qualifier in the other. No lossless binding approved; all IDs/metadata remain unchanged.|[review](2026-10-03-devildesign-duplicate-review.json)|
 |Devil Design|D035|`dup-d97d3ad7c18c133abb53443428d13fd1efb1b9810da0b74560dced3e64772754`|`devildesign_petg_galaxypetgviolet_1000_175_p`<br>`devildesign_petg_galaxyviolet_1000_175_p`|Rule 5 line/color split: Galaxy is embedded in one source color and is a product-line qualifier in the other. No lossless binding approved; all IDs/metadata remain unchanged.|[review](2026-10-03-devildesign-duplicate-review.json)|
 
-All18 IDs in these9 groups remain compiled, with original keys and metadata. Galaxy PETG current-product evidence confirms Black/Violet/Super Blue at1.75mm/1kg; Red/Green are not current-confirmed by the PET-G card. No PLA-to-PETG evidence transfer.
+All20 IDs in these10 groups remain compiled, with original keys and metadata. Galaxy PETG current-product evidence confirms Black/Violet/Super Blue at1.75mm/1kg; Red/Green are not current-confirmed by the PET-G card. No PLA-to-PETG evidence transfer.
 
 ## Separate existing backlog (not auto-retired)
 
 - Nebula malformed-evidence traceback remains a tooling issue. Nebula Silk “Silk Silk” names and505 out-of-scope OFD variants remain a separate evidence/naming review, not automatically deferred duplicate groups. [Existing Nebula audit](2026-10-03-nebula-duplicate-review.md#preserved-backlog-not-reviewed-for-removal).
+- Paramount 3D manufacturer-prefix cleanup is separately deferred: approved older prefixed survivor names/IDs remain unchanged. [Reviewed migration](2026-10-03-paramount3d-duplicate-review.md).
 - Previously recorded metadata/evidence conflicts remain in [coverage-backlog.md](../coverage-backlog.md) and the individual brand audits. Deferred metadata is not permission to modify it in this loop.
