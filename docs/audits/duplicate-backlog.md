@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## spectrum deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|SC001 / `dup-e78a0754c1c46f31ecdbcad5f9c6264ae480595155b21f9a8bfb1a5d9b3b8f3f`|`spectrum_petg_petg/ptfesignalwhite_1000_175_c`<br>`spectrum_petg_ptfesignalwhite_1000_175_c`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-spectrum-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## smartprint deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
