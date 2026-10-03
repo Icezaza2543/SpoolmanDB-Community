@@ -1,0 +1,726 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "kingroon",
+  "audit_digest": "b1d453ee4624cfe411b9a622a1a567f2704f435f2f6039296c0b88776a7322d6",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_commit": "3db1f4550d55995c34db4fd147a7f5c6a31a987b",
+  "base_ref": "b050e684b88a1622cd25ea5a47b6447c3e14d021",
+  "owner_approval": {
+    "date": "2026-10-03",
+    "scope": "G1-G5 confirmed as true duplicates; local-only STEP 4 apply and one focused commit; no main integration, push or GitHub comment.",
+    "metadata": "Keep all survivor metadata. G1/G4 density and nozzle conflicts and G5 color_hex conflict remain unresolved."
+  },
+  "groups": {
+    "dup-26bc4f76cf113288c818900c23370a2a9560e0ac1bad6d57ad4f89ab590bee01": {
+      "label": "G1",
+      "approved": true,
+      "survivor": "kingroon_pla_plablack_1000_175_p",
+      "retire": [
+        "kingroon_pla_kingroonplablack_1000_175_p"
+      ],
+      "ref": "#66",
+      "source": "3db1f4550d55995c34db4fd147a7f5c6a31a987b",
+      "survivor_rule": 2
+    },
+    "dup-4a4bb49bc11a9006ff7a7916d86db3f1ab4fcfcf2a682409ce161ebd84faa8dc": {
+      "label": "G2",
+      "approved": true,
+      "survivor": "kingroon_petg_petgblack_1000_175_p",
+      "retire": [
+        "kingroon_petg_kingroonpetgblack_1000_175_p"
+      ],
+      "ref": "#66",
+      "source": "3db1f4550d55995c34db4fd147a7f5c6a31a987b",
+      "survivor_rule": 2
+    },
+    "dup-cd4c9a0dc8191e86556425380f2e99eb2afed25bdeee30763a3e3b0190688f5a": {
+      "label": "G3",
+      "approved": true,
+      "survivor": "kingroon_petg_petggray_1000_175_p",
+      "retire": [
+        "kingroon_petg_kingroonpetggrey_1000_175_p"
+      ],
+      "ref": "#66",
+      "source": "3db1f4550d55995c34db4fd147a7f5c6a31a987b",
+      "survivor_rule": 2
+    },
+    "dup-eed1d97f9f3602d9ac08ad1d2afc1a002200ec802e5f4ccb38ec43815f80d025": {
+      "label": "G4",
+      "approved": true,
+      "survivor": "kingroon_pla_plawhite_1000_175_p",
+      "retire": [
+        "kingroon_pla_kingroonplawhite_1000_175_p"
+      ],
+      "ref": "#66",
+      "source": "3db1f4550d55995c34db4fd147a7f5c6a31a987b",
+      "survivor_rule": 2
+    },
+    "dup-f22523373b03f56ae37b633153a4d09c9708efedf54e64ef41992b44ec645f68": {
+      "label": "G5",
+      "approved": true,
+      "survivor": "kingroon_petg_petgwhite_1000_175_p",
+      "retire": [
+        "kingroon_petg_kingroonpetgwhite_1000_175_p"
+      ],
+      "ref": "#66",
+      "source": "3db1f4550d55995c34db4fd147a7f5c6a31a987b",
+      "survivor_rule": 2
+    }
+  },
+  "bindings": {},
+  "metadata": [],
+  "unresolved_conflicts": [
+    {
+      "label": "G1",
+      "group_id": "dup-26bc4f76cf113288c818900c23370a2a9560e0ac1bad6d57ad4f89ab590bee01",
+      "survivor": "kingroon_pla_plablack_1000_175_p",
+      "status": "UNRESOLVED",
+      "action": "Keep survivor metadata unchanged",
+      "values": {
+        "density": {
+          "kingroon_pla_kingroonplablack_1000_175_p": 1.23,
+          "kingroon_pla_plablack_1000_175_p": 1.24
+        },
+        "extruder_temp_range": {
+          "kingroon_pla_kingroonplablack_1000_175_p": [
+            190,
+            210
+          ],
+          "kingroon_pla_plablack_1000_175_p": [
+            190,
+            230
+          ]
+        }
+      },
+      "evidence_binding": "Official PLA Basic page and general guide are not yet bound to these historical generic PLA variants or their production lots. They do not authorize a metadata change."
+    },
+    {
+      "label": "G4",
+      "group_id": "dup-eed1d97f9f3602d9ac08ad1d2afc1a002200ec802e5f4ccb38ec43815f80d025",
+      "survivor": "kingroon_pla_plawhite_1000_175_p",
+      "status": "UNRESOLVED",
+      "action": "Keep survivor metadata unchanged",
+      "values": {
+        "density": {
+          "kingroon_pla_kingroonplawhite_1000_175_p": 1.23,
+          "kingroon_pla_plawhite_1000_175_p": 1.24
+        },
+        "extruder_temp_range": {
+          "kingroon_pla_kingroonplawhite_1000_175_p": [
+            190,
+            210
+          ],
+          "kingroon_pla_plawhite_1000_175_p": [
+            190,
+            230
+          ]
+        }
+      },
+      "evidence_binding": "Official PLA Basic page and general guide are not yet bound to these historical generic PLA variants or their production lots. They do not authorize a metadata change."
+    },
+    {
+      "label": "G5",
+      "group_id": "dup-f22523373b03f56ae37b633153a4d09c9708efedf54e64ef41992b44ec645f68",
+      "survivor": "kingroon_petg_petgwhite_1000_175_p",
+      "status": "UNRESOLVED",
+      "action": "Keep survivor metadata unchanged",
+      "values": {
+        "color_hex": {
+          "kingroon_petg_kingroonpetgwhite_1000_175_p": "FFFFFF",
+          "kingroon_petg_petgwhite_1000_175_p": "F5F5F5"
+        }
+      },
+      "evidence_binding": "No manufacturer-provided HEX or matching newer-lot evidence establishes which representative white swatch to use."
+    }
+  ],
+  "evidence": [
+    {
+      "source": "https://kingroon.com/products/kingroon-pla-basic",
+      "finding": "PLA Basic: density 1.23 g/cm3; nozzle 190-210 C; bed 50-70 C.",
+      "binding": "Not yet bound to G1/G4 historical variants, SKU/packaging or newer production lot."
+    },
+    {
+      "source": "https://cdn.shopify.com/s/files/1/0612/4784/8666/files/Filaments-Datasheet.pdf?v=1741943123",
+      "finding": "General filament guide includes PLA 1.23 g/cm3 / 190-210 C / 50-70 C and PETG 1.26 g/cm3 / 230-250 C / 70-90 C.",
+      "binding": "General guide is not lot/package-bound to the duplicate variants. No metadata updates approved."
+    },
+    {
+      "source": "https://kingroon.com/collections/petg-filament",
+      "finding": "PETG and PETG Basic are listed separately.",
+      "binding": "Family-separation evidence; PETG Basic excluded from this migration."
+    },
+    {
+      "source": "https://github.com/Icezaza2543/SpoolmanDB-Community/issues/66#issuecomment-5966494129",
+      "finding": "Buyer label confirms PETG Basic White NPETG088, 1.75 mm, nozzle 230-260 C, bed 70-90 C.",
+      "binding": "Applies only to PETG Basic White, not regular PETG. No transfer of those values."
+    }
+  ],
+  "expected": {
+    "before_count": 53434,
+    "after_count": 53429,
+    "kingroon_before": 124,
+    "kingroon_after": 119,
+    "retired": 5,
+    "new": 0,
+    "changed": 0,
+    "rekeyed": 0,
+    "petg_basic_records_unchanged": 10,
+    "unique_prefixed_pla_colors_unchanged": [
+      "Grey",
+      "Red",
+      "Blue"
+    ]
+  },
+  "audit_snapshot": {
+    "version": 1,
+    "brand": "kingroon",
+    "digest": "b1d453ee4624cfe411b9a622a1a567f2704f435f2f6039296c0b88776a7322d6",
+    "upstream_sha": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+    "upstream_status": "PINNED",
+    "groups": [
+      {
+        "group_id": "dup-26bc4f76cf113288c818900c23370a2a9560e0ac1bad6d57ad4f89ab590bee01",
+        "ids": [
+          "kingroon_pla_kingroonplablack_1000_175_p",
+          "kingroon_pla_plablack_1000_175_p"
+        ],
+        "proposed_survivor": "kingroon_pla_plablack_1000_175_p",
+        "proposed_retirements": {
+          "kingroon_pla_kingroonplablack_1000_175_p": "kingroon_pla_plablack_1000_175_p"
+        },
+        "records": [
+          {
+            "id": "kingroon_pla_kingroonplablack_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "Kingroon PLA Black",
+            "material": "PLA",
+            "density": 1.23,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "000000",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              190,
+              210
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              50,
+              70
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::Kingroon PLA {color_name}::Kingroon PLA Black::PLA::1000::1.75::None::False",
+            "template": "Kingroon PLA {color_name}",
+            "source_color": "Black",
+            "source_line": "Kingroon PLA",
+            "source_file": "kingroon.json",
+            "upstream": false
+          },
+          {
+            "id": "kingroon_pla_plablack_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "PLA Black",
+            "material": "PLA",
+            "density": 1.24,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "000000",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              190,
+              230
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              50,
+              70
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::PLA {color_name}::PLA Black::PLA::1000::1.75::None::False",
+            "template": "PLA {color_name}",
+            "source_color": "Black",
+            "source_line": "PLA",
+            "source_file": "kingroon.json",
+            "upstream": false
+          }
+        ],
+        "metadata_conflicts": {
+          "density": {
+            "kingroon_pla_kingroonplablack_1000_175_p": 1.23,
+            "kingroon_pla_plablack_1000_175_p": 1.24
+          },
+          "extruder_temp_range": {
+            "kingroon_pla_kingroonplablack_1000_175_p": [
+              190,
+              210
+            ],
+            "kingroon_pla_plablack_1000_175_p": [
+              190,
+              230
+            ]
+          }
+        },
+        "evidence": [],
+        "approved": false,
+        "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied."
+      },
+      {
+        "group_id": "dup-4a4bb49bc11a9006ff7a7916d86db3f1ab4fcfcf2a682409ce161ebd84faa8dc",
+        "ids": [
+          "kingroon_petg_kingroonpetgblack_1000_175_p",
+          "kingroon_petg_petgblack_1000_175_p"
+        ],
+        "proposed_survivor": "kingroon_petg_petgblack_1000_175_p",
+        "proposed_retirements": {
+          "kingroon_petg_kingroonpetgblack_1000_175_p": "kingroon_petg_petgblack_1000_175_p"
+        },
+        "records": [
+          {
+            "id": "kingroon_petg_kingroonpetgblack_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "Kingroon PETG Black",
+            "material": "PETG",
+            "density": 1.28,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "000000",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              230,
+              250
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              70,
+              90
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::Kingroon PETG {color_name}::Kingroon PETG Black::PETG::1000::1.75::None::False",
+            "template": "Kingroon PETG {color_name}",
+            "source_color": "Black",
+            "source_line": "Kingroon PETG",
+            "source_file": "kingroon.json",
+            "upstream": false
+          },
+          {
+            "id": "kingroon_petg_petgblack_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "PETG Black",
+            "material": "PETG",
+            "density": 1.28,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "000000",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              230,
+              250
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              70,
+              90
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::PETG {color_name}::PETG Black::PETG::1000::1.75::None::False",
+            "template": "PETG {color_name}",
+            "source_color": "Black",
+            "source_line": "PETG",
+            "source_file": "kingroon.json",
+            "upstream": false
+          }
+        ],
+        "metadata_conflicts": {},
+        "evidence": [],
+        "approved": false,
+        "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied."
+      },
+      {
+        "group_id": "dup-cd4c9a0dc8191e86556425380f2e99eb2afed25bdeee30763a3e3b0190688f5a",
+        "ids": [
+          "kingroon_petg_kingroonpetggrey_1000_175_p",
+          "kingroon_petg_petggray_1000_175_p"
+        ],
+        "proposed_survivor": "kingroon_petg_petggray_1000_175_p",
+        "proposed_retirements": {
+          "kingroon_petg_kingroonpetggrey_1000_175_p": "kingroon_petg_petggray_1000_175_p"
+        },
+        "records": [
+          {
+            "id": "kingroon_petg_kingroonpetggrey_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "Kingroon PETG Grey",
+            "material": "PETG",
+            "density": 1.28,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "808080",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              230,
+              250
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              70,
+              90
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::Kingroon PETG {color_name}::Kingroon PETG Grey::PETG::1000::1.75::None::False",
+            "template": "Kingroon PETG {color_name}",
+            "source_color": "Grey",
+            "source_line": "Kingroon PETG",
+            "source_file": "kingroon.json",
+            "upstream": false
+          },
+          {
+            "id": "kingroon_petg_petggray_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "PETG Gray",
+            "material": "PETG",
+            "density": 1.28,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "808080",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              230,
+              250
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              70,
+              90
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::PETG {color_name}::PETG Gray::PETG::1000::1.75::None::False",
+            "template": "PETG {color_name}",
+            "source_color": "Gray",
+            "source_line": "PETG",
+            "source_file": "kingroon.json",
+            "upstream": false
+          }
+        ],
+        "metadata_conflicts": {},
+        "evidence": [],
+        "approved": false,
+        "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied."
+      },
+      {
+        "group_id": "dup-eed1d97f9f3602d9ac08ad1d2afc1a002200ec802e5f4ccb38ec43815f80d025",
+        "ids": [
+          "kingroon_pla_kingroonplawhite_1000_175_p",
+          "kingroon_pla_plawhite_1000_175_p"
+        ],
+        "proposed_survivor": "kingroon_pla_plawhite_1000_175_p",
+        "proposed_retirements": {
+          "kingroon_pla_kingroonplawhite_1000_175_p": "kingroon_pla_plawhite_1000_175_p"
+        },
+        "records": [
+          {
+            "id": "kingroon_pla_kingroonplawhite_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "Kingroon PLA White",
+            "material": "PLA",
+            "density": 1.23,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "FFFFFF",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              190,
+              210
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              50,
+              70
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::Kingroon PLA {color_name}::Kingroon PLA White::PLA::1000::1.75::None::False",
+            "template": "Kingroon PLA {color_name}",
+            "source_color": "White",
+            "source_line": "Kingroon PLA",
+            "source_file": "kingroon.json",
+            "upstream": false
+          },
+          {
+            "id": "kingroon_pla_plawhite_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "PLA White",
+            "material": "PLA",
+            "density": 1.24,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "FFFFFF",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              190,
+              230
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              50,
+              70
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::PLA {color_name}::PLA White::PLA::1000::1.75::None::False",
+            "template": "PLA {color_name}",
+            "source_color": "White",
+            "source_line": "PLA",
+            "source_file": "kingroon.json",
+            "upstream": false
+          }
+        ],
+        "metadata_conflicts": {
+          "density": {
+            "kingroon_pla_kingroonplawhite_1000_175_p": 1.23,
+            "kingroon_pla_plawhite_1000_175_p": 1.24
+          },
+          "extruder_temp_range": {
+            "kingroon_pla_kingroonplawhite_1000_175_p": [
+              190,
+              210
+            ],
+            "kingroon_pla_plawhite_1000_175_p": [
+              190,
+              230
+            ]
+          }
+        },
+        "evidence": [],
+        "approved": false,
+        "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied."
+      },
+      {
+        "group_id": "dup-f22523373b03f56ae37b633153a4d09c9708efedf54e64ef41992b44ec645f68",
+        "ids": [
+          "kingroon_petg_kingroonpetgwhite_1000_175_p",
+          "kingroon_petg_petgwhite_1000_175_p"
+        ],
+        "proposed_survivor": "kingroon_petg_petgwhite_1000_175_p",
+        "proposed_retirements": {
+          "kingroon_petg_kingroonpetgwhite_1000_175_p": "kingroon_petg_petgwhite_1000_175_p"
+        },
+        "records": [
+          {
+            "id": "kingroon_petg_kingroonpetgwhite_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "Kingroon PETG White",
+            "material": "PETG",
+            "density": 1.28,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "FFFFFF",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              230,
+              250
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              70,
+              90
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::Kingroon PETG {color_name}::Kingroon PETG White::PETG::1000::1.75::None::False",
+            "template": "Kingroon PETG {color_name}",
+            "source_color": "White",
+            "source_line": "Kingroon PETG",
+            "source_file": "kingroon.json",
+            "upstream": false
+          },
+          {
+            "id": "kingroon_petg_petgwhite_1000_175_p",
+            "manufacturer": "Kingroon",
+            "name": "PETG White",
+            "material": "PETG",
+            "density": 1.28,
+            "weight": 1000,
+            "spool_weight": null,
+            "spool_type": null,
+            "is_refill": false,
+            "diameter": 1.75,
+            "color_hex": "F5F5F5",
+            "color_hexes": null,
+            "extruder_temp": null,
+            "extruder_temp_range": [
+              230,
+              250
+            ],
+            "bed_temp": null,
+            "bed_temp_range": [
+              70,
+              90
+            ],
+            "fill": null,
+            "finish": null,
+            "multi_color_direction": null,
+            "pattern": null,
+            "translucent": false,
+            "glow": false,
+            "codes": null,
+            "eans": null,
+            "eans_refill": null,
+            "country_of_origin": null,
+            "sds_url": null,
+            "tds_url": null,
+            "key": "kingroon.json::Kingroon::PETG {color_name}::PETG White::PETG::1000::1.75::None::False",
+            "template": "PETG {color_name}",
+            "source_color": "White",
+            "source_line": "PETG",
+            "source_file": "kingroon.json",
+            "upstream": false
+          }
+        ],
+        "metadata_conflicts": {
+          "color_hex": {
+            "kingroon_petg_kingroonpetgwhite_1000_175_p": "FFFFFF",
+            "kingroon_petg_petgwhite_1000_175_p": "F5F5F5"
+          }
+        },
+        "evidence": [],
+        "approved": false,
+        "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied."
+      }
+    ],
+    "official_name_evidence": {},
+    "upstream_exceptions": {}
+  }
+}

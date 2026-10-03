@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 53,434
+* **Published records**: 53,429
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,9 +79,9 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 5,047 |
-| Color entries | 31,195 |
-| Compiled filament variants | 53,434 |
+| Source filament objects | 5,048 |
+| Color entries | 31,190 |
+| Compiled filament variants | 53,429 |
 | Source filaments with country of origin | 4,589 |
 | Source filaments with TDS/product links | 1,137 |
 | Source filaments with SDS links | 382 |
@@ -101,7 +101,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 | `spool_type: refill` (legacy) | 34 |
 | `spool_type: unknow` (legacy) | 26 |
 | `spool_type: null` | 0 |
-| `spool_type` omitted | 275 |
+| `spool_type` omitted | 276 |
 | Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 55 |
 <!-- readme-snapshot:end -->
 
@@ -243,7 +243,23 @@ All shared material defaults live in `materials.json`.
 
 ## Maintenance stance
 
-Duplicate-migration tooling is available, with an initially empty [retired-ID registry](contracts/retired_ids.json). It retires no data automatically. A separately approved true-duplicate migration intentionally removes the listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry or redirect old catalog lookups. See the [review, ID-safety and exact-reinstatement rules](docs/maintenance.md#4-public-id-immutability-rule).
+Owner-approved duplicate migrations are recorded in the [retired-ID registry](contracts/retired_ids.json). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](docs/maintenance.md#4-public-id-immutability-rule).
+
+### Kingroon duplicate migration (2026-10-03)
+
+This is an **intentional breaking catalog migration** approved by the owner for [issue #66](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/66). It retires exactly five duplicate records, reducing the compiled catalog from 53,434 to 53,429 records without creating replacement IDs. Each survivor already exists, and its identity and metadata are unchanged.
+
+| Retired public ID | Existing survivor public ID |
+| --- | --- |
+| `kingroon_pla_kingroonplablack_1000_175_p` | `kingroon_pla_plablack_1000_175_p` |
+| `kingroon_petg_kingroonpetgblack_1000_175_p` | `kingroon_petg_petgblack_1000_175_p` |
+| `kingroon_petg_kingroonpetggrey_1000_175_p` | `kingroon_petg_petggray_1000_175_p` |
+| `kingroon_pla_kingroonplawhite_1000_175_p` | `kingroon_pla_plawhite_1000_175_p` |
+| `kingroon_petg_kingroonpetgwhite_1000_175_p` | `kingroon_petg_petgwhite_1000_175_p` |
+
+PETG Basic remains a separate family: all ten of its records are untouched. The unique `Kingroon PLA` Grey, Red and Blue records retain their original IDs and metadata, as do all refill variants. No other brand is included.
+
+The [reviewed decisions and original audit](docs/audits/2026-10-03-kingroon-duplicate-review.json) retain unresolved conflicts: PLA Black/White density 1.23 versus 1.24 g/cm³ and nozzle 190–210 versus 190–230 °C; PETG White HEX `FFFFFF` versus `F5F5F5`. Survivor values are kept. The official PLA Basic page and general filament guide are not yet bound to these historical variants or their production lots, so they do not authorize changing those values. The registry preserves each retired record's exact original baseline key for audit and exact reinstatement.
 
 This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
 
