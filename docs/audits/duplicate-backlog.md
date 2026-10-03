@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## smartprint deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|SP001 / `dup-30bb854d9240b3a016777f8b6dfa75b16c0f1bf737f94d6e1f5362eb72b3c299`|`smartprint_tpu_tpugray_1000_175_p`<br>`smartprint_tpu_tpugrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-smartprint-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## sirayatech deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
