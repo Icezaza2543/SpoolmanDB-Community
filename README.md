@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 52,449
+* **Published records**: 52,368
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,9 +79,9 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 6,567 |
-| Color entries | 31,684 |
-| Compiled filament variants | 52,449 |
+| Source filament objects | 6,708 |
+| Color entries | 31,665 |
+| Compiled filament variants | 52,368 |
 | Source filaments with country of origin | 6,108 |
 | Source filaments with TDS/product links | 2,158 |
 | Source filaments with SDS links | 988 |
@@ -96,13 +96,13 @@ Counts in this block are generated from the current repository state. Run `pytho
 | Source weight metadata | Entries |
 | --- | ---: |
 | `spool_type: plastic` | 5,382 |
-| `spool_type: cardboard` | 2,050 |
+| `spool_type: cardboard` | 2,129 |
 | `spool_type: metal` | 0 |
-| `spool_type: refill` (legacy) | 64 |
+| `spool_type: refill` (legacy) | 124 |
 | `spool_type: unknow` (legacy) | 26 |
 | `spool_type: null` | 0 |
 | `spool_type` omitted | 276 |
-| Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 85 |
+| Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 145 |
 <!-- readme-snapshot:end -->
 
 ASEAN coverage uses the curated [ASEAN manufacturer registry](scripts/asean_manufacturers.json); it is never inferred from `country_of_origin`, which records manufacturing origin rather than brand location.
@@ -320,6 +320,12 @@ The [complete mappings and conflicts](docs/audits/2026-10-03-azurefilm-duplicate
 This **intentional breaking catalog migration** retires 49 exact duplicate IDs in 49 reviewed groups: 52,498 → 52,449 catalog records, with 37 tooling/decomposition groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
 
 The [complete mappings and conflicts](docs/audits/2026-10-03-elegoo-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-elegoo-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 160 official-evidence printing/document field changes and 10 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
+
+### overture duplicate migration (2026-10-03)
+
+This **intentional breaking catalog migration** retires 81 exact duplicate IDs in 81 reviewed groups: 52,449 → 52,368 catalog records, with 2 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
+
+The [complete mappings and conflicts](docs/audits/2026-10-03-overture-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-overture-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 0 official-evidence printing/document field changes and 4 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
 ## Terms and policy
 

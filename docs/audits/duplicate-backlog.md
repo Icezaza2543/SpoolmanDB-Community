@@ -45,6 +45,15 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## overture deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|OV014 / `dup-4dc70411fa661ded642ce1542cc3ac566cfa4a9d4ad6bfaf2509a4edb46a7f15`|`overture_abs_glowabsgreen_1000_175_c`<br>`overture_abs_glowgreen_1000_175_c`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-overture-duplicate-review.json)|
+|OV083 / `dup-6321b0a86399b6b15f11f4dc4f1454071e35125f57ab956e45bdcdbacf2f3ef7`|`overture_tpu_tpugray_1000_175_c`<br>`overture_tpu_tpugrey_1000_175_c`|Explicit owner deferral OV083: TPU Gray HEX9F9F9F vs Grey HEXE2E7E9 visibly differ; both cannot be bound to one current SKU. Keep both exact original records; current Matte Gray VFTGRY11-010058 is not sufficient proof.|[review](2026-10-03-overture-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## elegoo deferred groups
 
 Printing-evidence backlog: `elegoo_pla_bronzefilled_1000_175_c` and `elegoo_pla_marble_1000_175_c` retain their original survivor density 1.26, nozzle 210°C and bed 60°C. The ordinary PLA page mentions their abrasive additives but does not explicitly bind its technical table to these filled variants. Do not infer ordinary PLA density; reopen with exact filled-line TDS/product evidence. Wood Filled is separately bound to the current official PLA Wood specifications in the [review](2026-10-03-elegoo-duplicate-review.json).
