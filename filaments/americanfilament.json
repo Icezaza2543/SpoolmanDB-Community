@@ -531,124 +531,6 @@
       ]
     },
     {
-      "name": "American Filament Silk PLA {color_name}",
-      "material": "PLA",
-      "density": 1.24,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_weight": 220,
-          "spool_type": "plastic"
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp_range": [
-        205,
-        220
-      ],
-      "bed_temp_range": [
-        45,
-        60
-      ],
-      "finish": "glossy",
-      "country_of_origin": "US",
-      "colors": [
-        {
-          "name": "Amethyst Purple",
-          "hex": "ae8ac6",
-          "codes": [
-            "SILK_1KG_AMETHYST"
-          ]
-        },
-        {
-          "name": "Arctic White",
-          "hex": "e8e8e8",
-          "codes": [
-            "SILK_1KG_WHITE"
-          ]
-        },
-        {
-          "name": "Blue",
-          "hex": "1565c0",
-          "codes": [
-            "SILK_1KG_BLUE"
-          ]
-        },
-        {
-          "name": "Emerald Green",
-          "hex": "06de96",
-          "codes": [
-            "SILK_1KG_EMERALD"
-          ]
-        },
-        {
-          "name": "Graphite",
-          "hex": "4a4a4a",
-          "codes": [
-            "SILK_1KG_GRAPHITE"
-          ]
-        },
-        {
-          "name": "Neon Green",
-          "hex": "7edea2",
-          "codes": [
-            "SILK_1KG_NGREEN"
-          ]
-        },
-        {
-          "name": "Neon Orange",
-          "hex": "f6ba96",
-          "codes": [
-            "SILK_1KG_NORANGE"
-          ]
-        },
-        {
-          "name": "Neon Pink",
-          "hex": "ff96ba",
-          "codes": [
-            "SILK_1KG_NPINK"
-          ]
-        },
-        {
-          "name": "Purple",
-          "hex": "ba72ba",
-          "codes": [
-            "SILK_1KG_PURPLE"
-          ]
-        },
-        {
-          "name": "Red",
-          "hex": "de728a",
-          "codes": [
-            "SILK_1KG_RED"
-          ]
-        },
-        {
-          "name": "Rose Gold",
-          "hex": "c9877a",
-          "codes": [
-            "SILK_1KG_ROSE"
-          ]
-        },
-        {
-          "name": "Teal",
-          "hex": "2ad2d2",
-          "codes": [
-            "SILK_1KG_TEAL"
-          ]
-        },
-        {
-          "name": "Yellow",
-          "hex": "ffd700",
-          "codes": [
-            "SILK_1KG_YELLOW"
-          ]
-        }
-      ]
-    },
-    {
       "name": "American Filament Lithophane PLA {color_name}",
       "material": "PLA",
       "density": 1.24,
@@ -1000,60 +882,399 @@
       "colors": [
         {
           "name": "Amethyst Purple",
-          "hex": "8D65C7"
-        },
-        {
-          "name": "Arctic White",
-          "hex": "FFFFFF"
-        },
-        {
-          "name": "Blue",
-          "hex": "0066D9"
-        },
-        {
-          "name": "Emerald Green",
-          "hex": "0CCF81"
-        },
-        {
-          "name": "Graphite",
-          "hex": "000000"
-        },
-        {
-          "name": "Neon Green",
-          "hex": "62E480"
-        },
-        {
-          "name": "Neon Orange",
-          "hex": "F6A25C"
-        },
-        {
-          "name": "Neon Pink",
-          "hex": "F092B3"
-        },
-        {
-          "name": "Purple",
-          "hex": "CE92CE"
-        },
-        {
-          "name": "Red",
-          "hex": "FC8397"
-        },
-        {
-          "name": "Rose Gold",
-          "hex": "E69E7A"
-        },
-        {
-          "name": "Teal",
-          "hex": "00B4BC"
-        },
-        {
-          "name": "Yellow",
-          "hex": "EFDC4C"
+          "hex": "8D65C7",
+          "codes": [
+            "SILK_1KG_AMETHYST"
+          ]
         }
       ],
       "extruder_temp_range": [
-        190,
-        230
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Arctic White",
+          "hex": "FFFFFF",
+          "codes": [
+            "SILK_1KG_WHITE"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Blue",
+          "hex": "0066D9",
+          "codes": [
+            "SILK_1KG_BLUE"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Emerald Green",
+          "hex": "0CCF81",
+          "codes": [
+            "SILK_1KG_EMERALD"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Graphite",
+          "hex": "000000",
+          "codes": [
+            "SILK_1KG_GRAPHITE"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Neon Green",
+          "hex": "62E480",
+          "codes": [
+            "SILK_1KG_NGREEN"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Neon Orange",
+          "hex": "F6A25C",
+          "codes": [
+            "SILK_1KG_NORANGE"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Neon Pink",
+          "hex": "F092B3",
+          "codes": [
+            "SILK_1KG_NPINK"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "CE92CE",
+          "codes": [
+            "SILK_1KG_PURPLE"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "FC8397",
+          "codes": [
+            "SILK_1KG_RED"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Rose Gold",
+          "hex": "E69E7A",
+          "codes": [
+            "SILK_1KG_ROSE"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Teal",
+          "hex": "00B4BC",
+          "codes": [
+            "SILK_1KG_TEAL"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Yellow",
+          "hex": "EFDC4C",
+          "codes": [
+            "SILK_1KG_YELLOW"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        235
       ],
       "bed_temp_range": [
         50,
