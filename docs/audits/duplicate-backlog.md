@@ -28,3 +28,19 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 - Nebula malformed-evidence traceback remains a tooling issue. Nebula Silk “Silk Silk” names and505 out-of-scope OFD variants remain a separate evidence/naming review, not automatically deferred duplicate groups. [Existing Nebula audit](2026-10-03-nebula-duplicate-review.md#preserved-backlog-not-reviewed-for-removal).
 - Paramount 3D manufacturer-prefix cleanup is separately deferred: approved older prefixed survivor names/IDs remain unchanged. [Reviewed migration](2026-10-03-paramount3d-duplicate-review.md).
 - Previously recorded metadata/evidence conflicts remain in [coverage-backlog.md](../coverage-backlog.md) and the individual brand audits. Deferred metadata is not permission to modify it in this loop.
+
+## AzureFilm deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|AF051 / `dup-7f44091bd2c2293070157b3efce55144258069316f8f5993b5aa3673efbe8ee6`|`azurefilm_pla_mattehsblack_1000_175_p`<br>`azurefilm_pla_mattehsplablack_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+|AF052 / `dup-285f0a6649135aaf28429108fc112860df53e0a5fffbffd90f56ba5b4ef07a3a`|`azurefilm_pla_mattehsblue_1000_175_p`<br>`azurefilm_pla_mattehsplablue_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+|AF053 / `dup-b3dc1bac9b53cc26222d57c64fc036e7c6b4a5ad8d87e79e0d4c641b0121cd04`|`azurefilm_pla_mattehsbordeaux_1000_175_p`<br>`azurefilm_pla_mattehsplabordeaux_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+|AF054 / `dup-2af7be97eb338059760f3cde01f9c04ba8e59cd7f30127beac17f680f1383df6`|`azurefilm_pla_mattehslime_1000_175_p`<br>`azurefilm_pla_mattehsplalime_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+|AF055 / `dup-704595e937257a1223e60a78e5bec31a7287db49a8902f5ff6258e1256820f02`|`azurefilm_pla_mattehsmint_1000_175_p`<br>`azurefilm_pla_mattehsplamint_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+|AF056 / `dup-d60901d911794e51fb95373a84491743c024db3fb24f1b2d964f33ef9e959927`|`azurefilm_pla_mattehsoff-white_1000_175_p`<br>`azurefilm_pla_mattehsplaoff-white_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+|AF057 / `dup-56b44cdab4af07af4bcbd0113d6cb71da7137d26b0ba57f9f8ebffb1d924d4b9`|`azurefilm_pla_mattehsplarosy_1000_175_p`<br>`azurefilm_pla_mattehsrosy_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+|AF058 / `dup-5d3f76d17092e0376d881a93c47a3a4218eff9ea954967a0cd079b46fac1ffb7`|`azurefilm_pla_mattehsplasage_1000_175_p`<br>`azurefilm_pla_mattehssage_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+|AF059 / `dup-037d58f2258e645378e82715b1f5212e5b4fd665be2fbd0f8be977924f8e4498`|`azurefilm_pla_mattehsplawhite_1000_175_p`<br>`azurefilm_pla_mattehswhite_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-azurefilm-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
