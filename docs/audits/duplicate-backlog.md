@@ -45,6 +45,17 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## arianeplast deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|AR001 / `dup-0cc758a2422675faf1a34f89902e166bd883c0740f9e96524a9e4c9593a88424`|`arianeplast_pla_plagray_2300_175_p`<br>`arianeplast_pla_plagrey_2300_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-arianeplast-duplicate-review.json)|
+|AR002 / `dup-5eb2b022938e335c640dc8fb90de1d117cf46d7066fd63a363cb63eac4862c1b`|`arianeplast_pla_plagray_1000_285_p`<br>`arianeplast_pla_plagrey_1000_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-arianeplast-duplicate-review.json)|
+|AR003 / `dup-77d9d265bd25eaffeb613674ca293885b09b8ae858b2bef12f3740dfcb87efae`|`arianeplast_pla_plagray_1000_175_p`<br>`arianeplast_pla_plagrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-arianeplast-duplicate-review.json)|
+|AR004 / `dup-9c695ad8824644b7e7fa83dda79b27ca8b8fd54c52a23d15a2fc4ae161c869d8`|`arianeplast_pla_plagray_2300_285_p`<br>`arianeplast_pla_plagrey_2300_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-arianeplast-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## aceaddity deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
