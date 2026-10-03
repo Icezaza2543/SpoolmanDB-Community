@@ -45,6 +45,16 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## 22network deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|NW012 / `dup-66560422ca66e39f3865d9bf9b5edf396af2df1bc8384793801a743fe0102985`|`22network_pla_silkdualblue/green_1000_175_p`<br>`22network_pla_silkpladualbluegreen_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-22network-duplicate-review.json)|
+|NW013 / `dup-679b8ea7b3e4702b4abfff55f811edd228fdd4154e62a0bc213a0d5285ed9c4a`|`22network_pla_silkdualpurple/gold_1000_175_p`<br>`22network_pla_silkpladualpurplegold_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-22network-duplicate-review.json)|
+|NW014 / `dup-a8d5b76081b35eeb925e91403b46c5ccf58887eb5c0dec265e5fd60c29a047a7`|`22network_pla_silkdualred/gold_1000_175_p`<br>`22network_pla_silkpladualredgold_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-22network-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## americanfilament deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
