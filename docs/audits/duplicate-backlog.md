@@ -45,6 +45,15 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## flashforge deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|FF001 / `dup-15c8883805cac462222e42d5763dbfab2f54df800525bb26ddd39e3ed8c276ed`|`flashforge_pla_pla-gray_500_175_p`<br>`flashforge_pla_pla-grey_500_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-flashforge-duplicate-review.json)|
+|FF002 / `dup-dc7234d241e0e6efd95b5b3e2d225d674862404f4400033bb3902ca3f5a2fc4f`|`flashforge_pla_pla-gray_1000_175_p`<br>`flashforge_pla_pla-grey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-flashforge-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## creality deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
