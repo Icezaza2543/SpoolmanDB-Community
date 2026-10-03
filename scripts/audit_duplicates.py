@@ -1,7 +1,7 @@
 """Read-only duplicate proposals; only a later owner review authorizes apply."""
 
 import argparse
-from collections import Counter
+from collections import Counter, defaultdict
 import json
 from pathlib import Path
 import re
@@ -22,6 +22,13 @@ def brand_filename(brand):
     return brand + ".json"
 
 
+def official_line_tokens(name, manufacturer, material):
+    """Compare product names without deleting the material or its position."""
+    if material == "PETG":
+        name = re.sub(r"\bPET[\s-]+G\b", "PETG", name, flags=re.IGNORECASE)
+    return normalize_name(name, manufacturer)
+
+
 def audit_brand(root, brand, upstream_ref=None, official_names=None, upstream_exceptions=None):
     filename = brand_filename(brand)
     all_records = catalog_records(root)
@@ -34,6 +41,13 @@ def audit_brand(root, brand, upstream_ref=None, official_names=None, upstream_ex
         upstream_sha = git_output(root, "rev-parse", "--verify", f"{upstream_ref}^{{commit}}").strip()
         upstream_families = {(row["record"]["manufacturer"], row["template"]) for row in catalog_records(root, upstream_sha)}
     family_counts = Counter((row["filename"], row["definition_index"]) for row in records)
+    family_axes = defaultdict(lambda: {axis: set() for axis in ("weight", "diameter", "color")})
+    for row in records:
+        for axis in ("weight", "diameter", "color"):
+            family_axes[(row["filename"], row["definition_index"])][axis].add(row[axis + "_index"])
+    shapes = {key: {"source_file": key[0], "definition_index": key[1],
+                   **{axis + "s": len(values) for axis, values in axes.items()},
+                   "compiled_records": family_counts[key]} for key, axes in family_axes.items()}
     groups = []
     official_names, upstream_exceptions = official_names or {}, upstream_exceptions or {}
     for gid, rows in sorted(candidate_groups(records).items()):
@@ -55,18 +69,35 @@ def audit_brand(root, brand, upstream_ref=None, official_names=None, upstream_ex
                 from scripts.retired_ids import valid_source
                 if not isinstance(official, dict) or not valid_source(official.get("source")) or not isinstance(official.get("name"), str):
                     raise ValueError("official name comparison requires manufacturer source")
-                official_match = normalize_name(row["line"], rec["manufacturer"], rec["material"]) == normalize_name(official["name"], rec["manufacturer"], rec["material"])
+                official_match = official_line_tokens(row["line"], rec["manufacturer"], rec["material"]) == official_line_tokens(official["name"], rec["manufacturer"], rec["material"])
             proposals.append(((int(upstream and not exception), int(not has_prefix), int(official_match), family_counts[(row["filename"], row["definition_index"])]), row))
-        best = max(score for score, _ in proposals)
-        winners = [row for score, row in proposals if score == best]
+        # Evaluate the priority rules explicitly. Name evidence (R3) cannot be
+        # outweighed by a larger weight x diameter x color expansion (R4).
+        contenders, deciding_rule = proposals, None
+        for index in range(4):
+            best = max(score[index] for score, _ in contenders)
+            narrowed = [(score, row) for score, row in contenders if score[index] == best]
+            if len(narrowed) < len(contenders):
+                deciding_rule = index + 1
+            contenders = narrowed
+            if len(contenders) == 1:
+                break
+        winners = [row for _, row in contenders]
         survivor = winners[0]["record"]["id"] if len(winners) == 1 else None
+        cartesian_warning = None
+        if survivor and deciding_rule == 4:
+            shape = shapes[(winners[0]["filename"], winners[0]["definition_index"])]
+            if sum(shape[axis] > 1 for axis in ("weights", "diameters", "colors")) >= 2:
+                cartesian_warning = {"message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+                                     "definitions": [shape]}
         conflicts = {}
         for field in rows[0]["record"]:
             if field not in ("id", "name") and any(row["record"][field] != rows[0]["record"][field] for row in rows[1:]):
                 conflicts[field] = {row["record"]["id"]: row["record"][field] for row in rows}
         groups.append({"group_id": gid, "ids": [row["record"]["id"] for row in rows], "proposed_survivor": survivor,
+                       "survivor_rule": deciding_rule if survivor else None, "rule4_cartesian_warning": cartesian_warning,
                        "proposed_retirements": {row["record"]["id"]: survivor for row in rows if survivor and row["record"]["id"] != survivor},
-                       "records": [{**row["record"], "key": row["key"], "template": row["template"], "source_color": row["color"], "source_line": row["line"], "source_file": row["filename"], "upstream": (row["record"]["manufacturer"], row["template"]) in upstream_families} for row in rows],
+                       "records": [{**row["record"], "key": row["key"], "template": row["template"], "source_color": row["color"], "source_line": row["line"], "source_file": row["filename"], "source_definition": shapes[(row["filename"], row["definition_index"])], "upstream": (row["record"]["manufacturer"], row["template"]) in upstream_families} for row in rows],
                        "metadata_conflicts": conflicts, "evidence": [], "approved": False,
                        "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied."})
     return {"version": 1, "brand": brand, "digest": catalog_digest(root), "upstream_sha": upstream_sha,
@@ -79,6 +110,10 @@ def markdown_report(report):
              f"Upstream: {report['upstream_sha'] or 'not provided; upstream preference unresolved'}", f"Snapshot: {report['digest']}", ""]
     for group in report["groups"]:
         lines += [f"## {group['group_id']}", "", f"Proposed survivor: {group['proposed_survivor'] or 'OWNER SELECTION REQUIRED'}", ""]
+        lines += [f"Deciding survivor rule: {group['survivor_rule'] or 'tie; owner selection required'}", ""]
+        if group["rule4_cartesian_warning"]:
+            lines += ["WARNING: " + group["rule4_cartesian_warning"]["message"],
+                      "```json", json.dumps(group["rule4_cartesian_warning"]["definitions"], indent=2), "```", ""]
         lines += [f"- `{record['id']}` — {record['name']} / {record['weight']} g / {record['diameter']} mm / {record['spool_type']} / refill={record['is_refill']} / upstream={record['upstream']}" for record in group["records"]]
         lines += ["", "Proposed retirements: `" + json.dumps(group["proposed_retirements"], ensure_ascii=False) + "`", "",
                   "Metadata conflicts (older values/evidence retained here; unresolved by default):", "```json", json.dumps(group["metadata_conflicts"], ensure_ascii=False, indent=2), "```", "", group["notes"], ""]

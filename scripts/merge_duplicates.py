@@ -187,16 +187,20 @@ def main():
     parser.add_argument("--review", type=Path, help="Owner-reviewed JSON; without it, only show audit proposals")
     parser.add_argument("--exclude", action="append", default=[], help="Exact group ID (repeatable)")
     parser.add_argument("--upstream-ref", help="Already fetched upstream ref for unreviewed dry-run")
+    parser.add_argument("--evidence", type=Path, help="Official-name/upstream-exception evidence for unreviewed dry-run only")
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
     try:
         if not args.review:
             if args.apply:
                 raise ValueError("--apply requires --review; candidates alone never authorize retirement")
-            report = audit_brand(args.root, args.brand, args.upstream_ref)
+            evidence = parse_json_without_duplicates(args.evidence.read_text(encoding="utf-8")) if args.evidence else {}
+            report = audit_brand(args.root, args.brand, args.upstream_ref, **evidence)
             print("DRY RUN: unreviewed candidate proposals only")
             print(json.dumps(report, indent=2, ensure_ascii=False))
             return
+        if args.evidence:
+            raise ValueError("--evidence is for unreviewed dry-run; include evidence in the approved --review instead")
         review = parse_json_without_duplicates(args.review.read_text(encoding="utf-8"))
         plan = plan_merge(args.root, args.brand, review, args.exclude)
         plan["exclude"] = args.exclude

@@ -91,6 +91,63 @@ def test_pinned_upstream_family_wins(catalog):
     assert group["proposed_survivor"] == next(rec["id"] for rec in group["records"] if rec["template"].startswith("Acme"))
 
 
+def premium_catalog(root, material):
+    source = root / "filaments/acme.json"
+    definitions = json.loads(source.read_text())["filaments"]
+    larger = {**definitions[0], "name": f"{material} Premium {{color_name}}", "material": material}
+    smaller = {**definitions[1], "name": f"Premium {material} {{color_name}}", "material": material,
+               "colors": [{"name": "Gray", "hex": "999999", "codes": ["premium-gray-1kg"]}]}
+    source.write_text(json.dumps({"manufacturer": "Acme", "filaments": [larger, smaller]}))
+    official_name = "Premium PET-G" if material == "PETG" else "Premium PLA"
+    return {"official_names": {definition["name"]: {
+        "name": official_name, "source": "https://manufacturer.example/premium"}
+        for definition in (larger, smaller)}}
+
+
+@pytest.mark.parametrize("material,expected", [
+    ("PLA", "acme_pla_premiumplagray_1000_175_p"),
+    ("PETG", "acme_petg_premiumpetggray_1000_175_p"),
+])
+def test_rule3_keeps_material_position_and_beats_cartesian_record_count(catalog, material, expected):
+    evidence = premium_catalog(catalog, material)
+    group = module("audit_duplicates").audit_brand(catalog, "acme", **evidence)["groups"][0]
+    assert group["proposed_survivor"] == expected
+    assert group["survivor_rule"] == 3
+    assert group["rule4_cartesian_warning"] is None
+
+
+def test_rule4_reports_cartesian_dimensions_instead_of_hiding_inflated_count(catalog):
+    premium_catalog(catalog, "PLA")
+    audit = module("audit_duplicates")
+    report = audit.audit_brand(catalog, "acme")
+    group = report["groups"][0]
+    assert group["proposed_survivor"] == "acme_pla_plapremiumgrey_1000_175_p"
+    assert group["survivor_rule"] == 4
+    warning = group["rule4_cartesian_warning"]
+    assert warning["definitions"] == [{"source_file": "acme.json", "definition_index": 0,
+        "weights": 2, "diameters": 2, "colors": 2, "compiled_records": 8}]
+    assert "Cartesian" in audit.markdown_report(report)
+
+
+@pytest.mark.parametrize("material,expected", [
+    ("PLA", "acme_pla_premiumplagray_1000_175_p"),
+    ("PETG", "acme_petg_premiumpetggray_1000_175_p"),
+])
+def test_unreviewed_merge_dry_run_uses_official_name_evidence_without_writes(catalog, material, expected):
+    evidence = premium_catalog(catalog, material)
+    evidence_path = catalog / "name-evidence.json"
+    evidence_path.write_text(json.dumps(evidence))
+    before = {path: path.read_bytes() for path in catalog.rglob("*.json")}
+    result = subprocess.run([sys.executable, "scripts/merge_duplicates.py", "--root", str(catalog),
+        "--brand", "acme", "--evidence", str(evidence_path)], capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    assert result.stdout.startswith("DRY RUN: unreviewed candidate proposals only")
+    group = json.loads(result.stdout[result.stdout.index("{"):])["groups"][0]
+    assert group["proposed_survivor"] == expected
+    assert group["survivor_rule"] == 3
+    assert before == {path: path.read_bytes() for path in catalog.rglob("*.json")}
+
+
 def test_merge_preserves_partial_matrix_unique_colors_and_compiled_metadata(catalog):
     review, old, keep = review_for(catalog)
     records = module("duplicate_catalog").catalog_records(catalog)
