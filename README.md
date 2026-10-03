@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 53,429
+* **Published records**: 53,084
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,12 +79,12 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 5,048 |
-| Color entries | 31,190 |
-| Compiled filament variants | 53,429 |
-| Source filaments with country of origin | 4,589 |
-| Source filaments with TDS/product links | 1,137 |
-| Source filaments with SDS links | 382 |
+| Source filament objects | 5,431 |
+| Color entries | 31,502 |
+| Compiled filament variants | 53,084 |
+| Source filaments with country of origin | 4,972 |
+| Source filaments with TDS/product links | 1,520 |
+| Source filaments with SDS links | 765 |
 | Manufacturer product code/ID entries | 8,182 |
 | EAN/GTIN entries | 2,194 |
 | ASEAN manufacturer coverage | 24 brands / 147 source filaments |
@@ -95,7 +95,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 4,323 |
+| `spool_type: plastic` | 4,698 |
 | `spool_type: cardboard` | 1,658 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 34 |
@@ -260,6 +260,14 @@ This is an **intentional breaking catalog migration** approved by the owner for 
 PETG Basic remains a separate family: all ten of its records are untouched. The unique `Kingroon PLA` Grey, Red and Blue records retain their original IDs and metadata, as do all refill variants. No other brand is included.
 
 The [reviewed decisions and original audit](docs/audits/2026-10-03-kingroon-duplicate-review.json) retain unresolved conflicts: PLA Black/White density 1.23 versus 1.24 g/cm³ and nozzle 190–210 versus 190–230 °C; PETG White HEX `FFFFFF` versus `F5F5F5`. Survivor values are kept. The official PLA Basic page and general filament guide are not yet bound to these historical variants or their production lots, so they do not authorize changing those values. The registry preserves each retired record's exact original baseline key for audit and exact reinstatement.
+
+### Nebula duplicate migration (2026-10-03)
+
+This is an **intentional breaking catalog migration** approved for groups N001–N345. It retires 345 matched OFD `PLA Premium` / `PETG Premium` records, reducing the compiled catalog from 53,429 to 53,084 and Nebula from 1,623 to 1,278 records. The existing `Premium PLA` / `Premium PETG` IDs survive by Rule 3, following Nebula's official `PREMIUM PLA` / `PREMIUM PET-G` product names; Cartesian record counts do not decide the direction. No new IDs are created, and all survivor and unique identities and metadata stay unchanged.
+
+The [complete list of 345 retired IDs and their survivors](docs/audits/2026-10-03-nebula-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-nebula-duplicate-review.json) retain each original baseline key, source record and unresolved conflict. All 773 Nebula SKU/code bindings are preserved. PETG page-versus-TDS ranges and PETG 5kg density/temperature conflicts remain unresolved; survivor values are kept because no matching newer-lot evidence establishes a correction.
+
+All 505 non-matching or otherwise out-of-scope OFD variants remain untouched, including all 2.85mm and Silk records. No other brand is changed. Retired IDs disappear from catalog lookups; existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect those lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves.
 
 This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
 
