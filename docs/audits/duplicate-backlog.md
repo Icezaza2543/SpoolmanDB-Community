@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## sirayatech deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|ST001 / `dup-e8f507721d490796752bf5cccef4e230205242341cae0ad8b38ffb5871318d98`|`sirayatech_petg-cf_cfhf-black_1000_175_p`<br>`sirayatech_petg-cf_cfhfblack_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sirayatech-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## professionallab deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
