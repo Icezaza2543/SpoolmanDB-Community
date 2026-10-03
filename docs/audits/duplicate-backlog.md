@@ -45,6 +45,15 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## creality deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|CR001 / `dup-eb4c14f13d80d3665089641be27c68030271374c8c4c1a3006a86e9df11c8c04`|`creality_pla_plagray_1000_175_r`<br>`creality_pla_plagrey_1000_175_r`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-creality-duplicate-review.json)|
+|CR002 / `dup-edce4abdd5cab29b4fd8105360be2efa3008314921926c74659a6672e86c2fd2`|`creality_pla_plagray_1000_175_p`<br>`creality_pla_plagrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-creality-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## alzament deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |

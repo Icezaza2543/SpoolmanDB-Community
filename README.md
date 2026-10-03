@@ -567,6 +567,12 @@ This **intentional breaking catalog migration** retires 1 exact duplicate IDs in
 
 The [complete mappings and conflicts](docs/audits/2026-10-03-alzament-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-alzament-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 2 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
+### creality duplicate audit (2026-10-03)
+
+All 2 candidate groups are deferred for identity or tooling review. No migration was applied; the catalog remains at 51,702 records. Original IDs, compiled metadata, identifiers, packaging and tare are unchanged.
+
+The [review](docs/audits/2026-10-03-creality-duplicate-review.md) and [JSON audit](docs/audits/2026-10-03-creality-duplicate-review.json) retain the complete candidates, evidence and conflicts; all blockers are recorded in the [running backlog](docs/audits/duplicate-backlog.md).
+
 ## Terms and policy
 
 This repository separates the project license from community and data-use expectations:
