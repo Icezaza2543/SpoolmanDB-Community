@@ -45,6 +45,15 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## dasfilament deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|DA031 / `dup-b463522edccf59e7a62f6261ccfd03439a99445c2ac18bdae691181ac733d490`|`dasfilament_pla_dasfilamentgrn_1000_175_c`<br>`dasfilament_pla_plagrn_1000_175_c`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-dasfilament-duplicate-review.json)|
+|DA050 / `dup-ed6c288ca4b209532175ec18d5b4446c6da897b63ff5b96e0701b266beb12cc4`|`dasfilament_pla_platoms3dinfinityblue_1000_175_c`<br>`dasfilament_pla_toms3dinfinityblue_1000_175_c`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-dasfilament-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## sunlu deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
