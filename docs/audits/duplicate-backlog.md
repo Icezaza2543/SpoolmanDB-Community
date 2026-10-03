@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## aceaddity deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|AC001 / `dup-215b581197e595d71341f5362d3d64aec29209bdbcedc619a130894a51ebb220`|`aceaddity_pla_marblemarble_1000_175_p`<br>`aceaddity_pla_marbleplamarble_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-aceaddity-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## eryone deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
