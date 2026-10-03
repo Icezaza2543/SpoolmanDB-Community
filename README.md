@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 52,799
+* **Published records**: 52,689
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,11 +79,11 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 5,739 |
-| Color entries | 31,484 |
-| Compiled filament variants | 52,799 |
-| Source filaments with country of origin | 5,280 |
-| Source filaments with TDS/product links | 1,822 |
+| Source filament objects | 6,075 |
+| Color entries | 31,681 |
+| Compiled filament variants | 52,689 |
+| Source filaments with country of origin | 5,616 |
+| Source filaments with TDS/product links | 2,158 |
 | Source filaments with SDS links | 988 |
 | Manufacturer product code/ID entries | 8,192 |
 | EAN/GTIN entries | 2,194 |
@@ -95,7 +95,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 4,746 |
+| `spool_type: plastic` | 5,075 |
 | `spool_type: cardboard` | 1,872 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 64 |
@@ -292,6 +292,14 @@ This is an **intentional breaking catalog migration** approved for F001–F120: 
 The [complete list of 120 retired IDs and existing survivors](docs/audits/2026-10-03-fillamentum-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-fillamentum-duplicate-review.json) retain each byte-identical original baseline key, all four full source definitions, compiled records and official evidence. All survivor metadata is unchanged, including packaging/spool/tare; four unique PLA Lilac records and every other manufacturer's compiled data are untouched. Codes/EAN bindings and unique values remain zero, with no transfers or losses.
 
 Temperature-profile, density-document and 210/230/250 g tare conflicts remain documented and unresolved; 16 HEX differences are case-only. The current shop confirms 41 matching weight/diameter/color combinations, not the entire historical Cartesian matrix. The remaining 79 groups are current-unconfirmed, not declared unavailable or removed as obsolete. This approval authorizes duplicate retirement only, not new 1 kg variants, name changes or packaging corrections.
+
+### Devil Design duplicate migration (2026-10-03)
+
+This is an **intentional breaking catalog migration** approved for 110 duplicate groups, excluding D031–D035. It retires exactly 110 IDs, reducing the catalog from 52,799 to 52,689 and Devil Design from 608 to 498 records; the registry grows from 635 to 745 entries. Existing upstream-preferred IDs survive by Rule 1. There are no new IDs or changed/rekeyed survivor identities, metadata updates, or SKU/EAN transfers or losses.
+
+The [complete list of 110 retired IDs and existing survivors](docs/audits/2026-10-03-devildesign-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-devildesign-duplicate-review.json) preserve original baseline keys, source definitions, compiled records, official evidence and unresolved conflicts. D031–D035 (Galaxy PETG line/color decomposition) remain deferred in the [running duplicate backlog](docs/audits/duplicate-backlog.md); all ten IDs and 378 other unique/out-of-scope Devil Design records are untouched. Survivor printing values, HEX, packaging and tare are retained.
+
+Retired IDs disappear from the published catalog. Existing Spoolman spools retain their imported local data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must follow the exact mappings themselves; rollback requires exact original-key reinstatement and baseline re-enrollment. This approval does not authorize retirement of Galaxy PETG, new variants, naming changes or packaging corrections.
 
 This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
 
