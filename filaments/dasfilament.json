@@ -590,131 +590,38 @@
       ],
       "colors": [
         {
-          "name": "Alu-Silber",
-          "hex": "C5C5BF"
-        },
-        {
-          "name": "Anthrazit V2",
-          "hex": "6A6C6E"
-        },
-        {
-          "name": "Beige",
-          "hex": "E9D1C1"
-        },
-        {
-          "name": "Blau",
-          "hex": "0066D9"
-        },
-        {
-          "name": "Burnt Copper",
-          "hex": "C66547"
-        },
-        {
-          "name": "Feuerrot",
-          "hex": "FF2C29"
-        },
-        {
-          "name": "Flammschutz Schwarz",
-          "hex": "000000"
-        },
-        {
-          "name": "Grasgrün",
-          "hex": "06B100"
-        },
-        {
-          "name": "Leuchtorange",
-          "hex": "EA5E1A"
-        },
-        {
-          "name": "Lila",
-          "hex": "D93382"
-        },
-        {
-          "name": "Maisgelb",
-          "hex": "E8BD00"
-        },
-        {
-          "name": "Melonengelb",
-          "hex": "FF9A14"
-        },
-        {
-          "name": "Metallic Blau",
-          "hex": "0353BA"
-        },
-        {
-          "name": "Militär-Grün",
-          "hex": "6E8451"
-        },
-        {
-          "name": "Natur",
-          "hex": "D9D8DE",
-          "translucent": true
-        },
-        {
-          "name": "Opalgrün",
-          "hex": "008059"
-        },
-        {
           "name": "RAL 7016",
           "hex": "55657C"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        70,
+        90
+      ],
+      "country_of_origin": "DE"
+    },
+    {
+      "name": "PETG {color_name}",
+      "material": "PETG",
+      "density": 1.29,
+      "weights": [
         {
-          "name": "Rubinrot",
-          "hex": "AC1A17"
-        },
-        {
-          "name": "Saphirblau",
-          "hex": "0353BA"
-        },
-        {
-          "name": "Schiefergrau",
-          "hex": "5A696C"
-        },
-        {
-          "name": "Schwarz",
-          "hex": "000000"
-        },
-        {
-          "name": "Silber",
-          "hex": "A8B0BD"
-        },
-        {
-          "name": "Sturmgrau",
-          "hex": "808080"
-        },
-        {
-          "name": "Transluzent Neongelb",
-          "hex": "E4FF33",
-          "translucent": true
-        },
-        {
-          "name": "Transluzent Neongrün",
-          "hex": "70FA00",
-          "translucent": true
-        },
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Transluzent Wassergrün",
           "hex": "98FBCB",
           "translucent": true
-        },
-        {
-          "name": "Transparent Blau",
-          "hex": "0353BA",
-          "translucent": true
-        },
-        {
-          "name": "Transparent Neongrün",
-          "hex": "06B100",
-          "translucent": true
-        },
-        {
-          "name": "Transparent Rot",
-          "hex": "AC1A17",
-          "translucent": true
-        },
-        {
-          "name": "Weiß",
-          "hex": "FFFFFF"
         }
       ],
       "extruder_temp_range": [
@@ -806,130 +713,211 @@
       ],
       "colors": [
         {
-          "name": "Anthrazit V2",
-          "hex": "6A6C6E"
-        },
-        {
           "name": "Blue Pearl",
           "hex": "000000"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "DE"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Bronze",
-          "hex": "805F3C"
-        },
-        {
-          "name": "Feuerrot",
-          "hex": "EC0000"
-        },
-        {
-          "name": "Gold V2",
-          "hex": "AF7D00"
-        },
-        {
-          "name": "Grasgrün",
-          "hex": "26A648"
-        },
-        {
-          "name": "Grau",
-          "hex": "A2AAAD"
-        },
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Grün",
           "hex": "7FE200"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "DE"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Grüngold",
           "hex": "686751"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "DE"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Himmelblau",
-          "hex": "0099E6"
-        },
-        {
-          "name": "Kastanienbraun",
-          "hex": "9A491A"
-        },
-        {
-          "name": "Kirschrot",
-          "hex": "EC0000"
-        },
-        {
-          "name": "Königsblau",
-          "hex": "0353BA"
-        },
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Lavendel",
           "hex": "D9D5EA"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "DE"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Magenta",
-          "hex": "F14147"
-        },
-        {
-          "name": "Metallic Rot",
-          "hex": "AC1A17"
-        },
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Multicolor Galaxy",
           "hex": "0066D9"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "DE"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Multicolor Polarlicht",
           "hex": "97D7D0"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "DE"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Natur",
-          "hex": "DFDFD3"
-        },
-        {
-          "name": "Neonorange",
-          "hex": "FF7A33"
-        },
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Pfefferminze",
           "hex": "6FEEDB"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        70
+      ],
+      "country_of_origin": "DE"
+    },
+    {
+      "name": "PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
         {
-          "name": "Reinorange",
-          "hex": "FF5F2E"
-        },
-        {
-          "name": "Schwarz",
-          "hex": "000000"
-        },
-        {
-          "name": "Silber",
-          "hex": "C5C5BF"
-        },
-        {
-          "name": "Sonnengelb",
-          "hex": "FADB24"
-        },
-        {
-          "name": "Tannengrün",
-          "hex": "02776F"
-        },
-        {
-          "name": "Thermo-Rot",
-          "hex": "EC0000"
-        },
-        {
-          "name": "Transluzent-Blau",
-          "hex": "0078BF",
-          "translucent": true
-        },
-        {
-          "name": "Transluzent-Grün",
-          "hex": "97D7D0",
-          "translucent": true
-        },
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Vanille",
           "hex": "FFF5B5"
-        },
-        {
-          "name": "Weiß",
-          "hex": "FFFFFF"
         }
       ],
       "extruder_temp_range": [
