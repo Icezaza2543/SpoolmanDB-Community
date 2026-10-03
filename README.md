@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 52,294
+* **Published records**: 52,239
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -79,10 +79,10 @@ SpoolmanDB Community introduces several structural, validation, and metadata imp
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 6,900 |
-| Color entries | 31,748 |
-| Compiled filament variants | 52,294 |
-| Source filaments with country of origin | 6,300 |
+| Source filament objects | 7,061 |
+| Color entries | 31,773 |
+| Compiled filament variants | 52,239 |
+| Source filaments with country of origin | 6,461 |
 | Source filaments with TDS/product links | 2,350 |
 | Source filaments with SDS links | 988 |
 | Manufacturer product code/ID entries | 8,202 |
@@ -95,7 +95,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 5,497 |
+| `spool_type: plastic` | 5,658 |
 | `spool_type: cardboard` | 2,201 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 124 |
@@ -338,6 +338,12 @@ The [complete mappings and conflicts](docs/audits/2026-10-03-prusament-duplicate
 All 68 candidate groups are deferred for identity or line/color-decomposition review. No migration was applied: the catalog remains at 52,294 records, and all Print With Smile IDs, compiled metadata and identifiers are unchanged.
 
 The [review and conflicts](docs/audits/2026-10-03-printwithsmile-duplicate-review.md) and [JSON audit](docs/audits/2026-10-03-printwithsmile-duplicate-review.json) retain the original source definitions and keys. The [running backlog](docs/audits/duplicate-backlog.md) lists every preserved group and its blocker.
+
+### gizmodorks duplicate migration (2026-10-03)
+
+This **intentional breaking catalog migration** retires 55 exact duplicate IDs in 55 reviewed groups: 52,294 → 52,239 catalog records, with 10 tooling/identity groups deferred. No new IDs or changed/rekeyed survivor/unique identities are introduced. Packaging and tare are unchanged.
+
+The [complete mappings and conflicts](docs/audits/2026-10-03-gizmodorks-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-gizmodorks-duplicate-review.json) retain each original baseline key, source definition and exact metadata/identifier decision. This commit lists 165 official-evidence printing/document field changes and 0 exact-target identifier transfers; unrelated variants are unchanged and unique identifier values are preserved. Existing Spoolman spools retain local data; Spoolman does not follow the retirement registry automatically.
 
 ## Terms and policy
 

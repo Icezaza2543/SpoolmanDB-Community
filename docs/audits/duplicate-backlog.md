@@ -45,6 +45,23 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## gizmodorks deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|GD023 / `dup-b26446dff2b7b8d0cdbf50080a4c0cb013c224c3146571f5ffee32f17340d194`|`gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p`<br>`gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD024 / `dup-f815d2c1c0e5156990e48ca806a882ee9f3a8061593623718e0c77f73156f8e8`|`gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p`<br>`gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD025 / `dup-950926a18e44b4aafbbcd276945bd21074c31790528ae8c7905c34ff1ebc7c5b`|`gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p`<br>`gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD026 / `dup-90e32272af6acda9913f6cc08222b2845871e741c85056fc8abc498a12b0078d`|`gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p`<br>`gizmodorks_abs_glowabsinthedark_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD033 / `dup-2beac9799787121b9b2e33c1207826c8a5b6b60cc4c1cd2b15526709f8245ae8`|`gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p`<br>`gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD034 / `dup-1282374799cf2e46a791e2ad7a68b7c6010881f86d1a2530375ece05b5ab3918`|`gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p`<br>`gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD035 / `dup-da8b0dbecfe80018fb25bc999346bb7b29ed391e654e04fbf19893bbfda778e8`|`gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p`<br>`gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD036 / `dup-4a4f965dbc53320de66d5fec3eceeb6cb6afe91b2073b9a28f5308fc88010148`|`gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p`<br>`gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD037 / `dup-d76262008266fef6f3fcf5ece68f29a6b2623e23e2918240c4d45bfd31cafd35`|`gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p`<br>`gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+|GD044 / `dup-bc266db6c2f4272061a60cad0b8d05ec5e814e1c4d200ccc24ca0fb9ed44fbfc`|`gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p`<br>`gizmodorks_pla_glowplainthedark_1000_175_p`|Rule 5 physical line/color decomposition mismatch|[review](2026-10-03-gizmodorks-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## printwithsmile deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |

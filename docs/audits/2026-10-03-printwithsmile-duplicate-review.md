@@ -6,13 +6,13 @@ Base `2e3d8e021bce22be73f2f7690a3b97ba9a55c20f`; read-only upstream `8f1a99f9cda
 
 {"groups": 68, "approved_groups": 0, "retired": 0, "deferred": 68, "hard_stops": 0, "before_count": 52294, "after_count": 52294, "brand_before": 759, "brand_after": 759, "registry_before": 1140, "registry_after": 1140, "metadata_fields_changed": 0, "code_transfers": 0, "new": 0, "changed_identity": 0, "rekeyed": 0}
 
-All 68 candidates are retained: source-color material-token duplication/line-color decomposition or unresolved tie. No current same-SKU binding is established for the Cartesian broad variants. Official HIS PLA 210–250/40–60 confirms the narrower source metadata but does not authorize relabeling historical source colors. No data edits, identifiers or packaging changes.
+All 68 candidates are retained: source-color material-token duplication/line-color decomposition or unresolved tie. No current same-SKU binding is established for the Cartesian broad variants. The previously cited HIS PLA product URL returns 404 on final review; its technical values and SKU/EAN binding are not treated as current verified evidence. No data edits, identifiers or packaging changes.
 
-This is an intentional breaking catalog migration. Existing Spoolman spools retain local data; retired external catalog lookups do not redirect automatically. Packaging, tare, survivor and unique identities remain unchanged.
+This is an audit-only result: no records are retired and no catalog migration is applied. Packaging, tare and all identities remain unchanged. If a later reviewed migration retires records, existing Spoolman spools retain local data, but retired external catalog lookups will not redirect automatically.
 
 ## Current first-party evidence
 
-- {"url": "https://printwithsmile.cz/gb/his-pla/188-his-pla-175-mm-natural-500-g-8594196455154.html", "name": "HIS PLA natural", "sku": "515", "ean": "8594196455154", "note": "Official HIS PLA line identified; source-color decomposition differs from broad OFD PLA/HIS natural. Current tooling cannot bind line/color safely; defer without inventing binding."}
+- {"url": "https://printwithsmile.cz/gb/his-pla/188-his-pla-175-mm-natural-500-g-8594196455154.html", "name": "HIS PLA natural", "sku": "515", "ean": "8594196455154", "note": "Historical candidate URL returns 404 on final review; current product, technical values and SKU/EAN binding remain unverified. Source-color decomposition differs from broad OFD PLA/HIS natural; defer without inventing binding."}
 - {"url": "https://pws.3dfilaments.cz/gb/", "note": "Manufacturer catalog distinguishes SATIN PLA and HIS PLA product lines. Duplicated material words inside color labels cannot be removed by the immutable-key Rule5 checker; retained for tooling review."}
 
 ## Complete approved retired ID list
