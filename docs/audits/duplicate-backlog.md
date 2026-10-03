@@ -45,6 +45,28 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## sunlu deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|SL040 / `dup-81ac947a4da1b8d337846a24b4322a4fd75129a756ef096e20c8fd8cbb5ab151`|`sunlu_pla_plamattegray_1000_175_p`<br>`sunlu_pla_plamattegrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL042 / `dup-133eccf5c83bf8758f4ef620250b1251d8a4d40bfbdd9dc4904729e62bbb99e6`|`sunlu_pla_plaskin(beige)_5000_175_p`<br>`sunlu_pla_plaskinbeige_5000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL043 / `dup-18d1241b5a5a14d68d72f4d63d4eefc2a8201bc8923260e96893f18ecdc33ea0`|`sunlu_pla_plaskin(beige)_1000_285_r`<br>`sunlu_pla_plaskinbeige_1000_285_r`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL044 / `dup-20bb7d450bd62b992718a9f2cd3fc62865093f8b4d4df9a402aebdda10e7f344`|`sunlu_pla_plaskin(beige)_3000_285_p`<br>`sunlu_pla_plaskinbeige_3000_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL045 / `dup-3f0a42b3e38904a05b6693e427ed600d5b51cd5797f6602c7297a9b5c6b74e54`|`sunlu_pla_plaskin(beige)_500_175_p`<br>`sunlu_pla_plaskinbeige_500_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL046 / `dup-53bacb9719645f5d661ac742acea07e6b2823af03bd194dce53de2515e85507a`|`sunlu_pla_plaskin(beige)_2000_175_p`<br>`sunlu_pla_plaskinbeige_2000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL047 / `dup-5a1b13269f8c52a07aba1967f4e5f8529b3132fa9ab22e7761c9e4f93d82f329`|`sunlu_pla_plaskin(beige)_2000_285_p`<br>`sunlu_pla_plaskinbeige_2000_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL048 / `dup-6453072834b806eec00d4022c25d38eaf75886219aa1db4d36b1d64100544d22`|`sunlu_pla_plaskin(beige)_1000_175_r`<br>`sunlu_pla_plaskinbeige_1000_175_r`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL049 / `dup-726dcc69e7af5dd280222e578d367df31bfea1d4e389bf6498b1eb6c5d17613e`|`sunlu_pla_plaskin(beige)_250_285_p`<br>`sunlu_pla_plaskinbeige_250_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL050 / `dup-a1fd26cc1b6a38bf9e0940bf58359eb313cbe55213416695c14d53af0bc84993`|`sunlu_pla_plaskin(beige)_250_175_p`<br>`sunlu_pla_plaskinbeige_250_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL051 / `dup-ad4ed15b9ccfefb67afe00b0d0942dde169cf694d44ceb0d6600ba558e5aec84`|`sunlu_pla_plaskin(beige)_1000_175_p`<br>`sunlu_pla_plaskinbeige_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL052 / `dup-c1c5891b9abf727ab347aaeee7ebe5f92267609adb8c4e7e6760d5c39af4083c`|`sunlu_pla_plaskin(beige)_5000_285_p`<br>`sunlu_pla_plaskinbeige_5000_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL053 / `dup-c367731a46346818d5b6f2fe6f1ae5243ff06c2972532694f5a837b50bbaa16b`|`sunlu_pla_plaskin(beige)_1000_285_p`<br>`sunlu_pla_plaskinbeige_1000_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL054 / `dup-d31cad848f23bba5ac039f6eee6c68429b7c7f9fab179ff938c10d0b698fed71`|`sunlu_pla_plaskin(beige)_3000_175_p`<br>`sunlu_pla_plaskinbeige_3000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+|SL055 / `dup-db57149c89f45e01792b568acb7cf6a25b9f4d4338798b3ecd193b833219ac3c`|`sunlu_pla_plaskin(beige)_500_285_p`<br>`sunlu_pla_plaskinbeige_500_285_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-sunlu-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## gizmodorks deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
