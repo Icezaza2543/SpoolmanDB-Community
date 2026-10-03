@@ -45,6 +45,14 @@ All20 IDs in these10 groups remain compiled, with original keys and metadata. Ga
 
 All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
 
+## alzament deferred groups
+
+| Group | Preserved IDs | Blocker | Audit |
+|---|---|---|---|
+|AL001 / `dup-ab2600f560ca16e859bf5f55b7bd2c9375df2cc151a853b699ca6075e2d34c3c`|`alzament_abs_absgray_1000_175_p`<br>`alzament_abs_absgrey_1000_175_p`|Identity-only tie: no verified official spelling or same-SKU binding; owner rule6 permits deferral|[review](2026-10-03-alzament-duplicate-review.json)|
+
+All listed IDs keep their original keys and full compiled payloads; no retirement or invented line/color binding is authorized for these deferred groups.
+
 ## arianeplast deferred groups
 
 | Group | Preserved IDs | Blocker | Audit |
