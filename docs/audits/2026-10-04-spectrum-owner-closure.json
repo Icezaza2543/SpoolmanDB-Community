@@ -1,0 +1,1431 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "spectrum",
+  "base_sha": "bb8300c31c834287bb2eb9460b27c59a1c3c4099",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "f195ceda1a9c2fcd37ff643776a47acec92eac56cc802f66138ec40ebe49c52a",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-e78a0754c1c46f31ecdbcad5f9c6264ae480595155b21f9a8bfb1a5d9b3b8f3f": {
+      "approved": true,
+      "survivor": "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+      "retire": [
+        "spectrum_petg_ptfesignalwhite_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-spectrum-owner-closure.json",
+      "source": "bb8300c31c834287bb2eb9460b27c59a1c3c4099",
+      "survivor_override": {
+        "reason": "Owner-approved order: upstream > well-formed/non-prefixed name > official spelling > older actual public ID; Cartesian count does not decide.",
+        "source": "bb8300c31c834287bb2eb9460b27c59a1c3c4099"
+      }
+    }
+  },
+  "bindings": {
+    "spectrum_petg_petg/ptfesignalwhite_1000_175_c": {
+      "key": "spectrum.json::Spectrum::PETG {color_name}::PETG /PTFE Signal White::PETG::1000::1.75::cardboard::False",
+      "source_color": "/PTFE Signal White",
+      "line": "ptfe",
+      "color": "signal white"
+    },
+    "spectrum_petg_ptfesignalwhite_1000_175_c": {
+      "key": "spectrum.json::Spectrum::PTFE {color_name}::PTFE Signal White::PETG::1000::1.75::cardboard::False",
+      "source_color": "Signal White",
+      "line": "ptfe",
+      "color": "signal white"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-e78a0754c1c46f31ecdbcad5f9c6264ae480595155b21f9a8bfb1a5d9b3b8f3f",
+      "ids": [
+        "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+        "spectrum_petg_ptfesignalwhite_1000_175_c"
+      ],
+      "proposed_survivor": "spectrum_petg_ptfesignalwhite_1000_175_c",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "spectrum_petg_petg/ptfesignalwhite_1000_175_c": "spectrum_petg_ptfesignalwhite_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+          "manufacturer": "Spectrum",
+          "name": "PETG /PTFE Signal White",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 180,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "EFEFEF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "spectrum.json::Spectrum::PETG {color_name}::PETG /PTFE Signal White::PETG::1000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "/PTFE Signal White",
+          "source_line": "PETG",
+          "source_file": "spectrum.json",
+          "source_definition": {
+            "source_file": "spectrum.json",
+            "definition_index": 45,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        },
+        {
+          "id": "spectrum_petg_ptfesignalwhite_1000_175_c",
+          "manufacturer": "Spectrum",
+          "name": "PTFE Signal White",
+          "material": "PETG",
+          "density": 1.32,
+          "weight": 1000,
+          "spool_weight": 180,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D9DBD8",
+          "color_hexes": null,
+          "extruder_temp": 240,
+          "extruder_temp_range": null,
+          "bed_temp": 75,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf",
+          "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf",
+          "key": "spectrum.json::Spectrum::PTFE {color_name}::PTFE Signal White::PETG::1000::1.75::cardboard::False",
+          "template": "PTFE {color_name}",
+          "source_color": "Signal White",
+          "source_line": "PTFE",
+          "source_file": "spectrum.json",
+          "source_definition": {
+            "source_file": "spectrum.json",
+            "definition_index": 55,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": 1.27,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 1.32
+        },
+        "color_hex": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": "EFEFEF",
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "D9DBD8"
+        },
+        "extruder_temp": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 240
+        },
+        "extruder_temp_range": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+            220,
+            250
+          ],
+          "spectrum_petg_ptfesignalwhite_1000_175_c": null
+        },
+        "bed_temp": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 75
+        },
+        "bed_temp_range": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+            70,
+            90
+          ],
+          "spectrum_petg_ptfesignalwhite_1000_175_c": null
+        },
+        "sds_url": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf"
+        },
+        "tds_url": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+      "retire": [
+        "spectrum_petg_ptfesignalwhite_1000_175_c"
+      ],
+      "survivor_ranking": {
+        "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          13,
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c"
+        ],
+        "spectrum_petg_ptfesignalwhite_1000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          13,
+          "spectrum_petg_ptfesignalwhite_1000_175_c"
+        ]
+      },
+      "id_first_seen": {
+        "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+          13,
+          "b216760ad83803a286fe948a2c5c4c0ce2b40496"
+        ],
+        "spectrum_petg_ptfesignalwhite_1000_175_c": [
+          13,
+          "b216760ad83803a286fe948a2c5c4c0ce2b40496"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "spectrum_petg_ptfesignalwhite_1000_175_c": {
+      "replaced_by": "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-spectrum-owner-closure.json",
+      "source": "bb8300c31c834287bb2eb9460b27c59a1c3c4099",
+      "retired_key": "spectrum.json::Spectrum::PTFE {color_name}::PTFE Signal White::PETG::1000::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51414,
+    "after_count": 51413,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {
+      "5903175650078": [
+        "spectrum_asa_asa275natural_1000_175_c",
+        "spectrum_asa_asa275natural_1000_285_c",
+        "spectrum_asa_asa275natural_2000_175_c",
+        "spectrum_asa_asa275natural_2000_285_c",
+        "spectrum_asa_asa275natural_250_175_c",
+        "spectrum_asa_asa275natural_250_285_c",
+        "spectrum_asa_asa275natural_4500_175_c",
+        "spectrum_asa_asa275natural_4500_285_c",
+        "spectrum_asa_asa275natural_8000_175_c",
+        "spectrum_asa_asa275natural_8000_285_c"
+      ],
+      "5903175650085": [
+        "spectrum_asa_asa275deepblack_1000_175_c",
+        "spectrum_asa_asa275deepblack_1000_285_c",
+        "spectrum_asa_asa275deepblack_2000_175_c",
+        "spectrum_asa_asa275deepblack_2000_285_c",
+        "spectrum_asa_asa275deepblack_250_175_c",
+        "spectrum_asa_asa275deepblack_250_285_c",
+        "spectrum_asa_asa275deepblack_4500_175_c",
+        "spectrum_asa_asa275deepblack_4500_285_c",
+        "spectrum_asa_asa275deepblack_8000_175_c",
+        "spectrum_asa_asa275deepblack_8000_285_c"
+      ],
+      "5903175650092": [
+        "spectrum_asa_asa275polarwhite_1000_175_c",
+        "spectrum_asa_asa275polarwhite_1000_285_c",
+        "spectrum_asa_asa275polarwhite_2000_175_c",
+        "spectrum_asa_asa275polarwhite_2000_285_c",
+        "spectrum_asa_asa275polarwhite_250_175_c",
+        "spectrum_asa_asa275polarwhite_250_285_c",
+        "spectrum_asa_asa275polarwhite_4500_175_c",
+        "spectrum_asa_asa275polarwhite_4500_285_c",
+        "spectrum_asa_asa275polarwhite_8000_175_c",
+        "spectrum_asa_asa275polarwhite_8000_285_c"
+      ],
+      "5903175650108": [
+        "spectrum_asa_asa275darkgrey_1000_175_c",
+        "spectrum_asa_asa275darkgrey_1000_285_c",
+        "spectrum_asa_asa275darkgrey_2000_175_c",
+        "spectrum_asa_asa275darkgrey_2000_285_c",
+        "spectrum_asa_asa275darkgrey_250_175_c",
+        "spectrum_asa_asa275darkgrey_250_285_c",
+        "spectrum_asa_asa275darkgrey_4500_175_c",
+        "spectrum_asa_asa275darkgrey_4500_285_c",
+        "spectrum_asa_asa275darkgrey_8000_175_c",
+        "spectrum_asa_asa275darkgrey_8000_285_c"
+      ],
+      "5903175650115": [
+        "spectrum_asa_asa275bloodyred_1000_175_c",
+        "spectrum_asa_asa275bloodyred_1000_285_c",
+        "spectrum_asa_asa275bloodyred_2000_175_c",
+        "spectrum_asa_asa275bloodyred_2000_285_c",
+        "spectrum_asa_asa275bloodyred_250_175_c",
+        "spectrum_asa_asa275bloodyred_250_285_c",
+        "spectrum_asa_asa275bloodyred_4500_175_c",
+        "spectrum_asa_asa275bloodyred_4500_285_c",
+        "spectrum_asa_asa275bloodyred_8000_175_c",
+        "spectrum_asa_asa275bloodyred_8000_285_c"
+      ],
+      "5903175650122": [
+        "spectrum_asa_asa275navyblue_1000_175_c",
+        "spectrum_asa_asa275navyblue_1000_285_c",
+        "spectrum_asa_asa275navyblue_2000_175_c",
+        "spectrum_asa_asa275navyblue_2000_285_c",
+        "spectrum_asa_asa275navyblue_250_175_c",
+        "spectrum_asa_asa275navyblue_250_285_c",
+        "spectrum_asa_asa275navyblue_4500_175_c",
+        "spectrum_asa_asa275navyblue_4500_285_c",
+        "spectrum_asa_asa275navyblue_8000_175_c",
+        "spectrum_asa_asa275navyblue_8000_285_c"
+      ],
+      "5903175650139": [
+        "spectrum_asa_asa275silverstar_1000_175_c",
+        "spectrum_asa_asa275silverstar_1000_285_c",
+        "spectrum_asa_asa275silverstar_2000_175_c",
+        "spectrum_asa_asa275silverstar_2000_285_c",
+        "spectrum_asa_asa275silverstar_250_175_c",
+        "spectrum_asa_asa275silverstar_250_285_c",
+        "spectrum_asa_asa275silverstar_4500_175_c",
+        "spectrum_asa_asa275silverstar_4500_285_c",
+        "spectrum_asa_asa275silverstar_8000_175_c",
+        "spectrum_asa_asa275silverstar_8000_285_c"
+      ],
+      "5903175650146": [
+        "spectrum_asa_asa275limegreen_1000_175_c",
+        "spectrum_asa_asa275limegreen_1000_285_c",
+        "spectrum_asa_asa275limegreen_2000_175_c",
+        "spectrum_asa_asa275limegreen_2000_285_c",
+        "spectrum_asa_asa275limegreen_250_175_c",
+        "spectrum_asa_asa275limegreen_250_285_c",
+        "spectrum_asa_asa275limegreen_4500_175_c",
+        "spectrum_asa_asa275limegreen_4500_285_c",
+        "spectrum_asa_asa275limegreen_8000_175_c",
+        "spectrum_asa_asa275limegreen_8000_285_c"
+      ],
+      "5903175650153": [
+        "spectrum_asa_asa275lionorange_1000_175_c",
+        "spectrum_asa_asa275lionorange_1000_285_c",
+        "spectrum_asa_asa275lionorange_2000_175_c",
+        "spectrum_asa_asa275lionorange_2000_285_c",
+        "spectrum_asa_asa275lionorange_250_175_c",
+        "spectrum_asa_asa275lionorange_250_285_c",
+        "spectrum_asa_asa275lionorange_4500_175_c",
+        "spectrum_asa_asa275lionorange_4500_285_c",
+        "spectrum_asa_asa275lionorange_8000_175_c",
+        "spectrum_asa_asa275lionorange_8000_285_c"
+      ],
+      "5903175650474": [
+        "spectrum_abs_absgp450natural_1000_175_c"
+      ],
+      "5903175650580": [
+        "spectrum_abs_absgp450obsidianblack_1000_175_c"
+      ],
+      "5903175650597": [
+        "spectrum_abs_absgp450purewhite_1000_175_c"
+      ],
+      "5903175650603": [
+        "spectrum_abs_absgp450trafficred_1000_175_c"
+      ],
+      "5903175650610": [
+        "spectrum_abs_absgp450darkblue_1000_175_c"
+      ],
+      "5903175650627": [
+        "spectrum_abs_absgp450silver_1000_175_c"
+      ],
+      "5903175650634": [
+        "spectrum_abs_absgp450puregreen_1000_175_c"
+      ],
+      "5903175650887": [
+        "spectrum_pla_plapremiumcaribbeanblue_1000_175_c",
+        "spectrum_pla_plapremiumcaribbeanblue_1000_175_p",
+        "spectrum_pla_plapremiumcaribbeanblue_2000_175_c",
+        "spectrum_pla_plapremiumcaribbeanblue_2000_175_p",
+        "spectrum_pla_plapremiumcaribbeanblue_250_175_c",
+        "spectrum_pla_plapremiumcaribbeanblue_250_175_p",
+        "spectrum_pla_plapremiumcaribbeanblue_4500_175_p",
+        "spectrum_pla_plapremiumcaribbeanblue_500_175_p",
+        "spectrum_pla_plapremiumcaribbeanblue_750_175_p",
+        "spectrum_pla_plapremiumcaribbeanblue_8000_175_p"
+      ],
+      "5903175651006": [
+        "spectrum_pla_plapremiumlightgrey_1000_175_c",
+        "spectrum_pla_plapremiumlightgrey_1000_175_p",
+        "spectrum_pla_plapremiumlightgrey_2000_175_c",
+        "spectrum_pla_plapremiumlightgrey_2000_175_p",
+        "spectrum_pla_plapremiumlightgrey_250_175_c",
+        "spectrum_pla_plapremiumlightgrey_250_175_p",
+        "spectrum_pla_plapremiumlightgrey_4500_175_p",
+        "spectrum_pla_plapremiumlightgrey_500_175_p",
+        "spectrum_pla_plapremiumlightgrey_750_175_p",
+        "spectrum_pla_plapremiumlightgrey_8000_175_p"
+      ],
+      "5903175651020": [
+        "spectrum_pla_plaprodragonred_1000_175_c",
+        "spectrum_pla_plaprodragonred_1000_175_p",
+        "spectrum_pla_plaprodragonred_2000_175_c",
+        "spectrum_pla_plaprodragonred_2000_175_p",
+        "spectrum_pla_plaprodragonred_250_175_c",
+        "spectrum_pla_plaprodragonred_250_175_p",
+        "spectrum_pla_plaprodragonred_4500_175_p",
+        "spectrum_pla_plaprodragonred_500_175_p",
+        "spectrum_pla_plaprodragonred_750_175_p",
+        "spectrum_pla_plaprodragonred_8000_175_p"
+      ],
+      "5903175651037": [
+        "spectrum_pla_plapromagenta_1000_175_c",
+        "spectrum_pla_plapromagenta_1000_175_p",
+        "spectrum_pla_plapromagenta_2000_175_c",
+        "spectrum_pla_plapromagenta_2000_175_p",
+        "spectrum_pla_plapromagenta_250_175_c",
+        "spectrum_pla_plapromagenta_250_175_p",
+        "spectrum_pla_plapromagenta_4500_175_p",
+        "spectrum_pla_plapromagenta_500_175_p",
+        "spectrum_pla_plapromagenta_750_175_p",
+        "spectrum_pla_plapromagenta_8000_175_p"
+      ],
+      "5903175651044": [
+        "spectrum_pla_plaprolavenderviolet_1000_175_c",
+        "spectrum_pla_plaprolavenderviolet_1000_175_p",
+        "spectrum_pla_plaprolavenderviolet_2000_175_c",
+        "spectrum_pla_plaprolavenderviolet_2000_175_p",
+        "spectrum_pla_plaprolavenderviolet_250_175_c",
+        "spectrum_pla_plaprolavenderviolet_250_175_p",
+        "spectrum_pla_plaprolavenderviolet_4500_175_p",
+        "spectrum_pla_plaprolavenderviolet_500_175_p",
+        "spectrum_pla_plaprolavenderviolet_750_175_p",
+        "spectrum_pla_plaprolavenderviolet_8000_175_p"
+      ],
+      "5903175651051": [
+        "spectrum_pla_plapropastelturquoise_1000_175_c",
+        "spectrum_pla_plapropastelturquoise_1000_175_p",
+        "spectrum_pla_plapropastelturquoise_2000_175_c",
+        "spectrum_pla_plapropastelturquoise_2000_175_p",
+        "spectrum_pla_plapropastelturquoise_250_175_c",
+        "spectrum_pla_plapropastelturquoise_250_175_p",
+        "spectrum_pla_plapropastelturquoise_4500_175_p",
+        "spectrum_pla_plapropastelturquoise_500_175_p",
+        "spectrum_pla_plapropastelturquoise_750_175_p",
+        "spectrum_pla_plapropastelturquoise_8000_175_p"
+      ],
+      "5903175651068": [
+        "spectrum_pla_plaprobluelagoon_1000_175_c",
+        "spectrum_pla_plaprobluelagoon_1000_175_p",
+        "spectrum_pla_plaprobluelagoon_2000_175_c",
+        "spectrum_pla_plaprobluelagoon_2000_175_p",
+        "spectrum_pla_plaprobluelagoon_250_175_c",
+        "spectrum_pla_plaprobluelagoon_250_175_p",
+        "spectrum_pla_plaprobluelagoon_4500_175_p",
+        "spectrum_pla_plaprobluelagoon_500_175_p",
+        "spectrum_pla_plaprobluelagoon_750_175_p",
+        "spectrum_pla_plaprobluelagoon_8000_175_p"
+      ],
+      "5903175651075": [
+        "spectrum_pla_plapromilitarykhaki_1000_175_c",
+        "spectrum_pla_plapromilitarykhaki_1000_175_p",
+        "spectrum_pla_plapromilitarykhaki_2000_175_c",
+        "spectrum_pla_plapromilitarykhaki_2000_175_p",
+        "spectrum_pla_plapromilitarykhaki_250_175_c",
+        "spectrum_pla_plapromilitarykhaki_250_175_p",
+        "spectrum_pla_plapromilitarykhaki_4500_175_p",
+        "spectrum_pla_plapromilitarykhaki_500_175_p",
+        "spectrum_pla_plapromilitarykhaki_750_175_p",
+        "spectrum_pla_plapromilitarykhaki_8000_175_p"
+      ],
+      "5903175651808": [
+        "spectrum_pla_plaprochocolatebrown_1000_175_c",
+        "spectrum_pla_plaprochocolatebrown_1000_175_p",
+        "spectrum_pla_plaprochocolatebrown_2000_175_c",
+        "spectrum_pla_plaprochocolatebrown_2000_175_p",
+        "spectrum_pla_plaprochocolatebrown_250_175_c",
+        "spectrum_pla_plaprochocolatebrown_250_175_p",
+        "spectrum_pla_plaprochocolatebrown_4500_175_p",
+        "spectrum_pla_plaprochocolatebrown_500_175_p",
+        "spectrum_pla_plaprochocolatebrown_750_175_p",
+        "spectrum_pla_plaprochocolatebrown_8000_175_p"
+      ],
+      "5903175651822": [
+        "spectrum_pla_plapropinkpanther_1000_175_c",
+        "spectrum_pla_plapropinkpanther_1000_175_p",
+        "spectrum_pla_plapropinkpanther_2000_175_c",
+        "spectrum_pla_plapropinkpanther_2000_175_p",
+        "spectrum_pla_plapropinkpanther_250_175_c",
+        "spectrum_pla_plapropinkpanther_250_175_p",
+        "spectrum_pla_plapropinkpanther_4500_175_p",
+        "spectrum_pla_plapropinkpanther_500_175_p",
+        "spectrum_pla_plapropinkpanther_750_175_p",
+        "spectrum_pla_plapropinkpanther_8000_175_p"
+      ],
+      "5903175651839": [
+        "spectrum_pla_plaproivorybeige_1000_175_c",
+        "spectrum_pla_plaproivorybeige_1000_175_p",
+        "spectrum_pla_plaproivorybeige_2000_175_c",
+        "spectrum_pla_plaproivorybeige_2000_175_p",
+        "spectrum_pla_plaproivorybeige_250_175_c",
+        "spectrum_pla_plaproivorybeige_250_175_p",
+        "spectrum_pla_plaproivorybeige_4500_175_p",
+        "spectrum_pla_plaproivorybeige_500_175_p",
+        "spectrum_pla_plaproivorybeige_750_175_p",
+        "spectrum_pla_plaproivorybeige_8000_175_p"
+      ],
+      "5903175652102": [
+        "spectrum_petg_pet-gpremiumpetgdarkgrey_1000_175_c"
+      ],
+      "5903175652119": [
+        "spectrum_petg_pet-gpremiumpetgnavyblue_1000_175_c"
+      ],
+      "5903175652133": [
+        "spectrum_pla_plapremiumtranslucent_1000_175_c",
+        "spectrum_pla_plapremiumtranslucent_1000_175_p",
+        "spectrum_pla_plapremiumtranslucent_2000_175_c",
+        "spectrum_pla_plapremiumtranslucent_2000_175_p",
+        "spectrum_pla_plapremiumtranslucent_250_175_c",
+        "spectrum_pla_plapremiumtranslucent_250_175_p",
+        "spectrum_pla_plapremiumtranslucent_4500_175_p",
+        "spectrum_pla_plapremiumtranslucent_500_175_p",
+        "spectrum_pla_plapremiumtranslucent_750_175_p",
+        "spectrum_pla_plapremiumtranslucent_8000_175_p"
+      ],
+      "5903175652676": [
+        "spectrum_asa_asa275trafficyellow_1000_175_c",
+        "spectrum_asa_asa275trafficyellow_1000_285_c",
+        "spectrum_asa_asa275trafficyellow_2000_175_c",
+        "spectrum_asa_asa275trafficyellow_2000_285_c",
+        "spectrum_asa_asa275trafficyellow_250_175_c",
+        "spectrum_asa_asa275trafficyellow_250_285_c",
+        "spectrum_asa_asa275trafficyellow_4500_175_c",
+        "spectrum_asa_asa275trafficyellow_4500_285_c",
+        "spectrum_asa_asa275trafficyellow_8000_175_c",
+        "spectrum_asa_asa275trafficyellow_8000_285_c"
+      ],
+      "5903175652928": [
+        "spectrum_asa_asa275pacificblue_1000_175_c",
+        "spectrum_asa_asa275pacificblue_1000_285_c",
+        "spectrum_asa_asa275pacificblue_2000_175_c",
+        "spectrum_asa_asa275pacificblue_2000_285_c",
+        "spectrum_asa_asa275pacificblue_250_175_c",
+        "spectrum_asa_asa275pacificblue_250_285_c",
+        "spectrum_asa_asa275pacificblue_4500_175_c",
+        "spectrum_asa_asa275pacificblue_4500_285_c",
+        "spectrum_asa_asa275pacificblue_8000_175_c",
+        "spectrum_asa_asa275pacificblue_8000_285_c"
+      ],
+      "5903175652935": [
+        "spectrum_asa_asa275forestgreen_1000_175_c",
+        "spectrum_asa_asa275forestgreen_1000_285_c",
+        "spectrum_asa_asa275forestgreen_2000_175_c",
+        "spectrum_asa_asa275forestgreen_2000_285_c",
+        "spectrum_asa_asa275forestgreen_250_175_c",
+        "spectrum_asa_asa275forestgreen_250_285_c",
+        "spectrum_asa_asa275forestgreen_4500_175_c",
+        "spectrum_asa_asa275forestgreen_4500_285_c",
+        "spectrum_asa_asa275forestgreen_8000_175_c",
+        "spectrum_asa_asa275forestgreen_8000_285_c"
+      ],
+      "5903175653031": [
+        "spectrum_petg_pet-gpremiumpetgpink_1000_175_c"
+      ],
+      "5903175653628": [
+        "spectrum_pla_plapremiumwizardgreen_1000_175_c",
+        "spectrum_pla_plapremiumwizardgreen_1000_175_p",
+        "spectrum_pla_plapremiumwizardgreen_2000_175_c",
+        "spectrum_pla_plapremiumwizardgreen_2000_175_p",
+        "spectrum_pla_plapremiumwizardgreen_250_175_c",
+        "spectrum_pla_plapremiumwizardgreen_250_175_p",
+        "spectrum_pla_plapremiumwizardgreen_4500_175_p",
+        "spectrum_pla_plapremiumwizardgreen_500_175_p",
+        "spectrum_pla_plapremiumwizardgreen_750_175_p",
+        "spectrum_pla_plapremiumwizardgreen_8000_175_p"
+      ],
+      "5903175653635": [
+        "spectrum_pla_plapremiumwizardcharcoal_1000_175_c",
+        "spectrum_pla_plapremiumwizardcharcoal_1000_175_p",
+        "spectrum_pla_plapremiumwizardcharcoal_2000_175_c",
+        "spectrum_pla_plapremiumwizardcharcoal_2000_175_p",
+        "spectrum_pla_plapremiumwizardcharcoal_250_175_c",
+        "spectrum_pla_plapremiumwizardcharcoal_250_175_p",
+        "spectrum_pla_plapremiumwizardcharcoal_4500_175_p",
+        "spectrum_pla_plapremiumwizardcharcoal_500_175_p",
+        "spectrum_pla_plapremiumwizardcharcoal_750_175_p",
+        "spectrum_pla_plapremiumwizardcharcoal_8000_175_p"
+      ],
+      "5903175653642": [
+        "spectrum_pla_plapremiumwizardindigo_1000_175_c",
+        "spectrum_pla_plapremiumwizardindigo_1000_175_p",
+        "spectrum_pla_plapremiumwizardindigo_2000_175_c",
+        "spectrum_pla_plapremiumwizardindigo_2000_175_p",
+        "spectrum_pla_plapremiumwizardindigo_250_175_c",
+        "spectrum_pla_plapremiumwizardindigo_250_175_p",
+        "spectrum_pla_plapremiumwizardindigo_4500_175_p",
+        "spectrum_pla_plapremiumwizardindigo_500_175_p",
+        "spectrum_pla_plapremiumwizardindigo_750_175_p",
+        "spectrum_pla_plapremiumwizardindigo_8000_175_p"
+      ],
+      "5903175653871": [
+        "spectrum_petg_pet-gpremiumpetgmintgreen_1000_175_c"
+      ],
+      "5903175653888": [
+        "spectrum_petg_pet-gpremiumpetgchocolatebrown_1000_175_c"
+      ],
+      "5903175653895": [
+        "spectrum_petg_pet-gpremiumpetgbeige_1000_175_c"
+      ],
+      "5903175653901": [
+        "spectrum_petg_pet-gpremiumpetglightgrey_1000_175_c"
+      ],
+      "5903175653918": [
+        "spectrum_petg_pet-gpremiumpetgturquoiseblue_1000_175_c"
+      ],
+      "5903175653925": [
+        "spectrum_petg_pet-gpremiumpetgpearlgold_1000_175_c"
+      ],
+      "5903175653932": [
+        "spectrum_petg_pet-gpremiumpetgolivegreen_1000_175_c"
+      ],
+      "5903175653949": [
+        "spectrum_petg_pet-gpremiumpetgsignalyellow_1000_175_c"
+      ],
+      "5903175655042": [
+        "spectrum_pla_plapremiumanthracitegrey_1000_175_c",
+        "spectrum_pla_plapremiumanthracitegrey_1000_175_p",
+        "spectrum_pla_plapremiumanthracitegrey_2000_175_c",
+        "spectrum_pla_plapremiumanthracitegrey_2000_175_p",
+        "spectrum_pla_plapremiumanthracitegrey_250_175_c",
+        "spectrum_pla_plapremiumanthracitegrey_250_175_p",
+        "spectrum_pla_plapremiumanthracitegrey_4500_175_p",
+        "spectrum_pla_plapremiumanthracitegrey_500_175_p",
+        "spectrum_pla_plapremiumanthracitegrey_750_175_p",
+        "spectrum_pla_plapremiumanthracitegrey_8000_175_p"
+      ],
+      "5903175655097": [
+        "spectrum_pla_plapremiumpigeonblue_1000_175_c",
+        "spectrum_pla_plapremiumpigeonblue_1000_175_p",
+        "spectrum_pla_plapremiumpigeonblue_2000_175_c",
+        "spectrum_pla_plapremiumpigeonblue_2000_175_p",
+        "spectrum_pla_plapremiumpigeonblue_250_175_c",
+        "spectrum_pla_plapremiumpigeonblue_250_175_p",
+        "spectrum_pla_plapremiumpigeonblue_4500_175_p",
+        "spectrum_pla_plapremiumpigeonblue_500_175_p",
+        "spectrum_pla_plapremiumpigeonblue_750_175_p",
+        "spectrum_pla_plapremiumpigeonblue_8000_175_p"
+      ],
+      "5903175655219": [
+        "spectrum_petg_pet-gpremiumpetgicelandblue_1000_175_c"
+      ],
+      "5903175655332": [
+        "spectrum_pla_plaprolightgrey_1000_175_c",
+        "spectrum_pla_plaprolightgrey_1000_175_p",
+        "spectrum_pla_plaprolightgrey_2000_175_c",
+        "spectrum_pla_plaprolightgrey_2000_175_p",
+        "spectrum_pla_plaprolightgrey_250_175_c",
+        "spectrum_pla_plaprolightgrey_250_175_p",
+        "spectrum_pla_plaprolightgrey_4500_175_p",
+        "spectrum_pla_plaprolightgrey_500_175_p",
+        "spectrum_pla_plaprolightgrey_750_175_p",
+        "spectrum_pla_plaprolightgrey_8000_175_p"
+      ],
+      "5903175657008": [
+        "spectrum_pla_plapremiumchocolatebrown_1000_175_c",
+        "spectrum_pla_plapremiumchocolatebrown_1000_175_p",
+        "spectrum_pla_plapremiumchocolatebrown_2000_175_c",
+        "spectrum_pla_plapremiumchocolatebrown_2000_175_p",
+        "spectrum_pla_plapremiumchocolatebrown_250_175_c",
+        "spectrum_pla_plapremiumchocolatebrown_250_175_p",
+        "spectrum_pla_plapremiumchocolatebrown_4500_175_p",
+        "spectrum_pla_plapremiumchocolatebrown_500_175_p",
+        "spectrum_pla_plapremiumchocolatebrown_750_175_p",
+        "spectrum_pla_plapremiumchocolatebrown_8000_175_p"
+      ],
+      "5903175657015": [
+        "spectrum_pla_plapremiumdeepblack_1000_175_c",
+        "spectrum_pla_plapremiumdeepblack_1000_175_p",
+        "spectrum_pla_plapremiumdeepblack_2000_175_c",
+        "spectrum_pla_plapremiumdeepblack_2000_175_p",
+        "spectrum_pla_plapremiumdeepblack_250_175_c",
+        "spectrum_pla_plapremiumdeepblack_250_175_p",
+        "spectrum_pla_plapremiumdeepblack_4500_175_p",
+        "spectrum_pla_plapremiumdeepblack_500_175_p",
+        "spectrum_pla_plapremiumdeepblack_750_175_p",
+        "spectrum_pla_plapremiumdeepblack_8000_175_p"
+      ],
+      "5903175657022": [
+        "spectrum_pla_plapremiumdragonred_1000_175_c",
+        "spectrum_pla_plapremiumdragonred_1000_175_p",
+        "spectrum_pla_plapremiumdragonred_2000_175_c",
+        "spectrum_pla_plapremiumdragonred_2000_175_p",
+        "spectrum_pla_plapremiumdragonred_250_175_c",
+        "spectrum_pla_plapremiumdragonred_250_175_p",
+        "spectrum_pla_plapremiumdragonred_4500_175_p",
+        "spectrum_pla_plapremiumdragonred_500_175_p",
+        "spectrum_pla_plapremiumdragonred_750_175_p",
+        "spectrum_pla_plapremiumdragonred_8000_175_p"
+      ],
+      "5903175657039": [
+        "spectrum_pla_plapremiumforestgreen_1000_175_c",
+        "spectrum_pla_plapremiumforestgreen_1000_175_p",
+        "spectrum_pla_plapremiumforestgreen_2000_175_c",
+        "spectrum_pla_plapremiumforestgreen_2000_175_p",
+        "spectrum_pla_plapremiumforestgreen_250_175_c",
+        "spectrum_pla_plapremiumforestgreen_250_175_p",
+        "spectrum_pla_plapremiumforestgreen_4500_175_p",
+        "spectrum_pla_plapremiumforestgreen_500_175_p",
+        "spectrum_pla_plapremiumforestgreen_750_175_p",
+        "spectrum_pla_plapremiumforestgreen_8000_175_p"
+      ],
+      "5903175657046": [
+        "spectrum_pla_plapremiumgoldenline_1000_175_c",
+        "spectrum_pla_plapremiumgoldenline_1000_175_p",
+        "spectrum_pla_plapremiumgoldenline_2000_175_c",
+        "spectrum_pla_plapremiumgoldenline_2000_175_p",
+        "spectrum_pla_plapremiumgoldenline_250_175_c",
+        "spectrum_pla_plapremiumgoldenline_250_175_p",
+        "spectrum_pla_plapremiumgoldenline_4500_175_p",
+        "spectrum_pla_plapremiumgoldenline_500_175_p",
+        "spectrum_pla_plapremiumgoldenline_750_175_p",
+        "spectrum_pla_plapremiumgoldenline_8000_175_p"
+      ],
+      "5903175657053": [
+        "spectrum_pla_plapremiumivorybeige_1000_175_c",
+        "spectrum_pla_plapremiumivorybeige_1000_175_p",
+        "spectrum_pla_plapremiumivorybeige_2000_175_c",
+        "spectrum_pla_plapremiumivorybeige_2000_175_p",
+        "spectrum_pla_plapremiumivorybeige_250_175_c",
+        "spectrum_pla_plapremiumivorybeige_250_175_p",
+        "spectrum_pla_plapremiumivorybeige_4500_175_p",
+        "spectrum_pla_plapremiumivorybeige_500_175_p",
+        "spectrum_pla_plapremiumivorybeige_750_175_p",
+        "spectrum_pla_plapremiumivorybeige_8000_175_p"
+      ],
+      "5903175657077": [
+        "spectrum_pla_plapremiumlionorange_1000_175_c",
+        "spectrum_pla_plapremiumlionorange_1000_175_p",
+        "spectrum_pla_plapremiumlionorange_2000_175_c",
+        "spectrum_pla_plapremiumlionorange_2000_175_p",
+        "spectrum_pla_plapremiumlionorange_250_175_c",
+        "spectrum_pla_plapremiumlionorange_250_175_p",
+        "spectrum_pla_plapremiumlionorange_4500_175_p",
+        "spectrum_pla_plapremiumlionorange_500_175_p",
+        "spectrum_pla_plapremiumlionorange_750_175_p",
+        "spectrum_pla_plapremiumlionorange_8000_175_p"
+      ],
+      "5903175657084": [
+        "spectrum_pla_plapremiummagenta_1000_175_c",
+        "spectrum_pla_plapremiummagenta_1000_175_p",
+        "spectrum_pla_plapremiummagenta_2000_175_c",
+        "spectrum_pla_plapremiummagenta_2000_175_p",
+        "spectrum_pla_plapremiummagenta_250_175_c",
+        "spectrum_pla_plapremiummagenta_250_175_p",
+        "spectrum_pla_plapremiummagenta_4500_175_p",
+        "spectrum_pla_plapremiummagenta_500_175_p",
+        "spectrum_pla_plapremiummagenta_750_175_p",
+        "spectrum_pla_plapremiummagenta_8000_175_p"
+      ],
+      "5903175657091": [
+        "spectrum_pla_plapremiumnatural_1000_175_c",
+        "spectrum_pla_plapremiumnatural_1000_175_p",
+        "spectrum_pla_plapremiumnatural_2000_175_c",
+        "spectrum_pla_plapremiumnatural_2000_175_p",
+        "spectrum_pla_plapremiumnatural_250_175_c",
+        "spectrum_pla_plapremiumnatural_250_175_p",
+        "spectrum_pla_plapremiumnatural_4500_175_p",
+        "spectrum_pla_plapremiumnatural_500_175_p",
+        "spectrum_pla_plapremiumnatural_750_175_p",
+        "spectrum_pla_plapremiumnatural_8000_175_p"
+      ],
+      "5903175657107": [
+        "spectrum_pla_plapremiumpinkpanther_1000_175_c",
+        "spectrum_pla_plapremiumpinkpanther_1000_175_p",
+        "spectrum_pla_plapremiumpinkpanther_2000_175_c",
+        "spectrum_pla_plapremiumpinkpanther_2000_175_p",
+        "spectrum_pla_plapremiumpinkpanther_250_175_c",
+        "spectrum_pla_plapremiumpinkpanther_250_175_p",
+        "spectrum_pla_plapremiumpinkpanther_4500_175_p",
+        "spectrum_pla_plapremiumpinkpanther_500_175_p",
+        "spectrum_pla_plapremiumpinkpanther_750_175_p",
+        "spectrum_pla_plapremiumpinkpanther_8000_175_p"
+      ],
+      "5903175657114": [
+        "spectrum_pla_plapremiumpolarwhite_1000_175_c",
+        "spectrum_pla_plapremiumpolarwhite_1000_175_p",
+        "spectrum_pla_plapremiumpolarwhite_2000_175_c",
+        "spectrum_pla_plapremiumpolarwhite_2000_175_p",
+        "spectrum_pla_plapremiumpolarwhite_250_175_c",
+        "spectrum_pla_plapremiumpolarwhite_250_175_p",
+        "spectrum_pla_plapremiumpolarwhite_4500_175_p",
+        "spectrum_pla_plapremiumpolarwhite_500_175_p",
+        "spectrum_pla_plapremiumpolarwhite_750_175_p",
+        "spectrum_pla_plapremiumpolarwhite_8000_175_p"
+      ],
+      "5903175657121": [
+        "spectrum_pla_plapremiumrustcopper_1000_175_c",
+        "spectrum_pla_plapremiumrustcopper_1000_175_p",
+        "spectrum_pla_plapremiumrustcopper_2000_175_c",
+        "spectrum_pla_plapremiumrustcopper_2000_175_p",
+        "spectrum_pla_plapremiumrustcopper_250_175_c",
+        "spectrum_pla_plapremiumrustcopper_250_175_p",
+        "spectrum_pla_plapremiumrustcopper_4500_175_p",
+        "spectrum_pla_plapremiumrustcopper_500_175_p",
+        "spectrum_pla_plapremiumrustcopper_750_175_p",
+        "spectrum_pla_plapremiumrustcopper_8000_175_p"
+      ],
+      "5903175657138": [
+        "spectrum_pla_plapremiumlimegreen_1000_175_c",
+        "spectrum_pla_plapremiumlimegreen_1000_175_p",
+        "spectrum_pla_plapremiumlimegreen_2000_175_c",
+        "spectrum_pla_plapremiumlimegreen_2000_175_p",
+        "spectrum_pla_plapremiumlimegreen_250_175_c",
+        "spectrum_pla_plapremiumlimegreen_250_175_p",
+        "spectrum_pla_plapremiumlimegreen_4500_175_p",
+        "spectrum_pla_plapremiumlimegreen_500_175_p",
+        "spectrum_pla_plapremiumlimegreen_750_175_p",
+        "spectrum_pla_plapremiumlimegreen_8000_175_p"
+      ],
+      "5903175657145": [
+        "spectrum_pla_plapremiumsilverstar_1000_175_c",
+        "spectrum_pla_plapremiumsilverstar_1000_175_p",
+        "spectrum_pla_plapremiumsilverstar_2000_175_c",
+        "spectrum_pla_plapremiumsilverstar_2000_175_p",
+        "spectrum_pla_plapremiumsilverstar_250_175_c",
+        "spectrum_pla_plapremiumsilverstar_250_175_p",
+        "spectrum_pla_plapremiumsilverstar_4500_175_p",
+        "spectrum_pla_plapremiumsilverstar_500_175_p",
+        "spectrum_pla_plapremiumsilverstar_750_175_p",
+        "spectrum_pla_plapremiumsilverstar_8000_175_p"
+      ],
+      "5903175657152": [
+        "spectrum_pla_plapremiumpacificblue_1000_175_c",
+        "spectrum_pla_plapremiumpacificblue_1000_175_p",
+        "spectrum_pla_plapremiumpacificblue_2000_175_c",
+        "spectrum_pla_plapremiumpacificblue_2000_175_p",
+        "spectrum_pla_plapremiumpacificblue_250_175_c",
+        "spectrum_pla_plapremiumpacificblue_250_175_p",
+        "spectrum_pla_plapremiumpacificblue_4500_175_p",
+        "spectrum_pla_plapremiumpacificblue_500_175_p",
+        "spectrum_pla_plapremiumpacificblue_750_175_p",
+        "spectrum_pla_plapremiumpacificblue_8000_175_p"
+      ],
+      "5903175657190": [
+        "spectrum_pla_plapremiumbahamayellow_1000_175_c",
+        "spectrum_pla_plapremiumbahamayellow_1000_175_p",
+        "spectrum_pla_plapremiumbahamayellow_2000_175_c",
+        "spectrum_pla_plapremiumbahamayellow_2000_175_p",
+        "spectrum_pla_plapremiumbahamayellow_250_175_c",
+        "spectrum_pla_plapremiumbahamayellow_250_175_p",
+        "spectrum_pla_plapremiumbahamayellow_4500_175_p",
+        "spectrum_pla_plapremiumbahamayellow_500_175_p",
+        "spectrum_pla_plapremiumbahamayellow_750_175_p",
+        "spectrum_pla_plapremiumbahamayellow_8000_175_p"
+      ],
+      "5903175657565": [
+        "spectrum_petg_pet-gpremiumpetglimegreen_1000_175_c"
+      ],
+      "5903175657589": [
+        "spectrum_petg_pet-gpremiumpetgpacificblue_1000_175_c"
+      ],
+      "5903175657596": [
+        "spectrum_petg_pet-gpremiumpetgbloodyred_1000_175_c"
+      ],
+      "5903175657602": [
+        "spectrum_petg_pet-gpremiumpetgdeepblack_1000_175_c"
+      ],
+      "5903175657619": [
+        "spectrum_petg_pet-gpremiumpetgarcticwhite_1000_175_c"
+      ],
+      "5903175657626": [
+        "spectrum_petg_pet-gpremiumpetglionorange_1000_175_c"
+      ],
+      "5903175657633": [
+        "spectrum_petg_pet-gpremiumpetgsilverstar_1000_175_c"
+      ],
+      "5903175657640": [
+        "spectrum_petg_pet-gpremiumpetgtransparentred_1000_175_c"
+      ],
+      "5903175657657": [
+        "spectrum_petg_pet-gpremiumpetgtransparentblue_1000_175_c"
+      ],
+      "5903175657664": [
+        "spectrum_petg_pet-gpremiumpetgtransparentyellow_1000_175_c"
+      ],
+      "5903175657671": [
+        "spectrum_petg_pet-gpremiumpetgtransparentorange_1000_175_c"
+      ],
+      "5903175657688": [
+        "spectrum_petg_pet-gpremiumpetgtransparentblack_1000_175_c"
+      ],
+      "5903175657695": [
+        "spectrum_petg_pet-gpremiumpetgglassy_1000_175_c"
+      ],
+      "5903175657862": [
+        "spectrum_pla_plapremiumpearlgold_1000_175_c",
+        "spectrum_pla_plapremiumpearlgold_1000_175_p",
+        "spectrum_pla_plapremiumpearlgold_2000_175_c",
+        "spectrum_pla_plapremiumpearlgold_2000_175_p",
+        "spectrum_pla_plapremiumpearlgold_250_175_c",
+        "spectrum_pla_plapremiumpearlgold_250_175_p",
+        "spectrum_pla_plapremiumpearlgold_4500_175_p",
+        "spectrum_pla_plapremiumpearlgold_500_175_p",
+        "spectrum_pla_plapremiumpearlgold_750_175_p",
+        "spectrum_pla_plapremiumpearlgold_8000_175_p"
+      ],
+      "5903175657879": [
+        "spectrum_pla_plapremiumnavyblue_1000_175_c",
+        "spectrum_pla_plapremiumnavyblue_1000_175_p",
+        "spectrum_pla_plapremiumnavyblue_2000_175_c",
+        "spectrum_pla_plapremiumnavyblue_2000_175_p",
+        "spectrum_pla_plapremiumnavyblue_250_175_c",
+        "spectrum_pla_plapremiumnavyblue_250_175_p",
+        "spectrum_pla_plapremiumnavyblue_4500_175_p",
+        "spectrum_pla_plapremiumnavyblue_500_175_p",
+        "spectrum_pla_plapremiumnavyblue_750_175_p",
+        "spectrum_pla_plapremiumnavyblue_8000_175_p"
+      ],
+      "5903175657886": [
+        "spectrum_pla_plapremiumpastelturquoise_1000_175_c",
+        "spectrum_pla_plapremiumpastelturquoise_1000_175_p",
+        "spectrum_pla_plapremiumpastelturquoise_2000_175_c",
+        "spectrum_pla_plapremiumpastelturquoise_2000_175_p",
+        "spectrum_pla_plapremiumpastelturquoise_250_175_c",
+        "spectrum_pla_plapremiumpastelturquoise_250_175_p",
+        "spectrum_pla_plapremiumpastelturquoise_4500_175_p",
+        "spectrum_pla_plapremiumpastelturquoise_500_175_p",
+        "spectrum_pla_plapremiumpastelturquoise_750_175_p",
+        "spectrum_pla_plapremiumpastelturquoise_8000_175_p"
+      ],
+      "5903175657893": [
+        "spectrum_pla_plapremiumdarkgrey_1000_175_c",
+        "spectrum_pla_plapremiumdarkgrey_1000_175_p",
+        "spectrum_pla_plapremiumdarkgrey_2000_175_c",
+        "spectrum_pla_plapremiumdarkgrey_2000_175_p",
+        "spectrum_pla_plapremiumdarkgrey_250_175_c",
+        "spectrum_pla_plapremiumdarkgrey_250_175_p",
+        "spectrum_pla_plapremiumdarkgrey_4500_175_p",
+        "spectrum_pla_plapremiumdarkgrey_500_175_p",
+        "spectrum_pla_plapremiumdarkgrey_750_175_p",
+        "spectrum_pla_plapremiumdarkgrey_8000_175_p"
+      ],
+      "5903175657909": [
+        "spectrum_pla_plapremiumbluelagoon_1000_175_c",
+        "spectrum_pla_plapremiumbluelagoon_1000_175_p",
+        "spectrum_pla_plapremiumbluelagoon_2000_175_c",
+        "spectrum_pla_plapremiumbluelagoon_2000_175_p",
+        "spectrum_pla_plapremiumbluelagoon_250_175_c",
+        "spectrum_pla_plapremiumbluelagoon_250_175_p",
+        "spectrum_pla_plapremiumbluelagoon_4500_175_p",
+        "spectrum_pla_plapremiumbluelagoon_500_175_p",
+        "spectrum_pla_plapremiumbluelagoon_750_175_p",
+        "spectrum_pla_plapremiumbluelagoon_8000_175_p"
+      ],
+      "5903175657916": [
+        "spectrum_pla_plapremiummilitarykhaki_1000_175_c",
+        "spectrum_pla_plapremiummilitarykhaki_1000_175_p",
+        "spectrum_pla_plapremiummilitarykhaki_2000_175_c",
+        "spectrum_pla_plapremiummilitarykhaki_2000_175_p",
+        "spectrum_pla_plapremiummilitarykhaki_250_175_c",
+        "spectrum_pla_plapremiummilitarykhaki_250_175_p",
+        "spectrum_pla_plapremiummilitarykhaki_4500_175_p",
+        "spectrum_pla_plapremiummilitarykhaki_500_175_p",
+        "spectrum_pla_plapremiummilitarykhaki_750_175_p",
+        "spectrum_pla_plapremiummilitarykhaki_8000_175_p"
+      ],
+      "5903175657930": [
+        "spectrum_pla_plapremiumpearlbronze_1000_175_c",
+        "spectrum_pla_plapremiumpearlbronze_1000_175_p",
+        "spectrum_pla_plapremiumpearlbronze_2000_175_c",
+        "spectrum_pla_plapremiumpearlbronze_2000_175_p",
+        "spectrum_pla_plapremiumpearlbronze_250_175_c",
+        "spectrum_pla_plapremiumpearlbronze_250_175_p",
+        "spectrum_pla_plapremiumpearlbronze_4500_175_p",
+        "spectrum_pla_plapremiumpearlbronze_500_175_p",
+        "spectrum_pla_plapremiumpearlbronze_750_175_p",
+        "spectrum_pla_plapremiumpearlbronze_8000_175_p"
+      ],
+      "5903175657947": [
+        "spectrum_pla_plapremiumbloodyred_1000_175_c",
+        "spectrum_pla_plapremiumbloodyred_1000_175_p",
+        "spectrum_pla_plapremiumbloodyred_2000_175_c",
+        "spectrum_pla_plapremiumbloodyred_2000_175_p",
+        "spectrum_pla_plapremiumbloodyred_250_175_c",
+        "spectrum_pla_plapremiumbloodyred_250_175_p",
+        "spectrum_pla_plapremiumbloodyred_4500_175_p",
+        "spectrum_pla_plapremiumbloodyred_500_175_p",
+        "spectrum_pla_plapremiumbloodyred_750_175_p",
+        "spectrum_pla_plapremiumbloodyred_8000_175_p"
+      ],
+      "5903175657954": [
+        "spectrum_pla_plapremiumarcticwhite_1000_175_c",
+        "spectrum_pla_plapremiumarcticwhite_1000_175_p",
+        "spectrum_pla_plapremiumarcticwhite_2000_175_c",
+        "spectrum_pla_plapremiumarcticwhite_2000_175_p",
+        "spectrum_pla_plapremiumarcticwhite_250_175_c",
+        "spectrum_pla_plapremiumarcticwhite_250_175_p",
+        "spectrum_pla_plapremiumarcticwhite_4500_175_p",
+        "spectrum_pla_plapremiumarcticwhite_500_175_p",
+        "spectrum_pla_plapremiumarcticwhite_750_175_p",
+        "spectrum_pla_plapremiumarcticwhite_8000_175_p"
+      ],
+      "5903175657961": [
+        "spectrum_pla_plapremiumcarrotorange_1000_175_c",
+        "spectrum_pla_plapremiumcarrotorange_1000_175_p",
+        "spectrum_pla_plapremiumcarrotorange_2000_175_c",
+        "spectrum_pla_plapremiumcarrotorange_2000_175_p",
+        "spectrum_pla_plapremiumcarrotorange_250_175_c",
+        "spectrum_pla_plapremiumcarrotorange_250_175_p",
+        "spectrum_pla_plapremiumcarrotorange_4500_175_p",
+        "spectrum_pla_plapremiumcarrotorange_500_175_p",
+        "spectrum_pla_plapremiumcarrotorange_750_175_p",
+        "spectrum_pla_plapremiumcarrotorange_8000_175_p"
+      ],
+      "5903175658241": [
+        "spectrum_pla_plaprocoral_1000_175_c",
+        "spectrum_pla_plaprocoral_1000_175_p",
+        "spectrum_pla_plaprocoral_2000_175_c",
+        "spectrum_pla_plaprocoral_2000_175_p",
+        "spectrum_pla_plaprocoral_250_175_c",
+        "spectrum_pla_plaprocoral_250_175_p",
+        "spectrum_pla_plaprocoral_4500_175_p",
+        "spectrum_pla_plaprocoral_500_175_p",
+        "spectrum_pla_plaprocoral_750_175_p",
+        "spectrum_pla_plaprocoral_8000_175_p"
+      ],
+      "5903175658258": [
+        "spectrum_pla_plaproforestgreen_1000_175_c",
+        "spectrum_pla_plaproforestgreen_1000_175_p",
+        "spectrum_pla_plaproforestgreen_2000_175_c",
+        "spectrum_pla_plaproforestgreen_2000_175_p",
+        "spectrum_pla_plaproforestgreen_250_175_c",
+        "spectrum_pla_plaproforestgreen_250_175_p",
+        "spectrum_pla_plaproforestgreen_4500_175_p",
+        "spectrum_pla_plaproforestgreen_500_175_p",
+        "spectrum_pla_plaproforestgreen_750_175_p",
+        "spectrum_pla_plaproforestgreen_8000_175_p"
+      ],
+      "5903175658265": [
+        "spectrum_pla_plaprolionorange_1000_175_c",
+        "spectrum_pla_plaprolionorange_1000_175_p",
+        "spectrum_pla_plaprolionorange_2000_175_c",
+        "spectrum_pla_plaprolionorange_2000_175_p",
+        "spectrum_pla_plaprolionorange_250_175_c",
+        "spectrum_pla_plaprolionorange_250_175_p",
+        "spectrum_pla_plaprolionorange_4500_175_p",
+        "spectrum_pla_plaprolionorange_500_175_p",
+        "spectrum_pla_plaprolionorange_750_175_p",
+        "spectrum_pla_plaprolionorange_8000_175_p"
+      ],
+      "5903175658272": [
+        "spectrum_pla_plapropolarwhite_1000_175_c",
+        "spectrum_pla_plapropolarwhite_1000_175_p",
+        "spectrum_pla_plapropolarwhite_2000_175_c",
+        "spectrum_pla_plapropolarwhite_2000_175_p",
+        "spectrum_pla_plapropolarwhite_250_175_c",
+        "spectrum_pla_plapropolarwhite_250_175_p",
+        "spectrum_pla_plapropolarwhite_4500_175_p",
+        "spectrum_pla_plapropolarwhite_500_175_p",
+        "spectrum_pla_plapropolarwhite_750_175_p",
+        "spectrum_pla_plapropolarwhite_8000_175_p"
+      ],
+      "5903175658289": [
+        "spectrum_pla_plaprorustcopper_1000_175_c",
+        "spectrum_pla_plaprorustcopper_1000_175_p",
+        "spectrum_pla_plaprorustcopper_2000_175_c",
+        "spectrum_pla_plaprorustcopper_2000_175_p",
+        "spectrum_pla_plaprorustcopper_250_175_c",
+        "spectrum_pla_plaprorustcopper_250_175_p",
+        "spectrum_pla_plaprorustcopper_4500_175_p",
+        "spectrum_pla_plaprorustcopper_500_175_p",
+        "spectrum_pla_plaprorustcopper_750_175_p",
+        "spectrum_pla_plaprorustcopper_8000_175_p"
+      ],
+      "5903175658296": [
+        "spectrum_pla_plaprolimegreen_1000_175_c",
+        "spectrum_pla_plaprolimegreen_1000_175_p",
+        "spectrum_pla_plaprolimegreen_2000_175_c",
+        "spectrum_pla_plaprolimegreen_2000_175_p",
+        "spectrum_pla_plaprolimegreen_250_175_c",
+        "spectrum_pla_plaprolimegreen_250_175_p",
+        "spectrum_pla_plaprolimegreen_4500_175_p",
+        "spectrum_pla_plaprolimegreen_500_175_p",
+        "spectrum_pla_plaprolimegreen_750_175_p",
+        "spectrum_pla_plaprolimegreen_8000_175_p"
+      ],
+      "5903175658302": [
+        "spectrum_pla_plaprosilverstar_1000_175_c",
+        "spectrum_pla_plaprosilverstar_1000_175_p",
+        "spectrum_pla_plaprosilverstar_2000_175_c",
+        "spectrum_pla_plaprosilverstar_2000_175_p",
+        "spectrum_pla_plaprosilverstar_250_175_c",
+        "spectrum_pla_plaprosilverstar_250_175_p",
+        "spectrum_pla_plaprosilverstar_4500_175_p",
+        "spectrum_pla_plaprosilverstar_500_175_p",
+        "spectrum_pla_plaprosilverstar_750_175_p",
+        "spectrum_pla_plaprosilverstar_8000_175_p"
+      ],
+      "5903175658319": [
+        "spectrum_pla_plapropacificblue_1000_175_c",
+        "spectrum_pla_plapropacificblue_1000_175_p",
+        "spectrum_pla_plapropacificblue_2000_175_c",
+        "spectrum_pla_plapropacificblue_2000_175_p",
+        "spectrum_pla_plapropacificblue_250_175_c",
+        "spectrum_pla_plapropacificblue_250_175_p",
+        "spectrum_pla_plapropacificblue_4500_175_p",
+        "spectrum_pla_plapropacificblue_500_175_p",
+        "spectrum_pla_plapropacificblue_750_175_p",
+        "spectrum_pla_plapropacificblue_8000_175_p"
+      ],
+      "5903175658326": [
+        "spectrum_pla_plaprobahamayellow_1000_175_c",
+        "spectrum_pla_plaprobahamayellow_1000_175_p",
+        "spectrum_pla_plaprobahamayellow_2000_175_c",
+        "spectrum_pla_plaprobahamayellow_2000_175_p",
+        "spectrum_pla_plaprobahamayellow_250_175_c",
+        "spectrum_pla_plaprobahamayellow_250_175_p",
+        "spectrum_pla_plaprobahamayellow_4500_175_p",
+        "spectrum_pla_plaprobahamayellow_500_175_p",
+        "spectrum_pla_plaprobahamayellow_750_175_p",
+        "spectrum_pla_plaprobahamayellow_8000_175_p"
+      ],
+      "5903175658333": [
+        "spectrum_pla_plapronavyblue_1000_175_c",
+        "spectrum_pla_plapronavyblue_1000_175_p",
+        "spectrum_pla_plapronavyblue_2000_175_c",
+        "spectrum_pla_plapronavyblue_2000_175_p",
+        "spectrum_pla_plapronavyblue_250_175_c",
+        "spectrum_pla_plapronavyblue_250_175_p",
+        "spectrum_pla_plapronavyblue_4500_175_p",
+        "spectrum_pla_plapronavyblue_500_175_p",
+        "spectrum_pla_plapronavyblue_750_175_p",
+        "spectrum_pla_plapronavyblue_8000_175_p"
+      ],
+      "5903175658340": [
+        "spectrum_pla_plaprodarkgrey_1000_175_c",
+        "spectrum_pla_plaprodarkgrey_1000_175_p",
+        "spectrum_pla_plaprodarkgrey_2000_175_c",
+        "spectrum_pla_plaprodarkgrey_2000_175_p",
+        "spectrum_pla_plaprodarkgrey_250_175_c",
+        "spectrum_pla_plaprodarkgrey_250_175_p",
+        "spectrum_pla_plaprodarkgrey_4500_175_p",
+        "spectrum_pla_plaprodarkgrey_500_175_p",
+        "spectrum_pla_plaprodarkgrey_750_175_p",
+        "spectrum_pla_plaprodarkgrey_8000_175_p"
+      ],
+      "5903175658357": [
+        "spectrum_pla_plapropearlgold_1000_175_c",
+        "spectrum_pla_plapropearlgold_1000_175_p",
+        "spectrum_pla_plapropearlgold_2000_175_c",
+        "spectrum_pla_plapropearlgold_2000_175_p",
+        "spectrum_pla_plapropearlgold_250_175_c",
+        "spectrum_pla_plapropearlgold_250_175_p",
+        "spectrum_pla_plapropearlgold_4500_175_p",
+        "spectrum_pla_plapropearlgold_500_175_p",
+        "spectrum_pla_plapropearlgold_750_175_p",
+        "spectrum_pla_plapropearlgold_8000_175_p"
+      ],
+      "5903175658364": [
+        "spectrum_pla_plapropearlbronze_1000_175_c",
+        "spectrum_pla_plapropearlbronze_1000_175_p",
+        "spectrum_pla_plapropearlbronze_2000_175_c",
+        "spectrum_pla_plapropearlbronze_2000_175_p",
+        "spectrum_pla_plapropearlbronze_250_175_c",
+        "spectrum_pla_plapropearlbronze_250_175_p",
+        "spectrum_pla_plapropearlbronze_4500_175_p",
+        "spectrum_pla_plapropearlbronze_500_175_p",
+        "spectrum_pla_plapropearlbronze_750_175_p",
+        "spectrum_pla_plapropearlbronze_8000_175_p"
+      ],
+      "5903175658371": [
+        "spectrum_pla_plaprobloodyred_1000_175_c",
+        "spectrum_pla_plaprobloodyred_1000_175_p",
+        "spectrum_pla_plaprobloodyred_2000_175_c",
+        "spectrum_pla_plaprobloodyred_2000_175_p",
+        "spectrum_pla_plaprobloodyred_250_175_c",
+        "spectrum_pla_plaprobloodyred_250_175_p",
+        "spectrum_pla_plaprobloodyred_4500_175_p",
+        "spectrum_pla_plaprobloodyred_500_175_p",
+        "spectrum_pla_plaprobloodyred_750_175_p",
+        "spectrum_pla_plaprobloodyred_8000_175_p"
+      ],
+      "5903175658388": [
+        "spectrum_pla_plaproarcticwhite_1000_175_c",
+        "spectrum_pla_plaproarcticwhite_1000_175_p",
+        "spectrum_pla_plaproarcticwhite_2000_175_c",
+        "spectrum_pla_plaproarcticwhite_2000_175_p",
+        "spectrum_pla_plaproarcticwhite_250_175_c",
+        "spectrum_pla_plaproarcticwhite_250_175_p",
+        "spectrum_pla_plaproarcticwhite_4500_175_p",
+        "spectrum_pla_plaproarcticwhite_500_175_p",
+        "spectrum_pla_plaproarcticwhite_750_175_p",
+        "spectrum_pla_plaproarcticwhite_8000_175_p"
+      ],
+      "5903175658791": [
+        "spectrum_pla_plaprocarrotorange_1000_175_c",
+        "spectrum_pla_plaprocarrotorange_1000_175_p",
+        "spectrum_pla_plaprocarrotorange_2000_175_c",
+        "spectrum_pla_plaprocarrotorange_2000_175_p",
+        "spectrum_pla_plaprocarrotorange_250_175_c",
+        "spectrum_pla_plaprocarrotorange_250_175_p",
+        "spectrum_pla_plaprocarrotorange_4500_175_p",
+        "spectrum_pla_plaprocarrotorange_500_175_p",
+        "spectrum_pla_plaprocarrotorange_750_175_p",
+        "spectrum_pla_plaprocarrotorange_8000_175_p"
+      ],
+      "5903175659026": [
+        "spectrum_pla_plapremiumfoxorange_1000_175_c",
+        "spectrum_pla_plapremiumfoxorange_1000_175_p",
+        "spectrum_pla_plapremiumfoxorange_2000_175_c",
+        "spectrum_pla_plapremiumfoxorange_2000_175_p",
+        "spectrum_pla_plapremiumfoxorange_250_175_c",
+        "spectrum_pla_plapremiumfoxorange_250_175_p",
+        "spectrum_pla_plapremiumfoxorange_4500_175_p",
+        "spectrum_pla_plapremiumfoxorange_500_175_p",
+        "spectrum_pla_plapremiumfoxorange_750_175_p",
+        "spectrum_pla_plapremiumfoxorange_8000_175_p"
+      ],
+      "5903175659033": [
+        "spectrum_pla_plapremiumtruered_1000_175_c",
+        "spectrum_pla_plapremiumtruered_1000_175_p",
+        "spectrum_pla_plapremiumtruered_2000_175_c",
+        "spectrum_pla_plapremiumtruered_2000_175_p",
+        "spectrum_pla_plapremiumtruered_250_175_c",
+        "spectrum_pla_plapremiumtruered_250_175_p",
+        "spectrum_pla_plapremiumtruered_4500_175_p",
+        "spectrum_pla_plapremiumtruered_500_175_p",
+        "spectrum_pla_plapremiumtruered_750_175_p",
+        "spectrum_pla_plapremiumtruered_8000_175_p"
+      ],
+      "5903175659040": [
+        "spectrum_pla_plapremiumcherryred_1000_175_c",
+        "spectrum_pla_plapremiumcherryred_1000_175_p",
+        "spectrum_pla_plapremiumcherryred_2000_175_c",
+        "spectrum_pla_plapremiumcherryred_2000_175_p",
+        "spectrum_pla_plapremiumcherryred_250_175_c",
+        "spectrum_pla_plapremiumcherryred_250_175_p",
+        "spectrum_pla_plapremiumcherryred_4500_175_p",
+        "spectrum_pla_plapremiumcherryred_500_175_p",
+        "spectrum_pla_plapremiumcherryred_750_175_p",
+        "spectrum_pla_plapremiumcherryred_8000_175_p"
+      ],
+      "5903175659057": [
+        "spectrum_pla_plapremiumoreganogreen_1000_175_c",
+        "spectrum_pla_plapremiumoreganogreen_1000_175_p",
+        "spectrum_pla_plapremiumoreganogreen_2000_175_c",
+        "spectrum_pla_plapremiumoreganogreen_2000_175_p",
+        "spectrum_pla_plapremiumoreganogreen_250_175_c",
+        "spectrum_pla_plapremiumoreganogreen_250_175_p",
+        "spectrum_pla_plapremiumoreganogreen_4500_175_p",
+        "spectrum_pla_plapremiumoreganogreen_500_175_p",
+        "spectrum_pla_plapremiumoreganogreen_750_175_p",
+        "spectrum_pla_plapremiumoreganogreen_8000_175_p"
+      ],
+      "5903175659064": [
+        "spectrum_pla_plapremiumchrysocollagreen_1000_175_c",
+        "spectrum_pla_plapremiumchrysocollagreen_1000_175_p",
+        "spectrum_pla_plapremiumchrysocollagreen_2000_175_c",
+        "spectrum_pla_plapremiumchrysocollagreen_2000_175_p",
+        "spectrum_pla_plapremiumchrysocollagreen_250_175_c",
+        "spectrum_pla_plapremiumchrysocollagreen_250_175_p",
+        "spectrum_pla_plapremiumchrysocollagreen_4500_175_p",
+        "spectrum_pla_plapremiumchrysocollagreen_500_175_p",
+        "spectrum_pla_plapremiumchrysocollagreen_750_175_p",
+        "spectrum_pla_plapremiumchrysocollagreen_8000_175_p"
+      ],
+      "5903175659071": [
+        "spectrum_pla_plapremiumbabyblue_1000_175_c",
+        "spectrum_pla_plapremiumbabyblue_1000_175_p",
+        "spectrum_pla_plapremiumbabyblue_2000_175_c",
+        "spectrum_pla_plapremiumbabyblue_2000_175_p",
+        "spectrum_pla_plapremiumbabyblue_250_175_c",
+        "spectrum_pla_plapremiumbabyblue_250_175_p",
+        "spectrum_pla_plapremiumbabyblue_4500_175_p",
+        "spectrum_pla_plapremiumbabyblue_500_175_p",
+        "spectrum_pla_plapremiumbabyblue_750_175_p",
+        "spectrum_pla_plapremiumbabyblue_8000_175_p"
+      ],
+      "5903175659088": [
+        "spectrum_pla_plapremiumroyalblue_1000_175_c",
+        "spectrum_pla_plapremiumroyalblue_1000_175_p",
+        "spectrum_pla_plapremiumroyalblue_2000_175_c",
+        "spectrum_pla_plapremiumroyalblue_2000_175_p",
+        "spectrum_pla_plapremiumroyalblue_250_175_c",
+        "spectrum_pla_plapremiumroyalblue_250_175_p",
+        "spectrum_pla_plapremiumroyalblue_4500_175_p",
+        "spectrum_pla_plapremiumroyalblue_500_175_p",
+        "spectrum_pla_plapremiumroyalblue_750_175_p",
+        "spectrum_pla_plapremiumroyalblue_8000_175_p"
+      ],
+      "5903175659095": [
+        "spectrum_pla_plapremiumsignalviolet_1000_175_c",
+        "spectrum_pla_plapremiumsignalviolet_1000_175_p",
+        "spectrum_pla_plapremiumsignalviolet_2000_175_c",
+        "spectrum_pla_plapremiumsignalviolet_2000_175_p",
+        "spectrum_pla_plapremiumsignalviolet_250_175_c",
+        "spectrum_pla_plapremiumsignalviolet_250_175_p",
+        "spectrum_pla_plapremiumsignalviolet_4500_175_p",
+        "spectrum_pla_plapremiumsignalviolet_500_175_p",
+        "spectrum_pla_plapremiumsignalviolet_750_175_p",
+        "spectrum_pla_plapremiumsignalviolet_8000_175_p"
+      ],
+      "5903175659101": [
+        "spectrum_pla_plapremiumoldgold_1000_175_c",
+        "spectrum_pla_plapremiumoldgold_1000_175_p",
+        "spectrum_pla_plapremiumoldgold_2000_175_c",
+        "spectrum_pla_plapremiumoldgold_2000_175_p",
+        "spectrum_pla_plapremiumoldgold_250_175_c",
+        "spectrum_pla_plapremiumoldgold_250_175_p",
+        "spectrum_pla_plapremiumoldgold_4500_175_p",
+        "spectrum_pla_plapremiumoldgold_500_175_p",
+        "spectrum_pla_plapremiumoldgold_750_175_p",
+        "spectrum_pla_plapremiumoldgold_8000_175_p"
+      ],
+      "5903175659118": [
+        "spectrum_pla_plapremiumpearlgrey_1000_175_c",
+        "spectrum_pla_plapremiumpearlgrey_1000_175_p",
+        "spectrum_pla_plapremiumpearlgrey_2000_175_c",
+        "spectrum_pla_plapremiumpearlgrey_2000_175_p",
+        "spectrum_pla_plapremiumpearlgrey_250_175_c",
+        "spectrum_pla_plapremiumpearlgrey_250_175_p",
+        "spectrum_pla_plapremiumpearlgrey_4500_175_p",
+        "spectrum_pla_plapremiumpearlgrey_500_175_p",
+        "spectrum_pla_plapremiumpearlgrey_750_175_p",
+        "spectrum_pla_plapremiumpearlgrey_8000_175_p"
+      ],
+      "5903175659125": [
+        "spectrum_asa_asa275brownred_1000_175_c",
+        "spectrum_asa_asa275brownred_1000_285_c",
+        "spectrum_asa_asa275brownred_2000_175_c",
+        "spectrum_asa_asa275brownred_2000_285_c",
+        "spectrum_asa_asa275brownred_250_175_c",
+        "spectrum_asa_asa275brownred_250_285_c",
+        "spectrum_asa_asa275brownred_4500_175_c",
+        "spectrum_asa_asa275brownred_4500_285_c",
+        "spectrum_asa_asa275brownred_8000_175_c",
+        "spectrum_asa_asa275brownred_8000_285_c"
+      ],
+      "5903175659576": [
+        "spectrum_pla_plapremiumflipflopgreen_1000_175_c",
+        "spectrum_pla_plapremiumflipflopgreen_1000_175_p",
+        "spectrum_pla_plapremiumflipflopgreen_2000_175_c",
+        "spectrum_pla_plapremiumflipflopgreen_2000_175_p",
+        "spectrum_pla_plapremiumflipflopgreen_250_175_c",
+        "spectrum_pla_plapremiumflipflopgreen_250_175_p",
+        "spectrum_pla_plapremiumflipflopgreen_4500_175_p",
+        "spectrum_pla_plapremiumflipflopgreen_500_175_p",
+        "spectrum_pla_plapremiumflipflopgreen_750_175_p",
+        "spectrum_pla_plapremiumflipflopgreen_8000_175_p"
+      ],
+      "5903175659996": [
+        "spectrum_pla_plaprodeepblack_1000_175_c",
+        "spectrum_pla_plaprodeepblack_1000_175_p",
+        "spectrum_pla_plaprodeepblack_2000_175_c",
+        "spectrum_pla_plaprodeepblack_2000_175_p",
+        "spectrum_pla_plaprodeepblack_250_175_c",
+        "spectrum_pla_plaprodeepblack_250_175_p",
+        "spectrum_pla_plaprodeepblack_4500_175_p",
+        "spectrum_pla_plaprodeepblack_500_175_p",
+        "spectrum_pla_plaprodeepblack_750_175_p",
+        "spectrum_pla_plaprodeepblack_8000_175_p"
+      ],
+      "5905669045704": [
+        "spectrum_pla_plapremiumdahliayellow_1000_175_c",
+        "spectrum_pla_plapremiumdahliayellow_1000_175_p",
+        "spectrum_pla_plapremiumdahliayellow_2000_175_c",
+        "spectrum_pla_plapremiumdahliayellow_2000_175_p",
+        "spectrum_pla_plapremiumdahliayellow_250_175_c",
+        "spectrum_pla_plapremiumdahliayellow_250_175_p",
+        "spectrum_pla_plapremiumdahliayellow_4500_175_p",
+        "spectrum_pla_plapremiumdahliayellow_500_175_p",
+        "spectrum_pla_plapremiumdahliayellow_750_175_p",
+        "spectrum_pla_plapremiumdahliayellow_8000_175_p"
+      ]
+    },
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": [
+    {
+      "sha": "f21c258e2599298fdd4b84192adeca2333df08e8",
+      "definition_index": 1,
+      "reason": "list indices must be integers or slices, not str"
+    },
+    {
+      "sha": "f21c258e2599298fdd4b84192adeca2333df08e8",
+      "definition_index": 2,
+      "reason": "list indices must be integers or slices, not str"
+    },
+    {
+      "sha": "675abd1bce9890ba6c58d0ae45499978fc4a6818",
+      "reason": "Expecting ',' delimiter: line 368 column 25 (char 11950)"
+    },
+    {
+      "sha": "fa05b09402c2467d44755ad8565b57b92a08e13e",
+      "definition_index": 1,
+      "reason": "list indices must be integers or slices, not str"
+    },
+    {
+      "sha": "fa05b09402c2467d44755ad8565b57b92a08e13e",
+      "definition_index": 2,
+      "reason": "list indices must be integers or slices, not str"
+    },
+    {
+      "sha": "d92a545f26d673dce8af0abc1e075de0003a63d9",
+      "definition_index": 1,
+      "reason": "list indices must be integers or slices, not str"
+    },
+    {
+      "sha": "d92a545f26d673dce8af0abc1e075de0003a63d9",
+      "definition_index": 2,
+      "reason": "list indices must be integers or slices, not str"
+    },
+    {
+      "sha": "b6318959a8bd4b11347262bb39299251a738955e",
+      "definition_index": 1,
+      "reason": "'Plastic'"
+    },
+    {
+      "sha": "b6318959a8bd4b11347262bb39299251a738955e",
+      "definition_index": 2,
+      "reason": "'Plastic'"
+    }
+  ]
+}

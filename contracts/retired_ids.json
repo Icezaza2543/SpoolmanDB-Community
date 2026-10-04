@@ -14140,6 +14140,13 @@
       "ref": "docs/audits/2026-10-04-smartprint-owner-closure.json",
       "source": "78893773ea9c70655d0250a099e46b15090a35ad",
       "retired_key": "smartprint.json::SmartPrint::TPU {color_name}::TPU Gray::TPU::1000::1.75::plastic::False"
+    },
+    "spectrum_petg_ptfesignalwhite_1000_175_c": {
+      "replaced_by": "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-spectrum-owner-closure.json",
+      "source": "bb8300c31c834287bb2eb9460b27c59a1c3c4099",
+      "retired_key": "spectrum.json::Spectrum::PTFE {color_name}::PTFE Signal White::PETG::1000::1.75::cardboard::False"
     }
   }
 }
