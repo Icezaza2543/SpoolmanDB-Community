@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "l3d",
+  "base_sha": "7e1c086794edf4dcb67ea2e4909c6a82ad9fedc0",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "5e78582e587d02fd87b1d16ccf5c900710e7ef3821efc8ac8fe9dacd794d2bb4",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-377dfee5243440f2c3d930ca9e3d9e5ead5a2d4fabfada1965a1d1eb79a9c284": {
+      "approved": true,
+      "survivor": "l3d_petg_petggray_3000_175_c",
+      "retire": [
+        "l3d_petg_petggrey_3000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-l3d-owner-closure.json",
+      "source": "7e1c086794edf4dcb67ea2e4909c6a82ad9fedc0"
+    }
+  },
+  "bindings": {
+    "l3d_petg_petggray_3000_175_c": {
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Gray::PETG::3000::1.75::cardboard::False",
+      "source_color": "Gray",
+      "line": "PETG",
+      "color": "gray"
+    },
+    "l3d_petg_petggrey_3000_175_c": {
+      "key": "l3d.json::L3D::PETG {color_name}::PETG Grey::PETG::3000::1.75::cardboard::False",
+      "source_color": "Grey",
+      "line": "PETG",
+      "color": "gray"
+    }
+  },
+  "metadata": [
+    {
+      "id": "l3d_petg_petggray_3000_175_c",
+      "values": {
+        "color_hex": "A3A3A3"
+      },
+      "source": "7e1c086794edf4dcb67ea2e4909c6a82ad9fedc0",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-377dfee5243440f2c3d930ca9e3d9e5ead5a2d4fabfada1965a1d1eb79a9c284",
+      "ids": [
+        "l3d_petg_petggray_3000_175_c",
+        "l3d_petg_petggrey_3000_175_c"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "l3d_petg_petggray_3000_175_c",
+          "manufacturer": "L3D",
+          "name": "PETG Gray",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 3000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PETG-GREY-03"
+          ],
+          "eans": [
+            "5744006030696"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "DK",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "l3d.json::L3D::PETG {color_name}::PETG Gray::PETG::3000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Gray",
+          "source_line": "PETG",
+          "source_file": "l3d.json",
+          "source_definition": {
+            "source_file": "l3d.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "l3d_petg_petggrey_3000_175_c",
+          "manufacturer": "L3D",
+          "name": "PETG Grey",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 3000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "A3A3A3",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DK",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "l3d.json::L3D::PETG {color_name}::PETG Grey::PETG::3000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Grey",
+          "source_line": "PETG",
+          "source_file": "l3d.json",
+          "source_definition": {
+            "source_file": "l3d.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "l3d_petg_petggray_3000_175_c": "808080",
+          "l3d_petg_petggrey_3000_175_c": "A3A3A3"
+        },
+        "codes": {
+          "l3d_petg_petggray_3000_175_c": [
+            "PETG-GREY-03"
+          ],
+          "l3d_petg_petggrey_3000_175_c": null
+        },
+        "eans": {
+          "l3d_petg_petggray_3000_175_c": [
+            "5744006030696"
+          ],
+          "l3d_petg_petggrey_3000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "l3d_petg_petggray_3000_175_c",
+      "retire": [
+        "l3d_petg_petggrey_3000_175_c"
+      ],
+      "survivor_ranking": {
+        "l3d_petg_petggray_3000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          "l3d_petg_petggray_3000_175_c"
+        ],
+        "l3d_petg_petggrey_3000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          "l3d_petg_petggrey_3000_175_c"
+        ]
+      },
+      "id_first_seen": {
+        "l3d_petg_petggray_3000_175_c": [
+          0,
+          "2e1ab38484baa8816097fbf4ff1ed3c87e0aa879"
+        ],
+        "l3d_petg_petggrey_3000_175_c": [
+          1,
+          "9b88f226efeb7de969f365d686ef82872524ca41"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "l3d_petg_petggrey_3000_175_c": {
+      "replaced_by": "l3d_petg_petggray_3000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-l3d-owner-closure.json",
+      "source": "7e1c086794edf4dcb67ea2e4909c6a82ad9fedc0",
+      "retired_key": "l3d.json::L3D::PETG {color_name}::PETG Grey::PETG::3000::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51421,
+    "after_count": 51420,
+    "metadata_fields_changed": 1,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {
+      "5744006030146": [
+        "l3d_pla_plablack_1000_175_c"
+      ],
+      "5744006030252": [
+        "l3d_pla_plamagenta_1000_175_c"
+      ],
+      "5744006030269": [
+        "l3d_pla_plared_1000_175_c"
+      ],
+      "5744006030276": [
+        "l3d_pla_placyan_1000_175_c"
+      ],
+      "5744006030283": [
+        "l3d_pla_plagreen_1000_175_c"
+      ],
+      "5744006030290": [
+        "l3d_pla_plagold_1000_175_c"
+      ],
+      "5744006030313": [
+        "l3d_pla_plablue_1000_175_c"
+      ],
+      "5744006030320": [
+        "l3d_pla_plabrown_1000_175_c"
+      ],
+      "5744006030337": [
+        "l3d_pla_playellow_1000_175_c"
+      ],
+      "5744006030351": [
+        "l3d_pla_plagray_1000_175_c"
+      ],
+      "5744006030368": [
+        "l3d_pla_plawhite_1000_175_c"
+      ],
+      "5744006030375": [
+        "l3d_pla_plablack_1000_175_c"
+      ],
+      "5744006030382": [
+        "l3d_pla_plawhite_3000_175_c"
+      ],
+      "5744006030511": [
+        "l3d_petg_petgwhite_1000_175_c"
+      ],
+      "5744006030528": [
+        "l3d_petg_petgblack_1000_175_c"
+      ],
+      "5744006030535": [
+        "l3d_petg_petggray_1000_175_c"
+      ],
+      "5744006030542": [
+        "l3d_petg_petgyellow_1000_175_c"
+      ],
+      "5744006030559": [
+        "l3d_petg_petgred_1000_175_c"
+      ],
+      "5744006030603": [
+        "l3d_petg_petgorange_1000_175_c"
+      ],
+      "5744006030641": [
+        "l3d_petg_petgdarkgreen_1000_175_c"
+      ],
+      "5744006030672": [
+        "l3d_petg_petgwhite_3000_175_c"
+      ],
+      "5744006030689": [
+        "l3d_petg_petgblack_3000_175_c"
+      ],
+      "5744006030696": [
+        "l3d_petg_petggray_3000_175_c"
+      ],
+      "5744006030764": [
+        "l3d_pla_glitterplasilver_1000_175_c"
+      ],
+      "5744006030795": [
+        "l3d_pla_glitterplablack_1000_175_c"
+      ],
+      "5744006030856": [
+        "l3d_pla_silkplalightblue_1000_175_c"
+      ],
+      "5744006030863": [
+        "l3d_pla_silkplarose_1000_175_c"
+      ],
+      "5744006030870": [
+        "l3d_pla_silkplared_1000_175_c"
+      ],
+      "5744006030887": [
+        "l3d_pla_silkplalightgreen_1000_175_c"
+      ],
+      "5744006030894": [
+        "l3d_pla_silkplagold_1000_175_c"
+      ],
+      "5744006030900": [
+        "l3d_pla_silkplalightlilac_1000_175_c"
+      ],
+      "5744006030917": [
+        "l3d_pla_silkplaarmygreen_1000_175_c"
+      ],
+      "5744006030924": [
+        "l3d_pla_silkplawhite_1000_175_c"
+      ],
+      "5744006030931": [
+        "l3d_pla_silkplasilver_1000_175_c"
+      ],
+      "5744006030948": [
+        "l3d_pla_silkplacopper_1000_175_c"
+      ],
+      "5744006030955": [
+        "l3d_petg_mattepetgblack_3000_175_c"
+      ],
+      "5744006030962": [
+        "l3d_petg_petggray_1000_175_c"
+      ],
+      "5744006031136": [
+        "l3d_pla_matteplablack_1000_175_c"
+      ],
+      "5744006031778": [
+        "l3d_pla_plalightwood_1000_175_c"
+      ],
+      "5744006031785": [
+        "l3d_pla_plakhaki_1000_175_c"
+      ]
+    },
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
