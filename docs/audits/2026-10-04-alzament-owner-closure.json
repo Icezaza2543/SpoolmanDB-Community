@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "alzament",
+  "base_sha": "e76fe9345a889c32a4eea6d8e99ccb345bd8c25d",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "555b64f38bfda3a0ca9fa32d9cce328fea55fe87c09a11c60eb32c0a67c61c7a",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-ab2600f560ca16e859bf5f55b7bd2c9375df2cc151a853b699ca6075e2d34c3c": {
+      "approved": true,
+      "survivor": "alzament_abs_absgrey_1000_175_p",
+      "retire": [
+        "alzament_abs_absgray_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-alzament-owner-closure.json",
+      "source": "e76fe9345a889c32a4eea6d8e99ccb345bd8c25d"
+    }
+  },
+  "bindings": {
+    "alzament_abs_absgray_1000_175_p": {
+      "key": "alzament.json::Alzament::ABS {color_name}::ABS Gray::ABS::1000.0::1.75::plastic::False",
+      "source_color": "Gray",
+      "line": "ABS",
+      "color": "gray"
+    },
+    "alzament_abs_absgrey_1000_175_p": {
+      "key": "alzament.json::Alzament::ABS {color_name}::ABS Grey::ABS::1000.0::1.75::plastic::False",
+      "source_color": "Grey",
+      "line": "ABS",
+      "color": "gray"
+    }
+  },
+  "metadata": [
+    {
+      "id": "alzament_abs_absgrey_1000_175_p",
+      "values": {
+        "color_hex": "939392"
+      },
+      "source": "e76fe9345a889c32a4eea6d8e99ccb345bd8c25d",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-ab2600f560ca16e859bf5f55b7bd2c9375df2cc151a853b699ca6075e2d34c3c",
+      "ids": [
+        "alzament_abs_absgray_1000_175_p",
+        "alzament_abs_absgrey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "alzament_abs_absgray_1000_175_p",
+          "manufacturer": "Alzament",
+          "name": "ABS Gray",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "939392",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "ES",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "alzament.json::Alzament::ABS {color_name}::ABS Gray::ABS::1000.0::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Gray",
+          "source_line": "ABS",
+          "source_file": "alzament.json",
+          "source_definition": {
+            "source_file": "alzament.json",
+            "definition_index": 2,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "alzament_abs_absgrey_1000_175_p",
+          "manufacturer": "Alzament",
+          "name": "ABS Grey",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "ES",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "alzament.json::Alzament::ABS {color_name}::ABS Grey::ABS::1000.0::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Grey",
+          "source_line": "ABS",
+          "source_file": "alzament.json",
+          "source_definition": {
+            "source_file": "alzament.json",
+            "definition_index": 2,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "alzament_abs_absgray_1000_175_p": "939392",
+          "alzament_abs_absgrey_1000_175_p": "808080"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "alzament_abs_absgrey_1000_175_p",
+      "retire": [
+        "alzament_abs_absgray_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "alzament_abs_absgray_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          "alzament_abs_absgray_1000_175_p"
+        ],
+        "alzament_abs_absgrey_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          "alzament_abs_absgrey_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "alzament_abs_absgray_1000_175_p": [
+          1,
+          "9b88f226efeb7de969f365d686ef82872524ca41"
+        ],
+        "alzament_abs_absgrey_1000_175_p": [
+          0,
+          "578096851d82e2157cc61d2a0ed2aaccc750e1cb"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "alzament_abs_absgray_1000_175_p": {
+      "replaced_by": "alzament_abs_absgrey_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-alzament-owner-closure.json",
+      "source": "e76fe9345a889c32a4eea6d8e99ccb345bd8c25d",
+      "retired_key": "alzament.json::Alzament::ABS {color_name}::ABS Gray::ABS::1000.0::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51433,
+    "after_count": 51432,
+    "metadata_fields_changed": 1,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
