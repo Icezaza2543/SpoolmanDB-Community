@@ -8,6 +8,68 @@ import json
 from pathlib import Path
 import subprocess
 
+# Only named product-line words; never versions, materials, CF/HF/HS or colors.
+MOVABLE_LINE_QUALIFIERS = frozenset({
+    "galaxy", "flexible", "glitter", "silk", "matte", "dual", "metallic",
+    "rapid", "plus", "basic", "hyper", "fluorescent", "glow", "crystal",
+    "his", "toms3d",
+})
+
+
+def line_color_bindings(left_key, left_color, right_key, right_color):
+    """Bind exact paired templates without deleting or reordering name tokens.
+
+    A word in a color label is movable only when the counterpart template
+    explicitly anchors it. Ambiguous repeated occurrences fail closed.
+    """
+    keys, colors = (left_key, right_key), (left_color, right_color)
+    fields = [key.split("::") for key in keys]
+    if any(len(f) != 9 for f in fields):
+        raise ValueError("invalid paired identity key")
+    if (any(fields[0][i] != fields[1][i] for i in (0, 1, 4, 7, 8)) or
+            any(float(fields[0][i]) != float(fields[1][i]) for i in (5, 6))):
+        raise ValueError("different material or package identity")
+    parts, lines, names = [], [], []
+    for f, color in zip(fields, colors):
+        template, manufacturer, material = f[2], f[1], f[4]
+        if template.count("{color_name}") != 1 or not isinstance(color, str) or not color:
+            raise ValueError("exact source color and single placeholder required")
+        prefix, suffix = template.split("{color_name}")
+        pre = normalize_name(prefix, manufacturer, material)
+        post = normalize_name(suffix, manufacturer, material)
+        middle = normalize_name(color, color=True)
+        physical = normalize_name(template.format(color_name=color), manufacturer, material)
+        if pre + middle + post != physical:
+            raise ValueError("color tokens cannot be dropped by material normalization")
+        parts.append([{"role": role, "token": token} for role, tokens in
+                      (("line", pre), ("color", middle), ("line", post)) for token in tokens])
+        lines.append(pre + post)
+        names.append(physical)
+    if names[0] != names[1]:
+        raise ValueError("remaining name tokens differ in exact order")
+    target = max(lines, key=len)
+    for side in range(2):
+        needed = list(target)
+        for token in lines[side]:
+            if token not in needed:
+                raise ValueError("different product lines")
+            needed.remove(token)
+        for token in needed:
+            if token not in MOVABLE_LINE_QUALIFIERS or token not in lines[1 - side]:
+                raise ValueError("qualifier not allowlisted or anchored")
+            occurrences = [p for p in parts[side] if p["role"] == "color" and p["token"] == token]
+            if len(occurrences) != 1:
+                raise ValueError("ambiguous qualifier occurrence")
+            occurrences[0]["role"] = "line"
+        if tuple(p["token"] for p in parts[side] if p["role"] == "line") != target:
+            raise ValueError("line token order differs")
+    physical_colors = [tuple(p["token"] for p in side if p["role"] == "color") for side in parts]
+    if not physical_colors[0] or physical_colors[0] != physical_colors[1]:
+        raise ValueError("remaining color tokens differ")
+    return tuple({"key": keys[i], "source_color": colors[i], "line": " ".join(target) or fields[i][4],
+                  "color": " ".join(physical_colors[i]), "parts": parts[i],
+                  "anchor_key": keys[1 - i], "anchor_source_color": colors[1 - i]} for i in range(2))
+
 
 def normalize_name(name, manufacturer="", material="", color=False):
     """Keep order, repetitions, plus signs and version/line qualifiers."""
@@ -56,7 +118,12 @@ def identity_from_key(key, binding=None):
             physical_name = template
         else:
             raise ValueError("ambiguous identity template")
-        if normalize_name(line + " " + color, manufacturer, material) != normalize_name(physical_name, manufacturer, material):
+        if "parts" in binding:
+            expected = line_color_bindings(key, source_color, binding.get("anchor_key", ""),
+                                           binding.get("anchor_source_color"))[0]
+            if binding != expected:
+                raise ValueError("reviewed ordered parts or template anchor changed")
+        elif normalize_name(line + " " + color, manufacturer, material) != normalize_name(physical_name, manufacturer, material):
             raise ValueError("reviewed identity decomposition drops or changes name tokens")
         if template.count("{color_name}") == 1:
             required_line = normalize_name(template.replace("{color_name}", ""), manufacturer, material)
