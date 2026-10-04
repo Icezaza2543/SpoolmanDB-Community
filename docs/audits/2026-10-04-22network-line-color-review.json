@@ -1,0 +1,789 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "22network",
+  "base_sha": "3ea46d278f4e11109d4dd6d417d85cc73a889ed1",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "b53fa504315dcc5bd02b05f03ab68ea74269d06d9a425da2bde6cf6a4a026f76",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-66560422ca66e39f3865d9bf9b5edf396af2df1bc8384793801a743fe0102985": {
+      "approved": true,
+      "survivor": "22network_pla_silkdualblue/green_1000_175_p",
+      "retire": [
+        "22network_pla_silkpladualbluegreen_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-22network-line-color-review.json",
+      "source": "3ea46d278f4e11109d4dd6d417d85cc73a889ed1"
+    },
+    "dup-679b8ea7b3e4702b4abfff55f811edd228fdd4154e62a0bc213a0d5285ed9c4a": {
+      "approved": true,
+      "survivor": "22network_pla_silkdualpurple/gold_1000_175_p",
+      "retire": [
+        "22network_pla_silkpladualpurplegold_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-22network-line-color-review.json",
+      "source": "3ea46d278f4e11109d4dd6d417d85cc73a889ed1"
+    },
+    "dup-a8d5b76081b35eeb925e91403b46c5ccf58887eb5c0dec265e5fd60c29a047a7": {
+      "approved": true,
+      "survivor": "22network_pla_silkdualred/gold_1000_175_p",
+      "retire": [
+        "22network_pla_silkpladualredgold_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-22network-line-color-review.json",
+      "source": "3ea46d278f4e11109d4dd6d417d85cc73a889ed1"
+    }
+  },
+  "bindings": {
+    "22network_pla_silkdualblue/green_1000_175_p": {
+      "key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Blue/Green::PLA::1000::1.75::plastic::False",
+      "source_color": "Blue/Green",
+      "line": "silk dual",
+      "color": "blue green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "line",
+          "token": "dual"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Blue Green::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Dual Blue Green"
+    },
+    "22network_pla_silkpladualbluegreen_1000_175_p": {
+      "key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Blue Green::PLA::1000::1.75::plastic::False",
+      "source_color": "Dual Blue Green",
+      "line": "silk dual",
+      "color": "blue green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "line",
+          "token": "dual"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Blue/Green::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Blue/Green"
+    },
+    "22network_pla_silkdualpurple/gold_1000_175_p": {
+      "key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Purple/Gold::PLA::1000::1.75::plastic::False",
+      "source_color": "Purple/Gold",
+      "line": "silk dual",
+      "color": "purple gold",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "line",
+          "token": "dual"
+        },
+        {
+          "role": "color",
+          "token": "purple"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        }
+      ],
+      "anchor_key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Purple Gold::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Dual Purple Gold"
+    },
+    "22network_pla_silkpladualpurplegold_1000_175_p": {
+      "key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Purple Gold::PLA::1000::1.75::plastic::False",
+      "source_color": "Dual Purple Gold",
+      "line": "silk dual",
+      "color": "purple gold",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "line",
+          "token": "dual"
+        },
+        {
+          "role": "color",
+          "token": "purple"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        }
+      ],
+      "anchor_key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Purple/Gold::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Purple/Gold"
+    },
+    "22network_pla_silkdualred/gold_1000_175_p": {
+      "key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Red/Gold::PLA::1000::1.75::plastic::False",
+      "source_color": "Red/Gold",
+      "line": "silk dual",
+      "color": "red gold",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "line",
+          "token": "dual"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        }
+      ],
+      "anchor_key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Red Gold::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Dual Red Gold"
+    },
+    "22network_pla_silkpladualredgold_1000_175_p": {
+      "key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Red Gold::PLA::1000::1.75::plastic::False",
+      "source_color": "Dual Red Gold",
+      "line": "silk dual",
+      "color": "red gold",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "line",
+          "token": "dual"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        }
+      ],
+      "anchor_key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Red/Gold::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Red/Gold"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-66560422ca66e39f3865d9bf9b5edf396af2df1bc8384793801a743fe0102985",
+      "ids": [
+        "22network_pla_silkdualblue/green_1000_175_p",
+        "22network_pla_silkpladualbluegreen_1000_175_p"
+      ],
+      "proposed_survivor": "22network_pla_silkdualblue/green_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "22network_pla_silkpladualbluegreen_1000_175_p": "22network_pla_silkdualblue/green_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "22network_pla_silkdualblue/green_1000_175_p",
+          "manufacturer": "22 Network",
+          "name": "Silk Dual Blue/Green",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": null,
+          "color_hexes": [
+            "0000FF",
+            "008000"
+          ],
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            65
+          ],
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": "coaxial",
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "Dual 03"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Blue/Green::PLA::1000::1.75::plastic::False",
+          "template": "Silk Dual {color_name}",
+          "source_color": "Blue/Green",
+          "source_line": "Silk Dual",
+          "source_file": "22network.json",
+          "source_definition": {
+            "source_file": "22network.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 21,
+            "compiled_records": 21
+          },
+          "upstream": false
+        },
+        {
+          "id": "22network_pla_silkpladualbluegreen_1000_175_p",
+          "manufacturer": "22 Network",
+          "name": "Silk PLA Dual Blue Green",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0000FF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            22,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Blue Green::PLA::1000::1.75::plastic::False",
+          "template": "Silk PLA {color_name}",
+          "source_color": "Dual Blue Green",
+          "source_line": "Silk PLA",
+          "source_file": "22network.json",
+          "source_definition": {
+            "source_file": "22network.json",
+            "definition_index": 14,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "22network_pla_silkdualblue/green_1000_175_p": 220,
+          "22network_pla_silkpladualbluegreen_1000_175_p": null
+        },
+        "color_hex": {
+          "22network_pla_silkdualblue/green_1000_175_p": null,
+          "22network_pla_silkpladualbluegreen_1000_175_p": "0000FF"
+        },
+        "color_hexes": {
+          "22network_pla_silkdualblue/green_1000_175_p": [
+            "0000FF",
+            "008000"
+          ],
+          "22network_pla_silkpladualbluegreen_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "22network_pla_silkdualblue/green_1000_175_p": [
+            190,
+            220
+          ],
+          "22network_pla_silkpladualbluegreen_1000_175_p": [
+            200,
+            220
+          ]
+        },
+        "bed_temp_range": {
+          "22network_pla_silkdualblue/green_1000_175_p": [
+            50,
+            65
+          ],
+          "22network_pla_silkpladualbluegreen_1000_175_p": [
+            22,
+            60
+          ]
+        },
+        "finish": {
+          "22network_pla_silkdualblue/green_1000_175_p": "glossy",
+          "22network_pla_silkpladualbluegreen_1000_175_p": null
+        },
+        "multi_color_direction": {
+          "22network_pla_silkdualblue/green_1000_175_p": "coaxial",
+          "22network_pla_silkpladualbluegreen_1000_175_p": null
+        },
+        "codes": {
+          "22network_pla_silkdualblue/green_1000_175_p": [
+            "Dual 03"
+          ],
+          "22network_pla_silkpladualbluegreen_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "NW012",
+      "prior_audit": "docs/audits/2026-10-03-22network-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "22network_pla_silkdualblue/green_1000_175_p",
+      "retire": [
+        "22network_pla_silkpladualbluegreen_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; prior survivor direction retained"
+    },
+    {
+      "group_id": "dup-679b8ea7b3e4702b4abfff55f811edd228fdd4154e62a0bc213a0d5285ed9c4a",
+      "ids": [
+        "22network_pla_silkdualpurple/gold_1000_175_p",
+        "22network_pla_silkpladualpurplegold_1000_175_p"
+      ],
+      "proposed_survivor": "22network_pla_silkdualpurple/gold_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "22network_pla_silkpladualpurplegold_1000_175_p": "22network_pla_silkdualpurple/gold_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "22network_pla_silkdualpurple/gold_1000_175_p",
+          "manufacturer": "22 Network",
+          "name": "Silk Dual Purple/Gold",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": null,
+          "color_hexes": [
+            "800080",
+            "FFD700"
+          ],
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            65
+          ],
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": "coaxial",
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "Dual 07"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Purple/Gold::PLA::1000::1.75::plastic::False",
+          "template": "Silk Dual {color_name}",
+          "source_color": "Purple/Gold",
+          "source_line": "Silk Dual",
+          "source_file": "22network.json",
+          "source_definition": {
+            "source_file": "22network.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 21,
+            "compiled_records": 21
+          },
+          "upstream": false
+        },
+        {
+          "id": "22network_pla_silkpladualpurplegold_1000_175_p",
+          "manufacturer": "22 Network",
+          "name": "Silk PLA Dual Purple Gold",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "800080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            22,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Purple Gold::PLA::1000::1.75::plastic::False",
+          "template": "Silk PLA {color_name}",
+          "source_color": "Dual Purple Gold",
+          "source_line": "Silk PLA",
+          "source_file": "22network.json",
+          "source_definition": {
+            "source_file": "22network.json",
+            "definition_index": 15,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "22network_pla_silkdualpurple/gold_1000_175_p": 220,
+          "22network_pla_silkpladualpurplegold_1000_175_p": null
+        },
+        "color_hex": {
+          "22network_pla_silkdualpurple/gold_1000_175_p": null,
+          "22network_pla_silkpladualpurplegold_1000_175_p": "800080"
+        },
+        "color_hexes": {
+          "22network_pla_silkdualpurple/gold_1000_175_p": [
+            "800080",
+            "FFD700"
+          ],
+          "22network_pla_silkpladualpurplegold_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "22network_pla_silkdualpurple/gold_1000_175_p": [
+            190,
+            220
+          ],
+          "22network_pla_silkpladualpurplegold_1000_175_p": [
+            200,
+            220
+          ]
+        },
+        "bed_temp_range": {
+          "22network_pla_silkdualpurple/gold_1000_175_p": [
+            50,
+            65
+          ],
+          "22network_pla_silkpladualpurplegold_1000_175_p": [
+            22,
+            60
+          ]
+        },
+        "finish": {
+          "22network_pla_silkdualpurple/gold_1000_175_p": "glossy",
+          "22network_pla_silkpladualpurplegold_1000_175_p": null
+        },
+        "multi_color_direction": {
+          "22network_pla_silkdualpurple/gold_1000_175_p": "coaxial",
+          "22network_pla_silkpladualpurplegold_1000_175_p": null
+        },
+        "codes": {
+          "22network_pla_silkdualpurple/gold_1000_175_p": [
+            "Dual 07"
+          ],
+          "22network_pla_silkpladualpurplegold_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "NW013",
+      "prior_audit": "docs/audits/2026-10-03-22network-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "22network_pla_silkdualpurple/gold_1000_175_p",
+      "retire": [
+        "22network_pla_silkpladualpurplegold_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; prior survivor direction retained"
+    },
+    {
+      "group_id": "dup-a8d5b76081b35eeb925e91403b46c5ccf58887eb5c0dec265e5fd60c29a047a7",
+      "ids": [
+        "22network_pla_silkdualred/gold_1000_175_p",
+        "22network_pla_silkpladualredgold_1000_175_p"
+      ],
+      "proposed_survivor": "22network_pla_silkdualred/gold_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "22network_pla_silkpladualredgold_1000_175_p": "22network_pla_silkdualred/gold_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "22network_pla_silkdualred/gold_1000_175_p",
+          "manufacturer": "22 Network",
+          "name": "Silk Dual Red/Gold",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": null,
+          "color_hexes": [
+            "E30613",
+            "FFD700"
+          ],
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            65
+          ],
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": "coaxial",
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "Dual 04"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "22network.json::22 Network::Silk Dual {color_name}::Silk Dual Red/Gold::PLA::1000::1.75::plastic::False",
+          "template": "Silk Dual {color_name}",
+          "source_color": "Red/Gold",
+          "source_line": "Silk Dual",
+          "source_file": "22network.json",
+          "source_definition": {
+            "source_file": "22network.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 21,
+            "compiled_records": 21
+          },
+          "upstream": false
+        },
+        {
+          "id": "22network_pla_silkpladualredgold_1000_175_p",
+          "manufacturer": "22 Network",
+          "name": "Silk PLA Dual Red Gold",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "CC0000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            22,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Red Gold::PLA::1000::1.75::plastic::False",
+          "template": "Silk PLA {color_name}",
+          "source_color": "Dual Red Gold",
+          "source_line": "Silk PLA",
+          "source_file": "22network.json",
+          "source_definition": {
+            "source_file": "22network.json",
+            "definition_index": 16,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "22network_pla_silkdualred/gold_1000_175_p": 220,
+          "22network_pla_silkpladualredgold_1000_175_p": null
+        },
+        "color_hex": {
+          "22network_pla_silkdualred/gold_1000_175_p": null,
+          "22network_pla_silkpladualredgold_1000_175_p": "CC0000"
+        },
+        "color_hexes": {
+          "22network_pla_silkdualred/gold_1000_175_p": [
+            "E30613",
+            "FFD700"
+          ],
+          "22network_pla_silkpladualredgold_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "22network_pla_silkdualred/gold_1000_175_p": [
+            190,
+            220
+          ],
+          "22network_pla_silkpladualredgold_1000_175_p": [
+            200,
+            220
+          ]
+        },
+        "bed_temp_range": {
+          "22network_pla_silkdualred/gold_1000_175_p": [
+            50,
+            65
+          ],
+          "22network_pla_silkpladualredgold_1000_175_p": [
+            22,
+            60
+          ]
+        },
+        "finish": {
+          "22network_pla_silkdualred/gold_1000_175_p": "glossy",
+          "22network_pla_silkpladualredgold_1000_175_p": null
+        },
+        "multi_color_direction": {
+          "22network_pla_silkdualred/gold_1000_175_p": "coaxial",
+          "22network_pla_silkpladualredgold_1000_175_p": null
+        },
+        "codes": {
+          "22network_pla_silkdualred/gold_1000_175_p": [
+            "Dual 04"
+          ],
+          "22network_pla_silkpladualredgold_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "NW014",
+      "prior_audit": "docs/audits/2026-10-03-22network-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "22network_pla_silkdualred/gold_1000_175_p",
+      "retire": [
+        "22network_pla_silkpladualredgold_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; prior survivor direction retained"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "22network_pla_silkpladualbluegreen_1000_175_p": {
+      "replaced_by": "22network_pla_silkdualblue/green_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-22network-line-color-review.json",
+      "source": "3ea46d278f4e11109d4dd6d417d85cc73a889ed1",
+      "retired_key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Blue Green::PLA::1000::1.75::plastic::False"
+    },
+    "22network_pla_silkpladualpurplegold_1000_175_p": {
+      "replaced_by": "22network_pla_silkdualpurple/gold_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-22network-line-color-review.json",
+      "source": "3ea46d278f4e11109d4dd6d417d85cc73a889ed1",
+      "retired_key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Purple Gold::PLA::1000::1.75::plastic::False"
+    },
+    "22network_pla_silkpladualredgold_1000_175_p": {
+      "replaced_by": "22network_pla_silkdualred/gold_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-22network-line-color-review.json",
+      "source": "3ea46d278f4e11109d4dd6d417d85cc73a889ed1",
+      "retired_key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Red Gold::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 3,
+    "approved_groups": 3,
+    "retired": 3,
+    "deferred": 0,
+    "before_count": 51701,
+    "after_count": 51698,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-22network-duplicate-review.json"
+}
