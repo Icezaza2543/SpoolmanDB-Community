@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "dasfilament",
+  "base_sha": "74a1257c1155d551979a864c2f58b9c38bd3aaa2",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "5a86deda49365b198bb11ce372dd2795ebadd69f0a5747ace308f66a8fdd0d5c",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-b463522edccf59e7a62f6261ccfd03439a99445c2ac18bdae691181ac733d490": {
+      "approved": true,
+      "survivor": "dasfilament_pla_dasfilamentgrn_1000_175_c",
+      "retire": [
+        "dasfilament_pla_plagrn_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-dasfilament-owner-closure.json",
+      "source": "74a1257c1155d551979a864c2f58b9c38bd3aaa2"
+    }
+  },
+  "bindings": {
+    "dasfilament_pla_dasfilamentgrn_1000_175_c": {
+      "key": "dasfilament.json::Das Filament::{color_name}::DAS FILAMENT Grün::PLA::1000::1.75::cardboard::False",
+      "source_color": "DAS FILAMENT Grün",
+      "line": "PLA",
+      "color": "grün"
+    },
+    "dasfilament_pla_plagrn_1000_175_c": {
+      "key": "dasfilament.json::Das Filament::PLA {color_name}::PLA Grün::PLA::1000::1.75::cardboard::False",
+      "source_color": "Grün",
+      "line": "PLA",
+      "color": "grün"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-b463522edccf59e7a62f6261ccfd03439a99445c2ac18bdae691181ac733d490",
+      "ids": [
+        "dasfilament_pla_dasfilamentgrn_1000_175_c",
+        "dasfilament_pla_plagrn_1000_175_c"
+      ],
+      "proposed_survivor": "dasfilament_pla_dasfilamentgrn_1000_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "dasfilament_pla_plagrn_1000_175_c": "dasfilament_pla_dasfilamentgrn_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "dasfilament_pla_dasfilamentgrn_1000_175_c",
+          "manufacturer": "Das Filament",
+          "name": "DAS FILAMENT Grün",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 212,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "85ff58",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "dasfilament.json::Das Filament::{color_name}::DAS FILAMENT Grün::PLA::1000::1.75::cardboard::False",
+          "template": "{color_name}",
+          "source_color": "DAS FILAMENT Grün",
+          "source_line": "",
+          "source_file": "dasfilament.json",
+          "source_definition": {
+            "source_file": "dasfilament.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 27,
+            "compiled_records": 27
+          },
+          "upstream": true
+        },
+        {
+          "id": "dasfilament_pla_plagrn_1000_175_c",
+          "manufacturer": "Das Filament",
+          "name": "PLA Grün",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "7FE200",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "dasfilament.json::Das Filament::PLA {color_name}::PLA Grün::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "Grün",
+          "source_line": "PLA",
+          "source_file": "dasfilament.json",
+          "source_definition": {
+            "source_file": "dasfilament.json",
+            "definition_index": 9,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "dasfilament_pla_dasfilamentgrn_1000_175_c": 212,
+          "dasfilament_pla_plagrn_1000_175_c": null
+        },
+        "color_hex": {
+          "dasfilament_pla_dasfilamentgrn_1000_175_c": "85ff58",
+          "dasfilament_pla_plagrn_1000_175_c": "7FE200"
+        },
+        "extruder_temp": {
+          "dasfilament_pla_dasfilamentgrn_1000_175_c": 220,
+          "dasfilament_pla_plagrn_1000_175_c": null
+        },
+        "extruder_temp_range": {
+          "dasfilament_pla_dasfilamentgrn_1000_175_c": null,
+          "dasfilament_pla_plagrn_1000_175_c": [
+            190,
+            230
+          ]
+        },
+        "bed_temp": {
+          "dasfilament_pla_dasfilamentgrn_1000_175_c": 60,
+          "dasfilament_pla_plagrn_1000_175_c": null
+        },
+        "bed_temp_range": {
+          "dasfilament_pla_dasfilamentgrn_1000_175_c": null,
+          "dasfilament_pla_plagrn_1000_175_c": [
+            50,
+            70
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "dasfilament_pla_dasfilamentgrn_1000_175_c",
+      "retire": [
+        "dasfilament_pla_plagrn_1000_175_c"
+      ],
+      "survivor_ranking": {
+        "dasfilament_pla_dasfilamentgrn_1000_175_c": [
+          -1,
+          0,
+          0,
+          0,
+          7,
+          "dasfilament_pla_dasfilamentgrn_1000_175_c"
+        ],
+        "dasfilament_pla_plagrn_1000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          7,
+          "dasfilament_pla_plagrn_1000_175_c"
+        ]
+      },
+      "id_first_seen": {
+        "dasfilament_pla_dasfilamentgrn_1000_175_c": [
+          7,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "dasfilament_pla_plagrn_1000_175_c": [
+          7,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "dasfilament_pla_plagrn_1000_175_c": {
+      "replaced_by": "dasfilament_pla_dasfilamentgrn_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-dasfilament-owner-closure.json",
+      "source": "74a1257c1155d551979a864c2f58b9c38bd3aaa2",
+      "retired_key": "dasfilament.json::Das Filament::PLA {color_name}::PLA Grün::PLA::1000::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51428,
+    "after_count": 51427,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": [
+    {
+      "sha": "eefac02419668657c2035638162d318decac5c34",
+      "definition_index": 0,
+      "reason": "Filament Blue Pearl by eSun has hexes specified but no multi_color_direction is set."
+    },
+    {
+      "sha": "eefac02419668657c2035638162d318decac5c34",
+      "definition_index": 1,
+      "reason": "Filament Blue Pearl - Refill by eSun has hexes specified but no multi_color_direction is set."
+    }
+  ]
+}
