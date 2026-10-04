@@ -1,0 +1,1636 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "AzureFilm",
+  "base_sha": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "83fa0d194048549b6fdafce71898d24be729b3606eccea2589c813556309ba03",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-037d58f2258e645378e82715b1f5212e5b4fd665be2fbd0f8be977924f8e4498": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehswhite_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplawhite_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    },
+    "dup-285f0a6649135aaf28429108fc112860df53e0a5fffbffd90f56ba5b4ef07a3a": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehsblue_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplablue_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    },
+    "dup-2af7be97eb338059760f3cde01f9c04ba8e59cd7f30127beac17f680f1383df6": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehslime_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplalime_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    },
+    "dup-56b44cdab4af07af4bcbd0113d6cb71da7137d26b0ba57f9f8ebffb1d924d4b9": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehsrosy_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplarosy_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    },
+    "dup-5d3f76d17092e0376d881a93c47a3a4218eff9ea954967a0cd079b46fac1ffb7": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehssage_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplasage_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    },
+    "dup-704595e937257a1223e60a78e5bec31a7287db49a8902f5ff6258e1256820f02": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehsmint_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplamint_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    },
+    "dup-7f44091bd2c2293070157b3efce55144258069316f8f5993b5aa3673efbe8ee6": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehsblack_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplablack_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    },
+    "dup-b3dc1bac9b53cc26222d57c64fc036e7c6b4a5ad8d87e79e0d4c641b0121cd04": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehsbordeaux_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplabordeaux_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    },
+    "dup-d60901d911794e51fb95373a84491743c024db3fb24f1b2d964f33ef9e959927": {
+      "approved": true,
+      "survivor": "azurefilm_pla_mattehsoff-white_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplaoff-white_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+    }
+  },
+  "bindings": {
+    "azurefilm_pla_mattehsplawhite_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA White::PLA::1000::1.75::plastic::False",
+      "source_color": "White",
+      "line": "matte hs",
+      "color": "white"
+    },
+    "azurefilm_pla_mattehswhite_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS WHITE::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS WHITE",
+      "line": "matte hs",
+      "color": "white"
+    },
+    "azurefilm_pla_mattehsblue_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS BLUE::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS BLUE",
+      "line": "matte hs",
+      "color": "blue"
+    },
+    "azurefilm_pla_mattehsplablue_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Blue::PLA::1000::1.75::plastic::False",
+      "source_color": "Blue",
+      "line": "matte hs",
+      "color": "blue"
+    },
+    "azurefilm_pla_mattehslime_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS LIME::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS LIME",
+      "line": "matte hs",
+      "color": "lime"
+    },
+    "azurefilm_pla_mattehsplalime_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Lime::PLA::1000::1.75::plastic::False",
+      "source_color": "Lime",
+      "line": "matte hs",
+      "color": "lime"
+    },
+    "azurefilm_pla_mattehsplarosy_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Rosy::PLA::1000::1.75::plastic::False",
+      "source_color": "Rosy",
+      "line": "matte hs",
+      "color": "rosy"
+    },
+    "azurefilm_pla_mattehsrosy_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS ROSY::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS ROSY",
+      "line": "matte hs",
+      "color": "rosy"
+    },
+    "azurefilm_pla_mattehsplasage_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Sage::PLA::1000::1.75::plastic::False",
+      "source_color": "Sage",
+      "line": "matte hs",
+      "color": "sage"
+    },
+    "azurefilm_pla_mattehssage_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS SAGE::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS SAGE",
+      "line": "matte hs",
+      "color": "sage"
+    },
+    "azurefilm_pla_mattehsmint_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS MINT::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS MINT",
+      "line": "matte hs",
+      "color": "mint"
+    },
+    "azurefilm_pla_mattehsplamint_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Mint::PLA::1000::1.75::plastic::False",
+      "source_color": "Mint",
+      "line": "matte hs",
+      "color": "mint"
+    },
+    "azurefilm_pla_mattehsblack_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS BLACK::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS BLACK",
+      "line": "matte hs",
+      "color": "black"
+    },
+    "azurefilm_pla_mattehsplablack_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Black::PLA::1000::1.75::plastic::False",
+      "source_color": "Black",
+      "line": "matte hs",
+      "color": "black"
+    },
+    "azurefilm_pla_mattehsbordeaux_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS BORDEAUX::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS BORDEAUX",
+      "line": "matte hs",
+      "color": "bordeaux"
+    },
+    "azurefilm_pla_mattehsplabordeaux_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Bordeaux::PLA::1000::1.75::plastic::False",
+      "source_color": "Bordeaux",
+      "line": "matte hs",
+      "color": "bordeaux"
+    },
+    "azurefilm_pla_mattehsoff-white_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS OFF-WHITE::PLA::1000.0::1.75::plastic::False",
+      "source_color": "HS OFF-WHITE",
+      "line": "matte hs",
+      "color": "off white"
+    },
+    "azurefilm_pla_mattehsplaoff-white_1000_175_p": {
+      "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Off-White::PLA::1000::1.75::plastic::False",
+      "source_color": "Off-White",
+      "line": "matte hs",
+      "color": "off white"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-037d58f2258e645378e82715b1f5212e5b4fd665be2fbd0f8be977924f8e4498",
+      "ids": [
+        "azurefilm_pla_mattehsplawhite_1000_175_p",
+        "azurefilm_pla_mattehswhite_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehswhite_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplawhite_1000_175_p": "azurefilm_pla_mattehswhite_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehsplawhite_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA White",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA White::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "White",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        },
+        {
+          "id": "azurefilm_pla_mattehswhite_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS WHITE",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "E7E7E7",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS WHITE::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS WHITE",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehsplawhite_1000_175_p": "FFFFFF",
+          "azurefilm_pla_mattehswhite_1000_175_p": "E7E7E7"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehsplawhite_1000_175_p": 210,
+          "azurefilm_pla_mattehswhite_1000_175_p": 215
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehswhite_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplawhite_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehsplawhite_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplawhite_1000_175_p"
+        ],
+        "azurefilm_pla_mattehswhite_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehswhite_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehsplawhite_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehswhite_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-285f0a6649135aaf28429108fc112860df53e0a5fffbffd90f56ba5b4ef07a3a",
+      "ids": [
+        "azurefilm_pla_mattehsblue_1000_175_p",
+        "azurefilm_pla_mattehsplablue_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehsblue_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplablue_1000_175_p": "azurefilm_pla_mattehsblue_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehsblue_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS BLUE",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "5FB0C7",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS BLUE::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS BLUE",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        },
+        {
+          "id": "azurefilm_pla_mattehsplablue_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA Blue",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "2B8DA7",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Blue::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "Blue",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehsblue_1000_175_p": "5FB0C7",
+          "azurefilm_pla_mattehsplablue_1000_175_p": "2B8DA7"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehsblue_1000_175_p": 215,
+          "azurefilm_pla_mattehsplablue_1000_175_p": 210
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehsblue_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplablue_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehsblue_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsblue_1000_175_p"
+        ],
+        "azurefilm_pla_mattehsplablue_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplablue_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehsblue_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehsplablue_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-2af7be97eb338059760f3cde01f9c04ba8e59cd7f30127beac17f680f1383df6",
+      "ids": [
+        "azurefilm_pla_mattehslime_1000_175_p",
+        "azurefilm_pla_mattehsplalime_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehslime_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplalime_1000_175_p": "azurefilm_pla_mattehslime_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehslime_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS LIME",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "BFE368",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS LIME::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS LIME",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        },
+        {
+          "id": "azurefilm_pla_mattehsplalime_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA Lime",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8CB712",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Lime::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "Lime",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehslime_1000_175_p": "BFE368",
+          "azurefilm_pla_mattehsplalime_1000_175_p": "8CB712"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehslime_1000_175_p": 215,
+          "azurefilm_pla_mattehsplalime_1000_175_p": 210
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehslime_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplalime_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehslime_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehslime_1000_175_p"
+        ],
+        "azurefilm_pla_mattehsplalime_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplalime_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehslime_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehsplalime_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-56b44cdab4af07af4bcbd0113d6cb71da7137d26b0ba57f9f8ebffb1d924d4b9",
+      "ids": [
+        "azurefilm_pla_mattehsplarosy_1000_175_p",
+        "azurefilm_pla_mattehsrosy_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehsrosy_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplarosy_1000_175_p": "azurefilm_pla_mattehsrosy_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehsplarosy_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA Rosy",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D9BEC0",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Rosy::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "Rosy",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        },
+        {
+          "id": "azurefilm_pla_mattehsrosy_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS ROSY",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D3C1C0",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS ROSY::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS ROSY",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehsplarosy_1000_175_p": "D9BEC0",
+          "azurefilm_pla_mattehsrosy_1000_175_p": "D3C1C0"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehsplarosy_1000_175_p": 210,
+          "azurefilm_pla_mattehsrosy_1000_175_p": 215
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehsrosy_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplarosy_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehsplarosy_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplarosy_1000_175_p"
+        ],
+        "azurefilm_pla_mattehsrosy_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsrosy_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehsplarosy_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehsrosy_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-5d3f76d17092e0376d881a93c47a3a4218eff9ea954967a0cd079b46fac1ffb7",
+      "ids": [
+        "azurefilm_pla_mattehsplasage_1000_175_p",
+        "azurefilm_pla_mattehssage_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehssage_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplasage_1000_175_p": "azurefilm_pla_mattehssage_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehsplasage_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA Sage",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "A1A397",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Sage::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "Sage",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        },
+        {
+          "id": "azurefilm_pla_mattehssage_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS SAGE",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ADAFA4",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS SAGE::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS SAGE",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehsplasage_1000_175_p": "A1A397",
+          "azurefilm_pla_mattehssage_1000_175_p": "ADAFA4"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehsplasage_1000_175_p": 210,
+          "azurefilm_pla_mattehssage_1000_175_p": 215
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehssage_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplasage_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehsplasage_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplasage_1000_175_p"
+        ],
+        "azurefilm_pla_mattehssage_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehssage_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehsplasage_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehssage_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-704595e937257a1223e60a78e5bec31a7287db49a8902f5ff6258e1256820f02",
+      "ids": [
+        "azurefilm_pla_mattehsmint_1000_175_p",
+        "azurefilm_pla_mattehsplamint_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehsmint_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplamint_1000_175_p": "azurefilm_pla_mattehsmint_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehsmint_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS MINT",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "BAC4C7",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS MINT::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS MINT",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        },
+        {
+          "id": "azurefilm_pla_mattehsplamint_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA Mint",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "B0C0C4",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Mint::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "Mint",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehsmint_1000_175_p": "BAC4C7",
+          "azurefilm_pla_mattehsplamint_1000_175_p": "B0C0C4"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehsmint_1000_175_p": 215,
+          "azurefilm_pla_mattehsplamint_1000_175_p": 210
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehsmint_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplamint_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehsmint_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsmint_1000_175_p"
+        ],
+        "azurefilm_pla_mattehsplamint_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplamint_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehsmint_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehsplamint_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-7f44091bd2c2293070157b3efce55144258069316f8f5993b5aa3673efbe8ee6",
+      "ids": [
+        "azurefilm_pla_mattehsblack_1000_175_p",
+        "azurefilm_pla_mattehsplablack_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehsblack_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplablack_1000_175_p": "azurefilm_pla_mattehsblack_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehsblack_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS BLACK",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "292B2D",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS BLACK::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS BLACK",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        },
+        {
+          "id": "azurefilm_pla_mattehsplablack_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA Black",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Black::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "Black",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehsblack_1000_175_p": "292B2D",
+          "azurefilm_pla_mattehsplablack_1000_175_p": "000000"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehsblack_1000_175_p": 215,
+          "azurefilm_pla_mattehsplablack_1000_175_p": 210
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehsblack_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplablack_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehsblack_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsblack_1000_175_p"
+        ],
+        "azurefilm_pla_mattehsplablack_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplablack_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehsblack_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehsplablack_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-b3dc1bac9b53cc26222d57c64fc036e7c6b4a5ad8d87e79e0d4c641b0121cd04",
+      "ids": [
+        "azurefilm_pla_mattehsbordeaux_1000_175_p",
+        "azurefilm_pla_mattehsplabordeaux_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehsbordeaux_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplabordeaux_1000_175_p": "azurefilm_pla_mattehsbordeaux_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehsbordeaux_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS BORDEAUX",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "7F5053",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS BORDEAUX::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS BORDEAUX",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        },
+        {
+          "id": "azurefilm_pla_mattehsplabordeaux_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA Bordeaux",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "844C54",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Bordeaux::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "Bordeaux",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehsbordeaux_1000_175_p": "7F5053",
+          "azurefilm_pla_mattehsplabordeaux_1000_175_p": "844C54"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehsbordeaux_1000_175_p": 215,
+          "azurefilm_pla_mattehsplabordeaux_1000_175_p": 210
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehsbordeaux_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplabordeaux_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehsbordeaux_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsbordeaux_1000_175_p"
+        ],
+        "azurefilm_pla_mattehsplabordeaux_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplabordeaux_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehsbordeaux_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehsplabordeaux_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-d60901d911794e51fb95373a84491743c024db3fb24f1b2d964f33ef9e959927",
+      "ids": [
+        "azurefilm_pla_mattehsoff-white_1000_175_p",
+        "azurefilm_pla_mattehsplaoff-white_1000_175_p"
+      ],
+      "proposed_survivor": "azurefilm_pla_mattehsoff-white_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "azurefilm_pla_mattehsplaoff-white_1000_175_p": "azurefilm_pla_mattehsoff-white_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "azurefilm_pla_mattehsoff-white_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS OFF-WHITE",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000.0,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "C9C2BC",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte {color_name}::Matte HS OFF-WHITE::PLA::1000.0::1.75::plastic::False",
+          "template": "Matte {color_name}",
+          "source_color": "HS OFF-WHITE",
+          "source_line": "Matte",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 107,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 10,
+            "compiled_records": 10
+          },
+          "upstream": true
+        },
+        {
+          "id": "azurefilm_pla_mattehsplaoff-white_1000_175_p",
+          "manufacturer": "AzureFilm",
+          "name": "Matte HS PLA Off-White",
+          "material": "PLA",
+          "density": 1.35,
+          "weight": 1000,
+          "spool_weight": 164,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "CFC6BB",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "SI",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Off-White::PLA::1000::1.75::plastic::False",
+          "template": "Matte HS PLA {color_name}",
+          "source_color": "Off-White",
+          "source_line": "Matte HS PLA",
+          "source_file": "AzureFilm.json",
+          "source_definition": {
+            "source_file": "AzureFilm.json",
+            "definition_index": 336,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "azurefilm_pla_mattehsoff-white_1000_175_p": "C9C2BC",
+          "azurefilm_pla_mattehsplaoff-white_1000_175_p": "CFC6BB"
+        },
+        "extruder_temp": {
+          "azurefilm_pla_mattehsoff-white_1000_175_p": 215,
+          "azurefilm_pla_mattehsplaoff-white_1000_175_p": 210
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "azurefilm_pla_mattehsoff-white_1000_175_p",
+      "retire": [
+        "azurefilm_pla_mattehsplaoff-white_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "azurefilm_pla_mattehsoff-white_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsoff-white_1000_175_p"
+        ],
+        "azurefilm_pla_mattehsplaoff-white_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          "azurefilm_pla_mattehsplaoff-white_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "azurefilm_pla_mattehsoff-white_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "azurefilm_pla_mattehsplaoff-white_1000_175_p": [
+          6,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "azurefilm_pla_mattehsplawhite_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehswhite_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA White::PLA::1000::1.75::plastic::False"
+    },
+    "azurefilm_pla_mattehsplablue_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehsblue_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Blue::PLA::1000::1.75::plastic::False"
+    },
+    "azurefilm_pla_mattehsplalime_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehslime_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Lime::PLA::1000::1.75::plastic::False"
+    },
+    "azurefilm_pla_mattehsplarosy_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehsrosy_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Rosy::PLA::1000::1.75::plastic::False"
+    },
+    "azurefilm_pla_mattehsplasage_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehssage_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Sage::PLA::1000::1.75::plastic::False"
+    },
+    "azurefilm_pla_mattehsplamint_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehsmint_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Mint::PLA::1000::1.75::plastic::False"
+    },
+    "azurefilm_pla_mattehsplablack_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehsblack_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Black::PLA::1000::1.75::plastic::False"
+    },
+    "azurefilm_pla_mattehsplabordeaux_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehsbordeaux_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Bordeaux::PLA::1000::1.75::plastic::False"
+    },
+    "azurefilm_pla_mattehsplaoff-white_1000_175_p": {
+      "replaced_by": "azurefilm_pla_mattehsoff-white_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-azurefilm-owner-closure.json",
+      "source": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+      "retired_key": "AzureFilm.json::AzureFilm::Matte HS PLA {color_name}::Matte HS PLA Off-White::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 9,
+    "approved_groups": 9,
+    "retired": 9,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51592,
+    "after_count": 51583,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109"
+}
