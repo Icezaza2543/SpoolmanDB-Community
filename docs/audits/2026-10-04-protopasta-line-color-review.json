@@ -1,0 +1,1028 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "protopasta",
+  "base_sha": "e933c168c154ee4e875dfb1689226ad436816358",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "aa3554325b45993a4d79d0e2f3dc1eb8a2a326b080df7f8cd71b7d447b44111b",
+  "official_names": {
+    "Basic {color_name}": {
+      "name": "Premium Basic PLA",
+      "source": "https://proto-pasta.com/products/back-to-basics-white-4043d-pla"
+    },
+    "Basic PLA {color_name}": {
+      "name": "Premium Basic PLA",
+      "source": "https://proto-pasta.com/products/back-to-basics-white-4043d-pla"
+    },
+    "Green Glow-in-the-Dark {color_name}": {
+      "name": "Green Glow-in-the-Dark",
+      "source": "https://proto-pasta.com/products/green-glow-in-the-dark-natural"
+    },
+    "PLA Green Glow-in-the-Dark {color_name}": {
+      "name": "Green Glow-in-the-Dark",
+      "source": "https://proto-pasta.com/products/green-glow-in-the-dark-natural"
+    },
+    "Static Dissipative PETG {color_name}": {
+      "name": "Static Dissipative PETG",
+      "source": "https://proto-pasta.com/products/static-dissipative-petg"
+    },
+    "Static Dissipative PLA {color_name}": {
+      "name": "Static Dissipative PLA",
+      "source": "https://proto-pasta.com/products/static-dissipative-pla"
+    },
+    "Static Dissipative Carbon Fiber {color_name}": {
+      "name": "Static Dissipative Carbon Fiber PLA",
+      "source": "https://proto-pasta.com/products/static-dissipative-carbon-fiber-pla"
+    },
+    "Static Dissipative Carbon Fiber PLA {color_name}": {
+      "name": "Static Dissipative Carbon Fiber PLA",
+      "source": "https://proto-pasta.com/products/static-dissipative-carbon-fiber-pla"
+    }
+  },
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-13b2ef36edb25e45ce0776b4d76b16515ba134070c2cbb250d7bd9a062c802dd": {
+      "approved": true,
+      "survivor": "protopasta_tpe_blackflexible_1000_175_c",
+      "retire": [
+        "protopasta_tpe_tpeblackflexible_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-protopasta-line-color-review.json",
+      "source": "e933c168c154ee4e875dfb1689226ad436816358"
+    },
+    "dup-4e8f4652ee824c13ccba26c47e514988ec0e37d618143b2db58cb7ab31c6924a": {
+      "approved": true,
+      "survivor": "protopasta_pla_texasteablackwithgoldglitter_1000_175_c",
+      "retire": [
+        "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-protopasta-line-color-review.json",
+      "source": "e933c168c154ee4e875dfb1689226ad436816358"
+    },
+    "dup-516d3b6e9c241f733bfe087b756a6ef7f31edf53d29c5a0643ff22c2dcf5e6fc": {
+      "approved": true,
+      "survivor": "protopasta_tpe_blackflexible_500_175_c",
+      "retire": [
+        "protopasta_tpe_tpeblackflexible_500_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-protopasta-line-color-review.json",
+      "source": "e933c168c154ee4e875dfb1689226ad436816358"
+    },
+    "dup-653e1c7da16cec3c67b4846c67f03a229843fc6900681993cc9d8617362fb7b0": {
+      "approved": true,
+      "survivor": "protopasta_pla_texasteablackwithgoldglitter_500_175_c",
+      "retire": [
+        "protopasta_pla_platexasteablackwithgoldglitter_500_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-protopasta-line-color-review.json",
+      "source": "e933c168c154ee4e875dfb1689226ad436816358"
+    }
+  },
+  "bindings": {
+    "protopasta_tpe_blackflexible_1000_175_c": {
+      "key": "protopasta.json::Protopasta::{color_name} Flexible::Black Flexible::TPE::1000::1.75::cardboard::False",
+      "source_color": "Black",
+      "line": "flexible",
+      "color": "black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "line",
+          "token": "flexible"
+        }
+      ],
+      "anchor_key": "protopasta.json::Protopasta::TPE {color_name}::TPE Black Flexible::TPE::1000::1.75::cardboard::False",
+      "anchor_source_color": "Black Flexible"
+    },
+    "protopasta_tpe_tpeblackflexible_1000_175_c": {
+      "key": "protopasta.json::Protopasta::TPE {color_name}::TPE Black Flexible::TPE::1000::1.75::cardboard::False",
+      "source_color": "Black Flexible",
+      "line": "flexible",
+      "color": "black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "line",
+          "token": "flexible"
+        }
+      ],
+      "anchor_key": "protopasta.json::Protopasta::{color_name} Flexible::Black Flexible::TPE::1000::1.75::cardboard::False",
+      "anchor_source_color": "Black"
+    },
+    "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": {
+      "key": "protopasta.json::Protopasta::PLA {color_name}::PLA Texas Tea Black with Gold Glitter::PLA::1000::1.75::cardboard::False",
+      "source_color": "Texas Tea Black with Gold Glitter",
+      "line": "glitter",
+      "color": "texas tea black with gold",
+      "parts": [
+        {
+          "role": "color",
+          "token": "texas"
+        },
+        {
+          "role": "color",
+          "token": "tea"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "with"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        },
+        {
+          "role": "line",
+          "token": "glitter"
+        }
+      ],
+      "anchor_key": "protopasta.json::Protopasta::{color_name} Glitter::Texas Tea Black with Gold Glitter::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Texas Tea Black with Gold"
+    },
+    "protopasta_pla_texasteablackwithgoldglitter_1000_175_c": {
+      "key": "protopasta.json::Protopasta::{color_name} Glitter::Texas Tea Black with Gold Glitter::PLA::1000::1.75::cardboard::False",
+      "source_color": "Texas Tea Black with Gold",
+      "line": "glitter",
+      "color": "texas tea black with gold",
+      "parts": [
+        {
+          "role": "color",
+          "token": "texas"
+        },
+        {
+          "role": "color",
+          "token": "tea"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "with"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        },
+        {
+          "role": "line",
+          "token": "glitter"
+        }
+      ],
+      "anchor_key": "protopasta.json::Protopasta::PLA {color_name}::PLA Texas Tea Black with Gold Glitter::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Texas Tea Black with Gold Glitter"
+    },
+    "protopasta_tpe_blackflexible_500_175_c": {
+      "key": "protopasta.json::Protopasta::{color_name} Flexible::Black Flexible::TPE::500::1.75::cardboard::False",
+      "source_color": "Black",
+      "line": "flexible",
+      "color": "black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "line",
+          "token": "flexible"
+        }
+      ],
+      "anchor_key": "protopasta.json::Protopasta::TPE {color_name}::TPE Black Flexible::TPE::500::1.75::cardboard::False",
+      "anchor_source_color": "Black Flexible"
+    },
+    "protopasta_tpe_tpeblackflexible_500_175_c": {
+      "key": "protopasta.json::Protopasta::TPE {color_name}::TPE Black Flexible::TPE::500::1.75::cardboard::False",
+      "source_color": "Black Flexible",
+      "line": "flexible",
+      "color": "black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "line",
+          "token": "flexible"
+        }
+      ],
+      "anchor_key": "protopasta.json::Protopasta::{color_name} Flexible::Black Flexible::TPE::500::1.75::cardboard::False",
+      "anchor_source_color": "Black"
+    },
+    "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": {
+      "key": "protopasta.json::Protopasta::PLA {color_name}::PLA Texas Tea Black with Gold Glitter::PLA::500::1.75::cardboard::False",
+      "source_color": "Texas Tea Black with Gold Glitter",
+      "line": "glitter",
+      "color": "texas tea black with gold",
+      "parts": [
+        {
+          "role": "color",
+          "token": "texas"
+        },
+        {
+          "role": "color",
+          "token": "tea"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "with"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        },
+        {
+          "role": "line",
+          "token": "glitter"
+        }
+      ],
+      "anchor_key": "protopasta.json::Protopasta::{color_name} Glitter::Texas Tea Black with Gold Glitter::PLA::500::1.75::cardboard::False",
+      "anchor_source_color": "Texas Tea Black with Gold"
+    },
+    "protopasta_pla_texasteablackwithgoldglitter_500_175_c": {
+      "key": "protopasta.json::Protopasta::{color_name} Glitter::Texas Tea Black with Gold Glitter::PLA::500::1.75::cardboard::False",
+      "source_color": "Texas Tea Black with Gold",
+      "line": "glitter",
+      "color": "texas tea black with gold",
+      "parts": [
+        {
+          "role": "color",
+          "token": "texas"
+        },
+        {
+          "role": "color",
+          "token": "tea"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "with"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        },
+        {
+          "role": "line",
+          "token": "glitter"
+        }
+      ],
+      "anchor_key": "protopasta.json::Protopasta::PLA {color_name}::PLA Texas Tea Black with Gold Glitter::PLA::500::1.75::cardboard::False",
+      "anchor_source_color": "Texas Tea Black with Gold Glitter"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-13b2ef36edb25e45ce0776b4d76b16515ba134070c2cbb250d7bd9a062c802dd",
+      "ids": [
+        "protopasta_tpe_blackflexible_1000_175_c",
+        "protopasta_tpe_tpeblackflexible_1000_175_c"
+      ],
+      "proposed_survivor": "protopasta_tpe_blackflexible_1000_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "protopasta_tpe_tpeblackflexible_1000_175_c": "protopasta_tpe_blackflexible_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "protopasta_tpe_blackflexible_1000_175_c",
+          "manufacturer": "Protopasta",
+          "name": "Black Flexible",
+          "material": "TPE",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 75,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "010204",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            195,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "protopasta.json::Protopasta::{color_name} Flexible::Black Flexible::TPE::1000::1.75::cardboard::False",
+          "template": "{color_name} Flexible",
+          "source_color": "Black",
+          "source_line": "Flexible",
+          "source_file": "protopasta.json",
+          "source_definition": {
+            "source_file": "protopasta.json",
+            "definition_index": 54,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 4
+          },
+          "upstream": true
+        },
+        {
+          "id": "protopasta_tpe_tpeblackflexible_1000_175_c",
+          "manufacturer": "Protopasta",
+          "name": "TPE Black Flexible",
+          "material": "TPE",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 84,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "protopasta.json::Protopasta::TPE {color_name}::TPE Black Flexible::TPE::1000::1.75::cardboard::False",
+          "template": "TPE {color_name}",
+          "source_color": "Black Flexible",
+          "source_line": "TPE",
+          "source_file": "protopasta.json",
+          "source_definition": {
+            "source_file": "protopasta.json",
+            "definition_index": 316,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 3,
+            "compiled_records": 6
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "protopasta_tpe_blackflexible_1000_175_c": 1.24,
+          "protopasta_tpe_tpeblackflexible_1000_175_c": 1.2
+        },
+        "spool_weight": {
+          "protopasta_tpe_blackflexible_1000_175_c": 75,
+          "protopasta_tpe_tpeblackflexible_1000_175_c": 84
+        },
+        "color_hex": {
+          "protopasta_tpe_blackflexible_1000_175_c": "010204",
+          "protopasta_tpe_tpeblackflexible_1000_175_c": "000000"
+        },
+        "extruder_temp_range": {
+          "protopasta_tpe_blackflexible_1000_175_c": [
+            195,
+            225
+          ],
+          "protopasta_tpe_tpeblackflexible_1000_175_c": [
+            210,
+            240
+          ]
+        },
+        "bed_temp": {
+          "protopasta_tpe_blackflexible_1000_175_c": 60,
+          "protopasta_tpe_tpeblackflexible_1000_175_c": null
+        },
+        "bed_temp_range": {
+          "protopasta_tpe_blackflexible_1000_175_c": null,
+          "protopasta_tpe_tpeblackflexible_1000_175_c": [
+            30,
+            60
+          ]
+        },
+        "finish": {
+          "protopasta_tpe_blackflexible_1000_175_c": "glossy",
+          "protopasta_tpe_tpeblackflexible_1000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "P004",
+      "prior_audit": "docs/audits/2026-10-03-protopasta-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "protopasta_tpe_blackflexible_1000_175_c",
+      "retire": [
+        "protopasta_tpe_tpeblackflexible_1000_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-4e8f4652ee824c13ccba26c47e514988ec0e37d618143b2db58cb7ab31c6924a",
+      "ids": [
+        "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c",
+        "protopasta_pla_texasteablackwithgoldglitter_1000_175_c"
+      ],
+      "proposed_survivor": "protopasta_pla_texasteablackwithgoldglitter_1000_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": "protopasta_pla_texasteablackwithgoldglitter_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c",
+          "manufacturer": "Protopasta",
+          "name": "PLA Texas Tea Black with Gold Glitter",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 84,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
+          "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+          "key": "protopasta.json::Protopasta::PLA {color_name}::PLA Texas Tea Black with Gold Glitter::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "Texas Tea Black with Gold Glitter",
+          "source_line": "PLA",
+          "source_file": "protopasta.json",
+          "source_definition": {
+            "source_file": "protopasta.json",
+            "definition_index": 297,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "protopasta_pla_texasteablackwithgoldglitter_1000_175_c",
+          "manufacturer": "Protopasta",
+          "name": "Texas Tea Black with Gold Glitter",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 75,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "181713",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            195,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": true,
+          "glow": false,
+          "codes": [
+            "HTGL170-TEX",
+            "HTGL1705-TEX",
+            "HTGL1710-TEX"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
+          "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+          "key": "protopasta.json::Protopasta::{color_name} Glitter::Texas Tea Black with Gold Glitter::PLA::1000::1.75::cardboard::False",
+          "template": "{color_name} Glitter",
+          "source_color": "Texas Tea Black with Gold",
+          "source_line": "Glitter",
+          "source_file": "protopasta.json",
+          "source_definition": {
+            "source_file": "protopasta.json",
+            "definition_index": 21,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 26
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": 84,
+          "protopasta_pla_texasteablackwithgoldglitter_1000_175_c": 75
+        },
+        "color_hex": {
+          "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": "000000",
+          "protopasta_pla_texasteablackwithgoldglitter_1000_175_c": "181713"
+        },
+        "extruder_temp_range": {
+          "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": [
+            190,
+            230
+          ],
+          "protopasta_pla_texasteablackwithgoldglitter_1000_175_c": [
+            195,
+            225
+          ]
+        },
+        "bed_temp": {
+          "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": null,
+          "protopasta_pla_texasteablackwithgoldglitter_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": [
+            50,
+            70
+          ],
+          "protopasta_pla_texasteablackwithgoldglitter_1000_175_c": null
+        },
+        "translucent": {
+          "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": false,
+          "protopasta_pla_texasteablackwithgoldglitter_1000_175_c": true
+        },
+        "codes": {
+          "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": null,
+          "protopasta_pla_texasteablackwithgoldglitter_1000_175_c": [
+            "HTGL170-TEX",
+            "HTGL1705-TEX",
+            "HTGL1710-TEX"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "P009",
+      "prior_audit": "docs/audits/2026-10-03-protopasta-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "protopasta_pla_texasteablackwithgoldglitter_1000_175_c",
+      "retire": [
+        "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-516d3b6e9c241f733bfe087b756a6ef7f31edf53d29c5a0643ff22c2dcf5e6fc",
+      "ids": [
+        "protopasta_tpe_blackflexible_500_175_c",
+        "protopasta_tpe_tpeblackflexible_500_175_c"
+      ],
+      "proposed_survivor": "protopasta_tpe_blackflexible_500_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "protopasta_tpe_tpeblackflexible_500_175_c": "protopasta_tpe_blackflexible_500_175_c"
+      },
+      "records": [
+        {
+          "id": "protopasta_tpe_blackflexible_500_175_c",
+          "manufacturer": "Protopasta",
+          "name": "Black Flexible",
+          "material": "TPE",
+          "density": 1.24,
+          "weight": 500,
+          "spool_weight": 75,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "010204",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            195,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "protopasta.json::Protopasta::{color_name} Flexible::Black Flexible::TPE::500::1.75::cardboard::False",
+          "template": "{color_name} Flexible",
+          "source_color": "Black",
+          "source_line": "Flexible",
+          "source_file": "protopasta.json",
+          "source_definition": {
+            "source_file": "protopasta.json",
+            "definition_index": 54,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 4
+          },
+          "upstream": true
+        },
+        {
+          "id": "protopasta_tpe_tpeblackflexible_500_175_c",
+          "manufacturer": "Protopasta",
+          "name": "TPE Black Flexible",
+          "material": "TPE",
+          "density": 1.2,
+          "weight": 500,
+          "spool_weight": 130,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "protopasta.json::Protopasta::TPE {color_name}::TPE Black Flexible::TPE::500::1.75::cardboard::False",
+          "template": "TPE {color_name}",
+          "source_color": "Black Flexible",
+          "source_line": "TPE",
+          "source_file": "protopasta.json",
+          "source_definition": {
+            "source_file": "protopasta.json",
+            "definition_index": 316,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 3,
+            "compiled_records": 6
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "protopasta_tpe_blackflexible_500_175_c": 1.24,
+          "protopasta_tpe_tpeblackflexible_500_175_c": 1.2
+        },
+        "spool_weight": {
+          "protopasta_tpe_blackflexible_500_175_c": 75,
+          "protopasta_tpe_tpeblackflexible_500_175_c": 130
+        },
+        "color_hex": {
+          "protopasta_tpe_blackflexible_500_175_c": "010204",
+          "protopasta_tpe_tpeblackflexible_500_175_c": "000000"
+        },
+        "extruder_temp_range": {
+          "protopasta_tpe_blackflexible_500_175_c": [
+            195,
+            225
+          ],
+          "protopasta_tpe_tpeblackflexible_500_175_c": [
+            210,
+            240
+          ]
+        },
+        "bed_temp": {
+          "protopasta_tpe_blackflexible_500_175_c": 60,
+          "protopasta_tpe_tpeblackflexible_500_175_c": null
+        },
+        "bed_temp_range": {
+          "protopasta_tpe_blackflexible_500_175_c": null,
+          "protopasta_tpe_tpeblackflexible_500_175_c": [
+            30,
+            60
+          ]
+        },
+        "finish": {
+          "protopasta_tpe_blackflexible_500_175_c": "glossy",
+          "protopasta_tpe_tpeblackflexible_500_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "P012",
+      "prior_audit": "docs/audits/2026-10-03-protopasta-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "protopasta_tpe_blackflexible_500_175_c",
+      "retire": [
+        "protopasta_tpe_tpeblackflexible_500_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-653e1c7da16cec3c67b4846c67f03a229843fc6900681993cc9d8617362fb7b0",
+      "ids": [
+        "protopasta_pla_platexasteablackwithgoldglitter_500_175_c",
+        "protopasta_pla_texasteablackwithgoldglitter_500_175_c"
+      ],
+      "proposed_survivor": "protopasta_pla_texasteablackwithgoldglitter_500_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": "protopasta_pla_texasteablackwithgoldglitter_500_175_c"
+      },
+      "records": [
+        {
+          "id": "protopasta_pla_platexasteablackwithgoldglitter_500_175_c",
+          "manufacturer": "Protopasta",
+          "name": "PLA Texas Tea Black with Gold Glitter",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 500,
+          "spool_weight": 130,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
+          "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+          "key": "protopasta.json::Protopasta::PLA {color_name}::PLA Texas Tea Black with Gold Glitter::PLA::500::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "Texas Tea Black with Gold Glitter",
+          "source_line": "PLA",
+          "source_file": "protopasta.json",
+          "source_definition": {
+            "source_file": "protopasta.json",
+            "definition_index": 205,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "protopasta_pla_texasteablackwithgoldglitter_500_175_c",
+          "manufacturer": "Protopasta",
+          "name": "Texas Tea Black with Gold Glitter",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 500,
+          "spool_weight": 75,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "181713",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            195,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": true,
+          "glow": false,
+          "codes": [
+            "HTGL170-TEX",
+            "HTGL1705-TEX",
+            "HTGL1710-TEX"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686",
+          "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
+          "key": "protopasta.json::Protopasta::{color_name} Glitter::Texas Tea Black with Gold Glitter::PLA::500::1.75::cardboard::False",
+          "template": "{color_name} Glitter",
+          "source_color": "Texas Tea Black with Gold",
+          "source_line": "Glitter",
+          "source_file": "protopasta.json",
+          "source_definition": {
+            "source_file": "protopasta.json",
+            "definition_index": 21,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 26
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": 130,
+          "protopasta_pla_texasteablackwithgoldglitter_500_175_c": 75
+        },
+        "color_hex": {
+          "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": "000000",
+          "protopasta_pla_texasteablackwithgoldglitter_500_175_c": "181713"
+        },
+        "extruder_temp_range": {
+          "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": [
+            190,
+            230
+          ],
+          "protopasta_pla_texasteablackwithgoldglitter_500_175_c": [
+            195,
+            225
+          ]
+        },
+        "bed_temp": {
+          "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": null,
+          "protopasta_pla_texasteablackwithgoldglitter_500_175_c": 60
+        },
+        "bed_temp_range": {
+          "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": [
+            50,
+            70
+          ],
+          "protopasta_pla_texasteablackwithgoldglitter_500_175_c": null
+        },
+        "translucent": {
+          "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": false,
+          "protopasta_pla_texasteablackwithgoldglitter_500_175_c": true
+        },
+        "codes": {
+          "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": null,
+          "protopasta_pla_texasteablackwithgoldglitter_500_175_c": [
+            "HTGL170-TEX",
+            "HTGL1705-TEX",
+            "HTGL1710-TEX"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "P016",
+      "prior_audit": "docs/audits/2026-10-03-protopasta-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "protopasta_pla_texasteablackwithgoldglitter_500_175_c",
+      "retire": [
+        "protopasta_pla_platexasteablackwithgoldglitter_500_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "protopasta_tpe_tpeblackflexible_1000_175_c": {
+      "replaced_by": "protopasta_tpe_blackflexible_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-protopasta-line-color-review.json",
+      "source": "e933c168c154ee4e875dfb1689226ad436816358",
+      "retired_key": "protopasta.json::Protopasta::TPE {color_name}::TPE Black Flexible::TPE::1000::1.75::cardboard::False"
+    },
+    "protopasta_pla_platexasteablackwithgoldglitter_1000_175_c": {
+      "replaced_by": "protopasta_pla_texasteablackwithgoldglitter_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-protopasta-line-color-review.json",
+      "source": "e933c168c154ee4e875dfb1689226ad436816358",
+      "retired_key": "protopasta.json::Protopasta::PLA {color_name}::PLA Texas Tea Black with Gold Glitter::PLA::1000::1.75::cardboard::False"
+    },
+    "protopasta_tpe_tpeblackflexible_500_175_c": {
+      "replaced_by": "protopasta_tpe_blackflexible_500_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-protopasta-line-color-review.json",
+      "source": "e933c168c154ee4e875dfb1689226ad436816358",
+      "retired_key": "protopasta.json::Protopasta::TPE {color_name}::TPE Black Flexible::TPE::500::1.75::cardboard::False"
+    },
+    "protopasta_pla_platexasteablackwithgoldglitter_500_175_c": {
+      "replaced_by": "protopasta_pla_texasteablackwithgoldglitter_500_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-protopasta-line-color-review.json",
+      "source": "e933c168c154ee4e875dfb1689226ad436816358",
+      "retired_key": "protopasta.json::Protopasta::PLA {color_name}::PLA Texas Tea Black with Gold Glitter::PLA::500::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [
+    {
+      "id": "protopasta_tpe_blackflexible_1000_175_c",
+      "density": 1.24,
+      "nozzle": [
+        195,
+        225
+      ],
+      "resolution": "No accessible current exact-line TDS; keep survivor value unresolved; no packaging/tare inference"
+    },
+    {
+      "id": "protopasta_tpe_blackflexible_500_175_c",
+      "density": 1.24,
+      "nozzle": [
+        195,
+        225
+      ],
+      "resolution": "No accessible current exact-line TDS; keep survivor value unresolved; no packaging/tare inference"
+    }
+  ],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 4,
+    "approved_groups": 4,
+    "retired": 4,
+    "deferred": 0,
+    "before_count": 51661,
+    "after_count": 51657,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-protopasta-duplicate-review.json"
+}
