@@ -1,4 +1,14 @@
 {
   "version": 1,
-  "groups": {}
+  "groups": {
+    "dup-6321b0a86399b6b15f11f4dc4f1454071e35125f57ab956e45bdcdbacf2f3ef7": {
+      "ids": [
+        "overture_tpu_tpugray_1000_175_c",
+        "overture_tpu_tpugrey_1000_175_c"
+      ],
+      "reason": "Owner decision OV083: TPU Gray/Grey are NOT duplicate; distinct HEX values {\"overture_tpu_tpugray_1000_175_c\": \"9F9F9F\", \"overture_tpu_tpugrey_1000_175_c\": \"E2E7E9\"}. Exact owner-reviewed swatch evidence; no general HEX identity rule.",
+      "ref": "docs/audits/2026-10-04-overture-owner-closure.json",
+      "source": "8925b25a53388b569033b97ad10e74ceb648cd2b"
+    }
+  }
 }

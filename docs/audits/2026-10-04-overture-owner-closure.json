@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "overture",
+  "base_sha": "37a3cdb172192651539337a45ef8d52e0c8828f6",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "c10d478f41f7370e32fa82f7992fbfbd1742bb18e7fa99cc3c40565dce60f69b",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-6321b0a86399b6b15f11f4dc4f1454071e35125f57ab956e45bdcdbacf2f3ef7",
+      "ids": [
+        "overture_tpu_tpugray_1000_175_c",
+        "overture_tpu_tpugrey_1000_175_c"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "overture_tpu_tpugray_1000_175_c",
+          "manufacturer": "Overture",
+          "name": "TPU Gray",
+          "material": "TPU",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 173,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9F9F9F",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": null,
+          "sds_url": null,
+          "tds_url": null,
+          "key": "overture.json::Overture::TPU {color_name}::TPU Gray::TPU::1000::1.75::cardboard::False",
+          "template": "TPU {color_name}",
+          "source_color": "Gray",
+          "source_line": "TPU",
+          "source_file": "overture.json",
+          "source_definition": {
+            "source_file": "overture.json",
+            "definition_index": 170,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 19,
+            "compiled_records": 19
+          },
+          "upstream": false
+        },
+        {
+          "id": "overture_tpu_tpugrey_1000_175_c",
+          "manufacturer": "Overture",
+          "name": "TPU Grey",
+          "material": "TPU",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 173,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "E2E7E9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": null,
+          "sds_url": null,
+          "tds_url": null,
+          "key": "overture.json::Overture::TPU {color_name}::TPU Grey::TPU::1000::1.75::cardboard::False",
+          "template": "TPU {color_name}",
+          "source_color": "Grey",
+          "source_line": "TPU",
+          "source_file": "overture.json",
+          "source_definition": {
+            "source_file": "overture.json",
+            "definition_index": 170,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 19,
+            "compiled_records": 19
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "overture_tpu_tpugray_1000_175_c": "9F9F9F",
+          "overture_tpu_tpugrey_1000_175_c": "E2E7E9"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "binding_status": "PASS",
+      "bindings": {
+        "overture_tpu_tpugray_1000_175_c": {
+          "key": "overture.json::Overture::TPU {color_name}::TPU Gray::TPU::1000::1.75::cardboard::False",
+          "source_color": "Gray",
+          "line": "TPU",
+          "color": "gray",
+          "parts": [
+            {
+              "role": "color",
+              "token": "gray"
+            }
+          ],
+          "anchor_key": "overture.json::Overture::TPU {color_name}::TPU Grey::TPU::1000::1.75::cardboard::False",
+          "anchor_source_color": "Grey"
+        },
+        "overture_tpu_tpugrey_1000_175_c": {
+          "key": "overture.json::Overture::TPU {color_name}::TPU Grey::TPU::1000::1.75::cardboard::False",
+          "source_color": "Grey",
+          "line": "TPU",
+          "color": "gray",
+          "parts": [
+            {
+              "role": "color",
+              "token": "gray"
+            }
+          ],
+          "anchor_key": "overture.json::Overture::TPU {color_name}::TPU Gray::TPU::1000::1.75::cardboard::False",
+          "anchor_source_color": "Gray"
+        }
+      },
+      "brand": "overture",
+      "owner_reason": "OV083 TPU Gray/Grey: different specific HEX and no exact common SKU binding; explicitly owner-deferred.",
+      "recommendation": "unknown",
+      "owner_decision": "NOT_DUPLICATE",
+      "status": "RESOLVED"
+    }
+  ],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {
+    "dup-6321b0a86399b6b15f11f4dc4f1454071e35125f57ab956e45bdcdbacf2f3ef7": {
+      "ids": [
+        "overture_tpu_tpugray_1000_175_c",
+        "overture_tpu_tpugrey_1000_175_c"
+      ],
+      "reason": "Owner decision OV083: TPU Gray/Grey are NOT duplicate; distinct HEX values {\"overture_tpu_tpugray_1000_175_c\": \"9F9F9F\", \"overture_tpu_tpugrey_1000_175_c\": \"E2E7E9\"}. Exact owner-reviewed swatch evidence; no general HEX identity rule.",
+      "ref": "docs/audits/2026-10-04-overture-owner-closure.json",
+      "source": "8925b25a53388b569033b97ad10e74ceb648cd2b"
+    }
+  },
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 0,
+    "not_duplicates": 1,
+    "before_count": 51434,
+    "after_count": 51434,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
