@@ -1,0 +1,1201 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "eryone",
+  "base_sha": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "e4545e15ae0cf79f697e79b33868aebb15f49a43d2795d6746dd65c7b7752e59",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-1d945c5c6a1e4e0828e9a027594da05e3ce5f765af0b551328ee3ff2f34f6ddc": {
+      "approved": true,
+      "survivor": "eryone_pla_silkgold_1000_175_c",
+      "retire": [
+        "eryone_pla_plasilkgold_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d"
+    },
+    "dup-4c79fe615e92b5df6c0ceec7f4e29667ae94ac0c518d01fa6cb2d2d74c9b631d": {
+      "approved": true,
+      "survivor": "eryone_pla_black_1000_175_c",
+      "retire": [
+        "eryone_pla_plablack_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d"
+    },
+    "dup-5db75a39a4bc36500111552096953f46e258439cd4834e1de5dbf828acd2caad": {
+      "approved": true,
+      "survivor": "eryone_tpu_black_500_175_c",
+      "retire": [
+        "eryone_tpu_tpublack_500_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d"
+    },
+    "dup-6fb3abad4ea3d22f49bd87229853acd0b08ff5b1986400c8d8a16d8bb91156e1": {
+      "approved": true,
+      "survivor": "eryone_pla_silkcopper_1000_175_c",
+      "retire": [
+        "eryone_pla_plasilkcopper_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d"
+    },
+    "dup-ed95c1be3053cfc50c55b6052beb9b9536bc4e35bf3ae51c8ca266c7b0bf177b": {
+      "approved": true,
+      "survivor": "eryone_pla_white_1000_175_c",
+      "retire": [
+        "eryone_pla_plawhite_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d"
+    }
+  },
+  "bindings": {
+    "eryone_pla_plasilkgold_1000_175_c": {
+      "key": "eryone.json::Eryone::PLA Silk {color_name}::PLA Silk Gold::PLA::1000::1.75::cardboard::False",
+      "source_color": "Gold",
+      "line": "silk",
+      "color": "gold",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::Silk {color_name}::Silk Gold::PLA::1000.0::1.75::cardboard::False",
+      "anchor_source_color": "Gold"
+    },
+    "eryone_pla_silkgold_1000_175_c": {
+      "key": "eryone.json::Eryone::Silk {color_name}::Silk Gold::PLA::1000.0::1.75::cardboard::False",
+      "source_color": "Gold",
+      "line": "silk",
+      "color": "gold",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::PLA Silk {color_name}::PLA Silk Gold::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Gold"
+    },
+    "eryone_pla_black_1000_175_c": {
+      "key": "eryone.json::Eryone::{color_name}::Black::PLA::1000.0::1.75::cardboard::False",
+      "source_color": "Black",
+      "line": "PLA",
+      "color": "black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::PLA {color_name}::PLA Black::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Black"
+    },
+    "eryone_pla_plablack_1000_175_c": {
+      "key": "eryone.json::Eryone::PLA {color_name}::PLA Black::PLA::1000::1.75::cardboard::False",
+      "source_color": "Black",
+      "line": "PLA",
+      "color": "black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::{color_name}::Black::PLA::1000.0::1.75::cardboard::False",
+      "anchor_source_color": "Black"
+    },
+    "eryone_tpu_black_500_175_c": {
+      "key": "eryone.json::Eryone::{color_name}::Black::TPU::500.0::1.75::cardboard::False",
+      "source_color": "Black",
+      "line": "TPU",
+      "color": "black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::TPU {color_name}::TPU Black::TPU::500::1.75::cardboard::False",
+      "anchor_source_color": "Black"
+    },
+    "eryone_tpu_tpublack_500_175_c": {
+      "key": "eryone.json::Eryone::TPU {color_name}::TPU Black::TPU::500::1.75::cardboard::False",
+      "source_color": "Black",
+      "line": "TPU",
+      "color": "black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::{color_name}::Black::TPU::500.0::1.75::cardboard::False",
+      "anchor_source_color": "Black"
+    },
+    "eryone_pla_plasilkcopper_1000_175_c": {
+      "key": "eryone.json::Eryone::PLA Silk {color_name}::PLA Silk Copper::PLA::1000::1.75::cardboard::False",
+      "source_color": "Copper",
+      "line": "silk",
+      "color": "copper",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "color",
+          "token": "copper"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::Silk {color_name}::Silk Copper::PLA::1000.0::1.75::cardboard::False",
+      "anchor_source_color": "Copper"
+    },
+    "eryone_pla_silkcopper_1000_175_c": {
+      "key": "eryone.json::Eryone::Silk {color_name}::Silk Copper::PLA::1000.0::1.75::cardboard::False",
+      "source_color": "Copper",
+      "line": "silk",
+      "color": "copper",
+      "parts": [
+        {
+          "role": "line",
+          "token": "silk"
+        },
+        {
+          "role": "color",
+          "token": "copper"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::PLA Silk {color_name}::PLA Silk Copper::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Copper"
+    },
+    "eryone_pla_plawhite_1000_175_c": {
+      "key": "eryone.json::Eryone::PLA {color_name}::PLA White::PLA::1000::1.75::cardboard::False",
+      "source_color": "White",
+      "line": "PLA",
+      "color": "white",
+      "parts": [
+        {
+          "role": "color",
+          "token": "white"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::{color_name}::White::PLA::1000.0::1.75::cardboard::False",
+      "anchor_source_color": "White"
+    },
+    "eryone_pla_white_1000_175_c": {
+      "key": "eryone.json::Eryone::{color_name}::White::PLA::1000.0::1.75::cardboard::False",
+      "source_color": "White",
+      "line": "PLA",
+      "color": "white",
+      "parts": [
+        {
+          "role": "color",
+          "token": "white"
+        }
+      ],
+      "anchor_key": "eryone.json::Eryone::PLA {color_name}::PLA White::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "White"
+    }
+  },
+  "metadata": [
+    {
+      "id": "eryone_pla_silkgold_1000_175_c",
+      "values": {
+        "codes": [
+          "B0102001"
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          55,
+          70
+        ]
+      },
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "eryone_pla_black_1000_175_c",
+      "values": {
+        "codes": [
+          "B0101001"
+        ]
+      },
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "eryone_tpu_black_500_175_c",
+      "values": {
+        "codes": [
+          "B0107001"
+        ]
+      },
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "eryone_pla_silkcopper_1000_175_c",
+      "values": {
+        "codes": [
+          "B0102003"
+        ],
+        "extruder_temp_range": [
+          190,
+          220
+        ],
+        "bed_temp_range": [
+          55,
+          70
+        ]
+      },
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "eryone_pla_white_1000_175_c",
+      "values": {
+        "codes": [
+          "B0101002"
+        ]
+      },
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-1d945c5c6a1e4e0828e9a027594da05e3ce5f765af0b551328ee3ff2f34f6ddc",
+      "ids": [
+        "eryone_pla_plasilkgold_1000_175_c",
+        "eryone_pla_silkgold_1000_175_c"
+      ],
+      "proposed_survivor": "eryone_pla_silkgold_1000_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "eryone_pla_plasilkgold_1000_175_c": "eryone_pla_silkgold_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "eryone_pla_plasilkgold_1000_175_c",
+          "manufacturer": "Eryone",
+          "name": "PLA Silk Gold",
+          "material": "PLA",
+          "density": 1.32,
+          "weight": 1000,
+          "spool_weight": 267,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "F29F43",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0102001"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::PLA Silk {color_name}::PLA Silk Gold::PLA::1000::1.75::cardboard::False",
+          "template": "PLA Silk {color_name}",
+          "source_color": "Gold",
+          "source_line": "PLA Silk",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 117,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "eryone_pla_silkgold_1000_175_c",
+          "manufacturer": "Eryone",
+          "name": "Silk Gold",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": 187.0,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D5983E",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::Silk {color_name}::Silk Gold::PLA::1000.0::1.75::cardboard::False",
+          "template": "Silk {color_name}",
+          "source_color": "Gold",
+          "source_line": "Silk",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "eryone_pla_plasilkgold_1000_175_c": 1.32,
+          "eryone_pla_silkgold_1000_175_c": 1.24
+        },
+        "spool_weight": {
+          "eryone_pla_plasilkgold_1000_175_c": 267,
+          "eryone_pla_silkgold_1000_175_c": 187.0
+        },
+        "color_hex": {
+          "eryone_pla_plasilkgold_1000_175_c": "F29F43",
+          "eryone_pla_silkgold_1000_175_c": "D5983E"
+        },
+        "extruder_temp": {
+          "eryone_pla_plasilkgold_1000_175_c": 205,
+          "eryone_pla_silkgold_1000_175_c": 220
+        },
+        "codes": {
+          "eryone_pla_plasilkgold_1000_175_c": [
+            "B0102001"
+          ],
+          "eryone_pla_silkgold_1000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-1d945c5c6a1e4e0828e9a027594da05e3ce5f765af0b551328ee3ff2f34f6ddc",
+      "prior_audit": "docs\\audits\\2026-10-03-eryone-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "eryone_pla_silkgold_1000_175_c",
+      "retire": [
+        "eryone_pla_plasilkgold_1000_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-4c79fe615e92b5df6c0ceec7f4e29667ae94ac0c518d01fa6cb2d2d74c9b631d",
+      "ids": [
+        "eryone_pla_black_1000_175_c",
+        "eryone_pla_plablack_1000_175_c"
+      ],
+      "proposed_survivor": "eryone_pla_black_1000_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "eryone_pla_plablack_1000_175_c": "eryone_pla_black_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "eryone_pla_black_1000_175_c",
+          "manufacturer": "Eryone",
+          "name": "Black",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": 187,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 50,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::{color_name}::Black::PLA::1000.0::1.75::cardboard::False",
+          "template": "{color_name}",
+          "source_color": "Black",
+          "source_line": "",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": true
+        },
+        {
+          "id": "eryone_pla_plablack_1000_175_c",
+          "manufacturer": "Eryone",
+          "name": "PLA Black",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 267,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "141414",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0101001"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::PLA {color_name}::PLA Black::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "Black",
+          "source_line": "PLA",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 33,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 35,
+            "compiled_records": 70
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "eryone_pla_black_1000_175_c": 187,
+          "eryone_pla_plablack_1000_175_c": 267
+        },
+        "color_hex": {
+          "eryone_pla_black_1000_175_c": "000000",
+          "eryone_pla_plablack_1000_175_c": "141414"
+        },
+        "extruder_temp": {
+          "eryone_pla_black_1000_175_c": 210,
+          "eryone_pla_plablack_1000_175_c": null
+        },
+        "extruder_temp_range": {
+          "eryone_pla_black_1000_175_c": null,
+          "eryone_pla_plablack_1000_175_c": [
+            190,
+            230
+          ]
+        },
+        "bed_temp": {
+          "eryone_pla_black_1000_175_c": 50,
+          "eryone_pla_plablack_1000_175_c": null
+        },
+        "bed_temp_range": {
+          "eryone_pla_black_1000_175_c": null,
+          "eryone_pla_plablack_1000_175_c": [
+            50,
+            70
+          ]
+        },
+        "codes": {
+          "eryone_pla_black_1000_175_c": null,
+          "eryone_pla_plablack_1000_175_c": [
+            "B0101001"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-4c79fe615e92b5df6c0ceec7f4e29667ae94ac0c518d01fa6cb2d2d74c9b631d",
+      "prior_audit": "docs\\audits\\2026-10-03-eryone-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "eryone_pla_black_1000_175_c",
+      "retire": [
+        "eryone_pla_plablack_1000_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-5db75a39a4bc36500111552096953f46e258439cd4834e1de5dbf828acd2caad",
+      "ids": [
+        "eryone_tpu_black_500_175_c",
+        "eryone_tpu_tpublack_500_175_c"
+      ],
+      "proposed_survivor": "eryone_tpu_black_500_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "eryone_tpu_tpublack_500_175_c": "eryone_tpu_black_500_175_c"
+      },
+      "records": [
+        {
+          "id": "eryone_tpu_black_500_175_c",
+          "manufacturer": "Eryone",
+          "name": "Black",
+          "material": "TPU",
+          "density": 1.24,
+          "weight": 500.0,
+          "spool_weight": 130.0,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::{color_name}::Black::TPU::500.0::1.75::cardboard::False",
+          "template": "{color_name}",
+          "source_color": "Black",
+          "source_line": "",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 6,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": true
+        },
+        {
+          "id": "eryone_tpu_tpublack_500_175_c",
+          "manufacturer": "Eryone",
+          "name": "TPU Black",
+          "material": "TPU",
+          "density": 1.21,
+          "weight": 500,
+          "spool_weight": 120,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "414141",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 30,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0107001",
+            "B0107015"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::TPU {color_name}::TPU Black::TPU::500::1.75::cardboard::False",
+          "template": "TPU {color_name}",
+          "source_color": "Black",
+          "source_line": "TPU",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 202,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 6,
+            "compiled_records": 12
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "eryone_tpu_black_500_175_c": 1.24,
+          "eryone_tpu_tpublack_500_175_c": 1.21
+        },
+        "spool_weight": {
+          "eryone_tpu_black_500_175_c": 130.0,
+          "eryone_tpu_tpublack_500_175_c": 120
+        },
+        "color_hex": {
+          "eryone_tpu_black_500_175_c": "000000",
+          "eryone_tpu_tpublack_500_175_c": "414141"
+        },
+        "extruder_temp": {
+          "eryone_tpu_black_500_175_c": 220,
+          "eryone_tpu_tpublack_500_175_c": 205
+        },
+        "bed_temp": {
+          "eryone_tpu_black_500_175_c": 60,
+          "eryone_tpu_tpublack_500_175_c": 30
+        },
+        "codes": {
+          "eryone_tpu_black_500_175_c": null,
+          "eryone_tpu_tpublack_500_175_c": [
+            "B0107001",
+            "B0107015"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-5db75a39a4bc36500111552096953f46e258439cd4834e1de5dbf828acd2caad",
+      "prior_audit": "docs\\audits\\2026-10-03-eryone-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "eryone_tpu_black_500_175_c",
+      "retire": [
+        "eryone_tpu_tpublack_500_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-6fb3abad4ea3d22f49bd87229853acd0b08ff5b1986400c8d8a16d8bb91156e1",
+      "ids": [
+        "eryone_pla_plasilkcopper_1000_175_c",
+        "eryone_pla_silkcopper_1000_175_c"
+      ],
+      "proposed_survivor": "eryone_pla_silkcopper_1000_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "eryone_pla_plasilkcopper_1000_175_c": "eryone_pla_silkcopper_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "eryone_pla_plasilkcopper_1000_175_c",
+          "manufacturer": "Eryone",
+          "name": "PLA Silk Copper",
+          "material": "PLA",
+          "density": 1.32,
+          "weight": 1000,
+          "spool_weight": 267,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DA7A6F",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0102003"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::PLA Silk {color_name}::PLA Silk Copper::PLA::1000::1.75::cardboard::False",
+          "template": "PLA Silk {color_name}",
+          "source_color": "Copper",
+          "source_line": "PLA Silk",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 113,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "eryone_pla_silkcopper_1000_175_c",
+          "manufacturer": "Eryone",
+          "name": "Silk Copper",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": 187.0,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "B36A51",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::Silk {color_name}::Silk Copper::PLA::1000.0::1.75::cardboard::False",
+          "template": "Silk {color_name}",
+          "source_color": "Copper",
+          "source_line": "Silk",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "eryone_pla_plasilkcopper_1000_175_c": 1.32,
+          "eryone_pla_silkcopper_1000_175_c": 1.24
+        },
+        "spool_weight": {
+          "eryone_pla_plasilkcopper_1000_175_c": 267,
+          "eryone_pla_silkcopper_1000_175_c": 187.0
+        },
+        "color_hex": {
+          "eryone_pla_plasilkcopper_1000_175_c": "DA7A6F",
+          "eryone_pla_silkcopper_1000_175_c": "B36A51"
+        },
+        "extruder_temp": {
+          "eryone_pla_plasilkcopper_1000_175_c": 205,
+          "eryone_pla_silkcopper_1000_175_c": 220
+        },
+        "codes": {
+          "eryone_pla_plasilkcopper_1000_175_c": [
+            "B0102003"
+          ],
+          "eryone_pla_silkcopper_1000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-6fb3abad4ea3d22f49bd87229853acd0b08ff5b1986400c8d8a16d8bb91156e1",
+      "prior_audit": "docs\\audits\\2026-10-03-eryone-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "eryone_pla_silkcopper_1000_175_c",
+      "retire": [
+        "eryone_pla_plasilkcopper_1000_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-ed95c1be3053cfc50c55b6052beb9b9536bc4e35bf3ae51c8ca266c7b0bf177b",
+      "ids": [
+        "eryone_pla_plawhite_1000_175_c",
+        "eryone_pla_white_1000_175_c"
+      ],
+      "proposed_survivor": "eryone_pla_white_1000_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "eryone_pla_plawhite_1000_175_c": "eryone_pla_white_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "eryone_pla_plawhite_1000_175_c",
+          "manufacturer": "Eryone",
+          "name": "PLA White",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 267,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "E9E9E9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "B0101002"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::PLA {color_name}::PLA White::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "White",
+          "source_line": "PLA",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 33,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 35,
+            "compiled_records": 70
+          },
+          "upstream": false
+        },
+        {
+          "id": "eryone_pla_white_1000_175_c",
+          "manufacturer": "Eryone",
+          "name": "White",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": 187,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 50,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "eryone.json::Eryone::{color_name}::White::PLA::1000.0::1.75::cardboard::False",
+          "template": "{color_name}",
+          "source_color": "White",
+          "source_line": "",
+          "source_file": "eryone.json",
+          "source_definition": {
+            "source_file": "eryone.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "spool_weight": {
+          "eryone_pla_plawhite_1000_175_c": 267,
+          "eryone_pla_white_1000_175_c": 187
+        },
+        "color_hex": {
+          "eryone_pla_plawhite_1000_175_c": "E9E9E9",
+          "eryone_pla_white_1000_175_c": "FFFFFF"
+        },
+        "extruder_temp": {
+          "eryone_pla_plawhite_1000_175_c": null,
+          "eryone_pla_white_1000_175_c": 210
+        },
+        "extruder_temp_range": {
+          "eryone_pla_plawhite_1000_175_c": [
+            190,
+            230
+          ],
+          "eryone_pla_white_1000_175_c": null
+        },
+        "bed_temp": {
+          "eryone_pla_plawhite_1000_175_c": null,
+          "eryone_pla_white_1000_175_c": 50
+        },
+        "bed_temp_range": {
+          "eryone_pla_plawhite_1000_175_c": [
+            50,
+            70
+          ],
+          "eryone_pla_white_1000_175_c": null
+        },
+        "codes": {
+          "eryone_pla_plawhite_1000_175_c": [
+            "B0101002"
+          ],
+          "eryone_pla_white_1000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-ed95c1be3053cfc50c55b6052beb9b9536bc4e35bf3ae51c8ca266c7b0bf177b",
+      "prior_audit": "docs\\audits\\2026-10-03-eryone-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "eryone_pla_white_1000_175_c",
+      "retire": [
+        "eryone_pla_plawhite_1000_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "eryone_pla_plasilkgold_1000_175_c": {
+      "replaced_by": "eryone_pla_silkgold_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "retired_key": "eryone.json::Eryone::PLA Silk {color_name}::PLA Silk Gold::PLA::1000::1.75::cardboard::False"
+    },
+    "eryone_pla_plablack_1000_175_c": {
+      "replaced_by": "eryone_pla_black_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "retired_key": "eryone.json::Eryone::PLA {color_name}::PLA Black::PLA::1000::1.75::cardboard::False"
+    },
+    "eryone_tpu_tpublack_500_175_c": {
+      "replaced_by": "eryone_tpu_black_500_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "retired_key": "eryone.json::Eryone::TPU {color_name}::TPU Black::TPU::500::1.75::cardboard::False"
+    },
+    "eryone_pla_plasilkcopper_1000_175_c": {
+      "replaced_by": "eryone_pla_silkcopper_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "retired_key": "eryone.json::Eryone::PLA Silk {color_name}::PLA Silk Copper::PLA::1000::1.75::cardboard::False"
+    },
+    "eryone_pla_plawhite_1000_175_c": {
+      "replaced_by": "eryone_pla_white_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-eryone-full-repo-review.json",
+      "source": "950478081e612cc4dcc9b8f2706cde1b67ba243d",
+      "retired_key": "eryone.json::Eryone::PLA {color_name}::PLA White::PLA::1000::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [
+    {
+      "old_id": "eryone_pla_plasilkgold_1000_175_c",
+      "target_id": "eryone_pla_silkgold_1000_175_c",
+      "field": "codes",
+      "values": [
+        "B0102001"
+      ]
+    },
+    {
+      "old_id": "eryone_pla_plablack_1000_175_c",
+      "target_id": "eryone_pla_black_1000_175_c",
+      "field": "codes",
+      "values": [
+        "B0101001"
+      ]
+    },
+    {
+      "old_id": "eryone_tpu_tpublack_500_175_c",
+      "target_id": "eryone_tpu_black_500_175_c",
+      "field": "codes",
+      "values": [
+        "B0107001"
+      ]
+    },
+    {
+      "old_id": "eryone_pla_plasilkcopper_1000_175_c",
+      "target_id": "eryone_pla_silkcopper_1000_175_c",
+      "field": "codes",
+      "values": [
+        "B0102003"
+      ]
+    },
+    {
+      "old_id": "eryone_pla_plawhite_1000_175_c",
+      "target_id": "eryone_pla_white_1000_175_c",
+      "field": "codes",
+      "values": [
+        "B0101002"
+      ]
+    }
+  ],
+  "printing_default_flags": [
+    {
+      "id": "eryone_pla_silkgold_1000_175_c",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    },
+    {
+      "id": "eryone_pla_black_1000_175_c",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    },
+    {
+      "id": "eryone_tpu_black_500_175_c",
+      "density": 1.24,
+      "nozzle": null,
+      "resolution": "No accessible current exact-line TDS; keep survivor value unresolved; no packaging/tare inference"
+    },
+    {
+      "id": "eryone_tpu_black_500_175_c",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    },
+    {
+      "id": "eryone_pla_silkcopper_1000_175_c",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    },
+    {
+      "id": "eryone_pla_white_1000_175_c",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    }
+  ],
+  "hard_stop_groups": [],
+  "scope": "Phase B whole-catalog audit; current exact-line official name resolves former Rule4 Cartesian survivor, no availability additions",
+  "summary": {
+    "groups": 5,
+    "approved_groups": 5,
+    "retired": 5,
+    "deferred": 0,
+    "before_count": 51618,
+    "after_count": 51613,
+    "metadata_fields_changed": 4,
+    "code_transfers": 5
+  },
+  "current_evidence": [
+    {
+      "url": "https://eryone3d.com/products/moq1-pla-silk-filament.json",
+      "bindings": {
+        "Gold": "B0102001",
+        "Copper": "B0102003"
+      },
+      "weight": 1000
+    },
+    {
+      "url": "https://eryone3d.com/products/tpu.json",
+      "bindings": {
+        "Black-0.5kg": "B0107001",
+        "Black-1kg": "B0107015"
+      },
+      "note": "Only B0107001 transfers to500g; B0107015 stays on existing1000g source record; no pre-existing fanout cleanup."
+    },
+    {
+      "url": "https://eryone3d.com/products/moq1-pla-silk-filament",
+      "nozzle": [
+        190,
+        220
+      ],
+      "bed": [
+        55,
+        70
+      ],
+      "note": "Density not currently text-confirmed; do not borrow triple-Silk values."
+    },
+    {
+      "url": "https://eryone3d.com/products/moq1-pla-filament.json",
+      "note": "Current page is PLA+ with different Black/White SKUs; do not rebind historical Standard PLA codes or borrow currentPLA+ printing values."
+    }
+  ],
+  "prior_evidence_audit": "docs\\audits\\2026-10-03-eryone-duplicate-review.json"
+}
