@@ -61,6 +61,8 @@ The auditor is read-only on catalog sources. Matching normalized names are candi
 
 The duplicate guard enforces **every current candidate**, existing or new. The temporary `contracts/owner_pending_duplicates.json` exempts only exact memberships also present in [the single owner decision sheet](audits/backlog-decisions.csv). Missing, stale, overlapping or mismatched pending entries fail closed. New members require review. This list authorizes no merge; remove its entries as the owner resolves the corresponding groups. Full closure requires an empty pending list.
 
+The owner sheet requires all 11 columns: `group_id, brand, side_a_name, side_a_id, side_a_hex, side_b_name, side_b_id, side_b_hex, evidence_url, reason, recommendation`. Duplicate/unexpected headers, missing/surplus cells and empty required review values are rejected. Evidence URL cells may be empty when no binding evidence is available; the reason must retain that uncertainty.
+
 `python scripts/audit_duplicates.py --all` enumerates every source file and reports confirmed non-duplicates, owner-pending groups and unresolved candidates separately. It exits nonzero for unresolved candidates outside those exact lists; zero unresolved does **not** mean that pending groups have been decided.
 
 After separate authorization for a brand, create an audit outside `filaments/` and `contracts/` using an already fetched read-only upstream commit:

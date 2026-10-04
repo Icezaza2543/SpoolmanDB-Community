@@ -161,11 +161,11 @@
       ],
       "exit_code": 0,
       "tail": [
-        "........................................................................ [ 29%]",
-        "........................................................................ [ 59%]",
-        "........................................................................ [ 88%]",
-        "............................                                             [100%]",
-        "244 passed in 55.04s"
+        "........................................................................ [ 28%]",
+        "........................................................................ [ 56%]",
+        "........................................................................ [ 84%]",
+        ".......................................                                  [100%]",
+        "255 passed in 59.71s"
       ]
     },
     {
@@ -291,7 +291,10 @@
         "--check"
       ],
       "exit_code": 0,
-      "tail": []
+      "tail": [
+        "warning: in the working copy of 'docs/audits/2026-10-04-duplicate-campaign-final.md', LF will be replaced by CRLF the next time Git touches it",
+        "warning: in the working copy of 'tests/test_duplicate_enforcement.py', LF will be replaced by CRLF the next time Git touches it"
+      ]
     },
     {
       "gate": "status",
@@ -302,21 +305,27 @@
       ],
       "exit_code": 0,
       "tail": [
-        "?? contracts/owner_pending_duplicates.json",
-        "?? docs/audits/2026-10-04-duplicate-campaign-final.md",
-        "?? docs/audits/2026-10-04-full-repo-owner-review.json",
-        "?? docs/audits/backlog-decisions.csv",
-        "?? tests/test_duplicate_enforcement.py"
+        " M docs/audits/2026-10-04-duplicate-campaign-final.md",
+        " M docs/maintenance.md",
+        " M scripts/duplicate_guard.py",
+        " M tests/test_duplicate_enforcement.py"
       ]
     }
   ],
-  "targeted_regressions": 22,
-  "pytest": 244,
+  "targeted_regressions": 33,
+  "pytest": 255,
   "phase_b_ci": {
     "Build": 37194811978,
     "CodeQL": 37194811668,
     "conclusion": "success",
     "pages_exact_payload": true
   },
-  "final_delivery_ci": "Confirmed after this proof commit; see final delivery report"
+  "final_delivery_ci": "Confirmed after this proof commit; see final delivery report",
+  "final_review": {
+    "important_finding": "Complete owner-sheet schema required",
+    "fixed": true,
+    "red_cases": 11,
+    "green_targeted": 33,
+    "full_suite": 255
+  }
 }

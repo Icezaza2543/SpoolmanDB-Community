@@ -7,6 +7,7 @@ import subprocess
 import pytest
 
 ROOT=Path(__file__).resolve().parents[1]
+SHEET_FIELDS=['group_id','brand','side_a_name','side_a_id','side_a_hex','side_b_name','side_b_id','side_b_hex','evidence_url','reason','recommendation']
 
 @pytest.fixture
 def pending_catalog(tmp_path):
@@ -31,7 +32,7 @@ def pending(root):
     (root/'contracts/owner_pending_duplicates.json').write_text(json.dumps({'version':1,'groups':{gid:entry}}))
     path=root/'docs/audits/backlog-decisions.csv';path.parent.mkdir(parents=True,exist_ok=True)
     with path.open('w',newline='',encoding='utf-8') as h:
-        writer=csv.DictWriter(h,fieldnames=['group_id','side_a_id','side_b_id']);writer.writeheader();writer.writerow({'group_id':gid,'side_a_id':ids[0],'side_b_id':';'.join(ids[1:])})
+        writer=csv.DictWriter(h,fieldnames=SHEET_FIELDS);writer.writeheader();writer.writerow({'group_id':gid,'brand':'acme','side_a_name':'Acme PETG Black','side_a_id':ids[0],'side_a_hex':'000000','side_b_name':'PETG Black','side_b_id':';'.join(ids[1:]),'side_b_hex':'000000','evidence_url':'','reason':'Owner decision required','recommendation':'unknown'})
     return gid,ids
 
 def test_existing_candidate_fails_full_enforcement(pending_catalog):
@@ -53,8 +54,30 @@ def test_pending_sheet_mismatch_fails_closed(pending_catalog,damage):
     if damage=='missing':path.unlink()
     elif damage=='wrong_id':path.write_text(path.read_text().replace(ids[0],'unrelated_id'))
     elif damage=='duplicate_row':path.write_text(path.read_text()+path.read_text().splitlines()[1]+'\n')
-    elif damage=='short_row':path.write_text('group_id,side_a_id,side_b_id\n'+gid+'\n')
-    else:path.write_text(path.read_text()+'unrelated,other_a,other_b\n')
+    elif damage=='short_row':path.write_text(','.join(SHEET_FIELDS)+'\n'+gid+'\n')
+    else:
+        with path.open('a',newline='') as h:
+            csv.DictWriter(h,fieldnames=SHEET_FIELDS).writerow({'group_id':'unrelated','brand':'other','side_a_name':'Other A','side_a_id':'other_a','side_a_hex':'000000','side_b_name':'Other B','side_b_id':'other_b','side_b_hex':'000000','evidence_url':'','reason':'Owner decision required','recommendation':'unknown'})
+    assert check(root,base)[0]
+
+@pytest.mark.parametrize('damage',['missing_columns','duplicate_header','extra_header','extra_cell'])
+def test_complete_owner_sheet_schema_is_required(pending_catalog,damage):
+    root,base=pending_catalog;gid,ids=pending(root);path=root/'docs/audits/backlog-decisions.csv'
+    with path.open(newline='') as h:rows=list(csv.reader(h))
+    if damage=='missing_columns':rows=[['group_id','side_a_id','side_b_id'],[gid,ids[0],ids[1]]]
+    elif damage=='duplicate_header':rows[0].append('brand');rows[1].append('other')
+    elif damage=='extra_header':rows[0].append('unexpected');rows[1].append('other')
+    else:rows[1].append('surplus')
+    with path.open('w',newline='') as h:csv.writer(h).writerows(rows)
+    assert check(root,base)[0]
+
+@pytest.mark.parametrize('field',['brand','side_a_name','side_a_hex','side_b_name','side_b_hex','reason','recommendation'])
+def test_owner_sheet_retains_required_review_values(pending_catalog,field):
+    root,base=pending_catalog;pending(root);path=root/'docs/audits/backlog-decisions.csv'
+    with path.open(newline='') as h:rows=list(csv.DictReader(h))
+    rows[0][field]=''
+    with path.open('w',newline='') as h:
+        writer=csv.DictWriter(h,fieldnames=SHEET_FIELDS);writer.writeheader();writer.writerows(rows)
     assert check(root,base)[0]
 
 def test_pending_membership_does_not_exempt_new_member(pending_catalog):
