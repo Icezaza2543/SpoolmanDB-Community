@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "paramount3d",
+  "base_sha": "e1feeb4d2630e86f77a8c25e05d46147e2fb4368",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "e28ba3bdef962e9a07a4bd66d1391f31be180d7f7d577da100d8d83a156edb47",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-a1193cacb2ff8f22a493492cafcb6e459a308c4596b0d316e30ddf4708c8b29a": {
+      "approved": true,
+      "survivor": "paramount3d_pla_paramount3dplamatteblack_1000_175_p",
+      "retire": [
+        "paramount3d_pla_mattepla(black)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-paramount3d-line-color-review.json",
+      "source": "e1feeb4d2630e86f77a8c25e05d46147e2fb4368"
+    }
+  },
+  "bindings": {
+    "paramount3d_pla_mattepla(black)_1000_175_p": {
+      "key": "paramount3d.json::Paramount 3D::Matte PLA {color_name}::Matte PLA ( Black)::PLA::1000::1.75::plastic::False",
+      "source_color": "( Black)",
+      "line": "matte",
+      "color": "black",
+      "parts": [
+        {
+          "role": "line",
+          "token": "matte"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "paramount3d.json::Paramount 3D::Paramount 3D PLA {color_name}::Paramount 3D PLA Matte Black::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Matte Black"
+    },
+    "paramount3d_pla_paramount3dplamatteblack_1000_175_p": {
+      "key": "paramount3d.json::Paramount 3D::Paramount 3D PLA {color_name}::Paramount 3D PLA Matte Black::PLA::1000::1.75::plastic::False",
+      "source_color": "Matte Black",
+      "line": "matte",
+      "color": "black",
+      "parts": [
+        {
+          "role": "line",
+          "token": "matte"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "paramount3d.json::Paramount 3D::Matte PLA {color_name}::Matte PLA ( Black)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "( Black)"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-a1193cacb2ff8f22a493492cafcb6e459a308c4596b0d316e30ddf4708c8b29a",
+      "ids": [
+        "paramount3d_pla_mattepla(black)_1000_175_p",
+        "paramount3d_pla_paramount3dplamatteblack_1000_175_p"
+      ],
+      "proposed_survivor": "paramount3d_pla_mattepla(black)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "paramount3d_pla_paramount3dplamatteblack_1000_175_p": "paramount3d_pla_mattepla(black)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "paramount3d_pla_mattepla(black)_1000_175_p",
+          "manufacturer": "Paramount 3D",
+          "name": "Matte PLA ( Black)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "paramount3d.json::Paramount 3D::Matte PLA {color_name}::Matte PLA ( Black)::PLA::1000::1.75::plastic::False",
+          "template": "Matte PLA {color_name}",
+          "source_color": "( Black)",
+          "source_line": "Matte PLA",
+          "source_file": "paramount3d.json",
+          "source_definition": {
+            "source_file": "paramount3d.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "paramount3d_pla_paramount3dplamatteblack_1000_175_p",
+          "manufacturer": "Paramount 3D",
+          "name": "Paramount 3D PLA Matte Black",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0e0e10",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            195,
+            210
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            0,
+            0
+          ],
+          "fill": null,
+          "finish": "matte",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "paramount3d.json::Paramount 3D::Paramount 3D PLA {color_name}::Paramount 3D PLA Matte Black::PLA::1000::1.75::plastic::False",
+          "template": "Paramount 3D PLA {color_name}",
+          "source_color": "Matte Black",
+          "source_line": "Paramount 3D PLA",
+          "source_file": "paramount3d.json",
+          "source_definition": {
+            "source_file": "paramount3d.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 50,
+            "compiled_records": 50
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "paramount3d_pla_mattepla(black)_1000_175_p": "000000",
+          "paramount3d_pla_paramount3dplamatteblack_1000_175_p": "0e0e10"
+        },
+        "extruder_temp_range": {
+          "paramount3d_pla_mattepla(black)_1000_175_p": [
+            190,
+            230
+          ],
+          "paramount3d_pla_paramount3dplamatteblack_1000_175_p": [
+            195,
+            210
+          ]
+        },
+        "bed_temp_range": {
+          "paramount3d_pla_mattepla(black)_1000_175_p": [
+            50,
+            70
+          ],
+          "paramount3d_pla_paramount3dplamatteblack_1000_175_p": [
+            0,
+            0
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "PM070",
+      "prior_audit": "docs/audits/2026-10-03-paramount3d-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "paramount3d_pla_paramount3dplamatteblack_1000_175_p",
+      "retire": [
+        "paramount3d_pla_mattepla(black)_1000_175_p"
+      ],
+      "decision_rule": "owner-pattern override",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "paramount3d_pla_mattepla(black)_1000_175_p": {
+      "replaced_by": "paramount3d_pla_paramount3dplamatteblack_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-paramount3d-line-color-review.json",
+      "source": "e1feeb4d2630e86f77a8c25e05d46147e2fb4368",
+      "retired_key": "paramount3d.json::Paramount 3D::Matte PLA {color_name}::Matte PLA ( Black)::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "before_count": 51662,
+    "after_count": 51661,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-paramount3d-duplicate-review.json"
+}
