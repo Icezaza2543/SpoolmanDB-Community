@@ -23,6 +23,8 @@ def line_color_bindings(left_key, left_color, right_key, right_color):
     explicitly anchors it. Ambiguous repeated occurrences fail closed.
     """
     keys, colors = (left_key, right_key), (left_color, right_color)
+    if not all(isinstance(key, str) for key in keys):
+        raise ValueError("paired identity keys must be strings")
     fields = [key.split("::") for key in keys]
     if any(len(f) != 9 for f in fields):
         raise ValueError("invalid paired identity key")
