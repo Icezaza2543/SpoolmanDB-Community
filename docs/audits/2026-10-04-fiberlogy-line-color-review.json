@@ -1,0 +1,730 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "fiberlogy",
+  "base_sha": "d41bf9cf45f1eaf559732e4ef52434c0576b9f29",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "4be1b176336082829c06a1841bba9f8cdf93154290637e844f84971d85251569",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-faf9d4c8d3e8cf3eef63254f5190c651bdc4b8d2847ddd57b293fdf0ed5fdba1",
+      "ids": [
+        "fiberlogy_abs_absplusgray_850_175_p",
+        "fiberlogy_abs_absplusgrey_850_175_p"
+      ],
+      "proposed_survivor": "fiberlogy_abs_absplusgrey_850_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "fiberlogy.json",
+            "definition_index": 1,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 27,
+            "compiled_records": 54
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "fiberlogy_abs_absplusgray_850_175_p": "fiberlogy_abs_absplusgrey_850_175_p"
+      },
+      "records": [
+        {
+          "id": "fiberlogy_abs_absplusgray_850_175_p",
+          "manufacturer": "Fiberlogy",
+          "name": "ABS PLUS Gray",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 850,
+          "spool_weight": 245,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "BBBCBC",
+          "color_hexes": null,
+          "extruder_temp": 257,
+          "extruder_temp_range": null,
+          "bed_temp": 100,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "ABS-PLUS-GRAY-175-085"
+          ],
+          "eans": [
+            "5902560994179"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABSPLUS_SDS_EN.pdf",
+          "tds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABSPLUS_TDS.pdf",
+          "key": "fiberlogy.json::Fiberlogy::ABS PLUS {color_name}::ABS PLUS Gray::ABS::850::1.75::plastic::False",
+          "template": "ABS PLUS {color_name}",
+          "source_color": "Gray",
+          "source_line": "ABS PLUS",
+          "source_file": "fiberlogy.json",
+          "source_definition": {
+            "source_file": "fiberlogy.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 7,
+            "compiled_records": 7
+          },
+          "upstream": false
+        },
+        {
+          "id": "fiberlogy_abs_absplusgrey_850_175_p",
+          "manufacturer": "Fiberlogy",
+          "name": "ABS PLUS Grey",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 850,
+          "spool_weight": 245,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "C5C5BF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            90,
+            110
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABS_SDS_EN.pdf",
+          "tds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABS_TDS.pdf",
+          "key": "fiberlogy.json::Fiberlogy::ABS {color_name}::ABS PLUS Grey::ABS::850::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "PLUS Grey",
+          "source_line": "ABS",
+          "source_file": "fiberlogy.json",
+          "source_definition": {
+            "source_file": "fiberlogy.json",
+            "definition_index": 1,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 27,
+            "compiled_records": 54
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "fiberlogy_abs_absplusgray_850_175_p": 1.03,
+          "fiberlogy_abs_absplusgrey_850_175_p": 1.04
+        },
+        "color_hex": {
+          "fiberlogy_abs_absplusgray_850_175_p": "BBBCBC",
+          "fiberlogy_abs_absplusgrey_850_175_p": "C5C5BF"
+        },
+        "extruder_temp": {
+          "fiberlogy_abs_absplusgray_850_175_p": 257,
+          "fiberlogy_abs_absplusgrey_850_175_p": null
+        },
+        "extruder_temp_range": {
+          "fiberlogy_abs_absplusgray_850_175_p": null,
+          "fiberlogy_abs_absplusgrey_850_175_p": [
+            230,
+            260
+          ]
+        },
+        "bed_temp": {
+          "fiberlogy_abs_absplusgray_850_175_p": 100,
+          "fiberlogy_abs_absplusgrey_850_175_p": null
+        },
+        "bed_temp_range": {
+          "fiberlogy_abs_absplusgray_850_175_p": null,
+          "fiberlogy_abs_absplusgrey_850_175_p": [
+            90,
+            110
+          ]
+        },
+        "codes": {
+          "fiberlogy_abs_absplusgray_850_175_p": [
+            "ABS-PLUS-GRAY-175-085"
+          ],
+          "fiberlogy_abs_absplusgrey_850_175_p": null
+        },
+        "eans": {
+          "fiberlogy_abs_absplusgray_850_175_p": [
+            "5902560994179"
+          ],
+          "fiberlogy_abs_absplusgrey_850_175_p": null
+        },
+        "sds_url": {
+          "fiberlogy_abs_absplusgray_850_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABSPLUS_SDS_EN.pdf",
+          "fiberlogy_abs_absplusgrey_850_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABS_SDS_EN.pdf"
+        },
+        "tds_url": {
+          "fiberlogy_abs_absplusgray_850_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABSPLUS_TDS.pdf",
+          "fiberlogy_abs_absplusgrey_850_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABS_TDS.pdf"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "FL003",
+      "prior_audit": "docs/audits/2026-10-03-fiberlogy-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "Gray/Grey spelling tie with two specific HEX values and no exact common official SKU binding; owner rule5 deferral"
+    },
+    {
+      "group_id": "dup-a4be2f041b75302871e9dc2a69aaaf15806c963b962b16b5757acec21d7968ee",
+      "ids": [
+        "fiberlogy_pp_ppranthracite_750_175_p",
+        "fiberlogy_pp_rppanthracite_750_175_p"
+      ],
+      "proposed_survivor": "fiberlogy_pp_ppranthracite_750_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "fiberlogy.json",
+            "definition_index": 51,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 24
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "fiberlogy_pp_rppanthracite_750_175_p": "fiberlogy_pp_ppranthracite_750_175_p"
+      },
+      "records": [
+        {
+          "id": "fiberlogy_pp_ppranthracite_750_175_p",
+          "manufacturer": "Fiberlogy",
+          "name": "PP R Anthracite",
+          "material": "PP",
+          "density": 1.05,
+          "weight": 750,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "26272B",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_PP_SDS_EN.pdf",
+          "tds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_PP_TDS.pdf",
+          "key": "fiberlogy.json::Fiberlogy::PP {color_name}::PP R Anthracite::PP::750::1.75::plastic::False",
+          "template": "PP {color_name}",
+          "source_color": "R Anthracite",
+          "source_line": "PP",
+          "source_file": "fiberlogy.json",
+          "source_definition": {
+            "source_file": "fiberlogy.json",
+            "definition_index": 51,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 24
+          },
+          "upstream": false
+        },
+        {
+          "id": "fiberlogy_pp_rppanthracite_750_175_p",
+          "manufacturer": "Fiberlogy",
+          "name": "R PP Anthracite",
+          "material": "PP",
+          "density": 1.05,
+          "weight": 750,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0E100D",
+          "color_hexes": null,
+          "extruder_temp": 240,
+          "extruder_temp_range": null,
+          "bed_temp": 100,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "fiberlogy.json::Fiberlogy::R PP {color_name}::R PP Anthracite::PP::750::1.75::plastic::False",
+          "template": "R PP {color_name}",
+          "source_color": "Anthracite",
+          "source_line": "R PP",
+          "source_file": "fiberlogy.json",
+          "source_definition": {
+            "source_file": "fiberlogy.json",
+            "definition_index": 52,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "fiberlogy_pp_ppranthracite_750_175_p": "26272B",
+          "fiberlogy_pp_rppanthracite_750_175_p": "0E100D"
+        },
+        "extruder_temp": {
+          "fiberlogy_pp_ppranthracite_750_175_p": null,
+          "fiberlogy_pp_rppanthracite_750_175_p": 240
+        },
+        "extruder_temp_range": {
+          "fiberlogy_pp_ppranthracite_750_175_p": [
+            210,
+            240
+          ],
+          "fiberlogy_pp_rppanthracite_750_175_p": null
+        },
+        "bed_temp": {
+          "fiberlogy_pp_ppranthracite_750_175_p": null,
+          "fiberlogy_pp_rppanthracite_750_175_p": 100
+        },
+        "bed_temp_range": {
+          "fiberlogy_pp_ppranthracite_750_175_p": [
+            80,
+            100
+          ],
+          "fiberlogy_pp_rppanthracite_750_175_p": null
+        },
+        "sds_url": {
+          "fiberlogy_pp_ppranthracite_750_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_PP_SDS_EN.pdf",
+          "fiberlogy_pp_rppanthracite_750_175_p": null
+        },
+        "tds_url": {
+          "fiberlogy_pp_ppranthracite_750_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_PP_TDS.pdf",
+          "fiberlogy_pp_rppanthracite_750_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "FL027",
+      "prior_audit": "docs/audits/2026-10-03-fiberlogy-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "qualifier not allowlisted or anchored"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-faf9d4c8d3e8cf3eef63254f5190c651bdc4b8d2847ddd57b293fdf0ed5fdba1",
+      "ids": [
+        "fiberlogy_abs_absplusgray_850_175_p",
+        "fiberlogy_abs_absplusgrey_850_175_p"
+      ],
+      "proposed_survivor": "fiberlogy_abs_absplusgrey_850_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "fiberlogy.json",
+            "definition_index": 1,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 27,
+            "compiled_records": 54
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "fiberlogy_abs_absplusgray_850_175_p": "fiberlogy_abs_absplusgrey_850_175_p"
+      },
+      "records": [
+        {
+          "id": "fiberlogy_abs_absplusgray_850_175_p",
+          "manufacturer": "Fiberlogy",
+          "name": "ABS PLUS Gray",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 850,
+          "spool_weight": 245,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "BBBCBC",
+          "color_hexes": null,
+          "extruder_temp": 257,
+          "extruder_temp_range": null,
+          "bed_temp": 100,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "ABS-PLUS-GRAY-175-085"
+          ],
+          "eans": [
+            "5902560994179"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABSPLUS_SDS_EN.pdf",
+          "tds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABSPLUS_TDS.pdf",
+          "key": "fiberlogy.json::Fiberlogy::ABS PLUS {color_name}::ABS PLUS Gray::ABS::850::1.75::plastic::False",
+          "template": "ABS PLUS {color_name}",
+          "source_color": "Gray",
+          "source_line": "ABS PLUS",
+          "source_file": "fiberlogy.json",
+          "source_definition": {
+            "source_file": "fiberlogy.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 7,
+            "compiled_records": 7
+          },
+          "upstream": false
+        },
+        {
+          "id": "fiberlogy_abs_absplusgrey_850_175_p",
+          "manufacturer": "Fiberlogy",
+          "name": "ABS PLUS Grey",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 850,
+          "spool_weight": 245,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "C5C5BF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            90,
+            110
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABS_SDS_EN.pdf",
+          "tds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABS_TDS.pdf",
+          "key": "fiberlogy.json::Fiberlogy::ABS {color_name}::ABS PLUS Grey::ABS::850::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "PLUS Grey",
+          "source_line": "ABS",
+          "source_file": "fiberlogy.json",
+          "source_definition": {
+            "source_file": "fiberlogy.json",
+            "definition_index": 1,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 27,
+            "compiled_records": 54
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "fiberlogy_abs_absplusgray_850_175_p": 1.03,
+          "fiberlogy_abs_absplusgrey_850_175_p": 1.04
+        },
+        "color_hex": {
+          "fiberlogy_abs_absplusgray_850_175_p": "BBBCBC",
+          "fiberlogy_abs_absplusgrey_850_175_p": "C5C5BF"
+        },
+        "extruder_temp": {
+          "fiberlogy_abs_absplusgray_850_175_p": 257,
+          "fiberlogy_abs_absplusgrey_850_175_p": null
+        },
+        "extruder_temp_range": {
+          "fiberlogy_abs_absplusgray_850_175_p": null,
+          "fiberlogy_abs_absplusgrey_850_175_p": [
+            230,
+            260
+          ]
+        },
+        "bed_temp": {
+          "fiberlogy_abs_absplusgray_850_175_p": 100,
+          "fiberlogy_abs_absplusgrey_850_175_p": null
+        },
+        "bed_temp_range": {
+          "fiberlogy_abs_absplusgray_850_175_p": null,
+          "fiberlogy_abs_absplusgrey_850_175_p": [
+            90,
+            110
+          ]
+        },
+        "codes": {
+          "fiberlogy_abs_absplusgray_850_175_p": [
+            "ABS-PLUS-GRAY-175-085"
+          ],
+          "fiberlogy_abs_absplusgrey_850_175_p": null
+        },
+        "eans": {
+          "fiberlogy_abs_absplusgray_850_175_p": [
+            "5902560994179"
+          ],
+          "fiberlogy_abs_absplusgrey_850_175_p": null
+        },
+        "sds_url": {
+          "fiberlogy_abs_absplusgray_850_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABSPLUS_SDS_EN.pdf",
+          "fiberlogy_abs_absplusgrey_850_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABS_SDS_EN.pdf"
+        },
+        "tds_url": {
+          "fiberlogy_abs_absplusgray_850_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABSPLUS_TDS.pdf",
+          "fiberlogy_abs_absplusgrey_850_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_ABS_TDS.pdf"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "FL003",
+      "prior_audit": "docs/audits/2026-10-03-fiberlogy-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "Gray/Grey spelling tie with two specific HEX values and no exact common official SKU binding; owner rule5 deferral"
+    },
+    {
+      "group_id": "dup-a4be2f041b75302871e9dc2a69aaaf15806c963b962b16b5757acec21d7968ee",
+      "ids": [
+        "fiberlogy_pp_ppranthracite_750_175_p",
+        "fiberlogy_pp_rppanthracite_750_175_p"
+      ],
+      "proposed_survivor": "fiberlogy_pp_ppranthracite_750_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "fiberlogy.json",
+            "definition_index": 51,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 24
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "fiberlogy_pp_rppanthracite_750_175_p": "fiberlogy_pp_ppranthracite_750_175_p"
+      },
+      "records": [
+        {
+          "id": "fiberlogy_pp_ppranthracite_750_175_p",
+          "manufacturer": "Fiberlogy",
+          "name": "PP R Anthracite",
+          "material": "PP",
+          "density": 1.05,
+          "weight": 750,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "26272B",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_PP_SDS_EN.pdf",
+          "tds_url": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_PP_TDS.pdf",
+          "key": "fiberlogy.json::Fiberlogy::PP {color_name}::PP R Anthracite::PP::750::1.75::plastic::False",
+          "template": "PP {color_name}",
+          "source_color": "R Anthracite",
+          "source_line": "PP",
+          "source_file": "fiberlogy.json",
+          "source_definition": {
+            "source_file": "fiberlogy.json",
+            "definition_index": 51,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 24
+          },
+          "upstream": false
+        },
+        {
+          "id": "fiberlogy_pp_rppanthracite_750_175_p",
+          "manufacturer": "Fiberlogy",
+          "name": "R PP Anthracite",
+          "material": "PP",
+          "density": 1.05,
+          "weight": 750,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0E100D",
+          "color_hexes": null,
+          "extruder_temp": 240,
+          "extruder_temp_range": null,
+          "bed_temp": 100,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "fiberlogy.json::Fiberlogy::R PP {color_name}::R PP Anthracite::PP::750::1.75::plastic::False",
+          "template": "R PP {color_name}",
+          "source_color": "Anthracite",
+          "source_line": "R PP",
+          "source_file": "fiberlogy.json",
+          "source_definition": {
+            "source_file": "fiberlogy.json",
+            "definition_index": 52,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "fiberlogy_pp_ppranthracite_750_175_p": "26272B",
+          "fiberlogy_pp_rppanthracite_750_175_p": "0E100D"
+        },
+        "extruder_temp": {
+          "fiberlogy_pp_ppranthracite_750_175_p": null,
+          "fiberlogy_pp_rppanthracite_750_175_p": 240
+        },
+        "extruder_temp_range": {
+          "fiberlogy_pp_ppranthracite_750_175_p": [
+            210,
+            240
+          ],
+          "fiberlogy_pp_rppanthracite_750_175_p": null
+        },
+        "bed_temp": {
+          "fiberlogy_pp_ppranthracite_750_175_p": null,
+          "fiberlogy_pp_rppanthracite_750_175_p": 100
+        },
+        "bed_temp_range": {
+          "fiberlogy_pp_ppranthracite_750_175_p": [
+            80,
+            100
+          ],
+          "fiberlogy_pp_rppanthracite_750_175_p": null
+        },
+        "sds_url": {
+          "fiberlogy_pp_ppranthracite_750_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_PP_SDS_EN.pdf",
+          "fiberlogy_pp_rppanthracite_750_175_p": null
+        },
+        "tds_url": {
+          "fiberlogy_pp_ppranthracite_750_175_p": "https://fiberlogy.com/upload/techfiles/FIBERLOGY_PP_TDS.pdf",
+          "fiberlogy_pp_rppanthracite_750_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "FL027",
+      "prior_audit": "docs/audits/2026-10-03-fiberlogy-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "qualifier not allowlisted or anchored"
+    }
+  ],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 2,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 2,
+    "before_count": 51673,
+    "after_count": 51673,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-fiberlogy-duplicate-review.json"
+}
