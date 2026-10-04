@@ -8,6 +8,8 @@ from scripts.duplicate_catalog import candidate_groups, catalog_records, confirm
 from scripts.retired_ids import load_contract
 
 OWNER_SHEET = "docs/audits/backlog-decisions.csv"
+OWNER_FIELDS = {"group_id", "brand", "side_a_name", "side_a_id", "side_a_hex",
+                "side_b_name", "side_b_id", "side_b_hex", "evidence_url", "reason", "recommendation"}
 
 
 def duplicate_review_state(root, rows=None, base_ref=None):
@@ -27,12 +29,15 @@ def duplicate_review_state(root, rows=None, base_ref=None):
         sheet = root / OWNER_SHEET
         with sheet.open(encoding="utf-8-sig", newline="") as handle:
             reader = csv.DictReader(handle)
-            if not {"group_id", "side_a_id", "side_b_id"} <= set(reader.fieldnames or []):
-                raise ValueError("owner sheet requires exact group and side IDs")
+            headers = reader.fieldnames or []
+            if set(headers) != OWNER_FIELDS or len(headers) != len(OWNER_FIELDS):
+                raise ValueError("owner sheet requires the complete unique 11-column schema")
             reviewed = {}
             for row in reader:
-                if not all(isinstance(row.get(field), str) for field in ("group_id", "side_a_id", "side_b_id")):
-                    raise ValueError("owner sheet has an incomplete row")
+                if set(row) != OWNER_FIELDS or not all(isinstance(row.get(field), str) for field in OWNER_FIELDS):
+                    raise ValueError("owner sheet has incomplete or surplus cells")
+                if any(not row[field].strip() for field in OWNER_FIELDS - {"evidence_url"}):
+                    raise ValueError("owner sheet lost required review values")
                 gid = row["group_id"]
                 if not gid or gid in reviewed:
                     raise ValueError("owner sheet has blank/duplicate group")

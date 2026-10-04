@@ -27,11 +27,13 @@ Part A frozen114:45 retirements,69 deferred. PhaseB resolves64 further groups af
 
 ## Enforcement
 
-Final local verification: **244 pytest tests passed**, 22 focused guard/audit regressions passed, all15 maintenance/proof gates exit0. Original-campaign baseline `--strict --base-ref b050e68` passes: 53,434 baseline records, 51,592 matched current, 1,842 registered retired, zero added/changed/rekeyed/unregistered removed. [Machine-readable audit and gate proof](2026-10-04-duplicate-enforcement-proof.json). PhaseB [Build](https://github.com/Icezaza2543/SpoolmanDB-Community/actions/runs/37194811978) and [CodeQL](https://github.com/Icezaza2543/SpoolmanDB-Community/actions/runs/37194811668) passed; Pages full payloads match51,592/1,842. Final guard delivery receives its own hosted checks before cleanup.
+Final local verification: **255 pytest tests passed**, 33 focused guard/audit regressions passed. Original-campaign baseline `--strict --base-ref b050e68` passes: 53,434 baseline records, 51,592 matched current, 1,842 registered retired, zero added/changed/rekeyed/unregistered removed. [Machine-readable audit and gate proof](2026-10-04-duplicate-enforcement-proof.json). PhaseB [Build](https://github.com/Icezaza2543/SpoolmanDB-Community/actions/runs/37194811978) and [CodeQL](https://github.com/Icezaza2543/SpoolmanDB-Community/actions/runs/37194811668) passed; Pages full payloads match51,592/1,842. Final guard delivery receives its own hosted checks before cleanup.
 
 `validate.py` rejects **every** current unresolved group, existing or new. Exact not-duplicate memberships and exact temporary owner-sheet memberships are the only exemptions. Missing/mismatched/duplicate/incomplete sheets, new members, stale pending entries and overlapping contracts fail closed. `audit_duplicates.py --all` exits nonzero for unresolved candidates outside those lists. Baseline retirement/rollback checks remain intact.
 
 Regression coverage includes existing/head-only failures, new-member failures, exact non-duplicate/pending passes, malformed/stale/overlap/CSV failures, and whole-repo enumeration. Red→green evidence retained in the local campaign gate logs. Full maintenance §7 plus original-campaign strict baseline and independent whole-payload proof are required before delivery.
+
+Fresh-review finding fixed in one tested pass: a three-column sheet previously retained exemptions while losing review context. The guard now requires all 11 unique columns, exact cell counts and nonempty review values (evidence URL may remain empty). Four schema and seven blank-value regressions were observed RED, then GREEN. The full catalog remains unchanged. Enforcement covers the established candidate algorithm; it does not prove that every physically equivalent product worldwide is detectable.
 
 ## Registered retirements by manufacturer
 
