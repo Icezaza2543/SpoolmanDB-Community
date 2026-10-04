@@ -1,0 +1,734 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "printwithsmile",
+  "base_sha": "3377a6a65f9344ad60b6115816a80f683cae04c0",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "aa3554325b45993a4d79d0e2f3dc1eb8a2a326b080df7f8cd71b7d447b44111b",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-0bb798e93831020ac6acdc40df7935de7e1d3294bfda758d9f68f9614a9494bf",
+      "ids": [
+        "printwithsmile_pla_hisplanatural_500_175_c",
+        "printwithsmile_pla_plahisnatural_500_175_c"
+      ],
+      "proposed_survivor": "printwithsmile_pla_plahisnatural_500_175_c",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "printwithsmile.json",
+            "definition_index": 8,
+            "weights": 6,
+            "diameters": 1,
+            "colors": 87,
+            "compiled_records": 522
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "printwithsmile_pla_hisplanatural_500_175_c": "printwithsmile_pla_plahisnatural_500_175_c"
+      },
+      "records": [
+        {
+          "id": "printwithsmile_pla_hisplanatural_500_175_c",
+          "manufacturer": "Print With Smile",
+          "name": "HIS PLA natural",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 500,
+          "spool_weight": 130,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "f5e6c8",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "515"
+          ],
+          "eans": [
+            "8594196455154"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "printwithsmile.json::Print With Smile::HIS PLA {color_name}::HIS PLA natural::PLA::500::1.75::cardboard::False",
+          "template": "HIS PLA {color_name}",
+          "source_color": "natural",
+          "source_line": "HIS PLA",
+          "source_file": "printwithsmile.json",
+          "source_definition": {
+            "source_file": "printwithsmile.json",
+            "definition_index": 5,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "printwithsmile_pla_plahisnatural_500_175_c",
+          "manufacturer": "Print With Smile",
+          "name": "PLA HIS natural",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 500,
+          "spool_weight": 130,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DFDFD3",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            60,
+            65
+          ],
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "printwithsmile.json::Print With Smile::PLA {color_name}::PLA HIS natural::PLA::500::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "HIS natural",
+          "source_line": "PLA",
+          "source_file": "printwithsmile.json",
+          "source_definition": {
+            "source_file": "printwithsmile.json",
+            "definition_index": 8,
+            "weights": 6,
+            "diameters": 1,
+            "colors": 87,
+            "compiled_records": 522
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "printwithsmile_pla_hisplanatural_500_175_c": "f5e6c8",
+          "printwithsmile_pla_plahisnatural_500_175_c": "DFDFD3"
+        },
+        "extruder_temp_range": {
+          "printwithsmile_pla_hisplanatural_500_175_c": [
+            210,
+            250
+          ],
+          "printwithsmile_pla_plahisnatural_500_175_c": [
+            190,
+            230
+          ]
+        },
+        "bed_temp_range": {
+          "printwithsmile_pla_hisplanatural_500_175_c": [
+            40,
+            60
+          ],
+          "printwithsmile_pla_plahisnatural_500_175_c": [
+            60,
+            65
+          ]
+        },
+        "finish": {
+          "printwithsmile_pla_hisplanatural_500_175_c": null,
+          "printwithsmile_pla_plahisnatural_500_175_c": "glossy"
+        },
+        "codes": {
+          "printwithsmile_pla_hisplanatural_500_175_c": [
+            "515"
+          ],
+          "printwithsmile_pla_plahisnatural_500_175_c": null
+        },
+        "eans": {
+          "printwithsmile_pla_hisplanatural_500_175_c": [
+            "8594196455154"
+          ],
+          "printwithsmile_pla_plahisnatural_500_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "PWS001",
+      "prior_audit": "docs/audits/2026-10-03-printwithsmile-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "Cartesian survivor needs unresolved owner-pattern evidence"
+    },
+    {
+      "group_id": "dup-263165a0a50b23fc657d60c448551645f5806784acd27ce1602a35fe9ce91830",
+      "ids": [
+        "printwithsmile_pla_plasilkplaoldgold_1000_175_c",
+        "printwithsmile_pla_silkplaoldgold_1000_175_c"
+      ],
+      "proposed_survivor": "printwithsmile_pla_plasilkplaoldgold_1000_175_c",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "printwithsmile.json",
+            "definition_index": 8,
+            "weights": 6,
+            "diameters": 1,
+            "colors": 87,
+            "compiled_records": 522
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "printwithsmile_pla_silkplaoldgold_1000_175_c": "printwithsmile_pla_plasilkplaoldgold_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "printwithsmile_pla_plasilkplaoldgold_1000_175_c",
+          "manufacturer": "Print With Smile",
+          "name": "PLA SILK PLA OLD GOLD",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 175,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "daa520",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            60,
+            65
+          ],
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "582"
+          ],
+          "eans": [
+            "8594196455826"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "printwithsmile.json::Print With Smile::PLA {color_name}::PLA SILK PLA OLD GOLD::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "SILK PLA OLD GOLD",
+          "source_line": "PLA",
+          "source_file": "printwithsmile.json",
+          "source_definition": {
+            "source_file": "printwithsmile.json",
+            "definition_index": 8,
+            "weights": 6,
+            "diameters": 1,
+            "colors": 87,
+            "compiled_records": 522
+          },
+          "upstream": false
+        },
+        {
+          "id": "printwithsmile_pla_silkplaoldgold_1000_175_c",
+          "manufacturer": "Print With Smile",
+          "name": "Silk PLA OLD GOLD",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 175,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D0BD93",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "printwithsmile.json::Print With Smile::Silk PLA {color_name}::Silk PLA OLD GOLD::PLA::1000::1.75::cardboard::False",
+          "template": "Silk PLA {color_name}",
+          "source_color": "OLD GOLD",
+          "source_line": "Silk PLA",
+          "source_file": "printwithsmile.json",
+          "source_definition": {
+            "source_file": "printwithsmile.json",
+            "definition_index": 17,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": "daa520",
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": "D0BD93"
+        },
+        "bed_temp_range": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": [
+            60,
+            65
+          ],
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": [
+            50,
+            70
+          ]
+        },
+        "finish": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": "glossy",
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": null
+        },
+        "codes": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": [
+            "582"
+          ],
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": null
+        },
+        "eans": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": [
+            "8594196455826"
+          ],
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "PWS056",
+      "prior_audit": "docs/audits/2026-10-03-printwithsmile-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "color tokens cannot be dropped by material normalization"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-0bb798e93831020ac6acdc40df7935de7e1d3294bfda758d9f68f9614a9494bf",
+      "ids": [
+        "printwithsmile_pla_hisplanatural_500_175_c",
+        "printwithsmile_pla_plahisnatural_500_175_c"
+      ],
+      "proposed_survivor": "printwithsmile_pla_plahisnatural_500_175_c",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "printwithsmile.json",
+            "definition_index": 8,
+            "weights": 6,
+            "diameters": 1,
+            "colors": 87,
+            "compiled_records": 522
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "printwithsmile_pla_hisplanatural_500_175_c": "printwithsmile_pla_plahisnatural_500_175_c"
+      },
+      "records": [
+        {
+          "id": "printwithsmile_pla_hisplanatural_500_175_c",
+          "manufacturer": "Print With Smile",
+          "name": "HIS PLA natural",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 500,
+          "spool_weight": 130,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "f5e6c8",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "515"
+          ],
+          "eans": [
+            "8594196455154"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "printwithsmile.json::Print With Smile::HIS PLA {color_name}::HIS PLA natural::PLA::500::1.75::cardboard::False",
+          "template": "HIS PLA {color_name}",
+          "source_color": "natural",
+          "source_line": "HIS PLA",
+          "source_file": "printwithsmile.json",
+          "source_definition": {
+            "source_file": "printwithsmile.json",
+            "definition_index": 5,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "printwithsmile_pla_plahisnatural_500_175_c",
+          "manufacturer": "Print With Smile",
+          "name": "PLA HIS natural",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 500,
+          "spool_weight": 130,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DFDFD3",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            60,
+            65
+          ],
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "printwithsmile.json::Print With Smile::PLA {color_name}::PLA HIS natural::PLA::500::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "HIS natural",
+          "source_line": "PLA",
+          "source_file": "printwithsmile.json",
+          "source_definition": {
+            "source_file": "printwithsmile.json",
+            "definition_index": 8,
+            "weights": 6,
+            "diameters": 1,
+            "colors": 87,
+            "compiled_records": 522
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "printwithsmile_pla_hisplanatural_500_175_c": "f5e6c8",
+          "printwithsmile_pla_plahisnatural_500_175_c": "DFDFD3"
+        },
+        "extruder_temp_range": {
+          "printwithsmile_pla_hisplanatural_500_175_c": [
+            210,
+            250
+          ],
+          "printwithsmile_pla_plahisnatural_500_175_c": [
+            190,
+            230
+          ]
+        },
+        "bed_temp_range": {
+          "printwithsmile_pla_hisplanatural_500_175_c": [
+            40,
+            60
+          ],
+          "printwithsmile_pla_plahisnatural_500_175_c": [
+            60,
+            65
+          ]
+        },
+        "finish": {
+          "printwithsmile_pla_hisplanatural_500_175_c": null,
+          "printwithsmile_pla_plahisnatural_500_175_c": "glossy"
+        },
+        "codes": {
+          "printwithsmile_pla_hisplanatural_500_175_c": [
+            "515"
+          ],
+          "printwithsmile_pla_plahisnatural_500_175_c": null
+        },
+        "eans": {
+          "printwithsmile_pla_hisplanatural_500_175_c": [
+            "8594196455154"
+          ],
+          "printwithsmile_pla_plahisnatural_500_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "PWS001",
+      "prior_audit": "docs/audits/2026-10-03-printwithsmile-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "Cartesian survivor needs unresolved owner-pattern evidence"
+    },
+    {
+      "group_id": "dup-263165a0a50b23fc657d60c448551645f5806784acd27ce1602a35fe9ce91830",
+      "ids": [
+        "printwithsmile_pla_plasilkplaoldgold_1000_175_c",
+        "printwithsmile_pla_silkplaoldgold_1000_175_c"
+      ],
+      "proposed_survivor": "printwithsmile_pla_plasilkplaoldgold_1000_175_c",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "printwithsmile.json",
+            "definition_index": 8,
+            "weights": 6,
+            "diameters": 1,
+            "colors": 87,
+            "compiled_records": 522
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "printwithsmile_pla_silkplaoldgold_1000_175_c": "printwithsmile_pla_plasilkplaoldgold_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "printwithsmile_pla_plasilkplaoldgold_1000_175_c",
+          "manufacturer": "Print With Smile",
+          "name": "PLA SILK PLA OLD GOLD",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 175,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "daa520",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            60,
+            65
+          ],
+          "fill": null,
+          "finish": "glossy",
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "582"
+          ],
+          "eans": [
+            "8594196455826"
+          ],
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "printwithsmile.json::Print With Smile::PLA {color_name}::PLA SILK PLA OLD GOLD::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "SILK PLA OLD GOLD",
+          "source_line": "PLA",
+          "source_file": "printwithsmile.json",
+          "source_definition": {
+            "source_file": "printwithsmile.json",
+            "definition_index": 8,
+            "weights": 6,
+            "diameters": 1,
+            "colors": 87,
+            "compiled_records": 522
+          },
+          "upstream": false
+        },
+        {
+          "id": "printwithsmile_pla_silkplaoldgold_1000_175_c",
+          "manufacturer": "Print With Smile",
+          "name": "Silk PLA OLD GOLD",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 175,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D0BD93",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "printwithsmile.json::Print With Smile::Silk PLA {color_name}::Silk PLA OLD GOLD::PLA::1000::1.75::cardboard::False",
+          "template": "Silk PLA {color_name}",
+          "source_color": "OLD GOLD",
+          "source_line": "Silk PLA",
+          "source_file": "printwithsmile.json",
+          "source_definition": {
+            "source_file": "printwithsmile.json",
+            "definition_index": 17,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": "daa520",
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": "D0BD93"
+        },
+        "bed_temp_range": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": [
+            60,
+            65
+          ],
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": [
+            50,
+            70
+          ]
+        },
+        "finish": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": "glossy",
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": null
+        },
+        "codes": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": [
+            "582"
+          ],
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": null
+        },
+        "eans": {
+          "printwithsmile_pla_plasilkplaoldgold_1000_175_c": [
+            "8594196455826"
+          ],
+          "printwithsmile_pla_silkplaoldgold_1000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "PWS056",
+      "prior_audit": "docs/audits/2026-10-03-printwithsmile-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "color tokens cannot be dropped by material normalization"
+    }
+  ],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 2,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 2,
+    "before_count": 51661,
+    "after_count": 51661,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-printwithsmile-duplicate-review.json"
+}
