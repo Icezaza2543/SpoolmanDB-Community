@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "overture",
+  "base_sha": "39cf047a0da6807d9394cfe1152607cbb17ba8dd",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "0d07ad86ac3d4ed053ca8cb73649c58ebf327efad1ce816f70c4b06b99cc3d42",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-4dc70411fa661ded642ce1542cc3ac566cfa4a9d4ad6bfaf2509a4edb46a7f15": {
+      "approved": true,
+      "survivor": "overture_abs_glowgreen_1000_175_c",
+      "retire": [
+        "overture_abs_glowabsgreen_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-overture-line-color-review.json",
+      "source": "39cf047a0da6807d9394cfe1152607cbb17ba8dd"
+    }
+  },
+  "bindings": {
+    "overture_abs_glowabsgreen_1000_175_c": {
+      "key": "overture.json::Overture::Glow ABS {color_name}::Glow ABS Green::ABS::1000::1.75::cardboard::False",
+      "source_color": "Green",
+      "line": "glow",
+      "color": "green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "glow"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "overture.json::Overture::{color_name}::Glow Green::ABS::1000.0::1.75::cardboard::False",
+      "anchor_source_color": "Glow Green"
+    },
+    "overture_abs_glowgreen_1000_175_c": {
+      "key": "overture.json::Overture::{color_name}::Glow Green::ABS::1000.0::1.75::cardboard::False",
+      "source_color": "Glow Green",
+      "line": "glow",
+      "color": "green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "glow"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "overture.json::Overture::Glow ABS {color_name}::Glow ABS Green::ABS::1000::1.75::cardboard::False",
+      "anchor_source_color": "Green"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-4dc70411fa661ded642ce1542cc3ac566cfa4a9d4ad6bfaf2509a4edb46a7f15",
+      "ids": [
+        "overture_abs_glowabsgreen_1000_175_c",
+        "overture_abs_glowgreen_1000_175_c"
+      ],
+      "proposed_survivor": "overture_abs_glowgreen_1000_175_c",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "overture_abs_glowabsgreen_1000_175_c": "overture_abs_glowgreen_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "overture_abs_glowabsgreen_1000_175_c",
+          "manufacturer": "Overture",
+          "name": "Glow ABS Green",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 173,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "4DFF64",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            90,
+            110
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": null,
+          "sds_url": null,
+          "tds_url": null,
+          "key": "overture.json::Overture::Glow ABS {color_name}::Glow ABS Green::ABS::1000::1.75::cardboard::False",
+          "template": "Glow ABS {color_name}",
+          "source_color": "Green",
+          "source_line": "Glow ABS",
+          "source_file": "overture.json",
+          "source_definition": {
+            "source_file": "overture.json",
+            "definition_index": 62,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "overture_abs_glowgreen_1000_175_c",
+          "manufacturer": "Overture",
+          "name": "Glow Green",
+          "material": "ABS",
+          "density": 1.15,
+          "weight": 1000.0,
+          "spool_weight": 147,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ebefee",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            245,
+            265
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": null,
+          "sds_url": null,
+          "tds_url": null,
+          "key": "overture.json::Overture::{color_name}::Glow Green::ABS::1000.0::1.75::cardboard::False",
+          "template": "{color_name}",
+          "source_color": "Glow Green",
+          "source_line": "",
+          "source_file": "overture.json",
+          "source_definition": {
+            "source_file": "overture.json",
+            "definition_index": 60,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 14,
+            "compiled_records": 14
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "overture_abs_glowabsgreen_1000_175_c": 1.04,
+          "overture_abs_glowgreen_1000_175_c": 1.15
+        },
+        "spool_weight": {
+          "overture_abs_glowabsgreen_1000_175_c": 173,
+          "overture_abs_glowgreen_1000_175_c": 147
+        },
+        "color_hex": {
+          "overture_abs_glowabsgreen_1000_175_c": "4DFF64",
+          "overture_abs_glowgreen_1000_175_c": "ebefee"
+        },
+        "extruder_temp_range": {
+          "overture_abs_glowabsgreen_1000_175_c": [
+            230,
+            260
+          ],
+          "overture_abs_glowgreen_1000_175_c": [
+            245,
+            265
+          ]
+        },
+        "bed_temp_range": {
+          "overture_abs_glowabsgreen_1000_175_c": [
+            90,
+            110
+          ],
+          "overture_abs_glowgreen_1000_175_c": [
+            80,
+            100
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "OV014",
+      "prior_audit": "docs/audits/2026-10-03-overture-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "overture_abs_glowgreen_1000_175_c",
+      "retire": [
+        "overture_abs_glowabsgreen_1000_175_c"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "overture_abs_glowabsgreen_1000_175_c": {
+      "replaced_by": "overture_abs_glowgreen_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-overture-line-color-review.json",
+      "source": "39cf047a0da6807d9394cfe1152607cbb17ba8dd",
+      "retired_key": "overture.json::Overture::Glow ABS {color_name}::Glow ABS Green::ABS::1000::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "before_count": 51663,
+    "after_count": 51662,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-overture-duplicate-review.json"
+}
