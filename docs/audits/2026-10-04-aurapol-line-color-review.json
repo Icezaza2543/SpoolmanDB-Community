@@ -1,0 +1,874 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "aurapol",
+  "base_sha": "0eeb49f4d03aff5911a0a9588b9c174784d08d7b",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "94abfa5d4c3b5386dba0e1e110435e97d2b65f16be0447c7c4423e70e70f0c6d",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-382b48f7726f9762bebd8fbb9b3023c247357d6b0d7a60fa62125f6598a6f33a": {
+      "approved": true,
+      "survivor": "aurapol_pla_metallicbrick_1000_175_p",
+      "retire": [
+        "aurapol_pla_metallicplabrick_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-aurapol-line-color-review.json",
+      "source": "0eeb49f4d03aff5911a0a9588b9c174784d08d7b"
+    }
+  },
+  "bindings": {
+    "aurapol_pla_metallicbrick_1000_175_p": {
+      "key": "aurapol.json::AURAPOL::{color_name}::Metallic Brick::PLA::1000.0::1.75::plastic::False",
+      "source_color": "Metallic Brick",
+      "line": "metallic",
+      "color": "brick",
+      "parts": [
+        {
+          "role": "line",
+          "token": "metallic"
+        },
+        {
+          "role": "color",
+          "token": "brick"
+        }
+      ],
+      "anchor_key": "aurapol.json::AURAPOL::Metallic PLA {color_name}::Metallic PLA Brick::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Brick"
+    },
+    "aurapol_pla_metallicplabrick_1000_175_p": {
+      "key": "aurapol.json::AURAPOL::Metallic PLA {color_name}::Metallic PLA Brick::PLA::1000::1.75::plastic::False",
+      "source_color": "Brick",
+      "line": "metallic",
+      "color": "brick",
+      "parts": [
+        {
+          "role": "line",
+          "token": "metallic"
+        },
+        {
+          "role": "color",
+          "token": "brick"
+        }
+      ],
+      "anchor_key": "aurapol.json::AURAPOL::{color_name}::Metallic Brick::PLA::1000.0::1.75::plastic::False",
+      "anchor_source_color": "Metallic Brick"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-7f4f5cdbeb4d3f3dda13bb1df31d31ac91cc54ebdd56600d702b3fcc1077fba5",
+      "ids": [
+        "aurapol_pla_l-egoplared_1000_175_p",
+        "aurapol_pla_l-egored_1000_175_p"
+      ],
+      "proposed_survivor": "aurapol_pla_l-egored_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aurapol_pla_l-egoplared_1000_175_p": "aurapol_pla_l-egored_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aurapol_pla_l-egoplared_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "L-EGO PLA Red",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "E72F1D",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::L-EGO PLA {color_name}::L-EGO PLA Red::PLA::1000::1.75::plastic::False",
+          "template": "L-EGO PLA {color_name}",
+          "source_color": "Red",
+          "source_line": "L-EGO PLA",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 14,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "aurapol_pla_l-egored_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "L-EGO red",
+          "material": "PLA",
+          "density": 1.223,
+          "weight": 1000.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ff0000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::{color_name}::L-EGO red::PLA::1000.0::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "L-EGO red",
+          "source_line": "",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 12
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "aurapol_pla_l-egoplared_1000_175_p": 1.24,
+          "aurapol_pla_l-egored_1000_175_p": 1.223
+        },
+        "spool_weight": {
+          "aurapol_pla_l-egoplared_1000_175_p": null,
+          "aurapol_pla_l-egored_1000_175_p": 250.0
+        },
+        "color_hex": {
+          "aurapol_pla_l-egoplared_1000_175_p": "E72F1D",
+          "aurapol_pla_l-egored_1000_175_p": "ff0000"
+        },
+        "extruder_temp_range": {
+          "aurapol_pla_l-egoplared_1000_175_p": [
+            190,
+            230
+          ],
+          "aurapol_pla_l-egored_1000_175_p": [
+            210,
+            240
+          ]
+        },
+        "bed_temp_range": {
+          "aurapol_pla_l-egoplared_1000_175_p": [
+            50,
+            70
+          ],
+          "aurapol_pla_l-egored_1000_175_p": [
+            40,
+            60
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "AU011",
+      "prior_audit": "docs/audits/2026-10-03-aurapol-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "qualifier not allowlisted or anchored"
+    },
+    {
+      "group_id": "dup-97d4093cd5eeb5abae12521b13d5af41ff7e37eb0ba23bc6af862e543e513044",
+      "ids": [
+        "aurapol_pla_l-egoplayellow_1000_175_p",
+        "aurapol_pla_l-egoyellow_1000_175_p"
+      ],
+      "proposed_survivor": "aurapol_pla_l-egoyellow_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aurapol_pla_l-egoplayellow_1000_175_p": "aurapol_pla_l-egoyellow_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aurapol_pla_l-egoplayellow_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "L-EGO PLA Yellow",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFC25",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::L-EGO PLA {color_name}::L-EGO PLA Yellow::PLA::1000::1.75::plastic::False",
+          "template": "L-EGO PLA {color_name}",
+          "source_color": "Yellow",
+          "source_line": "L-EGO PLA",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 14,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "aurapol_pla_l-egoyellow_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "L-EGO yellow",
+          "material": "PLA",
+          "density": 1.223,
+          "weight": 1000.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ffff00",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::{color_name}::L-EGO yellow::PLA::1000.0::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "L-EGO yellow",
+          "source_line": "",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 12
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": 1.24,
+          "aurapol_pla_l-egoyellow_1000_175_p": 1.223
+        },
+        "spool_weight": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": null,
+          "aurapol_pla_l-egoyellow_1000_175_p": 250.0
+        },
+        "color_hex": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": "FFFC25",
+          "aurapol_pla_l-egoyellow_1000_175_p": "ffff00"
+        },
+        "extruder_temp_range": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": [
+            190,
+            230
+          ],
+          "aurapol_pla_l-egoyellow_1000_175_p": [
+            210,
+            240
+          ]
+        },
+        "bed_temp_range": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": [
+            50,
+            70
+          ],
+          "aurapol_pla_l-egoyellow_1000_175_p": [
+            40,
+            60
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "AU012",
+      "prior_audit": "docs/audits/2026-10-03-aurapol-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "qualifier not allowlisted or anchored"
+    },
+    {
+      "group_id": "dup-382b48f7726f9762bebd8fbb9b3023c247357d6b0d7a60fa62125f6598a6f33a",
+      "ids": [
+        "aurapol_pla_metallicbrick_1000_175_p",
+        "aurapol_pla_metallicplabrick_1000_175_p"
+      ],
+      "proposed_survivor": "aurapol_pla_metallicbrick_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aurapol_pla_metallicplabrick_1000_175_p": "aurapol_pla_metallicbrick_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aurapol_pla_metallicbrick_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "Metallic Brick",
+          "material": "PLA",
+          "density": 1.223,
+          "weight": 1000.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ff4010",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::{color_name}::Metallic Brick::PLA::1000.0::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "Metallic Brick",
+          "source_line": "",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 12
+          },
+          "upstream": true
+        },
+        {
+          "id": "aurapol_pla_metallicplabrick_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "Metallic PLA Brick",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "C65E0A",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::Metallic PLA {color_name}::Metallic PLA Brick::PLA::1000::1.75::plastic::False",
+          "template": "Metallic PLA {color_name}",
+          "source_color": "Brick",
+          "source_line": "Metallic PLA",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 15,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 6,
+            "compiled_records": 6
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "aurapol_pla_metallicbrick_1000_175_p": 1.223,
+          "aurapol_pla_metallicplabrick_1000_175_p": 1.24
+        },
+        "spool_weight": {
+          "aurapol_pla_metallicbrick_1000_175_p": 250.0,
+          "aurapol_pla_metallicplabrick_1000_175_p": null
+        },
+        "color_hex": {
+          "aurapol_pla_metallicbrick_1000_175_p": "ff4010",
+          "aurapol_pla_metallicplabrick_1000_175_p": "C65E0A"
+        },
+        "extruder_temp_range": {
+          "aurapol_pla_metallicbrick_1000_175_p": [
+            210,
+            240
+          ],
+          "aurapol_pla_metallicplabrick_1000_175_p": [
+            190,
+            230
+          ]
+        },
+        "bed_temp_range": {
+          "aurapol_pla_metallicbrick_1000_175_p": [
+            40,
+            60
+          ],
+          "aurapol_pla_metallicplabrick_1000_175_p": [
+            50,
+            70
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "AU014",
+      "prior_audit": "docs/audits/2026-10-03-aurapol-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "aurapol_pla_metallicbrick_1000_175_p",
+      "retire": [
+        "aurapol_pla_metallicplabrick_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; prior survivor direction retained"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-7f4f5cdbeb4d3f3dda13bb1df31d31ac91cc54ebdd56600d702b3fcc1077fba5",
+      "ids": [
+        "aurapol_pla_l-egoplared_1000_175_p",
+        "aurapol_pla_l-egored_1000_175_p"
+      ],
+      "proposed_survivor": "aurapol_pla_l-egored_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aurapol_pla_l-egoplared_1000_175_p": "aurapol_pla_l-egored_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aurapol_pla_l-egoplared_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "L-EGO PLA Red",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "E72F1D",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::L-EGO PLA {color_name}::L-EGO PLA Red::PLA::1000::1.75::plastic::False",
+          "template": "L-EGO PLA {color_name}",
+          "source_color": "Red",
+          "source_line": "L-EGO PLA",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 14,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "aurapol_pla_l-egored_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "L-EGO red",
+          "material": "PLA",
+          "density": 1.223,
+          "weight": 1000.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ff0000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::{color_name}::L-EGO red::PLA::1000.0::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "L-EGO red",
+          "source_line": "",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 12
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "aurapol_pla_l-egoplared_1000_175_p": 1.24,
+          "aurapol_pla_l-egored_1000_175_p": 1.223
+        },
+        "spool_weight": {
+          "aurapol_pla_l-egoplared_1000_175_p": null,
+          "aurapol_pla_l-egored_1000_175_p": 250.0
+        },
+        "color_hex": {
+          "aurapol_pla_l-egoplared_1000_175_p": "E72F1D",
+          "aurapol_pla_l-egored_1000_175_p": "ff0000"
+        },
+        "extruder_temp_range": {
+          "aurapol_pla_l-egoplared_1000_175_p": [
+            190,
+            230
+          ],
+          "aurapol_pla_l-egored_1000_175_p": [
+            210,
+            240
+          ]
+        },
+        "bed_temp_range": {
+          "aurapol_pla_l-egoplared_1000_175_p": [
+            50,
+            70
+          ],
+          "aurapol_pla_l-egored_1000_175_p": [
+            40,
+            60
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "AU011",
+      "prior_audit": "docs/audits/2026-10-03-aurapol-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "qualifier not allowlisted or anchored"
+    },
+    {
+      "group_id": "dup-97d4093cd5eeb5abae12521b13d5af41ff7e37eb0ba23bc6af862e543e513044",
+      "ids": [
+        "aurapol_pla_l-egoplayellow_1000_175_p",
+        "aurapol_pla_l-egoyellow_1000_175_p"
+      ],
+      "proposed_survivor": "aurapol_pla_l-egoyellow_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "aurapol_pla_l-egoplayellow_1000_175_p": "aurapol_pla_l-egoyellow_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "aurapol_pla_l-egoplayellow_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "L-EGO PLA Yellow",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFC25",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::L-EGO PLA {color_name}::L-EGO PLA Yellow::PLA::1000::1.75::plastic::False",
+          "template": "L-EGO PLA {color_name}",
+          "source_color": "Yellow",
+          "source_line": "L-EGO PLA",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 14,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "aurapol_pla_l-egoyellow_1000_175_p",
+          "manufacturer": "AURAPOL",
+          "name": "L-EGO yellow",
+          "material": "PLA",
+          "density": 1.223,
+          "weight": 1000.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ffff00",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CZ",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "aurapol.json::AURAPOL::{color_name}::L-EGO yellow::PLA::1000.0::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "L-EGO yellow",
+          "source_line": "",
+          "source_file": "aurapol.json",
+          "source_definition": {
+            "source_file": "aurapol.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 12,
+            "compiled_records": 12
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": 1.24,
+          "aurapol_pla_l-egoyellow_1000_175_p": 1.223
+        },
+        "spool_weight": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": null,
+          "aurapol_pla_l-egoyellow_1000_175_p": 250.0
+        },
+        "color_hex": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": "FFFC25",
+          "aurapol_pla_l-egoyellow_1000_175_p": "ffff00"
+        },
+        "extruder_temp_range": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": [
+            190,
+            230
+          ],
+          "aurapol_pla_l-egoyellow_1000_175_p": [
+            210,
+            240
+          ]
+        },
+        "bed_temp_range": {
+          "aurapol_pla_l-egoplayellow_1000_175_p": [
+            50,
+            70
+          ],
+          "aurapol_pla_l-egoyellow_1000_175_p": [
+            40,
+            60
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "AU012",
+      "prior_audit": "docs/audits/2026-10-03-aurapol-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "qualifier not allowlisted or anchored"
+    }
+  ],
+  "proposed_retired_ids": {
+    "aurapol_pla_metallicplabrick_1000_175_p": {
+      "replaced_by": "aurapol_pla_metallicbrick_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-aurapol-line-color-review.json",
+      "source": "0eeb49f4d03aff5911a0a9588b9c174784d08d7b",
+      "retired_key": "aurapol.json::AURAPOL::Metallic PLA {color_name}::Metallic PLA Brick::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 3,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 2,
+    "before_count": 51698,
+    "after_count": 51697,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-aurapol-duplicate-review.json"
+}

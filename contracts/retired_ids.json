@@ -12152,6 +12152,13 @@
       "ref": "docs/audits/2026-10-04-22network-line-color-review.json",
       "source": "3ea46d278f4e11109d4dd6d417d85cc73a889ed1",
       "retired_key": "22network.json::22 Network::Silk PLA {color_name}::Silk PLA Dual Red Gold::PLA::1000::1.75::plastic::False"
+    },
+    "aurapol_pla_metallicplabrick_1000_175_p": {
+      "replaced_by": "aurapol_pla_metallicbrick_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-aurapol-line-color-review.json",
+      "source": "0eeb49f4d03aff5911a0a9588b9c174784d08d7b",
+      "retired_key": "aurapol.json::AURAPOL::Metallic PLA {color_name}::Metallic PLA Brick::PLA::1000::1.75::plastic::False"
     }
   }
 }
