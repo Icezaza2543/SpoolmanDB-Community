@@ -1,0 +1,2290 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "gizmodorks",
+  "base_sha": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "b3934d1518dc6550a43328278bf97f1b78ac8e9e5ffbca59f9c6fed050eebec3",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-b26446dff2b7b8d0cdbf50080a4c0cb013c224c3146571f5ffee32f17340d194": {
+      "approved": true,
+      "survivor": "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-f815d2c1c0e5156990e48ca806a882ee9f3a8061593623718e0c77f73156f8e8": {
+      "approved": true,
+      "survivor": "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-950926a18e44b4aafbbcd276945bd21074c31790528ae8c7905c34ff1ebc7c5b": {
+      "approved": true,
+      "survivor": "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-90e32272af6acda9913f6cc08222b2845871e741c85056fc8abc498a12b0078d": {
+      "approved": true,
+      "survivor": "gizmodorks_abs_glowabsinthedark_1000_175_p",
+      "retire": [
+        "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-2beac9799787121b9b2e33c1207826c8a5b6b60cc4c1cd2b15526709f8245ae8": {
+      "approved": true,
+      "survivor": "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-1282374799cf2e46a791e2ad7a68b7c6010881f86d1a2530375ece05b5ab3918": {
+      "approved": true,
+      "survivor": "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-da8b0dbecfe80018fb25bc999346bb7b29ed391e654e04fbf19893bbfda778e8": {
+      "approved": true,
+      "survivor": "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-4a4f965dbc53320de66d5fec3eceeb6cb6afe91b2073b9a28f5308fc88010148": {
+      "approved": true,
+      "survivor": "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-d76262008266fef6f3fcf5ece68f29a6b2623e23e2918240c4d45bfd31cafd35": {
+      "approved": true,
+      "survivor": "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    },
+    "dup-bc266db6c2f4272061a60cad0b8d05ec5e814e1c4d200ccc24ca0fb9ed44fbfc": {
+      "approved": true,
+      "survivor": "gizmodorks_pla_glowplainthedark_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81"
+    }
+  },
+  "bindings": {
+    "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Green (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "source_color": "Green (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "green black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Green (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "anchor_source_color": "Fluorescent Green (Black Light Reactive)"
+    },
+    "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Green (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "source_color": "Fluorescent Green (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "green black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Green (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "anchor_source_color": "Green (Black Light Reactive)"
+    },
+    "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Orange (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "source_color": "Orange (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "orange black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "orange"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Orange (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "anchor_source_color": "Fluorescent Orange (Black Light Reactive)"
+    },
+    "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Orange (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "source_color": "Fluorescent Orange (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "orange black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "orange"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Orange (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "anchor_source_color": "Orange (Black Light Reactive)"
+    },
+    "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Yellow (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "source_color": "Yellow (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "yellow black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "yellow"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Yellow (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "anchor_source_color": "Fluorescent Yellow (Black Light Reactive)"
+    },
+    "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Yellow (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "source_color": "Fluorescent Yellow (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "yellow black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "yellow"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Yellow (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+      "anchor_source_color": "Yellow (Black Light Reactive)"
+    },
+    "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Glow in the Dark::ABS::1000::1.75::plastic::False",
+      "source_color": "Glow in the Dark",
+      "line": "glow",
+      "color": "in the dark",
+      "parts": [
+        {
+          "role": "line",
+          "token": "glow"
+        },
+        {
+          "role": "color",
+          "token": "in"
+        },
+        {
+          "role": "color",
+          "token": "the"
+        },
+        {
+          "role": "color",
+          "token": "dark"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Glow ABS {color_name}::Glow ABS In the Dark::ABS::1000::1.75::plastic::False",
+      "anchor_source_color": "In the Dark"
+    },
+    "gizmodorks_abs_glowabsinthedark_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Glow ABS {color_name}::Glow ABS In the Dark::ABS::1000::1.75::plastic::False",
+      "source_color": "In the Dark",
+      "line": "glow",
+      "color": "in the dark",
+      "parts": [
+        {
+          "role": "line",
+          "token": "glow"
+        },
+        {
+          "role": "color",
+          "token": "in"
+        },
+        {
+          "role": "color",
+          "token": "the"
+        },
+        {
+          "role": "color",
+          "token": "dark"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Glow in the Dark::ABS::1000::1.75::plastic::False",
+      "anchor_source_color": "Glow in the Dark"
+    },
+    "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Blue (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Blue (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "blue black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Blue (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Fluorescent Blue (Black Light Reactive)"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Blue (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Fluorescent Blue (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "blue black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Blue (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Blue (Black Light Reactive)"
+    },
+    "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Green (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Green (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "green black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Green (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Fluorescent Green (Black Light Reactive)"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Green (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Fluorescent Green (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "green black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Green (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Green (Black Light Reactive)"
+    },
+    "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Orange (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Orange (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "orange black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "orange"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Orange (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Fluorescent Orange (Black Light Reactive)"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Orange (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Fluorescent Orange (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "orange black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "orange"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Orange (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Orange (Black Light Reactive)"
+    },
+    "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Red (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Red (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "red black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Red (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Fluorescent Red (Black Light Reactive)"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Red (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Fluorescent Red (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "red black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Red (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Red (Black Light Reactive)"
+    },
+    "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Yellow (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Yellow (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "yellow black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "yellow"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Yellow (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Fluorescent Yellow (Black Light Reactive)"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Yellow (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "source_color": "Fluorescent Yellow (Black Light Reactive)",
+      "line": "fluorescent",
+      "color": "yellow black light reactive",
+      "parts": [
+        {
+          "role": "line",
+          "token": "fluorescent"
+        },
+        {
+          "role": "color",
+          "token": "yellow"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "light"
+        },
+        {
+          "role": "color",
+          "token": "reactive"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Yellow (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Yellow (Black Light Reactive)"
+    },
+    "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Glow in the Dark::PLA::1000::1.75::plastic::False",
+      "source_color": "Glow in the Dark",
+      "line": "glow",
+      "color": "in the dark",
+      "parts": [
+        {
+          "role": "line",
+          "token": "glow"
+        },
+        {
+          "role": "color",
+          "token": "in"
+        },
+        {
+          "role": "color",
+          "token": "the"
+        },
+        {
+          "role": "color",
+          "token": "dark"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Glow PLA {color_name}::Glow PLA In the Dark::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "In the Dark"
+    },
+    "gizmodorks_pla_glowplainthedark_1000_175_p": {
+      "key": "gizmodorks.json::Gizmo Dorks::Glow PLA {color_name}::Glow PLA In the Dark::PLA::1000::1.75::plastic::False",
+      "source_color": "In the Dark",
+      "line": "glow",
+      "color": "in the dark",
+      "parts": [
+        {
+          "role": "line",
+          "token": "glow"
+        },
+        {
+          "role": "color",
+          "token": "in"
+        },
+        {
+          "role": "color",
+          "token": "the"
+        },
+        {
+          "role": "color",
+          "token": "dark"
+        }
+      ],
+      "anchor_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Glow in the Dark::PLA::1000::1.75::plastic::False",
+      "anchor_source_color": "Glow in the Dark"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-b26446dff2b7b8d0cdbf50080a4c0cb013c224c3146571f5ffee32f17340d194",
+      "ids": [
+        "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p",
+        "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p": "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Fluorescent ABS Green (Black Light Reactive)",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9FEC41",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            90,
+            110
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Green (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+          "template": "Fluorescent ABS {color_name}",
+          "source_color": "Green (Black Light Reactive)",
+          "source_line": "Fluorescent ABS",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 129,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks ABS Fluorescent Green (Black Light Reactive)",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "39ff14",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": 110,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Green (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks ABS {color_name}",
+          "source_color": "Fluorescent Green (Black Light Reactive)",
+          "source_line": "Gizmo Dorks ABS",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 66,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p": "9FEC41",
+          "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p": "39ff14"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p": [
+            230,
+            260
+          ],
+          "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p": [
+            230,
+            250
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p": null,
+          "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p": 110
+        },
+        "bed_temp_range": {
+          "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p": [
+            90,
+            110
+          ],
+          "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD023",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-f815d2c1c0e5156990e48ca806a882ee9f3a8061593623718e0c77f73156f8e8",
+      "ids": [
+        "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p",
+        "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p": "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Fluorescent ABS Orange (Black Light Reactive)",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FF5F2E",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            90,
+            110
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Orange (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+          "template": "Fluorescent ABS {color_name}",
+          "source_color": "Orange (Black Light Reactive)",
+          "source_line": "Fluorescent ABS",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 129,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks ABS Fluorescent Orange (Black Light Reactive)",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ff6600",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": 110,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Orange (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks ABS {color_name}",
+          "source_color": "Fluorescent Orange (Black Light Reactive)",
+          "source_line": "Gizmo Dorks ABS",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 68,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p": "FF5F2E",
+          "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p": "ff6600"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p": [
+            230,
+            260
+          ],
+          "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p": [
+            230,
+            250
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p": null,
+          "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p": 110
+        },
+        "bed_temp_range": {
+          "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p": [
+            90,
+            110
+          ],
+          "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD024",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-950926a18e44b4aafbbcd276945bd21074c31790528ae8c7905c34ff1ebc7c5b",
+      "ids": [
+        "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p",
+        "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p": "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Fluorescent ABS Yellow (Black Light Reactive)",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFB00",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            90,
+            110
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Fluorescent ABS {color_name}::Fluorescent ABS Yellow (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+          "template": "Fluorescent ABS {color_name}",
+          "source_color": "Yellow (Black Light Reactive)",
+          "source_line": "Fluorescent ABS",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 129,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks ABS Fluorescent Yellow (Black Light Reactive)",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ccff00",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": 110,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Yellow (Black Light Reactive)::ABS::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks ABS {color_name}",
+          "source_color": "Fluorescent Yellow (Black Light Reactive)",
+          "source_line": "Gizmo Dorks ABS",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 69,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p": "FFFB00",
+          "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p": "ccff00"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p": [
+            230,
+            260
+          ],
+          "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p": [
+            230,
+            250
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p": null,
+          "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p": 110
+        },
+        "bed_temp_range": {
+          "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p": [
+            90,
+            110
+          ],
+          "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD025",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-90e32272af6acda9913f6cc08222b2845871e741c85056fc8abc498a12b0078d",
+      "ids": [
+        "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p",
+        "gizmodorks_abs_glowabsinthedark_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_abs_glowabsinthedark_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p": "gizmodorks_abs_glowabsinthedark_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks ABS Glow in the Dark",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "c8e6c9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": 110,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Glow in the Dark::ABS::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks ABS {color_name}",
+          "source_color": "Glow in the Dark",
+          "source_line": "Gizmo Dorks ABS",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 70,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_abs_glowabsinthedark_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Glow ABS In the Dark",
+          "material": "ABS",
+          "density": 1.04,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "58C91B",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            90,
+            110
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Glow ABS {color_name}::Glow ABS In the Dark::ABS::1000::1.75::plastic::False",
+          "template": "Glow ABS {color_name}",
+          "source_color": "In the Dark",
+          "source_line": "Glow ABS",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 130,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p": "c8e6c9",
+          "gizmodorks_abs_glowabsinthedark_1000_175_p": "58C91B"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p": [
+            230,
+            250
+          ],
+          "gizmodorks_abs_glowabsinthedark_1000_175_p": [
+            230,
+            260
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p": 110,
+          "gizmodorks_abs_glowabsinthedark_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p": null,
+          "gizmodorks_abs_glowabsinthedark_1000_175_p": [
+            90,
+            110
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD026",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_abs_glowabsinthedark_1000_175_p",
+      "retire": [
+        "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-2beac9799787121b9b2e33c1207826c8a5b6b60cc4c1cd2b15526709f8245ae8",
+      "ids": [
+        "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p",
+        "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p": "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Fluorescent PLA Blue (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "2E56F1",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Blue (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Fluorescent PLA {color_name}",
+          "source_color": "Blue (Black Light Reactive)",
+          "source_line": "Fluorescent PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 143,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks PLA Fluorescent Blue (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "00bfff",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Blue (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks PLA {color_name}",
+          "source_color": "Fluorescent Blue (Black Light Reactive)",
+          "source_line": "Gizmo Dorks PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 5,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p": "2E56F1",
+          "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p": "00bfff"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p": [
+            190,
+            230
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p": [
+            190,
+            225
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p": null,
+          "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p": 60
+        },
+        "bed_temp_range": {
+          "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p": [
+            50,
+            70
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD033",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-1282374799cf2e46a791e2ad7a68b7c6010881f86d1a2530375ece05b5ab3918",
+      "ids": [
+        "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p",
+        "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p": "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Fluorescent PLA Green (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9AEE6C",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Green (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Fluorescent PLA {color_name}",
+          "source_color": "Green (Black Light Reactive)",
+          "source_line": "Fluorescent PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 143,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks PLA Fluorescent Green (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "39ff14",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Green (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks PLA {color_name}",
+          "source_color": "Fluorescent Green (Black Light Reactive)",
+          "source_line": "Gizmo Dorks PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 6,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p": "9AEE6C",
+          "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p": "39ff14"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p": [
+            190,
+            230
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p": [
+            190,
+            225
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p": null,
+          "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p": 60
+        },
+        "bed_temp_range": {
+          "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p": [
+            50,
+            70
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD034",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-da8b0dbecfe80018fb25bc999346bb7b29ed391e654e04fbf19893bbfda778e8",
+      "ids": [
+        "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p",
+        "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p": "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Fluorescent PLA Orange (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FF5F2E",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Orange (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Fluorescent PLA {color_name}",
+          "source_color": "Orange (Black Light Reactive)",
+          "source_line": "Fluorescent PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 143,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks PLA Fluorescent Orange (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ff6600",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Orange (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks PLA {color_name}",
+          "source_color": "Fluorescent Orange (Black Light Reactive)",
+          "source_line": "Gizmo Dorks PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 7,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p": "FF5F2E",
+          "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p": "ff6600"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p": [
+            190,
+            230
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p": [
+            190,
+            225
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p": null,
+          "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p": 60
+        },
+        "bed_temp_range": {
+          "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p": [
+            50,
+            70
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD035",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-4a4f965dbc53320de66d5fec3eceeb6cb6afe91b2073b9a28f5308fc88010148",
+      "ids": [
+        "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p",
+        "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p": "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Fluorescent PLA Red (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ED1536",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Red (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Fluorescent PLA {color_name}",
+          "source_color": "Red (Black Light Reactive)",
+          "source_line": "Fluorescent PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 143,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks PLA Fluorescent Red (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ff0040",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Red (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks PLA {color_name}",
+          "source_color": "Fluorescent Red (Black Light Reactive)",
+          "source_line": "Gizmo Dorks PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 8,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p": "ED1536",
+          "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p": "ff0040"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p": [
+            190,
+            230
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p": [
+            190,
+            225
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p": null,
+          "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p": 60
+        },
+        "bed_temp_range": {
+          "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p": [
+            50,
+            70
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD036",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-d76262008266fef6f3fcf5ece68f29a6b2623e23e2918240c4d45bfd31cafd35",
+      "ids": [
+        "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p",
+        "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p": "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Fluorescent PLA Yellow (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFB00",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Fluorescent PLA {color_name}::Fluorescent PLA Yellow (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Fluorescent PLA {color_name}",
+          "source_color": "Yellow (Black Light Reactive)",
+          "source_line": "Fluorescent PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 143,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks PLA Fluorescent Yellow (Black Light Reactive)",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ccff00",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Yellow (Black Light Reactive)::PLA::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks PLA {color_name}",
+          "source_color": "Fluorescent Yellow (Black Light Reactive)",
+          "source_line": "Gizmo Dorks PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 9,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p": "FFFB00",
+          "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p": "ccff00"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p": [
+            190,
+            230
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p": [
+            190,
+            225
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p": null,
+          "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p": 60
+        },
+        "bed_temp_range": {
+          "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p": [
+            50,
+            70
+          ],
+          "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD037",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-bc266db6c2f4272061a60cad0b8d05ec5e814e1c4d200ccc24ca0fb9ed44fbfc",
+      "ids": [
+        "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p",
+        "gizmodorks_pla_glowplainthedark_1000_175_p"
+      ],
+      "proposed_survivor": "gizmodorks_pla_glowplainthedark_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p": "gizmodorks_pla_glowplainthedark_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Gizmo Dorks PLA Glow in the Dark",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "c8e6c9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            225
+          ],
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Glow in the Dark::PLA::1000::1.75::plastic::False",
+          "template": "Gizmo Dorks PLA {color_name}",
+          "source_color": "Glow in the Dark",
+          "source_line": "Gizmo Dorks PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "gizmodorks_pla_glowplainthedark_1000_175_p",
+          "manufacturer": "Gizmo Dorks",
+          "name": "Glow PLA In the Dark",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 230,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "F1E6B2",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "gizmodorks.json::Gizmo Dorks::Glow PLA {color_name}::Glow PLA In the Dark::PLA::1000::1.75::plastic::False",
+          "template": "Glow PLA {color_name}",
+          "source_color": "In the Dark",
+          "source_line": "Glow PLA",
+          "source_file": "gizmodorks.json",
+          "source_definition": {
+            "source_file": "gizmodorks.json",
+            "definition_index": 145,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p": "c8e6c9",
+          "gizmodorks_pla_glowplainthedark_1000_175_p": "F1E6B2"
+        },
+        "extruder_temp_range": {
+          "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p": [
+            190,
+            225
+          ],
+          "gizmodorks_pla_glowplainthedark_1000_175_p": [
+            190,
+            230
+          ]
+        },
+        "bed_temp": {
+          "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p": 60,
+          "gizmodorks_pla_glowplainthedark_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p": null,
+          "gizmodorks_pla_glowplainthedark_1000_175_p": [
+            50,
+            70
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "GD044",
+      "prior_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "gizmodorks_pla_glowplainthedark_1000_175_p",
+      "retire": [
+        "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "gizmodorks_abs_gizmodorksabsfluorescentgreen(blacklightreactive)_1000_175_p": {
+      "replaced_by": "gizmodorks_abs_fluorescentabsgreen(blacklightreactive)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Green (Black Light Reactive)::ABS::1000::1.75::plastic::False"
+    },
+    "gizmodorks_abs_gizmodorksabsfluorescentorange(blacklightreactive)_1000_175_p": {
+      "replaced_by": "gizmodorks_abs_fluorescentabsorange(blacklightreactive)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Orange (Black Light Reactive)::ABS::1000::1.75::plastic::False"
+    },
+    "gizmodorks_abs_gizmodorksabsfluorescentyellow(blacklightreactive)_1000_175_p": {
+      "replaced_by": "gizmodorks_abs_fluorescentabsyellow(blacklightreactive)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Fluorescent Yellow (Black Light Reactive)::ABS::1000::1.75::plastic::False"
+    },
+    "gizmodorks_abs_gizmodorksabsglowinthedark_1000_175_p": {
+      "replaced_by": "gizmodorks_abs_glowabsinthedark_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks ABS {color_name}::Gizmo Dorks ABS Glow in the Dark::ABS::1000::1.75::plastic::False"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentblue(blacklightreactive)_1000_175_p": {
+      "replaced_by": "gizmodorks_pla_fluorescentplablue(blacklightreactive)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Blue (Black Light Reactive)::PLA::1000::1.75::plastic::False"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentgreen(blacklightreactive)_1000_175_p": {
+      "replaced_by": "gizmodorks_pla_fluorescentplagreen(blacklightreactive)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Green (Black Light Reactive)::PLA::1000::1.75::plastic::False"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentorange(blacklightreactive)_1000_175_p": {
+      "replaced_by": "gizmodorks_pla_fluorescentplaorange(blacklightreactive)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Orange (Black Light Reactive)::PLA::1000::1.75::plastic::False"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentred(blacklightreactive)_1000_175_p": {
+      "replaced_by": "gizmodorks_pla_fluorescentplared(blacklightreactive)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Red (Black Light Reactive)::PLA::1000::1.75::plastic::False"
+    },
+    "gizmodorks_pla_gizmodorksplafluorescentyellow(blacklightreactive)_1000_175_p": {
+      "replaced_by": "gizmodorks_pla_fluorescentplayellow(blacklightreactive)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Fluorescent Yellow (Black Light Reactive)::PLA::1000::1.75::plastic::False"
+    },
+    "gizmodorks_pla_gizmodorksplaglowinthedark_1000_175_p": {
+      "replaced_by": "gizmodorks_pla_glowplainthedark_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-gizmodorks-line-color-review.json",
+      "source": "46d4e6a66147f3bbcb5dcd0bd26752e471ba6e81",
+      "retired_key": "gizmodorks.json::Gizmo Dorks::Gizmo Dorks PLA {color_name}::Gizmo Dorks PLA Glow in the Dark::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 10,
+    "approved_groups": 10,
+    "retired": 10,
+    "deferred": 0,
+    "before_count": 51673,
+    "after_count": 51663,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-gizmodorks-duplicate-review.json"
+}
