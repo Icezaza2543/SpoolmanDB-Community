@@ -1,0 +1,383 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "flashforge",
+  "base_sha": "9dc99984c5f5e63f79a3d4fc9c11ca650427a9dc",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "e6dbfd57333e1a00b404030478e91a50a55b8ca3c163fcba166fe32b211c6dd9",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-15c8883805cac462222e42d5763dbfab2f54df800525bb26ddd39e3ed8c276ed": {
+      "approved": true,
+      "survivor": "flashforge_pla_pla-gray_500_175_p",
+      "retire": [
+        "flashforge_pla_pla-grey_500_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-flashforge-owner-closure.json",
+      "source": "9dc99984c5f5e63f79a3d4fc9c11ca650427a9dc"
+    },
+    "dup-dc7234d241e0e6efd95b5b3e2d225d674862404f4400033bb3902ca3f5a2fc4f": {
+      "approved": true,
+      "survivor": "flashforge_pla_pla-gray_1000_175_p",
+      "retire": [
+        "flashforge_pla_pla-grey_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-flashforge-owner-closure.json",
+      "source": "9dc99984c5f5e63f79a3d4fc9c11ca650427a9dc"
+    }
+  },
+  "bindings": {
+    "flashforge_pla_pla-gray_500_175_p": {
+      "key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Gray::PLA::500.0::1.75::plastic::False",
+      "source_color": "Gray",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "flashforge_pla_pla-grey_500_175_p": {
+      "key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Grey::PLA::500.0::1.75::plastic::False",
+      "source_color": "Grey",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "flashforge_pla_pla-gray_1000_175_p": {
+      "key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Gray::PLA::1000.0::1.75::plastic::False",
+      "source_color": "Gray",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "flashforge_pla_pla-grey_1000_175_p": {
+      "key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Grey::PLA::1000.0::1.75::plastic::False",
+      "source_color": "Grey",
+      "line": "PLA",
+      "color": "gray"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-15c8883805cac462222e42d5763dbfab2f54df800525bb26ddd39e3ed8c276ed",
+      "ids": [
+        "flashforge_pla_pla-gray_500_175_p",
+        "flashforge_pla_pla-grey_500_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "flashforge_pla_pla-gray_500_175_p",
+          "manufacturer": "FlashForge",
+          "name": "PLA - Gray",
+          "material": "PLA",
+          "density": 1.25,
+          "weight": 500.0,
+          "spool_weight": 142.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "515F6C",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_TDS_EN.pdf",
+          "key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Gray::PLA::500.0::1.75::plastic::False",
+          "template": "PLA - {color_name}",
+          "source_color": "Gray",
+          "source_line": "PLA -",
+          "source_file": "flashforge.json",
+          "source_definition": {
+            "source_file": "flashforge.json",
+            "definition_index": 0,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 34,
+            "compiled_records": 68
+          },
+          "upstream": true
+        },
+        {
+          "id": "flashforge_pla_pla-grey_500_175_p",
+          "manufacturer": "FlashForge",
+          "name": "PLA - Grey",
+          "material": "PLA",
+          "density": 1.25,
+          "weight": 500.0,
+          "spool_weight": 142.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "4D6383",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_TDS_EN.pdf",
+          "key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Grey::PLA::500.0::1.75::plastic::False",
+          "template": "PLA - {color_name}",
+          "source_color": "Grey",
+          "source_line": "PLA -",
+          "source_file": "flashforge.json",
+          "source_definition": {
+            "source_file": "flashforge.json",
+            "definition_index": 0,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 34,
+            "compiled_records": 68
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "flashforge_pla_pla-gray_500_175_p": "515F6C",
+          "flashforge_pla_pla-grey_500_175_p": "4D6383"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "flashforge_pla_pla-gray_500_175_p",
+      "retire": [
+        "flashforge_pla_pla-grey_500_175_p"
+      ],
+      "survivor_ranking": {
+        "flashforge_pla_pla-gray_500_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          3,
+          "flashforge_pla_pla-gray_500_175_p"
+        ],
+        "flashforge_pla_pla-grey_500_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          3,
+          "flashforge_pla_pla-grey_500_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "flashforge_pla_pla-gray_500_175_p": [
+          3,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "flashforge_pla_pla-grey_500_175_p": [
+          3,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-dc7234d241e0e6efd95b5b3e2d225d674862404f4400033bb3902ca3f5a2fc4f",
+      "ids": [
+        "flashforge_pla_pla-gray_1000_175_p",
+        "flashforge_pla_pla-grey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "flashforge_pla_pla-gray_1000_175_p",
+          "manufacturer": "FlashForge",
+          "name": "PLA - Gray",
+          "material": "PLA",
+          "density": 1.25,
+          "weight": 1000.0,
+          "spool_weight": 170.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "515F6C",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_TDS_EN.pdf",
+          "key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Gray::PLA::1000.0::1.75::plastic::False",
+          "template": "PLA - {color_name}",
+          "source_color": "Gray",
+          "source_line": "PLA -",
+          "source_file": "flashforge.json",
+          "source_definition": {
+            "source_file": "flashforge.json",
+            "definition_index": 0,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 34,
+            "compiled_records": 68
+          },
+          "upstream": true
+        },
+        {
+          "id": "flashforge_pla_pla-grey_1000_175_p",
+          "manufacturer": "FlashForge",
+          "name": "PLA - Grey",
+          "material": "PLA",
+          "density": 1.25,
+          "weight": 1000.0,
+          "spool_weight": 170.0,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "4D6383",
+          "color_hexes": null,
+          "extruder_temp": 210,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": "https://after-support.flashforge.jp/uploads/datasheet/tds/PLA_TDS_EN.pdf",
+          "key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Grey::PLA::1000.0::1.75::plastic::False",
+          "template": "PLA - {color_name}",
+          "source_color": "Grey",
+          "source_line": "PLA -",
+          "source_file": "flashforge.json",
+          "source_definition": {
+            "source_file": "flashforge.json",
+            "definition_index": 0,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 34,
+            "compiled_records": 68
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "flashforge_pla_pla-gray_1000_175_p": "515F6C",
+          "flashforge_pla_pla-grey_1000_175_p": "4D6383"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "flashforge_pla_pla-gray_1000_175_p",
+      "retire": [
+        "flashforge_pla_pla-grey_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "flashforge_pla_pla-gray_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          3,
+          "flashforge_pla_pla-gray_1000_175_p"
+        ],
+        "flashforge_pla_pla-grey_1000_175_p": [
+          -1,
+          0,
+          0,
+          0,
+          3,
+          "flashforge_pla_pla-grey_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "flashforge_pla_pla-gray_1000_175_p": [
+          3,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "flashforge_pla_pla-grey_1000_175_p": [
+          3,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "flashforge_pla_pla-grey_500_175_p": {
+      "replaced_by": "flashforge_pla_pla-gray_500_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-flashforge-owner-closure.json",
+      "source": "9dc99984c5f5e63f79a3d4fc9c11ca650427a9dc",
+      "retired_key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Grey::PLA::500.0::1.75::plastic::False"
+    },
+    "flashforge_pla_pla-grey_1000_175_p": {
+      "replaced_by": "flashforge_pla_pla-gray_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-flashforge-owner-closure.json",
+      "source": "9dc99984c5f5e63f79a3d4fc9c11ca650427a9dc",
+      "retired_key": "flashforge.json::FlashForge::PLA - {color_name}::PLA - Grey::PLA::1000.0::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 2,
+    "approved_groups": 2,
+    "retired": 2,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51425,
+    "after_count": 51423,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
