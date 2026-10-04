@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "buddy3d",
+  "base_sha": "d901e4348e63a721d8d4df6d841441f1dd252f66",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "468d46652f32833f872837c16c164417ebe505092e77194836a8fce32dead9d4",
+  "official_names": {
+    "PLA Silk {color_name}": {
+      "name": "PLA Silk",
+      "source": "https://www.prusa3d.com/product/buddy3d-pla-silk-dark-gold-1kg/"
+    },
+    "Silk PLA {color_name}": {
+      "name": "PLA Silk",
+      "source": "https://www.prusa3d.com/product/buddy3d-pla-silk-dark-gold-1kg/"
+    },
+    "ABS {color_name}": {
+      "name": "ABS",
+      "source": "https://www.prusa3d.com/product/buddy3d-abs-filament/"
+    },
+    "{color_name}": {
+      "name": "ABS",
+      "source": "https://www.prusa3d.com/product/buddy3d-abs-filament/"
+    }
+  },
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-8954032c26a801fd9a434ce249e827dccf1228b1497651401adc263078454d27": {
+      "approved": true,
+      "survivor": "buddy3d_pla_plaglitterblackgold_1000_175_p",
+      "retire": [
+        "buddy3d_pla_plaglitterblack/gold_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-buddy3d-line-color-review.json",
+      "source": "d901e4348e63a721d8d4df6d841441f1dd252f66"
+    }
+  },
+  "bindings": {
+    "buddy3d_pla_plaglitterblack/gold_1000_175_p": {
+      "key": "buddy3d.json::Buddy3D::PLA {color_name}::PLA Glitter Black/Gold::PLA::1000::1.75::None::False",
+      "source_color": "Glitter Black/Gold",
+      "line": "glitter",
+      "color": "black gold",
+      "parts": [
+        {
+          "role": "line",
+          "token": "glitter"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        }
+      ],
+      "anchor_key": "buddy3d.json::Buddy3D::PLA Glitter {color_name}::PLA Glitter Black Gold::PLA::1000.0::1.75::None::False",
+      "anchor_source_color": "Black Gold"
+    },
+    "buddy3d_pla_plaglitterblackgold_1000_175_p": {
+      "key": "buddy3d.json::Buddy3D::PLA Glitter {color_name}::PLA Glitter Black Gold::PLA::1000.0::1.75::None::False",
+      "source_color": "Black Gold",
+      "line": "glitter",
+      "color": "black gold",
+      "parts": [
+        {
+          "role": "line",
+          "token": "glitter"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        },
+        {
+          "role": "color",
+          "token": "gold"
+        }
+      ],
+      "anchor_key": "buddy3d.json::Buddy3D::PLA {color_name}::PLA Glitter Black/Gold::PLA::1000::1.75::None::False",
+      "anchor_source_color": "Glitter Black/Gold"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-8954032c26a801fd9a434ce249e827dccf1228b1497651401adc263078454d27",
+      "ids": [
+        "buddy3d_pla_plaglitterblack/gold_1000_175_p",
+        "buddy3d_pla_plaglitterblackgold_1000_175_p"
+      ],
+      "proposed_survivor": "buddy3d_pla_plaglitterblackgold_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "buddy3d_pla_plaglitterblack/gold_1000_175_p": "buddy3d_pla_plaglitterblackgold_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "buddy3d_pla_plaglitterblack/gold_1000_175_p",
+          "manufacturer": "Buddy3D",
+          "name": "PLA Glitter Black/Gold",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": null,
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": [
+            200,
+            230
+          ],
+          "bed_temp": 55,
+          "bed_temp_range": [
+            50,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": null,
+          "sds_url": null,
+          "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf",
+          "key": "buddy3d.json::Buddy3D::PLA {color_name}::PLA Glitter Black/Gold::PLA::1000::1.75::None::False",
+          "template": "PLA {color_name}",
+          "source_color": "Glitter Black/Gold",
+          "source_line": "PLA",
+          "source_file": "buddy3d.json",
+          "source_definition": {
+            "source_file": "buddy3d.json",
+            "definition_index": 33,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "buddy3d_pla_plaglitterblackgold_1000_175_p",
+          "manufacturer": "Buddy3D",
+          "name": "PLA Glitter Black Gold",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000.0,
+          "spool_weight": null,
+          "spool_type": null,
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "141413",
+          "color_hexes": null,
+          "extruder_temp": 215,
+          "extruder_temp_range": [
+            200,
+            230
+          ],
+          "bed_temp": 55,
+          "bed_temp_range": [
+            50,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": "sparkle",
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": null,
+          "sds_url": null,
+          "tds_url": "https://www.prusa3d.com/file/2626589/technical-data-sheet.pdf",
+          "key": "buddy3d.json::Buddy3D::PLA Glitter {color_name}::PLA Glitter Black Gold::PLA::1000.0::1.75::None::False",
+          "template": "PLA Glitter {color_name}",
+          "source_color": "Black Gold",
+          "source_line": "PLA Glitter",
+          "source_file": "buddy3d.json",
+          "source_definition": {
+            "source_file": "buddy3d.json",
+            "definition_index": 2,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "buddy3d_pla_plaglitterblack/gold_1000_175_p": "000000",
+          "buddy3d_pla_plaglitterblackgold_1000_175_p": "141413"
+        },
+        "pattern": {
+          "buddy3d_pla_plaglitterblack/gold_1000_175_p": null,
+          "buddy3d_pla_plaglitterblackgold_1000_175_p": "sparkle"
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "BD022",
+      "prior_audit": "docs/audits/2026-10-03-buddy3d-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "buddy3d_pla_plaglitterblackgold_1000_175_p",
+      "retire": [
+        "buddy3d_pla_plaglitterblack/gold_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "buddy3d_pla_plaglitterblack/gold_1000_175_p": {
+      "replaced_by": "buddy3d_pla_plaglitterblackgold_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-buddy3d-line-color-review.json",
+      "source": "d901e4348e63a721d8d4df6d841441f1dd252f66",
+      "retired_key": "buddy3d.json::Buddy3D::PLA {color_name}::PLA Glitter Black/Gold::PLA::1000::1.75::None::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "before_count": 51697,
+    "after_count": 51696,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-buddy3d-duplicate-review.json"
+}
