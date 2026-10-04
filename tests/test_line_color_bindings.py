@@ -73,3 +73,13 @@ def test_malformed_registry_anchor_returns_validation_error(anchor):
     empty = {"version": 1, "retired": {}}
     errors, _, _ = check_registry(empty, empty, {}, {}, {}, {"bad": {"parts": [], "anchor_key": anchor}})
     assert errors
+
+
+def test_malformed_anchor_on_actual_retirement_does_not_crash():
+    from scripts.retired_ids import check_registry
+    a, b = key("Silk PLA {color_name}", "Gold"), key("PLA {color_name}", "Silk Gold")
+    bindings = catalog.line_color_bindings(a, "Gold", b, "Silk Gold")
+    bindings[1]["anchor_key"] = []
+    payload = {"version": 1, "retired": {"old": {"replaced_by": "keep", "reason": "duplicate", "ref": "review", "source": "a" * 40, "retired_key": b}}}
+    errors, _, _ = check_registry(payload, {"version": 1, "retired": {}}, {a: "keep", b: "old"}, {a: "keep"}, {a: "keep"}, {"old": bindings[1], "keep": bindings[0]})
+    assert errors
