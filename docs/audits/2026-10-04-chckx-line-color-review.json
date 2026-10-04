@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "chckx",
+  "base_sha": "5de4add9fb8493aaea3b5d25fa13d282b4581497",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "d7fc96a338cfa4d732f8f4f268118c91a2922d3b00e44bbd3fec2217f4bc23c6",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-299c93ce44bdb22707f2e67bae927a012f826cf8664dbc679df4a75da5965d98": {
+      "approved": true,
+      "survivor": "chckx_petg_petgcrystalpurple_1000_175_p",
+      "retire": [
+        "chckx_petg_crystalpurple_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-chckx-line-color-review.json",
+      "source": "5de4add9fb8493aaea3b5d25fa13d282b4581497"
+    }
+  },
+  "bindings": {
+    "chckx_petg_crystalpurple_1000_175_p": {
+      "key": "chckx.json::CHCKX::Crystal {color_name}::Crystal Purple::PETG::1000::1.75::plastic::False",
+      "source_color": "Purple",
+      "line": "crystal",
+      "color": "purple",
+      "parts": [
+        {
+          "role": "line",
+          "token": "crystal"
+        },
+        {
+          "role": "color",
+          "token": "purple"
+        }
+      ],
+      "anchor_key": "chckx.json::CHCKX::PETG {color_name}::PETG Crystal Purple::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "Crystal Purple"
+    },
+    "chckx_petg_petgcrystalpurple_1000_175_p": {
+      "key": "chckx.json::CHCKX::PETG {color_name}::PETG Crystal Purple::PETG::1000::1.75::plastic::False",
+      "source_color": "Crystal Purple",
+      "line": "crystal",
+      "color": "purple",
+      "parts": [
+        {
+          "role": "line",
+          "token": "crystal"
+        },
+        {
+          "role": "color",
+          "token": "purple"
+        }
+      ],
+      "anchor_key": "chckx.json::CHCKX::Crystal {color_name}::Crystal Purple::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "Purple"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-299c93ce44bdb22707f2e67bae927a012f826cf8664dbc679df4a75da5965d98",
+      "ids": [
+        "chckx_petg_crystalpurple_1000_175_p",
+        "chckx_petg_petgcrystalpurple_1000_175_p"
+      ],
+      "proposed_survivor": "chckx_petg_petgcrystalpurple_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "chckx_petg_crystalpurple_1000_175_p": "chckx_petg_petgcrystalpurple_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "chckx_petg_crystalpurple_1000_175_p",
+          "manufacturer": "CHCKX",
+          "name": "Crystal Purple",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8d8bfd",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            85
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "chckx.json::CHCKX::Crystal {color_name}::Crystal Purple::PETG::1000::1.75::plastic::False",
+          "template": "Crystal {color_name}",
+          "source_color": "Purple",
+          "source_line": "Crystal",
+          "source_file": "chckx.json",
+          "source_definition": {
+            "source_file": "chckx.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        },
+        {
+          "id": "chckx_petg_petgcrystalpurple_1000_175_p",
+          "manufacturer": "CHCKX",
+          "name": "PETG Crystal Purple",
+          "material": "PETG",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8d8bfd",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "chckx.json::CHCKX::PETG {color_name}::PETG Crystal Purple::PETG::1000::1.75::plastic::False",
+          "template": "PETG {color_name}",
+          "source_color": "Crystal Purple",
+          "source_line": "PETG",
+          "source_file": "chckx.json",
+          "source_definition": {
+            "source_file": "chckx.json",
+            "definition_index": 7,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 19,
+            "compiled_records": 19
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "extruder_temp_range": {
+          "chckx_petg_crystalpurple_1000_175_p": [
+            230,
+            250
+          ],
+          "chckx_petg_petgcrystalpurple_1000_175_p": [
+            240,
+            260
+          ]
+        },
+        "bed_temp_range": {
+          "chckx_petg_crystalpurple_1000_175_p": [
+            70,
+            85
+          ],
+          "chckx_petg_petgcrystalpurple_1000_175_p": [
+            70,
+            70
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "CH001",
+      "prior_audit": "docs/audits/2026-10-03-chckx-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "chckx_petg_petgcrystalpurple_1000_175_p",
+      "retire": [
+        "chckx_petg_crystalpurple_1000_175_p"
+      ],
+      "decision_rule": "Rule 4",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "chckx_petg_crystalpurple_1000_175_p": {
+      "replaced_by": "chckx_petg_petgcrystalpurple_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-chckx-line-color-review.json",
+      "source": "5de4add9fb8493aaea3b5d25fa13d282b4581497",
+      "retired_key": "chckx.json::CHCKX::Crystal {color_name}::Crystal Purple::PETG::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [
+    {
+      "id": "chckx_petg_petgcrystalpurple_1000_175_p",
+      "density": 1.24,
+      "nozzle": [
+        240,
+        260
+      ],
+      "resolution": "No accessible current exact-line TDS; keep survivor value unresolved; no packaging/tare inference"
+    }
+  ],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "before_count": 51696,
+    "after_count": 51695,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-chckx-duplicate-review.json"
+}
