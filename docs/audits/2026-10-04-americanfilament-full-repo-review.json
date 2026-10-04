@@ -1,0 +1,1120 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "americanfilament",
+  "base_sha": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "73d3223425eaff04da8c8d85856897fe91fd08a61bab41a2aa0be9f4ed765e2a",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-0cbd82daca2198c43293ed83488990f8ff57d0a83cfe5a4f3176c531b7583dc9": {
+      "approved": true,
+      "survivor": "americanfilament_pctg_pctgarmygreen_1000_175_p",
+      "retire": [
+        "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-americanfilament-full-repo-review.json",
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c"
+    },
+    "dup-555a43455a3fec10a9a0e419a007527eb4c953aaee9dd9c296af49c72d51d8e7": {
+      "approved": true,
+      "survivor": "americanfilament_pctg_pctgobsidianblack_1000_175_p",
+      "retire": [
+        "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-americanfilament-full-repo-review.json",
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c"
+    },
+    "dup-76c5690a3879b598d0b4ecb78333c50a73f26633fed94092d7d2f4fda6d68fbe": {
+      "approved": true,
+      "survivor": "americanfilament_pctg_pctggunmetalgray_1000_175_p",
+      "retire": [
+        "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-americanfilament-full-repo-review.json",
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c"
+    },
+    "dup-793c5a66c846857b1437cf6b3e8afdc8207fc302c6f85abf70148c350477a30a": {
+      "approved": true,
+      "survivor": "americanfilament_pctg_pctgblizzardwhite_1000_175_p",
+      "retire": [
+        "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-americanfilament-full-repo-review.json",
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c"
+    }
+  },
+  "bindings": {
+    "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": {
+      "key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Army Green::PCTG::1000::1.75::plastic::False",
+      "source_color": "Army Green",
+      "line": "PCTG",
+      "color": "army green",
+      "parts": [
+        {
+          "role": "color",
+          "token": "army"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Army Green::PCTG::1000::1.75::plastic::False",
+      "anchor_source_color": "Army Green"
+    },
+    "americanfilament_pctg_pctgarmygreen_1000_175_p": {
+      "key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Army Green::PCTG::1000::1.75::plastic::False",
+      "source_color": "Army Green",
+      "line": "PCTG",
+      "color": "army green",
+      "parts": [
+        {
+          "role": "color",
+          "token": "army"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Army Green::PCTG::1000::1.75::plastic::False",
+      "anchor_source_color": "Army Green"
+    },
+    "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": {
+      "key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Obsidian Black::PCTG::1000::1.75::plastic::False",
+      "source_color": "Obsidian Black",
+      "line": "PCTG",
+      "color": "obsidian black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "obsidian"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Obsidian Black::PCTG::1000::1.75::plastic::False",
+      "anchor_source_color": "Obsidian Black"
+    },
+    "americanfilament_pctg_pctgobsidianblack_1000_175_p": {
+      "key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Obsidian Black::PCTG::1000::1.75::plastic::False",
+      "source_color": "Obsidian Black",
+      "line": "PCTG",
+      "color": "obsidian black",
+      "parts": [
+        {
+          "role": "color",
+          "token": "obsidian"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Obsidian Black::PCTG::1000::1.75::plastic::False",
+      "anchor_source_color": "Obsidian Black"
+    },
+    "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": {
+      "key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Gunmetal Gray::PCTG::1000::1.75::plastic::False",
+      "source_color": "Gunmetal Gray",
+      "line": "PCTG",
+      "color": "gunmetal gray",
+      "parts": [
+        {
+          "role": "color",
+          "token": "gunmetal"
+        },
+        {
+          "role": "color",
+          "token": "gray"
+        }
+      ],
+      "anchor_key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Gunmetal Gray::PCTG::1000::1.75::plastic::False",
+      "anchor_source_color": "Gunmetal Gray"
+    },
+    "americanfilament_pctg_pctggunmetalgray_1000_175_p": {
+      "key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Gunmetal Gray::PCTG::1000::1.75::plastic::False",
+      "source_color": "Gunmetal Gray",
+      "line": "PCTG",
+      "color": "gunmetal gray",
+      "parts": [
+        {
+          "role": "color",
+          "token": "gunmetal"
+        },
+        {
+          "role": "color",
+          "token": "gray"
+        }
+      ],
+      "anchor_key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Gunmetal Gray::PCTG::1000::1.75::plastic::False",
+      "anchor_source_color": "Gunmetal Gray"
+    },
+    "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": {
+      "key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Blizzard White::PCTG::1000::1.75::plastic::False",
+      "source_color": "Blizzard White",
+      "line": "PCTG",
+      "color": "blizzard white",
+      "parts": [
+        {
+          "role": "color",
+          "token": "blizzard"
+        },
+        {
+          "role": "color",
+          "token": "white"
+        }
+      ],
+      "anchor_key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Blizzard White::PCTG::1000::1.75::plastic::False",
+      "anchor_source_color": "Blizzard White"
+    },
+    "americanfilament_pctg_pctgblizzardwhite_1000_175_p": {
+      "key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Blizzard White::PCTG::1000::1.75::plastic::False",
+      "source_color": "Blizzard White",
+      "line": "PCTG",
+      "color": "blizzard white",
+      "parts": [
+        {
+          "role": "color",
+          "token": "blizzard"
+        },
+        {
+          "role": "color",
+          "token": "white"
+        }
+      ],
+      "anchor_key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Blizzard White::PCTG::1000::1.75::plastic::False",
+      "anchor_source_color": "Blizzard White"
+    }
+  },
+  "metadata": [
+    {
+      "id": "americanfilament_pctg_pctgarmygreen_1000_175_p",
+      "values": {
+        "codes": [
+          "PCTG_1KG_ARMYG"
+        ],
+        "density": 1.27,
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp_range": [
+          70,
+          100
+        ]
+      },
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "americanfilament_pctg_pctgobsidianblack_1000_175_p",
+      "values": {
+        "codes": [
+          "PCTG_1KG_BLACK"
+        ],
+        "density": 1.27,
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp_range": [
+          70,
+          100
+        ]
+      },
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "americanfilament_pctg_pctggunmetalgray_1000_175_p",
+      "values": {
+        "codes": [
+          "PCTG_1KG_GUNMETAL"
+        ],
+        "density": 1.27,
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp_range": [
+          70,
+          100
+        ]
+      },
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "americanfilament_pctg_pctgblizzardwhite_1000_175_p",
+      "values": {
+        "codes": [
+          "PCTG_1KG_WHITE"
+        ],
+        "density": 1.27,
+        "extruder_temp_range": [
+          240,
+          270
+        ],
+        "bed_temp_range": [
+          70,
+          100
+        ]
+      },
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+      "lot": "exact reviewed historical identifier binding",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-0cbd82daca2198c43293ed83488990f8ff57d0a83cfe5a4f3176c531b7583dc9",
+      "ids": [
+        "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p",
+        "americanfilament_pctg_pctgarmygreen_1000_175_p"
+      ],
+      "proposed_survivor": "americanfilament_pctg_pctgarmygreen_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": "americanfilament_pctg_pctgarmygreen_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p",
+          "manufacturer": "American Filament",
+          "name": "American Filament PCTG Army Green",
+          "material": "PCTG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "36361e",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PCTG_1KG_ARMYG",
+            "PCTG_4KG_ARMYG"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_US_Material_Safety_Data_Sheet_-_MSDS.pdf",
+          "tds_url": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_Technical_Data_Sheet_-_TDS.pdf",
+          "key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Army Green::PCTG::1000::1.75::plastic::False",
+          "template": "American Filament PCTG {color_name}",
+          "source_color": "Army Green",
+          "source_line": "American Filament PCTG",
+          "source_file": "americanfilament.json",
+          "source_definition": {
+            "source_file": "americanfilament.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 16,
+            "compiled_records": 32
+          },
+          "upstream": false
+        },
+        {
+          "id": "americanfilament_pctg_pctgarmygreen_1000_175_p",
+          "manufacturer": "American Filament",
+          "name": "PCTG Army Green",
+          "material": "PCTG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "515234",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Army Green::PCTG::1000::1.75::plastic::False",
+          "template": "PCTG {color_name}",
+          "source_color": "Army Green",
+          "source_line": "PCTG",
+          "source_file": "americanfilament.json",
+          "source_definition": {
+            "source_file": "americanfilament.json",
+            "definition_index": 6,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": 1.27,
+          "americanfilament_pctg_pctgarmygreen_1000_175_p": 1.23
+        },
+        "spool_weight": {
+          "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": 220,
+          "americanfilament_pctg_pctgarmygreen_1000_175_p": null
+        },
+        "color_hex": {
+          "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": "36361e",
+          "americanfilament_pctg_pctgarmygreen_1000_175_p": "515234"
+        },
+        "extruder_temp_range": {
+          "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": [
+            240,
+            270
+          ],
+          "americanfilament_pctg_pctgarmygreen_1000_175_p": [
+            230,
+            260
+          ]
+        },
+        "bed_temp_range": {
+          "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": [
+            70,
+            100
+          ],
+          "americanfilament_pctg_pctgarmygreen_1000_175_p": [
+            70,
+            90
+          ]
+        },
+        "codes": {
+          "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": [
+            "PCTG_1KG_ARMYG",
+            "PCTG_4KG_ARMYG"
+          ],
+          "americanfilament_pctg_pctgarmygreen_1000_175_p": null
+        },
+        "sds_url": {
+          "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_US_Material_Safety_Data_Sheet_-_MSDS.pdf",
+          "americanfilament_pctg_pctgarmygreen_1000_175_p": null
+        },
+        "tds_url": {
+          "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_Technical_Data_Sheet_-_TDS.pdf",
+          "americanfilament_pctg_pctgarmygreen_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved in continuous owner-authorized campaign under rules1–6; exact reviewed identity and target-only changes, not an availability assertion.",
+      "label": "dup-0cbd82daca2198c43293ed83488990f8ff57d0a83cfe5a4f3176c531b7583dc9",
+      "prior_audit": "docs\\audits\\2026-10-03-americanfilament-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "americanfilament_pctg_pctgarmygreen_1000_175_p",
+      "retire": [
+        "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-555a43455a3fec10a9a0e419a007527eb4c953aaee9dd9c296af49c72d51d8e7",
+      "ids": [
+        "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p",
+        "americanfilament_pctg_pctgobsidianblack_1000_175_p"
+      ],
+      "proposed_survivor": "americanfilament_pctg_pctgobsidianblack_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": "americanfilament_pctg_pctgobsidianblack_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p",
+          "manufacturer": "American Filament",
+          "name": "American Filament PCTG Obsidian Black",
+          "material": "PCTG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "2a2a2a",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PCTG_1KG_BLACK",
+            "PCTG_4KG_BLACK"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_US_Material_Safety_Data_Sheet_-_MSDS.pdf",
+          "tds_url": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_Technical_Data_Sheet_-_TDS.pdf",
+          "key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Obsidian Black::PCTG::1000::1.75::plastic::False",
+          "template": "American Filament PCTG {color_name}",
+          "source_color": "Obsidian Black",
+          "source_line": "American Filament PCTG",
+          "source_file": "americanfilament.json",
+          "source_definition": {
+            "source_file": "americanfilament.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 16,
+            "compiled_records": 32
+          },
+          "upstream": false
+        },
+        {
+          "id": "americanfilament_pctg_pctgobsidianblack_1000_175_p",
+          "manufacturer": "American Filament",
+          "name": "PCTG Obsidian Black",
+          "material": "PCTG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Obsidian Black::PCTG::1000::1.75::plastic::False",
+          "template": "PCTG {color_name}",
+          "source_color": "Obsidian Black",
+          "source_line": "PCTG",
+          "source_file": "americanfilament.json",
+          "source_definition": {
+            "source_file": "americanfilament.json",
+            "definition_index": 6,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": 1.27,
+          "americanfilament_pctg_pctgobsidianblack_1000_175_p": 1.23
+        },
+        "spool_weight": {
+          "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": 220,
+          "americanfilament_pctg_pctgobsidianblack_1000_175_p": null
+        },
+        "color_hex": {
+          "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": "2a2a2a",
+          "americanfilament_pctg_pctgobsidianblack_1000_175_p": "000000"
+        },
+        "extruder_temp_range": {
+          "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": [
+            240,
+            270
+          ],
+          "americanfilament_pctg_pctgobsidianblack_1000_175_p": [
+            230,
+            260
+          ]
+        },
+        "bed_temp_range": {
+          "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": [
+            70,
+            100
+          ],
+          "americanfilament_pctg_pctgobsidianblack_1000_175_p": [
+            70,
+            90
+          ]
+        },
+        "codes": {
+          "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": [
+            "PCTG_1KG_BLACK",
+            "PCTG_4KG_BLACK"
+          ],
+          "americanfilament_pctg_pctgobsidianblack_1000_175_p": null
+        },
+        "sds_url": {
+          "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_US_Material_Safety_Data_Sheet_-_MSDS.pdf",
+          "americanfilament_pctg_pctgobsidianblack_1000_175_p": null
+        },
+        "tds_url": {
+          "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_Technical_Data_Sheet_-_TDS.pdf",
+          "americanfilament_pctg_pctgobsidianblack_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved in continuous owner-authorized campaign under rules1–6; exact reviewed identity and target-only changes, not an availability assertion.",
+      "label": "dup-555a43455a3fec10a9a0e419a007527eb4c953aaee9dd9c296af49c72d51d8e7",
+      "prior_audit": "docs\\audits\\2026-10-03-americanfilament-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "americanfilament_pctg_pctgobsidianblack_1000_175_p",
+      "retire": [
+        "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-76c5690a3879b598d0b4ecb78333c50a73f26633fed94092d7d2f4fda6d68fbe",
+      "ids": [
+        "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p",
+        "americanfilament_pctg_pctggunmetalgray_1000_175_p"
+      ],
+      "proposed_survivor": "americanfilament_pctg_pctggunmetalgray_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": "americanfilament_pctg_pctggunmetalgray_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p",
+          "manufacturer": "American Filament",
+          "name": "American Filament PCTG Gunmetal Gray",
+          "material": "PCTG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "363636",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PCTG_1KG_GUNMETAL",
+            "PCTG_4KG_GUNMETAL"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_US_Material_Safety_Data_Sheet_-_MSDS.pdf",
+          "tds_url": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_Technical_Data_Sheet_-_TDS.pdf",
+          "key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Gunmetal Gray::PCTG::1000::1.75::plastic::False",
+          "template": "American Filament PCTG {color_name}",
+          "source_color": "Gunmetal Gray",
+          "source_line": "American Filament PCTG",
+          "source_file": "americanfilament.json",
+          "source_definition": {
+            "source_file": "americanfilament.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 16,
+            "compiled_records": 32
+          },
+          "upstream": false
+        },
+        {
+          "id": "americanfilament_pctg_pctggunmetalgray_1000_175_p",
+          "manufacturer": "American Filament",
+          "name": "PCTG Gunmetal Gray",
+          "material": "PCTG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "6A6C6E",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Gunmetal Gray::PCTG::1000::1.75::plastic::False",
+          "template": "PCTG {color_name}",
+          "source_color": "Gunmetal Gray",
+          "source_line": "PCTG",
+          "source_file": "americanfilament.json",
+          "source_definition": {
+            "source_file": "americanfilament.json",
+            "definition_index": 6,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": 1.27,
+          "americanfilament_pctg_pctggunmetalgray_1000_175_p": 1.23
+        },
+        "spool_weight": {
+          "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": 220,
+          "americanfilament_pctg_pctggunmetalgray_1000_175_p": null
+        },
+        "color_hex": {
+          "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": "363636",
+          "americanfilament_pctg_pctggunmetalgray_1000_175_p": "6A6C6E"
+        },
+        "extruder_temp_range": {
+          "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": [
+            240,
+            270
+          ],
+          "americanfilament_pctg_pctggunmetalgray_1000_175_p": [
+            230,
+            260
+          ]
+        },
+        "bed_temp_range": {
+          "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": [
+            70,
+            100
+          ],
+          "americanfilament_pctg_pctggunmetalgray_1000_175_p": [
+            70,
+            90
+          ]
+        },
+        "codes": {
+          "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": [
+            "PCTG_1KG_GUNMETAL",
+            "PCTG_4KG_GUNMETAL"
+          ],
+          "americanfilament_pctg_pctggunmetalgray_1000_175_p": null
+        },
+        "sds_url": {
+          "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_US_Material_Safety_Data_Sheet_-_MSDS.pdf",
+          "americanfilament_pctg_pctggunmetalgray_1000_175_p": null
+        },
+        "tds_url": {
+          "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_Technical_Data_Sheet_-_TDS.pdf",
+          "americanfilament_pctg_pctggunmetalgray_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved in continuous owner-authorized campaign under rules1–6; exact reviewed identity and target-only changes, not an availability assertion.",
+      "label": "dup-76c5690a3879b598d0b4ecb78333c50a73f26633fed94092d7d2f4fda6d68fbe",
+      "prior_audit": "docs\\audits\\2026-10-03-americanfilament-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "americanfilament_pctg_pctggunmetalgray_1000_175_p",
+      "retire": [
+        "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-793c5a66c846857b1437cf6b3e8afdc8207fc302c6f85abf70148c350477a30a",
+      "ids": [
+        "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p",
+        "americanfilament_pctg_pctgblizzardwhite_1000_175_p"
+      ],
+      "proposed_survivor": "americanfilament_pctg_pctgblizzardwhite_1000_175_p",
+      "survivor_rule": 2,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": "americanfilament_pctg_pctgblizzardwhite_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p",
+          "manufacturer": "American Filament",
+          "name": "American Filament PCTG Blizzard White",
+          "material": "PCTG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "e8e8e8",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            240,
+            270
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PCTG_1KG_WHITE",
+            "PCTG_4KG_WHITE"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_US_Material_Safety_Data_Sheet_-_MSDS.pdf",
+          "tds_url": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_Technical_Data_Sheet_-_TDS.pdf",
+          "key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Blizzard White::PCTG::1000::1.75::plastic::False",
+          "template": "American Filament PCTG {color_name}",
+          "source_color": "Blizzard White",
+          "source_line": "American Filament PCTG",
+          "source_file": "americanfilament.json",
+          "source_definition": {
+            "source_file": "americanfilament.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 16,
+            "compiled_records": 32
+          },
+          "upstream": false
+        },
+        {
+          "id": "americanfilament_pctg_pctgblizzardwhite_1000_175_p",
+          "manufacturer": "American Filament",
+          "name": "PCTG Blizzard White",
+          "material": "PCTG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            230,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "americanfilament.json::American Filament::PCTG {color_name}::PCTG Blizzard White::PCTG::1000::1.75::plastic::False",
+          "template": "PCTG {color_name}",
+          "source_color": "Blizzard White",
+          "source_line": "PCTG",
+          "source_file": "americanfilament.json",
+          "source_definition": {
+            "source_file": "americanfilament.json",
+            "definition_index": 6,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 4,
+            "compiled_records": 4
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": 1.27,
+          "americanfilament_pctg_pctgblizzardwhite_1000_175_p": 1.23
+        },
+        "spool_weight": {
+          "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": 220,
+          "americanfilament_pctg_pctgblizzardwhite_1000_175_p": null
+        },
+        "color_hex": {
+          "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": "e8e8e8",
+          "americanfilament_pctg_pctgblizzardwhite_1000_175_p": "FFFFFF"
+        },
+        "extruder_temp_range": {
+          "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": [
+            240,
+            270
+          ],
+          "americanfilament_pctg_pctgblizzardwhite_1000_175_p": [
+            230,
+            260
+          ]
+        },
+        "bed_temp_range": {
+          "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": [
+            70,
+            100
+          ],
+          "americanfilament_pctg_pctgblizzardwhite_1000_175_p": [
+            70,
+            90
+          ]
+        },
+        "codes": {
+          "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": [
+            "PCTG_1KG_WHITE",
+            "PCTG_4KG_WHITE"
+          ],
+          "americanfilament_pctg_pctgblizzardwhite_1000_175_p": null
+        },
+        "sds_url": {
+          "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_US_Material_Safety_Data_Sheet_-_MSDS.pdf",
+          "americanfilament_pctg_pctgblizzardwhite_1000_175_p": null
+        },
+        "tds_url": {
+          "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": "https://cdn.shopify.com/s/files/1/0560/2741/4702/files/AF_PCTG_Technical_Data_Sheet_-_TDS.pdf",
+          "americanfilament_pctg_pctgblizzardwhite_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Approved in continuous owner-authorized campaign under rules1–6; exact reviewed identity and target-only changes, not an availability assertion.",
+      "label": "dup-793c5a66c846857b1437cf6b3e8afdc8207fc302c6f85abf70148c350477a30a",
+      "prior_audit": "docs\\audits\\2026-10-03-americanfilament-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "americanfilament_pctg_pctgblizzardwhite_1000_175_p",
+      "retire": [
+        "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p"
+      ],
+      "decision_rule": "Rule 2",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p": {
+      "replaced_by": "americanfilament_pctg_pctgarmygreen_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-americanfilament-full-repo-review.json",
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+      "retired_key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Army Green::PCTG::1000::1.75::plastic::False"
+    },
+    "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p": {
+      "replaced_by": "americanfilament_pctg_pctgobsidianblack_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-americanfilament-full-repo-review.json",
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+      "retired_key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Obsidian Black::PCTG::1000::1.75::plastic::False"
+    },
+    "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p": {
+      "replaced_by": "americanfilament_pctg_pctggunmetalgray_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-americanfilament-full-repo-review.json",
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+      "retired_key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Gunmetal Gray::PCTG::1000::1.75::plastic::False"
+    },
+    "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p": {
+      "replaced_by": "americanfilament_pctg_pctgblizzardwhite_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-americanfilament-full-repo-review.json",
+      "source": "64b1b03233bf084e34f6825fb01613a2c1a33e1c",
+      "retired_key": "americanfilament.json::American Filament::American Filament PCTG {color_name}::American Filament PCTG Blizzard White::PCTG::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [
+    {
+      "old_id": "americanfilament_pctg_americanfilamentpctgarmygreen_1000_175_p",
+      "target_id": "americanfilament_pctg_pctgarmygreen_1000_175_p",
+      "field": "codes",
+      "values": [
+        "PCTG_1KG_ARMYG"
+      ]
+    },
+    {
+      "old_id": "americanfilament_pctg_americanfilamentpctgobsidianblack_1000_175_p",
+      "target_id": "americanfilament_pctg_pctgobsidianblack_1000_175_p",
+      "field": "codes",
+      "values": [
+        "PCTG_1KG_BLACK"
+      ]
+    },
+    {
+      "old_id": "americanfilament_pctg_americanfilamentpctggunmetalgray_1000_175_p",
+      "target_id": "americanfilament_pctg_pctggunmetalgray_1000_175_p",
+      "field": "codes",
+      "values": [
+        "PCTG_1KG_GUNMETAL"
+      ]
+    },
+    {
+      "old_id": "americanfilament_pctg_americanfilamentpctgblizzardwhite_1000_175_p",
+      "target_id": "americanfilament_pctg_pctgblizzardwhite_1000_175_p",
+      "field": "codes",
+      "values": [
+        "PCTG_1KG_WHITE"
+      ]
+    }
+  ],
+  "printing_default_flags": [
+    {
+      "id": "americanfilament_pctg_pctgarmygreen_1000_175_p",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    },
+    {
+      "id": "americanfilament_pctg_pctgobsidianblack_1000_175_p",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    },
+    {
+      "id": "americanfilament_pctg_pctggunmetalgray_1000_175_p",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    },
+    {
+      "id": "americanfilament_pctg_pctgblizzardwhite_1000_175_p",
+      "resolution": "Current exact family evidence reviewed; FILATECH Hyper density/layer-specific bed and ERYONE TPU internal page conflict/density remain unresolved. Existing historical weight availability/SKU fanout not asserted. ERYONE B0107015 not copied to500g; official1kg binding remains present on surviving1000g record."
+    }
+  ],
+  "hard_stop_groups": [],
+  "scope": "Phase B whole-catalog audit; current exact-line official name resolves former Rule4 Cartesian survivor, no availability additions",
+  "summary": {
+    "groups": 4,
+    "approved_groups": 4,
+    "retired": 4,
+    "deferred": 0,
+    "before_count": 51596,
+    "after_count": 51592,
+    "metadata_fields_changed": 12,
+    "code_transfers": 4
+  },
+  "current_evidence": [
+    {
+      "url": null,
+      "printing": "PCTG density1.27/nozzle240–270/bed70–100"
+    },
+    {
+      "url": "https://americanfilament.us/products/army-green-af-1-75mm-pctg-filament-made-in-the-usa.json",
+      "one_kg_code": "PCTG_1KG_ARMYG",
+      "four_kg_code": "PCTG_4KG_ARMYG"
+    },
+    {
+      "url": "https://americanfilament.us/products/obsidian-black-af-1-75mm-pctg-filament-made-in-the-usa.json",
+      "one_kg_code": "PCTG_1KG_BLACK",
+      "four_kg_code": "PCTG_4KG_BLACK"
+    },
+    {
+      "url": "https://americanfilament.us/products/gunmetal-gray-af-1-75mm-pctg-filament-made-in-the-usa.json",
+      "one_kg_code": "PCTG_1KG_GUNMETAL",
+      "four_kg_code": "PCTG_4KG_GUNMETAL"
+    },
+    {
+      "url": "https://americanfilament.us/products/blizzard-white-af-1-75mm-pctg-filament-made-in-the-usa.json",
+      "one_kg_code": "PCTG_1KG_WHITE",
+      "four_kg_code": "PCTG_4KG_WHITE"
+    }
+  ],
+  "prior_evidence_audit": "docs\\audits\\2026-10-03-americanfilament-duplicate-review.json"
+}
