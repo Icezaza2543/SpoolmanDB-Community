@@ -7975,38 +7975,6 @@
       ],
       "colors": [
         {
-          "name": "Texas Tea Black with Gold Glitter",
-          "hex": "000000"
-        }
-      ],
-      "extruder_temp_range": [
-        190,
-        230
-      ],
-      "bed_temp_range": [
-        50,
-        70
-      ],
-      "country_of_origin": "US",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
-    },
-    {
-      "name": "PLA {color_name}",
-      "material": "PLA",
-      "density": 1.24,
-      "weights": [
-        {
-          "weight": 500,
-          "spool_type": "cardboard",
-          "spool_weight": 130
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
           "name": "The Original Nebula Multicolor HT",
           "hex": "0353BA"
         }
@@ -10968,38 +10936,6 @@
       ],
       "colors": [
         {
-          "name": "Texas Tea Black with Gold Glitter",
-          "hex": "000000"
-        }
-      ],
-      "extruder_temp_range": [
-        190,
-        230
-      ],
-      "bed_temp_range": [
-        50,
-        70
-      ],
-      "country_of_origin": "US",
-      "tds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf?1759",
-      "sds_url": "https://cdn.shopify.com/s/files/1/0717/9095/files/PLA_Colors.pdf?v=1773099686"
-    },
-    {
-      "name": "PLA {color_name}",
-      "material": "PLA",
-      "density": 1.24,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "cardboard",
-          "spool_weight": 84
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
           "name": "The Original Nebula Multicolor HT",
           "hex": "0353BA"
         }
@@ -11785,7 +11721,62 @@
           "weight": 500,
           "spool_type": "cardboard",
           "spool_weight": 130
-        },
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "010204"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "TPE {color_name}",
+      "material": "TPE",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 500,
+          "spool_type": "cardboard",
+          "spool_weight": 130
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
+        {
+          "name": "Clear",
+          "hex": "FFFFFF"
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "TPE {color_name}",
+      "material": "TPE",
+      "density": 1.2,
+      "weights": [
         {
           "weight": 1000,
           "spool_type": "cardboard",
@@ -11799,11 +11790,33 @@
         {
           "name": "Black",
           "hex": "010204"
-        },
+        }
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "country_of_origin": "US"
+    },
+    {
+      "name": "TPE {color_name}",
+      "material": "TPE",
+      "density": 1.2,
+      "weights": [
         {
-          "name": "Black Flexible",
-          "hex": "000000"
-        },
+          "weight": 1000,
+          "spool_type": "cardboard",
+          "spool_weight": 84
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "colors": [
         {
           "name": "Clear",
           "hex": "FFFFFF"
