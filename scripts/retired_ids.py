@@ -79,6 +79,13 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
     historical_ids = set(base_manifest.values())
     restored = set()
     audits = audits or {}
+    trusted_keys = set(base_manifest) | set(current_manifest) | {
+        entry["retired_key"] for entry in retired.values()
+    }
+    for identity, binding in audits.items():
+        if (isinstance(binding, dict) and "parts" in binding and
+                (not isinstance(binding.get("anchor_key"), str) or binding["anchor_key"] not in trusted_keys)):
+            errors.append(f"registry {identity}: qualifier anchor must be an exact trusted identity key")
     for old_id, old_entry in previous.items():
         if old_id not in retired:
             exact_key = old_entry["retired_key"]
