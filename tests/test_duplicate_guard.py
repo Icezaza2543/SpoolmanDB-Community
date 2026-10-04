@@ -38,25 +38,25 @@ def guard(root, base=None):
     return importlib.import_module("scripts.duplicate_guard").check_duplicate_candidates(root, base)
 
 
-def test_new_group_fails_but_existing_group_warns(git_catalog):
+def test_new_and_existing_groups_both_fail(git_catalog):
     root, base, git = git_catalog
     add_duplicate(root)
     errors, warnings = guard(root, base)
     assert len(errors) == 1
-    assert "NEW" in errors[0]
+    assert "Unresolved" in errors[0]
     assert warnings == []
     git("add", ".")
     git("commit", "-m", "existing candidate fixture")
     errors, warnings = guard(root, git("rev-parse", "HEAD"))
-    assert errors == []
-    assert len(warnings) == 1
+    assert len(errors) == 1
+    assert warnings == []
 
 
-def test_head_only_candidates_are_warnings(git_catalog):
+def test_head_only_candidates_are_errors(git_catalog):
     root, _, _ = git_catalog
     add_duplicate(root)
-    assert guard(root)[0] == []
-    assert len(guard(root)[1]) == 1
+    assert len(guard(root)[0]) == 1
+    assert guard(root)[1] == []
 
 
 def test_guard_uses_existing_compiler_source_json_semantics(git_catalog):
