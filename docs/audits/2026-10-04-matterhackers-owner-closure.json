@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "matterhackers",
+  "base_sha": "8328f7fee23584389e241cda4c02994ed06f7f95",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "7b9bfdf7bba71b3e78cd778cbcbc0bea97ba50097a2b78fb05d08396ee97ccaa",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-b8f73bd251b848e33c161f1d6b40855c4e0c0215183388fe73a7acc0c9152f19": {
+      "approved": true,
+      "survivor": "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p",
+      "retire": [
+        "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-matterhackers-owner-closure.json",
+      "source": "8328f7fee23584389e241cda4c02994ed06f7f95"
+    }
+  },
+  "bindings": {
+    "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p": {
+      "key": "matterhackers.json::MatterHackers::TPU {color_name}::TPU Gray Series (Thermoplastic Polyurethane)::TPU::1000::1.75::plastic::False",
+      "source_color": "Gray Series (Thermoplastic Polyurethane)",
+      "line": "TPU",
+      "color": "gray series thermoplastic polyurethane"
+    },
+    "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p": {
+      "key": "matterhackers.json::MatterHackers::TPU {color_name}::TPU Grey Series (Thermoplastic Polyurethane)::TPU::1000::1.75::plastic::False",
+      "source_color": "Grey Series (Thermoplastic Polyurethane)",
+      "line": "TPU",
+      "color": "gray series thermoplastic polyurethane"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-b8f73bd251b848e33c161f1d6b40855c4e0c0215183388fe73a7acc0c9152f19",
+      "ids": [
+        "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p",
+        "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p",
+          "manufacturer": "MatterHackers",
+          "name": "TPU Gray Series (Thermoplastic Polyurethane)",
+          "material": "TPU",
+          "density": 1.21,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "B6B9BD",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "matterhackers.json::MatterHackers::TPU {color_name}::TPU Gray Series (Thermoplastic Polyurethane)::TPU::1000::1.75::plastic::False",
+          "template": "TPU {color_name}",
+          "source_color": "Gray Series (Thermoplastic Polyurethane)",
+          "source_line": "TPU",
+          "source_file": "matterhackers.json",
+          "source_definition": {
+            "source_file": "matterhackers.json",
+            "definition_index": 21,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        },
+        {
+          "id": "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p",
+          "manufacturer": "MatterHackers",
+          "name": "TPU Grey Series (Thermoplastic Polyurethane)",
+          "material": "TPU",
+          "density": 1.21,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "B8BAB8",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "matterhackers.json::MatterHackers::TPU {color_name}::TPU Grey Series (Thermoplastic Polyurethane)::TPU::1000::1.75::plastic::False",
+          "template": "TPU {color_name}",
+          "source_color": "Grey Series (Thermoplastic Polyurethane)",
+          "source_line": "TPU",
+          "source_file": "matterhackers.json",
+          "source_definition": {
+            "source_file": "matterhackers.json",
+            "definition_index": 21,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p": "B6B9BD",
+          "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p": "B8BAB8"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p",
+      "retire": [
+        "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p"
+        ],
+        "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p": [
+          3,
+          "b216760ad83803a286fe948a2c5c4c0ce2b40496"
+        ],
+        "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p": [
+          3,
+          "b216760ad83803a286fe948a2c5c4c0ce2b40496"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "matterhackers_tpu_tpugreyseries(thermoplasticpolyurethane)_1000_175_p": {
+      "replaced_by": "matterhackers_tpu_tpugrayseries(thermoplasticpolyurethane)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-matterhackers-owner-closure.json",
+      "source": "8328f7fee23584389e241cda4c02994ed06f7f95",
+      "retired_key": "matterhackers.json::MatterHackers::TPU {color_name}::TPU Grey Series (Thermoplastic Polyurethane)::TPU::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51420,
+    "after_count": 51419,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
