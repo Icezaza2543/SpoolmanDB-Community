@@ -1,0 +1,1210 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "devildesign",
+  "base_sha": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "0cd33ef60644e7678da43e290dd02522e3382083f1a6365ccdecdf12f13729d2",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-b493c970cd801e4c46753f998bc7607ea27ea387f249d69bde9943fd14bf7c68": {
+      "approved": true,
+      "survivor": "devildesign_petg_galaxyblack_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetgblack_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11"
+    },
+    "dup-f53e5c6f2a44750c07a09fb4cfe0b47e6580816da3dddc7e335f0db322f056f3": {
+      "approved": true,
+      "survivor": "devildesign_petg_galaxygreen_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetggreen_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11"
+    },
+    "dup-49798db85e848d8ba5062a0d6cb9d67e89de8937d313147248c138877906ff36": {
+      "approved": true,
+      "survivor": "devildesign_petg_galaxyred_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetgred_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11"
+    },
+    "dup-ec0e804e21c0dbb4534a9db1f6b38930a638478658f2d2a399badee24ce15a02": {
+      "approved": true,
+      "survivor": "devildesign_petg_galaxysuperblue_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetgsuperblue_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11"
+    },
+    "dup-d97d3ad7c18c133abb53443428d13fd1efb1b9810da0b74560dced3e64772754": {
+      "approved": true,
+      "survivor": "devildesign_petg_galaxyviolet_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetgviolet_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11"
+    }
+  },
+  "bindings": {
+    "devildesign_petg_galaxyblack_1000_175_p": {
+      "key": "devildesign.json::Devil Design::{color_name}::Galaxy Black::PETG::1000::1.75::plastic::False",
+      "source_color": "Galaxy Black",
+      "line": "galaxy",
+      "color": "black",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG BLACK::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "BLACK"
+    },
+    "devildesign_petg_galaxypetgblack_1000_175_p": {
+      "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG BLACK::PETG::1000::1.75::plastic::False",
+      "source_color": "BLACK",
+      "line": "galaxy",
+      "color": "black",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::{color_name}::Galaxy Black::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "Galaxy Black"
+    },
+    "devildesign_petg_galaxygreen_1000_175_p": {
+      "key": "devildesign.json::Devil Design::{color_name}::Galaxy Green::PETG::1000::1.75::plastic::False",
+      "source_color": "Galaxy Green",
+      "line": "galaxy",
+      "color": "green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG GREEN::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "GREEN"
+    },
+    "devildesign_petg_galaxypetggreen_1000_175_p": {
+      "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG GREEN::PETG::1000::1.75::plastic::False",
+      "source_color": "GREEN",
+      "line": "galaxy",
+      "color": "green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::{color_name}::Galaxy Green::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "Galaxy Green"
+    },
+    "devildesign_petg_galaxypetgred_1000_175_p": {
+      "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG RED::PETG::1000::1.75::plastic::False",
+      "source_color": "RED",
+      "line": "galaxy",
+      "color": "red",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::{color_name}::Galaxy Red::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "Galaxy Red"
+    },
+    "devildesign_petg_galaxyred_1000_175_p": {
+      "key": "devildesign.json::Devil Design::{color_name}::Galaxy Red::PETG::1000::1.75::plastic::False",
+      "source_color": "Galaxy Red",
+      "line": "galaxy",
+      "color": "red",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG RED::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "RED"
+    },
+    "devildesign_petg_galaxypetgsuperblue_1000_175_p": {
+      "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG SUPER BLUE::PETG::1000::1.75::plastic::False",
+      "source_color": "SUPER BLUE",
+      "line": "galaxy",
+      "color": "super blue",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "super"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::{color_name}::Galaxy Super Blue::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "Galaxy Super Blue"
+    },
+    "devildesign_petg_galaxysuperblue_1000_175_p": {
+      "key": "devildesign.json::Devil Design::{color_name}::Galaxy Super Blue::PETG::1000::1.75::plastic::False",
+      "source_color": "Galaxy Super Blue",
+      "line": "galaxy",
+      "color": "super blue",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "super"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG SUPER BLUE::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "SUPER BLUE"
+    },
+    "devildesign_petg_galaxypetgviolet_1000_175_p": {
+      "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG VIOLET::PETG::1000::1.75::plastic::False",
+      "source_color": "VIOLET",
+      "line": "galaxy",
+      "color": "violet",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "violet"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::{color_name}::Galaxy Violet::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "Galaxy Violet"
+    },
+    "devildesign_petg_galaxyviolet_1000_175_p": {
+      "key": "devildesign.json::Devil Design::{color_name}::Galaxy Violet::PETG::1000::1.75::plastic::False",
+      "source_color": "Galaxy Violet",
+      "line": "galaxy",
+      "color": "violet",
+      "parts": [
+        {
+          "role": "line",
+          "token": "galaxy"
+        },
+        {
+          "role": "color",
+          "token": "violet"
+        }
+      ],
+      "anchor_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG VIOLET::PETG::1000::1.75::plastic::False",
+      "anchor_source_color": "VIOLET"
+    }
+  },
+  "metadata": [
+    {
+      "id": "devildesign_petg_galaxyblack_1000_175_p",
+      "values": {
+        "extruder_temp": 235,
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp": 75,
+        "bed_temp_range": [
+          70,
+          80
+        ]
+      },
+      "source": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+      "lot": "current exact product-line official printing parameters; Galaxy listed in card",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "devildesign_petg_galaxygreen_1000_175_p",
+      "values": {
+        "extruder_temp": 235,
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp": 75,
+        "bed_temp_range": [
+          70,
+          80
+        ]
+      },
+      "source": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+      "lot": "current exact product-line official printing parameters; Galaxy listed in card",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "devildesign_petg_galaxyred_1000_175_p",
+      "values": {
+        "extruder_temp": 235,
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp": 75,
+        "bed_temp_range": [
+          70,
+          80
+        ]
+      },
+      "source": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+      "lot": "current exact product-line official printing parameters; Galaxy listed in card",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "devildesign_petg_galaxysuperblue_1000_175_p",
+      "values": {
+        "extruder_temp": 235,
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp": 75,
+        "bed_temp_range": [
+          70,
+          80
+        ]
+      },
+      "source": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+      "lot": "current exact product-line official printing parameters; Galaxy listed in card",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "devildesign_petg_galaxyviolet_1000_175_p",
+      "values": {
+        "extruder_temp": 235,
+        "extruder_temp_range": [
+          220,
+          250
+        ],
+        "bed_temp": 75,
+        "bed_temp_range": [
+          70,
+          80
+        ]
+      },
+      "source": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+      "lot": "current exact product-line official printing parameters; Galaxy listed in card",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-b493c970cd801e4c46753f998bc7607ea27ea387f249d69bde9943fd14bf7c68",
+      "ids": [
+        "devildesign_petg_galaxyblack_1000_175_p",
+        "devildesign_petg_galaxypetgblack_1000_175_p"
+      ],
+      "proposed_survivor": "devildesign_petg_galaxyblack_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "devildesign_petg_galaxypetgblack_1000_175_p": "devildesign_petg_galaxyblack_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "devildesign_petg_galaxyblack_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy Black",
+          "material": "PETG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": 260,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "333333",
+          "color_hexes": null,
+          "extruder_temp": 230,
+          "extruder_temp_range": null,
+          "bed_temp": 80,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+          "key": "devildesign.json::Devil Design::{color_name}::Galaxy Black::PETG::1000::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "Galaxy Black",
+          "source_line": "",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 44,
+            "compiled_records": 44
+          },
+          "upstream": true
+        },
+        {
+          "id": "devildesign_petg_galaxypetgblack_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy PETG BLACK",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "292824",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG BLACK::PETG::1000::1.75::plastic::False",
+          "template": "Galaxy PETG {color_name}",
+          "source_color": "BLACK",
+          "source_line": "Galaxy PETG",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 21,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "devildesign_petg_galaxyblack_1000_175_p": 1.23,
+          "devildesign_petg_galaxypetgblack_1000_175_p": 1.27
+        },
+        "spool_weight": {
+          "devildesign_petg_galaxyblack_1000_175_p": 260,
+          "devildesign_petg_galaxypetgblack_1000_175_p": 250
+        },
+        "color_hex": {
+          "devildesign_petg_galaxyblack_1000_175_p": "333333",
+          "devildesign_petg_galaxypetgblack_1000_175_p": "292824"
+        },
+        "extruder_temp": {
+          "devildesign_petg_galaxyblack_1000_175_p": 230,
+          "devildesign_petg_galaxypetgblack_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "devildesign_petg_galaxyblack_1000_175_p": null,
+          "devildesign_petg_galaxypetgblack_1000_175_p": [
+            220,
+            250
+          ]
+        },
+        "bed_temp": {
+          "devildesign_petg_galaxyblack_1000_175_p": 80,
+          "devildesign_petg_galaxypetgblack_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "devildesign_petg_galaxyblack_1000_175_p": null,
+          "devildesign_petg_galaxypetgblack_1000_175_p": [
+            70,
+            90
+          ]
+        },
+        "tds_url": {
+          "devildesign_petg_galaxyblack_1000_175_p": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+          "devildesign_petg_galaxypetgblack_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "D031",
+      "prior_audit": "docs/audits/2026-10-03-devildesign-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "devildesign_petg_galaxyblack_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetgblack_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-f53e5c6f2a44750c07a09fb4cfe0b47e6580816da3dddc7e335f0db322f056f3",
+      "ids": [
+        "devildesign_petg_galaxygreen_1000_175_p",
+        "devildesign_petg_galaxypetggreen_1000_175_p"
+      ],
+      "proposed_survivor": "devildesign_petg_galaxygreen_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "devildesign_petg_galaxypetggreen_1000_175_p": "devildesign_petg_galaxygreen_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "devildesign_petg_galaxygreen_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy Green",
+          "material": "PETG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": 260,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "114232",
+          "color_hexes": null,
+          "extruder_temp": 230,
+          "extruder_temp_range": null,
+          "bed_temp": 80,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+          "key": "devildesign.json::Devil Design::{color_name}::Galaxy Green::PETG::1000::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "Galaxy Green",
+          "source_line": "",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 44,
+            "compiled_records": 44
+          },
+          "upstream": true
+        },
+        {
+          "id": "devildesign_petg_galaxypetggreen_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy PETG GREEN",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "314A31",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG GREEN::PETG::1000::1.75::plastic::False",
+          "template": "Galaxy PETG {color_name}",
+          "source_color": "GREEN",
+          "source_line": "Galaxy PETG",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 21,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "devildesign_petg_galaxygreen_1000_175_p": 1.23,
+          "devildesign_petg_galaxypetggreen_1000_175_p": 1.27
+        },
+        "spool_weight": {
+          "devildesign_petg_galaxygreen_1000_175_p": 260,
+          "devildesign_petg_galaxypetggreen_1000_175_p": 250
+        },
+        "color_hex": {
+          "devildesign_petg_galaxygreen_1000_175_p": "114232",
+          "devildesign_petg_galaxypetggreen_1000_175_p": "314A31"
+        },
+        "extruder_temp": {
+          "devildesign_petg_galaxygreen_1000_175_p": 230,
+          "devildesign_petg_galaxypetggreen_1000_175_p": null
+        },
+        "extruder_temp_range": {
+          "devildesign_petg_galaxygreen_1000_175_p": null,
+          "devildesign_petg_galaxypetggreen_1000_175_p": [
+            220,
+            250
+          ]
+        },
+        "bed_temp": {
+          "devildesign_petg_galaxygreen_1000_175_p": 80,
+          "devildesign_petg_galaxypetggreen_1000_175_p": null
+        },
+        "bed_temp_range": {
+          "devildesign_petg_galaxygreen_1000_175_p": null,
+          "devildesign_petg_galaxypetggreen_1000_175_p": [
+            70,
+            90
+          ]
+        },
+        "tds_url": {
+          "devildesign_petg_galaxygreen_1000_175_p": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+          "devildesign_petg_galaxypetggreen_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "D032",
+      "prior_audit": "docs/audits/2026-10-03-devildesign-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "devildesign_petg_galaxygreen_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetggreen_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-49798db85e848d8ba5062a0d6cb9d67e89de8937d313147248c138877906ff36",
+      "ids": [
+        "devildesign_petg_galaxypetgred_1000_175_p",
+        "devildesign_petg_galaxyred_1000_175_p"
+      ],
+      "proposed_survivor": "devildesign_petg_galaxyred_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "devildesign_petg_galaxypetgred_1000_175_p": "devildesign_petg_galaxyred_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "devildesign_petg_galaxypetgred_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy PETG RED",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "AC1A17",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG RED::PETG::1000::1.75::plastic::False",
+          "template": "Galaxy PETG {color_name}",
+          "source_color": "RED",
+          "source_line": "Galaxy PETG",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 21,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "devildesign_petg_galaxyred_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy Red",
+          "material": "PETG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": 260,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9b0809",
+          "color_hexes": null,
+          "extruder_temp": 230,
+          "extruder_temp_range": null,
+          "bed_temp": 80,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+          "key": "devildesign.json::Devil Design::{color_name}::Galaxy Red::PETG::1000::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "Galaxy Red",
+          "source_line": "",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 44,
+            "compiled_records": 44
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "devildesign_petg_galaxypetgred_1000_175_p": 1.27,
+          "devildesign_petg_galaxyred_1000_175_p": 1.23
+        },
+        "spool_weight": {
+          "devildesign_petg_galaxypetgred_1000_175_p": 250,
+          "devildesign_petg_galaxyred_1000_175_p": 260
+        },
+        "color_hex": {
+          "devildesign_petg_galaxypetgred_1000_175_p": "AC1A17",
+          "devildesign_petg_galaxyred_1000_175_p": "9b0809"
+        },
+        "extruder_temp": {
+          "devildesign_petg_galaxypetgred_1000_175_p": null,
+          "devildesign_petg_galaxyred_1000_175_p": 230
+        },
+        "extruder_temp_range": {
+          "devildesign_petg_galaxypetgred_1000_175_p": [
+            220,
+            250
+          ],
+          "devildesign_petg_galaxyred_1000_175_p": null
+        },
+        "bed_temp": {
+          "devildesign_petg_galaxypetgred_1000_175_p": null,
+          "devildesign_petg_galaxyred_1000_175_p": 80
+        },
+        "bed_temp_range": {
+          "devildesign_petg_galaxypetgred_1000_175_p": [
+            70,
+            90
+          ],
+          "devildesign_petg_galaxyred_1000_175_p": null
+        },
+        "tds_url": {
+          "devildesign_petg_galaxypetgred_1000_175_p": null,
+          "devildesign_petg_galaxyred_1000_175_p": "https://devildesign.com/download/PET-G_-_product_card.pdf"
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "D033",
+      "prior_audit": "docs/audits/2026-10-03-devildesign-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "devildesign_petg_galaxyred_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetgred_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-ec0e804e21c0dbb4534a9db1f6b38930a638478658f2d2a399badee24ce15a02",
+      "ids": [
+        "devildesign_petg_galaxypetgsuperblue_1000_175_p",
+        "devildesign_petg_galaxysuperblue_1000_175_p"
+      ],
+      "proposed_survivor": "devildesign_petg_galaxysuperblue_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "devildesign_petg_galaxypetgsuperblue_1000_175_p": "devildesign_petg_galaxysuperblue_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "devildesign_petg_galaxypetgsuperblue_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy PETG SUPER BLUE",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0E21AE",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG SUPER BLUE::PETG::1000::1.75::plastic::False",
+          "template": "Galaxy PETG {color_name}",
+          "source_color": "SUPER BLUE",
+          "source_line": "Galaxy PETG",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 21,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "devildesign_petg_galaxysuperblue_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy Super Blue",
+          "material": "PETG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": 260,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "2f3b7f",
+          "color_hexes": null,
+          "extruder_temp": 230,
+          "extruder_temp_range": null,
+          "bed_temp": 80,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+          "key": "devildesign.json::Devil Design::{color_name}::Galaxy Super Blue::PETG::1000::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "Galaxy Super Blue",
+          "source_line": "",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 44,
+            "compiled_records": 44
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "devildesign_petg_galaxypetgsuperblue_1000_175_p": 1.27,
+          "devildesign_petg_galaxysuperblue_1000_175_p": 1.23
+        },
+        "spool_weight": {
+          "devildesign_petg_galaxypetgsuperblue_1000_175_p": 250,
+          "devildesign_petg_galaxysuperblue_1000_175_p": 260
+        },
+        "color_hex": {
+          "devildesign_petg_galaxypetgsuperblue_1000_175_p": "0E21AE",
+          "devildesign_petg_galaxysuperblue_1000_175_p": "2f3b7f"
+        },
+        "extruder_temp": {
+          "devildesign_petg_galaxypetgsuperblue_1000_175_p": null,
+          "devildesign_petg_galaxysuperblue_1000_175_p": 230
+        },
+        "extruder_temp_range": {
+          "devildesign_petg_galaxypetgsuperblue_1000_175_p": [
+            220,
+            250
+          ],
+          "devildesign_petg_galaxysuperblue_1000_175_p": null
+        },
+        "bed_temp": {
+          "devildesign_petg_galaxypetgsuperblue_1000_175_p": null,
+          "devildesign_petg_galaxysuperblue_1000_175_p": 80
+        },
+        "bed_temp_range": {
+          "devildesign_petg_galaxypetgsuperblue_1000_175_p": [
+            70,
+            90
+          ],
+          "devildesign_petg_galaxysuperblue_1000_175_p": null
+        },
+        "tds_url": {
+          "devildesign_petg_galaxypetgsuperblue_1000_175_p": null,
+          "devildesign_petg_galaxysuperblue_1000_175_p": "https://devildesign.com/download/PET-G_-_product_card.pdf"
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "D034",
+      "prior_audit": "docs/audits/2026-10-03-devildesign-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "devildesign_petg_galaxysuperblue_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetgsuperblue_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-d97d3ad7c18c133abb53443428d13fd1efb1b9810da0b74560dced3e64772754",
+      "ids": [
+        "devildesign_petg_galaxypetgviolet_1000_175_p",
+        "devildesign_petg_galaxyviolet_1000_175_p"
+      ],
+      "proposed_survivor": "devildesign_petg_galaxyviolet_1000_175_p",
+      "survivor_rule": 1,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "devildesign_petg_galaxypetgviolet_1000_175_p": "devildesign_petg_galaxyviolet_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "devildesign_petg_galaxypetgviolet_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy PETG VIOLET",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "2C3294",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG VIOLET::PETG::1000::1.75::plastic::False",
+          "template": "Galaxy PETG {color_name}",
+          "source_color": "VIOLET",
+          "source_line": "Galaxy PETG",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 21,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        },
+        {
+          "id": "devildesign_petg_galaxyviolet_1000_175_p",
+          "manufacturer": "Devil Design",
+          "name": "Galaxy Violet",
+          "material": "PETG",
+          "density": 1.23,
+          "weight": 1000,
+          "spool_weight": 260,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "4b4370",
+          "color_hexes": null,
+          "extruder_temp": 230,
+          "extruder_temp_range": null,
+          "bed_temp": 80,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+          "key": "devildesign.json::Devil Design::{color_name}::Galaxy Violet::PETG::1000::1.75::plastic::False",
+          "template": "{color_name}",
+          "source_color": "Galaxy Violet",
+          "source_line": "",
+          "source_file": "devildesign.json",
+          "source_definition": {
+            "source_file": "devildesign.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 44,
+            "compiled_records": 44
+          },
+          "upstream": true
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "devildesign_petg_galaxypetgviolet_1000_175_p": 1.27,
+          "devildesign_petg_galaxyviolet_1000_175_p": 1.23
+        },
+        "spool_weight": {
+          "devildesign_petg_galaxypetgviolet_1000_175_p": 250,
+          "devildesign_petg_galaxyviolet_1000_175_p": 260
+        },
+        "color_hex": {
+          "devildesign_petg_galaxypetgviolet_1000_175_p": "2C3294",
+          "devildesign_petg_galaxyviolet_1000_175_p": "4b4370"
+        },
+        "extruder_temp": {
+          "devildesign_petg_galaxypetgviolet_1000_175_p": null,
+          "devildesign_petg_galaxyviolet_1000_175_p": 230
+        },
+        "extruder_temp_range": {
+          "devildesign_petg_galaxypetgviolet_1000_175_p": [
+            220,
+            250
+          ],
+          "devildesign_petg_galaxyviolet_1000_175_p": null
+        },
+        "bed_temp": {
+          "devildesign_petg_galaxypetgviolet_1000_175_p": null,
+          "devildesign_petg_galaxyviolet_1000_175_p": 80
+        },
+        "bed_temp_range": {
+          "devildesign_petg_galaxypetgviolet_1000_175_p": [
+            70,
+            90
+          ],
+          "devildesign_petg_galaxyviolet_1000_175_p": null
+        },
+        "tds_url": {
+          "devildesign_petg_galaxypetgviolet_1000_175_p": null,
+          "devildesign_petg_galaxyviolet_1000_175_p": "https://devildesign.com/download/PET-G_-_product_card.pdf"
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "D035",
+      "prior_audit": "docs/audits/2026-10-03-devildesign-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "devildesign_petg_galaxyviolet_1000_175_p",
+      "retire": [
+        "devildesign_petg_galaxypetgviolet_1000_175_p"
+      ],
+      "decision_rule": "Rule 1",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "devildesign_petg_galaxypetgblack_1000_175_p": {
+      "replaced_by": "devildesign_petg_galaxyblack_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11",
+      "retired_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG BLACK::PETG::1000::1.75::plastic::False"
+    },
+    "devildesign_petg_galaxypetggreen_1000_175_p": {
+      "replaced_by": "devildesign_petg_galaxygreen_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11",
+      "retired_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG GREEN::PETG::1000::1.75::plastic::False"
+    },
+    "devildesign_petg_galaxypetgred_1000_175_p": {
+      "replaced_by": "devildesign_petg_galaxyred_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11",
+      "retired_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG RED::PETG::1000::1.75::plastic::False"
+    },
+    "devildesign_petg_galaxypetgsuperblue_1000_175_p": {
+      "replaced_by": "devildesign_petg_galaxysuperblue_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11",
+      "retired_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG SUPER BLUE::PETG::1000::1.75::plastic::False"
+    },
+    "devildesign_petg_galaxypetgviolet_1000_175_p": {
+      "replaced_by": "devildesign_petg_galaxyviolet_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-devildesign-line-color-review.json",
+      "source": "2695fe9f151fe7ee07f1373f2e09b2271fab6e11",
+      "retired_key": "devildesign.json::Devil Design::Galaxy PETG {color_name}::Galaxy PETG VIOLET::PETG::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 5,
+    "approved_groups": 5,
+    "retired": 5,
+    "deferred": 0,
+    "before_count": 51693,
+    "after_count": 51688,
+    "metadata_fields_changed": 20,
+    "code_transfers": 0
+  },
+  "current_evidence": [
+    {
+      "url": "https://devildesign.com/download/PET-G_-_product_card.pdf",
+      "printing": "220-250 / 70-80 C, density 1.23; Galaxy colors explicitly included"
+    }
+  ],
+  "prior_evidence_audit": "docs/audits/2026-10-03-devildesign-duplicate-review.json"
+}
