@@ -1,0 +1,1757 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "filatech",
+  "base_sha": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "be9c03da6b3d77199652e0b566ab6745eb48bdc76c3a0c1ffcae249cfe4a9920",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-5b9afff239a6b3407013723a5e5d1d13a8f01cae8152544c84faececefc0f30f": {
+      "approved": true,
+      "survivor": "filatech_pla_plagray_1000_175_p",
+      "retire": [
+        "filatech_pla_plagrey_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a"
+    },
+    "dup-5bd771be0ff91ae7264ea796f6c516f4d707b45f4b153ee4a46dbc53b1265693": {
+      "approved": true,
+      "survivor": "filatech_abs_absdarkgreen(luminous)_1000_175_p",
+      "retire": [
+        "filatech_abs_absdarkgreenluminous_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a"
+    },
+    "dup-634ea9765d5f9567bb812e6558071365a0fc6043a645cf3d4d7f75a0a9dc433f": {
+      "approved": true,
+      "survivor": "filatech_abs_absdarkyellow(luminous)_1000_175_p",
+      "retire": [
+        "filatech_abs_absdarkyellowluminous_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a"
+    },
+    "dup-6c56df589bf051654df05f13b0d3e8e14b33f9c085a32f10cd10bef427f48d3f": {
+      "approved": true,
+      "survivor": "filatech_abs_absdarkblue(luminous)_500_175_p",
+      "retire": [
+        "filatech_abs_absdarkblueluminous_500_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a"
+    },
+    "dup-7086b82ad1ee36839787d3e062e55c184e577a6f2ba1b30528d0fc9195d5c5dd": {
+      "approved": true,
+      "survivor": "filatech_pla_plagray_6000_175_p",
+      "retire": [
+        "filatech_pla_plagrey_6000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a"
+    },
+    "dup-712f04936664f7ee38212fe8a5d35796b69e4d12af8b6c34bddc9831782ca725": {
+      "approved": true,
+      "survivor": "filatech_abs_absdarkblue(luminous)_1000_175_p",
+      "retire": [
+        "filatech_abs_absdarkblueluminous_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a"
+    },
+    "dup-d68408ed2ead82cc133675a2956ed4f5b8a895932f480b4b2ada703d937a55f9": {
+      "approved": true,
+      "survivor": "filatech_abs_absdarkgreen(luminous)_500_175_p",
+      "retire": [
+        "filatech_abs_absdarkgreenluminous_500_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a"
+    },
+    "dup-d95756313225bf388b2a834b404bcb8ab3d2fe0a4eb661bbe9b2a0ce22035e24": {
+      "approved": true,
+      "survivor": "filatech_abs_absdarkyellow(luminous)_500_175_p",
+      "retire": [
+        "filatech_abs_absdarkyellowluminous_500_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a"
+    }
+  },
+  "bindings": {
+    "filatech_pla_plagray_1000_175_p": {
+      "key": "filatech.json::Filatech::PLA {color_name}::PLA Gray::PLA::1000::1.75::plastic::False",
+      "source_color": "Gray",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "filatech_pla_plagrey_1000_175_p": {
+      "key": "filatech.json::Filatech::PLA {color_name}::PLA Grey::PLA::1000::1.75::plastic::False",
+      "source_color": "Grey",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "filatech_abs_absdarkgreen(luminous)_1000_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green (Luminous)::ABS::1000::1.75::plastic::False",
+      "source_color": "Dark Green (Luminous)",
+      "line": "ABS",
+      "color": "dark green luminous"
+    },
+    "filatech_abs_absdarkgreenluminous_1000_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green Luminous::ABS::1000::1.75::plastic::False",
+      "source_color": "Dark Green Luminous",
+      "line": "ABS",
+      "color": "dark green luminous"
+    },
+    "filatech_abs_absdarkyellow(luminous)_1000_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow (Luminous)::ABS::1000::1.75::plastic::False",
+      "source_color": "Dark Yellow (Luminous)",
+      "line": "ABS",
+      "color": "dark yellow luminous"
+    },
+    "filatech_abs_absdarkyellowluminous_1000_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow Luminous::ABS::1000::1.75::plastic::False",
+      "source_color": "Dark Yellow Luminous",
+      "line": "ABS",
+      "color": "dark yellow luminous"
+    },
+    "filatech_abs_absdarkblue(luminous)_500_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue (Luminous)::ABS::500::1.75::plastic::False",
+      "source_color": "Dark Blue (Luminous)",
+      "line": "ABS",
+      "color": "dark blue luminous"
+    },
+    "filatech_abs_absdarkblueluminous_500_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue Luminous::ABS::500::1.75::plastic::False",
+      "source_color": "Dark Blue Luminous",
+      "line": "ABS",
+      "color": "dark blue luminous"
+    },
+    "filatech_pla_plagray_6000_175_p": {
+      "key": "filatech.json::Filatech::PLA {color_name}::PLA Gray::PLA::6000::1.75::plastic::False",
+      "source_color": "Gray",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "filatech_pla_plagrey_6000_175_p": {
+      "key": "filatech.json::Filatech::PLA {color_name}::PLA Grey::PLA::6000::1.75::plastic::False",
+      "source_color": "Grey",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "filatech_abs_absdarkblue(luminous)_1000_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue (Luminous)::ABS::1000::1.75::plastic::False",
+      "source_color": "Dark Blue (Luminous)",
+      "line": "ABS",
+      "color": "dark blue luminous"
+    },
+    "filatech_abs_absdarkblueluminous_1000_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue Luminous::ABS::1000::1.75::plastic::False",
+      "source_color": "Dark Blue Luminous",
+      "line": "ABS",
+      "color": "dark blue luminous"
+    },
+    "filatech_abs_absdarkgreen(luminous)_500_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green (Luminous)::ABS::500::1.75::plastic::False",
+      "source_color": "Dark Green (Luminous)",
+      "line": "ABS",
+      "color": "dark green luminous"
+    },
+    "filatech_abs_absdarkgreenluminous_500_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green Luminous::ABS::500::1.75::plastic::False",
+      "source_color": "Dark Green Luminous",
+      "line": "ABS",
+      "color": "dark green luminous"
+    },
+    "filatech_abs_absdarkyellow(luminous)_500_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow (Luminous)::ABS::500::1.75::plastic::False",
+      "source_color": "Dark Yellow (Luminous)",
+      "line": "ABS",
+      "color": "dark yellow luminous"
+    },
+    "filatech_abs_absdarkyellowluminous_500_175_p": {
+      "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow Luminous::ABS::500::1.75::plastic::False",
+      "source_color": "Dark Yellow Luminous",
+      "line": "ABS",
+      "color": "dark yellow luminous"
+    }
+  },
+  "metadata": [
+    {
+      "id": "filatech_pla_plagray_1000_175_p",
+      "values": {
+        "color_hex": "D6D7D8"
+      },
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "filatech_abs_absdarkgreen(luminous)_1000_175_p",
+      "values": {
+        "codes": [
+          "AB110602",
+          "AB120602"
+        ]
+      },
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "filatech_abs_absdarkyellow(luminous)_1000_175_p",
+      "values": {
+        "codes": [
+          "AB120402"
+        ]
+      },
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "filatech_abs_absdarkblue(luminous)_500_175_p",
+      "values": {
+        "codes": [
+          "AB110502",
+          "AB120502"
+        ]
+      },
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "filatech_pla_plagray_6000_175_p",
+      "values": {
+        "color_hex": "D6D7D8"
+      },
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "filatech_abs_absdarkblue(luminous)_1000_175_p",
+      "values": {
+        "codes": [
+          "AB110502",
+          "AB120502"
+        ]
+      },
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "filatech_abs_absdarkgreen(luminous)_500_175_p",
+      "values": {
+        "codes": [
+          "AB110602",
+          "AB120602"
+        ]
+      },
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "filatech_abs_absdarkyellow(luminous)_500_175_p",
+      "values": {
+        "codes": [
+          "AB120402"
+        ]
+      },
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-5b9afff239a6b3407013723a5e5d1d13a8f01cae8152544c84faececefc0f30f",
+      "ids": [
+        "filatech_pla_plagray_1000_175_p",
+        "filatech_pla_plagrey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filatech_pla_plagray_1000_175_p",
+          "manufacturer": "Filatech",
+          "name": "PLA Gray",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PL120800"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": "https://fila-tech.store/wp-content/uploads/2021/11/PLA-Datasheet.pdf",
+          "key": "filatech.json::Filatech::PLA {color_name}::PLA Gray::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Gray",
+          "source_line": "PLA",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 63,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "filatech_pla_plagrey_1000_175_p",
+          "manufacturer": "Filatech",
+          "name": "PLA Grey",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D6D7D8",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": "https://fila-tech.store/wp-content/uploads/2021/11/PLA-Datasheet.pdf",
+          "key": "filatech.json::Filatech::PLA {color_name}::PLA Grey::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Grey",
+          "source_line": "PLA",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 76,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filatech_pla_plagray_1000_175_p": "808080",
+          "filatech_pla_plagrey_1000_175_p": "D6D7D8"
+        },
+        "codes": {
+          "filatech_pla_plagray_1000_175_p": [
+            "PL120800"
+          ],
+          "filatech_pla_plagrey_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "filatech_pla_plagray_1000_175_p",
+      "retire": [
+        "filatech_pla_plagrey_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "filatech_pla_plagray_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_pla_plagray_1000_175_p"
+        ],
+        "filatech_pla_plagrey_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_pla_plagrey_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "filatech_pla_plagray_1000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "filatech_pla_plagrey_1000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-5bd771be0ff91ae7264ea796f6c516f4d707b45f4b153ee4a46dbc53b1265693",
+      "ids": [
+        "filatech_abs_absdarkgreen(luminous)_1000_175_p",
+        "filatech_abs_absdarkgreenluminous_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filatech_abs_absdarkgreen(luminous)_1000_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Green (Luminous)",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "06B100",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green (Luminous)::ABS::1000::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Green (Luminous)",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 29,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "filatech_abs_absdarkgreenluminous_1000_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Green Luminous",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "39ff14",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": [
+            "AB110602",
+            "AB120602"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green Luminous::ABS::1000::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Green Luminous",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 21,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filatech_abs_absdarkgreen(luminous)_1000_175_p": "06B100",
+          "filatech_abs_absdarkgreenluminous_1000_175_p": "39ff14"
+        },
+        "glow": {
+          "filatech_abs_absdarkgreen(luminous)_1000_175_p": false,
+          "filatech_abs_absdarkgreenluminous_1000_175_p": true
+        },
+        "codes": {
+          "filatech_abs_absdarkgreen(luminous)_1000_175_p": null,
+          "filatech_abs_absdarkgreenluminous_1000_175_p": [
+            "AB110602",
+            "AB120602"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "filatech_abs_absdarkgreen(luminous)_1000_175_p",
+      "retire": [
+        "filatech_abs_absdarkgreenluminous_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "filatech_abs_absdarkgreen(luminous)_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkgreen(luminous)_1000_175_p"
+        ],
+        "filatech_abs_absdarkgreenluminous_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkgreenluminous_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "filatech_abs_absdarkgreen(luminous)_1000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "filatech_abs_absdarkgreenluminous_1000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-634ea9765d5f9567bb812e6558071365a0fc6043a645cf3d4d7f75a0a9dc433f",
+      "ids": [
+        "filatech_abs_absdarkyellow(luminous)_1000_175_p",
+        "filatech_abs_absdarkyellowluminous_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filatech_abs_absdarkyellow(luminous)_1000_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Yellow (Luminous)",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FADB24",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow (Luminous)::ABS::1000::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Yellow (Luminous)",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 30,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "filatech_abs_absdarkyellowluminous_1000_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Yellow Luminous",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ffff33",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": [
+            "AB120402"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow Luminous::ABS::1000::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Yellow Luminous",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 23,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filatech_abs_absdarkyellow(luminous)_1000_175_p": "FADB24",
+          "filatech_abs_absdarkyellowluminous_1000_175_p": "ffff33"
+        },
+        "glow": {
+          "filatech_abs_absdarkyellow(luminous)_1000_175_p": false,
+          "filatech_abs_absdarkyellowluminous_1000_175_p": true
+        },
+        "codes": {
+          "filatech_abs_absdarkyellow(luminous)_1000_175_p": null,
+          "filatech_abs_absdarkyellowluminous_1000_175_p": [
+            "AB120402"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "filatech_abs_absdarkyellow(luminous)_1000_175_p",
+      "retire": [
+        "filatech_abs_absdarkyellowluminous_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "filatech_abs_absdarkyellow(luminous)_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkyellow(luminous)_1000_175_p"
+        ],
+        "filatech_abs_absdarkyellowluminous_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkyellowluminous_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "filatech_abs_absdarkyellow(luminous)_1000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "filatech_abs_absdarkyellowluminous_1000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-6c56df589bf051654df05f13b0d3e8e14b33f9c085a32f10cd10bef427f48d3f",
+      "ids": [
+        "filatech_abs_absdarkblue(luminous)_500_175_p",
+        "filatech_abs_absdarkblueluminous_500_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filatech_abs_absdarkblue(luminous)_500_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Blue (Luminous)",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 500,
+          "spool_weight": 160,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0066D9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue (Luminous)::ABS::500::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Blue (Luminous)",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 9,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "filatech_abs_absdarkblueluminous_500_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Blue Luminous",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 500,
+          "spool_weight": 160,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "1e90ff",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": [
+            "AB110502",
+            "AB120502"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue Luminous::ABS::500::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Blue Luminous",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 1,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filatech_abs_absdarkblue(luminous)_500_175_p": "0066D9",
+          "filatech_abs_absdarkblueluminous_500_175_p": "1e90ff"
+        },
+        "glow": {
+          "filatech_abs_absdarkblue(luminous)_500_175_p": false,
+          "filatech_abs_absdarkblueluminous_500_175_p": true
+        },
+        "codes": {
+          "filatech_abs_absdarkblue(luminous)_500_175_p": null,
+          "filatech_abs_absdarkblueluminous_500_175_p": [
+            "AB110502",
+            "AB120502"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "filatech_abs_absdarkblue(luminous)_500_175_p",
+      "retire": [
+        "filatech_abs_absdarkblueluminous_500_175_p"
+      ],
+      "survivor_ranking": {
+        "filatech_abs_absdarkblue(luminous)_500_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkblue(luminous)_500_175_p"
+        ],
+        "filatech_abs_absdarkblueluminous_500_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkblueluminous_500_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "filatech_abs_absdarkblue(luminous)_500_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "filatech_abs_absdarkblueluminous_500_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-7086b82ad1ee36839787d3e062e55c184e577a6f2ba1b30528d0fc9195d5c5dd",
+      "ids": [
+        "filatech_pla_plagray_6000_175_p",
+        "filatech_pla_plagrey_6000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filatech_pla_plagray_6000_175_p",
+          "manufacturer": "Filatech",
+          "name": "PLA Gray",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 6000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PL120800"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": "https://fila-tech.store/wp-content/uploads/2021/11/PLA-Datasheet.pdf",
+          "key": "filatech.json::Filatech::PLA {color_name}::PLA Gray::PLA::6000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Gray",
+          "source_line": "PLA",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 87,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "filatech_pla_plagrey_6000_175_p",
+          "manufacturer": "Filatech",
+          "name": "PLA Grey",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 6000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D6D7D8",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            220
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": "https://fila-tech.store/wp-content/uploads/2021/11/PLA-Datasheet.pdf",
+          "key": "filatech.json::Filatech::PLA {color_name}::PLA Grey::PLA::6000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Grey",
+          "source_line": "PLA",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 100,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filatech_pla_plagray_6000_175_p": "808080",
+          "filatech_pla_plagrey_6000_175_p": "D6D7D8"
+        },
+        "codes": {
+          "filatech_pla_plagray_6000_175_p": [
+            "PL120800"
+          ],
+          "filatech_pla_plagrey_6000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "filatech_pla_plagray_6000_175_p",
+      "retire": [
+        "filatech_pla_plagrey_6000_175_p"
+      ],
+      "survivor_ranking": {
+        "filatech_pla_plagray_6000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_pla_plagray_6000_175_p"
+        ],
+        "filatech_pla_plagrey_6000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_pla_plagrey_6000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "filatech_pla_plagray_6000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "filatech_pla_plagrey_6000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-712f04936664f7ee38212fe8a5d35796b69e4d12af8b6c34bddc9831782ca725",
+      "ids": [
+        "filatech_abs_absdarkblue(luminous)_1000_175_p",
+        "filatech_abs_absdarkblueluminous_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filatech_abs_absdarkblue(luminous)_1000_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Blue (Luminous)",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0066D9",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue (Luminous)::ABS::1000::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Blue (Luminous)",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 28,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "filatech_abs_absdarkblueluminous_1000_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Blue Luminous",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "1e90ff",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": [
+            "AB110502",
+            "AB120502"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue Luminous::ABS::1000::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Blue Luminous",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 20,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filatech_abs_absdarkblue(luminous)_1000_175_p": "0066D9",
+          "filatech_abs_absdarkblueluminous_1000_175_p": "1e90ff"
+        },
+        "glow": {
+          "filatech_abs_absdarkblue(luminous)_1000_175_p": false,
+          "filatech_abs_absdarkblueluminous_1000_175_p": true
+        },
+        "codes": {
+          "filatech_abs_absdarkblue(luminous)_1000_175_p": null,
+          "filatech_abs_absdarkblueluminous_1000_175_p": [
+            "AB110502",
+            "AB120502"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "filatech_abs_absdarkblue(luminous)_1000_175_p",
+      "retire": [
+        "filatech_abs_absdarkblueluminous_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "filatech_abs_absdarkblue(luminous)_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkblue(luminous)_1000_175_p"
+        ],
+        "filatech_abs_absdarkblueluminous_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkblueluminous_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "filatech_abs_absdarkblue(luminous)_1000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "filatech_abs_absdarkblueluminous_1000_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-d68408ed2ead82cc133675a2956ed4f5b8a895932f480b4b2ada703d937a55f9",
+      "ids": [
+        "filatech_abs_absdarkgreen(luminous)_500_175_p",
+        "filatech_abs_absdarkgreenluminous_500_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filatech_abs_absdarkgreen(luminous)_500_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Green (Luminous)",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 500,
+          "spool_weight": 160,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "06B100",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green (Luminous)::ABS::500::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Green (Luminous)",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 10,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "filatech_abs_absdarkgreenluminous_500_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Green Luminous",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 500,
+          "spool_weight": 160,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "39ff14",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": [
+            "AB110602",
+            "AB120602"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green Luminous::ABS::500::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Green Luminous",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 2,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filatech_abs_absdarkgreen(luminous)_500_175_p": "06B100",
+          "filatech_abs_absdarkgreenluminous_500_175_p": "39ff14"
+        },
+        "glow": {
+          "filatech_abs_absdarkgreen(luminous)_500_175_p": false,
+          "filatech_abs_absdarkgreenluminous_500_175_p": true
+        },
+        "codes": {
+          "filatech_abs_absdarkgreen(luminous)_500_175_p": null,
+          "filatech_abs_absdarkgreenluminous_500_175_p": [
+            "AB110602",
+            "AB120602"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "filatech_abs_absdarkgreen(luminous)_500_175_p",
+      "retire": [
+        "filatech_abs_absdarkgreenluminous_500_175_p"
+      ],
+      "survivor_ranking": {
+        "filatech_abs_absdarkgreen(luminous)_500_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkgreen(luminous)_500_175_p"
+        ],
+        "filatech_abs_absdarkgreenluminous_500_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkgreenluminous_500_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "filatech_abs_absdarkgreen(luminous)_500_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "filatech_abs_absdarkgreenluminous_500_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-d95756313225bf388b2a834b404bcb8ab3d2fe0a4eb661bbe9b2a0ce22035e24",
+      "ids": [
+        "filatech_abs_absdarkyellow(luminous)_500_175_p",
+        "filatech_abs_absdarkyellowluminous_500_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "filatech_abs_absdarkyellow(luminous)_500_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Yellow (Luminous)",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 500,
+          "spool_weight": 160,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FADB24",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow (Luminous)::ABS::500::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Yellow (Luminous)",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 11,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "filatech_abs_absdarkyellowluminous_500_175_p",
+          "manufacturer": "Filatech",
+          "name": "ABS Dark Yellow Luminous",
+          "material": "ABS",
+          "density": 1.03,
+          "weight": 500,
+          "spool_weight": 160,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ffff33",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            260
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            80,
+            100
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": true,
+          "codes": [
+            "AB120402"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "AE",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow Luminous::ABS::500::1.75::plastic::False",
+          "template": "ABS {color_name}",
+          "source_color": "Dark Yellow Luminous",
+          "source_line": "ABS",
+          "source_file": "filatech.json",
+          "source_definition": {
+            "source_file": "filatech.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filatech_abs_absdarkyellow(luminous)_500_175_p": "FADB24",
+          "filatech_abs_absdarkyellowluminous_500_175_p": "ffff33"
+        },
+        "glow": {
+          "filatech_abs_absdarkyellow(luminous)_500_175_p": false,
+          "filatech_abs_absdarkyellowluminous_500_175_p": true
+        },
+        "codes": {
+          "filatech_abs_absdarkyellow(luminous)_500_175_p": null,
+          "filatech_abs_absdarkyellowluminous_500_175_p": [
+            "AB120402"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "filatech_abs_absdarkyellow(luminous)_500_175_p",
+      "retire": [
+        "filatech_abs_absdarkyellowluminous_500_175_p"
+      ],
+      "survivor_ranking": {
+        "filatech_abs_absdarkyellow(luminous)_500_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkyellow(luminous)_500_175_p"
+        ],
+        "filatech_abs_absdarkyellowluminous_500_175_p": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "filatech_abs_absdarkyellowluminous_500_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "filatech_abs_absdarkyellow(luminous)_500_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "filatech_abs_absdarkyellowluminous_500_175_p": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "filatech_pla_plagrey_1000_175_p": {
+      "replaced_by": "filatech_pla_plagray_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "retired_key": "filatech.json::Filatech::PLA {color_name}::PLA Grey::PLA::1000::1.75::plastic::False"
+    },
+    "filatech_abs_absdarkgreenluminous_1000_175_p": {
+      "replaced_by": "filatech_abs_absdarkgreen(luminous)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "retired_key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green Luminous::ABS::1000::1.75::plastic::False"
+    },
+    "filatech_abs_absdarkyellowluminous_1000_175_p": {
+      "replaced_by": "filatech_abs_absdarkyellow(luminous)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "retired_key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow Luminous::ABS::1000::1.75::plastic::False"
+    },
+    "filatech_abs_absdarkblueluminous_500_175_p": {
+      "replaced_by": "filatech_abs_absdarkblue(luminous)_500_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "retired_key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue Luminous::ABS::500::1.75::plastic::False"
+    },
+    "filatech_pla_plagrey_6000_175_p": {
+      "replaced_by": "filatech_pla_plagray_6000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "retired_key": "filatech.json::Filatech::PLA {color_name}::PLA Grey::PLA::6000::1.75::plastic::False"
+    },
+    "filatech_abs_absdarkblueluminous_1000_175_p": {
+      "replaced_by": "filatech_abs_absdarkblue(luminous)_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "retired_key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Blue Luminous::ABS::1000::1.75::plastic::False"
+    },
+    "filatech_abs_absdarkgreenluminous_500_175_p": {
+      "replaced_by": "filatech_abs_absdarkgreen(luminous)_500_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "retired_key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Green Luminous::ABS::500::1.75::plastic::False"
+    },
+    "filatech_abs_absdarkyellowluminous_500_175_p": {
+      "replaced_by": "filatech_abs_absdarkyellow(luminous)_500_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-filatech-owner-closure.json",
+      "source": "6aef9c7051e1cbe283f77fb4cb982bd2c101c95a",
+      "retired_key": "filatech.json::Filatech::ABS {color_name}::ABS Dark Yellow Luminous::ABS::500::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [
+    {
+      "old_id": "filatech_abs_absdarkgreenluminous_1000_175_p",
+      "target_id": "filatech_abs_absdarkgreen(luminous)_1000_175_p",
+      "field": "codes",
+      "values": [
+        "AB110602",
+        "AB120602"
+      ]
+    },
+    {
+      "old_id": "filatech_abs_absdarkyellowluminous_1000_175_p",
+      "target_id": "filatech_abs_absdarkyellow(luminous)_1000_175_p",
+      "field": "codes",
+      "values": [
+        "AB120402"
+      ]
+    },
+    {
+      "old_id": "filatech_abs_absdarkblueluminous_500_175_p",
+      "target_id": "filatech_abs_absdarkblue(luminous)_500_175_p",
+      "field": "codes",
+      "values": [
+        "AB110502",
+        "AB120502"
+      ]
+    },
+    {
+      "old_id": "filatech_abs_absdarkblueluminous_1000_175_p",
+      "target_id": "filatech_abs_absdarkblue(luminous)_1000_175_p",
+      "field": "codes",
+      "values": [
+        "AB110502",
+        "AB120502"
+      ]
+    },
+    {
+      "old_id": "filatech_abs_absdarkgreenluminous_500_175_p",
+      "target_id": "filatech_abs_absdarkgreen(luminous)_500_175_p",
+      "field": "codes",
+      "values": [
+        "AB110602",
+        "AB120602"
+      ]
+    },
+    {
+      "old_id": "filatech_abs_absdarkyellowluminous_500_175_p",
+      "target_id": "filatech_abs_absdarkyellow(luminous)_500_175_p",
+      "field": "codes",
+      "values": [
+        "AB120402"
+      ]
+    }
+  ],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 8,
+    "approved_groups": 8,
+    "retired": 8,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51449,
+    "after_count": 51441,
+    "metadata_fields_changed": 2,
+    "code_transfers": 6
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
