@@ -165,6 +165,25 @@ def test_merge_preserves_partial_matrix_unique_colors_and_compiled_metadata(cata
     assert entry["retired_key"] == next(row["key"] for row in records if row["record"]["id"] == old)
 
 
+def test_exact_reviewed_survivor_override_preserves_original_identity(catalog):
+    review, old, keep = review_for(catalog)
+    decision = next(iter(review["groups"].values()))
+    decision.update(survivor=old, retire=[keep], survivor_override={
+        "reason": "Owner approved older well-formed family", "source": "a" * 40})
+    plan = module("merge_duplicates").plan_merge(catalog, "acme", review)
+    assert plan["retired_ids"] == {keep: old}
+    assert plan["new_ids"] == []
+
+
+@pytest.mark.parametrize("override", [{}, {"reason": "approved"},
+    {"reason": "", "source": "a" * 40}, {"reason": "approved", "source": "unbound"}])
+def test_survivor_override_without_review_evidence_fails(catalog, override):
+    review, old, keep = review_for(catalog)
+    next(iter(review["groups"].values())).update(survivor=old, retire=[keep], survivor_override=override)
+    with pytest.raises(ValueError):
+        module("merge_duplicates").plan_merge(catalog, "acme", review)
+
+
 def test_dry_run_cli_does_not_write_sources_or_contracts(catalog, tmp_path):
     review, _, _ = review_for(catalog)
     review_path = tmp_path / "review.json"
