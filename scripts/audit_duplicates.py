@@ -105,7 +105,26 @@ def audit_brand(root, brand, upstream_ref=None, official_names=None, upstream_ex
             "official_name_evidence": official_names, "upstream_exceptions": upstream_exceptions}
 
 
+def audit_all(root):
+    from scripts.duplicate_guard import duplicate_review_state
+    rows = catalog_records(root)
+    current, confirmed, pending = duplicate_review_state(root, rows)
+    groups = []
+    for gid, members in sorted(current.items()):
+        status = "NOT_DUPLICATE" if gid in confirmed else "OWNER_PENDING" if gid in pending else "UNRESOLVED"
+        groups.append({"group_id": gid, "status": status,
+                       "ids": sorted(row["record"]["id"] for row in members),
+                       "sources": sorted({row["filename"] for row in members})})
+    summary = {"sources": len(list((Path(root) / "filaments").glob("*.json"))), "records": len(rows),
+               "candidates": len(groups), "not_duplicates": sum(g["status"] == "NOT_DUPLICATE" for g in groups),
+               "owner_pending": sum(g["status"] == "OWNER_PENDING" for g in groups),
+               "unresolved": sum(g["status"] == "UNRESOLVED" for g in groups)}
+    return {"version": 1, "scope": "ENTIRE catalog", "digest": catalog_digest(root), "summary": summary, "groups": groups}
+
+
 def markdown_report(report):
+    if "summary" in report:
+        return "# Entire-catalog duplicate audit\n\n```json\n" + json.dumps(report["summary"], indent=2) + "\n```\n\n" + "\n".join(f'- {g["group_id"]}: {g["status"]} — ' + ", ".join(g["ids"]) for g in report["groups"]) + "\n"
     lines = [f"# Duplicate audit: {report['brand']}", "", "Unconfirmed candidates — no retirement authorization.",
              f"Upstream: {report['upstream_sha'] or 'not provided; upstream preference unresolved'}", f"Snapshot: {report['digest']}", ""]
     for group in report["groups"]:
@@ -122,7 +141,9 @@ def markdown_report(report):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--brand", required=True)
+    scope = parser.add_mutually_exclusive_group(required=True)
+    scope.add_argument("--brand")
+    scope.add_argument("--all", action="store_true", help="Scan every source; nonzero exit for unresolved candidates outside exact review exemptions")
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--upstream-ref", help="Already fetched read-only upstream ref; resolved to a commit")
     parser.add_argument("--evidence", type=Path, help="Reviewed official_names/upstream_exceptions JSON")
@@ -130,19 +151,23 @@ def main():
     args = parser.parse_args()
     try:
         evidence = json.loads(args.evidence.read_text(encoding="utf-8")) if args.evidence else {}
-        report = audit_brand(args.root, args.brand, args.upstream_ref, **evidence)
+        if args.all and (args.evidence or args.upstream_ref):
+            raise ValueError("--all classifies current memberships; use --brand for survivor/name evidence")
+        report = audit_all(args.root) if args.all else audit_brand(args.root, args.brand, args.upstream_ref, **evidence)
         if args.output:
             output = args.output.resolve()
             if any(output.is_relative_to((args.root / directory).resolve()) for directory in ("filaments", "contracts")):
                 raise ValueError("reports cannot overwrite catalog sources/contracts")
             output.mkdir(parents=True, exist_ok=True)
             for suffix, content in (("json", json.dumps(report, indent=2, ensure_ascii=False) + "\n"), ("md", markdown_report(report))):
-                path = output / f"{args.brand}.{suffix}"
+                path = output / f"{'all' if args.all else args.brand}.{suffix}"
                 if path.exists():
                     raise ValueError(f"report already exists: {path}")
                 path.write_text(content, encoding="utf-8")
         else:
             print(json.dumps(report, indent=2, ensure_ascii=False))
+        if args.all and report["summary"]["unresolved"]:
+            parser.exit(1)
     except (ValueError, OSError, KeyError) as exc:
         parser.exit(1, f"ERROR: {exc}\n")
 

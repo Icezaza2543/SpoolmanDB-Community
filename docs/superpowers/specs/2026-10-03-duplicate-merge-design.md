@@ -2,7 +2,7 @@
 
 Date: 2026-10-03 · Related: Community issue #66 (Kingroon PETG duplicates)
 
-Status: owner approved `fa55358` with the retired-key and exact-reinstatement amendments below. STEP 2 authorizes tooling, CI and documentation only. No data retirement, push or GitHub comment is authorized.
+Status: implemented and owner-authorized campaign delivered through 2026-10-04. The original staged approvals below are historical rollout notes, superseded by the owner's continuous A–D authorization. Registered retirements and per-brand evidence are published; full-catalog enforcement is active with exact temporary owner-pending exemptions. Final closure waits only for [the owner decision sheet](../../audits/backlog-decisions.csv); no GitHub comments are authorized.
 
 ## Problem
 
@@ -123,7 +123,7 @@ The merge must create no new weight × diameter × color combinations. For this 
 
 ### Metadata conflicts
 
-Evidence from the **newest production lot** wins: a manufacturer label, TDS or product page tied to that lot, including a buyer-submitted manufacturer label. Evidence must describe the same family/SKU and packaging. Record the lot or revision and source used to establish recency. Do not use Git commit recency to choose values, average conflicting values or infer another family's specifications.
+Evidence from the **newest production lot** wins for package-specific metadata, including buyer-submitted manufacturer labels. Packaging, spool material and tare require the same family/SKU and packaging/lot binding. Current official TDS/product pages are valid evidence for density/nozzle/bed of the exact product line without separate lot binding. Record the revision/current source. Do not use Git commit recency to choose values, average conflicting values or infer another family's specifications.
 
 Keep the older values and their evidence in the audit report. Use the wording "manufacturer revised recommended values in newer lot" for changed recommendations; do not claim that the manufacturer changed the formula. Density and temperature corrections do not create new IDs.
 
@@ -141,7 +141,7 @@ Document these rules in `docs/maintenance.md` during implementation:
 
 - `scripts/audit_duplicates.py` reads catalog sources without modifying tracked data. It writes per-brand JSON and Markdown reports with candidate groups, upstream membership and commit, proposed survivors, exact retirement mappings, evidence and metadata conflicts.
 - `scripts/merge_duplicates.py --brand <slug> [--exclude <group-id>]` runs in dry-run mode by default. `--apply` requires reviewed group decisions, removes only approved duplicate variants, applies supplied metadata evidence under section 2, appends registry entries and updates the baseline. Keep survivor values when no evidence is supplied and report the unresolved conflicts. No automatic application follows candidate discovery.
-- `scripts/validate.py` compares groups with the trusted base. Existing candidates produce warnings. A newly introduced, unreviewed candidate group fails the change-review guard unless an exact human-confirmed non-duplicate entry exempts it. This failure requests review; it does not confirm a duplicate or authorize a merge.
+- `scripts/validate.py` fails on every unresolved current candidate, existing or new. Only exact memberships in `not_duplicates.json` or the temporary `owner_pending_duplicates.json` may be exempt. Pending memberships must match the single owner sheet and current catalog; stale, mismatched or overlapping entries fail closed. A new member requires review. `audit_duplicates.py --all` reports zero unresolved outside those exact lists; final campaign closure also requires an empty pending list. A failure requests review, not automatic retirement.
 - CI passes the resolved trusted base to both `validate.py` and `compile_id_baseline.py`. For a push to main, use `${{ github.event.before }}`. For an all-zero new-branch SHA, run the HEAD-only checks and report that no previous base exists. A nonzero base that cannot be fetched or resolved is an error, not a reason to fall back to HEAD-only. Existing contributor checks continue using their event's base SHA.
 - Publish `retired_ids.json` with the catalog. Update `docs/maintenance.md` section 4 with the limited registered-retirement exception and naming rules, and document the breaking consequences in the README or changelog. Do not weaken protection for unrelated IDs.
 
@@ -153,7 +153,7 @@ Tests cover:
 - Registered retirement enrollment without the breaking flag, rejection of unregistered removals, and exact HEAD baseline synchronization.
 - Ordered normalization: PLA versus PLA+, PETG versus PETG Basic, protected version tokens, multi-color order and repeated tokens.
 - Merge preservation of unique colors, surviving IDs and partial package matrices, with no new Cartesian variants.
-- A new-candidate CI failure, warnings for existing candidates, and exact `not_duplicates.json` exemptions that do not exempt new members.
+- Existing/new candidate failures, exact non-duplicate and owner-sheet exemptions, and rejection of added members, stale/malformed memberships, missing/mismatched sheets and overlapping contracts.
 - Push-to-main base selection, the all-zero fallback and failure on an unavailable nonzero base.
 
 ## 4. Rollout and stop gates

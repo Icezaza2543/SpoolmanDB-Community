@@ -55,7 +55,13 @@ For an approved duplicate migration, report the exact registered retirements sep
 
 ### Reviewed duplicate tooling
 
+Current official TDS/product pages are valid evidence for the exact product line's printing density/nozzle/bed. Lot/package binding remains required for packaging, spool material and tare. A product-line table does not establish every historical package's availability.
+
 The auditor is read-only on catalog sources. Matching normalized names are candidates, not merge evidence. Ordered normalization retains `+`, versions, qualifiers and repeated tokens; `gray`/`grey` equivalence is comparison-only. `contracts/not_duplicates.json` exempts only exact, human-reviewed ID memberships with evidence, never whole brands or patterns.
+
+The duplicate guard enforces **every current candidate**, existing or new. The temporary `contracts/owner_pending_duplicates.json` exempts only exact memberships also present in [the single owner decision sheet](audits/backlog-decisions.csv). Missing, stale, overlapping or mismatched pending entries fail closed. New members require review. This list authorizes no merge; remove its entries as the owner resolves the corresponding groups. Full closure requires an empty pending list.
+
+`python scripts/audit_duplicates.py --all` enumerates every source file and reports confirmed non-duplicates, owner-pending groups and unresolved candidates separately. It exits nonzero for unresolved candidates outside those exact lists; zero unresolved does **not** mean that pending groups have been decided.
 
 After separate authorization for a brand, create an audit outside `filaments/` and `contracts/` using an already fetched read-only upstream commit:
 
@@ -106,6 +112,7 @@ The diff must contain only the intended additions and the corresponding count ch
 python scripts/readme_snapshot.py --write
 python scripts/readme_snapshot.py --check
 python scripts/compile_filaments.py
+python scripts/audit_duplicates.py --all
 python scripts/validate.py --strict
 python -m pytest -q
 node tests/test_display_name.cjs

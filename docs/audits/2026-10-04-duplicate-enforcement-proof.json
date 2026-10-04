@@ -1,0 +1,322 @@
+{
+  "campaign": {
+    "status": "PASS",
+    "campaign_base": "b050e684b88a1622cd25ea5a47b6447c3e14d021",
+    "starting_count": 53434,
+    "ending_count": 51592,
+    "registered_retirements": 1842,
+    "unregistered_removals": 0,
+    "new_ids": 0,
+    "changed_identity": 0,
+    "rekeyed": 0,
+    "dangling_targets": 0,
+    "retirements_by_brand": {
+      "22 Network": 15,
+      "3DE": 3,
+      "3DJAKE": 27,
+      "ANYCUBIC": 36,
+      "AURAPOL": 16,
+      "Aceaddity": 4,
+      "Alzament": 1,
+      "AmazonBasics": 3,
+      "American Filament": 17,
+      "AzureFilm": 77,
+      "Bambu Lab": 124,
+      "Buddy3D": 37,
+      "CHCKX": 1,
+      "Conjure": 1,
+      "Das Filament": 52,
+      "Devil Design": 115,
+      "ELEGOO": 86,
+      "Eryone": 7,
+      "Extrudr": 29,
+      "Filatech": 16,
+      "Fillamentum": 120,
+      "GEEETECH": 23,
+      "GST3D": 4,
+      "Gizmo Dorks": 65,
+      "IC3D": 14,
+      "IEMAI": 3,
+      "JAYO": 6,
+      "Kingroon": 5,
+      "LDO": 11,
+      "Nebula": 345,
+      "NinjaTek": 20,
+      "Nobufil": 5,
+      "Overture": 82,
+      "Paramount 3D": 115,
+      "Polar Filament": 40,
+      "PolyTerra": 1,
+      "Polymaker": 8,
+      "Protopasta": 45,
+      "Prusament": 75,
+      "Push Plastic": 29,
+      "QIDI Tech": 8,
+      "Sakata 3D": 28,
+      "Sunlu": 47,
+      "TEQStone": 6,
+      "Tecbears": 12,
+      "VOXELPLA": 3,
+      "Verbatim": 22,
+      "Winkle": 27,
+      "Zyltech": 6
+    },
+    "phase_d_compiled_payload_changes": 0,
+    "baseline_exact": true,
+    "source_count": 490
+  },
+  "audit_summary": {
+    "sources": 490,
+    "records": 51592,
+    "candidates": 180,
+    "not_duplicates": 0,
+    "owner_pending": 180,
+    "unresolved": 0
+  },
+  "local_gates": [
+    {
+      "gate": "readme-write",
+      "command": [
+        "python",
+        "scripts/readme_snapshot.py",
+        "--write"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "✓ README snapshot is current."
+      ]
+    },
+    {
+      "gate": "readme-check",
+      "command": [
+        "python",
+        "scripts/readme_snapshot.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "✓ README snapshot is current."
+      ]
+    },
+    {
+      "gate": "compile",
+      "command": [
+        "python",
+        "scripts/compile_filaments.py"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "Compiling filaments\\zklabs.json",
+        "Compiling filaments\\zortrax.json",
+        "Compiling filaments\\zyltech.json",
+        "Writing all filaments to 'filaments.json'",
+        "Done!"
+      ]
+    },
+    {
+      "gate": "whole-audit",
+      "command": [
+        "python",
+        "scripts/audit_duplicates.py",
+        "--all"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "        \"fiberlogy.json\"",
+        "      ]",
+        "    }",
+        "  ]",
+        "}"
+      ]
+    },
+    {
+      "gate": "strict",
+      "command": [
+        "python",
+        "scripts/validate.py",
+        "--strict",
+        "--base-ref",
+        "8925b25"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "Checking duplicate-candidate review guard...",
+        "Duplicate candidates: 0 existing warning(s), 0 error(s).",
+        "",
+        "Validating compiled filaments.json...",
+        "✓ Compiled filaments.json is valid."
+      ]
+    },
+    {
+      "gate": "pytest",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "cache_dir=.git/backlog-line-color/final-cache",
+        "--basetemp",
+        "C:\\Users\\Icezaza\\Documents\\GitHub\\SpoolmanDB-Community\\.git\\backlog-line-color\\phase-d\\pytest-temp"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "........................................................................ [ 29%]",
+        "........................................................................ [ 59%]",
+        "........................................................................ [ 88%]",
+        "............................                                             [100%]",
+        "244 passed in 55.04s"
+      ]
+    },
+    {
+      "gate": "display-name",
+      "command": [
+        "node",
+        "tests/test_display_name.cjs"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "ok buildFilamentSearchText keeps names that already include material",
+        "ok buildFilamentSearchText does not treat ePLA as standalone PLA",
+        "display-name tests passed",
+        "ok schema viewer loads and renders every configured schema on deployed and local paths",
+        "ok schema failure is explicit, isolated, and cleared after successful reload"
+      ]
+    },
+    {
+      "gate": "stable",
+      "command": [
+        "python",
+        "scripts/check_spoolman_compat.py",
+        "--mode",
+        "stable"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "✓ Stable pin: v0.25.0 (6e1065009c7c45c9e38d5e1bec21d47273442889) from C:\\Users\\Icezaza\\Documents\\GitHub\\SpoolmanDB-Community\\contracts\\spoolman_upstream.json",
+        "✓ Stable blob: https://github.com/Donkie/Spoolman/blob/6e1065009c7c45c9e38d5e1bec21d47273442889/spoolman/externaldb.py",
+        "✓ Upstream contract: C:\\Users\\Icezaza\\Documents\\GitHub\\SpoolmanDB-Community\\contracts\\spoolman_externaldb.py [stable v0.25.0 @ 6e1065009c7c45c9e38d5e1bec21d47273442889]",
+        "✓ Statically checked 18 upstream fields; contract source was not executed.",
+        "✓ 51592 compiled filaments accepted by the contract."
+      ]
+    },
+    {
+      "gate": "canary",
+      "command": [
+        "python",
+        "scripts/check_spoolman_compat.py",
+        "--mode",
+        "canary"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "✓ Compared to stable: v0.25.0 (6e1065009c7c45c9e38d5e1bec21d47273442889) from C:\\Users\\Icezaza\\Documents\\GitHub\\SpoolmanDB-Community\\contracts\\spoolman_upstream.json",
+        "✓ Upstream contract: https://raw.githubusercontent.com/Donkie/Spoolman/master/spoolman/externaldb.py [canary Donkie/Spoolman:master] (ETag \"b4988185a2bdf8a0d1dcdc6037d20605de26a46c808bd847e6e7a13e0167c137\")",
+        "✓ Statically checked 18 upstream fields; contract source was not executed.",
+        "✓ 51592 compiled filaments accepted by the contract.",
+        "✓ CANARY: no ExternalFilament field/type drift vs stable pin."
+      ]
+    },
+    {
+      "gate": "projection",
+      "command": [
+        "python",
+        "scripts/project_spoolman.py"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "Loaded Spoolman native contract (18 fields).",
+        "Projecting 51592 compiled filament records...",
+        "✓ Projection successful (51592 records).",
+        "  Native fields retained (18): ['bed_temp', 'color_hex', 'color_hexes', 'density', 'diameter', 'extruder_temp', 'finish', 'glow', 'id', 'manufacturer', 'material', 'multi_color_direction', 'name', 'pattern', 'spool_type', 'spool_weight', 'translucent', 'weight']",
+        "  Extension fields stripped (10): ['bed_temp_range', 'codes', 'country_of_origin', 'eans', 'eans_refill', 'extruder_temp_range', 'fill', 'is_refill', 'sds_url', 'tds_url']"
+      ]
+    },
+    {
+      "gate": "baseline",
+      "command": [
+        "python",
+        "scripts/compile_id_baseline.py",
+        "--strict",
+        "--base-ref",
+        "8925b25"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "Checking Public Compiled ID baseline against 'C:\\Users\\Icezaza\\Documents\\GitHub\\SpoolmanDB-Community\\contracts\\compiled_id_baseline.json'...",
+        "Trusted BASE baseline ref/file: '8925b25'",
+        "Strict mode: HEAD baseline synchronization required.",
+        "Baseline records: 51592 | Current compiled: 51592 | Matched: 51592 | Added: 0 | Removed: 0 | Changed: 0 | Rekeyed: 0 | Registered retired: 1842 | Reinstated: 0",
+        "✓ Public Compiled ID baseline check passed successfully."
+      ]
+    },
+    {
+      "gate": "campaign-baseline",
+      "command": [
+        "python",
+        "scripts/compile_id_baseline.py",
+        "--strict",
+        "--base-ref",
+        "b050e68"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "Checking Public Compiled ID baseline against 'C:\\Users\\Icezaza\\Documents\\GitHub\\SpoolmanDB-Community\\contracts\\compiled_id_baseline.json'...",
+        "Trusted BASE baseline ref/file: 'b050e68'",
+        "Strict mode: HEAD baseline synchronization required.",
+        "Baseline records: 53434 | Current compiled: 51592 | Matched: 51592 | Added: 0 | Removed: 0 | Changed: 0 | Rekeyed: 0 | Registered retired: 1842 | Reinstated: 0",
+        "✓ Public Compiled ID baseline check passed successfully."
+      ]
+    },
+    {
+      "gate": "campaign-proof",
+      "command": [
+        "python",
+        "C:\\Users\\Icezaza\\Documents\\GitHub\\SpoolmanDB-Community\\.git\\backlog-line-color\\campaign_proof.py"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "  },",
+        "  \"phase_d_compiled_payload_changes\": 0,",
+        "  \"baseline_exact\": true,",
+        "  \"source_count\": 490",
+        "}"
+      ]
+    },
+    {
+      "gate": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "tail": []
+    },
+    {
+      "gate": "status",
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "?? contracts/owner_pending_duplicates.json",
+        "?? docs/audits/2026-10-04-duplicate-campaign-final.md",
+        "?? docs/audits/2026-10-04-full-repo-owner-review.json",
+        "?? docs/audits/backlog-decisions.csv",
+        "?? tests/test_duplicate_enforcement.py"
+      ]
+    }
+  ],
+  "targeted_regressions": 22,
+  "pytest": 244,
+  "phase_b_ci": {
+    "Build": 37194811978,
+    "CodeQL": 37194811668,
+    "conclusion": "success",
+    "pages_exact_payload": true
+  },
+  "final_delivery_ci": "Confirmed after this proof commit; see final delivery report"
+}

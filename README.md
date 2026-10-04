@@ -245,6 +245,10 @@ All shared material defaults live in `materials.json`.
 
 Owner-approved duplicate migrations are recorded in the [retired-ID registry](contracts/retired_ids.json). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](docs/maintenance.md#4-public-id-immutability-rule).
 
+### Current duplicate campaign status (2026-10-04)
+
+Current campaign status (2026-10-04): **1,842 registered retirements**, catalog **51,592** records. Every current candidate is either reviewed or explicitly [owner-pending](docs/audits/backlog-decisions.csv); **180 groups still need decisions**. Full-catalog validation rejects unresolved candidates outside exact exemptions. See [the current backlog](docs/audits/duplicate-backlog.md); zero unresolved outside the sheet is not a claim that all 180 groups are duplicates or resolved. The brand sections below record their original migration checkpoints.
+
 ### Kingroon duplicate migration (2026-10-03)
 
 This is an **intentional breaking catalog migration** approved by the owner for [issue #66](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/66). It retires exactly five duplicate records, reducing the compiled catalog from 53,434 to 53,429 records without creating replacement IDs. Each survivor already exists, and its identity and metadata are unchanged.
