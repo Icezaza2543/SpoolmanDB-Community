@@ -1,0 +1,634 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "winkle",
+  "base_sha": "426eb216d1d7140f1fbbd937c0f3c184f673f673",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "b55998d1c678d79c05cba4e6695b916091f5a034927d3e544a2368af74397d2a",
+  "official_names": {
+    "PLA HD {color_name}": {
+      "name": "PLA HD",
+      "source": "https://winkle.shop/producto/filamento-pla-hd-winkle-175-mm-1-kg-blanco-fantasma/"
+    },
+    "HD PLA {color_name}": {
+      "name": "PLA HD",
+      "source": "https://winkle.shop/producto/filamento-pla-hd-winkle-175-mm-1-kg-blanco-fantasma/"
+    },
+    "PLA Silk {color_name}": {
+      "name": "PLA Silk",
+      "source": "https://winkle.shop/producto/filamento-pla-silk-winkle-175-mm-0300-kg-oro-blanco/"
+    },
+    "Silk PLA {color_name}": {
+      "name": "PLA Silk",
+      "source": "https://winkle.shop/producto/filamento-pla-silk-winkle-175-mm-0300-kg-oro-blanco/"
+    }
+  },
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-227809e3f178bcbc46bedc531cd6195070fa391e1769e5784c4cb13874635be5": {
+      "approved": true,
+      "survivor": "winkle_petg_petgashgray_1000_175_c",
+      "retire": [
+        "winkle_petg_petgashgrey_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-winkle-owner-closure.json",
+      "source": "426eb216d1d7140f1fbbd937c0f3c184f673f673"
+    },
+    "dup-86340b8e0149cdefdd56e484a96479d470c15d07c68bf9717c6f9e2e87a69391": {
+      "approved": true,
+      "survivor": "winkle_pla_plahdpurple_1000_175_c",
+      "retire": [
+        "winkle_pla_hdplapurple_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-winkle-owner-closure.json",
+      "source": "426eb216d1d7140f1fbbd937c0f3c184f673f673"
+    },
+    "dup-c72a1a4fd6ddfec5532776e7b30144a82cded9db61ca29d36cf6a6b2675cc96f": {
+      "approved": true,
+      "survivor": "winkle_petg_petgashgray_300_175_c",
+      "retire": [
+        "winkle_petg_petgashgrey_300_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-winkle-owner-closure.json",
+      "source": "426eb216d1d7140f1fbbd937c0f3c184f673f673"
+    }
+  },
+  "bindings": {
+    "winkle_petg_petgashgray_1000_175_c": {
+      "key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Gray::PETG::1000::1.75::cardboard::False",
+      "source_color": "Ash Gray",
+      "line": "PETG",
+      "color": "ash gray"
+    },
+    "winkle_petg_petgashgrey_1000_175_c": {
+      "key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Grey::PETG::1000::1.75::cardboard::False",
+      "source_color": "Ash Grey",
+      "line": "PETG",
+      "color": "ash gray"
+    },
+    "winkle_pla_hdplapurple_1000_175_c": {
+      "key": "winkle.json::Winkle::HD PLA {color_name}::HD PLA Purple::PLA::1000::1.75::cardboard::False",
+      "source_color": "Purple",
+      "line": "hd",
+      "color": "purple"
+    },
+    "winkle_pla_plahdpurple_1000_175_c": {
+      "key": "winkle.json::Winkle::PLA HD {color_name}::PLA HD Purple::PLA::1000::1.75::cardboard::False",
+      "source_color": "Purple",
+      "line": "hd",
+      "color": "purple"
+    },
+    "winkle_petg_petgashgray_300_175_c": {
+      "key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Gray::PETG::300::1.75::cardboard::False",
+      "source_color": "Ash Gray",
+      "line": "PETG",
+      "color": "ash gray"
+    },
+    "winkle_petg_petgashgrey_300_175_c": {
+      "key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Grey::PETG::300::1.75::cardboard::False",
+      "source_color": "Ash Grey",
+      "line": "PETG",
+      "color": "ash gray"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-227809e3f178bcbc46bedc531cd6195070fa391e1769e5784c4cb13874635be5",
+      "ids": [
+        "winkle_petg_petgashgray_1000_175_c",
+        "winkle_petg_petgashgrey_1000_175_c"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "winkle_petg_petgashgray_1000_175_c",
+          "manufacturer": "Winkle",
+          "name": "PETG Ash Gray",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 175,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "b2beb5",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "winkle-petg-filament-175-mm-ash-gray-0300-kg"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "ES",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Gray::PETG::1000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Ash Gray",
+          "source_line": "PETG",
+          "source_file": "winkle.json",
+          "source_definition": {
+            "source_file": "winkle.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 25,
+            "compiled_records": 50
+          },
+          "upstream": false
+        },
+        {
+          "id": "winkle_petg_petgashgrey_1000_175_c",
+          "manufacturer": "Winkle",
+          "name": "PETG Ash Grey",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 175,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9C9D9D",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "ES",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Grey::PETG::1000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Ash Grey",
+          "source_line": "PETG",
+          "source_file": "winkle.json",
+          "source_definition": {
+            "source_file": "winkle.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 25,
+            "compiled_records": 50
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "winkle_petg_petgashgray_1000_175_c": "b2beb5",
+          "winkle_petg_petgashgrey_1000_175_c": "9C9D9D"
+        },
+        "codes": {
+          "winkle_petg_petgashgray_1000_175_c": [
+            "winkle-petg-filament-175-mm-ash-gray-0300-kg"
+          ],
+          "winkle_petg_petgashgrey_1000_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "winkle_petg_petgashgray_1000_175_c",
+      "retire": [
+        "winkle_petg_petgashgrey_1000_175_c"
+      ],
+      "survivor_ranking": {
+        "winkle_petg_petgashgray_1000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "winkle_petg_petgashgray_1000_175_c"
+        ],
+        "winkle_petg_petgashgrey_1000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "winkle_petg_petgashgrey_1000_175_c"
+        ]
+      },
+      "id_first_seen": {
+        "winkle_petg_petgashgray_1000_175_c": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "winkle_petg_petgashgrey_1000_175_c": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-86340b8e0149cdefdd56e484a96479d470c15d07c68bf9717c6f9e2e87a69391",
+      "ids": [
+        "winkle_pla_hdplapurple_1000_175_c",
+        "winkle_pla_plahdpurple_1000_175_c"
+      ],
+      "proposed_survivor": "winkle_pla_plahdpurple_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "winkle_pla_hdplapurple_1000_175_c": "winkle_pla_plahdpurple_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "winkle_pla_hdplapurple_1000_175_c",
+          "manufacturer": "Winkle",
+          "name": "HD PLA Purple",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 175,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "A368BB",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "ES",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "winkle.json::Winkle::HD PLA {color_name}::HD PLA Purple::PLA::1000::1.75::cardboard::False",
+          "template": "HD PLA {color_name}",
+          "source_color": "Purple",
+          "source_line": "HD PLA",
+          "source_file": "winkle.json",
+          "source_definition": {
+            "source_file": "winkle.json",
+            "definition_index": 80,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "winkle_pla_plahdpurple_1000_175_c",
+          "manufacturer": "Winkle",
+          "name": "PLA HD Purple",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 175,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "800080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "pla-hd-glitter-particles-winkle-pla-hd-glitter-filament-175-mm-0300-kg-purple"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "ES",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "winkle.json::Winkle::PLA HD {color_name}::PLA HD Purple::PLA::1000::1.75::cardboard::False",
+          "template": "PLA HD {color_name}",
+          "source_color": "Purple",
+          "source_line": "PLA HD",
+          "source_file": "winkle.json",
+          "source_definition": {
+            "source_file": "winkle.json",
+            "definition_index": 4,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 52,
+            "compiled_records": 104
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "winkle_pla_hdplapurple_1000_175_c": "A368BB",
+          "winkle_pla_plahdpurple_1000_175_c": "800080"
+        },
+        "codes": {
+          "winkle_pla_hdplapurple_1000_175_c": null,
+          "winkle_pla_plahdpurple_1000_175_c": [
+            "pla-hd-glitter-particles-winkle-pla-hd-glitter-filament-175-mm-0300-kg-purple"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "winkle_pla_plahdpurple_1000_175_c",
+      "retire": [
+        "winkle_pla_hdplapurple_1000_175_c"
+      ],
+      "survivor_ranking": {
+        "winkle_pla_hdplapurple_1000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "winkle_pla_hdplapurple_1000_175_c"
+        ],
+        "winkle_pla_plahdpurple_1000_175_c": [
+          0,
+          0,
+          0,
+          -1,
+          2,
+          "winkle_pla_plahdpurple_1000_175_c"
+        ]
+      },
+      "id_first_seen": {
+        "winkle_pla_hdplapurple_1000_175_c": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "winkle_pla_plahdpurple_1000_175_c": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-c72a1a4fd6ddfec5532776e7b30144a82cded9db61ca29d36cf6a6b2675cc96f",
+      "ids": [
+        "winkle_petg_petgashgray_300_175_c",
+        "winkle_petg_petgashgrey_300_175_c"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "winkle_petg_petgashgray_300_175_c",
+          "manufacturer": "Winkle",
+          "name": "PETG Ash Gray",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 300,
+          "spool_weight": 110,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "b2beb5",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "winkle-petg-filament-175-mm-ash-gray-0300-kg"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "ES",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Gray::PETG::300::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Ash Gray",
+          "source_line": "PETG",
+          "source_file": "winkle.json",
+          "source_definition": {
+            "source_file": "winkle.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 25,
+            "compiled_records": 50
+          },
+          "upstream": false
+        },
+        {
+          "id": "winkle_petg_petgashgrey_300_175_c",
+          "manufacturer": "Winkle",
+          "name": "PETG Ash Grey",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 300,
+          "spool_weight": 110,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9C9D9D",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "ES",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Grey::PETG::300::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "Ash Grey",
+          "source_line": "PETG",
+          "source_file": "winkle.json",
+          "source_definition": {
+            "source_file": "winkle.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 25,
+            "compiled_records": 50
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "winkle_petg_petgashgray_300_175_c": "b2beb5",
+          "winkle_petg_petgashgrey_300_175_c": "9C9D9D"
+        },
+        "codes": {
+          "winkle_petg_petgashgray_300_175_c": [
+            "winkle-petg-filament-175-mm-ash-gray-0300-kg"
+          ],
+          "winkle_petg_petgashgrey_300_175_c": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "winkle_petg_petgashgray_300_175_c",
+      "retire": [
+        "winkle_petg_petgashgrey_300_175_c"
+      ],
+      "survivor_ranking": {
+        "winkle_petg_petgashgray_300_175_c": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "winkle_petg_petgashgray_300_175_c"
+        ],
+        "winkle_petg_petgashgrey_300_175_c": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "winkle_petg_petgashgrey_300_175_c"
+        ]
+      },
+      "id_first_seen": {
+        "winkle_petg_petgashgray_300_175_c": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "winkle_petg_petgashgrey_300_175_c": [
+          2,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "winkle_petg_petgashgrey_1000_175_c": {
+      "replaced_by": "winkle_petg_petgashgray_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-winkle-owner-closure.json",
+      "source": "426eb216d1d7140f1fbbd937c0f3c184f673f673",
+      "retired_key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Grey::PETG::1000::1.75::cardboard::False"
+    },
+    "winkle_pla_hdplapurple_1000_175_c": {
+      "replaced_by": "winkle_pla_plahdpurple_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-winkle-owner-closure.json",
+      "source": "426eb216d1d7140f1fbbd937c0f3c184f673f673",
+      "retired_key": "winkle.json::Winkle::HD PLA {color_name}::HD PLA Purple::PLA::1000::1.75::cardboard::False"
+    },
+    "winkle_petg_petgashgrey_300_175_c": {
+      "replaced_by": "winkle_petg_petgashgray_300_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-winkle-owner-closure.json",
+      "source": "426eb216d1d7140f1fbbd937c0f3c184f673f673",
+      "retired_key": "winkle.json::Winkle::PETG {color_name}::PETG Ash Grey::PETG::300::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 3,
+    "approved_groups": 3,
+    "retired": 3,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51437,
+    "after_count": 51434,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
