@@ -1,0 +1,5399 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "elegoo",
+  "base_sha": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "ed1add9c015edbd23e7a4b76ae47b3df517b94b8377aeec771f6bc917d5c5801",
+  "official_names": {
+    "PLA {color_name}": {
+      "name": "RAPID PLA Plus",
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg"
+    },
+    "RAPID PLA Plus {color_name}": {
+      "name": "RAPID PLA Plus",
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg"
+    }
+  },
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-0522d36ad17429ef0ef4c56b43995b1ba979a0693d7c7abaa095501d61aa81cb": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusgrey_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusgrey_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-1415acb0fc41debe5d923045d7f411c3b638803f29de701c6e1003f1be753c15": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusbrown_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusbrown_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-1b1d9234a76ff760c7d3316170e468e6ad3b05b5d4cff37249adfa75fea51a02": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusbeige_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusbeige_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-3799af5b253b3cbc210e42baa609496eab7cd4027f8084ab49fc0ddd212181bf": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusred_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusred_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-41bb4814cf71ee60c02ce320078ec87034c7102de8fd48945d1be5456efe85e8": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusred_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusred_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-485122a1cb0f281f91100b85edb1ab305533fdf6f6323ce75edc2d8d72968b43": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusblue_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusblue_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-5f597b989b37413a10a7ef851f9a1ea0d4ef62cc206fb52e001dfe061df77d58": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusgreen_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusgreen_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-6df5f8e917c6822ddaa3dd06298be8df621eb4c8ac8dc9c67be67bec01076669": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusyellow_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusyellow_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-896cb956e68a1f8f0a54fe9eba5b1bad44266fba3ee9ebdb765453ce2e62d872": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplapluswhite_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidpluswhite_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-a34f4055944cf778a79f35bb110c9f8b5ed9922f667257c21aa74621b45787ed": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusblack_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusblack_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-a7a6d6fa72fc0162c74e614ca474fdbcba27eda527ec68f799491755414a2078": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusyellow_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusyellow_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-aa0078b4fa3522dc8e7e56fcff0def49940a676ea69ee5b8756c398ee2dbde27": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusgreen_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusgreen_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-af8a14fb0686ae935a1ef2c34c7e12c23f261ea573977616548481cee1794176": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusorange_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusorange_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-b92be3818953e7c6a7a572df7fc8eb34a83af0b6849c35f3c96f4d8ec25a6469": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusorange_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusorange_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-d93daecaf2dad9556bacb5bdd4befbb4497784e223d538e3922917fcbc8397de": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusgrey_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusgrey_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-dbdaeb7011cfbaf7f0c0901ef55eb4404ce72f2ac959daf9cf020bfaac31104e": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplussilver_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplussilver_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-dd044189a170d45217db1ae8f48bb7abbf2afbac511a32a76fc5a9ba4b1440d9": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplussilver_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplussilver_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-de359707fd50d6af8ee29f835a9529737defe57debde9e46f443e1de6ecd58ae": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplapluswhite_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidpluswhite_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-e24819a0db881e72a260080782bc11d353fef7c4672d83f93b8581b77573f05e": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusblue_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusblue_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-e5b830f25acf9d4b674f04468f253e3e48ec519cc1d5c99234a7f0343fb2241a": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusbeige_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusbeige_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-f3a3120ea87f8e913a822f810abc64c99f469f32db51ef286be32c5c2621db15": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusbrown_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusbrown_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    },
+    "dup-f40f91047045561819fe95a941ec33ffd5d4272a33d6d366eae151ee78fef823": {
+      "approved": true,
+      "survivor": "elegoo_pla_rapidplaplusblack_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusblack_250_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9"
+    }
+  },
+  "bindings": {
+    "elegoo_pla_plarapidplusgrey_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Grey::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Grey",
+      "line": "rapid plus",
+      "color": "gray",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "gray"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Grey::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Grey"
+    },
+    "elegoo_pla_rapidplaplusgrey_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Grey::PLA::250::1.75::cardboard::False",
+      "source_color": "Grey",
+      "line": "rapid plus",
+      "color": "gray",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "gray"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Grey::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Grey"
+    },
+    "elegoo_pla_plarapidplusbrown_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Brown::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Brown",
+      "line": "rapid plus",
+      "color": "brown",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "brown"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Brown::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Brown"
+    },
+    "elegoo_pla_rapidplaplusbrown_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Brown::PLA::1000::1.75::cardboard::False",
+      "source_color": "Brown",
+      "line": "rapid plus",
+      "color": "brown",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "brown"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Brown::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Brown"
+    },
+    "elegoo_pla_plarapidplusbeige_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Beige::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Beige",
+      "line": "rapid plus",
+      "color": "beige",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "beige"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Beige::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Beige"
+    },
+    "elegoo_pla_rapidplaplusbeige_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Beige::PLA::250::1.75::cardboard::False",
+      "source_color": "Beige",
+      "line": "rapid plus",
+      "color": "beige",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "beige"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Beige::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Beige"
+    },
+    "elegoo_pla_plarapidplusred_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Red::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Red",
+      "line": "rapid plus",
+      "color": "red",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Red::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Red"
+    },
+    "elegoo_pla_rapidplaplusred_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Red::PLA::250::1.75::cardboard::False",
+      "source_color": "Red",
+      "line": "rapid plus",
+      "color": "red",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Red::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Red"
+    },
+    "elegoo_pla_plarapidplusred_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Red::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Red",
+      "line": "rapid plus",
+      "color": "red",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Red::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Red"
+    },
+    "elegoo_pla_rapidplaplusred_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Red::PLA::1000::1.75::cardboard::False",
+      "source_color": "Red",
+      "line": "rapid plus",
+      "color": "red",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "red"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Red::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Red"
+    },
+    "elegoo_pla_plarapidplusblue_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Blue::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Blue",
+      "line": "rapid plus",
+      "color": "blue",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Blue::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Blue"
+    },
+    "elegoo_pla_rapidplaplusblue_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Blue::PLA::1000::1.75::cardboard::False",
+      "source_color": "Blue",
+      "line": "rapid plus",
+      "color": "blue",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Blue::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Blue"
+    },
+    "elegoo_pla_plarapidplusgreen_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Green::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Green",
+      "line": "rapid plus",
+      "color": "green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Green::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Green"
+    },
+    "elegoo_pla_rapidplaplusgreen_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Green::PLA::1000::1.75::cardboard::False",
+      "source_color": "Green",
+      "line": "rapid plus",
+      "color": "green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Green::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Green"
+    },
+    "elegoo_pla_plarapidplusyellow_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Yellow::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Yellow",
+      "line": "rapid plus",
+      "color": "yellow",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "yellow"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Yellow::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Yellow"
+    },
+    "elegoo_pla_rapidplaplusyellow_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Yellow::PLA::250::1.75::cardboard::False",
+      "source_color": "Yellow",
+      "line": "rapid plus",
+      "color": "yellow",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "yellow"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Yellow::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Yellow"
+    },
+    "elegoo_pla_plarapidpluswhite_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus White::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus White",
+      "line": "rapid plus",
+      "color": "white",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "white"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus White::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "White"
+    },
+    "elegoo_pla_rapidplapluswhite_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus White::PLA::1000::1.75::cardboard::False",
+      "source_color": "White",
+      "line": "rapid plus",
+      "color": "white",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "white"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus White::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus White"
+    },
+    "elegoo_pla_plarapidplusblack_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Black::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Black",
+      "line": "rapid plus",
+      "color": "black",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Black::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Black"
+    },
+    "elegoo_pla_rapidplaplusblack_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Black::PLA::1000::1.75::cardboard::False",
+      "source_color": "Black",
+      "line": "rapid plus",
+      "color": "black",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Black::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Black"
+    },
+    "elegoo_pla_plarapidplusyellow_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Yellow::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Yellow",
+      "line": "rapid plus",
+      "color": "yellow",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "yellow"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Yellow::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Yellow"
+    },
+    "elegoo_pla_rapidplaplusyellow_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Yellow::PLA::1000::1.75::cardboard::False",
+      "source_color": "Yellow",
+      "line": "rapid plus",
+      "color": "yellow",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "yellow"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Yellow::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Yellow"
+    },
+    "elegoo_pla_plarapidplusgreen_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Green::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Green",
+      "line": "rapid plus",
+      "color": "green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Green::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Green"
+    },
+    "elegoo_pla_rapidplaplusgreen_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Green::PLA::250::1.75::cardboard::False",
+      "source_color": "Green",
+      "line": "rapid plus",
+      "color": "green",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "green"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Green::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Green"
+    },
+    "elegoo_pla_plarapidplusorange_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Orange::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Orange",
+      "line": "rapid plus",
+      "color": "orange",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "orange"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Orange::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Orange"
+    },
+    "elegoo_pla_rapidplaplusorange_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Orange::PLA::1000::1.75::cardboard::False",
+      "source_color": "Orange",
+      "line": "rapid plus",
+      "color": "orange",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "orange"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Orange::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Orange"
+    },
+    "elegoo_pla_plarapidplusorange_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Orange::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Orange",
+      "line": "rapid plus",
+      "color": "orange",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "orange"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Orange::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Orange"
+    },
+    "elegoo_pla_rapidplaplusorange_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Orange::PLA::250::1.75::cardboard::False",
+      "source_color": "Orange",
+      "line": "rapid plus",
+      "color": "orange",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "orange"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Orange::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Orange"
+    },
+    "elegoo_pla_plarapidplusgrey_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Grey::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Grey",
+      "line": "rapid plus",
+      "color": "gray",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "gray"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Grey::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Grey"
+    },
+    "elegoo_pla_rapidplaplusgrey_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Grey::PLA::1000::1.75::cardboard::False",
+      "source_color": "Grey",
+      "line": "rapid plus",
+      "color": "gray",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "gray"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Grey::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Grey"
+    },
+    "elegoo_pla_plarapidplussilver_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Silver::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Silver",
+      "line": "rapid plus",
+      "color": "silver",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "silver"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Silver::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Silver"
+    },
+    "elegoo_pla_rapidplaplussilver_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Silver::PLA::250::1.75::cardboard::False",
+      "source_color": "Silver",
+      "line": "rapid plus",
+      "color": "silver",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "silver"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Silver::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Silver"
+    },
+    "elegoo_pla_plarapidplussilver_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Silver::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Silver",
+      "line": "rapid plus",
+      "color": "silver",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "silver"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Silver::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Silver"
+    },
+    "elegoo_pla_rapidplaplussilver_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Silver::PLA::1000::1.75::cardboard::False",
+      "source_color": "Silver",
+      "line": "rapid plus",
+      "color": "silver",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "silver"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Silver::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Silver"
+    },
+    "elegoo_pla_plarapidpluswhite_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus White::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus White",
+      "line": "rapid plus",
+      "color": "white",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "white"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus White::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "White"
+    },
+    "elegoo_pla_rapidplapluswhite_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus White::PLA::250::1.75::cardboard::False",
+      "source_color": "White",
+      "line": "rapid plus",
+      "color": "white",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "white"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus White::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus White"
+    },
+    "elegoo_pla_plarapidplusblue_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Blue::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Blue",
+      "line": "rapid plus",
+      "color": "blue",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Blue::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Blue"
+    },
+    "elegoo_pla_rapidplaplusblue_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Blue::PLA::250::1.75::cardboard::False",
+      "source_color": "Blue",
+      "line": "rapid plus",
+      "color": "blue",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "blue"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Blue::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Blue"
+    },
+    "elegoo_pla_plarapidplusbeige_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Beige::PLA::1000::1.75::cardboard::False",
+      "source_color": "RAPID Plus Beige",
+      "line": "rapid plus",
+      "color": "beige",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "beige"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Beige::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "Beige"
+    },
+    "elegoo_pla_rapidplaplusbeige_1000_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Beige::PLA::1000::1.75::cardboard::False",
+      "source_color": "Beige",
+      "line": "rapid plus",
+      "color": "beige",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "beige"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Beige::PLA::1000::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Beige"
+    },
+    "elegoo_pla_plarapidplusbrown_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Brown::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Brown",
+      "line": "rapid plus",
+      "color": "brown",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "brown"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Brown::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Brown"
+    },
+    "elegoo_pla_rapidplaplusbrown_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Brown::PLA::250::1.75::cardboard::False",
+      "source_color": "Brown",
+      "line": "rapid plus",
+      "color": "brown",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "brown"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Brown::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Brown"
+    },
+    "elegoo_pla_plarapidplusblack_250_175_c": {
+      "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Black::PLA::250::1.75::cardboard::False",
+      "source_color": "RAPID Plus Black",
+      "line": "rapid plus",
+      "color": "black",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Black::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "Black"
+    },
+    "elegoo_pla_rapidplaplusblack_250_175_c": {
+      "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Black::PLA::250::1.75::cardboard::False",
+      "source_color": "Black",
+      "line": "rapid plus",
+      "color": "black",
+      "parts": [
+        {
+          "role": "line",
+          "token": "rapid"
+        },
+        {
+          "role": "line",
+          "token": "plus"
+        },
+        {
+          "role": "color",
+          "token": "black"
+        }
+      ],
+      "anchor_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Black::PLA::250::1.75::cardboard::False",
+      "anchor_source_color": "RAPID Plus Black"
+    }
+  },
+  "metadata": [
+    {
+      "id": "elegoo_pla_rapidplaplusgrey_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusbrown_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusbeige_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusred_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusred_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusblue_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusgreen_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusyellow_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplapluswhite_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusblack_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusyellow_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusgreen_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusorange_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusorange_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusgrey_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplussilver_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplussilver_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplapluswhite_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusblue_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusbeige_1000_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusbrown_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusblack_250_175_c",
+      "values": {
+        "extruder_temp": 220,
+        "extruder_temp_range": [
+          200,
+          230
+        ],
+        "bed_temp": null,
+        "bed_temp_range": [
+          40,
+          60
+        ]
+      },
+      "source": "https://www.elegoo.com/products/elegoo-rapid-pla-plus-filament-1-75mm-colored-1kg",
+      "lot": "current exact product-line printing evidence; not packaging/tare",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-0522d36ad17429ef0ef4c56b43995b1ba979a0693d7c7abaa095501d61aa81cb",
+      "ids": [
+        "elegoo_pla_plarapidplusgrey_250_175_c",
+        "elegoo_pla_rapidplaplusgrey_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusgrey_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusgrey_250_175_c": "elegoo_pla_rapidplaplusgrey_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusgrey_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Grey",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9F9F9F",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Grey::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Grey",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 89,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusgrey_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Grey",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8F949B",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-03"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Grey::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Grey",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusgrey_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusgrey_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusgrey_250_175_c": "9F9F9F",
+          "elegoo_pla_rapidplaplusgrey_250_175_c": "8F949B"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusgrey_250_175_c": null,
+          "elegoo_pla_rapidplaplusgrey_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusgrey_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusgrey_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusgrey_250_175_c": null,
+          "elegoo_pla_rapidplaplusgrey_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusgrey_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusgrey_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusgrey_250_175_c": null,
+          "elegoo_pla_rapidplaplusgrey_250_175_c": [
+            "SPUK-EL-RPP-03"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-0522d36ad17429ef0ef4c56b43995b1ba979a0693d7c7abaa095501d61aa81cb",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusgrey_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusgrey_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-1415acb0fc41debe5d923045d7f411c3b638803f29de701c6e1003f1be753c15",
+      "ids": [
+        "elegoo_pla_plarapidplusbrown_1000_175_c",
+        "elegoo_pla_rapidplaplusbrown_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusbrown_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusbrown_1000_175_c": "elegoo_pla_rapidplaplusbrown_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusbrown_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Brown",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "A45B27",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Brown::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Brown",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 122,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusbrown_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Brown",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9E6A4B",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-11"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Brown::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Brown",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusbrown_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusbrown_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusbrown_1000_175_c": "A45B27",
+          "elegoo_pla_rapidplaplusbrown_1000_175_c": "9E6A4B"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusbrown_1000_175_c": null,
+          "elegoo_pla_rapidplaplusbrown_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusbrown_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusbrown_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusbrown_1000_175_c": null,
+          "elegoo_pla_rapidplaplusbrown_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusbrown_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusbrown_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusbrown_1000_175_c": null,
+          "elegoo_pla_rapidplaplusbrown_1000_175_c": [
+            "SPUK-EL-RPP-11"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-1415acb0fc41debe5d923045d7f411c3b638803f29de701c6e1003f1be753c15",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusbrown_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusbrown_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-1b1d9234a76ff760c7d3316170e468e6ad3b05b5d4cff37249adfa75fea51a02",
+      "ids": [
+        "elegoo_pla_plarapidplusbeige_250_175_c",
+        "elegoo_pla_rapidplaplusbeige_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusbeige_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusbeige_250_175_c": "elegoo_pla_rapidplaplusbeige_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusbeige_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Beige",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DAC7A0",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Beige::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Beige",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 84,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusbeige_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Beige",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "F4E0B8",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-12"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Beige::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Beige",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusbeige_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusbeige_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusbeige_250_175_c": "DAC7A0",
+          "elegoo_pla_rapidplaplusbeige_250_175_c": "F4E0B8"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusbeige_250_175_c": null,
+          "elegoo_pla_rapidplaplusbeige_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusbeige_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusbeige_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusbeige_250_175_c": null,
+          "elegoo_pla_rapidplaplusbeige_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusbeige_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusbeige_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusbeige_250_175_c": null,
+          "elegoo_pla_rapidplaplusbeige_250_175_c": [
+            "SPUK-EL-RPP-12"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-1b1d9234a76ff760c7d3316170e468e6ad3b05b5d4cff37249adfa75fea51a02",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusbeige_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusbeige_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-3799af5b253b3cbc210e42baa609496eab7cd4027f8084ab49fc0ddd212181bf",
+      "ids": [
+        "elegoo_pla_plarapidplusred_250_175_c",
+        "elegoo_pla_rapidplaplusred_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusred_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusred_250_175_c": "elegoo_pla_rapidplaplusred_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusred_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Red",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DE1619",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Red::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Red",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 91,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusred_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Red",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "EA140E",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-06"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Red::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Red",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusred_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusred_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusred_250_175_c": "DE1619",
+          "elegoo_pla_rapidplaplusred_250_175_c": "EA140E"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusred_250_175_c": null,
+          "elegoo_pla_rapidplaplusred_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusred_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusred_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusred_250_175_c": null,
+          "elegoo_pla_rapidplaplusred_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusred_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusred_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusred_250_175_c": null,
+          "elegoo_pla_rapidplaplusred_250_175_c": [
+            "SPUK-EL-RPP-06"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-3799af5b253b3cbc210e42baa609496eab7cd4027f8084ab49fc0ddd212181bf",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusred_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusred_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-41bb4814cf71ee60c02ce320078ec87034c7102de8fd48945d1be5456efe85e8",
+      "ids": [
+        "elegoo_pla_plarapidplusred_1000_175_c",
+        "elegoo_pla_rapidplaplusred_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusred_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusred_1000_175_c": "elegoo_pla_rapidplaplusred_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusred_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Red",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DE1619",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Red::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Red",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 126,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusred_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Red",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "EA140E",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-06"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Red::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Red",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusred_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusred_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusred_1000_175_c": "DE1619",
+          "elegoo_pla_rapidplaplusred_1000_175_c": "EA140E"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusred_1000_175_c": null,
+          "elegoo_pla_rapidplaplusred_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusred_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusred_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusred_1000_175_c": null,
+          "elegoo_pla_rapidplaplusred_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusred_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusred_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusred_1000_175_c": null,
+          "elegoo_pla_rapidplaplusred_1000_175_c": [
+            "SPUK-EL-RPP-06"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-41bb4814cf71ee60c02ce320078ec87034c7102de8fd48945d1be5456efe85e8",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusred_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusred_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-485122a1cb0f281f91100b85edb1ab305533fdf6f6323ce75edc2d8d72968b43",
+      "ids": [
+        "elegoo_pla_plarapidplusblue_1000_175_c",
+        "elegoo_pla_rapidplaplusblue_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusblue_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusblue_1000_175_c": "elegoo_pla_rapidplaplusblue_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusblue_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Blue",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0E21AE",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Blue::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Blue",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 121,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusblue_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Blue",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "2240AF",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-04"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Blue::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Blue",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusblue_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusblue_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusblue_1000_175_c": "0E21AE",
+          "elegoo_pla_rapidplaplusblue_1000_175_c": "2240AF"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusblue_1000_175_c": null,
+          "elegoo_pla_rapidplaplusblue_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusblue_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusblue_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusblue_1000_175_c": null,
+          "elegoo_pla_rapidplaplusblue_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusblue_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusblue_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusblue_1000_175_c": null,
+          "elegoo_pla_rapidplaplusblue_1000_175_c": [
+            "SPUK-EL-RPP-04"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-485122a1cb0f281f91100b85edb1ab305533fdf6f6323ce75edc2d8d72968b43",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusblue_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusblue_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-5f597b989b37413a10a7ef851f9a1ea0d4ef62cc206fb52e001dfe061df77d58",
+      "ids": [
+        "elegoo_pla_plarapidplusgreen_1000_175_c",
+        "elegoo_pla_rapidplaplusgreen_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusgreen_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusgreen_1000_175_c": "elegoo_pla_rapidplaplusgreen_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusgreen_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Green",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "4DFF64",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Green::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Green",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 123,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusgreen_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Green",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "08E327",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-05"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Green::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Green",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusgreen_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusgreen_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusgreen_1000_175_c": "4DFF64",
+          "elegoo_pla_rapidplaplusgreen_1000_175_c": "08E327"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusgreen_1000_175_c": null,
+          "elegoo_pla_rapidplaplusgreen_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusgreen_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusgreen_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusgreen_1000_175_c": null,
+          "elegoo_pla_rapidplaplusgreen_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusgreen_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusgreen_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusgreen_1000_175_c": null,
+          "elegoo_pla_rapidplaplusgreen_1000_175_c": [
+            "SPUK-EL-RPP-05"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-5f597b989b37413a10a7ef851f9a1ea0d4ef62cc206fb52e001dfe061df77d58",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusgreen_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusgreen_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-6df5f8e917c6822ddaa3dd06298be8df621eb4c8ac8dc9c67be67bec01076669",
+      "ids": [
+        "elegoo_pla_plarapidplusyellow_250_175_c",
+        "elegoo_pla_rapidplaplusyellow_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusyellow_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusyellow_250_175_c": "elegoo_pla_rapidplaplusyellow_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusyellow_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Yellow",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FBE200",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Yellow::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Yellow",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 94,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusyellow_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Yellow",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FBEC07",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-08"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Yellow::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Yellow",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusyellow_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusyellow_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusyellow_250_175_c": "FBE200",
+          "elegoo_pla_rapidplaplusyellow_250_175_c": "FBEC07"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusyellow_250_175_c": null,
+          "elegoo_pla_rapidplaplusyellow_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusyellow_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusyellow_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusyellow_250_175_c": null,
+          "elegoo_pla_rapidplaplusyellow_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusyellow_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusyellow_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusyellow_250_175_c": null,
+          "elegoo_pla_rapidplaplusyellow_250_175_c": [
+            "SPUK-EL-RPP-08"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-6df5f8e917c6822ddaa3dd06298be8df621eb4c8ac8dc9c67be67bec01076669",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusyellow_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusyellow_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-896cb956e68a1f8f0a54fe9eba5b1bad44266fba3ee9ebdb765453ce2e62d872",
+      "ids": [
+        "elegoo_pla_plarapidpluswhite_1000_175_c",
+        "elegoo_pla_rapidplapluswhite_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplapluswhite_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidpluswhite_1000_175_c": "elegoo_pla_rapidplapluswhite_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidpluswhite_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus White",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus White::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus White",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 128,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplapluswhite_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus White",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-02"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus White::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "White",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidpluswhite_1000_175_c": 1.26,
+          "elegoo_pla_rapidplapluswhite_1000_175_c": 1.2
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidpluswhite_1000_175_c": null,
+          "elegoo_pla_rapidplapluswhite_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidpluswhite_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplapluswhite_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidpluswhite_1000_175_c": null,
+          "elegoo_pla_rapidplapluswhite_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidpluswhite_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplapluswhite_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidpluswhite_1000_175_c": null,
+          "elegoo_pla_rapidplapluswhite_1000_175_c": [
+            "SPUK-EL-RPP-02"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-896cb956e68a1f8f0a54fe9eba5b1bad44266fba3ee9ebdb765453ce2e62d872",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplapluswhite_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidpluswhite_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-a34f4055944cf778a79f35bb110c9f8b5ed9922f667257c21aa74621b45787ed",
+      "ids": [
+        "elegoo_pla_plarapidplusblack_1000_175_c",
+        "elegoo_pla_rapidplaplusblack_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusblack_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusblack_1000_175_c": "elegoo_pla_rapidplaplusblack_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusblack_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Black",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Black::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Black",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 120,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusblack_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Black",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-01"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Black::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Black",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusblack_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusblack_1000_175_c": 1.2
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusblack_1000_175_c": null,
+          "elegoo_pla_rapidplaplusblack_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusblack_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusblack_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusblack_1000_175_c": null,
+          "elegoo_pla_rapidplaplusblack_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusblack_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusblack_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusblack_1000_175_c": null,
+          "elegoo_pla_rapidplaplusblack_1000_175_c": [
+            "SPUK-EL-RPP-01"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-a34f4055944cf778a79f35bb110c9f8b5ed9922f667257c21aa74621b45787ed",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusblack_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusblack_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-a7a6d6fa72fc0162c74e614ca474fdbcba27eda527ec68f799491755414a2078",
+      "ids": [
+        "elegoo_pla_plarapidplusyellow_1000_175_c",
+        "elegoo_pla_rapidplaplusyellow_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusyellow_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusyellow_1000_175_c": "elegoo_pla_rapidplaplusyellow_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusyellow_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Yellow",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FBE200",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Yellow::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Yellow",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 129,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusyellow_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Yellow",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FBEC07",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-08"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Yellow::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Yellow",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusyellow_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusyellow_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusyellow_1000_175_c": "FBE200",
+          "elegoo_pla_rapidplaplusyellow_1000_175_c": "FBEC07"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusyellow_1000_175_c": null,
+          "elegoo_pla_rapidplaplusyellow_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusyellow_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusyellow_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusyellow_1000_175_c": null,
+          "elegoo_pla_rapidplaplusyellow_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusyellow_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusyellow_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusyellow_1000_175_c": null,
+          "elegoo_pla_rapidplaplusyellow_1000_175_c": [
+            "SPUK-EL-RPP-08"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-a7a6d6fa72fc0162c74e614ca474fdbcba27eda527ec68f799491755414a2078",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusyellow_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusyellow_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-aa0078b4fa3522dc8e7e56fcff0def49940a676ea69ee5b8756c398ee2dbde27",
+      "ids": [
+        "elegoo_pla_plarapidplusgreen_250_175_c",
+        "elegoo_pla_rapidplaplusgreen_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusgreen_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusgreen_250_175_c": "elegoo_pla_rapidplaplusgreen_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusgreen_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Green",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "4DFF64",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Green::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Green",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 88,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusgreen_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Green",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "08E327",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-05"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Green::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Green",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusgreen_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusgreen_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusgreen_250_175_c": "4DFF64",
+          "elegoo_pla_rapidplaplusgreen_250_175_c": "08E327"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusgreen_250_175_c": null,
+          "elegoo_pla_rapidplaplusgreen_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusgreen_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusgreen_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusgreen_250_175_c": null,
+          "elegoo_pla_rapidplaplusgreen_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusgreen_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusgreen_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusgreen_250_175_c": null,
+          "elegoo_pla_rapidplaplusgreen_250_175_c": [
+            "SPUK-EL-RPP-05"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-aa0078b4fa3522dc8e7e56fcff0def49940a676ea69ee5b8756c398ee2dbde27",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusgreen_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusgreen_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-af8a14fb0686ae935a1ef2c34c7e12c23f261ea573977616548481cee1794176",
+      "ids": [
+        "elegoo_pla_plarapidplusorange_1000_175_c",
+        "elegoo_pla_rapidplaplusorange_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusorange_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusorange_1000_175_c": "elegoo_pla_rapidplaplusorange_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusorange_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Orange",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FF8E24",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Orange::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Orange",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 125,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusorange_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Orange",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FD7C18",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-07"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Orange::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Orange",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusorange_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusorange_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusorange_1000_175_c": "FF8E24",
+          "elegoo_pla_rapidplaplusorange_1000_175_c": "FD7C18"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusorange_1000_175_c": null,
+          "elegoo_pla_rapidplaplusorange_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusorange_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusorange_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusorange_1000_175_c": null,
+          "elegoo_pla_rapidplaplusorange_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusorange_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusorange_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusorange_1000_175_c": null,
+          "elegoo_pla_rapidplaplusorange_1000_175_c": [
+            "SPUK-EL-RPP-07"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-af8a14fb0686ae935a1ef2c34c7e12c23f261ea573977616548481cee1794176",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusorange_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusorange_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-b92be3818953e7c6a7a572df7fc8eb34a83af0b6849c35f3c96f4d8ec25a6469",
+      "ids": [
+        "elegoo_pla_plarapidplusorange_250_175_c",
+        "elegoo_pla_rapidplaplusorange_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusorange_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusorange_250_175_c": "elegoo_pla_rapidplaplusorange_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusorange_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Orange",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FF8E24",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Orange::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Orange",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 90,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusorange_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Orange",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FD7C18",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-07"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Orange::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Orange",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusorange_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusorange_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusorange_250_175_c": "FF8E24",
+          "elegoo_pla_rapidplaplusorange_250_175_c": "FD7C18"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusorange_250_175_c": null,
+          "elegoo_pla_rapidplaplusorange_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusorange_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusorange_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusorange_250_175_c": null,
+          "elegoo_pla_rapidplaplusorange_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusorange_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusorange_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusorange_250_175_c": null,
+          "elegoo_pla_rapidplaplusorange_250_175_c": [
+            "SPUK-EL-RPP-07"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-b92be3818953e7c6a7a572df7fc8eb34a83af0b6849c35f3c96f4d8ec25a6469",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusorange_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusorange_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-d93daecaf2dad9556bacb5bdd4befbb4497784e223d538e3922917fcbc8397de",
+      "ids": [
+        "elegoo_pla_plarapidplusgrey_1000_175_c",
+        "elegoo_pla_rapidplaplusgrey_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusgrey_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusgrey_1000_175_c": "elegoo_pla_rapidplaplusgrey_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusgrey_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Grey",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9F9F9F",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Grey::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Grey",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 124,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusgrey_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Grey",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "8F949B",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-03"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Grey::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Grey",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusgrey_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusgrey_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusgrey_1000_175_c": "9F9F9F",
+          "elegoo_pla_rapidplaplusgrey_1000_175_c": "8F949B"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusgrey_1000_175_c": null,
+          "elegoo_pla_rapidplaplusgrey_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusgrey_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusgrey_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusgrey_1000_175_c": null,
+          "elegoo_pla_rapidplaplusgrey_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusgrey_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusgrey_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusgrey_1000_175_c": null,
+          "elegoo_pla_rapidplaplusgrey_1000_175_c": [
+            "SPUK-EL-RPP-03"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-d93daecaf2dad9556bacb5bdd4befbb4497784e223d538e3922917fcbc8397de",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusgrey_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusgrey_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-dbdaeb7011cfbaf7f0c0901ef55eb4404ce72f2ac959daf9cf020bfaac31104e",
+      "ids": [
+        "elegoo_pla_plarapidplussilver_250_175_c",
+        "elegoo_pla_rapidplaplussilver_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplussilver_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplussilver_250_175_c": "elegoo_pla_rapidplaplussilver_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplussilver_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Silver",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "6F727E",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Silver::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Silver",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 92,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplussilver_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Silver",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9F9F9F",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-09"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Silver::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Silver",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplussilver_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplussilver_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplussilver_250_175_c": "6F727E",
+          "elegoo_pla_rapidplaplussilver_250_175_c": "9F9F9F"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplussilver_250_175_c": null,
+          "elegoo_pla_rapidplaplussilver_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplussilver_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplussilver_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplussilver_250_175_c": null,
+          "elegoo_pla_rapidplaplussilver_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplussilver_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplussilver_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplussilver_250_175_c": null,
+          "elegoo_pla_rapidplaplussilver_250_175_c": [
+            "SPUK-EL-RPP-09"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-dbdaeb7011cfbaf7f0c0901ef55eb4404ce72f2ac959daf9cf020bfaac31104e",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplussilver_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplussilver_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-dd044189a170d45217db1ae8f48bb7abbf2afbac511a32a76fc5a9ba4b1440d9",
+      "ids": [
+        "elegoo_pla_plarapidplussilver_1000_175_c",
+        "elegoo_pla_rapidplaplussilver_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplussilver_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplussilver_1000_175_c": "elegoo_pla_rapidplaplussilver_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplussilver_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Silver",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "6F727E",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Silver::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Silver",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 127,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplussilver_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Silver",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9F9F9F",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-09"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Silver::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Silver",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplussilver_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplussilver_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplussilver_1000_175_c": "6F727E",
+          "elegoo_pla_rapidplaplussilver_1000_175_c": "9F9F9F"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplussilver_1000_175_c": null,
+          "elegoo_pla_rapidplaplussilver_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplussilver_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplussilver_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplussilver_1000_175_c": null,
+          "elegoo_pla_rapidplaplussilver_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplussilver_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplussilver_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplussilver_1000_175_c": null,
+          "elegoo_pla_rapidplaplussilver_1000_175_c": [
+            "SPUK-EL-RPP-09"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-dd044189a170d45217db1ae8f48bb7abbf2afbac511a32a76fc5a9ba4b1440d9",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplussilver_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplussilver_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-de359707fd50d6af8ee29f835a9529737defe57debde9e46f443e1de6ecd58ae",
+      "ids": [
+        "elegoo_pla_plarapidpluswhite_250_175_c",
+        "elegoo_pla_rapidplapluswhite_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplapluswhite_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidpluswhite_250_175_c": "elegoo_pla_rapidplapluswhite_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidpluswhite_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus White",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus White::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus White",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 93,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplapluswhite_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus White",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "FFFFFF",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-02"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus White::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "White",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidpluswhite_250_175_c": 1.26,
+          "elegoo_pla_rapidplapluswhite_250_175_c": 1.2
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidpluswhite_250_175_c": null,
+          "elegoo_pla_rapidplapluswhite_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidpluswhite_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplapluswhite_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidpluswhite_250_175_c": null,
+          "elegoo_pla_rapidplapluswhite_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidpluswhite_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplapluswhite_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidpluswhite_250_175_c": null,
+          "elegoo_pla_rapidplapluswhite_250_175_c": [
+            "SPUK-EL-RPP-02"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-de359707fd50d6af8ee29f835a9529737defe57debde9e46f443e1de6ecd58ae",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplapluswhite_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidpluswhite_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-e24819a0db881e72a260080782bc11d353fef7c4672d83f93b8581b77573f05e",
+      "ids": [
+        "elegoo_pla_plarapidplusblue_250_175_c",
+        "elegoo_pla_rapidplaplusblue_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusblue_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusblue_250_175_c": "elegoo_pla_rapidplaplusblue_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusblue_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Blue",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "0E21AE",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Blue::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Blue",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 86,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusblue_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Blue",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "2240AF",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-04"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Blue::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Blue",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusblue_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusblue_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusblue_250_175_c": "0E21AE",
+          "elegoo_pla_rapidplaplusblue_250_175_c": "2240AF"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusblue_250_175_c": null,
+          "elegoo_pla_rapidplaplusblue_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusblue_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusblue_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusblue_250_175_c": null,
+          "elegoo_pla_rapidplaplusblue_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusblue_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusblue_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusblue_250_175_c": null,
+          "elegoo_pla_rapidplaplusblue_250_175_c": [
+            "SPUK-EL-RPP-04"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-e24819a0db881e72a260080782bc11d353fef7c4672d83f93b8581b77573f05e",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusblue_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusblue_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-e5b830f25acf9d4b674f04468f253e3e48ec519cc1d5c99234a7f0343fb2241a",
+      "ids": [
+        "elegoo_pla_plarapidplusbeige_1000_175_c",
+        "elegoo_pla_rapidplaplusbeige_1000_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusbeige_1000_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusbeige_1000_175_c": "elegoo_pla_rapidplaplusbeige_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusbeige_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Beige",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "DAC7A0",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Beige::PLA::1000::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Beige",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 119,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusbeige_1000_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Beige",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 1000,
+          "spool_weight": 154,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "F4E0B8",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-12"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Beige::PLA::1000::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Beige",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusbeige_1000_175_c": 1.26,
+          "elegoo_pla_rapidplaplusbeige_1000_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusbeige_1000_175_c": "DAC7A0",
+          "elegoo_pla_rapidplaplusbeige_1000_175_c": "F4E0B8"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusbeige_1000_175_c": null,
+          "elegoo_pla_rapidplaplusbeige_1000_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusbeige_1000_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusbeige_1000_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusbeige_1000_175_c": null,
+          "elegoo_pla_rapidplaplusbeige_1000_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusbeige_1000_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusbeige_1000_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusbeige_1000_175_c": null,
+          "elegoo_pla_rapidplaplusbeige_1000_175_c": [
+            "SPUK-EL-RPP-12"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-e5b830f25acf9d4b674f04468f253e3e48ec519cc1d5c99234a7f0343fb2241a",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusbeige_1000_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusbeige_1000_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-f3a3120ea87f8e913a822f810abc64c99f469f32db51ef286be32c5c2621db15",
+      "ids": [
+        "elegoo_pla_plarapidplusbrown_250_175_c",
+        "elegoo_pla_rapidplaplusbrown_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusbrown_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusbrown_250_175_c": "elegoo_pla_rapidplaplusbrown_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusbrown_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Brown",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "A45B27",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Brown::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Brown",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 87,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusbrown_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Brown",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "9E6A4B",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-11"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Brown::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Brown",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusbrown_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusbrown_250_175_c": 1.2
+        },
+        "color_hex": {
+          "elegoo_pla_plarapidplusbrown_250_175_c": "A45B27",
+          "elegoo_pla_rapidplaplusbrown_250_175_c": "9E6A4B"
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusbrown_250_175_c": null,
+          "elegoo_pla_rapidplaplusbrown_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusbrown_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusbrown_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusbrown_250_175_c": null,
+          "elegoo_pla_rapidplaplusbrown_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusbrown_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusbrown_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusbrown_250_175_c": null,
+          "elegoo_pla_rapidplaplusbrown_250_175_c": [
+            "SPUK-EL-RPP-11"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-f3a3120ea87f8e913a822f810abc64c99f469f32db51ef286be32c5c2621db15",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusbrown_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusbrown_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    },
+    {
+      "group_id": "dup-f40f91047045561819fe95a941ec33ffd5d4272a33d6d366eae151ee78fef823",
+      "ids": [
+        "elegoo_pla_plarapidplusblack_250_175_c",
+        "elegoo_pla_rapidplaplusblack_250_175_c"
+      ],
+      "proposed_survivor": "elegoo_pla_rapidplaplusblack_250_175_c",
+      "survivor_rule": 3,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "elegoo_pla_plarapidplusblack_250_175_c": "elegoo_pla_rapidplaplusblack_250_175_c"
+      },
+      "records": [
+        {
+          "id": "elegoo_pla_plarapidplusblack_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "PLA RAPID Plus Black",
+          "material": "PLA",
+          "density": 1.26,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Black::PLA::250::1.75::cardboard::False",
+          "template": "PLA {color_name}",
+          "source_color": "RAPID Plus Black",
+          "source_line": "PLA",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 85,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 1,
+            "compiled_records": 1
+          },
+          "upstream": false
+        },
+        {
+          "id": "elegoo_pla_rapidplaplusblack_250_175_c",
+          "manufacturer": "ELEGOO",
+          "name": "RAPID PLA Plus Black",
+          "material": "PLA",
+          "density": 1.2,
+          "weight": 250,
+          "spool_weight": 90,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "000000",
+          "color_hexes": null,
+          "extruder_temp": 205,
+          "extruder_temp_range": null,
+          "bed_temp": 60,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "SPUK-EL-RPP-01"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "elegoo.json::ELEGOO::RAPID PLA Plus {color_name}::RAPID PLA Plus Black::PLA::250::1.75::cardboard::False",
+          "template": "RAPID PLA Plus {color_name}",
+          "source_color": "Black",
+          "source_line": "RAPID PLA Plus",
+          "source_file": "elegoo.json",
+          "source_definition": {
+            "source_file": "elegoo.json",
+            "definition_index": 210,
+            "weights": 3,
+            "diameters": 1,
+            "colors": 11,
+            "compiled_records": 33
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "elegoo_pla_plarapidplusblack_250_175_c": 1.26,
+          "elegoo_pla_rapidplaplusblack_250_175_c": 1.2
+        },
+        "extruder_temp": {
+          "elegoo_pla_plarapidplusblack_250_175_c": null,
+          "elegoo_pla_rapidplaplusblack_250_175_c": 205
+        },
+        "extruder_temp_range": {
+          "elegoo_pla_plarapidplusblack_250_175_c": [
+            190,
+            230
+          ],
+          "elegoo_pla_rapidplaplusblack_250_175_c": null
+        },
+        "bed_temp": {
+          "elegoo_pla_plarapidplusblack_250_175_c": null,
+          "elegoo_pla_rapidplaplusblack_250_175_c": 60
+        },
+        "bed_temp_range": {
+          "elegoo_pla_plarapidplusblack_250_175_c": [
+            50,
+            70
+          ],
+          "elegoo_pla_rapidplaplusblack_250_175_c": null
+        },
+        "codes": {
+          "elegoo_pla_plarapidplusblack_250_175_c": null,
+          "elegoo_pla_rapidplaplusblack_250_175_c": [
+            "SPUK-EL-RPP-01"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": true,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "dup-f40f91047045561819fe95a941ec33ffd5d4272a33d6d366eae151ee78fef823",
+      "prior_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json",
+      "status": "APPROVED",
+      "survivor": "elegoo_pla_rapidplaplusblack_250_175_c",
+      "retire": [
+        "elegoo_pla_plarapidplusblack_250_175_c"
+      ],
+      "decision_rule": "Rule 3",
+      "decision_reason": "Exact ordered line/color binding anchored to counterpart template; survivor priority recomputed against current source definitions"
+    }
+  ],
+  "deferred_groups": [],
+  "proposed_retired_ids": {
+    "elegoo_pla_plarapidplusgrey_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusgrey_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Grey::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusbrown_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusbrown_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Brown::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusbeige_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusbeige_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Beige::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusred_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusred_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Red::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusred_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusred_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Red::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusblue_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusblue_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Blue::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusgreen_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusgreen_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Green::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusyellow_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusyellow_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Yellow::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidpluswhite_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplapluswhite_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus White::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusblack_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusblack_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Black::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusyellow_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusyellow_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Yellow::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusgreen_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusgreen_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Green::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusorange_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusorange_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Orange::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusorange_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusorange_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Orange::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusgrey_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusgrey_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Grey::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplussilver_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplussilver_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Silver::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplussilver_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplussilver_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Silver::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidpluswhite_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplapluswhite_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus White::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusblue_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusblue_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Blue::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusbeige_1000_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusbeige_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Beige::PLA::1000::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusbrown_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusbrown_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Brown::PLA::250::1.75::cardboard::False"
+    },
+    "elegoo_pla_plarapidplusblack_250_175_c": {
+      "replaced_by": "elegoo_pla_rapidplaplusblack_250_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-elegoo-full-repo-review.json",
+      "source": "d2fdc92ac75acb5c20c44b4734f7345af8a9d7a9",
+      "retired_key": "elegoo.json::ELEGOO::PLA {color_name}::PLA RAPID Plus Black::PLA::250::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "printing_default_flags": [
+    {
+      "id": "elegoo_pla_rapidplaplusgrey_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusbrown_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusbeige_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusred_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusred_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusblue_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusgreen_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusyellow_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplapluswhite_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusblack_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusyellow_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusgreen_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusorange_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusorange_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusgrey_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplussilver_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplussilver_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplapluswhite_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusblue_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusbeige_1000_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusbrown_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    },
+    {
+      "id": "elegoo_pla_rapidplaplusblack_250_175_c",
+      "resolution": "Current family printing source reverified; FILATECH Hyper density and layer-specific bed values remain unresolved. Existing historical weight availability/SKU fanout not asserted."
+    }
+  ],
+  "hard_stop_groups": [],
+  "scope": "Phase B whole-catalog audit; current exact-line official name resolves former Rule4 Cartesian survivor, no availability additions",
+  "summary": {
+    "groups": 22,
+    "approved_groups": 22,
+    "retired": 22,
+    "deferred": 0,
+    "before_count": 51656,
+    "after_count": 51634,
+    "metadata_fields_changed": 88,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs\\audits\\2026-10-03-elegoo-duplicate-review.json"
+}
