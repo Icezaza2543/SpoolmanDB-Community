@@ -2221,36 +2221,6 @@
       ]
     },
     {
-      "name": "Glow ABS {color_name}",
-      "material": "ABS",
-      "density": 1.04,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_type": "cardboard",
-          "spool_weight": 173
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "colors": [
-        {
-          "name": "Green",
-          "hex": "4DFF64",
-          "glow": true
-        }
-      ],
-      "extruder_temp_range": [
-        230,
-        260
-      ],
-      "bed_temp_range": [
-        90,
-        110
-      ]
-    },
-    {
       "name": "ABS Basic {color_name}",
       "material": "ABS",
       "density": 1.05,
