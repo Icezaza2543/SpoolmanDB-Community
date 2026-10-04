@@ -60,8 +60,15 @@ def plan_merge(root, brand, review, exclude=()):
         if not isinstance(retire, list) or not retire or not all(isinstance(identity, str) for identity in retire) or len(set(retire)) != len(retire) or keep in retire or keep not in groups[gid]["ids"] or not set(retire) <= set(groups[gid]["ids"]):
             raise ValueError(f"exact surviving/retired group membership required: {gid}")
         proposed = groups[gid]["proposed_survivor"]
+        override = decision.get("survivor_override")
+        if override is not None and (not isinstance(override, dict) or
+                set(override) != {"reason", "source"} or
+                not isinstance(override.get("reason"), str) or not override["reason"].strip() or
+                not valid_source(override.get("source"))):
+            raise ValueError(f"survivor override requires exact reviewed reason/evidence: {gid}")
         if proposed and keep != proposed:
-            raise ValueError(f"survivor contradicts approved priority/evidence: {gid}")
+            if override is None:
+                raise ValueError(f"survivor contradicts approved priority/evidence: {gid}")
         for old in retire:
             if old in mapping or old in registry["retired"]:
                 raise ValueError(f"duplicate retirement decision: {old}")
