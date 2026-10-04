@@ -271,7 +271,68 @@ def test_existing_repository_passes_semantics():
 
     errors, warnings = check_source_data_semantics(filaments_dir, materials_file)
     assert errors == []
-    assert warnings == []
+    assert_reviewed_gtin_warnings(ROOT, warnings)
+
+
+def assert_reviewed_gtin_warnings(root, warnings):
+    from scripts.duplicate_catalog import catalog_records
+    import re
+    rows = catalog_records(root)
+    approved_values = set()
+    audited_brands = set()
+    for path in sorted((root / "docs/audits").glob("2026-10-04-*-owner-closure.json")):
+        review = json.loads(path.read_text(encoding="utf-8"))
+        contract = review.get("identifier_bindings_after")
+        if contract is None:
+            continue
+        assert review["version"] == 1 and review["approved"] is True
+        brand = review["brand"]
+        assert brand not in audited_brands
+        audited_brands.add(brand)
+        current = [row["record"] for row in rows if row["filename"] == brand + ".json"]
+        assert set(contract) == {"eans", "eans_refill"}
+        for field, expected in contract.items():
+            actual = {}
+            for record in current:
+                for value in record.get(field) or []:
+                    actual.setdefault(value, []).append(record["id"])
+            assert {value: sorted(ids) for value, ids in actual.items()} == expected
+            for value, ids in expected.items():
+                assert sorted(row["record"]["id"] for row in rows
+                    if value in (row["record"].get(field) or [])) == ids
+            approved_values.update(expected)
+    for warning in warnings:
+        match = re.match(r"Duplicate GTIN '([0-9]+)'", warning)
+        assert match and match.group(1) in approved_values, warning
+
+
+@pytest.mark.parametrize("extra_weight", [False, True, "other_brand"])
+def test_reviewed_definition_split_accepts_only_exact_gtin_target_ids(tmp_path, extra_weight):
+    (tmp_path / "filaments").mkdir()
+    (tmp_path / "docs/audits").mkdir(parents=True)
+    (tmp_path / "contracts").mkdir()
+    (tmp_path / "contracts/retired_ids.json").write_text(json.dumps({"version": 1, "retired": {}}))
+    definition = {"name": "PLA {color_name}", "material": "PLA", "density": 1.24,
+        "diameters": [1.75], "colors": [{"name": "Black", "hex": "000000", "eans": ["4006381333931"]}]}
+    weights = [750, 1000] + ([2000] if extra_weight is True else [])
+    (tmp_path / "filaments/acme.json").write_text(json.dumps({"manufacturer": "Acme", "filaments": [
+        {**definition, "weights": [{"weight": weight, "spool_type": "plastic"}]} for weight in weights]}))
+    (tmp_path / "materials.json").write_text(json.dumps([{"material": "PLA"}]))
+    if extra_weight == "other_brand":
+        (tmp_path / "filaments/other.json").write_text(json.dumps({"manufacturer": "Other", "filaments": [
+            {**definition, "weights": [{"weight": 1000, "spool_type": "plastic"}]}]}))
+    (tmp_path / "docs/audits/2026-10-04-acme-owner-closure.json").write_text(json.dumps({
+        "version": 1, "approved": True, "brand": "acme", "identifier_bindings_after": {
+            "eans": {"4006381333931": ["acme_pla_plablack_1000_175_p", "acme_pla_plablack_750_175_p"]},
+            "eans_refill": {}}}))
+    errors, warnings = check_source_data_semantics(tmp_path / "filaments", tmp_path / "materials.json")
+    assert errors == []
+    assert len(warnings) == 1
+    if extra_weight:
+        with pytest.raises(AssertionError):
+            assert_reviewed_gtin_warnings(tmp_path, warnings)
+    else:
+        assert_reviewed_gtin_warnings(tmp_path, warnings)
 
 
 def test_compiled_public_ids_are_unique():
