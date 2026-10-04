@@ -1,0 +1,407 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "creality",
+  "base_sha": "62c612f97023c962d51da345e1267b9c530094c9",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "7f4c56d33050048638b6ac227db6694ab69c3ac52fdb14ef8d6fe6b16301e297",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-eb4c14f13d80d3665089641be27c68030271374c8c4c1a3006a86e9df11c8c04": {
+      "approved": true,
+      "survivor": "creality_pla_plagray_1000_175_r",
+      "retire": [
+        "creality_pla_plagrey_1000_175_r"
+      ],
+      "ref": "docs/audits/2026-10-04-creality-owner-closure.json",
+      "source": "62c612f97023c962d51da345e1267b9c530094c9"
+    },
+    "dup-edce4abdd5cab29b4fd8105360be2efa3008314921926c74659a6672e86c2fd2": {
+      "approved": true,
+      "survivor": "creality_pla_plagray_1000_175_p",
+      "retire": [
+        "creality_pla_plagrey_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-creality-owner-closure.json",
+      "source": "62c612f97023c962d51da345e1267b9c530094c9"
+    }
+  },
+  "bindings": {
+    "creality_pla_plagray_1000_175_r": {
+      "key": "creality.json::Creality::PLA {color_name}::PLA Gray::PLA::1000::1.75::None::True",
+      "source_color": "Gray",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "creality_pla_plagrey_1000_175_r": {
+      "key": "creality.json::Creality::PLA {color_name}::PLA Grey::PLA::1000::1.75::None::True",
+      "source_color": "Grey",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "creality_pla_plagray_1000_175_p": {
+      "key": "creality.json::Creality::PLA {color_name}::PLA Gray::PLA::1000::1.75::plastic::False",
+      "source_color": "Gray",
+      "line": "PLA",
+      "color": "gray"
+    },
+    "creality_pla_plagrey_1000_175_p": {
+      "key": "creality.json::Creality::PLA {color_name}::PLA Grey::PLA::1000::1.75::plastic::False",
+      "source_color": "Grey",
+      "line": "PLA",
+      "color": "gray"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-eb4c14f13d80d3665089641be27c68030271374c8c4c1a3006a86e9df11c8c04",
+      "ids": [
+        "creality_pla_plagray_1000_175_r",
+        "creality_pla_plagrey_1000_175_r"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "creality_pla_plagray_1000_175_r",
+          "manufacturer": "Creality",
+          "name": "PLA Gray",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": null,
+          "is_refill": true,
+          "diameter": 1.75,
+          "color_hex": "959FA1",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "creality.json::Creality::PLA {color_name}::PLA Gray::PLA::1000::1.75::None::True",
+          "template": "PLA {color_name}",
+          "source_color": "Gray",
+          "source_line": "PLA",
+          "source_file": "creality.json",
+          "source_definition": {
+            "source_file": "creality.json",
+            "definition_index": 18,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 25,
+            "compiled_records": 50
+          },
+          "upstream": false
+        },
+        {
+          "id": "creality_pla_plagrey_1000_175_r",
+          "manufacturer": "Creality",
+          "name": "PLA Grey",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": null,
+          "is_refill": true,
+          "diameter": 1.75,
+          "color_hex": "ACB1BA",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "creality.json::Creality::PLA {color_name}::PLA Grey::PLA::1000::1.75::None::True",
+          "template": "PLA {color_name}",
+          "source_color": "Grey",
+          "source_line": "PLA",
+          "source_file": "creality.json",
+          "source_definition": {
+            "source_file": "creality.json",
+            "definition_index": 18,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 25,
+            "compiled_records": 50
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "creality_pla_plagray_1000_175_r": "959FA1",
+          "creality_pla_plagrey_1000_175_r": "ACB1BA"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "creality_pla_plagray_1000_175_r",
+      "retire": [
+        "creality_pla_plagrey_1000_175_r"
+      ],
+      "survivor_ranking": {
+        "creality_pla_plagray_1000_175_r": [
+          0,
+          0,
+          0,
+          0,
+          11,
+          "creality_pla_plagray_1000_175_r"
+        ],
+        "creality_pla_plagrey_1000_175_r": [
+          0,
+          0,
+          0,
+          0,
+          11,
+          "creality_pla_plagrey_1000_175_r"
+        ]
+      },
+      "id_first_seen": {
+        "creality_pla_plagray_1000_175_r": [
+          11,
+          "8f4d088ada97e1f22c4a847847de85964db4cc2f"
+        ],
+        "creality_pla_plagrey_1000_175_r": [
+          11,
+          "8f4d088ada97e1f22c4a847847de85964db4cc2f"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    },
+    {
+      "group_id": "dup-edce4abdd5cab29b4fd8105360be2efa3008314921926c74659a6672e86c2fd2",
+      "ids": [
+        "creality_pla_plagray_1000_175_p",
+        "creality_pla_plagrey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "creality_pla_plagray_1000_175_p",
+          "manufacturer": "Creality",
+          "name": "PLA Gray",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "959FA1",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "creality.json::Creality::PLA {color_name}::PLA Gray::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Gray",
+          "source_line": "PLA",
+          "source_file": "creality.json",
+          "source_definition": {
+            "source_file": "creality.json",
+            "definition_index": 18,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 25,
+            "compiled_records": 50
+          },
+          "upstream": false
+        },
+        {
+          "id": "creality_pla_plagrey_1000_175_p",
+          "manufacturer": "Creality",
+          "name": "PLA Grey",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "ACB1BA",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "creality.json::Creality::PLA {color_name}::PLA Grey::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Grey",
+          "source_line": "PLA",
+          "source_file": "creality.json",
+          "source_definition": {
+            "source_file": "creality.json",
+            "definition_index": 18,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 25,
+            "compiled_records": 50
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "creality_pla_plagray_1000_175_p": "959FA1",
+          "creality_pla_plagrey_1000_175_p": "ACB1BA"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "creality_pla_plagray_1000_175_p",
+      "retire": [
+        "creality_pla_plagrey_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "creality_pla_plagray_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          12,
+          "creality_pla_plagray_1000_175_p"
+        ],
+        "creality_pla_plagrey_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          12,
+          "creality_pla_plagrey_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "creality_pla_plagray_1000_175_p": [
+          12,
+          "6012d11dd67a357fbe14d650389f13264de8136f"
+        ],
+        "creality_pla_plagrey_1000_175_p": [
+          12,
+          "6012d11dd67a357fbe14d650389f13264de8136f"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "creality_pla_plagrey_1000_175_r": {
+      "replaced_by": "creality_pla_plagray_1000_175_r",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-creality-owner-closure.json",
+      "source": "62c612f97023c962d51da345e1267b9c530094c9",
+      "retired_key": "creality.json::Creality::PLA {color_name}::PLA Grey::PLA::1000::1.75::None::True"
+    },
+    "creality_pla_plagrey_1000_175_p": {
+      "replaced_by": "creality_pla_plagray_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-creality-owner-closure.json",
+      "source": "62c612f97023c962d51da345e1267b9c530094c9",
+      "retired_key": "creality.json::Creality::PLA {color_name}::PLA Grey::PLA::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 2,
+    "approved_groups": 2,
+    "retired": 2,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51430,
+    "after_count": 51428,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
