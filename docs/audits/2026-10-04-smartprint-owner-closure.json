@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "smartprint",
+  "base_sha": "78893773ea9c70655d0250a099e46b15090a35ad",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "1165b0fba4b94b9cd460e9342246947d0bdf359b69e33911691c880c18aefb5b",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-30bb854d9240b3a016777f8b6dfa75b16c0f1bf737f94d6e1f5362eb72b3c299": {
+      "approved": true,
+      "survivor": "smartprint_tpu_tpugrey_1000_175_p",
+      "retire": [
+        "smartprint_tpu_tpugray_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-smartprint-owner-closure.json",
+      "source": "78893773ea9c70655d0250a099e46b15090a35ad"
+    }
+  },
+  "bindings": {
+    "smartprint_tpu_tpugray_1000_175_p": {
+      "key": "smartprint.json::SmartPrint::TPU {color_name}::TPU Gray::TPU::1000::1.75::plastic::False",
+      "source_color": "Gray",
+      "line": "TPU",
+      "color": "gray"
+    },
+    "smartprint_tpu_tpugrey_1000_175_p": {
+      "key": "smartprint.json::SmartPrint::TPU {color_name}::TPU Grey::TPU::1000::1.75::plastic::False",
+      "source_color": "Grey",
+      "line": "TPU",
+      "color": "gray"
+    }
+  },
+  "metadata": [
+    {
+      "id": "smartprint_tpu_tpugrey_1000_175_p",
+      "values": {
+        "color_hex": "7A7A7A"
+      },
+      "source": "78893773ea9c70655d0250a099e46b15090a35ad",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-30bb854d9240b3a016777f8b6dfa75b16c0f1bf737f94d6e1f5362eb72b3c299",
+      "ids": [
+        "smartprint_tpu_tpugray_1000_175_p",
+        "smartprint_tpu_tpugrey_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "smartprint_tpu_tpugray_1000_175_p",
+          "manufacturer": "SmartPrint",
+          "name": "TPU Gray",
+          "material": "TPU",
+          "density": 1.21,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "7A7A7A",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "smartprint.json::SmartPrint::TPU {color_name}::TPU Gray::TPU::1000::1.75::plastic::False",
+          "template": "TPU {color_name}",
+          "source_color": "Gray",
+          "source_line": "TPU",
+          "source_file": "smartprint.json",
+          "source_definition": {
+            "source_file": "smartprint.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 9,
+            "compiled_records": 9
+          },
+          "upstream": false
+        },
+        {
+          "id": "smartprint_tpu_tpugrey_1000_175_p",
+          "manufacturer": "SmartPrint",
+          "name": "TPU Grey",
+          "material": "TPU",
+          "density": 1.21,
+          "weight": 1000,
+          "spool_weight": 220,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            210,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            30,
+            60
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "smartprint.json::SmartPrint::TPU {color_name}::TPU Grey::TPU::1000::1.75::plastic::False",
+          "template": "TPU {color_name}",
+          "source_color": "Grey",
+          "source_line": "TPU",
+          "source_file": "smartprint.json",
+          "source_definition": {
+            "source_file": "smartprint.json",
+            "definition_index": 3,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 9,
+            "compiled_records": 9
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "smartprint_tpu_tpugray_1000_175_p": "7A7A7A",
+          "smartprint_tpu_tpugrey_1000_175_p": "808080"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "smartprint_tpu_tpugrey_1000_175_p",
+      "retire": [
+        "smartprint_tpu_tpugray_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "smartprint_tpu_tpugray_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          "smartprint_tpu_tpugray_1000_175_p"
+        ],
+        "smartprint_tpu_tpugrey_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          "smartprint_tpu_tpugrey_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "smartprint_tpu_tpugray_1000_175_p": [
+          1,
+          "9b88f226efeb7de969f365d686ef82872524ca41"
+        ],
+        "smartprint_tpu_tpugrey_1000_175_p": [
+          0,
+          "b7ba3677e208803aa865a2e7a5f5188b2cd6c45a"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "smartprint_tpu_tpugray_1000_175_p": {
+      "replaced_by": "smartprint_tpu_tpugrey_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-smartprint-owner-closure.json",
+      "source": "78893773ea9c70655d0250a099e46b15090a35ad",
+      "retired_key": "smartprint.json::SmartPrint::TPU {color_name}::TPU Gray::TPU::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51415,
+    "after_count": 51414,
+    "metadata_fields_changed": 1,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
