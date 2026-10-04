@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "filamentworld",
+  "base_sha": "5cc489a5b06289688e019c79c02e00d5f25adefb",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "b3934d1518dc6550a43328278bf97f1b78ac8e9e5ffbca59f9c6fed050eebec3",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-461266fe7f1d4169145c930b68114c01ac4cc9c936b98588d382fd7e4a051a25",
+      "ids": [
+        "filamentworld_pla_plabasic-darkgreen_1000_175_p",
+        "filamentworld_pla_plabasicdarkgreen_1000_175_p"
+      ],
+      "proposed_survivor": "filamentworld_pla_plabasic-darkgreen_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "filamentworld.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 34,
+            "compiled_records": 68
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "filamentworld_pla_plabasicdarkgreen_1000_175_p": "filamentworld_pla_plabasic-darkgreen_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "filamentworld_pla_plabasic-darkgreen_1000_175_p",
+          "manufacturer": "Filamentworld",
+          "name": "PLA Basic- Dark Green",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "04A584",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            180,
+            210
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DE",
+          "sds_url": null,
+          "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf",
+          "key": "filamentworld.json::Filamentworld::PLA {color_name}::PLA Basic- Dark Green::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Basic- Dark Green",
+          "source_line": "PLA",
+          "source_file": "filamentworld.json",
+          "source_definition": {
+            "source_file": "filamentworld.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 34,
+            "compiled_records": 68
+          },
+          "upstream": false
+        },
+        {
+          "id": "filamentworld_pla_plabasicdarkgreen_1000_175_p",
+          "manufacturer": "Filamentworld",
+          "name": "PLA Basic Dark Green",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "006400",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PLAXBASX175XDGR"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DE",
+          "sds_url": null,
+          "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf",
+          "key": "filamentworld.json::Filamentworld::PLA Basic {color_name}::PLA Basic Dark Green::PLA::1000::1.75::plastic::False",
+          "template": "PLA Basic {color_name}",
+          "source_color": "Dark Green",
+          "source_line": "PLA Basic",
+          "source_file": "filamentworld.json",
+          "source_definition": {
+            "source_file": "filamentworld.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filamentworld_pla_plabasic-darkgreen_1000_175_p": "04A584",
+          "filamentworld_pla_plabasicdarkgreen_1000_175_p": "006400"
+        },
+        "extruder_temp_range": {
+          "filamentworld_pla_plabasic-darkgreen_1000_175_p": [
+            180,
+            210
+          ],
+          "filamentworld_pla_plabasicdarkgreen_1000_175_p": [
+            190,
+            230
+          ]
+        },
+        "codes": {
+          "filamentworld_pla_plabasic-darkgreen_1000_175_p": null,
+          "filamentworld_pla_plabasicdarkgreen_1000_175_p": [
+            "PLAXBASX175XDGR"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "FW001",
+      "prior_audit": "docs/audits/2026-10-03-filamentworld-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "Cartesian survivor needs unresolved owner-pattern evidence"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-461266fe7f1d4169145c930b68114c01ac4cc9c936b98588d382fd7e4a051a25",
+      "ids": [
+        "filamentworld_pla_plabasic-darkgreen_1000_175_p",
+        "filamentworld_pla_plabasicdarkgreen_1000_175_p"
+      ],
+      "proposed_survivor": "filamentworld_pla_plabasic-darkgreen_1000_175_p",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": {
+        "message": "Rule 4 count is a Cartesian expansion, not verified sales coverage; owner review required.",
+        "definitions": [
+          {
+            "source_file": "filamentworld.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 34,
+            "compiled_records": 68
+          }
+        ]
+      },
+      "proposed_retirements": {
+        "filamentworld_pla_plabasicdarkgreen_1000_175_p": "filamentworld_pla_plabasic-darkgreen_1000_175_p"
+      },
+      "records": [
+        {
+          "id": "filamentworld_pla_plabasic-darkgreen_1000_175_p",
+          "manufacturer": "Filamentworld",
+          "name": "PLA Basic- Dark Green",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "04A584",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            180,
+            210
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DE",
+          "sds_url": null,
+          "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf",
+          "key": "filamentworld.json::Filamentworld::PLA {color_name}::PLA Basic- Dark Green::PLA::1000::1.75::plastic::False",
+          "template": "PLA {color_name}",
+          "source_color": "Basic- Dark Green",
+          "source_line": "PLA",
+          "source_file": "filamentworld.json",
+          "source_definition": {
+            "source_file": "filamentworld.json",
+            "definition_index": 3,
+            "weights": 2,
+            "diameters": 1,
+            "colors": 34,
+            "compiled_records": 68
+          },
+          "upstream": false
+        },
+        {
+          "id": "filamentworld_pla_plabasicdarkgreen_1000_175_p",
+          "manufacturer": "Filamentworld",
+          "name": "PLA Basic Dark Green",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": null,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "006400",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            190,
+            230
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            50,
+            70
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": [
+            "PLAXBASX175XDGR"
+          ],
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "DE",
+          "sds_url": null,
+          "tds_url": "https://filamentworld.de/fact-sheets/Filamentworld_PLA_Datenblatt.pdf",
+          "key": "filamentworld.json::Filamentworld::PLA Basic {color_name}::PLA Basic Dark Green::PLA::1000::1.75::plastic::False",
+          "template": "PLA Basic {color_name}",
+          "source_color": "Dark Green",
+          "source_line": "PLA Basic",
+          "source_file": "filamentworld.json",
+          "source_definition": {
+            "source_file": "filamentworld.json",
+            "definition_index": 4,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 8,
+            "compiled_records": 8
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "filamentworld_pla_plabasic-darkgreen_1000_175_p": "04A584",
+          "filamentworld_pla_plabasicdarkgreen_1000_175_p": "006400"
+        },
+        "extruder_temp_range": {
+          "filamentworld_pla_plabasic-darkgreen_1000_175_p": [
+            180,
+            210
+          ],
+          "filamentworld_pla_plabasicdarkgreen_1000_175_p": [
+            190,
+            230
+          ]
+        },
+        "codes": {
+          "filamentworld_pla_plabasic-darkgreen_1000_175_p": null,
+          "filamentworld_pla_plabasicdarkgreen_1000_175_p": [
+            "PLAXBASX175XDGR"
+          ]
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "FW001",
+      "prior_audit": "docs/audits/2026-10-03-filamentworld-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "Cartesian survivor needs unresolved owner-pattern evidence"
+    }
+  ],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 1,
+    "before_count": 51673,
+    "after_count": 51673,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-filamentworld-duplicate-review.json"
+}
