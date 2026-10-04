@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "spectrum",
+  "base_sha": "69a47e37483096b69c2f6b370b01942cbee5f3ef",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "4ebd8c7e36526e1f4e5446f25c6511c4b3a08a4bdf2691e0565c888d9d65bf44",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {},
+  "bindings": {},
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-e78a0754c1c46f31ecdbcad5f9c6264ae480595155b21f9a8bfb1a5d9b3b8f3f",
+      "ids": [
+        "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+        "spectrum_petg_ptfesignalwhite_1000_175_c"
+      ],
+      "proposed_survivor": "spectrum_petg_ptfesignalwhite_1000_175_c",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "spectrum_petg_petg/ptfesignalwhite_1000_175_c": "spectrum_petg_ptfesignalwhite_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+          "manufacturer": "Spectrum",
+          "name": "PETG /PTFE Signal White",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 180,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "EFEFEF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "spectrum.json::Spectrum::PETG {color_name}::PETG /PTFE Signal White::PETG::1000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "/PTFE Signal White",
+          "source_line": "PETG",
+          "source_file": "spectrum.json",
+          "source_definition": {
+            "source_file": "spectrum.json",
+            "definition_index": 45,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        },
+        {
+          "id": "spectrum_petg_ptfesignalwhite_1000_175_c",
+          "manufacturer": "Spectrum",
+          "name": "PTFE Signal White",
+          "material": "PETG",
+          "density": 1.32,
+          "weight": 1000,
+          "spool_weight": 180,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D9DBD8",
+          "color_hexes": null,
+          "extruder_temp": 240,
+          "extruder_temp_range": null,
+          "bed_temp": 75,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf",
+          "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf",
+          "key": "spectrum.json::Spectrum::PTFE {color_name}::PTFE Signal White::PETG::1000::1.75::cardboard::False",
+          "template": "PTFE {color_name}",
+          "source_color": "Signal White",
+          "source_line": "PTFE",
+          "source_file": "spectrum.json",
+          "source_definition": {
+            "source_file": "spectrum.json",
+            "definition_index": 55,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": 1.27,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 1.32
+        },
+        "color_hex": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": "EFEFEF",
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "D9DBD8"
+        },
+        "extruder_temp": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 240
+        },
+        "extruder_temp_range": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+            220,
+            250
+          ],
+          "spectrum_petg_ptfesignalwhite_1000_175_c": null
+        },
+        "bed_temp": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 75
+        },
+        "bed_temp_range": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+            70,
+            90
+          ],
+          "spectrum_petg_ptfesignalwhite_1000_175_c": null
+        },
+        "sds_url": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf"
+        },
+        "tds_url": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "SC001",
+      "prior_audit": "docs/audits/2026-10-03-spectrum-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "qualifier not allowlisted or anchored"
+    }
+  ],
+  "deferred_groups": [
+    {
+      "group_id": "dup-e78a0754c1c46f31ecdbcad5f9c6264ae480595155b21f9a8bfb1a5d9b3b8f3f",
+      "ids": [
+        "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+        "spectrum_petg_ptfesignalwhite_1000_175_c"
+      ],
+      "proposed_survivor": "spectrum_petg_ptfesignalwhite_1000_175_c",
+      "survivor_rule": 4,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {
+        "spectrum_petg_petg/ptfesignalwhite_1000_175_c": "spectrum_petg_ptfesignalwhite_1000_175_c"
+      },
+      "records": [
+        {
+          "id": "spectrum_petg_petg/ptfesignalwhite_1000_175_c",
+          "manufacturer": "Spectrum",
+          "name": "PETG /PTFE Signal White",
+          "material": "PETG",
+          "density": 1.27,
+          "weight": 1000,
+          "spool_weight": 180,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "EFEFEF",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            220,
+            250
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            70,
+            90
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "spectrum.json::Spectrum::PETG {color_name}::PETG /PTFE Signal White::PETG::1000::1.75::cardboard::False",
+          "template": "PETG {color_name}",
+          "source_color": "/PTFE Signal White",
+          "source_line": "PETG",
+          "source_file": "spectrum.json",
+          "source_definition": {
+            "source_file": "spectrum.json",
+            "definition_index": 45,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 2,
+            "compiled_records": 2
+          },
+          "upstream": false
+        },
+        {
+          "id": "spectrum_petg_ptfesignalwhite_1000_175_c",
+          "manufacturer": "Spectrum",
+          "name": "PTFE Signal White",
+          "material": "PETG",
+          "density": 1.32,
+          "weight": 1000,
+          "spool_weight": 180,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "D9DBD8",
+          "color_hexes": null,
+          "extruder_temp": 240,
+          "extruder_temp_range": null,
+          "bed_temp": 75,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "PL",
+          "sds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf",
+          "tds_url": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf",
+          "key": "spectrum.json::Spectrum::PTFE {color_name}::PTFE Signal White::PETG::1000::1.75::cardboard::False",
+          "template": "PTFE {color_name}",
+          "source_color": "Signal White",
+          "source_line": "PTFE",
+          "source_file": "spectrum.json",
+          "source_definition": {
+            "source_file": "spectrum.json",
+            "definition_index": 55,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 5,
+            "compiled_records": 5
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "density": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": 1.27,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 1.32
+        },
+        "color_hex": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": "EFEFEF",
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "D9DBD8"
+        },
+        "extruder_temp": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 240
+        },
+        "extruder_temp_range": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+            220,
+            250
+          ],
+          "spectrum_petg_ptfesignalwhite_1000_175_c": null
+        },
+        "bed_temp": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": 75
+        },
+        "bed_temp_range": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": [
+            70,
+            90
+          ],
+          "spectrum_petg_ptfesignalwhite_1000_175_c": null
+        },
+        "sds_url": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_msds_spectrum_petg_ptfe.pdf"
+        },
+        "tds_url": {
+          "spectrum_petg_petg/ptfesignalwhite_1000_175_c": null,
+          "spectrum_petg_ptfesignalwhite_1000_175_c": "https://spectrumfilaments.com/wp-content/uploads/2022/10/en_tds_spectrum_petg_ptfe.pdf"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "label": "SC001",
+      "prior_audit": "docs/audits/2026-10-03-spectrum-duplicate-review.json",
+      "status": "DEFERRED",
+      "defer_reason": "qualifier not allowlisted or anchored"
+    }
+  ],
+  "proposed_retired_ids": {},
+  "identifier_transfers": [],
+  "printing_default_flags": [],
+  "hard_stop_groups": [],
+  "scope": "Only frozen 114 Rule-5/line-color groups; remaining owner-decision groups untouched",
+  "summary": {
+    "groups": 1,
+    "approved_groups": 0,
+    "retired": 0,
+    "deferred": 1,
+    "before_count": 51656,
+    "after_count": 51656,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "current_evidence": [],
+  "prior_evidence_audit": "docs/audits/2026-10-03-spectrum-duplicate-review.json"
+}
