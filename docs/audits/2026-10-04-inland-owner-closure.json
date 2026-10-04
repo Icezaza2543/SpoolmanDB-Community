@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "inland",
+  "base_sha": "0711f8ed70c36510968daefc2ee0bb9d7b9f35c4",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "f99d18f026572972db47002b95f4f23124cf4927329a60e062352f0498409ce0",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-0bc49e98c8e449298a280432faa4f1b9cac9de925498a7791e96354ecb7dc6d5": {
+      "approved": true,
+      "survivor": "inland_pla_plabasicgray_1000_175_c",
+      "retire": [
+        "inland_pla_plabasicgrey_1000_175_c"
+      ],
+      "ref": "docs/audits/2026-10-04-inland-owner-closure.json",
+      "source": "0711f8ed70c36510968daefc2ee0bb9d7b9f35c4"
+    }
+  },
+  "bindings": {
+    "inland_pla_plabasicgray_1000_175_c": {
+      "key": "inland.json::Inland::PLA Basic {color_name}::PLA Basic Gray::PLA::1000::1.75::cardboard::False",
+      "source_color": "Gray",
+      "line": "basic",
+      "color": "gray"
+    },
+    "inland_pla_plabasicgrey_1000_175_c": {
+      "key": "inland.json::Inland::PLA Basic {color_name}::PLA Basic Grey::PLA::1000::1.75::cardboard::False",
+      "source_color": "Grey",
+      "line": "basic",
+      "color": "gray"
+    }
+  },
+  "metadata": [
+    {
+      "id": "inland_pla_plabasicgray_1000_175_c",
+      "values": {
+        "color_hex": "585B69"
+      },
+      "source": "0711f8ed70c36510968daefc2ee0bb9d7b9f35c4",
+      "lot": "Owner-approved exact frozen identity/SKU binding and swatch decision, October 4 2026; no packaging/tare inference",
+      "same_variant": true,
+      "approved": true
+    }
+  ],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-0bc49e98c8e449298a280432faa4f1b9cac9de925498a7791e96354ecb7dc6d5",
+      "ids": [
+        "inland_pla_plabasicgray_1000_175_c",
+        "inland_pla_plabasicgrey_1000_175_c"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "inland_pla_plabasicgray_1000_175_c",
+          "manufacturer": "Inland",
+          "name": "PLA Basic Gray",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "808080",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 50,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "inland.json::Inland::PLA Basic {color_name}::PLA Basic Gray::PLA::1000::1.75::cardboard::False",
+          "template": "PLA Basic {color_name}",
+          "source_color": "Gray",
+          "source_line": "PLA Basic",
+          "source_file": "inland.json",
+          "source_definition": {
+            "source_file": "inland.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 18,
+            "compiled_records": 18
+          },
+          "upstream": false
+        },
+        {
+          "id": "inland_pla_plabasicgrey_1000_175_c",
+          "manufacturer": "Inland",
+          "name": "PLA Basic Grey",
+          "material": "PLA",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 200,
+          "spool_type": "cardboard",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "585B69",
+          "color_hexes": null,
+          "extruder_temp": 220,
+          "extruder_temp_range": null,
+          "bed_temp": 50,
+          "bed_temp_range": null,
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "US",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "inland.json::Inland::PLA Basic {color_name}::PLA Basic Grey::PLA::1000::1.75::cardboard::False",
+          "template": "PLA Basic {color_name}",
+          "source_color": "Grey",
+          "source_line": "PLA Basic",
+          "source_file": "inland.json",
+          "source_definition": {
+            "source_file": "inland.json",
+            "definition_index": 0,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 18,
+            "compiled_records": 18
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "inland_pla_plabasicgray_1000_175_c": "808080",
+          "inland_pla_plabasicgrey_1000_175_c": "585B69"
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "inland_pla_plabasicgray_1000_175_c",
+      "retire": [
+        "inland_pla_plabasicgrey_1000_175_c"
+      ],
+      "survivor_ranking": {
+        "inland_pla_plabasicgray_1000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          "inland_pla_plabasicgray_1000_175_c"
+        ],
+        "inland_pla_plabasicgrey_1000_175_c": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          "inland_pla_plabasicgrey_1000_175_c"
+        ]
+      },
+      "id_first_seen": {
+        "inland_pla_plabasicgray_1000_175_c": [
+          0,
+          "03fcee09ba6d7ed3cb3802a3c13c61d4565c85e6"
+        ],
+        "inland_pla_plabasicgrey_1000_175_c": [
+          2,
+          "9b88f226efeb7de969f365d686ef82872524ca41"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "inland_pla_plabasicgrey_1000_175_c": {
+      "replaced_by": "inland_pla_plabasicgray_1000_175_c",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-inland-owner-closure.json",
+      "source": "0711f8ed70c36510968daefc2ee0bb9d7b9f35c4",
+      "retired_key": "inland.json::Inland::PLA Basic {color_name}::PLA Basic Grey::PLA::1000::1.75::cardboard::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51422,
+    "after_count": 51421,
+    "metadata_fields_changed": 1,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {
+      "618996742431": [
+        "inland_pa-cf_nyloncarbonfiberblack_500_175_p"
+      ]
+    },
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
