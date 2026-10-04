@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "approved": true,
+  "brand": "iboss",
+  "base_sha": "bc1ffd9a1f78e94bc33a4cedc60dc94a53968f94",
+  "upstream_ref": "8f1a99f9cda7a58ca3118d6bd28c707647caa3db",
+  "audit_digest": "00d31f88875b87993e2ad39ec9ea1958683e65466009be389d740963fd6e0ee2",
+  "official_names": {},
+  "upstream_exceptions": {},
+  "groups": {
+    "dup-a4f56d98a88206c53508feaa7d858e2419a0607dde34407de25b9378348c3659": {
+      "approved": true,
+      "survivor": "iboss_pla+_silkdualred/green_1000_175_p",
+      "retire": [
+        "iboss_pla+_silkdualredgreen_1000_175_p"
+      ],
+      "ref": "docs/audits/2026-10-04-iboss-owner-closure.json",
+      "source": "bc1ffd9a1f78e94bc33a4cedc60dc94a53968f94"
+    }
+  },
+  "bindings": {
+    "iboss_pla+_silkdualred/green_1000_175_p": {
+      "key": "iboss.json::iBOSS::Silk Dual {color_name}::Silk Dual Red / Green::PLA+::1000::1.75::plastic::False",
+      "source_color": "Red / Green",
+      "line": "silk dual",
+      "color": "red green"
+    },
+    "iboss_pla+_silkdualredgreen_1000_175_p": {
+      "key": "iboss.json::iBOSS::Silk Dual {color_name}::Silk Dual Red Green::PLA+::1000::1.75::plastic::False",
+      "source_color": "Red Green",
+      "line": "silk dual",
+      "color": "red green"
+    }
+  },
+  "metadata": [],
+  "reviewed_groups": [
+    {
+      "group_id": "dup-a4f56d98a88206c53508feaa7d858e2419a0607dde34407de25b9378348c3659",
+      "ids": [
+        "iboss_pla+_silkdualred/green_1000_175_p",
+        "iboss_pla+_silkdualredgreen_1000_175_p"
+      ],
+      "proposed_survivor": null,
+      "survivor_rule": null,
+      "rule4_cartesian_warning": null,
+      "proposed_retirements": {},
+      "records": [
+        {
+          "id": "iboss_pla+_silkdualred/green_1000_175_p",
+          "manufacturer": "iBOSS",
+          "name": "Silk Dual Red / Green",
+          "material": "PLA+",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 215,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": null,
+          "color_hexes": [
+            "ff0000",
+            "008000"
+          ],
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            40
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": "longitudinal",
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "iboss.json::iBOSS::Silk Dual {color_name}::Silk Dual Red / Green::PLA+::1000::1.75::plastic::False",
+          "template": "Silk Dual {color_name}",
+          "source_color": "Red / Green",
+          "source_line": "Silk Dual",
+          "source_file": "iboss.json",
+          "source_definition": {
+            "source_file": "iboss.json",
+            "definition_index": 15,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        },
+        {
+          "id": "iboss_pla+_silkdualredgreen_1000_175_p",
+          "manufacturer": "iBOSS",
+          "name": "Silk Dual Red Green",
+          "material": "PLA+",
+          "density": 1.24,
+          "weight": 1000,
+          "spool_weight": 215,
+          "spool_type": "plastic",
+          "is_refill": false,
+          "diameter": 1.75,
+          "color_hex": "66ff8c",
+          "color_hexes": null,
+          "extruder_temp": null,
+          "extruder_temp_range": [
+            200,
+            240
+          ],
+          "bed_temp": null,
+          "bed_temp_range": [
+            40,
+            40
+          ],
+          "fill": null,
+          "finish": null,
+          "multi_color_direction": null,
+          "pattern": null,
+          "translucent": false,
+          "glow": false,
+          "codes": null,
+          "eans": null,
+          "eans_refill": null,
+          "country_of_origin": "CN",
+          "sds_url": null,
+          "tds_url": null,
+          "key": "iboss.json::iBOSS::Silk Dual {color_name}::Silk Dual Red Green::PLA+::1000::1.75::plastic::False",
+          "template": "Silk Dual {color_name}",
+          "source_color": "Red Green",
+          "source_line": "Silk Dual",
+          "source_file": "iboss.json",
+          "source_definition": {
+            "source_file": "iboss.json",
+            "definition_index": 15,
+            "weights": 1,
+            "diameters": 1,
+            "colors": 13,
+            "compiled_records": 13
+          },
+          "upstream": false
+        }
+      ],
+      "metadata_conflicts": {
+        "color_hex": {
+          "iboss_pla+_silkdualred/green_1000_175_p": null,
+          "iboss_pla+_silkdualredgreen_1000_175_p": "66ff8c"
+        },
+        "color_hexes": {
+          "iboss_pla+_silkdualred/green_1000_175_p": [
+            "ff0000",
+            "008000"
+          ],
+          "iboss_pla+_silkdualredgreen_1000_175_p": null
+        },
+        "multi_color_direction": {
+          "iboss_pla+_silkdualred/green_1000_175_p": "longitudinal",
+          "iboss_pla+_silkdualredgreen_1000_175_p": null
+        }
+      },
+      "evidence": [],
+      "approved": false,
+      "notes": "Candidate only; owner must confirm physical identity. Keep survivor metadata unless newer-lot evidence is supplied.",
+      "owner_decision": "MERGE",
+      "survivor": "iboss_pla+_silkdualred/green_1000_175_p",
+      "retire": [
+        "iboss_pla+_silkdualredgreen_1000_175_p"
+      ],
+      "survivor_ranking": {
+        "iboss_pla+_silkdualred/green_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          "iboss_pla+_silkdualred/green_1000_175_p"
+        ],
+        "iboss_pla+_silkdualredgreen_1000_175_p": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          "iboss_pla+_silkdualredgreen_1000_175_p"
+        ]
+      },
+      "id_first_seen": {
+        "iboss_pla+_silkdualred/green_1000_175_p": [
+          1,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ],
+        "iboss_pla+_silkdualredgreen_1000_175_p": [
+          1,
+          "0f127303b1919445afcb78b3d65094b8a35e7b2b"
+        ]
+      },
+      "metadata_policy": "Keep survivor fields; 808080 may receive exact donor HEX. HEX differences approved as swatch approximations. Packaging/tare unchanged."
+    }
+  ],
+  "proposed_retired_ids": {
+    "iboss_pla+_silkdualredgreen_1000_175_p": {
+      "replaced_by": "iboss_pla+_silkdualred/green_1000_175_p",
+      "reason": "duplicate",
+      "ref": "docs/audits/2026-10-04-iboss-owner-closure.json",
+      "source": "bc1ffd9a1f78e94bc33a4cedc60dc94a53968f94",
+      "retired_key": "iboss.json::iBOSS::Silk Dual {color_name}::Silk Dual Red Green::PLA+::1000::1.75::plastic::False"
+    }
+  },
+  "identifier_transfers": [],
+  "not_duplicate_decisions": {},
+  "summary": {
+    "groups": 1,
+    "approved_groups": 1,
+    "retired": 1,
+    "deferred": 0,
+    "not_duplicates": 0,
+    "before_count": 51423,
+    "after_count": 51422,
+    "metadata_fields_changed": 0,
+    "code_transfers": 0
+  },
+  "owner_authority": "All 180 rows explicitly decided by owner: OV083 NOT duplicate; all other179 MERGE; exact line aliases approved; no new physical variant.",
+  "owner_sheet_commit": "1971ba3114c0f3659faeb153cabb8d5b47128109",
+  "identifier_bindings_after": {
+    "eans": {},
+    "eans_refill": {}
+  },
+  "unparseable_historical_revisions": []
+}
