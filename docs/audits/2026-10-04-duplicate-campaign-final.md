@@ -2,6 +2,26 @@
 
 Date: 2026-10-04. Community only; no PR, remote feature branch or GitHub comments.
 
+## Closure (2026-10-05)
+
+The campaign is closed. All 180 owner-sheet rows were decided: 179 were merged and OV083 was recorded as not a duplicate.
+
+From campaign base `b050e68`, the catalog went from **53,434 → 51,412** compiled records with **2,022 registered retirements**. There are no unregistered removals, new IDs, rekeys or dangling targets.
+
+The whole-catalog audit reports 0 unresolved and 0 owner-pending groups. The owner-pending contract is empty, so the guard enforces with only the single `not_duplicates.json` exemption.
+
+Local verification passed:
+
+- 265 pytest tests
+- strict validation
+- strict baseline against both `b050e68` and the previous `origin/main`
+- stable and canary contract checks
+- projection
+- README snapshot check
+- `git diff --check`
+
+The sections below are the pre-closure record at the decision gate.
+
 ## Exact campaign identity proof
 
 Campaign base `b050e684b88a1622cd25ea5a47b6447c3e14d021`: **53,434 → 51,592** compiled records, **1,842 registered retirements**. No new IDs, changed survivor identity, rekeys, unregistered removals or dangling targets. Every retired key equals the original baseline key byte-for-byte; surviving keys remain unchanged. Phase C/D introduces no compiled payload changes.

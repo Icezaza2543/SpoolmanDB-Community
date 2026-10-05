@@ -2,7 +2,7 @@
 
 Date: 2026-10-03 · Related: Community issue #66 (Kingroon PETG duplicates)
 
-Status: implemented and owner-authorized campaign delivered through 2026-10-04. The original staged approvals below are historical rollout notes, superseded by the owner's continuous A–D authorization. Registered retirements and per-brand evidence are published; full-catalog enforcement is active with exact temporary owner-pending exemptions. Final closure waits only for [the owner decision sheet](../../audits/backlog-decisions.csv); no GitHub comments are authorized.
+Status: implemented and owner-authorized campaign delivered through 2026-10-04. The original staged approvals below are historical rollout notes, superseded by the owner's continuous A–D authorization. Registered retirements and per-brand evidence are published; full-catalog enforcement is active with exact temporary owner-pending exemptions. Closed 2026-10-05: all owner-sheet decisions are applied, owner-pending is empty, and the whole-catalog audit reports 0 unresolved groups; see [the campaign closure](../../audits/2026-10-04-duplicate-campaign-final.md#closure-2026-10-05). No GitHub comments are authorized.
 
 ## Problem
 
