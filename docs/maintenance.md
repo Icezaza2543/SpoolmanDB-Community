@@ -80,7 +80,9 @@ Ambiguous source decomposition requires a lossless binding `{key: EXACT_KEY, lin
 
 Metadata decisions are explicit objects `{id: SURVIVOR, values: {...}, source: SHA_OR_URL, lot: LOT_OR_REVISION, same_variant: true, approved: true}`. The reviewer establishes newest-lot recency and matching SKU/package; tooling does not infer it from arbitrary lot strings. Only supported ID-neutral fields are accepted. The plan retains the audit's older values/conflicts and supplied evidence. Apply splits exact source cells, preserves untouched compiled metadata/identities, rejects stale reviews, and restores original files after an ordinary write failure. It cannot promise a multi-file transaction across power loss; do not run it concurrently with catalog edits.
 
-CI compares new candidate relationships against the trusted event base. Existing groups, including surviving subsets after an approved retirement, are warnings. New unreviewed members/groups fail, requesting review rather than automatic consolidation. Pushes use `github.event.before`; PRs use their base SHA. Only an all-zero push base permits explicit HEAD-only checks; an unavailable nonzero base fails closed.
+CI checks the full current catalog and rejects every unresolved duplicate candidate, existing or new, including surviving subsets after a retirement. Only exact reviewed memberships in `not_duplicates.json` or the owner-pending contract permit exemptions; the owner-pending list is empty after campaign closure. Candidate detection uses the documented normalized-name and physical-identity matching rules and requests review, not automatic consolidation.
+
+Baseline and retirement checks use a trusted event base: `github.event.before` for pushes and the base SHA for PRs. Only an all-zero push base permits explicit HEAD-only checks; an unavailable nonzero base fails closed. The duplicate guard still checks the full catalog, rather than grandfathering existing candidates as warnings.
 
 ## 5. Spool/Refill & Package-Matrix Rules
 

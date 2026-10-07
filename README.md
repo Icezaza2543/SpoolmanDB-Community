@@ -245,9 +245,11 @@ All shared material defaults live in `materials.json`.
 
 Owner-approved duplicate migrations are recorded in the [retired-ID registry](contracts/retired_ids.json). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](docs/maintenance.md#4-public-id-immutability-rule).
 
-### Current duplicate campaign status (2026-10-04)
+### Current duplicate campaign status
 
-Current campaign status (2026-10-04): **1,842 registered retirements**, catalog **51,592** records. Every current candidate is either reviewed or explicitly [owner-pending](docs/audits/backlog-decisions.csv); **180 groups still need decisions**. Full-catalog validation rejects unresolved candidates outside exact exemptions. See [the current backlog](docs/audits/duplicate-backlog.md); zero unresolved outside the sheet is not a claim that all 180 groups are duplicates or resolved. The brand sections below record their original migration checkpoints.
+The campaign **closed on 2026-10-05** with **2,022 registered retirements** and **51,412 catalog records**. The owner resolved all 180 final decision-sheet groups: 179 merged, and OV083 (Overture TPU Gray/Grey) retained as a confirmed non-duplicate. The owner-pending list is empty; the full-catalog audit reports **0 unresolved groups**.
+
+CI rejects unresolved candidates under the documented duplicate-matching rules. The only current exemption is the exact OV083 membership in `not_duplicates.json`; detection does not prove that every physically equivalent product is identifiable. See [the campaign closure](docs/audits/2026-10-04-duplicate-campaign-final.md#closure-2026-10-05) and [the remaining future-work backlog](docs/audits/duplicate-backlog.md). The brand sections below retain their original migration checkpoints.
 
 ### Kingroon duplicate migration (2026-10-03)
 
