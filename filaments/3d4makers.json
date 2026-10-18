@@ -10,7 +10,88 @@
           "weight": 750,
           "spool_type": "plastic",
           "spool_weight": 220
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "country_of_origin": "NL",
+      "colors": [
+        {
+          "name": "Blue (RAL 5002)",
+          "hex": "1e3a8a",
+          "codes": [
+            "ABSXX-5002-175-750-3D4M"
+          ],
+          "eans": [
+            "8721632470086"
+          ]
         },
+        {
+          "name": "Green (RAL 6029)",
+          "hex": "2e7d32",
+          "codes": [
+            "ABSXX-6029-175-750-3D4M"
+          ],
+          "eans": [
+            "8721632470123"
+          ]
+        },
+        {
+          "name": "Black (RAL 9011)",
+          "hex": "1a1a1a",
+          "codes": [
+            "ABSXX-9011-175-750-3D4M"
+          ],
+          "eans": [
+            "8721632470161"
+          ]
+        },
+        {
+          "name": "White (RAL 9016)",
+          "hex": "f5f5f5",
+          "codes": [
+            "ABSXX-9016-175-750-3D4M"
+          ],
+          "eans": [
+            "8721632470208"
+          ]
+        },
+        {
+          "name": "Red (RAL 3020)",
+          "hex": "c41e2a",
+          "codes": [
+            "ABSXX-3020-175-750-3D4M"
+          ],
+          "eans": [
+            "8721632470246"
+          ]
+        },
+        {
+          "name": "Natural",
+          "hex": "d4c4a8",
+          "codes": [
+            "ABSXX-0000-175-750-3D4M"
+          ],
+          "eans": [
+            "8721632470284"
+          ]
+        }
+      ],
+      "extruder_temp_range": [
+        240,
+        280
+      ],
+      "bed_temp_range": [
+        90,
+        110
+      ]
+    },
+    {
+      "name": "ABS Filament {color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
         {
           "weight": 2300,
           "spool_type": "plastic"
@@ -25,48 +106,60 @@
           "name": "Blue (RAL 5002)",
           "hex": "1e3a8a",
           "codes": [
-            "ABSXX-5002-175-750-3D4M",
             "ABSXX-5002-175-2300-3D4M"
+          ],
+          "eans": [
+            "8721632470093"
           ]
         },
         {
           "name": "Green (RAL 6029)",
           "hex": "2e7d32",
           "codes": [
-            "ABSXX-6029-175-750-3D4M",
             "ABSXX-6029-175-2300-3D4M"
+          ],
+          "eans": [
+            "8721632470130"
           ]
         },
         {
           "name": "Black (RAL 9011)",
           "hex": "1a1a1a",
           "codes": [
-            "ABSXX-9011-175-750-3D4M",
             "ABSXX-9011-175-2300-3D4M"
+          ],
+          "eans": [
+            "8721632470178"
           ]
         },
         {
           "name": "White (RAL 9016)",
           "hex": "f5f5f5",
           "codes": [
-            "ABSXX-9016-175-750-3D4M",
             "ABSXX-9016-175-2300-3D4M"
+          ],
+          "eans": [
+            "8721632470215"
           ]
         },
         {
           "name": "Red (RAL 3020)",
           "hex": "c41e2a",
           "codes": [
-            "ABSXX-3020-175-750-3D4M",
             "ABSXX-3020-175-2300-3D4M"
+          ],
+          "eans": [
+            "8721632470253"
           ]
         },
         {
           "name": "Natural",
           "hex": "d4c4a8",
           "codes": [
-            "ABSXX-0000-175-750-3D4M",
             "ABSXX-0000-175-2300-3D4M"
+          ],
+          "eans": [
+            "8721632470291"
           ]
         }
       ],
