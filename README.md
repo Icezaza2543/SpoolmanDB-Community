@@ -31,20 +31,26 @@
 
 ## What this is
 
-SpoolmanDB Community is an actively maintained community extension of SpoolmanDB, focused on faster filament updates, provenance, data quality, public-ID stability, and compatibility with the actively developed Spoolman application.
+SpoolmanDB Community is an independently maintained, complementary dataset and staging area built around [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB). It focuses on source-backed filament data, provenance, quality checks, public-ID stability, and compatibility with Spoolman. Verified changes that fit upstream conventions can be contributed back after review.
 
 ### Upstream Relationships & Positioning
 
 * **Active Application Upstream**: [Donkie/Spoolman](https://github.com/Donkie/Spoolman) — The actively developed application server that consumes external filament data via its `ExternalFilament` contract (`spoolman/externaldb.py`).
-* **Original Data Upstream**: [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) — The original upstream static dataset. Repository activity resumed in August 2026 with contributor tooling and catalog-preview automation; Community remains independently maintained while upstream data PRs are reviewed on their own timeline.
-* **SpoolmanDB-Community Position**: An independent community extension and staging-quality dataset. It is **not** a replacement application fork, but a community-driven database maintaining strict quality controls, public-ID stability, and rich metadata extensions.
+* **Original Data Upstream**: [Donkie/SpoolmanDB](https://github.com/Donkie/SpoolmanDB) — The actively maintained original static dataset and the reference point for upstream data conventions. Following contributor-tooling work in August 2026, Donkie reviewed the PR backlog in October 2026 and merged numerous community contributions, including [our Inslogic PR #297](https://github.com/Donkie/SpoolmanDB/pull/297).
+* **SpoolmanDB-Community Position**: An independent, complementary extension for validation, data-quality review, additional metadata, and browsing. It is **not an official replacement** for SpoolmanDB or Spoolman; we aim to reduce duplicated effort and align upstream-compatible contributions with the maintainer's guidance.
 * **Contract Compatibility**: Compatible with Spoolman's pinned stable release (`v0.25.0`) and monitored against the `master` canary. See the detailed [Upstream Compatibility & Divergence Tracker](docs/UPSTREAM_COMPATIBILITY.md).
 * **Public ID Stability**: Every published filament record is protected by an automated PR-base baseline stability gate (`contracts/compiled_id_baseline.json`) ensuring historical IDs never disappear or change accidentally.
-* **Community Extensions**: Metadata such as Country of Origin (COO), SDS/TDS document links, manufacturer article codes, and EAN/GTIN barcodes are maintained as Community extensions.
+* **Community Extensions**: Metadata such as country of origin (COO), SDS/TDS document links, manufacturer article codes, and EAN/GTIN barcodes are maintained as Community extensions unless and until accepted upstream. In particular, [country-of-origin support PR #283](https://github.com/Donkie/SpoolmanDB/pull/283) remains under review.
+
+### Appreciation and collaboration
+
+We sincerely thank [Donkie](https://github.com/Donkie) for creating and maintaining [Spoolman](https://github.com/Donkie/Spoolman) and [SpoolmanDB](https://github.com/Donkie/SpoolmanDB), and for taking the time to review and work through the community contribution backlog. We particularly appreciate the merge of [our Inslogic contribution (#297)](https://github.com/Donkie/SpoolmanDB/pull/297), the constructive feedback on [country-of-origin support (#283)](https://github.com/Donkie/SpoolmanDB/pull/283), and the guidance on [material classification (#309)](https://github.com/Donkie/SpoolmanDB/issues/309). These reviews help us improve our contributions and keep our work compatible with upstream.
+
+We also appreciate the wider Spoolman contributor community. We intend to respect upstream's conventions and review decisions, submit focused and verifiable changes where appropriate, and clearly distinguish independent Community-only extensions from upstream-supported fields.
 
 ## Key Enhancements & Differences from Upstream
 
-SpoolmanDB Community introduces several structural, validation, and metadata improvements over the original `Donkie/SpoolmanDB` project:
+Alongside upstream SpoolmanDB, this independently maintained extension provides additional tooling and optional metadata for community use:
 
 *   **Native & Strict Quality Controls**:
     *   **Unified Validation**: Uses a native Python validation script ([validate.py](scripts/validate.py)) powered by `jsonschema` instead of relying on external CLI tools.
@@ -313,7 +319,7 @@ This is an **intentional breaking catalog migration** retiring 114 duplicate OFD
 
 The [exact retired IDs, survivors and original keys](docs/audits/2026-10-03-paramount3d-duplicate-review.md#complete-approved-retired-id-list) and [reviewed JSON audit](docs/audits/2026-10-03-paramount3d-duplicate-review.json) record the explicit owner-pattern override and unresolved metadata. PM070 (Matte Black) and prefix cleanup remain in the [backlog](docs/audits/duplicate-backlog.md). Existing Spoolman spools keep local imported data, but Spoolman does not consume the registry or redirect retired external lookups.
 
-This fork exists to keep the data usable through an independent community maintenance process. Upstream activity is monitored, and suitable changes may be proposed back to the original project only through an explicit contribution decision. This repository favors small reviewed data updates, source-backed corrections, schema validation, and GitHub Pages deployment that stays green.
+This community extension complements the original SpoolmanDB while maintaining its own data-quality tooling and public explorer. Upstream changes are monitored, and suitable source-backed corrections may be proposed back through focused PRs following review and an explicit contribution decision. Community-only extensions remain documented separately, with careful attention to public-ID stability, validation, and a green GitHub Pages deployment.
 
 ### AzureFilm duplicate migration (2026-10-03)
 
