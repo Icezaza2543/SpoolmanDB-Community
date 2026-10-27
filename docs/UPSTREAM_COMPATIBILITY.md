@@ -9,7 +9,7 @@ This document tracks the compatibility status, technical divergence, and capabil
 | Upstream Repository | Role / Type | Status | Observed State & Relationship |
 | :--- | :--- | :--- | :--- |
 | **`Donkie/Spoolman`** | Application Server & Contract Provider | **ACTIVE UPSTREAM** | Primary target contract provider. Community dataset compiles strictly to Spoolman's `ExternalFilament` contract (`spoolman/externaldb.py`). |
-| **`Donkie/SpoolmanDB`** | Static Data Repository | **ACTIVE UPSTREAM** | Original upstream static data repository. Activity resumed with contributor tooling and catalog-preview automation merged in PRs [#314](https://github.com/Donkie/SpoolmanDB/pull/314) and [#316](https://github.com/Donkie/SpoolmanDB/pull/316). Latest observed main commit: `77c3ad7f4eecd342be72845063fe5b34dad69cd0` (`2026-08-31`). Open data PRs remain subject to upstream review. |
+| **`Donkie/SpoolmanDB`** | Static Data Repository | **ACTIVE UPSTREAM** | Latest observed main: `9d53d28703ba1bcc97ab504e069d437ae2053c5a` (2026-10-27), merging COO support #283; Inslogic #297 also merged. No automatic import into Community. |
 
 > [!NOTE]
 > **SpoolmanDB-Community** operates as an independent community database for 3D printing filaments. It is compatible with the pinned stable Spoolman contract and monitored against the current master canary. It enforces strict public ID stability, data verification guidelines, and rich technical metadata.
@@ -27,8 +27,11 @@ Upstream testing configurations are defined in [`contracts/spoolman_upstream.jso
   * Contract Check: **PASSING** (No `ExternalFilament` field or type drift)
 * **SpoolmanDB Historical Community Base**: `5b61e755926568ec3b3235701684595872b70b49` (`2025-11-28`)
   * This remains the historical data base used when Community diverged; it is not the current upstream head.
-* **SpoolmanDB Latest Observed Main**: `77c3ad7f4eecd342be72845063fe5b34dad69cd0` (`2026-08-31`)
-  * Recent merged work is repository tooling and catalog-preview automation; this observation does not change Community's historical base or imply automatic data synchronization.
+* **SpoolmanDB Latest Observed Main**: `9d53d28703ba1bcc97ab504e069d437ae2053c5a` (`2026-10-27`)
+  * Includes country-of-origin support (#283). This does not change Community's historical base or imply automatic data synchronization.
+  * Previous observation: `77c3ad7f4eecd342be72845063fe5b34dad69cd0` (2026-08-31), retained for audit history only; no longer the latest observed head.
+* **Spoolman Application Observed Master**: `0fb375c33d3a781210545760e3bcdedb2fa1b6d0` (reviewed 2026-10-27).
+  * Database COO support does not add the field to the application's `ExternalFilament` contract.
 
 ---
 
@@ -44,7 +47,7 @@ Status Enum Definitions:
 | :--- | :--- | :--- | :--- | :--- |
 | **`spool_type` Material Enum** | `supported` | Native enum in `ExternalFilament` (`plastic`, `cardboard`, `metal`) | Normalized to strict enum; legacy null types sanitized. | — |
 | **Refill & `is_refill` Boolean** | `community-extension` | Absent from `ExternalFilament`; accepts `plastic`/`cardboard`/`metal` or `null` only | Supported (source `refill` normalized to `null` `spool_type` + explicit `is_refill: true`, preserving `legacy_id_spool_type`). | `Donkie/SpoolmanDB#26` |
-| **Country of Origin (COO)** | `community-extension` | Absent from `ExternalFilament` | Maintained in source metadata (ISO 3166-1 alpha-2 standard). | `Donkie/SpoolmanDB#283` |
+| **Country of Origin (COO)** | `community-extension` (application contract) | Absent from `ExternalFilament`; database support is separate | Supported in both databases after #283 merged. Upstream uses an assigned-code enum; Community currently checks two uppercase letters, so validation is not identical. | [Merged #283](https://github.com/Donkie/SpoolmanDB/pull/283) |
 | **SDS & TDS URLs** | `community-extension` | Absent from `ExternalFilament` (upstream proposals pending) | Supported with strict URI format validation. | `Donkie/SpoolmanDB#282`, `Donkie/Spoolman#395` |
 | **Product & Article Codes** | `community-extension` | Absent from `ExternalFilament` | Supported in community source files. | `Donkie/SpoolmanDB#198`, `Donkie/SpoolmanDB#263`, `Donkie/Spoolman#789` |
 | **EAN / GTIN Barcodes** | `community-extension` | Absent from `ExternalFilament` | Supported (`eans` + `eans_refill` metadata in source files). | `Donkie/SpoolmanDB#198`, `Donkie/SpoolmanDB#263`, `Donkie/Spoolman#789` |

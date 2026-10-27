@@ -40,7 +40,7 @@ SpoolmanDB Community is an independently maintained, complementary dataset and s
 * **SpoolmanDB-Community Position**: An independent, complementary extension for validation, data-quality review, additional metadata, and browsing. It is **not an official replacement** for SpoolmanDB or Spoolman; we aim to reduce duplicated effort and align upstream-compatible contributions with the maintainer's guidance.
 * **Contract Compatibility**: Compatible with Spoolman's pinned stable release (`v0.25.0`) and monitored against the `master` canary. See the detailed [Upstream Compatibility & Divergence Tracker](docs/UPSTREAM_COMPATIBILITY.md).
 * **Public ID Stability**: Every published filament record is protected by an automated PR-base baseline stability gate (`contracts/compiled_id_baseline.json`) ensuring historical IDs never disappear or change accidentally.
-* **Community Extensions**: Metadata such as country of origin (COO), SDS/TDS document links, manufacturer article codes, and EAN/GTIN barcodes are maintained as Community extensions unless and until accepted upstream. In particular, [country-of-origin support PR #283](https://github.com/Donkie/SpoolmanDB/pull/283) remains under review.
+* **Community Extensions**: SDS/TDS document links, manufacturer article codes, and EAN/GTIN barcodes remain Community extensions. [Country-of-origin support PR #283](https://github.com/Donkie/SpoolmanDB/pull/283) was merged into SpoolmanDB on 2026-10-27. This is upstream database support, not native Spoolman application support: COO remains outside the pinned `ExternalFilament` contract. See the [compatibility tracker](docs/UPSTREAM_COMPATIBILITY.md).
 
 ### Appreciation and collaboration
 
