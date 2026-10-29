@@ -58,6 +58,19 @@ def main():
                 page.locator(f'.nav-link[href="#{route}"]').click()
                 page.locator('#' + route).wait_for(state='visible')
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+            page.locator('.nav-link[href="#schema"]').click()
+            diagram = page.locator('.schema-container-wrapper')
+            diagram.wait_for(state='visible')
+            diagram.focus()
+            assert diagram.evaluate('(element) => document.activeElement === element')
+            if width == 390:
+                page.keyboard.press('ArrowRight')
+                page.wait_for_function("document.querySelector('.schema-container-wrapper').scrollLeft > 0")
+            page.locator('.nav-link[href="#contribute"]').click()
+            command = page.locator('#contribute pre').first
+            command.wait_for(state='visible')
+            command.focus()
+            assert command.evaluate('(element) => document.activeElement === element')
         assert not errors, errors
         page.set_viewport_size({'width': 1440, 'height': 1000})
         page.locator('.header-copy').click()
