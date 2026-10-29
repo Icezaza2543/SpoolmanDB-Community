@@ -110,6 +110,9 @@ Open `http://localhost:8000/public/` to preview the Explorer. Do not commit gene
 | IDs, evidence, packaging and review rules | [Maintenance](docs/maintenance.md) |
 | Native fields, extensions and contract checks | [Upstream compatibility](docs/UPSTREAM_COMPATIBILITY.md) |
 | Accepted imports and deferred conflicts | [Reconciliation audit](docs/audits/2026-10-30-reconciliation.md) |
+| Requested manufacturer identities and evidence gaps | [Manufacturer coverage](docs/audits/2026-10-30-manufacturer-coverage.md) |
+| Discovery, contributions and experimental Orca integration | [Roadmap](docs/roadmap.md) |
+| Tests, browser checks and review limitations | [Quality report](docs/audits/2026-10-30-quality.md) |
 | Missing evidence and reopening conditions | [Coverage backlog](docs/coverage-backlog.md) |
 | Earlier owner-approved duplicate migrations | [Migration history](docs/migration-history.md) |
 

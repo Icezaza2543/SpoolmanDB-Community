@@ -437,4 +437,3 @@ The [review](audits/2026-10-03-spectrum-duplicate-review.md) and [JSON audit](au
 All 1 candidate groups are deferred for identity or tooling review. No migration was applied; the catalog remains at 51,701 records. Original IDs, compiled metadata, identifiers, packaging and tare are unchanged.
 
 The [review](audits/2026-10-03-splice3d-duplicate-review.md) and [JSON audit](audits/2026-10-03-splice3d-duplicate-review.json) retain the complete candidates, evidence and conflicts; all blockers are recorded in the [running backlog](audits/duplicate-backlog.md).
-

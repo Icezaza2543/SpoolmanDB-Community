@@ -133,4 +133,3 @@ All shared material defaults live in `materials.json`.
 | `bed_temp` | optional | General bed temperature. |
 
 </details>
-
