@@ -23,7 +23,7 @@
 ## Project Status
 
 * **Project status**: MAINTENANCE MODE
-* **Published records**: 51,412
+* **Published records**: 51,432
 * **P0/P1**: Complete
 * **P2/P3**: Complete
 * **Backlog location**: [docs/coverage-backlog.md](docs/coverage-backlog.md)
@@ -85,9 +85,9 @@ Alongside upstream SpoolmanDB, this independently maintained extension provides 
 | --- | ---: |
 | Manufacturer source files | 490 |
 | Material definitions | 154 |
-| Source filament objects | 12,308 |
-| Color entries | 34,845 |
-| Compiled filament variants | 51,412 |
+| Source filament objects | 12,309 |
+| Color entries | 34,865 |
+| Compiled filament variants | 51,432 |
 | Source filaments with country of origin | 9,710 |
 | Source filaments with TDS/product links | 5,693 |
 | Source filaments with SDS links | 1,851 |
@@ -101,7 +101,7 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 9,709 |
+| `spool_type: plastic` | 9,710 |
 | `spool_type: cardboard` | 3,152 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 256 |
