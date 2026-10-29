@@ -46,6 +46,7 @@ class Weight(TypedDict):
 
 class Color(TypedDict):
     name: str
+    transmission_distance: NotRequired[float]
     display_name: NotRequired[str]
     hex: NotRequired[str]
     hexes: NotRequired[list[str]]
@@ -282,6 +283,7 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                     "diameter": diameter,
                     "color_hex": color_hex,
                     "color_hexes": color_hexes,
+                    "transmission_distance": color_obj.get("transmission_distance"),
                     "extruder_temp": extruder_temp,
                     "extruder_temp_range": extruder_temp_range,
                     "bed_temp": bed_temp,
