@@ -22,6 +22,8 @@ def main():
         page.goto(args.url + '#explorer')
         page.wait_for_function("document.querySelector('#load-status').textContent.startsWith('Loaded')")
         assert page.locator('.filament-card').count() == 24
+        for anchor in page.locator('a[download]').all():
+            assert page.request.get(anchor.evaluate('(element) => element.href')).ok
         page.select_option('#manufacturer-filter', 'Sunlu')
         page.select_option('#material-filter', 'PETG')
         started = time.perf_counter()

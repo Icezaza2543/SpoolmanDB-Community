@@ -160,6 +160,10 @@
     }
 
     async function init() {
+        // Match download links to the same source paths used by the data loader.
+        for (const link of document.querySelectorAll('a[href="filaments.json"], a[href="materials.json"]')) {
+            link.setAttribute("href", resourcePath(link.getAttribute("href")));
+        }
         window.addEventListener("hashchange", handleRouting);
         
         let resizeTimeout;
