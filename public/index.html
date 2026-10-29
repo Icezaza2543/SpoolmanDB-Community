@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
         <div class="header-inner">
             <a class="brand" href="#home" aria-label="SpoolmanDB Community home">
@@ -39,7 +40,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <section class="status-panel" aria-live="polite">
             <p id="load-status">Loading filament and material data...</p>
         </section>
@@ -47,10 +48,10 @@
         <section class="page-section home-page" id="home">
             <header class="home-hero" aria-labelledby="page-title">
                 <span class="hero-badge">Community-Driven Project</span>
-                <h1 id="page-title">Find filament data before it reaches <span>your</span> spool shelf.</h1>
+                <h1 id="page-title">Find the right data for <span>your</span> next spool.</h1>
                 <p>
-                    Access thousands of source-backed filament profiles, manufacturers, materials, and technical documents.
-                    It integrates seamlessly with your Spoolman instance for precise inventory tracking.
+                    Browse filament colors, compare packaging, and find available technical documents.
+                    Copy the database URL to configure your Spoolman server.
                 </p>
                 <div class="hero-actions">
                     <button class="button button-primary button-large" type="button" data-copy="#external-url">
@@ -211,14 +212,15 @@
         <section class="page-section explorer-page" id="explorer" aria-labelledby="explorer-title">
             <div class="page-heading split-heading">
                 <div>
-                    <h1 id="explorer-title">Database Explorer</h1>
-                    <p id="results-summary">Waiting for data...</p>
+                    <span class="eyebrow">THE COMMUNITY CATALOG</span>
+                    <h1 id="explorer-title">Find your next filament.</h1>
+                    <p>Search a brand, material or color. Check the details before adding it to your shelf.</p>
                 </div>
 
                 <form class="filter-rail" id="filters">
                     <label class="search-field">
                         <span>Search</span>
-                        <input id="search" type="search" placeholder="Name, maker, material, product ID, EAN, TDS..." autocomplete="off">
+                        <input id="search" type="search" placeholder="Try Sunlu, PETG, blue or a product code…" autocomplete="off">
                     </label>
                     <label>
                         <span>Manufacturer</span>
@@ -251,8 +253,17 @@
             </div>
 
             <p class="active-filter-line" id="active-filters">No filters applied.</p>
+            <div class="catalog-toolbar">
+                <p id="results-summary" role="status" aria-live="polite">Waiting for data...</p>
+                <div class="catalog-actions" aria-label="Catalog view">
+                    <button type="button" class="button button-ghost" id="view-cards" aria-pressed="true">Cards</button>
+                    <button type="button" class="button button-ghost" id="view-table" aria-pressed="false">Table</button>
+                    <button type="button" class="button button-ghost" id="share-search">Copy search link</button>
+                </div>
+            </div>
+            <div id="catalog-cards" class="catalog-grid" aria-label="Filament catalog"></div>
 
-            <div class="table-card">
+            <div class="table-card" id="catalog-table" hidden>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -276,6 +287,11 @@
                     </table>
                 </div>
             </div>
+            <nav class="catalog-pagination" aria-label="Catalog pages">
+                <button class="button button-ghost" id="previous-page" type="button" disabled>Previous page</button>
+                <span id="page-status">Page 1</span>
+                <button class="button button-ghost" id="next-page" type="button" disabled>Next page</button>
+            </nav>
 
             <section class="insight-callout">
                 <div class="callout-icon">
@@ -283,9 +299,9 @@
                 </div>
                 <div>
                     <h2>SpoolmanDB Static Index</h2>
-                    <p>This is a global static mirror of community-contributed filament data. Copy the external database URL to link this catalog to your personal Spoolman instance.</p>
+                    <p>Copy the database URL, set EXTERNAL_DB_URL in your Spoolman server configuration, then restart your service. This website cannot change your server settings.</p>
                 </div>
-                <button class="button button-light" type="button" data-copy="#external-url">Link to My Spoolman</button>
+                <button class="button button-light" type="button" data-copy="#external-url">Copy setup URL</button>
             </section>
         </section>
 

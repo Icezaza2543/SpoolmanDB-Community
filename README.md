@@ -25,6 +25,10 @@ The Explorer's copy button only copies the URL. It cannot configure or access yo
 
 ## Explore the catalog
 
+![Explorer showing Sunlu PETG 2.0 variants](docs/assets/explorer/after-desktop.png)
+
+- Browse responsive product cards or switch to a comparison table; open details with the keyboard.
+- Share a filtered search or link to an individual variant.
 - Search by manufacturer, material, color, product code or EAN.
 - Compare diameter, net weight and packaging; missing values remain visible.
 - Follow available TDS/SDS references and inspect the source schemas.

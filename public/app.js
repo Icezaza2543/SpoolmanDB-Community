@@ -2,7 +2,8 @@
     "use strict";
 
     const EXTERNAL_DB_URL = "https://icezaza2543.github.io/SpoolmanDB-Community/";
-    const MAX_RENDERED_ROWS = 150;
+    const MAX_RENDERED_ROWS = 24;
+    const searchCache = new WeakMap();
     const MAX_QUALITY_ROWS = 140;
     const GITHUB_REPO = "https://github.com/Icezaza2543/SpoolmanDB-Community";
     const SOURCE_FINDER_LIMIT = 8;
@@ -54,6 +55,8 @@
         homeCharts: [],
         dashboardMetrics: null,
         homeInitialized: false,
+        catalogPage: 0,
+        catalogView: "cards",
     };
 
     const elements = {
@@ -106,7 +109,7 @@
     document.addEventListener("DOMContentLoaded", init);
 
     function handleRouting() {
-        const hash = window.location.hash || "#home";
+        const hash = (window.location.hash || "#home").split("?")[0];
         const validHashes = ["#home", "#analytics", "#explorer", "#schema", "#contribute"];
         const activeHash = validHashes.includes(hash) ? hash : "#home";
 
@@ -128,12 +131,17 @@
             const linkHash = link.getAttribute("href");
             if (linkHash === activeHash) {
                 link.classList.add("active");
+                link.setAttribute("aria-current", "page");
             } else {
                 link.classList.remove("active");
+                link.removeAttribute("aria-current");
             }
         });
 
-        if (activeHash === "#analytics") {
+        if (activeHash === "#explorer" && state.filaments.length) {
+            restoreCatalogFilters();
+            renderFilteredResults(false);
+        } else if (activeHash === "#analytics") {
             if (!state.homeInitialized) {
                 if (state.filaments.length > 0) {
                     initHomeDashboard();
@@ -171,10 +179,20 @@
         bindSchemaViewer();
         bindContributorHelper();
         bindSchemaInteractions();
-        elements.filters.addEventListener("input", renderFilteredResults);
+        let searchTimer;
+        elements.filters.addEventListener("submit", event => event.preventDefault());
+        elements.filters.addEventListener("input", function (event) {
+            clearTimeout(searchTimer);
+            state.catalogPage = 0;
+            if (event.target === elements.search) searchTimer = setTimeout(renderFilteredResults, 150);
+            else renderFilteredResults();
+        });
         elements.filters.addEventListener("reset", function () {
+            clearTimeout(searchTimer);
+            state.catalogPage = 0;
             window.setTimeout(renderFilteredResults, 0);
         });
+        bindCatalogControls();
 
         // Initial route handling
         handleRouting();
@@ -190,7 +208,7 @@
 
             populateFilters();
             renderStats();
-            renderFilteredResults();
+            renderFilteredResults(false);
             buildManufacturerIndex();
             renderContributorSourceFinder();
             computeAndRenderQuality();
@@ -203,6 +221,8 @@
         } catch (error) {
             setStatus("Could not load JSON data. Serve this page through GitHub Pages or a local web server.", true);
             elements.resultsBody.replaceChildren(emptyRow("Data failed to load: " + error.message));
+            document.querySelector("#catalog-cards").textContent = "The catalog could not load. Check your connection and reload this page.";
+            elements.resultsSummary.textContent = "Catalog unavailable";
             renderQualityError("Data failed to load: " + error.message);
             renderContributorSourceFinder("Data not loaded. Serve this page through GitHub Pages or a local web server.");
             loadSchemas();
@@ -1002,8 +1022,13 @@
     }
 
     function populateSelect(select, values, labeler) {
+        const selected = select.value;
         const first = select.options[0];
         select.replaceChildren(first);
+
+        // Keep an active filter even when the other filters produce no matches.
+        // Removing it silently broadens the search and makes empty states misleading.
+        if (selected && !values.map(String).includes(selected)) values = values.concat(selected);
 
         values.forEach(function (value) {
             if (value === "" || value === undefined || value === null) {
@@ -1015,6 +1040,7 @@
             option.textContent = labeler ? labeler(value) : String(value);
             select.appendChild(option);
         });
+        select.value = selected;
     }
 
     function renderStats() {
@@ -1032,7 +1058,7 @@
         elements.statDocuments.textContent = formatNumber(documents.length);
     }
 
-    function renderFilteredResults() {
+    function renderFilteredResults(syncUrl = true) {
         populateFilters();
 
         const query = elements.search.value.trim().toLowerCase();
@@ -1060,7 +1086,10 @@
             return true;
         });
 
-        const visible = state.matches.slice(0, MAX_RENDERED_ROWS);
+        const pages = Math.max(1, Math.ceil(state.matches.length / MAX_RENDERED_ROWS));
+        state.catalogPage = Math.min(state.catalogPage, pages - 1);
+        const start = state.catalogPage * MAX_RENDERED_ROWS;
+        const visible = state.matches.slice(start, start + MAX_RENDERED_ROWS);
         const fragment = document.createDocumentFragment();
 
         if (visible.length === 0) {
@@ -1072,9 +1101,138 @@
         }
 
         elements.resultsBody.replaceChildren(fragment);
+        const cards = document.querySelector("#catalog-cards");
+        cards.replaceChildren(...visible.map(renderFilamentCard));
+        if (!visible.length) {
+            const empty = document.createElement("p");
+            empty.className = "catalog-empty";
+            empty.textContent = "No filaments match. Try a shorter search or reset the filters.";
+            cards.appendChild(empty);
+        }
         elements.resultsSummary.textContent =
-            "Showing " + formatNumber(visible.length) + " of " + formatNumber(state.matches.length) + " matches";
+            (visible.length ? formatNumber(start + 1) + "–" + formatNumber(start + visible.length) + " of " : "") + formatNumber(state.matches.length) + " matches";
         elements.activeFilters.textContent = describeFilters(query, material, manufacturer, diameter, spool);
+        document.querySelector("#page-status").textContent = "Page " + (state.catalogPage + 1) + " of " + pages;
+        document.querySelector("#previous-page").disabled = state.catalogPage === 0;
+        document.querySelector("#next-page").disabled = state.catalogPage + 1 >= pages;
+        if (syncUrl && window.location.hash.startsWith("#explorer")) {
+            window.history.replaceState(null, "", catalogLink());
+        }
+    }
+
+    function catalogLink(item) {
+        const params = new URLSearchParams();
+        const values = item ? { q: item.id } : {
+            q: elements.search.value, manufacturer: elements.manufacturer.value,
+            material: elements.material.value, diameter: elements.diameter.value, spool: elements.spool.value,
+        };
+        Object.entries(values).forEach(([key, value]) => { if (value) params.set(key, value); });
+        return window.location.pathname + window.location.search + "#explorer" + (params.size ? "?" + params : "");
+    }
+
+    function restoreCatalogFilters() {
+        const params = new URLSearchParams(window.location.hash.split("?")[1] || "");
+        elements.search.value = params.get("q") || "";
+        for (const key of ["manufacturer", "material", "diameter", "spool"]) {
+            const value = params.get(key) || "";
+            const select = elements[key];
+            if (value && !Array.from(select.options).some(option => option.value === value)) {
+                const option = document.createElement("option");
+                option.value = value;
+                option.textContent = value;
+                select.appendChild(option);
+            }
+            select.value = value;
+        }
+        state.catalogPage = 0;
+    }
+
+    function bindCatalogControls() {
+        document.querySelector(".skip-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.querySelector("#main-content").focus();
+        });
+        for (const view of ["cards", "table"]) {
+            document.querySelector("#view-" + view).addEventListener("click", function () {
+                state.catalogView = view;
+                document.querySelector("#catalog-cards").hidden = view !== "cards";
+                document.querySelector("#catalog-table").hidden = view !== "table";
+                document.querySelector("#view-cards").setAttribute("aria-pressed", String(view === "cards"));
+                document.querySelector("#view-table").setAttribute("aria-pressed", String(view === "table"));
+            });
+        }
+        for (const [id, change] of [["previous-page", -1], ["next-page", 1]]) {
+            document.querySelector("#" + id).addEventListener("click", function () {
+                state.catalogPage = Math.max(0, state.catalogPage + change);
+                renderFilteredResults();
+            });
+        }
+        document.querySelector("#share-search").addEventListener("click", async function (event) {
+            const button = event.currentTarget;
+            try {
+                await copyText(new URL(catalogLink(), window.location.href).href);
+                button.textContent = "Link copied";
+            } catch (error) {
+                button.textContent = "Copy the URL from your address bar";
+            }
+            setTimeout(() => { button.textContent = "Copy search link"; }, 2000);
+        });
+    }
+
+    function renderFilamentCard(item) {
+        const card = document.createElement("article");
+        card.className = "filament-card";
+        const swatch = renderSwatch(item);
+        const content = document.createElement("div");
+        content.className = "filament-card-content";
+        const brand = document.createElement("p");
+        brand.className = "card-brand";
+        brand.textContent = item.manufacturer;
+        const title = document.createElement("h2");
+        title.textContent = filamentDisplayName(item);
+        const specs = document.createElement("p");
+        specs.className = "card-specs";
+        specs.textContent = formatNumber(item.weight) + " g · " + formatNumber(item.diameter) + " mm · " + labelSpool(spoolValue(item));
+        const quality = document.createElement("p");
+        quality.className = "card-quality";
+        quality.textContent = (item.spool_weight == null ? "Spool weight missing" : "Spool weight recorded") + " · " + (hasDocuments(item) ? "Document linked" : "No document linked");
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        summary.textContent = "Product details";
+        const list = document.createElement("dl");
+        for (const [label, value] of [
+            ["Material", item.material], ["Spool tare", item.spool_weight == null ? "Not recorded" : item.spool_weight + " g"],
+            ["Density", item.density == null ? "Not recorded" : item.density + " g/cm³"],
+            ["Nozzle / bed", formatTemps(item)], ["Manufacturing origin", item.country_of_origin || "Not recorded"],
+            ["Transmission distance", item.transmission_distance == null ? "Not measured" : item.transmission_distance + " mm"],
+            ["Color HEX", colorLabel(item)], ["Product codes", (item.codes || []).join(", ") || "Not recorded"],
+            ["EAN / GTIN", (item.eans || []).concat(item.eans_refill || []).join(", ") || "Not recorded"],
+            ["Public ID", item.id],
+        ]) {
+            const term = document.createElement("dt");
+            term.textContent = label;
+            const description = document.createElement("dd");
+            description.textContent = value;
+            list.append(term, description);
+        }
+        const links = document.createElement("div");
+        links.className = "card-links";
+        if (item.tds_url) links.appendChild(documentLink("TDS / product reference", item.tds_url));
+        if (item.sds_url) links.appendChild(documentLink("SDS", item.sds_url));
+        const permalink = document.createElement("a");
+        permalink.href = catalogLink(item);
+        permalink.textContent = "Link to this variant";
+        const source = document.createElement("a");
+        source.href = GITHUB_REPO + "/search?q=" + encodeURIComponent('"' + item.manufacturer + '" path:filaments') + "&type=code";
+        source.textContent = "Find source data on GitHub";
+        links.append(permalink, source);
+        const note = document.createElement("p");
+        note.className = "muted";
+        note.textContent = "Field presence is not verification. Check the exact product and package against the linked evidence.";
+        details.append(summary, list, links, note);
+        content.append(brand, title, specs, quality, details);
+        card.append(swatch, content);
+        return card;
     }
 
     function renderRow(item) {
@@ -1161,10 +1319,13 @@
     }
 
     function searchText(item) {
+        if (searchCache.has(item)) return searchCache.get(item);
         const metadata = [
             item.tds_url ? "tds datasheet document" : ""
         ].filter(Boolean).join(" ");
-        return (displayNameApi.buildFilamentSearchText(item) + " " + metadata).toLowerCase();
+        const text = (displayNameApi.buildFilamentSearchText(item) + " " + metadata + " " + (item.id || "")).toLowerCase();
+        searchCache.set(item, text);
+        return text;
     }
 
     function describeFilters(query, material, manufacturer, diameter, spool) {
@@ -1971,7 +2132,7 @@
                     return;
                 }
                 const text = target.textContent.trim() || EXTERNAL_DB_URL;
-                const previous = button.textContent;
+                const previous = Array.from(button.childNodes, node => node.cloneNode(true));
                 try {
                     await copyText(text);
                     button.textContent = "Copied";
@@ -1979,7 +2140,7 @@
                     button.textContent = "Copy failed";
                 }
                 window.setTimeout(function () {
-                    button.textContent = previous;
+                    button.replaceChildren(...previous);
                 }, 1200);
             });
         });
