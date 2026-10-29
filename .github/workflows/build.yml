@@ -63,6 +63,8 @@ jobs:
           node-version: "22"
       - name: Run display name JavaScript test
         run: node tests/test_display_name.cjs
+      - name: Check Explorer untrusted data handling
+        run: node tests/test_explorer_security.cjs
   compile:
     runs-on: ubuntu-latest
     needs: [validate]

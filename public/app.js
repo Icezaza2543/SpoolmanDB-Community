@@ -441,11 +441,12 @@
         const option = {
             backgroundColor: "transparent",
             tooltip: {
+                renderMode: "richText",
                 trigger: "item",
                 formatter: function (params) {
                     if (params.dataType === "node") {
                         const catLabels = ["Manufacturer", "Material", "Color Family", "Packaging"];
-                        return `<strong>${params.name}</strong><br/>Type: ${catLabels[params.data.category]}`;
+                        return `${params.name}\nType: ${catLabels[params.data.category]}`;
                     }
                     return `Connection: ${params.data.source.replace(/^\w+_/, "")} → ${params.data.target.replace(/^\w+_/, "")}`;
                 },
@@ -522,6 +523,7 @@
             backgroundColor: "transparent",
             color: ["#f59e0b", "#f97316", "#06b6d4", "#10b981", "#8b5cf6", "#ec4899", "#3b82f6", "#6b7280"],
             tooltip: {
+                renderMode: "richText",
                 trigger: "item",
                 formatter: "{b}: {c} ({d}%)",
                 backgroundColor: "rgba(24, 24, 28, 0.95)",
@@ -560,6 +562,7 @@
         const option = {
             backgroundColor: "transparent",
             tooltip: {
+                renderMode: "richText",
                 trigger: "axis",
                 axisPointer: { type: "shadow" },
                 backgroundColor: "rgba(24, 24, 28, 0.95)",
@@ -610,6 +613,7 @@
             backgroundColor: "transparent",
             color: ["#f59e0b", "#f97316", "#06b6d4", "#10b981", "#6b7280"],
             tooltip: {
+                renderMode: "richText",
                 trigger: "item",
                 formatter: "{b}: {c} ({d}%)",
                 backgroundColor: "rgba(24, 24, 28, 0.95)",
@@ -662,14 +666,15 @@
         const option = {
             backgroundColor: "transparent",
             tooltip: {
+                renderMode: "richText",
                 trigger: "item",
                 formatter: function (params) {
                     const val = params.value;
                     const brandsText = val[5] || "Unknown";
                     const materialsText = val[6] || "Unknown";
-                    return `Hex: <span style="display:inline-block;width:12px;height:12px;background-color:${val[2]};border:1px solid #fff;border-radius:50%;margin-right:4px;vertical-align:middle;"></span>${val[2]}<br/>` +
-                           `Occurrences: ${val[3]}<br/>` +
-                           `Brands (${val[4]}): ${brandsText}<br/>` +
+                    return `Hex: ${val[2]}\n` +
+                           `Occurrences: ${val[3]}\n` +
+                           `Brands (${val[4]}): ${brandsText}\n` +
                            `Materials: ${materialsText}`;
                 },
                 backgroundColor: "rgba(24, 24, 28, 0.95)",
@@ -747,6 +752,7 @@
         const option = {
             backgroundColor: "transparent",
             tooltip: {
+                renderMode: "richText",
                 trigger: "axis",
                 axisPointer: { type: "shadow" },
                 formatter: function (params) {
@@ -763,7 +769,7 @@
                         metrics.coverage.multicolor
                     ];
                     const reversedCounts = counts.slice().reverse();
-                    return `<strong>${params[0].name}</strong><br/>` +
+                    return `${params[0].name}\n` +
                            `Coverage: ${val}% (${reversedCounts[idx]} / ${total} variants)`;
                 },
                 backgroundColor: "rgba(24, 24, 28, 0.95)",
@@ -1111,6 +1117,13 @@
     }
 
     function documentLink(label, url) {
+        try {
+            if (!["http:", "https:"].includes(new URL(url).protocol)) throw new Error("Unsupported URL");
+        } catch (error) {
+            const unavailable = document.createElement("span");
+            unavailable.textContent = label + " unavailable (invalid URL)";
+            return unavailable;
+        }
         const link = document.createElement("a");
         link.className = "tag tag-orange tag-link";
         link.href = url;
