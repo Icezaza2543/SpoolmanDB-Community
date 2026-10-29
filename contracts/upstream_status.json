@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-10-27",
+  "last_reviewed": "2026-10-30",
   "upstreams": {
     "spoolman": {
       "name": "Spoolman (Application Server)",
@@ -14,11 +14,11 @@
       "name": "SpoolmanDB (Original Static Data Repository)",
       "repository": "Donkie/SpoolmanDB",
       "status": "active_upstream",
-      "latest_known_commit": "9d53d28703ba1bcc97ab504e069d437ae2053c5a",
-      "latest_known_commit_date": "2026-10-27",
+      "latest_known_commit": "c67dcd85dd4ff8de9bbc4f1eaa617aa837e95b1a",
+      "latest_known_commit_date": "2026-10-29",
       "historical_community_base_commit": "5b61e755926568ec3b3235701684595872b70b49",
       "historical_community_base_commit_date": "2025-11-28",
-      "description": "Active upstream static database; Inslogic #297 and country-of-origin #283 merged in October 2026. Database field support does not imply native application support."
+      "description": "Inspected current source JSON; selective field-level reconciliation with explicit evidence and identity deferrals. See docs/audits/2026-10-30-reconciliation.md."
     }
   },
   "capabilities": {
@@ -34,35 +34,50 @@
       "status": "community-extension",
       "spoolman_support": "Absent from ExternalFilament contract; current Spoolman ExternalFilament accepts plastic/cardboard/metal or null only.",
       "community_status": "Supported (source 'refill' normalized to null spool_type + explicit is_refill: true, preserving legacy_id_spool_type)",
-      "upstream_references": ["Donkie/SpoolmanDB#26"]
+      "upstream_references": [
+        "Donkie/SpoolmanDB#26"
+      ]
     },
     "country_of_origin": {
       "feature": "Country of Origin (COO) ISO alpha-2 codes",
       "status": "community-extension",
       "spoolman_support": "Absent from ExternalFilament contract",
-      "community_status": "Supported in Community and upstream SpoolmanDB since #283 merged on 2026-10-27; remains an extension relative to the application contract. Upstream validates assigned codes via enum; Community currently validates two uppercase letters.",
-      "upstream_references": ["Donkie/SpoolmanDB#283"]
+      "community_status": "Assigned ISO alpha-2 codes match upstream #283; all existing values accepted. Application contract still omits COO.",
+      "upstream_references": [
+        "Donkie/SpoolmanDB#283"
+      ]
     },
     "sds_tds_urls": {
       "feature": "Safety Data Sheet (SDS) and Technical Data Sheet (TDS) URLs",
       "status": "community-extension",
       "spoolman_support": "Absent from ExternalFilament contract (upstream data/app proposals pending)",
       "community_status": "Supported with strict URI format validation",
-      "upstream_references": ["Donkie/SpoolmanDB#282", "Donkie/Spoolman#395"]
+      "upstream_references": [
+        "Donkie/SpoolmanDB#282",
+        "Donkie/Spoolman#395"
+      ]
     },
     "codes": {
       "feature": "Manufacturer / product article codes",
       "status": "community-extension",
       "spoolman_support": "Absent from ExternalFilament contract",
       "community_status": "Supported in community source files",
-      "upstream_references": ["Donkie/SpoolmanDB#198", "Donkie/SpoolmanDB#263", "Donkie/Spoolman#789"]
+      "upstream_references": [
+        "Donkie/SpoolmanDB#198",
+        "Donkie/SpoolmanDB#263",
+        "Donkie/Spoolman#789"
+      ]
     },
     "eans_gtin": {
       "feature": "EAN / GTIN barcode identifiers (standard & refill)",
       "status": "community-extension",
       "spoolman_support": "Absent from ExternalFilament contract",
       "community_status": "Supported (eans + eans_refill metadata in source files)",
-      "upstream_references": ["Donkie/SpoolmanDB#198", "Donkie/SpoolmanDB#263", "Donkie/Spoolman#789"]
+      "upstream_references": [
+        "Donkie/SpoolmanDB#198",
+        "Donkie/SpoolmanDB#263",
+        "Donkie/Spoolman#789"
+      ]
     },
     "legacy_public_id_compat": {
       "feature": "Historical Public ID stability & legacy_id_spool_type compatibility",
@@ -70,6 +85,15 @@
       "spoolman_support": "Spoolman provides opaque native id: str field in ExternalFilament contract",
       "community_status": "Protected by automated CI stability gate & legacy_id_spool_type preservation mechanism",
       "upstream_references": []
+    },
+    "transmission_distance": {
+      "feature": "Per-color light transmission distance in millimeters",
+      "status": "community-extension",
+      "spoolman_support": "Absent from ExternalFilament contract",
+      "community_status": "Supported in source and compiled schemas, following SpoolmanDB #497; positive source numbers, null when unknown in compiled output.",
+      "upstream_references": [
+        "Donkie/SpoolmanDB#497"
+      ]
     }
   }
 }
