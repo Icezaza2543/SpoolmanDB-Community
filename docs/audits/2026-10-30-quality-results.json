@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-10-30",
+  "base_commit": "2a2c6370292b30732ddc80921fa67d65f4e7abf4",
+  "upstream_commit": "c67dcd85dd4ff8de9bbc4f1eaa617aa837e95b1a",
+  "baseline_pytest_passed": 277,
+  "final_pytest_passed": 294,
+  "checks": [
+    {
+      "command": "python scripts/compile_filaments.py",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-0.log"
+    },
+    {
+      "command": "python scripts/validate.py --strict --base-ref 2a2c6370292b30732ddc80921fa67d65f4e7abf4",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-1.log"
+    },
+    {
+      "command": "python scripts/compile_id_baseline.py --strict --base-ref 2a2c6370292b30732ddc80921fa67d65f4e7abf4",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-2.log"
+    },
+    {
+      "command": "python -m pytest -q",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-3.log"
+    },
+    {
+      "command": "node tests/test_display_name.cjs",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-4.log"
+    },
+    {
+      "command": "node tests/test_explorer_security.cjs",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-5.log"
+    },
+    {
+      "command": "python scripts/check_spoolman_compat.py --mode stable",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-6.log"
+    },
+    {
+      "command": "python scripts/check_spoolman_compat.py --mode canary",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-7.log"
+    },
+    {
+      "command": "python scripts/project_spoolman.py",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-8.log"
+    },
+    {
+      "command": "python scripts/readme_snapshot.py --check",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-9.log"
+    },
+    {
+      "command": "git diff --check 2a2c6370292b30732ddc80921fa67d65f4e7abf4",
+      "exit_code": 0,
+      "local_log": ".git/reconciliation/final-10.log"
+    },
+    {
+      "command": "Compare every baseline ID and field; allow only added null TD",
+      "exit_code": 0,
+      "before": 51412,
+      "after": 51432,
+      "additions": 20,
+      "removals": 0,
+      "changed_historical_fields": 0
+    }
+  ],
+  "browser": {
+    "engines": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "source_preview": "passed",
+    "pages_layout": "passed",
+    "observed_filter_seconds": [
+      0.192,
+      0.259,
+      0.22
+    ]
+  },
+  "axe": {
+    "version": "4.10.3",
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "violations": {
+      "home": 0,
+      "explorer": 0,
+      "analytics": 0,
+      "schema": 0,
+      "contribute": 0
+    }
+  },
+  "baseline_remote_ci": "no workflow runs returned; not evidence of success",
+  "independent_review": "approved through 6fa6cf9; external research not independently fetched"
+}

@@ -16,6 +16,7 @@ We welcome contributions of all types. Depending on your experience with Git and
 - Keep changes focused. Prefer one manufacturer or one related correction set per pull request.
 - When adding an ASEAN manufacturer, register its source filename in `scripts/asean_manufacturers.json`. Use the brand's location; never infer it from `country_of_origin`.
 - If setting `country_of_origin`, use ISO 3166-1 alpha-2 only (`CN`, `US`, `DE`, …), and only when product/SKU manufacturing origin is source-backed. Prefer omitting the field over HQ, store, or distributor region.
+- Optional `transmission_distance` belongs on each color: a measured positive number in millimeters, following upstream #497. Omit unknown values; never estimate them from HEX. Split definitions when diameter variants have different measurements. The compiler emits `null` when absent; Spoolman's pinned application contract does not consume this extension.
 
 ## Validation
 

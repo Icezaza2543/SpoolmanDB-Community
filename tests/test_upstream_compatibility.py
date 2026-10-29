@@ -28,6 +28,7 @@ REQUIRED_CAPABILITIES = {
     "codes",
     "eans_gtin",
     "legacy_public_id_compat",
+    "transmission_distance",
 }
 REPO_QUALIFIED_REF_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+#\d+$")
 HEX_SHA_40_PATTERN = re.compile(r"^[0-9a-f]{40}$")
@@ -161,6 +162,7 @@ def test_no_false_native_contract_claims():
         "country_of_origin": "country_of_origin",
         "sds_tds_urls": "sds_url",
         "codes": "codes",
+        "transmission_distance": "transmission_distance",
         "eans_gtin": "eans",
     }
 
