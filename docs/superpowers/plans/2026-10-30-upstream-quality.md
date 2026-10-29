@@ -17,7 +17,7 @@
 - [x] P5: Research current official OrcaSlicer plugin/cloud status; document value, effort, risk, compatibility and maintenance by roadmap horizon.
 - [x] P6–7: Update compatibility status from checked pins; preserve material HOLD and report identity impacts without applying migrations.
 - [x] P8: Audit manufacturer identities and internal records for Silver3D, CC3D and Alchemakes; record sources, tare gaps and alias uncertainty.
-- [ ] Delivery: Full checks, independent whole-branch review, atomic commits, Community Draft PR if access permits, concise Thai report with evidence and limitations.
+- [x] Delivery: Full local checks, independent code review, atomic commits and [Community Draft PR #69](https://github.com/Icezaza2543/SpoolmanDB-Community/pull/69). Remote CI status and concise Thai handoff are reported at delivery.
 
 ## Review focus
 
@@ -36,4 +36,4 @@
 
 - Completed P1–8 with explicit evidence-based deferrals in the reconciliation and coverage reports. Accepted only 20 Sunlu PETG 2.0 variants; all old IDs and fields preserved.
 - Final local checks: 294 tests, strict gates, stable/canary/projection and README snapshot passed. Three browser engines passed source/staged-site QA; axe reported zero scoped violations on five routes.
-- Independent review approved code through `6fa6cf9`; final documentation links and whitespace checked. Draft PR delivery remains the final step.
+- Independent review approved code through `6fa6cf9`; all 207 local documentation targets and whole-branch whitespace checked. Draft PR #69 created; remote workflows are separate from local evidence and production remains unchanged.
