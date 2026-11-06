@@ -20,9 +20,10 @@ This document tracks the compatibility status, technical divergence, and capabil
 
 Upstream testing configurations are defined in [`contracts/spoolman_upstream.json`](../contracts/spoolman_upstream.json) and machine-tracked via [`contracts/upstream_status.json`](../contracts/upstream_status.json):
 
-* **Spoolman Stable Pin (Required Contract)**: `v0.25.0` (`6e1065009c7c45c9e38d5e1bec21d47273442889`)
+* **Spoolman Stable Pin (Required Contract)**: `v0.27.1` (`ff8efd517b76a4b2783f29c89e9b9fbcd8cd167b`), verified 2026-11-07.
   * Local snapshot: [`contracts/spoolman_externaldb.py`](../contracts/spoolman_externaldb.py)
   * Contract Check: **PASSING** (current compiled dataset validated)
+  * No field/type/enum drift from the previous v0.25.0 pin; the reviewed AST-only snapshot is unchanged. This verifies the external-data contract, not a live server/UI import. See [release and catalog audit](audits/2026-11-07-release-catalog.md).
 * **Spoolman Canary (Advisory)**: Branch `master`
   * Contract Check: **PASSING** (No `ExternalFilament` field or type drift)
 * **SpoolmanDB Historical Community Base**: `5b61e755926568ec3b3235701684595872b70b49` (`2025-11-28`)
