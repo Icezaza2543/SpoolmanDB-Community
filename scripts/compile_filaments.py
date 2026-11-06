@@ -48,7 +48,7 @@ class Color(TypedDict):
     name: str
     transmission_distance: NotRequired[float]
     display_name: NotRequired[str]
-    hex: NotRequired[str]
+    hex: NotRequired[str | None]
     hexes: NotRequired[list[str]]
     fill: NotRequired[Fill | None]
     finish: NotRequired[Finish | None]
@@ -239,12 +239,12 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                 formatted_name = name.format(color_name=color_name)
                 output_name = color_display_name or formatted_name
 
-                if color_hex is None and color_hexes is None:
+                if "hex" not in color_obj and color_hexes is None:
                     raise ValueError(
                         f"Filament {formatted_name} by {manufacturer} has no hex or hexes specified."
                     )
 
-                if color_hex is not None and color_hexes is not None:
+                if "hex" in color_obj and "hexes" in color_obj:
                     raise ValueError(
                         f"Filament {formatted_name} by {manufacturer} has both hex and hexes specified."
                     )

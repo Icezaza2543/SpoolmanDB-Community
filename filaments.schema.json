@@ -234,8 +234,8 @@
                                     "minLength": 1
                                 },
                                 "hex": {
-                                    "$comment": "For a single-color filament.",
-                                    "type": "string",
+                                    "$comment": "Single-color swatch, or explicit null when no fixed color can be specified. Document the evidence; do not invent a placeholder HEX.",
+                                    "type": ["string", "null"],
                                     "pattern": "^[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"
                                 },
                                 "transmission_distance": {

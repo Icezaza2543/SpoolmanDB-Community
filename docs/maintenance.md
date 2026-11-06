@@ -17,7 +17,7 @@ Each source filament definition requires:
 - `density`: Positive number in g/cm³, supported by evidence.
 - `weights`: Array of objects containing `weight` in grams and optional packaging metadata.
 - `diameters`: Array of positive numbers in mm.
-- `colors`: Array of color objects using either `hex` or `hexes` as required by the schema. Hex strings contain 6 or 8 hexadecimal characters without `#`; use verified named colors for new catalog entries.
+- `colors`: Array of color objects using either `hex` or `hexes` as required by the schema. Hex strings contain 6 or 8 hexadecimal characters without `#`; use verified named colors for new catalog entries. Explicit `hex: null` is allowed when no fixed swatch can be specified (for example, evidenced random production-transition colors). Record the reason in an audit; do not invent a gray placeholder or palette. Omitting both fields is still an error. Compiled color fields remain null and no color direction is inferred.
 
 The compiler expands the explicitly defined weight × diameter × color combinations into a flat `filaments.json` array. Compiled records use singular `weight` and `diameter`, `color_hex` or `color_hexes`, and an opaque `id`. These are not the source field names. Do not edit or commit generated `filaments.json`.
 
