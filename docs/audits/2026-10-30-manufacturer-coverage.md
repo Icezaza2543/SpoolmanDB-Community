@@ -1,6 +1,6 @@
 # Manufacturer coverage: Silver3D, CC3D and Alchemakes
 
-Checked 2026-10-30. Upstream pin: `c67dcd85dd4ff8de9bbc4f1eaa617aa837e95b1a`. Community starting pin: `2a2c6370292b30732ddc80921fa67d65f4e7abf4`. None of these manufacturers was added, renamed or changed in this cycle.
+Checked 2026-10-30. Manufacturer naming clarified 2026-11-09 using the project owner's supplied brand logo. Upstream pin: `c67dcd85dd4ff8de9bbc4f1eaa617aa837e95b1a`. Community starting pin: `2a2c6370292b30732ddc80921fa67d65f4e7abf4`. No source manufacturer name or public ID was changed.
 
 The audit searched manufacturer values, serialized source contents and the brand alias registry, not just filenames. Case-insensitive patterns included `silver.?3d`, `cc.?3d` and `alchema`. Expanded records were compared by public ID and fields using the compiler; spelling similarity was not treated as identity evidence.
 
@@ -11,7 +11,6 @@ The audit searched manufacturer values, serialized source contents and the brand
 | Silver3D; official site identifies Guangdong Silver AM Technology | Absent | Absent | None imported | Obtain exact filament catalog/TDS files, package/color identifiers and measured empty-spool tare before adding a focused manufacturer file |
 | CC3D | 3 source groups / 10 variants | 14 groups / 87 variants | ABS, HIPS, PC, PETG, PLA, TPE, TPU | All 10 upstream IDs already represented; retain 77 additional variants, gather primary sources and package-specific tare |
 | Alchemakes | Absent | 16 groups / 122 variants | ABS, ABS-CF, ABS-GF, ASA, ASA-CF, ASA-GF, PA6-CF, PETG, PETG-CF, PLA, PLA-CF, PP-GF | Retain existing data; obtain official product/identity evidence and measured tare for all groups |
-| Alchemaker | Absent | Absent | None | Relationship to Alchemakes unresolved; no alias or manufacturer rename authorized by evidence |
 
 ## Silver3D
 
@@ -27,11 +26,11 @@ Only these three Community groups (10 variants) contain the inherited **180 g** 
 
 [CC3D Global products](https://cc3dglobal.com/products/) is a primary-source lead but returned an access error during research. [cc3dfilament.com](https://cc3dfilament.com/) makes manufacturer claims; ownership and its relationship to the existing catalog were not independently established. Contradictory reseller identity claims are insufficient to change COO. Obtain manufacturer documents and packaging evidence before any corrective update. Importing the upstream file again would duplicate existing products; broader name/package matches still require individual review.
 
-## Alchemaker versus Alchemakes
+## Alchemakes — canonical manufacturer name
 
 All 16 Alchemakes groups lack spool tare and TDS/SDS URLs. Third-party listings such as [Peek Machinery's Alchemakes ASA-CF](https://peekmachinery.co.nz/products/3d-printer-filament-asa-cf-1-75mm-1kg) corroborate that spelling in commerce, but do not validate every catalog value or tare. No new properties were inferred from those listings.
 
-[Materialise's South Korea distributor page](https://www.materialise.com/ko/healthcare/hcps/pressure-measurements-orthotics/distributors/south-korea) lists **Alchemaker** in an orthotics context. That is not evidence that it is the filament brand Alchemakes. No primary evidence links the two names. Keep the requested spelling unresolved until the requester supplies a product label/site or a manufacturer confirms the relationship; do not create an alias based on edit distance.
+The project owner confirmed the **Alchemakes** brand spelling with a supplied logo on 2026-11-09. **Alchemakes** is the sole canonical manufacturer name used in this project. `filaments/alchemakes.json` already uses that name, so no manufacturer rename or public-ID migration is needed. Do not add a second manufacturer entry or an alias for this brand.
 
 ## Reproduce internal checks
 
