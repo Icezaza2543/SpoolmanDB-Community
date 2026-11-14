@@ -91,7 +91,7 @@
       "bed_temp": 60,
       "colors": [
         {
-          "name": "Olive green",
+          "name": "Olive Green",
           "hex": "6A845B"
         },
         {
@@ -1322,6 +1322,7 @@
       "weights": [
         {
           "weight": 1100,
+          "spool_weight": 182.0,
           "spool_type": "plastic"
         }
       ],
@@ -1331,7 +1332,58 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "000000",
+          "finish": "matte"
+        },
+        {
+          "name": "Olive Green",
+          "hex": "556B2F",
+          "finish": "matte"
+        },
+        {
+          "name": "Mint Green",
+          "hex": "ADEBB3",
+          "finish": "matte"
+        },
+        {
+          "name": "Chocolate",
+          "hex": "523D3C",
+          "finish": "matte"
+        },
+        {
+          "name": "Gray",
+          "hex": "414649",
+          "finish": "matte"
+        },
+        {
+          "name": "Lemon Yellow",
+          "hex": "FBF88A",
+          "finish": "matte"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "6ABCF6",
+          "finish": "matte"
+        },
+        {
+          "name": "Sunny Orange",
+          "hex": "D8631E",
+          "finish": "matte"
+        },
+        {
+          "name": "Sakura Pink",
+          "hex": "E8AFCF",
+          "finish": "matte"
+        },
+        {
+          "name": "Cherry Red",
+          "hex": "D93B47",
+          "finish": "matte"
+        },
+        {
+          "name": "White",
+          "hex": "000000",
+          "finish": "matte"
         }
       ],
       "country_of_origin": "HK",
@@ -1483,7 +1535,7 @@
       "colors": [
         {
           "name": "Cherry Red",
-          "hex": "000000"
+          "hex": "D93B47"
         }
       ],
       "extruder_temp_range": [
@@ -2242,7 +2294,7 @@
       "colors": [
         {
           "name": "Cherry Red",
-          "hex": "000000"
+          "hex": "D93B47"
         }
       ],
       "extruder_temp_range": [
