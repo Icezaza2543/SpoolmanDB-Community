@@ -46,18 +46,18 @@ The 2026-10-30 reconciliation adds 20 Sunlu PETG 2.0 variants and support for pe
 
 ## Current snapshot
 
-* **Published records**: 51,446
+* **Published records**: 51,447
 
 <!-- readme-snapshot:start -->
 | Source | Count |
 | --- | ---: |
 | Manufacturer source files | 491 |
 | Material definitions | 155 |
-| Source filament objects | 12,314 |
-| Color entries | 34,879 |
-| Compiled filament variants | 51,446 |
-| Source filaments with country of origin | 9,712 |
-| Source filaments with TDS/product links | 5,693 |
+| Source filament objects | 12,315 |
+| Color entries | 34,880 |
+| Compiled filament variants | 51,447 |
+| Source filaments with country of origin | 9,713 |
+| Source filaments with TDS/product links | 5,694 |
 | Source filaments with SDS links | 1,851 |
 | Manufacturer product code/ID entries | 12,715 |
 | EAN/GTIN entries | 2,749 |
@@ -75,8 +75,8 @@ Counts in this block are generated from the current repository state. Run `pytho
 | `spool_type: refill` (legacy) | 256 |
 | `spool_type: unknow` (legacy) | 26 |
 | `spool_type: null` | 0 |
-| `spool_type` omitted | 310 |
-| Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 277 |
+| `spool_type` omitted | 311 |
+| Effective refill (`is_refill: true` or legacy `spool_type: refill`) | 278 |
 <!-- readme-snapshot:end -->
 
 Counts describe repository source data. The live site reflects the latest deployed main commit; a draft branch is not deployed. ASEAN counts use the [curated brand registry](scripts/asean_manufacturers.json), not manufacturing origin.
