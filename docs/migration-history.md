@@ -14,6 +14,10 @@ The campaign **closed on 2026-10-05** with **2,022 registered retirements** and 
 
 CI rejects unresolved candidates under the documented duplicate-matching rules. The only current exemption is the exact OV083 membership in `not_duplicates.json`; detection does not prove that every physically equivalent product is identifiable. See [the campaign closure](audits/2026-10-04-duplicate-campaign-final.md#closure-2026-10-05) and [the remaining future-work backlog](audits/duplicate-backlog.md). The brand sections below retain their original migration checkpoints.
 
+### add:north rename migration (2026-11-16)
+
+This is an **intentional breaking catalog migration** and the first rename migration (`reason: "rename"`). It applies the upstream add:north name cleanup ([Donkie/SpoolmanDB#521](https://github.com/Donkie/SpoolmanDB/pull/521)) to 23 groups. Exactly 137 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,444 records. Material, package, colour and metadata are unchanged. The 27 add:north groups that exist only in Community are not renamed yet. See the [migration record](audits/2026-11-16-addnorth-rename.md) for the full mapping.
+
 ### Kingroon duplicate migration (2026-10-03)
 
 This is an **intentional breaking catalog migration** approved by the owner for [issue #66](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/66). It retires exactly five duplicate records, reducing the compiled catalog from 53,434 to 53,429 records without creating replacement IDs. Each survivor already exists, and its identity and metadata are unchanged.
