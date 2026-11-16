@@ -152,6 +152,65 @@ def identity_from_key(key, binding=None):
     }
 
 
+# Spelled-out reinforcement names that a material code abbreviates.
+RENAME_TOKEN_ALIASES = {("carbon", "fiber"): "cf", ("carbon", "fibre"): "cf",
+                        ("glass", "fiber"): "gf", ("glass", "fibre"): "gf"}
+
+
+def _rename_line_tokens(line, manufacturer, material):
+    """Product-line tokens with name text that repeats the manufacturer/material removed.
+
+    Only symbols other than ``+`` (``™``, ``®``, ``|``) are discarded besides
+    redundant tokens; versions, qualifiers and order are kept, so dropping any
+    real line word (``HF``, ``2.0``, ``Basic``) still changes the result.
+    """
+    def tokens(value):
+        raw = normalize_name(value, color=True)
+        return [t for t in raw if t == "+" or re.fullmatch(r"[\w.]+", t)]
+    result = tokens(line)
+    for words, alias in RENAME_TOKEN_ALIASES.items():
+        i = 0
+        while i + len(words) <= len(result):
+            if tuple(result[i:i + len(words)]) == words:
+                result[i:i + len(words)] = [alias]
+            i += 1
+    prefix = tokens(manufacturer)
+    if prefix and result[:len(prefix)] == prefix:
+        result = result[len(prefix):]
+    mat = tokens(material)
+    i = 0
+    while mat and i + len(mat) <= len(result):
+        if result[i:i + len(mat)] == mat:
+            del result[i:i + len(mat)]
+        else:
+            i += 1
+    parts = {t for t in mat if t != "+"}
+    return tuple(t for i, t in enumerate(result)
+                 if not (t in parts and (i + 1 == len(result) or result[i + 1] != "+")))
+
+
+def rename_identity(key):
+    """Physical identity for a pure rename: same file, package, material and color.
+
+    The product line may differ only by text that repeats the manufacturer or
+    material (``"PETG - {color_name}"`` -> ``"{color_name}"`` for PETG), which is
+    the upstream SpoolmanDB naming convention. Material changes are not renames.
+    """
+    if not isinstance(key, str) or len(key.split("::")) != 9:
+        raise ValueError("identity key must contain exactly nine components")
+    filename, manufacturer, template, name, material = key.split("::")[:5]
+    if template.count("{color_name}") != 1:
+        raise ValueError("rename requires a single {color_name} template")
+    base = identity_from_key(key)
+    prefix, suffix = template.split("{color_name}")
+    return {"filename": filename, **{field: base[field] for field in
+            ("manufacturer", "material", "weight", "diameter", "spool_type", "is_refill", "color")},
+            # Text before and after the color is kept apart: a rename never moves
+            # a qualifier across the color.
+            "line": (_rename_line_tokens(prefix, manufacturer, material),
+                     _rename_line_tokens(suffix, "", material))}
+
+
 def git_output(root, *args):
     return subprocess.run(["git", *args], cwd=root, capture_output=True, text=True, encoding="utf-8", check=True).stdout
 
