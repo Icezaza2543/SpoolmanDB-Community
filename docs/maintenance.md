@@ -62,7 +62,7 @@ python scripts/rename_migration.py ... --apply
 
 It edits only the matching `name` strings, so formatting is preserved. It refuses when a renamed ID already exists, when any old ID lacks exactly one new counterpart, or when the catalog stops compiling. An existing retirement that points at a renamed ID (A → B, then B → C) is re-pointed to the final ID (A → C) with its original `reason`, `ref`, `source` and `retired_key`, so no chain forms.
 
-The dry run already builds the complete source, registry and baseline result in a scratch copy and validates it: the trusted baseline and registry checks against `--base-ref`, plus the rename-only scope check below. `--apply` writes only after the same validation passes, and restores every original file if a write fails. A failed run writes nothing.
+The helper refuses to run with uncommitted or untracked changes under `filaments/`, `contracts/` or `docs/audits/`. The dry run already builds the complete source, registry and baseline result in a scratch copy and validates it: the trusted baseline and registry checks, plus the rename-only scope check below. Both compare against `--base-ref` as read from git, not against the working tree, so any other change since that commit fails, whether committed or not. `--apply` writes only after the same validation passes, and restores every original file if a write fails. A failed run writes nothing.
 
 The baseline check alone does not prove that a change is rename-only: it accepts unrelated additions and rekeys of unchanged IDs. The scope check does. It requires:
 - only new `rename` retirements, plus existing entries re-pointed onto the final ID of a newly renamed target, with no other registry change;

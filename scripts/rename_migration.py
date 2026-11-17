@@ -17,7 +17,9 @@ An existing retirement that points at a renamed ID (A -> B, then B -> C) is
 re-pointed to the final ID (A -> C) and keeps its original evidence, so the
 registry never forms a chain. The complete result (source, registry and
 baseline) is built and validated in a scratch copy first: the trusted baseline
-and registry checks plus ``verify_rename_scope``. Files are written only when
+and registry checks plus ``verify_rename_scope`` against ``--base-ref``. The
+checkout must be clean under filaments/, contracts/ and docs/audits/, and any
+change between ``--base-ref`` and the result other than the rename fails. Files are written only when
 all of that passes, so the dry run and ``--apply`` fail on exactly the same
 problems and a failed apply leaves the tree untouched.
 
@@ -253,8 +255,19 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
     return errors, pairs
 
 
-def stage_and_validate(root, filename, new_text, registry, base_payload, base_registry):
+def dirty_paths(root):
+    """Uncommitted (including untracked) changes under the directories a migration reads."""
+    out = subprocess.run(["git", "status", "--porcelain", "--untracked-files=all", "--", *STAGED_DIRS],
+                         cwd=root, capture_output=True, text=True, encoding="utf-8", check=True).stdout
+    return [line[3:] for line in out.splitlines() if line.strip()]
+
+
+def stage_and_validate(root, filename, new_text, registry, base_payload, base_registry, base_ref):
     """Build the full result in a scratch copy and validate it before anything is written.
+
+    The scope check compares the staged result with the trusted ``base_ref`` (read
+    from git), not with the working tree, so any change other than this rename,
+    committed or not, fails.
 
     Returns ({path: bytes} to write, errors)."""
     with tempfile.TemporaryDirectory() as tmp:
@@ -278,8 +291,7 @@ def stage_and_validate(root, filename, new_text, registry, base_payload, base_re
             strict_head_sync=True, retired_path=registry_path, base_retired=base_registry,
         )
         errors = list(result.all_errors)
-        current_registry = load_contract(root / "contracts" / "retired_ids.json", root, "retired_ids.json", "retired")
-        scope_errors, _pairs = verify_rename_scope(records_by_id(catalog_records(root)), current_registry,
+        scope_errors, _pairs = verify_rename_scope(records_by_id(catalog_records(root, base_ref)), base_registry,
                                                    records_by_id(catalog_records(stage)), registry)
         errors.extend(scope_errors)
         outputs = {root / "filaments" / filename: source_path.read_bytes(),
@@ -341,6 +353,12 @@ def main(argv=None):
     for name in ("file", "ref", "source"):
         if not getattr(args, name):
             parser.error(f"--{name} is required unless --verify is given")
+    dirty = dirty_paths(ROOT)
+    if dirty:
+        print("ERROR: run rename migrations from a clean checkout; uncommitted changes in:", file=sys.stderr)
+        for path in dirty:
+            print(f"  {path}", file=sys.stderr)
+        return 1
     if not valid_source(args.source):
         parser.error("--source must be a 40-character commit SHA or an http(s) URL")
     renames = {(old, material): new for old, new, material in args.rename}
@@ -372,7 +390,8 @@ def main(argv=None):
             print(f"  {old_id}: {previous} -> {new_id}")
     if not problems:
         base_registry = load_contract(args.base_ref, ROOT, "retired_ids.json", "retired")
-        outputs, validation = stage_and_validate(ROOT, args.file, new_text, registry, base, base_registry)
+        outputs, validation = stage_and_validate(ROOT, args.file, new_text, registry, base, base_registry,
+                                                 args.base_ref)
         problems += validation
     if problems:
         print("\nERROR: rename migration is not safe; nothing was written:", file=sys.stderr)

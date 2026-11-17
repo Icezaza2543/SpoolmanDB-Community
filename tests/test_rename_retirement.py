@@ -310,3 +310,36 @@ def test_write_all_restores_every_file_on_failure(tmp_path):
         write_all({first: b"new", second: b"new", tmp_path / "missing" / "c.json": b"new"})
     assert (first.read_text(), second.read_text()) == ("a", "b")
     assert not (tmp_path / "missing").exists()
+
+
+def test_uncommitted_edit_in_renamed_file_is_refused(repo):
+    root, _ = repo
+    source = root / "filaments" / "acme.json"
+    source.write_text(source.read_text().replace('"FF0000"', '"EE0000"'))
+    before = snapshot(root)
+    assert run() == 1
+    assert run("--apply") == 1
+    assert snapshot(root) == before
+
+
+def test_uncommitted_other_manufacturer_file_is_refused(repo):
+    root, _ = repo
+    (root / "filaments" / "other.json").write_text(json.dumps({"manufacturer": "Other", "filaments": []}))
+    before = snapshot(root)
+    assert run("--apply") == 1
+    assert snapshot(root) == before
+
+
+def test_committed_unrelated_change_after_base_ref_fails_scope(repo, capsys):
+    root, _ = repo
+    source = root / "filaments" / "acme.json"
+    data = json.loads(source.read_text())
+    data["filaments"][1]["colors"].append({"name": "Blue", "hex": "0000FF"})
+    source.write_text(json.dumps(data, indent=2) + "\n")
+    subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@example.invalid",
+                    "commit", "-qam", "unrelated"], cwd=root, check=True)
+    before = snapshot(root)
+    assert run("--base-ref", "HEAD~1") == 1
+    assert "not rename replacements: acme_petg_hfblue_1000_175_p" in capsys.readouterr().err
+    assert run("--base-ref", "HEAD~1", "--apply") == 1
+    assert snapshot(root) == before
