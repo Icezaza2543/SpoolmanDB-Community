@@ -60,7 +60,23 @@ python scripts/rename_migration.py --file addnorth.json --upstream UPSTREAM_SHA~
 python scripts/rename_migration.py ... --apply
 ```
 
-It edits only the matching `name` strings, so formatting is preserved. It refuses when a renamed ID already exists, when any old ID lacks exactly one new counterpart, or when the catalog stops compiling. Report every old → new mapping in the change. Validate with `--base-ref STARTING_MAIN_SHA`: the result must show zero unregistered removals and zero changed or rekeyed identities, and the only added IDs may be the registered rename targets.
+It edits only the matching `name` strings, so formatting is preserved. It refuses when a renamed ID already exists, when any old ID lacks exactly one new counterpart, or when the catalog stops compiling. An existing retirement that points at a renamed ID (A → B, then B → C) is re-pointed to the final ID (A → C) with its original `reason`, `ref`, `source` and `retired_key`, so no chain forms.
+
+The dry run already builds the complete source, registry and baseline result in a scratch copy and validates it: the trusted baseline and registry checks against `--base-ref`, plus the rename-only scope check below. `--apply` writes only after the same validation passes, and restores every original file if a write fails. A failed run writes nothing.
+
+The baseline check alone does not prove that a change is rename-only: it accepts unrelated additions and rekeys of unchanged IDs. The scope check does. It requires:
+- only new `rename` retirements, plus existing entries re-pointed onto the final ID of a newly renamed target, with no other registry change;
+- exactly the retired old IDs removed and exactly their one-to-one replacements added;
+- no key or field change on any other record;
+- no compiled field change between a renamed record and its replacement other than `id` and `name`.
+
+Run it on a finished rename change or PR with:
+
+```bash
+python scripts/rename_migration.py --verify --base-ref STARTING_MAIN_SHA
+```
+
+Report every old → new mapping in the change, and keep ordinary data additions in separate changes.
 
 ### Naming and production-lot evidence
 
