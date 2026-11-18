@@ -36,9 +36,9 @@ See [the source schema](../filaments.schema.json), [the compiled schema](../fila
 
 Historical public IDs and their enrolled identity keys in `contracts/compiled_id_baseline.json` must not change, disappear or be rekeyed during ordinary maintenance. New identities are allowed only for verified additions. Metadata corrections must preserve identity. Do not use a breaking-baseline override to deliver ordinary maintenance.
 
-The sole removal exception is an exact, owner-approved true-duplicate migration recorded in `contracts/retired_ids.json`, checked against a trusted starting commit and a reviewed brand audit. This is an **intentional breaking migration**: retired entries disappear from the published catalog. Existing Spoolman spools retain their local imported data; Spoolman does not consume the registry or redirect stored external IDs. Publish no separate compatibility catalog. The tooling commit starts with an empty registry and retires nothing.
+There are two removal exceptions, both recorded in `contracts/retired_ids.json` and checked against a trusted starting commit: an exact, owner-approved true-duplicate migration backed by a reviewed brand audit (`reason: "duplicate"`), and an owner-approved naming migration (`reason: "rename"`, see below). This is an **intentional breaking migration**: retired entries disappear from the published catalog. Existing Spoolman spools retain their local imported data; Spoolman does not consume the registry or redirect stored external IDs. Publish no separate compatibility catalog. The tooling commit starts with an empty registry and retires nothing.
 
-Each registry entry stores `replaced_by`, `reason: "duplicate"`, `ref`, `source` (evidence URL or commit SHA), and `retired_key` (the byte-identical original baseline key). The replacement must already exist and match physical identity, including normalized ordered line and color tokens. No chains, cycles, invented historical IDs or Black-to-White mappings are allowed. Later target retirement must re-point existing entries to the final survivor without altering their original key/evidence.
+Each registry entry stores `replaced_by`, `reason` (`"duplicate"` or `"rename"`), `ref`, `source` (evidence URL or commit SHA), and `retired_key` (the byte-identical original baseline key). For `duplicate`, the replacement must already exist and match physical identity, including normalized ordered line and color tokens. No chains, cycles, invented historical IDs or Black-to-White mappings are allowed. Later target retirement must re-point existing entries to the final survivor without altering their original key/evidence.
 
 Rollback permits **exact reinstatement only**: deleting a registry entry must restore its original ID under its byte-identical `retired_key` and re-enroll that mapping in the same commit. A different key, missing re-enrollment or registry deletion without reinstatement fails validation. Use normal commits/reverts, never history rewriting.
 
@@ -46,10 +46,48 @@ Record the starting main SHA before editing. Compare the final manifest against 
 
 For an approved duplicate migration, report the exact registered retirements separately; require zero **unregistered** removals, zero changed/rekeyed survivor or unique identities and zero new IDs. `--update --base-ref STARTING_MAIN_SHA` enrolls only the reviewed removals without a breaking override. Strict checking must still match the HEAD baseline exactly.
 
+### Rename migrations
+
+A `rename` entry retires an ID whose group template was renamed to follow the upstream SpoolmanDB naming convention: `name` does not repeat the `material` or `manufacturer` (for PETG, `"PETG - {color_name}"` becomes `"{color_name}"`). The replacement is the **new** ID of the same physical record. It must not be an existing historical ID; merging into an existing record is a `duplicate`. `scripts/retired_ids.py` requires the same source file, manufacturer, material, weight, diameter, spool type, refill status and color. The product line may differ only by text repeating the manufacturer or the material: material tokens, `Carbon Fiber`/`Glass Fiber` for a CF/GF material, and symbols such as `™`. Text before and after the color is compared separately. Dropping any other word (`HF`, `2.0`, `Basic`), reordering words or changing material fails closed. Material reclassification (`TPU` → `TPU-95A`) is not a rename and is not covered by this rule.
+
+Run one manufacturer per change from a clean starting commit. `scripts/rename_migration.py` performs the rename, the retirements and the baseline enrollment together:
+
+```bash
+# Dry run: renames from an upstream change of the same file, or explicit --rename OLD NEW MATERIAL
+python scripts/rename_migration.py --file addnorth.json --upstream UPSTREAM_SHA~1 UPSTREAM_SHA \
+    --ref https://github.com/Donkie/SpoolmanDB/pull/521 --source UPSTREAM_SHA --base-ref STARTING_MAIN_SHA
+# After review, write the source file, registry entries and baseline
+python scripts/rename_migration.py ... --apply
+```
+
+It edits only the matching `name` strings, so formatting is preserved. It refuses when a renamed ID already exists, when any old ID lacks exactly one new counterpart, or when the catalog stops compiling. An existing retirement that points at a renamed ID (A → B, then B → C) is re-pointed to the final ID (A → C) with its original `reason`, `ref`, `source` and `retired_key`, so no chain forms.
+
+The helper refuses to run with uncommitted or untracked changes under `filaments/`, `contracts/` or `docs/audits/`. The dry run already builds the complete source, registry and baseline result in a scratch copy and validates it: the trusted baseline and registry checks, plus the rename-only scope check below. Both compare against `--base-ref` as read from git, not against the working tree, so any other change since that commit fails, whether committed or not. `--apply` writes only after the same validation passes, and restores every original file if a write fails. A failed run writes nothing.
+
+The baseline check alone does not prove that a change is rename-only: it accepts unrelated additions and rekeys of unchanged IDs. The scope check does. It requires:
+- only new `rename` retirements, plus existing entries re-pointed onto the final ID of a newly renamed target, with no other registry change;
+- exactly the retired old IDs removed and exactly their one-to-one replacements added;
+- no key or field change on any other record;
+- no compiled field change between a renamed record and its replacement other than `id` and `name`.
+
+Run it on a finished rename change or PR with:
+
+```bash
+python scripts/rename_migration.py --verify --base-ref STARTING_MAIN_SHA
+```
+
+CI runs the same check, with `--if-renames`, on every change that adds a `rename` retirement. Changes without one skip it.
+
+Report every old → new mapping in the change, and keep ordinary data additions in separate changes.
+
+Two things are never part of a rename migration:
+- **`display_name` overrides:** the helper never edits `display_name`, and it refuses to rename a group whose colors have one. Overrides stay as they are; changing such a group needs its own review.
+- **Baseline key changes:** a rename migration may not change the identity key of any record that keeps its public ID, and the scope check rejects it. Any baseline key change (rekey) still needs separate approval through its own change.
+
 ### Naming and production-lot evidence
 
 - Keep distinct product versions/lines (`PETG 2.0`, `PETG Basic`, `Sunlu PETG v2`). Do not merge Kingroon PETG with PETG Basic without exact SKU/label evidence and owner approval.
-- New families use the manufacturer's product name without a redundant manufacturer prefix. A pure rename uses `display_name`, preserves its ID and requires separate approval for any baseline-key refresh.
+- New families use the manufacturer's product name without a redundant manufacturer prefix or material. A color-level display rename uses `display_name` and preserves its ID. A group-template rename changes IDs and requires an approved rename migration (see above).
 - For the same family/SKU and packaging, evidence from the newest production lot wins, including buyer-submitted manufacturer labels. Record the lot/revision and source proving recency. Never average or use Git recency. Report “manufacturer revised recommended values in newer lot”, not a presumed formula change.
 - If neither duplicate has evidence, retain survivor metadata and record both values/conflicts. That alone does not block an owner-confirmed identity merge.
 

@@ -6,7 +6,7 @@ Archived from the README on 2026-10-30. These record prior approved campaigns, n
 
 ## Maintenance stance
 
-Owner-approved duplicate migrations are recorded in the [retired-ID registry](../contracts/retired_ids.json). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](maintenance.md#4-public-id-immutability-rule).
+Owner-approved duplicate and rename migrations are recorded in the [retired-ID registry](../contracts/retired_ids.json) (`reason: "duplicate"` or `"rename"`). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](maintenance.md#4-public-id-immutability-rule).
 
 ### Current duplicate campaign status
 
