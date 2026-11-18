@@ -24,7 +24,11 @@ all of that passes, so the dry run and ``--apply`` fail on exactly the same
 problems and a failed apply leaves the tree untouched.
 
 ``--verify`` runs the same rename-only scope check on an existing change
-(working tree against ``--base-ref``), e.g. when reviewing a rename PR.
+(working tree against ``--base-ref``), e.g. when reviewing a rename PR. CI runs
+it with ``--if-renames`` on every change that adds a rename retirement.
+
+Groups whose colors have a ``display_name`` override are refused: a migration
+never edits ``display_name``, and a baseline key change is never part of one.
 
     python scripts/rename_migration.py --file addnorth.json \\
         --upstream 'donkie/main~1' donkie/main \\
@@ -107,8 +111,23 @@ def rename_source(text, groups_renamed):
     return result, count
 
 
+def display_name_groups(text, renames):
+    """Renamed groups whose colors carry a ``display_name`` override.
+
+    A rename migration never edits ``display_name``: the override stays the
+    published name while the template (and so the ID) changes, which the
+    rename identity check cannot pair. Such groups need a separate review."""
+    return sorted({f"{group['name']!r} [{group['material']}]" for group in json.loads(text)["filaments"]
+                   if (group["name"], group["material"]) in renames
+                   and any("display_name" in color for color in group.get("colors", []))})
+
+
 def plan(root, filename, renames, base_manifest):
     """Compile before/after in a scratch copy and pair every removed ID with its new ID."""
+    overrides = display_name_groups((root / "filaments" / filename).read_text(encoding="utf-8"), renames)
+    if overrides:
+        return [], 0, None, [f"{group}: has display_name overrides; rename migrations leave display_name "
+                             "unchanged and cannot rename this group" for group in overrides]
     with tempfile.TemporaryDirectory() as tmp:
         work = Path(tmp) / "filaments"
         shutil.copytree(root / "filaments", work)
@@ -124,14 +143,27 @@ def plan(root, filename, renames, base_manifest):
                              "an existing record; resolve that as a duplicate first):\n" + "\n".join(errors))
     removed = {key: pid for key, pid in before.items() if key not in after}
     added = {key: pid for key, pid in after.items() if key not in before}
+    pairs, problems = [], []
+
+    def identity(key, pid):
+        try:
+            return json.dumps(rename_identity(key), sort_keys=True)
+        except ValueError as exc:
+            problems.append(f"{pid}: cannot pair as a rename ({exc})")
+            return None
+
     by_identity = {}
     for key, pid in added.items():
-        by_identity.setdefault(json.dumps(rename_identity(key), sort_keys=True), []).append((key, pid))
+        ident = identity(key, pid)
+        if ident is not None:
+            by_identity.setdefault(ident, []).append((key, pid))
     historical = set(base_manifest.values())
     base_keys = {pid: key for key, pid in base_manifest.items()}
-    pairs, problems = [], []
     for key, old_id in sorted(removed.items(), key=lambda kv: kv[1]):
-        matches = by_identity.pop(json.dumps(rename_identity(key), sort_keys=True), [])
+        ident = identity(key, old_id)
+        if ident is None:
+            continue
+        matches = by_identity.pop(ident, [])
         if len(matches) != 1:
             problems.append(f"{old_id}: {len(matches)} rename candidates")
             continue
@@ -318,11 +350,18 @@ def write_all(outputs):
         raise
 
 
-def verify_main(base_ref):
-    """Check the working tree against ``base_ref`` as a rename-only migration."""
-    base_records = records_by_id(catalog_records(ROOT, base_ref))
+def verify_main(base_ref, if_renames=False):
+    """Check the working tree against ``base_ref`` as a rename-only migration.
+
+    With ``if_renames`` (CI), a change that adds no rename retirement passes
+    without checking, so ordinary data changes keep their own workflow."""
     base_registry = load_contract(base_ref, ROOT, "retired_ids.json", "retired")
     head_registry = load_contract(REGISTRY_PATH, ROOT, "retired_ids.json", "retired")
+    if if_renames and not any(entry.get("reason") == "rename" for old_id, entry in head_registry["retired"].items()
+                              if old_id not in base_registry["retired"]):
+        print(f"No new rename retirements against {base_ref}; rename scope check not needed.")
+        return 0
+    base_records = records_by_id(catalog_records(ROOT, base_ref))
     errors, pairs = verify_rename_scope(base_records, base_registry, records_by_id(catalog_records(ROOT)), head_registry)
     if errors:
         print("ERROR: not a rename-only migration:", file=sys.stderr)
@@ -346,10 +385,12 @@ def main(argv=None):
     parser.add_argument("--apply", action="store_true", help="write source, registry and baseline")
     parser.add_argument("--verify", action="store_true",
                         help="check the working tree against --base-ref as a rename-only migration")
+    parser.add_argument("--if-renames", action="store_true",
+                        help="with --verify: pass without checking when no rename retirement is added (CI)")
     args = parser.parse_args(argv)
 
     if args.verify:
-        return verify_main(args.base_ref)
+        return verify_main(args.base_ref, args.if_renames)
     for name in ("file", "ref", "source"):
         if not getattr(args, name):
             parser.error(f"--{name} is required unless --verify is given")

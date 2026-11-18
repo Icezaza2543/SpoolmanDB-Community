@@ -76,7 +76,13 @@ Run it on a finished rename change or PR with:
 python scripts/rename_migration.py --verify --base-ref STARTING_MAIN_SHA
 ```
 
+CI runs the same check, with `--if-renames`, on every change that adds a `rename` retirement. Changes without one skip it.
+
 Report every old → new mapping in the change, and keep ordinary data additions in separate changes.
+
+Two things are never part of a rename migration:
+- **`display_name` overrides:** the helper never edits `display_name`, and it refuses to rename a group whose colors have one. Overrides stay as they are; changing such a group needs its own review.
+- **Baseline key changes:** a rename migration may not change the identity key of any record that keeps its public ID, and the scope check rejects it. Any baseline key change (rekey) still needs separate approval through its own change.
 
 ### Naming and production-lot evidence
 

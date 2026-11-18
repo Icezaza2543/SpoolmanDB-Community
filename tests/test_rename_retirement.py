@@ -343,3 +343,38 @@ def test_committed_unrelated_change_after_base_ref_fails_scope(repo, capsys):
     assert "not rename replacements: acme_petg_hfblue_1000_175_p" in capsys.readouterr().err
     assert run("--base-ref", "HEAD~1", "--apply") == 1
     assert snapshot(root) == before
+
+
+def commit(root, message):
+    subprocess.run(["git", "add", "-A"], cwd=root, check=True)
+    subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@example.invalid", "commit", "-qm", message],
+                   cwd=root, check=True)
+
+
+def test_group_with_display_name_override_is_refused(repo, capsys):
+    root, _ = repo
+    source = root / "filaments" / "acme.json"
+    data = json.loads(source.read_text())
+    data["filaments"][0]["colors"][0]["display_name"] = "PETG Light Gray"
+    source.write_text(json.dumps(data, indent=2) + "\n")
+    commit(root, "display name")
+    before = snapshot(root)
+    assert run("--apply") == 1
+    assert "has display_name overrides" in capsys.readouterr().err
+    assert snapshot(root) == before
+
+
+def test_ci_verify_runs_only_when_renames_are_added(repo):
+    root, _ = repo
+    verify = ["--verify", "--if-renames", "--base-ref"]
+    assert migration.main([*verify, "HEAD"]) == 0              # no rename retirements: skipped
+    assert migration.main(["--verify", "--base-ref", "HEAD"]) == 1  # without the flag it is required
+    assert run("--apply") == 0
+    commit(root, "rename")
+    assert migration.main([*verify, "HEAD~1"]) == 0
+    source = root / "filaments" / "acme.json"
+    data = json.loads(source.read_text())
+    data["filaments"][1]["colors"][0]["hex"] = "EE0000"
+    source.write_text(json.dumps(data, indent=2) + "\n")
+    commit(root, "unrelated")
+    assert migration.main([*verify, "HEAD~2"]) == 1           # rename mixed with another change fails
