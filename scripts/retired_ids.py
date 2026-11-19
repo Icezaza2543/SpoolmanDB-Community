@@ -6,7 +6,7 @@ import re
 import subprocess
 from urllib.parse import urlparse
 
-from scripts.duplicate_catalog import identity_from_key, rename_identity
+from scripts.duplicate_catalog import corrected_rename_identity, identity_from_key, rename_identity
 
 ENTRY_FIELDS = {"replaced_by", "reason", "ref", "source", "retired_key"}
 # duplicate: merged into an existing historical record with the same physical identity.
@@ -131,10 +131,29 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
         if target in current_ids:
             try:
                 if rename:
-                    old, new = rename_identity(stored_key), rename_identity(current_ids[target])
+                    binding = audits.get(old_id)
+                    reviewed = binding.get("rename") if isinstance(binding, dict) else None
+                    if reviewed is not None:
+                        if (binding.get("key") != stored_key or
+                                not isinstance(reviewed, dict) or
+                                set(reviewed) != {"replaced_by", "new_key"} or
+                                reviewed.get("replaced_by") != target or
+                                reviewed.get("new_key") != current_ids[target]):
+                            raise ValueError("reviewed correction mapping does not match the retired and replacement records")
+                        old, new = corrected_rename_identity(stored_key), corrected_rename_identity(current_ids[target])
+                    else:
+                        old, new = rename_identity(stored_key), rename_identity(current_ids[target])
                 else:
                     old = identity_from_key(stored_key, audits.get(old_id))
-                    new = identity_from_key(current_ids[target], audits.get(target))
+                    target_binding = next(
+                        (binding for binding in audits.values()
+                         if isinstance(binding, dict) and isinstance(binding.get("rename"), dict)
+                         and binding["rename"].get("replaced_by") == target),
+                        None,
+                    )
+                    target_rename = target_binding.get("rename") if isinstance(target_binding, dict) else None
+                    target_key = target_binding.get("key") if target_rename is not None else current_ids[target]
+                    new = identity_from_key(target_key, audits.get(target) if target_rename is None else None)
                 if old != new:
                     raise ValueError("physical color/line or package identity differs")
             except (ValueError, TypeError) as exc:

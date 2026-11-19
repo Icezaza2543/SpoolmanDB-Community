@@ -211,6 +211,19 @@ def rename_identity(key):
                      _rename_line_tokens(suffix, "", material))}
 
 
+def corrected_rename_identity(key):
+    """Physical identity for a reviewed correction that also changes the brand label.
+
+    The correction audit separately records the exact source filename,
+    manufacturer and product-line changes. This identity retains the material,
+    package and physical color checks while allowing those reviewed labels to
+    change.
+    """
+    identity = identity_from_key(key)
+    return {field: identity[field] for field in
+            ("material", "weight", "diameter", "spool_type", "is_refill", "color")}
+
+
 def git_output(root, *args):
     return subprocess.run(["git", *args], cwd=root, capture_output=True, text=True, encoding="utf-8", check=True).stdout
 

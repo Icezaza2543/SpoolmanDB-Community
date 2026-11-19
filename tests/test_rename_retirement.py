@@ -3,7 +3,7 @@ import json
 import pytest
 
 from scripts.compile_id_baseline import make_canonical_identity_key
-from scripts.duplicate_catalog import rename_identity
+from scripts.duplicate_catalog import corrected_rename_identity, rename_identity
 from scripts.rename_migration import rename_source
 
 
@@ -23,12 +23,12 @@ def entry(target=NEW, reason="rename"):
             "source": "b" * 40, "retired_key": OLD_KEY}
 
 
-def check(head, *, historical=None, current=None):
+def check(head, *, historical=None, current=None, audits=None):
     from scripts.retired_ids import check_registry
     current = current if current is not None else {NEW_KEY: NEW}
     return check_registry(head, {"version": 1, "retired": {}},
                           historical if historical is not None else {OLD_KEY: OLD},
-                          current, current)
+                          current, current, audits=audits)
 
 
 def test_registered_rename_passes():
@@ -99,6 +99,38 @@ def test_rename_identity_requires_single_placeholder():
     with pytest.raises(ValueError):
         rename_identity(make_canonical_identity_key("a.json", "Acme", "Fixed Name", "Fixed Name", "PLA",
                                                     1000, 1.75, None, False))
+
+
+def test_reviewed_manufacturer_correction_matches_physical_identity():
+    old_key = key("grillon3 PLA | {color_name}", "Black", material="PLA", manufacturer="NTH Grillon",
+                  filename="NTHGrillon.json")
+    new_key = key("grilon3 {color_name}", "Black", material="PLA", manufacturer="NTH Grilon",
+                  filename="NTHGrilon.json")
+    old_id, new_id = "old-nth-id", "new-nth-id"
+    audited = {old_id: {"key": old_key,
+                        "rename": {"replaced_by": new_id, "new_key": new_key}}}
+    assert corrected_rename_identity(old_key) == corrected_rename_identity(new_key)
+    errors, retired, _ = check(
+        {"version": 1, "retired": {old_id: {**entry(), "replaced_by": new_id, "retired_key": old_key}}},
+        historical={old_key: old_id}, current={new_key: new_id}, audits=audited,
+    )
+    assert errors == []
+    assert retired == {old_id}
+
+
+def test_reviewed_manufacturer_correction_audit_must_match_exact_target():
+    old_key = key("grillon3 PLA | {color_name}", "Black", material="PLA", manufacturer="NTH Grillon",
+                  filename="NTHGrillon.json")
+    new_key = key("grilon3 {color_name}", "Black", material="PLA", manufacturer="NTH Grilon",
+                  filename="NTHGrilon.json")
+    old_id, new_id = "old-nth-id", "new-nth-id"
+    audited = {old_id: {"key": old_key,
+                        "rename": {"replaced_by": new_id, "new_key": OLD_KEY}}}
+    errors, _, _ = check(
+        {"version": 1, "retired": {old_id: {**entry(), "replaced_by": new_id, "retired_key": old_key}}},
+        historical={old_key: old_id}, current={new_key: new_id}, audits=audited,
+    )
+    assert "reviewed correction mapping does not match" in " ".join(errors)
 
 
 def test_rename_source_keeps_formatting_and_only_touches_matching_material():
@@ -285,10 +317,32 @@ def test_apply_repoints_existing_retirement_and_passes_checks(repo):
     assert migration.main(["--verify", "--base-ref", "HEAD"]) == 0
 
 
+def test_apply_reviewed_manufacturer_and_source_file_correction(repo):
+    root, _ = repo
+    (root / "docs" / "audits").mkdir(parents=True)
+    args = [
+        "--file", "newbrand.json", "--previous-file", "acme.json",
+        "--manufacturer-rename", "Acme", "New Brand",
+        "--rename", "PETG - {color_name}", "PETG {color_name}", "PETG",
+        "--ref", "https://github.com/Donkie/SpoolmanDB/pull/546",
+        "--source", "b" * 40, "--audit", "docs/audits/brand-correction.json",
+        "--base-ref", "HEAD",
+    ]
+    assert migration.main(args) == 0
+    assert migration.main([*args, "--apply"]) == 0
+    assert not (root / "filaments" / "acme.json").exists()
+    corrected = json.loads((root / "filaments" / "newbrand.json").read_text())
+    assert corrected["manufacturer"] == "New Brand"
+    registry = json.loads((root / "contracts" / "retired_ids.json").read_text())["retired"]
+    assert all(entry["ref"] == "docs/audits/brand-correction.json" for entry in registry.values()
+               if entry["source"] == "b" * 40)
+    assert migration.main(["--verify", "--base-ref", "HEAD"]) == 0
+
+
 def test_failed_validation_writes_nothing_in_dry_run_or_apply(repo, monkeypatch):
     root, _ = repo
     before = snapshot(root)
-    monkeypatch.setattr(migration, "verify_rename_scope", lambda *a: (["boom"], {}))
+    monkeypatch.setattr(migration, "verify_rename_scope", lambda *a, **kwargs: (["boom"], {}))
     assert run() == 1
     assert run("--apply") == 1
     assert snapshot(root) == before
