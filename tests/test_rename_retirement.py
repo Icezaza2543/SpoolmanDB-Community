@@ -378,3 +378,116 @@ def test_ci_verify_runs_only_when_renames_are_added(repo):
     source.write_text(json.dumps(data, indent=2) + "\n")
     commit(root, "unrelated")
     assert migration.main([*verify, "HEAD~2"]) == 1           # rename mixed with another change fails
+
+
+# --- --keep and unmatched renames ---
+
+from scripts.rename_migration import unmatched_renames  # noqa: E402
+
+
+def keep_source(*groups):
+    return json.dumps({"manufacturer": "Acme", "filaments": list(groups)}, indent=2) + "\n"
+
+
+def petg(name, *colors):
+    return {"name": name, "material": "PETG", "colors": [{"name": color} for color in colors]}
+
+
+def test_rename_source_keep_skips_fully_kept_group_and_splits_partly_kept_group():
+    text = keep_source(petg("PETG - {color_name}", "White"), petg("PETG - {color_name}", "Red", "Rock White", "Blue"),
+                       petg("HF {color_name}", "Black"))
+    result, count = rename_source(text, {("PETG - {color_name}", "PETG"): "{color_name}"},
+                                  keep={("PETG - {color_name}", "White"), ("PETG - {color_name}", "Rock White")})
+    groups = json.loads(result)["filaments"]
+    assert count == 1
+    assert [(g["name"], [c["name"] for c in g["colors"]]) for g in groups] == [
+        ("PETG - {color_name}", ["White"]),
+        ("{color_name}", ["Red", "Blue"]),
+        ("PETG - {color_name}", ["Rock White"]),
+        ("HF {color_name}", ["Black"]),
+    ]
+    assert result == json.dumps(json.loads(result), indent=2, ensure_ascii=False) + "\n"
+
+
+def test_rename_source_keep_must_match_a_renamed_color():
+    text = keep_source(petg("PETG - {color_name}", "Red"), petg("HF {color_name}", "Black"))
+    renames = {("PETG - {color_name}", "PETG"): "{color_name}"}
+    with pytest.raises(ValueError, match="--keep matched no color"):
+        rename_source(text, renames, keep={("PETG - {color_name}", "Purple")})
+    with pytest.raises(ValueError, match="--keep matched no color"):
+        rename_source(text, renames, keep={("HF {color_name}", "Black")})  # group is not being renamed
+
+
+def test_rename_source_split_refuses_non_standard_formatting():
+    text = keep_source(petg("PETG - {color_name}", "Red", "Rock White")).replace("\n  ", "\n    ")
+    with pytest.raises(ValueError, match="without reformatting"):
+        rename_source(text, {("PETG - {color_name}", "PETG"): "{color_name}"},
+                      keep={("PETG - {color_name}", "Rock White")})
+
+
+def test_apply_with_keep_leaves_kept_color_on_its_id_and_passes_checks(repo, capsys):
+    root, dup_id = repo
+    before_ids = set(json.loads((root / "contracts" / "compiled_id_baseline.json").read_text())["manifest"].values())
+    assert run("--keep", "PETG - {color_name}", "Black", "--apply") == 0
+    out = capsys.readouterr().out
+    assert "KEEP 'Black' in 'PETG - {color_name}'" in out
+    assert "1 group(s) renamed, 1 public ID(s) retired as renames" in out
+    retired = json.loads((root / "contracts" / "retired_ids.json").read_text())["retired"]
+    assert "acme_petg_petg-black_1000_175_p" not in retired
+    assert retired["acme_petg_petg-gray_1000_175_p"]["replaced_by"] == "acme_petg_gray_1000_175_p"
+    assert retired[dup_id]["replaced_by"] == "acme_petg_gray_1000_175_p"
+    after_ids = set(json.loads((root / "contracts" / "compiled_id_baseline.json").read_text())["manifest"].values())
+    assert "acme_petg_petg-black_1000_175_p" in before_ids & after_ids
+    groups = json.loads((root / "filaments" / "acme.json").read_text())["filaments"]
+    assert [(g["name"], [c["name"] for c in g["colors"]]) for g in groups] == [
+        ("{color_name}", ["Gray"]), ("PETG - {color_name}", ["Black"]), ("HF {color_name}", ["Red"])]
+    assert migration.main(["--verify", "--base-ref", "HEAD"]) == 0
+
+
+def test_unmatched_keep_is_reported_and_writes_nothing(repo, capsys):
+    root, _ = repo
+    before = snapshot(root)
+    assert run("--keep", "PETG - {color_name}", "Purple", "--apply") == 1
+    assert "--keep matched no color of a renamed group: 'PETG - {color_name}' 'Purple'" in capsys.readouterr().err
+    assert snapshot(root) == before
+
+
+def test_unmatched_renames_lists_missing_groups():
+    text = keep_source(petg("PETG - {color_name}", "Red"))
+    assert unmatched_renames(text, {("PETG - {color_name}", "PETG"): "a", ("PETG - {color_name}", "PLA"): "b",
+                                    ("Ghost {color_name}", "PETG"): "c"}) == [
+        ("Ghost {color_name}", "PETG"), ("PETG - {color_name}", "PLA")]
+
+
+def test_explicit_rename_of_missing_group_is_an_error(repo, capsys):
+    root, _ = repo
+    before = snapshot(root)
+    with pytest.raises(SystemExit) as exc:
+        run("--rename", "Ghost {color_name}", "{color_name}", "PLA")
+    assert exc.value.code == 2
+    assert "--rename names a group that does not exist: 'Ghost {color_name}' [PLA]" in capsys.readouterr().err
+    assert snapshot(root) == before
+
+
+def upstream_args():
+    return ["--file", "acme.json", "--upstream", "HEAD", "HEAD", "--ref", REVIEW, "--source", "b" * 40,
+            "--base-ref", "HEAD"]
+
+
+def test_upstream_renames_missing_here_are_skipped(repo, monkeypatch, capsys):
+    root, _ = repo
+    monkeypatch.setattr(migration, "upstream_renames", lambda *a: ({
+        ("Ghost {color_name}", "PLA"): "{color_name}", ("PETG - {color_name}", "PETG"): "{color_name}"}, []))
+    assert migration.main([*upstream_args(), "--apply"]) == 0
+    out = capsys.readouterr().out
+    assert "SKIP (no group named 'Ghost {color_name}' [PLA] in acme.json)" in out
+    assert "2 public ID(s) retired as renames" in out
+
+
+def test_upstream_with_no_matching_group_fails_cleanly(repo, monkeypatch, capsys):
+    root, _ = repo
+    before = snapshot(root)
+    monkeypatch.setattr(migration, "upstream_renames", lambda *a: ({("Ghost {color_name}", "PLA"): "{color_name}"}, []))
+    assert migration.main([*upstream_args(), "--apply"]) == 1
+    assert "none of the requested renames match a group in acme.json" in capsys.readouterr().err
+    assert snapshot(root) == before
