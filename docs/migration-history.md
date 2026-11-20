@@ -18,6 +18,10 @@ CI rejects unresolved candidates under the documented duplicate-matching rules. 
 
 This is an **intentional breaking catalog migration**. It applies the upstream Ambrosia name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 6 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-ambrosia-rename.md) for the full mapping.
 
+### Prusament rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Prusament name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 1 ID is retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-prusament-rename.md) for the full mapping.
+
 ### Overture rename migration (2026-11-19)
 
 This is an **intentional breaking catalog migration**. It applies the upstream Overture name cleanup ([Donkie/SpoolmanDB#526](https://github.com/Donkie/SpoolmanDB/pull/526)) to 55 groups. Exactly 90 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Five earlier duplicate retirements are re-pointed to the final IDs. Material, package, colour and metadata are unchanged. The TPU material change is not included, and three colours whose names upstream also shortened (`Rock White`, `Rock Rainbow`, `Silk Purple`) keep their current IDs. Community keeps the `Light Gray` spelling. See the [migration record](audits/2026-11-19-overture-rename.md) for the full mapping.
