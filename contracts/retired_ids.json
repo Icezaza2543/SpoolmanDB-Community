@@ -7415,14 +7415,14 @@
       "retired_key": "overture.json::Overture::PLA Rock {color_name}::PLA Rock Mars Red::PLA::1000::1.75::cardboard::False"
     },
     "overture_pla_plarockrockrainbow_1000_175_c": {
-      "replaced_by": "overture_pla_rockrockrainbow_1000_175_c",
+      "replaced_by": "overture_pla_rockplarockrainbow_1000_175_c",
       "reason": "duplicate",
       "ref": "docs/audits/2026-10-03-overture-duplicate-review.json",
       "source": "c87c3db5cf850d7ab7c2c108b5412f1c8240dcef",
       "retired_key": "overture.json::Overture::PLA Rock {color_name}::PLA Rock Rock Rainbow::PLA::1000::1.75::cardboard::False"
     },
     "overture_pla_plarockrockwhite_1000_175_c": {
-      "replaced_by": "overture_pla_rockrockwhite_1000_175_c",
+      "replaced_by": "overture_pla_rockplarockwhite_1000_175_c",
       "reason": "duplicate",
       "ref": "docs/audits/2026-10-03-overture-duplicate-review.json",
       "source": "c87c3db5cf850d7ab7c2c108b5412f1c8240dcef",
@@ -15485,20 +15485,6 @@
       "source": "641226c7d47ad5834509812247d7b5249b294d62",
       "retired_key": "overture.json::Overture::Rock PLA {color_name}::Rock PLA Mars Red::PLA::1000.0::1.75::cardboard::False"
     },
-    "overture_pla_rockplarockrainbow_1000_175_c": {
-      "replaced_by": "overture_pla_rockrockrainbow_1000_175_c",
-      "reason": "rename",
-      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
-      "source": "641226c7d47ad5834509812247d7b5249b294d62",
-      "retired_key": "overture.json::Overture::Rock PLA {color_name}::Rock PLA Rock Rainbow::PLA::1000.0::1.75::cardboard::False"
-    },
-    "overture_pla_rockplarockwhite_1000_175_c": {
-      "replaced_by": "overture_pla_rockrockwhite_1000_175_c",
-      "reason": "rename",
-      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
-      "source": "641226c7d47ad5834509812247d7b5249b294d62",
-      "retired_key": "overture.json::Overture::Rock PLA {color_name}::Rock PLA Rock White::PLA::1000.0::1.75::cardboard::False"
-    },
     "overture_pla_rockplasedimentaryrock_1000_175_c": {
       "replaced_by": "overture_pla_rocksedimentaryrock_1000_175_c",
       "reason": "rename",
@@ -15722,13 +15708,6 @@
       "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
       "source": "641226c7d47ad5834509812247d7b5249b294d62",
       "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Red::PLA::1000.0::1.75::cardboard::False"
-    },
-    "overture_pla_silkplasilkpurple_1000_175_c": {
-      "replaced_by": "overture_pla_silksilkpurple_1000_175_c",
-      "reason": "rename",
-      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
-      "source": "641226c7d47ad5834509812247d7b5249b294d62",
-      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Silk Purple::PLA::1000.0::1.75::cardboard::False"
     },
     "overture_pla_silkplasilver_1000_175_c": {
       "replaced_by": "overture_pla_silksilver_1000_175_c",

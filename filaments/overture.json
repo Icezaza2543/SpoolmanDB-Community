@@ -117,7 +117,7 @@
       ]
     },
     {
-      "name": "Rock {color_name}",
+      "name": "Rock PLA {color_name}",
       "material": "PLA",
       "density": 1.3,
       "finish": "matte",
@@ -252,7 +252,7 @@
       ]
     },
     {
-      "name": "Rock {color_name}",
+      "name": "Rock PLA {color_name}",
       "material": "PLA",
       "density": 1.3,
       "finish": "matte",
@@ -359,10 +359,6 @@
           "codes": [
             "VFPSRE17511"
           ]
-        },
-        {
-          "name": "Silk Purple",
-          "hex": "7769BC"
         },
         {
           "name": "Silver",
@@ -529,6 +525,29 @@
           "codes": [
             "VSA030004"
           ]
+        }
+      ]
+    },
+    {
+      "name": "Silk PLA {color_name}",
+      "material": "PLA",
+      "density": 1.19,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 155,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Silk Purple",
+          "hex": "7769BC"
         }
       ]
     },

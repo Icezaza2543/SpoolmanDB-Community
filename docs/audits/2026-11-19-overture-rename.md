@@ -6,29 +6,53 @@ This is an **intentional breaking catalog migration**. It applies the upstream O
 
 | Check | Result |
 |---|---|
-| Groups renamed | 57 (3 distinct template renames: `Matte PLA`, `Rock PLA`, `Silk PLA` → `Matte`, `Rock`, `Silk`) |
-| Public IDs retired as renames | 93 |
-| New public IDs | 93, each the registered target of exactly one retirement |
-| Existing retirements re-pointed to the final ID | 7 (evidence and `retired_key` unchanged) |
+| Groups renamed | 55 (3 distinct template renames: `Matte PLA`, `Rock PLA`, `Silk PLA` → `Matte`, `Rock`, `Silk`) |
+| Public IDs retired as renames | 90 |
+| New public IDs | 90, each the registered target of exactly one retirement |
+| Existing retirements re-pointed to the final ID | 5 (evidence and `retired_key` unchanged) |
+| Colours kept on their current IDs | 3 (see below) |
 | Catalog size | 51,434 (unchanged) |
 | Unregistered removals, changed or rekeyed identities | 0 |
 | Material, weight, diameter, spool, colour and metadata changes | None |
 
-Reproduce with:
+## How it was produced
 
-```sh
-python scripts/rename_migration.py --file overture.json \
-    --upstream 641226c7d47ad5834509812247d7b5249b294d62~1 641226c7d47ad5834509812247d7b5249b294d62 \
-    --ref https://github.com/Donkie/SpoolmanDB/pull/526 --source 641226c7d47ad5834509812247d7b5249b294d62 \
-    --base-ref a91230b
-```
+1. The helper generated the full upstream rename from `a91230b`:
+
+   ```sh
+   python scripts/rename_migration.py --file overture.json \
+       --upstream 641226c7d47ad5834509812247d7b5249b294d62~1 641226c7d47ad5834509812247d7b5249b294d62 \
+       --ref https://github.com/Donkie/SpoolmanDB/pull/526 --source 641226c7d47ad5834509812247d7b5249b294d62 \
+       --base-ref a91230b --apply
+   ```
+
+2. Per review, three colours were then returned to their current IDs (below). The helper renames whole groups, so this was done by hand:
+   - The `Rock White` and `Rock Rainbow` groups (one colour each) keep the name `Rock PLA {color_name}`.
+   - `Silk Purple` moves out of the renamed Silk group into its own `Silk PLA {color_name}` group, with identical properties. Its compiled record and identity key are unchanged.
+   - Their three `rename` entries are removed, and the two re-points they caused are restored to their `main` values.
+   - The baseline is regenerated with `compile_id_baseline.py --update --base-ref a91230b`.
+
+3. The result passes the same checks as a helper-only migration:
+
+   ```sh
+   python scripts/rename_migration.py --verify --base-ref a91230b
+   python scripts/compile_id_baseline.py --base-ref a91230b --strict
+   python scripts/validate.py --base-ref a91230b --strict
+   ```
 
 Retired IDs disappear from the published catalog. Existing Spoolman spools keep their local imported data; Spoolman does not read the registry or follow these mappings.
 
 ## Not included
 
 - **`High Speed 95A {color_name}` (TPU → TPU-95A, `High Speed {color_name}`):** a material change, not a rename. It is left for the material reclassification work.
-- **Colour-name cleanups:** upstream also shortened three colour names: `Rock White` → `White`, `Rock Rainbow` → `Rainbow` and `Silk Purple` → `Purple`. A rename migration keeps colours unchanged, so these become `overture_pla_rockrockwhite_1000_175_c`, `overture_pla_rockrockrainbow_1000_175_c` and `overture_pla_silksilkpurple_1000_175_c` for now. Community also has a separate Silk `Purple`, so `Silk Purple` needs a duplicate review rather than a plain colour rename. These three need their own reviewed follow-up.
+- **Colour-name cleanups, kept on their current IDs:** upstream also shortened three colour names. A rename keeps colours unchanged, so including them would publish intermediate IDs that would have to be retired again. They stay as they are:
+  - `overture_pla_rockplarockwhite_1000_175_c` (`Rock White`; upstream `White`)
+  - `overture_pla_rockplarockrainbow_1000_175_c` (`Rock Rainbow`; upstream `Rainbow`)
+  - `overture_pla_silkplasilkpurple_1000_175_c` (`Silk Purple`; upstream `Purple`). Community also has a Silk `Purple` with the same hex (`7769BC`). This pair needs its own duplicate review.
+
+## Community exception: Light Gray
+
+Upstream's Matte group spells this colour `Light Grey`. Community keeps `Light Gray`, the spelling chosen in the [2026-10-03 Overture duplicate review](2026-10-03-overture-duplicate-review.md), which retired `overture_pla_matteplalightgrey_1000_175_c` into `overture_pla_matteplalightgray_1000_175_c`. This migration renames that record to `overture_pla_mattelightgray_1000_175_c` and re-points the old `lightgrey` retirement to it. The colour name is not changed to match upstream.
 
 ## Re-pointed retirements
 
@@ -40,8 +64,6 @@ These earlier `duplicate` retirements pointed at IDs this migration renames. Onl
 | `overture_pla_plarockfossilrock_1000_175_c` | `overture_pla_rockplafossilrock_1000_175_c` | `overture_pla_rockfossilrock_1000_175_c` |
 | `overture_pla_plarockglacierblue_1000_175_c` | `overture_pla_rockplaglacierblue_1000_175_c` | `overture_pla_rockglacierblue_1000_175_c` |
 | `overture_pla_plarockmarsred_1000_175_c` | `overture_pla_rockplamarsred_1000_175_c` | `overture_pla_rockmarsred_1000_175_c` |
-| `overture_pla_plarockrockrainbow_1000_175_c` | `overture_pla_rockplarockrainbow_1000_175_c` | `overture_pla_rockrockrainbow_1000_175_c` |
-| `overture_pla_plarockrockwhite_1000_175_c` | `overture_pla_rockplarockwhite_1000_175_c` | `overture_pla_rockrockwhite_1000_175_c` |
 | `overture_pla_plarocksedimentaryrock_1000_175_c` | `overture_pla_rockplasedimentaryrock_1000_175_c` | `overture_pla_rocksedimentaryrock_1000_175_c` |
 
 ## Mapping
@@ -101,8 +123,6 @@ These earlier `duplicate` retirements pointed at IDs this migration renames. Onl
 | `overture_pla_rockplafossilrock_1000_175_c` | `overture_pla_rockfossilrock_1000_175_c` |
 | `overture_pla_rockplaglacierblue_1000_175_c` | `overture_pla_rockglacierblue_1000_175_c` |
 | `overture_pla_rockplamarsred_1000_175_c` | `overture_pla_rockmarsred_1000_175_c` |
-| `overture_pla_rockplarockrainbow_1000_175_c` | `overture_pla_rockrockrainbow_1000_175_c` |
-| `overture_pla_rockplarockwhite_1000_175_c` | `overture_pla_rockrockwhite_1000_175_c` |
 | `overture_pla_rockplasedimentaryrock_1000_175_c` | `overture_pla_rocksedimentaryrock_1000_175_c` |
 | `overture_pla_silkplablue_1000_175_c` | `overture_pla_silkblue_1000_175_c` |
 | `overture_pla_silkplacaramel_1000_175_c` | `overture_pla_silkcaramel_1000_175_c` |
@@ -135,15 +155,8 @@ These earlier `duplicate` retirements pointed at IDs this migration renames. Onl
 | `overture_pla_silkplapurple_1000_175_c` | `overture_pla_silkpurple_1000_175_c` |
 | `overture_pla_silkplapurplechrome_1000_175_c` | `overture_pla_silkpurplechrome_1000_175_c` |
 | `overture_pla_silkplared_1000_175_c` | `overture_pla_silkred_1000_175_c` |
-| `overture_pla_silkplasilkpurple_1000_175_c` | `overture_pla_silksilkpurple_1000_175_c` |
 | `overture_pla_silkplasilver_1000_175_c` | `overture_pla_silksilver_1000_175_c` |
 | `overture_pla_silkplatigereye_1000_175_c` | `overture_pla_silktigereye_1000_175_c` |
 | `overture_pla_silkplatropic_1000_175_c` | `overture_pla_silktropic_1000_175_c` |
 | `overture_pla_silkplavaporwave_1000_175_c` | `overture_pla_silkvaporwave_1000_175_c` |
 | `overture_pla_silkplawhite_1000_175_c` | `overture_pla_silkwhite_1000_175_c` |
-
-Rename-only scope check (no other IDs, rekeys or field changes):
-
-```sh
-python scripts/rename_migration.py --verify --base-ref a91230b
-```
