@@ -38,6 +38,10 @@ This is an **intentional breaking catalog migration**. It applies the upstream C
 
 This is an **intentional breaking catalog migration**. It applies the upstream ELEGOO name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 3 groups. Exactly 48 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. 12 earlier retirements are re-pointed to the final IDs. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-elegoo-rename.md) for the full mapping.
 
+### Printed Solid rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Printed Solid name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 2 groups. Exactly 47 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-printedsolid-rename.md) for the full mapping.
+
 ### Overture rename migration (2026-11-19)
 
 This is an **intentional breaking catalog migration**. It applies the upstream Overture name cleanup ([Donkie/SpoolmanDB#526](https://github.com/Donkie/SpoolmanDB/pull/526)) to 55 groups. Exactly 90 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Five earlier duplicate retirements are re-pointed to the final IDs. Material, package, colour and metadata are unchanged. The TPU material change is not included, and three colours whose names upstream also shortened (`Rock White`, `Rock Rainbow`, `Silk Purple`) keep their current IDs. Community keeps the `Light Gray` spelling. See the [migration record](audits/2026-11-19-overture-rename.md) for the full mapping.
