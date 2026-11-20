@@ -6,13 +6,21 @@ Archived from the README on 2026-10-30. These record prior approved campaigns, n
 
 ## Maintenance stance
 
-Owner-approved duplicate migrations are recorded in the [retired-ID registry](../contracts/retired_ids.json). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](maintenance.md#4-public-id-immutability-rule).
+Owner-approved duplicate and rename migrations are recorded in the [retired-ID registry](../contracts/retired_ids.json) (`reason: "duplicate"` or `"rename"`). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](maintenance.md#4-public-id-immutability-rule).
 
 ### Current duplicate campaign status
 
 The campaign **closed on 2026-10-05** with **2,022 registered retirements** and **51,412 catalog records**. The owner resolved all 180 final decision-sheet groups: 179 merged, and OV083 (Overture TPU Gray/Grey) retained as a confirmed non-duplicate. The owner-pending list is empty; the full-catalog audit reports **0 unresolved groups**.
 
 CI rejects unresolved candidates under the documented duplicate-matching rules. The only current exemption is the exact OV083 membership in `not_duplicates.json`; detection does not prove that every physically equivalent product is identifiable. See [the campaign closure](audits/2026-10-04-duplicate-campaign-final.md#closure-2026-10-05) and [the remaining future-work backlog](audits/duplicate-backlog.md). The brand sections below retain their original migration checkpoints.
+
+### Overture rename migration (2026-11-19)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Overture name cleanup ([Donkie/SpoolmanDB#526](https://github.com/Donkie/SpoolmanDB/pull/526)) to 55 groups. Exactly 90 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Five earlier duplicate retirements are re-pointed to the final IDs. Material, package, colour and metadata are unchanged. The TPU material change is not included, and three colours whose names upstream also shortened (`Rock White`, `Rock Rainbow`, `Silk Purple`) keep their current IDs. Community keeps the `Light Gray` spelling. See the [migration record](audits/2026-11-19-overture-rename.md) for the full mapping.
+
+### add:north rename migration (2026-11-16)
+
+This is an **intentional breaking catalog migration** and the first rename migration (`reason: "rename"`). It applies the upstream add:north name cleanup ([Donkie/SpoolmanDB#521](https://github.com/Donkie/SpoolmanDB/pull/521)) to 23 groups. Exactly 137 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. The 27 add:north groups that exist only in Community are not renamed yet. See the [migration record](audits/2026-11-16-addnorth-rename.md) for the full mapping.
 
 ### Kingroon duplicate migration (2026-10-03)
 

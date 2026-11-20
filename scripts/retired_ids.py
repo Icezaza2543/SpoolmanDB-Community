@@ -6,9 +6,13 @@ import re
 import subprocess
 from urllib.parse import urlparse
 
-from scripts.duplicate_catalog import identity_from_key
+from scripts.duplicate_catalog import identity_from_key, rename_identity
 
 ENTRY_FIELDS = {"replaced_by", "reason", "ref", "source", "retired_key"}
+# duplicate: merged into an existing historical record with the same physical identity.
+# rename: same physical record under a new name; the replacement is a new ID that must
+#         differ only by name text repeating the manufacturer or material.
+REASONS = {"duplicate", "rename"}
 
 
 def valid_source(source):
@@ -57,7 +61,7 @@ def registry_structure(payload):
         if not isinstance(old_id, str) or not old_id or not isinstance(entry, dict) or set(entry) != ENTRY_FIELDS or not all(isinstance(value, str) and value.strip() for value in entry.values()):
             errors.append(f"registry {old_id}: invalid entry fields")
             continue
-        if entry["reason"] != "duplicate":
+        if entry["reason"] not in REASONS:
             errors.append(f"registry {old_id}: invalid reason")
         if not valid_source(entry["source"]):
             errors.append(f"registry {old_id}: invalid source (expected commit SHA or URL)")
@@ -117,14 +121,20 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
             errors.append(f"registry {old_id}: chain/cycle forbidden")
         if target not in current_ids:
             errors.append(f"registry {old_id}: replacement must be a surviving compiled record")
-        if old_id not in previous and target not in historical_ids:
+        rename = entry["reason"] == "rename"
+        if old_id not in previous and not rename and target not in historical_ids:
             errors.append(f"registry {old_id}: replacement must be an existing historical record")
+        if old_id not in previous and rename and target in historical_ids:
+            errors.append(f"registry {old_id}: rename replacement must be a new ID; use reason duplicate to merge into an existing record")
         if old_id in current_ids:
             errors.append(f"registry {old_id}: retired ID must not reappear")
         if target in current_ids:
             try:
-                old = identity_from_key(stored_key, audits.get(old_id))
-                new = identity_from_key(current_ids[target], audits.get(target))
+                if rename:
+                    old, new = rename_identity(stored_key), rename_identity(current_ids[target])
+                else:
+                    old = identity_from_key(stored_key, audits.get(old_id))
+                    new = identity_from_key(current_ids[target], audits.get(target))
                 if old != new:
                     raise ValueError("physical color/line or package identity differs")
             except (ValueError, TypeError) as exc:

@@ -53,6 +53,11 @@ jobs:
           else
             python scripts/compile_id_baseline.py --strict
           fi
+      - name: Check rename migrations are rename-only
+        if: steps.trusted-base.outputs.sha != ''
+        env:
+          TRUSTED_BASE: ${{ steps.trusted-base.outputs.sha }}
+        run: python scripts/rename_migration.py --verify --if-renames --base-ref "$TRUSTED_BASE"
       - name: Check README snapshot
         run: python scripts/readme_snapshot.py --check
       - name: Run unit tests
