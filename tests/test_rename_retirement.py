@@ -108,7 +108,12 @@ def test_reviewed_manufacturer_correction_matches_physical_identity():
                   filename="NTHGrilon.json")
     old_id, new_id = "old-nth-id", "new-nth-id"
     audited = {old_id: {"key": old_key,
-                        "rename": {"replaced_by": new_id, "new_key": new_key}}}
+                        "rename": {"replaced_by": new_id, "new_key": new_key},
+                        "correction": {
+                            "manufacturer": ["NTH Grillon", "NTH Grilon"],
+                            "file": ["NTHGrillon.json", "NTHGrilon.json"],
+                            "spelling": ["Grillon", "Grilon"],
+                        }}}
     assert corrected_rename_identity(old_key) == corrected_rename_identity(new_key)
     errors, retired, _ = check(
         {"version": 1, "retired": {old_id: {**entry(), "replaced_by": new_id, "retired_key": old_key}}},
@@ -125,12 +130,45 @@ def test_reviewed_manufacturer_correction_audit_must_match_exact_target():
                   filename="NTHGrilon.json")
     old_id, new_id = "old-nth-id", "new-nth-id"
     audited = {old_id: {"key": old_key,
-                        "rename": {"replaced_by": new_id, "new_key": OLD_KEY}}}
+                        "rename": {"replaced_by": new_id, "new_key": OLD_KEY},
+                        "correction": {
+                            "manufacturer": ["NTH Grillon", "NTH Grilon"],
+                            "file": ["NTHGrillon.json", "NTHGrilon.json"],
+                            "spelling": ["Grillon", "Grilon"],
+                        }}}
     errors, _, _ = check(
         {"version": 1, "retired": {old_id: {**entry(), "replaced_by": new_id, "retired_key": old_key}}},
         historical={old_key: old_id}, current={new_key: new_id}, audits=audited,
     )
     assert "reviewed correction mapping does not match" in " ".join(errors)
+
+
+def test_reviewed_manufacturer_correction_rejects_unapproved_product_line():
+    from scripts.duplicate_catalog import corrected_rename_pair
+    old_key = key("grillon3 PLA | {color_name}", "Black", material="PLA", manufacturer="NTH Grillon",
+                  filename="NTHGrillon.json")
+    different_key = key("Totally Different {color_name}", "Black", material="PLA",
+                        manufacturer="NTH Grilon", filename="NTHGrilon.json")
+    correction = {
+        "manufacturer": ["NTH Grillon", "NTH Grilon"],
+        "file": ["NTHGrillon.json", "NTHGrilon.json"],
+        "spelling": ["Grillon", "Grilon"],
+    }
+    assert corrected_rename_pair(old_key, different_key, correction) is False
+
+
+def test_reviewed_manufacturer_correction_accepts_spelling_and_material_line():
+    from scripts.duplicate_catalog import corrected_rename_pair
+    old_key = key("grillon3 PLA | {color_name}", "Black", material="PLA", manufacturer="NTH Grillon",
+                  filename="NTHGrillon.json")
+    new_key = key("grilon3 {color_name}", "Black", material="PLA", manufacturer="NTH Grilon",
+                  filename="NTHGrilon.json")
+    correction = {
+        "manufacturer": ["NTH Grillon", "NTH Grilon"],
+        "file": ["NTHGrillon.json", "NTHGrilon.json"],
+        "spelling": ["Grillon", "Grilon"],
+    }
+    assert corrected_rename_pair(old_key, new_key, correction) is True
 
 
 def test_rename_source_keeps_formatting_and_only_touches_matching_material():
@@ -241,6 +279,39 @@ def test_build_registry_repoints_existing_target():
     assert registry["retired"]["older"] == {**prior, "replaced_by": NEW}
     assert registry["retired"][OLD]["replaced_by"] == NEW
     assert prior["replaced_by"] == OLD  # input registry untouched
+
+
+def test_registry_repointed_duplicate_through_correction_passes_check_registry():
+    from scripts.retired_ids import check_registry
+    old_key = key("grillon3 PLA | {color_name}", "Black", material="PLA", manufacturer="NTH Grillon",
+                  filename="NTHGrillon.json")
+    new_key = key("grilon3 {color_name}", "Black", material="PLA", manufacturer="NTH Grilon",
+                  filename="NTHGrilon.json")
+    old_id, target_id, newer_id = "older", "old-target", "new-target"
+    prior = {"replaced_by": target_id, "reason": "duplicate", "ref": "#66",
+             "source": "a" * 40, "retired_key": old_key}
+    base_registry = {"version": 1, "retired": {"older": prior}}
+    head_registry = {"version": 1, "retired": {
+        "older": {**prior, "replaced_by": newer_id},
+        target_id: {"replaced_by": newer_id, "reason": "rename", "ref": "#76",
+                    "source": "b" * 40, "retired_key": old_key},
+    }}
+    audited = {
+        target_id: {"key": old_key, "rename": {"replaced_by": newer_id, "new_key": new_key},
+                    "correction": {
+                        "manufacturer": ["NTH Grillon", "NTH Grilon"],
+                        "file": ["NTHGrillon.json", "NTHGrilon.json"],
+                        "spelling": ["Grillon", "Grilon"],
+                    }},
+    }
+    errors, _, _ = check_registry(
+        head_registry, base_registry,
+        {old_key: target_id},
+        {new_key: newer_id},
+        {new_key: newer_id},
+        audits=audited,
+    )
+    assert errors == []
 
 
 # --- End-to-end helper runs in a scratch git repository ---

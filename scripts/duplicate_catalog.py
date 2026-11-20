@@ -224,6 +224,42 @@ def corrected_rename_identity(key):
             ("material", "weight", "diameter", "spool_type", "is_refill", "color")}
 
 
+def corrected_rename_pair(old_key, new_key, correction):
+    """Validate a reviewed manufacturer/file/spelling correction and its product line."""
+    if not isinstance(correction, dict):
+        raise ValueError("manufacturer correction metadata is required")
+    manufacturers = correction.get("manufacturer")
+    files = correction.get("file")
+    spelling = correction.get("spelling")
+    if (not isinstance(manufacturers, list) or len(manufacturers) != 2 or
+            not isinstance(files, list) or len(files) != 2 or
+            not isinstance(spelling, list) or len(spelling) != 2):
+        raise ValueError("invalid manufacturer correction metadata")
+    old_manufacturer, new_manufacturer = manufacturers
+    old_file, new_file = files
+    old_spelling, new_spelling = spelling
+    if not all(isinstance(value, str) and value for value in
+               (*manufacturers, *files, *spelling)):
+        raise ValueError("manufacturer correction metadata values must be nonempty")
+
+    old_parts = old_key.split("::")
+    new_parts = new_key.split("::")
+    if len(old_parts) != 9 or len(new_parts) != 9:
+        raise ValueError("invalid correction identity key")
+    if (old_parts[0], old_parts[1]) != (old_file, old_manufacturer):
+        raise ValueError("old identity key does not match reviewed manufacturer/file correction")
+    if (new_parts[0], new_parts[1]) != (new_file, new_manufacturer):
+        raise ValueError("new identity key does not match reviewed manufacturer/file correction")
+
+    corrected_old = list(old_parts)
+    corrected_old[0] = new_file
+    corrected_old[1] = new_manufacturer
+    pattern = re.compile(re.escape(old_spelling), re.IGNORECASE)
+    corrected_old[2] = pattern.sub(new_spelling, corrected_old[2])
+    corrected_old[3] = pattern.sub(new_spelling, corrected_old[3])
+    return rename_identity("::".join(corrected_old)) == rename_identity(new_key)
+
+
 def git_output(root, *args):
     return subprocess.run(["git", *args], cwd=root, capture_output=True, text=True, encoding="utf-8", check=True).stdout
 

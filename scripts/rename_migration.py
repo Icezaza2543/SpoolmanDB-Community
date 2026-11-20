@@ -59,7 +59,9 @@ if str(ROOT) not in sys.path:
 from scripts.compile_id_baseline import (  # noqa: E402
     BASELINE_PATH, check_baseline_manifest_detailed, compile_current_id_manifest, load_baseline_payload,
 )
-from scripts.duplicate_catalog import catalog_records, corrected_rename_identity, rename_identity  # noqa: E402
+from scripts.duplicate_catalog import (
+    catalog_records, corrected_rename_identity, corrected_rename_pair, rename_identity,
+)  # noqa: E402
 from scripts.retired_ids import load_contract, reviewed_bindings, valid_source  # noqa: E402
 
 REGISTRY_PATH = ROOT / "contracts" / "retired_ids.json"
@@ -233,13 +235,35 @@ def build_registry(registry, pairs, ref, source):
     return registry, repointed, problems
 
 
-def build_correction_audit(pairs, evidence):
+def build_correction_audit(pairs, evidence, previous_file, new_file,
+                           manufacturer_rename):
     """Persist exact pairings for an approved brand/file spelling correction."""
     bindings = {
         old_id: {"key": old_key, "rename": {"replaced_by": new_id, "new_key": new_key}}
         for old_id, new_id, old_key, new_key in pairs
     }
-    return {"version": 1, "evidence": evidence, "bindings": bindings}
+    old_manufacturer, new_manufacturer = manufacturer_rename
+    old_words = old_manufacturer.split()
+    new_words = new_manufacturer.split()
+    differing = [(old, new) for old, new in zip(old_words, new_words)
+                 if old.casefold() != new.casefold()]
+    if len(old_words) == len(new_words) and len(differing) == 1:
+        spelling = list(differing[0])
+    else:
+        # One reviewed manufacturer pair is always explicit in the audit.  If
+        # it cannot be decomposed safely, preserve exact manufacturer names
+        # and still require correction-mode identity validation.
+        spelling = [old_manufacturer, new_manufacturer]
+    return {
+        "version": 1,
+        "evidence": evidence,
+        "correction": {
+            "manufacturer": [old_manufacturer, new_manufacturer],
+            "file": [previous_file, new_file],
+            "spelling": spelling,
+        },
+        "bindings": bindings,
+    }
 
 
 def records_by_id(rows):
@@ -329,8 +353,9 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
                 errors.append(f"{old_id}: reviewed correction audit does not match replacement {new_id}")
             else:
                 try:
-                    if corrected_rename_identity(old_key) != corrected_rename_identity(head_records[new_id][0]):
-                        errors.append(f"{old_id} -> {new_id}: reviewed correction changes physical identity")
+                    correction = binding.get("correction")
+                    if not corrected_rename_pair(old_key, head_records[new_id][0], correction):
+                        errors.append(f"{old_id} -> {new_id}: reviewed correction changes product line or physical identity")
                 except ValueError as exc:
                     errors.append(f"{old_id} -> {new_id}: invalid reviewed correction identity: {exc}")
         if after[old_id].get("retired_key") != old_key:
@@ -532,7 +557,9 @@ def main(argv=None):
     registry_ref = audit_path.as_posix() if audit_path else args.ref
     audit_text = None
     if audit_path and new_text is not None:
-        audit = build_correction_audit(pairs, args.ref)
+        audit = build_correction_audit(
+            pairs, args.ref, previous_file, args.file, args.manufacturer_rename,
+        )
         audit_text = json.dumps(audit, indent=2, ensure_ascii=False) + "\n"
     registry, repointed, registry_problems = build_registry(
         load_contract(REGISTRY_PATH, ROOT, "retired_ids.json", "retired"), pairs, registry_ref, args.source)

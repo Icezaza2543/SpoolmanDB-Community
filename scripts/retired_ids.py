@@ -6,7 +6,9 @@ import re
 import subprocess
 from urllib.parse import urlparse
 
-from scripts.duplicate_catalog import corrected_rename_identity, identity_from_key, rename_identity
+from scripts.duplicate_catalog import (
+    corrected_rename_identity, corrected_rename_pair, identity_from_key, rename_identity,
+)
 
 ENTRY_FIELDS = {"replaced_by", "reason", "ref", "source", "retired_key"}
 # duplicate: merged into an existing historical record with the same physical identity.
@@ -140,7 +142,10 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                                 reviewed.get("replaced_by") != target or
                                 reviewed.get("new_key") != current_ids[target]):
                             raise ValueError("reviewed correction mapping does not match the retired and replacement records")
-                        old, new = corrected_rename_identity(stored_key), corrected_rename_identity(current_ids[target])
+                        if not corrected_rename_pair(stored_key, current_ids[target],
+                                                     binding.get("correction")):
+                            raise ValueError("reviewed correction changes physical identity or product line")
+                        old, new = None, None
                     else:
                         old, new = rename_identity(stored_key), rename_identity(current_ids[target])
                 else:
@@ -162,7 +167,7 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
 
 
 def reviewed_bindings(payload, root):
-    """Local tracked review references can carry lossless per-ID decompositions."""
+    """Local tracked review references carry the approved correction and per-ID bindings."""
     bindings = {}
     for entry in payload.get("retired", {}).values():
         ref = entry.get("ref", "") if isinstance(entry, dict) else ""
@@ -174,9 +179,20 @@ def reviewed_bindings(payload, root):
         if not path.is_file():
             raise ValueError(f"referenced review audit must exist: {ref}")
         review = load_contract(path, root, path.name, "bindings")
+        if not isinstance(review, dict):
+            raise ValueError("review audit must be an object")
+        correction = review.get("correction")
+        if correction is not None:
+            if (review.get("version") != 1 or not isinstance(correction, dict) or
+                    set(correction) != {"manufacturer", "file", "spelling"}):
+                raise ValueError("review audit correction must contain manufacturer, file and spelling")
         if not isinstance(review.get("bindings"), dict):
             raise ValueError(f"review {ref} requires identity bindings")
         for identity, binding in review["bindings"].items():
+            if not isinstance(binding, dict):
+                raise ValueError(f"reviewed binding {identity} must be an object")
+            if correction is not None:
+                binding = {**binding, "correction": correction}
             if identity in bindings and bindings[identity] != binding:
                 raise ValueError(f"conflicting reviewed bindings for {identity}")
             bindings[identity] = binding
