@@ -7345,7 +7345,7 @@
       "retired_key": "overture.json::Overture::PLA {color_name}::PLA Light Gray::PLA::1000::1.75::cardboard::False"
     },
     "overture_pla_matteplalightgrey_1000_175_c": {
-      "replaced_by": "overture_pla_matteplalightgray_1000_175_c",
+      "replaced_by": "overture_pla_mattelightgray_1000_175_c",
       "reason": "duplicate",
       "ref": "docs/audits/2026-10-03-overture-duplicate-review.json",
       "source": "c87c3db5cf850d7ab7c2c108b5412f1c8240dcef",
@@ -7394,21 +7394,21 @@
       "retired_key": "overture.json::Overture::PLA {color_name}::PLA Red::PLA::1000::1.75::cardboard::False"
     },
     "overture_pla_plarockfossilrock_1000_175_c": {
-      "replaced_by": "overture_pla_rockplafossilrock_1000_175_c",
+      "replaced_by": "overture_pla_rockfossilrock_1000_175_c",
       "reason": "duplicate",
       "ref": "docs/audits/2026-10-03-overture-duplicate-review.json",
       "source": "c87c3db5cf850d7ab7c2c108b5412f1c8240dcef",
       "retired_key": "overture.json::Overture::PLA Rock {color_name}::PLA Rock Fossil Rock::PLA::1000::1.75::cardboard::False"
     },
     "overture_pla_plarockglacierblue_1000_175_c": {
-      "replaced_by": "overture_pla_rockplaglacierblue_1000_175_c",
+      "replaced_by": "overture_pla_rockglacierblue_1000_175_c",
       "reason": "duplicate",
       "ref": "docs/audits/2026-10-03-overture-duplicate-review.json",
       "source": "c87c3db5cf850d7ab7c2c108b5412f1c8240dcef",
       "retired_key": "overture.json::Overture::PLA Rock {color_name}::PLA Rock Glacier Blue::PLA::1000::1.75::cardboard::False"
     },
     "overture_pla_plarockmarsred_1000_175_c": {
-      "replaced_by": "overture_pla_rockplamarsred_1000_175_c",
+      "replaced_by": "overture_pla_rockmarsred_1000_175_c",
       "reason": "duplicate",
       "ref": "docs/audits/2026-10-03-overture-duplicate-review.json",
       "source": "c87c3db5cf850d7ab7c2c108b5412f1c8240dcef",
@@ -7429,7 +7429,7 @@
       "retired_key": "overture.json::Overture::PLA Rock {color_name}::PLA Rock Rock White::PLA::1000::1.75::cardboard::False"
     },
     "overture_pla_plarocksedimentaryrock_1000_175_c": {
-      "replaced_by": "overture_pla_rockplasedimentaryrock_1000_175_c",
+      "replaced_by": "overture_pla_rocksedimentaryrock_1000_175_c",
       "reason": "duplicate",
       "ref": "docs/audits/2026-10-03-overture-duplicate-review.json",
       "source": "c87c3db5cf850d7ab7c2c108b5412f1c8240dcef",
@@ -14154,6 +14154,1595 @@
       "ref": "docs/audits/2026-10-04-splice3d-owner-closure.json",
       "source": "b0fccc68c5394a1d8da755a4d6bd2c04f9035921",
       "retired_key": "splice3d.json::Splice3D::PLA {color_name}::PLA Industrial Grey::PLA::1000::1.75::plastic::False"
+    },
+    "add:north_pc_pcblendhtlcf-black_1000_175_p": {
+      "replaced_by": "add:north_pc_blendhtlcf-black_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PC Blend HT LCF - {color_name}::PC Blend HT LCF - Black::PC::1000::1.75::plastic::False"
+    },
+    "add:north_pc_pcblendhtlcf-black_500_175_p": {
+      "replaced_by": "add:north_pc_blendhtlcf-black_500_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PC Blend HT LCF - {color_name}::PC Blend HT LCF - Black::PC::500::1.75::plastic::False"
+    },
+    "add:north_petg_esdpetg-black_750_175_p": {
+      "replaced_by": "add:north_petg_esd-black_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::ESD PETG - {color_name}::ESD PETG - Black::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-black_2300_175_p": {
+      "replaced_by": "add:north_petg_black_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Black::PETG::2300::1.75::plastic::False"
+    },
+    "add:north_petg_petg-black_5000_175_p": {
+      "replaced_by": "add:north_petg_black_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Black::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-black_750_175_p": {
+      "replaced_by": "add:north_petg_black_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Black::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-clear_5000_175_p": {
+      "replaced_by": "add:north_petg_clear_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Clear::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-clear_750_175_p": {
+      "replaced_by": "add:north_petg_clear_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Clear::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-esd_5000_175_p": {
+      "replaced_by": "add:north_petg_esd_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - ESD::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-glitzgrey_5000_175_p": {
+      "replaced_by": "add:north_petg_glitzgrey_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Glitz Grey::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-glitzgrey_750_175_p": {
+      "replaced_by": "add:north_petg_glitzgrey_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Glitz Grey::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-green_5000_175_p": {
+      "replaced_by": "add:north_petg_green_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Green::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-green_750_175_p": {
+      "replaced_by": "add:north_petg_green_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Green::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-grey_5000_175_p": {
+      "replaced_by": "add:north_petg_grey_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Grey::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-grey_750_175_p": {
+      "replaced_by": "add:north_petg_grey_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Grey::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-lightgrey_5000_175_p": {
+      "replaced_by": "add:north_petg_lightgrey_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Light Grey::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-lightgrey_750_175_p": {
+      "replaced_by": "add:north_petg_lightgrey_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Light Grey::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-lucentorange_5000_175_p": {
+      "replaced_by": "add:north_petg_lucentorange_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Lucent Orange::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-lucentorange_750_175_p": {
+      "replaced_by": "add:north_petg_lucentorange_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Lucent Orange::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-mediumblue_5000_175_p": {
+      "replaced_by": "add:north_petg_mediumblue_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Medium Blue::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-mediumblue_750_175_p": {
+      "replaced_by": "add:north_petg_mediumblue_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Medium Blue::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-red_5000_175_p": {
+      "replaced_by": "add:north_petg_red_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Red::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-red_750_175_p": {
+      "replaced_by": "add:north_petg_red_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Red::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-white_2300_175_p": {
+      "replaced_by": "add:north_petg_white_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - White::PETG::2300::1.75::plastic::False"
+    },
+    "add:north_petg_petg-white_5000_175_p": {
+      "replaced_by": "add:north_petg_white_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - White::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-white_750_175_p": {
+      "replaced_by": "add:north_petg_white_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - White::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petg-yellow_5000_175_p": {
+      "replaced_by": "add:north_petg_yellow_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Yellow::PETG::5000::1.75::plastic::False"
+    },
+    "add:north_petg_petg-yellow_750_175_p": {
+      "replaced_by": "add:north_petg_yellow_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG - {color_name}::PETG - Yellow::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petgeconomy-black_1000_175_p": {
+      "replaced_by": "add:north_petg_economy-black_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG Economy - {color_name}::PETG Economy - Black::PETG::1000::1.75::plastic::False"
+    },
+    "add:north_petg_petgeconomy-lightgrey_1000_175_p": {
+      "replaced_by": "add:north_petg_economy-lightgrey_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG Economy - {color_name}::PETG Economy - Light Grey::PETG::1000::1.75::plastic::False"
+    },
+    "add:north_petg_petgeconomy-white_1000_175_p": {
+      "replaced_by": "add:north_petg_economy-white_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG Economy - {color_name}::PETG Economy - White::PETG::1000::1.75::plastic::False"
+    },
+    "add:north_petg_petgflameretardantv0-black_750_175_p": {
+      "replaced_by": "add:north_petg_flameretardantv0-black_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG Flame Retardant V0 - {color_name}::PETG Flame Retardant V0 - Black::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petgflameretardantv0-natural_750_175_p": {
+      "replaced_by": "add:north_petg_flameretardantv0-natural_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG Flame Retardant V0 - {color_name}::PETG Flame Retardant V0 - Natural::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petgflameretardantv0-white_750_175_p": {
+      "replaced_by": "add:north_petg_flameretardantv0-white_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG Flame Retardant V0 - {color_name}::PETG Flame Retardant V0 - White::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petgpromatte-black_2300_175_p": {
+      "replaced_by": "add:north_petg_promatte-black_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG PRO Matte - {color_name}::PETG PRO Matte - Black::PETG::2300::1.75::plastic::False"
+    },
+    "add:north_petg_petgpromatte-black_750_175_p": {
+      "replaced_by": "add:north_petg_promatte-black_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG PRO Matte - {color_name}::PETG PRO Matte - Black::PETG::750::1.75::plastic::False"
+    },
+    "add:north_petg_petgpromatte-white_2300_175_p": {
+      "replaced_by": "add:north_petg_promatte-white_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG PRO Matte - {color_name}::PETG PRO Matte - White::PETG::2300::1.75::plastic::False"
+    },
+    "add:north_petg_petgpromatte-white_750_175_p": {
+      "replaced_by": "add:north_petg_promatte-white_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PETG PRO Matte - {color_name}::PETG PRO Matte - White::PETG::750::1.75::plastic::False"
+    },
+    "add:north_pla+wood_plawood-lightoak_1000_175_p": {
+      "replaced_by": "add:north_pla+wood_wood-lightoak_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Wood - {color_name}::PLA Wood - Light Oak::PLA+WOOD::1000::1.75::plastic::False"
+    },
+    "add:north_pla+wood_plawood-lightoak_500_175_p": {
+      "replaced_by": "add:north_pla+wood_wood-lightoak_500_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Wood - {color_name}::PLA Wood - Light Oak::PLA+WOOD::500::1.75::plastic::False"
+    },
+    "add:north_pla+wood_plawood-nordicbirch_1000_175_p": {
+      "replaced_by": "add:north_pla+wood_wood-nordicbirch_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Wood - {color_name}::PLA Wood - Nordic Birch::PLA+WOOD::1000::1.75::plastic::False"
+    },
+    "add:north_pla+wood_plawood-nordicbirch_500_175_p": {
+      "replaced_by": "add:north_pla+wood_wood-nordicbirch_500_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Wood - {color_name}::PLA Wood - Nordic Birch::PLA+WOOD::500::1.75::plastic::False"
+    },
+    "add:north_pla-cf_placf-black_1000_175_p": {
+      "replaced_by": "add:north_pla-cf_black_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA CF - {color_name}::PLA CF - Black::PLA-CF::1000::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-armygreen_2300_175_p": {
+      "replaced_by": "add:north_pla_e-armygreen_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Army Green::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-armygreen_750_175_p": {
+      "replaced_by": "add:north_pla_e-armygreen_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Army Green::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-auroragreen_2300_175_p": {
+      "replaced_by": "add:north_pla_e-auroragreen_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Aurora Green::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-auroragreen_750_175_p": {
+      "replaced_by": "add:north_pla_e-auroragreen_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Aurora Green::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-black_2300_175_p": {
+      "replaced_by": "add:north_pla_e-black_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Black::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-black_750_175_p": {
+      "replaced_by": "add:north_pla_e-black_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Black::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-coldwhite_2300_175_p": {
+      "replaced_by": "add:north_pla_e-coldwhite_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Cold White::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-coldwhite_750_175_p": {
+      "replaced_by": "add:north_pla_e-coldwhite_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Cold White::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzblack_2300_175_p": {
+      "replaced_by": "add:north_pla_e-glitzblack_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Black::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzblack_750_175_p": {
+      "replaced_by": "add:north_pla_e-glitzblack_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Black::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzgrey_2300_175_p": {
+      "replaced_by": "add:north_pla_e-glitzgrey_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Grey::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzgrey_750_175_p": {
+      "replaced_by": "add:north_pla_e-glitzgrey_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Grey::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzpurple_2300_175_p": {
+      "replaced_by": "add:north_pla_e-glitzpurple_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Purple::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzpurple_750_175_p": {
+      "replaced_by": "add:north_pla_e-glitzpurple_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Purple::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzsapphire_2300_175_p": {
+      "replaced_by": "add:north_pla_e-glitzsapphire_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Sapphire::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzsapphire_750_175_p": {
+      "replaced_by": "add:north_pla_e-glitzsapphire_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Sapphire::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzsilver_2300_175_p": {
+      "replaced_by": "add:north_pla_e-glitzsilver_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Silver::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glitzsilver_750_175_p": {
+      "replaced_by": "add:north_pla_e-glitzsilver_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glitz Silver::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glowinthedarkgreen_2300_175_p": {
+      "replaced_by": "add:north_pla_e-glowinthedarkgreen_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glow in the Dark Green::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-glowinthedarkgreen_750_175_p": {
+      "replaced_by": "add:north_pla_e-glowinthedarkgreen_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Glow in the Dark Green::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-gold_2300_175_p": {
+      "replaced_by": "add:north_pla_e-gold_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Gold::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-gold_750_175_p": {
+      "replaced_by": "add:north_pla_e-gold_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Gold::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-green_2300_175_p": {
+      "replaced_by": "add:north_pla_e-green_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Green::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-green_750_175_p": {
+      "replaced_by": "add:north_pla_e-green_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Green::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-lightgrey_2300_175_p": {
+      "replaced_by": "add:north_pla_e-lightgrey_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Light Grey::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-lightgrey_750_175_p": {
+      "replaced_by": "add:north_pla_e-lightgrey_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Light Grey::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-lucentorange_2300_175_p": {
+      "replaced_by": "add:north_pla_e-lucentorange_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Lucent Orange::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-lucentorange_750_175_p": {
+      "replaced_by": "add:north_pla_e-lucentorange_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Lucent Orange::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-lucentpink_2300_175_p": {
+      "replaced_by": "add:north_pla_e-lucentpink_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Lucent Pink::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-lucentpink_750_175_p": {
+      "replaced_by": "add:north_pla_e-lucentpink_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Lucent Pink::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-marble_2300_175_p": {
+      "replaced_by": "add:north_pla_e-marble_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Marble::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-marble_750_175_p": {
+      "replaced_by": "add:north_pla_e-marble_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Marble::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-mediumblue_2300_175_p": {
+      "replaced_by": "add:north_pla_e-mediumblue_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Medium Blue::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-mediumblue_750_175_p": {
+      "replaced_by": "add:north_pla_e-mediumblue_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Medium Blue::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-natural_2300_175_p": {
+      "replaced_by": "add:north_pla_e-natural_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Natural::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-natural_750_175_p": {
+      "replaced_by": "add:north_pla_e-natural_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Natural::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-red_2300_175_p": {
+      "replaced_by": "add:north_pla_e-red_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Red::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-red_750_175_p": {
+      "replaced_by": "add:north_pla_e-red_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Red::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-stemfieorange_2300_175_p": {
+      "replaced_by": "add:north_pla_e-stemfieorange_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Stemfie Orange::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-stemfieorange_750_175_p": {
+      "replaced_by": "add:north_pla_e-stemfieorange_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - STEMFIE Orange::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-tropicalturquoise_2300_175_p": {
+      "replaced_by": "add:north_pla_e-tropicalturquoise_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Tropical Turquoise::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-tropicalturquoise_750_175_p": {
+      "replaced_by": "add:north_pla_e-tropicalturquoise_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Tropical Turquoise::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-ultramarineblue_2300_175_p": {
+      "replaced_by": "add:north_pla_e-ultramarineblue_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Ultramarine Blue::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-ultramarineblue_750_175_p": {
+      "replaced_by": "add:north_pla_e-ultramarineblue_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Ultramarine Blue::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-white_2300_175_p": {
+      "replaced_by": "add:north_pla_e-white_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - White::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-white_750_175_p": {
+      "replaced_by": "add:north_pla_e-white_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - White::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-yellow_2300_175_p": {
+      "replaced_by": "add:north_pla_e-yellow_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Yellow::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_e-pla-yellow_750_175_p": {
+      "replaced_by": "add:north_pla_e-yellow_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::E-PLA - {color_name}::E-PLA - Yellow::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_ht-plapromatte-black_2300_175_p": {
+      "replaced_by": "add:north_pla_htpromatte-black_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::HT-PLA Pro Matte - {color_name}::HT-PLA Pro Matte - Black::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_ht-plapromatte-black_750_175_p": {
+      "replaced_by": "add:north_pla_htpromatte-black_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::HT-PLA Pro Matte - {color_name}::HT-PLA Pro Matte - Black::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_ht-plapromatte-white_2300_175_p": {
+      "replaced_by": "add:north_pla_htpromatte-white_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::HT-PLA Pro Matte - {color_name}::HT-PLA Pro Matte - White::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_ht-plapromatte-white_750_175_p": {
+      "replaced_by": "add:north_pla_htpromatte-white_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::HT-PLA Pro Matte - {color_name}::HT-PLA Pro Matte - White::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_plaeconomy-black_1000_175_p": {
+      "replaced_by": "add:north_pla_economy-black_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Economy - {color_name}::PLA Economy - Black::PLA::1000::1.75::plastic::False"
+    },
+    "add:north_pla_plaeconomy-lightgrey_1000_175_p": {
+      "replaced_by": "add:north_pla_economy-lightgrey_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Economy - {color_name}::PLA Economy - Light Grey::PLA::1000::1.75::plastic::False"
+    },
+    "add:north_pla_plaeconomy-white_1000_175_p": {
+      "replaced_by": "add:north_pla_economy-white_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Economy - {color_name}::PLA Economy - White::PLA::1000::1.75::plastic::False"
+    },
+    "add:north_pla_plapremiumsilk-blue_750_175_p": {
+      "replaced_by": "add:north_pla_premiumsilk-blue_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Premium Silk - {color_name}::PLA Premium Silk - Blue::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_plapremiumsilk-gold_750_175_p": {
+      "replaced_by": "add:north_pla_premiumsilk-gold_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Premium Silk - {color_name}::PLA Premium Silk - Gold::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_plapremiumsilk-green_750_175_p": {
+      "replaced_by": "add:north_pla_premiumsilk-green_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Premium Silk - {color_name}::PLA Premium Silk - Green::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_plapremiumsilk-red_750_175_p": {
+      "replaced_by": "add:north_pla_premiumsilk-red_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Premium Silk - {color_name}::PLA Premium Silk - Red::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_plapremiumsilk-silver_750_175_p": {
+      "replaced_by": "add:north_pla_premiumsilk-silver_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::PLA Premium Silk - {color_name}::PLA Premium Silk - Silver::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-black_2300_175_p": {
+      "replaced_by": "add:north_pla_x-black_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Black::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-black_5000_175_p": {
+      "replaced_by": "add:north_pla_x-black_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Black::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-black_750_175_p": {
+      "replaced_by": "add:north_pla_x-black_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Black::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-coldwhite_5000_175_p": {
+      "replaced_by": "add:north_pla_x-coldwhite_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Cold White::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-coldwhite_750_175_p": {
+      "replaced_by": "add:north_pla_x-coldwhite_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Cold White::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-lightgrey_2300_175_p": {
+      "replaced_by": "add:north_pla_x-lightgrey_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Light Grey::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-lightgrey_5000_175_p": {
+      "replaced_by": "add:north_pla_x-lightgrey_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Light Grey::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-lightgrey_750_175_p": {
+      "replaced_by": "add:north_pla_x-lightgrey_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Light Grey::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-mediumblue_5000_175_p": {
+      "replaced_by": "add:north_pla_x-mediumblue_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Medium Blue::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-mediumblue_750_175_p": {
+      "replaced_by": "add:north_pla_x-mediumblue_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Medium Blue::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoolblue_5000_175_p": {
+      "replaced_by": "add:north_pla_x-powertoolblue_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Blue::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoolblue_750_175_p": {
+      "replaced_by": "add:north_pla_x-powertoolblue_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Blue::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoollightgreen_5000_175_p": {
+      "replaced_by": "add:north_pla_x-powertoollightgreen_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Light Green::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoollightgreen_750_175_p": {
+      "replaced_by": "add:north_pla_x-powertoollightgreen_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Light Green::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoollimegreen_5000_175_p": {
+      "replaced_by": "add:north_pla_x-powertoollimegreen_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Lime Green::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoollimegreen_750_175_p": {
+      "replaced_by": "add:north_pla_x-powertoollimegreen_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Lime Green::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoolred_5000_175_p": {
+      "replaced_by": "add:north_pla_x-powertoolred_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Red::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoolred_750_175_p": {
+      "replaced_by": "add:north_pla_x-powertoolred_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Red::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoolyellow_5000_175_p": {
+      "replaced_by": "add:north_pla_x-powertoolyellow_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Yellow::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-powertoolyellow_750_175_p": {
+      "replaced_by": "add:north_pla_x-powertoolyellow_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Power Tool Yellow::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-red_5000_175_p": {
+      "replaced_by": "add:north_pla_x-red_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Red::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-red_750_175_p": {
+      "replaced_by": "add:north_pla_x-red_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - Red::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-white_2300_175_p": {
+      "replaced_by": "add:north_pla_x-white_2300_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - White::PLA::2300::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-white_5000_175_p": {
+      "replaced_by": "add:north_pla_x-white_5000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - White::PLA::5000::1.75::plastic::False"
+    },
+    "add:north_pla_x-pla-white_750_175_p": {
+      "replaced_by": "add:north_pla_x-white_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA - {color_name}::X-PLA - White::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-plahighspeed-black_750_175_p": {
+      "replaced_by": "add:north_pla_xhighspeed-black_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA High Speed - {color_name}::X-PLA High Speed - Black::PLA::750::1.75::plastic::False"
+    },
+    "add:north_pla_x-plahighspeed-white_750_175_p": {
+      "replaced_by": "add:north_pla_xhighspeed-white_750_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::X-PLA High Speed - {color_name}::X-PLA High Speed - White::PLA::750::1.75::plastic::False"
+    },
+    "add:north_tpu-85a_tpupromatte85a-black_1000_175_p": {
+      "replaced_by": "add:north_tpu-85a_promatte-black_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::TPU Pro Matte 85A - {color_name}::TPU Pro Matte 85A - Black::TPU-85A::1000::1.75::plastic::False"
+    },
+    "add:north_tpu-85a_tpupromatte85a-brownleather_500_175_p": {
+      "replaced_by": "add:north_tpu-85a_promatte-brownleather_500_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::TPU Pro Matte 85A - {color_name}::TPU Pro Matte 85A - Brown Leather::TPU-85A::500::1.75::plastic::False"
+    },
+    "add:north_tpu-85a_tpupromatte85a-white_1000_175_p": {
+      "replaced_by": "add:north_tpu-85a_promatte-white_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::TPU Pro Matte 85A - {color_name}::TPU Pro Matte 85A - White::TPU-85A::1000::1.75::plastic::False"
+    },
+    "add:north_tpu-85a_tpupromatte85a-yellow_500_175_p": {
+      "replaced_by": "add:north_tpu-85a_promatte-yellow_500_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::TPU Pro Matte 85A - {color_name}::TPU Pro Matte 85A - Yellow::TPU-85A::500::1.75::plastic::False"
+    },
+    "add:north_tpu-95a_tpupromatte95a-black_1000_175_p": {
+      "replaced_by": "add:north_tpu-95a_promatte-black_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::TPU Pro Matte 95A - {color_name}::TPU Pro Matte 95A - Black::TPU-95A::1000::1.75::plastic::False"
+    },
+    "add:north_tpu-95a_tpupromatte95a-black_500_175_p": {
+      "replaced_by": "add:north_tpu-95a_promatte-black_500_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::TPU Pro Matte 95A - {color_name}::TPU Pro Matte 95A - Black::TPU-95A::500::1.75::plastic::False"
+    },
+    "add:north_tpu-95a_tpupromatte95a-white_1000_175_p": {
+      "replaced_by": "add:north_tpu-95a_promatte-white_1000_175_p",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/521",
+      "source": "bbdc012ba9270d545f2be0f3e66603640d60d800",
+      "retired_key": "addnorth.json::add:north::TPU Pro Matte 95A - {color_name}::TPU Pro Matte 95A - White::TPU-95A::1000::1.75::plastic::False"
+    },
+    "overture_pla_mattepla6-color_1000_175_c": {
+      "replaced_by": "overture_pla_matte6-color_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA 6-Color::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplaarmygreen_1000_175_c": {
+      "replaced_by": "overture_pla_mattearmygreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Army Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplababypink_1000_175_c": {
+      "replaced_by": "overture_pla_mattebabypink_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Baby Pink::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplabamboogreen_1000_175_c": {
+      "replaced_by": "overture_pla_mattebamboogreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Bamboo Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplabeige_1000_175_c": {
+      "replaced_by": "overture_pla_mattebeige_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Beige::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplablack&white_1000_175_c": {
+      "replaced_by": "overture_pla_matteblack&white_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Black & White::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplablack-white_1000_175_c": {
+      "replaced_by": "overture_pla_matteblack-white_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Black-White::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplablack_1000_175_c": {
+      "replaced_by": "overture_pla_matteblack_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Black::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplablue-red_1000_175_c": {
+      "replaced_by": "overture_pla_matteblue-red_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Blue-Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplablue_1000_175_c": {
+      "replaced_by": "overture_pla_matteblue_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Blue::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplabrickred_1000_175_c": {
+      "replaced_by": "overture_pla_mattebrickred_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Brick Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplabutteryellow_1000_175_c": {
+      "replaced_by": "overture_pla_mattebutteryellow_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Butter Yellow::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplacandyrainbow_1000_175_c": {
+      "replaced_by": "overture_pla_mattecandyrainbow_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Candy Rainbow::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplacarbonfiberblack_1000_175_c": {
+      "replaced_by": "overture_pla_mattecarbonfiberblack_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Carbon Fiber Black::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplachocolate_1000_175_c": {
+      "replaced_by": "overture_pla_mattechocolate_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Chocolate::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_mattepladarkorange_1000_175_c": {
+      "replaced_by": "overture_pla_mattedarkorange_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Dark Orange::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplaecomidnightblack_1000_175_c": {
+      "replaced_by": "overture_pla_matteecomidnightblack_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Eco Midnight Black::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplagrassgreen_1000_175_c": {
+      "replaced_by": "overture_pla_mattegrassgreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Grass Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplagraygreen_1000_175_c": {
+      "replaced_by": "overture_pla_mattegraygreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Gray Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplagreen_1000_175_c": {
+      "replaced_by": "overture_pla_mattegreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplajeansblue_1000_175_c": {
+      "replaced_by": "overture_pla_mattejeansblue_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Jeans Blue::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplajeansred_1000_175_c": {
+      "replaced_by": "overture_pla_mattejeansred_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Jeans Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalavender_1000_175_c": {
+      "replaced_by": "overture_pla_mattelavender_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Lavender::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalightblue-yellow_1000_175_c": {
+      "replaced_by": "overture_pla_mattelightblue-yellow_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Light Blue-Yellow::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalightblue_1000_175_c": {
+      "replaced_by": "overture_pla_mattelightblue_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Light Blue::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalightbrown_1000_175_c": {
+      "replaced_by": "overture_pla_mattelightbrown_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Light Brown::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalightgray_1000_175_c": {
+      "replaced_by": "overture_pla_mattelightgray_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Light gray::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalightgreen_1000_175_c": {
+      "replaced_by": "overture_pla_mattelightgreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Light Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalightorange_1000_175_c": {
+      "replaced_by": "overture_pla_mattelightorange_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Light Orange::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalightpink_1000_175_c": {
+      "replaced_by": "overture_pla_mattelightpink_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Light Pink::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalightteal_1000_175_c": {
+      "replaced_by": "overture_pla_mattelightteal_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Light Teal::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplalilac_1000_175_c": {
+      "replaced_by": "overture_pla_mattelilac_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Lilac::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplanavyblue_1000_175_c": {
+      "replaced_by": "overture_pla_mattenavyblue_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Navy Blue::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplaolivegreen_1000_175_c": {
+      "replaced_by": "overture_pla_matteolivegreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Olive Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplaorange-red_1000_175_c": {
+      "replaced_by": "overture_pla_matteorange-red_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Orange-Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplaorange_1000_175_c": {
+      "replaced_by": "overture_pla_matteorange_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Orange::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplapalegreen_1000_175_c": {
+      "replaced_by": "overture_pla_mattepalegreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Pale Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplapastelred_1000_175_c": {
+      "replaced_by": "overture_pla_mattepastelred_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Pastel Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplapink_1000_175_c": {
+      "replaced_by": "overture_pla_mattepink_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Pink::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplapurple_1000_175_c": {
+      "replaced_by": "overture_pla_mattepurple_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Purple::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplarainbow_1000_175_c": {
+      "replaced_by": "overture_pla_matterainbow_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Rainbow::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplarainbowa1_1000_175_c": {
+      "replaced_by": "overture_pla_matterainbowa1_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Rainbow A1::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplared_1000_175_c": {
+      "replaced_by": "overture_pla_mattered_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplareposegray_1000_175_c": {
+      "replaced_by": "overture_pla_mattereposegray_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Repose Gray::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplaskin_1000_175_c": {
+      "replaced_by": "overture_pla_matteskin_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Skin::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplaslategray_1000_175_c": {
+      "replaced_by": "overture_pla_matteslategray_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Slate Gray::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplaturquoise_1000_175_c": {
+      "replaced_by": "overture_pla_matteturquoise_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Turquoise::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplawhite_1000_175_c": {
+      "replaced_by": "overture_pla_mattewhite_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA White::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplawood_1000_175_c": {
+      "replaced_by": "overture_pla_mattewood_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Wood::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_matteplayellow_1000_175_c": {
+      "replaced_by": "overture_pla_matteyellow_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Matte PLA {color_name}::Matte PLA Yellow::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_rockplafossilrock_1000_175_c": {
+      "replaced_by": "overture_pla_rockfossilrock_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Rock PLA {color_name}::Rock PLA Fossil Rock::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_rockplaglacierblue_1000_175_c": {
+      "replaced_by": "overture_pla_rockglacierblue_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Rock PLA {color_name}::Rock PLA Glacier Blue::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_rockplamarsred_1000_175_c": {
+      "replaced_by": "overture_pla_rockmarsred_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Rock PLA {color_name}::Rock PLA Mars Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_rockplasedimentaryrock_1000_175_c": {
+      "replaced_by": "overture_pla_rocksedimentaryrock_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Rock PLA {color_name}::Rock PLA Sedimentary Rock::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplablue_1000_175_c": {
+      "replaced_by": "overture_pla_silkblue_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Blue::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplacaramel_1000_175_c": {
+      "replaced_by": "overture_pla_silkcaramel_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Caramel::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplachristmasred_1000_175_c": {
+      "replaced_by": "overture_pla_silkchristmasred_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Christmas Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplachromegray_1000_175_c": {
+      "replaced_by": "overture_pla_silkchromegray_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Chrome Gray::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplacopper_1000_175_c": {
+      "replaced_by": "overture_pla_silkcopper_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Copper::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplacoppershore_1000_175_c": {
+      "replaced_by": "overture_pla_silkcoppershore_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Copper Shore::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorsblue-silver_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorsblue-silver_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Blue-Silver::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorsblue-yellow_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorsblue-yellow_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Blue-Yellow::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorsgold-silver_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorsgold-silver_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Gold-Silver::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorsgreen-blue_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorsgreen-blue_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Green-Blue::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorsgreen-magenta_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorsgreen-magenta_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Green-Magenta::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorsgreen-silver_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorsgreen-silver_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Green-Silver::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorsmagenta-gold_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorsmagenta-gold_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Magenta-Gold::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorspurple-gold_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorspurple-gold_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Purple-Gold::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkpladualcolorsred-gold_1000_175_c": {
+      "replaced_by": "overture_pla_silkdualcolorsred-gold_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Dual Colors Red-Gold::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplaevergreenbronze_1000_175_c": {
+      "replaced_by": "overture_pla_silkevergreenbronze_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Evergreen Bronze::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplafreshred_1000_175_c": {
+      "replaced_by": "overture_pla_silkfreshred_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Fresh Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplaglacierflash_1000_175_c": {
+      "replaced_by": "overture_pla_silkglacierflash_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Glacier Flash::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplagold_1000_175_c": {
+      "replaced_by": "overture_pla_silkgold_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Gold::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplagoldenember_1000_175_c": {
+      "replaced_by": "overture_pla_silkgoldenember_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Golden Ember::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplagray_1000_175_c": {
+      "replaced_by": "overture_pla_silkgray_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Gray::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplagreen_1000_175_c": {
+      "replaced_by": "overture_pla_silkgreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplalettucetomato_1000_175_c": {
+      "replaced_by": "overture_pla_silklettucetomato_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Lettuce Tomato::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplalimesurge_1000_175_c": {
+      "replaced_by": "overture_pla_silklimesurge_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Lime Surge::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplaneongreen_1000_175_c": {
+      "replaced_by": "overture_pla_silkneongreen_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Neon green::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplaparakeet_1000_175_c": {
+      "replaced_by": "overture_pla_silkparakeet_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Parakeet::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplaperiwinkle_1000_175_c": {
+      "replaced_by": "overture_pla_silkperiwinkle_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Periwinkle::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplapunchpink_1000_175_c": {
+      "replaced_by": "overture_pla_silkpunchpink_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Punch Pink::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplapurple_1000_175_c": {
+      "replaced_by": "overture_pla_silkpurple_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Purple::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplapurplechrome_1000_175_c": {
+      "replaced_by": "overture_pla_silkpurplechrome_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Purple Chrome::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplared_1000_175_c": {
+      "replaced_by": "overture_pla_silkred_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Red::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplasilver_1000_175_c": {
+      "replaced_by": "overture_pla_silksilver_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Silver::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplatigereye_1000_175_c": {
+      "replaced_by": "overture_pla_silktigereye_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Tiger Eye::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplatropic_1000_175_c": {
+      "replaced_by": "overture_pla_silktropic_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Tropic::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplavaporwave_1000_175_c": {
+      "replaced_by": "overture_pla_silkvaporwave_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA Vaporwave::PLA::1000.0::1.75::cardboard::False"
+    },
+    "overture_pla_silkplawhite_1000_175_c": {
+      "replaced_by": "overture_pla_silkwhite_1000_175_c",
+      "reason": "rename",
+      "ref": "https://github.com/Donkie/SpoolmanDB/pull/526",
+      "source": "641226c7d47ad5834509812247d7b5249b294d62",
+      "retired_key": "overture.json::Overture::Silk PLA {color_name}::Silk PLA White::PLA::1000.0::1.75::cardboard::False"
     }
   }
 }

@@ -8,16 +8,24 @@ ID, then the baseline enrolls the new IDs. ``scripts/retired_ids.py`` verifies
 every pair (same file, manufacturer, material, package and color; the product
 line may differ only by text repeating the manufacturer or material).
 
-Renames come from ``--rename OLD NEW MATERIAL`` pairs, or from an upstream
-SpoolmanDB change with ``--upstream BEFORE AFTER`` (same-material name changes
-only; material changes are reported and skipped). Without ``--apply`` nothing
-is written.
+Renames come from ``--rename OLD NEW`` pairs, or from an upstream SpoolmanDB
+change with ``--upstream BEFORE AFTER`` (same-material name changes only;
+material changes are reported and skipped). Upstream renames of groups that do
+not exist in this file are reported and skipped; an explicit ``--rename`` of a
+missing group is an error. Without ``--apply`` nothing is written.
+
+``--keep TEMPLATE COLOR`` leaves one color of a renamed group on its current
+ID, e.g. when upstream also changed that color's name and renaming it now would
+publish an intermediate ID. A group whose colors are all kept is not renamed;
+otherwise the kept colors move into a copy of the group under the old template,
+placed directly after it, so their compiled records do not change.
 
 A reviewed manufacturer spelling correction can additionally specify
 ``--previous-file``, ``--manufacturer-rename OLD NEW`` and ``--audit``. That
-mode records exact old/new identity-key pairs in a tracked audit so validation
-can allow only the approved label, filename and manufacturer changes while
-still requiring material, package and color identity to match.
+mode records exact old/new identity-key pairs and the reviewed manufacturer,
+filename and spelling changes in a tracked audit. Validation permits only
+those changes and the normal product-line rename rules; material, package,
+physical color and all other record fields must still match.
 
 An existing retirement that points at a renamed ID (A -> B, then B -> C) is
 re-pointed to the final ID (A -> C) and keeps its original evidence, so the
@@ -94,16 +102,46 @@ def upstream_renames(root, filename, before, after):
     return renames, skipped
 
 
-def rename_source(text, groups_renamed):
-    """Rename group templates textually so unrelated formatting is untouched."""
+def unmatched_renames(text, groups_renamed):
+    """Requested (template, material) renames that no group in the source uses."""
+    present = {(group["name"], group["material"]) for group in json.loads(text)["filaments"]}
+    return sorted(key for key in groups_renamed if key not in present)
+
+
+def rename_source(text, groups_renamed, keep=()):
+    """Rename group templates textually so unrelated formatting is untouched.
+
+    ``keep`` holds (old template, color name) pairs that stay on their current
+    IDs: a renamed group whose colors are all kept is left alone, and kept colors
+    of a partly renamed group move into a copy of it under the old template,
+    placed directly after it. Splitting needs a full rewrite, which is only done
+    when it is lossless."""
     data = json.loads(text)
     expected = json.loads(text)
+    keep, used = set(keep), set()
     count = 0
+    groups = []
     for group in expected["filaments"]:
+        groups.append(group)
         new = groups_renamed.get((group["name"], group["material"]))
-        if new is not None:
-            group["name"] = new
-            count += 1
+        if new is None:
+            continue
+        kept = [color for color in group.get("colors", []) if (group["name"], color["name"]) in keep]
+        used.update((group["name"], color["name"]) for color in kept)
+        if kept and len(kept) == len(group.get("colors", [])):
+            continue
+        old = copy.deepcopy(group)
+        group["name"] = new
+        count += 1
+        if kept:
+            group["colors"] = [color for color in group["colors"] if color not in kept]
+            old["colors"] = kept
+            groups.append(old)
+    expected["filaments"] = groups
+    unused = sorted(keep - used)
+    if unused:
+        raise ValueError("--keep matched no color of a renamed group: " +
+                         ", ".join(f"{template!r} {color!r}" for template, color in unused))
     if not count:
         raise ValueError("no group matched the requested renames")
     result = text
@@ -114,7 +152,8 @@ def rename_source(text, groups_renamed):
         # A template shared across materials with only some renamed cannot be
         # edited textually; fall back to a full rewrite only if it is lossless.
         if json.dumps(data, indent=2, ensure_ascii=False) + "\n" != text:
-            raise ValueError("cannot apply renames without reformatting the file")
+            raise ValueError("cannot apply renames without reformatting the file "
+                             "(it is not in the standard 2-space JSON format)")
         result = json.dumps(expected, indent=2, ensure_ascii=False) + "\n"
     return result, count
 
@@ -145,7 +184,7 @@ def display_name_groups(text, renames):
                    and any("display_name" in color for color in group.get("colors", []))})
 
 
-def plan(root, filename, renames, base_manifest, previous_file=None, manufacturer_rename=None):
+def plan(root, filename, renames, base_manifest, previous_file=None, manufacturer_rename=None, keep=()):
     """Compile before/after in a scratch copy and pair every removed ID with its new ID."""
     previous_file = previous_file or filename
     old_source = root / "filaments" / previous_file
@@ -163,7 +202,10 @@ def plan(root, filename, renames, base_manifest, previous_file=None, manufacture
         path = work / filename
         if old_path != path and path.exists():
             return [], 0, None, [f"destination source file already exists: {filename}"]
-        new_text, groups = rename_source(old_path.read_text(encoding="utf-8"), renames)
+        try:
+            new_text, groups = rename_source(old_path.read_text(encoding="utf-8"), renames, keep)
+        except ValueError as exc:
+            return [], 0, None, [str(exc)]
         if manufacturer_rename:
             new_text = rename_manufacturer_source(new_text, *manufacturer_rename)
         path.write_bytes(new_text.encode("utf-8"))
@@ -490,6 +532,8 @@ def main(argv=None):
                         help="rename group template OLD to NEW for groups of MATERIAL (repeatable)")
     parser.add_argument("--upstream", nargs=2, metavar=("BEFORE", "AFTER"),
                         help="take same-material renames from an upstream change of the same file")
+    parser.add_argument("--keep", nargs=2, action="append", default=[], metavar=("TEMPLATE", "COLOR"),
+                        help="leave COLOR of a group named TEMPLATE on its current ID (repeatable)")
     parser.add_argument("--ref", help="review reference (upstream PR URL, issue, audit)")
     parser.add_argument("--source", help="evidence: commit SHA or URL")
     parser.add_argument("--base-ref", default="HEAD", help="trusted baseline commit (default HEAD)")
@@ -538,7 +582,11 @@ def main(argv=None):
             parser.error("--manufacturer-rename requires two different nonempty names")
     renames = {(old, material): new for old, new, material in args.rename}
     if args.upstream:
-        found, skipped = upstream_renames(ROOT, args.file, *args.upstream)
+        try:
+            found, skipped = upstream_renames(ROOT, args.file, *args.upstream)
+        except (ValueError, subprocess.CalledProcessError) as exc:
+            detail = exc.stderr.strip() if isinstance(exc, subprocess.CalledProcessError) else exc
+            parser.error(f"cannot read upstream renames: {detail}")
         for item in skipped:
             print(f"SKIP (material change, not a rename): {item}")
         for key, new in found.items():
@@ -546,13 +594,28 @@ def main(argv=None):
                 parser.error(f"conflicting renames for {key}")
     if not renames:
         parser.error("no renames given")
+    explicit = {(old, material) for old, _new, material in args.rename}
+    source_path = ROOT / "filaments" / previous_file
+    if not source_path.is_file():
+        parser.error(f"no such manufacturer file: filaments/{previous_file}")
+    missing = unmatched_renames(source_path.read_text(encoding="utf-8"), renames)
+    if explicit & set(missing):
+        parser.error("--rename names a group that does not exist: " +
+                     ", ".join(f"{old!r} [{material}]" for old, material in sorted(explicit & set(missing))))
+    for old, material in missing:
+        print(f"SKIP (no group named {old!r} [{material}] in {args.file})")
+    renames = {key: new for key, new in renames.items() if key not in missing}
+    if not renames:
+        print(f"ERROR: none of the requested renames match a group in {args.file}; nothing was written.",
+              file=sys.stderr)
+        return 1
     base, errors = load_baseline_payload(args.base_ref, ROOT)
     if errors:
         parser.error("; ".join(errors))
 
     pairs, groups, new_text, problems = plan(
         ROOT, args.file, renames, base["manifest"], previous_file=previous_file,
-        manufacturer_rename=args.manufacturer_rename,
+        manufacturer_rename=args.manufacturer_rename, keep={tuple(item) for item in args.keep},
     )
     registry_ref = audit_path.as_posix() if audit_path else args.ref
     audit_text = None
@@ -566,6 +629,8 @@ def main(argv=None):
     problems += registry_problems
     for (old, material), new in sorted(renames.items()):
         print(f"RENAME [{material}] {old!r} -> {new!r}")
+    for template, color in sorted(args.keep):
+        print(f"KEEP {color!r} in {template!r} on its current ID")
     print(f"{groups} group(s) renamed, {len(pairs)} public ID(s) retired as renames")
     for old_id, new_id, _old_key, _new_key in pairs:
         print(f"  {old_id} -> {new_id}")
