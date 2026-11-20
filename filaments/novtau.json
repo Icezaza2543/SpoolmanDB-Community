@@ -3734,6 +3734,370 @@
     },
     {
       "name": "{color_name}",
+      "material": "TPU-72D",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "extruder_temp_range": [
+          225,
+          250
+      ],
+      "bed_temp": 55,
+      "bed_temp_range": [
+          45,
+          65
+      ],
+      "colors": [
+        {
+          "name": "Natural",
+          "hex": "F2F1ED"
+        },
+        {
+          "name": "Black",
+          "hex": "1E1E1E"
+        },
+        {
+          "name": "Gray",
+          "hex": "808080"
+        },
+        {
+          "name": "Light Blue",
+          "hex": "91DAE7"
+        },
+        {
+          "name": "Light Pink",
+          "hex": "F8BACB"
+        },
+        {
+          "name": "Light Yellow",
+          "hex": "F9E3B2"
+        },
+        {
+          "name": "Cyan Blue",
+          "hex": "25EAF2"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "TPU-75D",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "extruder_temp_range": [
+          225,
+          250
+      ],
+      "bed_temp": 55,
+      "bed_temp_range": [
+          45,
+          65
+      ],
+      "colors": [
+        {
+          "name": "Clear",
+          "hex": "EEEEEE",
+          "translucent": true
+        },
+        {
+          "name": "Black",
+          "hex": "1E1E1E"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "TPU-75A",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "extruder_temp_range": [
+          205,
+          230
+      ],
+      "bed_temp": 40,
+      "bed_temp_range": [
+          30,
+          50
+      ],
+      "colors": [
+        {
+          "name": "Clear",
+          "hex": "DFDFDF",
+          "translucent": true
+        },
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Translucent Yellow",
+          "hex": "FBF60B",
+          "translucent": true
+        },
+        {
+          "name": "Black",
+          "hex": "0D0D0D"
+        },
+        {
+          "name": "Gray",
+          "hex": "9D9D9D"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "TPU-80A",
+      "density": 1.15,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "extruder_temp_range": [
+          210,
+          235
+      ],
+      "bed_temp": 40,
+      "bed_temp_range": [
+          30,
+          55
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Black",
+          "hex": "0D0D0D"
+        },
+        {
+          "name": "Translucent Blue",
+          "hex": "348DF2",
+          "translucent": true
+        },
+        {
+          "name": "Orange Red",
+          "hex": "F66226"
+        }
+      ]
+    },
+
+    {
+      "name": "{color_name}",
+      "material": "TPU-85A",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "extruder_temp_range": [
+          210,
+          235
+      ],
+      "bed_temp": 45,
+      "bed_temp_range": [
+          35,
+          60
+      ],
+      "colors": [
+        {
+          "name": "Translucent Purple",
+          "hex": "D152C4",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Red",
+          "hex": "C31023",
+          "translucent": true
+        },
+        {
+          "name": "Clear",
+          "hex": "DFDFDF",
+          "translucent": true
+        },
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Black",
+          "hex": "0D0D0D"
+        },
+        {
+          "name": "Orange Red",
+          "hex": "F66226"
+        },
+        {
+          "name": "Green",
+          "hex": "40E937"
+        },
+        {
+          "name": "Red",
+          "hex": "EF444A"
+        },
+        {
+          "name": "Blue",
+          "hex": "A6B1E6"
+        },
+        {
+          "name": "Gray",
+          "hex": "97999A"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "TPU-90A",
+      "density": 1.185,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 225,
+      "extruder_temp_range": [
+          215,
+          240
+      ],
+      "bed_temp": 45,
+      "bed_temp_range": [
+          35,
+          60
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "0D0D0D"
+        },
+        {
+          "name": "Gray",
+          "hex": "97999A"
+        }
+        {
+          "name": "White",
+          "hex": "F2F2F2"
+        },
+        {
+          "name": "Orange Red",
+          "hex": "F66226"
+        },
+        {
+          "name": "Translucent Red",
+          "hex": "C31023",
+          "translucent": true
+        },
+        {
+          "name": "Translucent Blue",
+          "hex": "0B65D3",
+          "translucent": true
+        },
+        {
+          "name": "Clear",
+          "hex": "DFDFDF",
+          "translucent": true
+        },
+        {
+          "name": "Matte Navy Blue",
+          "hex": "293B55",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Skin Tone",
+          "hex": "F0D1B8",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte Black",
+          "hex": "313131",
+          "finish": "matte"
+        },
+        {
+          "name": "Matte White",
+          "hex": "F6F6F6",
+          "finish": "matte"
+        },
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "TPU-98A",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 230,
+      "extruder_temp_range": [
+          220,
+          245
+      ],
+      "bed_temp": 50,
+      "bed_temp_range": [
+          40,
+          65
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "0D0D0D"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
       "material": "PC",
       "density": 1.04,
       "weights": [
