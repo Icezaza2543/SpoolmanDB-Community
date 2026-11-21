@@ -4221,6 +4221,71 @@
     },
     {
       "name": "{color_name}",
+      "material": "PEBA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "extruder_temp_range": [
+        210,
+        235
+      ],
+      "bed_temp": 50,
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "F3F3F3"
+        },
+        {
+          "name": "Black",
+          "hex": "232323"
+        },
+        {
+          "name": "Red",
+          "hex": "F4535F"
+        },
+        {
+          "name": "Orange",
+          "hex": "FA9221"
+        },
+        {
+          "name": "Blue",
+          "hex": "23AFF6"
+        },
+        {
+          "name": "Rainbow Blue-Purple",
+          "multi_color_direction": "longitudinal",
+          "hexes": [
+              "3EB5EC",
+              "E183C8"
+          ]
+        },
+        {
+          "name": "Summer Rainbow",
+          "multi_color_direction": "longitudinal",
+          "hexes": [
+              "D565A0",
+              "F7D144",
+              "58D472",
+              "35BAEF"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
       "material": "PC",
       "density": 1.04,
       "weights": [
