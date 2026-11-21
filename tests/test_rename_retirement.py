@@ -365,6 +365,90 @@ def test_registry_repoint_rejects_unrelated_correction_binding():
     assert any("identity mismatch" in error for error in errors)
 
 
+@pytest.mark.parametrize("order", ["correction-then-rename", "rename-then-correction"])
+def test_registry_repoint_alias_survives_sequential_correction_and_rename(order):
+    from scripts.retired_ids import check_registry
+
+    if order == "correction-then-rename":
+        correction_old = key("grillon3 PLA | {color_name}", "Black", material="PLA",
+                             manufacturer="NTH Grillon", filename="NTHGrillon.json")
+        correction_new = key("grilon3 PLA | {color_name}", "Black", material="PLA",
+                             manufacturer="NTH Grilon", filename="NTHGrilon.json")
+        final_key = key("grilon3 {color_name}", "Black", material="PLA",
+                        manufacturer="NTH Grilon", filename="NTHGrilon.json")
+        correction_id, intermediate_id = "correction-old", "intermediate"
+        alias_key = key("grilon3 PLA PLA | {color_name}", "Black", material="PLA",
+                        manufacturer="NTH Grilon", filename="NTHGrilon.json")
+        base_retired = {
+            correction_id: {"replaced_by": intermediate_id, "reason": "rename", "ref": "#76",
+                            "source": "b" * 40, "retired_key": correction_old},
+            "alias": {"replaced_by": intermediate_id, "reason": "duplicate", "ref": "#66",
+                      "source": "a" * 40, "retired_key": alias_key},
+        }
+        head_retired = {
+            correction_id: {**base_retired[correction_id], "replaced_by": "final"},
+            "alias": {**base_retired["alias"], "replaced_by": "final"},
+            intermediate_id: {"replaced_by": "final", "reason": "rename", "ref": "#77",
+                              "source": "c" * 40, "retired_key": correction_new},
+        }
+        base_manifest = {correction_old: correction_id, correction_new: intermediate_id,
+                         alias_key: "alias"}
+        audits = {
+            correction_id: {"key": correction_old,
+                            "rename": {"replaced_by": intermediate_id, "new_key": correction_new},
+                            "correction": {
+                                "manufacturer": ["NTH Grillon", "NTH Grilon"],
+                                "file": ["NTHGrillon.json", "NTHGrilon.json"],
+                                "spelling": ["Grillon", "Grilon"],
+                            }},
+        }
+    else:
+        ordinary_old = key("NTH Grillon grillon3 PLA | {color_name}", "Black", material="PLA",
+                           manufacturer="NTH Grillon", filename="NTHGrillon.json")
+        correction_old = key("grillon3 PLA | {color_name}", "Black", material="PLA",
+                             manufacturer="NTH Grillon", filename="NTHGrillon.json")
+        final_key = key("grilon3 PLA | {color_name}", "Black", material="PLA",
+                        manufacturer="NTH Grilon", filename="NTHGrilon.json")
+        correction_id = "correction-old"
+        alias_key = key("grillon3 PLA PLA | {color_name}", "Black", material="PLA",
+                        manufacturer="NTH Grillon", filename="NTHGrillon.json")
+        base_retired = {
+            "ordinary-old": {"replaced_by": correction_id, "reason": "rename", "ref": "#76",
+                             "source": "b" * 40, "retired_key": ordinary_old},
+            "alias": {"replaced_by": correction_id, "reason": "duplicate", "ref": "#66",
+                      "source": "a" * 40, "retired_key": alias_key},
+        }
+        head_retired = {
+            "ordinary-old": {**base_retired["ordinary-old"], "replaced_by": "final"},
+            "alias": {**base_retired["alias"], "replaced_by": "final"},
+            correction_id: {"replaced_by": "final", "reason": "rename", "ref": "#77",
+                            "source": "c" * 40, "retired_key": correction_old},
+        }
+        base_manifest = {ordinary_old: "ordinary-old", correction_old: correction_id,
+                         alias_key: "alias"}
+        audits = {
+            correction_id: {"key": correction_old,
+                            "rename": {"replaced_by": "final", "new_key": final_key},
+                            "correction": {
+                                "manufacturer": ["NTH Grillon", "NTH Grilon"],
+                                "file": ["NTHGrillon.json", "NTHGrilon.json"],
+                                "spelling": ["Grillon", "Grilon"],
+                            }},
+        }
+
+    errors, _, _ = check_registry(
+        {"version": 1, "retired": head_retired},
+        {"version": 1, "retired": base_retired},
+        base_manifest,
+        {final_key: "final"},
+        {final_key: "final"},
+        audits=audits,
+    )
+    assert errors == []
+    assert head_retired["alias"]["retired_key"] == base_retired["alias"]["retired_key"]
+    assert head_retired["alias"]["ref"] == base_retired["alias"]["ref"]
+
+
 # --- End-to-end helper runs in a scratch git repository ---
 
 import subprocess  # noqa: E402

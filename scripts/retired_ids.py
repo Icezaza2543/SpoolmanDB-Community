@@ -17,6 +17,41 @@ ENTRY_FIELDS = {"replaced_by", "reason", "ref", "source", "retired_key"}
 REASONS = {"duplicate", "rename"}
 
 
+def verified_correction_transition(correction_id, binding, target, retired, current_ids):
+    """Return a reviewed correction's exact hop when it leads to ``target``."""
+    if not isinstance(binding, dict) or not isinstance(binding.get("rename"), dict):
+        return None
+    rename = binding["rename"]
+    correction_entry = retired.get(correction_id)
+    if (correction_entry is None or correction_entry.get("reason") != "rename" or
+            binding.get("key") != correction_entry.get("retired_key") or
+            set(rename) != {"replaced_by", "new_key"} or
+            not isinstance(rename.get("replaced_by"), str) or
+            not isinstance(rename.get("new_key"), str) or target not in current_ids or
+            correction_entry.get("replaced_by") not in
+            (rename["replaced_by"], target)):
+        return None
+
+    intermediate = rename["replaced_by"]
+    new_key = rename["new_key"]
+    if intermediate == target:
+        if current_ids.get(target) != new_key:
+            return None
+    else:
+        next_entry = retired.get(intermediate)
+        if (next_entry is None or next_entry.get("reason") != "rename" or
+                next_entry.get("replaced_by") != target or
+                next_entry.get("retired_key") != new_key):
+            return None
+
+    try:
+        if not corrected_rename_pair(binding["key"], new_key, binding.get("correction")):
+            return None
+    except (ValueError, TypeError):
+        return None
+    return intermediate, new_key
+
+
 def valid_source(source):
     if not isinstance(source, str):
         return False
@@ -137,55 +172,57 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                     reviewed = binding.get("rename") if isinstance(binding, dict) else None
                     if reviewed is not None:
                         if (binding.get("key") != stored_key or
-                                not isinstance(reviewed, dict) or
-                                set(reviewed) != {"replaced_by", "new_key"} or
-                                reviewed.get("replaced_by") != target or
-                                reviewed.get("new_key") != current_ids[target]):
+                                verified_correction_transition(old_id, binding, target,
+                                                               retired, current_ids) is None):
                             raise ValueError("reviewed correction mapping does not match the retired and replacement records")
-                        if not corrected_rename_pair(stored_key, current_ids[target],
-                                                     binding.get("correction")):
-                            raise ValueError("reviewed correction changes physical identity or product line")
                         old, new = None, None
                     else:
-                        old, new = rename_identity(stored_key), rename_identity(current_ids[target])
+                        matched = False
+                        try:
+                            old, new = rename_identity(stored_key), rename_identity(current_ids[target])
+                            matched = old == new
+                        except ValueError:
+                            pass
+                        if not matched:
+                            previous_target = previous.get(old_id, {}).get("replaced_by")
+                            for correction_id, correction_binding in audits.items():
+                                transition = verified_correction_transition(
+                                    correction_id, correction_binding, target, retired, current_ids)
+                                if transition is None:
+                                    continue
+                                intermediate, correction_key = transition
+                                if previous_target == correction_id:
+                                    proof_key = correction_binding["key"]
+                                elif previous_target == intermediate:
+                                    proof_key = correction_key
+                                else:
+                                    continue
+                                if identity_from_key(stored_key, audits.get(old_id)) == identity_from_key(proof_key):
+                                    old, new = None, None
+                                    matched = True
+                                    break
+                        if not matched:
+                            raise ValueError("physical color/line or package identity differs")
                 else:
                     old = identity_from_key(stored_key, audits.get(old_id))
-                    verified_correction = None
+                    verified_correction = False
+                    previous_target = previous.get(old_id, {}).get("replaced_by")
                     for correction_id, binding in audits.items():
-                        if not isinstance(binding, dict) or not isinstance(binding.get("rename"), dict):
+                        transition = verified_correction_transition(
+                            correction_id, binding, target, retired, current_ids)
+                        if transition is None:
                             continue
-                        rename = binding["rename"]
-                        if (rename.get("replaced_by") != target or
-                                binding.get("key") != retired.get(correction_id, {}).get("retired_key")):
+                        intermediate, correction_key = transition
+                        if previous_target == correction_id:
+                            proof_key = binding["key"]
+                        elif previous_target == intermediate:
+                            proof_key = correction_key
+                        else:
                             continue
-                        correction_entry = retired.get(correction_id)
-                        if (correction_entry is not None and correction_entry.get("replaced_by") == target and
-                                corrected_rename_pair(binding["key"], current_ids[target],
-                                                      binding.get("correction"))):
-                            old_target = previous.get(old_id, {}).get("replaced_by")
-                            exact = old_target == correction_id
-                            chain = exact
-                            if old_target not in (None, correction_id):
-                                chain_target = old_target
-                                while chain_target in retired:
-                                    if chain_target == correction_id:
-                                        chain = True
-                                        break
-                                    chain_target = retired[chain_target].get("replaced_by")
-                                old_target_entry = retired.get(old_target)
-                                if (old_target_entry is not None and
-                                        old_target_entry.get("replaced_by") == target):
-                                    chain = True
-                            if chain:
-                                try:
-                                    if stored_key == binding["key"]:
-                                        verified_correction = binding
-                                    elif rename_identity(stored_key) == rename_identity(binding["key"]):
-                                        verified_correction = binding
-                                except (ValueError, TypeError):
-                                    pass
+                        if old == identity_from_key(proof_key):
+                            verified_correction = True
                             break
-                    if verified_correction is not None:
+                    if verified_correction:
                         old, new = None, None
                     else:
                         target_binding = next(
