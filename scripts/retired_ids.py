@@ -6,13 +6,50 @@ import re
 import subprocess
 from urllib.parse import urlparse
 
-from scripts.duplicate_catalog import identity_from_key, rename_identity
+from scripts.duplicate_catalog import (
+    corrected_rename_identity, corrected_rename_pair, identity_from_key, rename_identity,
+)
 
 ENTRY_FIELDS = {"replaced_by", "reason", "ref", "source", "retired_key"}
 # duplicate: merged into an existing historical record with the same physical identity.
 # rename: same physical record under a new name; the replacement is a new ID that must
 #         differ only by name text repeating the manufacturer or material.
 REASONS = {"duplicate", "rename"}
+
+
+def verified_correction_transition(correction_id, binding, target, retired, current_ids):
+    """Return a reviewed correction's exact hop when it leads to ``target``."""
+    if not isinstance(binding, dict) or not isinstance(binding.get("rename"), dict):
+        return None
+    rename = binding["rename"]
+    correction_entry = retired.get(correction_id)
+    if (correction_entry is None or correction_entry.get("reason") != "rename" or
+            binding.get("key") != correction_entry.get("retired_key") or
+            set(rename) != {"replaced_by", "new_key"} or
+            not isinstance(rename.get("replaced_by"), str) or
+            not isinstance(rename.get("new_key"), str) or target not in current_ids or
+            correction_entry.get("replaced_by") not in
+            (rename["replaced_by"], target)):
+        return None
+
+    intermediate = rename["replaced_by"]
+    new_key = rename["new_key"]
+    if intermediate == target:
+        if current_ids.get(target) != new_key:
+            return None
+    else:
+        next_entry = retired.get(intermediate)
+        if (next_entry is None or next_entry.get("reason") != "rename" or
+                next_entry.get("replaced_by") != target or
+                next_entry.get("retired_key") != new_key):
+            return None
+
+    try:
+        if not corrected_rename_pair(binding["key"], new_key, binding.get("correction")):
+            return None
+    except (ValueError, TypeError):
+        return None
+    return intermediate, new_key
 
 
 def valid_source(source):
@@ -131,10 +168,78 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
         if target in current_ids:
             try:
                 if rename:
-                    old, new = rename_identity(stored_key), rename_identity(current_ids[target])
+                    binding = audits.get(old_id)
+                    reviewed = binding.get("rename") if isinstance(binding, dict) else None
+                    if reviewed is not None:
+                        if (binding.get("key") != stored_key or
+                                verified_correction_transition(old_id, binding, target,
+                                                               retired, current_ids) is None):
+                            raise ValueError("reviewed correction mapping does not match the retired and replacement records")
+                        old, new = None, None
+                    else:
+                        matched = False
+                        try:
+                            old, new = rename_identity(stored_key), rename_identity(current_ids[target])
+                            matched = old == new
+                        except ValueError:
+                            pass
+                        if not matched:
+                            previous_target = previous.get(old_id, {}).get("replaced_by")
+                            for correction_id, correction_binding in audits.items():
+                                transition = verified_correction_transition(
+                                    correction_id, correction_binding, target, retired, current_ids)
+                                if transition is None:
+                                    continue
+                                intermediate, correction_key = transition
+                                if previous_target == correction_id:
+                                    proof_keys = [correction_binding["key"]]
+                                elif previous_target == target:
+                                    proof_keys = [correction_binding["key"], correction_key]
+                                elif previous_target == intermediate:
+                                    proof_keys = [correction_key]
+                                else:
+                                    continue
+                                old_identity = identity_from_key(stored_key, audits.get(old_id))
+                                if any(old_identity == identity_from_key(proof_key) for proof_key in proof_keys):
+                                    old, new = None, None
+                                    matched = True
+                                    break
+                        if not matched:
+                            raise ValueError("physical color/line or package identity differs")
                 else:
                     old = identity_from_key(stored_key, audits.get(old_id))
-                    new = identity_from_key(current_ids[target], audits.get(target))
+                    verified_correction = False
+                    previous_target = previous.get(old_id, {}).get("replaced_by")
+                    for correction_id, binding in audits.items():
+                        transition = verified_correction_transition(
+                            correction_id, binding, target, retired, current_ids)
+                        if transition is None:
+                            continue
+                        intermediate, correction_key = transition
+                        if previous_target == correction_id:
+                            proof_keys = [binding["key"]]
+                        elif previous_target == target:
+                            proof_keys = [binding["key"], correction_key]
+                        elif previous_target == intermediate:
+                            proof_keys = [correction_key]
+                        else:
+                            continue
+                        if any(old == identity_from_key(proof_key) for proof_key in proof_keys):
+                            verified_correction = True
+                            break
+                    if verified_correction:
+                        old, new = None, None
+                    else:
+                        target_binding = next(
+                            (binding for binding in audits.values()
+                             if isinstance(binding, dict) and isinstance(binding.get("rename"), dict)
+                             and binding["rename"].get("replaced_by") == target
+                             and binding.get("key") == stored_key),
+                            None,
+                        )
+                        target_rename = target_binding.get("rename") if isinstance(target_binding, dict) else None
+                        target_key = target_binding.get("key") if target_rename is not None else current_ids[target]
+                        new = identity_from_key(target_key, audits.get(target) if target_rename is None else None)
                 if old != new:
                     raise ValueError("physical color/line or package identity differs")
             except (ValueError, TypeError) as exc:
@@ -143,7 +248,7 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
 
 
 def reviewed_bindings(payload, root):
-    """Local tracked review references can carry lossless per-ID decompositions."""
+    """Local tracked review references carry the approved correction and per-ID bindings."""
     bindings = {}
     for entry in payload.get("retired", {}).values():
         ref = entry.get("ref", "") if isinstance(entry, dict) else ""
@@ -155,9 +260,20 @@ def reviewed_bindings(payload, root):
         if not path.is_file():
             raise ValueError(f"referenced review audit must exist: {ref}")
         review = load_contract(path, root, path.name, "bindings")
+        if not isinstance(review, dict):
+            raise ValueError("review audit must be an object")
+        correction = review.get("correction")
+        if correction is not None:
+            if (review.get("version") != 1 or not isinstance(correction, dict) or
+                    set(correction) != {"manufacturer", "file", "spelling"}):
+                raise ValueError("review audit correction must contain manufacturer, file and spelling")
         if not isinstance(review.get("bindings"), dict):
             raise ValueError(f"review {ref} requires identity bindings")
         for identity, binding in review["bindings"].items():
+            if not isinstance(binding, dict):
+                raise ValueError(f"reviewed binding {identity} must be an object")
+            if correction is not None:
+                binding = {**binding, "correction": correction}
             if identity in bindings and bindings[identity] != binding:
                 raise ValueError(f"conflicting reviewed bindings for {identity}")
             bindings[identity] = binding
