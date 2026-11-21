@@ -4132,6 +4132,62 @@
       ]
     },
     {
+      "name": "Glow {color_name}",
+      "material": "TPU",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 225,
+      "extruder_temp_range": [
+        215,
+        235
+      ],
+      "bed_temp": 50,
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "glow": true,
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "CD6EE2"
+        },
+        {
+          "name": "Light Green",
+          "hex": "9AF364"
+        },
+        {
+          "name": "Deep Blue",
+          "hex": "0BA6F4"
+        },
+        {
+          "name": "Pink",
+          "hex": "FADDD2"
+        },
+        {
+          "name": "Green",
+          "hex": "21F784"
+        },
+        {
+          "name": "Yellow",
+          "hex": "E0D86F"
+        },
+        {
+          "name": "Blue",
+          "hex": "3DD7FC"
+        }
+      ]
+    },
+    {
       "name": "Antibacterial {color_name}",
       "material": "TPU",
       "density": 1.24,
