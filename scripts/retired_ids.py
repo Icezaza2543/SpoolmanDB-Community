@@ -150,15 +150,54 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                         old, new = rename_identity(stored_key), rename_identity(current_ids[target])
                 else:
                     old = identity_from_key(stored_key, audits.get(old_id))
-                    target_binding = next(
-                        (binding for binding in audits.values()
-                         if isinstance(binding, dict) and isinstance(binding.get("rename"), dict)
-                         and binding["rename"].get("replaced_by") == target),
-                        None,
-                    )
-                    target_rename = target_binding.get("rename") if isinstance(target_binding, dict) else None
-                    target_key = target_binding.get("key") if target_rename is not None else current_ids[target]
-                    new = identity_from_key(target_key, audits.get(target) if target_rename is None else None)
+                    verified_correction = None
+                    for correction_id, binding in audits.items():
+                        if not isinstance(binding, dict) or not isinstance(binding.get("rename"), dict):
+                            continue
+                        rename = binding["rename"]
+                        if (rename.get("replaced_by") != target or
+                                binding.get("key") != retired.get(correction_id, {}).get("retired_key")):
+                            continue
+                        correction_entry = retired.get(correction_id)
+                        if (correction_entry is not None and correction_entry.get("replaced_by") == target and
+                                corrected_rename_pair(binding["key"], current_ids[target],
+                                                      binding.get("correction"))):
+                            old_target = previous.get(old_id, {}).get("replaced_by")
+                            exact = old_target == correction_id
+                            chain = exact
+                            if old_target not in (None, correction_id):
+                                chain_target = old_target
+                                while chain_target in retired:
+                                    if chain_target == correction_id:
+                                        chain = True
+                                        break
+                                    chain_target = retired[chain_target].get("replaced_by")
+                                old_target_entry = retired.get(old_target)
+                                if (old_target_entry is not None and
+                                        old_target_entry.get("replaced_by") == target):
+                                    chain = True
+                            if chain:
+                                try:
+                                    if stored_key == binding["key"]:
+                                        verified_correction = binding
+                                    elif rename_identity(stored_key) == rename_identity(binding["key"]):
+                                        verified_correction = binding
+                                except (ValueError, TypeError):
+                                    pass
+                            break
+                    if verified_correction is not None:
+                        old, new = None, None
+                    else:
+                        target_binding = next(
+                            (binding for binding in audits.values()
+                             if isinstance(binding, dict) and isinstance(binding.get("rename"), dict)
+                             and binding["rename"].get("replaced_by") == target
+                             and binding.get("key") == stored_key),
+                            None,
+                        )
+                        target_rename = target_binding.get("rename") if isinstance(target_binding, dict) else None
+                        target_key = target_binding.get("key") if target_rename is not None else current_ids[target]
+                        new = identity_from_key(target_key, audits.get(target) if target_rename is None else None)
                 if old != new:
                     raise ValueError("physical color/line or package identity differs")
             except (ValueError, TypeError) as exc:

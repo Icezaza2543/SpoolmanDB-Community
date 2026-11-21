@@ -256,7 +256,19 @@ def corrected_rename_pair(old_key, new_key, correction):
     corrected_old[1] = new_manufacturer
     pattern = re.compile(re.escape(old_spelling), re.IGNORECASE)
     corrected_old[2] = pattern.sub(new_spelling, corrected_old[2])
-    corrected_old[3] = pattern.sub(new_spelling, corrected_old[3])
+    if corrected_old[2].count("{color_name}") != 1:
+        return False
+    prefix, suffix = corrected_old[2].split("{color_name}")
+    old_prefix, old_suffix = old_parts[2].split("{color_name}") if old_parts[2].count("{color_name}") == 1 else ("", "")
+    old_end = len(old_parts[3]) - len(old_suffix) if old_suffix else len(old_parts[3])
+    if not old_parts[3].startswith(old_prefix):
+        return False
+    if old_suffix and not old_parts[3].endswith(old_suffix):
+        return False
+    color = old_parts[3][len(old_prefix):old_end]
+    if not color:
+        return False
+    corrected_old[3] = prefix + color + suffix
     return rename_identity("::".join(corrected_old)) == rename_identity(new_key)
 
 

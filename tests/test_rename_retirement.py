@@ -171,6 +171,20 @@ def test_reviewed_manufacturer_correction_accepts_spelling_and_material_line():
     assert corrected_rename_pair(old_key, new_key, correction) is True
 
 
+def test_reviewed_manufacturer_correction_never_rewrites_color_label():
+    from scripts.duplicate_catalog import corrected_rename_pair
+    old_key = key("{color_name}", "Grillon", material="PLA", manufacturer="NTH Grillon",
+                  filename="NTHGrillon.json")
+    new_key = key("{color_name}", "Grilon", material="PLA", manufacturer="NTH Grilon",
+                  filename="NTHGrilon.json")
+    correction = {
+        "manufacturer": ["NTH Grillon", "NTH Grilon"],
+        "file": ["NTHGrillon.json", "NTHGrilon.json"],
+        "spelling": ["Grillon", "Grilon"],
+    }
+    assert corrected_rename_pair(old_key, new_key, correction) is False
+
+
 def test_rename_source_keeps_formatting_and_only_touches_matching_material():
     text = ('{\n  "manufacturer": "Acme",\n  "filaments": [\n'
             '    {"name": "PETG - {color_name}", "material": "PETG", "colors": [{"name": "PETG - x"}]},\n'
@@ -312,6 +326,43 @@ def test_registry_repointed_duplicate_through_correction_passes_check_registry()
         audits=audited,
     )
     assert errors == []
+
+
+def test_registry_repoint_rejects_unrelated_correction_binding():
+    from scripts.retired_ids import check_registry
+    old_key = key("grillon3 PLA | {color_name}", "Black", material="PLA", manufacturer="NTH Grillon",
+                  filename="NTHGrillon.json")
+    new_key = key("grilon3 {color_name}", "Black", material="PLA", manufacturer="NTH Grilon",
+                  filename="NTHGrilon.json")
+    unrelated_key = key("Totally Different {color_name}", "Black", material="PLA",
+                        manufacturer="NTH Grillon", filename="NTHGrillon.json")
+    base_registry = {"version": 1, "retired": {
+        "older": {"replaced_by": "old-target", "reason": "duplicate", "ref": "#66",
+                  "source": "a" * 40, "retired_key": old_key},
+    }}
+    head_registry = {"version": 1, "retired": {
+        "older": {"replaced_by": "new-target", "reason": "duplicate", "ref": "#66",
+                  "source": "a" * 40, "retired_key": old_key},
+        "old-target": {"replaced_by": "new-target", "reason": "rename", "ref": "#76",
+                       "source": "b" * 40, "retired_key": unrelated_key},
+    }}
+    audited = {
+        "old-target": {"key": unrelated_key,
+                       "rename": {"replaced_by": "new-target", "new_key": new_key},
+                       "correction": {
+                           "manufacturer": ["NTH Grillon", "NTH Grilon"],
+                           "file": ["NTHGrillon.json", "NTHGrilon.json"],
+                           "spelling": ["Grillon", "Grilon"],
+                       }},
+    }
+    errors, _, _ = check_registry(
+        head_registry, base_registry,
+        {unrelated_key: "old-target"},
+        {new_key: "new-target"},
+        {new_key: "new-target"},
+        audits=audited,
+    )
+    assert any("identity mismatch" in error for error in errors)
 
 
 # --- End-to-end helper runs in a scratch git repository ---
