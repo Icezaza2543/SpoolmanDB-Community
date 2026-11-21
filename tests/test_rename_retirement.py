@@ -449,6 +449,46 @@ def test_registry_repoint_alias_survives_sequential_correction_and_rename(order)
     assert head_retired["alias"]["ref"] == base_retired["alias"]["ref"]
 
 
+def test_registry_repoint_duplicate_validates_against_next_base_after_correction():
+    from scripts.retired_ids import check_registry
+
+    old_key = key("grillon3 PLA | {color_name}", "Black", material="PLA",
+                  manufacturer="NTH Grillon", filename="NTHGrillon.json")
+    alias_key = key("NTH Grillon grillon3 PLA | {color_name}", "Black", material="PLA",
+                    manufacturer="NTH Grillon", filename="NTHGrillon.json")
+    new_key = key("grilon3 PLA | {color_name}", "Black", material="PLA",
+                  manufacturer="NTH Grilon", filename="NTHGrilon.json")
+    alias_id, target_id, new_id = "old-alias", "old-target", "new-target"
+    retired = {
+        alias_id: {"replaced_by": new_id, "reason": "duplicate", "ref": "#66",
+                   "source": "a" * 40, "retired_key": alias_key},
+        target_id: {"replaced_by": new_id, "reason": "rename", "ref": "#76",
+                    "source": "b" * 40, "retired_key": old_key},
+    }
+    registry = {"version": 1, "retired": retired}
+    audited = {
+        target_id: {"key": old_key,
+                    "rename": {"replaced_by": new_id, "new_key": new_key},
+                    "correction": {
+                        "manufacturer": ["NTH Grillon", "NTH Grilon"],
+                        "file": ["NTHGrillon.json", "NTHGrilon.json"],
+                        "spelling": ["Grillon", "Grilon"],
+                    }},
+    }
+
+    errors, _, _ = check_registry(
+        registry, registry,
+        {alias_key: alias_id, old_key: target_id},
+        {new_key: new_id},
+        {new_key: new_id},
+        audits=audited,
+    )
+    assert errors == []
+    assert retired[alias_id]["replaced_by"] == new_id
+    assert retired[alias_id]["retired_key"] == alias_key
+    assert retired[alias_id]["ref"] == "#66"
+
+
 # --- End-to-end helper runs in a scratch git repository ---
 
 import subprocess  # noqa: E402

@@ -192,12 +192,15 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                                     continue
                                 intermediate, correction_key = transition
                                 if previous_target == correction_id:
-                                    proof_key = correction_binding["key"]
+                                    proof_keys = [correction_binding["key"]]
+                                elif previous_target == target:
+                                    proof_keys = [correction_binding["key"], correction_key]
                                 elif previous_target == intermediate:
-                                    proof_key = correction_key
+                                    proof_keys = [correction_key]
                                 else:
                                     continue
-                                if identity_from_key(stored_key, audits.get(old_id)) == identity_from_key(proof_key):
+                                old_identity = identity_from_key(stored_key, audits.get(old_id))
+                                if any(old_identity == identity_from_key(proof_key) for proof_key in proof_keys):
                                     old, new = None, None
                                     matched = True
                                     break
@@ -214,12 +217,14 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                             continue
                         intermediate, correction_key = transition
                         if previous_target == correction_id:
-                            proof_key = binding["key"]
+                            proof_keys = [binding["key"]]
+                        elif previous_target == target:
+                            proof_keys = [binding["key"], correction_key]
                         elif previous_target == intermediate:
-                            proof_key = correction_key
+                            proof_keys = [correction_key]
                         else:
                             continue
-                        if old == identity_from_key(proof_key):
+                        if any(old == identity_from_key(proof_key) for proof_key in proof_keys):
                             verified_correction = True
                             break
                     if verified_correction:
