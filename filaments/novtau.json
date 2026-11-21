@@ -4220,6 +4220,128 @@
       ]
     },
     {
+      "name": "Multi-Color {color_name}",
+      "material": "TPU",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "extruder_temp_range": [
+        210,
+        235
+      ],
+      "bed_temp": 50,
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Aurora",
+          "hexes": [
+              "0DAC2C",
+              "EBCD45",
+              "8C2E26"
+          ]
+        },
+        {
+          "name": "Sea Glass",
+          "hexes": [
+              "8FE381",
+              "40A9BC",
+              "8449B2"
+          ]
+        },
+        {
+          "name": "Candy",
+          "hexes": [
+              "F260D8",
+              "FCD855",
+              "45C158"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Multi-Color Rainbow {color_name}",
+      "material": "TPU-85A",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "extruder_temp_range": [
+        210,
+        235
+      ],
+      "bed_temp": 50,
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Blue-Purple",
+          "hexes": [
+              "71BCEB",
+              "ECC2F4"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Multi-Color Rainbow {color_name}",
+      "material": "TPU-90A",
+      "density": 1.185,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "extruder_temp_range": [
+        210,
+        235
+      ],
+      "bed_temp": 50,
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "multi_color_direction": "longitudinal",
+      "colors": [
+        {
+          "name": "Blue-Purple",
+          "hexes": [
+              "71BCEB",
+              "ECC2F4"
+          ]
+        }
+      ]
+    },
+    {
       "name": "{color_name}",
       "material": "PEBA",
       "density": 1.24,
