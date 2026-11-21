@@ -1318,10 +1318,11 @@
     {
       "name": "High Speed Matte PLA {color_name}",
       "material": "PLA",
-      "density": 1.24,
+      "density": 1.36,
       "weights": [
         {
           "weight": 1100,
+          "spool_weight": 172,
           "spool_type": "plastic"
         }
       ],
@@ -1331,7 +1332,58 @@
       "colors": [
         {
           "name": "Black",
-          "hex": "000000"
+          "hex": "1F2123",
+          "finish": "matte"
+        },
+        {
+          "name": "Olive Green",
+          "hex": "5A6D3D",
+          "finish": "matte"
+        },
+        {
+          "name": "Mint Green",
+          "hex": "00C7B1",
+          "finish": "matte"
+        },
+        {
+          "name": "Chocolate",
+          "hex": "906557",
+          "finish": "matte"
+        },
+        {
+          "name": "Gray",
+          "hex": "63666A",
+          "finish": "matte"
+        },
+        {
+          "name": "Lemon Yellow",
+          "hex": "F2F0A1",
+          "finish": "matte"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "AEEAFF",
+          "finish": "matte"
+        },
+        {
+          "name": "Sunny Orange",
+          "hex": "FF8C54",
+          "finish": "matte"
+        },
+        {
+          "name": "Sakura Pink",
+          "hex": "FFE0E8",
+          "finish": "matte"
+        },
+        {
+          "name": "Cherry Red",
+          "hex": "DF484F",
+          "finish": "matte"
+        },
+        {
+          "name": "White",
+          "hex": "FFFFF9",
+          "finish": "matte"
         }
       ],
       "country_of_origin": "HK",
