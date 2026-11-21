@@ -387,6 +387,128 @@
       ]
     },
     {
+      "name": "Chameleon {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 145,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "extruder_temp_range": [
+        200,
+        240
+      ],
+      "bed_temp": 55,
+      "bed_temp_range": [
+        35,
+        60
+      ],
+      "multi_color_direction": "coaxial",
+      "colors": [
+        {
+          "name": "Black",
+          "hexes": [
+              "1B1B24",
+              "536D74",
+              "382947"
+          ]
+        },
+        {
+          "name": "Klein Blue",
+          "hexes": [
+              "2F55B6",
+              "81C6DC"
+          ]
+        },
+        {
+          "name": "Polaris",
+          "hexes": [
+              "0F6970",
+              "60DACE",
+              "2C88AB",
+              "353760"
+          ]
+        },
+        {
+          "name": "Red Rose",
+          "hexes": [
+              "F7A7BC",
+              "F2857A"
+          ]
+        },
+        {
+          "name": "Violet",
+          "hexes": [
+              "B07DD7",
+              "C9D8ED"
+          ]
+        },
+        {
+          "name": "Four-Leaf Clover",
+          "hexes": [
+              "54B17A",
+              "99D581"
+          ]
+        },
+        {
+          "name": "Fantasy Blue",
+          "hexes": [
+              "1C394F",
+              "487687"
+          ]
+        },
+        {
+          "name": "Fantasy Gold",
+          "hexes": [
+              "96967E",
+              "5A6D5D"
+          ]
+        },
+        {
+          "name": "Fantasy Purple",
+          "hexes": [
+              "685F7A",
+              "383943"
+          ]
+        },
+        {
+          "name": "Fantasy Green",
+          "hexes": [
+              "1F2E33",
+              "68866B"
+          ]
+        },
+        {
+          "name": "Red-Purple",
+          "hexes": [
+              "18243C",
+              "3A315C"
+          ]
+        },
+        {
+          "name": "Green-Purple",
+          "hexes": [
+            "1C4C44",
+            "3A315C"
+          ]
+        },
+        {
+          "name": "Blue-Purple",
+          "hexes": [
+              "275081",
+              "3A315C"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Matte {color_name}",
       "material": "PLA",
       "density": 1.24,
