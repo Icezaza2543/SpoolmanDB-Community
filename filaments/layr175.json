@@ -5,14 +5,29 @@
       "name": "{color_name}",
       "material": "PLA",
       "density": 1.24,
-      "weights": [{"weight": 1000}],
-      "diameters": [1.75],
+      "weights": [
+        {
+          "weight": 1000
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
       "extruder_temp": 230,
-      "extruder_temp_range": [205, 230],
+      "extruder_temp_range": [
+        205,
+        230
+      ],
       "bed_temp": 55,
       "country_of_origin": "SE",
       "colors": [
-        {"name": "MORPH", "hex": null, "codes": ["LYR-HPLA-MOR"]}
+        {
+          "name": "MORPH",
+          "hex": null,
+          "codes": [
+            "LYR-HPLA-MOR"
+          ]
+        }
       ]
     }
   ]
