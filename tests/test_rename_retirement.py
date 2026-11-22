@@ -536,6 +536,27 @@ def test_registry_rejects_rewriting_preserved_correction_audit():
     assert any("audit was rewritten" in error for error in errors)
 
 
+def test_duplicate_registry_uses_reviewed_target_identity_decomposition():
+    from scripts.retired_ids import check_registry
+    old_key = key("{color_name}", "Metallic Brick", material="PLA")
+    target_key = key("Metallic {color_name}", "Brick", material="PLA")
+    old_id, target_id = "old-duplicate", "target"
+    retired = {"version": 1, "retired": {
+        old_id: {"replaced_by": target_id, "reason": "duplicate", "ref": "#review",
+                 "source": "a" * 40, "retired_key": old_key},
+    }}
+    audits = {
+        old_id: {"key": old_key, "line": "metallic", "color": "brick"},
+        target_id: {"key": target_key, "line": "metallic", "color": "brick"},
+    }
+    errors, _, _ = check_registry(
+        retired, {"version": 1, "retired": {}},
+        {old_key: old_id, target_key: target_id},
+        {target_key: target_id}, {target_key: target_id}, audits=audits,
+    )
+    assert errors == []
+
+
 # --- End-to-end helper runs in a scratch git repository ---
 
 import subprocess  # noqa: E402

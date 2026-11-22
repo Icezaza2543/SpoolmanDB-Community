@@ -245,7 +245,7 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                     if verified_correction:
                         old, new = None, None
                     else:
-                        new = identity_from_key(current_ids[target])
+                        new = identity_from_key(current_ids[target], audits.get(target))
                 if old != new:
                     raise ValueError("physical color/line or package identity differs")
             except (ValueError, TypeError) as exc:
