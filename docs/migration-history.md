@@ -18,6 +18,46 @@ CI rejects unresolved candidates under the documented duplicate-matching rules. 
 
 This is an **intentional breaking catalog migration**. It applies the upstream Ambrosia name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 6 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-ambrosia-rename.md) for the full mapping.
 
+### Prusament rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Prusament name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 1 ID is retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-prusament-rename.md) for the full mapping.
+
+### QIDI Tech rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream QIDI Tech name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 7 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. The material change is not included. See the [migration record](audits/2026-11-20-qiditech-rename.md) for the full mapping.
+
+### Formfutura rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Formfutura name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 350 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-formfutura-rename.md) for the full mapping.
+
+### Creality rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Creality name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 3 groups. Exactly 13 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-creality-rename.md) for the full mapping.
+
+### ELEGOO rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream ELEGOO name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 3 groups. Exactly 48 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. 12 earlier retirements are re-pointed to the final IDs. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-elegoo-rename.md) for the full mapping.
+
+### Printed Solid rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Printed Solid name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 2 groups. Exactly 47 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-printedsolid-rename.md) for the full mapping.
+
+### Rosa3D rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Rosa3D name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 41 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-rosa3d-rename.md) for the full mapping.
+
+### Soleyin rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Soleyin name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 17 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-soleyin-rename.md) for the full mapping.
+
+### Sunlu rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Sunlu name cleanup ([Donkie/SpoolmanDB#527](https://github.com/Donkie/SpoolmanDB/pull/527)) to 1 group. Exactly 12 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-sunlu-rename.md) for the full mapping.
+
+### Overture Easy PLA rename migration (2026-11-20)
+
+This is an **intentional breaking catalog migration**. It aligns Overture Easy PLA with upstream ([Donkie/SpoolmanDB#532](https://github.com/Donkie/SpoolmanDB/pull/532)) by renaming 2 groups. Exactly 28 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Material, package, colour and metadata are unchanged. See the [migration record](audits/2026-11-20-overture-easy-rename.md) for the full mapping.
+
 ### Overture rename migration (2026-11-19)
 
 This is an **intentional breaking catalog migration**. It applies the upstream Overture name cleanup ([Donkie/SpoolmanDB#526](https://github.com/Donkie/SpoolmanDB/pull/526)) to 55 groups. Exactly 90 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,434 records. Five earlier duplicate retirements are re-pointed to the final IDs. Material, package, colour and metadata are unchanged. The TPU material change is not included, and three colours whose names upstream also shortened (`Rock White`, `Rock Rainbow`, `Silk Purple`) keep their current IDs. Community keeps the `Light Gray` spelling. See the [migration record](audits/2026-11-19-overture-rename.md) for the full mapping.
