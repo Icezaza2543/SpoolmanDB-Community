@@ -52,6 +52,40 @@ def verified_correction_transition(correction_id, binding, target, retired, curr
     return intermediate, new_key
 
 
+def correction_chain_matches(stored_key, correction_id, binding, target,
+                             retired, current_ids, previous_target):
+    """Match an alias to the exact reviewed correction hop and any ordinary rename after it."""
+    transition = verified_correction_transition(
+        correction_id, binding, target, retired, current_ids)
+    if transition is None:
+        return False
+    intermediate, correction_key = transition
+    if previous_target not in (correction_id, intermediate, target):
+        return False
+
+    proof_keys = {
+        binding["key"],
+        correction_key,
+        current_ids[target],
+    }
+    try:
+        stored_identity = identity_from_key(stored_key)
+        if any(stored_identity == identity_from_key(proof_key) for proof_key in proof_keys):
+            return True
+        for proof_key in proof_keys:
+            try:
+                if rename_identity(stored_key) == rename_identity(proof_key):
+                    return True
+            except ValueError:
+                pass
+        for proof_key in (correction_key, binding["key"]):
+            if corrected_rename_pair(proof_key, correction_key, binding.get("correction")):
+                return identity_from_key(stored_key) == identity_from_key(proof_key)
+    except (ValueError, TypeError):
+        pass
+    return False
+
+
 def valid_source(source):
     if not isinstance(source, str):
         return False
@@ -175,6 +209,10 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                                 verified_correction_transition(old_id, binding, target,
                                                                retired, current_ids) is None):
                             raise ValueError("reviewed correction mapping does not match the retired and replacement records")
+                        if old_id in previous:
+                            previous_target = previous[old_id]["replaced_by"]
+                            if previous_target in retired and reviewed["replaced_by"] != previous_target:
+                                raise ValueError("reviewed correction audit was rewritten instead of preserved")
                         old, new = None, None
                     else:
                         matched = False
@@ -186,21 +224,9 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                         if not matched:
                             previous_target = previous.get(old_id, {}).get("replaced_by")
                             for correction_id, correction_binding in audits.items():
-                                transition = verified_correction_transition(
-                                    correction_id, correction_binding, target, retired, current_ids)
-                                if transition is None:
-                                    continue
-                                intermediate, correction_key = transition
-                                if previous_target == correction_id:
-                                    proof_keys = [correction_binding["key"]]
-                                elif previous_target == target:
-                                    proof_keys = [correction_binding["key"], correction_key]
-                                elif previous_target == intermediate:
-                                    proof_keys = [correction_key]
-                                else:
-                                    continue
-                                old_identity = identity_from_key(stored_key, audits.get(old_id))
-                                if any(old_identity == identity_from_key(proof_key) for proof_key in proof_keys):
+                                if correction_chain_matches(
+                                        stored_key, correction_id, correction_binding,
+                                        target, retired, current_ids, previous_target):
                                     old, new = None, None
                                     matched = True
                                     break
@@ -211,35 +237,15 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                     verified_correction = False
                     previous_target = previous.get(old_id, {}).get("replaced_by")
                     for correction_id, binding in audits.items():
-                        transition = verified_correction_transition(
-                            correction_id, binding, target, retired, current_ids)
-                        if transition is None:
-                            continue
-                        intermediate, correction_key = transition
-                        if previous_target == correction_id:
-                            proof_keys = [binding["key"]]
-                        elif previous_target == target:
-                            proof_keys = [binding["key"], correction_key]
-                        elif previous_target == intermediate:
-                            proof_keys = [correction_key]
-                        else:
-                            continue
-                        if any(old == identity_from_key(proof_key) for proof_key in proof_keys):
+                        if correction_chain_matches(
+                                stored_key, correction_id, binding,
+                                target, retired, current_ids, previous_target):
                             verified_correction = True
                             break
                     if verified_correction:
                         old, new = None, None
                     else:
-                        target_binding = next(
-                            (binding for binding in audits.values()
-                             if isinstance(binding, dict) and isinstance(binding.get("rename"), dict)
-                             and binding["rename"].get("replaced_by") == target
-                             and binding.get("key") == stored_key),
-                            None,
-                        )
-                        target_rename = target_binding.get("rename") if isinstance(target_binding, dict) else None
-                        target_key = target_binding.get("key") if target_rename is not None else current_ids[target]
-                        new = identity_from_key(target_key, audits.get(target) if target_rename is None else None)
+                        new = identity_from_key(current_ids[target])
                 if old != new:
                     raise ValueError("physical color/line or package identity differs")
             except (ValueError, TypeError) as exc:

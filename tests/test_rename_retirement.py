@@ -185,6 +185,20 @@ def test_reviewed_manufacturer_correction_never_rewrites_color_label():
     assert corrected_rename_pair(old_key, new_key, correction) is False
 
 
+def test_reviewed_manufacturer_correction_rejects_unrelated_line_change():
+    from scripts.duplicate_catalog import corrected_rename_pair
+    old_key = key("grillon3 Basic | {color_name}", "Black", material="PLA",
+                  manufacturer="NTH Grillon", filename="NTHGrillon.json")
+    new_key = key("grilon3 HF | {color_name}", "Black", material="PLA",
+                  manufacturer="NTH Grilon", filename="NTHGrilon.json")
+    correction = {
+        "manufacturer": ["NTH Grillon", "NTH Grilon"],
+        "file": ["NTHGrillon.json", "NTHGrilon.json"],
+        "spelling": ["Grillon", "Grilon"],
+    }
+    assert corrected_rename_pair(old_key, new_key, correction) is False
+
+
 def test_rename_source_keeps_formatting_and_only_touches_matching_material():
     text = ('{\n  "manufacturer": "Acme",\n  "filaments": [\n'
             '    {"name": "PETG - {color_name}", "material": "PETG", "colors": [{"name": "PETG - x"}]},\n'
@@ -487,6 +501,39 @@ def test_registry_repoint_duplicate_validates_against_next_base_after_correction
     assert retired[alias_id]["replaced_by"] == new_id
     assert retired[alias_id]["retired_key"] == alias_key
     assert retired[alias_id]["ref"] == "#66"
+
+
+def test_registry_rejects_rewriting_preserved_correction_audit():
+    from scripts.retired_ids import check_registry
+    b_key = key("grillon3 PLA | {color_name}", "Black", material="PLA",
+                manufacturer="NTH Grillon", filename="NTHGrillon.json")
+    c_key = key("grilon3 PLA | {color_name}", "Black", material="PLA",
+                manufacturer="NTH Grilon", filename="NTHGrilon.json")
+    d_key = key("grilon3 {color_name}", "Black", material="PLA",
+                manufacturer="NTH Grilon", filename="NTHGrilon.json")
+    base = {"version": 1, "retired": {
+        "b": {"replaced_by": "c", "reason": "rename", "ref": "#76",
+              "source": "b" * 40, "retired_key": b_key},
+    }}
+    head = {"version": 1, "retired": {
+        "b": {**base["retired"]["b"], "replaced_by": "d"},
+        "c": {"replaced_by": "d", "reason": "rename", "ref": "#77",
+              "source": "c" * 40, "retired_key": c_key},
+    }}
+    audited = {
+        "b": {"key": b_key,
+              "rename": {"replaced_by": "d", "new_key": d_key},
+              "correction": {
+                  "manufacturer": ["NTH Grillon", "NTH Grilon"],
+                  "file": ["NTHGrillon.json", "NTHGrilon.json"],
+                  "spelling": ["Grillon", "Grilon"],
+              }},
+    }
+    errors, _, _ = check_registry(
+        head, base, {b_key: "b", c_key: "c"},
+        {d_key: "d"}, {d_key: "d"}, audits=audited,
+    )
+    assert any("audit was rewritten" in error for error in errors)
 
 
 # --- End-to-end helper runs in a scratch git repository ---

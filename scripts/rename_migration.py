@@ -343,6 +343,11 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
         if entry is None:
             errors.append(f"registry {old_id}: existing retirement removed")
             continue
+        binding = rename_bindings.get(old_id, {})
+        reviewed = binding.get("rename") if isinstance(binding, dict) else None
+        if reviewed is not None:
+            if prev["replaced_by"] in after and reviewed.get("replaced_by") != prev["replaced_by"]:
+                errors.append(f"registry {old_id}: reviewed correction audit was rewritten instead of preserved")
         changed = sorted(field for field in prev.keys() | entry.keys() if prev.get(field) != entry.get(field))
         if not changed:
             continue
