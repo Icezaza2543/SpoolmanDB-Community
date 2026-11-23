@@ -17,6 +17,11 @@ ENTRY_FIELDS = {"replaced_by", "reason", "ref", "source", "retired_key"}
 REASONS = {"duplicate", "rename"}
 
 
+def prior_hop_matches(previous, intermediate, target, key):
+    hop = previous.get(intermediate, {})
+    return hop.get("reason") == "rename" and hop.get("retired_key") == key and hop.get("replaced_by") == target
+
+
 def verified_correction_transition(correction_id, binding, target, retired, current_ids):
     """Return a reviewed correction's exact hop when it leads to ``target``."""
     if not isinstance(binding, dict) or not isinstance(binding.get("rename"), dict):
@@ -53,14 +58,15 @@ def verified_correction_transition(correction_id, binding, target, retired, curr
 
 
 def correction_chain_matches(stored_key, correction_id, binding, target,
-                             retired, current_ids, previous_target):
+                             retired, current_ids, previous_target, previous):
     """Match an alias to the exact reviewed correction hop and any ordinary rename after it."""
     transition = verified_correction_transition(
         correction_id, binding, target, retired, current_ids)
     if transition is None:
         return False
     intermediate, correction_key = transition
-    if previous_target not in (correction_id, intermediate, target):
+    if (previous_target not in (correction_id, intermediate, target)
+            and not prior_hop_matches(previous, intermediate, previous_target, correction_key)):
         return False
 
     proof_keys = {
@@ -211,7 +217,8 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                             raise ValueError("reviewed correction mapping does not match the retired and replacement records")
                         if old_id in previous:
                             previous_target = previous[old_id]["replaced_by"]
-                            if previous_target in retired and reviewed["replaced_by"] != previous_target:
+                            if (previous_target in retired and reviewed["replaced_by"] != previous_target
+                                    and not prior_hop_matches(previous, reviewed["replaced_by"], previous_target, reviewed["new_key"])):
                                 raise ValueError("reviewed correction audit was rewritten instead of preserved")
                         old, new = None, None
                     else:
@@ -226,7 +233,7 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                             for correction_id, correction_binding in audits.items():
                                 if correction_chain_matches(
                                         stored_key, correction_id, correction_binding,
-                                        target, retired, current_ids, previous_target):
+                                        target, retired, current_ids, previous_target, previous):
                                     old, new = None, None
                                     matched = True
                                     break
@@ -239,7 +246,7 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
                     for correction_id, binding in audits.items():
                         if correction_chain_matches(
                                 stored_key, correction_id, binding,
-                                target, retired, current_ids, previous_target):
+                                target, retired, current_ids, previous_target, previous):
                             verified_correction = True
                             break
                     if verified_correction:

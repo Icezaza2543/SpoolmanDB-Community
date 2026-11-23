@@ -68,9 +68,9 @@ from scripts.compile_id_baseline import (  # noqa: E402
     BASELINE_PATH, check_baseline_manifest_detailed, compile_current_id_manifest, load_baseline_payload,
 )
 from scripts.duplicate_catalog import (
-    catalog_records, corrected_rename_identity, corrected_rename_pair, rename_identity,
+    catalog_records, corrected_rename_identity, corrected_rename_pair, manufacturer_spelling, rename_identity,
 )  # noqa: E402
-from scripts.retired_ids import load_contract, reviewed_bindings, valid_source  # noqa: E402
+from scripts.retired_ids import load_contract, prior_hop_matches, reviewed_bindings, valid_source  # noqa: E402
 
 REGISTRY_PATH = ROOT / "contracts" / "retired_ids.json"
 # The only compiled fields a rename may change.
@@ -285,17 +285,7 @@ def build_correction_audit(pairs, evidence, previous_file, new_file,
         for old_id, new_id, old_key, new_key in pairs
     }
     old_manufacturer, new_manufacturer = manufacturer_rename
-    old_words = old_manufacturer.split()
-    new_words = new_manufacturer.split()
-    differing = [(old, new) for old, new in zip(old_words, new_words)
-                 if old.casefold() != new.casefold()]
-    if len(old_words) == len(new_words) and len(differing) == 1:
-        spelling = list(differing[0])
-    else:
-        # One reviewed manufacturer pair is always explicit in the audit.  If
-        # it cannot be decomposed safely, preserve exact manufacturer names
-        # and still require correction-mode identity validation.
-        spelling = [old_manufacturer, new_manufacturer]
+    spelling = manufacturer_spelling(old_manufacturer, new_manufacturer)
     return {
         "version": 1,
         "evidence": evidence,
@@ -346,7 +336,8 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
         binding = rename_bindings.get(old_id, {})
         reviewed = binding.get("rename") if isinstance(binding, dict) else None
         if reviewed is not None:
-            if prev["replaced_by"] in after and reviewed.get("replaced_by") != prev["replaced_by"]:
+            if (prev["replaced_by"] in after and reviewed.get("replaced_by") != prev["replaced_by"]
+                    and not prior_hop_matches(before, reviewed.get("replaced_by"), prev["replaced_by"], reviewed.get("new_key"))):
                 errors.append(f"registry {old_id}: reviewed correction audit was rewritten instead of preserved")
         changed = sorted(field for field in prev.keys() | entry.keys() if prev.get(field) != entry.get(field))
         if not changed:
@@ -505,6 +496,16 @@ def verify_main(base_ref, if_renames=False):
     without checking, so ordinary data changes keep their own workflow."""
     base_registry = load_contract(base_ref, ROOT, "retired_ids.json", "retired")
     head_registry = load_contract(REGISTRY_PATH, ROOT, "retired_ids.json", "retired")
+    # Even an audit-only edit must not silently change the evidence for a
+    # previously approved correction. Compare to Git's trusted base before
+    # taking the no-new-renames shortcut.
+    refs = {entry["ref"] for old_id, entry in base_registry["retired"].items()
+            if entry.get("reason") == "rename" and old_id in head_registry["retired"]
+            and entry.get("ref", "").startswith("docs/audits/") and entry["ref"].endswith(".json")}
+    if refs and subprocess.run(["git", "--literal-pathspecs", "diff", "--quiet", base_ref, "--", *sorted(refs)],
+                               cwd=ROOT).returncode:
+        print("ERROR: historical rename audit differs from trusted base", file=sys.stderr)
+        return 1
     if if_renames and not any(entry.get("reason") == "rename" for old_id, entry in head_registry["retired"].items()
                               if old_id not in base_registry["retired"]):
         print(f"No new rename retirements against {base_ref}; rename scope check not needed.")

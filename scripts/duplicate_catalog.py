@@ -224,6 +224,12 @@ def corrected_rename_identity(key):
             ("material", "weight", "diameter", "spool_type", "is_refill", "color")}
 
 
+def manufacturer_spelling(old, new):
+    left, right = old.split(), new.split()
+    changed = [[a, b] for a, b in zip(left, right) if a.casefold() != b.casefold()]
+    return changed[0] if len(left) == len(right) and len(changed) == 1 else [old, new]
+
+
 def corrected_rename_pair(old_key, new_key, correction):
     """Validate a reviewed manufacturer/file/spelling correction and its product line."""
     if not isinstance(correction, dict):
@@ -241,6 +247,8 @@ def corrected_rename_pair(old_key, new_key, correction):
     if not all(isinstance(value, str) and value for value in
                (*manufacturers, *files, *spelling)):
         raise ValueError("manufacturer correction metadata values must be nonempty")
+    if spelling != manufacturer_spelling(*manufacturers):
+        raise ValueError("spelling does not match reviewed manufacturer correction")
 
     old_parts = old_key.split("::")
     new_parts = new_key.split("::")

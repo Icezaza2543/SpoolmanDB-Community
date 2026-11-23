@@ -832,6 +832,25 @@ def test_aliases_survive_duplicate_then_correction_then_ordinary_rename():
         assert stage_three["retired"][alias_id]["retired_key"] == key_before
         assert stage_three["retired"][alias_id]["ref"] == original_entries[alias_id]["ref"]
     assert audits[b_id] == correction_audit
+    e_key = key("NTH Grilon grilon3 {color_name}", "Black", material="PLA",
+                manufacturer="NTH Grilon", filename="NTHGrilon.json")
+    stage_four = {"version": 1, "retired": {
+        **{i: {**entry, "replaced_by": "e"} for i, entry in stage_three["retired"].items()},
+        d_id: {"replaced_by": "e", "reason": "rename", "ref": "#rename2",
+               "source": "e" * 40, "retired_key": d_key},
+    }}
+    errors, _, _ = check_registry(stage_four, stage_three, {d_key: d_id},
+                                  {e_key: "e"}, {e_key: "e"}, audits=audits)
+    assert not errors, errors
+
+
+def test_correction_spelling_cannot_authorize_unrelated_line():
+    from scripts.duplicate_catalog import corrected_rename_pair
+    old = key("Basic {color_name}", "Black", manufacturer="NTH Grillon", filename="a.json")
+    new = key("HF {color_name}", "Black", manufacturer="NTH Grilon", filename="b.json")
+    with pytest.raises(ValueError, match="spelling"):
+        corrected_rename_pair(old, new, {"manufacturer": ["NTH Grillon", "NTH Grilon"],
+                                         "file": ["a.json", "b.json"], "spelling": ["Basic", "HF"]})
 
 
 # --- End-to-end helper runs in a scratch git repository ---
@@ -928,6 +947,13 @@ def test_apply_reviewed_manufacturer_and_source_file_correction(repo):
     assert all(entry["ref"] == "docs/audits/brand-correction.json" for entry in registry.values()
                if entry["source"] == "b" * 40)
     assert migration.main(["--verify", "--base-ref", "HEAD"]) == 0
+    subprocess.run(["git", "add", "."], cwd=root, check=True)
+    subprocess.run(["git", "commit", "-qm", "approved correction"], cwd=root, check=True)
+    audit = root / "docs/audits/brand-correction.json"
+    data = json.loads(audit.read_text())
+    data["evidence"] = "https://example.org/changed"
+    audit.write_text(json.dumps(data))
+    assert migration.main(["--verify", "--if-renames", "--base-ref", "HEAD"]) == 1
 
 
 def test_failed_validation_writes_nothing_in_dry_run_or_apply(repo, monkeypatch):
