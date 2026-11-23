@@ -1488,6 +1488,174 @@
         }
       ],
       "country_of_origin": "CN"
+    },
+    {
+      "name": "PEBA 90A {color_name}",
+      "material": "PEBA",
+      "density": 1.01,
+      "weights": [
+        {
+          "weight": 800,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        220,
+        250
+      ],
+      "bed_temp_range": [
+        90,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Cool Grey",
+          "hex": "7e888d",
+          "codes": [
+            "34284"
+          ],
+          "eans": [
+            "6971573444772"
+          ]
+        },
+        {
+          "name": "Jet Black",
+          "hex": "1f2329",
+          "codes": [
+            "34282"
+          ],
+          "eans": [
+            "6971573444758"
+          ]
+        },
+        {
+          "name": "Pure White",
+          "hex": "ffffff",
+          "codes": [
+            "34283"
+          ],
+          "eans": [
+            "6971573444765"
+          ]
+        },
+        {
+          "name": "Vibrant Orange",
+          "hex": "ff7b00",
+          "codes": [
+            "34285"
+          ],
+          "eans": [
+            "6971573444789"
+          ]
+        },
+        {
+          "name": "Bright Yellow",
+          "hex": "ffed00",
+          "codes": [
+            "34286"
+          ],
+          "eans": [
+            "6971573444796"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PETG-CF",
+      "density": 1.28,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        240,
+        270
+      ],
+      "bed_temp_range": [
+        60,
+        85
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "0d0d0d",
+          "codes": [
+            "34302"
+          ],
+          "eans": [
+            "6971573444970"
+          ]
+        },
+        {
+          "name": "Purple",
+          "hex": "706399",
+          "codes": [
+            "34303"
+          ],
+          "eans": [
+            "6971573444987"
+          ]
+        },
+        {
+          "name": "Burnt Orange",
+          "hex": "c7653e",
+          "codes": [
+            "34304"
+          ],
+          "eans": [
+            "6971573444994"
+          ]
+        },
+        {
+          "name": "Dark Red",
+          "hex": "853e3e",
+          "codes": [
+            "34305"
+          ],
+          "eans": [
+            "6971573445007"
+          ]
+        },
+        {
+          "name": "Teal",
+          "hex": "237d7c",
+          "codes": [
+            "34306"
+          ],
+          "eans": [
+            "6971573445014"
+          ]
+        },
+        {
+          "name": "Deep Blue",
+          "hex": "2f4e93",
+          "codes": [
+            "34307"
+          ],
+          "eans": [
+            "6971573445021"
+          ]
+        },
+        {
+          "name": "Dark Gray",
+          "hex": "606068",
+          "codes": [
+            "34308"
+          ],
+          "eans": [
+            "6971573445038"
+          ]
+        }
+      ]
     }
   ]
 }
