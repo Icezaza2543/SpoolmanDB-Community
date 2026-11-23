@@ -6,13 +6,17 @@ Archived from the README on 2026-10-30. These record prior approved campaigns, n
 
 ## Maintenance stance
 
-Owner-approved duplicate and rename migrations are recorded in the [retired-ID registry](../contracts/retired_ids.json) (`reason: "duplicate"` or `"rename"`). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](maintenance.md#4-public-id-immutability-rule).
+Owner-approved duplicate and rename migrations are recorded in the [retired-ID registry](../contracts/retired_ids.json) (`reason: "duplicate"`, `"rename"` or `"reclassification"`). The tooling retires no data automatically. Each approved true-duplicate migration intentionally removes its listed IDs from the catalog: existing Spoolman spools keep their local imported data, but Spoolman does not read the registry, redirect old catalog lookups or migrate stored external IDs. Other consumers must apply the old-to-survivor mapping themselves. See the [review, ID-safety and exact-reinstatement rules](maintenance.md#4-public-id-immutability-rule).
 
 ### Current duplicate campaign status
 
 The campaign **closed on 2026-10-05** with **2,022 registered retirements** and **51,412 catalog records**. The owner resolved all 180 final decision-sheet groups: 179 merged, and OV083 (Overture TPU Gray/Grey) retained as a confirmed non-duplicate. The owner-pending list is empty; the full-catalog audit reports **0 unresolved groups**.
 
 CI rejects unresolved candidates under the documented duplicate-matching rules. The only current exemption is the exact OV083 membership in `not_duplicates.json`; detection does not prove that every physically equivalent product is identifiable. See [the campaign closure](audits/2026-10-04-duplicate-campaign-final.md#closure-2026-10-05) and [the remaining future-work backlog](audits/duplicate-backlog.md). The brand sections below retain their original migration checkpoints.
+
+### AzureFilm material reclassification (2026-11-23)
+
+This is an **intentional breaking catalog migration** and the first under `reason: "reclassification"` ([#86](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/86)). It moves 5 AzureFilm groups from a generic material code to a more specific one (TPU → TPU-85A / TPU-98A, PC → PC+ABS, CF → PAHT-CF / PET-CF), prompted by [Donkie/SpoolmanDB#515](https://github.com/Donkie/SpoolmanDB/pull/515). Exactly 20 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,446 records. Each mapping has product-specific evidence; PC ABS White has none and keeps its material and ID. See the [migration record](audits/2026-11-23-azurefilm-reclassification.md) for the evidence and the full mapping.
 
 ### Ambrosia rename migration (2026-11-20)
 
