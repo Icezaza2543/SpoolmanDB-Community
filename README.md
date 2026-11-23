@@ -46,21 +46,21 @@ The 2026-10-30 reconciliation adds 20 Sunlu PETG 2.0 variants and support for pe
 
 ## Current snapshot
 
-* **Published records**: 52,099
+* **Published records**: 52,111
 
 <!-- readme-snapshot:start -->
 | Source | Count |
 | --- | ---: |
 | Manufacturer source files | 492 |
 | Material definitions | 157 |
-| Source filament objects | 12,374 |
-| Color entries | 35,532 |
-| Compiled filament variants | 52,099 |
+| Source filament objects | 12,376 |
+| Color entries | 35,544 |
+| Compiled filament variants | 52,111 |
 | Source filaments with country of origin | 9,712 |
 | Source filaments with TDS/product links | 5,693 |
 | Source filaments with SDS links | 1,851 |
-| Manufacturer product code/ID entries | 12,703 |
-| EAN/GTIN entries | 2,737 |
+| Manufacturer product code/ID entries | 12,715 |
+| EAN/GTIN entries | 2,749 |
 | ASEAN manufacturer coverage | 24 brands / 147 source filaments |
 
 Counts in this block are generated from the current repository state. Run `python scripts/readme_snapshot.py --write` after source-data changes. The compiled variant count expands source data across color, diameter, weight, and spool combinations.
@@ -69,8 +69,8 @@ Counts in this block are generated from the current repository state. Run `pytho
 
 | Source weight metadata | Entries |
 | --- | ---: |
-| `spool_type: plastic` | 9,773 |
-| `spool_type: cardboard` | 3,153 |
+| `spool_type: plastic` | 9,774 |
+| `spool_type: cardboard` | 3,154 |
 | `spool_type: metal` | 0 |
 | `spool_type: refill` (legacy) | 256 |
 | `spool_type: unknow` (legacy) | 26 |
