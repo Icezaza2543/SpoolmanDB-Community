@@ -16,7 +16,7 @@ CI rejects unresolved candidates under the documented duplicate-matching rules. 
 
 ### AzureFilm material reclassification (2026-11-23)
 
-This is an **intentional breaking catalog migration** and the first under `reason: "reclassification"` ([#86](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/86)). It moves 5 AzureFilm groups from a generic material code to a more specific one (TPU → TPU-85A / TPU-98A, PC → PC+ABS, CF → PAHT-CF / PET-CF), prompted by [Donkie/SpoolmanDB#515](https://github.com/Donkie/SpoolmanDB/pull/515). Exactly 20 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,446 records. Each mapping has product-specific evidence; PC ABS White has none and keeps its material and ID. See the [migration record](audits/2026-11-23-azurefilm-reclassification.md) for the evidence and the full mapping.
+This is an **intentional breaking catalog migration** and the first under `reason: "reclassification"` ([#86](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/86)). It moves 5 AzureFilm groups from a generic material code to a more specific one (TPU → TPU-85A / TPU-98A, PC → PC+ABS, CF → PAHT-CF / PET-CF), prompted by [Donkie/SpoolmanDB#515](https://github.com/Donkie/SpoolmanDB/pull/515). Exactly 21 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,446 records. Each mapping has product-specific evidence. See the [migration record](audits/2026-11-23-azurefilm-reclassification.md) for the evidence and the full mapping.
 
 ### Ambrosia rename migration (2026-11-20)
 

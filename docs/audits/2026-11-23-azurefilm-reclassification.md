@@ -7,9 +7,9 @@ This is an **intentional breaking catalog migration** and the pilot for `reason:
 | Check | Result |
 |---|---|
 | Groups reclassified | 5 (two runs, because the two `Carbon Fiber` groups go to different codes) |
-| Public IDs retired as reclassifications | 20 |
-| New public IDs | 20, each the registered target of exactly one retirement |
-| Kept on their current material and ID | 1 (PC ABS White) |
+| Public IDs retired as reclassifications | 21 |
+| New public IDs | 21, each the registered target of exactly one retirement |
+| Kept on their current material and ID | 0 |
 | Catalog size | 51,446 (unchanged) |
 | Unregistered removals, changed or rekeyed identities | 0 |
 | Weight, diameter, spool, colour and metadata changes | None |
@@ -19,9 +19,11 @@ This is an **intentional breaking catalog migration** and the pilot for `reason:
 
 **Manufacturer sources** (found by the maintainer in the [#90 review](https://github.com/Icezaza2543/SpoolmanDB-Community/pull/90#issuecomment-7101847833)):
 
-- [AzureFilm B2B catalogue](https://azurefilm.com/wp-content/uploads/2024/11/AzureFilm-B2B-Catalogue.pdf), p. 13: all eight colours of both Flexible 85A and Flexible 98A.
-- PAHT Carbon Fiber TDS ([original URL](https://www.azurefilm.com/wp-content/uploads/2023/10/PAHT_Carbon_Fiber_TDS.pdf), [archived copy](https://web.archive.org/web/20240714082106/https://azurefilm.com/wp-content/uploads/2023/10/PAHT_Carbon_Fiber_TDS.pdf)).
-- PET Carbon Fiber TDS ([original URL](https://www.azurefilm.com/wp-content/uploads/2023/10/PET_Carbon_Fiber_TDS.pdf), [archived copy](https://web.archive.org/web/20240714192832/https://azurefilm.com/wp-content/uploads/2023/10/PET_Carbon_Fiber_TDS.pdf)). It supports `PET-CF` rather than upstream's `PETG-CF`.
+- [AzureFilm B2B catalogue](https://azurefilm.com/wp-content/uploads/2024/11/AzureFilm-B2B-Catalogue.pdf) (2024-11):
+  - p. 13 (PDF page 15): Flexible 85A and Flexible 98A, all eight colours each, with AzureFilm part numbers (FT856-… and FT986-…).
+  - p. 12 (PDF page 14): PC ABS in White (FB171-9010), Natur (FB171-0000) and Black (FB171-9005); Carbon Fiber PAHT (FN171-CABK); Carbon Fiber PET (FG171-CABK).
+- PAHT Carbon Fiber TDS, "High-Temperature Polyamide with Carbon Fiber", specific gravity 1.24 g/cm³ ([original URL](https://www.azurefilm.com/wp-content/uploads/2023/10/PAHT_Carbon_Fiber_TDS.pdf), [archived copy](https://web.archive.org/web/20240714082106/https://azurefilm.com/wp-content/uploads/2023/10/PAHT_Carbon_Fiber_TDS.pdf)).
+- PET Carbon Fiber TDS, material "PET Carbon Fibre", specific gravity 1.4 g/cm³ ([original URL](https://www.azurefilm.com/wp-content/uploads/2023/10/PET_Carbon_Fiber_TDS.pdf), [archived copy](https://web.archive.org/web/20240714192832/https://azurefilm.com/wp-content/uploads/2023/10/PET_Carbon_Fiber_TDS.pdf)). It supports `PET-CF` rather than upstream's `PETG-CF`.
 
 The two datasheet URLs returned 404 on 2026-11-23; the archived copies are from July 2024.
 
@@ -31,7 +33,7 @@ The two datasheet URLs returned 404 on 2026-11-23; the archived copies are from 
 |---|---|---:|---|
 | `85A {color_name}` (TPU) | `{color_name}` (TPU-85A) | 8 | 3DJake lists each colour as AzureFilm Flexible 85A, Shore hardness A85: [Transparent](https://www.3djake.com/azurefilm/flexible-85a-transparent), [White](https://www.3djake.com/azurefilm/flexible-85a-white), [Neon Yellow](https://www.3djake.com/azurefilm/flexible-85a-neon-yellow), [Neon Orange](https://www.3djake.com/azurefilm/flexible-85a-neon-orange), [Red](https://www.3djake.com/azurefilm/flexible-85a-red), [Neon Green](https://www.3djake.com/azurefilm/flexible-85a-neon-green), [Blue](https://www.3djake.com/azurefilm/flexible-85a-blue), [Black](https://www.3djake.com/azurefilm/flexible-85a-black). |
 | `98A {color_name}` (TPU) | `{color_name}` (TPU-98A) | 8 | 3DJake, Shore hardness A98: [White](https://www.3djake.com/azurefilm/flexible-98a-white), [Neon Yellow](https://www.3djake.com/azurefilm/flexible-98a-neon-yellow), [Red](https://www.3djake.com/azurefilm/flexible-98a-red), [Blue](https://www.3djake.com/azurefilm/flexible-98a-blue), [Black](https://www.3djake.com/azurefilm/flexible-98a-black). Tinytronics, material TPU, hardness 98A, with AzureFilm SKUs: [Transparent](https://www.tinytronics.nl/en/azurefilm-tpu-98a-filament-1.75mm-300g-transparent) (FT983-0000), [Neon Orange](https://www.tinytronics.nl/en/azurefilm-tpu-98a-filament-1.75mm-300g-neon-orange) (FT983-2007FL), [Neon Green](https://www.tinytronics.nl/en/azurefilm-tpu-98a-filament-1.75mm-300g-neon-green) (FT983-6018FL). |
-| `PC ABS {color_name}` (PC), Natural and Black | `{color_name}` (PC+ABS) | 2 | Tinytronics, material PC+ABS: [Natural](https://www.tinytronics.nl/en/azurefilm-pc-abs-filament-1.75mm-1kg-natural) (FB171-0000), [Black](https://www.tinytronics.nl/en/azurefilm-pc-abs-filament-1.75mm-1kg-black) (FB171-9005). 3DJake, product type PC-ABS: [Natural](https://www.3djake.com/azurefilm/pc-abs-natural-2), [Black](https://www.3djake.com/azurefilm/pc-abs-black-1). |
+| `PC ABS {color_name}` (PC) | `{color_name}` (PC+ABS) | 3 | The catalogue lists all three colours in the PC ABS line (p. 12). Tinytronics, material PC+ABS: [Natural](https://www.tinytronics.nl/en/azurefilm-pc-abs-filament-1.75mm-1kg-natural) (FB171-0000), [Black](https://www.tinytronics.nl/en/azurefilm-pc-abs-filament-1.75mm-1kg-black) (FB171-9005). 3DJake, product type PC-ABS: [Natural](https://www.3djake.com/azurefilm/pc-abs-natural-2), [Black](https://www.3djake.com/azurefilm/pc-abs-black-1). White (FB171-9010) has no retailer listing, but shares the FB171 line with the two colours Tinytronics lists as PC+ABS. |
 | `Carbon Fiber {color_name}` (CF), colour `PAHT` | `{color_name}` (PAHT-CF) | 1 | [3DJake](https://www.3djake.com/azurefilm/paht-carbon-fibre-1): "a high-temperature material based on polyamide", sold as PAHT Carbon Fibre. |
 | `Carbon Fiber {color_name}` (CF), colour `PET` | `{color_name}` (PET-CF) | 1 | [3DJake](https://www.3djake.com/azurefilm/pet-carbon-fibre): "a carbon fibre reinforced PET material", product type PET / Copolyester. |
 
@@ -43,9 +45,8 @@ AzureFilm's product pages for these discontinued products now return 404.
 
 - **PET Carbon Fiber → `PET-CF`, not `PETG-CF`.** The product is sold as carbon fibre reinforced PET. `PETG-CF` would name a different polymer.
 - **PAHT Carbon Fiber → `PAHT-CF`, not `PA-CF`.** Both refine `CF` and both are true; `PAHT-CF` is already in `materials.json` and matches the product name.
-- **PC ABS White is kept on `PC`** (`azurefilm_pc_pcabswhite_1000_175_p`). Only Natural and Black have a product listing. Upstream moved all three.
 
-So 18 of the 20 new IDs match upstream's; the two carbon fibre IDs differ.
+So 19 of the 21 new IDs match upstream's; the two carbon fibre IDs differ.
 
 ## ID mapping
 
@@ -69,6 +70,7 @@ So 18 of the 20 new IDs match upstream's; the two carbon fibre IDs differ.
 | `azurefilm_tpu_98a98ablack_1000_175_p` | `azurefilm_tpu-98a_98ablack_1000_175_p` |
 | `azurefilm_pc_pcabsnatur_1000_175_p` | `azurefilm_pc+abs_natur_1000_175_p` |
 | `azurefilm_pc_pcabsblack_1000_175_p` | `azurefilm_pc+abs_black_1000_175_p` |
+| `azurefilm_pc_pcabswhite_1000_175_p` | `azurefilm_pc+abs_white_1000_175_p` |
 | `azurefilm_cf_carbonfiberpaht_1000_175_p` | `azurefilm_paht-cf_paht_1000_175_p` |
 | `azurefilm_cf_carbonfiberpet_1000_175_p` | `azurefilm_pet-cf_pet_1000_175_p` |
 
@@ -78,7 +80,7 @@ Reproduce with (after adding `TPU-98A` to `materials.json`):
 python scripts/rename_migration.py --file AzureFilm.json \
     --reclassify "85A {color_name}" "{color_name}" TPU TPU-85A \
     --reclassify "98A {color_name}" "{color_name}" TPU TPU-98A \
-    --reclassify "PC ABS {color_name}" "{color_name}" PC PC+ABS --keep "PC ABS {color_name}" WHITE \
+    --reclassify "PC ABS {color_name}" "{color_name}" PC PC+ABS \
     --reclassify "Carbon Fiber {color_name}" "{color_name}" CF PAHT-CF --keep "Carbon Fiber {color_name}" PET \
     --ref https://github.com/Donkie/SpoolmanDB/pull/515 --source f320e26d16906cfaa10943c82714cab22600810b \
     --base-ref d54e3eb --apply
