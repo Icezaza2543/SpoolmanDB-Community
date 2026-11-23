@@ -26,6 +26,9 @@ Run these checks before opening a pull request:
 # Refresh generated repository metrics in README.md
 python scripts/readme_snapshot.py --write
 
+# Format the filament files
+python scripts/format_filaments.py
+
 # Compile the individual filament files into filaments.json
 python scripts/compile_filaments.py
 

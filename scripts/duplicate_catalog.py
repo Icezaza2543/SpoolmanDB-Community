@@ -211,6 +211,75 @@ def rename_identity(key):
                      _rename_line_tokens(suffix, "", material))}
 
 
+def corrected_rename_identity(key):
+    """Physical identity for a reviewed correction that also changes the brand label.
+
+    The correction audit separately records the exact source filename,
+    manufacturer and product-line changes. This identity retains the material,
+    package and physical color checks while allowing those reviewed labels to
+    change.
+    """
+    identity = identity_from_key(key)
+    return {field: identity[field] for field in
+            ("material", "weight", "diameter", "spool_type", "is_refill", "color")}
+
+
+def manufacturer_spelling(old, new):
+    left, right = old.split(), new.split()
+    changed = [[a, b] for a, b in zip(left, right) if a.casefold() != b.casefold()]
+    return changed[0] if len(left) == len(right) and len(changed) == 1 else [old, new]
+
+
+def corrected_rename_pair(old_key, new_key, correction):
+    """Validate a reviewed manufacturer/file/spelling correction and its product line."""
+    if not isinstance(correction, dict):
+        raise ValueError("manufacturer correction metadata is required")
+    manufacturers = correction.get("manufacturer")
+    files = correction.get("file")
+    spelling = correction.get("spelling")
+    if (not isinstance(manufacturers, list) or len(manufacturers) != 2 or
+            not isinstance(files, list) or len(files) != 2 or
+            not isinstance(spelling, list) or len(spelling) != 2):
+        raise ValueError("invalid manufacturer correction metadata")
+    old_manufacturer, new_manufacturer = manufacturers
+    old_file, new_file = files
+    old_spelling, new_spelling = spelling
+    if not all(isinstance(value, str) and value for value in
+               (*manufacturers, *files, *spelling)):
+        raise ValueError("manufacturer correction metadata values must be nonempty")
+    if spelling != manufacturer_spelling(*manufacturers):
+        raise ValueError("spelling does not match reviewed manufacturer correction")
+
+    old_parts = old_key.split("::")
+    new_parts = new_key.split("::")
+    if len(old_parts) != 9 or len(new_parts) != 9:
+        raise ValueError("invalid correction identity key")
+    if (old_parts[0], old_parts[1]) != (old_file, old_manufacturer):
+        raise ValueError("old identity key does not match reviewed manufacturer/file correction")
+    if (new_parts[0], new_parts[1]) != (new_file, new_manufacturer):
+        raise ValueError("new identity key does not match reviewed manufacturer/file correction")
+
+    corrected_old = list(old_parts)
+    corrected_old[0] = new_file
+    corrected_old[1] = new_manufacturer
+    pattern = re.compile(re.escape(old_spelling), re.IGNORECASE)
+    corrected_old[2] = pattern.sub(new_spelling, corrected_old[2])
+    if corrected_old[2].count("{color_name}") != 1:
+        return False
+    prefix, suffix = corrected_old[2].split("{color_name}")
+    old_prefix, old_suffix = old_parts[2].split("{color_name}") if old_parts[2].count("{color_name}") == 1 else ("", "")
+    old_end = len(old_parts[3]) - len(old_suffix) if old_suffix else len(old_parts[3])
+    if not old_parts[3].startswith(old_prefix):
+        return False
+    if old_suffix and not old_parts[3].endswith(old_suffix):
+        return False
+    color = old_parts[3][len(old_prefix):old_end]
+    if not color:
+        return False
+    corrected_old[3] = prefix + color + suffix
+    return rename_identity("::".join(corrected_old)) == rename_identity(new_key)
+
+
 def material_parts(material):
     """Alphanumeric parts of a material code: ``TPU-85A`` -> {"tpu", "85a"}."""
     return {token for token in normalize_name(material, color=True) if re.fullmatch(r"[\w.]+", token)}

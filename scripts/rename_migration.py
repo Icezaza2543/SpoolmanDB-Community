@@ -1,6 +1,6 @@
-"""Plan or apply a reviewed rename migration for one manufacturer file.
+"""Plan or apply a reviewed rename migration for a manufacturer file.
 
-A rename changes a filament group's ``name`` template only. Because the
+In standard mode, a rename changes a filament group's ``name`` template only. Because the
 template is part of ``generate_id``, every compiled variant of a renamed group
 gets a new public ID. This tool keeps that auditable: each old ID is retired in
 ``contracts/retired_ids.json`` with ``reason: "rename"`` and points at its new
@@ -28,6 +28,13 @@ ID, e.g. when upstream also changed that color's name and renaming it now would
 publish an intermediate ID. A group whose colors are all kept is not renamed;
 otherwise the kept colors move into a copy of the group under the old template,
 placed directly after it, so their compiled records do not change.
+
+A reviewed manufacturer spelling correction can additionally specify
+``--previous-file``, ``--manufacturer-rename OLD NEW`` and ``--audit``. That
+mode records exact old/new identity-key pairs and the reviewed manufacturer,
+filename and spelling changes in a tracked audit. Validation permits only
+those changes and the normal product-line rename rules; material, package,
+physical color and all other record fields must still match.
 
 An existing retirement that points at a renamed ID (A -> B, then B -> C) is
 re-pointed to the final ID (A -> C) and keeps its original evidence, so the
@@ -70,10 +77,10 @@ if str(ROOT) not in sys.path:
 from scripts.compile_id_baseline import (  # noqa: E402
     BASELINE_PATH, check_baseline_manifest_detailed, compile_current_id_manifest, load_baseline_payload,
 )
-from scripts.duplicate_catalog import (  # noqa: E402
-    catalog_records, reclassification_identity, refines_material, rename_identity,
-)
-from scripts.retired_ids import MIGRATION_REASONS, load_contract, valid_source  # noqa: E402
+from scripts.duplicate_catalog import (
+    catalog_records, reclassification_identity, refines_material, corrected_rename_identity, corrected_rename_pair, manufacturer_spelling, rename_identity,
+)  # noqa: E402
+from scripts.retired_ids import MIGRATION_REASONS, load_contract, prior_hop_matches, reviewed_bindings, valid_source  # noqa: E402
 
 REGISTRY_PATH = ROOT / "contracts" / "retired_ids.json"
 # The only compiled fields a rename may change; a reclassification may also change the material.
@@ -179,6 +186,21 @@ def rename_source(text, groups_renamed, keep=()):
     return result, count
 
 
+def rename_manufacturer_source(text, old, new):
+    """Replace the exact top-level manufacturer while preserving source formatting."""
+    data = json.loads(text)
+    if data.get("manufacturer") != old:
+        raise ValueError(f"source manufacturer is {data.get('manufacturer')!r}, not {old!r}")
+    expected = copy.deepcopy(data)
+    expected["manufacturer"] = new
+    old_value = json.dumps(old, ensure_ascii=False)
+    new_value = json.dumps(new, ensure_ascii=False)
+    result = text.replace(f'"manufacturer": {old_value}', f'"manufacturer": {new_value}', 1)
+    if json.loads(result) != expected:
+        raise ValueError("cannot update manufacturer without reformatting the file")
+    return result
+
+
 def display_name_groups(text, renames):
     """Renamed groups whose colors carry a ``display_name`` override.
 
@@ -190,7 +212,7 @@ def display_name_groups(text, renames):
                    and any("display_name" in color for color in group.get("colors", []))})
 
 
-def plan(root, filename, renames, base_manifest, keep=()):
+def plan(root, filename, renames, base_manifest, previous_file=None, manufacturer_rename=None, keep=()):
     """Compile before/after in a scratch copy and pair every removed ID with its new ID."""
     unrefined = sorted(f"{key[0]!r}: {key[1]} -> {target(key, value)[1]}" for key, value in renames.items()
                        if target(key, value)[1] != key[1] and not refines_material(key[1], target(key, value)[1]))
@@ -205,7 +227,9 @@ def plan(root, filename, renames, base_manifest, keep=()):
         if unlisted:
             return [], 0, None, [f"{material} is not in materials.json; add it (with its density) before "
                                  "reclassifying into it" for material in unlisted]
-    overrides = display_name_groups((root / "filaments" / filename).read_text(encoding="utf-8"), renames)
+    previous_file = previous_file or filename
+    old_source = root / "filaments" / previous_file
+    overrides = display_name_groups(old_source.read_text(encoding="utf-8"), renames)
     if overrides:
         return [], 0, None, [f"{group}: has display_name overrides; rename migrations leave display_name "
                              "unchanged and cannot rename this group" for group in overrides]
@@ -215,12 +239,19 @@ def plan(root, filename, renames, base_manifest, keep=()):
         before, errors = compile_current_id_manifest(work)
         if errors:
             raise ValueError("catalog does not compile before renaming:\n" + "\n".join(errors))
+        old_path = work / previous_file
         path = work / filename
+        if old_path != path and path.exists():
+            return [], 0, None, [f"destination source file already exists: {filename}"]
         try:
-            new_text, groups = rename_source(path.read_text(encoding="utf-8"), renames, keep)
+            new_text, groups = rename_source(old_path.read_text(encoding="utf-8"), renames, keep)
         except ValueError as exc:
             return [], 0, None, [str(exc)]
+        if manufacturer_rename:
+            new_text = rename_manufacturer_source(new_text, *manufacturer_rename)
         path.write_bytes(new_text.encode("utf-8"))
+        if old_path != path:
+            old_path.unlink()
         after, errors = compile_current_id_manifest(work)
         if errors:
             raise ValueError("renamed catalog does not compile (a rename probably collides with "
@@ -241,7 +272,7 @@ def plan(root, filename, renames, base_manifest, keep=()):
                 return json.dumps(reclassification_identity(key, reclassified[group][1]), sort_keys=True)
             if not removed_side and group in reclassified_into:
                 return json.dumps(reclassification_identity(key, group[1]), sort_keys=True)
-            return json.dumps({"rename": rename_identity(key)}, sort_keys=True)
+            return json.dumps({"rename": (corrected_rename_identity if manufacturer_rename else rename_identity)(key)}, sort_keys=True)
         except ValueError as exc:
             problems.append(f"{pid}: cannot pair as a rename ({exc})")
             return None
@@ -302,6 +333,27 @@ def build_registry(registry, pairs, ref, source):
     return registry, repointed, problems
 
 
+def build_correction_audit(pairs, evidence, previous_file, new_file,
+                           manufacturer_rename):
+    """Persist exact pairings for an approved brand/file spelling correction."""
+    bindings = {
+        old_id: {"key": old_key, "rename": {"replaced_by": new_id, "new_key": new_key}}
+        for old_id, new_id, old_key, new_key in pairs
+    }
+    old_manufacturer, new_manufacturer = manufacturer_rename
+    spelling = manufacturer_spelling(old_manufacturer, new_manufacturer)
+    return {
+        "version": 1,
+        "evidence": evidence,
+        "correction": {
+            "manufacturer": [old_manufacturer, new_manufacturer],
+            "file": [previous_file, new_file],
+            "spelling": spelling,
+        },
+        "bindings": bindings,
+    }
+
+
 def records_by_id(rows):
     return {row["record"]["id"]: (row["key"], row["record"]) for row in rows}
 
@@ -311,18 +363,19 @@ def _sample(ids, limit=5):
     return ", ".join(ids[:limit]) + (f" (+{len(ids) - limit} more)" if len(ids) > limit else "")
 
 
-def verify_rename_scope(base_records, base_registry, head_records, head_registry):
+def verify_rename_scope(base_records, base_registry, head_records, head_registry, rename_bindings=None):
     """Prove a change is a pure rename migration, independent of the baseline check.
 
     ``*_records`` map public ID -> (identity key, compiled record). Requires that
     the change adds only ``rename`` or ``reclassification`` retirements, re-points existing entries only
     onto the final ID of a newly renamed target, retires exactly the renamed old
-    IDs, adds exactly their one-to-one replacements, leaves every other record's
-    key and fields untouched, and changes nothing but ``id``/``name`` between a
-    renamed record and its replacement (plus ``material`` for a reclassification,
-    which must change it). Returns (errors, {old_id: new_id}).
+    IDs, adds exactly their one-to-one replacements, and leaves every other
+    record's key and fields untouched. Normal renames may change only ``id`` and
+    ``name``; an audited manufacturer correction may also change ``manufacturer``.
+    Reclassifications may instead change material. Returns (errors, {old_id: new_id}).
     """
     errors = []
+    rename_bindings = rename_bindings or {}
     before, after = base_registry["retired"], head_registry["retired"]
     pairs = {}
     for old_id, entry in after.items():
@@ -336,6 +389,12 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
         if entry is None:
             errors.append(f"registry {old_id}: existing retirement removed")
             continue
+        binding = rename_bindings.get(old_id, {})
+        reviewed = binding.get("rename") if isinstance(binding, dict) else None
+        if reviewed is not None:
+            if (prev["replaced_by"] in after and reviewed.get("replaced_by") != prev["replaced_by"]
+                    and not prior_hop_matches(before, reviewed.get("replaced_by"), prev["replaced_by"], reviewed.get("new_key"))):
+                errors.append(f"registry {old_id}: reviewed correction audit was rewritten instead of preserved")
         changed = sorted(field for field in prev.keys() | entry.keys() if prev.get(field) != entry.get(field))
         if not changed:
             continue
@@ -379,11 +438,26 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
     for old_id, new_id in sorted(pairs.items()):
         if old_id not in base_records or new_id not in head_records:
             continue
+        binding = rename_bindings.get(old_id, {})
+        reviewed = binding.get("rename") if isinstance(binding, dict) else None
         (old_key, old_rec), (_new_key, new_rec) = base_records[old_id], head_records[new_id]
+        if reviewed is not None:
+            if (binding.get("key") != old_key or reviewed.get("replaced_by") != new_id or
+                    reviewed.get("new_key") != head_records[new_id][0]):
+                errors.append(f"{old_id}: reviewed correction audit does not match replacement {new_id}")
+            else:
+                try:
+                    correction = binding.get("correction")
+                    if not corrected_rename_pair(old_key, head_records[new_id][0], correction):
+                        errors.append(f"{old_id} -> {new_id}: reviewed correction changes product line or physical identity")
+                except ValueError as exc:
+                    errors.append(f"{old_id} -> {new_id}: invalid reviewed correction identity: {exc}")
         if after[old_id].get("retired_key") != old_key:
             errors.append(f"registry {old_id}: retired_key is not the record's identity key")
         reason = after[old_id].get("reason")
         allowed = RECLASSIFICATION_FIELDS if reason == "reclassification" else RENAME_FIELDS
+        if reviewed is not None and reason == "rename":
+            allowed = allowed | {"manufacturer"}
         fields = sorted(f for f in old_rec.keys() | new_rec.keys()
                         if f not in allowed and old_rec.get(f) != new_rec.get(f))
         if fields:
@@ -400,7 +474,8 @@ def dirty_paths(root):
     return [line[3:] for line in out.splitlines() if line.strip()]
 
 
-def stage_and_validate(root, filename, new_text, registry, base_payload, base_registry, base_ref):
+def stage_and_validate(root, filename, previous_file, new_text, registry, base_payload, base_registry, base_ref,
+                       audit_path=None, audit_text=None):
     """Build the full result in a scratch copy and validate it before anything is written.
 
     The scope check compares the staged result with the trusted ``base_ref`` (read
@@ -414,9 +489,18 @@ def stage_and_validate(root, filename, new_text, registry, base_payload, base_re
             if (root / sub).is_dir():
                 shutil.copytree(root / sub, stage / sub)
         source_path = stage / "filaments" / filename
+        previous_source_path = stage / "filaments" / previous_file
         registry_path = stage / "contracts" / "retired_ids.json"
         baseline_path = stage / "contracts" / BASELINE_PATH.name
+        if source_path != previous_source_path and source_path.exists():
+            return {}, [f"destination source file already exists: {filename}"]
         source_path.write_bytes(new_text.encode("utf-8"))
+        if source_path != previous_source_path:
+            previous_source_path.unlink()
+        staged_audit_path = stage / audit_path if audit_path else None
+        if staged_audit_path and audit_text:
+            staged_audit_path.parent.mkdir(parents=True, exist_ok=True)
+            staged_audit_path.write_text(audit_text, encoding="utf-8")
         registry_path.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         manifest, errors = compile_current_id_manifest(stage / "filaments")
         if errors:
@@ -429,12 +513,19 @@ def stage_and_validate(root, filename, new_text, registry, base_payload, base_re
             strict_head_sync=True, retired_path=registry_path, base_retired=base_registry,
         )
         errors = list(result.all_errors)
-        scope_errors, _pairs = verify_rename_scope(records_by_id(catalog_records(root, base_ref)), base_registry,
-                                                   records_by_id(catalog_records(stage)), registry)
+        scope_errors, _pairs = verify_rename_scope(
+            records_by_id(catalog_records(root, base_ref)), base_registry,
+            records_by_id(catalog_records(stage)), registry,
+            rename_bindings=reviewed_bindings(registry, stage),
+        )
         errors.extend(scope_errors)
         outputs = {root / "filaments" / filename: source_path.read_bytes(),
                    root / "contracts" / "retired_ids.json": registry_path.read_bytes(),
                    root / "contracts" / BASELINE_PATH.name: baseline_path.read_bytes()}
+        if source_path != previous_source_path:
+            outputs[root / "filaments" / previous_file] = None
+        if audit_path and staged_audit_path:
+            outputs[root / audit_path] = staged_audit_path.read_bytes()
     return outputs, errors
 
 
@@ -443,9 +534,12 @@ def write_all(outputs):
     originals = {path: path.read_bytes() if path.exists() else None for path in outputs}
     try:
         for path, data in outputs.items():
-            tmp = path.with_name(f".{path.name}.rename-tmp")
-            tmp.write_bytes(data)
-            os.replace(tmp, path)
+            if data is None:
+                path.unlink(missing_ok=True)
+            else:
+                tmp = path.with_name(f".{path.name}.rename-tmp")
+                tmp.write_bytes(data)
+                os.replace(tmp, path)
     except BaseException:
         for path, data in originals.items():
             path.with_name(f".{path.name}.rename-tmp").unlink(missing_ok=True)
@@ -463,13 +557,29 @@ def verify_main(base_ref, if_renames=False):
     without checking, so ordinary data changes keep their own workflow."""
     base_registry = load_contract(base_ref, ROOT, "retired_ids.json", "retired")
     head_registry = load_contract(REGISTRY_PATH, ROOT, "retired_ids.json", "retired")
+    # Even an audit-only edit must not silently change the evidence for a
+    # previously approved correction. Compare to Git's trusted base before
+    # taking the no-new-renames shortcut.
+    refs = {entry["ref"] for old_id, entry in base_registry["retired"].items()
+            if entry.get("reason") == "rename" and old_id in head_registry["retired"]
+            and entry.get("ref", "").startswith("docs/audits/") and entry["ref"].endswith(".json")}
+    if refs and subprocess.run(["git", "--literal-pathspecs", "diff", "--quiet", base_ref, "--", *sorted(refs)],
+                               cwd=ROOT).returncode:
+        print("ERROR: historical rename audit differs from trusted base", file=sys.stderr)
+        return 1
     if if_renames and not any(entry.get("reason") in MIGRATION_REASONS
                               for old_id, entry in head_registry["retired"].items()
                               if old_id not in base_registry["retired"]):
         print(f"No new rename or reclassification retirements against {base_ref}; rename scope check not needed.")
         return 0
     base_records = records_by_id(catalog_records(ROOT, base_ref))
-    errors, pairs = verify_rename_scope(base_records, base_registry, records_by_id(catalog_records(ROOT)), head_registry)
+    try:
+        rename_bindings = reviewed_bindings(head_registry, ROOT)
+    except (ValueError, OSError, subprocess.SubprocessError, TypeError) as exc:
+        print(f"ERROR: cannot load rename correction audit: {exc}", file=sys.stderr)
+        return 1
+    errors, pairs = verify_rename_scope(base_records, base_registry, records_by_id(catalog_records(ROOT)),
+                                        head_registry, rename_bindings=rename_bindings)
     if errors:
         print("ERROR: not a rename-only migration:", file=sys.stderr)
         for error in errors:
@@ -483,7 +593,11 @@ def verify_main(base_ref, if_renames=False):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--file", help="manufacturer file name in filaments/, e.g. addnorth.json")
+    parser.add_argument("--file", help="destination manufacturer file name in filaments/, e.g. addnorth.json")
+    parser.add_argument("--previous-file", help="existing manufacturer file when its filename is also corrected")
+    parser.add_argument("--manufacturer-rename", nargs=2, metavar=("OLD", "NEW"),
+                        help="reviewed correction to the top-level manufacturer spelling")
+    parser.add_argument("--audit", help="new audit path under docs/audits/ for a manufacturer spelling correction")
     parser.add_argument("--rename", nargs=3, action="append", default=[], metavar=("OLD", "NEW", "MATERIAL"),
                         help="rename group template OLD to NEW for groups of MATERIAL (repeatable)")
     parser.add_argument("--reclassify", nargs=4, action="append", default=[],
@@ -517,6 +631,29 @@ def main(argv=None):
         return 1
     if not valid_source(args.source):
         parser.error("--source must be a 40-character commit SHA or an http(s) URL")
+    previous_file = args.previous_file or args.file
+    correction_mode = args.manufacturer_rename is not None or args.previous_file is not None or args.audit is not None
+    if correction_mode and (args.manufacturer_rename is None or args.audit is None):
+        parser.error("--manufacturer-rename and --audit are required together for a manufacturer spelling correction")
+    if correction_mode and args.upstream:
+        parser.error("manufacturer spelling corrections require explicit --rename pairs, not --upstream")
+    for source_file in (previous_file, args.file):
+        source_path = Path(source_file)
+        if source_path.name != source_file or source_path.suffix != ".json":
+            parser.error("--file and --previous-file must be JSON filenames, not paths")
+    audit_path = None
+    if args.audit:
+        audit_path = Path(args.audit)
+        if (audit_path.is_absolute() or len(audit_path.parts) != 3 or
+                audit_path.parts[:2] != ("docs", "audits") or ".." in audit_path.parts or
+                audit_path.suffix != ".json"):
+            parser.error("--audit must be a new .json file directly under docs/audits/")
+        if (ROOT / audit_path).exists():
+            parser.error(f"--audit file already exists: {audit_path.as_posix()}")
+    if args.manufacturer_rename:
+        old_manufacturer, new_manufacturer = args.manufacturer_rename
+        if not old_manufacturer.strip() or not new_manufacturer.strip() or old_manufacturer == new_manufacturer:
+            parser.error("--manufacturer-rename requires two different nonempty names")
     renames = {(old, material): new for old, new, material in args.rename}
     for old, new, old_material, new_material in args.reclassify:
         if old_material == new_material:
@@ -542,9 +679,9 @@ def main(argv=None):
                 parser.error(f"conflicting renames for {key}")
     if not renames:
         parser.error("no renames given")
-    source_path = ROOT / "filaments" / args.file
+    source_path = ROOT / "filaments" / previous_file
     if not source_path.is_file():
-        parser.error(f"no such manufacturer file: filaments/{args.file}")
+        parser.error(f"no such manufacturer file: filaments/{previous_file}")
     missing = unmatched_renames(source_path.read_text(encoding="utf-8"), renames)
     for flag, requested in (("--rename", {(old, material) for old, _new, material in args.rename}),
                             ("--reclassify", {(old, material) for old, _new, material, _m in args.reclassify})):
@@ -562,10 +699,19 @@ def main(argv=None):
     if errors:
         parser.error("; ".join(errors))
 
-    pairs, groups, new_text, problems = plan(ROOT, args.file, renames, base["manifest"],
-                                             keep={tuple(item) for item in args.keep})
+    pairs, groups, new_text, problems = plan(
+        ROOT, args.file, renames, base["manifest"], previous_file=previous_file,
+        manufacturer_rename=args.manufacturer_rename, keep={tuple(item) for item in args.keep},
+    )
+    registry_ref = audit_path.as_posix() if audit_path else args.ref
+    audit_text = None
+    if audit_path and new_text is not None:
+        audit = build_correction_audit(
+            pairs, args.ref, previous_file, args.file, args.manufacturer_rename,
+        )
+        audit_text = json.dumps(audit, indent=2, ensure_ascii=False) + "\n"
     registry, repointed, registry_problems = build_registry(
-        load_contract(REGISTRY_PATH, ROOT, "retired_ids.json", "retired"), pairs, args.ref, args.source)
+        load_contract(REGISTRY_PATH, ROOT, "retired_ids.json", "retired"), pairs, registry_ref, args.source)
     problems += registry_problems
     for (old, material), value in sorted(renames.items()):
         new, new_material = target((old, material), value)
@@ -590,8 +736,10 @@ def main(argv=None):
             print(f"  {old_id}: {previous} -> {new_id}")
     if not problems:
         base_registry = load_contract(args.base_ref, ROOT, "retired_ids.json", "retired")
-        outputs, validation = stage_and_validate(ROOT, args.file, new_text, registry, base, base_registry,
-                                                 args.base_ref)
+        outputs, validation = stage_and_validate(
+            ROOT, args.file, previous_file, new_text, registry, base, base_registry, args.base_ref,
+            audit_path=audit_path, audit_text=audit_text,
+        )
         problems += validation
     if problems:
         print("\nERROR: migration is not safe; nothing was written:", file=sys.stderr)
@@ -602,7 +750,12 @@ def main(argv=None):
         print("\nValidated. Dry run only; re-run with --apply to write changes.")
         return 0
     write_all(outputs)
-    print(f"Applied: filaments/{args.file}, contracts/retired_ids.json, contracts/{BASELINE_PATH.name}")
+    touched = [f"filaments/{args.file}", "contracts/retired_ids.json", f"contracts/{BASELINE_PATH.name}"]
+    if previous_file != args.file:
+        touched.append(f"deleted filaments/{previous_file}")
+    if audit_path:
+        touched.append(audit_path.as_posix())
+    print("Applied: " + ", ".join(touched))
     return 0
 
 if __name__ == "__main__":
