@@ -39,6 +39,8 @@ Do not infer flow, temperature, speed, pressure advance or calibration values fr
 
 [Issue #309](https://github.com/Donkie/SpoolmanDB/issues/309) remains open. The [maintainer's response](https://github.com/Donkie/SpoolmanDB/issues/309#issuecomment-6426915078) favors specific material labels when the format permits. This establishes direction, not permission to rewrite this Community catalog's historical identities. The task explicitly holds mass migration.
 
+One narrow case is now allowed ([Icezaza2543/SpoolmanDB-Community#86](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/86)): moving one product to a more specific code that keeps the old one (`TPU` → `TPU-85A`, `CF` → `PA-CF`), one ID to one ID, when product-specific evidence confirms the added detail. Each such ID is retired with `reason: "reclassification"`; see [maintenance](maintenance.md#material-reclassifications). Generic codes stay valid, and mass migration remains on hold.
+
 For example, a source named PLA+ 2.0 currently classified `PLA` would produce a different identity if its material changed to `PLA+`. Likewise, changing `PA` to `PA6-CF20` requires evidence of both polymer and filler proportion. This branch changes neither example nor any existing material classification. Before a future migration, agree with Donkie on classification evidence, stable-ID behavior, an old-to-new mapping, consumer impact and whether display metadata can carry specificity without replacing identity.
 
 See [compatibility](UPSTREAM_COMPATIBILITY.md), [reconciliation](audits/2026-10-30-reconciliation.md) and [manufacturer coverage](audits/2026-10-30-manufacturer-coverage.md) for evidence and deferred work.

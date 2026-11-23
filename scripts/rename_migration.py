@@ -14,6 +14,15 @@ material changes are reported and skipped). Upstream renames of groups that do
 not exist in this file are reported and skipped; an explicit ``--rename`` of a
 missing group is an error. Without ``--apply`` nothing is written.
 
+``--reclassify OLD NEW OLD_MATERIAL NEW_MATERIAL`` moves a group to a more
+specific material code (``TPU`` -> ``TPU-85A``, ``CF`` -> ``PA-CF``) and may drop
+the name text the new code carries. Its IDs are retired with ``reason:
+"reclassification"``. The new code must keep every part of the old one and add
+detail (``scripts/duplicate_catalog.py::refines_material``). Reclassifications are
+never taken from ``--upstream`` automatically: each needs product-specific
+evidence for the added detail, so they are listed one by one; ``--keep`` leaves
+unverified colours on their current material and ID.
+
 ``--keep TEMPLATE COLOR`` leaves one color of a renamed group on its current
 ID, e.g. when upstream also changed that color's name and renaming it now would
 publish an intermediate ID. A group whose colors are all kept is not renamed;
@@ -39,7 +48,8 @@ problems and a failed apply leaves the tree untouched.
 
 ``--verify`` runs the same rename-only scope check on an existing change
 (working tree against ``--base-ref``), e.g. when reviewing a rename PR. CI runs
-it with ``--if-renames`` on every change that adds a rename retirement.
+it with ``--if-renames`` on every change that adds a rename or reclassification
+retirement. Only a reclassified record may change ``material``.
 
 Groups whose colors have a ``display_name`` override are refused: a migration
 never edits ``display_name``, and a baseline key change is never part of one.
@@ -68,13 +78,14 @@ from scripts.compile_id_baseline import (  # noqa: E402
     BASELINE_PATH, check_baseline_manifest_detailed, compile_current_id_manifest, load_baseline_payload,
 )
 from scripts.duplicate_catalog import (
-    catalog_records, corrected_rename_identity, corrected_rename_pair, manufacturer_spelling, rename_identity,
+    catalog_records, reclassification_identity, refines_material, corrected_rename_identity, corrected_rename_pair, manufacturer_spelling, rename_identity,
 )  # noqa: E402
-from scripts.retired_ids import load_contract, prior_hop_matches, reviewed_bindings, valid_source  # noqa: E402
+from scripts.retired_ids import MIGRATION_REASONS, load_contract, prior_hop_matches, reviewed_bindings, valid_source  # noqa: E402
 
 REGISTRY_PATH = ROOT / "contracts" / "retired_ids.json"
-# The only compiled fields a rename may change.
+# The only compiled fields a rename may change; a reclassification may also change the material.
 RENAME_FIELDS = {"id", "name"}
+RECLASSIFICATION_FIELDS = RENAME_FIELDS | {"material"}
 # Copied into the scratch tree: everything the baseline/registry checks read.
 STAGED_DIRS = ("filaments", "contracts", "docs/audits")
 
@@ -108,10 +119,25 @@ def unmatched_renames(text, groups_renamed):
     return sorted(key for key in groups_renamed if key not in present)
 
 
+def target(key, value):
+    """(new template, new material) for a requested change; a plain string keeps the material."""
+    return (value, key[1]) if isinstance(value, str) else tuple(value)
+
+
+def material_of(key):
+    return key.split("::")[4]
+
+
+def reason_for(old_key, new_key):
+    return "rename" if material_of(old_key) == material_of(new_key) else "reclassification"
+
+
 def rename_source(text, groups_renamed, keep=()):
     """Rename group templates textually so unrelated formatting is untouched.
 
-    ``keep`` holds (old template, color name) pairs that stay on their current
+    ``groups_renamed`` maps (template, material) to a new template, or to a
+    (template, material) pair for a reclassification. ``keep`` holds (old
+    template, color name) pairs that stay on their current
     IDs: a renamed group whose colors are all kept is left alone, and kept colors
     of a partly renamed group move into a copy of it under the old template,
     placed directly after it. Splitting needs a full rewrite, which is only done
@@ -131,7 +157,7 @@ def rename_source(text, groups_renamed, keep=()):
         if kept and len(kept) == len(group.get("colors", [])):
             continue
         old = copy.deepcopy(group)
-        group["name"] = new
+        group["name"], group["material"] = target((group["name"], group["material"]), new)
         count += 1
         if kept:
             group["colors"] = [color for color in group["colors"] if color not in kept]
@@ -145,12 +171,14 @@ def rename_source(text, groups_renamed, keep=()):
     if not count:
         raise ValueError("no group matched the requested renames")
     result = text
-    for (old, _material), new in groups_renamed.items():
+    for key, value in groups_renamed.items():
+        old, new = key[0], target(key, value)[0]
         for encode in (lambda s: json.dumps(s, ensure_ascii=False), json.dumps):
             result = result.replace(f'"name": {encode(old)}', f'"name": {json.dumps(new, ensure_ascii=False)}')
     if json.loads(result) != expected:
-        # A template shared across materials with only some renamed cannot be
-        # edited textually; fall back to a full rewrite only if it is lossless.
+        # A template shared across materials with only some renamed, or a material
+        # change, cannot be edited textually; fall back to a full rewrite only if it
+        # is lossless.
         if json.dumps(data, indent=2, ensure_ascii=False) + "\n" != text:
             raise ValueError("cannot apply renames without reformatting the file "
                              "(it is not in the standard 2-space JSON format)")
@@ -186,6 +214,19 @@ def display_name_groups(text, renames):
 
 def plan(root, filename, renames, base_manifest, previous_file=None, manufacturer_rename=None, keep=()):
     """Compile before/after in a scratch copy and pair every removed ID with its new ID."""
+    unrefined = sorted(f"{key[0]!r}: {key[1]} -> {target(key, value)[1]}" for key, value in renames.items()
+                       if target(key, value)[1] != key[1] and not refines_material(key[1], target(key, value)[1]))
+    if unrefined:
+        return [], 0, None, [f"{item} is not a more specific material code; only refinements "
+                             "(TPU -> TPU-85A, CF -> PA-CF) can be reclassified" for item in unrefined]
+    materials_path = root / "materials.json"
+    if materials_path.is_file():
+        listed = {entry["material"] for entry in json.loads(materials_path.read_text(encoding="utf-8"))}
+        unlisted = sorted({target(key, value)[1] for key, value in renames.items()
+                           if target(key, value)[1] != key[1]} - listed)
+        if unlisted:
+            return [], 0, None, [f"{material} is not in materials.json; add it (with its density) before "
+                                 "reclassifying into it" for material in unlisted]
     previous_file = previous_file or filename
     old_source = root / "filaments" / previous_file
     overrides = display_name_groups(old_source.read_text(encoding="utf-8"), renames)
@@ -219,24 +260,32 @@ def plan(root, filename, renames, base_manifest, previous_file=None, manufacture
     added = {key: pid for key, pid in after.items() if key not in before}
     pairs, problems = [], []
 
-    identity_fn = corrected_rename_identity if manufacturer_rename else rename_identity
+    # Groups that change material, by old and by new (template, material).
+    reclassified = {key: target(key, value) for key, value in renames.items() if target(key, value)[1] != key[1]}
+    reclassified_into = set(reclassified.values())
 
-    def identity(key, pid):
+    def identity(key, pid, removed_side):
+        parts = key.split("::")
+        group = (parts[2], parts[4])
         try:
-            return json.dumps(identity_fn(key), sort_keys=True)
+            if removed_side and group in reclassified:
+                return json.dumps(reclassification_identity(key, reclassified[group][1]), sort_keys=True)
+            if not removed_side and group in reclassified_into:
+                return json.dumps(reclassification_identity(key, group[1]), sort_keys=True)
+            return json.dumps({"rename": (corrected_rename_identity if manufacturer_rename else rename_identity)(key)}, sort_keys=True)
         except ValueError as exc:
             problems.append(f"{pid}: cannot pair as a rename ({exc})")
             return None
 
     by_identity = {}
     for key, pid in added.items():
-        ident = identity(key, pid)
+        ident = identity(key, pid, False)
         if ident is not None:
             by_identity.setdefault(ident, []).append((key, pid))
     historical = set(base_manifest.values())
     base_keys = {pid: key for key, pid in base_manifest.items()}
     for key, old_id in sorted(removed.items(), key=lambda kv: kv[1]):
-        ident = identity(key, old_id)
+        ident = identity(key, old_id, True)
         if ident is None:
             continue
         matches = by_identity.pop(ident, [])
@@ -259,12 +308,19 @@ def plan(root, filename, renames, base_manifest, previous_file=None, manufacture
 
 
 def build_registry(registry, pairs, ref, source):
-    """New registry with one rename entry per pair; existing entries pointing at a
-    renamed ID are re-pointed to its replacement (A -> B, B -> C gives A -> C)."""
+    """New registry with one rename or reclassification entry per pair; existing
+    entries pointing at a renamed ID are re-pointed to its replacement (A -> B,
+    B -> C gives A -> C). An existing retirement cannot follow a material change:
+    its own identity check would no longer match, so that is reported."""
     registry = copy.deepcopy(registry)
     retired = registry["retired"]
     mapping = {old_id: new_id for old_id, new_id, _old_key, _new_key in pairs}
     problems = [f"{old_id}: already retired" for old_id in mapping if old_id in retired]
+    reclassified = {old_id for old_id, _new_id, old_key, new_key in pairs
+                    if reason_for(old_key, new_key) == "reclassification"}
+    problems += [f"{old_id}: existing retirement points at {entry['replaced_by']}, which this change reclassifies; "
+                 "keep that colour with --keep and resolve the retirement first"
+                 for old_id, entry in retired.items() if entry["replaced_by"] in reclassified]
     repointed = []
     for old_id, entry in retired.items():
         target = mapping.get(entry["replaced_by"])
@@ -272,7 +328,7 @@ def build_registry(registry, pairs, ref, source):
             repointed.append((old_id, entry["replaced_by"], target))
             entry["replaced_by"] = target
     for old_id, new_id, old_key, _new_key in pairs:
-        retired.setdefault(old_id, {"replaced_by": new_id, "reason": "rename", "ref": ref,
+        retired.setdefault(old_id, {"replaced_by": new_id, "reason": reason_for(old_key, _new_key), "ref": ref,
                                     "source": source, "retired_key": old_key})
     return registry, repointed, problems
 
@@ -311,12 +367,12 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
     """Prove a change is a pure rename migration, independent of the baseline check.
 
     ``*_records`` map public ID -> (identity key, compiled record). Requires that
-    the change adds only ``rename`` retirements, re-points existing entries only
+    the change adds only ``rename`` or ``reclassification`` retirements, re-points existing entries only
     onto the final ID of a newly renamed target, retires exactly the renamed old
     IDs, adds exactly their one-to-one replacements, and leaves every other
     record's key and fields untouched. Normal renames may change only ``id`` and
     ``name``; an audited manufacturer correction may also change ``manufacturer``.
-    Returns (errors, {old_id: new_id}).
+    Reclassifications may instead change material. Returns (errors, {old_id: new_id}).
     """
     errors = []
     rename_bindings = rename_bindings or {}
@@ -324,7 +380,7 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
     pairs = {}
     for old_id, entry in after.items():
         if old_id not in before:
-            if entry.get("reason") == "rename":
+            if entry.get("reason") in MIGRATION_REASONS:
                 pairs[old_id] = entry.get("replaced_by")
             else:
                 errors.append(f"registry {old_id}: new {entry.get('reason')!r} retirement is outside a rename migration")
@@ -398,11 +454,16 @@ def verify_rename_scope(base_records, base_registry, head_records, head_registry
                     errors.append(f"{old_id} -> {new_id}: invalid reviewed correction identity: {exc}")
         if after[old_id].get("retired_key") != old_key:
             errors.append(f"registry {old_id}: retired_key is not the record's identity key")
-        allowed_fields = RENAME_FIELDS | ({"manufacturer"} if reviewed is not None else set())
+        reason = after[old_id].get("reason")
+        allowed = RECLASSIFICATION_FIELDS if reason == "reclassification" else RENAME_FIELDS
+        if reviewed is not None and reason == "rename":
+            allowed = allowed | {"manufacturer"}
         fields = sorted(f for f in old_rec.keys() | new_rec.keys()
-                        if f not in allowed_fields and old_rec.get(f) != new_rec.get(f))
+                        if f not in allowed and old_rec.get(f) != new_rec.get(f))
         if fields:
-            errors.append(f"{old_id} -> {new_id}: rename also changes {', '.join(fields)}")
+            errors.append(f"{old_id} -> {new_id}: {reason} also changes {', '.join(fields)}")
+        if reason == "reclassification" and old_rec.get("material") == new_rec.get("material"):
+            errors.append(f"{old_id} -> {new_id}: reclassification keeps the material; use reason rename")
     return errors, pairs
 
 
@@ -506,9 +567,10 @@ def verify_main(base_ref, if_renames=False):
                                cwd=ROOT).returncode:
         print("ERROR: historical rename audit differs from trusted base", file=sys.stderr)
         return 1
-    if if_renames and not any(entry.get("reason") == "rename" for old_id, entry in head_registry["retired"].items()
+    if if_renames and not any(entry.get("reason") in MIGRATION_REASONS
+                              for old_id, entry in head_registry["retired"].items()
                               if old_id not in base_registry["retired"]):
-        print(f"No new rename retirements against {base_ref}; rename scope check not needed.")
+        print(f"No new rename or reclassification retirements against {base_ref}; rename scope check not needed.")
         return 0
     base_records = records_by_id(catalog_records(ROOT, base_ref))
     try:
@@ -523,7 +585,9 @@ def verify_main(base_ref, if_renames=False):
         for error in errors:
             print(f"  {error}", file=sys.stderr)
         return 1
-    print(f"OK: rename-only migration, {len(pairs)} public ID(s) renamed against {base_ref}")
+    reclassified = sum(head_registry["retired"][old_id]["reason"] == "reclassification" for old_id in pairs)
+    detail = f" ({reclassified} reclassified)" if reclassified else ""
+    print(f"OK: rename-only migration, {len(pairs)} public ID(s) renamed{detail} against {base_ref}")
     return 0
 
 
@@ -536,6 +600,10 @@ def main(argv=None):
     parser.add_argument("--audit", help="new audit path under docs/audits/ for a manufacturer spelling correction")
     parser.add_argument("--rename", nargs=3, action="append", default=[], metavar=("OLD", "NEW", "MATERIAL"),
                         help="rename group template OLD to NEW for groups of MATERIAL (repeatable)")
+    parser.add_argument("--reclassify", nargs=4, action="append", default=[],
+                        metavar=("OLD", "NEW", "OLD_MATERIAL", "NEW_MATERIAL"),
+                        help="move group OLD of OLD_MATERIAL to template NEW and the more specific "
+                             "NEW_MATERIAL (repeatable; needs product-specific evidence)")
     parser.add_argument("--upstream", nargs=2, metavar=("BEFORE", "AFTER"),
                         help="take same-material renames from an upstream change of the same file")
     parser.add_argument("--keep", nargs=2, action="append", default=[], metavar=("TEMPLATE", "COLOR"),
@@ -587,6 +655,14 @@ def main(argv=None):
         if not old_manufacturer.strip() or not new_manufacturer.strip() or old_manufacturer == new_manufacturer:
             parser.error("--manufacturer-rename requires two different nonempty names")
     renames = {(old, material): new for old, new, material in args.rename}
+    for old, new, old_material, new_material in args.reclassify:
+        if old_material == new_material:
+            parser.error(f"--reclassify {old!r}: the material does not change; use --rename")
+        if not refines_material(old_material, new_material):
+            parser.error(f"--reclassify {old!r}: {new_material} is not a more specific code for {old_material}")
+        if (old, old_material) in renames:
+            parser.error(f"conflicting changes for {(old, old_material)}")
+        renames[(old, old_material)] = (new, new_material)
     if args.upstream:
         try:
             found, skipped = upstream_renames(ROOT, args.file, *args.upstream)
@@ -595,19 +671,23 @@ def main(argv=None):
             parser.error(f"cannot read upstream renames: {detail}")
         for item in skipped:
             print(f"SKIP (material change, not a rename): {item}")
+        if skipped:
+            print("  Material changes need product-specific evidence. Once confirmed, pass each with "
+                  "--reclassify OLD NEW OLD_MATERIAL NEW_MATERIAL.")
         for key, new in found.items():
-            if renames.setdefault(key, new) != new:
+            if target(key, renames.setdefault(key, new)) != target(key, new):
                 parser.error(f"conflicting renames for {key}")
     if not renames:
         parser.error("no renames given")
-    explicit = {(old, material) for old, _new, material in args.rename}
     source_path = ROOT / "filaments" / previous_file
     if not source_path.is_file():
         parser.error(f"no such manufacturer file: filaments/{previous_file}")
     missing = unmatched_renames(source_path.read_text(encoding="utf-8"), renames)
-    if explicit & set(missing):
-        parser.error("--rename names a group that does not exist: " +
-                     ", ".join(f"{old!r} [{material}]" for old, material in sorted(explicit & set(missing))))
+    for flag, requested in (("--rename", {(old, material) for old, _new, material in args.rename}),
+                            ("--reclassify", {(old, material) for old, _new, material, _m in args.reclassify})):
+        if requested & set(missing):
+            parser.error(f"{flag} names a group that does not exist: " +
+                         ", ".join(f"{old!r} [{material}]" for old, material in sorted(requested & set(missing))))
     for old, material in missing:
         print(f"SKIP (no group named {old!r} [{material}] in {args.file})")
     renames = {key: new for key, new in renames.items() if key not in missing}
@@ -633,13 +713,23 @@ def main(argv=None):
     registry, repointed, registry_problems = build_registry(
         load_contract(REGISTRY_PATH, ROOT, "retired_ids.json", "retired"), pairs, registry_ref, args.source)
     problems += registry_problems
-    for (old, material), new in sorted(renames.items()):
-        print(f"RENAME [{material}] {old!r} -> {new!r}")
+    for (old, material), value in sorted(renames.items()):
+        new, new_material = target((old, material), value)
+        if new_material == material:
+            print(f"RENAME [{material}] {old!r} -> {new!r}")
+        else:
+            print(f"RECLASSIFY [{material} -> {new_material}] {old!r} -> {new!r}")
     for template, color in sorted(args.keep):
         print(f"KEEP {color!r} in {template!r} on its current ID")
-    print(f"{groups} group(s) renamed, {len(pairs)} public ID(s) retired as renames")
-    for old_id, new_id, _old_key, _new_key in pairs:
-        print(f"  {old_id} -> {new_id}")
+    reclassified = [pair for pair in pairs if reason_for(pair[2], pair[3]) == "reclassification"]
+    if reclassified:
+        print(f"{groups} group(s) changed, {len(pairs) - len(reclassified)} public ID(s) retired as renames, "
+              f"{len(reclassified)} as reclassifications")
+    else:
+        print(f"{groups} group(s) renamed, {len(pairs)} public ID(s) retired as renames")
+    for old_id, new_id, old_key, new_key in pairs:
+        print(f"  {old_id} -> {new_id}" + (f" ({material_of(old_key)} -> {material_of(new_key)})"
+                                           if reason_for(old_key, new_key) == "reclassification" else ""))
     if repointed:
         print(f"{len(repointed)} existing retirement(s) re-pointed to the final ID (evidence unchanged)")
         for old_id, previous, new_id in repointed:
@@ -652,7 +742,7 @@ def main(argv=None):
         )
         problems += validation
     if problems:
-        print("\nERROR: rename migration is not safe; nothing was written:", file=sys.stderr)
+        print("\nERROR: migration is not safe; nothing was written:", file=sys.stderr)
         for problem in problems:
             print(f"  {problem}", file=sys.stderr)
         return 1

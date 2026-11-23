@@ -280,6 +280,47 @@ def corrected_rename_pair(old_key, new_key, correction):
     return rename_identity("::".join(corrected_old)) == rename_identity(new_key)
 
 
+def material_parts(material):
+    """Alphanumeric parts of a material code: ``TPU-85A`` -> {"tpu", "85a"}."""
+    return {token for token in normalize_name(material, color=True) if re.fullmatch(r"[\w.]+", token)}
+
+
+def refines_material(old, new):
+    """True when ``new`` keeps every part of ``old`` and adds detail.
+
+    ``TPU`` -> ``TPU-85A`` (hardness), ``CF`` -> ``PA-CF`` (base polymer) and
+    ``PC`` -> ``PC+ABS`` refine; ``PLA`` -> ``PLA+`` adds no part and ``PA`` ->
+    ``PETG`` drops one, so neither does.
+    """
+    return material_parts(old) < material_parts(new)
+
+
+def reclassification_identity(key, material):
+    """Physical identity of ``key`` as a record of the refined ``material``.
+
+    Like ``rename_identity`` but without the material, and with any line text
+    that ``material`` now carries removed (``"85A {color_name}"`` as TPU equals
+    ``"{color_name}"`` as TPU-85A). Everything else, colour included, must match.
+    """
+    base = rename_identity(key)
+    _filename, manufacturer, template, _name, own_material = key.split("::")[:5]
+    parts = material_parts(material)
+    prefix, suffix = template.split("{color_name}")
+    line = tuple(tuple(token for token in _rename_line_tokens(text, owner, own_material) if token not in parts)
+                 for text, owner in ((prefix, manufacturer), (suffix, "")))
+    return {**{field: value for field, value in base.items() if field != "material"},
+            "material": material, "line": line}
+
+
+def check_reclassification(old_key, new_key):
+    """Raise ValueError unless ``new_key`` is ``old_key`` under a refined material code."""
+    old_material, new_material = old_key.split("::")[4], new_key.split("::")[4]
+    if not refines_material(old_material, new_material):
+        raise ValueError(f"{new_material} does not refine {old_material}")
+    if reclassification_identity(old_key, new_material) != reclassification_identity(new_key, new_material):
+        raise ValueError("physical color/line or package identity differs")
+
+
 def git_output(root, *args):
     return subprocess.run(["git", *args], cwd=root, capture_output=True, text=True, encoding="utf-8", check=True).stdout
 

@@ -1161,3 +1161,152 @@ def test_upstream_with_no_matching_group_fails_cleanly(repo, monkeypatch, capsys
     assert migration.main([*upstream_args(), "--apply"]) == 1
     assert "none of the requested renames match a group in acme.json" in capsys.readouterr().err
     assert snapshot(root) == before
+
+
+# --- Material reclassification (Icezaza2543/SpoolmanDB-Community#86) ---
+
+from scripts.duplicate_catalog import check_reclassification, refines_material  # noqa: E402
+
+
+@pytest.mark.parametrize("old, new, expected", [
+    ("TPU", "TPU-85A", True),
+    ("CF", "PA-CF", True),
+    ("CF", "PETG-CF", True),
+    ("PC", "PC+ABS", True),
+    ("PETG", "PETG-CF", True),
+    ("PLA", "PLA+", False),        # adds no part
+    ("PLA", "PLA", False),
+    ("PA", "PETG", False),         # different polymer
+    ("TPU-85A", "TPU", False),     # less specific
+    ("TPU-85A", "TPU-95A", False),  # changes the detail
+])
+def test_refines_material(old, new, expected):
+    assert refines_material(old, new) is expected
+
+
+@pytest.mark.parametrize("old, old_material, new, new_material", [
+    ("85A {color_name}", "TPU", "{color_name}", "TPU-85A"),
+    ("Carbon Fiber {color_name}", "CF", "{color_name}", "PA-CF"),
+    ("PC ABS {color_name}", "PC", "{color_name}", "PC+ABS"),
+    ("Pro {color_name}", "TPU", "Pro {color_name}", "TPU-95A"),
+])
+def test_reclassification_keeps_identity(old, old_material, new, new_material):
+    check_reclassification(key(old, "Black", material=old_material), key(new, "Black", material=new_material))
+
+
+@pytest.mark.parametrize("old, old_material, new, new_material, color, weight", [
+    ("HF {color_name}", "TPU", "{color_name}", "TPU-85A", "Black", 1000),        # drops a real qualifier
+    ("85A {color_name}", "TPU", "{color_name}", "TPU-95A", "Black", 1000),       # contradicts the name
+    ("{color_name}", "PLA", "{color_name}", "PLA+", "Black", 1000),              # not a refinement
+    ("{color_name}", "TPU", "{color_name}", "TPU-85A", "White", 1000),           # different colour
+    ("{color_name}", "TPU", "{color_name}", "TPU-85A", "Black", 500),            # different package
+])
+def test_reclassification_mismatch_fails(old, old_material, new, new_material, color, weight):
+    with pytest.raises(ValueError):
+        check_reclassification(key(old, "Black", material=old_material),
+                               key(new, color, material=new_material, weight=weight))
+
+
+TPU_KEY = key("85A {color_name}", "Black", material="TPU")
+TPU85_KEY = key("{color_name}", "Black", material="TPU-85A")
+
+
+def test_registry_accepts_reclassification_and_rejects_it_as_rename():
+    reclass = {**entry(reason="reclassification"), "retired_key": TPU_KEY}
+    errors, retired, _ = check({"version": 1, "retired": {OLD: reclass}},
+                               historical={TPU_KEY: OLD}, current={TPU85_KEY: NEW})
+    assert errors == [] and retired == {OLD}
+    errors, _, _ = check({"version": 1, "retired": {OLD: {**reclass, "reason": "rename"}}},
+                         historical={TPU_KEY: OLD}, current={TPU85_KEY: NEW})
+    assert "identity mismatch" in " ".join(errors)
+    errors, _, _ = check({"version": 1, "retired": {OLD: reclass}},
+                         historical={TPU_KEY: OLD, TPU85_KEY: NEW}, current={TPU85_KEY: NEW})
+    assert "reclassification replacement must be a new ID" in " ".join(errors)
+    errors, _, _ = check({"version": 1, "retired": {OLD: reclass}}, historical={TPU_KEY: OLD},
+                         current={key("{color_name}", "Black", material="TPU-95A"): NEW})
+    assert "identity mismatch" in " ".join(errors)
+
+
+def test_scope_allows_material_change_only_for_reclassification():
+    base = {OLD: (TPU_KEY, rec(OLD, "85A Black", material="TPU"))}
+    head = {NEW: (TPU85_KEY, rec(NEW, "Black", material="TPU-85A"))}
+    reclass = {"version": 1, "retired": {OLD: {**entry(reason="reclassification"), "retired_key": TPU_KEY}}}
+    errors, pairs = scope(base=base, head=head, head_registry=reclass)
+    assert errors == [] and pairs == {OLD: NEW}
+    errors, _ = scope(base=base, head=head,
+                      head_registry={"version": 1, "retired": {OLD: {**entry(), "retired_key": TPU_KEY}}})
+    assert any("rename also changes material" in e for e in errors)
+    same = {NEW: (TPU85_KEY, rec(NEW, "Black", material="TPU"))}
+    errors, _ = scope(base=base, head=same, head_registry=reclass)
+    assert any("reclassification keeps the material" in e for e in errors)
+    errors, _ = scope(base=base, head={NEW: (TPU85_KEY, rec(NEW, "Black", material="TPU-85A", density=1.2))},
+                      head_registry=reclass)
+    assert any("reclassification also changes density" in e for e in errors)
+
+
+def reclassify(*extra):
+    return migration.main(["--file", "acme.json", "--reclassify", "PETG - {color_name}", "{color_name}", "PETG",
+                           "PETG-CF", "--ref", REVIEW, "--source", "b" * 40, "--base-ref", "HEAD", *extra])
+
+
+def test_reclassify_refuses_to_strand_an_existing_retirement(repo, capsys):
+    root, _ = repo
+    before = snapshot(root)
+    assert reclassify("--apply") == 1
+    assert "which this change reclassifies" in capsys.readouterr().err
+    assert snapshot(root) == before
+
+
+def test_apply_reclassification_with_keep_passes_checks(repo, capsys):
+    root, dup_id = repo
+    assert reclassify("--keep", "PETG - {color_name}", "Gray", "--apply") == 0
+    out = capsys.readouterr().out
+    assert "RECLASSIFY [PETG -> PETG-CF] 'PETG - {color_name}' -> '{color_name}'" in out
+    assert "0 public ID(s) retired as renames, 1 as reclassifications" in out
+    retired = json.loads((root / "contracts" / "retired_ids.json").read_text())["retired"]
+    assert retired["acme_petg_petg-black_1000_175_p"]["reason"] == "reclassification"
+    assert retired["acme_petg_petg-black_1000_175_p"]["replaced_by"] == "acme_petg-cf_black_1000_175_p"
+    assert retired[dup_id]["replaced_by"] == "acme_petg_petg-gray_1000_175_p"  # untouched
+    groups = json.loads((root / "filaments" / "acme.json").read_text())["filaments"]
+    assert [(g["name"], g["material"], [c["name"] for c in g["colors"]]) for g in groups] == [
+        ("{color_name}", "PETG-CF", ["Black"]), ("PETG - {color_name}", "PETG", ["Gray"]),
+        ("HF {color_name}", "PETG", ["Red"])]
+    assert migration.main(["--verify", "--base-ref", "HEAD"]) == 0
+    commit(root, "reclassify")
+    assert migration.main(["--verify", "--if-renames", "--base-ref", "HEAD~1"]) == 0
+    assert "1 reclassified" in capsys.readouterr().out
+
+
+@pytest.mark.parametrize("old_material, new_material, message", [
+    ("PETG", "PETG", "the material does not change"),
+    ("PETG", "PLA", "is not a more specific code"),
+])
+def test_reclassify_rejects_non_refinements(repo, capsys, old_material, new_material, message):
+    root, _ = repo
+    with pytest.raises(SystemExit) as exc:
+        migration.main(["--file", "acme.json", "--reclassify", "PETG - {color_name}", "{color_name}", old_material,
+                        new_material, "--ref", REVIEW, "--source", "b" * 40])
+    assert exc.value.code == 2
+    assert message in capsys.readouterr().err
+
+
+def test_reclassify_of_missing_group_is_an_error(repo, capsys):
+    with pytest.raises(SystemExit) as exc:
+        migration.main(["--file", "acme.json", "--reclassify", "Ghost {color_name}", "{color_name}", "TPU",
+                        "TPU-85A", "--ref", REVIEW, "--source", "b" * 40])
+    assert exc.value.code == 2
+    assert "--reclassify names a group that does not exist: 'Ghost {color_name}' [TPU]" in capsys.readouterr().err
+
+
+def test_reclassify_requires_the_new_code_in_materials_json(repo, capsys):
+    root, _ = repo
+    (root / "materials.json").write_text(json.dumps([{"material": "PETG", "density": 1.27}]) + "\n")
+    commit(root, "materials")
+    before = snapshot(root)
+    assert reclassify("--keep", "PETG - {color_name}", "Gray", "--apply") == 1
+    assert "PETG-CF is not in materials.json" in capsys.readouterr().err
+    assert snapshot(root) == before
+    (root / "materials.json").write_text(json.dumps([{"material": "PETG", "density": 1.27},
+                                                     {"material": "PETG-CF", "density": 1.3}]) + "\n")
+    commit(root, "materials")
+    assert reclassify("--keep", "PETG - {color_name}", "Gray", "--apply") == 0
