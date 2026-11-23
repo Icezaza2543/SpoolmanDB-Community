@@ -17,6 +17,16 @@ This is an **intentional breaking catalog migration** and the pilot for `reason:
 
 ## Mappings and evidence
 
+**Manufacturer sources** (found by the maintainer in the [#90 review](https://github.com/Icezaza2543/SpoolmanDB-Community/pull/90#issuecomment-7101847833)):
+
+- [AzureFilm B2B catalogue](https://azurefilm.com/wp-content/uploads/2024/11/AzureFilm-B2B-Catalogue.pdf), p. 13: all eight colours of both Flexible 85A and Flexible 98A.
+- PAHT Carbon Fiber TDS ([original URL](https://www.azurefilm.com/wp-content/uploads/2023/10/PAHT_Carbon_Fiber_TDS.pdf), [archived copy](https://web.archive.org/web/20240714082106/https://azurefilm.com/wp-content/uploads/2023/10/PAHT_Carbon_Fiber_TDS.pdf)).
+- PET Carbon Fiber TDS ([original URL](https://www.azurefilm.com/wp-content/uploads/2023/10/PET_Carbon_Fiber_TDS.pdf), [archived copy](https://web.archive.org/web/20240714192832/https://azurefilm.com/wp-content/uploads/2023/10/PET_Carbon_Fiber_TDS.pdf)). It supports `PET-CF` rather than upstream's `PETG-CF`.
+
+The two datasheet URLs returned 404 on 2026-11-23; the archived copies are from July 2024.
+
+**Retailer listings** per colour, which carry the manufacturer's specifications:
+
 | Community group (before) | After | IDs | Evidence |
 |---|---|---:|---|
 | `85A {color_name}` (TPU) | `{color_name}` (TPU-85A) | 8 | 3DJake lists each colour as AzureFilm Flexible 85A, Shore hardness A85: [Transparent](https://www.3djake.com/azurefilm/flexible-85a-transparent), [White](https://www.3djake.com/azurefilm/flexible-85a-white), [Neon Yellow](https://www.3djake.com/azurefilm/flexible-85a-neon-yellow), [Neon Orange](https://www.3djake.com/azurefilm/flexible-85a-neon-orange), [Red](https://www.3djake.com/azurefilm/flexible-85a-red), [Neon Green](https://www.3djake.com/azurefilm/flexible-85a-neon-green), [Blue](https://www.3djake.com/azurefilm/flexible-85a-blue), [Black](https://www.3djake.com/azurefilm/flexible-85a-black). |
@@ -25,7 +35,9 @@ This is an **intentional breaking catalog migration** and the pilot for `reason:
 | `Carbon Fiber {color_name}` (CF), colour `PAHT` | `{color_name}` (PAHT-CF) | 1 | [3DJake](https://www.3djake.com/azurefilm/paht-carbon-fibre-1): "a high-temperature material based on polyamide", sold as PAHT Carbon Fibre. |
 | `Carbon Fiber {color_name}` (CF), colour `PET` | `{color_name}` (PET-CF) | 1 | [3DJake](https://www.3djake.com/azurefilm/pet-carbon-fibre): "a carbon fibre reinforced PET material", product type PET / Copolyester. |
 
-AzureFilm's own pages for these discontinued products now return 404, and the Wayback Machine was unavailable on 2026-11-23, so the evidence is from retailer listings that carry the manufacturer's specifications (and, at Tinytronics, its SKUs). Some listings are for 300 g or 650 g spools; hardness and base polymer belong to the product, and this migration does not change the 1 kg package.
+AzureFilm's product pages for these discontinued products now return 404.
+
+**Package size.** The evidence above confirms material, hardness and colour, not the 1 kg package. The three Tinytronics TPU 98A listings (Transparent, Neon Orange, Neon Green) are for 300 g spools, and some 3DJake listings are for 650 g. This migration changes only the material code and keeps every record's historical weight, diameter and spool as they were. Package evidence for the 1 kg records is tracked separately.
 
 ### Differences from upstream #515
 
