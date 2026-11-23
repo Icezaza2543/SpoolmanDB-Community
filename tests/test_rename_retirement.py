@@ -947,8 +947,7 @@ def test_apply_reviewed_manufacturer_and_source_file_correction(repo):
     assert all(entry["ref"] == "docs/audits/brand-correction.json" for entry in registry.values()
                if entry["source"] == "b" * 40)
     assert migration.main(["--verify", "--base-ref", "HEAD"]) == 0
-    subprocess.run(["git", "add", "."], cwd=root, check=True)
-    subprocess.run(["git", "commit", "-qm", "approved correction"], cwd=root, check=True)
+    commit(root, "approved correction")
     audit = root / "docs/audits/brand-correction.json"
     data = json.loads(audit.read_text())
     data["evidence"] = "https://example.org/changed"
