@@ -6,13 +6,18 @@ import re
 import subprocess
 from urllib.parse import urlparse
 
-from scripts.duplicate_catalog import identity_from_key, rename_identity
+from scripts.duplicate_catalog import check_reclassification, identity_from_key, rename_identity
 
 ENTRY_FIELDS = {"replaced_by", "reason", "ref", "source", "retired_key"}
 # duplicate: merged into an existing historical record with the same physical identity.
 # rename: same physical record under a new name; the replacement is a new ID that must
 #         differ only by name text repeating the manufacturer or material.
-REASONS = {"duplicate", "rename"}
+# reclassification: same physical record under a more specific material code
+#         (TPU -> TPU-85A, CF -> PA-CF); the replacement is a new ID whose name may
+#         also drop the text the new code now carries.
+REASONS = {"duplicate", "rename", "reclassification"}
+# Reasons whose replacement is a new ID for the same physical record.
+MIGRATION_REASONS = {"rename", "reclassification"}
 
 
 def valid_source(source):
@@ -121,16 +126,19 @@ def check_registry(head, base, base_manifest, current_manifest, head_manifest, a
             errors.append(f"registry {old_id}: chain/cycle forbidden")
         if target not in current_ids:
             errors.append(f"registry {old_id}: replacement must be a surviving compiled record")
-        rename = entry["reason"] == "rename"
+        rename = entry["reason"] in MIGRATION_REASONS
         if old_id not in previous and not rename and target not in historical_ids:
             errors.append(f"registry {old_id}: replacement must be an existing historical record")
         if old_id not in previous and rename and target in historical_ids:
-            errors.append(f"registry {old_id}: rename replacement must be a new ID; use reason duplicate to merge into an existing record")
+            errors.append(f"registry {old_id}: {entry['reason']} replacement must be a new ID; use reason duplicate to merge into an existing record")
         if old_id in current_ids:
             errors.append(f"registry {old_id}: retired ID must not reappear")
         if target in current_ids:
             try:
-                if rename:
+                if entry["reason"] == "reclassification":
+                    check_reclassification(stored_key, current_ids[target])
+                    old = new = None
+                elif rename:
                     old, new = rename_identity(stored_key), rename_identity(current_ids[target])
                 else:
                     old = identity_from_key(stored_key, audits.get(old_id))
