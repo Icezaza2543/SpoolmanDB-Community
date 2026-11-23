@@ -52,7 +52,7 @@ The 2026-10-30 reconciliation adds 20 Sunlu PETG 2.0 variants and support for pe
 | Source | Count |
 | --- | ---: |
 | Manufacturer source files | 491 |
-| Material definitions | 154 |
+| Material definitions | 155 |
 | Source filament objects | 12,314 |
 | Color entries | 34,879 |
 | Compiled filament variants | 51,446 |
