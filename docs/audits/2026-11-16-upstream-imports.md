@@ -15,13 +15,13 @@ Results:
 
 | Check | Result |
 |---|---|
-| New public IDs | 24 (Giantarm, Extrudr, NOVTAU and Voxelab are not included; see #505, the 2026-11-18 table and #512 below) |
+| New public IDs | 19 (Palette and Giantarm deferred; NOVTAU already on main; Voxelab reviewed separately.) |
 | Changed, rekeyed or removed historical IDs | 0 |
 | Duplicate candidates | 0 unresolved (the 1 existing candidate is a reviewed non-duplicate) |
 | `validate.py --strict` | Pass |
 | `pytest` | 417 passed |
 | Stable Spoolman contract | Pass |
-| Baseline check (`compile_id_baseline.py --strict --base-ref 11b686e`) | Pass: 24 added, 0 removed, changed or rekeyed |
+| Baseline check (`compile_id_baseline.py --strict --base-ref aa620c1`) | Pass: 19 added, 0 removed, changed or rekeyed |
 
 ## Decisions per upstream PR
 
@@ -33,7 +33,7 @@ Results:
 | #501 Fusion PCTG | **No change (blocked)** | 0 | Still blocked under the [2026-11-07 decision](2026-11-07-release-catalog.md#fusion--block_evidence): density, tare, hex and print values come only from third-party profiles. Also, the existing Community PCTG line lives under "Fusion Filaments", not "Fusion". |
 | #503 Polymaker Panchroma | **Partially applied** | 1 | Panchroma Matte: 37 hexes updated to the manufacturer's published values ([source](https://shop.polymaker.com/en-eu/products/matte-pla)). Electric Magenta added as a **refill-only** group (`is_refill: true`) because it is published only on the refill variant. The removal of "Formerly …" from names is deferred to the rename process. Dual Matte colours and hexes were already in Community. |
 | #504 Numakers PLA+ | **Partially applied** | 8 | 32 hexes updated (the Community values were the old upstream values). Eight missing colours added. Spelling renames (Flourescent → Fluorescent, Lavendar → Lavender, Grey → Gray, Fuscia/Magenta → Magenta, Cool (Lithophane) White → Cool White) are deferred to the rename process. |
-| #529 Bambu Lab PLA Palette, TPU-75A | **Applied, tare left out** | 15 | Both products confirmed as current Bambu products: the PLA Palette CMYKW five-spool kit, and TPU 75A at 2.85 mm for the H3C. See [3DJake TPU 75A](https://www.3djake.com/bambu-lab/tpu-75a-pink) and [ALL3DP](https://all3dp.com/4/bambu-labs-new-tpu-75a-is-ultra-soft-prints-fast-brings-back-2-85-mm-filament/). The PR's 250 g tare and spool type have no source, so they are left out. Note that adding a spool type later will change these IDs (`_n` suffix). New material `TPU-75A` (density 1.17) added to `materials.json`. |
+| #529 Bambu Lab | **TPU 75A only** | 10 | [Manufacturer TDS](https://store.bblcdn.eu/s8/default/6c98f7913de24007b54cb75052cd39b5/Bambu_TPU_75A-TDS.pdf): 2.85 mm, density 1.17, nozzle 200–250 °C, bed 30–35 °C. No inferred packaging or tare. Palette deferred without a verified density; existing material defaults unchanged. |
 | #508 NOVTAU | **Not included here** | 0 | New manufacturer file. Superseded by #530 (see below), which Icezaza2543/SpoolmanDB-Community#77 imports. |
 | #512 Voxelab (open) | **Not included here** | 0 | Colours missing from the existing Community `High Speed` PLA+ and PLA groups. Icezaza2543/SpoolmanDB-Community#88 adds the same 28 colours with the same hexes, plus three more, so Voxelab is left to that PR. Note for its review: upstream lists Abyssal Red under PLA with a different hex, while Community lists it under PLA+. Source: Amazon listings in the PR. |
 | #531 Giantarm (open) | **Deferred** | 0 | Await upstream merge; no Giantarm changes included. |
@@ -46,7 +46,7 @@ Results:
 
 ## Upstream merges reviewed on 2026-11-18
 
-Upstream `main` moved from `3cf89fbb` to `8e391c16be4bfde29dfc184e2f0b9a8d154ab550` (2026-11-18). That range merged the cleanup PRs deferred above, plus two data PRs. Only #530 (NOVTAU) is applied in this PR. The rename counts come from dry runs of `scripts/rename_migration.py --upstream <merge>^1 <merge>` against Community data, using the tooling proposed in Icezaza2543/SpoolmanDB-Community#73. Nothing was written.
+Upstream `main` moved from `3cf89fbb` to `8e391c16be4bfde29dfc184e2f0b9a8d154ab550` (2026-11-18). That range merged the cleanup PRs deferred above, plus two data PRs. Neither data PR is applied here; NOVTAU is already on main via #77. The rename counts come from dry runs of `scripts/rename_migration.py --upstream <merge>^1 <merge>` against Community data, using the tooling proposed in Icezaza2543/SpoolmanDB-Community#73. Nothing was written.
 
 | Upstream PR (merge) | Decision | Notes |
 |---|---|---|

@@ -7137,43 +7137,6 @@
       "tds_url": "https://store.bblcdn.eu/s8/default/bc2bbe5af3cc45e6a3808eaeb1933c83/pla_pure_-TDS.pdf"
     },
     {
-      "name": "Palette {color_name}",
-      "material": "PLA",
-      "density": 1.24,
-      "weights": [
-        {
-          "weight": 1000
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp": 220,
-      "bed_temp": 60,
-      "colors": [
-        {
-          "name": "Cyan",
-          "hex": "0090DA"
-        },
-        {
-          "name": "Magenta",
-          "hex": "E24585"
-        },
-        {
-          "name": "Yellow",
-          "hex": "FCE300"
-        },
-        {
-          "name": "Key",
-          "hex": "000000"
-        },
-        {
-          "name": "White",
-          "hex": "FFFFFF"
-        }
-      ]
-    },
-    {
       "name": "{color_name}",
       "material": "TPU-75A",
       "density": 1.17,
@@ -7186,7 +7149,16 @@
         2.85
       ],
       "extruder_temp": 230,
+      "extruder_temp_range": [
+        200,
+        250
+      ],
       "bed_temp": 30,
+      "bed_temp_range": [
+        30,
+        35
+      ],
+      "tds_url": "https://store.bblcdn.eu/s8/default/6c98f7913de24007b54cb75052cd39b5/Bambu_TPU_75A-TDS.pdf",
       "colors": [
         {
           "name": "Black",
