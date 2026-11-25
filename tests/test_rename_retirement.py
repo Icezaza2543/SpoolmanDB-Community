@@ -1165,7 +1165,7 @@ def test_upstream_with_no_matching_group_fails_cleanly(repo, monkeypatch, capsys
 
 # --- Material reclassification (Icezaza2543/SpoolmanDB-Community#86) ---
 
-from scripts.duplicate_catalog import check_reclassification, refines_material  # noqa: E402
+from scripts.duplicate_catalog import _compact_hardness_tokens, check_reclassification, refines_material  # noqa: E402
 
 
 @pytest.mark.parametrize("old, new, expected", [
@@ -1189,6 +1189,11 @@ def test_refines_material(old, new, expected):
     ("Carbon Fiber {color_name}", "CF", "{color_name}", "PA-CF"),
     ("PC ABS {color_name}", "PC", "{color_name}", "PC+ABS"),
     ("Pro {color_name}", "TPU", "Pro {color_name}", "TPU-95A"),
+    # Polymer and hardness written as one word (Donkie/SpoolmanDB#518).
+    ("PolyFlex™ TPU90 {color_name}", "TPU", "PolyFlex™ {color_name}", "TPU-90A"),
+    ("PolyFlex™\u00a0TPU95-HF {color_name}", "TPU", "PolyFlex™ HF {color_name}", "TPU-95A"),
+    ("TPU95A {color_name}", "TPU", "{color_name}", "TPU-95A"),
+    ("TPU72D {color_name}", "TPU", "{color_name}", "TPU-72D"),
 ])
 def test_reclassification_keeps_identity(old, old_material, new, new_material):
     check_reclassification(key(old, "Black", material=old_material), key(new, "Black", material=new_material))
@@ -1197,6 +1202,9 @@ def test_reclassification_keeps_identity(old, old_material, new, new_material):
 @pytest.mark.parametrize("old, old_material, new, new_material, color, weight", [
     ("HF {color_name}", "TPU", "{color_name}", "TPU-85A", "Black", 1000),        # drops a real qualifier
     ("85A {color_name}", "TPU", "{color_name}", "TPU-95A", "Black", 1000),       # contradicts the name
+    ("TPU90 {color_name}", "TPU", "{color_name}", "TPU-95A", "Black", 1000),     # compact form contradicts
+    ("TPU95-HF {color_name}", "TPU", "{color_name}", "TPU-95A", "Black", 1000),  # drops HF
+    ("TPU95 {color_name}", "TPU", "{color_name}", "TPU-95D", "Black", 1000),     # Shore A is not Shore D
     ("{color_name}", "PLA", "{color_name}", "PLA+", "Black", 1000),              # not a refinement
     ("{color_name}", "TPU", "{color_name}", "TPU-85A", "White", 1000),           # different colour
     ("{color_name}", "TPU", "{color_name}", "TPU-85A", "Black", 500),            # different package
@@ -1205,6 +1213,17 @@ def test_reclassification_mismatch_fails(old, old_material, new, new_material, c
     with pytest.raises(ValueError):
         check_reclassification(key(old, "Black", material=old_material),
                                key(new, color, material=new_material, weight=weight))
+
+
+@pytest.mark.parametrize("material, expected", [
+    ("TPU-90A", {"tpu90", "tpu90a"}),
+    ("TPU-72D", {"tpu72d"}),  # Shore D keeps its letter
+    ("TPU", set()),         # no hardness
+    ("PA6-CF20", set()),    # digits that are not a Shore hardness
+    ("PC+ABS", set()),
+])
+def test_compact_hardness_tokens(material, expected):
+    assert _compact_hardness_tokens(material) == expected
 
 
 TPU_KEY = key("85A {color_name}", "Black", material="TPU")
