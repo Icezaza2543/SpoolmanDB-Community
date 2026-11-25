@@ -370,7 +370,8 @@ main {
 }
 
 .home-hero h1 {
-    font: 500 clamp(40px, 5vw, 72px)/1.05 "Instrument Sans", system-ui, sans-serif;
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 1.05;
     margin: 0 0 20px;
 }
 
