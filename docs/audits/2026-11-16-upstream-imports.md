@@ -15,13 +15,13 @@ Results:
 
 | Check | Result |
 |---|---|
-| New public IDs | 104 (Extrudr, NOVTAU and Voxelab are not included; see #505, the 2026-11-18 table and #512 below) |
+| New public IDs | 24 (Giantarm, Extrudr, NOVTAU and Voxelab are not included; see #505, the 2026-11-18 table and #512 below) |
 | Changed, rekeyed or removed historical IDs | 0 |
 | Duplicate candidates | 0 unresolved (the 1 existing candidate is a reviewed non-duplicate) |
 | `validate.py --strict` | Pass |
 | `pytest` | 417 passed |
 | Stable Spoolman contract | Pass |
-| Baseline check (`compile_id_baseline.py --strict --base-ref 11b686e`) | Pass: 104 added, 0 removed, changed or rekeyed |
+| Baseline check (`compile_id_baseline.py --strict --base-ref 11b686e`) | Pass: 24 added, 0 removed, changed or rekeyed |
 
 ## Decisions per upstream PR
 
@@ -36,7 +36,7 @@ Results:
 | #529 Bambu Lab PLA Palette, TPU-75A | **Applied, tare left out** | 15 | Both products confirmed as current Bambu products: the PLA Palette CMYKW five-spool kit, and TPU 75A at 2.85 mm for the H3C. See [3DJake TPU 75A](https://www.3djake.com/bambu-lab/tpu-75a-pink) and [ALL3DP](https://all3dp.com/4/bambu-labs-new-tpu-75a-is-ultra-soft-prints-fast-brings-back-2-85-mm-filament/). The PR's 250 g tare and spool type have no source, so they are left out. Note that adding a spool type later will change these IDs (`_n` suffix). New material `TPU-75A` (density 1.17) added to `materials.json`. |
 | #508 NOVTAU | **Not included here** | 0 | New manufacturer file. Superseded by #530 (see below), which Icezaza2543/SpoolmanDB-Community#77 imports. |
 | #512 Voxelab (open) | **Not included here** | 0 | Colours missing from the existing Community `High Speed` PLA+ and PLA groups. Icezaza2543/SpoolmanDB-Community#88 adds the same 28 colours with the same hexes, plus three more, so Voxelab is left to that PR. Note for its review: upstream lists Abyssal Red under PLA with a different hex, while Community lists it under PLA+. Source: Amazon listings in the PR. |
-| #531 Giantarm (open) | **Applied** | 80 | Fourteen colours added to the existing `Giantarm PLA` group. The Red placeholder `FF0000` was replaced with the listed `C41D26`. New Silk PLA, PETG and TPU-95A groups use upstream naming. No tare information is available. Source: Amazon listings in the PR. |
+| #531 Giantarm (open) | **Deferred** | 0 | Await upstream merge; no Giantarm changes included. |
 | #532 Overture Easy (open) | **No change** | 0 | All 28 records already exist as Community `PLA Easy` / `PLA Easy Glow`. Renamed to upstream's IDs in Icezaza2543/SpoolmanDB-Community#85. |
 | #511 Hatchbox ABS Black | **No change** | 0 | Already present as `hatchbox_abs_absblack_1000_175_c`. |
 | #516 RatRig field fix | **No change** | 0 | Community already has the corrected `spool_type`, with the same IDs. |
@@ -60,7 +60,7 @@ Upstream `main` moved from `3cf89fbb` to `8e391c16be4bfde29dfc184e2f0b9a8d154ab5
 | #528 ELEGOO PAHT-CF (`7ff6b0f`) | **No change** | Icezaza's upstream PR for the measured 169 g cardboard tare (see `docs/evidence/elegoo/paht-cf-2026-11-12/`). Community already has it. |
 | #530 NOVTAU update (`bb7a5ab`) | **Not included here** | Imported by Icezaza2543/SpoolmanDB-Community#77 (the same data). An open upstream follow-up, Donkie/SpoolmanDB#548, changes NOVTAU again. |
 
-Upstream PRs still open by the same author: #512 Voxelab (left to Icezaza2543/SpoolmanDB-Community#88) and #531 Giantarm (applied above), and #517 (spool_weight lint warning; tooling, not data). On 2026-11-20 #512 (`83a14cf7`) and #531 (`ab6cb0cc`) each gained one commit, "Add spool weight (sourced from SpoolmanDB-Community)", which adds tares Community already has. Nothing more to import.
+Upstream PRs still open by the same author: #512 Voxelab (left to Icezaza2543/SpoolmanDB-Community#88) and #531 Giantarm (deferred), and #517 (spool_weight lint warning; tooling, not data). On 2026-11-20 #512 (`83a14cf7`) and #531 (`ab6cb0cc`) each gained one commit, "Add spool weight (sourced from SpoolmanDB-Community)", which adds tares Community already has. Nothing more to import.
 
 ## Follow-ups
 
