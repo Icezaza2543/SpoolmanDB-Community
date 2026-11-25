@@ -295,6 +295,23 @@ def refines_material(old, new):
     return material_parts(old) < material_parts(new)
 
 
+def _compact_hardness_tokens(material):
+    """Name tokens that write a material's polymer and Shore hardness as one word.
+
+    Product names often run them together: ``TPU90`` or ``TPU95A`` for
+    ``TPU-90A`` / ``TPU-95A``. Only a Shore hardness part (``90A``, ``72D``)
+    qualifies, and only directly after a polymer part of the same code, so
+    ``TPU90`` is not covered by ``TPU-95A`` and ``PA6`` is not a hardness. The
+    scale letter may be left out only for Shore A, the convention for filament
+    names; a Shore D code needs the ``D`` (``TPU72D``, not ``TPU72``).
+    """
+    parts = material_parts(material)
+    hardness = {part for part in parts if re.fullmatch(r"\d+[ad]", part)}
+    polymers = parts - hardness
+    return {polymer + form for polymer in polymers for part in hardness
+            for form in ((part, part[:-1]) if part.endswith("a") else (part,))}
+
+
 def reclassification_identity(key, material):
     """Physical identity of ``key`` as a record of the refined ``material``.
 
@@ -304,7 +321,7 @@ def reclassification_identity(key, material):
     """
     base = rename_identity(key)
     _filename, manufacturer, template, _name, own_material = key.split("::")[:5]
-    parts = material_parts(material)
+    parts = material_parts(material) | _compact_hardness_tokens(material)
     prefix, suffix = template.split("{color_name}")
     line = tuple(tuple(token for token in _rename_line_tokens(text, owner, own_material) if token not in parts)
                  for text, owner in ((prefix, manufacturer), (suffix, "")))
