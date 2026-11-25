@@ -14,6 +14,10 @@ The campaign **closed on 2026-10-05** with **2,022 registered retirements** and 
 
 CI rejects unresolved candidates under the documented duplicate-matching rules. The only current exemption is the exact OV083 membership in `not_duplicates.json`; detection does not prove that every physically equivalent product is identifiable. See [the campaign closure](audits/2026-10-04-duplicate-campaign-final.md#closure-2026-10-05) and [the remaining future-work backlog](audits/duplicate-backlog.md). The brand sections below retain their original migration checkpoints.
 
+### Polymaker rename migration (2026-11-25)
+
+This is an **intentional breaking catalog migration**. It applies the upstream Polymaker name cleanup ([Donkie/SpoolmanDB#518](https://github.com/Donkie/SpoolmanDB/pull/518)) to 13 groups. Exactly 1,046 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 52,158 records. Material, package, colour and metadata are unchanged. The nine material changes in #518 are not included. See the [migration record](audits/2026-11-25-polymaker-rename.md) for the full mapping.
+
 ### AzureFilm material reclassification (2026-11-23)
 
 This is an **intentional breaking catalog migration** and the first under `reason: "reclassification"` ([#86](https://github.com/Icezaza2543/SpoolmanDB-Community/issues/86)). It moves 5 AzureFilm groups from a generic material code to a more specific one (TPU → TPU-85A / TPU-98A, PC → PC+ABS, CF → PAHT-CF / PET-CF), prompted by [Donkie/SpoolmanDB#515](https://github.com/Donkie/SpoolmanDB/pull/515). Exactly 21 IDs are retired, each replaced by one new ID for the same physical record, so the catalog stays at 51,446 records. Each mapping has product-specific evidence. See the [migration record](audits/2026-11-23-azurefilm-reclassification.md) for the evidence and the full mapping.
