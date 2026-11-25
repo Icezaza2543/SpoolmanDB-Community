@@ -28,7 +28,7 @@ Results:
 | Upstream PR | Decision | New IDs | Notes |
 |---|---|---:|---|
 | #506 Tinmorry TPU 95A Black hex | **Applied** | 0 | `3E413F` → `000000`. The Community value was the old upstream value. The PR says the earlier hex showed the unprinted filament. |
-| #505 Extrudr PLA NX2 Matt | **Not included here** | 0 | New 1 kg / 1.75 mm group of 56 colours, with hexes converted from manufacturer RAL numbers ([source](https://extrudr.com/en/de/products/pla-nx2-matt/)). On review, only 20 of the 56 colours had an exact 1 kg / 1.75 mm offer with SKU and GTIN in Extrudr's GB store (for example Japanese White, GTIN 9010241602360), so the bulk import is on hold. The verified colours can follow in a separate PR. |
+| #505 Extrudr PLA NX2 Matt | **Not included here** | 0 | New 1 kg / 1.75 mm group of 56 colours, with hexes converted from manufacturer RAL numbers ([source](https://extrudr.com/en/de/products/pla-nx2-matt/)). On review, only 20 of the 56 colours had an exact 1 kg / 1.75 mm offer with SKU and GTIN in Extrudr's GB store (for example Japanese White, GTIN 9010241602360), so the bulk import is on hold. The verified colours follow separately ([record](2026-11-25-extrudr-nx2-matt.md)). |
 | #500 Deeplee PLA+ High Speed 2.0 | **No change (blocked)** | 0 | Still blocked under the [2026-11-07 decision](2026-11-07-release-catalog.md#deeplee--block_evidence): no manufacturer evidence for this SKU, its density or its plastic spool and 113 g tare. The upstream PR adds only a third-party profile. |
 | #501 Fusion PCTG | **No change (blocked)** | 0 | Still blocked under the [2026-11-07 decision](2026-11-07-release-catalog.md#fusion--block_evidence): density, tare, hex and print values come only from third-party profiles. Also, the existing Community PCTG line lives under "Fusion Filaments", not "Fusion". |
 | #503 Polymaker Panchroma | **Partially applied** | 1 | Panchroma Matte: 37 hexes updated to the manufacturer's published values ([source](https://shop.polymaker.com/en-eu/products/matte-pla)). Electric Magenta added as a **refill-only** group (`is_refill: true`) because it is published only on the refill variant. The removal of "Formerly …" from names is deferred to the rename process. Dual Matte colours and hexes were already in Community. |
@@ -79,7 +79,7 @@ Donkie/SpoolmanDB `main` is still at `8e391c16`. The deferred cleanups above hav
 | #526 Overture | Migrated in Icezaza2543/SpoolmanDB-Community#78 (`High Speed 95A` waits for reclassification). |
 | #527 various brands | Same-material renames migrated in Icezaza2543/SpoolmanDB-Community#80 to #84. CR3D and FlashForge keep their Community IDs; NTH Grillon waits for Donkie/SpoolmanDB#546; the material changes wait for reclassification. |
 | #532 Overture Easy | Migrated in Icezaza2543/SpoolmanDB-Community#85. |
-| #505 Extrudr | Held on review: 20 of 56 colours have an exact store offer. The verified colours can follow separately. |
+| #505 Extrudr | Held on review: 20 of 56 colours have an exact store offer. 19 of them follow separately ([record](2026-11-25-extrudr-nx2-matt.md)). |
 | #512 Voxelab | Left to Icezaza2543/SpoolmanDB-Community#88. |
 | #515 AzureFilm | Reclassified in Icezaza2543/SpoolmanDB-Community#90 (process in #86, tooling in #89). Community uses `PET-CF` and `PAHT-CF` for the two carbon fibre products, per the manufacturer's datasheets. |
 | #518 Polymaker | Next, after this PR (both edit `polymaker.json`). |
