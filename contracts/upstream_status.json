@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-10-30",
+  "last_reviewed": "2026-11-18",
   "upstreams": {
     "spoolman": {
       "name": "Spoolman (Application Server)",
@@ -14,11 +14,11 @@
       "name": "SpoolmanDB (Original Static Data Repository)",
       "repository": "Donkie/SpoolmanDB",
       "status": "active_upstream",
-      "latest_known_commit": "c67dcd85dd4ff8de9bbc4f1eaa617aa837e95b1a",
-      "latest_known_commit_date": "2026-10-29",
+      "latest_known_commit": "8e391c16be4bfde29dfc184e2f0b9a8d154ab550",
+      "latest_known_commit_date": "2026-11-18",
       "historical_community_base_commit": "5b61e755926568ec3b3235701684595872b70b49",
       "historical_community_base_commit_date": "2025-11-28",
-      "description": "Inspected current source JSON; selective field-level reconciliation with explicit evidence and identity deferrals. See docs/audits/2026-10-30-reconciliation.md."
+      "description": "Inspected current source JSON; selective field-level reconciliation with explicit evidence and identity deferrals. See docs/audits/2026-10-30-reconciliation.md and docs/audits/2026-11-16-upstream-imports.md."
     }
   },
   "capabilities": {
