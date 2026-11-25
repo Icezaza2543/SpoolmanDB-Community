@@ -47,22 +47,23 @@
 
         <section class="page-section home-page" id="home">
             <header class="home-hero" aria-labelledby="page-title">
-                <span class="hero-badge">Community-Driven Project</span>
-                <h1 id="page-title">Find the right data for <span>your</span> next spool.</h1>
+                <div class="catalog-intro">
+                <h1 id="page-title">Filament catalog</h1>
                 <p>
-                    Browse filament colors, compare packaging, and find available technical documents.
-                    Copy the database URL to configure your Spoolman server.
+                    Find a spool by color, material or product code. Compare its diameter and net weight, or check the manufacturer’s technical sheet when available.
                 </p>
                 <div class="hero-actions">
-                    <button class="button button-primary button-large" type="button" data-copy="#external-url">
+                    <a class="button button-primary button-large" href="#explorer">Browse filaments</a>
+                    <button class="button button-ghost button-large" type="button" data-copy="#external-url">
                         <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
-                        Copy External DB URL
+                        Copy URL for Spoolman
                     </button>
-                    <a class="button button-ghost button-large" href="#explorer">
-                        <span class="material-symbols-outlined" aria-hidden="true">explore</span>
-                        Open Database Explorer
-                    </a>
                 </div>
+                </div>
+                <figure class="sample-book" id="sample-book" hidden>
+                    <figcaption>Bambu Lab <span>TPU 75A · 2.85 mm</span></figcaption>
+                    <ul id="sample-colors" aria-label="Sample colors from the catalog"></ul>
+                </figure>
                 <code id="external-url" class="copy-source">https://icezaza2543.github.io/SpoolmanDB-Community/</code>
             </header>
 
@@ -76,7 +77,7 @@
                     <strong id="stat-manufacturers">-</strong>
                 </article>
                 <article class="stat-card">
-                    <span>Catalog / defaults</span>
+                    <span>Materials used / defined</span>
                     <strong id="stat-materials">-</strong>
                 </article>
                 <article class="stat-card">
@@ -84,11 +85,11 @@
                     <strong id="stat-multicolor">-</strong>
                 </article>
                 <article class="stat-card">
-                    <span>Rows with product IDs</span>
+                    <span>Variants with product IDs</span>
                     <strong id="stat-product-ids">-</strong>
                 </article>
                 <article class="stat-card">
-                    <span>Rows with TDS / SDS</span>
+                    <span>Variants with TDS or SDS</span>
                     <strong id="stat-documents">-</strong>
                 </article>
             </section>
@@ -108,7 +109,7 @@
                     <a class="resource-card" href="filaments.json" download>
                         <span class="resource-icon material-symbols-outlined" aria-hidden="true">description</span>
                         <strong>filaments.json</strong>
-                        <span>Raw filament definitions for manual ingestion.</span>
+                        <span>Compiled variants with public IDs, dimensions and available product codes.</span>
                         <em>Download <span class="material-symbols-outlined" aria-hidden="true">download</span></em>
                     </a>
                     <a class="resource-card" href="materials.json" download>

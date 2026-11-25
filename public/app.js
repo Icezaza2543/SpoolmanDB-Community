@@ -1060,6 +1060,18 @@
         elements.statMulticolor.textContent = formatNumber(multicolor.length);
         elements.statProductIds.textContent = formatNumber(productIds.length);
         elements.statDocuments.textContent = formatNumber(documents.length);
+        const samples = state.filaments.filter(item => item.manufacturer === "Bambu Lab"
+            && item.material === "TPU-75A" && item.diameter === 2.85 && isHex(item.color_hex));
+        const sampleList = document.querySelector("#sample-colors");
+        if (sampleList) {
+            sampleList.replaceChildren(...samples.slice(0, 6).map(item => {
+                const row = document.createElement("li");
+                row.style.setProperty("--sample", "#" + item.color_hex);
+                row.textContent = item.name;
+                return row;
+            }));
+            document.querySelector("#sample-book").hidden = samples.length === 0;
+        }
     }
 
     function renderFilteredResults(syncUrl = true) {

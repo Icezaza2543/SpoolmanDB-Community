@@ -1,7 +1,5 @@
 # SpoolmanDB Community
 
-**Find filament. Understand its data. Bring it into Spoolman.**
-
 [![Build](https://github.com/Icezaza2543/SpoolmanDB-Community/actions/workflows/build.yml/badge.svg)](https://github.com/Icezaza2543/SpoolmanDB-Community/actions/workflows/build.yml)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-2ea44f.svg)](CONTRIBUTING.md)
@@ -42,7 +40,7 @@ We prefer manufacturer product pages, technical documents and recorded measureme
 
 Historical public IDs are protected by a baseline gate. Community extensions include document links, product identifiers and refill metadata. Some fields are supported by upstream SpoolmanDB but are not consumed by the Spoolman application. [Read the field compatibility matrix](docs/UPSTREAM_COMPATIBILITY.md).
 
-The 2026-10-30 reconciliation adds 20 Sunlu PETG 2.0 variants and support for per-color transmission distance. Conflicting or insufficiently evidenced imports remain in the [reconciliation report](docs/audits/2026-10-30-reconciliation.md). Material reclassification in upstream Issue #309 remains **HOLD**.
+For integrations that store public IDs, consult the [retired-ID registry](https://icezaza2543.github.io/SpoolmanDB-Community/retired_ids.json). The [Polymaker migration](docs/audits/2026-11-25-polymaker-rename.md) renamed 1,046 IDs without changing materials or packaging. The [AzureFilm pilot](docs/audits/2026-11-23-azurefilm-reclassification.md) was a separate material correction. Spoolman keeps existing local spool data but does not follow these mappings automatically.
 
 ## Current snapshot
 

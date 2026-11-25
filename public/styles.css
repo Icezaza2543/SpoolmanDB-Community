@@ -327,16 +327,17 @@ main {
 }
 
 .home-hero {
-    min-height: 610px;
+    min-height: 400px;
     display: grid;
-    place-items: center;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 48px;
+    align-items: center;
     align-content: center;
-    padding: 72px 16px 96px;
-    text-align: center;
+    padding: 48px 0;
+    text-align: left;
     position: relative;
 }
 
-.home-hero::before,
 .page-heading::before,
 .contribute-hero::before {
     content: "";
@@ -369,8 +370,8 @@ main {
 }
 
 .home-hero h1 {
-    max-width: 920px;
-    font-size: clamp(48px, 6vw, 82px);
+    font: 500 clamp(40px, 5vw, 72px)/1.05 "Instrument Sans", system-ui, sans-serif;
+    margin: 0 0 20px;
 }
 
 .home-hero h1 span {
@@ -379,17 +380,27 @@ main {
 
 .home-hero p {
     max-width: 680px;
-    margin: 0 auto 42px;
+    margin: 0 0 24px;
     font-size: 18px;
 }
 
 .hero-actions {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 18px;
 }
+
+.sample-book { margin: 0; padding: 24px; background: #19191b; border: 1px solid var(--line-strong); border-radius: 12px; }
+.sample-book figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; font-weight: 600; }
+.sample-book figcaption span { color: var(--text-secondary); font-weight: 400; }
+.sample-book ul { display: grid; grid-template-columns: repeat(3, 1fr); padding: 0; margin: 0; list-style: none; gap: 16px; }
+.sample-book li { font-size: 14px; }
+.sample-book li::before { content: ""; display: block; height: 48px; border-radius: 4px; background: var(--sample); border: 1px solid #ffffff26; margin-bottom: 4px; }
+.home-page .stat-card { background: #19191b; box-shadow: none; padding: 20px; }
+.home-page .stat-card span { text-transform: none; letter-spacing: normal; font-weight: 500; }
+.home-page .stat-card strong { font-variant-numeric: tabular-nums; font-weight: 600; }
 
 .copy-source {
     position: absolute;
@@ -1496,8 +1507,10 @@ pre {
     }
 
     .home-hero {
-        min-height: 520px;
-        padding: 42px 0 64px;
+        grid-template-columns: 1fr;
+        min-height: 0;
+        gap: 24px;
+        padding: 32px 0;
     }
 
     .home-hero p,
